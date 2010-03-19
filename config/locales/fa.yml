@@ -1,10 +1,20 @@
 fa:
-  hello: "Hello world"
   site_title: دنیای زنان در ایران قاجار
-  home_description: "TRANSLATE ME: A virtual archive of documents and images on the history of women in Qajar Iran."
-  language_option: "English"
+  home_description: fa, A virtual archive of documents and images on the history of women in Qajar Iran.
+  language_option: English
   login:  ورود به سایت
   create_account: عضویت در سایت
   home: خانه
-  archive: مجموعه
+  archive: بایگانی
   exhibits: نمایشگاه‌های موضوعی
+  about: درباره
+  contact: تماس
+  permissions: اجازه
+  sponsors: حامیان
+  news: خبر
+  people: مردم
+  collections: مجموعه ها
+  donate_materials: مواد کمک مالی
+  help: کمک
+  wwqi: درباره این پروژه
+  also_at_harvard: همچینین در هاروارد

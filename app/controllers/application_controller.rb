@@ -14,12 +14,10 @@ class ApplicationController < ActionController::Base
       end
     else
       I18n.locale = extract_locale_from_subdomain
-      puts "TRANSLATION LOCALE: " + I18n.locale.to_s
     end
   end
 
   def extract_locale_from_subdomain
-    puts "REQUESTED DOMAIN: " + request.subdomains.first unless request.subdomains.first.nil?
     parsed_locale = request.subdomains.first.to_sym
     (I18n.available_locales.include? parsed_locale) ? parsed_locale  : nil
   end

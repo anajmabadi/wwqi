@@ -3,7 +3,7 @@
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
     <title><%=h t(:site_title) -%> | <%= h(@page_title) || controller.controller_name.capitalize %></title>
-    <% unless @page_description.nil? -%><meta name="description" content="<%=h @page_description || @page_title %>" /><% end %>
+    <% unless @page_description.nil? -%><meta name="description" content="<%=h @page_description || @page_title %>" /><% end -%>
 
     <link rel="shortcut icon" href="images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style<%=h(language_suffix)%>.css" media="screen" />
@@ -13,7 +13,7 @@
     <script type="text/javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" />
     <script type="text/javascript" src="/javascripts/facebox.js" />
 
-    <%= raw which_script? -%>>
+    <%= raw which_script? -%>
     <%= raw include_zoomify? -%>
     <%= raw include_fckeditor? -%>
 
@@ -58,15 +58,15 @@
         <div class="columnWrapperFooter group">
           <div class="leftWrapperFooter"><!-- closes colOneFooter -->
             <div class="colTwoFooter">
-              <h5>WWQI</h5>
+              <h5><%=t(:wwqi) -%></h5>
               <ul class="footerNav">
-                <li><a href="#a">About</a></li>
-                <li><a href="#a">Donate Materials</a></li>
-                <li><a href="#a">Contact</a></li>
-                <li><a href="#a">News</a></li>
-                <li><a href="#a">Permissions</a></li>
-                <li><a href="#a">Sponsors</a></li>
-                <li><a href="#a">Help & FAQ</a></li>
+                <li><a href="#a"><%=t(:about) -%></a></li>
+                <li><a href="#a"><%=t(:donate_materials) -%></a></li>
+                <li><a href="#a"><%=t(:contact) -%></a></li>
+                <li><a href="#a"><%=t(:news) -%></a></li>
+                <li><a href="#a"><%=t(:permissions) -%></a></li>
+                <li><a href="#a"><%=t(:sponsors) -%></a></li>
+                <li><a href="#a"><%=t(:help) -%></a></li>
               </ul>
 
             </div><!-- closes colTwoFooter -->
@@ -74,7 +74,7 @@
             </div><!-- closes colThreeFooter -->
 
             <div class="colFourFooter">
-              <h5>Also at Harvard</h5>
+              <h5><%=t(:also_at_harvard) -%></h5>
               <ul class="footerNav">
                 <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog</a></li>
                 <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis"  target="_blank">OASIS - Archival Finding Aids</a></li>
