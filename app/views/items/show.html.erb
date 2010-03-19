@@ -1,0 +1,88 @@
+<p>
+  <b>Title:</b>
+  <%= @item.title %>
+</p>
+
+<p>
+  <b>Accession num:</b>
+  <%= @item.accession_num %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @item.caption %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @item.description %>
+</p>
+
+<p>
+  <b>Olivia:</b>
+  <%= @item.olivia_id %>
+</p>
+
+<p>
+  <b>Urn:</b>
+  <%= @item.urn %>
+</p>
+
+<p>
+  <b>Creator:</b>
+  <%= @item.creator_id %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @item.owner_id %>
+</p>
+
+<p>
+  <b>Collection:</b>
+  <%= @item.collection_id %>
+</p>
+
+<p>
+  <b>Pages:</b>
+  <%= @item.pages %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @item.format_id %>
+</p>
+
+<p>
+  <b>Display date:</b>
+  <%= @item.display_date %>
+</p>
+
+<p>
+  <b>Sort date:</b>
+  <%= @item.sort_date %>
+</p>
+
+<p>
+  <b>Dimensions:</b>
+  <%= @item.dimensions %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @item.notes %>
+</p>
+
+<p>
+  <b>Place:</b>
+  <%= @item.place_id %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @item.publish %>
+</p>
+
+
+<%= link_to 'Edit', edit_item_path(@item) %> |
+<%= link_to 'Back', items_path %>
