@@ -1,3 +1,78 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
-<p><%=h @welcome %></p>
+<% @page_description = t(:home_description) -%>
+<% @page_title = t(:site_title).capitalize -%>
+<div id="browser" class="clearfix">
+  <div id="head">
+    <h2>Quick Browser</h2>
+    <ul class="sort sortnav">
+      <li class="active"><a href="#" class="module-link active">Recent</a></li>
+      <li><a href="#" class="module-link">Most Viewed</a></li>
+      <li><a href="#" class="module-link">Most Saved</a></li>
+    </ul>
+    <ul class="types sortnav">
+      <li class="active"><a href="#" class="module-link active">All</a></li>
+      <li><a href="#" class="module-link">photographs</a></li>
+      <li><a href="#" class="module-link">paintings</a></li>
+      <li><a href="#" class="module-link">manuscripts</a></li>
+      <li><a href="#" class="module-link">sounds</a></li>
+    </ul>
+  </div>
+  <div id="browserContent" class="clearfix">
+    <div class="item photo first" style="background:url(images/thumb1.jpg) top left no-repeat">
+      <a class="type" href="#" title="show only paintings">show only paintings</a>
+      <a rel="facebox" href="item.html">Qajar Woman <span> collection one</span></a>
+    </div>
+    <div class="item painting" style="background:url(images/thumb2.jpg) top left no-repeat">
+      <a class="type" href="#" title="show only paintings">show only paintings</a>
+      <a rel="facebox" href="item.html">Qajar Woman <span> collection two</span></a>
+    </div>
+    <div class="item painting" style="background:url(images/thumb3.jpg) top left no-repeat">
+      <a class="type" href="#" title="show only paintings">show only paintings</a>
+      <a rel="facebox" href="item.html">Qajar Woman <span> collection one</span></a>
+    </div>
+    <div class="item sound" >
+      <a class="type" href="#" title="show only sounds">show only sounds</a>
+      <a rel="facebox" href="item.html">Qajar Woman <span> collection three</span></a>
+    </div>
+    <div class="item photo" style="background:url(images/thumb4.jpg) top left no-repeat">
+      <a class="type" href="#" title="show only photos">show only photos</a>
+      <a rel="facebox" href="item.html">Qajar Woman <span> collection four</span></a>
+    </div>
+  </div>
+</div> <!-- end browser -->
+<div id="featured">
+  <div id="head">
+    <h2>Featured Exhibitions</h2>
+
+    <ul class="dots">
+      <li><a href="#" class="active" id="firstFeature">first</a></li>
+      <li><a href="#" id="secondFeature">second</a></li>
+      <li><a href="#" id="thirdFeature">third</a></li>
+      <li><a href="#" id="fourthFeature">fourth</a></li>
+    </ul>
+  </div>
+  <div id="featuredContent" class="clearfix">
+    <div id="featureContainer">
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+        <a href="#"> Qajar Homes 1</a>
+      </div>
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+        <a href="#"> Qajar Homes 2</a>
+      </div>
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+        <a href="#"> Qajar Homes 3</a>
+      </div>
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+        <a href="#"> Qajar Homes 4</a>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end featured -->
+<div id="about">
+  <div id="head">
+    <h2>About Us</h2>
+  </div>
+  <div id="aboutContent" class="clearfix">
+    <p>A paragraph about WWQI</p>
+  </div>
+</div>

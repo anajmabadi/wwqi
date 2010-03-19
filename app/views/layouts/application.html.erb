@@ -1,0 +1,168 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title><%=h t(:site_title) -%> | <%= h(@page_title) || controller.controller_name.capitalize %></title>
+    <% unless @page_description.nil? -%><meta name="description" content="<%=h @page_description || @page_title %>" /><% end %>
+
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style<%=h(language_suffix)%>.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/facebox<%=h(language_suffix)%>.css" media="screen" />
+
+    <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js" />
+    <script type="text/javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" />
+    <script type="text/javascript" src="/javascripts/facebox.js" />
+
+    <script language="javascript" type="application/javascript">
+      $(document).ready(function(){
+
+        $('a[title]').qtip({
+          style: {
+            name: 'dark',
+            tip: true,
+            border: {
+              radius: 8
+            }
+          },
+          position: {
+            corner: {
+              target: 'topMiddle',
+              tooltip: 'bottomMiddle'
+            }
+          }
+        });
+
+        $('.item').hover(function(){
+          $(this).find('a').animate({"bottom":"0px"},200);
+        }, function(){
+          $(this).find('a').animate({"bottom":"-20px"},200);
+        });
+
+        $("#firstFeature").click(function(){
+          $(".dots a").removeClass("active");
+          $(this).addClass("active");
+          $("#featuredContent").animate({scrollLeft: '0px'}, 300);
+          return false;
+        });
+        $("#secondFeature").click(function(){
+          $(".dots a").removeClass("active");
+          $(this).addClass("active");
+          $("#featuredContent").animate({scrollLeft: '650px'}, 300);
+          return false;
+        });
+        $("#thirdFeature").click(function(){
+          $(".dots a").removeClass("active");
+          $(this).addClass("active");
+          $("#featuredContent").animate({scrollLeft: '1300px'}, 300);
+          return false;
+        });
+        $("#fourthFeature").click(function(){
+          $(".dots a").removeClass("active");
+          $(this).addClass("active");
+          $("#featuredContent").animate({scrollLeft: '1950px'}, 300);
+          return false;
+        });
+        $('a[rel*=facebox]').facebox({
+          loading_image : 'images/loading.gif',
+          close_image   : 'images/closelabel.gif'
+        })
+
+      });
+    </script>
+
+    <%= include_zoomify? -%>
+    <%= include_fckeditor? -%>
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1><a href="/"><span><%=h t(:site_title) -%></span></a></h1>
+        <div id="tools">
+          <div id="search">
+            <form action="" class="searchform" method="get">
+              <input type="text" value="" name="s" class="swap_value" id="s"/>
+              <button type="submit"></button>
+            </form>
+          </div>
+          <ul>
+            <li> <a href="#">login</a> </li>
+            <li> <a href="#">create account</a></li>
+          </ul>
+        </div>
+        <div id="nav">
+          <a class="lang" href="<%=h(language_url)-%>"><%=h t(:language_option) -%></a>
+          <ul class="sortnav">
+            <li class="active"> <a class="module-link active" href="index.html">home</a> </li>
+            <li> <a class="module-link" href="collection.html">collection</a></li>
+            <li> <a class="module-link" href="exhibits.html">exhibits</a></li>
+          </ul>
+        </div>
+      </div> <!-- end container -->
+    </div> <!-- end header -->
+    <div id="content" class="clearfix">
+      <div class="container clearfix">
+
+        <% if flash[:notice] -%><div class="notice"><%= flash[:notice] %></div><% end -%>
+        <% if flash[:error] -%><div class="error"><%= flash[:error] %></div><% end -%>
+        <%= yield :layout %>
+
+      </div> <!-- end container -->
+    </div><!-- end content -->
+    <div id="pageFooterWrapper">
+      <div id="pageFooter">
+        <div class="columnWrapperFooter group">
+          <div class="leftWrapperFooter"><!-- closes colOneFooter -->
+            <div class="colTwoFooter">
+              <h5>WWQI</h5>
+              <ul class="footerNav">
+                <li><a href="#a">About</a></li>
+                <li><a href="#a">Contact</a></li>
+                <li><a href="#a">Credits</a></li>
+                <li><a href="#a">Permissions</a></li>
+                <li><a href="#a">Sponsors</a></li>
+              </ul>
+
+            </div><!-- closes colTwoFooter -->
+            <div class="colThreeFooter">
+              <h5>Explore</h5>
+              <ul class="footerNav">
+                <li><a href="#a">Exhibitions</a></li>
+                <li><a href="#a">Collection</a></li>
+                <li><a href="#a">Create Account</a></li>
+                <li><a href="#a">Login</a></li>
+              </ul>
+
+
+            </div><!-- closes colThreeFooter -->
+
+            <div class="colFourFooter">
+              <h5>Also at Harvard</h5>
+              <ul class="footerNav">
+                <li><a href="http://www.fas.harvard.edu/~iohp/">Iranian Oral History Project</a></li>
+                <li><a href="http://ocp.hul.harvard.edu/ihp/">Islamic Heritage Project</a></li>
+                <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125">Ali Khan Album</a></li>
+              </ul>
+            </div><!-- closes colFourFooter -->
+          </div><!-- closes leftWrapperFooter -->
+          <div class="rightWrapperFooter">
+            <style>
+              .colFiveFooter .full-image-float-left { padding: 3px !important; margin: 3px !important; }
+            </style>
+            <div class="colOneFooter">
+              <a href="/contact/"><img src="images/harvard.gif"/></a>
+              <p>&nbsp;</p>
+            </div><!-- closes colFiveFooter -->
+          </div><!-- closes rightWrapperFooter -->
+        </div><!-- closes columnWrapperFooter group -->
+
+
+      </div>
+    </div>
+
+
+
+    <%= google_analytics_block %>
+
+  </body>
+</html>
