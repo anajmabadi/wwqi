@@ -13,8 +13,7 @@
     <script type="text/javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" />
     <script type="text/javascript" src="/javascripts/facebox.js" />
 
-    <%= raw which_script? -%>
-
+    <%= raw which_script? -%>>
     <%= raw include_zoomify? -%>
     <%= raw include_fckeditor? -%>
 
@@ -31,16 +30,16 @@
             </form>
           </div>
           <ul>
-            <li> <a href="#">login</a> </li>
-            <li> <a href="#">create account</a></li>
+            <li> <a href="#"><%= t(:login) %> </a> </li>
+            <li> <a href="#"><%= t(:create_account) %> </a></li>
           </ul>
         </div>
         <div id="nav">
-          <a class="lang" href="<%=h(language_url)-%>"><%=h t(:language_option) -%></a>
+          <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
           <ul class="sortnav">
-            <li class="active"> <a class="module-link active" href="index.html">home</a> </li>
-            <li> <a class="module-link" href="collection.html">collection</a></li>
-            <li> <a class="module-link" href="exhibits.html">exhibits</a></li>
+            <li class="active"> <a class="module-link active" href="index.html"><%= t(:home) -%> </a> </li>
+            <li> <a class="module-link" href="archive.html"><%=t(:archive) -%> </a></li>
+            <li> <a class="module-link" href="exhibits.html"><%=t(:exhibits) -%> </a></li>
           </ul>
         </div>
       </div> <!-- end container -->
@@ -62,31 +61,27 @@
               <h5>WWQI</h5>
               <ul class="footerNav">
                 <li><a href="#a">About</a></li>
+                <li><a href="#a">Donate Materials</a></li>
                 <li><a href="#a">Contact</a></li>
-                <li><a href="#a">Credits</a></li>
+                <li><a href="#a">News</a></li>
                 <li><a href="#a">Permissions</a></li>
                 <li><a href="#a">Sponsors</a></li>
+                <li><a href="#a">Help & FAQ</a></li>
               </ul>
 
             </div><!-- closes colTwoFooter -->
             <div class="colThreeFooter">
-              <h5>Explore</h5>
-              <ul class="footerNav">
-                <li><a href="#a">Exhibitions</a></li>
-                <li><a href="#a">Collection</a></li>
-                <li><a href="#a">Create Account</a></li>
-                <li><a href="#a">Login</a></li>
-              </ul>
-
-
             </div><!-- closes colThreeFooter -->
 
             <div class="colFourFooter">
               <h5>Also at Harvard</h5>
               <ul class="footerNav">
-                <li><a href="http://www.fas.harvard.edu/~iohp/">Iranian Oral History Project</a></li>
-                <li><a href="http://ocp.hul.harvard.edu/ihp/">Islamic Heritage Project</a></li>
-                <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125">Ali Khan Album</a></li>
+                <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog</a></li>
+                <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis"  target="_blank">OASIS - Archival Finding Aids</a></li>
+                <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via"  target="_blank">VIA - Visual Resources</a></li>
+                <li><a href="http://www.fas.harvard.edu/~iohp/"  target="_blank">Iranian Oral History Project</a></li>
+                <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a></li>
+                <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125"  target="_blank">Ali Khan Album</a></li>
               </ul>
             </div><!-- closes colFourFooter -->
           </div><!-- closes leftWrapperFooter -->
