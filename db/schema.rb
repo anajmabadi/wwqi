@@ -9,7 +9,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321204236) do
+ActiveRecord::Schema.define(:version => 20100321210225) do
+
+  create_table "appellation_translations", :force => true do |t|
+    t.integer  "appellation_id"
+    t.string   "locale"
+    t.string   "sort_name"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appellation_translations", ["appellation_id"], :name => "index_appellation_translations_on_appellation_id"
+
+  create_table "appellations", :force => true do |t|
+    t.text     "notes"
+    t.boolean  "publish"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
@@ -88,9 +106,10 @@ ActiveRecord::Schema.define(:version => 20100321204236) do
     t.integer  "person_id"
     t.string   "locale"
     t.text     "description"
+    t.string   "sort_name"
     t.string   "vitals"
-    t.string   "birth_place"
     t.string   "name"
+    t.string   "birth_place"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

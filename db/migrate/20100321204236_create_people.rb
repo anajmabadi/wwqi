@@ -7,7 +7,7 @@ class CreatePeople < ActiveRecord::Migration
       t.text :notes
       t.timestamps
     end
-    Person.create_translation_table! :name=>:string, :description => :text, :vitals => :string, :birth_place => :string
+    Person.create_translation_table! :name=>:string, :sort_name => :string, :description => :text, :vitals => :string, :birth_place => :string
   end
 
   def self.down
