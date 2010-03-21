@@ -1,0 +1,58 @@
+<p>
+  <b>Name:</b>
+  <%= @collection.name %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @collection.address %>
+</p>
+
+<p>
+  <b>Address2:</b>
+  <%= @collection.address2 %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @collection.city %>
+</p>
+
+<p>
+  <b>State province:</b>
+  <%= @collection.state_province %>
+</p>
+
+<p>
+  <b>Postal code:</b>
+  <%= @collection.postal_code %>
+</p>
+
+<p>
+  <b>Telephone:</b>
+  <%= @collection.telephone %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @collection.email %>
+</p>
+
+<p>
+  <b>Website:</b>
+  <%= @collection.website %>
+</p>
+
+<p>
+  <b>Contact:</b>
+  <%= @collection.contact %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @collection.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_collection_path(@collection) %> |
+<%= link_to 'Back', collections_path %>

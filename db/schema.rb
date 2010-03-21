@@ -9,7 +9,33 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100319201556) do
+ActiveRecord::Schema.define(:version => 20100321200854) do
+
+  create_table "collection_translations", :force => true do |t|
+    t.integer  "collection_id"
+    t.string   "locale"
+    t.string   "caption"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
+
+  create_table "collections", :force => true do |t|
+    t.string   "address"
+    t.string   "address2"
+    t.string   "city"
+    t.string   "state_province"
+    t.string   "postal_code"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "website"
+    t.string   "contact"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "item_translations", :force => true do |t|
     t.integer  "item_id"
