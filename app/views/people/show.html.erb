@@ -1,0 +1,43 @@
+<p>
+  <b>Name:</b>
+  <%= @person.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @person.description %>
+</p>
+
+<p>
+  <b>Vital display:</b>
+  <%= @person.vital_display %>
+</p>
+
+<p>
+  <b>Birth place:</b>
+  <%= @person.birth_place %>
+</p>
+
+<p>
+  <b>Loc name:</b>
+  <%= @person.loc_name %>
+</p>
+
+<p>
+  <b>Dob:</b>
+  <%= @person.dob %>
+</p>
+
+<p>
+  <b>Dod:</b>
+  <%= @person.dod %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @person.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_person_path(@person) %> |
+<%= link_to 'Back', people_path %>

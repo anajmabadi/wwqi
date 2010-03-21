@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321200854) do
+ActiveRecord::Schema.define(:version => 20100321204236) do
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
@@ -49,6 +49,7 @@ ActiveRecord::Schema.define(:version => 20100321200854) do
   end
 
   add_index "item_translations", ["item_id"], :name => "index_item_translations_on_item_id"
+  add_index "item_translations", ["title"], :name => "title"
 
   create_table "items", :force => true do |t|
     t.string   "accession_num"
@@ -67,5 +68,33 @@ ActiveRecord::Schema.define(:version => 20100321200854) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "items", ["accession_num"], :name => "accession_num", :unique => true
+  add_index "items", ["collection_id"], :name => "collection_id"
+  add_index "items", ["olivia_id"], :name => "olivia_id"
+  add_index "items", ["publish"], :name => "publish"
+  add_index "items", ["sort_date"], :name => "sort_date"
+
+  create_table "people", :force => true do |t|
+    t.string   "loc_name"
+    t.date     "dob"
+    t.date     "dod"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "person_translations", :force => true do |t|
+    t.integer  "person_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "vitals"
+    t.string   "birth_place"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "person_translations", ["person_id"], :name => "index_person_translations_on_person_id"
 
 end
