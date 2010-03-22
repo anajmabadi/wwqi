@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100322174815) do
+ActiveRecord::Schema.define(:version => 20100322213444) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -30,6 +30,28 @@ ActiveRecord::Schema.define(:version => 20100322174815) do
   end
 
   add_index "appellations", ["publish"], :name => "publish"
+
+  create_table "categories", :force => true do |t|
+    t.integer  "position"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "categories", ["position"], :name => "index_categories_on_position"
+  add_index "categories", ["publish"], :name => "index_categories_on_publish"
+
+  create_table "category_translations", :force => true do |t|
+    t.integer  "category_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "category_translations", ["category_id"], :name => "index_category_translations_on_category_id"
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
