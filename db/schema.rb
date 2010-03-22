@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321210225) do
+ActiveRecord::Schema.define(:version => 20100321235943) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -28,6 +28,8 @@ ActiveRecord::Schema.define(:version => 20100321210225) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  add_index "appellations", ["publish"], :name => "publish"
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
@@ -93,6 +95,32 @@ ActiveRecord::Schema.define(:version => 20100321210225) do
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
 
+  create_table "owner_translations", :force => true do |t|
+    t.integer  "owner_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "owner_translations", ["owner_id"], :name => "index_owner_translations_on_owner_id"
+
+  create_table "owners", :force => true do |t|
+    t.string   "address"
+    t.string   "address2"
+    t.string   "state_province"
+    t.string   "postal_code"
+    t.string   "country"
+    t.string   "telephone"
+    t.string   "email"
+    t.string   "url"
+    t.string   "contact"
+    t.text     "terms"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "people", :force => true do |t|
     t.string   "loc_name"
     t.date     "dob"
@@ -100,6 +128,7 @@ ActiveRecord::Schema.define(:version => 20100321210225) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "country"
   end
 
   create_table "person_translations", :force => true do |t|
