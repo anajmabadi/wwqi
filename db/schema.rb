@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100322014044) do
+ActiveRecord::Schema.define(:version => 20100322174815) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -70,10 +70,23 @@ ActiveRecord::Schema.define(:version => 20100322014044) do
   end
 
   add_index "exhibition_translations", ["exhibition_id"], :name => "index_exhibition_translations_on_exhibition_id"
+  add_index "exhibition_translations", ["title"], :name => "title"
 
   create_table "exhibitions", :force => true do |t|
     t.date     "date"
     t.boolean  "featured"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "exhibitions", ["featured"], :name => "featured"
+  add_index "exhibitions", ["publish"], :name => "publish"
+
+  create_table "formats", :force => true do |t|
+    t.string   "name"
+    t.string   "extension"
     t.boolean  "publish"
     t.text     "notes"
     t.datetime "created_at"
@@ -117,6 +130,28 @@ ActiveRecord::Schema.define(:version => 20100322014044) do
   add_index "items", ["olivia_id"], :name => "olivia_id"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
+
+  create_table "media", :force => true do |t|
+    t.integer  "position"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "media", ["position"], :name => "index_media_on_position"
+  add_index "media", ["publish"], :name => "index_media_on_publish"
+
+  create_table "medium_translations", :force => true do |t|
+    t.integer  "medium_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "medium_translations", ["medium_id"], :name => "index_medium_translations_on_medium_id"
 
   create_table "owner_translations", :force => true do |t|
     t.integer  "owner_id"

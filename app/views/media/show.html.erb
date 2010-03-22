@@ -1,0 +1,28 @@
+<p>
+  <b>Name:</b>
+  <%= @medium.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @medium.description %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @medium.position %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @medium.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @medium.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_medium_path(@medium) %> |
+<%= link_to 'Back', media_path %>
