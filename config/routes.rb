@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :exhibitions
+
   resources :owners
 
   resources :appellations

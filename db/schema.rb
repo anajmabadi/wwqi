@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100321235943) do
+ActiveRecord::Schema.define(:version => 20100322014044) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -52,6 +52,29 @@ ActiveRecord::Schema.define(:version => 20100321235943) do
     t.string   "email"
     t.string   "website"
     t.string   "contact"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "exhibition_translations", :force => true do |t|
+    t.integer  "exhibition_id"
+    t.string   "locale"
+    t.text     "introduction"
+    t.string   "author"
+    t.text     "conclusion"
+    t.string   "title"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "exhibition_translations", ["exhibition_id"], :name => "index_exhibition_translations_on_exhibition_id"
+
+  create_table "exhibitions", :force => true do |t|
+    t.date     "date"
+    t.boolean  "featured"
+    t.boolean  "publish"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
