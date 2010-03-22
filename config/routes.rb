@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :categorizations
+
   resources :categories
 
 

@@ -1,13 +1,14 @@
 class CreateCategories < ActiveRecord::Migration
   def self.up
     create_table :categories do |t|
-
+      t.integer :parent_id
       t.integer :position
       t.boolean :publish
       t.text :notes
 
       t.timestamps
     end
+    add_index :categories, :parent_id
     add_index :categories, :position
     add_index :categories, :publish
     Category.create_translation_table! :name => :string, :description => :text

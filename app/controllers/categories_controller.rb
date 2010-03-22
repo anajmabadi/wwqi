@@ -1,8 +1,11 @@
 class CategoriesController < ApplicationController
+
+  before_filter :admin_required, :except => [:index, :show]
+
   # GET /categories
   # GET /categories.xml
   def index
-    @categories = Category.all
+    @categories = Category.find(:all, :order => 'parent_id, position')
 
     respond_to do |format|
       format.html # index.html.erb
@@ -25,7 +28,7 @@ class CategoriesController < ApplicationController
   # GET /categories/new.xml
   def new
     @category = Category.new
-
+    @categories = Category.find(:all)
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @category }
@@ -35,6 +38,7 @@ class CategoriesController < ApplicationController
   # GET /categories/1/edit
   def edit
     @category = Category.find(params[:id])
+    @categories = Category.find(:all)
   end
 
   # POST /categories
@@ -42,6 +46,7 @@ class CategoriesController < ApplicationController
   def create
     @category = Category.new(params[:category])
 
+    @categories = Category.find(:all)
     respond_to do |format|
       if @category.save
         format.html { redirect_to(@category, :notice => 'Category was successfully created.') }
@@ -58,6 +63,7 @@ class CategoriesController < ApplicationController
   def update
     @category = Category.find(params[:id])
 
+    @categories = Category.find(:all)
     respond_to do |format|
       if @category.update_attributes(params[:category])
         format.html { redirect_to(@category, :notice => 'Category was successfully updated.') }

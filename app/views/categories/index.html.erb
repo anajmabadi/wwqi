@@ -2,8 +2,10 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Name</th>
     <th>Description</th>
+    <th>Parent</th>
     <th>Position</th>
     <th>Publish</th>
     <th>Notes</th>
@@ -14,8 +16,10 @@
 
 <% @categories.each do |category| %>
   <tr>
+    <td><%= category.id  %></td>
     <td><%= category.name %></td>
-    <td><%= category.description %></td>
+    <td><%= truncate(category.description) if category.description %></td>
+    <td><%= category.parent_id %></td>
     <td><%= category.position %></td>
     <td><%= category.publish %></td>
     <td><%= category.notes %></td>
