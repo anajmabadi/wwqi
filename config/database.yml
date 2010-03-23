@@ -43,7 +43,7 @@ production:
   reconnect: false
   database: qajar_production
   pool: 5
-  username: cforcey
-  password: kailiv14
-  socket: /tmp/mysql.sock
+  username: qajar
+  password: Q@jar!
+  host: localhost
 
