@@ -4,6 +4,8 @@ source :gemcutter
 
 gem "rails", "3.0.0.beta"
 
+gem "rack", "1.0.1"
+
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
