@@ -2,11 +2,11 @@
 dependencies: 
   fastthread: 
     group: 
-    - :default
+    - :development
     version: ">= 0"
   mongrel: 
     group: 
-    - :default
+    - :development
     version: ">= 0"
   rails: 
     group: 
@@ -18,27 +18,27 @@ dependencies:
     version: ">= 0"
   mongrel_experimental: 
     group: 
-    - :default
+    - :development
     version: ">= 0"
   rspec: 
     group: 
-    - :default
+    - :test
     version: ">= 2.0.0.beta.1"
   rack: 
     group: 
     - :default
-    version: = 1.1.0
+    version: ">= 0"
   cgi_multipart_eof_fix: 
     group: 
-    - :default
+    - :development
     version: ">= 0"
   rspec-rails: 
     group: 
-    - :default
+    - :test
     version: ">= 2.0.0.beta.1"
   webrat: 
     group: 
-    - :default
+    - :test
     version: ">= 0"
 specs: 
 - rake: 
@@ -119,7 +119,7 @@ specs:
     version: 0.7.0
 - rspec-rails: 
     version: 2.0.0.beta.4
-hash: c5e87efe237245942ea02d38126ca906a14fd54a
+hash: 75cd19f649ae3adc291035c7f45deba752c1f4b3
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
