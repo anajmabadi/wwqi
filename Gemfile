@@ -10,14 +10,6 @@ gem "rack"
 
 gem "mysql"
 
-## Bundle the gems you use:
-group :development do
-  gem "mongrel"
-  gem "cgi_multipart_eof_fix"
-  gem "fastthread"
-  gem "mongrel_experimental"
-end
-
 # gem "bj"
 # gem "hpricot", "0.6"
 # gem "sqlite3-ruby", :require => "sqlite3"
