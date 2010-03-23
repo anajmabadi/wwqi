@@ -15,9 +15,4 @@ gem "mysql"
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
 
-## Bundle gems used only in certain environments:
-group :test do
-  gem "rspec", ">= 2.0.0.beta.1"
-  gem "rspec-rails", ">= 2.0.0.beta.1"
-  gem "webrat"
-end
+

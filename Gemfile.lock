@@ -8,21 +8,9 @@ dependencies:
     group: 
     - :default
     version: ">= 0"
-  rspec: 
-    group: 
-    - :test
-    version: ">= 2.0.0.beta.1"
   rack: 
     group: 
     - :default
-    version: ">= 0"
-  rspec-rails: 
-    group: 
-    - :test
-    version: ">= 2.0.0.beta.1"
-  webrat: 
-    group: 
-    - :test
     version: ">= 0"
 specs: 
 - rake: 
@@ -71,27 +59,13 @@ specs:
     version: 0.9.12
 - mysql: 
     version: 2.8.1
-- nokogiri: 
-    version: 1.4.1
 - thor: 
     version: 0.13.4
 - railties: 
     version: 3.0.0.beta
 - rails: 
     version: 3.0.0.beta
-- rspec-core: 
-    version: 2.0.0.beta.4
-- rspec-expectations: 
-    version: 2.0.0.beta.4
-- rspec-mocks: 
-    version: 2.0.0.beta.4
-- rspec: 
-    version: 2.0.0.beta.4
-- webrat: 
-    version: 0.7.0
-- rspec-rails: 
-    version: 2.0.0.beta.4
-hash: cfeede9d5ec639ac4ef1a0b151aa018ca21ab825
+hash: 8eae9c112fa006df7eddc9f5dfc000a15b11101b
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
