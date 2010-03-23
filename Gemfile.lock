@@ -22,7 +22,7 @@ dependencies:
     version: ">= 0"
   rspec: 
     group: 
-    - :default
+    - :test
     version: ">= 2.0.0.beta.1"
   cgi_multipart_eof_fix: 
     group: 
@@ -30,11 +30,11 @@ dependencies:
     version: ">= 0"
   rspec-rails: 
     group: 
-    - :default
+    - :test
     version: ">= 2.0.0.beta.1"
   webrat: 
     group: 
-    - :default
+    - :test
     version: ">= 0"
 specs: 
 - rake: 
@@ -115,7 +115,7 @@ specs:
     version: 0.7.0
 - rspec-rails: 
     version: 2.0.0.beta.4
-hash: 1716c2ebcd1ce07c751dd75360a06d2e5ac4f504
+hash: 6370f47dc98ee0e919b4d9cdbe33f0db24b92650
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org

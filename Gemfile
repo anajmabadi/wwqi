@@ -15,9 +15,6 @@ gem "cgi_multipart_eof_fix"
 gem "fastthread"
 gem "mongrel_experimental"
 
-gem "rspec", ">= 2.0.0.beta.1"
-gem "rspec-rails", ">= 2.0.0.beta.1"
-gem "webrat"
 
 # gem "bj"
 # gem "hpricot", "0.6"
@@ -26,5 +23,7 @@ gem "webrat"
 
 ## Bundle gems used only in certain environments:
 group :test do
-
+  gem "rspec", ">= 2.0.0.beta.1"
+  gem "rspec-rails", ">= 2.0.0.beta.1"
+  gem "webrat"
 end
