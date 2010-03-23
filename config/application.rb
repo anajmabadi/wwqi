@@ -2,6 +2,9 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
+# This makes sure the bundled gems are in our $LOAD_PATH
+require File.expand_path(File.join(File.dirname(FILE), 'vendor', 'gems', 'environment'))
+
 # Auto-require default libraries and those for the current Rails environment.
 Bundler.require :default, Rails.env
 
