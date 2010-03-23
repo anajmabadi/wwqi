@@ -10,11 +10,12 @@ gem "rails", "3.0.0.beta"
 gem "mysql"
 
 ## Bundle the gems you use:
-gem "mongrel"
-gem "cgi_multipart_eof_fix"
-gem "fastthread"
-gem "mongrel_experimental"
-
+group :development do
+  gem "mongrel"
+  gem "cgi_multipart_eof_fix"
+  gem "fastthread"
+  gem "mongrel_experimental"
+end
 
 # gem "bj"
 # gem "hpricot", "0.6"
