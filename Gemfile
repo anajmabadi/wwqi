@@ -1,7 +1,6 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source :gemcutter
 
-
 gem "rails", "3.0.0.beta"
 
 gem "rack"

@@ -119,7 +119,7 @@ specs:
     version: 0.7.0
 - rspec-rails: 
     version: 2.0.0.beta.4
-hash: 75cd19f649ae3adc291035c7f45deba752c1f4b3
+hash: e0c8201ad82e0a2e2ab872b727774c9f7c4be924
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
