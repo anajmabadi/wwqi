@@ -1,4 +1,7 @@
 class PeopleController < ApplicationController
+
+  before_filter :admin_required, :except => [:index, :show]
+
   # GET /people
   # GET /people.xml
   def index

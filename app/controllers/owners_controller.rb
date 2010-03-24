@@ -1,4 +1,7 @@
 class OwnersController < ApplicationController
+
+  before_filter :admin_required, :except => [:index, :show]
+
   # GET /owners
   # GET /owners.xml
   def index

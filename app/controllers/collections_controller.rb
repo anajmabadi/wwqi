@@ -1,4 +1,7 @@
 class CollectionsController < ApplicationController
+
+  before_filter :admin_required, :except => [:index, :show]
+
   # GET /collections
   # GET /collections.xml
   def index
