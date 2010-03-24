@@ -2,29 +2,27 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Name</th>
-    <th>Description</th>
-    <th>Vital display</th>
+    <th>Vitals</th>
     <th>Birth place</th>
     <th>Loc name</th>
     <th>Dob</th>
     <th>Dod</th>
-    <th>Notes</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
 
 <% @people.each do |person| %>
-  <tr>
+  <tr height="50">
+    <td><%= person.id %> </td>
     <td><%= person.name %></td>
-    <td><%= person.description %></td>
-    <td><%= person.vital_display %></td>
+    <td><%= person.vitals %></td>
     <td><%= person.birth_place %></td>
     <td><%= person.loc_name %></td>
     <td><%= person.dob %></td>
     <td><%= person.dod %></td>
-    <td><%= person.notes %></td>
     <td><%= link_to 'Show', person %></td>
     <td><%= link_to 'Edit', edit_person_path(person) %></td>
     <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
