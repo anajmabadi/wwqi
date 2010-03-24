@@ -16,11 +16,11 @@ gem "mysql"
 # gem "aws-s3", :require => "aws/s3"
 
 # in config/environments/test.rb
-group :test do
-  gem "rspec", :lib => false, :version => ">= 1.2.0"
-  gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
-  gem "webrat"
-end
+#group :test do
+#  gem "rspec", :lib => false, :version => ">= 1.2.0"
+#  gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
+#  gem "webrat"
+#end
 
 
 
