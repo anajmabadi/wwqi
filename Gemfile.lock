@@ -65,7 +65,7 @@ specs:
     version: 3.0.0.beta
 - rails: 
     version: 3.0.0.beta
-hash: 285d0f5ccfba1976acda78e1446070431840d67c
+hash: bae1240cfee1ab927471156b6494a0e5cf508666
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
