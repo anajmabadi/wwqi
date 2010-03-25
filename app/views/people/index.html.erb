@@ -1,21 +1,23 @@
+<% @page_description = t(:people_index_description) -%>
+<% @page_title = t(:people) -%>
 <h1>Listing people</h1>
-
+<p><%= link_to 'New person', new_person_path %></p>
 <table>
   <tr>
     <th>Id</th>
-    <th>Name</th>
+    <th><%= Person.human_attribute_name("name") %></th>
     <th>Vitals</th>
     <th>Birth place</th>
     <th>Loc name</th>
     <th>Dob</th>
     <th>Dod</th>
-    <th></th>
+    <th>Actions</th>
     <th></th>
     <th></th>
   </tr>
 
 <% @people.each do |person| %>
-  <tr height="50">
+  <tr height="30">
     <td><%= person.id %> </td>
     <td><%= person.name %></td>
     <td><%= person.vitals %></td>
@@ -30,6 +32,4 @@
 <% end %>
 </table>
 
-<br />
-
-<%= link_to 'New person', new_person_path %>
+<p><%= link_to 'New person', new_person_path %></p>

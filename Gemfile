@@ -10,14 +10,17 @@ gem "rack"
 
 gem "mysql"
 
+
+gem "rspec", :lib => false, :version => ">= 1.2.0"
+gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
+
+
 # gem "bj"
 # gem "hpricot", "0.6"
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
 
 group :test do
-  gem "rspec", :lib => false, :version => ">= 1.2.0"
-  gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
   gem "webrat"
 end
 
