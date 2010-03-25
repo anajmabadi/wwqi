@@ -10,9 +10,8 @@ gem "rack"
 
 gem "mysql"
 
-
-gem "rspec", :lib => false, :version => ">= 1.2.0"
-gem "rspec-rails", :lib => false, :version => ">= 1.2.0"
+gem "rspec", ">= 2.0.0.beta.1"
+gem "rspec-rails", ">= 2.0.0.beta.1"
 
 
 # gem "bj"
