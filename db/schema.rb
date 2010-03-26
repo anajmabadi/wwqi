@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100322230135) do
+ActiveRecord::Schema.define(:version => 20100325165731) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -236,5 +236,18 @@ ActiveRecord::Schema.define(:version => 20100322230135) do
   end
 
   add_index "person_translations", ["person_id"], :name => "index_person_translations_on_person_id"
+
+  create_table "translations", :force => true do |t|
+    t.string   "locale"
+    t.string   "key"
+    t.text     "value"
+    t.text     "interpolations"
+    t.boolean  "is_proc",        :default => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "translations", ["key"], :name => "index_translations_on_key"
+  add_index "translations", ["locale"], :name => "index_translations_on_locale"
 
 end

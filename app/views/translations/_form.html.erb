@@ -1,0 +1,27 @@
+<% form_for(@translation) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :locale %><br />
+    <%= f.text_field :locale %>
+  </div>
+  <div class="field">
+    <%= f.label :key %><br />
+    <%= f.text_field :key %>
+  </div>
+  <div class="field">
+    <%= f.label :value %><br />
+    <%= f.text_area :value %>
+  </div>
+  <div class="field">
+    <%= f.label :interpolations %><br />
+    <%= f.text_area :interpolations %>
+  </div>
+  <div class="field">
+    <%= f.label :is_proc %><br />
+    <%= f.check_box :is_proc %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
