@@ -14,8 +14,6 @@
     <script type="text/javascript" src="/javascripts/facebox.js" />
 
     <%= raw which_script? -%>
-    <%= raw include_zoomify? -%>
-    <%= raw include_fckeditor? -%>
 
   </head>
   <body>
@@ -29,16 +27,12 @@
               <button type="submit"></button>
             </form>
           </div>
-          <ul>
-            <li> <a href="#"><%= t(:login) %> </a> </li>
-            <li> <a href="#"><%= t(:create_account) %> </a></li>
-          </ul>
         </div>
         <div id="nav">
           <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
           <ul class="sortnav">
             <li class="active"> <a class="module-link active" href="index.html"><%= t(:home) -%> </a> </li>
-            <li> <a class="module-link" href="archive.html"><%=t(:archive) -%> </a></li>
+            <li> <%= link_to(t(:archive), archive_path, { :title => t(:archive), :class=>"module-link" }) %></li>
             <li> <a class="module-link" href="exhibits.html"><%=t(:exhibits) -%> </a></li>
           </ul>
         </div>

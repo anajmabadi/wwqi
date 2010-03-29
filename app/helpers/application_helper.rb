@@ -7,9 +7,9 @@ module ApplicationHelper
   def language_url
     # TODO: Make this context sensitive -- hard coded for development
     if I18n.locale == :fa
-      return 'http://es.example.com:3000'
+      return 'http://en.qajar.local'
     else
-      return 'http://fa.example.com:3000'
+      return 'http://fa.qajar.local'
     end
   end
 
