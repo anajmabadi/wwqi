@@ -1,17 +1,17 @@
-<% @page_description = t(:about_description) -%>
+<% @page_description = t(:news_description) -%>
 <% @page_title = @page.title -%>
 <h1>
   <%= @page.title %>
 </h1>
 <%  unless @page.author == 'Anonymous' -%>
-  <p>
-    <%= @page.author %>
-  </p>
+<p>
+  <%= @page.author%>
+</p>
 <% end %>
 <%  if @page.caption -%>
-  <em>
-    <%= @page.caption %>
-  </em>
+<em>
+  <%= @page.caption %>
+</em>
 <% end %>
 <%= raw @page.body %>
 

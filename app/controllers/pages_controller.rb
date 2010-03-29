@@ -1,9 +1,61 @@
 class PagesController < ApplicationController
 
-  before_filter :admin_required, :except => [:index, :show]
+  before_filter :admin_required, :except => [:index, :show, :about, :donate_materials, :contact, :news, :permissions, :sponsors, :help]
 
   # hard-coded pages for the main navigation
   def about
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+
+  def donate_materials
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+
+  def contact
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+
+  def news
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+  def permissions
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+  def sponsors
+    @page = Page.find(params[:id])
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
+
+  def help
     @page = Page.find(params[:id])
 
     respond_to do |format|
