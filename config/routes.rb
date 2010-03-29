@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :pages
+
   resources :translations
 
   resources :categorizations
@@ -22,6 +24,8 @@ Qajar::Application.routes.draw do |map|
   # first created -> highest priority.
 
   map.archive 'archive', :controller => 'archive', :action => 'index'
+  map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
+  map.home 'home', :controller => 'home', :action => 'index'
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

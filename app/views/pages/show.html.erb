@@ -1,0 +1,31 @@
+<p>
+  <b>Title:</b>
+  <%= @page.title %>
+</p>
+<p>
+  <b>Author:</b>
+  <%= @page.author %>
+</p>
+<p>
+  <b>Caption:</b>
+  <%= @page.caption %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @page.body %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @page.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @page.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_page_path(@page) %> |
+<%= link_to 'Back', pages_path %>
