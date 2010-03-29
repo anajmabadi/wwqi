@@ -26,6 +26,7 @@ Qajar::Application.routes.draw do |map|
   map.archive 'archive', :controller => 'archive', :action => 'index'
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
+  map.about 'about', :controller => 'pages', :action => 'about', :id => 1
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
