@@ -1,0 +1,43 @@
+<p>
+  <b>Title:</b>
+  <%= @period.title %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @period.caption %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @period.description %>
+</p>
+
+<p>
+  <b>Start date:</b>
+  <%= @period.start_date %>
+</p>
+
+<p>
+  <b>End date:</b>
+  <%= @period.end_date %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @period.position %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @period.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @period.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_period_path(@period) %> |
+<%= link_to 'Back', periods_path %>

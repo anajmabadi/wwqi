@@ -6,6 +6,10 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
+    <%= f.label :sort_name %><br />
+    <%= f.text_field :sort_name %>
+  </div>
+<div class="field">
     <%= f.label :address %><br />
     <%= f.text_field :address %>
   </div>
@@ -40,6 +44,10 @@
   <div class="field">
     <%= f.label :contact %><br />
     <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :publish %><br />
+    <%= f.check_box :publish %>
   </div>
   <div class="field">
     <%= f.label :notes %><br />

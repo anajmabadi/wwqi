@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100330152845) do
+ActiveRecord::Schema.define(:version => 20100330161905) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -72,9 +72,12 @@ ActiveRecord::Schema.define(:version => 20100330152845) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "sort_name"
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
+  add_index "collection_translations", ["name"], :name => "index_collection_translations_name"
+  add_index "collection_translations", ["sort_name"], :name => "index_collection_translations_on_sort_name"
 
   create_table "collections", :force => true do |t|
     t.string   "address"
@@ -89,7 +92,10 @@ ActiveRecord::Schema.define(:version => 20100330152845) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "publish",        :default => true
   end
+
+  add_index "collections", ["publish"], :name => "index_collections_on_publish"
 
   create_table "exhibition_translations", :force => true do |t|
     t.integer  "exhibition_id"
@@ -248,6 +254,33 @@ ActiveRecord::Schema.define(:version => 20100330152845) do
   end
 
   add_index "people", ["publish"], :name => "index_people_on_publish"
+
+  create_table "period_translations", :force => true do |t|
+    t.integer  "period_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "title"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "period_translations", ["period_id"], :name => "index_period_translations_on_period_id"
+
+  create_table "periods", :force => true do |t|
+    t.date     "start_date"
+    t.date     "end_date"
+    t.integer  "position"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "periods", ["end_date"], :name => "index_periods_on_end_date"
+  add_index "periods", ["position"], :name => "index_periods_on_position"
+  add_index "periods", ["publish"], :name => "index_periods_on_publish"
+  add_index "periods", ["start_date"], :name => "index_periods_on_start_date"
 
   create_table "person_translations", :force => true do |t|
     t.integer  "person_id"

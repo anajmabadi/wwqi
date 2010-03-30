@@ -21,9 +21,13 @@
 </ul>
 <h3>People Menu</h3>
 <ul>
-<% new_list = true -%>
 <% @people.each do |person| -%>
   <li><%= person.tag_line %></li>
 <% end -%>
 </ul>
 <h3>Collections Menu</h3>
+<ul>
+<% @collections.each do |collection| -%>
+  <li><%= collection.tag_line %></li>
+<% end -%>
+</ul>
