@@ -30,8 +30,8 @@ Qajar::Application.routes.draw do |map|
   map.donate_materials 'donate_materials', :controller => 'pages', :action => 'donate_materials', :id => 2
   map.contact 'contact', :controller => 'pages', :action => 'contact', :id => 3
   map.news 'news', :controller => 'pages', :action => 'news', :id => 4
-  map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 5
-  map.sponsors 'sponsors', :controller => 'pages', :action => 'sponsors', :id => 6
+  map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 6
+  map.sponsors 'sponsors', :controller => 'pages', :action => 'sponsors', :id => 5
   map.help 'help', :controller => 'pages', :action => 'help', :id => 7
 
   # Sample of regular route:
