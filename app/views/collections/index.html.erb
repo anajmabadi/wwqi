@@ -2,38 +2,22 @@
 
 <table>
   <tr>
+    <th>Id</th>
     <th>Name</th>
-    <th>Address</th>
-    <th>Address2</th>
-    <th>City</th>
-    <th>State province</th>
-    <th>Postal code</th>
-    <th>Telephone</th>
     <th>Email</th>
     <th>Website</th>
     <th>Contact</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
   </tr>
 
 <% @collections.each do |collection| %>
   <tr>
+    <td><%= collection.id %></td>
     <td><%= collection.name %></td>
-    <td><%= collection.address %></td>
-    <td><%= collection.address2 %></td>
-    <td><%= collection.city %></td>
-    <td><%= collection.state_province %></td>
-    <td><%= collection.postal_code %></td>
-    <td><%= collection.telephone %></td>
     <td><%= collection.email %></td>
-    <td><%= collection.website %></td>
+    <td><%= link_to collection.website, collection.website, :html => {:target => 'blank'} unless collection.website.blank? %></td>
     <td><%= collection.contact %></td>
-    <td><%= collection.notes %></td>
-    <td><%= link_to 'Show', collection %></td>
-    <td><%= link_to 'Edit', edit_collection_path(collection) %></td>
-    <td><%= link_to 'Destroy', collection, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', collection %> | <%= link_to 'Edit', edit_collection_path(collection) %> | <%= link_to 'Destroy', collection, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
