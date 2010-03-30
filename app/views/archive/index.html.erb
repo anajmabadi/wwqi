@@ -1,4 +1,29 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-<h1>Archive#index</h1>
-<p>Find me in app/views/archive/index.html.erb</p>
+<h1>Archive</h1>
+<h3>Category Menu</h3>
+<ul>
+<% new_list = true -%>
+<% @categories.each do |category| -%>
+  <% if category.parent_id != category.id -%>
+    <% if new_list -%>
+      <ul>
+      <% new_list = false -%>
+    <% end -%>
+  <% else -%>
+    <% unless new_list -%>
+        </ul>
+    <% end %>
+    <% new_list = true -%>
+  <% end %>
+  <li><%= category.name %></li>
+<% end -%>
+</ul>
+<h3>People Menu</h3>
+<ul>
+<% new_list = true -%>
+<% @people.each do |person| -%>
+  <li><%= person.tag_line %></li>
+<% end -%>
+</ul>
+<h3>Collections Menu</h3>

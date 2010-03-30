@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100329161838) do
+ActiveRecord::Schema.define(:version => 20100330152845) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -244,7 +244,10 @@ ActiveRecord::Schema.define(:version => 20100329161838) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
+    t.boolean  "publish",    :default => true
   end
+
+  add_index "people", ["publish"], :name => "index_people_on_publish"
 
   create_table "person_translations", :force => true do |t|
     t.integer  "person_id"
