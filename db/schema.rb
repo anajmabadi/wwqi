@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100330161905) do
+ActiveRecord::Schema.define(:version => 20100331040802) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -268,19 +268,17 @@ ActiveRecord::Schema.define(:version => 20100330161905) do
   add_index "period_translations", ["period_id"], :name => "index_period_translations_on_period_id"
 
   create_table "periods", :force => true do |t|
-    t.date     "start_date"
-    t.date     "end_date"
     t.integer  "position"
     t.boolean  "publish"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "start_year"
+    t.integer  "end_year"
   end
 
-  add_index "periods", ["end_date"], :name => "index_periods_on_end_date"
   add_index "periods", ["position"], :name => "index_periods_on_position"
   add_index "periods", ["publish"], :name => "index_periods_on_publish"
-  add_index "periods", ["start_date"], :name => "index_periods_on_start_date"
 
   create_table "person_translations", :force => true do |t|
     t.integer  "person_id"

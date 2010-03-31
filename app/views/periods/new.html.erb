@@ -1,4 +1,7 @@
-<h1>New period</h1>
+<% @page_description = t(:new_description) -%>
+<% @page_title = t(:period).capitalize -%>
+
+<h1>New <%=  t(:period) %></h1>
 
 <%= render 'form' %>
 
