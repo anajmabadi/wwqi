@@ -20,7 +20,7 @@ development:
   reconnect: false
   database: qajar_development
   pool: 5
-  username: cforcey
+  username: root
   password: kailiv14
   socket: /tmp/mysql.sock
 
@@ -33,7 +33,7 @@ test:
   reconnect: false
   database: qajar_test
   pool: 5
-  username: cforcey
+  username: root
   password: kailiv14
   socket: /tmp/mysql.sock
 

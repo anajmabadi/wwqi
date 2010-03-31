@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :relationships
+
   resources :periods
 
   resources :pages

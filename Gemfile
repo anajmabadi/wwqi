@@ -8,7 +8,7 @@ gem "rack"
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
-gem "mysql"
+gem "mysql", "= 2.7"
 
 gem "rspec", ">= 2.0.0.beta.1"
 gem "rspec-rails", ">= 2.0.0.beta.1"
