@@ -1,0 +1,119 @@
+--- 
+dependencies: 
+  rails: 
+    group: 
+    - :default
+    version: = 3.0.0.beta
+  mysql: 
+    group: 
+    - :default
+    version: = 2.7
+  rspec: 
+    group: 
+    - :default
+    version: ">= 2.0.0.beta.1"
+  jalalidate: 
+    group: 
+    - :default
+    version: ">= 0"
+  rspec-rails: 
+    group: 
+    - :default
+    version: ">= 2.0.0.beta.1"
+  rack: 
+    group: 
+    - :default
+    version: ">= 0"
+  webrat: 
+    group: 
+    - :test
+    version: ">= 0"
+  farsifu: 
+    group: 
+    - :default
+    version: ">= 0"
+  calendar: 
+    group: 
+    - :default
+    version: ">= 0"
+specs: 
+- rake: 
+    version: 0.8.7
+- abstract: 
+    version: 1.0.0
+- builder: 
+    version: 2.1.2
+- i18n: 
+    version: 0.3.6
+- memcache-client: 
+    version: 1.7.8
+- tzinfo: 
+    version: 0.3.18
+- activesupport: 
+    version: 3.0.0.beta
+- activemodel: 
+    version: 3.0.0.beta
+- erubis: 
+    version: 2.6.5
+- rack: 
+    version: 1.1.0
+- rack-mount: 
+    version: 0.4.7
+- rack-test: 
+    version: 0.5.3
+- actionpack: 
+    version: 3.0.0.beta
+- mime-types: 
+    version: "1.16"
+- polyglot: 
+    version: 0.3.1
+- treetop: 
+    version: 1.4.5
+- mail: 
+    version: 2.1.5.3
+- text-hyphen: 
+    version: 1.0.0
+- text-format: 
+    version: 1.0.0
+- actionmailer: 
+    version: 3.0.0.beta
+- arel: 
+    version: 0.2.1
+- activerecord: 
+    version: 3.0.0.beta
+- activeresource: 
+    version: 3.0.0.beta
+- bundler: 
+    version: 0.9.16
+- calendar: 
+    version: 1.11.4
+- farsifu: 
+    version: 0.2.0
+- jalalidate: 
+    version: 0.2.1
+- mysql: 
+    version: "2.7"
+- nokogiri: 
+    version: 1.4.1
+- thor: 
+    version: 0.13.4
+- railties: 
+    version: 3.0.0.beta
+- rails: 
+    version: 3.0.0.beta
+- rspec-core: 
+    version: 2.0.0.beta.4
+- rspec-expectations: 
+    version: 2.0.0.beta.4
+- rspec-mocks: 
+    version: 2.0.0.beta.4
+- rspec: 
+    version: 2.0.0.beta.4
+- webrat: 
+    version: 0.7.0
+- rspec-rails: 
+    version: 2.0.0.beta.4
+hash: 6004a6d94a4752034fb8ce7438105b0eea804194
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
