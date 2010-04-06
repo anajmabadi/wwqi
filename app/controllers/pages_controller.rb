@@ -30,14 +30,6 @@ class PagesController < ApplicationController
     end
   end
 
-  def news
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
   def permissions
     @page = Page.find(params[:id])
 
@@ -46,7 +38,8 @@ class PagesController < ApplicationController
       format.xml  { render :xml => @page }
     end
   end
-  def sponsors
+  
+  def credits
     @page = Page.find(params[:id])
 
     respond_to do |format|

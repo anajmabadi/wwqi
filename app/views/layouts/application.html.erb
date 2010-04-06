@@ -32,8 +32,8 @@
           <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
           <ul class="sortnav">
             <li<% if controller.controller_name == 'home' -%> class="active"<% end -%>> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
-            <li<% if controller.controller_name == 'archive' -%> class="active"<% end -%>> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
-            <li<% if controller.controller_name == 'exhibits' -%> class="active"<% end -%>> <%= link_to(t(:exhibits),exhibits_path, { :class=>"module-link" }) %></li>
+            <li<% if controller.controller_name == 'collections' -%> class="active"<% end -%>> <%= link_to(t(:collections), collections_path, { :class=>"module-link" }) %></li>
+            <li<% if controller.controller_name == 'exhibits' -%> class="active"<% end -%>> <%= link_to(t(:exhibits), exhibits_path, { :class=>"module-link" }) %></li>
           </ul>
         </div>
       </div> <!-- end container -->
@@ -55,11 +55,9 @@
               <h5><%=t(:wwqi) -%></h5>
               <ul class="footerNav">
                 <li><%= link_to(t(:about),about_path) %></li>
-                <li><%= link_to(t(:donate_materials),donate_materials_path) %></li>
                 <li><%= link_to(t(:contact),contact_path) %></li>
-                <li><%= link_to(t(:news),news_path) %></li>
                 <li><%= link_to(t(:permissions),permissions_path) %></li>
-                <li><%= link_to(t(:sponsors),sponsors_path) %></li>
+                <li><%= link_to(t(:credits), credits_path) %></li>
                 <li><%= link_to(t(:help),help_path) %></li>
               </ul>
 
