@@ -11,7 +11,6 @@ Qajar::Application.routes.draw do |map|
 
   resources :categories
 
-
   resources :exhibitions
 
   resources :owners
@@ -27,17 +26,17 @@ Qajar::Application.routes.draw do |map|
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
-  map.archive 'archive', :controller => 'archive', :action => 'index'
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
+
+  # hard coded pages using the pages table for their body text
   map.about 'about', :controller => 'pages', :action => 'about', :id => 1
-  map.donate_materials 'donate_materials', :controller => 'pages', :action => 'donate_materials', :id => 2
   map.contact 'contact', :controller => 'pages', :action => 'contact', :id => 3
-  map.news 'news', :controller => 'pages', :action => 'news', :id => 4
   map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 6
-  map.sponsors 'sponsors', :controller => 'pages', :action => 'sponsors', :id => 5
+  map.credits 'credits', :controller => 'pages', :action => 'credits', :id => 5
   map.help 'help', :controller => 'pages', :action => 'help', :id => 7
 
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
