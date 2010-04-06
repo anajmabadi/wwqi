@@ -1,5 +1,5 @@
 <% @page_description = t(:home_description) -%>
-<% @page_title = t(:site_title).capitalize -%>
+<% @page_title = t(:home).capitalize -%>
 <div id="browser" class="clearfix">
   <div id="head">
     <h2>Quick Browser</h2>
@@ -70,14 +70,9 @@
 </div><!-- end featured -->
 <div id="about">
   <div id="head">
-    <h2>About Us</h2>
+    <h2><%=  t(:about_us) %></h2>
   </div>
   <div id="aboutContent" class="clearfix">
-    <p>A paragraph about WWQI <%= JalaliDate.new(Date.today) %>
-    Calendar absolute for today: <%= Calendar.absolute_from_gregorian(12,1,2010) %>
-    Calendar gregorian for absolute: <%= Calendar.gregorian_from_absolute(Calendar.absolute_from_gregorian(12,1,2010)) %>
-    Islamic from absolute: <%= Calendar.islamic_from_absolute(Calendar.absolute_from_gregorian(12,1,2010)) %>
-    Jalali from absolute: <%= Calendar.getDate(Calendar.jalaali_from_absolute(Calendar.absolute_from_gregorian(12,1,2010))) %>
-    </p>
+    <p><%= raw @about_page.caption %> <%= link_to 'Learn more…', about_url %></p>
   </div>
 </div>
