@@ -48,7 +48,7 @@ class PagesController < ApplicationController
     end
   end
 
-  def help
+  def faq
     @page = Page.find(params[:id])
 
     respond_to do |format|

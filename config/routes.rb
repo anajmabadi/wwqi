@@ -34,7 +34,7 @@ Qajar::Application.routes.draw do |map|
   map.contact 'contact', :controller => 'pages', :action => 'contact', :id => 3
   map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 6
   map.credits 'credits', :controller => 'pages', :action => 'credits', :id => 5
-  map.help 'help', :controller => 'pages', :action => 'help', :id => 7
+  map.faq 'faq', :controller => 'pages', :action => 'faq', :id => 7
 
   
   # Sample of regular route:
