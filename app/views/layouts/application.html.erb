@@ -2,16 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-    <title><%=h t(:site_title) -%> | <%= h(@page_title) || controller.controller_name.capitalize %></title>
-    <% unless @page_description.nil? -%><meta name="description" content="<%=h @page_description || @page_title %>" /><% end -%>
+    <title><%= t(:site_title) -%> | <%= @page_title || controller.controller_name.capitalize %></title>
+    <% unless @page_description.nil? && @page_title.nil? -%><meta name="description" content="<%= @page_description || @page_title %>" /><% end -%>
 
+    <!-- load the common styles to all pages -->
     <link rel="shortcut icon" href="/images/favicon.ico" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/style<%=h(language_suffix)%>.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="/stylesheets/facebox<%=h(language_suffix)%>.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style<%= language_suffix -%>.css" media="screen" />
 
+    <!-- load the common scripts -->
     <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js" />
     <script type="text/javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" />
-    <script type="text/javascript" src="/javascripts/facebox.js" />
+
+    <!-- load styles conditionally based on the controller name -->
+    <% if controller.controller_name == 'exhibits' -%>
+      <link rel="stylesheet" type="text/css" href="/stylesheets/facebox<%= language_suffix -%>.css" media="screen" />
+      <script type="text/javascript" src="/javascripts/facebox.js" />
+    <% elsif controller.controller_name == 'home' -%>
+      <script type="text/javascript" src="/javascripts/jquery.cycle.all.2.72.js"></script>
+    <% end %>
 
     <%= raw which_script? -%>
 
@@ -27,6 +35,10 @@
               <button type="submit"></button>
             </form>
           </div>
+          <ul>
+            <li><%= link_to(t(:contact),contact_path) %></li>
+            <li><%= link_to(t(:faq),faq_path) %></li>
+          </ul>
         </div>
         <div id="nav">
           <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
@@ -50,48 +62,31 @@
     <div id="pageFooterWrapper">
       <div id="pageFooter">
         <div class="columnWrapperFooter group">
-          <div class="leftWrapperFooter"><!-- closes colOneFooter -->
-            <div class="colTwoFooter">
-              <h5><%=t(:wwqi) -%></h5>
-              <ul class="footerNav">
-                <li><%= link_to(t(:about),about_path) %></li>
-                <li><%= link_to(t(:contact),contact_path) %></li>
-                <li><%= link_to(t(:permissions),permissions_path) %></li>
-                <li><%= link_to(t(:credits), credits_path) %></li>
-                <li><%= link_to(t(:faq),faq_path) %></li>
-              </ul>
-
-            </div><!-- closes colTwoFooter -->
-            <div class="colThreeFooter">
-            </div><!-- closes colThreeFooter -->
-
-            <div class="colFourFooter">
-              <h5><%=t(:also_at_harvard) -%></h5>
-              <ul class="footerNav">
-                <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog</a></li>
-                <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis"  target="_blank">OASIS - Archival Finding Aids</a></li>
-                <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via"  target="_blank">VIA - Visual Resources</a></li>
-                <li><a href="http://www.fas.harvard.edu/~iohp/"  target="_blank">Iranian Oral History Project</a></li>
-                <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a></li>
-                <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125"  target="_blank">Ali Khan Album</a></li>
-              </ul>
-            </div><!-- closes colFourFooter -->
+          <div class="leftWrapperFooter">
+            <ul class="footerNav">
+              <li><%= link_to(t(:about),about_path) %></li>
+              <li><%= link_to(t(:credits), credits_path) %></li>
+              <li><%= link_to(t(:permissions),permissions_path) %></li>
+            </ul>
+            <p>Copyright © 2010  WWQI. All rights reserved.</p>
           </div><!-- closes leftWrapperFooter -->
           <div class="rightWrapperFooter">
-            <style>
-              .colFiveFooter .full-image-float-left { padding: 3px !important; margin: 3px !important; }
-            </style>
-            <div class="colOneFooter">
-              <a href="/contact/"><img src="/images/harvard.gif"/></a>
-              <p>&nbsp;</p>
-            </div><!-- closes colFiveFooter -->
+            <a class="noimage" href="http://www.harvard.edu" target="_blank"><img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
+            <ul class="footerNav">
+              <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog</a></li>
+              <li><a href="http://www.fas.harvard.edu/~iohp/" target="_blank">Iranian Oral History Project</a></li>
+              <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA Visual Resources</a></li>
+              <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a></li>
+              <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS Archival Finding Aids</a></li>
+              <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">Ali Khan Album</a></li>
+            </ul>
           </div><!-- closes rightWrapperFooter -->
         </div><!-- closes columnWrapperFooter group -->
 
 
       </div>
     </div>
-    
+
     <%= raw google_analytics_block -%>
 
   </body>

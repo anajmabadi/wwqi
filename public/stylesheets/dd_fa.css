@@ -1,0 +1,66 @@
+.dd {
+	/*display:inline-block !important;*/
+	direction:rtl;
+	background-color:#fff;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	float:right;
+}
+.dd .ddTitle {
+	text-indent:0;
+	cursor:default;
+	overflow:hidden;
+	padding:0px 3px 0px 0px;
+    background:#fff url(../../images/text-bg.gif) repeat-x 0 0;
+    border:0px solid #B5B8C8;
+    height: 21px;
+    line-height:21px;
+	   vertical-align:middle; 
+}
+.dd .ddTitle span.arrow {
+	 background:transparent url(../../images/dd_arrow.gif) no-repeat 0 0; float:left; display:inline-block;width:16px; height:21px; cursor:pointer;
+
+
+}
+
+.dd .ddTitle span.textTitle {text-indent:1px; overflow:hidden; line-height:21px; color:#000}
+.dd .ddTitle span.textTitle img{text-align:right; padding:0 0px 0 2px}
+.dd .ddTitle img.selected {
+	padding:0 3px 0 0;
+	vertical-align:top;
+}
+.dd .ddChild {
+	position:absolute;
+	border:1px solid #c3c3c3;
+	border-top:none;
+	display:none;
+	margin:0;
+	width:auto;
+	overflow:auto;
+	overflow-x:hidden !important;
+	background-color:#ffffff;
+}
+.dd .ddChild .opta a, .dd .ddChild .opta a:visited {padding-left:10px}
+.dd .ddChild a {
+	display:block;
+	padding:3px 3px 3px 0px;
+	text-decoration:none;
+	color:#000;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor:pointer;
+}
+.dd .ddChild a:hover {
+	background:#ca3723;
+}
+.dd .ddChild a img {
+	border:0;
+	padding:0 0px 0 2px;
+	vertical-align:middle;
+}
+.dd .ddChild a.selected {
+	background:#ca3723;
+	color:#fff
+	
+}
+.hidden {display:none;}

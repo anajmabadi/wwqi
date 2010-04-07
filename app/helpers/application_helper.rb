@@ -89,61 +89,58 @@ module ApplicationHelper
     else
       return %{
       <script language="javascript" type="application/javascript">
-      $(document).ready(function(){
+	$(document).ready(function(){
 
-        $('a[title]').qtip({
-          style: {
-            name: 'dark',
-            tip: true,
-            border: {
-              radius: 8
-            }
-          },
-          position: {
-            corner: {
-              target: 'topMiddle',
-              tooltip: 'bottomMiddle'
-            }
-          }
-        });
+		$('.slide-wrap').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+		});
 
-        $('.item').hover(function(){
-          $(this).find('a').animate({"bottom":"0px"},200);
-        }, function(){
-          $(this).find('a').animate({"bottom":"-20px"},200);
-        });
+		$('a[title]').qtip({
+						   	   style: {
+							   name: 'dark',
+							   tip: true,
+							    border: {
+										 radius: 8
+									  }
+								},
+							   position: {
+								  corner: {
+									 target: 'topMiddle',
+									 tooltip: 'bottomMiddle'
+								  }
+						   		}
+		});
 
-        $("#firstFeature").click(function(){
-          $(".dots a").removeClass("active");
-          $(this).addClass("active");
-          $("#featuredContent").animate({scrollLeft: '0px'}, 300);
-          return false;
-        });
-        $("#secondFeature").click(function(){
-          $(".dots a").removeClass("active");
-          $(this).addClass("active");
-          $("#featuredContent").animate({scrollLeft: '650px'}, 300);
-          return false;
-        });
-        $("#thirdFeature").click(function(){
-          $(".dots a").removeClass("active");
-          $(this).addClass("active");
-          $("#featuredContent").animate({scrollLeft: '1300px'}, 300);
-          return false;
-        });
-        $("#fourthFeature").click(function(){
-          $(".dots a").removeClass("active");
-          $(this).addClass("active");
-          $("#featuredContent").animate({scrollLeft: '1950px'}, 300);
-          return false;
-        });
-        $('a[rel*=facebox]').facebox({
-          loading_image : 'images/loading.gif',
-          close_image   : 'images/closelabel.gif'
-        })
 
-      });
-    </script>
+
+		$("#firstFeature").click(function(){
+			$(".dots a").removeClass("active");
+			$(this).addClass("active");
+			$("#featuredContent").animate({scrollLeft: '0px'}, 300);
+			return false;
+		});
+		$("#secondFeature").click(function(){
+			$(".dots a").removeClass("active");
+			$(this).addClass("active");
+			$("#featuredContent").animate({scrollLeft: '650px'}, 300);
+			return false;
+		});
+		$("#thirdFeature").click(function(){
+			$(".dots a").removeClass("active");
+			$(this).addClass("active");
+			$("#featuredContent").animate({scrollLeft: '1300px'}, 300);
+			return false;
+		});
+		$("#fourthFeature").click(function(){
+			$(".dots a").removeClass("active");
+			$(this).addClass("active");
+			$("#featuredContent").animate({scrollLeft: '1950px'}, 300);
+			return false;
+		});
+
+
+	});
+	</script>
       }
     end
   end
