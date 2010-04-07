@@ -1,2 +1,86 @@
-<h1>Exhibits#index</h1>
-<p>Find me in app/views/exhibits/index.html.erb</p>
+<% @page_description = t(:exhibits_description) -%>
+<% @page_title = t(:exhibits).capitalize -%>
+
+
+<div id="featured">
+  <div id="head">
+    <h2><%= t(:featured_exhibits) %></h2>
+
+    <ul class="dots">
+      <!--<li><a href="#" class="active" id="firstFeature">1</a></li>
+      <li><a href="#" id="secondFeature">2</a></li>
+      <li><a href="#" id="thirdFeature">3</a></li>
+      <li><a href="#" id="fourthFeature">4</a></li>	-->
+    </ul>
+  </div>
+  <div id="featuredContent" class="clearfix">
+    <div id="featureContainer">
+      <div class="featuredItem" style="background:url(/images/sheikh_feature.jpg) top left no-repeat">
+        <a href="#"><%= @featured_exhibit.title %> </a>
+      </div>
+      <!--<div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+          <a href="#"> Qajar Homes 2</a>
+      </div>
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+          <a href="#"> Qajar Homes 3</a>
+      </div>
+      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
+          <a href="#"> Qajar Homes 4</a>
+      </div>-->
+    </div>
+  </div>
+
+</div><!-- end featured -->
+<div id="about">
+  <div id="head">
+    <h2><%=t(:about_this_exhibit)%></h2>
+  </div>
+  <div id="aboutContent" class="clearfix">
+    <p><%= raw @featured_exhibit.caption %>  <a href="/exhibits/show/<%= @featured_exhibit.id.to_s %>">more</a></p>
+  </div>
+</div>
+<div id="browser" class="clearfix singleItemBrowser" style="margin-top:15px">
+  <div id="head">
+    <h2><%= t(:previous_exhibits) %> </h2>
+  </div>
+  <div id="browserContent" class="clearfix">
+    <div class="paginationBar clearfix">
+      <ul class="sortnav paginate">
+        <!-- commenting out pagination for now
+        <li class="active"><a href="#" class="module-link active">1</a></li>
+        <li><a href="#" class="module-link">2</a></li>
+        <li><a href="#" class="module-link">3</a></li>
+        <li>...</li>
+        <li><a href="#" class="module-link">11</a></li> -->
+      </ul> 
+
+    </div>
+
+    <% @exhibits.each do |exhibit| %>
+      <div class="listItem exhibit clearfix">
+        <div class="item photo" >
+          <img alt="Thumbnail 1" src="images/thumb1.jpg" width="86" align="left"/>
+          <img alt="Thumbnail 2" src="images/thumb2.jpg" width="86" align="left"/>
+          <img alt="Thumbnail 3" src="images/thumb3.jpg" width="86" align="left"/>
+          <img alt="Thumbnail 4" src="images/thumb4.jpg" width="86" align="left"/>
+        </div>
+        <div class="description">
+          <h3><a href="/exhibits/show/<%= exhibit.id.to_s %>"><%= exhibit.title %></a></h3>
+          <p class="meta"> Created: <%=  exhibit.created_at.strftime("%B %Y") %> </p>
+          <p><a href="/exhibits/show/<%= exhibit.id.to_s %>"><%= raw exhibit.introduction %></a></p>
+        </div>
+      </div>
+    <% end %>
+    <div class="paginationBar clearfix">
+      <ul class="sortnav paginate">
+        <!--
+        <li class="active"><a href="#" class="module-link active">1</a></li>
+        <li><a href="#" class="module-link">2</a></li>
+        <li><a href="#" class="module-link">3</a></li>
+        <li>...</li>
+        <li><a href="#" class="module-link">11</a></li>
+        -->
+      </ul>
+    </div>
+  </div>
+</div> <!-- end browser --><!-- end featured -->
