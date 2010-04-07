@@ -1,39 +1,359 @@
 <% @page_description = t(:collections_description) -%>
 <% @page_title = t(:collections).capitalize -%>
-<h1>Collections</h1>
-<h3>Category Menu</h3>
-<ul>
-<% new_list = true -%>
-<% @categories.each do |category| -%>
-  <% if category.parent_id != category.id -%>
-    <% if new_list -%>
+<div id="browser" class="clearfix"> 
+  <div id="head"> 
+    <h2><%= t(:collection_browser) %></h2>
+    <ul class="types sortnav">
+      <li><%= t(:show) %>:</li>
+      <li class="active"><a href="#" id="allItems" class="module-link active"><%= t(:all_items) %></a></li>
+      <li><a href="#"  id="myItems" class="module-link"><%= t(:my_items) %></a></li>
+    </ul>
+  </div> 
+  <div id="browserFilters" class="clearfix">
+    <div class="column">
+      <h4>medium </h4>
+      <select id="mediumFilter" name="mediumFilter">
+        <option value="all" selected="selected">all </option>
+        <option value="writings">Writings </option>
+        <option value="legal">Legal documents</option>
+        <option value="artworks">Artworks </option>
+        <option value="photos">Photographs </option>
+        <option value="objects">Everyday objects </option>
+        <option value="oralhistory">Oral histories </option>
+        <option value="more">More Categories </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>collection</h4>
+      <select id="collectionFilter" name="collectionFilter">
+        <option value="all" selected="selected">all </option>
+        <option value="1">Collection 1 </option>
+        <option value="2">Collection 2</option>
+        <option value="3">Collection 3 </option>
+        <option value="4">Collection 4 </option>
+        <option value="5">Collection 5 </option>
+        <option value="more">More Collections </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>name</h4>
+      <select id="nameFilter" name="nameFilter">
+        <option value="all" selected="selected">all </option>
+        <option value="1">Name 1 </option>
+        <option value="2">Name  2</option>
+        <option value="3">Name  3 </option>
+        <option value="4">Name  4 </option>
+        <option value="5">Name  5 </option>
+        <option value="more">More Names </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>subject</h4>
+      <select id="subjectFilter" name="subjectFilter">
+        <option value="all" selected="selected">all </option>
+        <option value="1">Subbject 1 </option>
+        <option value="2">Subbject  2</option>
+        <option value="3">Subbject  3 </option>
+        <option value="4">Subbject  4 </option>
+        <option value="5">Subbject  5 </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>period</h4>
+      <select id="periodFilter" name="periodFilter">
+        <option value="all" selected="selected">all </option>
+        <option value="1">Period 1 </option>
+        <option value="2">Period  2</option>
+        <option value="3">Period  3 </option>
+        <option value="4">Period  4 </option>
+        <option value="5">Period  5 </option>
+      </select>
+    </div>
+  </div> 
+  <div id="browserFiltersDropdown" class="clearfix">
+    <div> <h3>Letters and Writings</h3>
       <ul>
-      <% new_list = false -%>
-    <% end -%>
-  <% else -%>
-    <% unless new_list -%>
-        </ul>
-    <% end %>
-    <% new_list = true -%>
-  <% end %>
-  <li><%= category.name %></li>
-<% end -%>
-</ul>
-<h3>People Menu</h3>
-<ul>
-<% @people.each do |person| -%>
-  <li><%= person.tag_line %></li>
-<% end -%>
-</ul>
-<h3>Collections Menu</h3>
-<ul>
-<% @collections.each do |collection| -%>
-  <li><%= collection.tag_line %></li>
-<% end -%>
-</ul>
-<h3>Periods Menu</h3>
-<ul>
-<% @periods.each do |period| -%>
-  <li><%= period.tag_line %></li>
-<% end -%>
-</ul>
+        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" checked="checked"/>
+          <label for="2">letters </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2" checked="checked"/>
+          <label for="2">prose </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3" checked="checked"/>
+          <label for="3">poetry </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4" checked="checked"/>
+          <label for="4">travel writings</label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">essays </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">periodicals </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="6" name="6" checked="checked"/>
+          <label for="6">diaries  </label>
+        </li>
+      </ul>
+    </div>
+    <div> <h3>Legal Documents</h3>
+      <ul>
+        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+          <label for="2">wedding contracts </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
+          <label for="2">Cdowry documents</label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
+          <label for="3">settlements </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4"/>
+          <label for="4">endowments </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">powers of attorney </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="6" name="6" checked="checked"/>
+          <label for="5">wills </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="7" name="7" checked="checked"/>
+          <label for="5">sales </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="8" name="8" checked="checked"/>
+          <label for="5">other financial contracts </label>
+        </li>
+      </ul>
+    </div>
+    <div> <h3>Artworks</h3>
+      <ul>
+        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+          <label for="2">calligraphy </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
+          <label for="2">painting </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
+          <label for="3">embroidery </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4"/>
+          <label for="4">weaving </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">other handicrafts </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">music </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
+          <label for="5">film </label>
+        </li>
+
+      </ul>
+    </div>
+    <div> <h3>Other</h3>
+      <ul>
+        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+          <label for="2">Photographs</label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
+          <label for="2">Everyday objects </label>
+        </li>
+        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
+          <label for="3"> Oral histories </label>
+        </li>
+
+      </ul>
+    </div>
+    <div>
+      <span style="display:block; position:absolute; bottom:10px; right:15px;">
+        <a class="filterButton" href="#">Filter</a> 
+        <a class="cancelButton" href="#">Cancel</a>
+      </span>
+    </div>
+  </div>
+  <div id="browserMessage"><p>showing 10 of 410 items</p></div>
+  <div id="browserContent" class="clearfix">                 	
+    <div class="paginationBar clearfix"> 
+      <ul class="sortnav paginate"> 
+        <li class="active"><a href="#" class="module-link active">1</a></li> 
+        <li><a href="#" class="module-link">2</a></li>	
+        <li><a href="#" class="module-link">3</a></li> 
+        <li>...</li>	
+        <li><a href="#" class="module-link">11</a></li>	
+      </ul> 
+
+      <ul class="sortnav" id="sort" style="float:left; width:200px;"> 
+        <li class="label">Sort by:</li> 
+        <li class="active"><a href="#" class="module-link AZsort">A-Z<span class="up"></span></a></li> 
+        <li><a href="#" class="module-link dateSort">Date<span></span></a></li>		
+      </ul> 
+
+      <ul class="sortnav" id="viewMode" style="float:left">   
+        <li class="label">View mode:</li>    
+        <li class="active"><a href="collection.html" class="module-link">List View</a></li>
+        <li><a href="collection_grid.html" class="module-link active">Grid View</a></li> 	
+        <li><a href="collection_slideshow.html" class="module-link">SlideShow</a></li>	
+      </ul> 
+
+    </div> 
+
+    <div id="items" class="list clearfix"> 
+      <div class="listItem clearfix"> 
+        <div class="item artwork"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb1.jpg" /></a>
+          <a class="type" href="#" title="show only artworks">show only artworks</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view" href="singleItem.html">view details</a> 
+          <h3><a href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item photo"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb2.jpg" /></a>
+          <a class="type" href="#" title="show only photos">show only photos</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view" href="singleItem.html">view details</a> 
+          <h3><a href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item legal"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
+          <a class="type" href="#" title="show only legal documents">show only legal documents</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item oralhistory"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
+          <a class="type" href="#" title="show only oral histories">show only oral histories</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a   href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div>
+      <div class="listItem clearfix"> 
+        <div class="item object"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb1.jpg" /></a>
+          <a class="type" href="#" title="show only everyday objects">show only everyday objects</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a   href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div>
+      <div class="listItem clearfix"> 
+        <div class="item writing"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb2.jpg" /></a>
+          <a class="type" href="#" title="show only writings">show only writings</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a   href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item photo"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
+          <a class="type" href="#" title="show only paintings">show only paintings</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item photo"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
+          <a class="type" href="#" title="show only paintings">show only paintings</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a   href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div>
+      <div class="listItem clearfix"> 
+        <div class="item photo"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
+          <a class="type" href="#" title="show only paintings">show only paintings</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div> 
+      <div class="listItem clearfix"> 
+        <div class="item photo"> 
+          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
+          <a class="type" href="#" title="show only paintings">show only paintings</a> 
+        </div> 
+        <div class="description"> 
+          <a class="view"   href="singleItem.html">view details</a> 
+          <h3><a   href="singleItem.html">Item Title</a></h3> 
+          <h4>Item Collection</h4> 
+          <p class="meta">Date created | Time Period | Subject</p> 
+          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
+        </div> 
+      </div>
+    </div><!-- end of items --> 
+
+
+    <div class="paginationBar clearfix"> 
+      <ul class="sortnav paginate"> 
+        <li class="active"><a href="#" class="module-link active">1</a></li> 
+        <li><a href="#" class="module-link">2</a></li>	
+        <li><a href="#" class="module-link">3</a></li> 
+        <li>...</li>	
+        <li><a href="#" class="module-link">11</a></li>	
+      </ul> 
+
+      <ul class="sortnav" id="sort" style="float:left; width:200px;"> 
+        <li class="label">Sort by:</li> 
+        <li class="active"><a href="#" class="module-link AZsort">A-Z<span class="up"></span></a></li> 
+        <li><a href="#" class="module-link dateSort">Date<span></span></a></li>		
+      </ul> 
+
+      <ul class="sortnav" id="viewMode" style="float:left">   
+        <li class="label">View mode:</li>    
+        <li class="active"><a href="collection.html" class="module-link">List View</a></li>
+        <li><a href="collection_grid.html" class="module-link">Grid View</a></li> 	
+        <li><a href="collection_slideshow.html" class="module-link">SlideShow</a></li>	
+      </ul> 
+
+    </div> 
+  </div> 
+</div> <!-- end browser --><!-- end featured -->
+
