@@ -216,17 +216,17 @@
               <li><%= link_to(t(:credits), credits_path) %></li>
               <li><%= link_to(t(:permissions),permissions_path) %></li>
             </ul>
-            <p>Copyright © 2010  WWQI. All rights reserved.</p>
+            <p>Copyright © 2010  WWQI. <%= t(:all_rights_reserved)%></p>
           </div><!-- closes leftWrapperFooter -->
           <div class="rightWrapperFooter">
             <a class="noimage" href="http://www.harvard.edu" target="_blank"><img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
             <ul class="footerNav">
-              <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog</a></li>
-              <li><a href="http://www.fas.harvard.edu/~iohp/" target="_blank">Iranian Oral History Project</a></li>
-              <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA Visual Resources</a></li>
-              <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a></li>
-              <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS Archival Finding Aids</a></li>
-              <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">Ali Khan Album</a></li>
+              <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS <%= t(:catalog) %>  </a></li>
+              <li><a href="http://www.fas.harvard.edu/~iohp/" target="_blank"><%= t(:iranian_oral_history_project) %></a></li>
+              <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA <%= t(:visual_resources) %></a></li>
+              <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank"><%= t(:islamic_heritage_project) %></a></li>
+              <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS <%= t(:archival_finding_aids) %></a></li>
+              <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank"><%= t(:ali_khan_album) %></a></li>
             </ul>
           </div><!-- closes rightWrapperFooter -->
         </div><!-- closes columnWrapperFooter group -->
