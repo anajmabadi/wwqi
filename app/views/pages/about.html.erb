@@ -1,18 +1,12 @@
 <% @page_description = t(:about_description) -%>
 <% @page_title = @page.title -%>
-<h1>
-  <%= @page.title %>
-</h1>
-<%  unless @page.author == 'Anonymous' -%>
-  <p>
-    <%= @page.author %>
-  </p>
-<% end %>
-<%  if @page.caption -%>
-  <em>
-    <%= @page.caption %>
-  </em>
-<% end %>
-<%= raw @page.body %>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= @page.title %></h1>
+  <% unless @page.caption.blank? %>
+  <em><%= raw @page.caption %></em>
+  <% end %>
+  <%= raw @page.body %>
+</div> <!-- end browser --><!-- end featured -->
 
 
