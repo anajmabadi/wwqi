@@ -14,10 +14,8 @@
       <h4><%= t(:medium) %>  </h4>
       <select id="mediumFilter" name="mediumFilter">
         <option value="all" selected="selected"><%= t(:all) %> </option>
-        <% @categories.each do |category| -%>
-          <% if category.parent_id == category.id %>
-            <option value="<%= category.id %> "><%= truncate(category.name, :length => 20) %></option>
-          <% end %>
+        <% @major_categories.each do |category| -%>
+          <option value="<%= category.id %> "><%= truncate(category.name, :length => 20) %></option>
         <% end -%>
         <option value="more"><%= t(:more_categories) %></option>
       </select>
@@ -67,99 +65,23 @@
     </div>
   </div> 
   <div id="browserFiltersDropdown" class="clearfix">
-    <div> <h3>Letters and Writings</h3>
-      <ul>
-        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" checked="checked"/>
-          <label for="2">letters </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2" checked="checked"/>
-          <label for="2">prose </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3" checked="checked"/>
-          <label for="3">poetry </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4" checked="checked"/>
-          <label for="4">travel writings</label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">essays </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">periodicals </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="6" name="6" checked="checked"/>
-          <label for="6">diaries  </label>
-        </li>
-      </ul>
-    </div>
-    <div> <h3>Legal Documents</h3>
-      <ul>
-        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
-          <label for="2">wedding contracts </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
-          <label for="2">Cdowry documents</label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
-          <label for="3">settlements </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4"/>
-          <label for="4">endowments </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">powers of attorney </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="6" name="6" checked="checked"/>
-          <label for="5">wills </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="7" name="7" checked="checked"/>
-          <label for="5">sales </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="8" name="8" checked="checked"/>
-          <label for="5">other financial contracts </label>
-        </li>
-      </ul>
-    </div>
-    <div> <h3>Artworks</h3>
-      <ul>
-        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
-          <label for="2">calligraphy </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
-          <label for="2">painting </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
-          <label for="3">embroidery </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="4" name="4"/>
-          <label for="4">weaving </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">other handicrafts </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">music </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="5" name="5" checked="checked"/>
-          <label for="5">film </label>
-        </li>
-
-      </ul>
-    </div>
-    <div> <h3>Other</h3>
-      <ul>
-        <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
-          <label for="2">Photographs</label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="2" name="2"/>
-          <label for="2">Everyday objects </label>
-        </li>
-        <li><input type="checkbox" value="on" class="checkbox" id="3" name="3"/>
-          <label for="3"> Oral histories </label>
-        </li>
-
-      </ul>
-    </div>
+    <% @major_categories.each do |major_category| %>
+      <div> <h3><%= major_category.name %> </h3>
+        <ul>
+          <% if !major_category.subcategories.empty? %>
+            <% major_category.subcategories.each do |subcategory| %>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id"><%= subcategory.name %></label>
+              </li>
+            <% end %>
+          <% else %>
+            <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+              <label for="major_category.id"><%= t(:all) %></label>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
     <div>
       <span style="display:block; position:absolute; bottom:10px; right:15px;">
         <a class="filterButton" href="#">Filter</a> 
