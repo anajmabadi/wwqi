@@ -11,4 +11,5 @@ class Person < ActiveRecord::Base
     value += ' (' + vitals + ')' unless vitals.blank?
     return value
   end
+  
 end

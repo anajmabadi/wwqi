@@ -11,62 +11,58 @@
   </div> 
   <div id="browserFilters" class="clearfix">
     <div class="column">
-      <h4>medium </h4>
+      <h4><%= t(:medium) %>  </h4>
       <select id="mediumFilter" name="mediumFilter">
-        <option value="all" selected="selected">all </option>
-        <option value="writings">Writings </option>
-        <option value="legal">Legal documents</option>
-        <option value="artworks">Artworks </option>
-        <option value="photos">Photographs </option>
-        <option value="objects">Everyday objects </option>
-        <option value="oralhistory">Oral histories </option>
-        <option value="more">More Categories </option>
+        <option value="all" selected="selected"><%= t(:all) %> </option>
+        <% @categories.each do |category| -%>
+          <% if category.parent_id == category.id %>
+            <option value="<%= category.id %> "><%= truncate(category.name, :length => 20) %></option>
+          <% end %>
+        <% end -%>
+        <option value="more"><%= t(:more_categories) %></option>
       </select>
     </div>
     <div class="column">
-      <h4>collection</h4>
+      <h4><%= t(:collection) %></h4>
       <select id="collectionFilter" name="collectionFilter">
-        <option value="all" selected="selected">all </option>
-        <option value="1">Collection 1 </option>
-        <option value="2">Collection 2</option>
-        <option value="3">Collection 3 </option>
-        <option value="4">Collection 4 </option>
-        <option value="5">Collection 5 </option>
-        <option value="more">More Collections </option>
+        <option value="all" selected="selected"><%= t(:all) %></option>
+        <% @collections.each do |collection| -%>
+          <option value="<%= collection.id %> "><%= truncate(collection.name, :length => 20) %></option>
+        <% end -%>
+        <option value="more"><%= t(:more_collections) %></option>
       </select>
     </div>
     <div class="column">
-      <h4>name</h4>
+      <h4><%= t(:name) %></h4>
       <select id="nameFilter" name="nameFilter">
-        <option value="all" selected="selected">all </option>
-        <option value="1">Name 1 </option>
-        <option value="2">Name  2</option>
-        <option value="3">Name  3 </option>
-        <option value="4">Name  4 </option>
-        <option value="5">Name  5 </option>
-        <option value="more">More Names </option>
+        <option value="all" selected="selected"><%= t(:all) %> </option>
+        <% @people.each do |person| -%>
+          <% if person.major %>
+            <option value="<%= person.id %> "><%= truncate(person.name, :length => 20) %></option>
+          <% end -%>
+        <% end -%>
+        <option value="more"><%= t(:more_names) %></option>
       </select>
     </div>
     <div class="column">
-      <h4>subject</h4>
+      <h4><%= t(:subject) %></h4>
       <select id="subjectFilter" name="subjectFilter">
-        <option value="all" selected="selected">all </option>
+        <option value="all" selected="selected"><%= t(:all) %> </option>
         <option value="1">Subbject 1 </option>
         <option value="2">Subbject  2</option>
         <option value="3">Subbject  3 </option>
         <option value="4">Subbject  4 </option>
         <option value="5">Subbject  5 </option>
+        <option value="more"><%= t(:more_subjects) %> </option>
       </select>
     </div>
     <div class="column">
-      <h4>period</h4>
+      <h4><%= t(:period) %></h4>
       <select id="periodFilter" name="periodFilter">
-        <option value="all" selected="selected">all </option>
-        <option value="1">Period 1 </option>
-        <option value="2">Period  2</option>
-        <option value="3">Period  3 </option>
-        <option value="4">Period  4 </option>
-        <option value="5">Period  5 </option>
+        <option value="all" selected="selected"><%= t(:all) %> </option>
+        <% @periods.each do |period| -%>
+          <option value="<%= period.id %> "><%= truncate(period.title, :length => 20) %></option>
+        <% end -%>
       </select>
     </div>
   </div> 
@@ -182,17 +178,17 @@
         <li><a href="#" class="module-link">11</a></li>	
       </ul> 
 
-      <ul class="sortnav" id="sort" style="float:left; width:200px;"> 
-        <li class="label">Sort by:</li> 
-        <li class="active"><a href="#" class="module-link AZsort">A-Z<span class="up"></span></a></li> 
-        <li><a href="#" class="module-link dateSort">Date<span></span></a></li>		
-      </ul> 
+      <ul class="sortnav" id="sort" style="float:left; width:200px;">
+        <li class="label"><%= t(:sort_by) %> :</li>
+        <li class="active"><a href="#" class="module-link AZsort"><%= t(:az_sort) %><span class="up"></span></a></li>
+        <li><a href="#" class="module-link dateSort"><%= t(:date) %><span></span></a></li>
+      </ul>
 
-      <ul class="sortnav" id="viewMode" style="float:left">   
-        <li class="label">View mode:</li>    
-        <li class="active"><a href="collection.html" class="module-link">List View</a></li>
-        <li><a href="collection_grid.html" class="module-link active">Grid View</a></li> 	
-        <li><a href="collection_slideshow.html" class="module-link">SlideShow</a></li>	
+      <ul class="sortnav" id="viewMode" style="float:left">
+        <li class="label"><%= t(:view_mode) %> </li>
+        <li class="active"><a href="collection.html" class="module-link"><%= t(:list_view) %></a></li>
+        <li><a href="collection_grid.html" class="module-link"><%= t(:grid_view) %></a></li>
+        <li><a href="collection_slideshow.html" class="module-link"><%= t(:slideshow) %></a></li>
       </ul> 
 
     </div> 
@@ -341,16 +337,16 @@
       </ul> 
 
       <ul class="sortnav" id="sort" style="float:left; width:200px;"> 
-        <li class="label">Sort by:</li> 
-        <li class="active"><a href="#" class="module-link AZsort">A-Z<span class="up"></span></a></li> 
-        <li><a href="#" class="module-link dateSort">Date<span></span></a></li>		
+        <li class="label"><%= t(:sort_by) %> :</li>
+        <li class="active"><a href="#" class="module-link AZsort"><%= t(:az_sort) %><span class="up"></span></a></li>
+        <li><a href="#" class="module-link dateSort"><%= t(:date) %><span></span></a></li>
       </ul> 
 
       <ul class="sortnav" id="viewMode" style="float:left">   
-        <li class="label">View mode:</li>    
-        <li class="active"><a href="collection.html" class="module-link">List View</a></li>
-        <li><a href="collection_grid.html" class="module-link">Grid View</a></li> 	
-        <li><a href="collection_slideshow.html" class="module-link">SlideShow</a></li>	
+        <li class="label"><%= t(:view_mode) %> </li>
+        <li class="active"><a href="collection.html" class="module-link"><%= t(:list_view) %></a></li>
+        <li><a href="collection_grid.html" class="module-link"><%= t(:grid_view) %></a></li>
+        <li><a href="collection_slideshow.html" class="module-link"><%= t(:slideshow) %></a></li>
       </ul> 
 
     </div> 
