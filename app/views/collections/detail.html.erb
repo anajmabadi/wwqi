@@ -4,10 +4,10 @@
   <div id="head">
     <h2><%= @item.title %></h2>
     <ul class="itemTools sortnav">
-      <li><a href="#" class="module-link share">Share</a></li>
-      <li><a href="collections.html" class="module-link">Back to Collections</a></li>
-      <li><a href="singleItem.html" class="module-link">&laquo;Previous Item</a></li>
-      <li><a href="singleItem.html" class="module-link"> Next Item &raquo;</a></li>
+      <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
+      <li><a href="/collections" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
+      <li><a href="/collections/detail/<%= @item.id %>" class="module-link">&laquo;<%= t(:previous_item).upcase %></a></li>
+      <li><a href="/collections/detail/<%= @item.id %>" class="module-link"> <%= t(:next_item).upcase %>&raquo;</a></li>
     </ul>
   </div>
   <div id="browserContent" class="clearfix">
@@ -38,10 +38,10 @@
     </div>
     <div id="itemDetails">
       <table  class="styled">
-        <% unless @item.collection.blank? %>
+        <% unless @item.collection_id.blank? %>
         <tr>
           <th><%= t(:collection).capitalize %> </th>
-          <td>Agha Khan Collection</td>
+          <td><%= @item.collection.name %> </td>
         </tr>
         <% end %>
         <% unless @item.show_date.blank? %>
@@ -50,23 +50,26 @@
           <td><%= @item.show_date %></td>
         </tr>
         <% end %>
-        <% unless @item.place.blank? %>
+        <% unless @item.place_id.blank? %>
         <tr>
           <th><%= t(:location).capitalize %></th>
           <td><%= @item.place.name %> </td>
         </tr>
         <% end %>
+        <% unless @item.dimensions.blank? %>
         <tr class="odd">
-          <th>Dimensions</th>
-          <td>10" x 11"</td>
+          <th><%= t(:dimensions).capitalize %></th>
+          <td><%= @item.dimensions %></td>
         </tr>
+        <% end %>
+        <% unless @item.category_id.blank? %>
         <tr>
-          <th>Type</th>
-          <td>Painting</td>
+          <th><%= t(:type).capitalize %></th>
+          <td><%= @item.category.name %></td>
         </tr>
+        <% end %>
       </table>
-      <h3>Description</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sit amet nunc at tortor congue malesuada. Duis ornare blandit risus, id aliquet sem feugiat eget. Phasellus convallis euismod massa non adipiscing. Vestibulum commodo leo ut libero sagittis imperdiet. Phasellus quis nisi lacus. Integer dolor augue, condimentum eu sollicitudin non, pharetra interdum magna.</p>
+      <p><%= raw @item.description unless @item.description.blank? %></p>
 
 
 

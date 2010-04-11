@@ -11,12 +11,15 @@ class CreatePlaces < ActiveRecord::Migration
       t.timestamps
     end
     add_index :places, :publish
-    add_index :places, :name
     Place.create_translation_table! :name => :string
+    add_index :place_translations, :name
   end
 
   def self.down
+    remove_index :places, :publish
     drop_table :places
+    remove_index :place_translations, :name
     Place.drop_translation_table!
+
   end
 end

@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100410193136) do
+ActiveRecord::Schema.define(:version => 20100411222352) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -310,6 +310,30 @@ ActiveRecord::Schema.define(:version => 20100410193136) do
   end
 
   add_index "person_translations", ["person_id"], :name => "index_person_translations_on_person_id"
+
+  create_table "place_translations", :force => true do |t|
+    t.integer  "place_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "place_translations", ["name"], :name => "index_place_translations_on_name"
+  add_index "place_translations", ["place_id"], :name => "index_place_translations_on_place_id"
+
+  create_table "places", :force => true do |t|
+    t.string   "latitude"
+    t.string   "longitude"
+    t.integer  "x"
+    t.integer  "y"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "places", ["publish"], :name => "index_places_on_publish"
 
   create_table "relationships", :force => true do |t|
     t.string   "name"

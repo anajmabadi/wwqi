@@ -1,7 +1,7 @@
 class Place < ActiveRecord::Base
   has_many :items
 
-  translates :title
+  translates :name
 
   default_scope :include => :translations
 end
