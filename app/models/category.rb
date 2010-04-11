@@ -1,4 +1,6 @@
 class Category < ActiveRecord::Base
+  has_many :items
+
   translates :name, :description
   default_scope :include => :translations
 

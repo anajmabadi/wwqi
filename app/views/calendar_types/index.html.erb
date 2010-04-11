@@ -1,0 +1,27 @@
+<h1>Listing calendar_types</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Publish</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @calendar_types.each do |calendar_type| %>
+  <tr>
+    <td><%= calendar_type.name %></td>
+    <td><%= calendar_type.publish %></td>
+    <td><%= calendar_type.notes %></td>
+    <td><%= link_to 'Show', calendar_type %></td>
+    <td><%= link_to 'Edit', edit_calendar_type_path(calendar_type) %></td>
+    <td><%= link_to 'Destroy', calendar_type, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Calendar type', new_calendar_type_path %>

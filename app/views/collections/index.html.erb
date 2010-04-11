@@ -89,7 +89,7 @@
       </span>
     </div>
   </div>
-  <div id="browserMessage"><p>showing 10 of 410 items</p></div>
+  <div id="browserMessage"><p><%= t(:showing) + ' ' + @items.size.to_s + ' ' + t(:items_of) + ' ' + @items.size.to_s %></p></div>
   <div id="browserContent" class="clearfix">                 	
     <div class="paginationBar clearfix"> 
       <ul class="sortnav paginate"> 
@@ -116,136 +116,21 @@
     </div> 
 
     <div id="items" class="list clearfix"> 
-      <div class="listItem clearfix"> 
-        <div class="item artwork"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb1.jpg" /></a>
-          <a class="type" href="#" title="show only artworks">show only artworks</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view" href="singleItem.html">view details</a> 
-          <h3><a href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item photo"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb2.jpg" /></a>
-          <a class="type" href="#" title="show only photos">show only photos</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view" href="singleItem.html">view details</a> 
-          <h3><a href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item legal"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
-          <a class="type" href="#" title="show only legal documents">show only legal documents</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item oralhistory"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
-          <a class="type" href="#" title="show only oral histories">show only oral histories</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a   href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div>
-      <div class="listItem clearfix"> 
-        <div class="item object"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb1.jpg" /></a>
-          <a class="type" href="#" title="show only everyday objects">show only everyday objects</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a   href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div>
-      <div class="listItem clearfix"> 
-        <div class="item writing"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb2.jpg" /></a>
-          <a class="type" href="#" title="show only writings">show only writings</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a   href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item photo"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
-          <a class="type" href="#" title="show only paintings">show only paintings</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item photo"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
-          <a class="type" href="#" title="show only paintings">show only paintings</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a   href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div>
-      <div class="listItem clearfix"> 
-        <div class="item photo"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb3.jpg" /></a>
-          <a class="type" href="#" title="show only paintings">show only paintings</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div> 
-      <div class="listItem clearfix"> 
-        <div class="item photo"> 
-          <a href="singleItem.html"><img width="100" src="images/thumb4.jpg" /></a>
-          <a class="type" href="#" title="show only paintings">show only paintings</a> 
-        </div> 
-        <div class="description"> 
-          <a class="view"   href="singleItem.html">view details</a> 
-          <h3><a   href="singleItem.html">Item Title</a></h3> 
-          <h4>Item Collection</h4> 
-          <p class="meta">Date created | Time Period | Subject</p> 
-          <p> <a   href="singleItem.html">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</a></p> 
-        </div> 
-      </div>
+      <div class="listItem clearfix">
+        <% @items.each do |item| %>
+          <div class="item artwork">
+            <a href="singleItem.html"><img width="100" src="images/thumb1.jpg" /></a>
+            <a class="type" href="#" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
+          </div>
+          <div class="description">
+            <a class="view" href="singleItem.html"><%=  t(:view_details) %></a>
+            <h3><a href="singleItem.html"><%= item.title %></a></h3>
+            <h4><%= item.collection.name unless item.collection.nil? %></h4>
+            <p class="meta"><%= item.show_date + ' | ' unless item.show_date.blank? %> <%= item.period.title  unless item.period.nil? %></p>
+            <p> <a href="singleItem.html"><%= item.description unless item.description.blank? -%> </a></p>
+          </div>
+        </div>
+      <% end %>
     </div><!-- end of items --> 
 
 

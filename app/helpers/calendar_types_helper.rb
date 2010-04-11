@@ -1,0 +1,2 @@
+module CalendarTypesHelper
+end
