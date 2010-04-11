@@ -1,4 +1,8 @@
 Qajar::Application.routes.draw do |map|
+  resources :places
+
+  resources :calendar_types
+
   resources :relationships
 
   resources :periods
@@ -25,6 +29,8 @@ Qajar::Application.routes.draw do |map|
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
+
+  match 'collections/detail/:id' => 'collections#detail', :as => :detail
 
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
