@@ -3,6 +3,7 @@ class Item < ActiveRecord::Base
   belongs_to :collection
   belongs_to :format
   belongs_to :medium
+  belongs_to :place
   belongs_to :period
   belongs_to :category
   belongs_to :calendar_type

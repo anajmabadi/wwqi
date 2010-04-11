@@ -1,6 +1,6 @@
 class CollectionsController < ApplicationController
 
-  before_filter :admin_required, :except => [:index, :show]
+  before_filter :admin_required, :except => [:index, :detail]
 
 
   def index
@@ -10,6 +10,16 @@ class CollectionsController < ApplicationController
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
     @items = Item.find(:all, :conditions => 'publish=1', :order => 'item_translations.title')
+  end
+
+  def detail
+
+    @item = Item.find(params[:id])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.xml  { render :xml => @collections }
+    end
   end
 
   # GET /collections
