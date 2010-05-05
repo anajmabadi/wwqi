@@ -5,7 +5,6 @@ module ApplicationHelper
   end
 
   def language_url
-    # TODO: Make this context sensitive -- hard coded for development
     if I18n.locale == :fa
       return 'http://www.' + request.domain + request.path
     else

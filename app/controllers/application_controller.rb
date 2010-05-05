@@ -24,6 +24,7 @@ class ApplicationController < ActionController::Base
 
   protected
 
+  #basis security
   def admin_required
     authenticate_or_request_with_http_basic do |user_name, password|
       user_name == 'admin' && password == 'Qajar'
