@@ -7,7 +7,8 @@ class Item < ActiveRecord::Base
   belongs_to :period
   belongs_to :category
   belongs_to :calendar_type
-  translates :title, :caption, :description, :display_date
+  has_many :images
+  translates :title, :credit, :description, :display_date, :creator_label
   
 
   validates_uniqueness_of :olivia_id, :accession_num
@@ -20,5 +21,9 @@ class Item < ActiveRecord::Base
     else
       return sort_date.to_s
     end
+  end
+
+  def thumbnail_url
+    return LIBRARY_URL + 'thumbs/it_' + id.to_s + ".jpg"
   end
 end

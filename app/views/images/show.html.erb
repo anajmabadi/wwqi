@@ -1,0 +1,40 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @image.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @image.description %>
+</p>
+
+<p>
+  <b>Dimensions:</b>
+  <%= @image.dimensions %>
+</p>
+
+<p>
+  <b>Verso:</b>
+  <%= @image.verso %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @image.position %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @image.notes %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @image.publish %>
+</p>
+
+
+<%= link_to 'Edit', edit_image_path(@image) %> |
+<%= link_to 'Back', images_path %>

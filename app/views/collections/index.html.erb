@@ -116,17 +116,18 @@
     </div> 
 
     <div id="items" class="list clearfix"> 
-      <div class="listItem clearfix">
-        <% @items.each do |item| %>
+
+      <% @items.each do |item| %>
+        <div class="listItem clearfix">
           <div class="item artwork">
-            <a href="/collections/detail/<%= item.id %>"><img width="100" src="images/thumb1.jpg" /></a>
+            <a href="/collections/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
             <a class="type" href="#" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
           </div>
           <div class="description">
             <a class="view" href="/collections/detail/<%= item.id %>"><%=  t(:view_details) %></a>
-            <h3><a href="/collections/detail/<%= item.id %>"><%= item.title %></a></h3>
+            <h3><a href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length => 50) %></a></h3>
             <h4><%= item.collection.name unless item.collection.nil? %></h4>
-            <p class="meta"><%= item.show_date + ' | ' unless item.show_date.blank? %> <%= item.period.title  unless item.period.nil? %></p>
+            <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.nil? %> <%= item.period.title  unless item.period.nil? %></p>
             <p> <a href="/collections/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
           </div>
         </div>

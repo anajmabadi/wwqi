@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :images
+
   resources :places
 
   resources :calendar_types

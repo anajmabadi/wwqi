@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100411222352) do
+ActiveRecord::Schema.define(:version => 20100505150158) do
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -143,6 +143,72 @@ ActiveRecord::Schema.define(:version => 20100411222352) do
     t.datetime "updated_at"
   end
 
+  create_table "image_translations", :force => true do |t|
+    t.integer  "image_id"
+    t.string   "locale"
+    t.text     "description"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "image_translations", ["image_id"], :name => "index_image_translations_on_image_id"
+
+  create_table "images", :force => true do |t|
+    t.integer  "item_id"
+    t.string   "dimensions"
+    t.boolean  "verso"
+    t.integer  "position"
+    t.text     "notes"
+    t.boolean  "publish"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "images", ["item_id"], :name => "index_images_on_item_id"
+  add_index "images", ["position"], :name => "index_images_on_position"
+  add_index "images", ["publish"], :name => "index_images_on_publish"
+
+  create_table "import", :force => true do |t|
+    t.integer "item_id",                                  :null => false
+    t.string  "accession_num",                            :null => false
+    t.string  "file_name",                                :null => false
+    t.integer "position",              :default => 1,     :null => false
+    t.string  "title",                                    :null => false
+    t.string  "title_fa",                                 :null => false
+    t.integer "category_id",                              :null => false
+    t.string  "material_type",                            :null => false
+    t.string  "material_type_fa",                         :null => false
+    t.string  "dimensions",                               :null => false
+    t.boolean "verso",                 :default => false, :null => false
+    t.boolean "bound",                 :default => false, :null => false
+    t.integer "pages",                 :default => 1,     :null => false
+    t.boolean "circa",                 :default => false, :null => false
+    t.integer "calendar_type_id",      :default => 2,     :null => false
+    t.string  "source_date",                              :null => false
+    t.string  "islamic_date",                             :null => false
+    t.string  "persian_date",                             :null => false
+    t.string  "gregorian_date",                           :null => false
+    t.integer "creator_id",                               :null => false
+    t.string  "creator_label",                            :null => false
+    t.string  "creator_label_fa",                         :null => false
+    t.integer "place_id",                                 :null => false
+    t.string  "place_created",                            :null => false
+    t.string  "place_created_fa",                         :null => false
+    t.string  "description",                              :null => false
+    t.binary  "description_fa",                           :null => false
+    t.string  "credit",                                   :null => false
+    t.string  "credit_fa",                                :null => false
+    t.string  "subject_names",                            :null => false
+    t.string  "subject_names_fa",                         :null => false
+    t.string  "subject_keywords",                         :null => false
+    t.string  "subject_keywords_fa",                      :null => false
+    t.text    "notes",                                    :null => false
+    t.text    "notes_fa",                                 :null => false
+    t.integer "corrections_additions",                    :null => false
+    t.integer "collection_id",         :default => 12,    :null => false
+  end
+
   create_table "item_translations", :force => true do |t|
     t.integer  "item_id"
     t.string   "locale"
@@ -150,6 +216,7 @@ ActiveRecord::Schema.define(:version => 20100411222352) do
     t.text     "description"
     t.string   "title"
     t.string   "caption"
+    t.string   "creator_label"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -167,9 +234,11 @@ ActiveRecord::Schema.define(:version => 20100411222352) do
     t.integer  "pages"
     t.integer  "format_id"
     t.date     "sort_date"
+    t.boolean  "circa",            :default => false, :null => false
     t.string   "dimensions"
     t.text     "notes"
     t.integer  "place_id"
+    t.boolean  "bound",            :default => false, :null => false
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -358,5 +427,19 @@ ActiveRecord::Schema.define(:version => 20100411222352) do
   add_index "translations", ["key"], :name => "index_translations_on_key"
   add_index "translations", ["locale", "key"], :name => "index_translations_on_locale_key", :unique => true
   add_index "translations", ["locale"], :name => "index_translations_on_locale"
+
+  create_table "util_import_items", :id => false, :force => true do |t|
+    t.integer "id",               :default => 0,     :null => false
+    t.string  "accession_num",                       :null => false
+    t.string  "urn",                                 :null => false
+    t.integer "pages"
+    t.integer "category_id",                         :null => false
+    t.string  "dimensions",                          :null => false
+    t.integer "calendar_type_id", :default => 2,     :null => false
+    t.string  "source_date",                         :null => false
+    t.boolean "circa",            :default => false, :null => false
+    t.boolean "bound",            :default => false, :null => false
+    t.integer "collection_id",    :default => 12,    :null => false
+  end
 
 end

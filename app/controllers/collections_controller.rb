@@ -2,14 +2,16 @@ class CollectionsController < ApplicationController
 
   before_filter :admin_required, :except => [:index, :detail]
 
-
+  # application constants
+  LIBRARY_URL = "http://library.mesolore.net/"
+  
   def index
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
     @major_categories = Category.find(:all, :conditions => 'publish=1 AND parent_id=id', :order => 'parent_id, position')
     @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
-    @items = Item.find(:all, :conditions => 'publish=1', :order => 'item_translations.title')
+    @items = Item.find(:all, :conditions => 'publish=1', :order => 'items.id')
   end
 
   def detail
