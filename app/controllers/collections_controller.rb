@@ -3,7 +3,7 @@ class CollectionsController < ApplicationController
   before_filter :admin_required, :except => [:index, :detail]
 
   # application constants
-  LIBRARY_URL = "http://library.mesolore.net/"
+  LIBRARY_URL = "http://library.qajarwomen.org/"
   
   def index
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
