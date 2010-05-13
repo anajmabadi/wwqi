@@ -2,42 +2,24 @@
 <% @page_title = t(:detail).capitalize -%>
 <div id="browser" class="clearfix singleItemBrowser">
   <div id="head">
-    <h2><%= @item.title %></h2>
+    <h2><%= truncate(@item.title, :length => 50) %></h2>
     <ul class="itemTools sortnav">
       <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
-      <li><a href="/collections" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
-      <li><a href="/collections/detail/<%= @item.id %>" class="module-link">&laquo;<%= t(:previous_item).upcase %></a></li>
-      <li><a href="/collections/detail/<%= @item.id %>" class="module-link"> <%= t(:next_item).upcase %>&raquo;</a></li>
+      <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
+      <li><%= link_to( t(:previous_item).upcase, :controller => :collections, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %></li>
+      <li><%= link_to( t(:next_item).upcase, :controller => :collections, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %></li>
     </ul>
   </div>
   <div id="browserContent" class="clearfix">
     <div id="itemImage">
-      <div align="center" id="zoomify_pane">
-        <object width="100%" height="500" name="zoomify" id="zoomify_swf" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" style="visibility: visible;">
-          <param value="http://www.explorethomascole.org/images/zoomify_fullscreen.swf" name="movie"/>
-          <param value="#CCCCCC" name="bgcolor"/>
-          <param value="true" name="allowFullScreen"/>
-          <param value="zoomifyImagePath=http://library.explorethomascole.org/zoomify/it_12&amp;zoomifyToolbarLogo=0&amp;zoomifySplashScreen=0&amp;zoomifyToolbarVisible=1&amp;zoomifyNavigatorVisible=0" name="flashvars"/>
-          <!--[if !IE ]>-->
-          <object width="100%" height="500" data="http://www.explorethomascole.org/images/zoomify_fullscreen.swf" type="application/x-shockwave-flash">
-            <param value="#CCCCCC" name="bgcolor"/>
-            <param value="true" name="allowFullScreen"/>
-            <param value="zoomifyImagePath=http://library.explorethomascole.org/zoomify/it_12&amp;zoomifyToolbarLogo=0&amp;zoomifySplashScreen=0&amp;zoomifyToolbarVisible=1&amp;zoomifyNavigatorVisible=0" name="flashvars"/>
-            <!--<![endif]-->
-            <div>
-              <img height="500" title="Kaaterskill Falls" src="http://library.explorethomascole.org/preview/it_12.jpg" alt="Kaaterskill Falls"/>
-              <blockquote>NOTE: Because javascript is not enabled on this browser or Flash Player 9.28 or greater is not installed, <br/>
-                we are only able to show a simple preview image. Please <a target="_blank" href="http://get.adobe.com/flashplayer/">install Flash from Adobe.com</a> <br/>
-                and/or follow <a target="_blank" href="http://www.google.com/support/bin/answer.py?answer=23852">Google's online instructions</a> to enable Javascript for your browser.</blockquote>
-            </div>
-            <!--[if !IE]>-->
-          </object>
-          <!--<![endif]-->
-        </object>
-      </div>
+      <%= render :partial => 'zoomify' %>
     </div>
     <div id="itemDetails">
       <table  class="styled">
+        <tr>
+          <th><%= t(:full_title).capitalize %> </th>
+          <td><%= @item.title %> </td>
+        </tr>
         <% unless @item.collection_id.blank? %>
         <tr>
           <th><%= t(:collection).capitalize %> </th>
@@ -50,7 +32,7 @@
           <td><%= @item.show_date %></td>
         </tr>
         <% end %>
-        <% unless @item.place_id.blank? %>
+        <% unless @item.place_id.blank? || @item.place.nil? %>
         <tr>
           <th><%= t(:location).capitalize %></th>
           <td><%= @item.place.name %> </td>
@@ -70,12 +52,6 @@
         <% end %>
       </table>
       <p><%= raw @item.description unless @item.description.blank? %></p>
-
-
-
-
-
-
     </div>
   </div>
 </div> <!-- end browser --><!-- end featured -->

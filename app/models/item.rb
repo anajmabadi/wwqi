@@ -26,4 +26,21 @@ class Item < ActiveRecord::Base
   def thumbnail_url
     return LIBRARY_URL + 'thumbs/it_' + id.to_s + ".jpg"
   end
+
+
+  def preview_url
+    return LIBRARY_URL + "previews/it_" + id.to_s + ".jpg"
+  end
+
+  def tif_url
+    return LIBRARY_URL + id.to_s + ".tif"
+  end
+
+  def zoomify_url(index=1)
+    return LIBRARY_URL + "zoomify/it_#{id.to_s}_#{index.to_s}_img"
+  end
+
+  def slides_xml_url
+    return '/collections/detail/' + id.to_s + '/slides.xml'
+  end
 end

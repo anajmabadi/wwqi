@@ -12,16 +12,54 @@ class CollectionsController < ApplicationController
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
     @items = Item.find(:all, :conditions => 'publish=1', :order => 'items.id')
+
+    #cache the current search set in a session variable
+    query = ''
+    session[:collections_url] = request.request_uri
+    session[:current_items] = items_set(query)
   end
 
   def detail
+    @return_url = (session[:collections_url].nil?) ? '/collections' : session[:collections_url]
 
-    @item = Item.find(params[:id])
+    begin
+      @item = Item.find_by_id(params[:id])
+      raise RangeError if @item.nil?
+      # we need to keep the current search items here
+
+      #get the latest result set
+      unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
+        @items = Item.find(session[:current_items], :order => 'item_translations.title')
+      else
+        @items = Item.find(:all, :conditions => "publish=1 AND gallery=1", :order => "item_translations.title" )
+        # check if the item is part of the set
+        raise RangeError unless @items.include?(@item)
+      end
+    rescue StandardError => error
+      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item collection was invalid.'
+      redirect_to @return_url
+    end
+
 
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @collections }
     end
+  end
+
+  # zoomify requires a custom XML file for its gallery viewer
+  def slides
+    @id = params[:id]
+    @slides = Image.find(:all, :conditions => ['publish=1 && item_id = ?', @id], :order => :position)
+    puts @slides.size unless @slides.nil?
+    unless @id.nil? || @slides.nil? || @slides.empty?
+      respond_to do |format|
+        format.xml
+      end
+    else
+      flash[:error] = 'Unable to locate process slides for with id number ' + params[:id].to_s + '.'
+    end
+
   end
 
   # GET /collections
@@ -104,5 +142,11 @@ class CollectionsController < ApplicationController
       format.html { redirect_to(collections_url) }
       format.xml  { head :ok }
     end
+  end
+
+  private
+
+  def items_set(query='')
+    return Item.find(:all, :select => 'id', :conditions => query, :order => 'item_translations.title').map { |i| i.id }
   end
 end

@@ -33,6 +33,7 @@ Qajar::Application.routes.draw do |map|
   # first created -> highest priority.
 
   match 'collections/detail/:id' => 'collections#detail', :as => :detail
+  map.collections_detail_slides_xml 'collections/detail/:id/slides.:format', :controller => 'collections', :action => 'slides'
 
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
