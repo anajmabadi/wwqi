@@ -7,10 +7,10 @@
   #variable properties
   if @item.pages == 1
     @viewer_url = "/images/zoomify_fullscreen.swf"
-    @flash_vars = "zoomifyImagePath=#{@item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=2&zoomifyNavigatorVisible=1"
+    @flash_vars = "zoomifyImagePath=#{@item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=2&zoomifyNavigatorVisible=0"
   elsif @item.pages > 1
     @viewer_url = "/images/zoomify_gallery.swf"
-    @flash_vars = "zoomifyImagePath=#{@item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=1&zoomifyNavigatorVisible=1&zoomifySlidesXMLPath=#{@item.slides_xml_url}"
+    @flash_vars = "zoomifyImagePath=#{@item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=1&zoomifyNavigatorVisible=0&zoomifySlidesXMLPath=#{@item.slides_xml_url}"
   end
 
 %>
