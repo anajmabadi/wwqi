@@ -12,6 +12,6 @@ xml.DATA do
       :MAXZOOM=>"100",
       :INTERVAL=>"2000",
       :TRANSITION=>"Fade",
-      :DURATION=>"1000")
+      :DURATION=>"500")
   end
 end
