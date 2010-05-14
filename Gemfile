@@ -10,6 +10,8 @@ gem "rack"
 
 gem "mysql", "2.7"
 
+gem "will_paginate", ">=3.0.pre"
+
 gem "rspec", ">= 2.0.0.beta.1"
 gem "rspec-rails", ">= 2.0.0.beta.1"
 
