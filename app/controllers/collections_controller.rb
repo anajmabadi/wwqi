@@ -15,13 +15,13 @@ class CollectionsController < ApplicationController
     # paginate the items
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 10
-    @items = Item.paginate :per_page => @per_page, :page => @page, :order => 'item_translations.title'
-    #@items = Item.find(:all, :conditions => 'publish=1', :order => 'items.id')
+    @items = Item.paginate :conditions => 'publish=1', :per_page => @per_page, :page => @page, :order => 'item_translations.title'
+    @items_full_set = Item.find(:all, :select => 'id', :conditions => 'publish=1', :order => 'item_translations.title')
 
     #cache the current search set in a session variable
     query = ''
     session[:collections_url] = request.request_uri
-    session[:current_items] = items_set(query)
+    session[:current_items] = items_set(@items_full_set)
   end
 
   def detail
@@ -151,7 +151,7 @@ class CollectionsController < ApplicationController
 
   private
 
-  def items_set(query='')
-    return Item.find(:all, :select => 'id', :conditions => query, :order => 'item_translations.title').map { |i| i.id }
+  def items_set(items)
+    return items.map { |i| i.id }
   end
 end
