@@ -1,5 +1,5 @@
 module ApplicationHelper
-
+  
   def language_suffix
     '_fa' if I18n.locale == :fa
   end

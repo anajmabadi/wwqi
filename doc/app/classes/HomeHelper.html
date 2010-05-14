@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html 
+     PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Module: HomeHelper</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Script-Type" content="text/javascript" />
+  <link rel="stylesheet" href=".././rdoc-style.css" type="text/css" media="screen" />
+  <script type="text/javascript">
+  // <![CDATA[
+
+  function popupCode( url ) {
+    window.open(url, "Code", "resizable=yes,scrollbars=yes,toolbar=no,status=no,height=150,width=400")
+  }
+
+  function toggleCode( id ) {
+    if ( document.getElementById )
+      elem = document.getElementById( id );
+    else if ( document.all )
+      elem = eval( "document.all." + id );
+    else
+      return false;
+
+    elemStyle = elem.style;
+    
+    if ( elemStyle.display != "block" ) {
+      elemStyle.display = "block"
+    } else {
+      elemStyle.display = "none"
+    }
+
+    return true;
+  }
+  
+  // Make codeblocks hidden by default
+  document.writeln( "<style type=\"text/css\">div.method-source-code { display: none }</style>" )
+  
+  // ]]>
+  </script>
+
+</head>
+<body>
+
+
+
+    <div id="classHeader">
+        <table class="header-table">
+        <tr class="top-aligned-row">
+          <td><strong>Module</strong></td>
+          <td class="class-name-in-header">HomeHelper</td>
+        </tr>
+        <tr class="top-aligned-row">
+            <td><strong>In:</strong></td>
+            <td>
+                <a href="../files/app/helpers/home_helper_rb.html">
+                app/helpers/home_helper.rb
+                </a>
+        <br />
+            </td>
+        </tr>
+
+        </table>
+    </div>
+  <!-- banner header -->
+
+  <div id="bodyContent">
+
+
+
+  <div id="contextContent">
+
+
+
+   </div>
+
+    <div id="method-list">
+      <h3 class="section-bar">Methods</h3>
+
+      <div class="name-list">
+      <a href="#M000131">which_script?</a>&nbsp;&nbsp;
+      </div>
+    </div>
+
+  </div>
+
+
+    <!-- if includes -->
+
+    <div id="section">
+
+
+
+
+
+      
+
+
+    <!-- if method_list -->
+    <div id="methods">
+      <h3 class="section-bar">Public Instance methods</h3>
+
+      <div id="method-M000131" class="method-detail">
+        <a name="M000131"></a>
+
+        <div class="method-heading">
+          <a href="#M000131" class="method-signature">
+          <span class="method-name">which_script?</span><span class="method-args">()</span>
+          </a>
+        </div>
+      
+        <div class="method-description">
+          <p><a class="source-toggle" href="#"
+            onclick="toggleCode('M000131-source');return false;">[Source]</a></p>
+          <div class="method-source-code" id="M000131-source">
+<pre>
+     <span class="ruby-comment cmt"># File app/helpers/home_helper.rb, line 2</span>
+  2:   <span class="ruby-keyword kw">def</span> <span class="ruby-identifier">which_script?</span>
+  3:     <span class="ruby-keyword kw">if</span> <span class="ruby-constant">I18n</span>.<span class="ruby-identifier">locale</span> <span class="ruby-operator">==</span> <span class="ruby-identifier">:fa</span>
+  4:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">%{
+  5:       &lt;script language=&quot;javascript&quot; type=&quot;application/javascript&quot;&gt;
+  6:         $(document).ready(function(){
+  7: 
+  8:                  $('.slide-wrap').cycle({
+  9:                 fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+ 10:                 });
+ 11: 
+ 12:                  $('a[title]').qtip({
+ 13:                                                              style: {
+ 14:                                                            name: 'dark',
+ 15:                                                            tip: true,
+ 16:                                                             border: {
+ 17:                                                                                  radius: 8
+ 18:                                                                           }
+ 19:                                                                 },
+ 20:                                                            position: {
+ 21:                                                                   corner: {
+ 22:                                                                          target: 'topMiddle',
+ 23:                                                                          tooltip: 'bottomMiddle'
+ 24:                                                                   }
+ 25:                                                                   }
+ 26:                 });
+ 27: 
+ 28: 
+ 29:                 $(&quot;#firstFeature&quot;).click(function(){
+ 30:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 31:                         $(this).addClass(&quot;active&quot;);
+ 32:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '1950px'}, 300);
+ 33:                         return false;
+ 34:                 });
+ 35:                 $(&quot;#secondFeature&quot;).click(function(){
+ 36:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 37:                         $(this).addClass(&quot;active&quot;);
+ 38:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '1300px'}, 300);
+ 39:                         return false;
+ 40:                 });
+ 41:                 $(&quot;#thirdFeature&quot;).click(function(){
+ 42:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 43:                         $(this).addClass(&quot;active&quot;);
+ 44:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '650px'}, 300);
+ 45:                         return false;
+ 46:                 });
+ 47:                 $(&quot;#fourthFeature&quot;).click(function(){
+ 48:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 49:                         $(this).addClass(&quot;active&quot;);
+ 50:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '0px'}, 300);
+ 51:                         return false;
+ 52:                 });
+ 53: 
+ 54:         });
+ 55:         &lt;/script&gt;
+ 56:       }</span>
+ 57:     <span class="ruby-keyword kw">else</span>
+ 58:       <span class="ruby-keyword kw">return</span> <span class="ruby-value str">%{
+ 59:       &lt;script language=&quot;javascript&quot; type=&quot;application/javascript&quot;&gt;
+ 60:         $(document).ready(function(){
+ 61: 
+ 62:                 $('.slide-wrap').cycle({
+ 63:                 fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+ 64:                 });
+ 65: 
+ 66:                 $('a[title]').qtip({
+ 67:                                                              style: {
+ 68:                                                            name: 'dark',
+ 69:                                                            tip: true,
+ 70:                                                             border: {
+ 71:                                                                                  radius: 8
+ 72:                                                                           }
+ 73:                                                                 },
+ 74:                                                            position: {
+ 75:                                                                   corner: {
+ 76:                                                                          target: 'topMiddle',
+ 77:                                                                          tooltip: 'bottomMiddle'
+ 78:                                                                   }
+ 79:                                                                   }
+ 80:                 });
+ 81: 
+ 82: 
+ 83: 
+ 84:                 $(&quot;#firstFeature&quot;).click(function(){
+ 85:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 86:                         $(this).addClass(&quot;active&quot;);
+ 87:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '0px'}, 300);
+ 88:                         return false;
+ 89:                 });
+ 90:                 $(&quot;#secondFeature&quot;).click(function(){
+ 91:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 92:                         $(this).addClass(&quot;active&quot;);
+ 93:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '650px'}, 300);
+ 94:                         return false;
+ 95:                 });
+ 96:                 $(&quot;#thirdFeature&quot;).click(function(){
+ 97:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+ 98:                         $(this).addClass(&quot;active&quot;);
+ 99:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '1300px'}, 300);
+100:                         return false;
+101:                 });
+102:                 $(&quot;#fourthFeature&quot;).click(function(){
+103:                         $(&quot;.dots a&quot;).removeClass(&quot;active&quot;);
+104:                         $(this).addClass(&quot;active&quot;);
+105:                         $(&quot;#featuredContent&quot;).animate({scrollLeft: '1950px'}, 300);
+106:                         return false;
+107:                 });
+108: 
+109: 
+110:         });
+111:         &lt;/script&gt;
+112:       }</span>
+113:     <span class="ruby-keyword kw">end</span>
+114:   <span class="ruby-keyword kw">end</span>
+</pre>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+
+
+  </div>
+
+
+<div id="validator-badges">
+  <p><small><a href="http://validator.w3.org/check/referer">[Validate]</a></small></p>
+</div>
+
+</body>
+</html>
