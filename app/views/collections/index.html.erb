@@ -12,13 +12,15 @@
   <div id="browserFilters" class="clearfix">
     <div class="column">
       <h4><%= t(:medium) %>  </h4>
-      <select id="mediumFilter" name="mediumFilter">
-        <option value="all" selected="selected"><%= t(:all) %> </option>
+      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'medium_form') do -%>
+      <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
+        <option value="all" <%= raw 'selected="selected"' if @medium_filter.nil? || @medium_filter== 'all' -%>><%= t(:all) %></option>
         <% @major_categories.each do |category| -%>
-          <option value="<%= category.id %> "><%= truncate(category.name, :length => 20) %></option>
+          <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= truncate(category.name, :length => 20) %></option>
         <% end -%>
         <option value="more"><%= t(:more_categories) %></option>
       </select>
+      <% end %>
     </div>
     <div class="column">
       <h4><%= t(:collection) %></h4>

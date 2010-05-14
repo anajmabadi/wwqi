@@ -1,0 +1,516 @@
+"Qm<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <title>دنیای زنان در عصر قاجار | مجموعه ها</title>
+    <meta name="description" content="بایگانی اسناد" />
+
+    <!-- load the common styles to all pages -->
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style_fa.css" media="screen" />
+
+    <!-- load the common scripts -->
+    <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js" ></script>
+    <script type="application/javascript" language="javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" ></script>
+
+    <!-- load styles conditionally based on the controller name -->
+      <link href="/stylesheets/dd_fa.css" media="screen" rel="stylesheet" type="text/css" />
+      <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
+      <script language="javascript" type="application/javascript">
+        $(document).ready(function(){
+
+          // click events for handling propper css classes sort buttons (A-Z / Date)
+          $(".AZsort").click(function(){
+            $(".AZsort").parent().siblings().removeClass("active");
+            $(".AZsort").parent().addClass("active");
+            $(".AZsort").parent().siblings().find("span").removeClass("up");
+            $(".AZsort").find("span").toggleClass("up");
+            return false;
+          });
+
+          $(".dateSort").click(function(){
+            $(".dateSort").parent().siblings().removeClass("active");
+            $(".dateSort").parent().addClass("active");
+            $(".dateSort").parent().siblings().find("span").removeClass("up");
+            $(".dateSort").find("span").toggleClass("up");
+            return false;
+          });
+
+          // click events for handling propper css classes on "all items"/"my items" buttons
+          $(".types li a").click(function(){
+            $(this).parent().siblings().removeClass("active");
+            $(this).parent().addClass("active");
+
+            return false;
+          });
+
+          // fancy dropdowns for filters, and handling special cases
+          $("#mediumFilter").msDropDown();
+          $("#mediumFilter").change(function(){
+            if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
+            else   $("#browserFiltersDropdown").hide("slide");
+          });
+
+          $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
+
+          $("#collectionFilter").msDropDown();
+          $("#collectionFilter").change(function(){
+            if ($(this).val() =="more") window.location = "generic.html"
+          });
+          $("#nameFilter").msDropDown();
+          $("#nameFilter").change(function(){
+            if ($(this).val() =="more") window.location = "generic.html"
+          });
+          $("#subjectFilter").msDropDown();
+          $("#periodFilter").msDropDown();
+
+
+          // tooltips
+          $('a[title]').qtip({
+            style: {
+              name: 'dark',
+              tip: true,
+              border: {
+                radius: 8
+              }
+            },
+            position: {
+              corner: {
+                target: 'topMiddle',
+                tooltip: 'bottomMiddle'
+              }
+            }
+          });
+
+
+        });
+      </script>
+
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <h1><a href="/"><span>دنیای زنان در عصر قاجار</span></a></h1>
+        <div id="tools">
+          <div id="search">
+            <form action="" class="searchform" method="get">
+              <input type="text" value="" name="s" class="swap_value" id="s"/>
+              <button type="submit"></button>
+            </form>
+          </div>
+          <ul>
+            <li><a href="/contact">تماس با ما</a></li>
+            <li><a href="/faq">سؤالات متداول</a></li>
+          </ul>
+        </div>
+        <div id="nav">
+          <a class="lang" href="http://www.qajar.local/collections">English</a>
+          <ul class="sortnav">
+            <li> <a href="/home" class="module-link">خانه</a></li>
+            <li class="active"> <a href="/collections" class="module-link">مجموعه ها</a></li>
+            <li> <a href="/exhibits" class="module-link">نمایشگاه ها</a></li>
+          </ul>
+        </div>
+      </div> <!-- end container -->
+    </div> <!-- end header -->
+    <div id="content" class="clearfix">
+      <div class="container clearfix">
+
+        
+        
+        
+<div id="browser" class="clearfix"> 
+  <div id="head"> 
+    <h2>سیر در آرشیو</h2>
+    <ul class="types sortnav">
+      <li>را نشان بده:</li>
+      <li class="active"><a href="#" id="allItems" class="module-link active">همه چیز</a></li>
+      <li><a href="#"  id="myItems" class="module-link">چیزهایی که دیده ام</a></li>
+    </ul>
+  </div> 
+  <div id="browserFilters" class="clearfix">
+    <div class="column">
+      <h4>نوع   </h4>
+      <select id="mediumFilter" name="mediumFilter">
+        <option value="all" selected="selected">همه </option>
+          <option value="1 ">نوشته ها</option>
+          <option value="2 ">اسناد حقوقی</option>
+          <option value="3 ">آثار هنری</option>
+          <option value="4 ">عکس</option>
+          <option value="5 ">اشیاء زندگی روزمره</option>
+          <option value="6 ">تاریخ شفاهی</option>
+        <option value="more">انتخاب دقیق تر </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>کلکسیون</h4>
+      <select id="collectionFilter" name="collectionFilter">
+        <option value="all" selected="selected">همه</option>
+          <option value="1 ">مجموعه خصوصی</option>
+          <option value="7 ">افسانه نجم آبادى</option>
+          <option value="8 ">بهرام شیخ الاسلامی</option>
+          <option value="6 ">هوری مستوفی مقدم</option>
+          <option value="10 ">ژیلا خواجه نوری و...</option>
+          <option value="4 ">جوئل منتگیو</option>
+          <option value="5 ">کامران دولتشاهی</option>
+          <option value="3 ">مهدخت صنعتی</option>
+          <option value="2 ">ناهید مظفری</option>
+          <option value="9 ">تاج‌ الملوک تاج ب...</option>
+        <option value="more">سایر کلسیون ها </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>نام</h4>
+      <select id="nameFilter" name="nameFilter">
+        <option value="all" selected="selected">همه </option>
+            <option value="8 ">محمد حسین میرزا م...</option>
+            <option value="10 ">محمد کامران میرزا</option>
+            <option value="12 ">شهلا سالاری</option>
+            <option value="14 ">معزالخاقان البرز</option>
+            <option value="16 ">هما خانم</option>
+            <option value="18 ">فخرالسلطنه البرز</option>
+        <option value="more">سایر نامها </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>موضوع</h4>
+      <select id="subjectFilter" name="subjectFilter">
+        <option value="all" selected="selected">همه </option>
+        <option value="1">Subject 1 </option>
+        <option value="2">Subject  2</option>
+        <option value="3">Subject  3 </option>
+        <option value="4">Subject  4 </option>
+        <option value="5">Subject  5 </option>
+        <option value="more">سایر موضوع  </option>
+      </select>
+    </div>
+    <div class="column">
+      <h4>دوران سلطنت</h4>
+      <select id="periodFilter" name="periodFilter">
+        <option value="all" selected="selected">همه </option>
+          <option value="3 ">وران قبل از قاجار</option>
+          <option value="1 ">اقا محمد خان</option>
+          <option value="2 ">فتح علی شاه</option>
+          <option value="4 ">محمد شاه</option>
+          <option value="5 ">ناصر الدين شاه</option>
+          <option value="6 ">مظفرالدين شاه</option>
+          <option value="7 ">محمد علی شاه</option>
+          <option value="8 ">احمد شاه</option>
+          <option value="9 ">دوران پهلوی</option>
+      </select>
+    </div>
+  </div> 
+  <div id="browserFiltersDropdown" class="clearfix">
+      <div> <h3>نوشته ها </h3>
+        <ul>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">نامه ها </label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">نثر</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">شعر</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">سفرنامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">مقالات</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">نشریات</label>
+              </li>
+        </ul>
+      </div>
+      <div> <h3>اسناد حقوقی </h3>
+        <ul>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">نکاح نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">پشه نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">صلح نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">وقفنامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">وکالت نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">وصیت نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">بیع نامه</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">سایر تعهدات مالی</label>
+              </li>
+        </ul>
+      </div>
+      <div> <h3>آثار هنری </h3>
+        <ul>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">خوشنویسی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">نقاشی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">سوزن دوزی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">قالیبافی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">سایر هنرهای دستی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">موسیقی</label>
+              </li>
+              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
+                <label for="subcategory.id">فیلم</label>
+              </li>
+        </ul>
+      </div>
+      <div> <h3>عکس </h3>
+        <ul>
+            <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+              <label for="major_category.id">همه</label>
+            </li>
+        </ul>
+      </div>
+      <div> <h3>اشیاء زندگی روزمره </h3>
+        <ul>
+            <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+              <label for="major_category.id">همه</label>
+            </li>
+        </ul>
+      </div>
+      <div> <h3>تاریخ شفاهی </h3>
+        <ul>
+            <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
+              <label for="major_category.id">همه</label>
+            </li>
+        </ul>
+      </div>
+    <div>
+      <span style="display:block; position:absolute; bottom:10px; right:15px;">
+        <a class="filterButton" href="#">Filter</a> 
+        <a class="cancelButton" href="#">Cancel</a>
+      </span>
+    </div>
+  </div>
+  <div id="browserMessage"><p>نمایش مورد: 21 - 30 | 80</p></div>
+  <div id="browserContent" class="clearfix">                 	
+
+    <div class="paginationBar clearfix">
+  <div class="sortnav paginate">
+    <div class="pagination"><a class="previous_page" rel="prev" href="/collections/page/2">قبلی</a> <a rel="start" href="/collections/page/1">1</a> <a rel="prev" href="/collections/page/2">2</a> <em>3</em> <a rel="next" href="/collections/page/4">4</a> <a href="/collections/page/5">5</a> <a href="/collections/page/6">6</a> <a href="/collections/page/7">7</a> <a href="/collections/page/8">8</a> <a class="next_page" rel="next" href="/collections/page/4">بعد</a></div>
+  </div>
+  <ul class="sortnav" id="sort" style="float:left; width:200px;">
+    <li class="label">به ترتیب: :</li>
+    <li class="active"><a href="#" class="module-link AZsort">الفبا<span class="up"></span></a></li>
+    <li><a href="#" class="module-link dateSort">تاریخ<span></span></a></li>
+  </ul>
+  <ul class="sortnav" id="viewMode" style="float:left">
+    <li class="label">طرز نمایش </li>
+    <li class="active"><a href="collection.html" class="module-link">نمایش سطری</a></li>
+    <li><a href="collection_grid.html" class="module-link">نمایش جدولی</a></li>
+    <li><a href="collection_slideshow.html" class="module-link">نمایش اسلاید</a></li>
+  </ul>
+</div> 
+
+    <div id="items" class="list clearfix"> 
+
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/24"><img width="100" src="http://library.qajarwomen.net/thumbs/it_24.jpg" alt="نامه ی آقا میرزا مفید شیخ ا..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/24">نمایش این قلم</a>
+            <h3><a href="/collections/detail/24">نامه ی آقا میرزا مفید شیخ الاسلام به دخترش شاهز...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">  </p>
+            <p> <a href="/collections/detail/24"> </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/25"><img width="100" src="http://library.qajarwomen.net/thumbs/it_25.jpg" alt="نامه ی آقا میرزا مفید شیخ ا..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/25">نمایش این قلم</a>
+            <h3><a href="/collections/detail/25">نامه ی آقا میرزا مفید شیخ الاسلام به دخترش شاهز...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">  </p>
+            <p> <a href="/collections/detail/25"> </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/74"><img width="100" src="http://library.qajarwomen.net/thumbs/it_74.jpg" alt="نامه ی آسیه خانم به آقا میر..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/74">نمایش این قلم</a>
+            <h3><a href="/collections/detail/74">نامه ی آسیه خانم به آقا میرزا حسن شیخ الاسلام؛ ...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">  </p>
+            <p> <a href="/collections/detail/74"> </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/79"><img width="100" src="http://library.qajarwomen.net/thumbs/it_79.jpg" alt="نامه ی آسیه خانم به آقا میر..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/79">نمایش این قلم</a>
+            <h3><a href="/collections/detail/79">نامه ی آسیه خانم به آقا میرزا حسن شیخ الاسلام د...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">  </p>
+            <p> <a href="/collections/detail/79"> </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/11"><img width="100" src="http://library.qajarwomen.net/thumbs/it_11.jpg" alt="نامه بالجه خانم به آقا میرز..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/11">نمایش این قلم</a>
+            <h3><a href="/collections/detail/11">نامه بالجه خانم به آقا میرزا حسن شیخ الاسلام</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">  </p>
+            <p> <a href="/collections/detail/11">نامه بالجه خانم دختر عموی آقا میرزا حسن شیخ الاسلام به آقا میرزا حسن شیخ الاسلام </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/31"><img width="100" src="http://library.qajarwomen.net/thumbs/it_31.jpg" alt="نامه ی فرح السلطنه به شخصی ..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها سایر تعهدات مالی">نشان می دهد تنها سایر تعهدات مالی </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/31">نمایش این قلم</a>
+            <h3><a href="/collections/detail/31">نامه ی فرح السلطنه به شخصی برای دریافت شهریه تو...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">24 Muharram 1339  </p>
+            <p> <a href="/collections/detail/31">فرح السلطنه، دختر یمن الدوله دولتشاهی و همسر آقا میرزا حسن خان شیخ الاسلام، از شخصی تقاضای دریافت شهریه برای خود و دخترش عشرت خانم به مبلغ ۱۵۰ تومان می کند و مایل است این مبلع به منشی باشی پرداخت شود. </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/63"><img width="100" src="http://library.qajarwomen.net/thumbs/it_63.jpg" alt="نامه ی فرح السلطنه به آقا م..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/63">نمایش این قلم</a>
+            <h3><a href="/collections/detail/63">نامه ی فرح السلطنه به آقا میرزا حسن شیخ الاسلام
+</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">23 Shavval 1333  </p>
+            <p> <a href="/collections/detail/63">چند خط از این نامه بیان احساسات عاشقانه ی فرح السلطنه به آقا میرزا حسن شیخ الاسلام است. </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/6"><img width="100" src="http://library.qajarwomen.net/thumbs/it_6.jpg" alt="نامه فرح السلطنه به دختر نا..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/6">نمایش این قلم</a>
+            <h3><a href="/collections/detail/6">نامه فرح السلطنه به دختر ناتنی اش عزیزالملوک</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">15 Dhu l-Hijja 1339  </p>
+            <p> <a href="/collections/detail/6">فرح السلطنه دختر یمن الدوله دولتشاهی و همسر آقا میرزا حسن خان شیخ الاسلام </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/36"><img width="100" src="http://library.qajarwomen.net/thumbs/it_36.jpg" alt="نامه ی حاج میرزا ابوتراب شی..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/36">نمایش این قلم</a>
+            <h3><a href="/collections/detail/36">نامه ی حاج میرزا ابوتراب شیخ الاسلام به آقا میر...</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">8 Muharram 1327  </p>
+            <p> <a href="/collections/detail/36"> </a></p>
+          </div>
+        </div>
+        <div class="listItem clearfix">
+          <div class="item artwork">
+            <a href="/collections/detail/58"><img width="100" src="http://library.qajarwomen.net/thumbs/it_58.jpg" alt="نامه ی حاج میرزا تراب شیخ ا..." /></a>
+            <a class="type" href="#" title="نشان می دهد تنها نامه ها ">نشان می دهد تنها نامه ها  </a>
+          </div>
+          <div class="description">
+            <a class="view" href="/collections/detail/58">نمایش این قلم</a>
+            <h3><a href="/collections/detail/58">نامه ی حاج میرزا تراب شیخ الاسلام به رخساره خانم</a></h3>
+            <h4>بهرام شیخ الاسلامی</h4>
+            <p class="meta">13 Safar 1310  </p>
+            <p> <a href="/collections/detail/58">حاج میرزا ابوتراب می نویسد به دلیل کمبود کاغذ روی پاکت می نویسد. </a></p>
+          </div>
+        </div>
+    </div><!-- end of items --> 
+
+    <div class="paginationBar clearfix">
+  <div class="sortnav paginate">
+    <div class="pagination"><a class="previous_page" rel="prev" href="/collections/page/2">قبلی</a> <a rel="start" href="/collections/page/1">1</a> <a rel="prev" href="/collections/page/2">2</a> <em>3</em> <a rel="next" href="/collections/page/4">4</a> <a href="/collections/page/5">5</a> <a href="/collections/page/6">6</a> <a href="/collections/page/7">7</a> <a href="/collections/page/8">8</a> <a class="next_page" rel="next" href="/collections/page/4">بعد</a></div>
+  </div>
+  <ul class="sortnav" id="sort" style="float:left; width:200px;">
+    <li class="label">به ترتیب: :</li>
+    <li class="active"><a href="#" class="module-link AZsort">الفبا<span class="up"></span></a></li>
+    <li><a href="#" class="module-link dateSort">تاریخ<span></span></a></li>
+  </ul>
+  <ul class="sortnav" id="viewMode" style="float:left">
+    <li class="label">طرز نمایش </li>
+    <li class="active"><a href="collection.html" class="module-link">نمایش سطری</a></li>
+    <li><a href="collection_grid.html" class="module-link">نمایش جدولی</a></li>
+    <li><a href="collection_slideshow.html" class="module-link">نمایش اسلاید</a></li>
+  </ul>
+</div> 
+
+  </div> 
+</div> <!-- end browser --><!-- end featured -->
+
+
+
+      </div> <!-- end container -->
+    </div><!-- end content -->
+    <div id="pageFooterWrapper">
+      <div id="pageFooter">
+        <div class="columnWrapperFooter group">
+          <div class="leftWrapperFooter">
+            <ul class="footerNav">
+              <li><a href="/about">درباره ما</a></li>
+              <li><a href="/credits">همکاران</a></li>
+              <li><a href="/permissions">ملاحظات حقوقی</a></li>
+            </ul>
+            <p>Copyright © 2010  WWQI. کلیه حقوق محفوظ است.</p>
+          </div><!-- closes leftWrapperFooter -->
+          <div class="rightWrapperFooter">
+            <a class="noimage" href="http://www.harvard.edu" target="_blank"><img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
+            <ul class="footerNav">
+              <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS کاتالوگ   </a></li>
+              <li><a href="http://www.fas.harvard.edu/~iohp/" target="_blank">پروژه تاریخ شفاهی ایران</a></li>
+              <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA منابع تصویری</a></li>
+              <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">پروژه میراث اسلام</a></li>
+              <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS کمک جستجوی آرشیوی </a></li>
+              <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">آلبوم آقا خان</a></li>
+            </ul>
+          </div><!-- closes rightWrapperFooter -->
+        </div><!-- closes columnWrapperFooter group -->
+
+
+      </div>
+    </div>
+
+    
+  </body>
+</html>
