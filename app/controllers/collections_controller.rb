@@ -1,6 +1,6 @@
 class CollectionsController < ApplicationController
 
-  before_filter :admin_required, :except => [:index, :detail]
+  before_filter :admin_required, :except => [:index, :detail, :slides, :list, :show]
 
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
