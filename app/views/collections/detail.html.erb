@@ -20,7 +20,7 @@
           <th><%= t(:full_title).capitalize %> </th>
           <td><%= @item.title %> </td>
         </tr>
-        <% unless @item.collection_id.blank? %>
+        <% unless @item.collection_id.blank?  || @item.collection.nil? %>
         <tr>
           <th><%= t(:collection).capitalize %> </th>
           <td><%= @item.collection.name %> </td>
@@ -44,7 +44,7 @@
           <td><%= @item.dimensions %></td>
         </tr>
         <% end %>
-        <% unless @item.category_id.blank? %>
+        <% unless @item.category_id.blank? || @item.category.nil?%>
         <tr>
           <th><%= t(:type).capitalize %></th>
           <td><%= @item.category.name %></td>

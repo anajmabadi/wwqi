@@ -1,6 +1,11 @@
 class CollectionsController < ApplicationController
 
-  before_filter :admin_required, :except => [:index, :detail, :slides, :list, :show]
+  before_filter :admin_required, :except => [:index, :detail, :slides]
+
+  caches_action :index, :detail, :slides,
+  :cache_path => Proc.new { |c| c.params.delete_if { |k,v| k.starts_with?('utm_') } },
+  :expires_in => 4.hours,
+  :unless => Proc.new { |c| c.request.xml_http_request? }
 
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
