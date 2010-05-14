@@ -169,7 +169,7 @@ class CollectionsController < ApplicationController
   end
 
   def build_medium_query(filter_value)
-
+    medium_query = ''
     unless filter_value.nil? || filter_value == 'all'
       @category = Category.find(filter_value)
       if @category.parent_id == @category.id
@@ -177,7 +177,8 @@ class CollectionsController < ApplicationController
       else
         @categories =[@category_id]
       end
-      return ' AND category_id IN (' + @categories.join(',') + ')'
+      medium_query += ' AND category_id IN (' + @categories.join(',') + ')'
     end
+    return medium_query
   end
 end
