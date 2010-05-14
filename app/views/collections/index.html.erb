@@ -46,11 +46,11 @@
       <h4><%= t(:subject) %></h4>
       <select id="subjectFilter" name="subjectFilter">
         <option value="all" selected="selected"><%= t(:all) %> </option>
-        <option value="1">Subbject 1 </option>
-        <option value="2">Subbject  2</option>
-        <option value="3">Subbject  3 </option>
-        <option value="4">Subbject  4 </option>
-        <option value="5">Subbject  5 </option>
+        <option value="1">Subject 1 </option>
+        <option value="2">Subject  2</option>
+        <option value="3">Subject  3 </option>
+        <option value="4">Subject  4 </option>
+        <option value="5">Subject  5 </option>
         <option value="more"><%= t(:more_subjects) %> </option>
       </select>
     </div>
@@ -89,7 +89,7 @@
       </span>
     </div>
   </div>
-  <div id="browserMessage"><p><%= page_entries_info @items %>.</p></div>
+  <div id="browserMessage"><p><%= "#{t(:results_prefix)}: #{(@items.offset + 1).to_s} - #{(@items.offset + @items.per_page).to_s} | #{@items.total_entries.to_s}" %></p></div>
   <div id="browserContent" class="clearfix">                 	
 
     <%= render :partial => 'pagination_bar' %>
