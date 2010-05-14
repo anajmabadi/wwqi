@@ -15,6 +15,11 @@ class ApplicationController < ActionController::Base
     else
       I18n.locale = extract_locale_from_subdomain
     end
+
+    #reset defaults for correct locale
+    # internationalizing will paginate
+    WillPaginate::ViewHelpers.pagination_options[:previous_label] = I18n.t(:previous)
+    WillPaginate::ViewHelpers.pagination_options[:next_label] = I18n.t(:next)
   end
 
   def extract_locale_from_subdomain
