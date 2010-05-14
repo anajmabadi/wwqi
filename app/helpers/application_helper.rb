@@ -1,5 +1,12 @@
 module ApplicationHelper
 
+  # internationalizing will_paginate
+  include WillPaginate::ViewHelpers
+
+  def will_paginate_with_i18n(collection, options = {})
+    will_paginate(collection, options.merge(:previous_label => I18n.t(:previous), :next_label => I18n.t(:next)))
+  end
+
   def language_suffix
     '_fa' if I18n.locale == :fa
   end

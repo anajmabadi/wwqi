@@ -89,31 +89,10 @@
       </span>
     </div>
   </div>
-  <div id="browserMessage"><p><%= t(:showing) + ' ' + @items.size.to_s + ' ' + t(:items_of) + ' ' + @items.size.to_s %></p></div>
+  <div id="browserMessage"><p><%= page_entries_info @items %>.</p></div>
   <div id="browserContent" class="clearfix">                 	
-    <div class="paginationBar clearfix"> 
-      <ul class="sortnav paginate"> 
-        <li class="active"><a href="#" class="module-link active">1</a></li> 
-        <li><a href="#" class="module-link">2</a></li>	
-        <li><a href="#" class="module-link">3</a></li> 
-        <li>...</li>	
-        <li><a href="#" class="module-link">11</a></li>	
-      </ul> 
 
-      <ul class="sortnav" id="sort" style="float:left; width:200px;">
-        <li class="label"><%= t(:sort_by) %> :</li>
-        <li class="active"><a href="#" class="module-link AZsort"><%= t(:az_sort) %><span class="up"></span></a></li>
-        <li><a href="#" class="module-link dateSort"><%= t(:date) %><span></span></a></li>
-      </ul>
-
-      <ul class="sortnav" id="viewMode" style="float:left">
-        <li class="label"><%= t(:view_mode) %> </li>
-        <li class="active"><a href="collection.html" class="module-link"><%= t(:list_view) %></a></li>
-        <li><a href="collection_grid.html" class="module-link"><%= t(:grid_view) %></a></li>
-        <li><a href="collection_slideshow.html" class="module-link"><%= t(:slideshow) %></a></li>
-      </ul> 
-
-    </div> 
+    <%= render :partial => 'pagination_bar' %>
 
     <div id="items" class="list clearfix"> 
 
@@ -134,30 +113,8 @@
       <% end %>
     </div><!-- end of items --> 
 
+    <%= render :partial => 'pagination_bar' %>
 
-    <div class="paginationBar clearfix"> 
-      <ul class="sortnav paginate"> 
-        <li class="active"><a href="#" class="module-link active">1</a></li> 
-        <li><a href="#" class="module-link">2</a></li>	
-        <li><a href="#" class="module-link">3</a></li> 
-        <li>...</li>	
-        <li><a href="#" class="module-link">11</a></li>	
-      </ul> 
-
-      <ul class="sortnav" id="sort" style="float:left; width:200px;"> 
-        <li class="label"><%= t(:sort_by) %> :</li>
-        <li class="active"><a href="#" class="module-link AZsort"><%= t(:az_sort) %><span class="up"></span></a></li>
-        <li><a href="#" class="module-link dateSort"><%= t(:date) %><span></span></a></li>
-      </ul> 
-
-      <ul class="sortnav" id="viewMode" style="float:left">   
-        <li class="label"><%= t(:view_mode) %> </li>
-        <li class="active"><a href="collection.html" class="module-link"><%= t(:list_view) %></a></li>
-        <li><a href="collection_grid.html" class="module-link"><%= t(:grid_view) %></a></li>
-        <li><a href="collection_slideshow.html" class="module-link"><%= t(:slideshow) %></a></li>
-      </ul> 
-
-    </div> 
   </div> 
 </div> <!-- end browser --><!-- end featured -->
 

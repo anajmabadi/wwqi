@@ -392,9 +392,9 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	-webkit-border-radius:3px;color:#333;
 	clear:right;
 }
-
-.paginationBar .sortnav a.module-link{color:#555;}
-.paginationBar .sortnav a.module-link:hover{color:#000;}
+.paginationBar .sortnav a{color:#555;padding:6px 5px 6px 8px;*padding-top:0; *padding-bottom:0; display:inline;text-transform:uppercase; font-weight:bold;}
+.paginationBar .sortnav em {color:#CA4F40;padding:6px 5px 6px 8px;*padding-top:0; *padding-bottom:0; display:inline;text-transform:uppercase; font-weight:bold;}
+.paginationBar .sortnav a:hover{color:#000;padding:6px 5px 6px 8px;*padding-top:0; *padding-bottom:0; display:inline;text-transform:uppercase; font-weight:bold;}
 .paginationBar .paginate{float:left}
 /* item styles
 -------------------------------------------------------------- */
