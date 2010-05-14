@@ -19,7 +19,7 @@ class ApplicationController < ActionController::Base
 
   def extract_locale_from_subdomain
     parsed_locale = request.subdomains.first.to_sym
-    (I18n.available_locales.include? parsed_locale) ? parsed_locale  : nil
+    (I18n.available_locales.include? parsed_locale) ? parsed_locale  : :en
   end
 
   protected
