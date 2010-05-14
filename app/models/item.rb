@@ -10,7 +10,10 @@ class Item < ActiveRecord::Base
   has_many :images
   translates :title, :credit, :description, :display_date, :creator_label
   
-
+  # pagination code
+  cattr_reader :per_page
+  @@per_page = 10
+  
   validates_uniqueness_of :olivia_id, :accession_num
 
   default_scope :include => :translations

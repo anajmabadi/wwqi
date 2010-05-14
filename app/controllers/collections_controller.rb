@@ -11,7 +11,12 @@ class CollectionsController < ApplicationController
     @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
-    @items = Item.find(:all, :conditions => 'publish=1', :order => 'items.id')
+
+    # paginate the items
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || Item.per_page || 10
+    @items = Item.paginate :per_page => @per_page, :page => @page, :order => 'item_translations.title'
+    #@items = Item.find(:all, :conditions => 'publish=1', :order => 'items.id')
 
     #cache the current search set in a session variable
     query = ''
