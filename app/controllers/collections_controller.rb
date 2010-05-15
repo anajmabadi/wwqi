@@ -19,6 +19,7 @@ class CollectionsController < ApplicationController
 
     #grab filter categories
     @medium_filter = params[:medium_filter]
+    @collection_filter = params[:collection_filter]
     @query = 'publish=1'
     @query_params = []
 
@@ -26,14 +27,15 @@ class CollectionsController < ApplicationController
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 10
 
-    @query += build_medium_query(@medium_filter)
+    @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
+    @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
 
-    
+
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => 'item_translations.title')
 
     #cache the current search set in a session variable
-    session[:collections_url] = request.request_uri
+    session[:collections_url] = request.fullpath
     session[:current_items] = items_set(@items_full_set)
   end
 
@@ -169,16 +171,44 @@ class CollectionsController < ApplicationController
   end
 
   def build_medium_query(filter_value)
-    medium_query = ''
-    unless filter_value.nil? || filter_value == 'all'
-      @category = Category.find(filter_value)
-      if @category.parent_id == @category.id
-        @categories = Category.find(:all, :conditions => ['publish=1 AND parent_id=?', @category.id]).map { |i| i.id }
-      else
-        @categories =[@category_id]
-      end
-      medium_query += ' AND category_id IN (' + @categories.join(',') + ')'
+    additional_query = ''
+    begin
+      @category = Category.find_by_id(filter_value.to_i)
+      additional_query += ' AND category_id IN (' + @category.query_ids.join(',') + ')'
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for medium id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      return additional_query
     end
-    return medium_query
+  end
+
+  def build_collection_query(filter_value)
+    additional_query = ''
+    begin
+      @collection = Collection.find_by_id(filter_value.to_i)
+      additional_query += ' AND collection_id = ' + @collection.id.to_s
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      return additional_query
+    end
+  end
+
+  def build_period_query(filter_value)
+    additional_query = ''
+    begin
+      @period = Period.find_by_id(filter_value.to_i)
+      additional_query += " AND sort_date BETWEEN #{@period.start_date} AND #{@period.end_date}"
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      return additional_query
+    end
   end
 end
