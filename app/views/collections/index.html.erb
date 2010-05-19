@@ -60,12 +60,14 @@
     </div>
     <div class="column">
       <h4><%= t(:period) %></h4>
-      <select id="periodFilter" name="periodFilter">
-        <option value="all" selected="selected"><%= t(:all).capitalize %> </option>
+      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'period_form') do -%>
+      <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
+        <option value="all" <%= raw 'selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
         <% @periods.each do |period| -%>
-          <option value="<%= period.id %>"><%= truncate(period.title, :length => 20) %></option>
+          <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 20) %></option>
         <% end -%>
       </select>
+      <% end %>
     </div>
   </div> 
   <div id="browserFiltersDropdown" class="clearfix">

@@ -20,6 +20,8 @@ class CollectionsController < ApplicationController
     #grab filter categories
     @medium_filter = params[:medium_filter]
     @collection_filter = params[:collection_filter]
+    @period_filter = params[:period_filter]
+    
     @query = 'publish=1'
     @query_params = []
 
@@ -29,6 +31,7 @@ class CollectionsController < ApplicationController
 
     @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
     @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
+    @query += build_period_query(@period_filter) unless @period_filter.nil? || @period_filter == 'all'
 
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
@@ -202,7 +205,7 @@ class CollectionsController < ApplicationController
     additional_query = ''
     begin
       @period = Period.find_by_id(filter_value.to_i)
-      additional_query += " AND sort_date BETWEEN #{@period.start_date} AND #{@period.end_date}"
+      additional_query += " AND sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}'"
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
     else
