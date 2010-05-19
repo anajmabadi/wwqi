@@ -31,20 +31,22 @@
             <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= truncate(collection.name, :length => 20) %></option>
           <% end -%>
           <option value="more"><%= t(:more_collections) %></option>
-        <% end %>
-      </select>
+        </select>
+      <% end %>
     </div>
     <div class="column">
       <h4><%= t(:name) %></h4>
-      <select id="nameFilter" name="nameFilter">
-        <option value="all" selected="selected"><%= t(:all).capitalize %> </option>
-        <% @people.each do |person| -%>
-          <% if person.major %>
-            <option value="<%= person.id %>"><%= truncate(person.name, :length => 20) %></option>
+      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'name_form') do -%>
+        <select id="nameFilter" name="name_filter"  onChange="document.forms['name_form'].submit()">
+          <option value="all" selected="selected"<%= raw 'selected="selected"' if @name_filter.nil? || @name_filter== 'all' -%>><%= t(:all).capitalize %> </option>
+          <% @people.each do |person| -%>
+            <% if person.major %>
+              <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= truncate(person.name, :length => 20) %></option>
+            <% end -%>
           <% end -%>
-        <% end -%>
-        <option value="more"><%= t(:more_names) %></option>
-      </select>
+          <option value="more"><%= t(:more_names) %></option>
+        </select>
+      <% end %>
     </div>
     <div class="column">
       <h4><%= t(:subject) %></h4>
@@ -61,15 +63,15 @@
     <div class="column">
       <h4><%= t(:period) %></h4>
       <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'period_form') do -%>
-      <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
-        <option value="all" <%= raw 'selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-        <% @periods.each do |period| -%>
-          <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 20) %></option>
-        <% end -%>
-      </select>
+        <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
+          <option value="all" <%= raw 'selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
+          <% @periods.each do |period| -%>
+            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 20) %></option>
+          <% end -%>
+        </select>
       <% end %>
     </div>
-  </div> 
+  </div>
   <div id="browserFiltersDropdown" class="clearfix">
     <% @major_categories.each do |major_category| %>
       <div> <h3><%= major_category.name %> </h3>
@@ -90,17 +92,17 @@
     <% end %>
     <div>
       <span style="display:block; position:absolute; bottom:10px; right:15px;">
-        <a class="filterButton" href="#">Filter</a> 
+        <a class="filterButton" href="#">Filter</a>
         <a class="cancelButton" href="#">Cancel</a>
       </span>
     </div>
   </div>
   <div id="browserMessage"><p><%= "#{t(:results_prefix)}: #{(@items.offset + 1).to_s} - #{(@items.offset + @items.per_page).to_s} | #{@items.total_entries.to_s}" %></p></div>
-  <div id="browserContent" class="clearfix">                 	
+  <div id="browserContent" class="clearfix">
 
     <%= render :partial => 'pagination_bar' %>
 
-    <div id="items" class="list clearfix"> 
+    <div id="items" class="list clearfix">
 
       <% @items.each do |item| %>
         <div class="listItem clearfix">
@@ -117,10 +119,10 @@
           </div>
         </div>
       <% end %>
-    </div><!-- end of items --> 
+    </div><!-- end of items -->
 
     <%= render :partial => 'pagination_bar' %>
 
-  </div> 
+  </div>
 </div> <!-- end browser --><!-- end featured -->
 

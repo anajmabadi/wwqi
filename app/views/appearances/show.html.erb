@@ -1,0 +1,35 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @appearance.item_id %>
+</p>
+
+<p>
+  <b>Person:</b>
+  <%= @appearance.person_id %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @appearance.publish %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @appearance.position %>
+</p>
+
+<p>
+  <b>Caption:</b>
+  <%= @appearance.caption %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @appearance.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_appearance_path(@appearance) %> |
+<%= link_to 'Back', appearances_path %>

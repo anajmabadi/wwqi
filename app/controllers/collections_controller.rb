@@ -201,6 +201,21 @@ class CollectionsController < ApplicationController
     end
   end
 
+  def build_person_query(filter_value)
+    additional_query = ''
+    begin
+      @person = Person.find_by_id(filter_value.to_i)
+      @ids = @person.items.map { |p| p.id }
+      additional_query += " AND id IN (#{@ids.join(",")})"
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for person id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      return additional_query
+    end
+  end
+  
   def build_period_query(filter_value)
     additional_query = ''
     begin
