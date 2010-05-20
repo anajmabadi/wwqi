@@ -5,7 +5,10 @@ class TranslationsController < ApplicationController
   # GET /translations
   # GET /translations.xml
   def index
-    @translations = Translation.all
+    # paginate the items
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || Translation.per_page || 10
+    @translations = Translation.paginate(:all,  :per_page => @per_page, :page => @page, :order => 'translations.key, translations.locale')
 
     respond_to do |format|
       format.html # index.html.erb

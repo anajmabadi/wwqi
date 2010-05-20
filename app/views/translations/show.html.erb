@@ -1,28 +1,34 @@
-<p>
-  <b>Locale:</b>
-  <%= @translation.locale %>
-</p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = t(:translations).capitalize + ' | ' + t(:show).capitalize -%>
 
-<p>
-  <b>Key:</b>
-  <%= @translation.key %>
-</p>
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title %></h1><p>
+    <b>Locale:</b>
+    <%= @translation.locale %>
+  </p>
 
-<p>
-  <b>Value:</b>
-  <%= @translation.value %>
-</p>
+  <p>
+    <b>Key:</b>
+    <%= @translation.key %>
+  </p>
 
-<p>
-  <b>Interpolations:</b>
-  <%= @translation.interpolations %>
-</p>
+  <p>
+    <b>Value:</b>
+    <%= @translation.value %>
+  </p>
 
-<p>
-  <b>Is proc:</b>
-  <%= @translation.is_proc %>
-</p>
+  <p>
+    <b>Interpolations:</b>
+    <%= @translation.interpolations %>
+  </p>
+
+  <p>
+    <b>Is proc:</b>
+    <%= @translation.is_proc %>
+  </p>
 
 
-<%= link_to 'Edit', edit_translation_path(@translation) %> |
-<%= link_to 'Back', translations_path %>
+  <%= link_to 'Edit', edit_translation_path(@translation) %> |
+  <%= link_to 'Back', translations_path %> | 
+  <%= link_to 'New', new_translation_path %>
+</div>
