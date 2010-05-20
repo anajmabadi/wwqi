@@ -21,6 +21,7 @@ class CollectionsController < ApplicationController
     @medium_filter = params[:medium_filter]
     @collection_filter = params[:collection_filter]
     @period_filter = params[:period_filter]
+    @person_filter = params[:person_filter]
     
     @query = 'publish=1'
     @query_params = []
@@ -32,6 +33,7 @@ class CollectionsController < ApplicationController
     @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
     @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
     @query += build_period_query(@period_filter) unless @period_filter.nil? || @period_filter == 'all'
+    @query += build_person_query(@person_filter) unless @person_filter.nil? || @person_filter == 'all'
 
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
@@ -206,7 +208,12 @@ class CollectionsController < ApplicationController
     begin
       @person = Person.find_by_id(filter_value.to_i)
       @ids = @person.items.map { |p| p.id }
-      additional_query += " AND id IN (#{@ids.join(",")})"
+      unless @ids.empty?
+        additional_query += " AND items.id IN (#{@ids.join(",")})"
+      else
+        # if the person has no items, we should kill search
+        additional_query += " AND isNull(items.id)"
+      end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for person id #{filter_value}: #{error}."
     else

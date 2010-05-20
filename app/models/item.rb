@@ -8,6 +8,9 @@ class Item < ActiveRecord::Base
   belongs_to :category
   belongs_to :calendar_type
   has_many :images
+  has_many :appearances
+  has_many :people, :through => :appearances
+  
   translates :title, :credit, :description, :display_date, :creator_label
   
   # pagination code

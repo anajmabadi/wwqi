@@ -9,7 +9,32 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100505150158) do
+ActiveRecord::Schema.define(:version => 20100519154444) do
+
+  create_table "appearance_translations", :force => true do |t|
+    t.integer  "appearance_id"
+    t.string   "locale"
+    t.text     "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appearance_translations", ["appearance_id"], :name => "index_appearance_translations_on_appearance_id"
+
+  create_table "appearances", :force => true do |t|
+    t.integer  "item_id"
+    t.integer  "person_id"
+    t.boolean  "publish",    :default => true
+    t.integer  "position",   :default => 0
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "appearances", ["item_id"], :name => "index_appearances_on_item_id"
+  add_index "appearances", ["person_id"], :name => "index_appearances_on_person_id"
+  add_index "appearances", ["position"], :name => "index_appearances_on_position"
+  add_index "appearances", ["publish"], :name => "index_appearances_on_publish"
 
   create_table "appellation_translations", :force => true do |t|
     t.integer  "appellation_id"
@@ -156,6 +181,7 @@ ActiveRecord::Schema.define(:version => 20100505150158) do
 
   create_table "images", :force => true do |t|
     t.integer  "item_id"
+    t.string   "file_name"
     t.string   "dimensions"
     t.boolean  "verso"
     t.integer  "position"
@@ -215,7 +241,7 @@ ActiveRecord::Schema.define(:version => 20100505150158) do
     t.string   "display_date"
     t.text     "description"
     t.string   "title"
-    t.string   "caption"
+    t.string   "credit"
     t.string   "creator_label"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -359,12 +385,14 @@ ActiveRecord::Schema.define(:version => 20100505150158) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "start_year"
-    t.integer  "end_year"
+    t.datetime "start_at"
+    t.datetime "end_at"
   end
 
+  add_index "periods", ["end_at"], :name => "index_periods_end_at"
   add_index "periods", ["position"], :name => "index_periods_on_position"
   add_index "periods", ["publish"], :name => "index_periods_on_publish"
+  add_index "periods", ["start_at"], :name => "index_periods_start_at"
 
   create_table "person_translations", :force => true do |t|
     t.integer  "person_id"
@@ -428,6 +456,37 @@ ActiveRecord::Schema.define(:version => 20100505150158) do
   add_index "translations", ["locale", "key"], :name => "index_translations_on_locale_key", :unique => true
   add_index "translations", ["locale"], :name => "index_translations_on_locale"
 
+  create_table "util_import_images", :id => false, :force => true do |t|
+    t.integer  "id",         :default => 0,     :null => false
+    t.string   "dimensions",                    :null => false
+    t.boolean  "verso",      :default => false, :null => false
+    t.integer  "position",   :default => 1,     :null => false
+    t.text     "notes",                         :null => false
+    t.string   "file_name",                     :null => false
+    t.integer  "item_id",                       :null => false
+    t.datetime "created_at",                    :null => false
+    t.datetime "updated_at",                    :null => false
+    t.integer  "publish",    :default => 0,     :null => false
+  end
+
+  create_table "util_import_images_english", :id => false, :force => true do |t|
+    t.integer  "image_id",                 :default => 0,  :null => false
+    t.string   "title",                                    :null => false
+    t.string   "description",                              :null => false
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
+    t.string   "locale",      :limit => 2, :default => "", :null => false
+  end
+
+  create_table "util_import_images_persian", :id => false, :force => true do |t|
+    t.integer  "image_id",                 :default => 0,  :null => false
+    t.string   "title",                                    :null => false
+    t.binary   "description",                              :null => false
+    t.datetime "created_at",                               :null => false
+    t.datetime "updated_at",                               :null => false
+    t.string   "locale",      :limit => 2, :default => "", :null => false
+  end
+
   create_table "util_import_items", :id => false, :force => true do |t|
     t.integer "id",               :default => 0,     :null => false
     t.string  "accession_num",                       :null => false
@@ -440,6 +499,26 @@ ActiveRecord::Schema.define(:version => 20100505150158) do
     t.boolean "circa",            :default => false, :null => false
     t.boolean "bound",            :default => false, :null => false
     t.integer "collection_id",    :default => 12,    :null => false
+  end
+
+  create_table "util_import_items_english", :id => false, :force => true do |t|
+    t.integer "item_id",                                    :null => false
+    t.string  "title",                                      :null => false
+    t.string  "description",                                :null => false
+    t.string  "credit",                                     :null => false
+    t.string  "locale",        :limit => 2, :default => "", :null => false
+    t.string  "display_date",                               :null => false
+    t.string  "creator_label",                              :null => false
+  end
+
+  create_table "util_import_items_persian", :id => false, :force => true do |t|
+    t.integer "item_id",                                    :null => false
+    t.string  "title",                                      :null => false
+    t.binary  "description",                                :null => false
+    t.string  "credit",                                     :null => false
+    t.string  "locale",        :limit => 2, :default => "", :null => false
+    t.string  "display_date",                               :null => false
+    t.string  "creator_label",                              :null => false
   end
 
 end
