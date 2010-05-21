@@ -11,7 +11,7 @@
   </div>
   <div class="field">
     <%= f.label :value %><br />
-    <%= f.text_area :value %>
+    <%= f.text_area :value, :dir => @translation.locale == 'fa' ? 'rtl' : 'ltr' %>
   </div>
   <div class="field">
     <%= f.label :interpolations %><br />

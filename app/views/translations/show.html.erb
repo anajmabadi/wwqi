@@ -14,7 +14,7 @@
 
   <p>
     <b>Value:</b>
-    <%= @translation.value %>
+    <span <%= raw  ' dir="rtl"' if @translation.locale == "fa" -%>><%= @translation.value %></span>
   </p>
 
   <p>
