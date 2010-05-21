@@ -2,6 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   <head>
     <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <%= csrf_meta_tag %>
     <title><%= t(:site_title) -%> | <%= @page_title || controller.controller_name.capitalize %></title>
     <% unless @page_description.nil? && @page_title.nil? -%><meta name="description" content="<%= @page_description || @page_title %>" /><% end -%>
 
@@ -10,8 +11,9 @@
     <link rel="stylesheet" type="text/css" href="/stylesheets/style<%= language_suffix -%>.css" media="screen" />
 
     <!-- load the common scripts -->
-    <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js" ></script>
-    <script type="application/javascript" language="javascript" src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" ></script>
+    <%= javascript_include_tag 'http://ajax.googleapis.com/ajax/libs/jquery/1.4.1/jquery.min.js' %>
+    <%= javascript_include_tag '/javascripts/jquery.qtip-1.0.0-rc3.min.js' %>
+    <%= javascript_include_tag 'rails' %>
 
     <!-- load styles conditionally based on the controller name -->
     <% if controller.controller_name == 'exhibits' -%>
@@ -20,21 +22,21 @@
       <script language="javascript" type="application/javascript">
         $(document).ready(function(){
 
-          $('a[title]').qtip({
-            style: {
-              name: 'dark',
-              tip: true,
-              border: {
-                radius: 8
-              }
-            },
-            position: {
-              corner: {
-                target: 'topMiddle',
-                tooltip: 'bottomMiddle'
-              }
-            }
-          });
+        $('a[title]').qtip({
+        style: {
+        name: 'dark',
+        tip: true,
+        border: {
+        radius: 8
+        }
+        },
+        position: {
+        corner: {
+        target: 'topMiddle',
+        tooltip: 'bottomMiddle'
+        }
+        }
+        });
 
         });
       </script>
@@ -44,68 +46,68 @@
       <script language="javascript" type="application/javascript">
         $(document).ready(function(){
 
-          // click events for handling propper css classes sort buttons (A-Z / Date)
-          $(".AZsort").click(function(){
-            $(".AZsort").parent().siblings().removeClass("active");
-            $(".AZsort").parent().addClass("active");
-            $(".AZsort").parent().siblings().find("span").removeClass("up");
-            $(".AZsort").find("span").toggleClass("up");
-            return false;
-          });
+        // click events for handling propper css classes sort buttons (A-Z / Date)
+        $(".AZsort").click(function(){
+        $(".AZsort").parent().siblings().removeClass("active");
+        $(".AZsort").parent().addClass("active");
+        $(".AZsort").parent().siblings().find("span").removeClass("up");
+        $(".AZsort").find("span").toggleClass("up");
+        return false;
+        });
 
-          $(".dateSort").click(function(){
-            $(".dateSort").parent().siblings().removeClass("active");
-            $(".dateSort").parent().addClass("active");
-            $(".dateSort").parent().siblings().find("span").removeClass("up");
-            $(".dateSort").find("span").toggleClass("up");
-            return false;
-          });
+        $(".dateSort").click(function(){
+        $(".dateSort").parent().siblings().removeClass("active");
+        $(".dateSort").parent().addClass("active");
+        $(".dateSort").parent().siblings().find("span").removeClass("up");
+        $(".dateSort").find("span").toggleClass("up");
+        return false;
+        });
 
-          // click events for handling propper css classes on "all items"/"my items" buttons
-          $(".types li a").click(function(){
-            $(this).parent().siblings().removeClass("active");
-            $(this).parent().addClass("active");
+        // click events for handling propper css classes on "all items"/"my items" buttons
+        $(".types li a").click(function(){
+        $(this).parent().siblings().removeClass("active");
+        $(this).parent().addClass("active");
 
-            return false;
-          });
+        return false;
+        });
 
-          // fancy dropdowns for filters, and handling special cases
-          $("#mediumFilter").msDropDown();
-          $("#mediumFilter").change(function(){
-            if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
-            else   $("#browserFiltersDropdown").hide("slide");
-          });
+        // fancy dropdowns for filters, and handling special cases
+        $("#mediumFilter").msDropDown();
+        $("#mediumFilter").change(function(){
+        if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
+        else   $("#browserFiltersDropdown").hide("slide");
+        });
 
-          $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
+        $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
 
-          $("#collectionFilter").msDropDown();
-          $("#collectionFilter").change(function(){
-            if ($(this).val() =="more") window.location = "generic.html"
-          });
-          $("#nameFilter").msDropDown();
-          $("#nameFilter").change(function(){
-            if ($(this).val() =="more") window.location = "generic.html"
-          });
-          $("#subjectFilter").msDropDown();
-          $("#periodFilter").msDropDown();
+        $("#collectionFilter").msDropDown();
+        $("#collectionFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#nameFilter").msDropDown();
+        $("#nameFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#subjectFilter").msDropDown();
+        $("#periodFilter").msDropDown();
 
 
-          // tooltips
-          $('a[title]').qtip({
-            style: {
-              name: 'dark',
-              tip: true,
-              border: {
-                radius: 8
-              }
-            },
-            position: {
-              corner: {
-                target: 'topMiddle',
-                tooltip: 'bottomMiddle'
-              }
-            }
-          });
+        // tooltips
+        $('a[title]').qtip({
+        style: {
+        name: 'dark',
+        tip: true,
+        border: {
+        radius: 8
+        }
+        },
+        position: {
+        corner: {
+        target: 'topMiddle',
+        tooltip: 'bottomMiddle'
+        }
+        }
+        });
 
 
         });
@@ -115,57 +117,57 @@
       <%= raw which_script? -%>
     <% else -%>
       <!-- a generic text page -->
-      <script src="js/uncompressed.jquery.dd.js" type="text/javascript"></script> 
+      <script src="js/uncompressed.jquery.dd.js" type="text/javascript"></script>
       <script language="javascript" type="application/javascript">
         $(document).ready(function(){
 
-          $(".types li a").click(function(){
-            $(this).parent().siblings().removeClass("active").find("a").removeClass("active");
-            $(this).parent().addClass("active");
+        $(".types li a").click(function(){
+        $(this).parent().siblings().removeClass("active").find("a").removeClass("active");
+        $(this).parent().addClass("active");
 
-            return false;
-          });
+        return false;
+        });
 
-          $("#mediumFilter").msDropDown();
-          $("#mediumFilter").change(function(){
-            if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
-            else   $("#browserFiltersDropdown").hide("slide");
-          });
+        $("#mediumFilter").msDropDown();
+        $("#mediumFilter").change(function(){
+        if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
+        else   $("#browserFiltersDropdown").hide("slide");
+        });
 
-          $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
+        $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
 
-          $("#collectionFilter").msDropDown();
-          $("#collectionFilter").change(function(){
-            if ($(this).val() =="more") window.location = "generic.html"
-          });
-          $("#nameFilter").msDropDown();
-          $("#nameFilter").change(function(){
-            if ($(this).val() =="more") window.location = "generic.html"
-          });
-          $("#subjectFilter").msDropDown();
-          $("#periodFilter").msDropDown();
+        $("#collectionFilter").msDropDown();
+        $("#collectionFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#nameFilter").msDropDown();
+        $("#nameFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#subjectFilter").msDropDown();
+        $("#periodFilter").msDropDown();
 
-          $('a[title]').qtip({
-            style: {
-              name: 'dark',
-              tip: true,
-              border: {
-                radius: 8
-              }
-            },
-            position: {
-              corner: {
-                target: 'topMiddle',
-                tooltip: 'bottomMiddle'
-              }
-            }
-          });
+        $('a[title]').qtip({
+        style: {
+        name: 'dark',
+        tip: true,
+        border: {
+        radius: 8
+        }
+        },
+        position: {
+        corner: {
+        target: 'topMiddle',
+        tooltip: 'bottomMiddle'
+        }
+        }
+        });
 
 
 
-          $("#browserFilters h4").click(function(){
-            $("#browserFiltersDropdown").slideToggle();
-          });
+        $("#browserFilters h4").click(function(){
+        $("#browserFiltersDropdown").slideToggle();
+        });
 
         });
       </script>

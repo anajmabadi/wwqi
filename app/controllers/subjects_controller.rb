@@ -2,7 +2,10 @@ class SubjectsController < ApplicationController
   # GET /subjects
   # GET /subjects.xml
   def index
-    @subjects = Subject.all
+     # paginate the items
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || Subject.per_page || 100
+    @subjects = Subject.paginate :all, :per_page => @per_page, :page => @page, :order => 'subject_translations.locale, subject_translations.name'
 
     respond_to do |format|
       format.html # index.html.erb

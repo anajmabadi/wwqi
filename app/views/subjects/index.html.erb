@@ -1,29 +1,28 @@
-<h1>Listing subjects</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = t(:subject).pluralize.capitalize -%>
 
-<table>
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:subject).pluralize.capitalize %></h1>
+  <%= render :partial => 'toolbar' %>
+<table class="styled">
   <tr>
     <th>Name</th>
     <th>Major</th>
     <th>Publish</th>
     <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th>Actions</th>
   </tr>
 
 <% @subjects.each do |subject| %>
   <tr>
     <td><%= subject.name %></td>
-    <td><%= subject.major %></td>
-    <td><%= subject.publish %></td>
-    <td><%= subject.notes %></td>
-    <td><%= link_to 'Show', subject %></td>
-    <td><%= link_to 'Edit', edit_subject_path(subject) %></td>
-    <td><%= link_to 'Destroy', subject, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= show_check(subject.major) %></td>
+    <td><%= show_check(subject.publish) %></td>
+    <td><%= truncate(subject.notes) %></td>
+    <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), subject %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_subject_path(subject) %> <%= link_to image_tag("delete.png", :alt => 'delete'), subject, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New Subject', new_subject_path %>
+  <p>&nbsp;</p>
+  <%= render :partial => 'toolbar' %>
+</div>
