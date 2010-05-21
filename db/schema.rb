@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100519154444) do
+ActiveRecord::Schema.define(:version => 20100521150328) do
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
@@ -97,6 +97,22 @@ ActiveRecord::Schema.define(:version => 20100519154444) do
   end
 
   add_index "category_translations", ["category_id"], :name => "index_category_translations_on_category_id"
+
+  create_table "classifications", :force => true do |t|
+    t.integer  "subject_id"
+    t.integer  "item_id"
+    t.boolean  "publish"
+    t.integer  "position"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "classifications", ["item_id", "subject_id"], :name => "index_classifications_on_item_id_and_subject_id", :unique => true
+  add_index "classifications", ["item_id"], :name => "index_classifications_on_item_id"
+  add_index "classifications", ["position"], :name => "index_classifications_on_position"
+  add_index "classifications", ["publish"], :name => "index_classifications_on_publish"
+  add_index "classifications", ["subject_id"], :name => "index_classifications_on_subject_id"
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
@@ -233,6 +249,16 @@ ActiveRecord::Schema.define(:version => 20100519154444) do
     t.text    "notes_fa",                                 :null => false
     t.integer "corrections_additions",                    :null => false
     t.integer "collection_id",         :default => 12,    :null => false
+  end
+
+  create_table "import_people", :force => true do |t|
+    t.integer "item_id",                :null => false
+    t.string  "loc_name",               :null => false
+    t.string  "name",                   :null => false
+    t.string  "sort_name",              :null => false
+    t.integer "publish",   :limit => 1, :null => false
+    t.integer "major",     :limit => 1, :null => false
+    t.string  "locale",    :limit => 4, :null => false
   end
 
   create_table "item_translations", :force => true do |t|
@@ -442,6 +468,28 @@ ActiveRecord::Schema.define(:version => 20100519154444) do
     t.datetime "updated_at"
   end
 
+  create_table "subject_translations", :force => true do |t|
+    t.integer  "subject_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subject_translations", ["name"], :name => "index_subject_translations_on_name"
+  add_index "subject_translations", ["subject_id"], :name => "index_subject_translations_on_subject_id"
+
+  create_table "subjects", :force => true do |t|
+    t.boolean  "major",      :default => false
+    t.boolean  "publish",    :default => true
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subjects", ["major"], :name => "index_subjects_on_major"
+  add_index "subjects", ["publish"], :name => "index_subjects_on_publish"
+
   create_table "translations", :force => true do |t|
     t.string   "locale"
     t.string   "key"
@@ -519,6 +567,25 @@ ActiveRecord::Schema.define(:version => 20100519154444) do
     t.string  "locale",        :limit => 2, :default => "", :null => false
     t.string  "display_date",                               :null => false
     t.string  "creator_label",                              :null => false
+  end
+
+  create_table "vs_import_people", :id => false, :force => true do |t|
+    t.string  "loc_name",              :null => false
+    t.integer "major",    :limit => 1, :null => false
+    t.integer "publish",  :limit => 1, :null => false
+  end
+
+  create_table "vs_import_people_appearances", :id => false, :force => true do |t|
+    t.integer "person_id", :default => 0, :null => false
+    t.integer "item_id",                  :null => false
+  end
+
+  create_table "vs_import_people_translations", :id => false, :force => true do |t|
+    t.string  "locale",      :limit => 4,                :null => false
+    t.string  "name",                                    :null => false
+    t.string  "sort_name",                               :null => false
+    t.integer "person_id",                :default => 0, :null => false
+    t.integer "count_names", :limit => 8, :default => 0, :null => false
   end
 
 end

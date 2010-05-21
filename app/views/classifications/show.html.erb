@@ -1,0 +1,30 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @classification.subject_id %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @classification.item_id %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @classification.publish %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @classification.position %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @classification.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_classification_path(@classification) %> |
+<%= link_to 'Back', classifications_path %>

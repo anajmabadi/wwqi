@@ -1,4 +1,8 @@
 Qajar::Application.routes.draw do |map|
+  resources :classifications
+
+  resources :subjects
+
   resources :appearances
 
   resources :images

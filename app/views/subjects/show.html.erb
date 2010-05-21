@@ -1,0 +1,25 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @subject.name %>
+</p>
+
+<p>
+  <b>Major:</b>
+  <%= @subject.major %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @subject.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @subject.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>
