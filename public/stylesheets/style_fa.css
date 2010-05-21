@@ -40,7 +40,7 @@ a:hover{
 
 a.noimage{background:none !important}
 
-input, select{font-family:Tahoma, Geneva, sans-serif}
+input, select{font-family:Tahoma, Geneva, sans-serif;direction: rtl;unicode-bidi: embed;}
 /* @end */
 
 /* @group Typography */
