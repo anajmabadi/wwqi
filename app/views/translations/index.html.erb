@@ -15,7 +15,7 @@
       <tr>
         <td><%= translation.locale %></td>
         <td><%= translation.key %></td>
-        <td<%= raw  ' dir="rtl"' if translation.locale == "fa" -%>><%= truncate(translation.value) %></td>
+        <td<%= raw ' dir="' + (translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= truncate(translation.value) %></td>
         <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), translation %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_translation_path(translation) %> <%= link_to image_tag("delete.png", :alt => 'delete'), translation, :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
