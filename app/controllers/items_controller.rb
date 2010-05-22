@@ -5,7 +5,9 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
-    @items = Item.all
+    @page = params[:page] || 1
+    @per_page = params[:per_page] || Item.per_page || 25
+    @items = Item.paginate :all, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
 
     respond_to do |format|
       format.html # index.html.erb

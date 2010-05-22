@@ -1,4 +1,8 @@
-<p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = t(:item).pluralize.capitalize + " | " + t(:show).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title %></h1><p>
   <b>Title:</b>
   <%= @item.title %>
 </p>
@@ -9,8 +13,8 @@
 </p>
 
 <p>
-  <b>Caption:</b>
-  <%= @item.caption %>
+  <b>Credit</b>
+  <%= @item.credit %>
 </p>
 
 <p>
@@ -82,7 +86,8 @@
   <b>Publish:</b>
   <%= @item.publish %>
 </p>
-
-
+<p>
 <%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %>
+<%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></p>
+</div>
+

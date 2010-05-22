@@ -1,55 +1,30 @@
-<h1>Listing items</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = t(:item).pluralize.capitalize -%>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Accession num</th>
-    <th>Credit</th>
-    <th>Description</th>
-    <th>Olivia</th>
-    <th>Urn</th>
-    <th>Creator</th>
-    <th>Owner</th>
-    <th>Collection</th>
-    <th>Pages</th>
-    <th>Format</th>
-    <th>Display date</th>
-    <th>Sort date</th>
-    <th>Dimensions</th>
-    <th>Notes</th>
-    <th>Place</th>
-    <th>Publish</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:item).pluralize.capitalize %></h1>
+  <%= render :partial => 'toolbar' %>
+  <table class="styled">
+    <tr>
+      <th>Title</th>
+      <th>Accession num</th>
+      <th>Collection</th>
+      <th>Pages</th>
+      <th>Publish</th>
+      <th>Actions</th>
+    </tr>
 
-<% @items.each do |item| %>
-  <tr>
-    <td><%= item.title %></td>
-    <td><%= item.accession_num %></td>
-    <td><%= item.credit %></td>
-    <td><%= item.description %></td>
-    <td><%= item.olivia_id %></td>
-    <td><%= item.urn %></td>
-    <td><%= item.creator_id %></td>
-    <td><%= item.owner_id %></td>
-    <td><%= item.collection_id %></td>
-    <td><%= item.pages %></td>
-    <td><%= item.format_id %></td>
-    <td><%= item.display_date %></td>
-    <td><%= item.sort_date %></td>
-    <td><%= item.dimensions %></td>
-    <td><%= item.notes %></td>
-    <td><%= item.place_id %></td>
-    <td><%= item.publish %></td>
-    <td><%= link_to 'Show', item %></td>
-    <td><%= link_to 'Edit', edit_item_path(item) %></td>
-    <td><%= link_to 'Destroy', item, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New item', new_item_path %>
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= link_to truncate(item.title), item, :title => item.title %></td>
+      <td><%= truncate(item.accession_num, :length => 50) %></td>
+      <td><%= truncate(item.collection.name) unless item.collection.nil? %></td>
+      <td><%= item.pages %></td>
+      <td><%= show_check item.publish %></td>
+      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), item %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), item, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+  <p>&nbsp;</p>
+  <%= render :partial => 'toolbar' %>
+</div>

@@ -15,7 +15,7 @@ class Item < ActiveRecord::Base
   
   # pagination code
   cattr_reader :per_page
-  @@per_page = 10
+  @@per_page = 25
   
   validates_uniqueness_of :olivia_id, :accession_num
 
