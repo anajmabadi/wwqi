@@ -2,92 +2,99 @@
 <% @page_title = t(:item).pluralize.capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1><p>
-  <b>Title:</b>
-  <%= @item.title %>
-</p>
+  <h1><%= @page_title %></h1>
+  <table class="styled" >
+        <tr><th>
+        <%= link_to 'Edit', edit_item_path(@item) %> |
+        <%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></th></tr>
+    <tr><td><h2>
+      <%= image_tag @item.thumbnail_url, :align => 'right', :width => 50 -%>  <%= @item.title %>
+    </h2></td></tr>
+    <tr><td>
+        <b>Publish:</b>
+        <%= @item.publish %>
+      </td></tr>
+    <tr><td>
+        <b>Accession num:</b>
+        <%= @item.accession_num %>
+      </td></tr>
 
-<p>
-  <b>Accession num:</b>
-  <%= @item.accession_num %>
-</p>
+    <tr><td>
+        <b>Credit</b>
+        <%= @item.credit %>
+      </td></tr>
 
-<p>
-  <b>Credit</b>
-  <%= @item.credit %>
-</p>
+    <tr><td>
+        <b>Description:</b>
+        <%= @item.description %>
+      </td></tr>
 
-<p>
-  <b>Description:</b>
-  <%= @item.description %>
-</p>
+    <tr><td>
+        <b>Olivia:</b>
+        <%= @item.olivia_id %>
+      </td></tr>
 
-<p>
-  <b>Olivia:</b>
-  <%= @item.olivia_id %>
-</p>
+    <tr><td>
+        <b>Urn:</b>
+        <%= @item.urn %>
+      </td></tr>
 
-<p>
-  <b>Urn:</b>
-  <%= @item.urn %>
-</p>
+    <tr><td>
+        <b>Creator:</b>
+        <%= @item.creator_id %>
+      </td></tr>
 
-<p>
-  <b>Creator:</b>
-  <%= @item.creator_id %>
-</p>
+    <tr><td>
+        <b>Owner:</b>
+        <%= @item.owner_id %>
+      </td></tr>
 
-<p>
-  <b>Owner:</b>
-  <%= @item.owner_id %>
-</p>
+    <tr><td>
+        <b>Collection:</b>
+        <%= @item.collection_id %>
+      </td></tr>
 
-<p>
-  <b>Collection:</b>
-  <%= @item.collection_id %>
-</p>
+    <tr><td>
+        <b>Pages:</b>
+        <%= @item.pages %>
+      </td></tr>
 
-<p>
-  <b>Pages:</b>
-  <%= @item.pages %>
-</p>
+    <tr><td>
+        <b>Format:</b>
+        <%= @item.format_id %>
+      </td></tr>
 
-<p>
-  <b>Format:</b>
-  <%= @item.format_id %>
-</p>
+    <tr><td>
+        <b>Display date:</b>
+        <%= @item.display_date %>
+      </td></tr>
 
-<p>
-  <b>Display date:</b>
-  <%= @item.display_date %>
-</p>
+    <tr><td>
+        <b>Sort date:</b>
+        <%= @item.sort_date %>
+      </td></tr>
 
-<p>
-  <b>Sort date:</b>
-  <%= @item.sort_date %>
-</p>
+    <tr><td>
+        <b>Dimensions:</b>
+        <%= @item.dimensions %>
+      </td></tr>
 
-<p>
-  <b>Dimensions:</b>
-  <%= @item.dimensions %>
-</p>
+    <tr><td>
+        <b>Notes:</b>
+        <%= @item.notes %>
+      </td></tr>
 
-<p>
-  <b>Notes:</b>
-  <%= @item.notes %>
-</p>
+    <tr><td>
+        <b>Place:</b>
+        <%= @item.place_id %>
+      </td></tr>
 
-<p>
-  <b>Place:</b>
-  <%= @item.place_id %>
-</p>
+    <tr><td>    <div>
+      <%= render :partial => 'zoomify' %>
+    </div>
+      </td></tr>
 
-<p>
-  <b>Publish:</b>
-  <%= @item.publish %>
-</p>
-<p>
-<%= link_to 'Edit', edit_item_path(@item) %> |
-<%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></p>
+
+  </table>
 </div>
 

@@ -9,15 +9,15 @@
     </ul>
   </div>
   <% end %>
-
-  <div class="field">
-    <%= f.label :subject_id %><br />
-    <%= f.text_field :subject_id %>
-  </div>
   <div class="field">
     <%= f.label :item_id %><br />
-    <%= f.text_field :item_id %>
+    <%= f.select :item_id, @items, {:include_blank => true} %>
   </div>
+  <div class="field">
+    <%= f.label :subject_id %><br />
+    <%= f.select :subject_id, @subjects, {:include_blank => true} %>
+  </div>
+
   <div class="field">
     <%= f.label :publish %><br />
     <%= f.check_box :publish %>

@@ -1,31 +1,30 @@
-<h1>Listing classifications</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = t(:classification).pluralize.capitalize -%>
 
-<table>
-  <tr>
-    <th>Subject</th>
-    <th>Item</th>
-    <th>Publish</th>
-    <th>Position</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:classification).pluralize.capitalize %></h1>
+  <%= render :partial => 'toolbar' %>
+  <table class="styled" >
+    <tr>
+      <th>Subject</th>
+      <th>Item</th>
+      <th>Publish</th>
+      <th>Position</th>
+      <th>Notes</th>
+      <th>Actions</th>
+    </tr>
 
-<% @classifications.each do |classification| %>
-  <tr>
-    <td><%= classification.subject_id %></td>
-    <td><%= classification.item_id %></td>
-    <td><%= classification.publish %></td>
-    <td><%= classification.position %></td>
-    <td><%= classification.notes %></td>
-    <td><%= link_to 'Show', classification %></td>
-    <td><%= link_to 'Edit', edit_classification_path(classification) %></td>
-    <td><%= link_to 'Destroy', classification, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Classification', new_classification_path %>
+    <% @classifications.each do |classification| %>
+      <tr>
+        <td><%= link_to classification.subject.name, classification.subject unless classification.subject.name.nil? %></td>
+        <td><%= link_to truncate(classification.item.title), classification.item unless classification.item.nil? %></td>
+        <td><%= show_check classification.publish %></td>
+        <td><%=  classification.position %></td>
+        <td><%= classification.notes %></td>
+        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), classification %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_classification_path(classification) %> <%= link_to image_tag("delete.png", :alt => 'delete'), classification, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+  <p>&nbsp;</p>
+  <%= render :partial => 'toolbar' %>
+</div>

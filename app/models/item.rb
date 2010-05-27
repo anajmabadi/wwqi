@@ -34,8 +34,8 @@ class Item < ActiveRecord::Base
   end
 
 
-  def preview_url
-    return LIBRARY_URL + "previews/it_" + id.to_s + ".jpg"
+  def preview_url(index=1)
+    return LIBRARY_URL + "previews/it_#{id.to_s}_#{index.to_s}.jpg"
   end
 
   def tif_url

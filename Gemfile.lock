@@ -7,7 +7,7 @@ dependencies:
   mysql: 
     group: 
     - :default
-    version: = 2.7
+    version: ">= 0"
   rspec: 
     group: 
     - :default
@@ -74,7 +74,7 @@ specs:
 - treetop: 
     version: 1.4.5
 - mail: 
-    version: 2.2.0
+    version: 2.2.1
 - text-hyphen: 
     version: 1.0.0
 - text-format: 
@@ -96,9 +96,9 @@ specs:
 - jalalidate: 
     version: 0.2.1
 - mysql: 
-    version: "2.7"
+    version: 2.8.1
 - nokogiri: 
-    version: 1.4.1
+    version: 1.4.2
 - thor: 
     version: 0.13.6
 - railties: 
@@ -119,7 +119,7 @@ specs:
     version: 2.0.0.beta.8
 - will_paginate: 
     version: 3.0.pre
-hash: d56719c9817af10a2fe30bd165ca9948b4a8e211
+hash: b2d103bc592d37c20b39683be59f9bf8f7b583ea
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
