@@ -37,7 +37,7 @@
     <div class="column">
       <h4><%= t(:name) %></h4>
       <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'person_form') do -%>
-        <select id="personFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
+        <select id="nameFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
           <option value="all"<%= raw ' selected="selected"' if @person_filter.nil? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @people.each do |person| -%>
             <% if person.major %>
