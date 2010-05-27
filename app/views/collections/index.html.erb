@@ -38,7 +38,7 @@
       <h4><%= t(:name) %></h4>
       <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'person_form') do -%>
         <select id="personFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
-          <option value="all" selected="selected"<%= raw 'selected="selected"' if @person_filter.nil? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
+          <option value="all"<%= raw ' selected="selected"' if @person_filter.nil? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @people.each do |person| -%>
             <% if person.major %>
               <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= truncate(person.name, :length => 20) %></option>
@@ -50,21 +50,23 @@
     </div>
     <div class="column">
       <h4><%= t(:subject) %></h4>
-      <select id="subjectFilter" name="subjectFilter">
-        <option value="all" selected="selected"><%= t(:all).capitalize %> </option>
-        <option value="1">Subject 1 </option>
-        <option value="2">Subject  2</option>
-        <option value="3">Subject  3 </option>
-        <option value="4">Subject  4 </option>
-        <option value="5">Subject  5 </option>
-        <option value="more"><%= t(:more_subjects) %> </option>
-      </select>
+      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'subject_form') do -%>
+        <select id="subjectFilter" name="subject_filter" onChange="document.forms['subject_form'].submit()">
+          <option value="all"<%= raw ' selected="selected"' if @subject_filter.nil? || @subject_filter == 'all' -%>><%= t(:all).capitalize %> </option>
+          <% @subjects.each do |subject| -%>
+            <% if subject.major %>
+              <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @subject_filter==subject.id.to_s -%>><%= truncate(subject.name, :length => 20) %></option>
+            <% end -%>
+          <% end -%>
+          <option value="more"><%= t(:more_subjects) %></option>
+        </select>
+      <% end -%>
     </div>
     <div class="column">
       <h4><%= t(:period) %></h4>
       <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'period_form') do -%>
         <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
+          <option value="all"<%= raw ' selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @periods.each do |period| -%>
             <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 20) %></option>
           <% end -%>

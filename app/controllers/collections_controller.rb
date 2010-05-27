@@ -16,12 +16,14 @@ class CollectionsController < ApplicationController
     @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
+    @subjects = Subject.find(:all, :conditions => "publish=1 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
 
     #grab filter categories
     @medium_filter = params[:medium_filter]
     @collection_filter = params[:collection_filter]
     @period_filter = params[:period_filter]
     @person_filter = params[:person_filter]
+    @subject_filter = params[:subject_filter]
     
     @query = 'publish=1'
     @query_params = []
@@ -34,6 +36,7 @@ class CollectionsController < ApplicationController
     @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
     @query += build_period_query(@period_filter) unless @period_filter.nil? || @period_filter == 'all'
     @query += build_person_query(@person_filter) unless @person_filter.nil? || @person_filter == 'all'
+    @query += build_subject_query(@subject_filter) unless @subject_filter.nil? || @subject_filter == 'all'
 
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
@@ -228,6 +231,26 @@ class CollectionsController < ApplicationController
     begin
       @period = Period.find_by_id(filter_value.to_i)
       additional_query += " AND sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}'"
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      return additional_query
+    end
+  end
+
+  def build_subject_query(filter_value)
+    additional_query = ''
+    begin
+      @subject = Subject.find_by_id(filter_value.to_i)
+      @ids = @subject.items.map { |p| p.id }
+      unless @ids.empty?
+        additional_query += " AND items.id IN (#{@ids.join(",")})"
+      else
+        # if the person has no items, we should kill search
+        additional_query += " AND isNull(items.id)"
+      end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
     else
