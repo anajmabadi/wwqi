@@ -12,7 +12,6 @@ class CollectionsController < ApplicationController
   
   def index
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
-    @major_categories = Category.find(:all, :conditions => 'publish=1 AND parent_id=id', :order => 'parent_id, position')
     @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
@@ -25,7 +24,7 @@ class CollectionsController < ApplicationController
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
     
-    @query = 'publish=1'
+    @query = 'items.publish=1'
     @query_params = []
 
     # paginate the items

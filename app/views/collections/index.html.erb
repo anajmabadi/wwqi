@@ -15,8 +15,8 @@
       <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'medium_form') do -%>
         <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @medium_filter.nil? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @major_categories.each do |category| -%>
-            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= truncate(category.name, :length => 20) %></option>
+          <% @categories.each do |category| -%>
+            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= raw category.parent_id != category.id ? '&ndash; ' : '' -%><%= truncate(category.name, :length => 20) %></option>
           <% end -%>
           <option value="more"><%= t(:more_categories) %></option>
         </select>
@@ -74,31 +74,6 @@
       <% end %>
     </div>
   </div>
-  <div id="browserFiltersDropdown" class="clearfix">
-    <% @major_categories.each do |major_category| %>
-      <div> <h3><%= major_category.name %> </h3>
-        <ul>
-          <% if !major_category.subcategories.empty? %>
-            <% major_category.subcategories.each do |subcategory| %>
-              <li><input type="checkbox" value="on" class="checkbox" id="a" name="1" />
-                <label for="subcategory.id"><%= subcategory.name %></label>
-              </li>
-            <% end %>
-          <% else %>
-            <li><input type="checkbox" value="on" class="checkbox" id="a" name="1"/>
-              <label for="major_category.id"><%= t(:all).capitalize %></label>
-            </li>
-          <% end %>
-        </ul>
-      </div>
-    <% end %>
-    <div>
-      <span style="display:block; position:absolute; bottom:10px; right:15px;">
-        <a class="filterButton" href="#">Filter</a>
-        <a class="cancelButton" href="#">Cancel</a>
-      </span>
-    </div>
-  </div>
   <div id="browserMessage">
     <p>
       <% if @items.empty? -%>
@@ -116,9 +91,9 @@
 
       <% @items.each do |item| %>
         <div class="listItem clearfix">
-          <div class="item artwork">
+          <div class="item <%= item.icon_class -%>">
             <a href="/collections/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
-            <a class="type" href="#" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
+            <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>"?category_filter " title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
           </div>
           <div class="description">
             <a class="view" href="/collections/detail/<%= item.id %>"><%=  t(:view_details) %></a>

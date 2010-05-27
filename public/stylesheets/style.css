@@ -57,7 +57,7 @@ body{
     padding: 0px;
     border: 0px;
     color:#ffffff;
-    background-image:url(../images/bg.jpg);
+    background-image:url(/images/bg.jpg);
     background-position:top center;
     background-repeat:no-repeat;
     background-color:#72808a;
@@ -91,7 +91,7 @@ h6 { font-size: 1em; }
 
 #staticContent h2{ font-size:2.6em; color:#ca3723; margin-top:1em;}
 #staticContent em{ font-size:1.5em; color:#666; line-height:1.5em;}
-#staticContent li{ padding-left:20px; background:url(../images/list_bullet.gif) 0 5px no-repeat}
+#staticContent li{ padding-left:20px; background:url(/images/list_bullet.gif) 0 5px no-repeat}
 #staticContent a{ color:#ca3723;}
 
 /* Text elements
@@ -155,7 +155,7 @@ dd          { margin-left: 1.5em;}
     height:140px;
     margin:0;
     position:relative;
-    background:url(../images/bg_header.png) top left repeat-x;
+    background:url(/images/bg_header.png) top left repeat-x;
 }
 
 #header h1{
@@ -170,7 +170,7 @@ dd          { margin-left: 1.5em;}
     display:block;
     margin-top:0px;
     height:135px;
-    background:url(../images/logo.png) top left no-repeat;
+    background:url(/images/logo.png) top left no-repeat;
     text-indent: -9999px;
 
 }
@@ -189,14 +189,14 @@ dd          { margin-left: 1.5em;}
 /* search styles
 -------------------------------------------------------------- */
 #search{
-    background:transparent url(../images/bg_search.jpg) no-repeat scroll 0 0;
+    background:transparent url(/images/bg_search.jpg) no-repeat scroll 0 0;
     display:block;
     float:right;
     height:36px;
     width:175px;
     margin-top:5px;
 }
-#browser #search{background:transparent url(../images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
+#browser #search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
 
 .searchform input{
     border: 0;
@@ -212,16 +212,16 @@ dd          { margin-left: 1.5em;}
 .searchform button {
     width: 32px;
     height: 23px;
-    background: url(../images/searchbutton.gif) no-repeat 0 0;
+    background: url(/images/searchbutton.gif) no-repeat 0 0;
     display: block;
     float: left;
     border: 0;
     cursor: pointer;
     margin: 3px 0 0 12px;
 }
-#browser .searchform button{background: url(../images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
+#browser .searchform button{background: url(/images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
 .searchform button:hover {
-    background: url(../images/searchbutton.gif) no-repeat 0 -22px;
+    background: url(/images/searchbutton.gif) no-repeat 0 -22px;
 }
 
 
@@ -232,8 +232,8 @@ dd          { margin-left: 1.5em;}
 
 ul.sortnav{font-size:.8em}
 ul.sortnav li{padding:6px 5px 6px 8px;*padding-top:0; *padding-bottom:0; display:inline;text-transform:uppercase; font-weight:bold;}
-ul.sortnav li.active { background:url(../images/sortnav_grey_left.png) no-repeat 0 50%; }
-ul.sortnav li.active a.module-link { background:url(../images/sortnav_grey_right.png) no-repeat 100% 50%; color:#fff;  }
+ul.sortnav li.active { background:url(/images/sortnav_grey_left.png) no-repeat 0 50%; }
+ul.sortnav li.active a.module-link { background:url(/images/sortnav_grey_right.png) no-repeat 100% 50%; color:#fff;  }
 
 ul.sortnav li a.module-link { color:#fff; padding:6px 9px 6px 0; outline:none; font-weight:bold }
 ul.sortnav li a.module-link:hover,
@@ -245,12 +245,12 @@ ul.sortnav li a.module-link:focus { color:#ccc; text-decoration:none; }
 #header ul.sortnav li a.module-link { padding:5px 0px 3px 0px; }
 #header ul.sortnav li{padding:5px 12px 6px 12px;}
 
-#browser #head ul.sortnav li.active { background:url(../images/sortnav_crimson_left.png) no-repeat 0 50%; }
-#browser #head ul.sortnav li.active a.module-link { background:url(../images/sortnav_crimson_right.png) no-repeat 100% 50%;  }
+#browser #head ul.sortnav li.active { background:url(/images/sortnav_crimson_left.png) no-repeat 0 50%; }
+#browser #head ul.sortnav li.active a.module-link { background:url(/images/sortnav_crimson_right.png) no-repeat 100% 50%;  }
 
 
-ul.sortnav .active span.up { width:5px; height:5px; background:url(../images/up_arrow.gif) top left no-repeat; display:inline-block; margin-left:2px}
-ul.sortnav .active span{width:5px; height:5px;  background:url(../images/down_arrow.gif) top left no-repeat; display:inline-block; margin-left:2px}
+ul.sortnav .active span.up { width:5px; height:5px; background:url(/images/up_arrow.gif) top left no-repeat; display:inline-block; margin-left:2px}
+ul.sortnav .active span{width:5px; height:5px;  background:url(/images/down_arrow.gif) top left no-repeat; display:inline-block; margin-left:2px}
 ul.sortnav  span{width:5px; height:5px;  background:none; display:inline-block;}
 ul.sortnav .label{font-size:10px; color:#C00}
 
@@ -264,7 +264,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 #browser #head{
-    background:url(../images/bg_browser_head.png) top left no-repeat;
+    background:url(/images/bg_browser_head.png) top left no-repeat;
     padding-top:12px;
     height:30px;
 }
@@ -286,8 +286,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 
 
-#browser #head .itemTools .share{padding-left:15px; background:url(../images/share_icon.gif) 0 5px no-repeat}
-#browser #head .itemTools .link{padding-left:15px; background:url(../images/link_icon.gif) 0 5px no-repeat}
+#browser #head .itemTools .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
+#browser #head .itemTools .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
 
 
 #browser #browserContent{
@@ -437,12 +437,12 @@ ul.sortnav .label{font-size:10px; color:#C00}
     z-index:20;
 }
 
-.artwork a.type{background:url(../images/icon_painting.png) top left no-repeat !important;}
-.photo a.type{background:url(../images/icon_photo.png) top left no-repeat !important;}
-.writing a.type{background:url(../images/icon_manuscript.png) top left no-repeat !important;}
-.oralhistory a.type{background:url(../images/icon_sound.png) top left no-repeat !important;}
-.object a.type{background:url(../images/icon_object.png) top left no-repeat !important;}
-.legal a.type{background:url(../images/icon_legal.png) top left no-repeat !important;}
+.artwork a.type{background:url(/images/icon_painting.png) top left no-repeat !important;}
+.photo a.type{background:url(/images/icon_photo.png) top left no-repeat !important;}
+.writing a.type{background:url(/images/icon_manuscript.png) top left no-repeat !important;}
+.oralhistory a.type{background:url(/images/icon_sound.png) top left no-repeat !important;}
+.object a.type{background:url(/images/icon_object.png) top left no-repeat !important;}
+.legal a.type{background:url(/images/icon_legal.png) top left no-repeat !important;}
 
 #browser .item.first{margin-left:12px;}
 
@@ -451,7 +451,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
     width:100%;
     position:absolute;
     left:0;
-    background:url(../images/85black.png);
+    background:url(/images/85black.png);
     padding:3px 0;
     text-align:center;
     font-size:1.0em;
@@ -486,7 +486,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 #featured #head{
-    background:url(../images/bg_featured_head.png) top left no-repeat;
+    background:url(/images/bg_featured_head.png) top left no-repeat;
     padding-top:12px;
     height:30px;
 }
@@ -527,11 +527,11 @@ ul.dots li a{
     font-weight : bold;
     text-align : center;
     text-decoration : none;
-    background-image : url(../images/silde-nav.png);
+    background-image : url(/images/silde-nav.png);
     background-position : 0 0;
     background-repeat : no-repeat;
 }
-ul.dots li a.active{background-position:0 -24px; background-image : url(../images/silde-nav.png);}
+ul.dots li a.active{background-position:0 -24px; background-image : url(/images/silde-nav.png);}
 
 
 
@@ -554,7 +554,7 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(../image
     position:absolute;
     left:0;
     bottom:0;
-    background:url(../images/85black.png);
+    background:url(/images/85black.png);
     padding:3px 0;
     text-align:center;
     font-size:1.2em;
@@ -581,7 +581,7 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(../image
 }
 
 #about #head{
-    background:url(../images/bg_about_head.png) top left no-repeat;
+    background:url(/images/bg_about_head.png) top left no-repeat;
     padding-top:12px;
     height:30px;
 }
@@ -621,7 +621,7 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(../image
 
 #pageFooterWrapper { 
     width: 100% !important;
-    background: url(../images/bg_footer.png) repeat-x top left;
+    background: url(/images/bg_footer.png) repeat-x top left;
     text-shadow: #000 0px -1px 1px;
     clear:left;}
 #pageFooter { 
@@ -670,25 +670,25 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(../image
 
 #pageFooter a:link { 
     color: #aaa;
-    background: url(../images/icon-fillarrow-gray.gif) no-repeat 0 50%;
+    background: url(/images/icon-fillarrow-gray.gif) no-repeat 0 50%;
     padding: 0 0 0 10px; }
 
 #pageFooter  a:visited { 
     color: #aaa;
-    background: url(../images/icon-fillarrow-visited.gif) no-repeat 0 50%;
+    background: url(/images/icon-fillarrow-visited.gif) no-repeat 0 50%;
     text-decoration: none;
     padding: 0 0 0 10px; }
 
 #pageFooter a:hover { 
     color: #999;
     text-decoration: none;
-    background: url(../images/icon-fillarrow-gray.gif) no-repeat 0 50%;
+    background: url(/images/icon-fillarrow-gray.gif) no-repeat 0 50%;
     padding: 0 0 0 10px; }
 
 #pageFooter a:active { 
     color: #555;
     text-decoration: none;
-    background: url(../images/icon-fillarrow-gray.gif) no-repeat 0 50%;
+    background: url(/images/icon-fillarrow-gray.gif) no-repeat 0 50%;
     padding: 0 0 0 10px; }
 
 #pageFooter  p{
@@ -865,11 +865,11 @@ a.next {
 }
 
 div.slideshow_container  a.prev, a.prev:hover{
-    background: transparent url('../images/slideshow_previous.gif') no-repeat center center;
+    background: transparent url('/images/slideshow_previous.gif') no-repeat center center;
 }
 
 div.slideshow_container  a.next, a.next:hover {
-    background: transparent url('../images/slideshow_next.gif') no-repeat center center;
+    background: transparent url('/images/slideshow_next.gif') no-repeat center center;
 } 
 
 div.slideshow{
@@ -894,7 +894,7 @@ div.slideshow ul li img{margin:auto 0}
 
 div.slideshow ul li a.title{
     width:100%;
-    background:url(../images/85black.png);
+    background:url(/images/85black.png);
     position:absolute;
     bottom:0;
     left:0;

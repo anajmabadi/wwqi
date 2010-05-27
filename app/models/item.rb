@@ -19,7 +19,20 @@ class Item < ActiveRecord::Base
   
   validates_uniqueness_of :olivia_id, :accession_num
 
-  default_scope :include => :translations
+  default_scope :include => [:translations, :category]
+
+  # a convenience function for matching up item types with hard coded icon classes
+  def icon_class
+    return case category.parent_id
+      when 1 then 'writing'
+      when 2 then 'legal'
+      when 3 then 'artwork'
+      when 4 then 'photo'
+      when 5 then 'object'
+      when 6 then 'oralhistory'
+      else 'object'
+    end unless category.nil?
+  end
 
   def show_date
     unless display_date.blank?
