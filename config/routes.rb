@@ -1,4 +1,6 @@
 Qajar::Application.routes.draw do |map|
+  resources :panels
+
   resources :classifications
 
   resources :subjects
