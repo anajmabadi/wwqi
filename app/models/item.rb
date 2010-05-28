@@ -10,6 +10,8 @@ class Item < ActiveRecord::Base
   has_many :images
   has_many :appearances
   has_many :people, :through => :appearances
+  has_many :panels
+  has_many :exhibitions, :through => :panels, :order => 'panels.position'
   
   translates :title, :credit, :description, :display_date, :creator_label
   
@@ -24,13 +26,13 @@ class Item < ActiveRecord::Base
   # a convenience function for matching up item types with hard coded icon classes
   def icon_class
     return case category.parent_id
-      when 1 then 'writing'
-      when 2 then 'legal'
-      when 3 then 'artwork'
-      when 4 then 'photo'
-      when 5 then 'object'
-      when 6 then 'oralhistory'
-      else 'object'
+    when 1 then 'writing'
+    when 2 then 'legal'
+    when 3 then 'artwork'
+    when 4 then 'photo'
+    when 5 then 'object'
+    when 6 then 'oralhistory'
+    else 'object'
     end unless category_id.nil? || category.nil?
   end
 

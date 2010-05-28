@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100521150328) do
+ActiveRecord::Schema.define(:version => 20100528061036) do
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
@@ -101,8 +101,8 @@ ActiveRecord::Schema.define(:version => 20100521150328) do
   create_table "classifications", :force => true do |t|
     t.integer  "subject_id"
     t.integer  "item_id"
-    t.boolean  "publish"
-    t.integer  "position"
+    t.boolean  "publish",    :default => true, :null => false
+    t.integer  "position",   :default => 0,    :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -378,6 +378,31 @@ ActiveRecord::Schema.define(:version => 20100521150328) do
   end
 
   add_index "pages", ["publish"], :name => "index_pages_on_publish"
+
+  create_table "panel_translations", :force => true do |t|
+    t.integer  "panel_id"
+    t.string   "locale"
+    t.text     "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "panel_translations", ["panel_id"], :name => "index_panel_translations_on_panel_id"
+
+  create_table "panels", :force => true do |t|
+    t.integer  "exhibition_id",                   :null => false
+    t.integer  "item_id",                         :null => false
+    t.integer  "position",      :default => 0,    :null => false
+    t.boolean  "publish",       :default => true, :null => false
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "panels", ["exhibition_id"], :name => "index_panels_on_exhibition_id"
+  add_index "panels", ["item_id"], :name => "index_panels_on_item_id"
+  add_index "panels", ["position"], :name => "index_panels_on_position"
+  add_index "panels", ["publish"], :name => "index_panels_on_publish"
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
