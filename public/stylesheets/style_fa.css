@@ -396,16 +396,17 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	clear:right;
 }
 
-.paginationBar .sortnav a{color:#555;}
+.paginationBar .sortnav a{color:#666 !important;}
 .paginationBar .sortnav .disabled{color:#FFF;}
 .paginationBar .sortnav em {color:#CA4F40;}
 .paginationBar .sortnav a:hover{color:#000;}
 .paginationBar .paginate{float:left}
 
 .pagination{font-weight:bold!important}
-.pagination span, .pagination span, .next_page, .previous_page{text-transform:uppercase!important}
-.pagination a{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; }
-.pagination em{color:#fff; font-style:normal}
+.pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
+.pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
+.pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
+
 /* admin toolbar styles */
 .adminBar{
     width:850px;
@@ -746,7 +747,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .listItem.exhibit .description{margin-left:10px; float:right; width:680px;}
 
 .listItem h3, .listItem h3 a{
-	font-size:24px;
+	font-size:18px;
 	color:#333;
 	font-weight:bold;
 	margin:0;
