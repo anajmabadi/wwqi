@@ -4,8 +4,8 @@
   </div>
   <ul class="sortnav" id="sort" style="float:left; width:200px;">
     <li class="label"><%= t(:sort_by) %> :</li>
-    <li class="active"><a href="#" class="module-link AZsort"><%= t(:az_sort) %><span class="up"></span></a></li>
-    <li><a href="#" class="module-link dateSort"><%= t(:date) %><span></span></a></li>
+    <li<%= raw ' class="active"' if @sort_mode[0,5] =='alpha' %>><%= link_to( t(:az_sort) + raw('<span class="' + (@sort_mode == 'alpha_asc' ? 'down':'up')+'"></span>'), {:controller => :collections, :sort_mode => (@sort_mode=='alpha_asc' ? 'alpha_dsc':'alpha_asc')}, {:class => 'module-link AZsort'}) %></li>
+    <li<%= raw ' class="active"' if @sort_mode[0,4] == 'date' %>><%= link_to( t(:date) + raw('<span class="' + (@sort_mode == 'date_asc' ? 'down':'up')+'"></span>'), {:controller => :collections, :sort_mode => (@sort_mode=='date_asc' ? 'date_dsc':'date_asc')}, {:class => 'module-link Datesort'}) %></li>
   </ul>
   <ul class="sortnav" id="viewMode" style="float:left">
     <li class="label"><%= t(:view_mode) %> </li>

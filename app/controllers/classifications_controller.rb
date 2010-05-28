@@ -100,7 +100,7 @@ class ClassificationsController < ApplicationController
   end
 
   def get_menu_subjects
-     return Subject.find(:all, :include => :translations, :order => 'subject_translations.name').map do |i|
+     return Subject.find(:all, :include => :translations, :order => 'subject_translations.locale, subject_translations.name').map do |i|
       [truncate(i.name)+' ['+i.id.to_s + ']',i.id]
     end
   end

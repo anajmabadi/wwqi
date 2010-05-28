@@ -31,7 +31,7 @@ class Item < ActiveRecord::Base
       when 5 then 'object'
       when 6 then 'oralhistory'
       else 'object'
-    end unless category.nil?
+    end unless category_id.nil? || category.nil?
   end
 
   def show_date

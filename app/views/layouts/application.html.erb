@@ -22,31 +22,6 @@
       <script language="javascript" type="application/javascript">
         $(document).ready(function(){
 
-        // click events for handling proper css classes sort buttons (A-Z / Date)
-        $(".AZsort").click(function(){
-        $(".AZsort").parent().siblings().removeClass("active");
-        $(".AZsort").parent().addClass("active");
-        $(".AZsort").parent().siblings().find("span").removeClass("up");
-        $(".AZsort").find("span").toggleClass("up");
-        return false;
-        });
-
-        $(".dateSort").click(function(){
-        $(".dateSort").parent().siblings().removeClass("active");
-        $(".dateSort").parent().addClass("active");
-        $(".dateSort").parent().siblings().find("span").removeClass("up");
-        $(".dateSort").find("span").toggleClass("up");
-        return false;
-        });
-
-        // click events for handling propper css classes on "all items"/"my items" buttons
-        $(".types li a").click(function(){
-        $(this).parent().siblings().removeClass("active");
-        $(this).parent().addClass("active");
-
-        return false;
-        });
-
         // fancy dropdowns for filters, and handling special cases
         $("#mediumFilter").msDropDown();
         $("#mediumFilter").change(function(){

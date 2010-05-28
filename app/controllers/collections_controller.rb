@@ -26,9 +26,12 @@ class CollectionsController < ApplicationController
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
-    
+
+    #grab the sort mode
+    @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
+    @order = build_order_query(@sort_mode)
+
     @query = 'items.publish=1'
-    @query_params = []
 
     # paginate the items
     @page = params[:page] || 1
@@ -41,13 +44,14 @@ class CollectionsController < ApplicationController
     @query += build_subject_query(@subject_filter) unless @subject_filter.nil? || @subject_filter == 'all'
 
 
-    @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => 'item_translations.title'
-    @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => 'item_translations.title')
+    @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
+    @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
 
     #cache the current search set in a session variable
     session[:collections_url] = request.fullpath
     session[:current_items] = items_set(@items_full_set)
     session[:view_mode] = @view_mode
+    session[:sort_mode] = @sort_mode
   end
 
   def detail
@@ -261,5 +265,17 @@ class CollectionsController < ApplicationController
     ensure
       return additional_query
     end
+  end
+
+  def build_order_query(sort_mode)
+    additional_sort = ''
+    additional_sort += case sort_mode
+    when 'alpha_asc' then 'item_translations.locale, item_translations.title'
+    when 'alpha_dsc' then 'item_translations.locale, item_translations.title DESC'
+    when 'date asc' then 'items.sort_date'
+    when 'date dsc' then 'items.sort_date DESC'
+    else 'item_translations.locale, item_translations.title ASC'
+    end
+    return additional_sort
   end
 end
