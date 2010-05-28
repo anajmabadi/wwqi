@@ -900,8 +900,9 @@ div.slideshow{
 }
 div.slideshow ul li{
 	width:auto !important;
-	margin:0 20px;
+	margin:0 20px  !important;
 	float:left;
+	position:relative;
 }
 div.slideshow ul li img{margin:auto 0}
 
