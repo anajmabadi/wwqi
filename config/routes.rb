@@ -42,7 +42,7 @@ Qajar::Application.routes.draw do |map|
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-
+  match 'exhibits/show/:id' => 'exhibits#show', :as => :show_exhibit
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
 

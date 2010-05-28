@@ -1,2 +1,71 @@
 <% @page_description = t(:exhibits_description) -%>
-<% @page_title = t(:exhibits).capitalize -%>
+<% @page_title = t(:exhibits).capitalize + ' | ' + truncate(@exhibition.title, :length => 40) -%>
+<% @extra_head_content = capture do %>
+  <script type="text/javascript" src="js/jcarousellite_1.0.1.pack.js"></script>
+
+
+  <script language="javascript" type="application/javascript">
+    $(document).ready(function(){
+
+    $('a[title]').qtip({
+    style: {
+    name: 'dark',
+    tip: true,
+    border: {
+    radius: 8
+    }
+    },
+    position: {
+    corner: {
+    target: 'topMiddle',
+    tooltip: 'bottomMiddle'
+    }
+    }
+    });
+
+
+
+
+    $(".slideshow_container .next").click(function(){
+    $(".slideshow").animate({left: '-=' + 190 + 'px'});
+    return false;
+    });
+    $(".slideshow_container .prev").click(function(){
+    $(".slideshow").animate({left: '+=' + 190 + 'px'});
+    return false;
+    });
+
+    });
+  </script>
+<% end %>
+
+<div id="browser" class="clearfix singleItemBrowser">
+  <div id="head">
+    <h2><%=   @exhibition.title %></h2>
+    <ul class="types sortnav">
+      <li><a href="exhibits.html" class="module-link active">t(:back_to_exhibits)</a></li>
+    </ul>
+  </div>
+  <div id="browserFilters" class="clearfix">
+    <p><%= raw @exhibition.introduction  %><br />
+    </p>
+  </div>
+  <div id="browserContent" class="clearfix">
+    <div class="slideshow_container">
+      <a class="prev" href="#" style="display: block;"></a>
+      <a class="next" href="#" style="display: block;"></a>
+      <div class="slideshow">
+        <ul>
+          <li><a href="singleItem.html" ><img src="images/exhibit1.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
+          <li><a href="singleItem.html" ><img src="images/exhibit2.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Order for Bread Purchase</a></li>
+          <li><a href="singleItem.html" ><img src="images/exhibit3.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Order for Bread Purchase</a></li>
+          <li><a href="singleItem.html" ><img src="images/exhibit4.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
+          <li><a href="singleItem.html" ><img src="images/exhibit5.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
+          <li><a href="singleItem.html "><img src="images/exhibit6.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Envelope</a></li>
+          <li><a href="singleItem.html "><img src="images/exhibit7.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Envelope</a></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div> <!-- end browser --><!-- end featured -->

@@ -5,6 +5,7 @@ class ExhibitsController < ApplicationController
   end
 
   def show
+    @exhibition = Exhibition.find(params[:id])
   end
 
 end
