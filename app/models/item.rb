@@ -12,6 +12,7 @@ class Item < ActiveRecord::Base
   has_many :people, :through => :appearances
   has_many :panels
   has_many :exhibitions, :through => :panels, :order => 'panels.position'
+  has_many :clips, :order => :position
   
   translates :title, :credit, :description, :display_date, :creator_label
   
@@ -63,5 +64,9 @@ class Item < ActiveRecord::Base
 
   def slides_xml_url
     return '/collections/detail/' + id.to_s + '/slides.xml'
+  end
+
+  def clip_url(index=1)
+    return LIBRARY_URL + "clips/it_#{id.to_s}_#{index.to_s}_clip.mp3"
   end
 end

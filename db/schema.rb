@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100528061036) do
+ActiveRecord::Schema.define(:version => 20100528143828) do
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
@@ -113,6 +113,44 @@ ActiveRecord::Schema.define(:version => 20100528061036) do
   add_index "classifications", ["position"], :name => "index_classifications_on_position"
   add_index "classifications", ["publish"], :name => "index_classifications_on_publish"
   add_index "classifications", ["subject_id"], :name => "index_classifications_on_subject_id"
+
+  create_table "clip_translations", :force => true do |t|
+    t.integer  "clip_id"
+    t.string   "locale"
+    t.text     "caption"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clip_translations", ["clip_id"], :name => "index_clip_translations_on_clip_id"
+
+  create_table "clip_types", :force => true do |t|
+    t.string   "name"
+    t.string   "extension"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clip_types", ["publish"], :name => "index_clip_types_on_publish"
+
+  create_table "clips", :force => true do |t|
+    t.integer  "item_id",                        :null => false
+    t.integer  "clip_type_id",                   :null => false
+    t.boolean  "publish",      :default => true, :null => false
+    t.text     "notes"
+    t.date     "recorded_on"
+    t.integer  "position",     :default => 0,    :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "clips", ["clip_type_id"], :name => "index_clips_on_clip_type_id"
+  add_index "clips", ["item_id"], :name => "index_clips_on_item_id"
+  add_index "clips", ["position"], :name => "index_clips_on_position"
+  add_index "clips", ["publish"], :name => "index_clips_on_publish"
 
   create_table "collection_translations", :force => true do |t|
     t.integer  "collection_id"
