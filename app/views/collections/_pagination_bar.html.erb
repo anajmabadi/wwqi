@@ -9,8 +9,8 @@
   </ul>
   <ul class="sortnav" id="viewMode" style="float:left">
     <li class="label"><%= t(:view_mode) %> </li>
-    <li class="active"><a href="collection.html" class="module-link"><%= t(:list_view) %></a></li>
-    <li><a href="collection_grid.html" class="module-link"><%= t(:grid_view) %></a></li>
-    <li><a href="collection_slideshow.html" class="module-link"><%= t(:slideshow) %></a></li>
+    <li<%= raw  ' class="active"' if @view_mode == 'list' %>><%= link_to( t(:list_view), {:controller => :collections, :view_mode => 'list'}, {:class => 'module-link'}) -%></li>
+    <li<%= raw  ' class="active"' if @view_mode == 'grid' %>><%= link_to( t(:grid_view), {:controller => :collections, :view_mode => 'grid'}, {:class => 'module-link'}) -%></li>
+    <li<%= raw  ' class="active"' if @view_mode == 'slideshow' %>><%= link_to( t(:slideshow), {:controller => :collections, :view_mode => 'slideshow'}, {:class => 'module-link'}) -%></li>
   </ul>
 </div> 

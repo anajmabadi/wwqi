@@ -23,13 +23,16 @@ class CollectionsController < ApplicationController
     @period_filter = params[:period_filter]
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
+
+    #grab view mode, using session or default of list if not present or junky
+    @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
     
     @query = 'items.publish=1'
     @query_params = []
 
     # paginate the items
     @page = params[:page] || 1
-    @per_page = params[:per_page] || Item.per_page || 10
+    @per_page = @view_mode == 'slideshow' ? 18 : params[:per_page] || Item.per_page || 10
 
     @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
     @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
@@ -44,6 +47,7 @@ class CollectionsController < ApplicationController
     #cache the current search set in a session variable
     session[:collections_url] = request.fullpath
     session[:current_items] = items_set(@items_full_set)
+    session[:view_mode] = @view_mode
   end
 
   def detail

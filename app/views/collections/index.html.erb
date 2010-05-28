@@ -87,24 +87,51 @@
 
     <%= render :partial => 'pagination_bar' %>
 
-    <div id="items" class="list clearfix">
+    <% if @view_mode == 'list' -%>
 
-      <% @items.each do |item| %>
-        <div class="listItem clearfix">
-          <div class="item <%= item.icon_class -%>">
-            <a href="/collections/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
-            <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>"?category_filter " title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
+      <div id="items" class="list clearfix">
+
+        <% @items.each do |item| %>
+          <div class="listItem clearfix">
+            <div class="item <%= item.icon_class -%>">
+              <a href="/collections/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
+              <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s -%>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
+            </div>
+            <div class="description">
+              <a class="view" href="/collections/detail/<%= item.id %>"><%=  t(:view_details) %></a>
+              <h3><a href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length => 50) %></a></h3>
+              <h4><%= item.collection.name unless item.collection.nil? %></h4>
+              <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.nil? %> <%= item.period.title  unless item.period.nil? %></p>
+              <p> <a href="/collections/detail/<%= item.id %>"><%= truncate(item.description, :length => 100) unless item.description.blank? -%> </a></p>
+            </div>
           </div>
-          <div class="description">
-            <a class="view" href="/collections/detail/<%= item.id %>"><%=  t(:view_details) %></a>
-            <h3><a href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length => 50) %></a></h3>
-            <h4><%= item.collection.name unless item.collection.nil? %></h4>
-            <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.nil? %> <%= item.period.title  unless item.period.nil? %></p>
-            <p> <a href="/collections/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
+        <% end %>
+      </div><!-- end of items -->
+    <% elsif @view_mode == 'grid' -%>
+
+      <div id="items">
+        <% @items.each do |item| -%>
+          <div class="item <%= item.icon_class -%>" style="background:url(<%= item.thumbnail_url %>) top left no-repeat">
+            <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
+            <a class="title" href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length=> 20) %><span><%= truncate(item.collection.name) %></span></a>
           </div>
+        <% end -%>
+      </div><!-- end of items -->
+    <% elsif @view_mode == 'slideshow' -%>
+
+      <div class="slideshow_container">
+        <a class="prev" href="#" style="display: block;"></a>
+        <a class="next" href="#" style="display: block;"></a>
+        <div class="slideshow">
+          <ul>
+            <% @items.each do |item| -%>
+              <li><a href="/collections/detail/<%= item.id %>"><img src="<%= item.preview_url %>" height="320" alt="<%= item.category.name.downcase unless item.category.blank? %>" /></a><a class="title" href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length=> 30) -%></a></li>
+            <% end -%>
+          </ul>
         </div>
-      <% end %>
-    </div><!-- end of items -->
+
+      </div>
+    <% end -%>
 
     <%= render :partial => 'pagination_bar' %>
 
