@@ -1,6 +1,30 @@
 <% @page_description = t(:exhibits_description) -%>
 <% @page_title = t(:exhibits).capitalize -%>
+<% @extra_head_content = capture do %>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/facebox<%= language_suffix -%>.css" media="screen" />
+  <script type="text/javascript" src="/javascripts/facebox.js" ></script>
+  <script language="javascript" type="application/javascript">
+    $(document).ready(function(){
 
+    $('a[title]').qtip({
+    style: {
+    name: 'dark',
+    tip: true,
+    border: {
+    radius: 8
+    }
+    },
+    position: {
+    corner: {
+    target: 'topMiddle',
+    tooltip: 'bottomMiddle'
+    }
+    }
+    });
+
+    });
+  </script>
+<% end %>
 
 <div id="featured">
   <div id="head">

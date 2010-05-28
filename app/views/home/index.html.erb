@@ -1,6 +1,10 @@
 <% @page_description = t(:home_description) -%>
 <% @page_title = t(:home).capitalize -%>
-
+<% @extra_head_content = capture do %>
+  <script type="text/javascript" src="/javascripts/jquery.cycle.all.2.72.js"></script>
+  <%= raw which_script? -%>
+<% end -%>
+  
 <div class="slide-wrap">
   <a href="<%= collections_path %>"><img id="slide-img-1" src="/images/slideshow1<%= language_suffix -%>.jpg" class="slide" alt="<%= t(:welcome_message) %>" /></a>
   <a href="<%= collections_path %>"><img id="slide-img-2" src="/images/slideshow2<%= language_suffix -%>.jpg" class="slide" alt="<%= t(:writings) %>" /></a>
