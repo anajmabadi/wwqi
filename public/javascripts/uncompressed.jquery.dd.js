@@ -183,7 +183,7 @@
 			$("#"+elementid).after(sDiv);
 		}
 		$("#"+id).css("width", iWidth+"px");
-		//$("#"+childid).css("width", (iWidth-2)+"px");
+		$("#"+childid).css("width", (iWidth-2)+"px");
 		if(allOptions.length>options.visibleRows) {
 			var margin = parseInt($("#"+childid+" a:first").css("padding-bottom")) + parseInt($("#"+childid+" a:first").css("padding-top"));
 			var iHeight = ((options.rowHeight)*options.visibleRows) - margin;
