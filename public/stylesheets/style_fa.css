@@ -397,12 +397,13 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 .paginationBar .sortnav a{color:#666 !important;}
+.paginationBar li.active .sortnav a{color:#fff !important;}
 .paginationBar .sortnav .disabled{color:#FFF;}
 .paginationBar .sortnav em {color:#CA4F40;}
 .paginationBar .sortnav a:hover{color:#000;}
 .paginationBar .paginate{float:left}
 
-.pagination{font-weight:bold!important}
+.pagination{font-weight:normal; font-size:0.8em}
 .pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
 .pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
 .pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
