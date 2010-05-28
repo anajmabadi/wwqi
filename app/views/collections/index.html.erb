@@ -110,7 +110,8 @@
 
       <div id="items">
         <% @items.each do |item| -%>
-          <div class="item <%= item.icon_class -%>" style="background:url(<%= item.thumbnail_url %>) top left no-repeat">
+          <div class="item <%= item.icon_class -%>">
+		<a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
             <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
             <a class="title" href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length=> 20) %><span><%= truncate(item.collection.name) %></span></a>
           </div>
