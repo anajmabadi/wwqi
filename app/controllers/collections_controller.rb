@@ -66,7 +66,7 @@ class CollectionsController < ApplicationController
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')
       else
-        @items = Item.find(:all, :conditions => "publish=1 AND gallery=1", :order => "item_translations.title" )
+        @items = Item.find(:all, :conditions => "publish=1", :order => "item_translations.title" )
         # check if the item is part of the set
         raise RangeError unless @items.include?(@item)
       end

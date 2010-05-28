@@ -36,7 +36,7 @@ Qajar::Application.routes.draw do |map|
   # special pagination routes
   #match 'collections/page/:page/per_page/:per_page' => 'collections#index'
   #match 'collections/page/:page' => 'collections#index'
-  match 'collections/detail/:id' => 'collections#detail', :as => :detail
+  match 'collections/detail/:id' => 'collections#detail', :as => :collection_detail
   map.collections_detail_slides_xml 'collections/detail/:id/slides.:format', :controller => 'collections', :action => 'slides'
   resources :collections
 
@@ -44,7 +44,8 @@ Qajar::Application.routes.draw do |map|
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
-  match 'exhibits/show/:id' => 'exhibits#show', :as => :show_exhibit
+  match 'exhibits/:id' => 'exhibits#show', :as => :show_exhibit
+  match 'exhibits/detail/:id' => 'exhibits#detail', :as => :exhibit_detail
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
   map.home 'home', :controller => 'home', :action => 'index'
 

@@ -1,0 +1,57 @@
+<% @page_description = t(:detail_description) -%>
+<% @page_title = t(:detail).capitalize -%>
+<div id="browser" class="clearfix singleItemBrowser">
+  <div id="head">
+    <h2><%= truncate(@item.title, :length => 50) %></h2>
+    <ul class="itemTools sortnav">
+      <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
+      <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_exhibits).upcase %> </a></li>
+      <li><%= link_to( t(:previous_item).upcase, :controller => :exhibits, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %></li>
+      <li><%= link_to( t(:next_item).upcase, :controller => :exhibits, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %></li>
+    </ul>
+  </div>
+  <div id="browserContent" class="clearfix">
+    <div id="itemImage">
+      <%= render :partial => 'zoomify' %>
+    </div>
+    <div id="itemDetails">
+      <table  class="styled">
+        <tr>
+          <th><%= t(:full_title).capitalize %> </th>
+          <td><%= @item.title %> </td>
+        </tr>
+        <% unless @item.collection_id.blank?  || @item.collection.nil? %>
+        <tr>
+          <th><%= t(:collection).capitalize %> </th>
+          <td><%= @item.collection.name %> </td>
+        </tr>
+        <% end %>
+        <% unless @item.show_date.blank? %>
+        <tr class="odd">
+          <th><%= t(:date).capitalize %> </th>
+          <td><%= @item.show_date %></td>
+        </tr>
+        <% end %>
+        <% unless @item.place_id.blank? || @item.place.nil? %>
+        <tr>
+          <th><%= t(:location).capitalize %></th>
+          <td><%= @item.place.name %> </td>
+        </tr>
+        <% end %>
+        <% unless @item.dimensions.blank? %>
+        <tr class="odd">
+          <th><%= t(:dimensions).capitalize %></th>
+          <td><%= @item.dimensions %></td>
+        </tr>
+        <% end %>
+        <% unless @item.category_id.blank? || @item.category.nil?%>
+        <tr>
+          <th><%= t(:type).capitalize %></th>
+          <td><%= @item.category.name %></td>
+        </tr>
+        <% end %>
+      </table>
+      <p><%= raw @item.description unless @item.description.blank? %></p>
+    </div>
+  </div>
+</div> <!-- end browser --><!-- end featured -->

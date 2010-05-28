@@ -60,7 +60,7 @@
     <h2><%=t(:about_this_exhibit)%></h2>
   </div>
   <div id="aboutContent" class="clearfix">
-    <p><%= raw @featured_exhibit.caption %>  <a href="/exhibits/show/<%= @featured_exhibit.id.to_s %>">more</a></p>
+    <p><%= raw @featured_exhibit.caption %>  <a href="/exhibits/<%= @featured_exhibit.id.to_s %>">more</a></p>
   </div>
 </div>
 <div id="browser" class="clearfix singleItemBrowser" style="margin-top:15px">
@@ -89,9 +89,9 @@
           <img alt="Thumbnail 4" src="images/thumb4.jpg" width="86" align="left"/>
         </div>
         <div class="description">
-          <h3><a href="/exhibits/show/<%= exhibit.id.to_s %>"><%= exhibit.title %></a></h3>
+          <h3><a href="/exhibits/<%= exhibit.id.to_s %>"><%= exhibit.title %></a></h3>
           <p class="meta"><%=  exhibit.display_date %></p>
-          <p><a href="/exhibits/show/<%= exhibit.id.to_s %>"><%= raw exhibit.introduction %></a></p>
+          <p><a href="/exhibits/<%= exhibit.id.to_s %>"><%= raw exhibit.introduction %></a></p>
         </div>
       </div>
     <% end %>

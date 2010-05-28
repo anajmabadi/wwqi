@@ -56,13 +56,9 @@
       <a class="next" href="#" style="display: block;"></a>
       <div class="slideshow">
         <ul>
-          <li><a href="singleItem.html" ><img src="images/exhibit1.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
-          <li><a href="singleItem.html" ><img src="images/exhibit2.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Order for Bread Purchase</a></li>
-          <li><a href="singleItem.html" ><img src="images/exhibit3.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Order for Bread Purchase</a></li>
-          <li><a href="singleItem.html" ><img src="images/exhibit4.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
-          <li><a href="singleItem.html" ><img src="images/exhibit5.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Letter</a></li>
-          <li><a href="singleItem.html "><img src="images/exhibit6.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Envelope</a></li>
-          <li><a href="singleItem.html "><img src="images/exhibit7.jpg" height="320" alt="photo" /></a><a class="title" href="singleItem.html">Envelope</a></li>
+          <% @exhibition.items.each do |item| %>
+            <li><a href="/exhibits/detail/<%= item.id.to_s %>" ><img src="<%= item.preview_url(1) %>" height="400" alt="<%= item.category.name %>" /></a><a class="title" href="/exhibits/detail/<%= item.id.to_s %>" title="<%= item.title %> "><%= truncate(item.title, :length => 50) %></a></li>
+          <% end %>
         </ul>
       </div>
 
