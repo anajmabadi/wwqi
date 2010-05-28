@@ -400,8 +400,9 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .paginationBar .sortnav a:hover{color:#000;}
 .paginationBar .paginate{float:left}
 
+.pagination{font-weight:bold!important}
 .pagination span{text-transform:uppercase}
-.pagination a{padding:3px 5px; -moz-border-radius:5px; -webkit-border-radius:5px; color:#fff; background-color:#888; margin:0 2px}
+.pagination a{padding:2px 5px; -moz-border-radius:8px; -webkit-border-radius:5px; color:#fff!important; background-color:#888; margin:0 2px; }
 .pagination em{color:#fff; font-style:normal}
 /* admin toolbar styles */
 .adminBar{
