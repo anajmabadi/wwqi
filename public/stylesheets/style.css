@@ -388,7 +388,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
     clear:left;
 }
 
-.paginationBar .sortnav a.module-link{color:#666 !important;}
+.paginationBar .sortnav a.module-link{color:#666 ;}
 .paginationBar li.active .sortnav a.module-link{color:#fff !important;}
 .paginationBar .sortnav .disabled{color:#FFF;}
 .paginationBar .sortnav em {color:#CA4F40;}
