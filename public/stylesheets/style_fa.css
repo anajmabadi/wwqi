@@ -898,6 +898,20 @@ div.slideshow ul li{
 }
 div.slideshow ul li img{margin:auto 0}
 
+div.slideshow ul li a.title{
+    width:100%;
+    background:url(/images/85black.png);
+    position:absolute;
+    bottom:0;
+    left:0;
+    height:20px;
+    line-height:20px;
+    display:block;
+    color:#fff;
+    text-align:center;
+    margin:0;
+    padding:0;
+}
 
 
 
