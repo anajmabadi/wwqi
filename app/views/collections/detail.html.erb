@@ -21,37 +21,42 @@
           <td><%= @item.title %> </td>
         </tr>
         <% unless @item.collection_id.blank?  || @item.collection.nil? %>
-        <tr>
-          <th><%= t(:collection).capitalize %> </th>
-          <td><%= @item.collection.name %> </td>
-        </tr>
+          <tr>
+            <th><%= t(:collection).capitalize %> </th>
+            <td><%= @item.collection.name %> </td>
+          </tr>
         <% end %>
         <% unless @item.show_date.blank? %>
-        <tr class="odd">
-          <th><%= t(:date).capitalize %> </th>
-          <td><%= @item.show_date %></td>
-        </tr>
+          <tr class="odd">
+            <th><%= t(:date).capitalize %> </th>
+            <td><%= @item.show_date %></td>
+          </tr>
         <% end %>
         <% unless @item.place_id.blank? || @item.place.nil? %>
-        <tr>
-          <th><%= t(:location).capitalize %></th>
-          <td><%= @item.place.name %> </td>
-        </tr>
+          <tr>
+            <th><%= t(:location).capitalize %></th>
+            <td><%= @item.place.name %> </td>
+          </tr>
         <% end %>
         <% unless @item.dimensions.blank? %>
-        <tr class="odd">
-          <th><%= t(:dimensions).capitalize %></th>
-          <td><%= @item.dimensions %></td>
-        </tr>
+          <tr class="odd">
+            <th><%= t(:dimensions).capitalize %></th>
+            <td><%= @item.dimensions %></td>
+          </tr>
         <% end %>
         <% unless @item.category_id.blank? || @item.category.nil?%>
-        <tr>
-          <th><%= t(:type).capitalize %></th>
-          <td><%= @item.category.name %></td>
-        </tr>
+          <tr>
+            <th><%= t(:type).capitalize %></th>
+            <td><%= @item.category.name %></td>
+          </tr>
         <% end %>
       </table>
+
       <p><%= raw @item.description unless @item.description.blank? %></p>
+      <% unless @item.clips.empty? %>
+        <h4><%= @item.clips[0].title %></h4>
+        <%= raw audio_player(@item.clip_url(1)) %>
+      <% end %>
     </div>
   </div>
 </div> <!-- end browser --><!-- end featured -->

@@ -84,6 +84,18 @@ module ApplicationHelper
     } unless id.nil?
   end
 
+  def audio_player(file_name)
+    return %{
+      <audio controls autobuffer class="backdrop aligncenter">
+        <source src="#{file_name}" />
+        <source src="#{file_name}" />
+        <script type="text/javascript">
+          //swfobject.registerObject("zoomify_swf", "10.0.0", "/flash/expressInstall.swf");
+        </script>
+      </audio>
+    }
+  end
+
   def sort_link(title, column, options = {})
     condition = options[:unless] if options.has_key?(:unless)
     sort_dir = params[:d] == 'up' ? 'down' : 'up'
