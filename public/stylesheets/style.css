@@ -313,9 +313,11 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 #browserMessage p{
-    padding:5px;
-    margin:0;
-    color:#fff;
+    color:#DDDDDD;
+	font-size:14px;
+	font-weight:bold;
+	margin:0;
+	padding:5px;
 }
 #browserFiltersDropdown{
     display:none;
@@ -393,8 +395,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .paginationBar .paginate{float:right}
 
 .pagination{font-weight:bold!important}
-.pagination span, .pagination span a{text-transform:uppercase!important}
-.pagination a{padding:2px 5px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#888; margin:0 2px; }
+.pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
+.pagination a{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; }
 .pagination em{color:#fff; font-style:normal}
 
 /* admin toolbar styles */
