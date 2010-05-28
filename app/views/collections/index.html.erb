@@ -98,7 +98,7 @@
         <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @medium_filter.nil? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
           <% @categories.each do |category| -%>
-            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= raw category.parent_id != category.id ? '&ndash; ' : '' -%><%= truncate(category.name, :length => 20) %></option>
+            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= raw category.parent_id != category.id ? '&ndash; ' : '' -%><%= truncate(category.name, :length => 50) %></option>
           <% end -%>
           <option value="more"><%= t(:more_categories) %></option>
         </select>
@@ -110,7 +110,7 @@
         <select id="collectionFilter" name="collection_filter"  onChange="document.forms['collection_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @collection_filter.nil? || @collection_filter== 'all' -%>><%= t(:all).capitalize %></option>
           <% @collections.each do |collection| -%>
-            <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= truncate(collection.name, :length => 20) %></option>
+            <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= truncate(collection.name, :length => 50) %></option>
           <% end -%>
           <option value="more"><%= t(:more_collections) %></option>
         </select>
@@ -123,7 +123,7 @@
           <option value="all"<%= raw ' selected="selected"' if @person_filter.nil? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @people.each do |person| -%>
             <% if person.major %>
-              <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= truncate(person.name, :length => 20) %></option>
+              <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= truncate(person.name, :length => 50) %></option>
             <% end -%>
           <% end -%>
           <option value="more"><%= t(:more_names) %></option>
@@ -137,7 +137,7 @@
           <option value="all"<%= raw ' selected="selected"' if @subject_filter.nil? || @subject_filter == 'all' -%>><%= t(:all).capitalize %> </option>
           <% @subjects.each do |subject| -%>
             <% if subject.major %>
-              <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @subject_filter==subject.id.to_s -%>><%= truncate(subject.name, :length => 20) %></option>
+              <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @subject_filter==subject.id.to_s -%>><%= truncate(subject.name, :length => 50) %></option>
             <% end -%>
           <% end -%>
           <option value="more"><%= t(:more_subjects) %></option>
@@ -150,7 +150,7 @@
         <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
           <option value="all"<%= raw ' selected="selected"' if @period_filter.nil? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @periods.each do |period| -%>
-            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 20) %></option>
+            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= truncate(period.title, :length => 50) %></option>
           <% end -%>
         </select>
       <% end %>
@@ -230,7 +230,7 @@
             </div>
             <div class="description">
               <a class="view" href="/collections/detail/<%= item.id %>"><%=  t(:view_details) %></a>
-              <h3><a href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length => 50) %></a></h3>
+              <h3><a href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length => 200) %></a></h3>
               <h4><%= item.collection.name unless item.collection.nil? %></h4>
               <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.nil? %> <%= item.period.title  unless item.period.nil? %></p>
               <p> <a href="/collections/detail/<%= item.id %>"><%= truncate(item.description, :length => 100) unless item.description.blank? -%> </a></p>
@@ -325,7 +325,7 @@
           <div class="item <%= item.icon_class -%>">
             <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= truncate(item.title) %>" /></a>
             <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
-            <a class="title" href="/collections/detail/<%= item.id %>"><%= truncate(item.title, :length=> 20) %><span><%= truncate(item.collection.name) %></span></a>
+            <a class="title" href="/collections/detail/<%= item.id %>" ><%= truncate(item.title, :length=> 200) %><span><%= truncate(item.collection.name) %></span></a>
           </div>
         <% end -%>
       </div><!-- end of items -->
