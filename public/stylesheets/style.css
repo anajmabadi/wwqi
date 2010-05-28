@@ -393,7 +393,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .paginationBar .paginate{float:right}
 
 .pagination{font-weight:bold!important}
-.pagination span{text-transform:uppercase}
+.pagination span, .pagination span a{text-transform:uppercase!important}
 .pagination a{padding:2px 5px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#888; margin:0 2px; }
 .pagination em{color:#fff; font-style:normal}
 
