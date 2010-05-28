@@ -67,6 +67,6 @@ class Item < ActiveRecord::Base
   end
 
   def clip_url(index=1)
-    return LIBRARY_URL + "clips/it_#{id.to_s}_#{index.to_s}_clip.mp3"
+    return LIBRARY_URL + "clips/it_#{id.to_s}_#{index.to_s}_clip.wav"
   end
 end
