@@ -1,20 +1,5 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
 en:
-  site_title: "Women's Worlds in Qajar Iran"
-  home_description: "A virtual archive of documents and images on the history of women in Qajar Iran."
-  language_option: فارسی
-  login:  login
-  create_account: "create account"
-  home: home
-  archive: archive
-  exhibits: exhibits
-  about: about
-  contact: contact
-  permissions: permissions
-  sponsors: sponsors
-  news: news
-  people: people
-  collections: collections  
-  donate_materials: "donate materials"
-  help: help
-  wwqi: WWQI
-  also_at_harvard: "Also at Harvard"
+  hello: "Hello world"
