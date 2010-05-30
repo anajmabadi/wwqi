@@ -1,45 +1,8 @@
 --- 
-dependencies: 
-  rails: 
-    group: 
-    - :default
-    version: = 3.0.0.beta3
-  mysql: 
-    group: 
-    - :default
-    version: ">= 0"
-  rspec: 
-    group: 
-    - :default
-    version: ">= 2.0.0.beta.1"
-  jalalidate: 
-    group: 
-    - :default
-    version: ">= 0"
-  rspec-rails: 
-    group: 
-    - :default
-    version: ">= 2.0.0.beta.1"
-  rack: 
-    group: 
-    - :default
-    version: ">= 0"
-  webrat: 
-    group: 
-    - :test
-    version: ">= 0"
-  will_paginate: 
-    group: 
-    - :default
-    version: ">= 3.0.pre"
-  farsifu: 
-    group: 
-    - :default
-    version: ">= 0"
-  calendar: 
-    group: 
-    - :default
-    version: ">= 0"
+hash: 41c60bff176931d05ad03caf3ab08a3d0a4c83b8
+sources: 
+- Rubygems: 
+    uri: http://gemcutter.org
 specs: 
 - rake: 
     version: 0.8.7
@@ -89,12 +52,6 @@ specs:
     version: 3.0.0.beta3
 - bundler: 
     version: 0.9.25
-- calendar: 
-    version: 1.11.4
-- farsifu: 
-    version: 0.2.0
-- jalalidate: 
-    version: 0.2.1
 - mysql: 
     version: 2.8.1
 - nokogiri: 
@@ -119,7 +76,32 @@ specs:
     version: 2.0.0.beta.8
 - will_paginate: 
     version: 3.0.pre
-hash: b2d103bc592d37c20b39683be59f9bf8f7b583ea
-sources: 
-- Rubygems: 
-    uri: http://gemcutter.org
+dependencies: 
+  rails: 
+    version: = 3.0.0.beta3
+    group: 
+    - :default
+  rack: 
+    version: ">= 0"
+    group: 
+    - :default
+  mysql: 
+    version: ">= 0"
+    group: 
+    - :default
+  will_paginate: 
+    version: ">= 3.0.pre"
+    group: 
+    - :default
+  rspec: 
+    version: ">= 2.0.0.beta.1"
+    group: 
+    - :default
+  rspec-rails: 
+    version: ">= 2.0.0.beta.1"
+    group: 
+    - :default
+  webrat: 
+    version: ">= 0"
+    group: 
+    - :test

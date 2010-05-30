@@ -15,9 +15,9 @@ gem "will_paginate", ">=3.0.pre"
 gem "rspec", ">= 2.0.0.beta.1"
 gem "rspec-rails", ">= 2.0.0.beta.1"
 
-gem 'farsifu'
-gem 'jalalidate'
-gem 'calendar'
+#gem 'farsifu'
+#gem 'jalalidate'
+#gem 'calendar'
 
 
 # gem "bj"
