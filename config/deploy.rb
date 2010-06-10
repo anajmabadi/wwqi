@@ -12,6 +12,7 @@ set :deploy_to, "/var/www/vhosts/qajarwomen.org/httpdocs"
 
 default_run_options[:pty] = true
 set :use_sudo, true
+set :user, "cforcey"
 
 #############################################################
 #	Subversion
