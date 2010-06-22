@@ -3,35 +3,35 @@
 
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_area :title, :rows => 3 %>
   </div>
   <div class="field">
     <%= f.label :accession_num %><br />
-    <%= f.text_field :accession_num %>
+    <%= f.text_area :accession_num, :rows => 3 %>
   </div>
   <div class="field">
-    <%= f.label :caption %><br />
-    <%= f.text_field :caption %>
+    <%= f.label :credit %><br />
+    <%= f.text_area :credit, :rows => 3 %>
   </div>
   <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description %>
+    <%= f.text_area :description, :rows => 5 %>
   </div>
   <div class="field">
     <%= f.label :olivia_id %><br />
-    <%= f.text_field :olivia_id %>
+    <%= f.text_area :olivia_id, :rows => 3 %>
   </div>
   <div class="field">
     <%= f.label :urn %><br />
-    <%= f.text_field :urn %>
+    <%= f.text_area :urn, :rows => 3 %>
   </div>
   <div class="field">
     <%= f.label :creator_id %><br />
-    <%= f.text_field :creator_id %>
+    <%= f.select :creator_id, @creator_list, {:include_blank => true} %>
   </div>
   <div class="field">
     <%= f.label :owner_id %><br />
-    <%= f.text_field :owner_id %>
+    <%= f.select :owner_id, @owner_list, {:include_blank => true} %>
   </div>
   <div class="field">
     <%= f.label :collection_id %><br />
