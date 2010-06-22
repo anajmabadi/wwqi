@@ -43,7 +43,7 @@ module Qajar
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
 
-        # switching over to active record for translations
+    # switching over to active record for translations
     I18n.backend = I18n::Backend::ActiveRecord.new
     I18n.backend.extend(I18n::Backend::Fallbacks)
     I18n::Backend::ActiveRecord.send(:include, I18n::Backend::Cache)

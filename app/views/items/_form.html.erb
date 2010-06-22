@@ -26,6 +26,10 @@
     <%= f.text_area :urn, :rows => 3 %>
   </div>
   <div class="field">
+    <%= f.label :creator_label %><br />
+    <%= f.text_field :creator_label, :size => 55 %>
+  </div>
+  <div class="field">
     <%= f.label :creator_id %><br />
     <%= f.select :creator_id, Person.select_list, {:include_blank => true} %>
   </div>
@@ -39,18 +43,39 @@
   </div>
   <div class="field">
     <%= f.label :pages %><br />
-    <%= f.text_field :pages %>
+    <%= f.text_field :pages, :size => 5 %>
   </div>
   <div class="field">
     <%= f.label :format_id %><br />
     <%= f.text_field :format_id %>
   </div>
   <div class="field">
+    <%= f.label :period_id %><br />
+    <%= f.select :period_id, Period.select_list, {:include_blank => true} %>
+  </div>
+  <div class="field">
+    <%= f.label :source_date %> (use with calendar type below)<br />
+    <%= f.text_field :source_date %>
+  </div>
+  <div class="field">
+    <%= f.label :calendar_type_id %><br />
+    <%= f.select :calendar_type_id, CalendarType.select_list, {:include_blank => true} %>
+  </div>
+  <div class="field">
     <%= f.label :display_date %><br />
     <%= f.text_field :display_date %>
   </div>
   <div class="field">
-    <%= f.label :sort_date %><br />
+    <%= f.label :sort_date %> (YYYY-MM-DD Gregorian)<br />
+    <%= f.text_field :sort_date %>
+  </div>
+  <div class="field">
+    <%= f.label :circa %><br />
+    <%= f.check_box :circa %>
+  </div>
+  <div class="field">
+    <%= f.label :bound %><br />
+    <%= f.check_box :bound %>
   </div>
   <div class="field">
     <%= f.label :dimensions %><br />

@@ -16,4 +16,8 @@ class Period < ActiveRecord::Base
   def j_end_year
     return JalaliDate.new(Date.new(end_year)).year
   end
+
+  def self.select_list
+    return self.all(:conditions => ['period_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, period_translations.title', :order => 'periods.start_at').map {|period| [period.title, period.id]}
+  end
 end
