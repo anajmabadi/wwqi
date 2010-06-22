@@ -5,6 +5,10 @@ class Collection < ActiveRecord::Base
 
   default_scope :include => :translations
 
+  def self.select_list
+    return self.all(:conditions => ['collection_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, collection_translations.name', :order => 'collection_translations.name').map {|collection| [collection.name, collection.id]}
+  end
+
   def item_count
     items.size
   end

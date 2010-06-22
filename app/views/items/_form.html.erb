@@ -27,15 +27,15 @@
   </div>
   <div class="field">
     <%= f.label :creator_id %><br />
-    <%= f.select :creator_id, @creator_list, {:include_blank => true} %>
+    <%= f.select :creator_id, Person.select_list, {:include_blank => true} %>
   </div>
   <div class="field">
     <%= f.label :owner_id %><br />
-    <%= f.select :owner_id, @owner_list, {:include_blank => true} %>
+    <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
   </div>
   <div class="field">
     <%= f.label :collection_id %><br />
-    <%= f.text_field :collection_id %>
+    <%= f.select :collection_id, Collection.select_list, {:include_blank => true} %>
   </div>
   <div class="field">
     <%= f.label :pages %><br />
@@ -58,11 +58,11 @@
   </div>
   <div class="field">
     <%= f.label :notes %><br />
-    <%= f.text_area :notes %>
+    <%= f.text_area :notes, :rows => 3 %>
   </div>
   <div class="field">
     <%= f.label :place_id %><br />
-    <%= f.text_field :place_id %>
+    <%= f.select :place_id, Place.select_list, {:include_blank => true } %>
   </div>
   <div class="field">
     <%= f.label :publish %><br />

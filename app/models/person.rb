@@ -11,6 +11,10 @@ class Person < ActiveRecord::Base
   
   default_scope :include => :translations
 
+  def self.select_list
+    return self.all(:conditions => ['person_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, person_translations.name', :order => 'person_translations.sort_name').map {|person| [person.name, person.id]}
+  end
+
   def tag_line
     value = name unless name.blank?
     value += ' (' + vitals + ')' unless vitals.blank?

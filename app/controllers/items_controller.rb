@@ -30,8 +30,6 @@ class ItemsController < ApplicationController
   # GET /items/new.xml
   def new
     @item = Item.new
-    @creator_list = creator_list
-    @owner_list = owner_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @item }
@@ -41,16 +39,12 @@ class ItemsController < ApplicationController
   # GET /items/1/edit
   def edit
     @item = Item.find(params[:id])
-    @creator_list = creator_list
-    @owner_list = owner_list
   end
 
   # POST /items
   # POST /items.xml
   def create
     @item = Item.new(params[:item])
-    @creator_list = creator_list
-    @owner_list = owner_list
     respond_to do |format|
       if @item.save
         format.html { redirect_to(@item, :notice => 'Item was successfully created.') }
@@ -66,8 +60,6 @@ class ItemsController < ApplicationController
   # PUT /items/1.xml
   def update
     @item = Item.find(params[:id])
-    @creator_list = creator_list
-    @owner_list = owner_list
     respond_to do |format|
       if @item.update_attributes(params[:item])
         format.html { redirect_to(@item, :notice => 'Item was successfully updated.') }
@@ -90,15 +82,5 @@ class ItemsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
-  private
-
-  def creator_list
-    return Person.all(:conditions => ['person_translations.locale = ?', I18n.locale.to_s], :order => 'person_translations.sort_name').map {|person| [person.name, person.id]}
-  end
-
-  def owner_list
-    return Owner.all(:conditions => ['owner_translations.locale = ?', I18n.locale.to_s], :order => 'owner_translations.name').map {|owner| [owner.name, owner.id]}
-  end
-
+  
 end
