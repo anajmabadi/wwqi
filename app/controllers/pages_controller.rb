@@ -3,6 +3,14 @@ class PagesController < ApplicationController
   before_filter :admin_required, :except => [:index, :show, :about, :donate_materials, :contact, :news, :permissions, :sponsors, :help]
 
   # hard-coded pages for the main navigation
+
+  def admin
+    @page = Page.find(params[:id])
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @page }
+    end
+  end
   def about
     @page = Page.find(params[:id])
 

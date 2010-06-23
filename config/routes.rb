@@ -39,17 +39,16 @@ Qajar::Application.routes.draw do |map|
 
   resources :people
 
-  # special pagination routes
-  #match 'collections/page/:page/per_page/:per_page' => 'collections#index'
-  #match 'collections/page/:page' => 'collections#index'
-  match 'collections/detail/:id' => 'collections#detail', :as => :collection_detail
-  map.collections_detail_slides_xml 'collections/detail/:id/slides.:format', :controller => 'collections', :action => 'slides'
   resources :collections
 
   resources :items
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  match 'archive' => 'archive#index', :as => :archive
+  match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
+  map.archive_detail_slides_xml 'archive/detail/:id/slides.:format', :controller => 'archive', :action => 'slides'
+  
   match 'exhibits/:id' => 'exhibits#show', :as => :show_exhibit
   match 'exhibits/detail/:id' => 'exhibits#detail', :as => :exhibit_detail
   map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
@@ -61,7 +60,7 @@ Qajar::Application.routes.draw do |map|
   map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 6
   map.credits 'credits', :controller => 'pages', :action => 'credits', :id => 5
   map.faq 'faq', :controller => 'pages', :action => 'faq', :id => 7
-
+  map.admin 'admin', :controller => 'pages', :action => 'admin', :id => 8
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

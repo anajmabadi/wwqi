@@ -1,0 +1,23 @@
+<% @page_description = t(:admin_description) -%>
+<% @page_title = @page.title -%>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= @page.title %></h1>
+  <% unless @page.caption.blank? %>
+  <em><%= raw @page.caption %></em>
+  <% end %>
+  <%= raw @page.body %>
+  <ul>
+    <li><%= link_to t(:item), items_url %> | <%= link_to t(:image).capitalize, images_url %></li>
+    <li><%= link_to t(:collection).capitalize, collections_url %></li>
+    <li><%= link_to t(:subject).capitalize, subjects_url %> | <%= link_to t(:subject_type).capitalize, subject_types_url %> | <%= link_to t(:classification).capitalize, classifications_url %> </li>
+    <li><%= link_to t(:period).capitalize, periods_url %></li>
+    <li><%= link_to t(:place).capitalize, places_url %></li>
+    <li><%= link_to t(:person).capitalize, people_url %> | <%= link_to t(:relationship).capitalize, relationships_url %> | <%= link_to t(:appellation).capitalize, appellations_url %> | <%= link_to t(:appearance).capitalize, appearances_url %></li>
+    <li><%= link_to t(:owner).capitalize, owners_url %></li>
+    <li><%= link_to t(:exhibition).capitalize, exhibitions_url %> | <%= link_to t(:panel).capitalize, panels_url %></li>
+    <li><%= link_to t(:clip).capitalize, clips_url %> | <%= link_to t(:clip_type).capitalize, clip_types_url %></li>
+    <li><%= link_to t(:page).capitalize, pages_url %></li>
+    <li><%= link_to t(:translation).capitalize, translations_url %></li>
+  </ul>
+</div> <!-- end browser --><!-- end featured -->

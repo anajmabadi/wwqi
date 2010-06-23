@@ -6,8 +6,8 @@
     <ul class="itemTools sortnav">
       <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
       <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
-      <li><%= link_to( t(:previous_item).upcase, :controller => :collections, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %></li>
-      <li><%= link_to( t(:next_item).upcase, :controller => :collections, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %></li>
+      <li><%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %></li>
+      <li><%= link_to( t(:next_item).upcase, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %></li>
     </ul>
   </div>
   <div id="browserContent" class="clearfix">

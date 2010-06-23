@@ -98,7 +98,7 @@
           <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
           <ul class="sortnav">
             <li<% if controller.controller_name == 'home' -%> class="active"<% end -%>> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
-            <li<% if controller.controller_name == 'collections' -%> class="active"<% end -%>> <%= link_to(t(:collections), collections_path, { :class=>"module-link" }) %></li>
+            <li<% if controller.controller_name == 'archive' -%> class="active"<% end -%>> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
             <li<% if controller.controller_name == 'exhibits' -%> class="active"<% end -%>> <%= link_to(t(:exhibits), exhibits_path, { :class=>"module-link" }) %></li>
           </ul>
         </div>

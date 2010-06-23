@@ -67,7 +67,7 @@ class Item < ActiveRecord::Base
   end
 
   def slides_xml_url
-    return '/collections/detail/' + id.to_s + '/slides.xml'
+    return '/archive/detail/' + id.to_s + '/slides.xml'
   end
 
   def clip_url(index=1)
