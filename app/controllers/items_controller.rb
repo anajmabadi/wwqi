@@ -45,6 +45,7 @@ class ItemsController < ApplicationController
   # POST /items.xml
   def create
     @item = Item.new(params[:item])
+    @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.save
         format.html { redirect_to(@item, :notice => 'Item was successfully created.') }
@@ -60,6 +61,7 @@ class ItemsController < ApplicationController
   # PUT /items/1.xml
   def update
     @item = Item.find(params[:id])
+    @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.update_attributes(params[:item])
         format.html { redirect_to(@item, :notice => 'Item was successfully updated.') }

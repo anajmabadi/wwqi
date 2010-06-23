@@ -7,13 +7,16 @@ class Item < ActiveRecord::Base
   belongs_to :period
   belongs_to :category
   belongs_to :calendar_type
+  belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
 
+  has_many :classifications
   has_many :images
   has_many :appearances
   has_many :people, :through => :appearances
   has_many :panels
   has_many :exhibitions, :through => :panels, :order => 'panels.position'
   has_many :clips, :order => :position
+  has_many :subjects, :through => :classifications, :order => 'position'
   
   translates :title, :credit, :description, :display_date, :creator_label
   
@@ -21,7 +24,7 @@ class Item < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 25
   
-  validates_uniqueness_of :olivia_id, :accession_num
+  validates_uniqueness_of :accession_num
 
   default_scope :include => [:translations, :category]
 

@@ -93,7 +93,44 @@
     <%= f.label :publish %><br />
     <%= f.check_box :publish %>
   </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <hr />
+  <p>
+    <b>Subjects</b>
+  </p>
+  <% counter = 1 -%>
+  <% @subjects = Subject.all(:include => 'subject_type', :order => 'subject_types.id, subject_translations.name') -%>
+  <table class="styled">
+    <tr>
+      <% @subjects.each do |subject| -%>
+        <% unless @current_type == subject.subject_type_id -%>
+          <% @current_type = subject.subject_type_id  -%>
+          <% if counter > 1 %>
+          </tr>
+          <% counter = 1 %>
+        <% end -%>
+        <td colspan="5"><strong><%=  subject.subject_type.name %></strong></td></tr><tr>
+    <% end -%>
+    <% if counter == 6 -%>
+    </tr>
+    <tr>
+      <% counter = 1 -%>
+    <% end -%>
+    <td>
+      <input type="checkbox"
+             id="<%=subject.id%>"
+             name="subject_ids[]"
+             value="<%=subject.id %>"
+             <%  if @item.subjects.include? subject -%>
+               checked="checked"
+             <% end -%>
+             /> <%= subject.name %>
+    </td>
+    <% counter += 1 -%>
+  <% end -%>
+</tr>
+</table>
+<hr />
+<div class="actions">
+  <%= f.submit %>
+</div>
 <% end %>

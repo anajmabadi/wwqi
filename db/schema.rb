@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100528143828) do
+ActiveRecord::Schema.define(:version => 20100623011711) do
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
@@ -138,7 +138,7 @@ ActiveRecord::Schema.define(:version => 20100528143828) do
 
   create_table "clips", :force => true do |t|
     t.integer  "item_id",                        :null => false
-    t.integer  "clip_type_id",                   :null => false
+    t.integer  "clip_type_id", :default => 1,    :null => false
     t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.date     "recorded_on"
@@ -179,7 +179,8 @@ ActiveRecord::Schema.define(:version => 20100528143828) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "publish",        :default => true
+    t.boolean  "publish",        :default => true,  :null => false
+    t.boolean  "private",        :default => false, :null => false
   end
 
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
@@ -541,6 +542,27 @@ ActiveRecord::Schema.define(:version => 20100528143828) do
 
   add_index "subject_translations", ["name"], :name => "index_subject_translations_on_name"
   add_index "subject_translations", ["subject_id"], :name => "index_subject_translations_on_subject_id"
+
+  create_table "subject_type_translations", :force => true do |t|
+    t.integer  "subject_type_id"
+    t.string   "locale"
+    t.string   "name"
+    t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subject_type_translations", ["name"], :name => "index_subject_type_translations_on_name"
+  add_index "subject_type_translations", ["subject_type_id"], :name => "index_40e3198922c547fbecf36d5442b606191b8975c3"
+
+  create_table "subject_types", :force => true do |t|
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "subject_types", ["publish"], :name => "index_subject_types_on_publish"
 
   create_table "subjects", :force => true do |t|
     t.boolean  "major",      :default => false

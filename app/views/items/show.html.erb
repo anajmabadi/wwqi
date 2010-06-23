@@ -4,12 +4,12 @@
 <div id="staticContent" class="clearfix">
   <h1><%= @page_title %></h1>
   <table class="styled" >
-        <tr><th>
+    <tr><th>
         <%= link_to 'Edit', edit_item_path(@item) %> |
         <%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></th></tr>
     <tr><td><h2>
-      <%= image_tag @item.thumbnail_url, :align => 'right', :width => 50 -%>  <%= @item.title %>
-    </h2></td></tr>
+          <%= image_tag @item.thumbnail_url, :align => 'right', :width => 50 -%>  <%= @item.title %>
+        </h2></td></tr>
     <tr><td>
         <b>Publish:</b>
         <%= @item.publish %>
@@ -41,17 +41,17 @@
 
     <tr><td>
         <b>Creator:</b>
-        <%= @item.creator_id %>
+        <%= @item.creator.name unless @item.creator.nil? %>
       </td></tr>
 
     <tr><td>
         <b>Owner:</b>
-        <%= @item.owner_id %>
+        <%= @item.owner.name unless @item.owner.nil? %>
       </td></tr>
 
     <tr><td>
         <b>Collection:</b>
-        <%= @item.collection_id %>
+        <%= @item.collection.name unless @item.collection.nil? %>
       </td></tr>
 
     <tr><td>
@@ -86,12 +86,42 @@
 
     <tr><td>
         <b>Place:</b>
-        <%= @item.place_id %>
+        <%= @item.place.name unless @item.place.nil? %>
       </td></tr>
-
+    <hr />
+    <tr><td>
+        <b>Subjects:</b></td>
+    </tr>
+    <tr>
+      <% counter = 1 -%>
+      <% @subjects = @item.subjects -%>
+      <table class="styled">
+        <tr>
+          <% @subjects.each do |subject| -%>
+            <% unless @current_type == subject.subject_type_id -%>
+              <% @current_type = subject.subject_type_id  -%>
+              <% if counter > 1 %>
+              </tr>
+              <% counter = 1 %>
+            <% end -%>
+            <td colspan="5"><strong>--<%=  subject.subject_type.name %></strong></td></tr><tr>
+            <% end -%>
+            <% if counter == 6 -%>
+            </tr>
+            <tr>
+              <% counter = 1 -%>
+            <% end -%>
+            <td>
+              <%= subject.name %>
+            </td>
+            <% counter += 1 -%>
+          <% end -%>
+        </tr>
+      </table>
+    </tr>
     <tr><td>    <div>
-      <%= render :partial => 'zoomify' %>
-    </div>
+          <%= render :partial => 'zoomify' %>
+        </div>
       </td></tr>
 
 

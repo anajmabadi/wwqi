@@ -1,0 +1,25 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @subject_type.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @subject_type.description %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @subject_type.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @subject_type.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_subject_type_path(@subject_type) %> |
+<%= link_to 'Back', subject_types_path %>

@@ -1,5 +1,11 @@
-<h1>New item</h1>
+<% @page_description = t(:new_description) -%>
+<% @page_title = t(:item).pluralize.capitalize + ' | ' + t(:new).capitalize -%>
 
-<%= render 'form' %>
+<div id="staticContent" class="clearfix">
 
-<%= link_to 'Back', items_path %>
+  <h1><%= t(:new).capitalize + ' ' + t(:item) %> </h1>
+  <%= link_to 'Back', items_path %>
+  <%= render 'form' %>
+
+  <%= link_to 'Back', items_path %>
+</div>
