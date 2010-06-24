@@ -67,7 +67,7 @@
   </div>
   <div class="field">
     <%= f.label :sort_date %> (YYYY-MM-DD Gregorian)<br />
-    <%= f.text_field :sort_date %>
+    <%= f.date_select :sort_date, {:start_year => 1700, :end_year => 1950} %>
   </div>
   <div class="field">
     <%= f.label :circa %><br />
