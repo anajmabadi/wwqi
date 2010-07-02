@@ -1,16 +1,16 @@
-<div class="paginationBar clearfix">
+  <div class="paginationBar clearfix">
   <div class="sortnav paginate">
-    <%= will_paginate @items %>
+    <%= will_paginate @items, :inner_window => 2, :outer_window => 1 %>
   </div>
   <ul class="sortnav" id="sort" style="float:left; width:200px;">
     <li class="label"><%= t(:sort_by) %> :</li>
-    <li<%= raw ' class="active"' if @sort_mode[0,5] =='alpha' %>><%= link_to( t(:az_sort) + raw('<span class="' + (@sort_mode == 'alpha_asc' ? 'down':'up')+'"></span>'), url_for(params.merge(:sort_mode => (@sort_mode == 'alpha_asc' ? 'alpha_dsc':'alpha_asc'))), {:class => 'module-link AZsort'}) %></li>
-    <li<%= raw ' class="active"' if @sort_mode[0,4] == 'date' %>><%= link_to( t(:date) + raw('<span class="' + (@sort_mode == 'date_asc' ? 'down':'up')+'"></span>'), url_for(params.merge(:sort_mode => (@sort_mode=='date_asc' ? 'date_dsc':'date_asc'))), {:class => 'module-link Datesort'}) %></li>
+    <li class="<%= 'active' if @sort_mode[0,5] =='alpha' -%>"><%= link_to( t(:az_sort), url_for(params.merge(:sort_mode => (@sort_mode == 'alpha_asc' ? 'alpha_dsc':'alpha_asc'))), {:class => 'module-link AZsort'}) %><span class="<%= @sort_mode == 'alpha_asc' ? 'down':'up' -%>"></span></li>
+    <li class="<%= 'active' if @sort_mode[0,4] == 'date' -%>"><%= link_to( t(:date), url_for(params.merge(:sort_mode => (@sort_mode=='date_asc' ? 'date_dsc':'date_asc'))), {:class => 'module-link Datesort'}) %><span class="<%= @sort_mode == 'date_asc' ? 'down':'up' -%>"></span></li>
   </ul>
   <ul class="sortnav" id="viewMode" style="float:left">
     <li class="label"><%= t(:view_mode) %> </li>
-    <li<%= raw  ' class="active"' if @view_mode == 'list' %>><%= link_to( t(:list_view), url_for(params.merge(:view_mode => 'list')), {:class => 'module-link'}) -%></li>
-    <li<%= raw  ' class="active"' if @view_mode == 'grid' %>><%= link_to( t(:grid_view), url_for(params.merge(:view_mode => 'grid')), {:class => 'module-link'}) -%></li>
-    <li<%= raw  ' class="active"' if @view_mode == 'slideshow' %>><%= link_to( t(:slideshow), url_for(params.merge(:view_mode => 'slideshow')), {:class => 'module-link'}) -%></li>
+    <li class="<%= 'active' if @view_mode == 'list' -%>"><%= link_to( t(:list_view), url_for(params.merge(:view_mode => 'list')), {:class => 'module-link'}) -%></li>
+    <li class="<%= 'active' if @view_mode == 'grid' -%>"><%= link_to( t(:grid_view), url_for(params.merge(:view_mode => 'grid')), {:class => 'module-link'}) -%></li>
+    <li class="<%= 'active' if @view_mode == 'slideshow' -%>"><%= link_to( t(:slideshow), url_for(params.merge(:view_mode => 'slideshow')), {:class => 'module-link'}) -%></li>
   </ul>
 </div> 
