@@ -12,20 +12,23 @@ gem "mysql"
 
 gem "will_paginate", ">=3.0.pre"
 
-gem "rspec", ">= 2.0.0.beta.1"
-gem "rspec-rails", ">= 2.0.0.beta.1"
-
 #gem 'farsifu'
 #gem 'jalalidate'
 #gem 'calendar'
-
 
 # gem "bj"
 # gem "hpricot", "0.6"
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
-
-group :test do
+group :test, :development do
+  gem 'capybara'
+  gem 'database_cleaner'
+  gem 'cucumber-rails'
+  gem 'cucumber'
+  gem "rspec", ">= 2.0.0.beta.1"
+  gem "rspec-rails", ">= 2.0.0.beta.1"
+  gem 'spork'
+  gem 'launchy'    # So you can do Then show me the page
   gem "webrat"
 end
 
