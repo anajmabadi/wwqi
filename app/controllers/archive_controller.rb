@@ -30,7 +30,7 @@ class ArchiveController < ApplicationController
 
     # paginate the items
     @page = params[:page] || 1
-    @per_page = @view_mode == 'slideshow' ? 18 : params[:per_page] || Item.per_page || 10
+    @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
 
     @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
     @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
