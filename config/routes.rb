@@ -56,7 +56,7 @@ Qajar::Application.routes.draw do |map|
   map.home 'home', :controller => 'home', :action => 'index'
 
   # hard coded pages using the pages table for their body text
-  map.about 'about', :controller => 'pages', :action => 'about', :id => 1
+  match 'about' => 'pages#about', :as => :about, :id => 1
   map.contact 'contact', :controller => 'pages', :action => 'contact', :id => 3
   map.permissions 'permissions', :controller => 'pages', :action => 'permissions', :id => 6
   map.credits 'credits', :controller => 'pages', :action => 'credits', :id => 5

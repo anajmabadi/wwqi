@@ -12,10 +12,15 @@ class PagesController < ApplicationController
     end
   end
   def about
-    @page = Page.find(params[:id])
-
+    
+    begin
+      @page = Page.find(params[:id])
+    rescue
+      @page = Page.new({:title => "about", :body => "A database error has occured."})
+    end
+    
     respond_to do |format|
-      format.html # show.html.erb
+      format.html # about.html.erb
       format.xml  { render :xml => @page }
     end
   end
