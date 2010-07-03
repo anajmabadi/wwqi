@@ -1,4 +1,5 @@
 Qajar::Application.routes.draw do |map|
+
   resources :subject_types
 
   resources :clip_types

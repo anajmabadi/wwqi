@@ -290,6 +290,42 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
     t.integer "collection_id",         :default => 12,    :null => false
   end
 
+  create_table "import_100621", :force => true do |t|
+    t.integer "item_id",                        :null => false
+    t.string  "accession_num",                  :null => false
+    t.string  "urn",                            :null => false
+    t.integer "position",                       :null => false
+    t.string  "title_en",                       :null => false
+    t.string  "title_fa",                       :null => false
+    t.integer "category_id",                    :null => false
+    t.string  "dimensions",                     :null => false
+    t.integer "verso",             :limit => 1, :null => false
+    t.integer "circa",             :limit => 1, :null => false
+    t.string  "islamic_date_en",                :null => false
+    t.string  "islamic_date_fa",                :null => false
+    t.string  "gregorian_date_en",              :null => false
+    t.string  "creator_label",                  :null => false
+    t.string  "creator_label_fa",               :null => false
+    t.string  "place_en",                       :null => false
+    t.integer "place_id",                       :null => false
+    t.string  "place_fa",                       :null => false
+    t.string  "olivia_id",                      :null => false
+    t.string  "harvard_url",                    :null => false
+    t.text    "description_en",                 :null => false
+    t.text    "description_fa",                 :null => false
+    t.text    "names_en",                       :null => false
+    t.text    "names_fa",                       :null => false
+    t.text    "keywords_en",                    :null => false
+    t.text    "keywords_fa",                    :null => false
+    t.integer "audio",             :limit => 1, :null => false
+    t.text    "notes",                          :null => false
+    t.text    "notes_fa",                       :null => false
+    t.string  "credit_en",                      :null => false
+    t.string  "credit_fa",                      :null => false
+    t.text    "corrections_en",                 :null => false
+    t.text    "corrections_fa",                 :null => false
+  end
+
   create_table "import_people", :force => true do |t|
     t.integer "item_id",                :null => false
     t.string  "loc_name",               :null => false
@@ -565,11 +601,12 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "subject_types", ["publish"], :name => "index_subject_types_on_publish"
 
   create_table "subjects", :force => true do |t|
-    t.boolean  "major",      :default => false
-    t.boolean  "publish",    :default => true
+    t.boolean  "major",           :default => false
+    t.boolean  "publish",         :default => true
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "subject_type_id", :default => 7,     :null => false
   end
 
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
@@ -588,19 +625,6 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "translations", ["key"], :name => "index_translations_on_key"
   add_index "translations", ["locale", "key"], :name => "index_translations_on_locale_key", :unique => true
   add_index "translations", ["locale"], :name => "index_translations_on_locale"
-
-  create_table "util_import_images", :id => false, :force => true do |t|
-    t.integer  "id",         :default => 0,     :null => false
-    t.string   "dimensions",                    :null => false
-    t.boolean  "verso",      :default => false, :null => false
-    t.integer  "position",   :default => 1,     :null => false
-    t.text     "notes",                         :null => false
-    t.string   "file_name",                     :null => false
-    t.integer  "item_id",                       :null => false
-    t.datetime "created_at",                    :null => false
-    t.datetime "updated_at",                    :null => false
-    t.integer  "publish",    :default => 0,     :null => false
-  end
 
   create_table "util_import_images_english", :id => false, :force => true do |t|
     t.integer  "image_id",                 :default => 0,  :null => false
