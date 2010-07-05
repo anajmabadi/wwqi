@@ -148,6 +148,7 @@ dd          { margin-left: 1.5em;}
 .container{
 	width:940px;
 	margin:0 auto;
+	position:relative;
 }
 
 #content{
@@ -990,4 +991,17 @@ div.field {
 #errorExplanation ul li {
   font-size: 12px;
   list-style: square;
+}
+
+
+.beta{
+	width:57px;
+	height:24px;
+	display:block;
+	position:absolute;
+	top:90px;
+	right:-4px;
+	z-index:1000;
+	text-indent:-999px;
+	background:url(../images/beta_fa.png) top left no-repeat;
 }
