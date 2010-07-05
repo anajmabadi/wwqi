@@ -5,68 +5,27 @@ class PagesController < ApplicationController
   # hard-coded pages for the main navigation
 
   def admin
-    @page = Page.find(params[:id])
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
-  def about
-    
     begin
       @page = Page.find(params[:id])
+      respond_to do |format|
+        format.html # show.html.erb
+        format.xml  { render :xml => @page }
+      end
     rescue
-      @page = Page.new({:title => "about", :body => "A database error has occured."})
-    end
-    
-    respond_to do |format|
-      format.html # about.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
-
-  def donate_materials
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
-
-  def contact
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
-
-  def permissions
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
+      handle_missing_page
+    end      
   end
   
-  def credits
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
-    end
-  end
-
-  def faq
-    @page = Page.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @page }
+  def page
+    begin
+      @page = Page.find(params[:id])
+      @template = params[:page_name]
+      respond_to do |format|
+        format.html { render :template => "/pages/#{@template}.html.erb" } # /pages/about.html.erb
+        format.xml  { render :xml => @page }
+      end
+    rescue
+      handle_missing_page
     end
   end
 
@@ -151,4 +110,11 @@ class PagesController < ApplicationController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  
+  def handle_missing_page()
+    redirect_to(home_url, :notice => t(:page_not_found))
+  end
+  
 end

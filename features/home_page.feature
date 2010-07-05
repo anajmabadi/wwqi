@@ -1,6 +1,6 @@
 Feature: home page welcomes user and provides navigation to site areas
 	As a visitor
-    I want to see a informative messages on the home page in Persian and English
+    I want to see an informative messages on the home page in Persian and English
 		A copyright statement restricting rights to the content
 		And a set of links for all the major pages.
 
@@ -46,4 +46,5 @@ Feature: home page welcomes user and provides navigation to site areas
 	Scenario: logo should link to home page
 		Given I speak English
 		When I go to the home page
-		Then "Women's Worlds in Qajar Iran" should link to "/"
+		And I follow "en, site_title"
+		Then I am on the home page
