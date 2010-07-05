@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
 
-  before_filter :admin_required, :except => [:index, :show, :about, :donate_materials, :contact, :news, :permissions, :sponsors, :help]
+  before_filter :admin_required, :except => [:page]
 
   # hard-coded pages for the main navigation
 
