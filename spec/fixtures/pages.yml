@@ -1,0 +1,17 @@
+about:
+    id: 1
+    
+contact:
+    id: 3
+
+credits:
+    id: 5    
+    
+permissions:
+    id: 6
+    
+faq:
+    id: 7            
+        
+admin:
+    id: 8    
