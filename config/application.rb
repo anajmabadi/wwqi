@@ -39,6 +39,7 @@ module Qajar
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
+    Encoding.default_internal, Encoding.default_external = ['utf-8'] * 2
 
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
