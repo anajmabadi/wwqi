@@ -2,7 +2,7 @@
 <% @page_title = t(:detail).capitalize -%>
 <div id="browser" class="clearfix singleItemBrowser">
   <div id="head">
-    <h2><%= truncate(@item.title, :length => 50) %></h2>
+    <h2><%= @item.title %></h2>
     <ul class="itemTools sortnav">
       <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
       <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
