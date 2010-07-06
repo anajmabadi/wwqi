@@ -39,4 +39,6 @@ Qajar::Application.configure do
 
   # Enable threaded mode
   # config.threadsafe!
+  
+  require 'mysql_utf8'
 end
