@@ -4,7 +4,7 @@ xml.DATA do
   @slides.each do |slide|
     xml.SLIDE(:ID=>slide.id.to_s,
       :MEDIA=>slide.item.zoomify_url(slide.position),
-      :NAME=>truncate(slide.tag_line) + (slide.verso ? ' (' + t(:verso) + ')' : ''),
+      :NAME=>slide.tag_line + (slide.verso ? ' (' + t(:verso) + ')' : ''),
       :INITIALX=>"",
       :INITIALY=>"",
       :INITIALZOOM=>"-1",
