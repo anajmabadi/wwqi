@@ -47,4 +47,24 @@ Feature: home page welcomes user and provides navigation to site areas
 		Given I speak English
 		When I go to the home page
 		And I follow "en, site_title"
-		Then I am on the home page
+		Then I should be on the home page
+		
+  Scenario: one slide show item links to archive search
+		Given I speak English
+		When I go to the home page
+		And I follow "en, writings"
+		Then I should be on the archive filter search page
+
+  Scenario: all slide show items link to archive search 
+		Given I speak English
+		And I have these subject types:
+			| name	| id	|
+			|	en, writings | 1 |
+			|	en, legal_documents | 2 |
+			|	en, photographs | 4 |			
+			|	en, artworks | 3 |
+			|	en, everyday_objects | 5 |
+			|	en, oral_histories | 6 |
+		When I go to the home page
+		Then I should have valid subject type archive links
+							

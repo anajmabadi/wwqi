@@ -18,6 +18,7 @@ class ArchiveController < ApplicationController
     @period_filter = params[:period_filter]
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
+    @subject_type_filter = params[:subject_type_filter]
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -37,7 +38,7 @@ class ArchiveController < ApplicationController
     @query += build_period_query(@period_filter) unless @period_filter.nil? || @period_filter == 'all'
     @query += build_person_query(@person_filter) unless @person_filter.nil? || @person_filter == 'all'
     @query += build_subject_query(@subject_filter) unless @subject_filter.nil? || @subject_filter == 'all'
-
+    @query += build_subject_type_query(@subject_type_filter) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
@@ -133,8 +134,8 @@ class ArchiveController < ApplicationController
       unless @ids.empty?
         additional_query += " AND items.id IN (#{@ids.join(",")})"
       else
-        # if the person has no items, we should kill search
-        additional_query += " AND isNull(items.id)"
+        flash[:error] = "No items found. Showing all."
+        additional_query += ""
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for person id #{filter_value}: #{error}."
@@ -164,14 +165,43 @@ class ArchiveController < ApplicationController
     begin
       @subject = Subject.find_by_id(filter_value.to_i)
       @ids = @subject.items.map { |p| p.id }
-      unless @ids.empty?
+      unless @ids.empty? 
         additional_query += " AND items.id IN (#{@ids.join(",")})"
       else
         # if the person has no items, we should kill search
-        additional_query += " AND isNull(items.id)"
+        flash[:error] = "No items found. Showing all."
+        additional_query += ""
       end
     rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
+      flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
+    ensure
+      return additional_query
+    end
+  end
+  
+  def build_subject_type_query(filter_value)
+    logger.info("build_subject_type_query")
+    additional_query = ''
+    begin
+      @subject_type = SubjectType.find_by_id(filter_value.to_i)
+      @subjects = @subject_type.subjects
+      @ids = []
+      
+      @subjects.each do |subject|
+        @ids = @ids.concat(subject.items.map { |p| p.id })
+      end
+      
+      @ids = @ids.sort.uniq
+        
+      unless @ids.empty?
+        additional_query += " AND items.id IN (#{@ids.join(",")})"
+      else
+        # if the subject type has no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+        additional_query += ""
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
     else
       flash[:error] = nil
     ensure
@@ -190,4 +220,5 @@ class ArchiveController < ApplicationController
     end
     return additional_sort
   end
+  
 end

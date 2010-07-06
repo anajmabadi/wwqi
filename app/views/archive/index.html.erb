@@ -80,7 +80,7 @@
       <% if @items.empty? -%>
         <%= t(:no_records_found) -%>
       <% else -%>
-        <%= "#{t(:results_prefix)}: #{(@items.offset + 1).to_s} - #{(@items.offset + @items.per_page).to_s} | #{@items.total_entries.to_s}" %>
+        <%= "#{t(:results_prefix)}: #{(@items.offset + 1).to_s} - #{(@items.offset + [@items.per_page,@items.total_entries].min).to_s} | #{@items.total_entries.to_s}" %>
       <% end -%>
     </p>
   </div>
