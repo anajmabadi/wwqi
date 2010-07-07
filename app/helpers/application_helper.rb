@@ -14,7 +14,7 @@ module ApplicationHelper
   
   def adjust_length_for_locale(english_length)
     if I18n.locale == :fa
-      return (english_length * 1.5).floor
+      return (english_length * 1.25).floor
     else
       return english_length
     end
