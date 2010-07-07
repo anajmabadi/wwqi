@@ -18,4 +18,5 @@ Qajar::Application.configure do
   config.action_mailer.raise_delivery_errors = false
   
   require 'mysql_utf8'
+  
 end

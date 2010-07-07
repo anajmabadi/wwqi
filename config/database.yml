@@ -17,7 +17,6 @@
 development:
   adapter: mysql
   encoding: utf8
-  collation: utf8_bin
   reconnect: false
   database: qajar_development
   pool: 5
@@ -31,7 +30,6 @@ development:
 test: &test
   adapter: mysql
   encoding: utf8
-  collation: utf8_bin
   reconnect: false
   database: qajar_test
   pool: 5
@@ -42,7 +40,6 @@ test: &test
 production:
   adapter: mysql
   encoding: utf8
-  collation: utf8_bin
   reconnect: false
   database: qajar_production
   pool: 5

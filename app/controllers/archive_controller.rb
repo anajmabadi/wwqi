@@ -27,7 +27,7 @@ class ArchiveController < ApplicationController
     @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
     @order = build_order_query(@sort_mode)
 
-    @query = 'items.publish=1'
+    @query = "items.publish=1 AND item_translations.locale = '#{I18n.locale.nil? ? ':en' : I18n.locale.to_s}'"
 
     # paginate the items
     @page = params[:page] || 1
@@ -216,7 +216,7 @@ class ArchiveController < ApplicationController
     when 'alpha_dsc' then 'item_translations.locale, item_translations.title DESC'
     when 'date asc' then 'items.sort_date'
     when 'date dsc' then 'items.sort_date DESC'
-    else 'item_translations.locale, item_translations.title ASC'
+    else 'item_translations.locale, item_translations.title'
     end
     return additional_sort
   end
