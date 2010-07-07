@@ -6,6 +6,12 @@
     <title><%= t(:site_title) -%> | <%= @page_title || controller.controller_name.capitalize %></title>
     <% unless @page_description.nil? && @page_title.nil? -%><meta name="description" content="<%= @page_description || @page_title %>" /><% end -%>
 
+    <!-- facebook metatags -->
+    <meta property="og:title" content="<%= t(:site_title) -%> | <%= @page_title || controller.controller_name.capitalize -%>" />
+    <meta property="og:site_name" content="<%= t(:site_title) %>"/>
+    <meta property="og:image" content="<%= raw @thumbnail.nil? ? "/images/qajar_thumbnail.jpg" : @thumbnail  %>" />
+    <link rel="image_src" href="<%= raw @thumbnail.nil? ? "/images/qajar_thumbnail.jpg" : @thumbnail  %>" />
+
     <!-- load the common styles to all pages -->
     <link rel="shortcut icon" href="/images/favicon.ico" />
     <link rel="stylesheet" type="text/css" href="/stylesheets/style<%= language_suffix -%>.css" media="screen" />
