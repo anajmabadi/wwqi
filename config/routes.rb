@@ -65,6 +65,8 @@ Qajar::Application.routes.draw do |map|
   match 'faq' => 'pages#page', :as => :faq, :id => 7, :page_name => 'faq'
   match 'admin' => 'pages#admin', :as => :admin, :id => 8, :page_name => 'admin'
   
+  match 'utilities' => 'utilities#index', :as => :utilities
+  
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
   # Keep in mind you can assign values other than :controller and :action
