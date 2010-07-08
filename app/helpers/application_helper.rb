@@ -22,14 +22,18 @@ module ApplicationHelper
 
   def add_this_block
     s = %{
-    <!-- AddThis Button BEGIN -->
-    <script type="text/javascript">var addthis_pub="mesolore";</script>
-    <a href="http://www.addthis.com/bookmark.php"
-            onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]');"
-            onmouseout="addthis_close();"
-            onclick="return addthis_sendto();">#{t(:share)}</a>
-    <script type="text/javascript" src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
-    <!-- AddThis Button END -->
+      <!-- AddThis Button BEGIN -->
+      <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+      <div class="addthis_toolbox addthis_default_style">
+      <a class="addthis_button_facebook"></a>
+      <a class="addthis_button_email"></a>
+      <a class="addthis_button_favorites"></a>
+      <a class="addthis_button_print"></a>
+      <span class="addthis_separator">|</span>
+      <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=qajar" class="addthis_button_expanded">More</a>
+      </div>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar"></script>
+      <!-- AddThis Button END -->
     }
   end
 
