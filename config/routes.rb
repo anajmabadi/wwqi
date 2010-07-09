@@ -66,6 +66,7 @@ Qajar::Application.routes.draw do |map|
   match 'admin' => 'pages#admin', :as => :admin, :id => 8, :page_name => 'admin'
   
   match 'utilities' => 'utilities#index', :as => :utilities
+  match 'utilities/rename_by_file_name' => 'utilities#rename_by_file_name'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'
