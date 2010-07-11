@@ -32,6 +32,8 @@ group :test do
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
   gem "webrat"
+  # gem "aruba"
+  # gem "fakefs"
 end
 
 

@@ -6,5 +6,5 @@ Feature: A set of file management utilities for development and production envir
 			Given I speak English
 			When I go to the utilities page
 				And I follow "Rename files by original file name"
-			Then I should be on the rename_files_by_file_name page
+			Then I should be on the rename_by_file_name page
 				And I should see "Renaming completed successfully"

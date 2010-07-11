@@ -1,5 +1,5 @@
 --- 
-hash: 58a04521de4ff24a7e98ea846bea430a14d3ac5b
+hash: 4dc8e33d467271252f3d419db63266423c10b470
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
@@ -85,17 +85,17 @@ specs:
 - rails: 
     version: 3.0.0.beta4
 - rspec-core: 
-    version: 2.0.0.beta.15
+    version: 2.0.0.beta.16
 - rspec-expectations: 
-    version: 2.0.0.beta.15
+    version: 2.0.0.beta.16
 - rspec-mocks: 
-    version: 2.0.0.beta.15
+    version: 2.0.0.beta.16
 - rspec: 
-    version: 2.0.0.beta.15
+    version: 2.0.0.beta.16
 - webrat: 
     version: 0.7.1
 - rspec-rails: 
-    version: 2.0.0.beta.15
+    version: 2.0.0.beta.16
 - spork: 
     version: 0.8.4
 - will_paginate: 

@@ -50,9 +50,12 @@ class Item < ActiveRecord::Base
   end
 
   def thumbnail_url
-    return LIBRARY_URL + 'thumbs/it_' + id.to_s + ".jpg"
+    return LIBRARY_URL + 'thumbs/' + thumb_file_name
   end
-
+  
+  def thumb_file_name
+    return file_prefix + id.to_s + ".jpg"
+  end
 
   def preview_url(index=1)
     return LIBRARY_URL + "previews/it_#{id.to_s}_#{index.to_s}.jpg"
@@ -72,5 +75,9 @@ class Item < ActiveRecord::Base
 
   def clip_url(index=1)
     return LIBRARY_URL + "clips/it_#{id.to_s}_#{index.to_s}_clip.wav"
+  end
+  
+  def file_prefix
+    return "it_"
   end
 end
