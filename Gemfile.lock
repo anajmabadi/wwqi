@@ -1,5 +1,5 @@
 --- 
-hash: 4dc8e33d467271252f3d419db63266423c10b470
+hash: cb1d6fb5f40f27177a5b7daf75e4fba44dc3e11d
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
@@ -44,6 +44,14 @@ specs:
     version: 3.0.0.beta4
 - activeresource: 
     version: 3.0.0.beta4
+- json_pure: 
+    version: 1.4.3
+- rubyforge: 
+    version: 2.0.4
+- hoe: 
+    version: 2.6.1
+- ar_fixtures: 
+    version: 0.0.4
 - bundler: 
     version: 0.9.26
 - culerity: 
@@ -52,8 +60,6 @@ specs:
     version: 1.4.2
 - ffi: 
     version: 0.6.3
-- json_pure: 
-    version: 1.4.3
 - selenium-webdriver: 
     version: 0.0.24
 - capybara: 
@@ -85,17 +91,17 @@ specs:
 - rails: 
     version: 3.0.0.beta4
 - rspec-core: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec-expectations: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec-mocks: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - rspec: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - webrat: 
     version: 0.7.1
 - rspec-rails: 
-    version: 2.0.0.beta.16
+    version: 2.0.0.beta.17
 - spork: 
     version: 0.8.4
 - will_paginate: 
@@ -121,6 +127,10 @@ dependencies:
     version: ">= 3.0.0.beta4"
     group: 
     - :default
+  ar_fixtures: 
+    version: ">= 0"
+    group: 
+    - :development
   capybara: 
     version: ">= 0"
     group: 
