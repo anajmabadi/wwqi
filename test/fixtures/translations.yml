@@ -1,0 +1,2729 @@
+--- 
+translation_00001: 
+  created_at: 2010-03-25 13:03:49 Z
+  id: 1
+  interpolations: 
+  is_proc: false
+  key: site_title
+  locale: en
+  updated_at: 
+  value: Women's Worlds in Qajar Iran
+translation_00002: 
+  created_at: 2010-03-25 13:04:35 Z
+  id: 2
+  interpolations: 
+  is_proc: false
+  key: site_title
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCr8OZ4oCgw5vFksOYwqfDm8WSIMOYwrLDmeKAoMOYwqfDmeKAoCDDmMKv
+    w5jCsSDDmMK5w5jCtcOYwrEgw5nigJrDmMKnw5jCrMOYwqfDmMKx
+
+translation_00003: 
+  created_at: 2010-03-25 13:06:36 Z
+  id: 3
+  interpolations: 
+  is_proc: false
+  key: home_description
+  locale: en
+  updated_at: 
+  value: A virtual archive of documents and images on the history of women in Qajar Iran.
+translation_00004: 
+  created_at: 2010-03-25 13:07:07 Z
+  id: 4
+  interpolations: ""
+  is_proc: false
+  key: home_description
+  locale: fa
+  updated_at: 2010-05-22 18:11:52 Z
+  value: !binary |
+    w5jCosOYwrHDmMK0w5vFksOZy4Ygw5nigKbDmMKsw5jCp8OYwrLDm8WSIMOY
+    wqfDmMKyIMOYwqfDmMKzw5nigKDDmMKnw5jCryDDmcuGIMOYwqrDmMK1w5jC
+    p8OZy4bDm8WSw5jCsSDDmeKApsOYwrHDmMKow5nLhsOYwrcgw5jCqMOZ4oCh
+    IMOYwqrDmMKnw5jCscObxZLDmMKuIMOYwrLDmeKAoMOYwqfDmeKAoCDDmMKv
+    w5jCsSDDmMKvw5nLhsOYwrHDmMKnw5nigKAgw5nigJrDmMKnw5jCrMOYwqfD
+    mMKxLg==
+
+translation_00005: 
+  created_at: 2010-03-25 13:07:44 Z
+  id: 5
+  interpolations: 
+  is_proc: false
+  key: language_option
+  locale: en
+  updated_at: 
+  value: !binary |
+    w5nCgcOYwqfDmMKxw5jCs8ObxZI=
+
+translation_00006: 
+  created_at: 2010-03-25 13:08:11 Z
+  id: 6
+  interpolations: 
+  is_proc: false
+  key: language_option
+  locale: fa
+  updated_at: 
+  value: English
+translation_00007: 
+  created_at: 2010-03-25 13:10:06 Z
+  id: 7
+  interpolations: 
+  is_proc: false
+  key: login
+  locale: en
+  updated_at: 
+  value: login
+translation_00008: 
+  created_at: 2010-03-25 13:10:34 Z
+  id: 8
+  interpolations: 
+  is_proc: false
+  key: login
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5nLhsOYwrHDmcuGw5jCryDDmMKow5nigKEgw5jCs8OYwqfDm8WSw5jCqg==
+
+translation_00009: 
+  created_at: 2010-03-25 13:11:17 Z
+  id: 9
+  interpolations: 
+  is_proc: false
+  key: create_account
+  locale: en
+  updated_at: 
+  value: create account
+translation_00010: 
+  created_at: 2010-03-25 13:11:38 Z
+  id: 10
+  interpolations: 
+  is_proc: false
+  key: create_account
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCucOYwrbDmcuGw5vFksOYwqogw5jCr8OYwrEgw5jCs8OYwqfDm8WSw5jC
+    qg==
+
+translation_00011: 
+  created_at: 2010-03-25 13:12:21 Z
+  id: 11
+  interpolations: 
+  is_proc: false
+  key: home
+  locale: en
+  updated_at: 
+  value: home
+translation_00012: 
+  created_at: 2010-03-25 13:12:51 Z
+  id: 12
+  interpolations: 
+  is_proc: false
+  key: home
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCrsOYwqfDmeKAoMOZ4oCh
+
+translation_00013: 
+  created_at: 2010-03-25 13:13:09 Z
+  id: 13
+  interpolations: 
+  is_proc: false
+  key: archive
+  locale: en
+  updated_at: 
+  value: archive
+translation_00014: 
+  created_at: 2010-03-25 13:13:27 Z
+  id: 14
+  interpolations: ""
+  is_proc: false
+  key: archive
+  locale: fa
+  updated_at: 2010-05-22 17:34:54 Z
+  value: !binary |
+    w5jCosOYwrHDmMK0w5vFksOZy4Y=
+
+translation_00015: 
+  created_at: 2010-03-25 13:23:28 Z
+  id: 15
+  interpolations: 
+  is_proc: false
+  key: exhibits
+  locale: en
+  updated_at: 
+  value: exhibits
+translation_00016: 
+  created_at: 2010-03-25 13:23:57 Z
+  id: 16
+  interpolations: 
+  is_proc: false
+  key: exhibits
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtMOawq/DmMKnw5nigKEgw5nigKHDmMKn
+
+translation_00017: 
+  created_at: 2010-03-25 13:24:18 Z
+  id: 17
+  interpolations: 
+  is_proc: false
+  key: about
+  locale: en
+  updated_at: 
+  value: about
+translation_00018: 
+  created_at: 2010-03-25 13:24:36 Z
+  id: 18
+  interpolations: 
+  is_proc: false
+  key: about
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCr8OYwrHDmMKow5jCp8OYwrHDmeKAoSDDmeKApsOYwqc=
+
+translation_00019: 
+  created_at: 2010-03-25 13:25:14 Z
+  id: 19
+  interpolations: 
+  is_proc: false
+  key: contact
+  locale: en
+  updated_at: 
+  value: contact
+translation_00020: 
+  created_at: 2010-03-25 13:25:34 Z
+  id: 20
+  interpolations: ""
+  is_proc: false
+  key: contact
+  locale: fa
+  updated_at: 2010-04-06 13:58:38 Z
+  value: !binary |
+    w5jCqsOZ4oCmw5jCp8OYwrMgw5jCqMOYwqcgw5nigKbDmMKn
+
+translation_00021: 
+  created_at: 2010-03-25 13:25:53 Z
+  id: 21
+  interpolations: 
+  is_proc: false
+  key: permissions
+  locale: en
+  updated_at: 
+  value: permissions
+translation_00022: 
+  created_at: 2010-03-25 13:26:20 Z
+  id: 22
+  interpolations: ""
+  is_proc: false
+  key: permissions
+  locale: fa
+  updated_at: 2010-05-22 19:30:13 Z
+  value: !binary |
+    w5nigKbDmMKsw5nLhsOYwrLDmMKnw5jCqiDDmMKtw5nigJrDmcuGw5nigJrD
+    m8WS
+
+translation_00023: 
+  created_at: 2010-03-25 13:26:39 Z
+  id: 23
+  interpolations: ""
+  is_proc: false
+  key: credits
+  locale: en
+  updated_at: 2010-04-06 13:59:37 Z
+  value: credits
+translation_00024: 
+  created_at: 2010-03-25 13:27:00 Z
+  id: 24
+  interpolations: ""
+  is_proc: false
+  key: credits
+  locale: fa
+  updated_at: 2010-04-06 14:00:41 Z
+  value: !binary |
+    w5nigKHDmeKApsOawqnDmMKnw5jCscOYwqfDmeKAoA==
+
+translation_00025: 
+  created_at: 2010-03-25 13:29:59 Z
+  id: 25
+  interpolations: 
+  is_proc: false
+  key: news
+  locale: en
+  updated_at: 
+  value: news
+translation_00026: 
+  created_at: 2010-03-25 13:30:14 Z
+  id: 26
+  interpolations: ""
+  is_proc: false
+  key: news
+  locale: fa
+  updated_at: 2010-05-22 19:17:06 Z
+  value: !binary |
+    w5jCp8OYwq7DmMKow5jCp8OYwrE=
+
+translation_00029: 
+  created_at: 2010-03-25 13:31:50 Z
+  id: 29
+  interpolations: 
+  is_proc: false
+  key: collections
+  locale: en
+  updated_at: 
+  value: collections
+translation_00030: 
+  created_at: 2010-03-25 13:32:10 Z
+  id: 30
+  interpolations: ""
+  is_proc: false
+  key: collections
+  locale: fa
+  updated_at: 2010-03-30 17:24:06 Z
+  value: !binary |
+    w5nigKbDmMKsw5nigKbDmcuGw5jCucOZ4oChIMOZ4oChw5jCpw==
+
+translation_00031: 
+  created_at: 2010-03-25 14:06:22 Z
+  id: 31
+  interpolations: 
+  is_proc: false
+  key: donate_materials
+  locale: en
+  updated_at: 
+  value: donate materials
+translation_00032: 
+  created_at: 2010-03-25 14:06:46 Z
+  id: 32
+  interpolations: ""
+  is_proc: false
+  key: donate_materials
+  locale: fa
+  updated_at: 2010-05-22 17:57:16 Z
+  value: !binary |
+    w5jCp8OZ4oChw5jCr8OYwqfDmMKhIMOYwqfDmMK0w5vFksOYwqfDmMKh
+
+translation_00033: 
+  created_at: 2010-03-25 14:07:04 Z
+  id: 33
+  interpolations: 
+  is_proc: false
+  key: faq
+  locale: en
+  updated_at: 
+  value: FAQ
+translation_00034: 
+  created_at: 2010-03-25 14:07:26 Z
+  id: 34
+  interpolations: 
+  is_proc: false
+  key: faq
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCs8OYwqTDmMKnw5nigJ7DmMKnw5jCqiDDmeKApsOYwqrDmMKvw5jCp8OZ
+    y4bDmeKAng==
+
+translation_00035: 
+  created_at: 2010-03-25 14:07:45 Z
+  id: 35
+  interpolations: 
+  is_proc: false
+  key: wwqi
+  locale: en
+  updated_at: 
+  value: WWQI
+translation_00036: 
+  created_at: 2010-03-25 14:08:17 Z
+  id: 36
+  interpolations: ""
+  is_proc: false
+  key: wwqi
+  locale: fa
+  updated_at: 2010-05-22 20:19:29 Z
+  value: WWQI
+translation_00037: 
+  created_at: 2010-03-25 14:08:42 Z
+  id: 37
+  interpolations: 
+  is_proc: false
+  key: also_at_harvard
+  locale: en
+  updated_at: 
+  value: Also at Harvard
+translation_00038: 
+  created_at: 2010-03-25 14:09:54 Z
+  id: 38
+  interpolations: 
+  is_proc: false
+  key: also_at_harvard
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5nigKHDmeKApsOa4oCgw5vFksOZ4oCgw5vFksOZ4oCgIMOYwq/DmMKxIMOZ
+    4oChw5jCp8OYwrHDmcuGw5jCp8OYwrHDmMKv
+
+translation_00039: 
+  created_at: 2010-03-25 14:10:14 Z
+  id: 39
+  interpolations: 
+  is_proc: false
+  key: people
+  locale: en
+  updated_at: 
+  value: people
+translation_00040: 
+  created_at: 2010-03-25 14:10:39 Z
+  id: 40
+  interpolations: ""
+  is_proc: false
+  key: people
+  locale: fa
+  updated_at: 2010-05-22 19:25:47 Z
+  value: !binary |
+    w5jCp8OZwoHDmMKxw5jCp8OYwq8=
+
+translation_00041: 
+  created_at: 2010-03-25 14:11:03 Z
+  id: 41
+  interpolations: 
+  is_proc: false
+  key: people_index_description
+  locale: en
+  updated_at: 
+  value: An administrative page listing people.
+translation_00042: 
+  created_at: 2010-03-25 14:11:30 Z
+  id: 42
+  interpolations: ""
+  is_proc: false
+  key: people_index_description
+  locale: fa
+  updated_at: 2010-05-22 19:27:38 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCp8OYwq/DmMKnw5jCscObxZIgw5jCqMOY
+    wrHDmMKnw5vFkiDDmeKAnsObxZLDmMKzw5jCqiDDmMKnw5nCgcOYwrHDmMKn
+    w5jCrw==
+
+translation_00043: 
+  created_at: 2010-03-25 14:11:51 Z
+  id: 43
+  interpolations: 
+  is_proc: false
+  key: title
+  locale: en
+  updated_at: 
+  value: title
+translation_00044: 
+  created_at: 2010-03-25 14:12:17 Z
+  id: 44
+  interpolations: ""
+  is_proc: false
+  key: title
+  locale: fa
+  updated_at: 2010-05-22 19:58:52 Z
+  value: !binary |
+    w5jCucOZ4oCgw5nLhsOYwqfDmeKAoA==
+
+translation_00045: 
+  created_at: 2010-03-25 14:12:45 Z
+  id: 45
+  interpolations: 
+  is_proc: false
+  key: created_at
+  locale: en
+  updated_at: 
+  value: Created at
+translation_00046: 
+  created_at: 2010-03-25 14:13:09 Z
+  id: 46
+  interpolations: 
+  is_proc: false
+  key: created_at
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCp8ObxZLDmMKsw5jCp8OYwq8gw5jCtMOYwq/DmeKAoSDDmMKvw5jCsQ==
+
+translation_00047: 
+  created_at: 2010-03-25 14:15:08 Z
+  id: 47
+  interpolations: 
+  is_proc: false
+  key: updated_at
+  locale: en
+  updated_at: 
+  value: Updated at
+translation_00048: 
+  created_at: 2010-03-25 14:15:31 Z
+  id: 48
+  interpolations: 
+  is_proc: false
+  key: updated_at
+  locale: fa
+  updated_at: 
+  value: !binary |
+    w5jCqMOZ4oChIMOYwrHDmcuGw5jCsiDDmMK0w5jCr8OZ4oChIMOYwq/DmMKx
+
+translation_00051: 
+  created_at: 2010-03-27 21:13:43 Z
+  id: 51
+  interpolations: ""
+  is_proc: false
+  key: collections_description
+  locale: en
+  updated_at: 2010-03-27 21:13:43 Z
+  value: The archive contains manuscripts, pictures, sound files relating to the history of women in Qajar Iran.
+translation_00052: 
+  created_at: 2010-03-27 21:14:25 Z
+  id: 52
+  interpolations: ""
+  is_proc: false
+  key: collections_description
+  locale: fa
+  updated_at: 2010-05-22 17:39:32 Z
+  value: !binary |
+    w5jCp8ObxZLDmeKAoCDDmMKiw5jCscOYwrTDm8WSw5nLhiDDmMKtw5jCp8OZ
+    y4bDm8WSIMOZ4oCgw5jCs8OYwq7DmeKAocOi4oKsxZLDmeKAocOYwqfDm8WS
+    IMOYwq7DmMK3w5vFksOi4oKsxZLDmMWSIMOYwrnDmsKpw5jCsyDDmcuGIMOZ
+    woHDmMKnw5vFksOZ4oCew6LigqzFksOZ4oChw5jCp8ObxZIgw5jCtcOZy4bD
+    mMKqw5vFkiDDmeKApsObxZLDmMKow5jCp8OYwrTDmMKvLg==
+
+translation_00053: 
+  created_at: 2010-03-29 17:27:08 Z
+  id: 53
+  interpolations: ""
+  is_proc: false
+  key: about_description
+  locale: en
+  updated_at: 2010-03-29 17:27:08 Z
+  value: A description of the project team and website credits for the website.
+translation_00054: 
+  created_at: 2010-03-29 17:27:57 Z
+  id: 54
+  interpolations: ""
+  is_proc: false
+  key: about_description
+  locale: fa
+  updated_at: 2010-03-29 17:27:57 Z
+  value: !binary |
+    w5jCr8OYwrHDmMKow5jCp8OYwrHDmeKAoSDDmcuGw5jCqCDDmMKzw5jCp8Ob
+    xZLDmMKq
+
+translation_00055: 
+  created_at: 2010-03-29 17:29:01 Z
+  id: 55
+  interpolations: ""
+  is_proc: false
+  key: contact_description
+  locale: en
+  updated_at: 2010-03-29 17:29:01 Z
+  value: A page for contacting the project team.
+translation_00056: 
+  created_at: 2010-03-29 17:29:30 Z
+  id: 56
+  interpolations: ""
+  is_proc: false
+  key: contact_description
+  locale: fa
+  updated_at: 2010-05-22 17:17:19 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCqMOYwrHDmMKnw5vFkiDDmMKqw5nigKbD
+    mMKnw5jCsyDDmMKow5jCpyDDmMKqw5vFksOZ4oCmLg==
+
+translation_00057: 
+  created_at: 2010-03-29 17:30:01 Z
+  id: 57
+  interpolations: ""
+  is_proc: false
+  key: credits_description
+  locale: en
+  updated_at: 2010-03-29 17:30:45 Z
+  value: A page listing the sponsors of the website.
+translation_00058: 
+  created_at: 2010-03-29 17:30:32 Z
+  id: 58
+  interpolations: ""
+  is_proc: false
+  key: credits_description
+  locale: fa
+  updated_at: 2010-03-29 17:30:32 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5nigJ7Dm8WSw5jCs8OYwqogw5jCrcOYwqfD
+    meKApsObxZLDmMKnw5nigKAgw5nigKbDmMKnw5nigJ7Dm8WSIMOZy4bDmMKo
+    IMOYwrPDmMKnw5vFksOYwqou
+
+translation_00061: 
+  created_at: 2010-03-29 17:59:33 Z
+  id: 61
+  interpolations: ""
+  is_proc: false
+  key: permissions_description
+  locale: en
+  updated_at: 2010-03-29 17:59:33 Z
+  value: A page describing how to apply for permission to use images from the project.
+translation_00062: 
+  created_at: 2010-03-29 17:59:52 Z
+  id: 62
+  interpolations: ""
+  is_proc: false
+  key: permissions_description
+  locale: fa
+  updated_at: 2010-05-22 19:34:13 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5rigKDDmsKvw5nLhsOZ4oCgw5rCr8ObxZLD
+    ouKCrMWSIMOYwq/DmMKxIMOYwq7DmcuGw5jCp8OYwrPDmMKqIMOYwqjDmMKx
+    w5jCp8ObxZIgw5nigKbDmMKsw5nLhsOYwrIgw5jCp8OYwrPDmMKqw5nCgcOY
+    wqfDmMKvw5nigKEgw5jCp8OYwrIgw5jCqsOYwrXDmMKnw5nLhsObxZLDmMKx
+    IMOZwr7DmMKxw5nLhsOay5zDmeKAoQ==
+
+translation_00063: 
+  created_at: 2010-03-29 18:00:36 Z
+  id: 63
+  interpolations: ""
+  is_proc: false
+  key: faq_description
+  locale: en
+  updated_at: 2010-03-29 18:00:36 Z
+  value: A guide to the use of the site.
+translation_00064: 
+  created_at: 2010-03-29 18:00:59 Z
+  id: 64
+  interpolations: ""
+  is_proc: false
+  key: faq_description
+  locale: fa
+  updated_at: 2010-05-22 18:06:12 Z
+  value: !binary |
+    w5jCscOYwqfDmeKAocOZ4oCgw5nigKbDmMKnw5vFkiDDmMKnw5jCs8OYwqrD
+    mcKBw5jCp8OYwq/DmeKAoSDDmMKnw5jCsiDDmMKzw5jCp8ObxZLDmMKqLg==
+
+translation_00067: 
+  created_at: 2010-03-30 17:44:44 Z
+  id: 67
+  interpolations: ""
+  is_proc: false
+  key: id
+  locale: en
+  updated_at: 2010-03-30 17:44:44 Z
+  value: id
+translation_00068: 
+  created_at: 2010-03-30 17:45:05 Z
+  id: 68
+  interpolations: ""
+  is_proc: false
+  key: id
+  locale: fa
+  updated_at: 2010-03-30 17:45:05 Z
+  value: !binary |
+    w5jCtMOZ4oCgw5jCp8OYwrPDmMKnw5vFksObxZI=
+
+translation_00069: 
+  created_at: 2010-03-30 17:45:30 Z
+  id: 69
+  interpolations: ""
+  is_proc: false
+  key: email
+  locale: en
+  updated_at: 2010-03-30 17:45:30 Z
+  value: email
+translation_00070: 
+  created_at: 2010-03-30 17:45:50 Z
+  id: 70
+  interpolations: ""
+  is_proc: false
+  key: email
+  locale: fa
+  updated_at: 2010-03-30 17:45:50 Z
+  value: !binary |
+    w5jCp8ObxZLDmeKApsObxZLDmeKAng==
+
+translation_00071: 
+  created_at: 2010-03-30 17:46:02 Z
+  id: 71
+  interpolations: ""
+  is_proc: false
+  key: website
+  locale: en
+  updated_at: 2010-03-30 17:46:02 Z
+  value: website
+translation_00072: 
+  created_at: 2010-03-30 17:46:45 Z
+  id: 72
+  interpolations: ""
+  is_proc: false
+  key: website
+  locale: fa
+  updated_at: 2010-03-30 17:46:45 Z
+  value: !binary |
+    w5nLhsOYwqggw5jCs8OYwqfDm8WSw5jCqg==
+
+translation_00073: 
+  created_at: 2010-03-30 17:47:23 Z
+  id: 73
+  interpolations: ""
+  is_proc: false
+  key: actions
+  locale: en
+  updated_at: 2010-03-30 17:47:23 Z
+  value: actions
+translation_00074: 
+  created_at: 2010-03-30 17:47:34 Z
+  id: 74
+  interpolations: ""
+  is_proc: false
+  key: actions
+  locale: fa
+  updated_at: 2010-03-30 17:47:34 Z
+  value: !binary |
+    w5jCp8OZ4oCaw5jCr8OYwqfDmeKApsOYwqfDmMKq
+
+translation_00077: 
+  created_at: 2010-03-31 04:26:20 Z
+  id: 77
+  interpolations: ""
+  is_proc: false
+  key: period
+  locale: en
+  updated_at: 2010-03-31 04:29:38 Z
+  value: period
+translation_00078: 
+  created_at: 2010-03-31 04:27:21 Z
+  id: 78
+  interpolations: ""
+  is_proc: false
+  key: period
+  locale: fa
+  updated_at: 2010-05-22 19:28:21 Z
+  value: !binary |
+    w5jCr8OZy4bDmMKxw5nigKEgw5jCqsOYwqfDmMKxw5vFksOYwq7Dm8WS
+
+translation_00079: 
+  created_at: 2010-03-31 04:35:35 Z
+  id: 79
+  interpolations: ""
+  is_proc: false
+  key: index_description
+  locale: en
+  updated_at: 2010-03-31 04:35:35 Z
+  value: An administrative listing.
+translation_00080: 
+  created_at: 2010-03-31 04:36:04 Z
+  id: 80
+  interpolations: ""
+  is_proc: false
+  key: index_description
+  locale: fa
+  updated_at: 2010-03-31 04:36:04 Z
+  value: !binary |
+    w5nCgcOZ4oChw5jCscOYwrPDmMKqIMOYwqfDmMKvw5jCp8OYwrHDm8WSLg==
+
+translation_00081: 
+  created_at: 2010-03-31 04:47:07 Z
+  id: 81
+  interpolations: ""
+  is_proc: false
+  key: publish
+  locale: en
+  updated_at: 2010-03-31 04:47:07 Z
+  value: publish
+translation_00082: 
+  created_at: 2010-03-31 04:47:34 Z
+  id: 82
+  interpolations: ""
+  is_proc: false
+  key: publish
+  locale: fa
+  updated_at: 2010-05-22 19:56:16 Z
+  value: !binary |
+    w5nigKbDmeKAoMOYwqrDmMK0w5jCsSDDmsKpw5nigKA=
+
+translation_00083: 
+  created_at: 2010-03-31 04:49:14 Z
+  id: 83
+  interpolations: ""
+  is_proc: false
+  key: activerecord.attributes.period.start_year
+  locale: en
+  updated_at: 2010-03-31 04:51:26 Z
+  value: start year
+translation_00084: 
+  created_at: 2010-03-31 04:50:11 Z
+  id: 84
+  interpolations: ""
+  is_proc: false
+  key: activerecord.attributes.period.start_year
+  locale: fa
+  updated_at: 2010-03-31 04:51:41 Z
+  value: !binary |
+    w5jCs8OYwqfDmeKAniDDmMK0w5jCscOZy4bDmMK5
+
+translation_00085: 
+  created_at: 2010-04-06 02:33:31 Z
+  id: 85
+  interpolations: ""
+  is_proc: false
+  key: about_us
+  locale: fa
+  updated_at: 2010-04-06 03:58:43 Z
+  value: !binary |
+    w5jCr8OYwrEgw5jCqMOYwqfDmMKxw5nigKEgw5jCp8ObxZLDmeKAoCDDmMKi
+    w5jCscOYwrTDm8WSw5nLhg==
+
+translation_00086: 
+  created_at: 2010-04-06 03:59:05 Z
+  id: 86
+  interpolations: ""
+  is_proc: false
+  key: about_us
+  locale: en
+  updated_at: 2010-04-06 03:59:05 Z
+  value: About Us
+translation_00087: 
+  created_at: 2010-04-06 04:06:30 Z
+  id: 87
+  interpolations: ""
+  is_proc: false
+  key: learn_more
+  locale: en
+  updated_at: 2010-04-06 04:06:30 Z
+  value: more...
+translation_00088: 
+  created_at: 2010-04-06 04:07:32 Z
+  id: 88
+  interpolations: ""
+  is_proc: false
+  key: learn_more
+  locale: fa
+  updated_at: 2010-04-06 04:07:32 Z
+  value: !binary |
+    w5jCqMObxZLDmMK0w5jCqsOYwrE=
+
+translation_00089: 
+  created_at: 2010-04-06 10:14:15 Z
+  id: 89
+  interpolations: 
+  is_proc: false
+  key: featured_exhibits
+  locale: en
+  updated_at: 2010-04-06 10:14:18 Z
+  value: Featured Exhibits
+translation_00090: 
+  created_at: 2010-04-06 10:14:38 Z
+  id: 90
+  interpolations: 
+  is_proc: false
+  key: featured_exhibits
+  locale: fa
+  updated_at: 2010-04-06 10:14:40 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtMOawq/DmMKnw5nigKEgw5nigKHDmMKn
+    w5vFkiDDmsKvw5jCssObxZLDmMKvw5nigKE=
+
+translation_00091: 
+  created_at: 2010-04-06 10:17:42 Z
+  id: 91
+  interpolations: 
+  is_proc: false
+  key: explore_the_archive
+  locale: en
+  updated_at: 2010-04-06 10:17:45 Z
+  value: Explore the Archive
+translation_00092: 
+  created_at: 2010-04-06 10:18:11 Z
+  id: 92
+  interpolations: 
+  is_proc: false
+  key: explore_the_archive
+  locale: fa
+  updated_at: 2010-04-06 10:18:14 Z
+  value: !binary |
+    w5jCs8ObxZLDmMKxIMOYwq/DmMKxIMOYwqLDmMKxw5jCtMObxZLDmcuG
+
+translation_00093: 
+  created_at: 2010-04-06 10:18:55 Z
+  id: 93
+  interpolations: 
+  is_proc: false
+  key: welcome_message
+  locale: en
+  updated_at: 2010-04-06 10:18:58 Z
+  value: Welcome to Women's Worlds in Qajar Iran Digital Archive
+translation_00094: 
+  created_at: 2010-04-06 10:19:21 Z
+  id: 94
+  interpolations: 
+  is_proc: false
+  key: welcome_message
+  locale: fa
+  updated_at: 2010-04-06 10:19:24 Z
+  value: !binary |
+    w5jCqMOZ4oChIMOYwqLDmMKxw5jCtMObxZLDmcuGIMOYwq/Dm8WSw5jCrMOb
+    xZLDmMKqw5jCp8OZ4oCew5vFkiDDmMKvw5nigKDDm8WSw5jCp8ObxZIgw5jC
+    ssOZ4oCgw5jCp8OZ4oCgIMOYwq/DmMKxIMOYwrnDmMK1w5jCsSDDmeKAmsOY
+    wqfDmMKsw5jCp8OYwrEgw5jCrsOZy4bDmMK0IMOYwqLDmeKApsOYwq/Dm8WS
+    w5jCrw==
+
+translation_00095: 
+  created_at: 2010-04-07 06:30:13 Z
+  id: 95
+  interpolations: 
+  is_proc: false
+  key: oral_histories
+  locale: en
+  updated_at: 2010-04-07 06:30:16 Z
+  value: Oral Histories
+translation_00096: 
+  created_at: 2010-04-07 06:30:36 Z
+  id: 96
+  interpolations: ""
+  is_proc: false
+  key: oral_histories
+  locale: fa
+  updated_at: 2010-05-22 19:24:14 Z
+  value: !binary |
+    w5jCqsOYwqfDmMKxw5vFksOYwq7DmeKAocOYwqfDm8WSIMOYwrTDmcKBw5jC
+    p8OZ4oChw5vFkg==
+
+translation_00097: 
+  created_at: 2010-04-07 06:32:19 Z
+  id: 97
+  interpolations: 
+  is_proc: false
+  key: everyday_objects
+  locale: en
+  updated_at: 2010-04-07 06:32:23 Z
+  value: Everyday Objects
+translation_00098: 
+  created_at: 2010-04-07 06:32:54 Z
+  id: 98
+  interpolations: 
+  is_proc: false
+  key: everyday_objects
+  locale: fa
+  updated_at: 2010-04-07 06:32:57 Z
+  value: !binary |
+    w5jCp8OYwrTDm8WSw5jCp8OYwqEgw5jCssOZ4oCgw5jCr8Oawq/Dm8WSIMOY
+    wrHDmcuGw5jCssOZ4oCmw5jCscOZ4oCh
+
+translation_00099: 
+  created_at: 2010-04-07 06:33:30 Z
+  id: 99
+  interpolations: 
+  is_proc: false
+  key: artworks
+  locale: en
+  updated_at: 2010-04-07 06:33:33 Z
+  value: Artworks
+translation_00100: 
+  created_at: 2010-04-07 06:33:51 Z
+  id: 100
+  interpolations: 
+  is_proc: false
+  key: artworks
+  locale: fa
+  updated_at: 2010-04-07 06:33:54 Z
+  value: !binary |
+    w5jCosOYwqvDmMKnw5jCsSDDmeKAocOZ4oCgw5jCscObxZI=
+
+translation_00101: 
+  created_at: 2010-04-07 06:34:21 Z
+  id: 101
+  interpolations: 
+  is_proc: false
+  key: photographs
+  locale: en
+  updated_at: 2010-04-07 06:34:24 Z
+  value: Photographs
+translation_00102: 
+  created_at: 2010-04-07 06:34:45 Z
+  id: 102
+  interpolations: ""
+  is_proc: false
+  key: photographs
+  locale: fa
+  updated_at: 2010-05-22 19:34:54 Z
+  value: !binary |
+    w5jCucOawqnDmMKzIMOZ4oChw5jCpw==
+
+translation_00103: 
+  created_at: 2010-04-07 06:35:07 Z
+  id: 103
+  interpolations: 
+  is_proc: false
+  key: legal_documents
+  locale: en
+  updated_at: 2010-04-07 06:35:10 Z
+  value: Legal Documents
+translation_00104: 
+  created_at: 2010-04-07 06:35:37 Z
+  id: 104
+  interpolations: 
+  is_proc: false
+  key: legal_documents
+  locale: fa
+  updated_at: 2010-04-07 06:35:39 Z
+  value: !binary |
+    w5jCp8OYwrPDmeKAoMOYwqfDmMKvIMOYwq3DmeKAmsOZy4bDmeKAmsObxZI=
+
+translation_00105: 
+  created_at: 2010-04-07 06:35:58 Z
+  id: 105
+  interpolations: 
+  is_proc: false
+  key: writings
+  locale: en
+  updated_at: 2010-04-07 06:36:01 Z
+  value: Writings
+translation_00106: 
+  created_at: 2010-04-07 06:36:24 Z
+  id: 106
+  interpolations: 
+  is_proc: false
+  key: writings
+  locale: fa
+  updated_at: 2010-04-07 06:36:26 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCtMOYwqrDmeKAoSDDmeKAocOYwqc=
+
+translation_00107: 
+  created_at: 2010-04-07 09:58:32 Z
+  id: 107
+  interpolations: 
+  is_proc: false
+  key: exhibits_description
+  locale: en
+  updated_at: 2010-04-07 09:58:37 Z
+  value: A slideshow of selected images.
+translation_00108: 
+  created_at: 2010-04-07 09:59:32 Z
+  id: 108
+  interpolations: ""
+  is_proc: false
+  key: exhibits_description
+  locale: fa
+  updated_at: 2010-05-22 18:05:09 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtCDDmMKnw5jCs8OZ4oCew5jCp8ObxZLD
+    mMKvw5vFkiDDmMKnw5jCsiDDmMKqw5jCtcOYwqfDmcuGw5vFksOYwrEgw5ni
+    gKbDmeKAoMOYwqrDmMKuw5jCqC4=
+
+translation_00109: 
+  created_at: 2010-04-07 10:12:26 Z
+  id: 109
+  interpolations: 
+  is_proc: false
+  key: about_this_exhibit
+  locale: en
+  updated_at: 2010-04-07 10:12:28 Z
+  value: About This Exhibit
+translation_00110: 
+  created_at: 2010-04-07 10:13:28 Z
+  id: 110
+  interpolations: 
+  is_proc: false
+  key: about_this_exhibit
+  locale: fa
+  updated_at: 2010-04-07 10:13:30 Z
+  value: !binary |
+    w5jCr8OYwrHDmMKow5jCp8OYwrHDmeKAoSDDmMKnw5vFksOZ4oCgIMOZ4oCg
+    w5nigKbDmMKnw5vFksOYwrTDmsKvw5jCp8OZ4oCh
+
+translation_00111: 
+  created_at: 2010-04-07 10:31:42 Z
+  id: 111
+  interpolations: 
+  is_proc: false
+  key: previous_exhibits
+  locale: en
+  updated_at: 2010-04-07 10:31:44 Z
+  value: Previous Exhibits
+translation_00112: 
+  created_at: 2010-04-07 10:32:18 Z
+  id: 112
+  interpolations: 
+  is_proc: false
+  key: previous_exhibits
+  locale: fa
+  updated_at: 2010-04-07 10:32:20 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtMOawq/DmMKnw5nigKHDouKCrMWSw5ni
+    gKHDmMKnw5vFkiDDmcK+w5vFksOYwrTDm8WSw5nigKA=
+
+translation_00113: 
+  created_at: 2010-04-07 16:46:43 Z
+  id: 113
+  interpolations: 
+  is_proc: false
+  key: collection_browser
+  locale: en
+  updated_at: 2010-04-07 16:46:46 Z
+  value: Collection Browser
+translation_00114: 
+  created_at: 2010-04-07 16:47:57 Z
+  id: 114
+  interpolations: 
+  is_proc: false
+  key: collection_browser
+  locale: fa
+  updated_at: 2010-04-07 16:47:59 Z
+  value: !binary |
+    w5jCs8ObxZLDmMKxIMOYwq/DmMKxIMOYwqLDmMKxw5jCtMObxZLDmcuG
+
+translation_00115: 
+  created_at: 2010-04-07 16:49:01 Z
+  id: 115
+  interpolations: 
+  is_proc: false
+  key: show
+  locale: en
+  updated_at: 2010-04-07 16:49:05 Z
+  value: show
+translation_00116: 
+  created_at: 2010-04-07 16:49:56 Z
+  id: 116
+  interpolations: ""
+  is_proc: false
+  key: show
+  locale: fa
+  updated_at: 2010-05-22 19:54:03 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDmcWgw5jCtCDDmMKow5jCr8OZ4oCh
+
+translation_00117: 
+  created_at: 2010-04-07 16:50:29 Z
+  id: 117
+  interpolations: 
+  is_proc: false
+  key: all_items
+  locale: en
+  updated_at: 2010-04-07 16:50:31 Z
+  value: All Items
+translation_00118: 
+  created_at: 2010-04-07 16:51:01 Z
+  id: 118
+  interpolations: ""
+  is_proc: false
+  key: all_items
+  locale: fa
+  updated_at: 2010-05-22 17:08:37 Z
+  value: !binary |
+    w5nigKHDmeKApsOZ4oChIMOYwqfDmeKAmsOZ4oCew5jCp8OZ4oCm
+
+translation_00119: 
+  created_at: 2010-04-07 16:51:19 Z
+  id: 119
+  interpolations: 
+  is_proc: false
+  key: my_items
+  locale: en
+  updated_at: 2010-04-07 16:51:22 Z
+  value: My Items
+translation_00120: 
+  created_at: 2010-04-07 16:51:53 Z
+  id: 120
+  interpolations: ""
+  is_proc: false
+  key: my_items
+  locale: fa
+  updated_at: 2010-05-22 19:13:21 Z
+  value: !binary |
+    w5nigJrDmMK3w5jCucOYwqfDmMKqIMOZ4oCmw5jCtMOYwqfDmeKAocOYwq/D
+    meKAoSDDmMK0w5jCr8OZ4oCh
+
+translation_00121: 
+  created_at: 2010-04-07 21:20:27 Z
+  id: 121
+  interpolations: 
+  is_proc: false
+  key: catalog
+  locale: en
+  updated_at: 2010-04-07 21:20:31 Z
+  value: Catalog
+translation_00122: 
+  created_at: 2010-04-07 21:24:54 Z
+  id: 122
+  interpolations: ""
+  is_proc: false
+  key: catalog
+  locale: fa
+  updated_at: 2010-05-22 17:13:34 Z
+  value: !binary |
+    w5nCgcOZ4oChw5jCscOYwrPDmMKq
+
+translation_00123: 
+  created_at: 2010-04-07 21:25:27 Z
+  id: 123
+  interpolations: 
+  is_proc: false
+  key: visual_resources
+  locale: en
+  updated_at: 2010-04-07 21:25:30 Z
+  value: Visual Resources
+translation_00124: 
+  created_at: 2010-04-07 21:26:00 Z
+  id: 124
+  interpolations: 
+  is_proc: false
+  key: visual_resources
+  locale: fa
+  updated_at: 2010-04-07 21:26:03 Z
+  value: !binary |
+    w5nigKbDmeKAoMOYwqfDmMKow5jCuSDDmMKqw5jCtcOZy4bDm8WSw5jCscOb
+    xZI=
+
+translation_00125: 
+  created_at: 2010-04-07 21:26:34 Z
+  id: 125
+  interpolations: 
+  is_proc: false
+  key: archival_finding_aids
+  locale: en
+  updated_at: 2010-04-07 21:26:36 Z
+  value: Archival Finding Aids
+translation_00126: 
+  created_at: 2010-04-07 21:27:05 Z
+  id: 126
+  interpolations: 
+  is_proc: false
+  key: archival_finding_aids
+  locale: fa
+  updated_at: 2010-04-07 21:27:08 Z
+  value: !binary |
+    w5rCqcOZ4oCmw5rCqSDDmMKsw5jCs8OYwqrDmMKsw5nLhsObxZIgw5jCosOY
+    wrHDmMK0w5vFksOZy4bDm8WSIA==
+
+translation_00127: 
+  created_at: 2010-04-07 21:27:33 Z
+  id: 127
+  interpolations: 
+  is_proc: false
+  key: iranian_oral_history_project
+  locale: en
+  updated_at: 2010-04-07 21:27:36 Z
+  value: Iranian Oral History Project
+translation_00128: 
+  created_at: 2010-04-07 21:28:08 Z
+  id: 128
+  interpolations: 
+  is_proc: false
+  key: iranian_oral_history_project
+  locale: fa
+  updated_at: 2010-04-07 21:28:10 Z
+  value: !binary |
+    w5nCvsOYwrHDmcuGw5rLnMOZ4oChIMOYwqrDmMKnw5jCscObxZLDmMKuIMOY
+    wrTDmcKBw5jCp8OZ4oChw5vFkiDDmMKnw5vFksOYwrHDmMKnw5nigKA=
+
+translation_00129: 
+  created_at: 2010-04-07 21:29:03 Z
+  id: 129
+  interpolations: ""
+  is_proc: false
+  key: islamic_heritage_project
+  locale: fa
+  updated_at: 2010-05-22 18:13:28 Z
+  value: !binary |
+    w5nCvsOYwrHDmcuGw5rLnMOZ4oChIMOZ4oCmw5vFksOYwrHDmMKnw5jCqyDD
+    mMKnw5jCs8OZ4oCew5jCp8OZ4oCmw5vFkg==
+
+translation_00130: 
+  created_at: 2010-04-07 21:29:36 Z
+  id: 130
+  interpolations: 
+  is_proc: false
+  key: islamic_heritage_project
+  locale: en
+  updated_at: 2010-04-07 21:29:40 Z
+  value: Islamic Heritage Project
+translation_00131: 
+  created_at: 2010-04-07 21:30:17 Z
+  id: 131
+  interpolations: 
+  is_proc: false
+  key: ali_khan_album
+  locale: en
+  updated_at: 2010-04-07 21:30:20 Z
+  value: Ali Khan Album
+translation_00132: 
+  created_at: 2010-04-07 21:31:03 Z
+  id: 132
+  interpolations: ""
+  is_proc: false
+  key: ali_khan_album
+  locale: fa
+  updated_at: 2010-05-21 03:30:43 Z
+  value: !binary |
+    w5jCosOZ4oCew5jCqMOZy4bDmeKApiDDmMK5w5nigJ7Dm8WSIMOYwq7DmMKn
+    w5nigKA=
+
+translation_00133: 
+  created_at: 2010-04-07 21:35:01 Z
+  id: 133
+  interpolations: 
+  is_proc: false
+  key: all_rights_reserved
+  locale: en
+  updated_at: 2010-04-07 21:35:04 Z
+  value: All rights reserved.
+translation_00134: 
+  created_at: 2010-04-07 21:35:40 Z
+  id: 134
+  interpolations: ""
+  is_proc: false
+  key: all_rights_reserved
+  locale: fa
+  updated_at: 2010-05-22 14:38:10 Z
+  value: !binary |
+    w5rCqcOZ4oCew5vFksOZ4oChIMOYwq3DmeKAmsOZy4bDmeKAmiDDmeKApsOY
+    wq3DmcKBw5nLhsOYwrggw5jCp8OYwrPDmMKqLg==
+
+translation_00135: 
+  created_at: 2010-04-09 23:56:19 Z
+  id: 135
+  interpolations: 
+  is_proc: false
+  key: medium
+  locale: en
+  updated_at: 2010-04-09 23:56:22 Z
+  value: medium
+translation_00136: 
+  created_at: 2010-04-10 00:00:03 Z
+  id: 136
+  interpolations: 
+  is_proc: false
+  key: medium
+  locale: fa
+  updated_at: 2010-04-10 00:00:06 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCuSA=
+
+translation_00137: 
+  created_at: 2010-04-10 00:00:39 Z
+  id: 137
+  interpolations: 
+  is_proc: false
+  key: collection
+  locale: en
+  updated_at: 2010-04-10 00:00:42 Z
+  value: collection
+translation_00138: 
+  created_at: 2010-04-10 00:01:02 Z
+  id: 138
+  interpolations: ""
+  is_proc: false
+  key: collection
+  locale: fa
+  updated_at: 2010-05-22 17:14:21 Z
+  value: !binary |
+    w5nigKbDmMKsw5nigKbDmcuGw5jCucOZ4oCh
+
+translation_00139: 
+  created_at: 2010-04-10 00:01:31 Z
+  id: 139
+  interpolations: 
+  is_proc: false
+  key: name
+  locale: en
+  updated_at: 2010-04-10 00:01:34 Z
+  value: name
+translation_00140: 
+  created_at: 2010-04-10 00:01:53 Z
+  id: 140
+  interpolations: 
+  is_proc: false
+  key: name
+  locale: fa
+  updated_at: 2010-04-10 00:01:55 Z
+  value: !binary |
+    w5nigKDDmMKnw5nigKY=
+
+translation_00141: 
+  created_at: 2010-04-10 00:02:17 Z
+  id: 141
+  interpolations: 
+  is_proc: false
+  key: subject
+  locale: en
+  updated_at: 2010-04-10 00:02:19 Z
+  value: subject
+translation_00142: 
+  created_at: 2010-04-10 00:02:43 Z
+  id: 142
+  interpolations: 
+  is_proc: false
+  key: subject
+  locale: fa
+  updated_at: 2010-04-10 00:02:46 Z
+  value: !binary |
+    w5nigKbDmcuGw5jCtsOZy4bDmMK5
+
+translation_00143: 
+  created_at: 2010-04-10 00:04:19 Z
+  id: 143
+  interpolations: 
+  is_proc: false
+  key: filter
+  locale: en
+  updated_at: 2010-04-10 00:04:23 Z
+  value: filter
+translation_00144: 
+  created_at: 2010-04-10 00:09:36 Z
+  id: 144
+  interpolations: ""
+  is_proc: false
+  key: filter
+  locale: fa
+  updated_at: 2010-05-22 18:07:00 Z
+  value: !binary |
+    w5nCgcObxZLDmeKAnsOYwqrDmMKx
+
+translation_00145: 
+  created_at: 2010-04-10 00:10:39 Z
+  id: 145
+  interpolations: 
+  is_proc: false
+  key: cancel
+  locale: en
+  updated_at: 2010-04-10 00:10:36 Z
+  value: cancel
+translation_00146: 
+  created_at: 2010-04-10 00:11:01 Z
+  id: 146
+  interpolations: ""
+  is_proc: false
+  key: cancel
+  locale: fa
+  updated_at: 2010-05-22 17:12:20 Z
+  value: !binary |
+    w5jCp8OZ4oCgw5jCtcOYwrHDmMKnw5nCgQ==
+
+translation_00147: 
+  created_at: 2010-04-10 00:15:46 Z
+  id: 147
+  interpolations: 
+  is_proc: false
+  key: more_categories
+  locale: en
+  updated_at: 2010-04-10 00:15:48 Z
+  value: More Categories
+translation_00148: 
+  created_at: 2010-04-10 00:16:56 Z
+  id: 148
+  interpolations: ""
+  is_proc: false
+  key: more_categories
+  locale: fa
+  updated_at: 2010-05-22 19:09:43 Z
+  value: !binary |
+    w5jCs8OYwqfDm8WSw5jCsSDDmeKApsOZ4oCaw5nLhsOZ4oCew5nigKEgw5ni
+    gKHDmMKn
+
+translation_00149: 
+  created_at: 2010-04-10 00:17:19 Z
+  id: 149
+  interpolations: 
+  is_proc: false
+  key: more_collections
+  locale: en
+  updated_at: 2010-04-10 00:17:22 Z
+  value: More Collections
+translation_00150: 
+  created_at: 2010-04-10 00:17:46 Z
+  id: 150
+  interpolations: ""
+  is_proc: false
+  key: more_collections
+  locale: fa
+  updated_at: 2010-05-22 19:10:56 Z
+  value: !binary |
+    w5jCs8OYwqfDm8WSw5jCsSDDmeKApsOYwqzDmeKApsOZy4bDmMK5w5nigKEg
+    w5nigKHDmMKn
+
+translation_00151: 
+  created_at: 2010-04-10 00:18:11 Z
+  id: 151
+  interpolations: 
+  is_proc: false
+  key: more_names
+  locale: en
+  updated_at: 2010-04-10 00:18:13 Z
+  value: More Names
+translation_00152: 
+  created_at: 2010-04-10 00:18:45 Z
+  id: 152
+  interpolations: 
+  is_proc: false
+  key: more_names
+  locale: fa
+  updated_at: 2010-04-10 00:18:47 Z
+  value: !binary |
+    w5jCs8OYwqfDm8WSw5jCsSDDmeKAoMOYwqfDmeKApsOZ4oChw5jCpyA=
+
+translation_00153: 
+  created_at: 2010-04-10 00:19:14 Z
+  id: 153
+  interpolations: 
+  is_proc: false
+  key: more_subjects
+  locale: en
+  updated_at: 2010-04-10 00:19:16 Z
+  value: More Subjects
+translation_00154: 
+  created_at: 2010-04-10 00:20:16 Z
+  id: 154
+  interpolations: ""
+  is_proc: false
+  key: more_subjects
+  locale: fa
+  updated_at: 2010-05-22 19:11:41 Z
+  value: !binary |
+    w5jCs8OYwqfDm8WSw5jCscOZ4oCmw5nLhsOYwrbDmcuGw5jCucOYwqfDmMKq
+
+translation_00157: 
+  created_at: 2010-04-10 00:27:19 Z
+  id: 157
+  interpolations: 
+  is_proc: false
+  key: list_view
+  locale: en
+  updated_at: 2010-04-10 00:27:22 Z
+  value: List View
+translation_00158: 
+  created_at: 2010-04-10 00:28:13 Z
+  id: 158
+  interpolations: ""
+  is_proc: false
+  key: list_view
+  locale: fa
+  updated_at: 2010-05-22 19:05:14 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSIMOZwoHDmeKAocOYwrHDmMKzw5jCqsObxZI=
+
+translation_00159: 
+  created_at: 2010-04-10 00:28:35 Z
+  id: 159
+  interpolations: 
+  is_proc: false
+  key: grid_view
+  locale: en
+  updated_at: 2010-04-10 00:28:38 Z
+  value: Grid View
+translation_00160: 
+  created_at: 2010-04-10 00:29:02 Z
+  id: 160
+  interpolations: ""
+  is_proc: false
+  key: grid_view
+  locale: fa
+  updated_at: 2010-05-22 18:08:01 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSIMOYwqzDmMKvw5nLhsOZ4oCew5vFkg==
+
+translation_00161: 
+  created_at: 2010-04-10 00:29:33 Z
+  id: 161
+  interpolations: 
+  is_proc: false
+  key: slideshow
+  locale: en
+  updated_at: 2010-04-10 00:29:36 Z
+  value: Slideshow
+translation_00162: 
+  created_at: 2010-04-10 00:29:56 Z
+  id: 162
+  interpolations: 
+  is_proc: false
+  key: slideshow
+  locale: fa
+  updated_at: 2010-04-10 00:29:58 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtCDDmMKnw5jCs8OZ4oCew5jCp8ObxZLD
+    mMKv
+
+translation_00163: 
+  created_at: 2010-04-10 00:30:22 Z
+  id: 163
+  interpolations: 
+  is_proc: false
+  key: view_mode
+  locale: en
+  updated_at: 2010-04-10 00:30:25 Z
+  value: View Mode
+translation_00164: 
+  created_at: 2010-04-10 00:30:52 Z
+  id: 164
+  interpolations: ""
+  is_proc: false
+  key: view_mode
+  locale: fa
+  updated_at: 2010-05-22 20:16:53 Z
+  value: !binary |
+    w5jCt8OYwrHDm8WSw5nigJrDmeKAoSDDmeKAoMOZ4oCmw5jCp8ObxZLDmMK0
+
+translation_00165: 
+  created_at: 2010-04-10 00:35:03 Z
+  id: 165
+  interpolations: 
+  is_proc: false
+  key: date
+  locale: en
+  updated_at: 2010-04-10 00:35:20 Z
+  value: Date
+translation_00166: 
+  created_at: 2010-04-10 00:35:41 Z
+  id: 166
+  interpolations: 
+  is_proc: false
+  key: date
+  locale: fa
+  updated_at: 2010-04-10 00:35:43 Z
+  value: !binary |
+    w5jCqsOYwqfDmMKxw5vFksOYwq4=
+
+translation_00167: 
+  created_at: 2010-04-10 00:36:20 Z
+  id: 167
+  interpolations: 
+  is_proc: false
+  key: az_sort
+  locale: en
+  updated_at: 2010-04-10 00:36:23 Z
+  value: A-Z
+translation_00168: 
+  created_at: 2010-04-10 00:36:49 Z
+  id: 168
+  interpolations: 
+  is_proc: false
+  key: az_sort
+  locale: fa
+  updated_at: 2010-04-10 00:36:53 Z
+  value: !binary |
+    w5jCp8OZ4oCew5nCgcOYwqjDmMKn
+
+translation_00169: 
+  created_at: 2010-04-10 00:37:17 Z
+  id: 169
+  interpolations: 
+  is_proc: false
+  key: sort_by
+  locale: en
+  updated_at: 2010-04-10 00:37:20 Z
+  value: Sort By
+translation_00171: 
+  created_at: 2010-04-10 00:38:11 Z
+  id: 171
+  interpolations: 
+  is_proc: false
+  key: sort_by
+  locale: fa
+  updated_at: 2010-04-10 00:38:14 Z
+  value: !binary |
+    w5jCqMOZ4oChIMOYwqrDmMKxw5jCqsObxZLDmMKoOg==
+
+translation_00172: 
+  created_at: 2010-04-10 00:45:07 Z
+  id: 172
+  interpolations: 
+  is_proc: false
+  key: all
+  locale: en
+  updated_at: 2010-04-10 00:45:10 Z
+  value: all
+translation_00173: 
+  created_at: 2010-04-10 00:45:39 Z
+  id: 173
+  interpolations: 
+  is_proc: false
+  key: all
+  locale: fa
+  updated_at: 2010-04-10 00:45:42 Z
+  value: !binary |
+    w5nigKHDmeKApsOZ4oCh
+
+translation_00174: 
+  created_at: 2010-04-11 08:45:02 Z
+  id: 174
+  interpolations: 
+  is_proc: false
+  key: show_only
+  locale: en
+  updated_at: 2010-04-11 08:45:05 Z
+  value: show only
+translation_00175: 
+  created_at: 2010-04-11 17:39:03 Z
+  id: 175
+  interpolations: ""
+  is_proc: false
+  key: show_only
+  locale: fa
+  updated_at: 2010-05-22 19:53:26 Z
+  value: !binary |
+    w5jCtcOYwrHDmcKBw5jCp8OZ4oC5IMOZ4oCgw5nigKbDmMKnw5vFksOYwrQg
+    w5jCqMOYwq/DmeKAoQ==
+
+translation_00176: 
+  created_at: 2010-04-11 17:48:03 Z
+  id: 176
+  interpolations: 
+  is_proc: false
+  key: view_details
+  locale: en
+  updated_at: 2010-04-11 17:48:05 Z
+  value: view details
+translation_00177: 
+  created_at: 2010-04-11 17:49:16 Z
+  id: 177
+  interpolations: ""
+  is_proc: false
+  key: view_details
+  locale: fa
+  updated_at: 2010-05-22 20:15:26 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSIMOYwqzDmMKyw5jCpsObxZI=
+
+translation_00178: 
+  created_at: 2010-04-11 17:55:21 Z
+  id: 178
+  interpolations: 
+  is_proc: false
+  key: showing
+  locale: en
+  updated_at: 2010-04-11 17:55:24 Z
+  value: showing
+translation_00179: 
+  created_at: 2010-04-11 17:55:36 Z
+  id: 179
+  interpolations: ""
+  is_proc: false
+  key: showing
+  locale: fa
+  updated_at: 2010-05-22 19:54:44 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtA==
+
+translation_00180: 
+  created_at: 2010-04-11 17:56:29 Z
+  id: 180
+  interpolations: 
+  is_proc: false
+  key: items_of
+  locale: en
+  updated_at: 2010-04-11 17:56:32 Z
+  value: item(s) of
+translation_00181: 
+  created_at: 2010-04-11 17:57:00 Z
+  id: 181
+  interpolations: ""
+  is_proc: false
+  key: items_of
+  locale: fa
+  updated_at: 2010-05-22 19:07:47 Z
+  value: !binary |
+    w5nigJrDmMK3w5jCucOZ4oChKMOZ4oChw5jCpykgw5jCp8OYwrI=
+
+translation_00182: 
+  created_at: 2010-04-11 18:09:18 Z
+  id: 182
+  interpolations: 
+  is_proc: false
+  key: detail_description
+  locale: en
+  updated_at: 2010-04-11 18:09:20 Z
+  value: A detailed view of an item.
+translation_00183: 
+  created_at: 2010-04-11 18:09:35 Z
+  id: 183
+  interpolations: ""
+  is_proc: false
+  key: detail_description
+  locale: fa
+  updated_at: 2010-05-22 17:30:25 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSIMOZwr7DmMKxIMOYwqrDmcKBw5jCtcObxZLD
+    meKAniDDmMKnw5jCsiDDmeKAmsOYwrfDmMK5w5nigKEu
+
+translation_00184: 
+  created_at: 2010-04-11 18:10:35 Z
+  id: 184
+  interpolations: 
+  is_proc: false
+  key: detail
+  locale: en
+  updated_at: 2010-04-11 18:10:38 Z
+  value: Detail
+translation_00185: 
+  created_at: 2010-04-11 18:10:53 Z
+  id: 185
+  interpolations: ""
+  is_proc: false
+  key: detail
+  locale: fa
+  updated_at: 2010-05-22 17:20:34 Z
+  value: !binary |
+    w5jCrMOYwrLDmMKmw5vFksOYwqfDmMKq
+
+translation_00186: 
+  created_at: 2010-04-11 18:33:00 Z
+  id: 186
+  interpolations: 
+  is_proc: false
+  key: location
+  locale: en
+  updated_at: 2010-04-11 18:33:06 Z
+  value: location
+translation_00187: 
+  created_at: 2010-04-11 18:33:17 Z
+  id: 187
+  interpolations: 
+  is_proc: false
+  key: location
+  locale: fa
+  updated_at: 2010-04-11 18:33:19 Z
+  value: !binary |
+    w5nigKbDmsKpw5jCp8OZ4oCg
+
+translation_00188: 
+  created_at: 2010-04-11 18:36:05 Z
+  id: 188
+  interpolations: 
+  is_proc: false
+  key: dimensions
+  locale: en
+  updated_at: 2010-04-11 18:36:08 Z
+  value: dimensions
+translation_00189: 
+  created_at: 2010-04-11 18:36:33 Z
+  id: 189
+  interpolations: ""
+  is_proc: false
+  key: dimensions
+  locale: fa
+  updated_at: 2010-05-22 17:43:19 Z
+  value: !binary |
+    w5jCp8OYwqjDmMK5w5jCp8OYwq8=
+
+translation_00190: 
+  created_at: 2010-04-11 18:37:01 Z
+  id: 190
+  interpolations: 
+  is_proc: false
+  key: type
+  locale: en
+  updated_at: 2010-04-11 18:37:04 Z
+  value: type
+translation_00191: 
+  created_at: 2010-04-11 18:37:29 Z
+  id: 191
+  interpolations: 
+  is_proc: false
+  key: type
+  locale: fa
+  updated_at: 2010-04-11 18:37:34 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCuQ==
+
+translation_00192: 
+  created_at: 2010-04-11 18:46:15 Z
+  id: 192
+  interpolations: 
+  is_proc: false
+  key: back_to_collections
+  locale: en
+  updated_at: 2010-04-11 18:46:19 Z
+  value: back to archive
+translation_00193: 
+  created_at: 2010-04-11 18:47:54 Z
+  id: 193
+  interpolations: 
+  is_proc: false
+  key: back_to_collections
+  locale: fa
+  updated_at: 2010-04-11 18:47:57 Z
+  value: !binary |
+    w5jCqMOYwqfDmMKyw5rCr8OYwrTDmMKqIMOYwqjDmeKAoSDDmeKApsOYwqzD
+    meKApsOZy4bDmMK5w5nigKEgw5nigKHDmMKn
+
+translation_00194: 
+  created_at: 2010-04-11 18:48:09 Z
+  id: 194
+  interpolations: 
+  is_proc: false
+  key: share
+  locale: en
+  updated_at: 2010-04-11 18:48:13 Z
+  value: share
+translation_00195: 
+  created_at: 2010-04-11 18:48:54 Z
+  id: 195
+  interpolations: ""
+  is_proc: false
+  key: share
+  locale: fa
+  updated_at: 2010-05-22 19:49:34 Z
+  value: !binary |
+    w5jCp8OYwrHDmMKzw5jCp8OZ4oCeIMOYwqjDmMKxw5jCp8OZxaAgw5jCr8OZ
+    xaDDmsKvw5jCscOYwqfDmeKAoA==
+
+translation_00196: 
+  created_at: 2010-04-11 18:49:54 Z
+  id: 196
+  interpolations: 
+  is_proc: false
+  key: previous_item
+  locale: en
+  updated_at: 2010-04-11 18:49:57 Z
+  value: previous item
+translation_00197: 
+  created_at: 2010-04-11 18:50:16 Z
+  id: 197
+  interpolations: ""
+  is_proc: false
+  key: previous_item
+  locale: fa
+  updated_at: 2010-06-11 19:53:18 Z
+  value: !binary |
+    w5nigJrDmMKow5nigJ7Dm8WS
+
+translation_00198: 
+  created_at: 2010-04-11 18:50:44 Z
+  id: 198
+  interpolations: 
+  is_proc: false
+  key: next_item
+  locale: en
+  updated_at: 2010-04-11 18:50:46 Z
+  value: next item
+translation_00199: 
+  created_at: 2010-04-11 18:51:01 Z
+  id: 199
+  interpolations: ""
+  is_proc: false
+  key: next_item
+  locale: fa
+  updated_at: 2010-06-11 19:54:15 Z
+  value: !binary |
+    w5jCqMOYwrnDmMKvw5vFkg==
+
+translation_00200: 
+  created_at: 2010-05-13 11:52:05 Z
+  id: 200
+  interpolations: 
+  is_proc: false
+  key: full_title
+  locale: en
+  updated_at: 2010-05-13 11:52:08 Z
+  value: Full Title
+translation_00201: 
+  created_at: 2010-05-13 11:52:48 Z
+  id: 201
+  interpolations: 
+  is_proc: false
+  key: full_title
+  locale: fa
+  updated_at: 2010-05-13 11:52:51 Z
+  value: !binary |
+    w5jCucOZ4oCgw5nLhsOYwqfDmeKAoCDDmsKpw5jCp8OZ4oCmw5nigJ4=
+
+translation_00202: 
+  created_at: 2010-05-13 14:25:42 Z
+  id: 202
+  interpolations: 
+  is_proc: false
+  key: verso
+  locale: en
+  updated_at: 2010-05-13 14:25:44 Z
+  value: verso
+translation_00203: 
+  created_at: 2010-05-13 14:26:34 Z
+  id: 203
+  interpolations: 
+  is_proc: false
+  key: verso
+  locale: fa
+  updated_at: 2010-05-13 14:26:36 Z
+  value: !binary |
+    w5nCvsOYwrTDmMKq
+
+translation_00204: 
+  created_at: 2010-05-14 12:49:53 Z
+  id: 204
+  interpolations: 
+  is_proc: false
+  key: previous
+  locale: en
+  updated_at: 2010-05-14 12:49:56 Z
+  value: previous
+translation_00205: 
+  created_at: 2010-05-14 12:50:28 Z
+  id: 205
+  interpolations: 
+  is_proc: false
+  key: previous
+  locale: fa
+  updated_at: 2010-05-14 12:50:30 Z
+  value: !binary |
+    w5nigJrDmMKow5nigJ7Dm8WS
+
+translation_00206: 
+  created_at: 2010-05-14 12:50:43 Z
+  id: 206
+  interpolations: 
+  is_proc: false
+  key: next
+  locale: en
+  updated_at: 2010-05-14 12:50:45 Z
+  value: next
+translation_00207: 
+  created_at: 2010-05-14 12:51:18 Z
+  id: 207
+  interpolations: ""
+  is_proc: false
+  key: next
+  locale: fa
+  updated_at: 2010-05-22 19:18:44 Z
+  value: !binary |
+    w5jCqMOYwrnDmMKvw5vFkg==
+
+translation_00208: 
+  created_at: 2010-05-14 14:00:47 Z
+  id: 208
+  interpolations: 
+  is_proc: false
+  key: results_prefix
+  locale: en
+  updated_at: 2010-05-14 14:00:50 Z
+  value: "Displaying items "
+translation_00209: 
+  created_at: 2010-05-14 14:01:11 Z
+  id: 209
+  interpolations: ""
+  is_proc: false
+  key: results_prefix
+  locale: fa
+  updated_at: 2010-05-22 19:39:40 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtCDDmeKAmsOYwrfDmMK5w5jCp8OYwqo=
+
+translation_00210: 
+  created_at: 2010-05-20 01:57:55 Z
+  id: 210
+  interpolations: ""
+  is_proc: false
+  key: no_records_found
+  locale: en
+  updated_at: 2010-05-20 01:57:55 Z
+  value: No items found for your search.
+translation_00211: 
+  created_at: 2010-05-20 01:58:47 Z
+  id: 211
+  interpolations: ""
+  is_proc: false
+  key: no_records_found
+  locale: fa
+  updated_at: 2010-05-22 19:22:28 Z
+  value: !binary |
+    w5nigJrDmMK3w5jCucOZ4oChw6LigqzFksOYwqfDm8WSIMObxZLDmMKnw5nC
+    gcOYwqogw5nigKDDmMK0w5jCry4=
+
+translation_00212: 
+  created_at: 2010-05-20 14:59:51 Z
+  id: 212
+  interpolations: ""
+  is_proc: false
+  key: translations
+  locale: en
+  updated_at: 2010-05-20 14:59:51 Z
+  value: translations
+translation_00213: 
+  created_at: 2010-05-20 15:00:34 Z
+  id: 213
+  interpolations: ""
+  is_proc: false
+  key: translations
+  locale: fa
+  updated_at: 2010-05-22 20:00:16 Z
+  value: !binary |
+    w5jCqsOYwrHDmMKsw5nigKbDmeKAoSDDmeKAocOYwqc=
+
+translation_00214: 
+  created_at: 2010-05-20 15:01:19 Z
+  id: 214
+  interpolations: ""
+  is_proc: false
+  key: translations_index_description
+  locale: en
+  updated_at: 2010-05-20 15:01:19 Z
+  value: An administrative page listing translations.
+translation_00215: 
+  created_at: 2010-05-20 15:01:38 Z
+  id: 215
+  interpolations: ""
+  is_proc: false
+  key: translations_index_description
+  locale: fa
+  updated_at: 2010-05-22 20:02:47 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCp8OYwq/DmMKnw5jCscObxZIgw5jCqMOY
+    wrHDmMKnw5vFkiDDmcKBw5nigKHDmMKxw5jCs8OYwqogw5rCqcOYwrHDmMKv
+    w5nigKAgw5jCqsOYwrHDmMKsw5nigKbDmeKAoSDDmeKAocOYwqc=
+
+translation_00216: 
+  created_at: 2010-05-20 16:55:21 Z
+  id: 216
+  interpolations: ""
+  is_proc: false
+  key: new
+  locale: en
+  updated_at: 2010-05-20 16:55:21 Z
+  value: new
+translation_00217: 
+  created_at: 2010-05-20 16:56:02 Z
+  id: 217
+  interpolations: ""
+  is_proc: false
+  key: new
+  locale: fa
+  updated_at: 2010-05-20 16:56:02 Z
+  value: !binary |
+    w5jCrMOYwq/Dm8WSw5jCrw==
+
+translation_00218: 
+  created_at: 2010-05-20 17:01:53 Z
+  id: 218
+  interpolations: ""
+  is_proc: false
+  key: edit
+  locale: en
+  updated_at: 2010-05-20 17:01:53 Z
+  value: edit
+translation_00219: 
+  created_at: 2010-05-20 17:02:24 Z
+  id: 219
+  interpolations: ""
+  is_proc: false
+  key: edit
+  locale: fa
+  updated_at: 2010-05-20 17:02:24 Z
+  value: !binary |
+    w5nLhsObxZLDmMKxw5jCp8ObxZLDmMK0
+
+translation_00220: 
+  created_at: 2010-05-20 17:04:10 Z
+  id: 220
+  interpolations: ""
+  is_proc: false
+  key: edit_description
+  locale: en
+  updated_at: 2010-05-20 17:04:10 Z
+  value: An administrative page for editing items.
+translation_00221: 
+  created_at: 2010-05-20 17:04:25 Z
+  id: 221
+  interpolations: ""
+  is_proc: false
+  key: edit_description
+  locale: fa
+  updated_at: 2010-05-22 17:55:43 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCp8OYwq/DmMKnw5jCscObxZIgw5jCqMOY
+    wrHDmMKnw5vFkiDDmcuGw5vFksOYwrHDmMKnw5vFksOYwrQu
+
+translation_00222: 
+  created_at: 2010-05-20 17:05:51 Z
+  id: 222
+  interpolations: ""
+  is_proc: false
+  key: show_description
+  locale: en
+  updated_at: 2010-05-20 17:05:51 Z
+  value: An administrative page for showing records.
+translation_00223: 
+  created_at: 2010-05-20 17:06:38 Z
+  id: 223
+  interpolations: ""
+  is_proc: false
+  key: new_description
+  locale: fa
+  updated_at: 2010-05-22 19:20:22 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCp8OYwq/DmMKnw5jCscObxZIgw5jCqMOY
+    wrHDmMKnw5vFkiDDmeKApsOYwq/DmMKxw5rCqSDDmMKsw5jCr8ObxZLDmMKv
+
+translation_00224: 
+  created_at: 2010-05-20 17:07:11 Z
+  id: 224
+  interpolations: ""
+  is_proc: false
+  key: show_description
+  locale: fa
+  updated_at: 2010-05-22 19:51:45 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKEgw5jCp8OYwq/DmMKnw5jCscObxZIgw5jCqMOY
+    wrHDmMKnw5vFkiDDmeKAoMOZ4oCmw5jCp8ObxZLDmMK0IMOZ4oCmw5jCr8OY
+    wqfDmMKxw5rCqQ==
+
+translation_00225: 
+  created_at: 2010-05-20 17:07:55 Z
+  id: 225
+  interpolations: ""
+  is_proc: false
+  key: new_description
+  locale: en
+  updated_at: 2010-05-20 17:07:55 Z
+  value: An administrative page for creating a new record.
+translation_00226: 
+  created_at: 2010-05-28 07:03:03 Z
+  id: 226
+  interpolations: ""
+  is_proc: false
+  key: back_to_exhibits
+  locale: en
+  updated_at: 2010-05-28 07:03:03 Z
+  value: back to exhibits
+translation_00227: 
+  created_at: 2010-05-28 07:04:50 Z
+  id: 227
+  interpolations: ""
+  is_proc: false
+  key: back_to_exhibits
+  locale: fa
+  updated_at: 2010-05-28 07:04:50 Z
+  value: !binary |
+    w5jCqMOYwqfDmMKyw5rCr8OYwrTDmMKqIMOYwqjDmeKAoSDDmeKAoMOZ4oCm
+    w5jCp8ObxZLDmMK0w5rCr8OYwqfDmeKAocOi4oKsxZLDmeKAocOYwqc=
+
+translation_00228: 
+  created_at: 2010-05-28 11:35:53 Z
+  id: 228
+  interpolations: 
+  is_proc: false
+  key: audio
+  locale: en
+  updated_at: 2010-05-28 11:35:56 Z
+  value: audio
+translation_00229: 
+  created_at: 2010-05-28 11:36:09 Z
+  id: 229
+  interpolations: 
+  is_proc: false
+  key: audio
+  locale: fa
+  updated_at: 2010-05-28 11:36:11 Z
+  value: !binary |
+    w5jCtcOZy4bDmMKqw5vFkg==
+
+translation_00230: 
+  created_at: 2010-06-22 13:26:10 Z
+  id: 230
+  interpolations: 
+  is_proc: false
+  key: item
+  locale: en
+  updated_at: 2010-06-22 13:26:14 Z
+  value: item
+translation_00231: 
+  created_at: 2010-06-22 13:27:42 Z
+  id: 231
+  interpolations: 
+  is_proc: false
+  key: item
+  locale: fa
+  updated_at: 2010-06-22 13:27:46 Z
+  value: !binary |
+    w5nCgcOZ4oCaw5jCscOZ4oCh
+
+translation_00232: 
+  created_at: 2010-06-22 15:14:29 Z
+  id: 232
+  interpolations: 
+  is_proc: true
+  key: date.order
+  locale: en
+  updated_at: 2010-06-22 15:14:34 Z
+  value: "[:day, :month, :year]"
+translation_00233: 
+  created_at: 2010-06-22 15:15:01 Z
+  id: 233
+  interpolations: 
+  is_proc: true
+  key: date.order
+  locale: fa
+  updated_at: 2010-06-22 15:15:04 Z
+  value: "[:day, :month, :year]"
+translation_00234: 
+  created_at: 2010-06-23 09:55:57 Z
+  id: 234
+  interpolations: 
+  is_proc: false
+  key: admin_description
+  locale: en
+  updated_at: 2010-06-23 09:56:20 Z
+  value: Pages for administering content.
+translation_00235: 
+  created_at: 2010-06-23 09:56:13 Z
+  id: 235
+  interpolations: 
+  is_proc: false
+  key: admin_description
+  locale: fa
+  updated_at: 2010-06-23 09:56:17 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5jCp8OYwqogw5jCqMOYwrHDmMKnw5vFkiDDmeKApsOY
+    wq/Dm8WSw5jCscObxZLDmMKqIMOZ4oCmw5jCrcOYwqrDmcuGw5jCpy4=
+
+translation_00236: 
+  created_at: 2010-06-23 10:30:37 Z
+  id: 236
+  interpolations: 
+  is_proc: false
+  key: archive_description
+  locale: en
+  updated_at: 2010-06-23 10:30:39 Z
+  value: The archive contains manuscripts, pictures, sound files relating to the history of women in Qajar Iran.
+translation_00237: 
+  created_at: 2010-06-23 10:31:09 Z
+  id: 237
+  interpolations: 
+  is_proc: false
+  key: archive_description
+  locale: fa
+  updated_at: 2010-06-23 10:31:12 Z
+  value: !binary |
+    w5jCp8ObxZLDmeKAoCDDmMKiw5jCscOYwrTDm8WSw5nLhiDDmMKtw5jCp8OZ
+    y4bDm8WSIMOZ4oCgw5jCs8OYwq7DmeKAocOi4oKsxZLDmeKAocOYwqfDm8WS
+    IMOYwq7DmMK3w5vFksOi4oKsxZLDmMWSIMOYwrnDmsKpw5jCsyDDmcuGIMOZ
+    woHDmMKnw5vFksOZ4oCew6LigqzFksOZ4oChw5jCp8ObxZIgw5jCtcOZy4bD
+    mMKqw5vFkiDDmeKApsObxZLDmMKow5jCp8OYwrTDmMKvLg==
+
+translation_00238: 
+  created_at: 2010-06-23 10:45:56 Z
+  id: 238
+  interpolations: 
+  is_proc: false
+  key: image
+  locale: en
+  updated_at: 2010-06-23 10:45:59 Z
+  value: image
+translation_00239: 
+  created_at: 2010-06-23 10:53:09 Z
+  id: 239
+  interpolations: 
+  is_proc: false
+  key: image
+  locale: fa
+  updated_at: 2010-06-23 10:53:12 Z
+  value: !binary |
+    w5jCqsOYwrXDmcuGw5vFksOYwrE=
+
+translation_00240: 
+  created_at: 2010-06-23 10:53:34 Z
+  id: 240
+  interpolations: 
+  is_proc: false
+  key: clip
+  locale: en
+  updated_at: 2010-06-23 10:53:42 Z
+  value: clip
+translation_00241: 
+  created_at: 2010-06-23 10:54:05 Z
+  id: 241
+  interpolations: 
+  is_proc: false
+  key: clip
+  locale: fa
+  updated_at: 2010-06-23 10:54:08 Z
+  value: !binary |
+    w5rCqcOZ4oCew5vFksOZwr4gw5jCtcOZy4bDmMKqw5vFkg==
+
+translation_00242: 
+  created_at: 2010-06-23 10:54:31 Z
+  id: 242
+  interpolations: 
+  is_proc: false
+  key: clip_type
+  locale: en
+  updated_at: 2010-06-23 10:54:34 Z
+  value: clip type
+translation_00243: 
+  created_at: 2010-06-23 10:54:57 Z
+  id: 243
+  interpolations: 
+  is_proc: false
+  key: clip_type
+  locale: fa
+  updated_at: 2010-06-23 10:55:00 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCuSDDmsKpw5nigJ7Dm8WSw5nCviDDmMK1w5nLhsOYwqrD
+    m8WS
+
+translation_00244: 
+  created_at: 2010-06-23 10:55:20 Z
+  id: 244
+  interpolations: 
+  is_proc: false
+  key: calendar_type
+  locale: en
+  updated_at: 2010-06-23 10:55:22 Z
+  value: calendar type
+translation_00245: 
+  created_at: 2010-06-23 10:56:12 Z
+  id: 245
+  interpolations: 
+  is_proc: false
+  key: calendar_type
+  locale: fa
+  updated_at: 2010-06-23 10:56:13 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCuSDDmMKqw5nigJrDmcuGw5vFksOZ4oCm
+
+translation_00246: 
+  created_at: 2010-06-23 10:56:34 Z
+  id: 246
+  interpolations: 
+  is_proc: false
+  key: classification
+  locale: en
+  updated_at: 2010-06-23 10:56:36 Z
+  value: classification
+translation_00247: 
+  created_at: 2010-06-23 10:56:58 Z
+  id: 247
+  interpolations: 
+  is_proc: false
+  key: classification
+  locale: fa
+  updated_at: 2010-06-23 10:57:00 Z
+  value: !binary |
+    w5jCt8OYwqjDmeKAmsOZ4oChIMOYwqjDmeKAoMOYwq/Dm8WS
+
+translation_00248: 
+  created_at: 2010-06-23 10:57:38 Z
+  id: 248
+  interpolations: 
+  is_proc: false
+  key: relationship
+  locale: en
+  updated_at: 2010-06-23 10:57:40 Z
+  value: relationship
+translation_00249: 
+  created_at: 2010-06-23 10:58:06 Z
+  id: 249
+  interpolations: 
+  is_proc: false
+  key: relationship
+  locale: fa
+  updated_at: 2010-06-23 10:58:08 Z
+  value: !binary |
+    w5jCp8OYwrHDmMKqw5jCqMOYwqfDmMK3
+
+translation_00250: 
+  created_at: 2010-06-23 10:58:31 Z
+  id: 250
+  interpolations: 
+  is_proc: false
+  key: subject_type
+  locale: en
+  updated_at: 2010-06-23 10:58:33 Z
+  value: subject type
+translation_00251: 
+  created_at: 2010-06-23 10:58:51 Z
+  id: 251
+  interpolations: 
+  is_proc: false
+  key: subject_type
+  locale: fa
+  updated_at: 2010-06-23 10:58:54 Z
+  value: !binary |
+    w5nigKDDmcuGw5jCuSDDmeKApsOZy4bDmMK2w5nLhsOYwrk=
+
+translation_00252: 
+  created_at: 2010-06-23 10:59:31 Z
+  id: 252
+  interpolations: 
+  is_proc: false
+  key: panel
+  locale: en
+  updated_at: 2010-06-23 10:59:33 Z
+  value: panel
+translation_00253: 
+  created_at: 2010-06-23 10:59:52 Z
+  id: 253
+  interpolations: 
+  is_proc: false
+  key: panel
+  locale: fa
+  updated_at: 2010-06-23 10:59:54 Z
+  value: !binary |
+    w5jCqsOYwqfDmMKow5nigJ7DmcuG
+
+translation_00254: 
+  created_at: 2010-06-23 11:04:41 Z
+  id: 254
+  interpolations: 
+  is_proc: false
+  key: exhibit
+  locale: en
+  updated_at: 2010-06-23 11:04:43 Z
+  value: exhibit
+translation_00255: 
+  created_at: 2010-06-23 11:05:05 Z
+  id: 255
+  interpolations: 
+  is_proc: false
+  key: exhibit
+  locale: fa
+  updated_at: 2010-06-23 11:05:07 Z
+  value: !binary |
+    w5jCp8OYwqvDmMKxIMOZ4oCgw5nigKbDmMKnw5vFksOYwrTDm8WS
+
+translation_00256: 
+  created_at: 2010-06-23 11:05:19 Z
+  id: 256
+  interpolations: 
+  is_proc: false
+  key: person
+  locale: en
+  updated_at: 2010-06-23 11:05:21 Z
+  value: person
+translation_00257: 
+  created_at: 2010-06-23 11:05:39 Z
+  id: 257
+  interpolations: 
+  is_proc: false
+  key: person
+  locale: fa
+  updated_at: 2010-06-23 11:05:41 Z
+  value: !binary |
+    w5jCtMOYwq7DmMK1
+
+translation_00258: 
+  created_at: 2010-06-23 11:07:43 Z
+  id: 258
+  interpolations: 
+  is_proc: false
+  key: owner
+  locale: en
+  updated_at: 2010-06-23 11:07:45 Z
+  value: owner
+translation_00259: 
+  created_at: 2010-06-23 11:08:05 Z
+  id: 259
+  interpolations: 
+  is_proc: false
+  key: owner
+  locale: fa
+  updated_at: 2010-06-23 11:08:07 Z
+  value: !binary |
+    w5nigKbDmMKnw5nigJ7DmsKp
+
+translation_00260: 
+  created_at: 2010-06-23 11:09:09 Z
+  id: 260
+  interpolations: 
+  is_proc: false
+  key: page
+  locale: en
+  updated_at: 2010-06-23 11:09:11 Z
+  value: page
+translation_00261: 
+  created_at: 2010-06-23 11:09:20 Z
+  id: 261
+  interpolations: 
+  is_proc: false
+  key: page
+  locale: fa
+  updated_at: 2010-06-23 11:09:21 Z
+  value: !binary |
+    w5jCtcOZwoHDmMKtw5nigKE=
+
+translation_00262: 
+  created_at: 2010-06-23 11:11:12 Z
+  id: 262
+  interpolations: 
+  is_proc: false
+  key: place
+  locale: en
+  updated_at: 2010-06-23 11:11:14 Z
+  value: place
+translation_00263: 
+  created_at: 2010-06-23 11:11:30 Z
+  id: 263
+  interpolations: 
+  is_proc: false
+  key: place
+  locale: fa
+  updated_at: 2010-06-23 11:11:32 Z
+  value: !binary |
+    w5nigKbDmMKtw5nigJ4=
+
+translation_00264: 
+  created_at: 2010-06-23 11:13:48 Z
+  id: 264
+  interpolations: 
+  is_proc: false
+  key: appearance
+  locale: en
+  updated_at: 2010-06-23 11:13:50 Z
+  value: appearance
+translation_00265: 
+  created_at: 2010-06-23 11:14:09 Z
+  id: 265
+  interpolations: 
+  is_proc: false
+  key: appearance
+  locale: fa
+  updated_at: 2010-06-23 11:14:11 Z
+  value: !binary |
+    w5jCuMOYwqfDmeKAocOYwrE=
+
+translation_00266: 
+  created_at: 2010-06-23 11:15:28 Z
+  id: 266
+  interpolations: 
+  is_proc: false
+  key: exhibition
+  locale: en
+  updated_at: 2010-06-23 11:15:29 Z
+  value: exhibition
+translation_00267: 
+  created_at: 2010-06-23 11:15:41 Z
+  id: 267
+  interpolations: 
+  is_proc: false
+  key: exhibition
+  locale: fa
+  updated_at: 2010-06-23 11:15:43 Z
+  value: !binary |
+    w5nigKDDmeKApsOYwqfDm8WSw5jCtMOawq/DmMKnw5nigKE=
+
+translation_00268: 
+  created_at: 2010-06-23 11:17:01 Z
+  id: 268
+  interpolations: 
+  is_proc: false
+  key: translation
+  locale: en
+  updated_at: 2010-06-23 11:17:03 Z
+  value: translation
+translation_00269: 
+  created_at: 2010-06-23 11:17:12 Z
+  id: 269
+  interpolations: 
+  is_proc: false
+  key: translation
+  locale: fa
+  updated_at: 2010-06-23 11:17:14 Z
+  value: !binary |
+    w5jCqsOYwrHDmMKsw5nigKbDmeKAoQ==
+
+translation_00270: 
+  created_at: 2010-06-23 11:20:12 Z
+  id: 270
+  interpolations: 
+  is_proc: false
+  key: appellation
+  locale: en
+  updated_at: 2010-06-23 11:20:14 Z
+  value: appellation
+translation_00271: 
+  created_at: 2010-06-23 11:20:25 Z
+  id: 271
+  interpolations: 
+  is_proc: false
+  key: appellation
+  locale: fa
+  updated_at: 2010-06-23 11:20:27 Z
+  value: !binary |
+    w5nigJ7DmeKAmsOYwqg=
+
+translation_00272: 
+  created_at: 2010-06-23 19:53:56 Z
+  id: 272
+  interpolations: 
+  is_proc: false
+  key: archive_browser
+  locale: en
+  updated_at: 2010-06-23 19:53:59 Z
+  value: archive browser
+translation_00273: 
+  created_at: 2010-06-23 19:54:50 Z
+  id: 273
+  interpolations: 
+  is_proc: false
+  key: archive_browser
+  locale: fa
+  updated_at: 2010-06-23 19:54:53 Z
+  value: !binary |
+    w5jCs8ObxZLDmMKxIMOYwq/DmMKxIMOYwqLDmMKxw5jCtMObxZLDmcuG
+
+translation_00274: 
+  created_at: 2010-06-24 09:41:53 Z
+  id: 274
+  interpolations: 
+  is_proc: true
+  key: date.month_names
+  locale: en
+  updated_at: 2010-06-24 09:41:55 Z
+  value: "[nil,\"January\",\"February\",\"March\",\"April\",\"May\",\"June\",\"July\",\"August\",\"September\",\"October\",\"November\",\"December\"]"
+translation_00275: 
+  created_at: 2010-06-24 09:53:24 Z
+  id: 275
+  interpolations: 
+  is_proc: true
+  key: date.month_names
+  locale: fa
+  updated_at: 2010-06-24 09:53:27 Z
+  value: !binary |
+    WyLDmMKnw5jCs8OZwoHDmeKAoMOYwq8iLCLDmMKow5nigKHDmeKApsOZ4oCg
+    Iiwiw5jCr8ObxZIiLCLDmMKiw5jCsMOYwrEiLCLDmMKiw5jCqMOYwqfDmeKA
+    oCIsIsOZ4oCmw5nigKHDmMKxIiwiw5jCtMOZ4oChw5jCscObxZLDmcuGw5jC
+    sSIsIsOZ4oCmw5jCscOYwq/DmMKnw5jCryIsIsOYwqrDm8WSw5jCsSIsIsOY
+    wq7DmMKxw5jCr8OYwqfDmMKvIiwiw5jCp8OYwrHDmMKvw5vFksOYwqjDmeKA
+    ocOYwrTDmMKqIiwiw5nCgcOYwrHDmcuGw5jCscOYwq/Dm8WSw5nigKAiLG5p
+    bF0=
+
+translation_00276: 
+  created_at: 2010-07-05 16:00:07 Z
+  id: 276
+  interpolations: 
+  is_proc: false
+  key: page_not_found
+  locale: en
+  updated_at: 2010-07-05 16:00:09 Z
+  value: Sorry.  Page not found.
+translation_00277: 
+  created_at: 2010-07-05 16:01:03 Z
+  id: 277
+  interpolations: 
+  is_proc: false
+  key: page_not_found
+  locale: fa
+  updated_at: 2010-07-05 16:01:01 Z
+  value: !binary |
+    w5nigKbDmMKqw5jCo8OYwrPDmcKBw5nigKYuIMOYwrXDmcKBw5jCrcOZ4oCh
+    IMObxZLDmMKnw5nCgcOYwqogw5nigKDDmMK0w5jCry4=
+
+translation_00278: 
+  created_at: 2010-07-08 13:12:39 Z
+  id: 278
+  interpolations: 
+  is_proc: false
+  key: utilities
+  locale: en
+  updated_at: 2010-07-08 13:12:43 Z
+  value: utilities
+translation_00279: 
+  created_at: 2010-07-08 13:14:05 Z
+  id: 279
+  interpolations: 
+  is_proc: false
+  key: utilities
+  locale: fa
+  updated_at: 2010-07-08 13:14:11 Z
+  value: !binary |
+    w5jCrsOYwq/DmeKApsOYwqfDmMKqIMOYwrHDmcKBw5jCp8OZ4oChw5vFkg==
+

@@ -1,5 +1,5 @@
 Given /^I have pages$/ do
-  Fixtures.create_fixtures("spec/fixtures", "pages")
+  #Fixtures.create_fixtures("test/fixtures", "pages")
 end
 
 Given /^I have no pages$/ do

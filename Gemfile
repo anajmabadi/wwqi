@@ -14,10 +14,6 @@ gem "will_paginate", ">=3.0.pre"
 
 gem "railties", ">=3.0.0.beta4"
 
-group :development do
-  gem "ar_fixtures"
-end
-
 #gem 'farsifu'
 #gem 'jalalidate'
 #gem 'calendar'

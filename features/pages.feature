@@ -1,19 +1,12 @@
 Feature: Informational pages show information to the User in English and Persian
 	As a visitor
     I want to see an informative message on informational pages in Persian and English
-
-		Scenario: handle a missing page gracefully
-				Given I speak English
-					And I have no pages
-				When I go to the about page
-		    	Then I am on the home page
 		
 	 Scenario: show welcoming English about page
 			Given I speak English
-				And I have pages
 			When I go to the about page
 	    	Then I am on the about page
-					And I should see "en, about_description"
+					And I should see "About"
 
 	Scenario: show welcoming Persian about page
 			Given I speak Persian
