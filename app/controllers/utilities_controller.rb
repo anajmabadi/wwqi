@@ -59,7 +59,7 @@ class UtilitiesController < ApplicationController
       unless @collection_id.nil?
         
         # get the files we need (hard codes for now)
-        @items = Item.find(:all, :conditions=>["collection_id = ?", @collection_id], :order => "accession_num")
+        @items = Item.find(:all, :conditions=>["collection_id = :collection_id", {:collection_id => 12}], :order => "accession_num")
     
         unless @items.empty?
           

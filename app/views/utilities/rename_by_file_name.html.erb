@@ -3,8 +3,6 @@
 
 <div id="staticContent" class="clearfix">
   <h1><%= @page_title %></h1>
-	<p>This utility renames files in the folder...</p>
-  <<ul>
-    <li><%= link_to "Rename files by original file name", :action => 'rename_by_file_name' %></li>
-  </ul>
+	<p>This utility renames files in the folder <%= @base_dir %></p>
+	<p>Renaming completed <%= @failed ? "unsuccessfully" : "successfully" %>!</p>
 </div> <!-- end browser --><!-- end featured -->
