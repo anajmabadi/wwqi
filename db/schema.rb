@@ -612,6 +612,13 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
   add_index "subjects", ["publish"], :name => "index_subjects_on_publish"
 
+  create_table "tmp_test_collations_on_item_translations", :id => false, :force => true do |t|
+    t.integer "id",      :default => 0, :null => false
+    t.integer "item_id"
+    t.string  "locale"
+    t.string  "title"
+  end
+
   create_table "translations", :force => true do |t|
     t.string   "locale"
     t.string   "key"

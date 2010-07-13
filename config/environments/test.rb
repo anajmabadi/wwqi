@@ -30,5 +30,4 @@ Qajar::Application.configure do
   # like if you have constraints or database-specific column types
   # config.active_record.schema_format = :sql
 
-  require 'mysql_utf8'
 end

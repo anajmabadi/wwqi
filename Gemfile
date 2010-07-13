@@ -8,7 +8,7 @@ gem "rack"
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
-gem "mysql"
+gem "ruby-mysql"
 
 gem "will_paginate", ">=3.0.pre"
 
@@ -32,8 +32,6 @@ group :test do
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
   gem "webrat"
-  # gem "aruba"
-  # gem "fakefs"
 end
 
 
