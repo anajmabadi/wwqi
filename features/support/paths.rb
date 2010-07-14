@@ -11,6 +11,9 @@ module NavigationHelpers
     when /the archive filter search page/
       '/archive/subject_type_filter/1'  
       
+    when /the item page for "([^\"]*)"/
+      item_path(Item.find(:first, :conditions => ['item_translations.title = ?',$1]))  
+      
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

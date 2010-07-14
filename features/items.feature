@@ -16,6 +16,8 @@ Feature: an authorized user should be able to CRUD an item
 			And I fill in "Pages" with "1"
 			And I press "Create Item"
 			Then I should see "Item was successfully created."
+			And I should be on the item page for "Sample Item"
+			And I should see "Women's Worlds in Qajar Iran | Items | Show"
 				
 		Scenario: Editing an item
 		
