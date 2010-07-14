@@ -1,0 +1,33 @@
+--- 
+formats_001: 
+  id: "1"
+  name: image
+  extension: jpg
+  publish: "1"
+  notes: ""
+  created_at: 2010-03-22 20:25:14
+  updated_at: 2010-03-22 20:25:14
+formats_002: 
+  id: "2"
+  name: video
+  extension: flv
+  publish: "1"
+  notes: ""
+  created_at: 2010-03-22 20:25:37
+  updated_at: 2010-03-22 20:26:07
+formats_003: 
+  id: "3"
+  name: audio
+  extension: mp3
+  publish: "1"
+  notes: Test
+  created_at: 2010-03-22 20:27:48
+  updated_at: 2010-03-22 20:48:58
+formats_004: 
+  id: "4"
+  name: folio
+  extension: zoomify
+  publish: "1"
+  notes: Testing
+  created_at: 2010-03-22 20:30:16
+  updated_at: 2010-03-22 20:30:57

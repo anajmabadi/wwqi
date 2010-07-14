@@ -1,0 +1,46 @@
+--- 
+owners_001: 
+  id: "1"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: ""
+  created_at: 2010-05-04 16:25:49
+  updated_at: 2010-07-01 19:54:58
+owners_002: 
+  id: "2"
+  address: 
+  address2: 
+  state_province: 
+  postal_code: 
+  country: 
+  telephone: 
+  email: 
+  url: 
+  contact: Bahram Sheikholeslami
+  terms: 
+  notes: 
+  created_at: 2010-05-04 16:25:43
+  updated_at: 2010-05-04 16:25:46
+owners_003: 
+  id: "3"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: Nahid Mozaffari
+  terms: ""
+  notes: ""
+  created_at: 2010-07-01 19:55:10
+  updated_at: 2010-07-01 19:56:31

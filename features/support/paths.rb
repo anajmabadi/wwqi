@@ -7,9 +7,6 @@ module NavigationHelpers
   #
   def path_to(page_name)
     case page_name
-
-    when /the home\s?page/
-      '/'
     
     when /the archive filter search page/
       '/archive/subject_type_filter/1'  

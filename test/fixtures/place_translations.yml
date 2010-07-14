@@ -1,0 +1,253 @@
+--- 
+place_translations_001: 
+  id: "1"
+  place_id: "1"
+  locale: en
+  name: Tehran, Iran
+  created_at: 2010-04-11 18:31:28
+  updated_at: 2010-04-11 18:31:30
+place_translations_002: 
+  id: "2"
+  place_id: "1"
+  locale: fa
+  name: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:56
+place_translations_003: 
+  id: "3"
+  place_id: "2"
+  locale: en
+  name: Qazvin, Iran
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_004: 
+  id: "4"
+  place_id: "2"
+  locale: fa
+  name: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86 \xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_005: 
+  id: "5"
+  place_id: "3"
+  locale: en
+  name: "Khak \xCA\xBBAli, Iran"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_006: 
+  id: "6"
+  place_id: "3"
+  locale: fa
+  name: "\xD8\xAE\xD8\xA7\xDA\xA9 \xD8\xB9\xD9\x84\xDB\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_007: 
+  id: "7"
+  place_id: "4"
+  locale: en
+  name: Karbala, Iran
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_008: 
+  id: "8"
+  place_id: "4"
+  locale: fa
+  name: "\xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84\xD8\xA7 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_009: 
+  id: "9"
+  place_id: "5"
+  locale: en
+  name: Rasht, Iran
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_010: 
+  id: "10"
+  place_id: "5"
+  locale: fa
+  name: "\xD8\xB1\xD8\xB4\xD8\xAA \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-04-11 18:31:53
+  updated_at: 2010-04-11 18:31:53
+place_translations_011: 
+  id: "11"
+  place_id: "6"
+  locale: en
+  name: Zanjan, Iran
+  created_at: 2010-06-23 14:44:56
+  updated_at: 
+place_translations_012: 
+  id: "12"
+  place_id: "6"
+  locale: fa
+  name: "\xD8\xB2\xD9\x86\xD8\xAC\xD8\xA7\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-06-23 14:46:09
+  updated_at: 
+place_translations_013: 
+  id: "13"
+  place_id: "7"
+  locale: en
+  name: Tunikabun, Iran
+  created_at: 2010-06-23 14:47:09
+  updated_at: 
+place_translations_014: 
+  id: "14"
+  place_id: "7"
+  locale: fa
+  name: "\xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-06-23 14:47:26
+  updated_at: 
+place_translations_015: 
+  id: "15"
+  place_id: "8"
+  locale: en
+  name: Austin, Texas
+  created_at: 2010-06-23 14:48:52
+  updated_at: 
+place_translations_016: 
+  id: "16"
+  place_id: "8"
+  locale: fa
+  name: "\xD8\xA2\xD8\xB3\xD8\xAA\xD9\x86\xD8\x8C \xD8\xAA\xDA\xA9\xD8\xA7\xD8\xB3"
+  created_at: 2010-06-23 14:49:08
+  updated_at: 
+place_translations_017: 
+  id: "17"
+  place_id: "9"
+  locale: en
+  name: Paris, France
+  created_at: 2010-06-23 14:50:06
+  updated_at: 2010-06-23 14:50:09
+place_translations_018: 
+  id: "18"
+  place_id: "9"
+  locale: fa
+  name: "\xD9\xBE\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xB3"
+  created_at: 2010-06-23 14:50:28
+  updated_at: 2010-06-23 14:50:30
+place_translations_019: 
+  id: "19"
+  place_id: "10"
+  locale: en
+  name: Ghent, Belgium
+  created_at: 2010-06-23 14:51:23
+  updated_at: 2010-06-23 14:51:25
+place_translations_020: 
+  id: "20"
+  place_id: "10"
+  locale: fa
+  name: "\xDA\xAF\xD8\xA7\xD9\x86\xD8\xAF\xD8\x8C \xD8\xA8\xD9\x84\xDA\x98\xDB\x8C\xDA\xA9"
+  created_at: 2010-06-23 14:51:42
+  updated_at: 2010-06-23 14:51:44
+place_translations_021: 
+  id: "21"
+  place_id: "11"
+  locale: en
+  name: Isfahan, Iran
+  created_at: 2010-06-23 14:52:46
+  updated_at: 2010-06-23 14:52:50
+place_translations_022: 
+  id: "22"
+  place_id: "11"
+  locale: fa
+  name: " \xD8\xA7\xD8\xB5\xD9\x81\xD9\x87\xD8\xA7\xD9\x86 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-06-23 14:53:06
+  updated_at: 2010-06-23 14:53:08
+place_translations_023: 
+  id: "23"
+  place_id: "12"
+  locale: en
+  name: Cambridge, UK
+  created_at: 2010-06-23 14:54:27
+  updated_at: 2010-06-23 14:54:29
+place_translations_024: 
+  id: "24"
+  place_id: "12"
+  locale: fa
+  name: "\xDA\xA9\xD9\x85\xD8\xA8\xD8\xB1\xDB\x8C\xD8\xAC (\xD8\xA7\xD9\x86\xDA\xAF\xD9\x84\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86)"
+  created_at: 2010-06-23 14:54:49
+  updated_at: 2010-06-23 14:54:52
+place_translations_025: 
+  id: "25"
+  place_id: "13"
+  locale: en
+  name: Switzerland
+  created_at: 2010-06-23 14:55:59
+  updated_at: 2010-06-23 14:56:02
+place_translations_026: 
+  id: "26"
+  place_id: "13"
+  locale: fa
+  name: "\xD8\xB3\xD9\x88\xDB\x8C\xD8\xB3"
+  created_at: 2010-06-23 14:56:18
+  updated_at: 2010-06-23 14:56:20
+place_translations_027: 
+  id: "27"
+  place_id: "14"
+  locale: en
+  name: Germany
+  created_at: 2010-06-23 14:57:12
+  updated_at: 2010-06-23 14:57:14
+place_translations_028: 
+  id: "28"
+  place_id: "14"
+  locale: fa
+  name: "\xD8\xA2\xD9\x84\xD9\x85\xD8\xA7\xD9\x86"
+  created_at: 2010-06-23 14:57:24
+  updated_at: 2010-06-23 14:57:27
+place_translations_029: 
+  id: "29"
+  place_id: "15"
+  locale: en
+  name: Nice, France
+  created_at: 2010-06-23 15:12:30
+  updated_at: 2010-06-23 15:12:33
+place_translations_030: 
+  id: "30"
+  place_id: "15"
+  locale: fa
+  name: "\xD9\x86\xDB\x8C\xD8\xB3 \xD8\x8C \xD9\x81\xD8\xB1\xD8\xA7\xD9\x86\xD8\xB3\xD9\x87"
+  created_at: 2010-06-23 15:13:20
+  updated_at: 2010-06-23 15:13:22
+place_translations_031: 
+  id: "31"
+  place_id: "16"
+  locale: en
+  name: France
+  created_at: 2010-06-23 15:14:23
+  updated_at: 2010-06-23 15:14:27
+place_translations_032: 
+  id: "32"
+  place_id: "16"
+  locale: fa
+  name: "\xD9\x81\xD8\xB1\xD8\xA7\xD9\x86\xD8\xB3\xD9\x87"
+  created_at: 2010-06-23 15:14:49
+  updated_at: 2010-06-23 15:14:51
+place_translations_033: 
+  id: "33"
+  place_id: "17"
+  locale: en
+  name: Hyderabad, India
+  created_at: 2010-06-23 15:15:53
+  updated_at: 2010-06-23 15:15:56
+place_translations_034: 
+  id: "34"
+  place_id: "17"
+  locale: fa
+  name: "\xD8\xAD\xDB\x8C\xD8\xAF\xD8\xB1\xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xD8\x8C \xD9\x87\xD9\x86\xD8\xAF"
+  created_at: 2010-06-23 15:16:18
+  updated_at: 2010-06-23 15:16:20
+place_translations_035: 
+  id: "35"
+  place_id: "18"
+  locale: en
+  name: Washington, D.C.
+  created_at: 2010-06-23 15:17:29
+  updated_at: 2010-06-23 15:17:31
+place_translations_036: 
+  id: "36"
+  place_id: "18"
+  locale: fa
+  name: "\xD9\x88\xD8\xA7\xD8\xB4\xD9\x86\xDA\xAF\xD8\xAA\xD9\x86"
+  created_at: 2010-06-23 15:18:04
+  updated_at: 2010-06-23 15:18:06

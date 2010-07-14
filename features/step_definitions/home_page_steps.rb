@@ -13,6 +13,6 @@ Then /^I should have valid subject type archive links$/ do
     else
       assert_equal page_name, current_path
     end
-    click_link("en, home")
+    click_link("Women's Worlds in Qajar Iran")
   end
 end

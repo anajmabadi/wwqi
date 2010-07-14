@@ -612,13 +612,6 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
   add_index "subjects", ["publish"], :name => "index_subjects_on_publish"
 
-  create_table "tmp_test_collations_on_item_translations", :id => false, :force => true do |t|
-    t.integer "id",      :default => 0, :null => false
-    t.integer "item_id"
-    t.string  "locale"
-    t.string  "title"
-  end
-
   create_table "translations", :force => true do |t|
     t.string   "locale"
     t.string   "key"
@@ -632,76 +625,5 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "translations", ["key"], :name => "index_translations_on_key"
   add_index "translations", ["locale", "key"], :name => "index_translations_on_locale_key", :unique => true
   add_index "translations", ["locale"], :name => "index_translations_on_locale"
-
-  create_table "util_import_images_english", :id => false, :force => true do |t|
-    t.integer  "image_id",                 :default => 0,  :null => false
-    t.string   "title",                                    :null => false
-    t.string   "description",                              :null => false
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
-    t.string   "locale",      :limit => 2, :default => "", :null => false
-  end
-
-  create_table "util_import_images_persian", :id => false, :force => true do |t|
-    t.integer  "image_id",                 :default => 0,  :null => false
-    t.string   "title",                                    :null => false
-    t.binary   "description",                              :null => false
-    t.datetime "created_at",                               :null => false
-    t.datetime "updated_at",                               :null => false
-    t.string   "locale",      :limit => 2, :default => "", :null => false
-  end
-
-  create_table "util_import_items", :id => false, :force => true do |t|
-    t.integer "id",               :default => 0,     :null => false
-    t.string  "accession_num",                       :null => false
-    t.string  "urn",                                 :null => false
-    t.integer "pages"
-    t.integer "category_id",                         :null => false
-    t.string  "dimensions",                          :null => false
-    t.integer "calendar_type_id", :default => 2,     :null => false
-    t.string  "source_date",                         :null => false
-    t.boolean "circa",            :default => false, :null => false
-    t.boolean "bound",            :default => false, :null => false
-    t.integer "collection_id",    :default => 12,    :null => false
-  end
-
-  create_table "util_import_items_english", :id => false, :force => true do |t|
-    t.integer "item_id",                                    :null => false
-    t.string  "title",                                      :null => false
-    t.string  "description",                                :null => false
-    t.string  "credit",                                     :null => false
-    t.string  "locale",        :limit => 2, :default => "", :null => false
-    t.string  "display_date",                               :null => false
-    t.string  "creator_label",                              :null => false
-  end
-
-  create_table "util_import_items_persian", :id => false, :force => true do |t|
-    t.integer "item_id",                                    :null => false
-    t.string  "title",                                      :null => false
-    t.binary  "description",                                :null => false
-    t.string  "credit",                                     :null => false
-    t.string  "locale",        :limit => 2, :default => "", :null => false
-    t.string  "display_date",                               :null => false
-    t.string  "creator_label",                              :null => false
-  end
-
-  create_table "vs_import_people", :id => false, :force => true do |t|
-    t.string  "loc_name",              :null => false
-    t.integer "major",    :limit => 1, :null => false
-    t.integer "publish",  :limit => 1, :null => false
-  end
-
-  create_table "vs_import_people_appearances", :id => false, :force => true do |t|
-    t.integer "person_id", :default => 0, :null => false
-    t.integer "item_id",                  :null => false
-  end
-
-  create_table "vs_import_people_translations", :id => false, :force => true do |t|
-    t.string  "locale",      :limit => 4,                :null => false
-    t.string  "name",                                    :null => false
-    t.string  "sort_name",                               :null => false
-    t.integer "person_id",                :default => 0, :null => false
-    t.integer "count_names", :limit => 8, :default => 0, :null => false
-  end
 
 end

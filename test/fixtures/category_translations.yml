@@ -1,0 +1,433 @@
+--- 
+category_translations_001: 
+  id: "1"
+  category_id: "1"
+  locale: en
+  description: ""
+  name: Writings
+  created_at: 2010-03-22 22:17:35
+  updated_at: 2010-03-22 22:17:35
+category_translations_002: 
+  id: "2"
+  category_id: "1"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA\xD9\x87 \xD9\x87\xD8\xA7"
+  created_at: 2010-03-22 22:25:55
+  updated_at: 2010-03-22 22:25:55
+category_translations_003: 
+  id: "3"
+  category_id: "2"
+  locale: en
+  description: ""
+  name: Legal Documents
+  created_at: 2010-03-22 22:26:51
+  updated_at: 2010-03-22 22:26:51
+category_translations_004: 
+  id: "4"
+  category_id: "2"
+  locale: fa
+  description: ""
+  name: "\xD8\xA7\xD8\xB3\xD9\x86\xD8\xA7\xD8\xAF \xD8\xAD\xD9\x82\xD9\x88\xD9\x82\xDB\x8C"
+  created_at: 2010-03-22 22:27:56
+  updated_at: 2010-03-22 22:27:56
+category_translations_005: 
+  id: "5"
+  category_id: "3"
+  locale: en
+  description: ""
+  name: Artworks
+  created_at: 2010-03-22 22:28:33
+  updated_at: 2010-03-22 22:28:33
+category_translations_006: 
+  id: "6"
+  category_id: "4"
+  locale: en
+  description: ""
+  name: Photographs
+  created_at: 2010-03-22 22:28:53
+  updated_at: 2010-03-22 22:28:53
+category_translations_007: 
+  id: "7"
+  category_id: "5"
+  locale: en
+  description: ""
+  name: Everyday objects
+  created_at: 2010-03-22 22:29:49
+  updated_at: 2010-03-22 22:29:49
+category_translations_008: 
+  id: "8"
+  category_id: "6"
+  locale: en
+  description: ""
+  name: Oral histories
+  created_at: 2010-03-22 22:30:10
+  updated_at: 2010-03-22 22:30:10
+category_translations_009: 
+  id: "9"
+  category_id: "7"
+  locale: en
+  description: ""
+  name: letters
+  created_at: 2010-03-22 22:30:35
+  updated_at: 2010-03-22 22:30:35
+category_translations_010: 
+  id: "10"
+  category_id: "8"
+  locale: en
+  description: ""
+  name: prose
+  created_at: 2010-03-22 22:34:49
+  updated_at: 2010-03-22 22:34:49
+category_translations_011: 
+  id: "11"
+  category_id: "9"
+  locale: en
+  description: ""
+  name: poetry
+  created_at: 2010-03-22 22:35:36
+  updated_at: 2010-03-22 22:35:36
+category_translations_012: 
+  id: "12"
+  category_id: "10"
+  locale: en
+  description: ""
+  name: travel writings
+  created_at: 2010-03-22 22:35:58
+  updated_at: 2010-03-22 22:35:58
+category_translations_013: 
+  id: "13"
+  category_id: "11"
+  locale: en
+  description: ""
+  name: essays
+  created_at: 2010-03-22 22:36:21
+  updated_at: 2010-03-22 22:36:21
+category_translations_014: 
+  id: "14"
+  category_id: "12"
+  locale: en
+  description: ""
+  name: journals
+  created_at: 2010-03-22 22:36:43
+  updated_at: 2010-03-22 22:36:43
+category_translations_015: 
+  id: "15"
+  category_id: "13"
+  locale: en
+  description: ""
+  name: wedding contracts
+  created_at: 2010-03-22 22:37:27
+  updated_at: 2010-03-22 22:37:27
+category_translations_016: 
+  id: "16"
+  category_id: "14"
+  locale: en
+  description: ""
+  name: dowry documents
+  created_at: 2010-03-22 22:37:54
+  updated_at: 2010-03-22 22:37:54
+category_translations_017: 
+  id: "17"
+  category_id: "15"
+  locale: en
+  description: ""
+  name: settlements
+  created_at: 2010-03-22 22:38:19
+  updated_at: 2010-03-22 22:38:19
+category_translations_018: 
+  id: "18"
+  category_id: "16"
+  locale: en
+  description: ""
+  name: endowments
+  created_at: 2010-03-22 22:38:56
+  updated_at: 2010-03-22 22:38:56
+category_translations_019: 
+  id: "19"
+  category_id: "17"
+  locale: en
+  description: ""
+  name: powers of attorney
+  created_at: 2010-03-22 22:39:24
+  updated_at: 2010-03-22 22:39:24
+category_translations_020: 
+  id: "20"
+  category_id: "18"
+  locale: en
+  description: ""
+  name: wills
+  created_at: 2010-03-22 22:39:47
+  updated_at: 2010-03-22 22:39:47
+category_translations_021: 
+  id: "21"
+  category_id: "19"
+  locale: en
+  description: ""
+  name: sales
+  created_at: 2010-03-22 22:40:17
+  updated_at: 2010-03-22 22:40:17
+category_translations_022: 
+  id: "22"
+  category_id: "20"
+  locale: en
+  description: ""
+  name: other financial contracts
+  created_at: 2010-03-22 22:40:41
+  updated_at: 2010-03-22 22:40:41
+category_translations_023: 
+  id: "23"
+  category_id: "21"
+  locale: en
+  description: ""
+  name: calligraphy
+  created_at: 2010-03-22 22:41:24
+  updated_at: 2010-03-22 22:41:24
+category_translations_024: 
+  id: "24"
+  category_id: "22"
+  locale: en
+  description: ""
+  name: painting
+  created_at: 2010-03-22 22:41:43
+  updated_at: 2010-03-22 22:41:43
+category_translations_025: 
+  id: "25"
+  category_id: "23"
+  locale: en
+  description: ""
+  name: embroidery
+  created_at: 2010-03-22 22:42:16
+  updated_at: 2010-03-22 22:42:16
+category_translations_026: 
+  id: "26"
+  category_id: "24"
+  locale: en
+  description: ""
+  name: weaving
+  created_at: 2010-03-22 22:42:54
+  updated_at: 2010-03-22 22:42:54
+category_translations_027: 
+  id: "27"
+  category_id: "25"
+  locale: en
+  description: ""
+  name: other handicrafts
+  created_at: 2010-03-22 22:43:20
+  updated_at: 2010-03-22 22:43:20
+category_translations_028: 
+  id: "28"
+  category_id: "26"
+  locale: en
+  description: ""
+  name: music
+  created_at: 2010-03-22 22:43:42
+  updated_at: 2010-03-22 22:43:42
+category_translations_029: 
+  id: "29"
+  category_id: "27"
+  locale: en
+  description: ""
+  name: film
+  created_at: 2010-03-22 22:44:02
+  updated_at: 2010-03-22 22:44:02
+category_translations_030: 
+  id: "30"
+  category_id: "7"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x87\xD8\xA7 "
+  created_at: 2010-03-22 22:49:23
+  updated_at: 2010-03-22 22:49:23
+category_translations_031: 
+  id: "31"
+  category_id: "8"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xD8\xAB\xD8\xB1"
+  created_at: 2010-03-22 22:49:49
+  updated_at: 2010-03-22 22:49:49
+category_translations_032: 
+  id: "32"
+  category_id: "9"
+  locale: fa
+  description: ""
+  name: "\xD8\xB4\xD8\xB9\xD8\xB1"
+  created_at: 2010-03-22 22:50:23
+  updated_at: 2010-03-22 22:50:23
+category_translations_033: 
+  id: "33"
+  category_id: "10"
+  locale: fa
+  description: ""
+  name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:50:46
+  updated_at: 2010-03-22 22:50:46
+category_translations_034: 
+  id: "34"
+  category_id: "11"
+  locale: fa
+  description: ""
+  name: "\xD9\x85\xD9\x82\xD8\xA7\xD9\x84\xD8\xA7\xD8\xAA"
+  created_at: 2010-03-22 22:51:04
+  updated_at: 2010-03-22 22:51:04
+category_translations_035: 
+  id: "35"
+  category_id: "12"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xD8\xB4\xD8\xB1\xDB\x8C\xD8\xA7\xD8\xAA"
+  created_at: 2010-03-22 22:51:24
+  updated_at: 2010-03-22 22:51:24
+category_translations_036: 
+  id: "36"
+  category_id: "13"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:51:51
+  updated_at: 2010-03-22 22:51:51
+category_translations_037: 
+  id: "37"
+  category_id: "14"
+  locale: fa
+  description: ""
+  name: "\xD9\xBE\xD8\xB4\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:52:13
+  updated_at: 2010-03-22 22:52:13
+category_translations_038: 
+  id: "38"
+  category_id: "15"
+  locale: fa
+  description: ""
+  name: "\xD8\xB5\xD9\x84\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:52:35
+  updated_at: 2010-03-22 22:52:35
+category_translations_039: 
+  id: "39"
+  category_id: "16"
+  locale: fa
+  description: ""
+  name: "\xD9\x88\xD9\x82\xD9\x81\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:52:57
+  updated_at: 2010-03-22 22:52:57
+category_translations_040: 
+  id: "40"
+  category_id: "17"
+  locale: fa
+  description: ""
+  name: "\xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:53:24
+  updated_at: 2010-03-22 22:53:24
+category_translations_041: 
+  id: "41"
+  category_id: "18"
+  locale: fa
+  description: ""
+  name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:53:43
+  updated_at: 2010-03-22 22:53:43
+category_translations_042: 
+  id: "42"
+  category_id: "19"
+  locale: fa
+  description: ""
+  name: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-03-22 22:54:01
+  updated_at: 2010-03-22 22:54:01
+category_translations_043: 
+  id: "43"
+  category_id: "20"
+  locale: fa
+  description: ""
+  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD8\xAA\xD8\xB9\xD9\x87\xD8\xAF\xD8\xA7\xD8\xAA \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
+  created_at: 2010-03-22 22:54:25
+  updated_at: 2010-03-22 22:54:25
+category_translations_044: 
+  id: "44"
+  category_id: "3"
+  locale: fa
+  description: ""
+  name: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xDB\x8C"
+  created_at: 2010-03-22 22:54:52
+  updated_at: 2010-03-22 22:54:52
+category_translations_045: 
+  id: "45"
+  category_id: "21"
+  locale: fa
+  description: ""
+  name: "\xD8\xAE\xD9\x88\xD8\xB4\xD9\x86\xD9\x88\xDB\x8C\xD8\xB3\xDB\x8C"
+  created_at: 2010-03-22 22:55:16
+  updated_at: 2010-03-22 22:55:16
+category_translations_046: 
+  id: "46"
+  category_id: "22"
+  locale: fa
+  description: ""
+  name: "\xD9\x86\xD9\x82\xD8\xA7\xD8\xB4\xDB\x8C"
+  created_at: 2010-03-22 22:55:32
+  updated_at: 2010-03-22 22:55:32
+category_translations_047: 
+  id: "47"
+  category_id: "23"
+  locale: fa
+  description: ""
+  name: "\xD8\xB3\xD9\x88\xD8\xB2\xD9\x86 \xD8\xAF\xD9\x88\xD8\xB2\xDB\x8C"
+  created_at: 2010-03-22 22:55:54
+  updated_at: 2010-03-22 22:55:54
+category_translations_048: 
+  id: "48"
+  category_id: "24"
+  locale: fa
+  description: ""
+  name: "\xD9\x82\xD8\xA7\xD9\x84\xDB\x8C\xD8\xA8\xD8\xA7\xD9\x81\xDB\x8C"
+  created_at: 2010-03-22 22:56:12
+  updated_at: 2010-03-22 22:56:12
+category_translations_049: 
+  id: "49"
+  category_id: "25"
+  locale: fa
+  description: ""
+  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xB3\xD8\xAA\xDB\x8C"
+  created_at: 2010-03-22 22:56:33
+  updated_at: 2010-03-22 22:56:33
+category_translations_050: 
+  id: "50"
+  category_id: "26"
+  locale: fa
+  description: ""
+  name: "\xD9\x85\xD9\x88\xD8\xB3\xDB\x8C\xD9\x82\xDB\x8C"
+  created_at: 2010-03-22 22:56:50
+  updated_at: 2010-03-22 22:56:50
+category_translations_051: 
+  id: "51"
+  category_id: "27"
+  locale: fa
+  description: ""
+  name: "\xD9\x81\xDB\x8C\xD9\x84\xD9\x85"
+  created_at: 2010-03-22 22:57:08
+  updated_at: 2010-03-22 22:57:08
+category_translations_052: 
+  id: "52"
+  category_id: "4"
+  locale: fa
+  description: ""
+  name: "\xD8\xB9\xDA\xA9\xD8\xB3"
+  created_at: 2010-03-22 22:57:25
+  updated_at: 2010-03-22 22:57:25
+category_translations_053: 
+  id: "53"
+  category_id: "5"
+  locale: fa
+  description: ""
+  name: "\xD8\xA7\xD8\xB4\xDB\x8C\xD8\xA7\xD8\xA1 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD8\xB1\xD9\x88\xD8\xB2\xD9\x85\xD8\xB1\xD9\x87"
+  created_at: 2010-03-22 22:57:44
+  updated_at: 2010-03-22 22:57:44
+category_translations_054: 
+  id: "54"
+  category_id: "6"
+  locale: fa
+  description: ""
+  name: "\xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE \xD8\xB4\xD9\x81\xD8\xA7\xD9\x87\xDB\x8C"
+  created_at: 2010-03-22 22:58:03
+  updated_at: 2010-03-22 22:58:03

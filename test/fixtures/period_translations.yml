@@ -1,0 +1,163 @@
+--- 
+period_translations_001: 
+  id: "1"
+  period_id: "1"
+  locale: en
+  description: ""
+  title: Aqa Muhammad Khan Period
+  caption: ""
+  created_at: 2010-03-31 04:31:48
+  updated_at: 2010-03-31 04:31:48
+period_translations_002: 
+  id: "2"
+  period_id: "2"
+  locale: en
+  description: ""
+  title: "Fath \xE2\x80\x98Ali Shah Period"
+  caption: ""
+  created_at: 2010-03-31 04:37:23
+  updated_at: 2010-03-31 04:37:23
+period_translations_003: 
+  id: "3"
+  period_id: "3"
+  locale: en
+  description: ""
+  title: Pre-Qajar Period Period
+  caption: ""
+  created_at: 2010-03-31 04:38:11
+  updated_at: 2010-03-31 04:38:11
+period_translations_004: 
+  id: "4"
+  period_id: "4"
+  locale: en
+  description: ""
+  title: Muhammad Shah Period
+  caption: ""
+  created_at: 2010-03-31 04:39:18
+  updated_at: 2010-03-31 04:39:18
+period_translations_005: 
+  id: "5"
+  period_id: "5"
+  locale: en
+  description: ""
+  title: Nasir al-Din Shah Period
+  caption: ""
+  created_at: 2010-03-31 04:39:46
+  updated_at: 2010-03-31 04:39:46
+period_translations_006: 
+  id: "6"
+  period_id: "6"
+  locale: en
+  description: ""
+  title: Muzaffar al-Din Shah Period
+  caption: ""
+  created_at: 2010-03-31 04:40:15
+  updated_at: 2010-03-31 04:40:15
+period_translations_007: 
+  id: "7"
+  period_id: "7"
+  locale: en
+  description: ""
+  title: "Muhammad \xE2\x80\x98Ali Shah Period"
+  caption: ""
+  created_at: 2010-03-31 04:40:54
+  updated_at: 2010-03-31 04:40:54
+period_translations_008: 
+  id: "8"
+  period_id: "8"
+  locale: en
+  description: ""
+  title: Ahmad Shah Period
+  caption: ""
+  created_at: 2010-03-31 04:41:20
+  updated_at: 2010-03-31 04:41:20
+period_translations_009: 
+  id: "9"
+  period_id: "9"
+  locale: en
+  description: ""
+  title: Early Pahlavi Period
+  caption: ""
+  created_at: 2010-03-31 04:41:50
+  updated_at: 2010-03-31 04:41:50
+period_translations_010: 
+  id: "10"
+  period_id: "1"
+  locale: fa
+  description: ""
+  title: "\xD8\xA7\xD9\x82\xD8\xA7 \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xAE\xD8\xA7\xD9\x86"
+  caption: ""
+  created_at: 2010-03-31 04:43:03
+  updated_at: 2010-03-31 04:43:03
+period_translations_011: 
+  id: "11"
+  period_id: "2"
+  locale: fa
+  description: ""
+  title: "\xD9\x81\xD8\xAA\xD8\xAD \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:43:57
+  updated_at: 2010-03-31 04:43:57
+period_translations_012: 
+  id: "12"
+  period_id: "4"
+  locale: fa
+  description: ""
+  title: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:44:24
+  updated_at: 2010-03-31 04:44:24
+period_translations_013: 
+  id: "13"
+  period_id: "5"
+  locale: fa
+  description: ""
+  title: "\xD9\x86\xD8\xA7\xD8\xB5\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x8A\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:44:44
+  updated_at: 2010-03-31 04:44:44
+period_translations_014: 
+  id: "14"
+  period_id: "6"
+  locale: fa
+  description: ""
+  title: "\xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x8A\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:45:09
+  updated_at: 2010-03-31 04:45:09
+period_translations_015: 
+  id: "15"
+  period_id: "7"
+  locale: fa
+  description: ""
+  title: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:45:28
+  updated_at: 2010-03-31 04:45:28
+period_translations_016: 
+  id: "16"
+  period_id: "8"
+  locale: fa
+  description: ""
+  title: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
+  caption: ""
+  created_at: 2010-03-31 04:46:01
+  updated_at: 2010-03-31 04:46:01
+period_translations_017: 
+  id: "17"
+  period_id: "9"
+  locale: fa
+  description: ""
+  title: "\xD8\xAF\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86 \xD9\xBE\xD9\x87\xD9\x84\xD9\x88\xDB\x8C"
+  caption: ""
+  created_at: 2010-03-31 04:46:19
+  updated_at: 2010-03-31 04:46:19
+period_translations_018: 
+  id: "18"
+  period_id: "3"
+  locale: fa
+  description: ""
+  title: "\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x82\xD8\xA8\xD9\x84 \xD8\xA7\xD8\xB2 \xD9\x82\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1"
+  caption: ""
+  created_at: 2010-03-31 04:46:40
+  updated_at: 2010-03-31 04:46:40

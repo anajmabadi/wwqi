@@ -6,24 +6,18 @@ Feature: Overview page for the administration of the site
 				Given I speak English
 					And I have pages
 				When I go to the admin page
-		    Then I am on the admin page
-					And I should see "en, admin_description"
+		    Then I should be on the admin page
+					And I should see "Administration"
 				Given I speak Persian
 					And I have pages
 				When I go to the admin page
-		    Then I am on the admin page
-					And I should see "fa, admin_description"
-											
-		Scenario: handle a missing admin page gracefully
-			Given I speak English
-				And I have no pages
-			When I go to the admin page
-	    	Then I am on the home page	
+		    Then I should be on the admin page
+					And I should see "حکومت"
 
 		Scenario: offer a utilities page from the administration menu
 			Given I speak English
 				And I have pages
 			When I go to the admin page
-				And I follow "en, utilities"
-			Then I am on the utilities page
-				And I should see "en, utilities_description"
+				And I follow "Utilities"
+			Then I should be on the utilities page
+				And I should see "Utilities"

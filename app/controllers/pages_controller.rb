@@ -114,7 +114,7 @@ class PagesController < ApplicationController
   private
   
   def handle_missing_page()
-    redirect_to(home_url, :notice => t(:page_not_found))
+    redirect_to(:controller => "home", :action => "index", :notice => t(:page_not_found))
   end
   
 end

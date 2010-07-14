@@ -1,0 +1,1817 @@
+--- 
+subjects_001: 
+  id: "1"
+  major: "0"
+  publish: "0"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_002: 
+  id: "2"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_003: 
+  id: "3"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_004: 
+  id: "4"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_005: 
+  id: "5"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_006: 
+  id: "6"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_007: 
+  id: "7"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_008: 
+  id: "8"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_009: 
+  id: "9"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_010: 
+  id: "10"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_011: 
+  id: "11"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_012: 
+  id: "12"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_013: 
+  id: "13"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_014: 
+  id: "14"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_015: 
+  id: "15"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_016: 
+  id: "16"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_017: 
+  id: "17"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_018: 
+  id: "18"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_019: 
+  id: "19"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_020: 
+  id: "20"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_021: 
+  id: "21"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_022: 
+  id: "22"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_023: 
+  id: "23"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_024: 
+  id: "24"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_025: 
+  id: "25"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_026: 
+  id: "26"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_027: 
+  id: "27"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_028: 
+  id: "28"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_029: 
+  id: "29"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_030: 
+  id: "30"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_031: 
+  id: "31"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_032: 
+  id: "32"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_033: 
+  id: "33"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_034: 
+  id: "34"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_035: 
+  id: "35"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_036: 
+  id: "36"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_037: 
+  id: "37"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_038: 
+  id: "38"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_039: 
+  id: "39"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_040: 
+  id: "40"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_041: 
+  id: "41"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_042: 
+  id: "42"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_043: 
+  id: "43"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_044: 
+  id: "44"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_045: 
+  id: "45"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_046: 
+  id: "46"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_047: 
+  id: "47"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_048: 
+  id: "48"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_049: 
+  id: "49"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_050: 
+  id: "50"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_051: 
+  id: "51"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_052: 
+  id: "52"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_053: 
+  id: "53"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_054: 
+  id: "54"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_055: 
+  id: "55"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_056: 
+  id: "56"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_057: 
+  id: "57"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_058: 
+  id: "58"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_059: 
+  id: "59"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_060: 
+  id: "60"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_061: 
+  id: "61"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_062: 
+  id: "62"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_063: 
+  id: "63"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_064: 
+  id: "64"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_065: 
+  id: "65"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_066: 
+  id: "66"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_067: 
+  id: "67"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_068: 
+  id: "68"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_069: 
+  id: "69"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_070: 
+  id: "70"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_071: 
+  id: "71"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_072: 
+  id: "72"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_073: 
+  id: "73"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_074: 
+  id: "74"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_075: 
+  id: "75"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_076: 
+  id: "76"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_077: 
+  id: "77"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_078: 
+  id: "78"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_079: 
+  id: "79"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_080: 
+  id: "80"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_081: 
+  id: "81"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_082: 
+  id: "82"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_083: 
+  id: "83"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_084: 
+  id: "84"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_085: 
+  id: "85"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_086: 
+  id: "86"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_087: 
+  id: "87"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_088: 
+  id: "88"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_089: 
+  id: "89"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_090: 
+  id: "90"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_091: 
+  id: "91"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_092: 
+  id: "92"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_093: 
+  id: "93"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_094: 
+  id: "94"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_095: 
+  id: "95"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_096: 
+  id: "96"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_097: 
+  id: "97"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_098: 
+  id: "98"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_099: 
+  id: "99"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_100: 
+  id: "100"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_101: 
+  id: "101"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_102: 
+  id: "102"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_103: 
+  id: "103"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_104: 
+  id: "104"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_105: 
+  id: "105"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_106: 
+  id: "106"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_107: 
+  id: "107"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_108: 
+  id: "108"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_109: 
+  id: "109"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_110: 
+  id: "110"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_111: 
+  id: "111"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_112: 
+  id: "112"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_113: 
+  id: "113"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_114: 
+  id: "114"
+  major: "0"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-07-01 20:13:01
+  subject_type_id: "7"
+subjects_115: 
+  id: "115"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_116: 
+  id: "116"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_117: 
+  id: "117"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_118: 
+  id: "118"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_119: 
+  id: "119"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_120: 
+  id: "120"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_121: 
+  id: "121"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_122: 
+  id: "122"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_123: 
+  id: "123"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_124: 
+  id: "124"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_125: 
+  id: "125"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_126: 
+  id: "126"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_127: 
+  id: "127"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_128: 
+  id: "128"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_129: 
+  id: "129"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_130: 
+  id: "130"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_131: 
+  id: "131"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_132: 
+  id: "132"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_133: 
+  id: "133"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_134: 
+  id: "134"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_135: 
+  id: "135"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_136: 
+  id: "136"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_137: 
+  id: "137"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_138: 
+  id: "138"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_139: 
+  id: "139"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_140: 
+  id: "140"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_141: 
+  id: "141"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_142: 
+  id: "142"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_143: 
+  id: "143"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_144: 
+  id: "144"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_145: 
+  id: "145"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_146: 
+  id: "146"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_147: 
+  id: "147"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_148: 
+  id: "148"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_149: 
+  id: "149"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_150: 
+  id: "150"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_151: 
+  id: "151"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_152: 
+  id: "152"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_153: 
+  id: "153"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_154: 
+  id: "154"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_155: 
+  id: "155"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_156: 
+  id: "156"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_157: 
+  id: "157"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_158: 
+  id: "158"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_159: 
+  id: "159"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_160: 
+  id: "160"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_161: 
+  id: "161"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_162: 
+  id: "162"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_163: 
+  id: "163"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_164: 
+  id: "164"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_165: 
+  id: "165"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_166: 
+  id: "166"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_167: 
+  id: "167"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_168: 
+  id: "168"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_169: 
+  id: "169"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_170: 
+  id: "170"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_171: 
+  id: "171"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_172: 
+  id: "172"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_173: 
+  id: "173"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_174: 
+  id: "174"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_175: 
+  id: "175"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_176: 
+  id: "176"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_177: 
+  id: "177"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_178: 
+  id: "178"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_179: 
+  id: "179"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_180: 
+  id: "180"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_181: 
+  id: "181"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_182: 
+  id: "182"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_183: 
+  id: "183"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_184: 
+  id: "184"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_185: 
+  id: "185"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_186: 
+  id: "186"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_187: 
+  id: "187"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_188: 
+  id: "188"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_189: 
+  id: "189"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_190: 
+  id: "190"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_191: 
+  id: "191"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_192: 
+  id: "192"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_193: 
+  id: "193"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_194: 
+  id: "194"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_195: 
+  id: "195"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_196: 
+  id: "196"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_197: 
+  id: "197"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_198: 
+  id: "198"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_199: 
+  id: "199"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_200: 
+  id: "200"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_201: 
+  id: "201"
+  major: "0"
+  publish: "0"
+  notes: 
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-06-22 22:06:41
+  subject_type_id: "7"
+subjects_202: 
+  id: "207"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:30:35
+  updated_at: 2010-03-22 22:49:23
+  subject_type_id: "1"
+subjects_203: 
+  id: "208"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:34:49
+  updated_at: 2010-03-22 22:49:49
+  subject_type_id: "1"
+subjects_204: 
+  id: "209"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:35:36
+  updated_at: 2010-03-22 22:50:22
+  subject_type_id: "1"
+subjects_205: 
+  id: "210"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:35:58
+  updated_at: 2010-03-22 22:50:46
+  subject_type_id: "1"
+subjects_206: 
+  id: "211"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:36:21
+  updated_at: 2010-03-22 22:51:04
+  subject_type_id: "1"
+subjects_207: 
+  id: "212"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:36:43
+  updated_at: 2010-03-22 22:51:24
+  subject_type_id: "1"
+subjects_208: 
+  id: "213"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:37:27
+  updated_at: 2010-03-22 22:51:51
+  subject_type_id: "2"
+subjects_209: 
+  id: "214"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:37:54
+  updated_at: 2010-03-22 22:52:13
+  subject_type_id: "2"
+subjects_210: 
+  id: "215"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:38:19
+  updated_at: 2010-03-22 22:52:35
+  subject_type_id: "2"
+subjects_211: 
+  id: "216"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:38:56
+  updated_at: 2010-03-22 22:52:57
+  subject_type_id: "2"
+subjects_212: 
+  id: "217"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:39:24
+  updated_at: 2010-03-22 22:53:24
+  subject_type_id: "2"
+subjects_213: 
+  id: "218"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:39:47
+  updated_at: 2010-03-22 22:53:43
+  subject_type_id: "2"
+subjects_214: 
+  id: "219"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:40:17
+  updated_at: 2010-03-22 22:54:01
+  subject_type_id: "2"
+subjects_215: 
+  id: "220"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:40:41
+  updated_at: 2010-03-22 22:54:25
+  subject_type_id: "2"
+subjects_216: 
+  id: "221"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:41:24
+  updated_at: 2010-03-22 22:55:16
+  subject_type_id: "3"
+subjects_217: 
+  id: "222"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:41:43
+  updated_at: 2010-03-22 22:55:32
+  subject_type_id: "3"
+subjects_218: 
+  id: "223"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:42:15
+  updated_at: 2010-03-22 22:55:54
+  subject_type_id: "3"
+subjects_219: 
+  id: "224"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:42:54
+  updated_at: 2010-03-22 22:56:12
+  subject_type_id: "3"
+subjects_220: 
+  id: "225"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:43:20
+  updated_at: 2010-03-22 22:56:33
+  subject_type_id: "3"
+subjects_221: 
+  id: "226"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:43:42
+  updated_at: 2010-03-22 22:56:50
+  subject_type_id: "3"
+subjects_222: 
+  id: "227"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-03-22 22:44:02
+  updated_at: 2010-03-22 22:57:08
+  subject_type_id: "3"
+subjects_223: 
+  id: "228"
+  major: "0"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-30 22:00:18
+  updated_at: 2010-06-30 22:35:03
+  subject_type_id: "7"
+subjects_224: 
+  id: "229"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-07-05 23:07:04
+  updated_at: 2010-07-05 23:07:07
+  subject_type_id: "4"
+subjects_225: 
+  id: "230"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-07-05 23:24:03
+  updated_at: 2010-07-05 23:24:05
+  subject_type_id: "3"
+subjects_226: 
+  id: "231"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-07-05 23:28:27
+  updated_at: 2010-07-05 23:28:29
+  subject_type_id: "5"
+subjects_227: 
+  id: "232"
+  major: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-07-05 23:35:20
+  updated_at: 2010-07-05 23:35:23
+  subject_type_id: "6"

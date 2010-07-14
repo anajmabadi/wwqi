@@ -6,7 +6,7 @@ Feature: an authorized user should be able to CRUD an item
 			Given I speak English
 			When I go to the items page
 			Then I should be on the items page
-				And I should see "en, items"
+				And I should see "Items"
 	   
 		Scenario: Creating an item
 			Given I speak English

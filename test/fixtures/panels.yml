@@ -1,0 +1,28 @@
+--- 
+panels_001: 
+  id: "1"
+  exhibition_id: "1"
+  item_id: "13"
+  position: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-05-28 02:45:35
+  updated_at: 
+panels_002: 
+  id: "2"
+  exhibition_id: "1"
+  item_id: "61"
+  position: "2"
+  publish: "1"
+  notes: 
+  created_at: 2010-05-28 02:45:53
+  updated_at: 
+panels_003: 
+  id: "3"
+  exhibition_id: "1"
+  item_id: "64"
+  position: "3"
+  publish: "1"
+  notes: 
+  created_at: 2010-05-28 02:46:12
+  updated_at: 
