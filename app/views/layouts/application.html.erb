@@ -113,8 +113,8 @@
     </div> <!-- end header -->
   <div id="content" class="clearfix">
     <div class="container clearfix">
-      <% if flash[:notice] -%><div class="notice"><%= flash[:notice] %></div><% end -%>
-      <% if flash[:error] -%><div class="error"><%= flash[:error] %></div><% end -%>
+      <%= alert -%>
+			<%= notice -%>
       <%= yield :layout %>
     </div> <!-- end container -->
     </div><!-- end content -->
