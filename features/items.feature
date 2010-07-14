@@ -18,6 +18,15 @@ Feature: an authorized user should be able to CRUD an item
 			Then I should see "Item was successfully created."
 			And I should be on the item page for "Sample Item"
 			And I should see "Women's Worlds in Qajar Iran | Items | Show"
+			
+		Scenario: Creating an item without a title should fail
+			Given I speak English
+				And I am on the items page
+			When I follow "New item"
+				And I fill in "Pages" with "1"
+				And I press "Create Item"
+			Then I should see "Item has not been created."
+				And I should see "Title can't be blank"	
 				
 		Scenario: Editing an item
 		
