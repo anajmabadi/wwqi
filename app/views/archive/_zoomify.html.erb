@@ -5,7 +5,7 @@
   @allow_full_screen = "true"
 
   #variable properties
-  if @item.pages == 1
+  if @item.pages == 1 || @item.pages.nil? #added nil so the application does not throw an error if someone deletes a page outside of rails validations
     @viewer_url = "/images/zoomify_fullscreen.swf"
     @flash_vars = "zoomifyImagePath=#{@item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=2&zoomifyNavigatorVisible=0"
   elsif @item.pages > 1
