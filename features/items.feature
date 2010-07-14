@@ -10,9 +10,12 @@ Feature: an authorized user should be able to CRUD an item
 	   
 		Scenario: Creating an item
 			Given I speak English
-			When I go to the items page
-			And I follow "New item"
-			Then show me the page
+			And I am on the items page
+			When I follow "New item"
+			And I fill in "Title" with "Sample Item"
+			And I fill in "Pages" with "1"
+			And I press "Create Item"
+			Then I should see "Item was successfully created."
 				
 		Scenario: Editing an item
 		
