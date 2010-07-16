@@ -8,7 +8,7 @@ describe ItemsController do
 
   describe "GET index" do
     it "assigns all items as @items" do
-      Item.stub(:all) { [mock_item] }
+      Item.stub(:paginate).with(:all, :per_page => 25, :page => 1, :order => 'item_translations.title') { [mock_item] }
       get :index
       assigns(:items).should eq([mock_item])
     end
@@ -19,6 +19,12 @@ describe ItemsController do
       Item.stub(:find).with("37") { mock_item }
       get :show, :id => "37"
       assigns(:item).should be(mock_item)
+    end
+    
+    it "displays an error message when asked for a missing item" do
+      get :show, :id => "not-here"
+      response.should redirect_to(items_path)
+      flash[:error].should eql("The item you were looking for could not be found.")
     end
   end
 
