@@ -24,7 +24,9 @@ class Item < ActiveRecord::Base
   cattr_reader :per_page
   @@per_page = 25
   
-  validates_uniqueness_of :accession_num
+  # validations
+  validates :title, :presence => true
+  validates :pages, :presence => true, :numericality => true
 
   default_scope :include => [:translations, :category]
 

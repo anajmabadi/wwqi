@@ -1,0 +1,2746 @@
+--- 
+import_people_001: 
+  item_id: "53"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "1"
+import_people_002: 
+  item_id: "38"
+  loc_name: "'Ishrat Khanum"
+  name: "'Ishrat Khanum"
+  sort_name: "'Ishrat Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "2"
+import_people_003: 
+  item_id: "14"
+  loc_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  sort_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "3"
+import_people_004: 
+  item_id: "21"
+  loc_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  sort_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "4"
+import_people_005: 
+  item_id: "21"
+  loc_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  sort_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "5"
+import_people_006: 
+  item_id: "63"
+  loc_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  sort_name: Abbas Khan Tunikabuni Muntizam al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "6"
+import_people_007: 
+  item_id: "80"
+  loc_name: Afsanah Khanum
+  name: Afsanah Khanum
+  sort_name: Afsanah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "7"
+import_people_008: 
+  item_id: "30"
+  loc_name: Afsanah Khanum
+  name: Afsanah Khanum
+  sort_name: Afsanah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "8"
+import_people_009: 
+  item_id: "30"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "9"
+import_people_010: 
+  item_id: "54"
+  loc_name: Akbar Mirza Bisharat al-Saltanah
+  name: Akbar Mirza Bisharat al-Saltanah
+  sort_name: Akbar Mirza Bisharat al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "10"
+import_people_011: 
+  item_id: "80"
+  loc_name: Amin al-Dawlah
+  name: Amin al-Dawlah
+  sort_name: Amin al-Dawlah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "11"
+import_people_012: 
+  item_id: "23"
+  loc_name: Aqa Ahmad
+  name: Aqa Ahmad
+  sort_name: Aqa Ahmad
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "12"
+import_people_013: 
+  item_id: "15"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "13"
+import_people_014: 
+  item_id: "15"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "14"
+import_people_015: 
+  item_id: "16"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "15"
+import_people_016: 
+  item_id: "17"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "16"
+import_people_017: 
+  item_id: "18"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "17"
+import_people_018: 
+  item_id: "13"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "18"
+import_people_019: 
+  item_id: "14"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "19"
+import_people_020: 
+  item_id: "16"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "20"
+import_people_021: 
+  item_id: "19"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "21"
+import_people_022: 
+  item_id: "23"
+  loc_name: Aqa Hasan Mirza Shaykh al-Islam
+  name: Aqa Hasan Mirza Shaykh al-Islam
+  sort_name: Aqa Hasan Mirza Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "22"
+import_people_023: 
+  item_id: "41"
+  loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  sort_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "23"
+import_people_024: 
+  item_id: "42"
+  loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  sort_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "24"
+import_people_025: 
+  item_id: "77"
+  loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  sort_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "25"
+import_people_026: 
+  item_id: "77"
+  loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  sort_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "26"
+import_people_027: 
+  item_id: "38"
+  loc_name: Aqa Mirza Hasan Khan Munshi Bashi
+  name: Aqa Mirza Hasan Khan Munshi Bashi
+  sort_name: Aqa Mirza Hasan Khan Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "27"
+import_people_028: 
+  item_id: "1"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "28"
+import_people_029: 
+  item_id: "5"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "29"
+import_people_030: 
+  item_id: "11"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "30"
+import_people_031: 
+  item_id: "11"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "31"
+import_people_032: 
+  item_id: "12"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "32"
+import_people_033: 
+  item_id: "29"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "33"
+import_people_034: 
+  item_id: "37"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "34"
+import_people_035: 
+  item_id: "38"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "35"
+import_people_036: 
+  item_id: "45"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "36"
+import_people_037: 
+  item_id: "54"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "37"
+import_people_038: 
+  item_id: "56"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "38"
+import_people_039: 
+  item_id: "57"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "39"
+import_people_040: 
+  item_id: "59"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "40"
+import_people_041: 
+  item_id: "61"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "41"
+import_people_042: 
+  item_id: "61"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "42"
+import_people_043: 
+  item_id: "64"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "43"
+import_people_044: 
+  item_id: "64"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "44"
+import_people_045: 
+  item_id: "64"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "45"
+import_people_046: 
+  item_id: "64"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "46"
+import_people_047: 
+  item_id: "65"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "47"
+import_people_048: 
+  item_id: "66"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "48"
+import_people_049: 
+  item_id: "67"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "49"
+import_people_050: 
+  item_id: "70"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "50"
+import_people_051: 
+  item_id: "71"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "51"
+import_people_052: 
+  item_id: "74"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "52"
+import_people_053: 
+  item_id: "75"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "53"
+import_people_054: 
+  item_id: "77"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "54"
+import_people_055: 
+  item_id: "77"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "55"
+import_people_056: 
+  item_id: "78"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "56"
+import_people_057: 
+  item_id: "78"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "57"
+import_people_058: 
+  item_id: "79"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "58"
+import_people_059: 
+  item_id: "80"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "59"
+import_people_060: 
+  item_id: "5"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "60"
+import_people_061: 
+  item_id: "8"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "61"
+import_people_062: 
+  item_id: "8"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "62"
+import_people_063: 
+  item_id: "8"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "63"
+import_people_064: 
+  item_id: "9"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "64"
+import_people_065: 
+  item_id: "32"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "65"
+import_people_066: 
+  item_id: "36"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "66"
+import_people_067: 
+  item_id: "36"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "67"
+import_people_068: 
+  item_id: "39"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "68"
+import_people_069: 
+  item_id: "48"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "69"
+import_people_070: 
+  item_id: "49"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "70"
+import_people_071: 
+  item_id: "55"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "71"
+import_people_072: 
+  item_id: "63"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "72"
+import_people_073: 
+  item_id: "68"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "73"
+import_people_074: 
+  item_id: "72"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "74"
+import_people_075: 
+  item_id: "72"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "75"
+import_people_076: 
+  item_id: "73"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "76"
+import_people_077: 
+  item_id: "74"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "77"
+import_people_078: 
+  item_id: "74"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "78"
+import_people_079: 
+  item_id: "76"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "79"
+import_people_080: 
+  item_id: "35"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "80"
+import_people_081: 
+  item_id: "2"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "81"
+import_people_082: 
+  item_id: "72"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "82"
+import_people_083: 
+  item_id: "1"
+  loc_name: Aqa Mirza Hasan Shaykh al-Islam
+  name: Aqa Mirza Hasan Shaykh al-Islam
+  sort_name: Aqa Mirza Hasan Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "83"
+import_people_084: 
+  item_id: "50"
+  loc_name: Aqa Mirza Husayn Shaykh al-Islam
+  name: Aqa Mirza Husayn Shaykh al-Islam
+  sort_name: Aqa Mirza Husayn Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "84"
+import_people_085: 
+  item_id: "50"
+  loc_name: Aqa Mirza Husayn Shaykh al-Islam
+  name: Aqa Mirza Husayn Shaykh al-Islam
+  sort_name: Aqa Mirza Husayn Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "85"
+import_people_086: 
+  item_id: "68"
+  loc_name: Aqa Mirza Husayn Shaykh al-Islam
+  name: Aqa Mirza Husayn Shaykh al-Islam
+  sort_name: Aqa Mirza Husayn Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "86"
+import_people_087: 
+  item_id: "47"
+  loc_name: Aqa Mirza Husayn Shaykh al-Islam
+  name: Aqa Mirza Husayn Shaykh al-Islam
+  sort_name: Aqa Mirza Husayn Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "87"
+import_people_088: 
+  item_id: "47"
+  loc_name: Aqa Mirza Husayn Shaykh al-Islam
+  name: Aqa Mirza Husayn Shaykh al-Islam
+  sort_name: Aqa Mirza Husayn Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "88"
+import_people_089: 
+  item_id: "53"
+  loc_name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  sort_name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "89"
+import_people_090: 
+  item_id: "4"
+  loc_name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  sort_name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "90"
+import_people_091: 
+  item_id: "58"
+  loc_name: Aqa Mirza Mahdi
+  name: Aqa Mirza Mahdi
+  sort_name: Aqa Mirza Mahdi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "91"
+import_people_092: 
+  item_id: "58"
+  loc_name: Aqa Mirza Mahmud Shaykh al-Islam
+  name: Aqa Mirza Mahmud Shaykh al-Islam
+  sort_name: Aqa Mirza Mahmud Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "92"
+import_people_093: 
+  item_id: "55"
+  loc_name: Aqa Mirza Mansur Shaykh al-Islam
+  name: Aqa Mirza Mansur Shaykh al-Islam
+  sort_name: Aqa Mirza Mansur Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "93"
+import_people_094: 
+  item_id: "68"
+  loc_name: Aqa Mirza Mansur Shaykh al-Islam
+  name: Aqa Mirza Mansur Shaykh al-Islam
+  sort_name: Aqa Mirza Mansur Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "94"
+import_people_095: 
+  item_id: "35"
+  loc_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  sort_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "95"
+import_people_096: 
+  item_id: "39"
+  loc_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  sort_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "96"
+import_people_097: 
+  item_id: "24"
+  loc_name: Aqa Mirza Mufid Shaykh al-Islam
+  name: Aqa Mirza Mufid Shaykh al-Islam
+  sort_name: Aqa Mirza Mufid Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "97"
+import_people_098: 
+  item_id: "24"
+  loc_name: Aqa Mirza Mufid Shaykh al-Islam
+  name: Aqa Mirza Mufid Shaykh al-Islam
+  sort_name: Aqa Mirza Mufid Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "98"
+import_people_099: 
+  item_id: "25"
+  loc_name: Aqa Mirza Mufid Shaykh al-Islam
+  name: Aqa Mirza Mufid Shaykh al-Islam
+  sort_name: Aqa Mirza Mufid Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "99"
+import_people_100: 
+  item_id: "13"
+  loc_name: Aqa Mirza Sabuni
+  name: Aqa Mirza Sabuni
+  sort_name: Aqa Mirza Sabuni
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "100"
+import_people_101: 
+  item_id: "30"
+  loc_name: Ashraf al-Sadat
+  name: Ashraf al-Sadat
+  sort_name: Ashraf al-Sadat
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "101"
+import_people_102: 
+  item_id: "12"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "102"
+import_people_103: 
+  item_id: "12"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "103"
+import_people_104: 
+  item_id: "46"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "104"
+import_people_105: 
+  item_id: "48"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "105"
+import_people_106: 
+  item_id: "74"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "106"
+import_people_107: 
+  item_id: "74"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "107"
+import_people_108: 
+  item_id: "2"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "108"
+import_people_109: 
+  item_id: "12"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "109"
+import_people_110: 
+  item_id: "26"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "110"
+import_people_111: 
+  item_id: "64"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "111"
+import_people_112: 
+  item_id: "64"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "112"
+import_people_113: 
+  item_id: "64"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "113"
+import_people_114: 
+  item_id: "64"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "114"
+import_people_115: 
+  item_id: "79"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "115"
+import_people_116: 
+  item_id: "8"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "116"
+import_people_117: 
+  item_id: "22"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "117"
+import_people_118: 
+  item_id: "37"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "118"
+import_people_119: 
+  item_id: "53"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "119"
+import_people_120: 
+  item_id: "15"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "120"
+import_people_121: 
+  item_id: "56"
+  loc_name: Asiyah Khanum
+  name: Asiyah Khanum
+  sort_name: Asiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "121"
+import_people_122: 
+  item_id: "1"
+  loc_name: "Atabak A\xCA\xBEzam Amin al-Sultan"
+  name: "Atabak A\xCA\xBEzam Amin al-Sultan"
+  sort_name: "Atabak A\xCA\xBEzam Amin al-Sultan"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "122"
+import_people_123: 
+  item_id: "6"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "123"
+import_people_124: 
+  item_id: "6"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "124"
+import_people_125: 
+  item_id: "6"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "125"
+import_people_126: 
+  item_id: "6"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "126"
+import_people_127: 
+  item_id: "18"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "127"
+import_people_128: 
+  item_id: "46"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "128"
+import_people_129: 
+  item_id: "14"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "129"
+import_people_130: 
+  item_id: "38"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "130"
+import_people_131: 
+  item_id: "77"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "131"
+import_people_132: 
+  item_id: "77"
+  loc_name: Aziz al-Muluk
+  name: Aziz al-Muluk
+  sort_name: Aziz al-Muluk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "132"
+import_people_133: 
+  item_id: "11"
+  loc_name: Balijah Khanum
+  name: Balijah Khanum
+  sort_name: Balijah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "133"
+import_people_134: 
+  item_id: "11"
+  loc_name: Balijah Khanum
+  name: Balijah Khanum
+  sort_name: Balijah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "134"
+import_people_135: 
+  item_id: "53"
+  loc_name: Bisharat Khanum
+  name: Bisharat Khanum
+  sort_name: Bisharat Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "135"
+import_people_136: 
+  item_id: "6"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "136"
+import_people_137: 
+  item_id: "6"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "137"
+import_people_138: 
+  item_id: "6"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "138"
+import_people_139: 
+  item_id: "6"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "139"
+import_people_140: 
+  item_id: "63"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "140"
+import_people_141: 
+  item_id: "31"
+  loc_name: Farah al-Saltanah
+  name: Farah al-Saltanah
+  sort_name: Farah al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "141"
+import_people_142: 
+  item_id: "45"
+  loc_name: Fatimah Baygum Khanum
+  name: Fatimah Baygum Khanum
+  sort_name: Fatimah Baygum Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "142"
+import_people_143: 
+  item_id: "50"
+  loc_name: Fatimah Baygum Khanum
+  name: Fatimah Baygum Khanum
+  sort_name: Fatimah Baygum Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "143"
+import_people_144: 
+  item_id: "50"
+  loc_name: Fatimah Baygum Khanum
+  name: Fatimah Baygum Khanum
+  sort_name: Fatimah Baygum Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "144"
+import_people_145: 
+  item_id: "39"
+  loc_name: Fatimah Sultan Khanum
+  name: Fatimah Sultan Khanum
+  sort_name: Fatimah Sultan Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "145"
+import_people_146: 
+  item_id: "71"
+  loc_name: Gul Andam
+  name: Gul Andam
+  sort_name: Gul Andam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "146"
+import_people_147: 
+  item_id: "47"
+  loc_name: Haj Mirza Abu Turab
+  name: Haj Mirza Abu Turab
+  sort_name: Haj Mirza Abu Turab
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "147"
+import_people_148: 
+  item_id: "47"
+  loc_name: Haj Mirza Abu Turab
+  name: Haj Mirza Abu Turab
+  sort_name: Haj Mirza Abu Turab
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "148"
+import_people_149: 
+  item_id: "36"
+  loc_name: Haj Mirza Abu Turab Shaykh al-Islam
+  name: Haj Mirza Abu Turab Shaykh al-Islam
+  sort_name: Haj Mirza Abu Turab Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "149"
+import_people_150: 
+  item_id: "36"
+  loc_name: Haj Mirza Abu Turab Shaykh al-Islam
+  name: Haj Mirza Abu Turab Shaykh al-Islam
+  sort_name: Haj Mirza Abu Turab Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "150"
+import_people_151: 
+  item_id: "68"
+  loc_name: Haj Mirza Abu Turab Shaykh al-Islam
+  name: Haj Mirza Abu Turab Shaykh al-Islam
+  sort_name: Haj Mirza Abu Turab Shaykh al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "151"
+import_people_152: 
+  item_id: "35"
+  loc_name: Haj Sayyid 'Ali Akbar
+  name: Haj Sayyid 'Ali Akbar
+  sort_name: Haj Sayyid 'Ali Akbar
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "152"
+import_people_153: 
+  item_id: "22"
+  loc_name: Haj Umma Khanum
+  name: Haj Umma Khanum
+  sort_name: Haj Umma Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "153"
+import_people_154: 
+  item_id: "9"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "154"
+import_people_155: 
+  item_id: "68"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "155"
+import_people_156: 
+  item_id: "72"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "156"
+import_people_157: 
+  item_id: "73"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "157"
+import_people_158: 
+  item_id: "75"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "158"
+import_people_159: 
+  item_id: "58"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "159"
+import_people_160: 
+  item_id: "67"
+  loc_name: Hajiyah Khanum
+  name: Hajiyah Khanum
+  sort_name: Hajiyah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "160"
+import_people_161: 
+  item_id: "70"
+  loc_name: Hajji Muhammad Qasim Tajir Hiravi
+  name: Hajji Muhammad Qasim Tajir Hiravi
+  sort_name: Hajji Muhammad Qasim Tajir Hiravi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "161"
+import_people_162: 
+  item_id: "10"
+  loc_name: Hasan Durudi
+  name: Hasan Durudi
+  sort_name: Hasan Durudi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "162"
+import_people_163: 
+  item_id: "10"
+  loc_name: Hasan Durudi
+  name: Hasan Durudi
+  sort_name: Hasan Durudi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "163"
+import_people_164: 
+  item_id: "10"
+  loc_name: Hasan Durudi
+  name: Hasan Durudi
+  sort_name: Hasan Durudi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "164"
+import_people_165: 
+  item_id: "16"
+  loc_name: Hasan Duruudi
+  name: Hasan Duruudi
+  sort_name: Hasan Duruudi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "165"
+import_people_166: 
+  item_id: "76"
+  loc_name: "\xCA\xBBAziz al-Muluk"
+  name: "\xCA\xBBAziz al-Muluk"
+  sort_name: "\xCA\xBBAziz al-Muluk"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "166"
+import_people_167: 
+  item_id: "53"
+  loc_name: "\xCA\xBBAziz al-Muluk"
+  name: "\xCA\xBBAziz al-Muluk"
+  sort_name: "\xCA\xBBAziz al-Muluk"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "167"
+import_people_168: 
+  item_id: "79"
+  loc_name: "\xCA\xBBAziz al-Muluk"
+  name: "\xCA\xBBAziz al-Muluk"
+  sort_name: "\xCA\xBBAziz al-Muluk"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "168"
+import_people_169: 
+  item_id: "71"
+  loc_name: "\xCA\xBBAziz al-Muluk"
+  name: "\xCA\xBBAziz al-Muluk"
+  sort_name: "\xCA\xBBAziz al-Muluk"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "169"
+import_people_170: 
+  item_id: "62"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "170"
+import_people_171: 
+  item_id: "65"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "171"
+import_people_172: 
+  item_id: "66"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "172"
+import_people_173: 
+  item_id: "77"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "173"
+import_people_174: 
+  item_id: "77"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "174"
+import_people_175: 
+  item_id: "63"
+  loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  name: "\xCA\xBBIshrat al-Muluk Khanum"
+  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "175"
+import_people_176: 
+  item_id: "16"
+  loc_name: "\xCA\xBBIshrat Khanum"
+  name: "\xCA\xBBIshrat Khanum"
+  sort_name: "\xCA\xBBIshrat Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "176"
+import_people_177: 
+  item_id: "31"
+  loc_name: "\xCA\xBBIshrat Khanum"
+  name: "\xCA\xBBIshrat Khanum"
+  sort_name: "\xCA\xBBIshrat Khanum"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "177"
+import_people_178: 
+  item_id: "19"
+  loc_name: Jahan Ara
+  name: Jahan Ara
+  sort_name: Jahan Ara
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "178"
+import_people_179: 
+  item_id: "59"
+  loc_name: Karbalai Musa
+  name: Karbalai Musa
+  sort_name: Karbalai Musa
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "179"
+import_people_180: 
+  item_id: "71"
+  loc_name: Khadijah Khanum
+  name: Khadijah Khanum
+  sort_name: Khadijah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "180"
+import_people_181: 
+  item_id: "48"
+  loc_name: Khanum Jan
+  name: Khanum Jan
+  sort_name: Khanum Jan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "181"
+import_people_182: 
+  item_id: "15"
+  loc_name: Khanum Khanumha
+  name: Khanum Khanumha
+  sort_name: Khanum Khanumha
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "182"
+import_people_183: 
+  item_id: "47"
+  loc_name: Khanum Khanumha
+  name: Khanum Khanumha
+  sort_name: Khanum Khanumha
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "183"
+import_people_184: 
+  item_id: "47"
+  loc_name: Khanum Khanumha
+  name: Khanum Khanumha
+  sort_name: Khanum Khanumha
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "184"
+import_people_185: 
+  item_id: "2"
+  loc_name: Mah Jahan Khanum
+  name: Mah Jahan Khanum
+  sort_name: Mah Jahan Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "185"
+import_people_186: 
+  item_id: "41"
+  loc_name: Manijah Safdari Qajar
+  name: Manijah Safdari Qajar
+  sort_name: Manijah Safdari Qajar
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "186"
+import_people_187: 
+  item_id: "40"
+  loc_name: Maryam Khanum
+  name: Maryam Khanum
+  sort_name: Maryam Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "187"
+import_people_188: 
+  item_id: "77"
+  loc_name: Mir Sayyid Ali Khan
+  name: Mir Sayyid Ali Khan
+  sort_name: Mir Sayyid Ali Khan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "188"
+import_people_189: 
+  item_id: "77"
+  loc_name: Mir Sayyid Ali Khan
+  name: Mir Sayyid Ali Khan
+  sort_name: Mir Sayyid Ali Khan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "189"
+import_people_190: 
+  item_id: "53"
+  loc_name: "Mir Sayyid \xCA\xBBAli Khan"
+  name: "Mir Sayyid \xCA\xBBAli Khan"
+  sort_name: "Mir Sayyid \xCA\xBBAli Khan"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "190"
+import_people_191: 
+  item_id: "67"
+  loc_name: Mirza Buzurg Hakimbashi
+  name: Mirza Buzurg Hakimbashi
+  sort_name: Mirza Buzurg Hakimbashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "191"
+import_people_192: 
+  item_id: "28"
+  loc_name: Mirza Hasan Durudi
+  name: Mirza Hasan Durudi
+  sort_name: Mirza Hasan Durudi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "192"
+import_people_193: 
+  item_id: "20"
+  loc_name: Mirza Hasan Khan Hakimbashi
+  name: Mirza Hasan Khan Hakimbashi
+  sort_name: Mirza Hasan Khan Hakimbashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "193"
+import_people_194: 
+  item_id: "72"
+  loc_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
+  name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
+  sort_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "194"
+import_people_195: 
+  item_id: "9"
+  loc_name: Mirza Mahdi Khan
+  name: Mirza Mahdi Khan
+  sort_name: Mirza Mahdi Khan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "195"
+import_people_196: 
+  item_id: "80"
+  loc_name: Mirza Qavam
+  name: Mirza Qavam
+  sort_name: Mirza Qavam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "196"
+import_people_197: 
+  item_id: "33"
+  loc_name: Mu'avin al-Mulk
+  name: Mu'avin al-Mulk
+  sort_name: Mu'avin al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "197"
+import_people_198: 
+  item_id: "67"
+  loc_name: Mu'tamid al-Mulk
+  name: Mu'tamid al-Mulk
+  sort_name: Mu'tamid al-Mulk
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "198"
+import_people_199: 
+  item_id: "71"
+  loc_name: Muchul Khanum
+  name: Muchul Khanum
+  sort_name: Muchul Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "199"
+import_people_200: 
+  item_id: "33"
+  loc_name: Mufakhar al-Dawlah
+  name: Mufakhar al-Dawlah
+  sort_name: Mufakhar al-Dawlah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "200"
+import_people_201: 
+  item_id: "49"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "201"
+import_people_202: 
+  item_id: "3"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "202"
+import_people_203: 
+  item_id: "37"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "203"
+import_people_204: 
+  item_id: "54"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "204"
+import_people_205: 
+  item_id: "56"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "205"
+import_people_206: 
+  item_id: "57"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "206"
+import_people_207: 
+  item_id: "65"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "207"
+import_people_208: 
+  item_id: "66"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "208"
+import_people_209: 
+  item_id: "28"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "209"
+import_people_210: 
+  item_id: "31"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "210"
+import_people_211: 
+  item_id: "78"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "211"
+import_people_212: 
+  item_id: "78"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "212"
+import_people_213: 
+  item_id: "35"
+  loc_name: Munshi Bashi
+  name: Munshi Bashi
+  sort_name: Munshi Bashi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "213"
+import_people_214: 
+  item_id: "80"
+  loc_name: Mutamid al-Sultan
+  name: Mutamid al-Sultan
+  sort_name: Mutamid al-Sultan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "214"
+import_people_215: 
+  item_id: "45"
+  loc_name: Muzaffar al-Saltanah
+  name: Muzaffar al-Saltanah
+  sort_name: Muzaffar al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "215"
+import_people_216: 
+  item_id: "50"
+  loc_name: Muzaffar al-Saltanah Amir Tuman
+  name: Muzaffar al-Saltanah Amir Tuman
+  sort_name: Muzaffar al-Saltanah Amir Tuman
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "216"
+import_people_217: 
+  item_id: "50"
+  loc_name: Muzaffar al-Saltanah Amir Tuman
+  name: Muzaffar al-Saltanah Amir Tuman
+  sort_name: Muzaffar al-Saltanah Amir Tuman
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "217"
+import_people_218: 
+  item_id: "47"
+  loc_name: Nushi Khanum
+  name: Nushi Khanum
+  sort_name: Nushi Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "218"
+import_people_219: 
+  item_id: "53"
+  loc_name: Nushi Khanum
+  name: Nushi Khanum
+  sort_name: Nushi Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "219"
+import_people_220: 
+  item_id: "47"
+  loc_name: Nushi Khanum Shaykh al-Islami
+  name: Nushi Khanum Shaykh al-Islami
+  sort_name: Nushi Khanum Shaykh al-Islami
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "220"
+import_people_221: 
+  item_id: "47"
+  loc_name: Nushi Khanum Shaykh al-Islami
+  name: Nushi Khanum Shaykh al-Islami
+  sort_name: Nushi Khanum Shaykh al-Islami
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "221"
+import_people_222: 
+  item_id: "43"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "222"
+import_people_223: 
+  item_id: "44"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "223"
+import_people_224: 
+  item_id: "1"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "224"
+import_people_225: 
+  item_id: "59"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "225"
+import_people_226: 
+  item_id: "61"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "226"
+import_people_227: 
+  item_id: "61"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "227"
+import_people_228: 
+  item_id: "1"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "228"
+import_people_229: 
+  item_id: "77"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "229"
+import_people_230: 
+  item_id: "77"
+  loc_name: Qamar Khanum
+  name: Qamar Khanum
+  sort_name: Qamar Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "230"
+import_people_231: 
+  item_id: "3"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "231"
+import_people_232: 
+  item_id: "3"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "232"
+import_people_233: 
+  item_id: "3"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "233"
+import_people_234: 
+  item_id: "4"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "234"
+import_people_235: 
+  item_id: "26"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "235"
+import_people_236: 
+  item_id: "28"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "236"
+import_people_237: 
+  item_id: "42"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "237"
+import_people_238: 
+  item_id: "60"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "238"
+import_people_239: 
+  item_id: "77"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "239"
+import_people_240: 
+  item_id: "77"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "240"
+import_people_241: 
+  item_id: "71"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "241"
+import_people_242: 
+  item_id: "79"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "242"
+import_people_243: 
+  item_id: "80"
+  loc_name: Rubabah Khanum
+  name: Rubabah Khanum
+  sort_name: Rubabah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "243"
+import_people_244: 
+  item_id: "27"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "244"
+import_people_245: 
+  item_id: "20"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "245"
+import_people_246: 
+  item_id: "22"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "246"
+import_people_247: 
+  item_id: "33"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "247"
+import_people_248: 
+  item_id: "60"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "248"
+import_people_249: 
+  item_id: "71"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "249"
+import_people_250: 
+  item_id: "72"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "250"
+import_people_251: 
+  item_id: "11"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "251"
+import_people_252: 
+  item_id: "11"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "252"
+import_people_253: 
+  item_id: "55"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "253"
+import_people_254: 
+  item_id: "57"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "254"
+import_people_255: 
+  item_id: "73"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "255"
+import_people_256: 
+  item_id: "80"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "256"
+import_people_257: 
+  item_id: "58"
+  loc_name: Rukhsarah Khanum
+  name: Rukhsarah Khanum
+  sort_name: Rukhsarah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "257"
+import_people_258: 
+  item_id: "43"
+  loc_name: Sa'd al-Saltanah
+  name: Sa'd al-Saltanah
+  sort_name: Sa'd al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "258"
+import_people_259: 
+  item_id: "44"
+  loc_name: Sa'd al-Saltanah
+  name: Sa'd al-Saltanah
+  sort_name: Sa'd al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "259"
+import_people_260: 
+  item_id: "15"
+  loc_name: Sadiqah Khanum
+  name: Sadiqah Khanum
+  sort_name: Sadiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "260"
+import_people_261: 
+  item_id: "2"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "261"
+import_people_262: 
+  item_id: "2"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "262"
+import_people_263: 
+  item_id: "8"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "263"
+import_people_264: 
+  item_id: "8"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "264"
+import_people_265: 
+  item_id: "8"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "265"
+import_people_266: 
+  item_id: "32"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "266"
+import_people_267: 
+  item_id: "69"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "267"
+import_people_268: 
+  item_id: "12"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "268"
+import_people_269: 
+  item_id: "12"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "269"
+import_people_270: 
+  item_id: "15"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "270"
+import_people_271: 
+  item_id: "15"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "271"
+import_people_272: 
+  item_id: "21"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "272"
+import_people_273: 
+  item_id: "21"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "273"
+import_people_274: 
+  item_id: "6"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "274"
+import_people_275: 
+  item_id: "12"
+  loc_name: Sakinah Khanum
+  name: Sakinah Khanum
+  sort_name: Sakinah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "275"
+import_people_276: 
+  item_id: "1"
+  loc_name: Salar Mansur
+  name: Salar Mansur
+  sort_name: Salar Mansur
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "276"
+import_people_277: 
+  item_id: "80"
+  loc_name: Sayf al-Islam
+  name: Sayf al-Islam
+  sort_name: Sayf al-Islam
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "277"
+import_people_278: 
+  item_id: "1"
+  loc_name: Sayyid al-Saltanah
+  name: Sayyid al-Saltanah
+  sort_name: Sayyid al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "278"
+import_people_279: 
+  item_id: "16"
+  loc_name: Sayyid Jamal al-Din Mojtahid
+  name: Sayyid Jamal al-Din Mojtahid
+  sort_name: Sayyid Jamal al-Din Mojtahid
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "279"
+import_people_280: 
+  item_id: "62"
+  loc_name: Shah Jan
+  name: Shah Jan
+  sort_name: Shah Jan
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "280"
+import_people_281: 
+  item_id: "5"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "281"
+import_people_282: 
+  item_id: "5"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "282"
+import_people_283: 
+  item_id: "7"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "283"
+import_people_284: 
+  item_id: "7"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "284"
+import_people_285: 
+  item_id: "24"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "285"
+import_people_286: 
+  item_id: "24"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "286"
+import_people_287: 
+  item_id: "25"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "287"
+import_people_288: 
+  item_id: "71"
+  loc_name: Shahzadah Baygum
+  name: Shahzadah Baygum
+  sort_name: Shahzadah Baygum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "288"
+import_people_289: 
+  item_id: "47"
+  loc_name: Shawkat Khanum Ashraf al-Saltanah
+  name: Shawkat Khanum Ashraf al-Saltanah
+  sort_name: Shawkat Khanum Ashraf al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "289"
+import_people_290: 
+  item_id: "47"
+  loc_name: Shawkat Khanum Ashraf al-Saltanah
+  name: Shawkat Khanum Ashraf al-Saltanah
+  sort_name: Shawkat Khanum Ashraf al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "290"
+import_people_291: 
+  item_id: "47"
+  loc_name: Shawkat Khanum Ashraf al-Saltanah
+  name: Shawkat Khanum Ashraf al-Saltanah
+  sort_name: Shawkat Khanum Ashraf al-Saltanah
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "291"
+import_people_292: 
+  item_id: "35"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "292"
+import_people_293: 
+  item_id: "78"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "293"
+import_people_294: 
+  item_id: "78"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "294"
+import_people_295: 
+  item_id: "76"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "295"
+import_people_296: 
+  item_id: "71"
+  loc_name: Sidiqah Khanum
+  name: Sidiqah Khanum
+  sort_name: Sidiqah Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "296"
+import_people_297: 
+  item_id: "56"
+  loc_name: Taj Khanum
+  name: Taj Khanum
+  sort_name: Taj Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "297"
+import_people_298: 
+  item_id: "70"
+  loc_name: Yumn al-Dawlah Dawlatshahi
+  name: Yumn al-Dawlah Dawlatshahi
+  sort_name: Yumn al-Dawlah Dawlatshahi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "298"
+import_people_299: 
+  item_id: "54"
+  loc_name: Yumn al-Dawlah Dawlatshahi
+  name: Yumn al-Dawlah Dawlatshahi
+  sort_name: Yumn al-Dawlah Dawlatshahi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "299"
+import_people_300: 
+  item_id: "47"
+  loc_name: Zahra Khanum
+  name: Zahra Khanum
+  sort_name: Zahra Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "300"
+import_people_301: 
+  item_id: "47"
+  loc_name: Zahra Khanum
+  name: Zahra Khanum
+  sort_name: Zahra Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "301"
+import_people_302: 
+  item_id: "53"
+  loc_name: Zahra Khanum
+  name: Zahra Khanum
+  sort_name: Zahra Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "302"
+import_people_303: 
+  item_id: "71"
+  loc_name: Zahra Khanum
+  name: Zahra Khanum
+  sort_name: Zahra Khanum
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "303"
+import_people_304: 
+  item_id: "72"
+  loc_name: Zivar Sarimi
+  name: Zivar Sarimi
+  sort_name: Zivar Sarimi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "304"
+import_people_305: 
+  item_id: "72"
+  loc_name: Zivar Sarimi
+  name: Zivar Sarimi
+  sort_name: Zivar Sarimi
+  publish: "1"
+  major: "1"
+  locale: en
+  id: "305"

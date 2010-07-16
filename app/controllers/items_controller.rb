@@ -1,6 +1,7 @@
 class ItemsController < ApplicationController
 
   before_filter :admin_required, :except => [:index, :show]
+  before_filter :find_item, :only => [:show, :edit, :update, :destroy]
 
   # GET /items
   # GET /items.xml
@@ -18,8 +19,6 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.xml
   def show
-    @item = Item.find(params[:id])
-
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @item }
@@ -38,7 +37,6 @@ class ItemsController < ApplicationController
 
   # GET /items/1/edit
   def edit
-    @item = Item.find(params[:id])
   end
 
   # POST /items
@@ -60,7 +58,6 @@ class ItemsController < ApplicationController
   # PUT /items/1
   # PUT /items/1.xml
   def update
-    @item = Item.find(params[:id])
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.update_attributes(params[:item])
@@ -76,13 +73,23 @@ class ItemsController < ApplicationController
   # DELETE /items/1
   # DELETE /items/1.xml
   def destroy
-    @item = Item.find(params[:id])
     @item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(items_url) }
+      format.html { redirect_to(items_url, :notice => 'Item was deleted.') }
       format.xml  { head :ok }
     end
   end
   
+  private
+  
+  def find_item
+    begin
+      @item = Item.find(params[:id])
+    rescue ActiveRecord::RecordNotFound
+      #TODO: Translate this field
+      flash[:error] = "The item you were looking for could not be found."
+      redirect_to items_path
+    end
+  end  
 end

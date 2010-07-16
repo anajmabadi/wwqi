@@ -2393,3 +2393,93 @@ translations_266:
   is_proc: "0"
   created_at: 2010-07-08 13:14:05
   updated_at: 2010-07-08 13:14:11
+translations_267: 
+  id: "280"
+  locale: fa
+  key: errors.messages.blank
+  value: "\xD9\x86\xD9\x85\xDB\x8C \xD8\xAA\xD9\x88\xD8\xA7\xD9\x86\xD8\xAF \xD8\xAE\xD8\xA7\xD9\x84\xDB\x8C"
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2010-07-14 05:06:41
+  updated_at: 2010-07-14 05:12:17
+translations_268: 
+  id: "281"
+  locale: en
+  key: errors.messages.blank
+  value: can't be blank
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2010-07-14 05:16:50
+  updated_at: 2010-07-14 05:16:50
+translations_269: 
+  id: "282"
+  locale: en
+  key: errors.template.header.one
+  value: 1 error prohibited this %{model} from being saved
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:11:08
+  updated_at: 2010-07-16 12:11:11
+translations_270: 
+  id: "283"
+  locale: fa
+  key: errors.template.header.one
+  value: "\xD8\xA7\xDB\x8C\xD9\x86 \xD8\xAE\xD8\xB7\xD8\xA7 \xD8\xA7\xD8\xB2 \xD8\xB0\xD8\xAE\xDB\x8C\xD8\xB1\xD9\x87 \xD8\xB4\xD8\xAF\xD9\x86 \xD8\xA2\xD9\x86 \xD8\xAC\xD9\x84\xD9\x88\xDA\xAF\xDB\x8C\xD8\xB1\xDB\x8C \xDA\xA9\xD8\xB1\xD8\xAF."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:12:51
+  updated_at: 2010-07-16 12:12:54
+translations_271: 
+  id: "284"
+  locale: en
+  key: errors.template.header.other
+  value: "%{count} errors prohibited this %{model} from being saved"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:12:42
+  updated_at: 2010-07-16 12:12:48
+translations_272: 
+  id: "285"
+  locale: fa
+  key: errors.template.header.other
+  value: "\xD8\xA7\xDB\x8C\xD9\x86 \xD8\xAE\xD8\xB7\xD8\xA7 \xD8\xA7\xD8\xB2 \xD8\xB0\xD8\xAE\xDB\x8C\xD8\xB1\xD9\x87 \xD8\xB4\xD8\xAF\xD9\x86 \xD8\xA2\xD9\x86 \xD8\xAC\xD9\x84\xD9\x88\xDA\xAF\xDB\x8C\xD8\xB1\xDB\x8C \xDA\xA9\xD8\xB1\xD8\xAF."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:14:03
+  updated_at: 2010-07-16 12:14:06
+translations_273: 
+  id: "286"
+  locale: en
+  key: errors.template.body
+  value: "There were problems with the following fields:"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:24:13
+  updated_at: 2010-07-16 12:24:15
+translations_274: 
+  id: "287"
+  locale: fa
+  key: errors.template.body
+  value: "\xD8\xA8\xD9\x88\xD8\xAF\xD9\x86\xD8\xAF \xD8\xA8\xD8\xA7 \xD9\x85\xD8\xB4\xDA\xA9\xD9\x84\xD8\xA7\xD8\xAA \xD8\xB2\xD9\x85\xDB\x8C\xD9\x86\xD9\x87 \xD9\x87\xD8\xA7\xDB\x8C \xD8\xB2\xDB\x8C\xD8\xB1 \xD9\x88\xD8\xAC\xD9\x88\xD8\xAF \xD8\xAF\xD8\xA7\xD8\xB1\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:24:57
+  updated_at: 2010-07-16 12:25:01
+translations_275: 
+  id: "288"
+  locale: en
+  key: errors.messages.not_a_number
+  value: must be a number
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:25:41
+  updated_at: 2010-07-16 12:25:48
+translations_276: 
+  id: "289"
+  locale: fa
+  key: errors.messages.not_a_number
+  value: "\xD8\xA8\xD8\xA7\xDB\x8C\xD8\xAF \xD8\xB9\xD8\xAF\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-07-16 12:26:17
+  updated_at: 2010-07-16 12:26:24
