@@ -18,7 +18,9 @@ class Item < ActiveRecord::Base
   has_many :clips, :order => :position
   has_many :subjects, :through => :classifications, :order => 'position'
   
+  # globalize2 accessors 
   translates :title, :credit, :description, :display_date, :creator_label
+  globalize_accessors :fa, :en
   
   # pagination code
   cattr_reader :per_page
