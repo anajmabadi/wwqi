@@ -21,16 +21,16 @@ class Item < ActiveRecord::Base
   # globalize2 accessors 
   translates :title, :credit, :description, :display_date, :creator_label
   globalize_accessors :fa, :en
+  default_scope :include => [:translations, :category]
   
   # pagination code
   cattr_reader :per_page
   @@per_page = 25
   
   # validations
-  validates :title, :presence => true
-  validates :pages, :presence => true, :numericality => true
-
-  default_scope :include => [:translations, :category]
+  validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
+  validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
+  validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
 
   # a convenience function for matching up item types with hard coded icon classes
   def icon_class
