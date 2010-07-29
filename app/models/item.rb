@@ -53,35 +53,66 @@ class Item < ActiveRecord::Base
     end
   end
 
-  def thumbnail_url
-    return LIBRARY_URL + 'thumbs/' + thumb_file_name
-  end
-  
-  def thumb_file_name
-    return file_prefix + id.to_s + ".jpg"
-  end
-
-  def preview_url(index=1)
-    return LIBRARY_URL + "previews/it_#{id.to_s}_#{index.to_s}.jpg"
-  end
-
-  def tif_url
-    return LIBRARY_URL + id.to_s + ".tif"
-  end
-
-  def zoomify_url(index=1)
-    return LIBRARY_URL + "zoomify/it_#{id.to_s}_#{index.to_s}_img"
-  end
-
+  # TODO: Find the right place for this special XML route
   def slides_xml_url
     return '/archive/detail/' + id.to_s + '/slides.xml'
   end
 
-  def clip_url(index=1)
-    return LIBRARY_URL + "clips/it_#{id.to_s}_#{index.to_s}_clip.wav"
+  # Library media file accessors
+  def thumbnail_file_name
+    return FILE_PREFIX + id.to_s + ".jpg"
   end
   
-  def file_prefix
-    return "it_"
+  def thumbnail_url
+    return LIBRARY_URL + THUMBNAILS_DIR + thumbnail_file_name
   end
+  
+  def preview_file_name(index=1)
+    return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
+  end
+
+  def preview_url(index=1)
+    return LIBRARY_URL + PREVIEWS_DIR + preview_file_name(index) unless index.nil?
+  end
+  
+  def preview_urls
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << preview_url(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+  
+  def tif_file_name(index=1)
+    return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.tif" unless index.nil?
+  end
+  
+  def tif_url(index=1)
+    return LIBRARY_URL + TIFS_DIR + tif_file_name(index) unless index.nil?
+  end
+
+  def tif_urls
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << tif_url(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+
+  def zoomify_folder_name(index=1)
+    return "it_#{self.id.to_s}_#{index.to_s}_img" unless index.nil?
+  end
+  
+  def zoomify_url(index=1)
+    return LIBRARY_URL + ZOOMIFY_DIR + zoomify_folder_name(index) unless index.nil?
+  end
+  
+  def clip_file_name(index=1,format="wav")
+    return "it_#{id.to_s}_#{index.to_s}_clip.#{format}" unless index.nil? || format.nil?;
+  end
+  
+  def clip_url(index=1,format="wav")
+    return LIBRARY_URL + CLIPS_DIR + clip_file_name(index, format) unless index.nil? || format.nil?
+  end
+
 end
