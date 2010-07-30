@@ -85,7 +85,7 @@ h3, h4, h5, h6 { font-weight:400; }
 h1 { font-size: 4em; line-height: 1em; margin-bottom: 0.5em;color:#decc9d }
 h2 { font-size: 3.833em; margin-bottom:0.761em; line-height:1.167em; color:#decc9d; }
 h3 { font-size: 1.50em; line-height: 1.25em; margin-bottom:.5em; color:#decc9d; margin-top:.5em }
-h4 { font-size: 1.167em; line-height: 1.25; }
+h4 { font-size: 1.167em; line-height: 1.25;color:#990000; }
 h5 { font-size: 1.167em; margin-bottom:10px; font-weight:bold; text-transform:uppercase; color:#A3A798 }
 h6 { font-size: 1em; }
 
@@ -197,6 +197,13 @@ dd          { margin-left: 1.5em;}
     width:175px;
     margin-top:5px;
 }
+#big_search{
+	background:transparent url(/images/bg_keywordsearch.png) no-repeat scroll 0 0;
+	display:block;
+	float:left;
+	height:36px;
+	margin:5px;
+}
 #browser #search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
 
 .searchform input{
@@ -209,6 +216,7 @@ dd          { margin-left: 1.5em;}
     outline:none
 }
 #browser .searchform input{width:210px}
+#big_search .searchform input{width:190px; margin:8px 0 0 10px; font-size:12px;}
 
 .searchform button {
     width: 32px;
@@ -224,6 +232,10 @@ dd          { margin-left: 1.5em;}
 .searchform button:hover {
     background: url(/images/searchbutton.gif) no-repeat 0 -22px;
 }
+#big_search .searchform button{background: url(/images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
+#big_search .searchform button:hover {
+	background: url(/images/btn_big_search.png) no-repeat 0 -30px;
+	}
 
 
 
@@ -264,13 +276,23 @@ ul.sortnav .label{font-size:10px; color:#C00}
     -webkit-border-radius:5px;
 }
 
-#browser #head{
+.boxed{
+    width:940px;
+    float:left;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+	background:#fff;
+	color:#333;
+}
+
+
+#browser #head, .boxed .head{
     background:url(/images/bg_browser_head.png) top left no-repeat;
     padding-top:12px;
     height:30px;
 }
 
-#browser h2{
+#browser h2, .boxed h2{
     padding-left:10px;
     text-transform:uppercase;
     font-size:1.2em;
@@ -292,13 +314,14 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 
 #browser #browserContent{
-    background:#fff;
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;
-    padding:10px 0;
+	background:#fff;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	padding:10px 0;
 }
+
 
 #staticContent p,
 #staticContent em,
@@ -357,7 +380,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
     margin-left:4px;
 }
 
-#browserFilters, #browserFiltersDropdown{
+#browserFilters, #browserFiltersDropdown, #mediaTypes{
     background-color:#CCC;
     border-bottom:1px solid #333;
     clear:left;
@@ -365,11 +388,25 @@ ul.sortnav .label{font-size:10px; color:#C00}
     background:#000;
 }
 
+
 #browserFilters div.column, #browserFiltersDropdown div{
-    width:170px;
-    margin:0 0 0 10px;
-    float:left;
-    padding:0;
+	width:142px;
+	margin:0 0 0 10px;
+	float:left;
+	padding:0;
+}
+
+#mediaTypes div.column{
+	width:100px;
+	margin:0 0 0 8px;
+	float:left;
+	padding:0;
+	text-align:center;
+	font-size:18px;
+}
+
+#mediaTypes div.column a{
+	color:#fff;
 }
 
 #browserFilters select{
@@ -621,6 +658,45 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
     margin:10px;
     font-size:1.1em;
     color:#CCC
+}
+
+
+/* archive landing keyword search style
+-------------------------------------------------------------- */
+#keywordSearch{
+	float:left;
+	width:265px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	margin-top:25px;
+	margin-left:20px;
+}
+
+#keywordSearch .head{
+	background:url(/images/bg_about_head.png) top left no-repeat;
+	padding-top:12px;
+	height:30px;
+}
+
+#keywordSearch h2{
+	width:210px;
+	padding-left:10px;
+	text-transform:uppercase;
+	font-size:1.2em;
+	color:#fff;
+	font-weight:bold;
+	float:left;
+}
+
+#keywordSearch .content{
+	background:#000;
+	-moz-border-radius-bottomleft:5px;
+	-moz-border-radius-bottomright:5px;
+	-webkit-border-bottom-left-radius:5px;
+	-webkit-border-bottom-right-radius:5px;
+	padding:0;
+	overflow:hidden;
+	width:265px;
 }
 
 
@@ -992,5 +1068,93 @@ div.field {
 	left:-4px;
 	z-index:1000;
 	text-indent:-999px;
-	background:url(../images/beta_en.png) top left no-repeat;
+	background:url(/images/beta_en.png) top left no-repeat;
+}
+
+
+/* landing page browse button
+-------------------------------------------------------------- */
+.bigRed{
+	width:265px;
+	height:72px;
+	margin:5px 0 0;
+	background:url(/images/btn_big_red.png) top left no-repeat;
+	text-align:center;
+	line-height:72px;
+	color:#fff;
+}
+
+.bigRed a{
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+}
+
+/* landing page direct filter links
+-------------------------------------------------------------- */
+.boxed .section{
+	float:left;
+	width:150px;
+	padding:0 20px;
+	margin:10px 0 10px 10px;
+	min-height:150px;
+	background:url(/images/bg_shadow.gif) 100% 50% no-repeat;
+}
+
+.boxed .leftSections{
+	float:left;
+	width:410px;
+}
+
+.boxed .section.long{
+	width:480px;
+	background:none;
+}
+
+.boxed .section.med{
+	width:345px;
+	-moz-border-radius:5px;
+	-webkit-border-radus:5px;
+	background:none;
+	margin-top:0px;
+	padding-top:0;
+	min-height:inherit;
+	background-color:#ddd;
+	position:relative
+}
+
+.boxed .section.med .seeAll{
+	position:absolute; top:5px; right:10px;
+}
+
+.boxed .section h4{
+	font-size:18px;
+	margin:5px 0 10px 0;
+}
+.boxed .section ul{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.boxed .section ul li{
+	list-style:none;
+	padding:5px 0;
+	margin:0;
+	border-bottom:1px solid #ccc;
+}
+.boxed a{
+	color:#333;
+}
+
+.boxed .item{
+	width:110px;
+	height:110px;
+	float:left;
+	margin:0 5px 10px 0;
+}
+
+.boxed .item img{
+	width:110px;
+	height:110px;
+	border:1px solid #777;
 }
