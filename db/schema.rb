@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100623011711) do
+ActiveRecord::Schema.define(:version => 20100730193404) do
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
@@ -337,11 +337,11 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   end
 
   create_table "item_translations", :force => true do |t|
-    t.integer  "item_id"
-    t.string   "locale"
+    t.integer  "item_id",                       :null => false
+    t.string   "locale",        :default => "", :null => false
     t.string   "display_date"
     t.text     "description"
-    t.string   "title"
+    t.string   "title",         :default => "", :null => false
     t.string   "credit"
     t.string   "creator_label"
     t.datetime "created_at"
@@ -352,13 +352,13 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
   add_index "item_translations", ["title"], :name => "title"
 
   create_table "items", :force => true do |t|
-    t.string   "accession_num"
+    t.string   "accession_num",    :default => "",    :null => false
     t.string   "olivia_id"
     t.string   "urn"
     t.integer  "creator_id"
     t.integer  "owner_id"
     t.integer  "collection_id"
-    t.integer  "pages"
+    t.integer  "pages",            :default => 1,     :null => false
     t.integer  "format_id"
     t.date     "sort_date"
     t.boolean  "circa",            :default => false, :null => false
@@ -513,6 +513,7 @@ ActiveRecord::Schema.define(:version => 20100623011711) do
     t.datetime "updated_at"
     t.datetime "start_at"
     t.datetime "end_at"
+    t.integer  "items_count", :default => 0
   end
 
   add_index "periods", ["end_at"], :name => "index_periods_end_at"

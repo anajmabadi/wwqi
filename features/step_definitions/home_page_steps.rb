@@ -6,7 +6,7 @@ end
 Then /^I should have valid subject type archive links$/ do
   @subject_types.each do |subject_type|
     click_link(subject_type[:name])
-    page_name = "/archive/subject_type_filter/#{subject_type[:id]}"
+    page_name = "/archive/browser/subject_type_filter/#{subject_type[:id]}"
     current_path = URI.parse(current_url).path
     if current_path.respond_to? :should
       current_path.should == page_name

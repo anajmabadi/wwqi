@@ -8,6 +8,7 @@ periods_001:
   updated_at: 2010-03-31 04:43:03
   start_at: 1794-01-01 00:00:00
   end_at: 1796-12-31 00:00:00
+  items_count: "0"
 periods_002: 
   id: "2"
   position: "3"
@@ -17,6 +18,7 @@ periods_002:
   updated_at: 2010-03-31 04:43:57
   start_at: 1797-01-01 00:00:00
   end_at: 1833-12-31 00:00:00
+  items_count: "0"
 periods_003: 
   id: "3"
   position: "1"
@@ -26,6 +28,7 @@ periods_003:
   updated_at: 2010-03-31 04:46:40
   start_at: 1750-01-01 00:00:00
   end_at: 1793-12-31 00:00:00
+  items_count: "0"
 periods_004: 
   id: "4"
   position: "4"
@@ -35,6 +38,7 @@ periods_004:
   updated_at: 2010-03-31 04:44:23
   start_at: 1834-01-01 00:00:00
   end_at: 1847-12-31 00:00:00
+  items_count: "0"
 periods_005: 
   id: "5"
   position: "5"
@@ -44,6 +48,7 @@ periods_005:
   updated_at: 2010-03-31 04:44:44
   start_at: 1848-01-01 00:00:00
   end_at: 1895-12-31 00:00:00
+  items_count: "0"
 periods_006: 
   id: "6"
   position: "6"
@@ -53,7 +58,8 @@ periods_006:
   updated_at: 2010-03-31 04:45:09
   start_at: 1896-01-01 00:00:00
   end_at: 1906-12-31 00:00:00
-periods_007: 
+  items_count: "1"
+periods_007:
   id: "7"
   position: "7"
   publish: "1"
@@ -62,15 +68,17 @@ periods_007:
   updated_at: 2010-03-31 04:45:28
   start_at: 1907-01-01 00:00:00
   end_at: 1908-12-31 00:00:00
+  items_count: "3"
 periods_008: 
   id: "8"
   position: "8"
   publish: "1"
   notes: ""
   created_at: 2010-03-31 04:41:20
-  updated_at: 2010-03-31 04:46:01
+  updated_at: 2010-07-30 19:56:05
   start_at: 1909-01-01 00:00:00
   end_at: 1924-12-31 00:00:00
+  items_count: "18"
 periods_009: 
   id: "9"
   position: "9"
@@ -80,3 +88,4 @@ periods_009:
   updated_at: 2010-03-31 04:46:19
   start_at: 1925-01-01 00:00:00
   end_at: 1935-12-31 00:00:00
+  items_count: "1"

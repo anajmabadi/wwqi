@@ -57,3 +57,5 @@ schema_migrations_028:
   version: "20100528143828"
 schema_migrations_029: 
   version: "20100623011711"
+schema_migrations_030: 
+  version: "20100730193404"

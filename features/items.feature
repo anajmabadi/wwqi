@@ -22,6 +22,7 @@ Feature: an authorized user should be able to CRUD an item
 			When I follow "New item"
 			And I fill in "Title" with "Sample Item"
 			And I fill in "Pages" with "1"
+			And I fill in "Accession num" with "abcdfg"
 			And I press "Create Item"
 			Then I should see "Item was successfully created."
 			And I should be on the item page for "Sample Item"
@@ -31,17 +32,29 @@ Feature: an authorized user should be able to CRUD an item
 			Given I speak English
 				And I am on the items page
 			When I follow "New item"
+				And I fill in "Accession num" with "abcdfgh"
 				And I fill in "Pages" with "1"
 				And I press "Create Item"
 				And I should see "Title can't be blank"	
 		
-		Scenario: Creating an item without a title should fail
+		Scenario: Creating an item without an accession num should fail
 			Given I speak English
 				And I am on the items page
 			When I follow "New item"
-				And I fill in "Title" with "Sample Item"
+				And I fill in "Title" with "Sample Item" 
+				And I fill in "Pages" with "3"
 				And I press "Create Item"
-				And I should see "Pages can't be blank"				
+				And I should see "Accession num can't be blank"			
+				
+		Scenario: Creating an item without pages should fail
+			Given I speak English
+				And I am on the items page
+			When I follow "New item"
+				And I fill in "Title" with "Sample Item" 
+				And I fill in "Accession num" with "abcdf"
+				And I fill in "Pages" with ""
+				And I press "Create Item"
+				And I should see "Pages can't be blank"					
 				
 		Scenario: Editing an item
 			Given I speak English

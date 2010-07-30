@@ -161,49 +161,49 @@ collections_010:
   private: "0"
 collections_011: 
   id: "11"
-  address: 
-  address2: 
-  city: 
-  state_province: 
-  postal_code: 
-  telephone: 
-  email: 
-  website: 
-  contact: 
-  notes: 
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
   created_at: 2010-07-08 17:23:40
-  updated_at: 2010-07-08 17:23:46
+  updated_at: 2010-07-22 16:36:44
   publish: "1"
   private: "0"
 collections_012: 
   id: "12"
-  address: 
-  address2: 
-  city: 
-  state_province: 
-  postal_code: 
-  telephone: 
-  email: 
-  website: 
-  contact: 
-  notes: 
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
   created_at: 2010-07-08 17:28:32
-  updated_at: 2010-07-08 17:28:36
+  updated_at: 2010-07-22 16:31:36
   publish: "1"
   private: "0"
 collections_013: 
   id: "13"
-  address: 
-  address2: 
-  city: 
-  state_province: 
-  postal_code: 
-  telephone: 
-  email: 
-  website: 
-  contact: 
-  notes: 
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
   created_at: 2010-07-08 17:29:31
-  updated_at: 2010-07-08 17:29:35
+  updated_at: 2010-07-22 16:39:09
   publish: "1"
   private: "0"

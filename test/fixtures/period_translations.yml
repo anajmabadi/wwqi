@@ -13,7 +13,7 @@ period_translations_002:
   period_id: "2"
   locale: en
   description: ""
-  title: "Fath \xE2\x80\x98Ali Shah Period"
+  title: Fath 'Ali Shah Period
   caption: ""
   created_at: 2010-03-31 04:37:23
   updated_at: 2010-03-31 04:37:23
@@ -58,7 +58,7 @@ period_translations_007:
   period_id: "7"
   locale: en
   description: ""
-  title: "Muhammad \xE2\x80\x98Ali Shah Period"
+  title: Muhammad 'Ali Shah Period
   caption: ""
   created_at: 2010-03-31 04:40:54
   updated_at: 2010-03-31 04:40:54

@@ -1,143 +1,15 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-<% @extra_head_content = header_content -%>
 
 <div id="browser" class="clearfix">
-  <div id="head">
-    <h2><%= t(:archive_browser) %></h2>
-    <ul class="types sortnav">
-      <li><%= t(:show) %>:</li>
-      <li><a href="/archive/" id="allItems" class="module-link active"><%= t(:all_items) %></a></li>
-    </ul>
-  </div>
-  <div id="browserFilters" class="clearfix">
-    <div class="column">
-      <h4><%= t(:medium) %>  </h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'medium_form') do -%>
-        <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @medium_filter.blank? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @categories.each do |category| -%>
-            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= raw category.parent_id != category.id ? '&ndash; ' : '' -%><%= category.name %></option>
-          <% end -%>
-          <option value="more"><%= t(:more_categories) %></option>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:collection) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'collection_form') do -%>
-        <select id="collectionFilter" name="collection_filter"  onChange="document.forms['collection_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @collection_filter.blank? || @collection_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @collections.each do |collection| -%>
-            <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= collection.name %></option>
-          <% end -%>
-          <option value="more"><%= t(:more_collections) %></option>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:name) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'person_form') do -%>
-        <select id="nameFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @person_filter.blank? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @people.each do |person| -%>
-            <% if person.major %>
-              <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= person.name %></option>
-            <% end -%>
-          <% end -%>
-          <option value="more"><%= t(:more_names) %></option>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:subject) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'subject_form') do -%>
-        <select id="subjectFilter" name="subject_filter" onChange="document.forms['subject_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @subject_filter.blank? || @subject_filter == 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @subjects.each do |subject| -%>
-            <% if subject.major %>
-              <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @subject_filter==subject.id.to_s -%>><%= subject.name %></option>
-            <% end -%>
-          <% end -%>
-          <option value="more"><%= t(:more_subjects) %></option>
-        </select>
-      <% end -%>
-    </div>
-    <div class="column">
-      <h4><%= t(:period) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'period_form') do -%>
-        <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @periods.each do |period| -%>
-            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= period.title %></option>
-          <% end -%>
-        </select>
-      <% end %>
-    </div>
-  </div>
-  <div id="browserMessage">
-    <p>
-      <% if @items.empty? -%>
-        <%= t(:no_records_found) -%>
-      <% else -%>
-        <%= "#{t(:results_prefix)}: #{(@items.offset + 1).to_s} - #{([@items.offset + @items.per_page,@items.total_entries].min).to_s} | #{@items.total_entries.to_s}" %>
-      <% end -%>
-    </p>
-  </div>
-  <div id="browserContent" class="clearfix">
-
-    <%= render :partial => 'pagination_bar' %>
-
-    <% if @view_mode == 'list' -%>
-
-      <% @extra_head_content = archive_list_header -%>
-
-      <div id="items" class="list clearfix">
-
-        <% @items.each do |item| %>
-          <div class="listItem clearfix">
-            <div class="item <%= item.icon_class -%>">
-              <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-              <a class="type" href="<%= '/archive/page/1?medium_filter='+item.category_id.to_s -%>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
-            </div>
-            <div class="description">
-              <a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>
-              <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
-              <h4><%= item.collection.name unless item.collection.blank? %></h4>
-              <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.blank? %> <%= item.period.title  unless item.period.blank? %></p>
-              <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
-            </div>
-          </div>
-        <% end %>
-      </div><!-- end of items -->
-    <% elsif @view_mode == 'grid' -%>
-      <% @extra_head_content = archive_grid_header -%>
-      <div id="items">
-        <% @items.each do |item| -%>
-          <div class="item <%= item.icon_class -%>">
-            <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-            <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
-            <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
-          </div>
-        <% end -%>
-      </div><!-- end of items -->
-    <% elsif @view_mode == 'slideshow' -%>
-      <% @extra_head_content = archive_slideshow_header -%>
-      <div class="slideshow_container">
-        <a class="prev" href="#" style="display: block;"></a>
-        <a class="next" href="#" style="display: block;"></a>
-        <div class="slideshow">
-          <ul>
-            <% @items.each do |item| -%>
-              <li><a href="/collections/detail/<%= item.id %>"><img src="<%= item.preview_url %>" height="320" alt="<%= item.category.name.downcase unless item.category.blank? %>" /></a><a class="title" href="/collections/detail/<%= item.id %>"><%= item.title -%></a></li>
-                <% end -%>
-          </ul>
-        </div>
-      </div>
-    <% end -%>
-
-    <%= render :partial => 'pagination_bar' %>
-
-  </div>
-</div> <!-- end browser --><!-- end featured -->
+	<ul>
+		<% @subject_types.each do |subject_type| %>
+			<li><%= link_to subject_type.name, :action => :browser, :subject_type_filter => subject_type.id %></li>
+		<% end %>
+		<li><%= link_to "Browse the Archive", :action => :browser %></li>
+		<% @periods.each do |period| %>
+			<li><%= link_to period.title + " (" + period.items_count.to_s + ")", :action => :browser, :period_filter => period.id %></li>
+		<% end %>
+	</ul>
+</div>
 

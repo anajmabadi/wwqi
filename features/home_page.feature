@@ -48,12 +48,6 @@ Feature: home page welcomes user and provides navigation to site areas
 		When I go to the home page
 		And I follow "Women's Worlds in Qajar Iran"
 		Then I should be on the home page
-		
-  Scenario: one slide show item links to archive search
-		Given I speak English
-		When I go to the home page
-		And I follow "Writings"
-		Then I should be on the archive filter search page
 
   Scenario: all slide show items link to archive search 
 		Given I speak English
