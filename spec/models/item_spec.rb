@@ -121,15 +121,5 @@ describe Item do
     @item.update_attributes(@sample_attributes)
     @item.zoomify_url(1).should == "http://library.qajarwomen.net/zoomify/it_#{@item.id.to_s}_1_img"
   end
-  
-  it "should return a valid clip file name for a position" do
-    @item.update_attributes(@sample_attributes)
-    @item.clip_file_name(1, "wav").should == "it_#{@item.id.to_s}_1_clip.wav"
-  end
-  
-  it "should return a valid clip url for a position" do
-    @item.update_attributes(@sample_attributes)
-    @item.clip_url(1,"wav").should == "http://library.qajarwomen.net/clips/it_#{@item.id.to_s}_1_clip.wav"
-  end
 
 end

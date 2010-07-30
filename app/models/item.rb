@@ -106,13 +106,5 @@ class Item < ActiveRecord::Base
   def zoomify_url(index=1)
     return LIBRARY_URL + ZOOMIFY_DIR + zoomify_folder_name(index) unless index.nil?
   end
-  
-  def clip_file_name(index=1,format="wav")
-    return "it_#{id.to_s}_#{index.to_s}_clip.#{format}" unless index.nil? || format.nil?;
-  end
-  
-  def clip_url(index=1,format="wav")
-    return LIBRARY_URL + CLIPS_DIR + clip_file_name(index, format) unless index.nil? || format.nil?
-  end
 
 end

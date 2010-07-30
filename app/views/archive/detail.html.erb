@@ -54,8 +54,10 @@
 
       <p><%= raw @item.description unless @item.description.blank? %></p>
       <% unless @item.clips.empty? %>
-        <h4><%= @item.clips[0].title %></h4>
-        <%= raw audio_player(@item.clip_url(1)) %>
+				<% @item.clips.each do |clip| -%>
+        	<h4><%= clip.title %></h4>
+	       	<%= raw audio_player(clip.clip_url) %>
+				<% end -%>
       <% end %>
     </div>
   </div>
