@@ -403,11 +403,12 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #mediaTypes div.column{
 	width:100px;
-	margin:0 8px 0 0px;
+	margin:5px 8px 0 0px;
 	float:right;
 	padding:0;
 	text-align:center;
-	font-size:18px;
+	font-size:15px;
+	position:relative;
 }
 
 #mediaTypes div.column a{
@@ -693,12 +694,10 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 #keywordSearch .content{
-	background:#000;
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-webkit-border-bottom-left-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
-	padding:0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	background:#444444 none repeat scroll 0 0;
+	padding:10px 0;
 	overflow:hidden;
 	width:265px;
 
@@ -1085,14 +1084,16 @@ div.field {
 /* landing page browse button
 -------------------------------------------------------------- */
 .bigRed{
-	width:265px;
+	width:254px;
 	height:72px;
-	margin:5px 0 0;
-	background:url(/images/btn_big_red.png) top left no-repeat;
+	margin:15px 5px 15px 0px;
+	background:url(../images/btn_big_red.png) top left no-repeat;
 	text-align:center;
 	line-height:72px;
 	color:#fff;
-	float:left;
+	clear:left;
+	display:block;
+	float:right;
 }
 
 .bigRed a{
@@ -1109,34 +1110,34 @@ div.field {
 	padding:0 20px;
 	margin:10px 10px 10px 0px;
 	min-height:150px;
-	background:url(/images/bg_shadow_fa.gif) 0 50% no-repeat;
-}
-
-.boxed .leftSections{
-	float:right;
-	width:410px;
-}
-
-.boxed .section.long{
-	width:480px;
-	background:none;
-}
-
-.boxed .section.med{
-	width:345px;
 	-moz-border-radius:5px;
-	-webkit-border-radus:5px;
-	background:none;
-	margin-top:0px;
-	padding-top:0;
-	min-height:inherit;
-	background-color:#ddd;
-	position:relative
+	-webkit-border-radius:5px;
+	background:#EEEEEE;
 }
 
-.boxed .section.med .seeAll{
-	position:absolute; top:5px; left:10px;
+.boxed .collectionsBox{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	padding:10px;background:#EEEEEE;
+	
 }
+.boxed .collectionsBox h4{ margin:0 0 5px 0!important; padding:0!important }
+
+.boxed .collectionsBox img{
+	width:85px;
+	height:85px;
+	float:right;
+	margin-left:10px;
+	border:1px solid #777;
+}
+
+.boxed .collectionsBox ul li{
+
+	border:none!important;
+	padding:0!important;
+	margin:0!important;
+}
+
 
 .boxed .section h4{
 	font-size:18px;
@@ -1158,14 +1159,49 @@ div.field {
 }
 
 .boxed .item{
-	width:110px;
-	height:110px;
+	width:50px;
+	height:50px;
 	float:right;
-	margin:0 0px 10px 5px;
+	margin:0 0px 5px 5px;
 }
 
 .boxed .item img{
-	width:110px;
-	height:110px;
-	border:1px solid #777;
+	width:50px;
+	height:50px;
+	border:1px solid #999;
+}
+/* landing page dropdowns
+-------------------------------------------------------------- */
+
+
+
+#mediaTypes .column  ul{ 
+	width: 150px; 
+	visibility: hidden; 
+	position: absolute; 
+	top: 100%; 
+	right: -25px; 
+	background:#000;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	font-size:12px
+}
+	
+#mediaTypes .column  ul li{ 
+	font-weight: normal; color: #fff; 
+ 	border-bottom: 1px solid #333; 
+	float: none; 
+	margin:0; padding:5px 0
+}
+	
+#mediaTypes .column  ul li:last-child{border:none}
+									  
+                                    /* IE 6 & 7 Needs Inline Block */
+#mediaTypes .column  ul li a{ 
+	border-right: none; 
+	width: 100%; 
+	display: inline-block; 
+} 
+#mediaTypes .column  ul li a:hover{
+	color:#d22323
 }
