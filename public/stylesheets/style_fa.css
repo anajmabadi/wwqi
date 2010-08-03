@@ -1115,6 +1115,11 @@ div.field {
 	background:#EEEEEE;
 }
 
+
+.boxed .section.time{
+	width:920px; margin:0 5px 0 0px; padding:0; background:#fff; min-height:inherit
+}
+
 .boxed .collectionsBox{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -1204,4 +1209,43 @@ div.field {
 } 
 #mediaTypes .column  ul li a:hover{
 	color:#d22323
+}
+
+
+
+#timeLine{
+	padding-bottom:20px;
+	width:925px;
+	height:100px;
+	margin:10px auto;
+	background:url(../images/bg_timeline_fa.gif) top left no-repeat;
+}
+
+#timeLine a{
+	display:block;
+	float:right;
+	height:35px;
+	text-align:center;
+	overflow:hidden;
+	background-image:url(../images/bg_gradient.png);
+	background-position:bottom left;
+	background-repeat:repeat-x;
+	color:#fff;
+	text-overflow:ellipses; line-height:35px;
+	white-space:nowrap;
+}
+
+#timeLine a.first{background-color:#CE5166; width:220px; }
+#timeLine a.second{background-color: #35050D; width:15px;}
+#timeLine a.third{background-color: #B4112C; width:185px;}
+#timeLine a.fourth{background-color: #34151A; width:70px}
+#timeLine a.fifth{background-color: #810C1F; width:240px}
+#timeLine a.sixth{background-color: #CE5166; width:55px}
+#timeLine a.seventh{background-color: #35050D; width:10px;}
+#timeLine a.eighth{background-color: #B4112C; width:80px}
+#timeLine a.ninth{background-color: #34151A; width:50px}
+
+
+#timeLine h4{
+	background:#ddd; margin:0; padding:5px 5px 5px 0px;
 }
