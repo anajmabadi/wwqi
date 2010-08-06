@@ -2483,3 +2483,21 @@ translations_276:
   is_proc: "0"
   created_at: 2010-07-16 12:26:17
   updated_at: 2010-07-16 12:26:24
+translations_277: 
+  id: "290"
+  locale: en
+  key: search
+  value: Search
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2010-08-02 17:47:42
+  updated_at: 2010-08-02 17:47:42
+translations_278: 
+  id: "291"
+  locale: fa
+  key: search
+  value: "\xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88 \xDA\xA9\xD8\xB1\xD8\xAF\xD9\x86"
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2010-08-02 17:48:16
+  updated_at: 2010-08-02 17:48:16

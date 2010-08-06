@@ -14,6 +14,15 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			  And I follow "Browse the Archive"
 			Then I should see "archive browser"
 			
+		Scenario: should be able to search the archive by keyword
+			Given I speak English
+				And I have items
+			When I go to the archive page
+				And I fill in "quick_search" with "tragic" 
+			  And I press "Search"
+			Then I should see "archive browser"	
+				And I should see "A tragic story"
+				
 	  Scenario: all subject type links take you to the correct archive browser page 
 			Given I speak English
 				And I have subject types
@@ -39,10 +48,10 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 					|	Pre-Qajar Period Period | 3 | 0 |
 					|	Muhammad Shah Period | 4 | 0 |
 					|	Nasir al-Din Shah Period | 5 | 0 |
-					|	Muzaffar al-Din Shah Period | 6 | 1 |
-					|	Muhammad 'Ali Shah Period| 7 | 3 |
-					| Ahmad Shah Period | 8 | 18 |
-					| Early Pahlavi Period | 9 | 1 |
+					|	Muzaffar al-Din Shah Period | 6 | 0 |
+					|	Muhammad 'Ali Shah Period| 7 | 0 |
+					| Ahmad Shah Period | 8 | 0 |
+					| Early Pahlavi Period | 9 | 0 |
 			When I go to the archive page
 			Then I should have valid period archive links		
 			

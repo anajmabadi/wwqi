@@ -1,6 +1,40 @@
 module ArchiveHelper
+  
+  def index_header_content
+    return %{
+      <script src="javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script> 
+      <script type="text/javascript" src="javascripts/facebox.js"></script>
+      <script language="javascript" type="application/javascript">
+      	$(document).ready(function(){
+      		$('a[title]').qtip({ 
+      						   	   style: { 
+      							   name: 'dark', 
+      							   tip: true,
+      							    border: {
+      										 radius: 8
+      									  }
+      								}, 
+      							   position: {
+      								  corner: {
+      									 target: 'bottomMiddle',
+      									 tooltip: 'topMiddle'
+      								  }
+      						   		} 
+      		}); 
+      		$("#mediaTypes .column").hover(function(){
+              $(this).addClass("hover");
+              $('ul',this).css('visibility', 'visible');
+      		}, function(){
+      			$(this).removeClass("hover");
+      			$('ul',this).css('visibility', 'hidden');
+      		});
+      	});
+      	</script>
+    }
+  end
+  
   def header_content
-    return s = %{
+    return %{
     <link href="/stylesheets/dd<%= language_suffix -%>.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" href="/stylesheets/facebox<%= language_suffix -%>.css" media="screen" />

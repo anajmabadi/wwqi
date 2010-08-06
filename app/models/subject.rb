@@ -1,5 +1,5 @@
 class Subject < ActiveRecord::Base
-  translates :name
+
   belongs_to :subject_type
   
   has_many :classifications
@@ -7,8 +7,10 @@ class Subject < ActiveRecord::Base
 
   validates :name, :presence => true, :length =>{:maximum => 256}
   validates :publish, :presence => true
-
+  
+  translates :name
   default_scope :include => :translations
+  globalize_accessors :fa, :en
 
   # pagination code
   cattr_reader :per_page

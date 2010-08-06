@@ -1,15 +1,114 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-
-<div id="browser" class="clearfix">
-	<ul>
-		<% @subject_types.each do |subject_type| %>
-			<li><%= link_to subject_type.name, :action => :browser, :subject_type_filter => subject_type.id %></li>
-		<% end %>
-		<li><%= link_to "Browse the Archive", :action => :browser %></li>
-		<% @periods.each do |period| %>
-			<li><%= link_to period.title + " (" + period.items_count.to_s + ")", :action => :browser, :period_filter => period.id %></li>
-		<% end %>
-	</ul>
-</div>
+<% @extra_head_content = index_header_content -%>
+<div id="featured" style="height:auto">
+       	<div id="head"> 
+           	<h2><%= t(:genres) %></h2>
+           </div>
+       	<div id="mediaTypes" class="clearfix">
+			    <% first_column = true %>
+					<% @subject_types.each do |subject_type| %>
+						<% unless subject_type.id > 6 %>
+						  <div class="column">	
+		            <a href="<%= "/archive/browser/subject_type_filter/#{subject_type.id}" %>"><img src="images/icon_big_subject_type_<%= subject_type.id.to_s %>.png" alt="subject_type.name" /><%= subject_type.name %> <% if subject_type.show_menu? -%><img src="images/downArrow.gif" /><% end -%></a>
+								<% if subject_type.show_menu? %>
+									<ul <%= raw 'style="width:100px; left:0"' if first_column %>>
+										<% first_column = false -%>
+										<% subject_type.subjects.each do |subject| -%>
+		                 		<li><%= link_to subject.name, :action => :browser, :subject_filter => subject.id %></li>
+										<% end -%>
+									</ul>	
+								<% end -%>	
+							</div>
+						<% end %>
+					<% end -%>	
+       </div><!-- end featured -->
+       <div id="keywordSearch">
+           <div class="content clearfix">
+           	<div id="big_search" class="clearfix">
+                   <form action="" class="searchform" method="get">
+                   <input type="text" value="<%= t(:search_prompt) %>" name="s" class="swap_value" id="s"/>
+                   <button type="submit"/>
+                   </form>
+           	</div>
+               <div style="clear:left" class="bigRed"><%= link_to raw(t(:browse_the_archive)), :action => 'browser' %></div>
+           </div>
+          
+       </div>
+       
+   			<div class="boxed clearfix" style="margin-top:15px;">
+               <div class="section clearfix" style="padding:0 10px; width:280px">
+                   <div class="collectionsBox clearfix">
+                   <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
+                     <a href="#"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
+                     <ul>
+                   	<li><strong>Sheikholeslami Collection</strong></li>
+                       <li>&raquo; 1200 items</li>
+                       <li>&raquo; Last updated: July 12, 2010</li>
+                       <li>&raquo; <a style="color:#990000" href="#"><%= t(:see_all_collections) %></a></li>
+                   </ul>
+                   </div>
+               </div>
+							<div class="section" style="width:100px">
+                   <h4><%= t(:indexes).capitalize %></h4>
+                   <ul>
+                       <li><a href="#"><%= raw t(:people_index) %></a></li>
+                       <li><a href="#"><%= raw t(:subject_index) %></a></li>
+                       <li><a href="#"><%= raw t(:place_index) %></a></li>
+                   </ul>
+               </div>
+           <div class="section" style="width:220px">
+           	<h4><%= t(:recently_viewed_items) %></h4>
+               <div class="items">
+                   <div class="item">
+                       <a href="/collections/detail/1190" title="A tragic story [draft]"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/243" title="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah"><img alt="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah" src="http://library.qajarwomen.net/thumbs/it_243.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/1190" title="A tragic story [draft]"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/243" title="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah"><img alt="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah" src="http://library.qajarwomen.net/thumbs/it_243.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
+                   </div>
+                   <div class="item">
+                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
+                   </div>
+                </div>
+           </div>
+           <div class="section" style="width:150px">
+                   <h4><%= t(:quick_peek) %></h4>
+                   <ul>
+                           <li><a href="#"><%= raw t(:recent_additions) %></a></li>
+                           <li><a href="#"><%= raw t(:most_popular_items) %></a></li>
+                           <li><a href="#"><%= raw t(:collection_highlights) %></a></li>
+                    </ul>
+           </div>
+           <div class="section" style="width:920px; margin:0 0 0 5px; padding:0; background:#fff; min-height:inherit">
+           	
+           	<div id="timeLine">
+               <h4 style="background:#ddd; c margin:0; padding:5px 0 5px 5px;"><%= t(:time_periods) %></h4>
+               	<a class="first" href="#" title="Pre-Qajar Period (12 items)">Pre-Qajar Period (12)</a>
+                   <a class="second" href="#" title="Aqa Muhammad Khan Period (12 items)">Aqa Muhammad Khan Period (12)</a>
+                   <a class="third" href="#" title="Fath ‘Ali Shah Period (12 items)">Fath ‘Ali Shah Period (12)</a>
+                   <a class="fourth" href="#" title="Muhammad Shah Period (12 items)">Muhammad Shah Period (15)</a>
+                   <a class="fifth" href="#" title="Nasir al-Din Shah Period (12 items)">Nasir al-Din Shah Period (2)</a>
+                   <a class="sixth" href="#" title="Muzaffar al-Din Shah Period (12 items)">Muzaffar al-Din Shah Period (110)</a>
+                   <a class="seventh" href="#" title="Muhammad ‘Ali Shah Period (12 items)">Muhammad ‘Ali Shah Period (8)</a>
+                   <a class="eighth" href="#" title="Ahmad Shah Period (12 items)">Ahmad Shah Period (9)</a>
+                   <a class="ninth" href="#" title="Early Pahlavi Period (12 items)">Early Pahlavi Period (21)</a>
+               </div>
+           </div>
+           
+       </div> <!-- end browser --><!-- end featured -->
 

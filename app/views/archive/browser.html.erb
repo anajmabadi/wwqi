@@ -13,7 +13,7 @@
   <div id="browserFilters" class="clearfix">
     <div class="column">
       <h4><%= t(:medium) %>  </h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'medium_form') do -%>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'medium_form') do -%>
         <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @medium_filter.blank? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
           <% @categories.each do |category| -%>
@@ -25,7 +25,7 @@
     </div>
     <div class="column">
       <h4><%= t(:collection) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'collection_form') do -%>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'collection_form') do -%>
         <select id="collectionFilter" name="collection_filter"  onChange="document.forms['collection_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @collection_filter.blank? || @collection_filter== 'all' -%>><%= t(:all).capitalize %></option>
           <% @collections.each do |collection| -%>
@@ -37,7 +37,7 @@
     </div>
     <div class="column">
       <h4><%= t(:name) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'person_form') do -%>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'person_form') do -%>
         <select id="nameFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
           <option value="all"<%= raw ' selected="selected"' if @person_filter.blank? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @people.each do |person| -%>
@@ -51,7 +51,7 @@
     </div>
     <div class="column">
       <h4><%= t(:subject) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'subject_form') do -%>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'subject_form') do -%>
         <select id="subjectFilter" name="subject_filter" onChange="document.forms['subject_form'].submit()">
           <option value="all"<%= raw ' selected="selected"' if @subject_filter.blank? || @subject_filter == 'all' -%>><%= t(:all).capitalize %> </option>
           <% @subjects.each do |subject| -%>
@@ -65,7 +65,7 @@
     </div>
     <div class="column">
       <h4><%= t(:period) %></h4>
-      <%= form_tag({:action => 'index', :page => 1}, :method => 'get', :name => 'period_form') do -%>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'period_form') do -%>
         <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
           <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
           <% @periods.each do |period| -%>

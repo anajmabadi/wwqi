@@ -1,11 +1,11 @@
 class ArchiveController < ApplicationController
   
-  before_filter :admin_required, :except => [:index, :detail, :slides]
+  before_filter :admin_required, :except => [:index, :browser, :detail, :slides]
   
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def index
-    @subject_types = SubjectType.find(:all, :conditions => ['subject_type_translations.locale = ?', I18n.locale.to_s])
+    @subject_types = SubjectType.find(:all, :include => :subjects, :conditions => ['subject_type_translations.locale = ?', I18n.locale.to_s])
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
   end  
 
@@ -23,6 +23,7 @@ class ArchiveController < ApplicationController
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
     @subject_type_filter = params[:subject_type_filter]
+    @keyword_filter = params[:keyword_filter]
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -31,18 +32,28 @@ class ArchiveController < ApplicationController
     @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
     @order = build_order_query(@sort_mode)
 
-    @query = "items.publish=1 AND item_translations.locale = '#{I18n.locale.nil? ? ':en' : I18n.locale.to_s}'"
-
     # paginate the items
     @page = params[:page] || 1
     @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
 
-    @query += build_medium_query(@medium_filter) unless @medium_filter.nil? || @medium_filter == 'all'
-    @query += build_collection_query(@collection_filter) unless @collection_filter.nil? || @collection_filter == 'all'
-    @query += build_period_query(@period_filter) unless @period_filter.nil? || @period_filter == 'all'
-    @query += build_person_query(@person_filter) unless @person_filter.nil? || @person_filter == 'all'
-    @query += build_subject_query(@subject_filter) unless @subject_filter.nil? || @subject_filter == 'all'
-    @query += build_subject_type_query(@subject_type_filter) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
+    
+    @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => "en"} }
+
+    @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
+    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
+    @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
+    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
+    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
+    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
+    @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == 'Search'
+
+    # assemble the query from the two sql injection safe parts
+    @query_conditions = ''
+    @query_hash[:conditions].each do |condition|
+      @query_conditions += (@query_conditions.blank? ? '': ' AND ') + condition
+    end  
+    
+    @query = [@query_conditions, @query_hash[:parameters]]
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
@@ -96,94 +107,97 @@ class ArchiveController < ApplicationController
 
   end
 
-    private
+  private
 
   def items_set(items)
     return items.map { |i| i.id }
   end
 
-  def build_medium_query(filter_value)
+  def build_medium_query(filter_value, query_hash)
     additional_query = ''
     begin
       @category = Category.find_by_id(filter_value.to_i)
-      additional_query += ' AND category_id IN (' + @category.query_ids.join(',') + ')'
+      additional_query += 'category_id IN (' + @category.query_ids.join(',') + ')'
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for medium id #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
   end
 
-  def build_collection_query(filter_value)
+  def build_collection_query(filter_value, query_hash)
     additional_query = ''
     begin
       @collection = Collection.find_by_id(filter_value.to_i)
-      additional_query += ' AND collection_id = ' + @collection.id.to_s
+      additional_query += 'collection_id = ' + @collection.id.to_s
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
   end
 
-  def build_person_query(filter_value)
+  def build_person_query(filter_value,query_hash)
     additional_query = ''
     begin
       @person = Person.find_by_id(filter_value.to_i)
       @ids = @person.items.map { |p| p.id }
       unless @ids.empty?
-        additional_query += " AND items.id IN (#{@ids.join(",")})"
+        additional_query += "items.id IN (#{@ids.join(",")})"
       else
         flash[:error] = "No items found. Showing all."
-        additional_query += ""
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for person id #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
   end
 
-  def build_period_query(filter_value)
+  def build_period_query(filter_value, query_hash)
     additional_query = ''
     begin
       @period = Period.find_by_id(filter_value.to_i)
-      additional_query += " AND sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}'"
+      additional_query += "(sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}')"
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
   end
 
-  def build_subject_query(filter_value)
+  def build_subject_query(filter_value, query_hash)
     additional_query = ''
     begin
       @subject = Subject.find_by_id(filter_value.to_i)
       @ids = @subject.items.map { |p| p.id }
       unless @ids.empty? 
-        additional_query += " AND items.id IN (#{@ids.join(",")})"
+        additional_query += "items.id IN (#{@ids.join(",")})"
       else
         # if the person has no items, we should kill search
         flash[:error] = "No items found. Showing all."
-        additional_query += ""
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
   end
   
-  def build_subject_type_query(filter_value)
+  def build_subject_type_query(filter_value, query_hash)
     logger.info("build_subject_type_query")
     additional_query = ''
     begin
@@ -198,19 +212,37 @@ class ArchiveController < ApplicationController
       @ids = @ids.sort.uniq
         
       unless @ids.empty?
-        additional_query += " AND items.id IN (#{@ids.join(",")})"
+        additional_query += "items.id IN (#{@ids.join(",")})"
       else
         # if the subject type has no items, we should kill search
         flash[:error] = "No items found. Showing all."
-        additional_query += ""
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
     else
       flash[:error] = nil
     ensure
-      return additional_query
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
     end
+  end
+  
+  def build_keyword_query(filter_value, query_hash)
+    additional_query = ''
+    filter_value = filter_value.lstrip
+    filter_value = filter_value.length > 256 ? filter_value[0..255] : filter_value
+    filter_value = filter_value.upcase #locale insensitive
+    filter_value = "%#{filter_value}%"
+    # ucase if it English
+    if I18n.locale == :en
+      additional_query += "CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword" unless filter_value.blank?
+    else
+      additional_query += "CONCAT_WS('|',item_translations.title, item_translations.description, accession_num, items.id) LIKE :keyword" unless filter_value.blank?      
+    end
+    
+    query_hash[:conditions] << additional_query
+    query_hash[:parameters][:keyword] = filter_value  
+    return query_hash
   end
 
   def build_order_query(sort_mode)
