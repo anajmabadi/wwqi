@@ -27,13 +27,13 @@
            <div class="content clearfix">
            	<div id="big_search" class="clearfix">
                    <form action="/archive/browser" class="searchform" method="get">
-                   <input type="text" value="<%= t(:search_prompt) %>" name="s" class="swap_value" id="s" style="color:#aaa;" 
+                   <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;" 
 													onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" 
 								      		onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
                    <button type="submit" ></button>
                    </form>
            	</div>
-               <div style="clear:left" class="bigRed"><a href="#">Browse Archives &raquo;</a></div>
+               <div style="clear:left" class="bigRed"><%= link_to raw(t(:browse_the_archive)), :action => 'browser' %></div>
            </div>   
        </div>
        
@@ -43,10 +43,11 @@
                    <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
                      <a href="#"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
                      <ul>
-                   	<li><strong>Sheikholeslami Collection</strong></li>
-                       <li>&raquo; 1200 items</li>
-                       <li>&raquo; Last updated: July 12, 2010</li>
+	
                        <li>&raquo; <a style="color:#990000" href="#"><%= t(:see_all_collections) %></a></li>
+                   	<li><strong><%= @random_collection.name %></strong></li>
+                       <li>&raquo; <%= @random_collection.items.count.to_s %> items</li>
+                       <li>&raquo; Last updated: <%= @random_collection.last_update %></li>
                    </ul>
                    </div>
                </div>
