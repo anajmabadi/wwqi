@@ -7,13 +7,7 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			And be able to view a timeline of periods
 			And be able to views indexes of collections, people, locations, and subjects
 			And be able to view social networking style activities and searches
-		
-		Scenario: open an orientation page when I hit archive on the home page
-			Given I speak English
-			When I go to the archive page
-			  And I follow "Browse the Archive"
-			Then I should see "archive browser"
-			
+
 		Scenario: should be able to search the archive by keyword
 			Given I speak English
 				And I have items
@@ -22,6 +16,12 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			  And I press "Search"
 			Then I should see "archive browser"	
 				And I should see "A tragic story"
+					
+		Scenario: open an orientation page when I hit archive on the home page
+			Given I speak English
+			When I go to the archive page
+			  And I follow "Browse Archive"
+			Then I should see "archive browser"
 				
 	  Scenario: all subject type links take you to the correct archive browser page 
 			Given I speak English

@@ -26,14 +26,15 @@
        <div id="keywordSearch">
            <div class="content clearfix">
            	<div id="big_search" class="clearfix">
-                   <form action="" class="searchform" method="get">
-                   <input type="text" value="<%= t(:search_prompt) %>" name="s" class="swap_value" id="s"/>
-                   <button type="submit"/>
+                   <form action="/archive/browser" class="searchform" method="get">
+                   <input type="text" value="<%= t(:search_prompt) %>" name="s" class="swap_value" id="s" style="color:#aaa;" 
+													onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" 
+								      		onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+                   <button type="submit" ></button>
                    </form>
            	</div>
-               <div style="clear:left" class="bigRed"><%= link_to raw(t(:browse_the_archive)), :action => 'browser' %></div>
-           </div>
-          
+               <div style="clear:left" class="bigRed"><a href="#">Browse Archives &raquo;</a></div>
+           </div>   
        </div>
        
    			<div class="boxed clearfix" style="margin-top:15px;">
