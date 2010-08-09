@@ -204,7 +204,7 @@ dd          { margin-left: 1.5em;}
 	height:36px;
 	margin:0 5px;
 }
-#browser #search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
+#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
 
 .searchform input{
     border: 0;
@@ -215,7 +215,7 @@ dd          { margin-left: 1.5em;}
     float: left;
     outline:none
 }
-#browser .searchform input{width:210px}
+#browser .searchform input{width:210px; margin-top:7px; font-size:12px; line-height:20px;}
 #big_search .searchform input{width:190px; margin:8px 0 0 10px; font-size:12px;}
 
 .searchform button {
@@ -344,58 +344,95 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	padding:5px;
 }
 #browserFiltersDropdown{
-    display:none;
-    padding-bottom:10px;
-    position:relative
+	display:none;
+	padding-bottom:10px;
+	position:relative;
+	background:#fff!important;
+	color:#333;
 
 }
 
 #browserFiltersDropdown a.filterButton{
-    padding:2px 5px;
-    font-weight:bold;
-    -moz-border-radius:4px;
-    -webkit-border-radius:4px;
-    background:#CA3723;
-    color:#fff;
-    margin-right:5px;
-    font-size:16px;
+	padding:2px 5px;
+	font-weight:bold;
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	background:#CA3723;
+	color:#fff;
+	margin-right:5px;
+	font-size:16px;
 }
 
 
 #browserFiltersDropdown ul{
-    margin:0;
-    padding:0;
-    list-style:none;
-    overflow:auto;
-    clear:left;
-
+	
+	margin:0;
+	padding:0;
+	list-style:none;
+	clear:left;
+	
 }
 
 #browserFiltersDropdown ul li{
-    margin:0;
-    padding:0 5px 0 0;
+	margin:0;
+	padding:0 5px 0 0;
 }
 #browserFiltersDropdown ul li label {
-    cursor:pointer;
-    margin-left:4px;
+	cursor:pointer;
+	margin-left:4px;
 }
 
-#browserFilters, #browserFiltersDropdown, #mediaTypes{
-    background-color:#CCC;
-    border-bottom:1px solid #333;
-    clear:left;
-    padding-bottom:10px;
-    background:#000;
+#browserFiltersDropdown ul.alphabet{
+    padding:5px 0 20px 10px; list-style:none;
+	margin:0px auto!important; display:inline-block; float:none;
 }
 
+#browserFiltersDropdown ul.alphabet li {
+	border-right:1px solid #ccc;
+	float:left;
+	font-size:13px;
+	height:auto;
+	padding:0 10px;
+	text-transform:uppercase;
+	color:#333;
+	
+}
+#browserFiltersDropdown ul.alphabet li a{color:#333}
 
-#browserFilters div.column, #browserFiltersDropdown div{
-	width:142px;
+.hideIndexPanel{
+	position:absolute;
+	top:5px;
+	right:10px;
+	padding-left:19px;
+	background:url(../images/btn_close.png) 0 2px no-repeat;
+	color:#333;
+}
+	
+#browserFilters, #mediaTypes{
+	background-color:#CCC;
+	border-bottom:1px solid #333;
+	clear:left;
+	padding-bottom:10px;
+	background:#000;
+}
+
+#browserFilters div.column{
+	width:170px;
 	margin:0 0 0 10px;
 	float:left;
 	padding:0;
 }
 
+#browserFiltersDropdown div{
+	width:45%;
+	margin:0 0 0 10px;
+	float:left;
+	padding:0;
+	font-size:14px;
+}
+#browserFiltersDropdown div a{color:#333; padding-left:25px;}
+#browserFiltersDropdown div a:hover{text-decoration:underline;}
+ 
 #mediaTypes div.column{
 	width:100px;
 	margin:5px 0 0 8px;

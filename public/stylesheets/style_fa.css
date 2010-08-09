@@ -213,7 +213,7 @@ margin-top:5px;
 	height:36px;
 	margin:0 5px;
 }
-	#browser #search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 10px 0 0px;}
+	#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 10px 0 0px;}
 
 .searchform input{
 	border: 0;
@@ -224,7 +224,7 @@ margin-top:5px;
 	float: left;
 	outline:none
 	}
-	#browser .searchform input{width:210px}
+	#browser .searchform input{width:210px; margin-top:7px; font-size:12px; line-height:20px;}
 	#big_search .searchform input{width:190px; margin:8px 0px 0 10px; font-size:12px;}
 	
 .searchform button {
@@ -241,9 +241,9 @@ margin-top:5px;
 .searchform button:hover {
 	background: url(/images/searchbutton.gif) no-repeat 0 -23px;
 	}
-	#big_search .searchform button{background: url(../images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
+	#big_search .searchform button{background: url(images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
 #big_search .searchform button:hover {
-	background: url(../images/btn_big_search.png) no-repeat 0 -30px;
+	background: url(/images/btn_big_search.png) no-repeat 0 -30px;
 	}
 
 
@@ -351,16 +351,9 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browserFiltersDropdown{
 	display:none;
 	padding-bottom:10px;
-	position:relative
-
-}
-
-#browserFiltersDropdown ul{
-	margin:0;
-	padding:0;
-	list-style:none;
-	overflow:auto;
-	
+	position:relative;
+	background:#fff!important;
+	color:#333;
 }
 
 #browserFiltersDropdown a.filterButton{
@@ -374,6 +367,14 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	font-size:16px;
 }
 
+
+#browserFiltersDropdown ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+	clear:right;
+}
+
 #browserFiltersDropdown ul li{
 	margin:0;
 	padding:0 0px 0 5px;
@@ -382,8 +383,36 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	cursor:pointer;
 	margin-right:4px;
 }
+
+#browserFiltersDropdown ul.alphabet{
+    padding:5px 10px 20px 0px; list-style:none;
+	margin:0px auto!important; display:inline-block; float:none;
+}
+
+#browserFiltersDropdown ul.alphabet li {
+	border-right:1px solid #ccc;
+	float:right;
+	font-size:13px;
+	height:auto;
+	padding:0 7px;
+	text-transform:uppercase;
+	color:#333;
 	
-#browserFilters, #browserFiltersDropdown, #mediaTypes{
+}
+#browserFiltersDropdown ul.alphabet li a{color:#333}
+
+.hideIndexPanel{
+	position:absolute;
+	top:5px;
+	left:5px;
+	padding-left:18px;
+	background:url(/images/btn_close.png) 0 2px no-repeat;
+	color:#333;
+}
+
+
+	
+#browserFilters,  #mediaTypes{
 	background-color:#CCC;
 	border-bottom:1px solid #333;
 	clear:right;
@@ -393,12 +422,22 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 
 
-#browserFilters div.column, #browserFiltersDropdown div{
+#browserFilters div.column{
 	width:170px;
 	margin:0 10px 0 0px;
 	float:right;
 	padding:0;
 }
+
+#browserFiltersDropdown div{
+	width:45%;
+	margin:0 10px 0 0px;
+	float:right;
+	padding:0;
+	font-size:14px;
+}
+#browserFiltersDropdown div a{color:#333; padding-right:25px;}
+#browserFiltersDropdown div a:hover{text-decoration:underline;}
 
 #mediaTypes div.column{
 	width:100px;
@@ -1289,7 +1328,7 @@ div.field {
 	width:925px;
 	height:80px;
 	margin:10px -20px 0 0px;
-	background:#fff url(../../images/bg_timeline_fa.gif) bottom left no-repeat;
+	background:#fff url(/images/bg_timeline_fa.gif) bottom left no-repeat;
 }
 
 #timeLine a{
@@ -1297,7 +1336,7 @@ div.field {
 	float:right;
 	height:38px;
 	text-align:center;
-	background-image:url(../../images/bg_gradient.png);
+	background-image:url(/images/bg_gradient.png);
 	background-position:bottom left;
 	background-repeat:repeat-x;
 	color:#fff;
