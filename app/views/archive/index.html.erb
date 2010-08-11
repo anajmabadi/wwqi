@@ -88,7 +88,7 @@
 	           <h4><%= t(:quick_peek) %></h4>
 	           <ul>
 	                   <li><a href="#"><%= raw t(:recent_additions) %></a></li>
-	                   <li><a href="#"><%= raw t(:most_popular_items) %></a></li>
+	                   <li><%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %></li>
 	                   <li><a href="#"><%= raw t(:collection_highlights) %></a></li>
 	            </ul>
            </div>

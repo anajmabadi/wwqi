@@ -18,6 +18,10 @@ Given /^I have collections$/ do
   Fixtures.create_fixtures("test/fixtures", "collection_translations")
 end
 
+Given /^I have activities$/ do
+  Fixtures.create_fixtures("test/fixtures", "activities")
+end
+
 Given /^I have these periods:$/ do |table|
   # table is a Cucumber::Ast::Table
   @periods = table.hashes

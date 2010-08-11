@@ -588,3 +588,1276 @@ activities_031:
   success: "1"
   created_at: 2010-08-11 01:30:00
   updated_at: 2010-08-11 01:30:00
+activities_032: 
+  id: "32"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 01:45:36
+  updated_at: 2010-08-11 01:45:36
+activities_033: 
+  id: "33"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"keyword_filter\"=>\"tragic\", \"controller\"=>\"archive\", \"action\"=>\"browser\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 01:45:41
+  updated_at: 2010-08-11 01:45:41
+activities_034: 
+  id: "34"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"keyword_filter\"=>\"tragic\", \"controller\"=>\"archive\", \"action\"=>\"browser\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 01:45:51
+  updated_at: 2010-08-11 01:45:51
+activities_035: 
+  id: "35"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 02:12:19
+  updated_at: 2010-08-11 02:12:19
+activities_036: 
+  id: "36"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"browser\", \"period_filter\"=>\"5\"}"
+  collection_id: 
+  period_id: "5"
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 02:19:20
+  updated_at: 2010-08-11 02:19:20
+activities_037: 
+  id: "37"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 02:45:12
+  updated_at: 2010-08-11 02:45:12
+activities_038: 
+  id: "38"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 02:47:33
+  updated_at: 2010-08-11 02:47:33
+activities_039: 
+  id: "39"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 02:47:38
+  updated_at: 2010-08-11 02:47:38
+activities_040: 
+  id: "40"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:03:52
+  updated_at: 2010-08-11 12:03:52
+activities_041: 
+  id: "41"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:03:54
+  updated_at: 2010-08-11 12:03:54
+activities_042: 
+  id: "42"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:03:58
+  updated_at: 2010-08-11 12:03:58
+activities_043: 
+  id: "43"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:04:48
+  updated_at: 2010-08-11 12:04:48
+activities_044: 
+  id: "44"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:04:50
+  updated_at: 2010-08-11 12:04:50
+activities_045: 
+  id: "45"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:04:50
+  updated_at: 2010-08-11 12:04:50
+activities_046: 
+  id: "46"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:10:48
+  updated_at: 2010-08-11 12:10:48
+activities_047: 
+  id: "47"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"browser\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:12:53
+  updated_at: 2010-08-11 12:12:53
+activities_048: 
+  id: "48"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"page\"=>\"5\", \"controller\"=>\"archive\", \"action\"=>\"browser\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:12:58
+  updated_at: 2010-08-11 12:12:58
+activities_049: 
+  id: "49"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"115\"}"
+  collection_id: 
+  period_id: 
+  item_id: "115"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:02
+  updated_at: 2010-08-11 12:13:02
+activities_050: 
+  id: "50"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"187\"}"
+  collection_id: 
+  period_id: 
+  item_id: "187"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:12
+  updated_at: 2010-08-11 12:13:12
+activities_051: 
+  id: "51"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1278\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1278"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:16
+  updated_at: 2010-08-11 12:13:16
+activities_052: 
+  id: "52"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"1278\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:17
+  updated_at: 2010-08-11 12:13:17
+activities_053: 
+  id: "53"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1048\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1048"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:20
+  updated_at: 2010-08-11 12:13:20
+activities_054: 
+  id: "54"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1023\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1023"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:25
+  updated_at: 2010-08-11 12:13:25
+activities_055: 
+  id: "55"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1025\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1025"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:29
+  updated_at: 2010-08-11 12:13:29
+activities_056: 
+  id: "56"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"203\"}"
+  collection_id: 
+  period_id: 
+  item_id: "203"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:34
+  updated_at: 2010-08-11 12:13:34
+activities_057: 
+  id: "57"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"203\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:35
+  updated_at: 2010-08-11 12:13:35
+activities_058: 
+  id: "58"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"109\"}"
+  collection_id: 
+  period_id: 
+  item_id: "109"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:43
+  updated_at: 2010-08-11 12:13:43
+activities_059: 
+  id: "59"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"109\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:44
+  updated_at: 2010-08-11 12:13:44
+activities_060: 
+  id: "60"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"133\"}"
+  collection_id: 
+  period_id: 
+  item_id: "133"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:49
+  updated_at: 2010-08-11 12:13:49
+activities_061: 
+  id: "61"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"133\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:50
+  updated_at: 2010-08-11 12:13:50
+activities_062: 
+  id: "62"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"119\"}"
+  collection_id: 
+  period_id: 
+  item_id: "119"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:54
+  updated_at: 2010-08-11 12:13:54
+activities_063: 
+  id: "63"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"119\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:55
+  updated_at: 2010-08-11 12:13:55
+activities_064: 
+  id: "64"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"81\"}"
+  collection_id: 
+  period_id: 
+  item_id: "81"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:58
+  updated_at: 2010-08-11 12:13:58
+activities_065: 
+  id: "65"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"81\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:13:59
+  updated_at: 2010-08-11 12:13:59
+activities_066: 
+  id: "66"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:15:03
+  updated_at: 2010-08-11 12:15:03
+activities_067: 
+  id: "67"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"title\"=>\"Jahan Ara Hajiyah Khanum to her son-in-law, Aqa Mirza Hasan Shaykh al-Islam\", \"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"81\"}"
+  collection_id: 
+  period_id: 
+  item_id: "81"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:15:45
+  updated_at: 2010-08-11 12:15:45
+activities_068: 
+  id: "68"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"81\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:15:47
+  updated_at: 2010-08-11 12:15:47
+activities_069: 
+  id: "69"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"86\"}"
+  collection_id: 
+  period_id: 
+  item_id: "86"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:15:51
+  updated_at: 2010-08-11 12:15:51
+activities_070: 
+  id: "70"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1178\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1178"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:15:57
+  updated_at: 2010-08-11 12:15:57
+activities_071: 
+  id: "71"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:16:08
+  updated_at: 2010-08-11 12:16:08
+activities_072: 
+  id: "72"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:10
+  updated_at: 2010-08-11 12:58:10
+activities_073: 
+  id: "73"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:17
+  updated_at: 2010-08-11 12:58:17
+activities_074: 
+  id: "74"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:22
+  updated_at: 2010-08-11 12:58:22
+activities_075: 
+  id: "75"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"title\"=>\"Kanun-i banuvan to the Ministry of Justice, [ca. 1951-1961]\", \"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"1178\"}"
+  collection_id: 
+  period_id: 
+  item_id: "1178"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:28
+  updated_at: 2010-08-11 12:58:28
+activities_076: 
+  id: "76"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"260\"}"
+  collection_id: 
+  period_id: 
+  item_id: "260"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:34
+  updated_at: 2010-08-11 12:58:34
+activities_077: 
+  id: "77"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"260\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:35
+  updated_at: 2010-08-11 12:58:35
+activities_078: 
+  id: "78"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"168\"}"
+  collection_id: 
+  period_id: 
+  item_id: "168"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:45
+  updated_at: 2010-08-11 12:58:45
+activities_079: 
+  id: "79"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"169\"}"
+  collection_id: 
+  period_id: 
+  item_id: "169"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:49
+  updated_at: 2010-08-11 12:58:49
+activities_080: 
+  id: "80"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"169\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:50
+  updated_at: 2010-08-11 12:58:50
+activities_081: 
+  id: "81"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"170\"}"
+  collection_id: 
+  period_id: 
+  item_id: "170"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:53
+  updated_at: 2010-08-11 12:58:53
+activities_082: 
+  id: "82"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"170\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:54
+  updated_at: 2010-08-11 12:58:54
+activities_083: 
+  id: "83"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"121\"}"
+  collection_id: 
+  period_id: 
+  item_id: "121"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:57
+  updated_at: 2010-08-11 12:58:57
+activities_084: 
+  id: "84"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"121\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:58:58
+  updated_at: 2010-08-11 12:58:58
+activities_085: 
+  id: "85"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: detail
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"detail\", \"id\"=>\"111\"}"
+  collection_id: 
+  period_id: 
+  item_id: "111"
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:07
+  updated_at: 2010-08-11 12:59:07
+activities_086: 
+  id: "86"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: slides
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"slides\", \"id\"=>\"111\", \"format\"=>\"xml\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:08
+  updated_at: 2010-08-11 12:59:08
+activities_087: 
+  id: "87"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:16
+  updated_at: 2010-08-11 12:59:16
+activities_088: 
+  id: "88"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:22
+  updated_at: 2010-08-11 12:59:22
+activities_089: 
+  id: "89"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:26
+  updated_at: 2010-08-11 12:59:26
+activities_090: 
+  id: "90"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:39
+  updated_at: 2010-08-11 12:59:39
+activities_091: 
+  id: "91"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:47
+  updated_at: 2010-08-11 12:59:47
+activities_092: 
+  id: "92"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 12:59:57
+  updated_at: 2010-08-11 12:59:57
+activities_093: 
+  id: "93"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 13:00:18
+  updated_at: 2010-08-11 13:00:18
+activities_094: 
+  id: "94"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 13:06:24
+  updated_at: 2010-08-11 13:06:24
+activities_095: 
+  id: "95"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: browser
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"browser\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 13:06:33
+  updated_at: 2010-08-11 13:06:33
+activities_096: 
+  id: "96"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"home\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 14:41:25
+  updated_at: 2010-08-11 14:41:25
+activities_097: 
+  id: "97"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 14:41:49
+  updated_at: 2010-08-11 14:41:49
+activities_098: 
+  id: "98"
+  browser: Mozilla/5.0 (Macintosh; U; Intel Mac OS X 10_6_4; en-us) AppleWebKit/533.17.8 (KHTML, like Gecko) Version/5.0.1 Safari/533.17.8
+  session_id: 2dd86e91b98ac19e8cda8a4ce6bbd02f
+  ip_address: 127.0.0.1
+  user_id: 
+  action: index
+  params: "{\"controller\"=>\"archive\", \"action\"=>\"index\"}"
+  collection_id: 
+  period_id: 
+  item_id: 
+  page_id: 
+  person_id: 
+  subject_id: 
+  subject_type_id: 
+  place_id: 
+  success: "1"
+  created_at: 2010-08-11 14:41:52
+  updated_at: 2010-08-11 14:41:52

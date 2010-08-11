@@ -26,6 +26,7 @@ class ArchiveController < ApplicationController
     @subject_filter = params[:subject_filter]
     @subject_type_filter = params[:subject_type_filter]
     @keyword_filter = params[:keyword_filter]
+    @most_popular_filter = params[:most_popular_filter]
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -40,15 +41,16 @@ class ArchiveController < ApplicationController
 
     
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => "en"} }
-
+    
     @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
     @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
     @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
-    @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == 'Search'
-
+    @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
+    @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
+ 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
     @query_hash[:conditions].each do |condition|
@@ -59,6 +61,7 @@ class ArchiveController < ApplicationController
 
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
+    
 
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
@@ -193,6 +196,24 @@ class ArchiveController < ApplicationController
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+  
+  def build_most_popular_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @ids = Item.most_popular_ids(50)
+      unless @ids.empty? 
+        additional_query += "items.id IN (#{@ids.join(",")})"
+      else
+        # if the most popular returns no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for most popular items: #{error}."
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       return query_hash

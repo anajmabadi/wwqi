@@ -8,7 +8,6 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			And be able to views indexes of collections, people, locations, and subjects
 			And be able to view social networking style activities and searches
 
-
 		Scenario: open an orientation page when I hit archive on the home page
 			Given I speak English
 				And I have items
@@ -68,6 +67,15 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			When I go to the archive page
 			Then I should have valid subject type archive links from archive
 			
-
+			Scenario: show most popular items
+				Given I speak English
+					And I have items
+					And I have collections
+					And I have subject types
+					And I have periods
+					And I have activities
+				When I go to the archive page
+				  And I follow "Most Popular"
+				Then I should see "archive browser"
 			
 			
