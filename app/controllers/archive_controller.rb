@@ -12,6 +12,7 @@ class ArchiveController < ApplicationController
   end  
 
   def browser
+    logger.info 'browser'
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
     @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
@@ -27,6 +28,8 @@ class ArchiveController < ApplicationController
     @subject_type_filter = params[:subject_type_filter]
     @keyword_filter = params[:keyword_filter]
     @most_popular_filter = params[:most_popular_filter]
+    @recent_additions_filter = params[:recent_additions_filter]
+    @staff_favorites_filter = params[:staff_favorites_filter]
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -50,7 +53,9 @@ class ArchiveController < ApplicationController
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
- 
+    @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
+      @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
+     
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
     @query_hash[:conditions].each do |condition|
@@ -62,7 +67,6 @@ class ArchiveController < ApplicationController
     @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
     
-
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
     session[:current_items] = items_set(@items_full_set)
@@ -147,6 +151,11 @@ class ArchiveController < ApplicationController
       return query_hash
     end
   end
+  
+  def build_staff_favorites_query(query_hash)
+    query_hash[:conditions] << "items.favorite = 1" 
+    return query_hash
+  end
 
   def build_person_query(filter_value,query_hash)
     additional_query = ''
@@ -214,6 +223,24 @@ class ArchiveController < ApplicationController
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for most popular items: #{error}."
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+  
+  def build_recent_additions_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @ids = Item.recently_added_ids(50)
+      unless @ids.empty? 
+        additional_query += "items.id IN (#{@ids.join(",")})"
+      else
+        # if the most popular returns no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for recent additions."
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       return query_hash

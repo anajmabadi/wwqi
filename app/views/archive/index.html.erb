@@ -54,10 +54,10 @@
 	                     <div class="collectionContainer clearfix">
 											 <% @random_collection_set.each do |collection| -%>
 	                         <div class="collection">
-                             <a href="#"><img alt="Sample thumbnail for collection." src="<%= collection.items[0].thumbnail_url %>"/></a>
+                             <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
                              <ul>
-                               <li><strong><%= collection.name %></strong></li>
-                               <li>&raquo; <%= collection.items.count.to_s if collection %> items</li> 
+                               <li><strong><%= link_to truncate(collection.name, :length => 30), :action => :browser, :collection_filter => collection %></strong></li>
+                               <li>&raquo; <%= link_to( (collection.items.count.to_s if collection), :action => :browser, :collection_filter => collection) %> items</li> 
                              </ul>
 	                         </div>
 												<% end -%>
@@ -87,9 +87,9 @@
            <div class="section" style="width:150px">
 	           <h4><%= t(:quick_peek) %></h4>
 	           <ul>
-	                   <li><a href="#"><%= raw t(:recent_additions) %></a></li>
+	                   <li><%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %></a></li>
 	                   <li><%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %></li>
-	                   <li><a href="#"><%= raw t(:collection_highlights) %></a></li>
+	                   <li><%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %></li>
 	            </ul>
            </div>
            <div class="section time" >

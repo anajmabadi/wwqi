@@ -17,8 +17,9 @@ class Collection < ActiveRecord::Base
   
   def self.random_set(limit=3)
     collection_set = []
-    (1..limit).each do
-      collection_set << self.random
+    until collection_set.size == limit do
+      collection = self.random
+      collection_set << collection unless collection_set.include?(collection) 
     end
     return collection_set
   end  

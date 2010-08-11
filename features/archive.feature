@@ -77,5 +77,25 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 				When I go to the archive page
 				  And I follow "Most Popular"
 				Then I should see "archive browser"
-			
-			
+
+			Scenario: show recent additions
+				Given I speak English
+					And I have items
+					And I have collections
+					And I have subject types
+					And I have periods
+					And I have activities
+				When I go to the archive page
+				  And I follow "Recent Additions"
+				Then I should see "archive browser"
+			@dev	
+			Scenario: show staff favorites
+			Given I speak English
+				And I have items
+				And I have collections
+				And I have subject types
+				And I have periods
+				And I have activities
+			When I go to the archive page
+			  And I follow "Staff Favorites"
+			Then I should see "archive browser"

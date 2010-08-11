@@ -26,15 +26,26 @@ class Item < ActiveRecord::Base
   # pagination code
   cattr_reader :per_page
   @@per_page = 25
-  attr_accessor :popular_items
-  attr_accessor :recently_viewed
-  attr_accessor :popular_refreshed_at
-  attr_accessor :recently_refreshed_at
   
   # validations
   validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
   validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
   validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
+
+  def self.recently_added_ids(limit=25)
+    ids = []
+    months = 1
+    until ids.size >= limit || months > 12 do
+      ids = Item.added_since_date(months, limit)
+      months += 1
+    end
+    return ids
+  end 
+  
+  def self.added_since_date(months=1, limit=25)
+    ids = Item.find(:all, :select => 'items.id', :conditions => ["items.publish = ? AND item_translations.locale=? AND items.created_at >= ?", 1, I18n.locale.to_s, Time.now.months_ago(months)], :order => 'items.created_at DESC', :limit => limit).map { |item| item.id }
+    return ids
+  end   
 
   def self.most_popular(limit=100)
     if @popular_items.nil? || @popular_refreshed_at > 1.day.ago
