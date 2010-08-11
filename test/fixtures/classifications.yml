@@ -1889,3 +1889,12 @@ classifications_210:
   notes: 
   created_at: 
   updated_at: 
+classifications_211: 
+  id: "234"
+  subject_id: "207"
+  item_id: "177"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-04 15:58:57
+  updated_at: 2010-08-04 15:58:57

@@ -1529,7 +1529,7 @@ items_067:
   collection_id: "8"
   pages: "3"
   format_id: "1"
-  sort_date: "1329-01-24"
+  sort_date: 
   circa: "0"
   dimensions: 13 x 20 cm.
   notes: ""
@@ -2173,7 +2173,7 @@ items_095:
   collection_id: "8"
   pages: "3"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: 
   circa: "0"
   dimensions: 18.5 x 11.4 cm.
   notes: ""
@@ -2242,7 +2242,7 @@ items_098:
   collection_id: "8"
   pages: "2"
   format_id: 
-  sort_date: "1700-06-30"
+  sort_date: 
   circa: "0"
   dimensions: 20.4 x 13 cm.
   notes: ""
@@ -3829,7 +3829,7 @@ items_167:
   collection_id: "8"
   pages: "2"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: 
   circa: "0"
   dimensions: 20 x 14 cm.
   notes: Is this the correct identification of Shahzadah Khanum? It is not clear from audio or genealogy.
@@ -4036,7 +4036,7 @@ items_176:
   collection_id: "8"
   pages: "1"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: 
   circa: "0"
   dimensions: 20 x 12.6 cm.
   notes: ""
@@ -4063,11 +4063,11 @@ items_177:
   circa: "0"
   dimensions: 20.8 x 23.5 cm.
   notes: ""
-  place_id: "0"
+  place_id: 
   bound: "0"
   publish: "1"
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-04 15:59:32
   period_id: 
   category_id: "2"
   source_date: ""
@@ -4795,7 +4795,7 @@ items_209:
   collection_id: "8"
   pages: "2"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: 
   circa: "0"
   dimensions: 12 x 17.6 cm.
   notes: What is name of woman in the photo, Golshun Khanum? Which one is Shahzadah Bisharat al-Saltanah? Is he the same person as Akbar Mirza Bisharat al-Saltanah aka Sardar Mofakham?
@@ -5347,7 +5347,7 @@ items_233:
   collection_id: "4"
   pages: "2"
   format_id: 
-  sort_date: "1700-07-07"
+  sort_date: 
   circa: "0"
   dimensions: 16.5 x 11 cm.
   notes: ""
@@ -5574,10 +5574,10 @@ items_243:
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350412?buttons=y
   creator_id: 
   owner_id: "3"
-  collection_id: 
+  collection_id: "2"
   pages: "2"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: 
   circa: "0"
   dimensions: 14 x 9 cm.
   notes: ""
@@ -5585,7 +5585,7 @@ items_243:
   bound: "0"
   publish: "1"
   created_at: 
-  updated_at: 2010-07-01 19:57:30
+  updated_at: 2010-08-06 03:45:49
   period_id: 
   category_id: "4"
   source_date: ""
@@ -5665,23 +5665,23 @@ items_247:
   olivia_id: W457956
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350417?buttons=y
   creator_id: 
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   sort_date: 
   circa: "0"
   dimensions: 14.8 x 10 cm.
   notes: ""
-  place_id: "0"
+  place_id: 
   bound: "0"
   publish: "1"
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-04 15:52:59
   period_id: 
   category_id: "4"
   source_date: ""
-  calendar_type_id: "2"
+  calendar_type_id: 
 items_248: 
   id: "248"
   accession_num: Mozaffari_NM_290709_011
@@ -8691,15 +8691,15 @@ items_378:
   collection_id: "12"
   pages: "15"
   format_id: 
-  sort_date: "1700-07-01"
+  sort_date: "1935-01-01"
   circa: "0"
   dimensions: ""
-  notes: "[n.d., after 1315 SH]. Short story..."
+  notes: "[n.d., after 1315 SH]."
   place_id: 
   bound: "0"
   publish: "1"
   created_at: 
-  updated_at: 2010-07-01 18:54:09
+  updated_at: 2010-08-10 01:35:53
   period_id: 
   category_id: "0"
   source_date: ""
@@ -8714,7 +8714,7 @@ items_379:
   collection_id: "12"
   pages: "9"
   format_id: 
-  sort_date: "1700-09-28"
+  sort_date: "1950-09-28"
   circa: "0"
   dimensions: ""
   notes: ""
@@ -8722,7 +8722,7 @@ items_379:
   bound: "0"
   publish: "1"
   created_at: 
-  updated_at: 2010-07-01 19:00:13
+  updated_at: 2010-08-06 03:43:53
   period_id: 
   category_id: "0"
   source_date: 6 Mihr 1370 SH
@@ -8967,7 +8967,7 @@ items_390:
   collection_id: "12"
   pages: "3"
   format_id: 
-  sort_date: "1700-06-30"
+  sort_date: 
   circa: "0"
   dimensions: ""
   notes: ""

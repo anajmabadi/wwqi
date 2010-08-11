@@ -26,12 +26,40 @@ class Item < ActiveRecord::Base
   # pagination code
   cattr_reader :per_page
   @@per_page = 25
+  attr_accessor :popular_items
+  attr_accessor :recently_viewed
+  attr_accessor :popular_refreshed_at
+  attr_accessor :recently_refreshed_at
   
   # validations
   validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
   validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
   validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
 
+  def self.most_popular(limit=8)
+    if @popular_items.nil? || @popular_refreshed_at > 1.day.ago
+      @popular_ids = Activity.find(:all, :group => 'item_id', :select => 'count(*) count, item_id', :order => 'count', :limit => limit).map { |ids| ids.item_id }
+      @popular_items = Item.find(@popular_ids)
+    end
+    if @popular_items.size < limit
+      @popular_items += Item.find(:all, :limit => (limit - @popular_items.size))
+    end
+    @popular_refreshed_at = DateTime.now  
+    return @popular_items
+  end
+  
+  def self.recently_viewed(limit=8)
+    if @recently_viewed_items.nil? || @recently_refreshed_at > 1.minute.ago
+      @recently_viewed_ids = Activity.find(:all, :conditions => 'item_ID IS NOT NULL', :select => 'DISTINCT item_id', :order => 'created_at DESC', :limit => limit).map { |ids| ids.item_id }
+      @recently_viewed_items = Item.find(@recently_viewed_ids)
+    end
+    if @recently_viewed_items.size < limit
+      @recently_viewed_items += Item.find(:all, :limit => (limit - @recently_viewed_items.size))
+    end  
+    @recently_refreshed_at = DateTime.now
+    return @recently_viewed_items
+  end
+  
   # a convenience function for matching up item types with hard coded icon classes
   def icon_class
     return case category.parent_id

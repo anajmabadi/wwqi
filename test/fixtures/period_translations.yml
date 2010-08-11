@@ -5,7 +5,7 @@ period_translations_001:
   locale: en
   description: ""
   title: Aqa Muhammad Khan Period
-  caption: ""
+  caption: Aqa Muhammad Khan
   created_at: 2010-03-31 04:31:48
   updated_at: 2010-03-31 04:31:48
 period_translations_002: 
@@ -14,7 +14,7 @@ period_translations_002:
   locale: en
   description: ""
   title: Fath 'Ali Shah Period
-  caption: ""
+  caption: Fath 'Ali Shah
   created_at: 2010-03-31 04:37:23
   updated_at: 2010-03-31 04:37:23
 period_translations_003: 
@@ -22,8 +22,8 @@ period_translations_003:
   period_id: "3"
   locale: en
   description: ""
-  title: Pre-Qajar Period Period
-  caption: ""
+  title: Pre-Qajar Period
+  caption: "Pre-Qajar "
   created_at: 2010-03-31 04:38:11
   updated_at: 2010-03-31 04:38:11
 period_translations_004: 
@@ -32,7 +32,7 @@ period_translations_004:
   locale: en
   description: ""
   title: Muhammad Shah Period
-  caption: ""
+  caption: Muhammad Shah
   created_at: 2010-03-31 04:39:18
   updated_at: 2010-03-31 04:39:18
 period_translations_005: 
@@ -41,7 +41,7 @@ period_translations_005:
   locale: en
   description: ""
   title: Nasir al-Din Shah Period
-  caption: ""
+  caption: Nasir al-Din Shah
   created_at: 2010-03-31 04:39:46
   updated_at: 2010-03-31 04:39:46
 period_translations_006: 
@@ -50,7 +50,7 @@ period_translations_006:
   locale: en
   description: ""
   title: Muzaffar al-Din Shah Period
-  caption: ""
+  caption: Muzaffar
   created_at: 2010-03-31 04:40:15
   updated_at: 2010-03-31 04:40:15
 period_translations_007: 
@@ -59,7 +59,7 @@ period_translations_007:
   locale: en
   description: ""
   title: Muhammad 'Ali Shah Period
-  caption: ""
+  caption: "Muhammad \xE2\x80\x98Ali Shah"
   created_at: 2010-03-31 04:40:54
   updated_at: 2010-03-31 04:40:54
 period_translations_008: 
@@ -68,7 +68,7 @@ period_translations_008:
   locale: en
   description: ""
   title: Ahmad Shah Period
-  caption: ""
+  caption: Ahmed Shah
   created_at: 2010-03-31 04:41:20
   updated_at: 2010-03-31 04:41:20
 period_translations_009: 
@@ -77,7 +77,7 @@ period_translations_009:
   locale: en
   description: ""
   title: Early Pahlavi Period
-  caption: ""
+  caption: Pahlavi
   created_at: 2010-03-31 04:41:50
   updated_at: 2010-03-31 04:41:50
 period_translations_010: 
@@ -86,7 +86,7 @@ period_translations_010:
   locale: fa
   description: ""
   title: "\xD8\xA7\xD9\x82\xD8\xA7 \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xAE\xD8\xA7\xD9\x86"
-  caption: ""
+  caption: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xAE\xD8\xA7\xD9\x86"
   created_at: 2010-03-31 04:43:03
   updated_at: 2010-03-31 04:43:03
 period_translations_011: 
@@ -95,7 +95,7 @@ period_translations_011:
   locale: fa
   description: ""
   title: "\xD9\x81\xD8\xAA\xD8\xAD \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD9\x81\xD8\xAA\xD8\xAD \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 2010-03-31 04:43:57
   updated_at: 2010-03-31 04:43:57
 period_translations_012: 
@@ -104,7 +104,7 @@ period_translations_012:
   locale: fa
   description: ""
   title: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 2010-03-31 04:44:24
   updated_at: 2010-03-31 04:44:24
 period_translations_013: 
@@ -113,7 +113,7 @@ period_translations_013:
   locale: fa
   description: ""
   title: "\xD9\x86\xD8\xA7\xD8\xB5\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x8A\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD9\x86\xD8\xA7\xD8\xB5\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xDB\x8C\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 2010-03-31 04:44:44
   updated_at: 2010-03-31 04:44:44
 period_translations_014: 
@@ -122,7 +122,7 @@ period_translations_014:
   locale: fa
   description: ""
   title: "\xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x8A\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xDB\x8C\xD9\x86"
   created_at: 2010-03-31 04:45:09
   updated_at: 2010-03-31 04:45:09
 period_translations_015: 
@@ -131,7 +131,7 @@ period_translations_015:
   locale: fa
   description: ""
   title: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB9\xD9\x84\xDB\x8C \xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 2010-03-31 04:45:28
   updated_at: 2010-03-31 04:45:28
 period_translations_016: 
@@ -140,7 +140,7 @@ period_translations_016:
   locale: fa
   description: ""
   title: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
-  caption: ""
+  caption: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 2010-03-31 04:46:01
   updated_at: 2010-03-31 04:46:01
 period_translations_017: 
@@ -149,7 +149,7 @@ period_translations_017:
   locale: fa
   description: ""
   title: "\xD8\xAF\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86 \xD9\xBE\xD9\x87\xD9\x84\xD9\x88\xDB\x8C"
-  caption: ""
+  caption: " \xD9\xBE\xD9\x87\xD9\x84\xD9\x88\xDB\x8C"
   created_at: 2010-03-31 04:46:19
   updated_at: 2010-03-31 04:46:19
 period_translations_018: 
@@ -158,6 +158,6 @@ period_translations_018:
   locale: fa
   description: ""
   title: "\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x82\xD8\xA8\xD9\x84 \xD8\xA7\xD8\xB2 \xD9\x82\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1"
-  caption: ""
+  caption: "\xD8\xAF\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x82\xD8\xA8\xD9\x84 \xD8\xA7\xD8\xB2 \xD9\x82\xD8\xA7\xD8\xAC\xD8\xA7"
   created_at: 2010-03-31 04:46:40
   updated_at: 2010-03-31 04:46:40

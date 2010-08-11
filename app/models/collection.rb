@@ -14,6 +14,14 @@ class Collection < ActiveRecord::Base
       find(:first, :conditions => "publish = 1 AND collection_translations.locale = '#{I18n.locale}'", :offset =>rand(c))
     end
   end
+  
+  def self.random_set(limit=3)
+    collection_set = []
+    (1..limit).each do
+      collection_set << self.random
+    end
+    return collection_set
+  end  
 
   def item_count
     items.size

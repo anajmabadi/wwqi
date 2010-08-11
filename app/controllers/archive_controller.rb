@@ -7,7 +7,8 @@ class ArchiveController < ApplicationController
   def index
     @subject_types = SubjectType.find(:all, :include => :subjects, :conditions => ['subject_type_translations.locale = ?', I18n.locale.to_s])
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
-    @random_collection = Collection.random
+    @random_collection_set = Collection.random_set
+    @recently_viewed_items = Item.recently_viewed(8)
   end  
 
   def browser

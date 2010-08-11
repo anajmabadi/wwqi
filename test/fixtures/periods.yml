@@ -58,7 +58,7 @@ periods_006:
   updated_at: 2010-03-31 04:45:09
   start_at: 1896-01-01 00:00:00
   end_at: 1906-12-31 00:00:00
-  items_count: "0"
+  items_count: "2"
 periods_007: 
   id: "7"
   position: "7"
@@ -68,7 +68,7 @@ periods_007:
   updated_at: 2010-03-31 04:45:28
   start_at: 1907-01-01 00:00:00
   end_at: 1908-12-31 00:00:00
-  items_count: "0"
+  items_count: "3"
 periods_008: 
   id: "8"
   position: "8"
@@ -78,7 +78,7 @@ periods_008:
   updated_at: 2010-07-30 19:56:05
   start_at: 1909-01-01 00:00:00
   end_at: 1924-12-31 00:00:00
-  items_count: "0"
+  items_count: "18"
 periods_009: 
   id: "9"
   position: "9"
@@ -88,4 +88,4 @@ periods_009:
   updated_at: 2010-03-31 04:46:19
   start_at: 1925-01-01 00:00:00
   end_at: 1935-12-31 00:00:00
-  items_count: "0"
+  items_count: "2"

@@ -13,6 +13,11 @@ Given /^I have items$/ do
   Fixtures.create_fixtures("test/fixtures", "item_translations")
 end
 
+Given /^I have collections$/ do
+  Fixtures.create_fixtures("test/fixtures", "collections")
+  Fixtures.create_fixtures("test/fixtures", "collection_translations")
+end
+
 Given /^I have these periods:$/ do |table|
   # table is a Cucumber::Ast::Table
   @periods = table.hashes
@@ -35,7 +40,7 @@ end
 
 Then /^I should have valid period archive links$/ do
   @periods.each do |period|
-    click_link(period[:name] + ' (' + period[:items_count] + ')')
+    click_link(period[:name])
     page_name = "/archive/browser/period_filter/#{period[:id]}"
     current_path = URI.parse(current_url).path
     if current_path.respond_to? :should
@@ -44,6 +49,5 @@ Then /^I should have valid period archive links$/ do
       assert_equal page_name, current_path
     end
     click_link("archive")
-    
   end
 end

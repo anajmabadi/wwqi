@@ -2486,8 +2486,8 @@ translations_276:
 translations_277: 
   id: "290"
   locale: en
-  key: search
-  value: Search
+  key: search_prompt
+  value: Enter a keyword
   interpolations: ""
   is_proc: "0"
   created_at: 2010-08-02 17:47:42
@@ -2495,9 +2495,243 @@ translations_277:
 translations_278: 
   id: "291"
   locale: fa
-  key: search
-  value: "\xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88 \xDA\xA9\xD8\xB1\xD8\xAF\xD9\x86"
+  key: search_prompt
+  value: "\xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD9\x85\xD9\x88\xD8\xB6\xD9\x88\xD8\xB9\xDB\x8C"
   interpolations: ""
   is_proc: "0"
   created_at: 2010-08-02 17:48:16
   updated_at: 2010-08-02 17:48:16
+translations_279: 
+  id: "292"
+  locale: en
+  key: browse_the_archive
+  value: " &raquo; Browse Archive"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:54:16
+  updated_at: 2010-08-05 12:54:23
+translations_280: 
+  id: "293"
+  locale: fa
+  key: browse_the_archive
+  value: "\xD8\xB3\xDB\x8C\xD8\xB1 \xD8\xAF\xD8\xB1 \xD8\xA2\xD8\xB1\xD8\xB4\xDB\x8C\xD9\x88"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:55:45
+  updated_at: 2010-08-05 12:55:48
+translations_281: 
+  id: "294"
+  locale: en
+  key: genres
+  value: Genres
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:57:47
+  updated_at: 2010-08-05 12:57:50
+translations_282: 
+  id: "295"
+  locale: fa
+  key: genres
+  value: "\xD9\x86\xD9\x88\xD8\xB9"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:58:26
+  updated_at: 2010-08-05 12:58:29
+translations_283: 
+  id: "296"
+  locale: en
+  key: indexes
+  value: Indexes
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:59:04
+  updated_at: 2010-08-05 12:59:06
+translations_284: 
+  id: "297"
+  locale: fa
+  key: indexes
+  value: "\xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA \xD9\x87\xD8\xA7"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:59:30
+  updated_at: 2010-08-05 12:59:33
+translations_285: 
+  id: "298"
+  locale: en
+  key: recently_viewed_items
+  value: Recently Viewed Items
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 12:59:59
+  updated_at: 2010-08-05 13:00:01
+translations_286: 
+  id: "299"
+  locale: fa
+  key: recently_viewed_items
+  value: "\xD8\xA2\xD8\xAE\xD8\xB1\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85 \xD8\xAF\xDB\x8C\xD8\xAF\xD9\x87 \xD8\xB4\xD8\xAF\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:00:25
+  updated_at: 2010-08-05 13:00:28
+translations_287: 
+  id: "300"
+  locale: en
+  key: quick_peek
+  value: Quick Peek
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:01:31
+  updated_at: 2010-08-05 13:01:33
+translations_288: 
+  id: "301"
+  locale: fa
+  key: quick_peek
+  value: "\xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD8\xB3\xD8\xB1\xDB\x8C\xD8\xB9"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:01:57
+  updated_at: 2010-08-05 13:01:59
+translations_289: 
+  id: "302"
+  locale: en
+  key: recent_additions
+  value: "&raquo; Recent Additions"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:02:27
+  updated_at: 2010-08-05 13:02:30
+translations_290: 
+  id: "303"
+  locale: fa
+  key: recent_additions
+  value: "\xC2\xBB\xD8\xAA\xD8\xA7\xD8\xB2\xD9\x87 \xD8\xAA\xD8\xB1\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:02:53
+  updated_at: 2010-08-05 13:02:56
+translations_291: 
+  id: "304"
+  locale: en
+  key: most_popular_items
+  value: "&raquo; Most Popular"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:04:10
+  updated_at: 2010-08-05 13:04:12
+translations_292: 
+  id: "305"
+  locale: fa
+  key: most_popular_items
+  value: "\xC2\xBB\xD9\xBE\xD8\xB1\xD8\xA8\xDB\x8C\xD9\x86\xD9\x86\xD8\xAF\xD9\x87 \xD8\xAA\xD8\xB1\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:04:43
+  updated_at: 2010-08-05 13:04:48
+translations_293: 
+  id: "306"
+  locale: en
+  key: collection_highlights
+  value: "&raquo; Staff Favorites"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:05:20
+  updated_at: 2010-08-05 13:05:23
+translations_294: 
+  id: "307"
+  locale: fa
+  key: collection_highlights
+  value: "\xC2\xBB\xDA\xAF\xD8\xB2\xDB\x8C\xD9\x86\xD9\x87 \xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB2 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:06:02
+  updated_at: 2010-08-05 13:06:04
+translations_295: 
+  id: "308"
+  locale: en
+  key: time_periods
+  value: Time Periods
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:06:44
+  updated_at: 2010-08-05 13:06:48
+translations_296: 
+  id: "309"
+  locale: fa
+  key: time_periods
+  value: "\xD8\xAF\xD9\x88\xD8\xB1\xD9\x87 \xD9\x87\xD8\xA7\xDB\x8C \xD8\xB2\xD9\x85\xD8\xA7\xD9\x86\xDB\x8C"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:07:24
+  updated_at: 2010-08-05 13:07:27
+translations_297: 
+  id: "310"
+  locale: en
+  key: see_all_collections
+  value: See All Collections
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:08:33
+  updated_at: 2010-08-05 13:08:35
+translations_298: 
+  id: "311"
+  locale: fa
+  key: see_all_collections
+  value: " \xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA \xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD9\x87\xD8\xA7"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:09:10
+  updated_at: 2010-08-05 13:09:13
+translations_299: 
+  id: "312"
+  locale: en
+  key: people_index
+  value: "&raquo; People Index"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:10:19
+  updated_at: 2010-08-05 13:10:22
+translations_300: 
+  id: "313"
+  locale: fa
+  key: people_index
+  value: "\xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87\xD8\xA7"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:10:53
+  updated_at: 2010-08-05 13:10:57
+translations_301: 
+  id: "314"
+  locale: en
+  key: subject_index
+  value: "&raquo; Subject Index"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:11:20
+  updated_at: 2010-08-05 13:11:23
+translations_302: 
+  id: "315"
+  locale: fa
+  key: subject_index
+  value: "\xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA \xD9\x85\xD9\x88\xD8\xB6\xD9\x88\xD8\xB9\xDB\x8C"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:11:47
+  updated_at: 2010-08-05 13:11:50
+translations_303: 
+  id: "316"
+  locale: en
+  key: place_index
+  value: "&raquo; Place Index"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:12:15
+  updated_at: 2010-08-05 13:12:18
+translations_304: 
+  id: "317"
+  locale: fa
+  key: place_index
+  value: "\xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA \xD8\xA7\xD9\x85\xD8\xA7\xDA\xA9\xD9\x86"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-05 13:12:46
+  updated_at: 2010-08-05 13:12:49

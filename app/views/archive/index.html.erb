@@ -1,10 +1,11 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
 <% @extra_head_content = index_header_content -%>
+
 <div id="featured" style="height:auto">
        	<div id="head"> 
            	<h2><%= t(:genres) %></h2>
-           </div>
+        </div>
        	<div id="mediaTypes" class="clearfix">
 			    <% first_column = true %>
 					<% @subject_types.each do |subject_type| %>
@@ -19,96 +20,90 @@
 										<% end -%>
 									</ul>	
 								<% end -%>	
-							</div>
+
 						<% end %>
+													</div>
 					<% end -%>	
        </div><!-- end featured -->
-       <div id="keywordSearch">
-           <div class="content clearfix">
+			 <div id="keywordSearch">
+           <div class="head clearfix">
            	<div id="big_search" class="clearfix">
                    <form action="/archive/browser" class="searchform" method="get">
                    <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;" 
 													onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" 
 								      		onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-                   <button type="submit" ></button>
+                   <button type="submit" id="search"></button>
                    </form>
            	</div>
-               <div style="clear:left" class="bigRed"><%= link_to raw(t(:browse_the_archive)), :action => 'browser' %></div>
-           </div>   
+					</div>
+					<div class="content clearfix">
+              <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
+              <a href="#">&raquo; Advanced Search (coming soon)</a>
+          </div>
        </div>
        
    			<div class="boxed clearfix" style="margin-top:15px;">
                <div class="section clearfix" style="padding:0 10px; width:280px">
                    <div class="collectionsBox clearfix">
                    <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
-                     <a href="#"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
-                     <ul>
-	
-                       <li>&raquo; <a style="color:#990000" href="#"><%= t(:see_all_collections) %></a></li>
-                   	<li><strong><%= @random_collection.name %></strong></li>
-                       <li>&raquo; <%= @random_collection.items.count.to_s %> items</li>
-                       <li>&raquo; Last updated: <%= @random_collection.last_update %></li>
-                   </ul>
-                   </div>
+									 <a class="allCollections" href="/archive/browser/collections_index"><%= t(:see_all_collections) %></a>
+									 <div class="featuredCollection clearfix">
+	                   <h6>Featured Collections</h6>
+	                   <a class="prev" href="#">prev</a><a class="next" href="#">next</a>
+	                   <div class="collectionContainerWrapper">
+	                     <div class="collectionContainer clearfix">
+											 <% @random_collection_set.each do |collection| -%>
+	                         <div class="collection">
+                             <a href="#"><img alt="Sample thumbnail for collection." src="<%= collection.items[0].thumbnail_url %>"/></a>
+                             <ul>
+                               <li><strong><%= collection.name %></strong></li>
+                               <li>&raquo; <%= collection.items.count.to_s if collection %> items</li> 
+                             </ul>
+	                         </div>
+												<% end -%>
+	                     </div>
+	                   </div>
+	                </div>
                </div>
-							<div class="section" style="width:100px">
-                   <h4><%= t(:indexes).capitalize %></h4>
-                   <ul>
-                       <li><a href="#"><%= raw t(:people_index) %></a></li>
-                       <li><a href="#"><%= raw t(:subject_index) %></a></li>
-                       <li><a href="#"><%= raw t(:place_index) %></a></li>
-                   </ul>
-               </div>
+						</div>
+						<div class="section" style="width:100px">
+							 <h4><%= t(:indexes).capitalize %></h4>
+							 <ul>
+							     <li><a href="#"><%= raw t(:people_index) %></a></li>
+							     <li><a href="#"><%= raw t(:subject_index) %></a></li>
+							     <li><a href="#"><%= raw t(:place_index) %></a></li>
+							 </ul>
+           </div>
            <div class="section" style="width:220px">
            	<h4><%= t(:recently_viewed_items) %></h4>
                <div class="items">
+									<% @recently_viewed_items.each do |item| -%>
                    <div class="item">
-                       <a href="/collections/detail/1190" title="A tragic story [draft]"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
+                       <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), :action => :detail, :id => item, :title => item.title ) %>
                    </div>
-                   <div class="item">
-                       <a href="/collections/detail/243" title="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah"><img alt="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah" src="http://library.qajarwomen.net/thumbs/it_243.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/1190" title="A tragic story [draft]"><img alt="A tragic story [draft]" src="http://library.qajarwomen.net/thumbs/it_1190.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/243" title="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah"><img alt="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah" src="http://library.qajarwomen.net/thumbs/it_243.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
-                   </div>
-                   <div class="item">
-                       <a href="/collections/detail/145" title="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909"><img alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" src="http://library.qajarwomen.net/thumbs/it_145.jpg"/></a>
-                   </div>
+									<% end %>
                 </div>
            </div>
            <div class="section" style="width:150px">
-                   <h4><%= t(:quick_peek) %></h4>
-                   <ul>
-                           <li><a href="#"><%= raw t(:recent_additions) %></a></li>
-                           <li><a href="#"><%= raw t(:most_popular_items) %></a></li>
-                           <li><a href="#"><%= raw t(:collection_highlights) %></a></li>
-                    </ul>
+	           <h4><%= t(:quick_peek) %></h4>
+	           <ul>
+	                   <li><a href="#"><%= raw t(:recent_additions) %></a></li>
+	                   <li><a href="#"><%= raw t(:most_popular_items) %></a></li>
+	                   <li><a href="#"><%= raw t(:collection_highlights) %></a></li>
+	            </ul>
            </div>
-           <div class="section" style="width:920px; margin:0 0 0 5px; padding:0; background:#fff; min-height:inherit">
-           	
+           <div class="section time" >
+						<h4><%= t(:time_periods) %></h4>
            	<div id="timeLine">
-               <h4 style="background:#ddd; c margin:0; padding:5px 0 5px 5px;"><%= t(:time_periods) %></h4>
-               	<a class="first" href="#" title="Pre-Qajar Period (12 items)">Pre-Qajar Period (12)</a>
-                   <a class="second" href="#" title="Aqa Muhammad Khan Period (12 items)">Aqa Muhammad Khan Period (12)</a>
-                   <a class="third" href="#" title="Fath ‘Ali Shah Period (12 items)">Fath ‘Ali Shah Period (12)</a>
-                   <a class="fourth" href="#" title="Muhammad Shah Period (12 items)">Muhammad Shah Period (15)</a>
-                   <a class="fifth" href="#" title="Nasir al-Din Shah Period (12 items)">Nasir al-Din Shah Period (2)</a>
-                   <a class="sixth" href="#" title="Muzaffar al-Din Shah Period (12 items)">Muzaffar al-Din Shah Period (110)</a>
-                   <a class="seventh" href="#" title="Muhammad ‘Ali Shah Period (12 items)">Muhammad ‘Ali Shah Period (8)</a>
-                   <a class="eighth" href="#" title="Ahmad Shah Period (12 items)">Ahmad Shah Period (9)</a>
-                   <a class="ninth" href="#" title="Early Pahlavi Period (12 items)">Early Pahlavi Period (21)</a>
+               	<a class="first" href="/archive/browser/period_filter/<%= @periods[0].id %>" title="<%= @periods[0].title + ' (' + @periods[0].items_count.to_s + ')' %>"><%= @periods[0].caption %></a>
+                <a class="second" href="/archive/browser/period_filter/<%= @periods[1].id %>" title="<%= @periods[1].title + ' (' + @periods[1].items_count.to_s + ')' %>"><span><%= @periods[1].caption %></span></a>
+                <a class="third" href="/archive/browser/period_filter/<%= @periods[2].id %>" title="<%= @periods[2].title + ' (' + @periods[2].items_count.to_s + ')' %>"><%= @periods[2].caption %></a>
+                <a class="fourth" href="/archive/browser/period_filter/<%= @periods[3].id %>" title="<%= @periods[3].title + ' (' + @periods[3].items_count.to_s + ')' %>"><span><%= @periods[3].caption %></span></a>
+                <a class="fifth" href="/archive/browser/period_filter/<%= @periods[4].id %>" title="<%= @periods[4].title + ' (' + @periods[4].items_count.to_s + ')' %>"><%= @periods[4].caption %></a>
+                <a class="sixth" href="/archive/browser/period_filter/<%= @periods[5].id %>" title="<%= @periods[5].title + ' (' + @periods[5].items_count.to_s + ')' %>"><%= @periods[5].caption %></a>
+                <a class="seventh" href="/archive/browser/period_filter/<%= @periods[6].id %>" title="<%= @periods[6].title + ' (' + @periods[6].items_count.to_s + ')' %>"><span style="left:-50px"><%= @periods[6].caption %></span></a>
+                <a class="eighth" href="/archive/browser/period_filter/<%= @periods[7].id %>" title="<%= @periods[7].title + ' (' + @periods[7].items_count.to_s + ')' %>"><%= @periods[7].caption %></a>
+                <a class="ninth" href="/archive/browser/period_filter/<%= @periods[8].id %>" title="<%= @periods[8].title + ' (' + @periods[8].items_count.to_s + ')' %>"><%= @periods[8].caption %></a>
                </div>
            </div>
            

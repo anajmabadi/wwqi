@@ -9,7 +9,37 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100730193404) do
+ActiveRecord::Schema.define(:version => 20100810220042) do
+
+  create_table "activities", :force => true do |t|
+    t.string   "browser",                            :null => false
+    t.string   "session_id",                         :null => false
+    t.string   "ip_address",                         :null => false
+    t.integer  "user_id"
+    t.string   "action"
+    t.string   "params"
+    t.integer  "collection_id"
+    t.integer  "period_id"
+    t.integer  "item_id"
+    t.integer  "page_id"
+    t.integer  "person_id"
+    t.integer  "subject_id"
+    t.integer  "subject_type_id"
+    t.integer  "place_id"
+    t.boolean  "success",         :default => false, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "activities", ["collection_id"], :name => "index_activities_on_collection_id"
+  add_index "activities", ["item_id"], :name => "index_activities_on_item_id"
+  add_index "activities", ["page_id"], :name => "index_activities_on_page_id"
+  add_index "activities", ["period_id"], :name => "index_activities_on_period_id"
+  add_index "activities", ["person_id"], :name => "index_activities_on_person_id"
+  add_index "activities", ["place_id"], :name => "index_activities_on_place_id"
+  add_index "activities", ["subject_id"], :name => "index_activities_on_subject_id"
+  add_index "activities", ["subject_type_id"], :name => "index_activities_on_subject_type_id"
+  add_index "activities", ["user_id"], :name => "index_activities_on_user_id"
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id"
