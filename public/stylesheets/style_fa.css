@@ -243,7 +243,7 @@ margin-top:5px;
 	}
 	#big_search .searchform button{background: url(/images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
 #big_search .searchform button:hover {
-	background: url(/images/btn_big_search.png) no-repeat 0 -30px;
+	background: url(/images/btn_big_search.png) no-repeat 0 -34px;
 	}
 
 
@@ -294,11 +294,11 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	color:#333;
 }
 
-#browser #head, .boxed .head{
-	background:url(/images/bg_browser_head.png) top left no-repeat;
-	height:30px;
-	padding-top:12px;
-}
+	#browser #head, .boxed .head{
+		background:url(/images/bg_browser_head.png) top left no-repeat;
+		height:30px;
+		padding-top:12px;
+	}
 
 #browser h2, .boxed h2{
 	padding:0 10px 0 0;
@@ -1250,8 +1250,11 @@ div.field {
 	width:250px;
 	float:right;
 	margin:0;
-	padding:2px 00 5px ;
+	padding:2px 5px 0 5px ;
 }
+
+
+
 
 
 
