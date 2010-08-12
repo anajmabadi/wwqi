@@ -27,6 +27,7 @@ class ArchiveController < ApplicationController
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
     @subject_type_filter = params[:subject_type_filter]
+    @place_filter = params[:place_filter]
     @keyword_filter = params[:keyword_filter]
     @most_popular_filter = params[:most_popular_filter]
     @recent_additions_filter = params[:recent_additions_filter]
@@ -51,11 +52,12 @@ class ArchiveController < ApplicationController
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
     @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
     @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
+    @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
-      @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
+    @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
      
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -145,6 +147,21 @@ class ArchiveController < ApplicationController
       additional_query += 'collection_id = ' + @collection.id.to_s
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+  
+  def build_place_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @place = Place.find_by_id(filter_value.to_i)
+      additional_query += 'items.place_id = ' + @place.id.to_s
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for place id #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
