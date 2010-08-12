@@ -8,7 +8,7 @@ gem "rack"
 ## Bundle edge rails:
 # gem "rails", :git => "git://github.com/rails/rails.git"
 
-gem "ruby-mysql"
+gem "mysql"
 
 gem "will_paginate", ">=3.0.pre"
 

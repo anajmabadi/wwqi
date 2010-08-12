@@ -1,6 +1,7 @@
 Qajar::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
+ require 'mysql_utf8'
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
   config.cache_classes = true
