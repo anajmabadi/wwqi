@@ -18,11 +18,11 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: qajar_production
+  database: qajar_development
   pool: 5
   username: qajar
   password: Q@jar!
-  host: localhost
+  socket: /tmp/mysql.sock
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -46,7 +46,6 @@ production:
   username: qajar
   password: Q@jar!
   host: localhost
-#  socket:  /var/lib/mysql/mysql.sock
 
 
 cucumber:
