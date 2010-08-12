@@ -45,7 +45,7 @@ production:
   pool: 5
   username: qajar
   password: Q@jar!
-  host: localhost
+  socket:  /var/lib/mysql/mysql.sock
 
 
 cucumber:
