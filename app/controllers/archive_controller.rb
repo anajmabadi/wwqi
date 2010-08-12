@@ -9,6 +9,10 @@ class ArchiveController < ApplicationController
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
     @random_collection_set = Collection.random_set
     @recently_viewed_items = Item.recently_viewed(8)
+    
+    #cache the current search set in a session variable
+    session[:archive_url] = request.fullpath
+    session[:current_items] = nil
   end  
 
   def browser
@@ -78,37 +82,36 @@ class ArchiveController < ApplicationController
   end
 
   def detail
+    Rails.logger.debug '------detail function start'
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
 
     begin
       @item = Item.find_by_id(params[:id])
-      raise RangeError if @item.nil?
-      # we need to keep the current search items here
 
-      #get the latest result set
+      #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')
       else
-        @items = Item.find(:all, :conditions => "publish=1", :order => "item_translations.title" )
-        # check if the item is part of the set
-        raise RangeError unless @items.include?(@item)
+        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
+        @order = build_order_query(@sort_mode)
+        @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
+      end
+       
+      respond_to do |format|
+        format.html
+        format.xml  { render :xml => @item }
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
       redirect_to @return_url
     end
 
-    respond_to do |format|
-      format.html
-      format.xml  { render :xml => @item }
-    end
   end
 
   # zoomify requires a custom XML file for its gallery viewer
   def slides
     @id = params[:id]
     @slides = Image.find(:all, :conditions => ['publish=1 && item_id = ?', @id], :order => :position)
-    puts @slides.size unless @slides.nil?
     unless @id.nil? || @slides.nil? || @slides.empty?
       respond_to do |format|
         format.xml

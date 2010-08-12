@@ -79,7 +79,7 @@
                <div class="items">
 									<% @recently_viewed_items.each do |item| -%>
                    <div class="item">
-                       <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), :action => :detail, :id => item, :title => item.title ) %>
+                       <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), archive_detail_path(:id => item.id), :title => item.title ) %>
                    </div>
 									<% end %>
                 </div>

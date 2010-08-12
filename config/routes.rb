@@ -46,9 +46,11 @@ Qajar::Application.routes.draw do |map|
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
+  
+  match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
-  match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
+
   map.archive_detail_slides_xml 'archive/detail/:id/slides.:format', :controller => 'archive', :action => 'slides'
 
   
