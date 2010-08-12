@@ -2,7 +2,7 @@
 # and open the template in the editor.
 
   # application constants
-  LIBRARY_URL = "http://library.qajarwomen.net/"
+  LIBRARY_URL = "http://library.qajarwomen.org/"
   PREVIEWS_DIR = "previews/"
   TIFS_DIR = "tifs/"
   THUMBNAILS_DIR = "thumbs/"
