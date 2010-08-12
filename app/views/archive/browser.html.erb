@@ -5,8 +5,10 @@
 <div id="browser" class="clearfix">
   <div id="head">
     <div style="float:left" class="search">
-      <form action="" class="searchform" method="get">
-          <input type="text" value="keyword search" name="s" class="swap_value" id="s"/>
+      <form action="/archive/browser/" class="searchform" method="get">
+          <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;" 
+									onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" 
+				      		onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
           <button type="submit"></button>
       </form>
   	</div>
@@ -51,34 +53,12 @@
         </select>
       <% end %>
     </div>
-    <div class="column">
-      <h4><%= t(:name) %></h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'person_form') do -%>
-        <select id="nameFilter" name="person_filter"  onChange="document.forms['person_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @person_filter.blank? || @person_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @people.each do |person| -%>
-            <% if person.major %>
-              <option value="<%= person.id %>"<%= raw ' selected="selected"' if @person_filter==person.id.to_s -%>><%= person.name %></option>
-            <% end -%>
-          <% end -%>
-          <option value="more"><%= t(:more_names) %></option>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:subject) %></h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'subject_form') do -%>
-        <select id="subjectFilter" name="subject_filter" onChange="document.forms['subject_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @subject_filter.blank? || @subject_filter == 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @subjects.each do |subject| -%>
-            <% if subject.major %>
-              <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @subject_filter==subject.id.to_s -%>><%= subject.name %></option>
-            <% end -%>
-          <% end -%>
-          <option value="more"><%= t(:more_subjects) %></option>
-        </select>
-      <% end -%>
-    </div>
+    <h4><%= t(:indexes) %></h4>
+    <ul id="indexLinks" class="types sortnav">
+     	<li ><a class="module-link" id="peopleIndex" href="#"><%= t(:person) %></a></li>
+      <li ><a class="module-link" id="subjectsIndex" href="#"><%= t(:subject) %></a></li>
+      <li ><a class="module-link" id="placesIndex" href="#"><%= t(:place) %></a></li>
+    </ul>
   </div>
   <div id="browserMessage">
     <p>
