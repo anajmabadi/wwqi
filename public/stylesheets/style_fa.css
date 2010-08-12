@@ -241,7 +241,7 @@ margin-top:5px;
 .searchform button:hover {
 	background: url(/images/searchbutton.gif) no-repeat 0 -23px;
 	}
-	#big_search .searchform button{background: url(images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
+	#big_search .searchform button{background: url(/images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
 #big_search .searchform button:hover {
 	background: url(/images/btn_big_search.png) no-repeat 0 -30px;
 	}
