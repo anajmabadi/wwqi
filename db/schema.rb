@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100811193013) do
+ActiveRecord::Schema.define(:version => 20100812104421) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -513,14 +513,15 @@ ActiveRecord::Schema.define(:version => 20100811193013) do
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
-    t.boolean  "major",      :default => false
+    t.boolean  "major",       :default => false
     t.date     "dob"
     t.date     "dod"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
-    t.boolean  "publish",    :default => true
+    t.boolean  "publish",     :default => true
+    t.integer  "items_count", :default => 0,     :null => false
   end
 
   add_index "people", ["publish"], :name => "index_people_on_publish"
@@ -587,6 +588,7 @@ ActiveRecord::Schema.define(:version => 20100811193013) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "items_count", :default => 0, :null => false
   end
 
   add_index "places", ["publish"], :name => "index_places_on_publish"
@@ -640,6 +642,7 @@ ActiveRecord::Schema.define(:version => 20100811193013) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "subject_type_id", :default => 7,     :null => false
+    t.integer  "items_count",     :default => 0,     :null => false
   end
 
   add_index "subjects", ["major"], :name => "index_subjects_on_major"

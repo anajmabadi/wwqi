@@ -14,10 +14,11 @@ class ArchiveController < ApplicationController
   def browser
     logger.info 'browser'
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
-    @people = Person.find(:all, :conditions => 'publish=1', :order => 'person_translations.sort_name')
+    @people = Person.find(:all, :conditions => "items_count > 1 AND publish=1 AND person_translations.locale = '#{I18n.locale.to_s}'", :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
-    @subjects = Subject.find(:all, :conditions => "publish=1 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
+    @places = Place.find(:all, :conditions => "publish=1 AND items_count > 1 AND place_translations.locale = '#{I18n.locale.to_s}'")
+    @subjects = Subject.find(:all, :conditions => "publish=1 AND subject_type_id = 7 AND items_count > 0 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
 
     #grab filter categories
     @medium_filter = params[:medium_filter]
