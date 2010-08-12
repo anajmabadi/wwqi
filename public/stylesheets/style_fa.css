@@ -1372,4 +1372,4 @@ div.field {
 
 .browserBarIndex{float:right;}
 
-.browserBarIndex li{padding-right:0!important;}
+.browserBarIndex li{margin-right:-5px;}

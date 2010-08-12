@@ -1357,4 +1357,4 @@ div.field {
 
 
 .browserBarIndex{float:left;}
-.browserBarIndex li{padding-left:0!important;}
+.browserBarIndex li{margin-left:-5px;}
