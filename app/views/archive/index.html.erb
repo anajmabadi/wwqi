@@ -11,12 +11,12 @@
 					<% @subject_types.each do |subject_type| %>
 						<% unless subject_type.id > 6 %>
 						  <div class="column">	
-		            <a href="<%= "/archive/browser/subject_type_filter/#{subject_type.id}" %>"><img src="images/icon_big_subject_type_<%= subject_type.id.to_s %>.png" alt="subject_type.name" /><%= subject_type.name %> <% if subject_type.show_menu? -%><img src="images/downArrow.gif" /><% end -%></a>
+		            <%= link_to( image_tag("/images/icon_big_subject_type_#{subject_type.id.to_s}.png", :alt => "subject_type.name")+ ' ' + subject_type.name + (subject_type.show_menu? ? image_tag("/images/downArrow.gif") : ''), archive_browser_path(:subject_type_filter => subject_type.id)) %>
 								<% if subject_type.show_menu? %>
 									<ul style="<%= raw archive_column_style if first_column %>">
 										<% first_column = false -%>
 										<% subject_type.subjects.each do |subject| -%>
-		                 		<li><%= link_to subject.name, :action => :browser, :subject_filter => subject.id %></li>
+		                 		<li><%= link_to subject.name, archive_browser_path(:subject_filter => subject.id) %></li>
 										<% end -%>
 									</ul>	
 								<% end -%>	
@@ -46,7 +46,7 @@
                <div class="section clearfix" style="padding:0 10px; width:280px">
                    <div class="collectionsBox clearfix">
                    <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
-									 <a class="allCollections" href="/archive/browser/collections_index"><%= t(:see_all_collections) %></a>
+									 <%= link_to t(:see_all_collections), archive_browser_path, { :class => "allCollections", :enabled => false } %>
 									 <div class="featuredCollection clearfix">
 	                   <h6><%= t(:featured_collections) %></h6>
 	                   <a class="prev" href="#"><%= t(:previous) %></a><a class="next" href="#"><%= t(:next) %></a>
@@ -56,8 +56,8 @@
 	                         <div class="collection">
                              <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
                              <ul>
-                               <li><strong><%= link_to truncate(collection.name, :length => 30), :action => :browser, :collection_filter => collection %></strong></li>
-                               <li>&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), :action => :browser, :collection_filter => collection) %></li> 
+                               <li><strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong></li>
+                               <li>&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %></li> 
                              </ul>
 	                         </div>
 												<% end -%>
@@ -95,15 +95,15 @@
            <div class="section time" >
 						<h4><%= t(:time_periods) %></h4>
            	<div id="timeLine">
-               	<a class="first" href="/archive/browser/period_filter/<%= @periods[0].id %>" title="<%= @periods[0].title + ' (' + @periods[0].items_count.to_s + ')' %>"><%= @periods[0].caption %></a>
-                <a class="second" href="/archive/browser/period_filter/<%= @periods[1].id %>" title="<%= @periods[1].title + ' (' + @periods[1].items_count.to_s + ')' %>"><span><%= @periods[1].caption %></span></a>
-                <a class="third" href="/archive/browser/period_filter/<%= @periods[2].id %>" title="<%= @periods[2].title + ' (' + @periods[2].items_count.to_s + ')' %>"><%= @periods[2].caption %></a>
-                <a class="fourth" href="/archive/browser/period_filter/<%= @periods[3].id %>" title="<%= @periods[3].title + ' (' + @periods[3].items_count.to_s + ')' %>"><span><%= @periods[3].caption %></span></a>
-                <a class="fifth" href="/archive/browser/period_filter/<%= @periods[4].id %>" title="<%= @periods[4].title + ' (' + @periods[4].items_count.to_s + ')' %>"><%= @periods[4].caption %></a>
-                <a class="sixth" href="/archive/browser/period_filter/<%= @periods[5].id %>" title="<%= @periods[5].title + ' (' + @periods[5].items_count.to_s + ')' %>"><%= @periods[5].caption %></a>
-                <a class="seventh" href="/archive/browser/period_filter/<%= @periods[6].id %>" title="<%= @periods[6].title + ' (' + @periods[6].items_count.to_s + ')' %>"><span style="left:-50px"><%= @periods[6].caption %></span></a>
-                <a class="eighth" href="/archive/browser/period_filter/<%= @periods[7].id %>" title="<%= @periods[7].title + ' (' + @periods[7].items_count.to_s + ')' %>"><%= @periods[7].caption %></a>
-                <a class="ninth" href="/archive/browser/period_filter/<%= @periods[8].id %>" title="<%= @periods[8].title + ' (' + @periods[8].items_count.to_s + ')' %>"><%= @periods[8].caption %></a>
+								<%= link_to(@periods[0].caption, archive_browser_path(:period_filter => @periods[0].id), :title => @periods[0].title + ' (' + @periods[0].items_count.to_s + ')', :class => "first") %>
+								<%= link_to(raw("<span>#{@periods[1].caption}</span>"), archive_browser_path(:period_filter => @periods[1].id), :title => @periods[1].title + ' (' + @periods[1].items_count.to_s + ')', :class => "second") %>
+								<%= link_to(@periods[2].caption, archive_browser_path(:period_filter => @periods[2].id), :title => @periods[2].title + ' (' + @periods[2].items_count.to_s + ')', :class => "third") %>
+								<%= link_to(raw("<span>#{@periods[3].caption}</span>"), archive_browser_path(:period_filter => @periods[3].id), :title => @periods[3].title + ' (' + @periods[3].items_count.to_s + ')', :class => "fourth") %>
+								<%= link_to(@periods[4].caption, archive_browser_path(:period_filter => @periods[4].id), :title => @periods[4].title + ' (' + @periods[4].items_count.to_s + ')', :class => "fifth") %>
+								<%= link_to(@periods[5].caption, archive_browser_path(:period_filter => @periods[5].id), :title => @periods[5].title + ' (' + @periods[5].items_count.to_s + ')', :class => "sixth") %>
+								<%= link_to(raw("<span  style='left:-50px'>#{@periods[6].caption}</span>"), archive_browser_path(:period_filter => @periods[6].id), :title => @periods[6].title + ' (' + @periods[6].items_count.to_s + ')', :class => "seventh") %>
+								<%= link_to(@periods[7].caption, archive_browser_path(:period_filter => @periods[7].id), :title => @periods[7].title + ' (' + @periods[7].items_count.to_s + ')', :class => "eighth") %>
+								<%= link_to(@periods[8].caption, archive_browser_path(:period_filter => @periods[8].id), :title => @periods[8].title + ' (' + @periods[8].items_count.to_s + ')', :class => "ninth") %>
                </div>
            </div>
            
