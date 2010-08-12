@@ -148,8 +148,14 @@ module ArchiveHelper
   			else {
   				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
   				$(this).addClass('active').parent().addClass('active');
-  				if ($("#browserFiltersDropdown").css('display')=='none'){
+  				// show the appropriate index list
+					var showMe = $(this).attr("id")+"Content";
+					$(".indexContent").hide();
+					$("."+showMe).show();
+
+				if ($("#browserFiltersDropdown").css('display')=='none'){
   					$("#browserFiltersDropdown").slideDown();
+
   				}
 
   			}
@@ -256,8 +262,13 @@ module ArchiveHelper
       			else {
       				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
       				$(this).addClass('active').parent().addClass('active');
-      				if ($("#browserFiltersDropdown").css('display')=='none'){
-      					$("#browserFiltersDropdown").slideDown();
+      					// show the appropriate index list
+					var showMe = $(this).attr("id")+"Content";
+					$(".indexContent").hide();
+					$("."+showMe).show();
+
+				if ($("#browserFiltersDropdown").css('display')=='none'){
+      					$("#browserFiltersDropdown").slideDown();	
       				}
 
       			}
@@ -334,7 +345,12 @@ module ArchiveHelper
       			else {
       				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
       				$(this).addClass('active').parent().addClass('active');
-      				if ($("#browserFiltersDropdown").css('display')=='none'){
+      					// show the appropriate index list
+					var showMe = $(this).attr("id")+"Content";
+					$(".indexContent").hide();
+					$("."+showMe).show();
+
+				if ($("#browserFiltersDropdown").css('display')=='none'){
       					$("#browserFiltersDropdown").slideDown();
       				}
 
@@ -449,8 +465,13 @@ module ArchiveHelper
       			else {
       				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
       				$(this).addClass('active').parent().addClass('active');
+					// show the appropriate index list
+					var showMe = $(this).attr("id")+"Content";
+					$(".indexContent").hide();
+					$("."+showMe).show();
       				if ($("#browserFiltersDropdown").css('display')=='none'){
       					$("#browserFiltersDropdown").slideDown();
+					
       				}
 
       			}
