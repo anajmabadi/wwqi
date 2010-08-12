@@ -54,13 +54,134 @@
       <% end %>
     </div>
     <div class="browserBarIndex"><h4><%= t(:indexes) %></h4>
-		<ul id="indexLinks" class="types sortnav">
-			<li ><a class="module-link" id="peopleIndex" href="#"><%= t(:person) %></a></li>
-		  <li ><a class="module-link" id="subjectsIndex" href="#"><%= t(:subject) %></a></li>
-		  <li ><a class="module-link" id="placesIndex" href="#"><%= t(:place) %></a></li>
-		</ul>
-    </div>
+    <ul id="indexLinks" class="types sortnav">
+     	<li><a class="module-link" id="peopleIndex" href="#"><%= t(:person) %></a></li>
+      <li><a class="module-link" id="subjectsIndex" href="#"><%= t(:subject) %></a></li>
+      <li><a class="module-link" id="placesIndex" href="#"><%= t(:place) %></a></li>
+    </ul>
+		</div>
   </div>
+  <div id="browserFiltersDropdown" class="clearfix">
+   	<ul class="alphabet">
+     					
+         <li><a class="collectionlink" href="#A"><b>A</b></a></li>
+     					
+         <li><a class="collectionlink" href="#">B</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">C</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">D</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">E</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">F</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">G</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">H</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">I</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">J</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">K</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">L</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">M</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">N</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">O</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">P</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">Q</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">R</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">S</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">T</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">U</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">V</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">W</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">X</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">Y</a></li>
+
+     					
+         <li><a class="collectionlink" href="#">Z</a></li>
+         
+         
+			</ul>
+       <a class="hideIndexPanel" href="#">Hide</a>
+       <h4  id="currentLetter" style="padding:0 20px; font-size:22px;">A</h4>
+   	<div id="indexCol1"> 
+       	<ul>
+           	<li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [2]</a>
+               </li>
+               <li><a href="#">Some Name [4]</a>
+               </li>
+               <li><a href="#">Some Name [32]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+           </ul>
+       </div>
+       <div> 
+       	<ul id="indexCol2">
+           	<li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [2]</a>
+               </li>
+               <li><a href="#">Some Name [4]</a>
+               </li>
+               <li><a href="#">Some Name [32]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+               <li><a href="#">Some Name [12]</a>
+               </li>
+           </ul>
+       </div>
+
+   </div>
   <div id="browserMessage">
     <p>
       <% if @items.empty? -%>
@@ -76,7 +197,7 @@
 
     <% if @view_mode == 'list' -%>
 
-      <% @extra_head_content = archive_list_header -%>
+      <% #@extra_head_content = archive_list_header -%>
 
       <div id="items" class="list clearfix">
 
