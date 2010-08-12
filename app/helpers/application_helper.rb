@@ -1,5 +1,15 @@
 module ApplicationHelper
   
+  def localized_number(number=0)
+    if I18n.locale == :fa
+      number_label = number.to_farsi
+    else
+      number_label = number.to_s
+    end  
+    return number_label  
+      
+  end
+  
   def language_suffix
     '_fa' if I18n.locale == :fa
   end

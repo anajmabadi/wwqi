@@ -159,7 +159,7 @@
 								<div id="indexCol<%= @current_column.to_s %>"> 
 									<ul>
 							<% end %>	
-							<li><%= link_to person.name + ' (' + person.items_count.to_s + ')', :action => :browser, :person_filter => person.id %></li>
+							<li><%= link_to person.name + ' (' + localized_number(person.items_count) + ')', :action => :browser, :person_filter => person.id %></li>
 							<% @current_row += 1 %>
 						<% end %>
 						</ul>
@@ -181,7 +181,7 @@
 								<div id="indexCol<%= @current_column.to_s %>"> 
 									<ul>
 							<% end %>	
-							<li><%= link_to subject.name + ' (' + subject.items_count.to_s + ')', :action => :browser, :subject_filter => subject.id %></li>
+							<li><%= link_to subject.name + ' (' + localized_number(subject.items_count) + ')', :action => :browser, :subject_filter => subject.id %></li>
 							<% @current_row += 1 %>
 						<% end %>
 						</ul>
@@ -203,7 +203,7 @@
 								<div id="indexCol<%= @current_column.to_s %>"> 
 									<ul>
 							<% end %>	
-							<li><%= link_to place.name + ' (' + place.items_count.to_s + ')', :action => :browser, :place_filter => place.id %></li>
+							<li><%= link_to place.name + ' (' + localized_number(place.items_count) + ')', :action => :browser, :place_filter => place.id %></li>
 							<% @current_row += 1 %>
 						<% end %>
 						</ul>
