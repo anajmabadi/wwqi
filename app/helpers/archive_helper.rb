@@ -320,61 +320,33 @@ module ArchiveHelper
           }
           });
 
-               	$("#indexLinks a").click(function(){
+      		$("#indexLinks a").click(function(){
 
-              			// if use is clicking on an already active index, then most likely they 
-              			// want to close the index panel
-              			if ($(this).hasClass('active')){
-              				$("#browserFiltersDropdown").slideUp();
-              				$(this).removeClass('active').parent().removeClass('active');
-              			}
+      			// if use is clicking on an already active index, then most likely they 
+      			// want to close the index panel
+      			if ($(this).hasClass('active')){
+      				$("#browserFiltersDropdown").slideUp();
+      				$(this).removeClass('active').parent().removeClass('active');
+      			}
 
-              			// if user clicks on an index that's not already active, then give the clicked link
-              			// the 'active' class, and if necessary open the index panel
-              			else {
-              				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
-              				$(this).addClass('active').parent().addClass('active');
-              				if ($("#browserFiltersDropdown").css('display')=='none'){
-              					$("#browserFiltersDropdown").slideDown();
-              				}
+      			// if user clicks on an index that's not already active, then give the clicked link
+      			// the 'active' class, and if necessary open the index panel
+      			else {
+      				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
+      				$(this).addClass('active').parent().addClass('active');
+      				if ($("#browserFiltersDropdown").css('display')=='none'){
+      					$("#browserFiltersDropdown").slideDown();
+      				}
 
-              			}
-              			return false;
-              		});
+      			}
+      			return false;
+      		});
 
-              		$(".hideIndexPanel").click(function(){
-              			$("#browserFiltersDropdown").slideUp();
-              			$("#indexLinks a").removeClass('active').parent().removeClass('active');
-              			return false;
-              		});
-
-              		$("#indexLinks a").click(function(){
-
-              			// if use is clicking on an already active index, then most likely they 
-              			// want to close the index panel
-              			if ($(this).hasClass('active')){
-              				$("#browserFiltersDropdown").slideUp();
-              				$(this).removeClass('active').parent().removeClass('active');
-              			}
-
-              			// if user clicks on an index that's not already active, then give the clicked link
-              			// the 'active' class, and if necessary open the index panel
-              			else {
-              				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
-              				$(this).addClass('active').parent().addClass('active');
-              				if ($("#browserFiltersDropdown").css('display')=='none'){
-              					$("#browserFiltersDropdown").slideDown();
-              				}
-
-              			}
-              			return false;
-              		});
-
-              		$(".hideIndexPanel").click(function(){
-              			$("#browserFiltersDropdown").slideUp();
-              			$("#indexLinks a").removeClass('active').parent().removeClass('active');
-              			return false;
-              		});
+      		$(".hideIndexPanel").click(function(){
+      			$("#browserFiltersDropdown").slideUp();
+      			$("#indexLinks a").removeClass('active').parent().removeClass('active');
+      			return false;
+      		});
           });
           
      
