@@ -384,7 +384,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #browserFiltersDropdown ul.alphabet{
     padding:5px 0 20px 10px; list-style:none;
-	margin:0px auto!important; display:inline-block; float:none;
+	margin:0px auto!important; display:none; float:none;
 }
 
 #browserFiltersDropdown ul.alphabet li {
