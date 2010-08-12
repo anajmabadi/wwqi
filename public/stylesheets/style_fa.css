@@ -237,7 +237,7 @@ margin-top:5px;
 	cursor: pointer;
 	margin: 3px 0 0 12px;
 	}
-	#browser .searchform button{background: url(/images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
+	#browser .searchform button{background: url(/images/collection_search_button_fa.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
 .searchform button:hover {
 	background: url(/images/searchbutton.gif) no-repeat 0 -23px;
 	}
