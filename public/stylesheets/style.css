@@ -234,7 +234,7 @@ dd          { margin-left: 1.5em;}
 }
 #big_search .searchform button{background: url(/images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 0 0 12px;height: 34px;}
 #big_search .searchform button:hover {
-	background: url(/images/btn_big_search.png) no-repeat 0 -30px;
+	background: url(/images/btn_big_search.png) no-repeat 0 -34px;
 	}
 
 
@@ -288,8 +288,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #browser #head, .boxed .head{
     background:url(/images/bg_browser_head.png) top left no-repeat;
-    padding-top:4px;
-
+	height:30px;
+	padding-top:12px;
 }
 
 #browser h2, .boxed h2{
@@ -1289,7 +1289,8 @@ div.field {
 	background:#000;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	font-size:11px
+	font-size:11px;
+	z-index:100
 }
 	
 #mediaTypes .column  ul li{ 
