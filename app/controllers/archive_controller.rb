@@ -14,11 +14,11 @@ class ArchiveController < ApplicationController
   def browser
     logger.info 'browser'
     @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
-    @people = Person.find(:all, :conditions => "items_count > 1 AND publish=1 AND person_translations.locale = '#{I18n.locale.to_s}'", :order => 'person_translations.sort_name')
-    @collections = Collection.find(:all, :conditions => 'publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
-    @periods = Period.find(:all, :conditions => 'publish=1', :order => 'position')
-    @places = Place.find(:all, :conditions => "publish=1 AND items_count > 1 AND place_translations.locale = '#{I18n.locale.to_s}'")
-    @subjects = Subject.find(:all, :conditions => "publish=1 AND subject_type_id = 7 AND items_count > 0 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
+    @people = Person.find(:all, :conditions => "items_count > 0 AND people.publish = 1 AND person_translations.locale = '#{I18n.locale.to_s}'", :order => 'person_translations.sort_name')
+    @collections = Collection.find(:all, :conditions => 'collections.publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
+    @periods = Period.find(:all, :conditions => 'periods.publish=1', :order => 'periods.position')
+    @places = Place.find(:all, :conditions => "places.publish=1 AND items_count > 0 AND place_translations.locale = '#{I18n.locale.to_s}'")
+    @subjects = Subject.find(:all, :conditions => "subjects.publish=1 AND subjects.subject_type_id = 7 AND subjects.items_count > 0 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
 
     #grab filter categories
     @medium_filter = params[:medium_filter]
