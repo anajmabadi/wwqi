@@ -1,10 +1,15 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-<% @extra_head_content = header_content -%>
+<% @extra_head_content = browser_header_content -%>
 
 <div id="browser" class="clearfix">
   <div id="head">
-    <h2><%= t(:archive_browser) %></h2>
+    <div style="float:left" class="search">
+      <form action="" class="searchform" method="get">
+          <input type="text" value="keyword search" name="s" class="swap_value" id="s"/>
+          <button type="submit"></button>
+      </form>
+  	</div>
     <ul class="types sortnav">
       <li><%= t(:show) %>:</li>
       <li><a href="/archive/" id="allItems" class="module-link active"><%= t(:all_items) %></a></li>
@@ -12,7 +17,7 @@
   </div>
   <div id="browserFilters" class="clearfix">
     <div class="column">
-      <h4><%= t(:medium) %>  </h4>
+      <h4><%= t(:genre) %>  </h4>
       <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'medium_form') do -%>
         <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @medium_filter.blank? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
@@ -32,6 +37,17 @@
             <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= collection.name %></option>
           <% end -%>
           <option value="more"><%= t(:more_collections) %></option>
+        </select>
+      <% end %>
+    </div>
+    <div class="column">
+      <h4><%= t(:period) %></h4>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'period_form') do -%>
+        <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
+          <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
+          <% @periods.each do |period| -%>
+            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= period.title %></option>
+          <% end -%>
         </select>
       <% end %>
     </div>
@@ -62,17 +78,6 @@
           <option value="more"><%= t(:more_subjects) %></option>
         </select>
       <% end -%>
-    </div>
-    <div class="column">
-      <h4><%= t(:period) %></h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'period_form') do -%>
-        <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @periods.each do |period| -%>
-            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= period.title %></option>
-          <% end -%>
-        </select>
-      <% end %>
     </div>
   </div>
   <div id="browserMessage">
