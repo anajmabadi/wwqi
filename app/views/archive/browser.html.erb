@@ -142,7 +142,7 @@
          
          
 			</ul>
-       <a class="hideIndexPanel" href="#">Hide</a>
+       <a class="hideIndexPanel" href="#"><%= t(:hide) %></a>
 	   
 	   <div class="indexContent peopleIndexContent">
 			 <p>&nbsp;</p>
@@ -152,7 +152,7 @@
 					<div id="indexCol1"> 
 						<ul>
 						<% @people.each do |person| -%>
-						  <% if @current_row == @max_rows && @current_column < 2 %>
+						  <% if @current_row > @max_rows && @current_column < 2 %>
 								<% @current_row = 1 %>
 								<% @current_column += 1 %>
 								</div>
@@ -174,7 +174,7 @@
 					<div id="indexCol1"> 
 						<ul>
 						<% @subjects.each do |subject| -%>
-						  <% if @current_row == @max_rows && @current_column < 2 %>
+						  <% if @current_row > @max_rows && @current_column < 2 %>
 								<% @current_row = 1 %>
 								<% @current_column += 1 %>
 								</div>
