@@ -1,5 +1,5 @@
 --- 
-hash: f54cc6c84a32138c4bd2982d0482fb3507347500
+hash: ccd627e4c820da0279f96e2396a6b1550ff36659
 sources: 
 - Rubygems: 
     uri: http://gemcutter.org
@@ -80,6 +80,8 @@ specs:
     version: 0.2.0
 - launchy: 
     version: 0.3.7
+- mysql: 
+    version: 2.8.1
 - thor: 
     version: 0.13.8
 - railties: 
@@ -98,8 +100,6 @@ specs:
     version: 0.7.2.beta.1
 - rspec-rails: 
     version: 2.0.0.beta.19
-- ruby-mysql: 
-    version: 2.9.3
 - spork: 
     version: 0.8.4
 - will_paginate: 
@@ -113,7 +113,7 @@ dependencies:
     version: ">= 0"
     group: 
     - :default
-  ruby-mysql: 
+  mysql: 
     version: ">= 0"
     group: 
     - :default
