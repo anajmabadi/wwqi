@@ -13,7 +13,7 @@
 						  <div class="column">	
 		            <a href="<%= "/archive/browser/subject_type_filter/#{subject_type.id}" %>"><img src="images/icon_big_subject_type_<%= subject_type.id.to_s %>.png" alt="subject_type.name" /><%= subject_type.name %> <% if subject_type.show_menu? -%><img src="images/downArrow.gif" /><% end -%></a>
 								<% if subject_type.show_menu? %>
-									<ul <%= raw 'style="width:100px; left:0"' if first_column %>>
+									<ul style="<%= raw archive_column_style if first_column %>">
 										<% first_column = false -%>
 										<% subject_type.subjects.each do |subject| -%>
 		                 		<li><%= link_to subject.name, :action => :browser, :subject_filter => subject.id %></li>
@@ -21,8 +21,8 @@
 									</ul>	
 								<% end -%>	
 
-						<% end %>
-													</div>
+							<% end %>
+						</div>
 					<% end -%>	
        </div><!-- end featured -->
 			 <div id="keywordSearch">
@@ -38,7 +38,7 @@
 					</div>
 					<div class="content clearfix">
               <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
-              <a href="#">&raquo; Advanced Search (coming soon)</a>
+              <%= link_to raw(t(:advanced_search)), :action => 'browser' %>
           </div>
        </div>
        
@@ -48,8 +48,8 @@
                    <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
 									 <a class="allCollections" href="/archive/browser/collections_index"><%= t(:see_all_collections) %></a>
 									 <div class="featuredCollection clearfix">
-	                   <h6>Featured Collections</h6>
-	                   <a class="prev" href="#">prev</a><a class="next" href="#">next</a>
+	                   <h6><%= t(:featured_collections) %></h6>
+	                   <a class="prev" href="#"><%= t(:previous) %></a><a class="next" href="#"><%= t(:next) %></a>
 	                   <div class="collectionContainerWrapper">
 	                     <div class="collectionContainer clearfix">
 											 <% @random_collection_set.each do |collection| -%>
@@ -57,7 +57,7 @@
                              <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
                              <ul>
                                <li><strong><%= link_to truncate(collection.name, :length => 30), :action => :browser, :collection_filter => collection %></strong></li>
-                               <li>&raquo; <%= link_to( (collection.items.count.to_s if collection), :action => :browser, :collection_filter => collection) %> items</li> 
+                               <li>&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), :action => :browser, :collection_filter => collection) %></li> 
                              </ul>
 	                         </div>
 												<% end -%>
@@ -87,9 +87,9 @@
            <div class="section" style="width:150px">
 	           <h4><%= t(:quick_peek) %></h4>
 	           <ul>
-	                   <li><%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %></a></li>
-	                   <li><%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %></li>
-	                   <li><%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %></li>
+	             <li><%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %></a></li>
+	             <li><%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %></li>
+	             <li><%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %></li>
 	            </ul>
            </div>
            <div class="section time" >

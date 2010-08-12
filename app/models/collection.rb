@@ -1,3 +1,5 @@
+require 'farsifu'
+
 class Collection < ActiveRecord::Base
   has_many :items
   has_many :owners, :through => :items
@@ -24,8 +26,12 @@ class Collection < ActiveRecord::Base
     return collection_set
   end  
 
-  def item_count
-    items.size
+  def item_count_string
+    if I18n.locale == :fa
+      items.size.to_farsi
+    else
+      items.size.to_s
+    end
   end
   
   def last_update

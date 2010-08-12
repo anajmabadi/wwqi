@@ -1,5 +1,14 @@
 module ArchiveHelper
   
+  def archive_column_style
+    if I18n.locale == :fa
+       style = "width:100px; right:0"
+    else
+      style ="width:100px; left:0"
+    end
+    return style
+  end
+  
   def index_header_content
     return %{
       <script src="javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script> 
