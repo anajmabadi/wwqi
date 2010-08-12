@@ -23,7 +23,7 @@
         <% unless @item.collection_id.blank?  || @item.collection.nil? %>
           <tr>
             <th><%= t(:collection).capitalize %> </th>
-            <td><%= @item.collection.name %> </td>
+            <td><%= link_to( @item.collection.name, archive_browser_path(:collection_filter => @item.collection.id)) %> </td>
           </tr>
         <% end %>
         <% unless @item.show_date.blank? %>
@@ -35,7 +35,7 @@
         <% unless @item.place_id.blank? || @item.place.nil? %>
           <tr>
             <th><%= t(:location).capitalize %></th>
-            <td><%= @item.place.name %> </td>
+            <td><%= link_to(@item.place.name, archive_browser_path(:place_filter => @item.place.id)) %> </td>
           </tr>
         <% end %>
         <% unless @item.dimensions.blank? %>
