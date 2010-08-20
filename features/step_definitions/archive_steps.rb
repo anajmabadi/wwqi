@@ -31,13 +31,14 @@ end
 Then /^I should have valid subject type archive links from archive$/ do
   @subject_types.each do |subject_type|
     click_link(subject_type[:name])
-    page_name = "/archive/browser/subject_type_filter/#{subject_type[:id]}"
+    page_name = "/archive/browser"
     current_path = URI.parse(current_url).path
     if current_path.respond_to? :should
       current_path.should == page_name
     else
       assert_equal page_name, current_path
     end
+    controller.instance_variable_get('@subject_type_filter').should eq(subject_type[:id])
     click_link("archive")
   end
 end
@@ -45,13 +46,14 @@ end
 Then /^I should have valid period archive links$/ do
   @periods.each do |period|
     click_link(period[:name])
-    page_name = "/archive/browser/period_filter/#{period[:id]}"
+    page_name = "/archive/browser"
     current_path = URI.parse(current_url).path
     if current_path.respond_to? :should
       current_path.should == page_name
     else
       assert_equal page_name, current_path
     end
+    @period_filter.should == period[:id]
     click_link("archive")
   end
 end

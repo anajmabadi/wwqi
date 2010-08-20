@@ -16,7 +16,7 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 				And I have periods
 			When I go to the archive page
 			  And I follow "Browse Archive"
-			Then I should see "archive browser"
+			Then I should see "Displaying items"
 						
 		Scenario: should be able to search the archive by keyword
 			Given I speak English
@@ -27,7 +27,7 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 			When I go to the archive page
 				And I fill in "keyword_filter" with "tragic" 
 			  And I press "search"
-			Then I should see "archive browser"	
+			Then I should see "Displaying items"	
 				And I should see "A tragic story"
 				
 	  Scenario: all period links take you to the correct archive browser page 
