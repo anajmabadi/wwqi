@@ -1,13 +1,17 @@
+# coding: utf-8
 require 'spec_helper'
 
 describe Item do
+  fixtures :translations
   
   before(:each) do
     @item = Item.new
     @sample_attributes = {
       :title => "Sample title",
       :pages => 2,
-      :accession_num => "ABCD-00011"
+      :accession_num => "ABCD-00011",
+      :width => 23.4,
+      :height => 19.2
     }
   end
 
@@ -79,12 +83,12 @@ describe Item do
   
   it "should return a valid tif url for a page" do
     @item.update_attributes(@sample_attributes)
-    @item.tif_url(1).should == "http://library.qajarwomen.net/tifs/it_#{@item.id.to_s}_1.tif"
+    @item.tif_url(1).should == "http://library.qajarwomen.org/tifs/it_#{@item.id.to_s}_1.tif"
   end  
   
   it "should return a valid set of tif urls" do
     @item.update_attributes(@sample_attributes)
-    @item.tif_urls.should == ["http://library.qajarwomen.net/tifs/it_#{@item.id.to_s}_1.tif","http://library.qajarwomen.net/tifs/it_#{@item.id.to_s}_2.tif" ]
+    @item.tif_urls.should == ["http://library.qajarwomen.org/tifs/it_#{@item.id.to_s}_1.tif","http://library.qajarwomen.org/tifs/it_#{@item.id.to_s}_2.tif" ]
   end    
   
   it "should return a valid preview file name for a page" do
@@ -94,12 +98,12 @@ describe Item do
   
   it "should return a valid preview url for a page" do
     @item.update_attributes(@sample_attributes)
-    @item.preview_url(1).should == "http://library.qajarwomen.net/previews/it_#{@item.id.to_s}_1.jpg"
+    @item.preview_url(1).should == "http://library.qajarwomen.org/previews/it_#{@item.id.to_s}_1.jpg"
   end
   
   it "should return a valid set of preview urls" do
     @item.update_attributes(@sample_attributes)
-    @item.preview_urls.should == ["http://library.qajarwomen.net/previews/it_#{@item.id.to_s}_1.jpg","http://library.qajarwomen.net/previews/it_#{@item.id.to_s}_2.jpg" ]
+    @item.preview_urls.should == ["http://library.qajarwomen.org/previews/it_#{@item.id.to_s}_1.jpg","http://library.qajarwomen.org/previews/it_#{@item.id.to_s}_2.jpg" ]
   end
   
   it "should return a valid thumbnail file name" do
@@ -109,7 +113,7 @@ describe Item do
   
   it "should return a valid thumbnail url" do
     @item.update_attributes(@sample_attributes)
-    @item.thumbnail_url.should == "http://library.qajarwomen.net/thumbs/it_#{@item.id.to_s}.jpg"
+    @item.thumbnail_url.should == "http://library.qajarwomen.org/thumbs/it_#{@item.id.to_s}.jpg"
   end
   
   it "should return a valid zoomify folder name for a page" do
@@ -119,7 +123,22 @@ describe Item do
   
   it "should return a valid zoomify url for a page" do
     @item.update_attributes(@sample_attributes)
-    @item.zoomify_url(1).should == "http://library.qajarwomen.net/zoomify/it_#{@item.id.to_s}_1_img"
+    @item.zoomify_url(1).should == "http://library.qajarwomen.org/zoomify/it_#{@item.id.to_s}_1_img"
+  end
+  
+  it "should return a valid dimensions string in English" do
+    old_locale = I18n.locale
+    I18n.locale = :en
+    @item.update_attributes(@sample_attributes)
+    @item.dimension_label.should == "23.4 x 19.2 cm"
+    I18n.locale = old_locale
   end
 
+  it "should return a valid dimensions string in Persian" do
+    old_locale = I18n.locale
+    I18n.locale = :fa
+    @item.update_attributes(@sample_attributes)
+    @item.dimension_label.should == "۲۳.۴ * ۱۹.۲ سانتیمتر"
+    I18n.locale = old_locale
+  end
 end

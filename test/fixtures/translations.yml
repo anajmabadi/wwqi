@@ -2505,7 +2505,7 @@ translations_279:
   id: "292"
   locale: en
   key: browse_the_archive
-  value: " &raquo; Browse Archive"
+  value: "&raquo; Browse Archive"
   interpolations: 
   is_proc: "0"
   created_at: 2010-08-05 12:54:16
@@ -2514,7 +2514,7 @@ translations_280:
   id: "293"
   locale: fa
   key: browse_the_archive
-  value: "\xD8\xB3\xDB\x8C\xD8\xB1 \xD8\xAF\xD8\xB1 \xD8\xA2\xD8\xB1\xD8\xB4\xDB\x8C\xD9\x88"
+  value: "\xD8\xB3\xDB\x8C\xD8\xB1 \xD8\xAF\xD8\xB1 \xD8\xA2\xD8\xB1\xD8\xB4\xDB\x8C\xD9\x88 \xC2\xBB"
   interpolations: 
   is_proc: "0"
   created_at: 2010-08-05 12:55:45
@@ -2640,11 +2640,11 @@ translations_294:
   id: "307"
   locale: fa
   key: collection_highlights
-  value: "\xC2\xBB\xDA\xAF\xD8\xB2\xDB\x8C\xD9\x86\xD9\x87 \xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB2 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85\xD9\x87"
-  interpolations: 
+  value: "\xC2\xBB\xDA\xAF\xD8\xB2\xDB\x8C\xD9\x86\xD9\x87 \xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB2 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85"
+  interpolations: ""
   is_proc: "0"
   created_at: 2010-08-05 13:06:02
-  updated_at: 2010-08-05 13:06:04
+  updated_at: 2010-08-11 23:52:29
 translations_295: 
   id: "308"
   locale: en
@@ -2735,3 +2735,129 @@ translations_304:
   is_proc: "0"
   created_at: 2010-08-05 13:12:46
   updated_at: 2010-08-05 13:12:49
+translations_305: 
+  id: "318"
+  locale: en
+  key: featured_collections
+  value: Featured Collections
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 16:44:27
+  updated_at: 2010-08-11 16:44:31
+translations_306: 
+  id: "319"
+  locale: fa
+  key: featured_collections
+  value: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD9\x87\xD8\xA7\xDB\x8C \xD8\xA8\xD8\xB1\xDA\xAF\xD8\xB2\xDB\x8C\xD8\xAF\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 20:35:26
+  updated_at: 2010-08-11 20:35:31
+translations_307: 
+  id: "320"
+  locale: en
+  key: advanced_search
+  value: "&raquo; Advanced Search (coming soon)"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 20:36:21
+  updated_at: 2010-08-11 20:36:25
+translations_308: 
+  id: "321"
+  locale: fa
+  key: advanced_search
+  value: "\xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD9\xBE\xDB\x8C\xD8\xB4\xD8\xB1\xD9\x81\xD8\xAA\xD9\x87 \xC2\xBB"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 20:37:17
+  updated_at: 2010-08-11 20:37:25
+translations_309: 
+  id: "322"
+  locale: en
+  key: items
+  value: items
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 20:47:51
+  updated_at: 2010-08-11 20:47:54
+translations_310: 
+  id: "323"
+  locale: fa
+  key: items
+  value: "\xD9\x81\xD9\x84\xD9\x85"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-11 20:48:29
+  updated_at: 2010-08-11 20:48:31
+translations_311: 
+  id: "324"
+  locale: en
+  key: genre
+  value: genre
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-12 01:41:15
+  updated_at: 2010-08-12 01:41:18
+translations_312: 
+  id: "325"
+  locale: fa
+  key: genre
+  value: "\xD9\x86\xD9\x88\xD8\xB9"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-12 01:42:14
+  updated_at: 2010-08-12 01:42:17
+translations_313: 
+  id: "326"
+  locale: en
+  key: hide
+  value: Hide
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-12 10:34:44
+  updated_at: 2010-08-12 10:34:48
+translations_314: 
+  id: "327"
+  locale: fa
+  key: hide
+  value: "\xD9\x86\xD9\x87\xD8\xA7\xD9\x86"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-12 10:35:22
+  updated_at: 2010-08-12 10:35:24
+translations_315: 
+  id: "328"
+  locale: en
+  key: dimension_unit
+  value: cm
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-21 12:50:35
+  updated_at: 2010-08-21 12:50:38
+translations_316: 
+  id: "329"
+  locale: fa
+  key: dimension_unit
+  value: "\xD8\xB3\xD8\xA7\xD9\x86\xD8\xAA\xDB\x8C\xD9\x85\xD8\xAA\xD8\xB1"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-21 12:50:57
+  updated_at: 2010-08-21 12:51:00
+translations_317: 
+  id: "330"
+  locale: en
+  key: dimension_separator
+  value: x
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-21 12:52:03
+  updated_at: 2010-08-21 12:52:06
+translations_318: 
+  id: "331"
+  locale: fa
+  key: dimension_separator
+  value: "*"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-08-21 12:52:26
+  updated_at: 2010-08-21 12:52:28

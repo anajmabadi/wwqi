@@ -161,5 +161,21 @@ class Item < ActiveRecord::Base
   def zoomify_url(index=1)
     return LIBRARY_URL + ZOOMIFY_DIR + zoomify_folder_name(index) unless index.nil?
   end
+  
+  def dimension_label
+    label = ''
+    dimensions_set = []
+    dimensions_set << localize_number(self.width) unless self.width.nil? || self.width == 0
+    dimensions_set << localize_number(self.height) unless self.height.nil? || self.height == 0
+    dimensions_set << localize_number(self.length) unless self.length.nil? || self.length == 0
+    dimensions_set << localize_number(self.depth) unless self.depth.nil? || self.depth == 0
+    return dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit)   
+  end
+  
+  private
+  
+  def localize_number(number=0)
+    return I18n.locale == :fa ? number.to_farsi : number.to_s
+  end
 
 end

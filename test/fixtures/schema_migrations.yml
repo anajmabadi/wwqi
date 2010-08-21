@@ -63,3 +63,13 @@ schema_migrations_031:
   version: "20100810220042"
 schema_migrations_032: 
   version: "20100811193013"
+schema_migrations_033: 
+  version: "20100812103444"
+schema_migrations_034: 
+  version: "20100812104230"
+schema_migrations_035: 
+  version: "20100812104421"
+schema_migrations_036: 
+  version: "20100821011929"
+schema_migrations_037: 
+  version: "20100821012616"

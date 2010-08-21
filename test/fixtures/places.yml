@@ -8,7 +8,8 @@ places_001:
   publish: "1"
   notes: 
   created_at: 2010-04-11 18:31:07
-  updated_at: 2010-04-11 18:31:09
+  updated_at: 2010-08-12 10:43:55
+  items_count: "89"
 places_002: 
   id: "2"
   latitude: 
@@ -18,7 +19,8 @@ places_002:
   publish: "1"
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "12"
 places_003: 
   id: "3"
   latitude: 
@@ -28,7 +30,8 @@ places_003:
   publish: "1"
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_004: 
   id: "4"
   latitude: 
@@ -38,7 +41,8 @@ places_004:
   publish: "1"
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "5"
 places_005: 
   id: "5"
   latitude: 
@@ -48,7 +52,8 @@ places_005:
   publish: "1"
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "3"
 places_006: 
   id: "6"
   latitude: 
@@ -58,7 +63,8 @@ places_006:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:44:44
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_007: 
   id: "7"
   latitude: 
@@ -68,7 +74,8 @@ places_007:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:46:56
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "2"
 places_008: 
   id: "8"
   latitude: 
@@ -78,7 +85,8 @@ places_008:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:48:37
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_009: 
   id: "9"
   latitude: 
@@ -88,7 +96,8 @@ places_009:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:49:49
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "18"
 places_010: 
   id: "10"
   latitude: 
@@ -98,7 +107,8 @@ places_010:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:51:08
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_011: 
   id: "11"
   latitude: 
@@ -108,7 +118,8 @@ places_011:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:52:26
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "2"
 places_012: 
   id: "12"
   latitude: 
@@ -118,7 +129,8 @@ places_012:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:54:01
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_013: 
   id: "13"
   latitude: 
@@ -128,7 +140,8 @@ places_013:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:55:37
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_014: 
   id: "14"
   latitude: 
@@ -138,7 +151,8 @@ places_014:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:56:56
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "5"
 places_015: 
   id: "15"
   latitude: 
@@ -148,7 +162,8 @@ places_015:
   publish: "1"
   notes: 
   created_at: 2010-06-23 14:57:59
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "1"
 places_016: 
   id: "16"
   latitude: 
@@ -158,7 +173,8 @@ places_016:
   publish: "1"
   notes: 
   created_at: 2010-06-23 15:14:03
-  updated_at: 
+  updated_at: 2010-08-12 10:43:55
+  items_count: "6"
 places_017: 
   id: "17"
   latitude: 
@@ -168,7 +184,8 @@ places_017:
   publish: "1"
   notes: 
   created_at: 2010-06-23 15:15:35
-  updated_at: 2010-06-23 15:15:37
+  updated_at: 2010-08-12 10:43:55
+  items_count: "2"
 places_018: 
   id: "18"
   latitude: 
@@ -179,3 +196,4 @@ places_018:
   notes: 
   created_at: 2010-06-23 15:16:32
   updated_at: 2010-06-23 15:16:35
+  items_count: "0"

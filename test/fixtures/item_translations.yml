@@ -5114,13 +5114,13 @@ item_translations_458:
   id: "507"
   item_id: "1190"
   locale: en
-  display_date: n.d.
+  display_date: ""
   description: ""
   title: A tragic story [draft]
   credit: ""
   creator_label: Sadiqah Dawlatabadi
   created_at: 
-  updated_at: 2010-08-10 01:34:43
+  updated_at: 2010-08-12 05:30:49
 item_translations_459: 
   id: "508"
   item_id: "1205"

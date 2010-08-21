@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100812104421) do
+ActiveRecord::Schema.define(:version => 20100821012616) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -382,20 +382,20 @@ ActiveRecord::Schema.define(:version => 20100812104421) do
   add_index "item_translations", ["title"], :name => "title"
 
   create_table "items", :force => true do |t|
-    t.string   "accession_num",    :default => "",    :null => false
+    t.string   "accession_num",                                   :default => "",    :null => false
     t.string   "olivia_id"
     t.string   "urn"
     t.integer  "creator_id"
     t.integer  "owner_id"
     t.integer  "collection_id"
-    t.integer  "pages",            :default => 1,     :null => false
+    t.integer  "pages",                                           :default => 1,     :null => false
     t.integer  "format_id"
     t.date     "sort_date"
-    t.boolean  "circa",            :default => false, :null => false
+    t.boolean  "circa",                                           :default => false, :null => false
     t.string   "dimensions"
     t.text     "notes"
     t.integer  "place_id"
-    t.boolean  "bound",            :default => false, :null => false
+    t.boolean  "bound",                                           :default => false, :null => false
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -404,6 +404,10 @@ ActiveRecord::Schema.define(:version => 20100812104421) do
     t.string   "source_date"
     t.integer  "calendar_type_id"
     t.boolean  "favorite"
+    t.decimal  "width",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.decimal  "height",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true

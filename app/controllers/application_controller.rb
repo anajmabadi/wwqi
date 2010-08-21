@@ -43,7 +43,7 @@ class ApplicationController < ActionController::Base
     @activity = Activity.new
     
     # who is doing the activity?
-    @activity.session_id = session[:session_id] #record the session
+    @activity.session_id = session[:session_id] || 'testing' #record the session
     @activity.browser = request.env['HTTP_USER_AGENT'] || 'testing'
     @activity.ip_address = request.env['REMOTE_ADDR'] || 'testing'
     

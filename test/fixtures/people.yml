@@ -10,6 +10,7 @@ people_001:
   updated_at: 2010-03-24 17:44:37
   country: 
   publish: "0"
+  items_count: "0"
 people_002: 
   id: "2"
   loc_name: ""
@@ -21,6 +22,7 @@ people_002:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_003: 
   id: "3"
   loc_name: "M\xC4\xABrz\xC4\x81 Zayn al-\xCA\xBB\xC4\x80bid\xC4\xABn Alburz Mu\xCA\xBCtaman al-Sul\xE1\xB9\xAD\xC4\x81n"
@@ -32,6 +34,7 @@ people_003:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_004: 
   id: "4"
   loc_name: "Anv\xC4\x81r al-Mul\xC5\xABk"
@@ -43,6 +46,7 @@ people_004:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_005: 
   id: "5"
   loc_name: "Ra\xE1\xB8\xA5mat All\xC4\x81h Kh\xC4\x81n Alburz"
@@ -54,6 +58,7 @@ people_005:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_006: 
   id: "6"
   loc_name: "Bad\xC4\xAB\xCA\xBB al-Zam\xC4\x81n Dawlatsh\xC4\x81h\xC4\xAB S\xC4\x81l\xC4\x81r Mu\xCA\xBCayyid"
@@ -65,6 +70,7 @@ people_006:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_007: 
   id: "7"
   loc_name: "M\xC4\xABrz\xC4\x81 Shaf\xC4\xAB\xE2\x80\x99 Kh\xC4\x81n Mustawf\xC4\xAB"
@@ -76,6 +82,7 @@ people_007:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_008: 
   id: "8"
   loc_name: "Mu\xE1\xB8\xA5ammad \xE1\xB8\xA4usayn M\xC4\xABrz\xC4\x81 Mu\xCA\xBCayyid al-Dawlah"
@@ -87,6 +94,7 @@ people_008:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_009: 
   id: "9"
   loc_name: "K\xC4\x81mr\xC4\x81n Dawlatsh\xC4\x81h\xC4\xAB"
@@ -98,6 +106,7 @@ people_009:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_010: 
   id: "10"
   loc_name: "Muhammad K\xC4\x81mr\xC4\x81n M\xC4\xABrz\xC4\x81"
@@ -109,6 +118,7 @@ people_010:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_011: 
   id: "11"
   loc_name: "B\xC4\xABzhan N\xC4\xABk \xE1\xB9\xACab\xCA\xBB"
@@ -120,6 +130,7 @@ people_011:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_012: 
   id: "12"
   loc_name: "Shahl\xC4\x81 S\xC4\x81l\xC4\x81r\xC4\xAB"
@@ -131,6 +142,7 @@ people_012:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_013: 
   id: "13"
   loc_name: "Gulrukh S\xC4\x81l\xC4\x81r"
@@ -142,6 +154,7 @@ people_013:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_014: 
   id: "14"
   loc_name: "Mu\xCA\xBBizz al-Kh\xC4\x81q\xC4\x81n Alburz"
@@ -153,6 +166,7 @@ people_014:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_015: 
   id: "15"
   loc_name: ""
@@ -164,6 +178,7 @@ people_015:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_016: 
   id: "16"
   loc_name: "Hum\xC4\x81 Kh\xC4\x81num"
@@ -175,6 +190,7 @@ people_016:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_017: 
   id: "17"
   loc_name: "Mu\xE1\xB8\xA5ammad \xE1\xB9\xA2\xC4\x81diq M\xC4\xABrz\xC4\x81 Dawlatsh\xC4\x81h\xC4\xAB"
@@ -186,6 +202,7 @@ people_017:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_018: 
   id: "18"
   loc_name: "Fakhr al-Sal\xE1\xB9\xADanah Alburz"
@@ -197,6 +214,7 @@ people_018:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_019: 
   id: "19"
   loc_name: "Z\xCC\xA4iy\xC4\x81\xCA\xBC al-Dawlah Alburz"
@@ -208,6 +226,7 @@ people_019:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_020: 
   id: "20"
   loc_name: "Bad\xC4\xAB\xCA\xBB al-Jam\xC4\x81l Dawlatsh\xC4\x81h\xC4\xAB"
@@ -219,6 +238,7 @@ people_020:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_021: 
   id: "21"
   loc_name: "Z\xC4\xABnat N\xC4\xABk \xE1\xB9\xACab\xCA\xBB"
@@ -230,6 +250,7 @@ people_021:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_022: 
   id: "22"
   loc_name: "Am\xC4\xABr Mafkhum Ni\xE1\xBA\x93\xC4\x81m"
@@ -241,6 +262,7 @@ people_022:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_023: 
   id: "23"
   loc_name: "Farrukh M\xC4\xABrz\xC4\x81"
@@ -252,6 +274,7 @@ people_023:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_024: 
   id: "24"
   loc_name: ""
@@ -263,6 +286,7 @@ people_024:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_025: 
   id: "25"
   loc_name: ""
@@ -274,6 +298,7 @@ people_025:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_026: 
   id: "26"
   loc_name: "Malikah-i Kh\xC4\x81n\xC5\xABm Q\xC5\xABds al-Dawlah"
@@ -285,6 +310,7 @@ people_026:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_027: 
   id: "27"
   loc_name: "P\xC5\xABr\xC4\x81ndukht K\xC4\x81vah"
@@ -296,6 +322,7 @@ people_027:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_028: 
   id: "28"
   loc_name: ""
@@ -307,6 +334,7 @@ people_028:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_029: 
   id: "29"
   loc_name: ""
@@ -318,6 +346,7 @@ people_029:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_030: 
   id: "30"
   loc_name: ""
@@ -329,6 +358,7 @@ people_030:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_031: 
   id: "31"
   loc_name: ""
@@ -340,6 +370,7 @@ people_031:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_032: 
   id: "32"
   loc_name: "Nu\xE1\xB9\xA3rat al-Mul\xC5\xABk \xE1\xB9\xA2adr\xC3\xA1"
@@ -351,6 +382,7 @@ people_032:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_033: 
   id: "33"
   loc_name: ""
@@ -362,6 +394,7 @@ people_033:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_034: 
   id: "34"
   loc_name: "Ab\xC5\xAB Tur\xC4\x81b Kh\xC4\x81n Na\xE1\xBA\x93m al-Dawlah Khv\xC4\x81jah\xCA\xB9n\xC5\xABr\xC4\xAB"
@@ -373,6 +406,7 @@ people_034:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_035: 
   id: "35"
   loc_name: "Shawkat al-Mul\xC5\xABk Khv\xC4\x81jah\xCA\xB9n\xC5\xABr\xC4\xAB"
@@ -384,6 +418,7 @@ people_035:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_036: 
   id: "36"
   loc_name: "Fat\xE1\xB8\xA5 All\xC4\x81h Khv\xC4\x81jah\xCA\xB9n\xC5\xABr\xC4\xAB"
@@ -395,6 +430,7 @@ people_036:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_037: 
   id: "37"
   loc_name: "Zh\xC4\xABl\xC4\x81 Khv\xC4\x81jah\xCA\xB9n\xC5\xABr\xC4\xAB"
@@ -406,6 +442,7 @@ people_037:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_038: 
   id: "38"
   loc_name: "\xE1\xB8\xA4am\xC4\xABdah Dawlatsh\xC4\x81h\xC4\xAB"
@@ -417,6 +454,7 @@ people_038:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_039: 
   id: "39"
   loc_name: ""
@@ -428,6 +466,7 @@ people_039:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_040: 
   id: "40"
   loc_name: ""
@@ -439,6 +478,7 @@ people_040:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_041: 
   id: "41"
   loc_name: ""
@@ -450,6 +490,7 @@ people_041:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_042: 
   id: "42"
   loc_name: "Mu\xE1\xB8\xA5ammad Riz\xCC\xA4\xC4\x81 M\xC4\xABrz\xC4\x81 "
@@ -461,6 +502,7 @@ people_042:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_043: 
   id: "43"
   loc_name: ""
@@ -472,6 +514,7 @@ people_043:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_044: 
   id: "44"
   loc_name: "\xE1\xB8\xA4ab\xC4\xABb All\xC4\x81h Khv\xC4\x81jah\xCA\xB9n\xC5\xABr\xC4\xAB"
@@ -483,6 +526,7 @@ people_044:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_045: 
   id: "45"
   loc_name: "Zayn al-\xCA\xBBAbid\xC4\xABn Vak\xC4\xABl al-Ta\xE1\xB8\xA5\xC4\x81r M\xC4\xABiz\xC4\x81n\xC4\xAB"
@@ -494,6 +538,7 @@ people_045:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_046: 
   id: "46"
   loc_name: "D\xC4\x81vud Q\xC4\x81j\xC4\x81r Mu\xE1\xBA\x93affar\xC4\xAB"
@@ -505,6 +550,7 @@ people_046:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_047: 
   id: "47"
   loc_name: "Ab\xC5\xAB al-Faz\xCC\xA4l Mirz\xC4\x81 S\xC4\x81l\xC4\x81r al-Dawlah"
@@ -516,6 +562,7 @@ people_047:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_048: 
   id: "48"
   loc_name: "A\xCA\xBB\xE1\xBA\x93am al-Mul\xC5\xABk"
@@ -527,6 +574,7 @@ people_048:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_049: 
   id: "49"
   loc_name: "\xE2\x80\x98Iffat al-Dawlah"
@@ -538,6 +586,7 @@ people_049:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_050: 
   id: "50"
   loc_name: Papazian, Joseph
@@ -549,6 +598,7 @@ people_050:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_051: 
   id: "51"
   loc_name: Montague, Joel
@@ -560,6 +610,7 @@ people_051:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_052: 
   id: "52"
   loc_name: "La\xCA\xBBl Kh\xC4\x81num"
@@ -571,6 +622,7 @@ people_052:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_053: 
   id: "53"
   loc_name: ""
@@ -582,6 +634,7 @@ people_053:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_054: 
   id: "54"
   loc_name: "Na\xE1\xB9\xA3r All\xC4\x81h Mustawf\xC4\xAB"
@@ -593,6 +646,7 @@ people_054:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_055: 
   id: "55"
   loc_name: "Maryam Ardal\xC4\x81n Mustawf\xC4\xAB"
@@ -604,6 +658,7 @@ people_055:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_056: 
   id: "56"
   loc_name: "Mustawf\xC4\xAB, \xCA\xBBAbd All\xC4\x81h"
@@ -615,6 +670,7 @@ people_056:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_057: 
   id: "57"
   loc_name: ""
@@ -626,6 +682,7 @@ people_057:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_058: 
   id: "58"
   loc_name: ""
@@ -637,6 +694,7 @@ people_058:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_059: 
   id: "59"
   loc_name: ""
@@ -648,6 +706,7 @@ people_059:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_060: 
   id: "60"
   loc_name: "Ab\xC5\xAB al-\xE1\xB8\xA4asan Ardal\xC4\x81n"
@@ -659,6 +718,7 @@ people_060:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_061: 
   id: "61"
   loc_name: "H\xC5\xABr\xC4\xAB Mustawf\xC4\xAB Muqaddam "
@@ -670,6 +730,7 @@ people_061:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_062: 
   id: "62"
   loc_name: "\xE1\xB8\xA4\xC4\x81j Mirz\xC4\x81 Na\xE1\xB9\xA3r All\xC4\x81h Mustawf\xC4\xAB"
@@ -681,6 +742,7 @@ people_062:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_063: 
   id: "63"
   loc_name: ""
@@ -692,6 +754,7 @@ people_063:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_064: 
   id: "64"
   loc_name: "\xCA\xBBAbbasah Q\xC4\x81j\xC4\x81r"
@@ -703,6 +766,7 @@ people_064:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_065: 
   id: "65"
   loc_name: "T\xC4\x81j\xCA\xB9m\xC4\x81h Kh\xC4\x81num"
@@ -714,6 +778,7 @@ people_065:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_066: 
   id: "66"
   loc_name: "M\xC4\xABrz\xC4\x81 Ism\xC4\x81\xCA\xBB\xC4\xABl Mustawf\xC4\xAB"
@@ -725,6 +790,7 @@ people_066:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_067: 
   id: "67"
   loc_name: ""
@@ -736,6 +802,7 @@ people_067:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_068: 
   id: "68"
   loc_name: "\xCA\xBBAbd All\xC4\x81h Q\xC4\x81j\xC4\x81r"
@@ -747,6 +814,7 @@ people_068:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_069: 
   id: "69"
   loc_name: "Shuk\xC5\xABh al-Sal\xE1\xB9\xADanah"
@@ -758,6 +826,7 @@ people_069:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_070: 
   id: "70"
   loc_name: "M\xC4\xABrz\xC4\x81 Mu\xE1\xB8\xA5ammad Kh\xC4\x81n"
@@ -769,6 +838,7 @@ people_070:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_071: 
   id: "71"
   loc_name: "An\xC5\xABsh\xC4\xABrav\xC4\x81n M\xC4\xABrz\xC4\x81"
@@ -780,6 +850,7 @@ people_071:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_072: 
   id: "72"
   loc_name: "\xCA\xBBAbd al-\xCA\xBBAl\xC4\xAB Mirz\xC4\x81 "
@@ -791,6 +862,7 @@ people_072:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_073: 
   id: "73"
   loc_name: "Shuk\xC5\xABh al-Dawlah"
@@ -802,6 +874,7 @@ people_073:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_074: 
   id: "74"
   loc_name: "Am\xC4\xABr Riz\xCC\xA4\xC4\x81 Kh\xC4\x81n "
@@ -813,6 +886,7 @@ people_074:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_075: 
   id: "75"
   loc_name: "P\xC5\xABr\xC4\x81ndukht"
@@ -824,6 +898,7 @@ people_075:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_076: 
   id: "76"
   loc_name: "Z\xC4\xABb\xC4\x81 Kh\xC4\x81num"
@@ -835,6 +910,7 @@ people_076:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_077: 
   id: "77"
   loc_name: "\xE1\xB9\xAC\xC5\xABb\xC3\xA1 Kh\xC4\x81num"
@@ -846,6 +922,7 @@ people_077:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_078: 
   id: "78"
   loc_name: "Taq\xC4\xAB Kh\xC4\x81n M\xC4\xABrz\xC4\x81"
@@ -857,6 +934,7 @@ people_078:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_079: 
   id: "79"
   loc_name: "D\xC4\x81r\xC4\x81b M\xC4\xABrz\xC4\x81"
@@ -868,6 +946,7 @@ people_079:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_080: 
   id: "80"
   loc_name: "Mu\xCA\xBBazziz al-Mul\xC5\xABk"
@@ -879,6 +958,7 @@ people_080:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_081: 
   id: "81"
   loc_name: "\xCA\xBBAbd al-Am\xC4\xABr"
@@ -890,6 +970,7 @@ people_081:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_082: 
   id: "82"
   loc_name: "Mah\xC4\xABn al-Sal\xE1\xB9\xADanah"
@@ -901,6 +982,7 @@ people_082:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_083: 
   id: "83"
   loc_name: "M\xC4\x81jid Mirz\xC4\x81"
@@ -912,6 +994,7 @@ people_083:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_084: 
   id: "84"
   loc_name: "Kar\xC4\x81mat al-Sal\xE1\xB9\xADanah"
@@ -923,6 +1006,7 @@ people_084:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_085: 
   id: "85"
   loc_name: "Arghav\xC4\x81n B\xC4\x81j\xC4\xAB "
@@ -934,6 +1018,7 @@ people_085:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_086: 
   id: "86"
   loc_name: "Shawkat \xC4\x80q\xC4\x81"
@@ -945,6 +1030,7 @@ people_086:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_087: 
   id: "87"
   loc_name: "\xC4\x80siyah Kh\xC4\x81num"
@@ -956,6 +1042,7 @@ people_087:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_088: 
   id: "88"
   loc_name: "Mah\xC4\xABn al-Dawlah"
@@ -967,6 +1054,7 @@ people_088:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_089: 
   id: "89"
   loc_name: "Anv\xC4\x81r al-Dawlah"
@@ -978,6 +1066,7 @@ people_089:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_090: 
   id: "90"
   loc_name: "Daftar al-Mul\xC5\xABk"
@@ -989,6 +1078,7 @@ people_090:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_091: 
   id: "91"
   loc_name: "Najm al-Sal\xE1\xB9\xADanah"
@@ -1000,6 +1090,7 @@ people_091:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_092: 
   id: "92"
   loc_name: "Sal\xE1\xB9\xADanah, T\xC4\x81j"
@@ -1011,6 +1102,7 @@ people_092:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_093: 
   id: "93"
   loc_name: ""
@@ -1022,6 +1114,7 @@ people_093:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_094: 
   id: "94"
   loc_name: "Gawhar Kh\xC4\x81num"
@@ -1033,6 +1126,7 @@ people_094:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_095: 
   id: "95"
   loc_name: "Nu\xE1\xB9\xA3rat al-Sal\xE1\xB9\xADanah"
@@ -1044,6 +1138,7 @@ people_095:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_096: 
   id: "96"
   loc_name: "\xCA\xBBAbb\xC4\x81s Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1055,6 +1150,7 @@ people_096:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_097: 
   id: "97"
   loc_name: "Najmabadi, Afsaneh "
@@ -1066,6 +1162,7 @@ people_097:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_098: 
   id: "98"
   loc_name: "Shaykh \xE1\xB9\xA2\xC4\x81diq Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1077,6 +1174,7 @@ people_098:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_099: 
   id: "99"
   loc_name: "Zahr\xC4\x81 Kh\xC4\x81num"
@@ -1088,6 +1186,7 @@ people_099:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_100: 
   id: "100"
   loc_name: "Shaykh Mu\xE1\xB8\xA5ammad B\xC4\x81qir Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1099,6 +1198,7 @@ people_100:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_101: 
   id: "101"
   loc_name: ""
@@ -1110,6 +1210,7 @@ people_101:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_102: 
   id: "102"
   loc_name: "Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB, H\xC4\x81d\xC4\xAB"
@@ -1121,6 +1222,7 @@ people_102:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_103: 
   id: "103"
   loc_name: "Zahr\xC4\x81 Y\xC5\xABn\xC4\x81 \xCA\xBBArab"
@@ -1132,6 +1234,7 @@ people_103:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_104: 
   id: "104"
   loc_name: "Shaykh Ma\xE1\xB8\xA5d\xC4\xAB Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1143,6 +1246,7 @@ people_104:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_105: 
   id: "105"
   loc_name: "Shaykh \xE1\xB8\xA4usayn Najm\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1154,6 +1258,7 @@ people_105:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_106: 
   id: "106"
   loc_name: "Fakhr al-T\xC4\x81j Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1165,6 +1270,7 @@ people_106:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_107: 
   id: "107"
   loc_name: "Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB, \xE1\xB9\xA2ad\xC4\xABqah"
@@ -1176,6 +1282,7 @@ people_107:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_108: 
   id: "108"
   loc_name: ""
@@ -1187,6 +1294,7 @@ people_108:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_109: 
   id: "109"
   loc_name: "Qamar T\xC4\x81j Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1198,6 +1306,7 @@ people_109:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_110: 
   id: "110"
   loc_name: "Mahdukht \xE1\xB9\xA2an\xCA\xBBat\xC4\xAB"
@@ -1209,6 +1318,7 @@ people_110:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_111: 
   id: "111"
   loc_name: "Fur\xC5\xABgh Shah\xC4\x81b Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1220,6 +1330,7 @@ people_111:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_112: 
   id: "112"
   loc_name: ""
@@ -1231,6 +1342,7 @@ people_112:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_113: 
   id: "113"
   loc_name: "Ya\xE1\xB8\xA5y\xC3\xA1 Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1242,6 +1354,7 @@ people_113:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_114: 
   id: "114"
   loc_name: ""
@@ -1253,6 +1366,7 @@ people_114:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_115: 
   id: "115"
   loc_name: ""
@@ -1264,6 +1378,7 @@ people_115:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_116: 
   id: "116"
   loc_name: ""
@@ -1275,6 +1390,7 @@ people_116:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_117: 
   id: "117"
   loc_name: "Afsar al-Mul\xC5\xABk Shaykh al-Isl\xC4\x81m\xC4\xAB"
@@ -1286,6 +1402,7 @@ people_117:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_118: 
   id: "118"
   loc_name: ""
@@ -1297,6 +1414,7 @@ people_118:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_119: 
   id: "119"
   loc_name: ""
@@ -1308,6 +1426,7 @@ people_119:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_120: 
   id: "120"
   loc_name: "Bahr\xC4\x81m Shaykh al-Isl\xC4\x81m\xC4\xAB"
@@ -1319,6 +1438,7 @@ people_120:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_121: 
   id: "121"
   loc_name: "Mu\xE1\xB8\xA5ammad \xE1\xB8\xA4asan M\xC4\xABrz\xC4\x81"
@@ -1330,6 +1450,7 @@ people_121:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_122: 
   id: "122"
   loc_name: "Sul\xE1\xB9\xAD\xC4\x81n Maj\xC4\xABd M\xC4\xABrz\xC4\x81"
@@ -1341,6 +1462,7 @@ people_122:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_123: 
   id: "123"
   loc_name: "Am\xC4\xABr Ism\xC4\x81\xCA\xBB\xC4\xABl Mirz\xC4\x81"
@@ -1352,6 +1474,7 @@ people_123:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_124: 
   id: "124"
   loc_name: "Am\xC4\xABr \xE1\xB8\xA4usayn Mirz\xC4\x81"
@@ -1363,6 +1486,7 @@ people_124:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_125: 
   id: "125"
   loc_name: "Malik \xC4\xAAraj M\xC4\xABrz\xC4\x81"
@@ -1374,6 +1498,7 @@ people_125:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_126: 
   id: "126"
   loc_name: "\xC4\x80\xE1\xBA\x95arm\xC4\xABdukht"
@@ -1385,6 +1510,7 @@ people_126:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_127: 
   id: "127"
   loc_name: "Akbar Mirz\xC4\x81 R\xC5\xABkn\xC4\xAB "
@@ -1396,6 +1522,7 @@ people_127:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_128: 
   id: "128"
   loc_name: "Q\xC4\x81j\xC4\x81r, Fat\xE1\xB8\xA5 \xCA\xBBAl\xC4\xAB Sh\xC4\x81h"
@@ -1407,6 +1534,7 @@ people_128:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_129: 
   id: "129"
   loc_name: "Iftikh\xC4\x81r al-Dawlah"
@@ -1418,6 +1546,7 @@ people_129:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_130: 
   id: "130"
   loc_name: "I\xE1\xB8\xA5tir\xC4\x81m al-Dawlah"
@@ -1429,6 +1558,7 @@ people_130:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_131: 
   id: "131"
   loc_name: "Afsar al-Mul\xC5\xABk"
@@ -1440,6 +1570,7 @@ people_131:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_132: 
   id: "132"
   loc_name: "Malikah Jah\xC4\x81n"
@@ -1451,6 +1582,7 @@ people_132:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_133: 
   id: "133"
   loc_name: "Mu\xE1\xB8\xA5ammad Val\xC4\xAB M\xC4\xABrz\xC4\x81 "
@@ -1462,6 +1594,7 @@ people_133:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_134: 
   id: "134"
   loc_name: "Mah\xC4\xABn B\xC4\x81n\xC5\xAB"
@@ -1473,6 +1606,7 @@ people_134:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_135: 
   id: "135"
   loc_name: "Nasr\xC4\xABndukht"
@@ -1484,6 +1618,7 @@ people_135:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_136: 
   id: "136"
   loc_name: "Nayyir al-Sal\xE1\xB9\xADanah"
@@ -1495,6 +1630,7 @@ people_136:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_137: 
   id: "137"
   loc_name: "Sul\xE1\xB9\xAD\xC4\x81n A\xE1\xB8\xA5mad Sh\xC4\x81h"
@@ -1506,6 +1642,7 @@ people_137:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_138: 
   id: "138"
   loc_name: "Akbar Mirz\xC4\x81 \xE1\xB9\xA2\xC4\x81rim al-Dawlah Mas\xCA\xBB\xC5\xABd"
@@ -1517,6 +1654,7 @@ people_138:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_139: 
   id: "139"
   loc_name: "Munavvar Kh\xC4\x81num"
@@ -1528,6 +1666,7 @@ people_139:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_140: 
   id: "140"
   loc_name: "N\xC5\xABr al-Dawlah"
@@ -1539,6 +1678,7 @@ people_140:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_141: 
   id: "141"
   loc_name: "Malik Man\xE1\xB9\xA3\xC5\xABr M\xC4\xABrz\xC4\x81"
@@ -1550,6 +1690,7 @@ people_141:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_142: 
   id: "142"
   loc_name: "Mu\xE1\xBA\x93affar al-M\xC4\xABrz\xC4\x81 Malik Man\xE1\xB9\xA3\xC5\xABr"
@@ -1561,6 +1702,7 @@ people_142:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_143: 
   id: "143"
   loc_name: "Ab\xC5\xAB al-Fat\xE1\xB8\xA5 Mirz\xC4\x81 S\xC4\x81l\xC4\x81r al-Dawlah"
@@ -1572,6 +1714,7 @@ people_143:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_144: 
   id: "144"
   loc_name: "Am\xC4\xABr Sah\xC4\x81m\xC4\xAB"
@@ -1583,6 +1726,7 @@ people_144:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_145: 
   id: "145"
   loc_name: "Z\xC4\xABnat Sal\xE1\xB9\xADanah"
@@ -1594,6 +1738,7 @@ people_145:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_146: 
   id: "146"
   loc_name: Suzanne
@@ -1605,6 +1750,7 @@ people_146:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_147: 
   id: "147"
   loc_name: "\xC4\xAAr\xC4\x81ndukht"
@@ -1616,6 +1762,7 @@ people_147:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_148: 
   id: "148"
   loc_name: "\xE1\xB9\xA2ab\xC4\xAB\xE1\xB8\xA5 al-Dawlah"
@@ -1627,6 +1774,7 @@ people_148:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_149: 
   id: "149"
   loc_name: "Ism\xC4\x81\xCA\xBB\xC4\xABl Mirz\xC4\x81 Mu\xCA\xBBtamad al-Dawlah Mas\xCA\xBB\xC5\xABd"
@@ -1638,6 +1786,7 @@ people_149:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_150: 
   id: "150"
   loc_name: "Riz\xCC\xA4\xC4\x81 Qul\xC4\xAB Kh\xC4\x81n Davall\xC5\xAB Q\xC4\x81j\xC4\x81r T\xC4\x81j\xCA\xB9bakhsh"
@@ -1649,6 +1798,7 @@ people_150:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_151: 
   id: "151"
   loc_name: Khadijah Khanum
@@ -1657,9 +1807,10 @@ people_151:
   dod: "0000-00-00"
   notes: "Original Collection: Zamandar "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-03-24 12:00:00
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_152: 
   id: "152"
   loc_name: "Shams\xC4\xAB"
@@ -1671,6 +1822,7 @@ people_152:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_153: 
   id: "153"
   loc_name: "Manizhah Kh\xC4\x81num"
@@ -1682,6 +1834,7 @@ people_153:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_154: 
   id: "154"
   loc_name: "\xE1\xB8\xA4am\xC4\xABd Q\xC4\x81j\xC4\x81r"
@@ -1693,6 +1846,7 @@ people_154:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_155: 
   id: "155"
   loc_name: "\xCA\xBBAbb\xC4\x81s M\xC4\xABrz\xC4\x81 Q\xC4\x81j\xC4\x81r Iftikh\xC4\x81r-i Ni\xE1\xBA\x93\xC4\x81m"
@@ -1704,6 +1858,7 @@ people_155:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_156: 
   id: "156"
   loc_name: "Mu\xE1\xB8\xA5ammad \xCA\xBBAl\xC4\xAB Sh\xC4\x81h"
@@ -1715,6 +1870,7 @@ people_156:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_157: 
   id: "157"
   loc_name: "Mah\xC4\xABn\xCA\xB9dukht Malik Man\xE1\xB9\xA3\xC5\xABr"
@@ -1726,6 +1882,7 @@ people_157:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_158: 
   id: "158"
   loc_name: "Fat\xE1\xB8\xA5 All\xC4\x81h M\xC4\xABrz\xC4\x81 Malik Man\xE1\xB9\xA3\xC5\xABr"
@@ -1737,6 +1894,7 @@ people_158:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_159: 
   id: "159"
   loc_name: "Fara\xE1\xB8\xA5 al-Sal\xE1\xB9\xADanah"
@@ -1748,6 +1906,7 @@ people_159:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_160: 
   id: "160"
   loc_name: "G\xC4\xABt\xC4\xAB Afr\xC5\xABz Kh\xC4\x81num"
@@ -1759,6 +1918,7 @@ people_160:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_161: 
   id: "161"
   loc_name: "Ab\xC5\xAB al-\xE1\xB8\xA4asan Mirz\xC4\x81"
@@ -1770,6 +1930,7 @@ people_161:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_162: 
   id: "162"
   loc_name: "\xC4\xAAr\xC4\x81ndukht"
@@ -1781,6 +1942,7 @@ people_162:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_163: 
   id: "163"
   loc_name: "T\xC4\x81j al-Mul\xC5\xABk T\xC4\x81j\xCA\xB9bakhsh Zam\xC4\x81nd\xC4\x81r"
@@ -1792,6 +1954,7 @@ people_163:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_164: 
   id: "164"
   loc_name: "Mu\xE1\xBA\x93affar al-D\xC4\xABn Sh\xC4\x81h"
@@ -1803,6 +1966,7 @@ people_164:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_165: 
   id: "165"
   loc_name: Eskandari, Manoutchehr M.
@@ -1814,6 +1978,7 @@ people_165:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_166: 
   id: "166"
   loc_name: "Sevruguin\xD8\x8C Antoin "
@@ -1825,6 +1990,7 @@ people_166:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_167: 
   id: "167"
   loc_name: ""
@@ -1836,6 +2002,7 @@ people_167:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_168: 
   id: "168"
   loc_name: Roussie Khan
@@ -1847,6 +2014,7 @@ people_168:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_169: 
   id: "169"
   loc_name: Qajar, Nasir al-Din Shah
@@ -1858,6 +2026,7 @@ people_169:
   updated_at: 2010-03-24 12:00:00
   country: 
   publish: "0"
+  items_count: "0"
 people_170: 
   id: "170"
   loc_name: Qamar Khanum
@@ -1866,9 +2035,10 @@ people_170:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "6"
 people_171: 
   id: "171"
   loc_name: Sakinah Khanum
@@ -1877,9 +2047,10 @@ people_171:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "8"
 people_172: 
   id: "172"
   loc_name: Rubabah Khanum
@@ -1888,9 +2059,10 @@ people_172:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "10"
 people_173: 
   id: "173"
   loc_name: Shahzadah Baygum
@@ -1899,9 +2071,10 @@ people_173:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "5"
 people_174: 
   id: "174"
   loc_name: Farah al-Saltanah
@@ -1910,9 +2083,10 @@ people_174:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "3"
 people_175: 
   id: "175"
   loc_name: Shahzadah Baygum
@@ -1921,9 +2095,10 @@ people_175:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "5"
 people_176: 
   id: "176"
   loc_name: Hajiyah Khanum
@@ -1932,9 +2107,10 @@ people_176:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "7"
 people_177: 
   id: "177"
   loc_name: Balijah Khanum
@@ -1943,9 +2119,10 @@ people_177:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_178: 
   id: "178"
   loc_name: Asiyah Khanum
@@ -1954,9 +2131,10 @@ people_178:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "14"
 people_179: 
   id: "179"
   loc_name: Aqa Mirza Hasan Shaykh al-Islam
@@ -1965,9 +2143,10 @@ people_179:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "41"
 people_180: 
   id: "180"
   loc_name: Jahan Ara
@@ -1976,9 +2155,10 @@ people_180:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_181: 
   id: "181"
   loc_name: Haj Umma Khanum
@@ -1987,9 +2167,10 @@ people_181:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_182: 
   id: "182"
   loc_name: Aqa Ahmad
@@ -1998,9 +2179,10 @@ people_182:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_183: 
   id: "183"
   loc_name: Aqa Mirza Mufid Shaykh al-Islam
@@ -2009,9 +2191,10 @@ people_183:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_184: 
   id: "184"
   loc_name: Afsanah Khanum
@@ -2020,9 +2203,10 @@ people_184:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_185: 
   id: "185"
   loc_name: Mufakhar al-Dawlah
@@ -2031,9 +2215,10 @@ people_185:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_186: 
   id: "186"
   loc_name: Council for Assisting the Poor
@@ -2045,6 +2230,7 @@ people_186:
   updated_at: 
   country: 
   publish: "0"
+  items_count: "0"
 people_187: 
   id: "187"
   loc_name: Haj Mirza Abu Turab Shaykh al-Islam
@@ -2053,9 +2239,10 @@ people_187:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_188: 
   id: "188"
   loc_name: Aqa Mirza Hasan Khan Munshi Bashi
@@ -2064,9 +2251,10 @@ people_188:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_189: 
   id: "189"
   loc_name: Fatimah Sultan Khanum
@@ -2075,9 +2263,10 @@ people_189:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_190: 
   id: "190"
   loc_name: Maryam Khanum
@@ -2086,9 +2275,10 @@ people_190:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_191: 
   id: "191"
   loc_name: Nushi Khanum
@@ -2097,9 +2287,10 @@ people_191:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_192: 
   id: "192"
   loc_name: Munshi Bashi
@@ -2108,9 +2299,10 @@ people_192:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "12"
 people_193: 
   id: "193"
   loc_name: Ministry of Justice
@@ -2122,6 +2314,7 @@ people_193:
   updated_at: 
   country: 
   publish: "0"
+  items_count: "0"
 people_194: 
   id: "194"
   loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
@@ -2130,9 +2323,10 @@ people_194:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "3"
 people_195: 
   id: "195"
   loc_name: Aqa Mirza Mansur Shaykh al-Islam
@@ -2141,9 +2335,10 @@ people_195:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_196: 
   id: "196"
   loc_name: Karbalai Musa
@@ -2152,9 +2347,10 @@ people_196:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_197: 
   id: "197"
   loc_name: Yumn al-Dawlah Dawlatshahi
@@ -2163,9 +2359,10 @@ people_197:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_198: 
   id: "198"
   loc_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
@@ -2174,9 +2371,10 @@ people_198:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_199: 
   id: "199"
   loc_name: Zivar Sarimi
@@ -2185,9 +2383,10 @@ people_199:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_200: 
   id: "200"
   loc_name: "\xCA\xBBAziz al-Muluk"
@@ -2196,9 +2395,10 @@ people_200:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "4"
 people_201: 
   id: "201"
   loc_name: Sidiqah Khanum
@@ -2207,9 +2407,10 @@ people_201:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "5"
 people_202: 
   id: "202"
   loc_name: "'Ishrat Khanum"
@@ -2218,9 +2419,10 @@ people_202:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_203: 
   id: "203"
   loc_name: Abbas Khan Tunikabuni Muntizam al-Mulk
@@ -2229,9 +2431,10 @@ people_203:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "3"
 people_204: 
   id: "204"
   loc_name: Afsanah Khanum
@@ -2240,9 +2443,10 @@ people_204:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_205: 
   id: "205"
   loc_name: Akbar Mirza Bisharat al-Saltanah
@@ -2251,9 +2455,10 @@ people_205:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_206: 
   id: "206"
   loc_name: Amin al-Dawlah
@@ -2262,9 +2467,10 @@ people_206:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_207: 
   id: "207"
   loc_name: Aqa Ahmad
@@ -2273,9 +2479,10 @@ people_207:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_208: 
   id: "208"
   loc_name: Aqa Hasan Mirza Shaykh al-Islam
@@ -2284,9 +2491,10 @@ people_208:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "8"
 people_209: 
   id: "209"
   loc_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
@@ -2295,9 +2503,10 @@ people_209:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "3"
 people_210: 
   id: "210"
   loc_name: Aqa Mirza Hasan Khan Munshi Bashi
@@ -2306,9 +2515,10 @@ people_210:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_211: 
   id: "211"
   loc_name: Aqa Mirza Hasan Shaykh al-Islam
@@ -2317,9 +2527,10 @@ people_211:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "41"
 people_212: 
   id: "212"
   loc_name: Aqa Mirza Husayn Shaykh al-Islam
@@ -2328,9 +2539,10 @@ people_212:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "3"
 people_213: 
   id: "213"
   loc_name: Aqa Mirza Mahdi
@@ -2339,9 +2551,10 @@ people_213:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_214: 
   id: "214"
   loc_name: Aqa Mirza Mahmud Shaykh al-Islam
@@ -2350,9 +2563,10 @@ people_214:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_215: 
   id: "215"
   loc_name: Aqa Mirza Mansur Shaykh al-Islam
@@ -2361,9 +2575,10 @@ people_215:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_216: 
   id: "216"
   loc_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
@@ -2372,9 +2587,10 @@ people_216:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_217: 
   id: "217"
   loc_name: Aqa Mirza Mufid Shaykh al-Islam
@@ -2383,9 +2599,10 @@ people_217:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "2"
 people_218: 
   id: "218"
   loc_name: Aqa Mirza Sabuni
@@ -2394,9 +2611,10 @@ people_218:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_219: 
   id: "219"
   loc_name: "Aqa Mirza \xCA\xBBAbd al-Allah Amjad al-Vizarah"
@@ -2405,9 +2623,10 @@ people_219:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_220: 
   id: "220"
   loc_name: Ashraf al-Sadat
@@ -2416,9 +2635,10 @@ people_220:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_221: 
   id: "221"
   loc_name: Asiyah Khanum
@@ -2427,9 +2647,10 @@ people_221:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "14"
 people_222: 
   id: "222"
   loc_name: "Atabak A\xCA\xBEzam Amin al-Sultan"
@@ -2438,9 +2659,10 @@ people_222:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_223: 
   id: "223"
   loc_name: Aziz al-Muluk
@@ -2449,9 +2671,10 @@ people_223:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "6"
 people_224: 
   id: "224"
   loc_name: Balijah Khanum
@@ -2460,9 +2683,10 @@ people_224:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_225: 
   id: "225"
   loc_name: Bisharat Khanum
@@ -2471,9 +2695,10 @@ people_225:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_226: 
   id: "226"
   loc_name: Farah al-Saltanah
@@ -2482,9 +2707,10 @@ people_226:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "3"
 people_227: 
   id: "227"
   loc_name: Fatimah Baygum Khanum
@@ -2493,9 +2719,10 @@ people_227:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_228: 
   id: "228"
   loc_name: Fatimah Sultan Khanum
@@ -2504,9 +2731,10 @@ people_228:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_229: 
   id: "229"
   loc_name: Gul Andam
@@ -2515,9 +2743,10 @@ people_229:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_230: 
   id: "230"
   loc_name: Haj Mirza Abu Turab
@@ -2526,9 +2755,10 @@ people_230:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_231: 
   id: "231"
   loc_name: Haj Mirza Abu Turab Shaykh al-Islam
@@ -2537,9 +2767,10 @@ people_231:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_232: 
   id: "232"
   loc_name: Haj Sayyid 'Ali Akbar
@@ -2548,9 +2779,10 @@ people_232:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_233: 
   id: "233"
   loc_name: Haj Umma Khanum
@@ -2559,9 +2791,10 @@ people_233:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_234: 
   id: "234"
   loc_name: Hajiyah Khanum
@@ -2570,9 +2803,10 @@ people_234:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "7"
 people_235: 
   id: "235"
   loc_name: Hajji Muhammad Qasim Tajir Hiravi
@@ -2581,9 +2815,10 @@ people_235:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_236: 
   id: "236"
   loc_name: Hasan Durudi
@@ -2592,9 +2827,10 @@ people_236:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_237: 
   id: "237"
   loc_name: Hasan Duruudi
@@ -2603,9 +2839,10 @@ people_237:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_238: 
   id: "238"
   loc_name: Jahan Ara
@@ -2614,9 +2851,10 @@ people_238:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_239: 
   id: "239"
   loc_name: Karbalai Musa
@@ -2625,9 +2863,10 @@ people_239:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_240: 
   id: "240"
   loc_name: Khadijah Khanum
@@ -2636,9 +2875,10 @@ people_240:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_241: 
   id: "241"
   loc_name: Khanum Jan
@@ -2647,9 +2887,10 @@ people_241:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_242: 
   id: "242"
   loc_name: Khanum Khanumha
@@ -2658,9 +2899,10 @@ people_242:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "2"
 people_243: 
   id: "243"
   loc_name: Mah Jahan Khanum
@@ -2669,9 +2911,10 @@ people_243:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_244: 
   id: "244"
   loc_name: Manijah Safdari Qajar
@@ -2680,9 +2923,10 @@ people_244:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_245: 
   id: "245"
   loc_name: Maryam Khanum
@@ -2691,9 +2935,10 @@ people_245:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_246: 
   id: "246"
   loc_name: Mir Sayyid Ali Khan
@@ -2702,9 +2947,10 @@ people_246:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_247: 
   id: "247"
   loc_name: "Mir Sayyid \xCA\xBBAli Khan"
@@ -2713,9 +2959,10 @@ people_247:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_248: 
   id: "248"
   loc_name: Mirza Buzurg Hakimbashi
@@ -2724,9 +2971,10 @@ people_248:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_249: 
   id: "249"
   loc_name: Mirza Hasan Durudi
@@ -2735,9 +2983,10 @@ people_249:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_250: 
   id: "250"
   loc_name: Mirza Hasan Khan Hakimbashi
@@ -2746,9 +2995,10 @@ people_250:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:50
   country: 
   publish: "1"
+  items_count: "1"
 people_251: 
   id: "251"
   loc_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
@@ -2757,9 +3007,10 @@ people_251:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_252: 
   id: "252"
   loc_name: Mirza Mahdi Khan
@@ -2768,9 +3019,10 @@ people_252:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_253: 
   id: "253"
   loc_name: Mirza Qavam
@@ -2779,9 +3031,10 @@ people_253:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_254: 
   id: "254"
   loc_name: Mu'avin al-Mulk
@@ -2790,9 +3043,10 @@ people_254:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_255: 
   id: "255"
   loc_name: Mu'tamid al-Mulk
@@ -2801,9 +3055,10 @@ people_255:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_256: 
   id: "256"
   loc_name: Muchul Khanum
@@ -2812,9 +3067,10 @@ people_256:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_257: 
   id: "257"
   loc_name: Mufakhar al-Dawlah
@@ -2823,9 +3079,10 @@ people_257:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
-  publish: "1"
+  publish: "0"
+  items_count: "1"
 people_258: 
   id: "258"
   loc_name: Munshi Bashi
@@ -2834,9 +3091,10 @@ people_258:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "12"
 people_259: 
   id: "259"
   loc_name: Mutamid al-Sultan
@@ -2845,9 +3103,10 @@ people_259:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_260: 
   id: "260"
   loc_name: Muzaffar al-Saltanah
@@ -2856,9 +3115,10 @@ people_260:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_261: 
   id: "261"
   loc_name: Muzaffar al-Saltanah Amir Tuman
@@ -2867,9 +3127,10 @@ people_261:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_262: 
   id: "262"
   loc_name: Nushi Khanum
@@ -2878,9 +3139,10 @@ people_262:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "2"
 people_263: 
   id: "263"
   loc_name: Nushi Khanum Shaykh al-Islami
@@ -2889,9 +3151,10 @@ people_263:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_264: 
   id: "264"
   loc_name: Qamar Khanum
@@ -2900,9 +3163,10 @@ people_264:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "6"
 people_265: 
   id: "265"
   loc_name: Rubabah Khanum
@@ -2911,9 +3175,10 @@ people_265:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "10"
 people_266: 
   id: "266"
   loc_name: Rukhsarah Khanum
@@ -2922,9 +3187,10 @@ people_266:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "13"
 people_267: 
   id: "267"
   loc_name: Sa'd al-Saltanah
@@ -2933,9 +3199,10 @@ people_267:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "2"
 people_268: 
   id: "268"
   loc_name: Sadiqah Khanum
@@ -2944,9 +3211,10 @@ people_268:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_269: 
   id: "269"
   loc_name: Sakinah Khanum
@@ -2955,9 +3223,10 @@ people_269:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "8"
 people_270: 
   id: "270"
   loc_name: Salar Mansur
@@ -2966,9 +3235,10 @@ people_270:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_271: 
   id: "271"
   loc_name: Sayf al-Islam
@@ -2977,9 +3247,10 @@ people_271:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_272: 
   id: "272"
   loc_name: Sayyid Jamal al-Din Mojtahid
@@ -2988,9 +3259,10 @@ people_272:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_273: 
   id: "273"
   loc_name: Sayyid al-Saltanah
@@ -2999,9 +3271,10 @@ people_273:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_274: 
   id: "274"
   loc_name: Shah Jan
@@ -3010,9 +3283,10 @@ people_274:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_275: 
   id: "275"
   loc_name: Shahzadah Baygum
@@ -3021,9 +3295,10 @@ people_275:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "5"
 people_276: 
   id: "276"
   loc_name: Shawkat Khanum Ashraf al-Saltanah
@@ -3032,9 +3307,10 @@ people_276:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_277: 
   id: "277"
   loc_name: Sidiqah Khanum
@@ -3043,9 +3319,10 @@ people_277:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "5"
 people_278: 
   id: "278"
   loc_name: Taj Khanum
@@ -3054,9 +3331,10 @@ people_278:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_279: 
   id: "279"
   loc_name: Yumn al-Dawlah Dawlatshahi
@@ -3065,9 +3343,10 @@ people_279:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "2"
 people_280: 
   id: "280"
   loc_name: Zahra Khanum
@@ -3076,9 +3355,10 @@ people_280:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "3"
 people_281: 
   id: "281"
   loc_name: Zivar Sarimi
@@ -3087,9 +3367,10 @@ people_281:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "1"
 people_282: 
   id: "282"
   loc_name: "\xCA\xBBAziz al-Muluk"
@@ -3098,9 +3379,10 @@ people_282:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "4"
 people_283: 
   id: "283"
   loc_name: "\xCA\xBBIshrat Khanum"
@@ -3109,9 +3391,10 @@ people_283:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "2"
 people_284: 
   id: "284"
   loc_name: "\xCA\xBBIshrat al-Muluk Khanum"
@@ -3120,9 +3403,10 @@ people_284:
   dod: 
   notes: 
   created_at: 
-  updated_at: 
+  updated_at: 2010-08-12 10:38:51
   country: 
   publish: "1"
+  items_count: "5"
 people_285: 
   id: "285"
   loc_name: ""
@@ -3134,3 +3418,4 @@ people_285:
   updated_at: 2010-07-01 19:17:40
   country: 
   publish: "1"
+  items_count: "0"

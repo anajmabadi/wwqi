@@ -38,10 +38,10 @@
             <td><%= link_to(@item.place.name, archive_browser_path(:place_filter => @item.place.id)) %> </td>
           </tr>
         <% end %>
-        <% unless @item.dimensions.blank? %>
+        <% unless @item.width + @item.height + @item.length + @item.depth == 0 %>
           <tr class="odd">
             <th><%= t(:dimensions).capitalize %></th>
-            <td><%= @item.dimensions %></td>
+            <td><%= @item.dimension_label %></td>
           </tr>
         <% end %>
         <% unless @item.category_id.blank? || @item.category.nil?%>
