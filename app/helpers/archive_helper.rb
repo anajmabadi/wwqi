@@ -491,4 +491,34 @@ module ArchiveHelper
         </script>
     }
   end
+  
+  def archive_audio_head(mp3_name, wav_name)
+    s = %{
+      <!-- classroom head -->
+      <link href="/stylesheets/skin/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="/javascripts/jquery.jplayer.min.js"></script>
+      <script type="text/javascript">
+        $(document).ready(function(){
+          // Local copy of jQuery selectors, for performance.
+          var jpPlayTime = $("#jplayer_play_time");
+          var jpTotalTime = $("#jplayer_total_time");
+          $("#jquery_jplayer").jPlayer( {
+            ready: function () {
+              this.element.jPlayer("setFile", "#{mp3_name}", "#{wav_name}").jPlayer("play"); // Defines the mp3 & wav
+              },
+              swfPath: "/javascripts",
+              volume: 50,
+              oggSupport: false
+            })
+            .jPlayer("onProgressChange", function(loadPercent, playedPercentRelative, playedPercentAbsolute, playedTime, totalTime) {
+              jpPlayTime.text($.jPlayer.convertTime(playedTime));
+              jpTotalTime.text($.jPlayer.convertTime(totalTime));
+            })
+            .jPlayer("onSoundComplete", function() {
+              this.element.jPlayer("play");
+            });
+        });
+      </script>
+    }
+  end
 end

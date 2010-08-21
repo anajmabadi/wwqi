@@ -53,11 +53,11 @@
       </table>
 
       <p><%= raw @item.description unless @item.description.blank? %></p>
+
       <% unless @item.clips.empty? %>
-				<% @item.clips.each do |clip| -%>
-        	<h4><%= clip.title %></h4>
-	       	<%= raw audio_player(clip.clip_url) %>
-				<% end -%>
+				<% clip = @item.clips[0] -%>
+			  <% @extra_head_content = archive_audio_head(clip.clip_url('mp3'), clip.clip_url('wav')) -%>
+       	<%= raw css_audio_player(clip.title) %>
       <% end %>
     </div>
   </div>
