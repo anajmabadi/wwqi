@@ -40,7 +40,11 @@ a:hover{
 
 a.noimage{background:none !important}
 
-input, select,textarea{font-family:Tahoma, Geneva, sans-serif;direction: rtl;unicode-bidi: embed;}
+input,select,textarea{font-family:Tahoma, Geneva, sans-serif;direction: rtl;unicode-bidi: embed;}
+
+/* CF hack to keep some fields ltr */
+.englishOnly {direction: ltr;}
+.persianOnly {direction: rtl;unicode-bidi: embed;}
 
 /* @end */
 

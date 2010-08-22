@@ -31,6 +31,10 @@ class Item < ActiveRecord::Base
   validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
   validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
   validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
+  validates :width, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
+  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
+  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
+  validates :length, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 
   def self.recently_added_ids(limit=25)
     ids = []
@@ -163,13 +167,13 @@ class Item < ActiveRecord::Base
   end
   
   def dimension_label
-    label = ''
     dimensions_set = []
     dimensions_set << localize_number(self.width) unless self.width.nil? || self.width == 0
     dimensions_set << localize_number(self.height) unless self.height.nil? || self.height == 0
     dimensions_set << localize_number(self.length) unless self.length.nil? || self.length == 0
     dimensions_set << localize_number(self.depth) unless self.depth.nil? || self.depth == 0
-    return dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit)   
+    label = dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit) unless dimensions_set.empty?
+    return label
   end
   
   private

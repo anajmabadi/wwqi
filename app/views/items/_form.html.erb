@@ -1,34 +1,55 @@
 <%= form_for(@item) do |f| %>
   <%= f.error_messages %>
 
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_area :title, :rows => 3 %>
+	<h2>Translated Information</h2>
+
+  <div class="field englishOnly">
+    <%= f.label :title_en %><br />
+    <%= f.text_area :title_en, :rows => 3 %>
   </div>
-  <div class="field">
-    <%= f.label :accession_num %><br />
-    <%= f.text_area :accession_num, :rows => 3 %>
+  <div class="field persianOnly">
+    <%= f.label :title_fa %><br />
+    <%= f.text_area :title_fa, :rows => 3 %>
   </div>
-  <div class="field">
-    <%= f.label :credit %><br />
-    <%= f.text_area :credit, :rows => 3 %>
+
+  <div class="field englishOnly">
+    <%= f.label :credit_en %><br />
+    <%= f.text_area :credit_en, :rows => 3 %>
   </div>
-  <div class="field">
-    <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 5 %>
+  <div class="field persianOnly">
+    <%= f.label :credit_fa %><br />
+    <%= f.text_area :credit_fa, :rows => 3 %>
   </div>
-  <div class="field">
-    <%= f.label :olivia_id %><br />
-    <%= f.text_area :olivia_id, :rows => 3 %>
+
+  <div class="field englishOnly">
+    <%= f.label :description_en %><br />
+    <%= f.text_area :description_en, :rows => 5 %>
   </div>
-  <div class="field">
-    <%= f.label :urn %><br />
-    <%= f.text_area :urn, :rows => 3 %>
+  <div class="field persianOnly">
+    <%= f.label :description_fa %><br />
+    <%= f.text_area :description_fa, :rows => 5 %>
   </div>
-  <div class="field">
-    <%= f.label :creator_label %><br />
-    <%= f.text_field :creator_label, :size => 55 %>
+
+  <div class="field englishOnly">
+    <%= f.label :creator_label_en %><br />
+    <%= f.text_field :creator_label_en, :size => 55 %>
   </div>
+  <div class="field persianOnly">
+    <%= f.label :creator_label_fa %><br />
+    <%= f.text_field :creator_label_fa, :size => 55 %>
+  </div>
+
+  <div class="field englishOnly">
+    <%= f.label :display_date_en %><br />
+    <%= f.text_field :display_date_en %>
+  </div>
+  <div class="field persianOnly">
+    <%= f.label :display_date_fa %><br />
+    <%= f.text_field :display_date_fa %>
+  </div>
+
+	<h2>Translated Relationships</h2>
+	
   <div class="field">
     <%= f.label :creator_id %><br />
     <%= f.select :creator_id, Person.select_list, {:include_blank => true} %>
@@ -42,32 +63,61 @@
     <%= f.select :collection_id, Collection.select_list, {:include_blank => true} %>
   </div>
   <div class="field">
-    <%= f.label :pages %><br />
-    <%= f.text_field :pages, :size => 5 %>
-  </div>
-  <div class="field">
-    <%= f.label :format_id %><br />
-    <%= f.text_field :format_id %>
-  </div>
-  <div class="field">
     <%= f.label :period_id %><br />
     <%= f.select :period_id, Period.select_list, {:include_blank => true} %>
   </div>
   <div class="field">
+    <%= f.label :place_id %><br />
+    <%= f.select :place_id, Place.select_list, {:include_blank => true } %>
+  </div>
+
+	<h2>English Only Fields</h2>
+	
+  <div class="field englishOnly" >
+    <%= f.label :accession_num %><br />
+    <%= f.text_area :accession_num, :class => "englishOnly", :rows => 3 %>
+  </div>
+
+  <div class="field englishOnly">
+    <%= f.label :olivia_id %><br />
+    <%= f.text_area :olivia_id, :rows => 3, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :urn %><br />
+    <%= f.text_area :urn, :rows => 3, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :pages %><br />
+    <%= f.text_field :pages, :size => 5, :class => "englishOnly" %>
+  </div>
+
+  <div class="field englishOnly">
     <%= f.label :source_date %> (use with calendar type below)<br />
-    <%= f.text_field :source_date %>
+    <%= f.text_field :source_date, :class => "englishOnly" %>
   </div>
-  <div class="field">
+  <div class="field englishOnly">
     <%= f.label :calendar_type_id %><br />
-    <%= f.select :calendar_type_id, CalendarType.select_list, {:include_blank => true} %>
+    <%= f.select :calendar_type_id, CalendarType.select_list, {:include_blank => true}, :class => "englishOnly" %>
   </div>
-  <div class="field">
-    <%= f.label :display_date %><br />
-    <%= f.text_field :display_date %>
-  </div>
-  <div class="field">
+  <div class="field englishOnly">
     <%= f.label :sort_date %> (YYYY-MM-DD Gregorian)<br />
-    <%= f.text_field :sort_date %>
+    <%= f.text_field :sort_date, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :width %><br />
+    <%= f.text_field :width, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :height %><br />
+    <%= f.text_field :height, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :depth %><br />
+    <%= f.text_field :depth, :class => "englishOnly" %>
+  </div>
+  <div class="field englishOnly">
+    <%= f.label :length %> (special case: i.e. long thin objects)<br />
+    <%= f.text_field :length, :class => "englishOnly" %>
   </div>
   <div class="field">
     <%= f.label :circa %><br />
@@ -78,21 +128,16 @@
     <%= f.check_box :bound %>
   </div>
   <div class="field">
-    <%= f.label :dimensions %><br />
-    <%= f.text_field :dimensions %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes, :rows => 3 %>
-  </div>
-  <div class="field">
-    <%= f.label :place_id %><br />
-    <%= f.select :place_id, Place.select_list, {:include_blank => true } %>
-  </div>
-  <div class="field">
     <%= f.label :publish %><br />
     <%= f.check_box :publish %>
   </div>
+  <div class="field englishOnly">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes, :class => "englishOnly", :rows => 3 %>
+  </div>
+	<div class="actions">
+	  <%= f.submit %>
+	</div>
   <hr />
   <p>
     <b>Subjects</b>

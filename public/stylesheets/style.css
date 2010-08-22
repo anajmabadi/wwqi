@@ -40,6 +40,10 @@ a:hover{
 
 a.noimage{background:none !important}
 
+/* CF hack to keep some fields ltr */
+.englishOnly {direction: ltr;}
+.persianOnly {direction: rtl;unicode-bidi: embed;}
+
 /* @end */
 
 /* @group Typography */
