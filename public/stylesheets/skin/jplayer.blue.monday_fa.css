@@ -22,7 +22,7 @@ div.jp-playlist-player {
 	 */
 
 	font-size:1em; /* No parent CSS that can effect the size in these demos */
-	direction:ltr;
+
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
 	color: #ffffff;
@@ -131,6 +131,7 @@ div.jp-progress {
 	background-color: #ddd;
 	width:90px;
 	height:10px;
+	direction:ltr
 }
 div.jp-single-player div.jp-progress {
 	right:85px;
@@ -154,6 +155,7 @@ a.jp-volume-min {
 	background: url("jplayer.png") 0 -170px no-repeat;
 	width:18px;
 	height:15px;
+	direction:ltr;
 }
 div.jp-single-player a.jp-volume-min {
 	right:224px;
@@ -259,3 +261,4 @@ div.jp-playlist-player div.jp-playlist a:hover {
 div.jp-playlist-player div.jp-playlist a.jplayer_playlist_current {
 	color:#0d88c1;
 }
+#jqjp_force_0{text-indent:99999px!important}
