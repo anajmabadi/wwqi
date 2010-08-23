@@ -127,6 +127,7 @@ module ApplicationHelper
       <div id="jquery_jplayer"></div>
       <div class="jp-single-player">
         <div class="jp-interface">
+		<div class="jp-curl"></div>
           <ul class="jp-controls">
             <li><a href="#" id="jplayer_play" class="jp-play" tabindex="1">play</a></li>
             <li><a href="#" id="jplayer_pause" class="jp-pause" tabindex="1">pause</a></li>

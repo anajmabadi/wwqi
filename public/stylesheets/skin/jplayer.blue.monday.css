@@ -26,13 +26,24 @@ div.jp-playlist-player {
 	font-family:Verdana, Arial, sans-serif;
 	line-height:1.6;
 	color: #ffffff;
+	
 }
 div.jp-interface {
 	background-color:#000;
 	height:65px;
 	position:relative;
 	width:290px;
+	
 }
+
+div.jp-curl{
+	width:292px;
+	height:13px;
+	top:-13px;
+	right:0;
+	background:url(../../images/bg_audio_curl.gif) top right no-repeat;
+	position:absolute;}
+	
 div.jp-single-player div.jp-interface {
 	border-bottom:none;
 }

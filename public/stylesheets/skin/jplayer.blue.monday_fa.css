@@ -33,6 +33,16 @@ div.jp-interface {
 	position:relative;
 	width:290px;
 }
+
+div.jp-curl{
+	width:292px;
+	height:13px;
+	top:-13px;
+	left:0;
+	background:url(../../images/bg_audio_curl_fa.gif) top left no-repeat;
+	position:absolute;}
+	
+	
 div.jp-single-player div.jp-interface {
 	border-bottom:none;
 }
