@@ -39,6 +39,8 @@ module Globalize
       def locale=(locale)
         @@locale = locale
       end
+      
+      
 
       def translates(*attr_names)
         return if translates?
@@ -50,7 +52,12 @@ module Globalize
 
         include InstanceMethods
         extend  ClassMethods, Migration
-
+        
+        # BEGIN OF PATCH
+        class_name = table_name[table_name_prefix.length..-(table_name_suffix.length + 1)].camelize
+        class_name = class_name.singularize if pluralize_table_names
+        # END OF PATCH
+        
         after_save :save_translations!
         has_many :translations, :class_name  => translation_class.name,
                                 :foreign_key => class_name.foreign_key,

@@ -1,7 +1,7 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source :gemcutter
 
-gem "rails", "3.0.0.beta4"
+gem "rails", "3.0.0.rc"
 
 gem "rack"
 
@@ -10,7 +10,7 @@ gem "rack"
 
 gem "mysql"
 
-gem "will_paginate", ">=3.0.pre"
+gem "will_paginate", "~>3.0"
 
 gem "railties", ">=3.0.0.beta4"
 

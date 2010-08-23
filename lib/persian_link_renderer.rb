@@ -1,3 +1,5 @@
+require 'will_paginate/view_helpers/link_renderer'
+
 class PersianLinkRenderer < WillPaginate::ViewHelpers::LinkRenderer
 
   protected 

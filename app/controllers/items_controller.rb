@@ -59,11 +59,16 @@ class ItemsController < ApplicationController
   # PUT /items/1.xml
   def update
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
+    logger.info "--------------items#update: @item.subjects.size = " + @item.subjects.size.to_s
     respond_to do |format|
+      
+      logger.info "------------ items#update: respond_to in progress"
       if @item.update_attributes(params[:item])
+        logger.info "------------ items#update: respond_to save worked"
         format.html { redirect_to(@item, :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       else
+        logger.info "------------ items#update: respond_to else: something went wrong"
         format.html { render :action => "edit" }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
       end
