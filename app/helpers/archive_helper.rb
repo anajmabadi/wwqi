@@ -495,7 +495,7 @@ module ArchiveHelper
   def archive_audio_head(mp3_name, wav_name)
     s = %{
       <!-- classroom head -->
-      <link href="/stylesheets/skin/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+      <link href="/stylesheets/skin/jplayer.blue.monday#{language_suffix}.css" rel="stylesheet" type="text/css" />
       <script type="text/javascript" src="/javascripts/jquery.jplayer.min.js"></script>
       <script type="text/javascript">
         $(document).ready(function(){

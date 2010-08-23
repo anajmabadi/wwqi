@@ -5,6 +5,7 @@ class Image < ActiveRecord::Base
   def tag_line
     tag = ''
     tag += title.nil? ? item.title : title
+    return tag.force_encoding("utf-8")
   end
   
   def tif_file_name

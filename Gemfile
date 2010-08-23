@@ -15,6 +15,7 @@ gem "will_paginate", "~>3.0"
 gem "railties", ">=3.0.0.beta4"
 
 gem 'farsifu'
+
 #gem 'jalalidate'
 #gem 'calendar'
 

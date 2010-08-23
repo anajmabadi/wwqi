@@ -168,7 +168,7 @@
              <%  if @item.subjects.include? subject -%>
                checked="checked"
              <% end -%>
-             /> <%= subject.name %>
+						/> <%= truncate(subject.name) %>
     </td>
     <% counter += 1 -%>
   <% end -%>
