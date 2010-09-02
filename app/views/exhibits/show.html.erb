@@ -43,7 +43,7 @@
   <div id="head">
     <h2><%=   @exhibition.title %></h2>
     <ul class="types sortnav">
-      <li><a href="exhibits.html" class="module-link active"><%=  t(:back_to_exhibits) %></a></li>
+      <li><%= link_to t(:back_to_exhibits), exhibits_path, :class=>"module-link active" %></li>
     </ul>
   </div>
   <div id="browserFilters" class="clearfix">
