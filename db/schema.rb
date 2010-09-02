@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100823020559) do
+ActiveRecord::Schema.define(:version => 20100902013438) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -191,6 +191,12 @@ ActiveRecord::Schema.define(:version => 20100823020559) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "sort_name"
+    t.text     "description"
+    t.string   "dates"
+    t.text     "materials"
+    t.text     "repository"
+    t.text     "tips"
+    t.boolean  "finding_aid"
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"

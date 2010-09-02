@@ -1,27 +1,30 @@
-<h1>Listing collections</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th><%= t(:id) %></th>
-    <th><%= t(:name) %></th>
-    <th><%= t(:email) %></th>
-    <th><%= t(:website) %></th>
-    <th><%= t(:contact) %></th>
-    <th><%= t(:actions) %></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title = t(:item).capitalize %></h1>
+  <%= link_to 'New collection', new_collection_path %>
 
-<% @collections.each do |collection| %>
-  <tr>
-    <td><%= collection.id %></td>
-    <td><%= collection.name %></td>
-    <td><%= collection.email %></td>
-    <td><%= link_to collection.website, collection.website, :html => {:target => 'blank'} unless collection.website.blank? %></td>
-    <td><%= collection.contact %></td>
-    <td><%= link_to 'Show', collection %> | <%= link_to 'Edit', edit_collection_path(collection) %> | <%= link_to 'Destroy', collection, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <table class="styled">
+    <tr>
+      <th><%= t(:id) %></th>
+      <th><%= t(:name) %></th>
+      <th><%= t(:email) %></th>
+      <th><%= t(:website) %></th>
+      <th><%= t(:contact) %></th>
+      <th><%= t(:actions) %></th>
+    </tr>
 
-<br />
-
-<%= link_to 'New collection', new_collection_path %>
+  <% @collections.each do |collection| %>
+    <tr>
+      <td><%= collection.id %></td>
+      <td><%= collection.name %></td>
+      <td><%= collection.email %></td>
+      <td><%= link_to collection.website, collection.website, :html => {:target => 'blank'} unless collection.website.blank? %></td>
+      <td><%= collection.contact %></td>
+      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), collection %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_collection_path(collection) %> <%= link_to image_tag("delete.png", :alt => 'delete'), collection, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+  <p>&nbsp;</p>
+  <%= link_to 'New collection', new_collection_path %>
+</div>
