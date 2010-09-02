@@ -1,5 +1,12 @@
-<h1>New collection</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = t(:collections).capitalize + ' | ' + t(:new).capitalize -%>
 
-<%= render 'form' %>
+<div id="staticContent" class="clearfix">
 
-<%= link_to 'Back', collections_path %>
+  <h1><%= @page_title %></h1>
+  <p><%= link_to 'Back', collections_path %></p>
+
+  <%= render 'form' %>
+
+  <p><%= link_to 'Back', collections_path %></p>
+</div>
