@@ -26,15 +26,13 @@ class ExhibitsController < ApplicationController
         # check if the item is part of the set
         raise RangeError unless @items.include?(@item)
       end
+      respond_to do |format|
+        format.html # index.html.erb
+        format.xml  { render :xml => @collections }
+      end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item collection was invalid.'
       redirect_to @return_url
-    end
-
-
-    respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @collections }
     end
   end
 
