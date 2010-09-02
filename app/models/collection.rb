@@ -3,8 +3,10 @@ require 'farsifu'
 class Collection < ActiveRecord::Base
   has_many :items
   has_many :owners, :through => :items
-  translates :name, :caption, :sort_name
 
+  # globalize2 accessors including extensions
+  translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips
+  globalize_accessors :fa, :en
   default_scope :include => :translations
 
   def self.select_list

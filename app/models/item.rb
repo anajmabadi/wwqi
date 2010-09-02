@@ -1,6 +1,6 @@
 class Item < ActiveRecord::Base
   belongs_to :owner
-  belongs_to :collection
+  belongs_to :collection, :counter_cache => true
   belongs_to :format
   belongs_to :medium
   belongs_to :place

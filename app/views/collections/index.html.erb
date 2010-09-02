@@ -11,16 +11,18 @@
       <th><%= t(:email) %></th>
       <th><%= t(:website) %></th>
       <th><%= t(:contact) %></th>
+      <th><%= t(:items) %></th>
       <th><%= t(:actions) %></th>
     </tr>
 
   <% @collections.each do |collection| %>
     <tr>
       <td><%= collection.id %></td>
-      <td><%= collection.name %></td>
+      <td><%= link_to collection.name, collection_path(collection) %></td>
       <td><%= collection.email %></td>
       <td><%= link_to collection.website, collection.website, :html => {:target => 'blank'} unless collection.website.blank? %></td>
       <td><%= collection.contact %></td>
+      <td><%= collection.items.size %></td>
       <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), collection %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_collection_path(collection) %> <%= link_to image_tag("delete.png", :alt => 'delete'), collection, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
