@@ -100,11 +100,11 @@
 
     <tr><td>
         <b>Email:</b>
-        <%= @collection.email %>
+        <%= mail_to @collection.email, nil, :encode => 'javascript' unless @collection.email.blank? %>
       </td>
       <td>
         <b>Website:</b>
-        <%= @collection.website %>
+        <%= link_to_unless @collection.website.blank?, @collection.website, @collection.website, :target => "_blank" %>
       </td></tr>
 
     <tr><td colspan="2">

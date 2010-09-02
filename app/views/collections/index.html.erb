@@ -19,9 +19,9 @@
     <tr>
       <td><%= collection.id %></td>
       <td><%= link_to collection.name, collection_path(collection) %></td>
-      <td><%= collection.email %></td>
-      <td><%= link_to collection.website, collection.website, :html => {:target => 'blank'} unless collection.website.blank? %></td>
-      <td><%= collection.contact %></td>
+      <td><%= mail_to collection.email, truncate(collection.email), :encode => 'javascript' unless collection.email.blank? %></td>
+      <td><%= link_to_unless(collection.website.blank?, truncate(collection.website), collection.website, :target => '_blank') %></td>
+      <td><%= truncate(collection.contact) %></td>
       <td><%= collection.items.size %></td>
       <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), collection %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_collection_path(collection) %> <%= link_to image_tag("delete.png", :alt => 'delete'), collection, :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
