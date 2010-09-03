@@ -1,4 +1,4 @@
-Qajar::Application.routes.draw do |map|
+Qajar::Application.routes.draw do
 
   resources :subject_types
 
@@ -51,13 +51,13 @@ Qajar::Application.routes.draw do |map|
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
 
-  map.archive_detail_slides_xml 'archive/detail/:id/slides.:format', :controller => 'archive', :action => 'slides'
+  match 'archive/detail/:id/slides.:format' => 'archive#slides', :as => 'archive_detail_slides_xml'
 
   
   match 'exhibits/:id' => 'exhibits#show', :as => :show_exhibit
   match 'exhibits/detail/:id' => 'exhibits#detail', :as => :exhibit_detail
-  map.exhibits 'exhibits', :controller => 'exhibits', :action => 'index'
-  map.home 'home', :controller => 'home', :action => 'index'
+  match 'exhibits' => 'exhibits#index', :as => 'exhibits'
+  match 'home' => 'home#index', :as => 'home'
 
   # hard coded pages using the pages table for their body text
   match 'about' => 'pages#page', :as => :about, :id => 1, :page_name => 'about'

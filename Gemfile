@@ -16,6 +16,9 @@ gem "railties", ">=3.0.0.beta4"
 
 gem 'farsifu'
 
+# jquery rails installer
+gem 'jquery-rails'
+
 #gem 'jalalidate'
 #gem 'calendar'
 
