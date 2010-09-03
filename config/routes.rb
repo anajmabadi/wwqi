@@ -1,4 +1,4 @@
-Qajar::Application.routes.draw do
+Qajar::Application.routes.draw do |map|
 
   resources :subject_types
 
