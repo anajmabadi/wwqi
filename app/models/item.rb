@@ -26,6 +26,7 @@ class Item < ActiveRecord::Base
   # pagination code
   cattr_reader :per_page
   @@per_page = 25
+
   
   # validations
   validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
