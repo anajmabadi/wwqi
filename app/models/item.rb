@@ -105,11 +105,14 @@ class Item < ActiveRecord::Base
   end
 
   def show_date
-    unless display_date.blank?
-      return display_date
-    else
-      return sort_date.to_s
+    date_to_show = ''
+    if !self.display_date.blank?
+      date_to_show += display_date
+    elsif !self.sort_date.blank?
+      date_to_show += sort_date.to_s
     end
+    date_to_show += ' ' + I18n.translate(:circa) if self.circa && date_to_show != ''
+    return date_to_show
   end
 
   # TODO: Find the right place for this special XML route
