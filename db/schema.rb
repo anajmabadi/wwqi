@@ -1,8 +1,8 @@
-# This file is auto-generated from the current state of the database. Instead 
+# This file is auto-generated from the current state of the database. Instead
 # of editing this file, please use the migrations feature of Active Record to
 # incrementally modify your database, and then regenerate this schema definition.
 #
-# Note that this schema.rb definition is the authoritative source for your 
+# Note that this schema.rb definition is the authoritative source for your
 # database schema. If you need to create the application database on another
 # system, you should be using db:schema:load, not running all the migrations
 # from scratch. The latter is a flawed and unsustainable approach (the more migrations
@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100902113308) do
+ActiveRecord::Schema.define(:version => 20100906191154) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -523,6 +523,26 @@ ActiveRecord::Schema.define(:version => 20100902113308) do
   add_index "panels", ["position"], :name => "index_panels_on_position"
   add_index "panels", ["publish"], :name => "index_panels_on_publish"
 
+  create_table "passports", :force => true do |t|
+    t.string   "tag"
+    t.integer  "repository_id"
+    t.integer  "item_id"
+    t.boolean  "publish"
+    t.boolean  "primary"
+    t.integer  "position"
+    t.text     "notes"
+    t.string   "custom_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "passports", ["item_id"], :name => "fk_passports_items"
+  add_index "passports", ["position"], :name => "index_passports_on_position"
+  add_index "passports", ["primary"], :name => "index_passports_on_primary"
+  add_index "passports", ["publish"], :name => "index_passports_on_publish"
+  add_index "passports", ["repository_id"], :name => "fk_passports_repositories"
+  add_index "passports", ["tag"], :name => "index_passports_on_tag"
+
   create_table "people", :force => true do |t|
     t.string   "loc_name"
     t.boolean  "major",       :default => false
@@ -614,6 +634,28 @@ ActiveRecord::Schema.define(:version => 20100902113308) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "repositories", :force => true do |t|
+    t.integer  "owner_id"
+    t.boolean  "publish"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "repositories", ["owner_id"], :name => "fk_repositories_owners"
+  add_index "repositories", ["publish"], :name => "index_repositories_on_publish"
+
+  create_table "repository_translations", :force => true do |t|
+    t.integer  "repository_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "repository_translations", ["name"], :name => "index_repository_translations_on_name"
+  add_index "repository_translations", ["repository_id"], :name => "index_repository_translations_on_repository_id"
 
   create_table "subject_translations", :force => true do |t|
     t.integer  "subject_id"

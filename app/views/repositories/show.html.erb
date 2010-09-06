@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @repository.name %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @repository.owner_id %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @repository.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @repository.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_repository_path(@repository) %> |
+<%= link_to 'Back', repositories_path %>
