@@ -112,7 +112,12 @@ class Item < ActiveRecord::Base
     elsif !self.sort_date.blank?
       date_to_show += sort_date.to_s
     end
-    date_to_show += ' ' + I18n.translate(:circa) if self.circa && date_to_show != ''
+    if I18n.locale == :fa
+      date_to_show = I18n.translate(:circa) + ' ' + date_to_show
+    else
+      date_to_show += ' ' + I18n.translate(:circa)
+    end if self.circa && date_to_show != ''
+    
     return date_to_show
   end
 
