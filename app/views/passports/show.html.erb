@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Tag:</b>
+  <%= @passport.tag %>
+</p>
+
+<p>
+  <b>Owner:</b>
+  <%= @passport.owner_id %>
+</p>
+
+<p>
+  <b>Item:</b>
+  <%= @passport.item_id %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @passport.publish %>
+</p>
+
+<p>
+  <b>Primary:</b>
+  <%= @passport.primary %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @passport.position %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @passport.notes %>
+</p>
+
+<p>
+  <b>Custom url:</b>
+  <%= @passport.custom_url %>
+</p>
+
+
+<%= link_to 'Edit', edit_passport_path(@passport) %> |
+<%= link_to 'Back', passports_path %>

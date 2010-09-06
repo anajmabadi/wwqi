@@ -1,5 +1,7 @@
 Qajar::Application.routes.draw do |map|
 
+  resources :passports
+
   resources :subject_types
 
   resources :clip_types
