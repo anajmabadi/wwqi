@@ -25,7 +25,7 @@ class RepositoriesController < ApplicationController
   # GET /repositories/new.xml
   def new
     @repository = Repository.new
-
+    @owners = owners_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @repository }
@@ -34,6 +34,7 @@ class RepositoriesController < ApplicationController
 
   # GET /repositories/1/edit
   def edit
+    @owners = owners_list
     @repository = Repository.find(params[:id])
   end
 
@@ -79,5 +80,11 @@ class RepositoriesController < ApplicationController
       format.html { redirect_to(repositories_url) }
       format.xml  { head :ok }
     end
+  end
+
+  private
+
+  def owners_list
+    return Owner.all(:order => 'owner_translations.name').map { |o| [o.name, o.id]}
   end
 end
