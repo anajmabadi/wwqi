@@ -636,8 +636,9 @@ ActiveRecord::Schema.define(:version => 20100906191154) do
   end
 
   create_table "repositories", :force => true do |t|
-    t.integer  "owner_id"
-    t.boolean  "publish"
+    t.integer  "owner_id",                     :null => false
+    t.string   "url",                          :null => false
+    t.boolean  "publish",    :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,29 +1,30 @@
-<h1>Listing repositories</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Owner</th>
-    <th>Publish</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title = t(:repository).capitalize %></h1>
+  <p><%= link_to 'New Repository', new_repository_path %></p>
 
-<% @repositories.each do |repository| %>
-  <tr>
-    <td><%= repository.name %></td>
-    <td><%= repository.owner_id %></td>
-    <td><%= repository.publish %></td>
-    <td><%= repository.notes %></td>
-    <td><%= link_to 'Show', repository %></td>
-    <td><%= link_to 'Edit', edit_repository_path(repository) %></td>
-    <td><%= link_to 'Destroy', repository, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+  <table class="styled">
+    <tr>
+      <th>Name</th>
+      <th>Owner</th>
+      <th>Url</th>
+      <th>Publish</th>
+      <th>Notes</th>
+      <th>Actions</th>
+    </tr>
 
-<br />
+    <% @repositories.each do |repository| %>
+      <tr>
+        <td><%= truncate(repository.name) %></td>
+        <td><%= truncate(repository.owner.name) unless repository.owner.nil? %></td>
+        <td><%= repository.url %>
+        <td><%= show_check repository.publish %></td>
+        <td><%= truncate(repository.notes) %></td>
+        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), repository %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_repository_path(repository) %> <%= link_to image_tag("delete.png", :alt => 'delete'), repository, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
 
-<%= link_to 'New Repository', new_repository_path %>
+  <p><%= link_to 'New Repository', new_repository_path %></p>
+</div>

@@ -1,8 +1,9 @@
 class CreateRepositories < ActiveRecord::Migration
   def self.up
     create_table :repositories do |t|
-      t.integer :owner_id
-      t.boolean :publish
+      t.integer :owner_id, :null => false
+      t.string :url, :null => false
+      t.boolean :publish, :default => true, :null => false
       t.text :notes
 
       t.timestamps
@@ -14,6 +15,7 @@ class CreateRepositories < ActiveRecord::Migration
   end
 
   def self.down
+    Repository.drop_translation_table!
     remove_index :repository_translations, :name
     remove_index :repositories, ["owner_id"]
     remove_index :repositories, :publish

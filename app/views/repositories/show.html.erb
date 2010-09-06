@@ -1,25 +1,54 @@
-<p id="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = t(:repository).capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Name:</b>
-  <%= @repository.name %>
-</p>
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title %></h1>
 
-<p>
-  <b>Owner:</b>
-  <%= @repository.owner_id %>
-</p>
+  <p>
+    <%= link_to 'Edit', edit_repository_path(@repository) %> |
+    <%= link_to 'Back', repositories_path %>
+  </p>
 
-<p>
-  <b>Publish:</b>
-  <%= @repository.publish %>
-</p>
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <b>Notes:</b>
-  <%= @repository.notes %>
-</p>
+  <p>
+    <b>Name_en:</b>
+    <%= @repository.name_en %>
+  </p>
 
+  <p>
+    <b>Name_fa:</b>
+    <%= @repository.name_fa %>
+  </p>
 
-<%= link_to 'Edit', edit_repository_path(@repository) %> |
-<%= link_to 'Back', repositories_path %>
+  <p><b>Url:</b>
+    <%= @repository.url %>
+  </p>
+  
+  <p>
+    <b>Owner:</b>
+    <%= @repository.owner %>
+  </p>
+
+  <p>
+    <b>Publish:</b>
+    <%= @repository.publish %>
+  </p>
+
+  <p>
+    <b>Notes:</b>
+    <%= @repository.notes %>
+  </p>
+
+  <p><b>Items:</b></p>
+  <ul>
+  <% @repository.passports.each do |passport|  -%>
+    <li><%= link_to passport.item.title, item_url(passport.item) %> (<%= link_to 'repository link', passport.full_url, :target => '_blank' %>) </li>
+  <% end -%>
+  </ul>
+  
+  <p>
+    <%= link_to 'Edit', edit_repository_path(@repository) %> |
+    <%= link_to 'Back', repositories_path %>
+  </p>
+</div>
