@@ -51,6 +51,12 @@
       </td></tr>
 
     <tr><td>
+        <ul><% @item.passports.each do |passport| -%>
+        <b>Repository link:</b>
+        <%= passport.repository.name unless passport.repository.nil? %>: <%= link_to passport.tag, passport.full_url, :target => '_blank' %>
+        <% end -%>
+        </ul>
+    <tr><td>
         <b>Collection:</b>
         <%= @item.collection.name unless @item.collection.nil? %>
       </td></tr>

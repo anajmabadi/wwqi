@@ -17,6 +17,8 @@ class Item < ActiveRecord::Base
   has_many :exhibitions, :through => :panels, :order => 'panels.position'
   has_many :clips, :order => :position
   has_many :subjects, :through => :classifications, :order => 'position'
+  has_many :passports, :order => 'passports.position'
+  has_many :repositories, :through => :passports
   
   # globalize2 accessors 
   translates :title, :credit, :description, :display_date, :creator_label
