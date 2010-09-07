@@ -19,6 +19,7 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.xml
   def show
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @item }
@@ -85,6 +86,19 @@ class ItemsController < ApplicationController
       format.xml  { head :ok }
     end
   end
+
+  # remote function for showing the add passport form
+  def show_add_passport_to_item
+
+    # retrieve @repositories for instant additions
+    @item = Item.find(params[:id])
+    @repositories = repositories_list
+    @passport = Passport.new(:item_id => params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
   
   private
   
@@ -96,5 +110,9 @@ class ItemsController < ApplicationController
       flash[:error] = "The item you were looking for could not be found."
       redirect_to items_path
     end
-  end  
+  end
+
+  def repositories_list
+    Repository.all(:select => 'repositories.id, repository_translations.name', :order => 'repository_translations.name').map { |r| [r.to_label, r.id]}
+  end
 end

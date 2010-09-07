@@ -46,7 +46,11 @@ Qajar::Application.routes.draw do |map|
 
   resources :collections
 
-  resources :items
+  resources :items do
+    collection do
+      post :show_add_passport_to_item
+    end
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
