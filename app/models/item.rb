@@ -1,4 +1,9 @@
 class Item < ActiveRecord::Base
+
+  # truncate and other helpers
+  include ActionView::Helpers::TextHelper
+
+
   belongs_to :owner
   belongs_to :collection, :counter_cache => true
   belongs_to :format
@@ -179,6 +184,10 @@ class Item < ActiveRecord::Base
     dimensions_set << localize_number(self.depth) unless self.depth.nil? || self.depth == 0
     label = dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit) unless dimensions_set.empty?
     return label
+  end
+
+  def to_label
+    return truncate(self.title, :length => 60) + " (#{self.id.to_s})"
   end
   
   private

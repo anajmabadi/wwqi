@@ -1,4 +1,7 @@
 class PassportsController < ApplicationController
+
+  include ActionView::Helpers::TextHelper
+  
   # GET /passports
   # GET /passports.xml
   def index
@@ -24,6 +27,8 @@ class PassportsController < ApplicationController
   # GET /passports/new
   # GET /passports/new.xml
   def new
+    @items = items_list
+    @repositories = repositories_list
     @passport = Passport.new
 
     respond_to do |format|
@@ -34,6 +39,8 @@ class PassportsController < ApplicationController
 
   # GET /passports/1/edit
   def edit
+    @items = items_list
+    @repositories = repositories_list
     @passport = Passport.find(params[:id])
   end
 
@@ -79,5 +86,15 @@ class PassportsController < ApplicationController
       format.html { redirect_to(passports_url) }
       format.xml  { head :ok }
     end
+  end
+
+  private
+
+  def items_list
+    Item.all(:select => 'items.id, item_translations.title', :order => 'item_translations.title').map { |i| [i.to_label, i.id]}
+  end
+
+  def repositories_list
+    Repository.all(:select => 'repositories.id, repository_translations.name', :order => 'repository_translations.name').map { |r| [r.to_label, r.id]}
   end
 end

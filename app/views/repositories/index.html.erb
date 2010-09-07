@@ -18,7 +18,7 @@
       <tr>
         <td><%= truncate(repository.name) %></td>
         <td><%= truncate(repository.owner.name) unless repository.owner.nil? %></td>
-        <td><%= repository.url %>
+        <td><%= truncate(repository.url) %></td>
         <td><%= show_check repository.publish %></td>
         <td><%= truncate(repository.notes) %></td>
         <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), repository %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_repository_path(repository) %> <%= link_to image_tag("delete.png", :alt => 'delete'), repository, :confirm => 'Are you sure?', :method => :delete %></td>

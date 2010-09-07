@@ -1,18 +1,23 @@
-<p id="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
 
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title = t(:passport).capitalize + " | " + t(:show).capitalize %></h1>
+  <p id="notice"><%= notice %></p>
+  <p><%= link_to 'Edit', edit_passport_path(@passport) %> |
+  <%= link_to 'Back', passports_path %></p>
 <p>
   <b>Tag:</b>
   <%= @passport.tag %>
 </p>
 
 <p>
-  <b>Owner:</b>
-  <%= @passport.owner_id %>
+  <b>Repository:</b>
+  <%= link_to_unless @passport.repository.nil?, @passport.repository.to_label, @passport.repository %>
 </p>
 
 <p>
   <b>Item:</b>
-  <%= @passport.item_id %>
+  <%= link_to_unless @passport.item.nil?, @passport.item.to_label, @passport.repository %>
 </p>
 
 <p>
@@ -40,6 +45,6 @@
   <%= @passport.custom_url %>
 </p>
 
+<p><%= link_to 'Edit', edit_passport_path(@passport) %> |
+<%= link_to 'Back', passports_path %></p>
 
-<%= link_to 'Edit', edit_passport_path(@passport) %> |
-<%= link_to 'Back', passports_path %>

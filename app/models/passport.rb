@@ -4,6 +4,13 @@ class Passport < ActiveRecord::Base
 
   def full_url
     #TODO: find right link formula for VIA
-    return self.repository.url + self.tag unless self.repository.nil? || self.repository.url.blank?
+    my_url = ''
+    unless self.custom_url.blank?
+      my_url += self.custom_url
+    else
+      my_url += self.repository.url unless self.repository.nil? || self.repository.url.blank?
+    end
+    my_url += self.tag unless self.tag.blank?
+    return my_url
   end
 end
