@@ -48,13 +48,15 @@ class PassportsController < ApplicationController
   # POST /passports.xml
   def create
     @passport = Passport.new(params[:passport])
-
     respond_to do |format|
       if @passport.save
+        @item = Item.find(params[:passport][:item_id])
         format.html { redirect_to(@passport, :notice => 'Passport was successfully created.') }
+        format.js { render :template => 'items/add_passport_to_item' }
         format.xml  { render :xml => @passport, :status => :created, :location => @passport }
       else
         format.html { render :action => "new" }
+        format.js { render :template => 'items/add_passport_to_item' }
         format.xml  { render :xml => @passport.errors, :status => :unprocessable_entity }
       end
     end
@@ -79,11 +81,15 @@ class PassportsController < ApplicationController
   # DELETE /passports/1
   # DELETE /passports/1.xml
   def destroy
+    # first find the item in case this is a javascript request from the item perspective
+    
     @passport = Passport.find(params[:id])
+    @item = @passport.item
     @passport.destroy
 
     respond_to do |format|
       format.html { redirect_to(passports_url) }
+      format.js { render :template => 'items/remove_passport_from_item' }
       format.xml  { head :ok }
     end
   end

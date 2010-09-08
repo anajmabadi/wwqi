@@ -60,16 +60,11 @@ class ItemsController < ApplicationController
   # PUT /items/1.xml
   def update
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
-    logger.info "--------------items#update: @item.subjects.size = " + @item.subjects.size.to_s
     respond_to do |format|
-      
-      logger.info "------------ items#update: respond_to in progress"
       if @item.update_attributes(params[:item])
-        logger.info "------------ items#update: respond_to save worked"
         format.html { redirect_to(@item, :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       else
-        logger.info "------------ items#update: respond_to else: something went wrong"
         format.html { render :action => "edit" }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
       end
@@ -87,13 +82,27 @@ class ItemsController < ApplicationController
     end
   end
 
-  # remote function for showing the add passport form
+  # remote functions for showing and hiding the add passport form
   def show_add_passport_to_item
-
     # retrieve @repositories for instant additions
     @item = Item.find(params[:id])
     @repositories = repositories_list
-    @passport = Passport.new(:item_id => params[:id])
+    @max_position = Passport.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+    @passport = Passport.new(
+                              :item_id => params[:id],
+                              :publish => true,
+                              :primary => false,
+                              :position => @max_position + 1
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_passport_to_item
+    @passport = nil
+    @item = Item.find(params[:id])
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
       format.js

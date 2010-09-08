@@ -1,1 +1,1 @@
-$('#addPassport>span').replaceWith('<%= escape_javascript(render 'items/add_passport_form') %>');
+$('#addPassport>span').replaceWith('<%= escape_javascript(render :partial => 'items/add_passport_form', :locals => {:passport => @passport, :item => @item}) %>');

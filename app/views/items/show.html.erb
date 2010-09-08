@@ -51,19 +51,13 @@
       </td></tr>
 
     <tr><td>
-        <ul><% @item.passports.each do |passport| -%>
-          <li>
-            <b>Repository link:</b>
-            <%= passport.repository.name unless passport.repository.nil? %>: <%= link_to passport.tag, passport.full_url, :target => '_blank' %>
-          </li>
-          <% end -%>
-        </ul>
+        <div id="item_passport_list"><span><%= render('items/item_passport_list', :passports => @item.passports ) unless @item.passports.empty? %></span></div>
         <p>&nbsp;</p>
         <div id="addPassport">
           <% if @passport.nil? %>
-            <%= render 'add_passport_button' %>
+            <%= render :partial => 'items/add_passport_button', :locals => { :item => @item } %>
           <% else %>
-            <%= render 'add_passport_form' %>
+            <%= render 'items/add_passport_form', @passport %>
           <% end %>
         </div>
       </td></tr>

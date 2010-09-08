@@ -49,6 +49,7 @@ Qajar::Application.routes.draw do |map|
   resources :items do
     collection do
       post :show_add_passport_to_item
+      post :hide_add_passport_to_item
     end
   end
 
