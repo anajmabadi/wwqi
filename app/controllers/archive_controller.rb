@@ -17,7 +17,7 @@ class ArchiveController < ApplicationController
 
   def browser
     logger.info 'browser'
-    @categories = Category.find(:all, :conditions => 'publish=1', :order => 'parent_id, position')
+    @subject_types = SubjectType.find(:all, :conditions => 'publish=1')
     @people = Person.find(:all, :conditions => "items_count > 0 AND people.publish = 1 AND person_translations.locale = '#{I18n.locale.to_s}'", :order => 'person_translations.sort_name')
     @collections = Collection.find(:all, :conditions => 'collections.publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
     @periods = Period.find(:all, :conditions => 'periods.publish=1', :order => 'periods.position')

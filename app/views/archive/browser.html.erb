@@ -6,12 +6,12 @@
   <div id="head">
     <div style="float:left" class="search">
       <form action="/archive/browser/" class="searchform" method="get">
-          <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;" 
-									onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" 
-				      		onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-          <button type="submit"></button>
+        <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+               onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
+               onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+        <button type="submit"></button>
       </form>
-  	</div>
+    </div>
     <ul class="types sortnav">
       <li><%= t(:show) %>:</li>
       <li><a href="/archive/browser" id="allItems" class="module-link active"><%= t(:all_items) %></a></li>
@@ -20,13 +20,12 @@
   <div id="browserFilters" class="clearfix">
     <div class="column">
       <h4><%= t(:genre) %>  </h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'medium_form') do -%>
-        <select id="mediumFilter" name="medium_filter" onChange="document.forms['medium_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @medium_filter.blank? || @medium_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @categories.each do |category| -%>
-            <option value="<%= category.id %>"<%= raw ' selected="selected"' if @medium_filter==category.id.to_s -%>><%= raw category.parent_id != category.id ? '&ndash; ' : '' -%><%= category.name %></option>
+      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'subject_type_form') do -%>
+        <select id="mediumFilter" name=":subject_type_filter" onChange="document.forms['subject_type_form'].submit()">
+          <option value="all" <%= raw 'selected="selected"' if @subject_type_filter.blank? || @subject_type_filter== 'all' -%>><%= t(:all).capitalize %></option>
+          <% @subject_types.each do |subject_type| -%>
+            <option value="<%= subject_type.id %>"<%= raw ' selected="selected"' if @subject_type_filter==subject_type.id.to_s -%>><%= subject_type.name %></option>
           <% end -%>
-          <option value="more"><%= t(:more_categories) %></option>
         </select>
       <% end %>
     </div>
@@ -54,164 +53,165 @@
       <% end %>
     </div>
     <div class="browserBarIndex"><h4><%= t(:indexes) %></h4>
-    <ul id="indexLinks" class="types sortnav">
-     	<li><a class="module-link" id="peopleIndex" href="#"><%= t(:person) %></a></li>
-      <li><a class="module-link" id="subjectsIndex" href="#"><%= t(:subject) %></a></li>
-      <li><a class="module-link" id="placesIndex" href="#"><%= t(:place) %></a></li>
-    </ul>
-		</div>
+      <ul id="indexLinks" class="types sortnav">
+        <li><a class="module-link" id="peopleIndex" href="#"><%= t(:person) %></a></li>
+        <li><a class="module-link" id="subjectsIndex" href="#"><%= t(:subject) %></a></li>
+        <li><a class="module-link" id="placesIndex" href="#"><%= t(:place) %></a></li>
+      </ul>
+    </div>
   </div>
   <div id="browserFiltersDropdown" class="clearfix">
-   	<ul class="alphabet">
-     					
-         <li><a class="collectionlink" href="#A"><b>A</b></a></li>
-     					
-         <li><a class="collectionlink" href="#">B</a></li>
+    <ul class="alphabet">
 
-     					
-         <li><a class="collectionlink" href="#">C</a></li>
+      <li><a class="collectionlink" href="#A"><b>A</b></a></li>
 
-     					
-         <li><a class="collectionlink" href="#">D</a></li>
+      <li><a class="collectionlink" href="#">B</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">E</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">F</a></li>
+      <li><a class="collectionlink" href="#">C</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">G</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">H</a></li>
+      <li><a class="collectionlink" href="#">D</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">I</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">J</a></li>
+      <li><a class="collectionlink" href="#">E</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">K</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">L</a></li>
+      <li><a class="collectionlink" href="#">F</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">M</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">N</a></li>
+      <li><a class="collectionlink" href="#">G</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">O</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">P</a></li>
+      <li><a class="collectionlink" href="#">H</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">Q</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">R</a></li>
+      <li><a class="collectionlink" href="#">I</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">S</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">T</a></li>
+      <li><a class="collectionlink" href="#">J</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">U</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">V</a></li>
+      <li><a class="collectionlink" href="#">K</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">W</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">X</a></li>
+      <li><a class="collectionlink" href="#">L</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">Y</a></li>
 
-     					
-         <li><a class="collectionlink" href="#">Z</a></li>
-         
-         
-			</ul>
-       <a class="hideIndexPanel" href="#"><%= t(:hide) %></a>
-	   
-	   <div class="indexContent peopleIndexContent">
-			 <p>&nbsp;</p>
-					<% @max_rows = (@people.size/2).ceil -%>
-					<% @current_row = 1 -%>
-					<% @current_column = 1 -%>
-					<div id="indexCol1"> 
-						<ul>
-						<% @people.each do |person| -%>
-						  <% if @current_row > @max_rows && @current_column < 2 %>
-								<% @current_row = 1 %>
-								<% @current_column += 1 %>
-								</div>
-								<div id="indexCol<%= @current_column.to_s %>"> 
-									<ul>
-							<% end %>	
-							<li>&raquo; <%= link_to truncate(person.name, :length => 20) + ' (' + localized_number(person.items_count) + ')', archive_browser_path(:person_filter => person.id), :title => person.name %></li>
-							<% @current_row += 1 %>
-						<% end %>
-						</ul>
-					</div>	
-	   </div>
-	   
-	   <div class="indexContent subjectsIndexContent">
-			 <p>&nbsp;</p>
-					<% @max_rows = (@subjects.size/2).ceil -%>
-					<% @current_row = 1 -%>
-					<% @current_column = 1 -%>
-					<div id="indexCol1"> 
-						<ul>
-						<% @subjects.each do |subject| -%>
-						  <% if @current_row > @max_rows && @current_column < 2 %>
-								<% @current_row = 1 %>
-								<% @current_column += 1 %>
-								</div>
-								<div id="indexCol<%= @current_column.to_s %>"> 
-									<ul>
-							<% end %>	
-							<li>&raquo; <%= link_to truncate(subject.name, :length => 20) + ' (' + localized_number(subject.items_count) + ')', archive_browser_path(:subject_filter => subject.id), :title => subject.name %></li>
-							<% @current_row += 1 %>
-						<% end %>
-						</ul>
-					</div>
-	   </div>
-	   
-	   <div class="indexContent placesIndexContent">
-			 <p>&nbsp;</p>
-					<% @max_rows = (@places.size/2).ceil -%>
-					<% @current_row = 1 -%>
-					<% @current_column = 1 -%>
-					<div id="indexCol1"> 
-						<ul>
-						<% @places.each do |place| -%>
-						  <% if @current_row > @max_rows && @current_column < 2 %>
-								<% @current_row = 1 %>
-								<% @current_column += 1 %>
-								</div>
-								<div id="indexCol<%= @current_column.to_s %>"> 
-									<ul>
-							<% end %>	
-							<li>&raquo; <%= link_to truncate(place.name, :length => 20) + ' (' + localized_number(place.items_count) + ')', archive_browser_path(:place_filter => place.id), :title => place.name %></li>
-							<% @current_row += 1 %>
-						<% end %>
-						</ul>
-					</div>
-	   </div>
-       
+      <li><a class="collectionlink" href="#">M</a></li>
 
-   </div>
+
+      <li><a class="collectionlink" href="#">N</a></li>
+
+
+      <li><a class="collectionlink" href="#">O</a></li>
+
+
+      <li><a class="collectionlink" href="#">P</a></li>
+
+
+      <li><a class="collectionlink" href="#">Q</a></li>
+
+
+      <li><a class="collectionlink" href="#">R</a></li>
+
+
+      <li><a class="collectionlink" href="#">S</a></li>
+
+
+      <li><a class="collectionlink" href="#">T</a></li>
+
+
+      <li><a class="collectionlink" href="#">U</a></li>
+
+
+      <li><a class="collectionlink" href="#">V</a></li>
+
+
+      <li><a class="collectionlink" href="#">W</a></li>
+
+
+      <li><a class="collectionlink" href="#">X</a></li>
+
+
+      <li><a class="collectionlink" href="#">Y</a></li>
+
+
+      <li><a class="collectionlink" href="#">Z</a></li>
+
+
+    </ul>
+    <a class="hideIndexPanel" href="#"><%= t(:hide) %></a>
+
+    <div class="indexContent peopleIndexContent">
+      <p>&nbsp;</p>
+      <% @max_rows = (@people.size/2).ceil -%>
+      <% @current_row = 1 -%>
+      <% @current_column = 1 -%>
+      <div id="indexCol1">
+        <ul>
+          <% @people.each do |person| -%>
+            <% if @current_row > @max_rows && @current_column < 2 %>
+              <% @current_row = 1 %>
+              <% @current_column += 1 %>
+            </ul>
+          </div>
+          <div id="indexCol<%= @current_column.to_s %>">
+            <ul>
+            <% end %>
+            <li>&raquo; <%= link_to truncate(person.name, :length => 20) + ' (' + localized_number(person.items_count) + ')', archive_browser_path(:person_filter => person.id), :title => person.name %></li>
+            <% @current_row += 1 %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="indexContent subjectsIndexContent">
+      <p>&nbsp;</p>
+      <% @max_rows = (@subjects.size/2).ceil -%>
+      <% @current_row = 1 -%>
+      <% @current_column = 1 -%>
+      <div id="indexCol1">
+        <ul>
+          <% @subjects.each do |subject| -%>
+            <% if @current_row > @max_rows && @current_column < 2 %>
+              <% @current_row = 1 %>
+              <% @current_column += 1 %>
+            </ul>
+          </div>
+          <div id="indexCol<%= @current_column.to_s %>">
+          <% end %>
+          <li>&raquo; <%= link_to truncate(subject.name, :length => 20) + ' (' + localized_number(subject.items_count) + ')', archive_browser_path(:subject_filter => subject.id), :title => subject.name %></li>
+          <% @current_row += 1 %>
+        <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="indexContent placesIndexContent">
+      <p>&nbsp;</p>
+      <% @max_rows = (@places.size/2).ceil -%>
+      <% @current_row = 1 -%>
+      <% @current_column = 1 -%>
+      <div id="indexCol1">
+        <ul>
+          <% @places.each do |place| -%>
+            <% if @current_row > @max_rows && @current_column < 2 %>
+              <% @current_row = 1 %>
+              <% @current_column += 1 %>
+          </div>
+          <div id="indexCol<%= @current_column.to_s %>">
+            <ul>
+            <% end %>
+            <li>&raquo; <%= link_to truncate(place.name, :length => 20) + ' (' + localized_number(place.items_count) + ')', archive_browser_path(:place_filter => place.id), :title => place.name %></li>
+            <% @current_row += 1 %>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
   <div id="browserMessage">
     <p>
       <% if @items.empty? -%>
@@ -235,13 +235,12 @@
           <div class="listItem clearfix">
             <div class="item">
               <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-              <a class="type" href="<%= '/archive/page/1?medium_filter='+item.category_id.to_s -%>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
             </div>
             <div class="description">
               <a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>
               <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
               <h4><%= item.collection.name unless item.collection.blank? %></h4>
-              <p class="meta"><%= item.show_date unless item.show_date.blank? %> <%= " | " unless item.show_date.blank? || item.period.blank? %> <%= item.period.title  unless item.period.blank? %></p>
+              <p class="meta"><%= item.show_date unless item.show_date.blank? %></p>
               <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
             </div>
           </div>
