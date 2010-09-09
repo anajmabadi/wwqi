@@ -14,7 +14,7 @@ class ItemsController < ApplicationController
     @order = build_order_query(@sort_mode)
 
     # look for filters
-    @keyword_filter = params[:keyword_filter]
+    @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
 
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
 #    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
