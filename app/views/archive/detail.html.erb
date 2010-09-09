@@ -2,7 +2,6 @@
 <% @page_title = t(:detail).capitalize -%>
 <div id="browser" class="clearfix singleItemBrowser">
   <div id="head">
-    <h2><%= truncate(@item.title, :length => adjust_length_for_locale(60)) %></h2>
     <ul class="itemTools sortnav">
       <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
       <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
@@ -42,12 +41,6 @@
           <tr class="odd">
             <th><%= t(:dimensions).capitalize %></th>
             <td><%= @item.dimension_label %></td>
-          </tr>
-        <% end %>
-        <% unless @item.category_id.blank? || @item.category.nil?%>
-          <tr>
-            <th><%= t(:type).capitalize %></th>
-            <td><%= @item.category.name %></td>
           </tr>
         <% end %>
       </table>

@@ -81,7 +81,6 @@ class ArchiveController < ApplicationController
   end
 
   def detail
-    Rails.logger.debug '------detail function start'
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
 
     begin
@@ -94,17 +93,20 @@ class ArchiveController < ApplicationController
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
         @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
-      end
-       
-      respond_to do |format|
-        format.html
-        format.xml  { render :xml => @item }
-      end
+      end 
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
-      redirect_to @return_url
+      @error = true
     end
 
+    respond_to do |format|
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
+      else
+        redirect_to @return_url
+      end
+    end
   end
 
   # zoomify requires a custom XML file for its gallery viewer
