@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100906191154) do
+ActiveRecord::Schema.define(:version => 20100908230455) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -384,6 +384,7 @@ ActiveRecord::Schema.define(:version => 20100906191154) do
     t.string   "creator_label"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "publisher"
   end
 
   add_index "item_translations", ["item_id"], :name => "index_item_translations_on_item_id"
@@ -391,7 +392,6 @@ ActiveRecord::Schema.define(:version => 20100906191154) do
 
   create_table "items", :force => true do |t|
     t.string   "accession_num",                                   :default => "",    :null => false
-    t.string   "olivia_id"
     t.string   "urn"
     t.integer  "creator_id"
     t.integer  "owner_id"
@@ -407,8 +407,6 @@ ActiveRecord::Schema.define(:version => 20100906191154) do
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "period_id"
-    t.integer  "category_id"
     t.string   "source_date"
     t.integer  "calendar_type_id"
     t.boolean  "favorite"
@@ -419,11 +417,8 @@ ActiveRecord::Schema.define(:version => 20100906191154) do
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
-  add_index "items", ["category_id"], :name => "index_items_on_category_id"
   add_index "items", ["collection_id"], :name => "collection_id"
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
-  add_index "items", ["olivia_id"], :name => "olivia_id"
-  add_index "items", ["period_id"], :name => "index_items_on_period_id"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
 

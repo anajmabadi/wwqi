@@ -9,8 +9,6 @@ class Item < ActiveRecord::Base
   belongs_to :format
   belongs_to :medium
   belongs_to :place
-  belongs_to :period, :counter_cache => true
-  belongs_to :category
   belongs_to :calendar_type
   belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
 
@@ -26,9 +24,9 @@ class Item < ActiveRecord::Base
   has_many :repositories, :through => :passports
   
   # globalize2 accessors 
-  translates :title, :credit, :description, :display_date, :creator_label
+  translates :title, :credit, :description, :display_date, :creator_label, :publisher
   globalize_accessors :fa, :en
-  default_scope :include => [:translations, :category]
+  default_scope :include => [:translations]
   
   # pagination code
   cattr_reader :per_page
@@ -97,19 +95,6 @@ class Item < ActiveRecord::Base
 
   def self.most_recent_ids(limit=8)
     return Activity.find(:all, :select => 'DISTINCT item_id', :conditions => "item_id IS NOT NULL", :order => 'created_at DESC', :limit => limit).map { |ids| ids.item_id }
-  end
-    
-  # a convenience function for matching up item types with hard coded icon classes
-  def icon_class
-    return case category.parent_id
-    when 1 then 'writing'
-    when 2 then 'legal'
-    when 3 then 'artwork'
-    when 4 then 'photo'
-    when 5 then 'object'
-    when 6 then 'oralhistory'
-    else 'object'
-    end unless category_id.nil? || category.nil?
   end
 
   def show_date

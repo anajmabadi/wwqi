@@ -2,92 +2,103 @@
 <% @page_title = t(:item).capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1>
+  <h1><%= @page_title %></h1><%= image_tag @item.thumbnail_url, :align => 'right', :width => 50 -%>
+  <p><%= link_to 'Edit', edit_item_path(@item) %> |
+    <%= link_to 'Delete', @item, :method => :delete, :confirm => "Are you sure you want to delete this item?" %> |
+    <%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></p>
   <table class="styled" >
-    <tr><th>
-        <%= link_to 'Edit', edit_item_path(@item) %> |
-        <%= link_to 'Delete', @item, :method => :delete, :confirm => "Are you sure you want to delete this item?" %> |
-        <%= link_to 'Back', items_path %> | <%= link_to "New", new_item_path %></th></tr>
     <tr><td><h2>
-          <%= image_tag @item.thumbnail_url, :align => 'right', :width => 50 -%>  <%= @item.title_en %>
+          <%= @item.title_en %>
+        </h2></td>
+      <td><h2>
+          <%= @item.title_fa %>
         </h2></td></tr>
     <tr><td>
-        <b>Publish:</b>
-        <%= @item.publish %>
+        <b>Credit_en:</b>
+        <%= @item.credit_en %>
+      </td>
+      <td>
+        <b>Credit_fa:</b>
+        <%= @item.credit_fa %>
       </td></tr>
+    <tr><td>
+        <b>Creator_en:</b>
+        <%= @item.creator.name_en unless @item.creator.nil? %>
+      </td><td>
+        <b>Creator_fa:</b>
+        <%= @item.creator.name_fa unless @item.creator.nil? %>
+      </td></tr>
+    <tr><td>
+        <b>Description_en:</b>
+        <%= @item.description_en %>
+      </td><td>
+        <b>Description_fa:</b>
+        <%= @item.description_fa %>
+      </td></tr>
+    <tr><td>
+        <b>Owner_en:</b>
+        <%= @item.owner.name_en unless @item.owner.nil? %>
+      </td><td>
+        <b>Owner_fa:</b>
+        <%= @item.owner.name_fa unless @item.owner.nil? %>
+      </td></tr>
+    <tr><td>
+        <b>Collection_en:</b>
+        <%= @item.collection.name_en unless @item.collection.nil? %>
+      </td><td>
+        <b>Collection_fa:</b>
+        <%= @item.collection.name_fa unless @item.collection.nil? %>
+      </td></tr>
+    <tr><td>
+        <b>Publisher_en:</b>
+        <%= @item.publisher_en %>
+      </td><td>
+        <b>Publisher_fa:</b>
+        <%= @item.publisher_fa %>
+      </td></tr>
+    <tr><td>
+        <b>Place of origin_en:</b>
+        <%= @item.place.name_en unless @item.place.nil? %>
+      </td><td>
+        <b>Place of origin_fa:</b>
+        <%= @item.place.name_fa unless @item.place.nil? %>
+      </td></tr>
+    <tr><td colspan="2"><h3>Untranslated Fields</h3></td></tr>
     <tr><td>
         <b>Accession num:</b>
         <%= @item.accession_num %>
-      </td></tr>
-
-    <tr><td>
-        <b>Credit</b>
-        <%= @item.credit %>
-      </td></tr>
-
-    <tr><td>
-        <b>Description:</b>
-        <%= @item.description %>
-      </td></tr>
-
-    <tr><td>
-        <b>Olivia:</b>
-        <%= @item.olivia_id %>
-      </td></tr>
-
-    <tr><td>
+      </td>
+      <td>
         <b>Urn:</b>
         <%= @item.urn %>
       </td></tr>
-
-    <tr><td>
-        <b>Creator:</b>
-        <%= @item.creator.name unless @item.creator.nil? %>
-      </td></tr>
-
-    <tr><td>
-        <b>Owner:</b>
-        <%= @item.owner.name unless @item.owner.nil? %>
-      </td></tr>
-
-    <tr><td>
-        <div id="item_passport_list"><span><%= render('items/item_passport_list', :passports => @item.passports ) unless @item.passports.empty? %></span></div>
-        <p>&nbsp;</p>
-        <div id="addPassport">
-          <% if @passport.nil? %>
-            <%= render :partial => 'items/add_passport_button', :locals => { :item => @item } %>
-          <% else %>
-            <%= render 'items/add_passport_form', @passport %>
-          <% end %>
-        </div>
-      </td></tr>
-
-    <tr><td>
-        <b>Collection:</b>
-        <%= @item.collection.name unless @item.collection.nil? %>
-      </td></tr>
-
     <tr><td>
         <b>Pages:</b>
         <%= @item.pages %>
+      </td>
+      <td>
+        <b>Bound:</b>
+        <%= @item.bound %>
       </td></tr>
-
     <tr><td>
-        <b>Format:</b>
-        <%= @item.format_id %>
+        <b>Source date:</b>
+        <%= @item.source_date %>
+      </td><td>
+        <b>Calendar Type:</b>
+        <%= @item.calendar_type.name unless @item.calendar_type_id.nil? %>
       </td></tr>
-
     <tr><td>
         <b>Display date:</b>
         <%= @item.display_date %>
-      </td></tr>
-
-    <tr><td>
+      </td><td>
         <b>Sort date:</b>
         <%= @item.sort_date %>
       </td></tr>
 
     <tr><td>
+        <b>Circa:</b>
+        <%= @item.circa %>
+      </td><td>
         <b>Dimension Label:</b>
         <%= @item.dimension_label %>
       </td></tr>
@@ -95,9 +106,7 @@
     <tr><td>
         <b>Width:</b>
         <%= @item.width %>
-      </td></tr>
-
-    <tr><td>
+      </td><td>
         <b>Height:</b>
         <%= @item.height %>
       </td></tr>
@@ -105,34 +114,37 @@
     <tr><td>
         <b>Depth:</b>
         <%= @item.depth %>
-      </td></tr>
-
-    <tr><td>
+      </td><td>
         <b>Length:</b>
         <%= @item.length %>
       </td></tr>
-
     <tr><td>
+        <b>Staff Favorite:</b>
+        <%= @item.favorite %>
+      </td>
+      <td>
+        <b>Publish:</b>
+        <%= @item.publish %>
+      </td></tr>
+    <tr><td colspan="2">
         <b>Notes:</b>
         <%= @item.notes %>
       </td></tr>
 
-    <tr><td>
-        <b>Place:</b>
-        <%= @item.place.name unless @item.place.nil? %>
-      </td></tr>
-
   </table>
-  <p>
-    <b>Subjects:</b>
-  </p>
-  <ul>
-    <% @subjects = @item.subjects -%>
-    <% @subjects.each do |subject| -%>
-      <li>
-        <%=  subject.subject_type.name %>: <%= truncate(subject.name) %>
-      </li>
-    <% end -%>
-  </ul>
+
+  <div id="item_subject_list"><%= render 'items/item_subject_list', :subjects => @item.subjects %></div>
+
+
+
+  <div id="item_passport_list"><%= render('items/item_passport_list', :passports => @item.passports ) unless @item.passports.empty? %></div>
+  <div id="addPassport">
+    <% if @passport.nil? %>
+      <%= render :partial => 'items/add_passport_button', :locals => { :item => @item } %>
+    <% else %>
+      <%= render 'items/add_passport_form', @passport %>
+    <% end %>
+  </div>
+
 </div>
 

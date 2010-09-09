@@ -19,10 +19,6 @@
       <%= f.select :repository_id, @repositories %>
       <%= f.label :tag %>:
       <%= f.text_field :tag %>
-      <%= f.label :custom_url %>:
-      <%= f.text_field :custom_url %>
-    </div>
-    <div class="field">
       <%= f.label :publish %>:
       <%= f.check_box :publish %>
 
@@ -31,7 +27,11 @@
 
       <%= f.label :position %>:
       <%= f.text_field :position, :size => 5 %>
+    </div>
+    <div class="field">
 
+      <%= f.label :custom_url %>:
+      <%= f.text_field :custom_url %>
       <%= f.label :notes %>:
       <%= f.text_field :notes %>
     </div>

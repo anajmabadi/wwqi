@@ -2,7 +2,7 @@ class Place < ActiveRecord::Base
   has_many :items
 
   translates :name
-
+  globalize_accessors :fa, :en
   default_scope :include => :translations
 
   def self.select_list

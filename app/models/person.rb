@@ -5,10 +5,11 @@ class Person < ActiveRecord::Base
   has_many :appearances
 
   has_many :items, :through => :appearances
+  has_many :appellations
 
 
   translates :name, :sort_name, :description, :vitals, :birth_place
-  
+  globalize_accessors :fa, :en
   default_scope :include => :translations
 
   def self.select_list

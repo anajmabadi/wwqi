@@ -1,5 +1,5 @@
 class Period < ActiveRecord::Base
-  has_many :items
+
   translates :title, :caption, :description
   default_scope :include => :translations
 

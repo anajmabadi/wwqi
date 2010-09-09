@@ -233,7 +233,7 @@
 
         <% @items.each do |item| %>
           <div class="listItem clearfix">
-            <div class="item <%= item.icon_class -%>">
+            <div class="item">
               <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
               <a class="type" href="<%= '/archive/page/1?medium_filter='+item.category_id.to_s -%>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
             </div>
