@@ -1,5 +1,6 @@
-  <div class="adminBar clearfix">
-    <div class="sortnav" id="viewMode" style="float:left"><%= link_to 'New item', new_item_path %></div>
-    <div class="sortnav paginate" id="admin_pagination"><%= will_paginate @items %></div>
-  </div>
-    <p>&nbsp;</p>
+<div class="adminBar clearfix">
+  <div class="sortnav" id="viewMode" style="float:left"><%= link_to 'New item', new_item_path %></div>
+  <div class="sortnav paginate" id="admin_pagination"><%= will_paginate @items %></div><br />
+  <%= render 'admin_search_form' %>
+</div>
+<p>&nbsp;</p>
