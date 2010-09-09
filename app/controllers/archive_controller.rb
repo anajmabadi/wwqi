@@ -25,7 +25,6 @@ class ArchiveController < ApplicationController
     @subjects = Subject.find(:all, :conditions => "subjects.publish=1 AND subjects.subject_type_id = 7 AND subjects.items_count > 0 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
 
     #grab filter categories
-    @medium_filter = params[:medium_filter]
     @collection_filter = params[:collection_filter]
     @period_filter = params[:period_filter]
     @person_filter = params[:person_filter]
