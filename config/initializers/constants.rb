@@ -4,6 +4,7 @@
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   PREVIEWS_DIR = "previews/"
+  SLIDES_DIR = "slides/"
   TIFS_DIR = "tifs/"
   THUMBNAILS_DIR = "thumbs/"
   ZOOMIFY_DIR = "zoomify/"

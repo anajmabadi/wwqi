@@ -11,6 +11,17 @@
       <td><h2>
           <%= @item.title_fa %>
         </h2></td></tr>
+    <tr>
+      <td colspan="2">
+        <p>Media (right click links to download):</p>
+        <ul>
+        <li>thumbnail: <%= link_to "Thumbnail", @item.thumbnail_url, :target => "_blank" %></li>
+        <li>slide: <% @item.slide_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        <li>preview: <% @item.preview_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        <li>tif: <% @item.tif_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        </ul>
+      </td>
+    </tr>
     <tr><td>
         <b>Credit_en:</b>
         <%= @item.credit_en %>

@@ -136,7 +136,23 @@ class Item < ActiveRecord::Base
     end unless self.pages.nil?
     return file_urls
   end
-  
+
+  def slide_file_name(index=1)
+    return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
+  end
+
+  def slide_url(index=1)
+    return LIBRARY_URL + SLIDES_DIR + slide_file_name(index) unless index.nil?
+  end
+
+  def slide_urls
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << slide_url(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+
   def tif_file_name(index=1)
     return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.tif" unless index.nil?
   end
