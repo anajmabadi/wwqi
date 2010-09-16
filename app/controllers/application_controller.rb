@@ -7,6 +7,11 @@ class ApplicationController < ActionController::Base
   #log activity
   after_filter :record_activity
 
+  #column sorting code
+  def sort_order(default)
+    "#{(params[:c] || default.to_s).gsub(/[\s;'\"]/,'')} #{params[:d] == 'down' ? 'DESC' : 'ASC'}"
+  end
+
   def set_locale
     if Rails.env.test? || request.subdomains.first.nil?
       if params[:locale] && I18n.available_locales.include?(params[:locale].to_sym)

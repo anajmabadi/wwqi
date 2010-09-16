@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
     #grab the sort mode
     @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
-    @order = build_order_query(@sort_mode)
+    @order =  sort_order('item_translations.title')
 
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
@@ -33,7 +33,7 @@ class ItemsController < ApplicationController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
+    @items = Item.paginate :conditions => @query, :include => [:collection], :per_page => @per_page, :page => @page, :order => @order
     
     respond_to do |format|
       format.html # index.html.erb
