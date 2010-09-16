@@ -21,7 +21,7 @@
     <div class="column">
       <h4><%= t(:genre) %>  </h4>
       <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'subject_type_form') do -%>
-        <select id="mediumFilter" name=":subject_type_filter" onChange="document.forms['subject_type_form'].submit()">
+        <select id="mediumFilter" name="subject_type_filter" onChange="document.forms['subject_type_form'].submit()">
           <option value="all" <%= raw 'selected="selected"' if @subject_type_filter.blank? || @subject_type_filter== 'all' -%>><%= t(:all).capitalize %></option>
           <% @subject_types.each do |subject_type| -%>
             <option value="<%= subject_type.id %>"<%= raw ' selected="selected"' if @subject_type_filter==subject_type.id.to_s -%>><%= subject_type.name %></option>

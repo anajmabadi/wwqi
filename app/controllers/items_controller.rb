@@ -6,6 +6,10 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.xml
   def index
+    @collections = Collection.select_list
+    @periods = Period.select_list
+    @subject_types = SubjectType.select_list
+    
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 50
 
@@ -15,14 +19,17 @@ class ItemsController < ApplicationController
 
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
+    @collection_filter = params[:collection_filter]
+    @period_filter = params[:period_filter]
+    @subject_type_filter = params[:subject_type_filter]
 
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
-#    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
-#    @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
-#    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
-#    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
-#    @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
-#    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
+    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
+    @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
+    #    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
+    #    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
+    #    @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
+    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
 
     # assemble the query from the two sql injection safe parts
@@ -114,10 +121,10 @@ class ItemsController < ApplicationController
     @repositories = repositories_list
     @max_position = Passport.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @passport = Passport.new(
-                              :item_id => params[:id],
-                              :publish => true,
-                              :primary => false,
-                              :position => @max_position + 1
+      :item_id => params[:id],
+      :publish => true,
+      :primary => false,
+      :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -180,4 +187,66 @@ class ItemsController < ApplicationController
     end
     return additional_sort
   end
+
+  def build_subject_type_query(filter_value, query_hash)
+    logger.info("build_subject_type_query")
+    additional_query = ''
+    begin
+      @subject_type = SubjectType.find_by_id(filter_value.to_i)
+      @subjects = @subject_type.subjects
+      @ids = []
+
+      @subjects.each do |subject|
+        @ids = @ids.concat(subject.items.map { |p| p.id })
+      end
+
+      @ids = @ids.sort.uniq
+
+      unless @ids.empty?
+        additional_query += "items.id IN (#{@ids.join(",")})"
+      else
+        # if the subject type has no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+
+
+  def build_period_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @period = Period.find_by_id(filter_value.to_i)
+      additional_query += "(sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}')"
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+
+  def build_collection_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @collection = Collection.find_by_id(filter_value.to_i)
+      additional_query += 'collection_id = ' + @collection.id.to_s
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
+  end
+  
 end

@@ -18,7 +18,7 @@
 
     <!-- load the common scripts -->
     <%= javascript_include_tag :defaults %>
-    <%= javascript_include_tag '/javascripts/jquery.qtip-1.0.0-rc3.min.js' %>
+    <%# javascript_include_tag '/javascripts/jquery.qtip-1.0.0-rc3.min.js' %>
 
     <!-- load styles conditionally based on the controller name -->
     <% unless @extra_head_content.nil? %>
@@ -121,7 +121,7 @@
               <li><%= link_to(t(:permissions),permissions_path) %></li>
             </ul>
             <p>Copyright &copy; 2010  WWQI. <%= t(:all_rights_reserved)%></p>
-						<p><%= raw add_this_block -%></p>
+						<p></p><%= raw add_this_block -%>
           </div><!-- closes leftWrapperFooter -->
           <div class="rightWrapperFooter">
             <a class="noimage" href="http://www.harvard.edu" target="_blank"><img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
