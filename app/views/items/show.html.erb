@@ -11,17 +11,6 @@
       <td><h2>
           <%= @item.title_fa %>
         </h2></td></tr>
-    <tr>
-      <td colspan="2">
-        <p>Media (right click links to download):</p>
-        <ul>
-        <li>thumbnail: <%= link_to "Thumbnail", @item.thumbnail_url, :target => "_blank" %></li>
-        <li>slide: <% @item.slide_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-        <li>preview: <% @item.preview_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-        <li>tif: <% @item.tif_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-        </ul>
-      </td>
-    </tr>
     <tr><td>
         <b>Credit_en:</b>
         <%= @item.credit_en %>
@@ -145,7 +134,18 @@
         <b>Notes:</b>
         <%= @item.notes %>
       </td></tr>
-
+    <tr>
+      <td colspan="2">
+        <p>Media (right click links to download):</p>
+        <ul>
+        <li>thumbnail: <%= link_to "Thumbnail", @item.thumbnail_url, :target => "_blank" %></li>
+        <li>slide: <% @item.slide_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        <li>preview: <% @item.preview_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        <li>tif: <% @item.tif_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
+        <li>clip: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, "mp3", clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, "wav", clip.clip_url('wav') %><% end %></li>
+        </ul>
+      </td>
+    </tr>
   </table>
 
   <div id="item_subject_list"><%= render 'items/item_subject_list', :subjects => @item.subjects %></div>
