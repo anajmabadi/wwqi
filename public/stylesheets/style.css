@@ -664,7 +664,6 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
     height:250px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
-    margin-top:25px;
     margin-left:20px;
 }
 
@@ -1041,10 +1040,13 @@ div.slideshow ul li a.title{
 /* homepage slider
 -------------------------------------------------------------- */
 .slide-wrap{
-    width : 940px;
-    height :335px;
-    position:relative
-
+    width : 650px;
+    height :250px;
+    position:relative;
+	overflow:hidden;
+	float:left;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 
 
@@ -1362,3 +1364,34 @@ div.field {
 
 .browserBarIndex{float:left;}
 .browserBarIndex li{margin-left:-5px;}
+
+
+#universalSearch{
+	width:940px;
+	height:48px;
+	background:url(../images/bg_big_search.png) top left no-repeat;
+	margin-bottom:10px;
+}
+
+#universalSearch input{
+    border: 0;
+    background: none;
+    margin: 12px 0 0 20px;
+    display: inline;
+    width: 750px;
+    float: left;
+    outline:none;
+	font-size:16px;
+}
+
+#universalSearch button {
+    width: 131px;
+    height:39px;
+    background: url(/images/btn_universal_search.png) no-repeat 0 0;
+    display: block;
+    float: left;
+    border: 0;
+    cursor: pointer;
+    margin: 7px 0 0 28px;
+	outline:none
+}

@@ -669,8 +669,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	height:250px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
-	margin-top:25px;
-	margin-right:20px;
+	margin-left:20px;
 }
 
 #about #head{
@@ -1048,9 +1047,11 @@ div.slideshow ul li a.title{
 /* homepage slider
 -------------------------------------------------------------- */
 .slide-wrap{
-	width : 940px;
-	height :335px;
-	position:relative
+	width : 650px;
+	height :250px;
+	position:relative;
+	overflow:hidden;
+	float:left;
 	
 }
 
@@ -1377,3 +1378,36 @@ div.field {
 .browserBarIndex{float:right;}
 
 .browserBarIndex li{margin-right:-5px;}
+
+
+
+
+#universalSearch{
+	width:940px;
+	height:48px;
+	background:url(../images/bg_big_search_fa.png) top right no-repeat;
+	margin-bottom:10px;
+}
+
+#universalSearch input{
+    border: 0;
+    background: none;
+    margin: 12px 20px 0 0px;
+    display: inline;
+    width: 750px;
+    float: right;
+    outline:none;
+	font-size:16px;
+}
+
+#universalSearch button {
+    width: 131px;
+    height:39px;
+    background: url(/images/btn_universal_search_fa.png) no-repeat 0 0;
+    display: block;
+    float: right;
+    border: 0;
+    cursor: pointer;
+    margin: 7px 28px 0 0px;
+	outline:none
+}
