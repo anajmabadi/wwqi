@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928134408) do
+ActiveRecord::Schema.define(:version => 20100928141502) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -88,6 +88,7 @@ ActiveRecord::Schema.define(:version => 20100928134408) do
   end
 
   add_index "appellations", ["person_id"], :name => "fk_appellations_people"
+  add_index "appellations", ["person_id"], :name => "fk_relatives_people"
   add_index "appellations", ["position"], :name => "index_appellations_on_position"
   add_index "appellations", ["publish"], :name => "publish"
 
@@ -624,14 +625,25 @@ ActiveRecord::Schema.define(:version => 20100928134408) do
 
   add_index "places", ["publish"], :name => "index_places_on_publish"
 
-  create_table "relationships", :force => true do |t|
+  create_table "relationship_translations", :force => true do |t|
+    t.integer  "relationship_id"
+    t.string   "locale"
     t.string   "name"
     t.text     "description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "relationship_translations", ["relationship_id"], :name => "index_fa4a91c2469692f691e7cf7811ef182d444c29b7"
+
+  create_table "relationships", :force => true do |t|
     t.integer  "position"
     t.boolean  "publish"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "person_id"
+    t.integer  "relative_id"
   end
 
   create_table "repositories", :force => true do |t|

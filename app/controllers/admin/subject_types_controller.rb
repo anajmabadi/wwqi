@@ -1,4 +1,4 @@
-class Admin:: SubjectTypesController < Admin::AdminController
+class Admin::SubjectTypesController < Admin::AdminController
   # GET /subject_types
   # GET /subject_types.xml
   def index

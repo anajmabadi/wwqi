@@ -1,4 +1,4 @@
-class Admin:: PanelsController < Admin::AdminController
+class Admin::PanelsController < Admin::AdminController
   # GET /panels
   # GET /panels.xml
   def index

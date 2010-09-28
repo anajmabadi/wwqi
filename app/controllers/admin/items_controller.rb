@@ -1,4 +1,4 @@
-class Admin:: ItemsController < Admin::AdminController
+class Admin::ItemsController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]

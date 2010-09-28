@@ -1,4 +1,4 @@
-class Admin:: PassportsController < Admin::AdminController
+class Admin::PassportsController < Admin::AdminController
 
   include ActionView::Helpers::TextHelper
   

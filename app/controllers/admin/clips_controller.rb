@@ -1,4 +1,4 @@
-class Admin:: ClipsController < Admin::AdminController
+class Admin::ClipsController < Admin::AdminController
   # GET /clips
   # GET /clips.xml
   def index

@@ -6,25 +6,28 @@ Qajar::Application.routes.draw do |map|
 
   namespace "admin" do
     resources :appearances, 
-              :calendar_types,
-              :categories,
-              :catergorizations,
-              :classifications,
-              :clip_types,
-              :clips,
-              :collections,
-              :owners,
-              :passports,
-              :people,
-              :periods,
-              :places,
-              :relationships,
-              :subject_types,
-              :subjects,
-              :translations
+      :calendar_types,
+      :categories,
+      :categorizations,
+      :classifications,
+      :clip_types,
+      :collections,
+      :owners,
+      :periods,
+      :places,
+      :relationships,
+      :subject_types,
+      :subjects,
+      :translations
 
     resources :items do
+      collection do
+        post :show_add_passport_to_item
+        post :hide_add_passport_to_item
+      end
       resources :images
+      resources :passports
+      resources :clips
     end
 
     resources :exhibitions do
@@ -36,53 +39,7 @@ Qajar::Application.routes.draw do |map|
     end
   end
 
-  resources :repositories
 
-  resources :passports
-
-  resources :subject_types
-
-  resources :clip_types
-
-  resources :clips
-
-  resources :panels
-
-  resources :classifications
-
-  resources :subjects
-
-  resources :images
-
-  resources :places
-
-  resources :relationships
-
-  resources :periods
-
-  resources :pages
-
-  resources :translations
-
-  resources :categorizations
-
-  resources :categories
-
-  resources :exhibitions
-
-  resources :owners
-
-  resources :appellations
-
-  resources :people
-
-
-  resources :items do
-    collection do
-      post :show_add_passport_to_item
-      post :hide_add_passport_to_item
-    end
-  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

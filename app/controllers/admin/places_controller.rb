@@ -1,4 +1,4 @@
-class Admin:: PlacesController < Admin::AdminController
+class Admin::PlacesController < Admin::AdminController
   # GET /places
   # GET /places.xml
   def index

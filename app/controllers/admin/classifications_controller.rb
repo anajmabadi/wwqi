@@ -1,4 +1,4 @@
-class Admin:: ClassificationsController < Admin::AdminController
+class Admin::ClassificationsController < Admin::AdminController
   # GET /classifications
   # GET /classifications.xml
   include ActionView::Helpers::TextHelper

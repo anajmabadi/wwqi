@@ -1,4 +1,4 @@
-class Admin:: ImagesController < Admin::AdminController
+class Admin::ImagesController < Admin::AdminController
   # GET /images
   # GET /images.xml
   def index

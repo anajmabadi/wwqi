@@ -1,4 +1,4 @@
-class Admin:: CategorizationsController < Admin::AdminController
+class Admin::CategorizationsController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
 

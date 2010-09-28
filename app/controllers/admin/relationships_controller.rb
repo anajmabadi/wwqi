@@ -1,4 +1,4 @@
-class Admin:: RelationshipsController < Admin::AdminController
+class Admin::RelationshipsController < Admin::AdminController
   # GET /relationships
   # GET /relationships.xml
   def index

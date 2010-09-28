@@ -1,4 +1,4 @@
-class Admin:: Admin::CollectionsController < Admin::AdminController
+class Admin::Admin::CollectionsController < Admin::AdminController
 
   #  caches_action :index, :detail, :slides,
   #  :cache_path => Proc.new { |c| c.params.delete_if { |k,v| k.starts_with?('utm_') } },

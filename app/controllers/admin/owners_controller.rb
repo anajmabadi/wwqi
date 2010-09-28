@@ -1,4 +1,4 @@
-class Admin:: OwnersController < Admin::AdminController
+class Admin::OwnersController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
 

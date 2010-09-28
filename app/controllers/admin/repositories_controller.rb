@@ -1,4 +1,4 @@
-class Admin:: RepositoriesController < Admin::AdminController
+class Admin::RepositoriesController < Admin::AdminController
   # GET /repositories
   # GET /repositories.xml
   def index

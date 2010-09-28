@@ -1,4 +1,4 @@
-class Admin:: PeriodsController < Admin::AdminController
+class Admin::PeriodsController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
 

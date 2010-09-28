@@ -1,4 +1,4 @@
-class Admin:: UtilitiesController < Admin::AdminController
+class Admin::UtilitiesController < Admin::AdminController
   
   def index
     @collections = Collection.find(:all, :order => 'collection_translations.name')
