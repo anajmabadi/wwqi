@@ -1,2 +1,2 @@
-module Admin::Admin::CollectionsHelper
+module Admin::CollectionsHelper
 end

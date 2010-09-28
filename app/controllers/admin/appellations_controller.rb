@@ -1,4 +1,4 @@
-class AppellationsController < Admin::AdminController
+class Admin::AppellationsController < Admin::AdminController
   # GET /admin/appellations
   # GET /admin/appellations.xml
   def index

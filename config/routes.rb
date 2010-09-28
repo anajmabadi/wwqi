@@ -1,8 +1,4 @@
-Qajar::Application.routes.draw do |map|
-
-  namespace :admin do resources :appellations end
-
-  get "admin/index"
+Qajar::Application.routes.draw do
 
   namespace "admin" do
     resources :appearances, 
@@ -38,8 +34,6 @@ Qajar::Application.routes.draw do |map|
       resources :relationships
     end
   end
-
-
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
