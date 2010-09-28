@@ -149,7 +149,7 @@ class Admin::ItemsController < Admin::AdminController
     rescue ActiveRecord::RecordNotFound
       #TODO: Translate this field
       flash[:error] = "The item you were looking for could not be found."
-      redirect_to items_path
+      redirect_to admin_items_path
     end
   end
 

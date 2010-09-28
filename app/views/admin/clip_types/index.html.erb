@@ -17,13 +17,13 @@
     <td><%= clip_type.extension %></td>
     <td><%= clip_type.publish %></td>
     <td><%= clip_type.notes %></td>
-    <td><%= link_to 'Show', clip_type %></td>
-    <td><%= link_to 'Edit', edit_clip_type_path(clip_type) %></td>
-    <td><%= link_to 'Destroy', clip_type, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_clip_type_path(clip_type) %></td>
+    <td><%= link_to 'Edit', edit_admin_clip_type_path(clip_type) %></td>
+    <td><%= link_to 'Destroy', admin_clip_type_path(clip_type), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Clip type', new_clip_type_path %>
+<%= link_to 'New Clip type', new_admin_clip_type_path %>

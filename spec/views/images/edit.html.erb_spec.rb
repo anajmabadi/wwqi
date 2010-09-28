@@ -17,7 +17,7 @@ describe "images/edit.html.erb" do
   it "renders the edit image form" do
     render
 
-    response.should have_selector("form", :action => image_path(@image), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_image_path(@image), :method => "post") do |form|
       form.should have_selector("input#image_title", :name => "image[title]")
       form.should have_selector("input#image_description", :name => "image[description]")
       form.should have_selector("input#image_dimensions", :name => "image[dimensions]")

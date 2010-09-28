@@ -23,7 +23,7 @@ describe ItemsController do
     
     it "displays an error message when asked for a missing item" do
       get :show, :id => "not-here"
-      response.should redirect_to(items_path)
+      response.should redirect_to(admin_items_path)
       flash[:error].should eql("The item you were looking for could not be found.")
     end
   end

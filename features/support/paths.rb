@@ -12,7 +12,7 @@ module NavigationHelpers
       '/archive/subject_type_filter/1'  
       
     when /the item page for "([^\"]*)"/
-      item_path(Item.find(:first, :conditions => ['item_translations.title = ?',$1]))  
+      admin_item_path(Item.find(:first, :conditions => ['item_translations.title = ?',$1]))  
       
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

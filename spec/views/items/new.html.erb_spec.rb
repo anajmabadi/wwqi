@@ -26,7 +26,7 @@ describe "items/new.html.erb" do
   it "renders new item form" do
     render
 
-    response.should have_selector("form", :action => items_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_items_path, :method => "post") do |form|
       form.should have_selector("input#item_title", :name => "item[title]")
       form.should have_selector("input#item_accession_num", :name => "item[accession_num]")
       form.should have_selector("input#item_caption", :name => "item[caption]")

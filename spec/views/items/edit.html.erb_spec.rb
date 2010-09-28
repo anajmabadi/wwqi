@@ -26,7 +26,7 @@ describe "items/edit.html.erb" do
   it "renders the edit item form" do
     render
 
-    response.should have_selector("form", :action => item_path(@item), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_item_path(@item), :method => "post") do |form|
       form.should have_selector("input#item_title", :name => "item[title]")
       form.should have_selector("input#item_accession_num", :name => "item[accession_num]")
       form.should have_selector("input#item_caption", :name => "item[caption]")

@@ -16,7 +16,7 @@ describe "clips/edit.html.erb" do
   it "renders the edit clip form" do
     render
 
-    response.should have_selector("form", :action => clip_path(@clip), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_clip_path(@clip), :method => "post") do |form|
       form.should have_selector("input#clip_title", :name => "clip[title]")
       form.should have_selector("textarea#clip_caption", :name => "clip[caption]")
       form.should have_selector("input#clip_item_id", :name => "clip[item_id]")

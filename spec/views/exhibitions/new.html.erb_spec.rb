@@ -18,7 +18,7 @@ describe "exhibitions/new.html.erb" do
   it "renders new exhibition form" do
     render
 
-    response.should have_selector("form", :action => exhibitions_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_exhibitions_path, :method => "post") do |form|
       form.should have_selector("input#exhibition_title", :name => "exhibition[title]")
       form.should have_selector("input#exhibition_caption", :name => "exhibition[caption]")
       form.should have_selector("textarea#exhibition_introduction", :name => "exhibition[introduction]")

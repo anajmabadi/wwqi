@@ -14,7 +14,7 @@ describe "clip_types/edit.html.erb" do
   it "renders the edit clip_type form" do
     render
 
-    response.should have_selector("form", :action => clip_type_path(@clip_type), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_clip_type_path(@clip_type), :method => "post") do |form|
       form.should have_selector("input#clip_type_name", :name => "clip_type[name]")
       form.should have_selector("input#clip_type_extension", :name => "clip_type[extension]")
       form.should have_selector("input#clip_type_publish", :name => "clip_type[publish]")

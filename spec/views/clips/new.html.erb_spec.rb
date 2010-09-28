@@ -16,7 +16,7 @@ describe "clips/new.html.erb" do
   it "renders new clip form" do
     render
 
-    response.should have_selector("form", :action => clips_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_clips_path, :method => "post") do |form|
       form.should have_selector("input#clip_title", :name => "clip[title]")
       form.should have_selector("textarea#clip_caption", :name => "clip[caption]")
       form.should have_selector("input#clip_item_id", :name => "clip[item_id]")

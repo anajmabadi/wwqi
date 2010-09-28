@@ -22,7 +22,7 @@
       <td><%= truncate(item.collection.name, :length => 20) unless item.collection.nil? %></td>
       <td><%= item.pages %></td>
       <td><%= show_check item.publish %></td>
-      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), item %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), item, :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_item_path(item) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_item_path(item), :confirm => 'Are you sure?', :method => :delete %></td>
     </tr>
   <% end %>
   </table>
