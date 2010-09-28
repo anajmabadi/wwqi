@@ -3,10 +3,8 @@ class Person < ActiveRecord::Base
   extend ActiveModel::Translation
 
   has_many :appearances
-
   has_many :items, :through => :appearances
   has_many :appellations
-
 
   translates :name, :sort_name, :description, :vitals, :birth_place
   globalize_accessors :fa, :en

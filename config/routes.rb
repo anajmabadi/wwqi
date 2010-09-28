@@ -1,5 +1,7 @@
 Qajar::Application.routes.draw do |map|
 
+  namespace :admin do resources :appellations end
+
   get "admin/index"
 
   namespace "admin" do
@@ -27,6 +29,10 @@ Qajar::Application.routes.draw do |map|
 
     resources :exhibitions do
       resources :panels
+    end
+
+    resources :people do
+      resources :appellations
     end
   end
 

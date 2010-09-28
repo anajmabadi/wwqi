@@ -1,0 +1,21 @@
+<h1>Listing admin_appellations</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @admin_appellations.each do |admin_appellation| %>
+  <tr>
+    <td><%= link_to 'Show', admin_appellation %></td>
+    <td><%= link_to 'Edit', edit_admin_appellation_path(admin_appellation) %></td>
+    <td><%= link_to 'Destroy', admin_appellation, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Appellation', new_admin_appellation_path %>
