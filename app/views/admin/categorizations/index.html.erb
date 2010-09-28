@@ -13,13 +13,13 @@
   <tr>
     <td><%= categorization.category_id %></td>
     <td><%= categorization.item_id %></td>
-    <td><%= link_to 'Show', categorization %></td>
-    <td><%= link_to 'Edit', edit_categorization_path(categorization) %></td>
-    <td><%= link_to 'Destroy', categorization, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_categorization_path(categorization) %></td>
+    <td><%= link_to 'Edit', edit_admin_categorization_path(categorization) %></td>
+    <td><%= link_to 'Destroy', admin_categorization_path(categorization), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New categorization', new_categorization_path %>
+<%= link_to 'New categorization', new_admin_categorization_path %>
