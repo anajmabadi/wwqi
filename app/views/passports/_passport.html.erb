@@ -1,4 +1,0 @@
-<li>
-  <%= passport.repository.name unless passport.repository.nil? %>: <%= link_to passport.tag, passport %>
-  <%= link_to image_tag("delete.png", :alt => 'delete'), passport, :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
-</li>

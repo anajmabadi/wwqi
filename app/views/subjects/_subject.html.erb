@@ -1,7 +1,0 @@
-<% current_type_id = 0 if current_type_id.nil?  %>
-<% if current_type_id != subject.subject_type_id %>
-  </ul><h4><%=  link_to subject.subject_type.name, subject.subject_type %>:</h4><ul>
-  <% current_type_id = subject.subject_type_id %>
-<% end %>
-<li><%= link_to truncate(subject.name), subject %>
-<%= link_to image_tag("delete.png", :alt => 'delete'), subject, :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %></li>
