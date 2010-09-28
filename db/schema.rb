@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100908230455) do
+ActiveRecord::Schema.define(:version => 20100928134408) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -83,8 +83,12 @@ ActiveRecord::Schema.define(:version => 20100908230455) do
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "person_id",                 :null => false
+    t.integer  "position",   :default => 1, :null => false
   end
 
+  add_index "appellations", ["person_id"], :name => "fk_appellations_people"
+  add_index "appellations", ["position"], :name => "index_appellations_on_position"
   add_index "appellations", ["publish"], :name => "publish"
 
   create_table "calendar_types", :force => true do |t|
