@@ -179,7 +179,7 @@
               <% @current_column += 1 %>
             </ul>
           </div>
-          <div id="indexCol<%= @current_column.to_s %>">
+          <div id="indexCol<%= @current_column.to_s %>"><ul>
           <% end %>
           <li>&raquo; <%= link_to truncate(subject.name, :length => 20) + ' (' + localized_number(subject.items_count) + ')', archive_browser_path(:subject_filter => subject.id), :title => subject.name %></li>
           <% @current_row += 1 %>
@@ -199,6 +199,7 @@
             <% if @current_row > @max_rows && @current_column < 2 %>
               <% @current_row = 1 %>
               <% @current_column += 1 %>
+            </ul>
           </div>
           <div id="indexCol<%= @current_column.to_s %>">
             <ul>
