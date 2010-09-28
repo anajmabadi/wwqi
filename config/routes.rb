@@ -15,7 +15,6 @@ Qajar::Application.routes.draw do |map|
       :owners,
       :periods,
       :places,
-      :relationships,
       :subject_types,
       :subjects,
       :translations
@@ -36,6 +35,7 @@ Qajar::Application.routes.draw do |map|
 
     resources :people do
       resources :appellations
+      resources :relationships
     end
   end
 
