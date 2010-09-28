@@ -3,7 +3,31 @@ Qajar::Application.routes.draw do |map|
   get "admin/index"
 
   namespace "admin" do
-    resources :collections, :appearances, :calendar_types
+    resources :appearances, 
+              :calendar_types,
+              :categories,
+              :catergorizations,
+              :classifications,
+              :clip_types,
+              :clips,
+              :collections,
+              :owners,
+              :passports,
+              :people,
+              :periods,
+              :places,
+              :relationships,
+              :subject_types,
+              :subjects,
+              :translations
+
+    resources :items do
+      resources :images
+    end
+
+    resources :exhibitions do
+      resources :panels
+    end
   end
 
   resources :repositories
