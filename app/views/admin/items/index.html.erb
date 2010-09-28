@@ -1,0 +1,31 @@
+<% @page_description = t(:index_description) -%>
+<% @page_title = t(:item).capitalize -%>
+<% @extra_head_content = admin_head_content %>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:item).capitalize %></h1>
+  <%= render :partial => 'toolbar' %>
+  <table class="styled">
+    <tr>
+      <th><%= sort_link "Id", 'items.id' %></th>
+      <th><%= sort_link "Title", 'item_translations.title' %></th>
+      <th><%= sort_link "Collection", 'items.collection_id' %></th>
+      <th><%= sort_link "Pages", 'items.pages' %></th>
+      <th><%= sort_link "Publish", 'items.publish' %></th>
+      <th>Actions</th>
+    </tr>
+
+  <% @items.each do |item| %>
+    <tr>
+      <td><%= item.id.to_s %></td>
+      <td><%= link_to truncate(item.title), item, :title => item.title %></td>
+      <td><%= truncate(item.collection.name, :length => 20) unless item.collection.nil? %></td>
+      <td><%= item.pages %></td>
+      <td><%= show_check item.publish %></td>
+      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), item %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), item, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+  </table>
+  <p>&nbsp;</p>
+  <%= render :partial => 'toolbar' %>
+</div>

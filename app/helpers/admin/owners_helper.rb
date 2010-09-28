@@ -1,0 +1,2 @@
+module Admin::OwnersHelper
+end

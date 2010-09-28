@@ -1,0 +1,12 @@
+<% @page_description = t(:new_description) -%>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title = t(:passport).capitalize + ' | ' + t(:edit).capitalize %></h1>
+  <p><%= link_to 'Show', @passport %> |
+    <%= link_to 'Back', passports_path %></p>
+
+  <%= render 'form' %>
+
+  <p><%= link_to 'Show', @passport %> |
+    <%= link_to 'Back', passports_path %></p>
+</div>

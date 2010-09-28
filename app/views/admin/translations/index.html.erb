@@ -1,0 +1,25 @@
+<% @page_description = t(:translations_index_description) -%>
+<% @page_title = t(:translations).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:translations).capitalize %></h1>
+  <%= render :partial => 'toolbar' %>
+  <table class="styled">
+    <tr>
+      <th>Locale</th>
+      <th>Key</th>
+      <th>Value</th>
+      <th>Actions</th>
+    </tr>
+    <% @translations.each do |translation| %>
+      <tr>
+        <td><%= translation.locale %></td>
+        <td><%= translation.key %></td>
+        <td<%= raw ' dir="' + (translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= truncate(translation.value) %></td>
+        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), translation %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_translation_path(translation) %> <%= link_to image_tag("delete.png", :alt => 'delete'), translation, :confirm => 'Are you sure?', :method => :delete %></td>
+      </tr>
+    <% end %>
+  </table>
+  <p>&nbsp;</p>
+  <%= render :partial => 'toolbar' %>
+</div>

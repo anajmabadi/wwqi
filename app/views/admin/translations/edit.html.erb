@@ -1,0 +1,11 @@
+<% @page_description = t(:edit_description) -%>
+<% @page_title = t(:translations).capitalize + ' | ' + t(:edit).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+  <h1><%= @page_title %></h1>
+
+  <%= render 'form' %>
+
+  <%= link_to 'Show', @translation %> |
+  <%= link_to 'Back', translations_path %>
+</div>

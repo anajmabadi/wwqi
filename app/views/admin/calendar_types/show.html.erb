@@ -1,0 +1,18 @@
+<p>
+  <b>Name:</b>
+  <%= @calendar_type.name %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @calendar_type.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @calendar_type.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_admin_calendar_type_path(@calendar_type) %> |
+<%= link_to 'Back', admin_calendar_types_path %>

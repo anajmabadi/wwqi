@@ -1,0 +1,23 @@
+<div id="zoomify_pane" align="center" >
+  <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="zoomify_swf" name="zoomify" width="<%= @swf_width %>" height="<%= @swf_height %>" >
+    <param name="movie" value="<%= @viewer_url %>" />
+    <param name="bgcolor" value="<%= @bg_color %>" />
+    <param name="allowFullScreen" value="<%= @allow_full_screen %>" />
+    <param name="flashvars" value="<%= flash_vars %>" />
+    <!--[if !IE ]>-->
+    <object type="application/x-shockwave-flash" data="<%= @viewer_url %>" width="<%= @swf_width %>" height="<%= @swf_height %>" >
+    <param name="bgcolor" value="<%= @bg_color %>" />
+    <param name="allowFullScreen" value="<%= @allow_full_screen %>" />
+    <param name="flashvars" value="<%= flash_vars %>" />
+    <!--<![endif]-->
+    <div>
+      <%= image_tag item.preview_url, :title => item.title, :alt => item.title, :height => '500' %>
+      <blockquote>NOTE: Because JavaScript is not enabled on this browser or Flash Player 9.28 or greater is not installed, <br />
+      we are only able to show a simple preview image. Please <%= link_to 'install Flash from Adobe.com', 'http://get.adobe.com/flashplayer/', :target => '_blank' %> <br />
+      and/or follow <%= link_to 'Google\'s online instructions', 'http://www.google.com/support/bin/answer.py?answer=23852', :target => "_blank" %> to enable JavaScript for your browser.</blockquote>
+    </div>
+    <!--[if !IE]>-->
+    </object>
+    <!--<![endif]-->
+  </object>
+</div>

@@ -1,0 +1,45 @@
+<% form_for(@person) do |f| %>
+  <%= f.error_messages %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :vitals %><br />
+    <%= f.text_field :vitals %>
+  </div>
+  <div class="field">
+    <%= f.label :birth_place %><br />
+    <%= f.text_field :birth_place %>
+  </div>
+  <div class="field">
+    <%= f.label :loc_name %><br />
+    <%= f.text_field :loc_name %>
+  </div>
+  <div class="field">
+    <%= f.label :dob %><br />
+  </div>
+  <div class="field">
+    <%= f.label :dod %><br />
+  </div>
+  <div class="field">
+    <%= f.label :notes %><br />
+    <%= f.text_area :notes %>
+  </div>
+  <div class="field">
+    <%= f.label :publish %><br />
+    <%= f.check_box :publish %>
+  </div>
+  <div class="field">
+    <%= f.label :major %><br />
+    <%= f.check_box :major %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

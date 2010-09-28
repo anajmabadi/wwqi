@@ -1,0 +1,2 @@
+module Admin::CategorizationsHelper
+end

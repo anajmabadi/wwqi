@@ -21,7 +21,7 @@ describe "collections/edit.html.erb" do
   it "renders the edit collection form" do
     render
 
-    response.should have_selector("form", :action => collection_path(@collection), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_collection_path(@collection), :method => "post") do |form|
       form.should have_selector("input#collection_name", :name => "collection[name]")
       form.should have_selector("input#collection_address", :name => "collection[address]")
       form.should have_selector("input#collection_address2", :name => "collection[address2]")

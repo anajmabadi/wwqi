@@ -16,7 +16,7 @@ describe "appearances/edit.html.erb" do
   it "renders the edit appearance form" do
     render
 
-    response.should have_selector("form", :action => appearance_path(@appearance), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_appearance_path(@appearance), :method => "post") do |form|
       form.should have_selector("input#appearance_item_id", :name => "appearance[item_id]")
       form.should have_selector("input#appearance_person_id", :name => "appearance[person_id]")
       form.should have_selector("input#appearance_publish", :name => "appearance[publish]")

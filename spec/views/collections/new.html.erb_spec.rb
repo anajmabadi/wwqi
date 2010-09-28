@@ -21,7 +21,7 @@ describe "collections/new.html.erb" do
   it "renders new collection form" do
     render
 
-    response.should have_selector("form", :action => collections_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_collections_path, :method => "post") do |form|
       form.should have_selector("input#collection_name", :name => "collection[name]")
       form.should have_selector("input#collection_address", :name => "collection[address]")
       form.should have_selector("input#collection_address2", :name => "collection[address2]")
