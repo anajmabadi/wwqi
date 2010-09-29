@@ -1,8 +1,11 @@
 <% @page_description = t(:index_description) -%>
 <% @page_title = t(:item).capitalize -%>
-<% @extra_head_content = admin_head_content %>
+<% @extra_head_content = admin_head_content -%>
 
 <div id="staticContent" class="clearfix">
+  
+  <%= render 'admin/admin/admin_navbar' %>
+
   <h1><%= t(:item).capitalize %></h1>
   <%= render :partial => 'toolbar' %>
   <table class="styled">
@@ -18,7 +21,7 @@
   <% @items.each do |item| %>
     <tr>
       <td><%= item.id.to_s %></td>
-      <td><%= link_to truncate(item.title), item, :title => item.title %></td>
+      <td><%= link_to truncate(item.title), admin_item_path(item), :title => item.title %></td>
       <td><%= truncate(item.collection.name, :length => 20) unless item.collection.nil? %></td>
       <td><%= item.pages %></td>
       <td><%= show_check item.publish %></td>

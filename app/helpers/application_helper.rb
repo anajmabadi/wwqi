@@ -36,6 +36,66 @@ module ApplicationHelper
     end
   end
 
+  def generic_head_content
+    return %{
+          <!-- a generic text page -->
+      <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
+      <script language="javascript" type="application/javascript">
+        $(document).ready(function(){
+
+        $(".types li a").click(function(){
+        $(this).parent().siblings().removeClass("active").find("a").removeClass("active");
+        $(this).parent().addClass("active");
+
+        return false;
+        });
+
+        $("#mediumFilter").msDropDown();
+        $("#mediumFilter").change(function(){
+        if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
+        else   $("#browserFiltersDropdown").hide("slide");
+        });
+
+        $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
+
+        $("#collectionFilter").msDropDown();
+        $("#collectionFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#nameFilter").msDropDown();
+        $("#nameFilter").change(function(){
+        if ($(this).val() =="more") window.location = "generic.html"
+        });
+        $("#subjectFilter").msDropDown();
+        $("#periodFilter").msDropDown();
+
+        $('a[title]').qtip({
+        style: {
+        name: 'dark',
+        tip: true,
+        border: {
+        radius: 8
+        }
+        },
+        position: {
+        corner: {
+        target: 'topMiddle',
+        tooltip: 'bottomMiddle'
+        }
+        }
+        });
+
+
+
+        $("#browserFilters h4").click(function(){
+        $("#browserFiltersDropdown").slideToggle();
+        });
+
+        });
+      </script>
+    }
+  end
+
   def add_this_block
     s = %{
       <!-- AddThis Button BEGIN -->

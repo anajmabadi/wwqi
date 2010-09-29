@@ -1,0 +1,19 @@
+<div id="header">
+  <div class="container">
+    <h1><a href="/home"><span><%=h t(:site_title) -%></span></a></h1>
+    <span class="beta">beta</span>
+    <div id="tools">
+      <ul>
+        <li><%= link_to(t(:contact),contact_path) %></li>
+        <li><%= link_to(t(:faq),faq_path) %></li>
+      </ul>
+    </div>
+    <div id="nav">
+      <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
+      <ul class="sortnav">
+        <li<% if controller.controller_name == 'home' -%> class="active"<% end -%>> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
+        <li<% if controller.controller_name == 'archive' -%> class="active"<% end -%>> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
+      </ul>
+    </div>
+  </div> <!-- end container -->
+</div> <!-- end header -->
