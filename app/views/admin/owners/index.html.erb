@@ -33,13 +33,13 @@
     <td><%= owner.contact %></td>
     <td><%= owner.terms %></td>
     <td><%= owner.notes %></td>
-    <td><%= link_to 'Show', owner %></td>
-    <td><%= link_to 'Edit', edit_owner_path(owner) %></td>
-    <td><%= link_to 'Destroy', owner, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_owner_path(owner) %></td>
+    <td><%= link_to 'Edit', edit_admin_owner_path(owner) %></td>
+    <td><%= link_to 'Destroy', admin_owner_path(owner), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New owner', new_owner_path %>
+<%= link_to 'New owner', new_admin_owner_path %>

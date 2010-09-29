@@ -14,7 +14,7 @@ describe "subject_types/new.html.erb" do
   it "renders new subject_type form" do
     render
 
-    rendered.should have_selector("form", :action => subject_types_path, :method => "post") do |form|
+    rendered.should have_selector("form", :action => admin_subject_types_path, :method => "post") do |form|
       form.should have_selector("input#subject_type_name", :name => "subject_type[name]")
       form.should have_selector("textarea#subject_type_description", :name => "subject_type[description]")
       form.should have_selector("input#subject_type_publish", :name => "subject_type[publish]")

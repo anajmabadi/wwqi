@@ -14,7 +14,7 @@ describe "repositories/edit.html.erb" do
   it "renders the edit repository form" do
     render
 
-    rendered.should have_selector("form", :action => repository_path(@repository), :method => "post") do |form|
+    rendered.should have_selector("form", :action => admin_repository_path(@repository), :method => "post") do |form|
       form.should have_selector("input#repository_name", :name => "repository[name]")
       form.should have_selector("input#repository_owner_id", :name => "repository[owner_id]")
       form.should have_selector("input#repository_publish", :name => "repository[publish]")

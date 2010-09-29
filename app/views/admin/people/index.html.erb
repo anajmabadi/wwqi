@@ -1,7 +1,7 @@
 <% @page_description = t(:people_index_description) -%>
 <% @page_title = t(:people) -%>
 <h1>Listing people</h1>
-<p><%= link_to 'New person', new_person_path %></p>
+<p><%= link_to 'New person', new_admin_person_path %></p>
 <table>
   <tr>
     <th>Id</th>
@@ -29,11 +29,11 @@
     <td><%= person.dod %></td>
     <td><%= person.publish %></td>
     <td><%= person.major %></td>
-    <td><%= link_to 'Show', person %></td>
-    <td><%= link_to 'Edit', edit_person_path(person) %></td>
-    <td><%= link_to 'Destroy', person, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_person_path(person) %></td>
+    <td><%= link_to 'Edit', edit_admin_person_path(person) %></td>
+    <td><%= link_to 'Destroy', admin_person_path(person), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
-<p><%= link_to 'New person', new_person_path %></p>
+<p><%= link_to 'New person', new_admin_person_path %></p>

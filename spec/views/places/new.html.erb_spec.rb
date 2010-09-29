@@ -17,7 +17,7 @@ describe "places/new.html.erb" do
   it "renders new place form" do
     render
 
-    response.should have_selector("form", :action => places_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_places_path, :method => "post") do |form|
       form.should have_selector("input#place_name", :name => "place[name]")
       form.should have_selector("input#place_latitude", :name => "place[latitude]")
       form.should have_selector("input#place_longitude", :name => "place[longitude]")

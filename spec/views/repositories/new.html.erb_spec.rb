@@ -14,7 +14,7 @@ describe "repositories/new.html.erb" do
   it "renders new repository form" do
     render
 
-    rendered.should have_selector("form", :action => repositories_path, :method => "post") do |form|
+    rendered.should have_selector("form", :action => admin_repositories_path, :method => "post") do |form|
       form.should have_selector("input#repository_name", :name => "repository[name]")
       form.should have_selector("input#repository_owner_id", :name => "repository[owner_id]")
       form.should have_selector("input#repository_publish", :name => "repository[publish]")

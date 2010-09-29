@@ -14,7 +14,7 @@ describe "subjects/edit.html.erb" do
   it "renders the edit subject form" do
     render
 
-    response.should have_selector("form", :action => subject_path(@subject), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_subject_path(@subject), :method => "post") do |form|
       form.should have_selector("input#subject_name", :name => "subject[name]")
       form.should have_selector("input#subject_major", :name => "subject[major]")
       form.should have_selector("input#subject_publish", :name => "subject[publish]")

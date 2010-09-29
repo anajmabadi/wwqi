@@ -2,7 +2,7 @@
 
 <div id="staticContent" class="clearfix">
   <h1><%= @page_title = t(:passport).capitalize %></h1>
-  <p><%= link_to 'New Passport', new_passport_path %></p>
+  <p><%= link_to 'New Passport', new_admin_passport_path %></p>
 
   <table class="styled">
     <tr>
@@ -27,11 +27,11 @@
         <td><%= show_check passport.primary %></td>
         <td><%= passport.position %></td>
         <td><%= truncate(passport.custom_url) %></td>
-        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), passport %>
-            <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_passport_path(passport) %>
-            <%= link_to image_tag("delete.png", :alt => 'delete'), passport, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_passport_path(passport) %>
+            <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_passport_path(passport) %>
+            <%= link_to image_tag("delete.png", :alt => 'delete'), admin_passport_path(passport), :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
   </table>
-  <p><%= link_to 'New Passport', new_passport_path %></p>
+  <p><%= link_to 'New Passport', new_admin_passport_path %></p>
 </div>

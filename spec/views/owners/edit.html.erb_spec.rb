@@ -22,7 +22,7 @@ describe "owners/edit.html.erb" do
   it "renders the edit owner form" do
     render
 
-    response.should have_selector("form", :action => owner_path(@owner), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_owner_path(@owner), :method => "post") do |form|
       form.should have_selector("input#owner_name", :name => "owner[name]")
       form.should have_selector("input#owner_address", :name => "owner[address]")
       form.should have_selector("input#owner_address2", :name => "owner[address2]")

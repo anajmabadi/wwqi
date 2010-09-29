@@ -18,7 +18,7 @@ describe "passports/edit.html.erb" do
   it "renders the edit passport form" do
     render
 
-    rendered.should have_selector("form", :action => passport_path(@passport), :method => "post") do |form|
+    rendered.should have_selector("form", :action => admin_passport_path(@passport), :method => "post") do |form|
       form.should have_selector("input#passport_tag", :name => "passport[tag]")
       form.should have_selector("input#passport_owner_id", :name => "passport[owner_id]")
       form.should have_selector("input#passport_item_id", :name => "passport[item_id]")

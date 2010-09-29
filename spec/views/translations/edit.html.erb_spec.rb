@@ -15,7 +15,7 @@ describe "translations/edit.html.erb" do
   it "renders the edit translation form" do
     render
 
-    response.should have_selector("form", :action => translation_path(@translation), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_translation_path(@translation), :method => "post") do |form|
       form.should have_selector("input#translation_locale", :name => "translation[locale]")
       form.should have_selector("input#translation_key", :name => "translation[key]")
       form.should have_selector("textarea#translation_value", :name => "translation[value]")

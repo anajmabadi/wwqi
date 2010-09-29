@@ -17,7 +17,7 @@ describe "places/edit.html.erb" do
   it "renders the edit place form" do
     render
 
-    response.should have_selector("form", :action => place_path(@place), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_place_path(@place), :method => "post") do |form|
       form.should have_selector("input#place_name", :name => "place[name]")
       form.should have_selector("input#place_latitude", :name => "place[latitude]")
       form.should have_selector("input#place_longitude", :name => "place[longitude]")

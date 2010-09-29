@@ -3,8 +3,8 @@
 <div id="staticContent" class="clearfix">
   <h1><%= @page_title = t(:passport).capitalize + " | " + t(:show).capitalize %></h1>
   <p id="notice"><%= notice %></p>
-  <p><%= link_to 'Edit', edit_passport_path(@passport) %> |
-  <%= link_to 'Back', passports_path %></p>
+  <p><%= link_to 'Edit', edit_admin_passport_path(@passport) %> |
+  <%= link_to 'Back', admin_admin_passport_path %></p>
 <p>
   <b>Tag:</b>
   <%= @passport.tag %>
@@ -45,6 +45,6 @@
   <%= @passport.custom_url %>
 </p>
 
-<p><%= link_to 'Edit', edit_passport_path(@passport) %> |
-<%= link_to 'Back', passports_path %></p>
+<p><%= link_to 'Edit', edit_admin_passport_path(@passport) %> |
+<%= link_to 'Back', admin_admin_passport_path %></p>
 

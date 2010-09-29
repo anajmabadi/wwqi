@@ -25,11 +25,11 @@
     <td><%= period.end_year %></td>
     <td><%= period.position %></td>
     <td><%= period.publish %></td>
-    <td><%= link_to 'Show', period %> | <%= link_to 'Edit', edit_period_path(period) %> | <%= link_to 'Destroy', period, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_period_path(period) %> | <%= link_to 'Edit', edit_admin_period_path(period) %> | <%= link_to 'Destroy', admin_period_path(period), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New period', new_period_path %>
+<%= link_to 'New period', new_admin_period_path %>

@@ -22,7 +22,7 @@ describe "owners/new.html.erb" do
   it "renders new owner form" do
     render
 
-    response.should have_selector("form", :action => owners_path, :method => "post") do |form|
+    response.should have_selector("form", :action => admin_owners_path, :method => "post") do |form|
       form.should have_selector("input#owner_name", :name => "owner[name]")
       form.should have_selector("input#owner_address", :name => "owner[address]")
       form.should have_selector("input#owner_address2", :name => "owner[address2]")

@@ -15,7 +15,7 @@ describe "relationships/edit.html.erb" do
   it "renders the edit relationship form" do
     render
 
-    response.should have_selector("form", :action => relationship_path(@relationship), :method => "post") do |form|
+    response.should have_selector("form", :action => admin_relationship_path(@relationship), :method => "post") do |form|
       form.should have_selector("input#relationship_name", :name => "relationship[name]")
       form.should have_selector("textarea#relationship_description", :name => "relationship[description]")
       form.should have_selector("input#relationship_position", :name => "relationship[position]")

@@ -5,8 +5,8 @@
   <h1><%= @page_title %></h1>
 
   <p>
-    <%= link_to 'Edit', edit_repository_path(@repository) %> |
-    <%= link_to 'Back', repositories_path %>
+    <%= link_to 'Edit', edit_admin_repository_path(@repository) %> |
+    <%= link_to 'Back', admin_repositories_path %>
   </p>
 
   <p id="notice"><%= notice %></p>
@@ -48,7 +48,7 @@
   </ul>
   
   <p>
-    <%= link_to 'Edit', edit_repository_path(@repository) %> |
-    <%= link_to 'Back', repositories_path %>
+    <%= link_to 'Edit', edit_admin_repository_path(@repository) %> |
+    <%= link_to 'Back', admin_repositories_path %>
   </p>
 </div>

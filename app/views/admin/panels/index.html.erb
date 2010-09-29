@@ -21,13 +21,13 @@
     <td><%= panel.publish %></td>
     <td><%= panel.caption %></td>
     <td><%= panel.notes %></td>
-    <td><%= link_to 'Show', panel %></td>
-    <td><%= link_to 'Edit', edit_panel_path(panel) %></td>
-    <td><%= link_to 'Destroy', panel, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_panel_path(panel) %></td>
+    <td><%= link_to 'Edit', edit_admin_panel_path(panel) %></td>
+    <td><%= link_to 'Destroy', admin_panel_path(panel), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Panel', new_panel_path %>
+<%= link_to 'New Panel', new_admin_panel_path %>
