@@ -148,14 +148,14 @@
     </tr>
   </table>
 
-  <div id="item_subject_list"><%= render 'items/item_subject_list', :subjects => @item.subjects %></div>
+  <div id="item_subject_list"><%= render 'admin/items/item_subject_list', :subjects => @item.subjects %></div>
   
-  <div id="item_passport_list"><%= render('items/item_passport_list', :passports => @item.passports ) unless @item.passports.empty? %></div>
+  <div id="item_passport_list"><%= render('admin/items/item_passport_list', :passports => @item.passports ) unless @item.passports.empty? %></div>
   <div id="addPassport">
     <% if @passport.nil? %>
-      <%= render :partial => 'items/add_passport_button', :locals => { :item => @item } %>
+      <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
     <% else %>
-      <%= render 'items/add_passport_form', @passport %>
+      <%= render 'admin/items/add_passport_form', @passport %>
     <% end %>
   </div>
   
