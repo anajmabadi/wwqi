@@ -894,7 +894,6 @@ table.styled {
     color: #7F7F7F;
     font: 0.9em/1.6em "Trebuchet",Verdana,sans-serif;
     border-collapse: collapse;
-    width:100%;
 }
 
 table.styled ,table.styled  caption {
@@ -905,6 +904,10 @@ table.styled  caption,table.styled th,table.styled td {
     border-left: 0;
     padding: 10px;
     border-bottom: 1px solid #ddd;
+}
+
+table.styled td {
+    width: 50%;
 }
 
 table.styled caption,table.styled thead th,table.styled tfoot th,table.styled tfoot td {
