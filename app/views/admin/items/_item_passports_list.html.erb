@@ -1,0 +1,15 @@
+<h3>Repository passports:</h3>
+<ul>
+  <% unless passports.empty? -%>
+    <%= render(passports) %>
+  <% else -%>
+    <li>No passports.</li>
+  <% end -%>
+</ul>
+<div id="addPassport">
+  <% if @passport.nil? %>
+    <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
+  <% else %>
+    <%= render 'admin/items/add_passport_form', @passport %>
+  <% end %>
+</div>
