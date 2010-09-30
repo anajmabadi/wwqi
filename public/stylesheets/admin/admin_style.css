@@ -898,7 +898,14 @@ table.styled {
 
 table.styled h3 {
     font-size: 1.5em;
+    margin-top: 5px;
 }
+
+table.styled h4 {
+    font-size: 1.15em;
+    margin-top: 5px;
+}
+
 table.styled ,table.styled  caption {
     margin: 0 auto;
 }
