@@ -160,13 +160,13 @@ h5
 ul.global
 {
     margin-left: 20px;
-    list-style-image:url("../images/arrow_li.png") !important;
+    list-style-image:url("/images/arrow_li.png") !important;
 }
 
 ul.global li
 {
     line-height: 2em;
-    list-style-image:url("../images/arrow_li.png") !important;
+    list-style-image:url("/images/arrow_li.png") !important;
 }
 
 ol.global
@@ -284,7 +284,7 @@ input.button_dark
 {
     width: 120px;
     height: 30px;
-    background: transparent url('../images/bg_button_dark.png') no-repeat center;
+    background: transparent url('/images/bg_button_dark.png') no-repeat center;
     border: 0;
     font-weight: bold;
     font-size: 11px;
@@ -294,20 +294,20 @@ input.button_dark
 
 input.button_dark:hover
 {
-    background: transparent url('../images/bg_button_dark_hover.png') no-repeat center;
+    background: transparent url('/images/bg_button_dark_hover.png') no-repeat center;
 }
 
 input.button_dark:active
 {
     color: #999;
-    background: transparent url('../images/bg_button_dark_active.png') no-repeat center;
+    background: transparent url('/images/bg_button_dark_active.png') no-repeat center;
 }
 
 input.button_light
 {
     width: 122px;
     height: 32px;
-    background: transparent url('../images/bg_button_light.png') no-repeat center;
+    background: transparent url('/images/bg_button_light.png') no-repeat center;
     border: 0;
     font-weight: bold;
     font-size: 11px;
@@ -317,18 +317,18 @@ input.button_light
 
 input.button_light:hover
 {
-    background: transparent url('../images/bg_button_light_hover.png') no-repeat center;
+    background: transparent url('/images/bg_button_light_hover.png') no-repeat center;
 }
 
 input.button_light:active
 {
     color: #999;
-    background: transparent url('../images/bg_button_light_active.png') no-repeat center;
+    background: transparent url('/images/bg_button_light_active.png') no-repeat center;
 }
 
 .option
 {
-    background: transparent url('../images/bg_option.png') no-repeat center;
+    background: transparent url('/images/bg_option.png') no-repeat center;
     width:169px;
     height: 30px;
 
@@ -354,7 +354,7 @@ input.button_light:active
 
 .file
 {
-    background: transparent url('../images/bg_file.png') no-repeat left;
+    background: transparent url('/images/bg_file.png') no-repeat left;
     width:238px;
     height: 40px;
     overflow: hidden;
@@ -380,7 +380,7 @@ input.button_light:active
 
 .date
 {
-    background: transparent url('../images/bg_date.png') no-repeat left;
+    background: transparent url('/images/bg_date.png') no-repeat left;
     width:169px;
     height: 40px;
     overflow: hidden;
@@ -468,7 +468,7 @@ input.button_light:active
     height: 60px;
     margin-top:-60px;
     padding-top:60px;
-    background: #000 url('../images/bg_menu.png') repeat-x;
+    background: #000 url('/images/bg_menu.png') repeat-x;
     border-bottom: 1px solid #fff;
 }
 
@@ -478,7 +478,7 @@ input.button_light:active
     margin: 13px 30px 0 0;
     width: 252px;
     height: 30px;
-    background: transparent url('../images/bg_search.png') repeat-x;
+    background: transparent url('/images/bg_search.png') repeat-x;
 }
 
 #menu_wrapper #search input
@@ -514,7 +514,7 @@ input.button_light:active
 
 .nav li a.active, .nav li a:active, .nav li a:hover, .nav li a.selected
 {
-    background: transparent url('../images/bg_menu_selected.png') no-repeat center 80%;
+    background: transparent url('/images/bg_menu_selected.png') no-repeat center 80%;
     color: #fff;
 }
 
@@ -530,7 +530,7 @@ input.button_light:active
 {
     width: 158px;
     height: 32px;
-    background: transparent url('../images/bg_popup_top.png') no-repeat center center;
+    background: transparent url('/images/bg_popup_top.png') no-repeat center center;
 }
 
 .popup .content
@@ -538,14 +538,14 @@ input.button_light:active
     width: 158px;
     min-height: 60px;
     height: auto;
-    background: transparent url('../images/bg_popup_content.png') repeat-y center center;
+    background: transparent url('/images/bg_popup_content.png') repeat-y center center;
 }
 
 .popup .footer
 {
     width: 158px;
     height: 20px;
-    background: transparent url('../images/bg_popup_footer.png') no-repeat center center;
+    background: transparent url('/images/bg_popup_footer.png') no-repeat center center;
 }
 
 .submenu
@@ -577,7 +577,7 @@ input.button_light:active
 
 .submenu li a:hover, .submenu li a:active
 {
-    background: transparent url('../images/bg_submenu_selected.png') repeat-x;
+    background: transparent url('/images/bg_submenu_selected.png') repeat-x;
     color: #fff;
 }
 
@@ -593,7 +593,7 @@ input.button_light:active
 {
     width: 85px;
     height: 19px;
-    background: transparent url('../images/bg_shortcut_top.png') no-repeat center center;
+    background: transparent url('/images/bg_shortcut_top.png') no-repeat center center;
 }
 
 .shortcut .content
@@ -601,7 +601,7 @@ input.button_light:active
     width: 85px;
     min-height: 60px;
     height: auto;
-    background: transparent url('../images/bg_shortcut_content.png') repeat-y center center;
+    background: transparent url('/images/bg_shortcut_content.png') repeat-y center center;
 }
 
 .shortcut .content h2
@@ -632,7 +632,7 @@ input.button_light:active
 {
     width: 85px;
     height: 18px;
-    background: transparent url('../images/bg_shortcut_footer.png') no-repeat center center;
+    background: transparent url('/images/bg_shortcut_footer.png') no-repeat center center;
 }
 
 #content_wrapper
@@ -808,7 +808,7 @@ input.button_light:active
     font-weight: bold;
     font-size: 11px;
     text-transform: uppercase;
-    background: transparent url('../images/bg_2nd_tab.png') no-repeat center;
+    background: transparent url('/images/bg_2nd_tab.png') no-repeat center;
     margin-top: 1px;
 }
 
@@ -823,7 +823,7 @@ input.button_light:active
     font-weight: bold;
     font-size: 11px;
     text-transform: uppercase;
-    background: transparent url('../images/bg_2nd_tab_active.png') no-repeat center;
+    background: transparent url('/images/bg_2nd_tab_active.png') no-repeat center;
     margin-top: 3px;
 }
 
