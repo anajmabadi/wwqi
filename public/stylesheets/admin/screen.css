@@ -879,6 +879,14 @@ input.button_light:active
     color: #959595;
 }
 
+.ppagination span.disabled {
+
+    float: left;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+    color: grey;
+}
+
 .ppagination a:hover
 {
     color: #000;
