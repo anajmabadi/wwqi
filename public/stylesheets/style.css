@@ -660,15 +660,13 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 
 #about{
     float:left;
-    width:265px;
-    height:250px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    margin-left:20px;
+    width:275px;
+    height:190px;
+    margin-left:10px;
 }
 
 #about #head{
-    background:url(/images/bg_about_head.png) top left no-repeat;
+    background:#000;
     padding-top:12px;
     height:30px;
 }
@@ -684,21 +682,28 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 }
 
 #about #aboutContent{
-    background:#444;
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;
+    background:#222;
     padding:0;
     overflow:hidden;
-    width:265px;
-    height:208px;
+    width:275px;
+    height:158px;
 }
 
 #about #aboutContent p{
-    margin:10px;
-    font-size:1.1em;
-    color:#CCC
+    color:#CCCCCC;
+	font-size:1em;
+	line-height:1.4em;
+	margin:10px;
+}
+
+#home_search_wrapper{
+	float:left;
+    width:267px;
+    height:40px;
+	margin-left:10px;
+	background:#c41230;
+	padding:5px 0 0 8px;
+	margin-bottom:5px;
 }
 
 

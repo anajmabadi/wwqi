@@ -9,21 +9,7 @@ module HomeHelper
 		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
 		});
 
-		 $('a[title]').qtip({
-						   	   style: {
-							   name: 'dark',
-							   tip: true,
-							    border: {
-										 radius: 8
-									  }
-								},
-							   position: {
-								  corner: {
-									 target: 'topMiddle',
-									 tooltip: 'bottomMiddle'
-								  }
-						   		}
-		});
+		 
 
 
 		$("#firstFeature").click(function(){
@@ -63,21 +49,7 @@ module HomeHelper
 		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
 		});
 
-		$('a[title]').qtip({
-						   	   style: {
-							   name: 'dark',
-							   tip: true,
-							    border: {
-										 radius: 8
-									  }
-								},
-							   position: {
-								  corner: {
-									 target: 'topMiddle',
-									 tooltip: 'bottomMiddle'
-								  }
-						   		}
-		});
+	
 
 
 

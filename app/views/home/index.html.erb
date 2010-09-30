@@ -5,12 +5,13 @@
   <%= raw which_script? -%>
 <% end -%>
   
-<div id="universalSearch">
+<!--<div id="universalSearch">
 	<form action="/archive/browser" class="searchform" method="get">
           <input type="text" value="Enter a keyword to search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='Enter a keyword to search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='Enter a keyword to search the archives';this.style.color = '#aaa';}">
           <button type="submit" id="search"></button>
     </form>
-</div>
+</div>-->
+
 <div class="slide-wrap">
   <%= link_to(image_tag("/images/slideshow1#{language_suffix}.jpg", :id => "slide-img-1", :class => "slide", :alt => raw(t(:welcome_message))), archive_path) %>
   <%= link_to(image_tag("/images/slideshow2#{language_suffix}.jpg", :id => "slide-img-2", :class => "slide", :alt => t(:writings)), archive_path) %>
@@ -54,6 +55,15 @@
 
 </div>
  --><!-- end featured -->
+<div id="home_search_wrapper">
+ <div class="clearfix" id="big_search">
+        <form method="get" class="searchform" action="/archive/browser">
+          <input type="text" value="search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='search the archives';this.style.color = '#aaa';}">
+          <button id="search" type="submit"></button>
+        </form>
+ </div>
+</div>
+	  
 <div id="about">
   <%= link_to(raw("<div id='head'><h2>#{t(:about_us)}</h2></div>"), about_url) %>
   <div id="aboutContent" class="clearfix">
