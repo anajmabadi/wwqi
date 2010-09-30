@@ -911,14 +911,12 @@ input.button_light:active
     display: inline;
     float: left;
     padding: 10px 20px 10px 20px;
-    background: #fff;
+    background: #ebebeb;
     font-weight: bold;
-    font-size: 14px;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     position: relative;
     top: -1px;
-    color: #959595;
 }
 
 .media_photos {
