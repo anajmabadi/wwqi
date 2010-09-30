@@ -95,7 +95,7 @@ h6 { font-size: 1em; }
 
 #staticContent h2{ font-size:2.6em; color:#ca3723; margin-top:1em;}
 #staticContent em{ color:#666; line-height:1.5em;}
-#staticContent li{ padding-left:20px; background:url(/images/list_bullet.gif) 0 5px no-repeat}
+#staticContent li{ padding-left:20px;}
 #staticContent a{ color:#ca3723;}
 
 /* Text elements
@@ -896,6 +896,9 @@ table.styled {
     border-collapse: collapse;
 }
 
+table.styled h3 {
+    font-size: 1.5em;
+}
 table.styled ,table.styled  caption {
     margin: 0 auto;
 }
@@ -943,11 +946,6 @@ table.styled tbody a:active,table.styled tbody a:hover,table.styled tbody a:focu
     color: #666
 }
 
-table.styled tbody tr:hover {
-    background-color: #EEE;
-    color: #333
-}
-
 table.styled tbody tr:hover a {
     background-color: #FFF
 }
@@ -959,7 +957,7 @@ table.styled tbody td+td+td+td a {
 }
 
 table.styled tbody td+td+td+td a:active,table.styled tbody td+td+td+td a:hover,table.styled tbody td+td+td+td a:focus,table.styled tbody td+td+td+td a:visited {
-    color: #E63C1E
+    color: #E63C1E;
 }
 
 
