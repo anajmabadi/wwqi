@@ -661,14 +661,13 @@ input.button_light:active
     background: #f1f2f2;
     padding: 10px 20px 10px 20px;
     height: 30px;
-    border-bottom: 1px solid #ccc;
 }
 
-.onecolumn .header h2
+.onecolumn .header h1
 {
     font-size: 16px;
     font-weight: bold;
-    margin-top: 4px;
+    margin-top: -1px;
     display: block;
     float: left;
 }
@@ -679,15 +678,22 @@ input.button_light:active
     float: left;
 }
 
-.onecolumn .header .description h1
-{
-    font-size: 2em;
-}
-
 .onecolumn .header .tools
 {
     margin: 7px 0 0 0;
     float: right;
+}
+
+.onecolumn .filterbar
+{
+    display: inline;
+    float:left;
+    margin-left: 50px;
+}
+
+.onecolumn .filterbar form {
+    display: inline;
+    margin-right: 20px;
 }
 
 .onecolumn .content
@@ -698,13 +704,6 @@ input.button_light:active
 .onecolumn .content.nomargin
 {
     margin: 0;
-}
-
-.onecolumn .content .admin_results
-{
-    float: right;
-    margin: 10px 20px 0px 0px;
-    font-weight: bold;
 }
 
 .twocolumn_wrapper
@@ -845,18 +844,6 @@ input.button_light:active
     margin-top: 3px;
 }
 
-.filterbar
-{
-    display: block;
-    clear: both;
-    background: #f1f2f2;
-    padding: 10px 20px 10px 20px;
-}
-
-.filterbar form {
-    display: inline;
-    margin-right: 20px;
-}
 
 .ppagination
 {
@@ -866,6 +853,14 @@ input.button_light:active
     width: 100%;
     border-top: 1px solid #ccc;
     background: #f1f2f2;
+}
+
+.ppagination .admin_results {
+    display: block;
+    float: right;
+    padding: 10px 20px 10px 20px;
+    font-weight: bold;
+        position: relative;
 }
 
 .ppagination a
