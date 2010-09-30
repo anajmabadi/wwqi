@@ -1,4 +1,4 @@
-<%= form_for(@appearance) do |f| %>
+<%= form_for([:admin, @appearance]) do |f| %>
   <% if @appearance.errors.any? %>
   <div id="errorExplanation">
     <h2><%= pluralize(@appearance.errors.count, "error") %> prohibited this appearance from being saved:</h2>

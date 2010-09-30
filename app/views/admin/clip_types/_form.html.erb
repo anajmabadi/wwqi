@@ -1,4 +1,4 @@
-<%= form_for(@clip_type) do |f| %>
+<%= form_for([:admin, @clip_type]) do |f| %>
   <% if @clip_type.errors.any? %>
   <div id="errorExplanation">
     <h2><%= pluralize(@clip_type.errors.count, "error") %> prohibited this clip_type from being saved:</h2>

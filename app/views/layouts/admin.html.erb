@@ -30,7 +30,7 @@
     <%= render 'shared/header' %>
     <div id="content" class="clearfix">
       <%= render 'admin/admin/admin_main_nav' -%>
-      <div class="container clearfix">
+
         <%= alert -%>
         <%= notice -%>
 
@@ -38,7 +38,7 @@
         <%= yield :layout %>
         <!-- end rails template content -->
 
-      </div> <!-- end container -->
+
     </div><!-- end content -->
     <%= render 'shared/footer'%>
 

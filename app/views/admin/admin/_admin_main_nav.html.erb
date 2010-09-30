@@ -1,256 +1,95 @@
 <div id="menu_wrapper">
 
   <ul class="nav">
-    <li>
-      <a href="" class="active">
-        Home
-      </a>
-    </li>
-    <li>
-      <a href="">
-        Item
-      </a>
+    <li><%= link_to "Items", admin_items_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Add New Item
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage Items
-              </a>
-            </li>
+            <li><%= link_to "Items...", admin_items_path %></li>
+            <li><%= link_to "Add Item", new_admin_item_path %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        Collection
-      </a>
+    <li><%= link_to "Collections", admin_collections_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Add New Collection
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage Collections
-              </a>
-            </li>
+            <li><%= link_to "Collections...", admin_collections_path  %></li>
+            <li><%= link_to "Add Collection", new_admin_collection_path %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        Organization
-      </a>
+    <li><%= link_to "People", admin_people_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Subjects
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Subject Types
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Classifications
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Periods
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Places
-              </a>
-            </li>
+            <li><%= link_to "People...", admin_people_path  %></li>
+            <li><%= link_to "New Person", new_admin_person_path  %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        People
-      </a>
+    <li><%= link_to "Exhibitions", admin_exhibitions_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Person
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Relationships
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Appearance
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Appellation
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Owner
-              </a>
-            </li>
+            <li><%= link_to "Exhibitions...", admin_exhibitions_path %></li>
+            <li><%= link_to "Add Exhibition", new_admin_exhibition_path %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        Media
-      </a>
+    <li><%= link_to "Translations", admin_translations_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Clips
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Clip Types
-              </a>
-            </li>
+            <li><%= link_to "Translations...", admin_translations_path %></li>
+            <li><%= link_to "Add Translation", new_admin_translation_path %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        Exhibitions
-      </a>
+    <li><%= link_to "Pages", admin_pages_path %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Create new exhibition
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage Exhibitions
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage Panels
-              </a>
-            </li>
+            <li><%= link_to "Pages...", admin_pages_path %></li>
+            <li><%= link_to "Add Page", new_admin_page_path %></li>
           </ul>
           <br class="clear"/>
         </div>
         <div class="footer"></div>
       </div>
     </li>
-    <li>
-      <a href="">
-        Translation
-      </a>
+    <li><%= link_to "Reference Tables", "#" %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">
           <ul class="submenu">
-            <li>
-              <a href="">
-                Add new translation
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage Translations
-              </a>
-            </li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
-    </li>
-    <li>
-      <a href="">
-        Pages
-      </a>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li>
-              <a href="">
-                Add new page
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Manage pages
-              </a>
-            </li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
-    </li>
-    <li>
-      <a href="">
-        Utilities
-      </a>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li>
-              <a href="">
-                Rename Files
-              </a>
-            </li>
-            <li>
-              <a href="">
-                Other itmes
-              </a>
-            </li>
+            <li><%= link_to "Subjects...", admin_subjects_path  %></li>
+            <li><%= link_to "Subject Types...", admin_collections_path  %></li>
+            <li><%= link_to "Periods...", admin_periods_path  %></li>
+            <li><%= link_to "Places...", admin_places_path  %></li>
+            <li><%= link_to "Owners...", admin_owners_path  %></li>
+            <li><%= link_to "Repositories...", admin_repositories_path  %></li>
           </ul>
           <br class="clear"/>
         </div>

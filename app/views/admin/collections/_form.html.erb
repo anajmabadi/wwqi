@@ -1,4 +1,4 @@
-<% form_for(@collection) do |f| %>
+<% form_for([:admin, @collection]) do |f| %>
   <%= f.error_messages %>
   <% @default_rows = 6 %>
   <table class="styled" >

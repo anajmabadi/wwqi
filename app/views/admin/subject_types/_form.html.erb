@@ -1,4 +1,4 @@
-<%= form_for(@subject_type) do |f| %>
+<%= form_for([:admin, @subject_type]) do |f| %>
   <% if @subject_type.errors.any? %>
   <div id="errorExplanation">
     <h2><%= pluralize(@subject_type.errors.count, "error") %> prohibited this subject_type from being saved:</h2>

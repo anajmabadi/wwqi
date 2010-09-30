@@ -1,4 +1,4 @@
-<%= form_for(@panel) do |f| %>
+<%= form_for([:admin, @panel]) do |f| %>
   <% if @panel.errors.any? %>
   <div id="errorExplanation">
     <h2><%= pluralize(@panel.errors.count, "error") %> prohibited this panel from being saved:</h2>

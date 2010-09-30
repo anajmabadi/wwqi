@@ -9,8 +9,10 @@ Qajar::Application.routes.draw do
       :clip_types,
       :collections,
       :owners,
+      :pages,
       :periods,
       :places,
+      :repositories,
       :subject_types,
       :subjects,
       :translations
