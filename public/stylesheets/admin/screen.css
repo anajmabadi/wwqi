@@ -857,10 +857,15 @@ input.button_light:active
 
 .ppagination .admin_results {
     display: block;
-    float: right;
+    float: left;
     padding: 10px 20px 10px 20px;
     font-weight: bold;
         position: relative;
+}
+
+.ppagination .pagination
+{
+    float:right;
 }
 
 .ppagination a
