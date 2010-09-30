@@ -40,6 +40,8 @@ Qajar::Application.routes.draw do
   # The priority is based upon order of creation:
   # first created -> highest priority.
   
+  match 'admin' => 'admin/admin#index'
+
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser

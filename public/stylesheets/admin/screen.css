@@ -491,7 +491,7 @@ input.button_light:active
     float: left;
     display: block;
     list-style: none;
-    margin: 0 0 0 80px;
+    margin: 0 0 0 10px;
 }
 
 .nav li

@@ -5,5 +5,5 @@ class Admin::AdminController < ApplicationController
 
   # assign the admin layout to all the admin pages which inherit from here
   layout 'admin'
-  
+
 end
