@@ -2,30 +2,37 @@
 <% @page_title = t(:item).capitalize -%>
 
 <div id="staticContent" class="clearfix">
+  <div class="onecolumn"
+  
+    <div class="content nomargin">
+      <%= render :partial => 'toolbar' %>
+      <%= render :partial => 'filterbar' %>
+      <%= render :partial => 'pagination_bar' %>
+      <table  class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th><%= sort_link "Id", 'items.id' %></th>
+          <th><%= sort_link "Title", 'item_translations.title' %></th>
+          <th><%= sort_link "Accession num", 'items.accession_num' %></th>
+          <th><%= sort_link "Collection", 'items.collection_id' %></th>
+          <th><%= sort_link "Pages", 'items.pages' %></th>
+          <th><%= sort_link "Publish", 'items.publish' %></th>
+          <th>Actions</th>
+        </tr>
 
-  <h1><%= t(:item).capitalize %></h1>
-  <%= render :partial => 'toolbar' %>
-  <table class="styled">
-    <tr>
-      <th><%= sort_link "Id", 'items.id' %></th>
-      <th><%= sort_link "Title", 'item_translations.title' %></th>
-      <th><%= sort_link "Collection", 'items.collection_id' %></th>
-      <th><%= sort_link "Pages", 'items.pages' %></th>
-      <th><%= sort_link "Publish", 'items.publish' %></th>
-      <th>Actions</th>
-    </tr>
-
-  <% @items.each do |item| %>
-    <tr>
-      <td><%= item.id.to_s %></td>
-      <td><%= link_to truncate(item.title), admin_item_path(item), :title => item.title %></td>
-      <td><%= truncate(item.collection.name, :length => 20) unless item.collection.nil? %></td>
-      <td><%= item.pages %></td>
-      <td><%= show_check item.publish %></td>
-      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_item_path(item) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_item_path(item), :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-  </table>
-  <p>&nbsp;</p>
-  <%= render :partial => 'toolbar' %>
+        <% @items.each do |item| %>
+          <tr>
+            <td><%= item.id.to_s %></td>
+            <td><%= link_to truncate(item.title), admin_item_path(item), :title => item.title %></td>
+            <td><%= item.accession_num %> </td>
+            <td><%= truncate(item.collection.name, :length => 20) unless item.collection.nil? %></td>
+            <td><%= item.pages %></td>
+            <td><%= show_check item.publish %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_item_path(item) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_item_path(item) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_item_path(item), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <%= render :partial => 'pagination_bar' %>
+      <br class="clear" />
+    </div>
+  </div>
 </div>

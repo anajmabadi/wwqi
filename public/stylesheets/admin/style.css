@@ -94,7 +94,7 @@ h5 { font-size: 1.167em; margin-bottom:10px; font-weight:bold; text-transform:up
 h6 { font-size: 1em; }
 
 #staticContent h2{ font-size:2.6em; color:#ca3723; margin-top:1em;}
-#staticContent em{ font-size:1.5em; color:#666; line-height:1.5em;}
+#staticContent em{ color:#666; line-height:1.5em;}
 #staticContent li{ padding-left:20px; background:url(/images/list_bullet.gif) 0 5px no-repeat}
 #staticContent a{ color:#ca3723;}
 
@@ -141,9 +141,9 @@ dd          { margin-left: 1.5em;}
 
 
 .container{
-    width:940px;
-    margin:0 auto;
-	position:relative;
+    /*width:940px;*/
+    margin:0px 0px 0px 25px;
+    position:relative;
 }
 
 #content{
@@ -181,14 +181,14 @@ dd          { margin-left: 1.5em;}
 }
 
 #header #tools{height:36px}
-#header #tools ul{padding-top:6px; float:right;}
+#header #tools ul{padding-top:6px; float:right; margin-right: 25px;}
 #header #tools li {padding:10px 9px 6px; *padding-top:0; *padding-bottom:0;font-size:0.8em }
 #header #tools li a{padding:5px 9px 6px 0; color: #A89C8A}
 #header #tools li a:hover{color:#a6a6a6;}
-#header #nav{margin-top:12px; font-size:1.2em}
+#header #nav{margin-top:12px; font-size:1.2em;}
 #header li{display:inline;text-transform:uppercase; font-weight:bold;}
 
-#header .lang{float:right; font-weight:bold;}
+#header .lang{float:right; font-weight:bold;display: none}
 
 
 /* search styles
@@ -458,6 +458,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browserFilters h4{color:#aaa; font-weight:bold; text-transform:uppercase; font-size:15px;  margin-top:2px;}
 #browserFilters p{padding:5px 15px 5px;}
 
+/*
 .paginationBar{
     width:910px;
     margin:0 auto 0 5px;
@@ -479,6 +480,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
 .pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
 .pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
+*/
 
 /* admin toolbar styles */
 .adminBar{

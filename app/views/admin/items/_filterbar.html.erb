@@ -1,0 +1,36 @@
+<div class="filterbar">
+
+  <%= form_tag({:controller => 'items', :action => :index, :page => 1}, :method => 'get', :id => 'subject_type_form', :name => 'subject_type_form') do -%>
+    <select id="medium_filter_admin" name="subject_type_filter" onChange="$('#subject_type_form').submit()">
+      <option value="all" <%= raw 'selected="selected"' if @subject_type_filter.blank? || @subject_type_filter== 'all' -%>>All Genres</option>
+      <% @subject_types.each do |subject_type| -%>
+        <option value="<%= subject_type[1] %>"<%= raw ' selected="selected"' if @subject_type_filter==subject_type[1].to_s -%>><%= subject_type[0] %></option>
+      <% end -%>
+    </select>
+  <% end %>
+
+  <%= form_tag({:controller => 'items', :action => :index, :page => 1}, :method => 'get', :id => 'collection_form', :name => 'collection_form') do -%>
+    <select id="collection_filter_admin" name="collection_filter"  onChange="$('#collection_form').submit()">
+      <option value="all" <%= raw 'selected="selected"' if @collection_filter.blank? || @collection_filter== 'all' -%>>All Collections</option>
+      <% @collections.each do |collection| -%>
+        <option value="<%= collection[1] %>"<%= raw ' selected="selected"' if @collection_filter==collection[1].to_s -%>><%= collection[0] %></option>
+      <% end -%>
+    </select>
+  <% end %>
+
+  <%= form_tag({:controller => 'items', :action => :index, :page => 1}, :id => "period_form", :method => 'get', :name => 'period_form') do -%>
+    <select id="period_filter_admin" name="period_filter"  onChange="$('#period_form').submit()">
+      <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>>All Periods</option>
+      <% @periods.each do |period| -%>
+        <option value="<%= period[1] %>"<%= raw ' selected="selected"' if @period_filter==period[1].to_s -%>><%= period[0] %></option>
+      <% end -%>
+    </select>
+  <% end %>
+
+  <%= form_tag('/items', :method => :get) do -%>
+    <%= text_field_tag :keyword_filter, t(:search_prompt), :style => "color:#aaa;",
+      :onfocus => "if(this.value=='#{t(:search_prompt)}'){this.value='';this.style.color = '#000';}",
+      :onblur => "if(this.value==''){this.value='#{t(:search_prompt)}';this.style.color = '#aaa';}"%>
+    <%= submit_tag 'search', :name => '', :disable_with => "Searching..." %>
+  <% end -%>
+</div>

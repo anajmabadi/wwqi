@@ -679,6 +679,17 @@ input.button_light:active
     float: left;
 }
 
+.onecolumn .header .description h1
+{
+    font-size: 2em;
+}
+
+.onecolumn .header .tools
+{
+    margin: 7px 0 0 0;
+    float: right;
+}
+
 .onecolumn .content
 {
     margin: 20px;
@@ -687,6 +698,13 @@ input.button_light:active
 .onecolumn .content.nomargin
 {
     margin: 0;
+}
+
+.onecolumn .content .admin_results
+{
+    float: right;
+    margin: 10px 20px 0px 0px;
+    font-weight: bold;
 }
 
 .twocolumn_wrapper
@@ -827,12 +845,24 @@ input.button_light:active
     margin-top: 3px;
 }
 
+.filterbar
+{
+    display: block;
+    clear: both;
+    background: #f1f2f2;
+    padding: 10px 20px 10px 20px;
+}
+
+.filterbar form {
+    display: inline;
+    margin-right: 20px;
+}
+
 .ppagination
 {
     display: block;
     clear: both;
     float: left;
-    margin-top: 5px;
     width: 100%;
     border-top: 1px solid #ccc;
     background: #f1f2f2;
@@ -861,6 +891,21 @@ input.button_light:active
     padding: 10px 20px 10px 20px;
     background: #fff;
     font-weight: bold;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    position: relative;
+    top: -1px;
+    color: #959595;
+}
+
+.ppagination em
+{
+    display: inline;
+    float: left;
+    padding: 10px 20px 10px 20px;
+    background: #fff;
+    font-weight: bold;
+    font-size: 14px;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
     position: relative;
