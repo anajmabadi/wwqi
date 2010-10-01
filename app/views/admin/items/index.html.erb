@@ -5,7 +5,7 @@
   <div class="onecolumn"
   
     <div class="content nomargin">
-      <%= render 'nav_header_bar' %>
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_item_path} %>
       <%= render 'nav_filter_bar' %>
       <%= render 'nav_pagination_bar' %>
       <table  class="global" width="100%" cellpadding="0" cellspacing="0">
