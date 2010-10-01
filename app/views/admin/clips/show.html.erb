@@ -1,40 +1,54 @@
-<p class="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Title:</b>
-  <%= @clip.title %>
-</p>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn"><%= render 'nav_show_header_bar', :clip => @clip %>
+    <table class="styled" >
+      <tr><td><h2>
+            <%= @clip.title_en %>
+          </h2></td>
+        <td class="persianOnly"><h2>
+            <%= @clip.title_fa %>
+          </h2></td></tr>
 
-<p>
-  <b>Caption:</b>
-  <%= @clip.caption %>
-</p>
+      <tr><td>
+          <b>Caption, en</b>
+          <%= @clip.caption_en %>
+        </td>
+        <td class="persianOnly">
+          <b>Caption, fa</b>
+          <%= @clip.caption_fa %>
+        </td></tr>
 
-<p>
-  <b>Item:</b>
-  <%= @clip.item_id %>
-</p>
+      <tr><td colspan="2">
+          <b>Item</b>
+          <%= @clip.item.to_label unless @clip.item.nil? %>
+        </td></tr>
 
-<p>
-  <b>Clip type:</b>
-  <%= @clip.clip_type_id %>
-</p>
+      <tr><td>
+          <b>Clip type</b>
+          <%= @clip.clip_type.name unless @clip.clip_type.nil? %>
+        </td><td>
+          <b>Recorded on</b>
+          <%= @clip.recorded_on %>
+        </td></tr>
+      <tr><td>
+          <b>Position</b>
+          <%= @clip.position %>
+        </td>
+        <td>
+          <b>Publish</b>
+          <%= @clip.publish %>
+        </td></tr>
 
-<p>
-  <b>Publish:</b>
-  <%= @clip.publish %>
-</p>
+      <tr><td>
+          <b>Notes</b>
+          <%= @clip.notes %>
+        </td></tr>
 
-<p>
-  <b>Notes:</b>
-  <%= @clip.notes %>
-</p>
+ 
+    </table>
 
-<p>
-  <b>Recorded on:</b>
-  <%= @clip.recorded_on %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_clip_path(@clip) %> |
-<%= link_to 'Back', admin_clips_path %>
+    <%= render 'nav_show_header_bar', :clip => @clip %>
+  </div>
+</div>

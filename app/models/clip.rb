@@ -5,6 +5,7 @@ class Clip < ActiveRecord::Base
   # globalize2 mix-in
   translates :title, :caption
   default_scope :include => [:translations]
+  globalize_accessors :fa, :en
   
   # validations
   validates :item_id, :presence => true, :numericality => true

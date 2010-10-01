@@ -24,8 +24,9 @@ Qajar::Application.routes.draw do
       end
       resources :images
       resources :passports
-      resources :clips
     end
+
+    resources :clips
 
     resources :exhibitions do
       resources :panels
