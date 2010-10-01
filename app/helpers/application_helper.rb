@@ -242,7 +242,7 @@ module ApplicationHelper
     formatted_messages = messages.map do |type|
       content_tag :div, :class => type.to_s do
         message_for_item(flash[type], flash["#{type}_item".to_sym])
-      end
+      end unless flash[type].nil? || flash[type].blank?
     end
     formatted_messages.join
   end

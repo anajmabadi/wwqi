@@ -146,7 +146,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.destroy
 
     respond_to do |format|
-      format.html { redirect_to(items_url, :notice => 'Item was deleted.') }
+      format.html { redirect_to(admin_items_url, :notice => 'Item was deleted.') }
       format.xml  { head :ok }
     end
   end
