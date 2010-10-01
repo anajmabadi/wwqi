@@ -48,15 +48,15 @@ class Admin::PassportsController < Admin::AdminController
   # POST /passports.xml
   def create
     @passport = Passport.new(params[:passport])
+    @item = Item.find(params[:passport][:item_id])
     respond_to do |format|
       if @passport.save
-        @item = Item.find(params[:passport][:item_id])
         format.html { redirect_to(@passport, :notice => 'Passport was successfully created.') }
-        format.js { render :template => 'items/add_passport_to_item' }
+        format.js { render :template => 'admin/items/add_passport_to_item' }
         format.xml  { render :xml => @passport, :status => :created, :location => @passport }
       else
         format.html { render :action => "new" }
-        format.js { render :template => 'items/add_passport_to_item' }
+        format.js { render :template => 'admin/items/add_passport_to_item' }
         format.xml  { render :xml => @passport.errors, :status => :unprocessable_entity }
       end
     end

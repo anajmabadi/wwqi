@@ -1034,3 +1034,8 @@ input.button_light:active
 .persian .option .text {
     margin-right:45px;
 }
+
+/* cf hacks */
+#addPassport {
+    padding: 20px 0px 10px 0px;
+}
