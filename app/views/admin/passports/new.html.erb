@@ -1,8 +1,13 @@
 <% @page_description = t(:new_description) -%>
+<% @page_title = controller.controller_name.capitalize + ' | ' + t(:new).capitalize -%>
 
+<% @back_path = admin_passports_path %>
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title = t(:passport).capitalize + ' | ' + t(:new).capitalize %></h1>
-  <p><%= link_to 'Back', admin_admin_passport_path %></p>
-  <%= render 'form' %>
-  <p><%= link_to 'Back', admin_admin_passport_path %></p>
+  <div class="onecolumn"
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path}  %>
+    </div>
+  </div>
 </div>

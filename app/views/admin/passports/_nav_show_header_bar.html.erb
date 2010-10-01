@@ -1,0 +1,12 @@
+<div class="header">
+  <div class="description">
+    <h1><%= link_to controller.controller_name.capitalize, admin_passports_path  %> | Show </h1>
+  </div>
+  <div class="tools">
+    <%= link_to 'Back', admin_passports_path %> |
+    <%= link_to 'Edit', edit_admin_passport_path(passport) %> |
+    <%= link_to 'Delete', admin_passport_path(passport), :method => :delete, :confirm => "Are you sure you want to delete this passport?" %> |
+    <%= link_to "New", new_admin_passport_path %> |
+    <%= link_to "Live Preview" , archive_detail_path(:id => passport.item.id), :title => passport.item.title, :target => "_blank" unless passport.item.nil? %>
+  </div>
+</div>

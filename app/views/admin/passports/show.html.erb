@@ -1,50 +1,55 @@
 <% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title = t(:passport).capitalize + " | " + t(:show).capitalize %></h1>
-  <p id="notice"><%= notice %></p>
-  <p><%= link_to 'Edit', edit_admin_passport_path(@passport) %> |
-  <%= link_to 'Back', admin_admin_passport_path %></p>
-<p>
-  <b>Tag:</b>
-  <%= @passport.tag %>
-</p>
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :passport => @passport %>
+    <table class="styled" >
+      <tbody>
+        <tr>
+          <td>
+            <p>
+              <b>Tag:</b>
+              <%= @passport.tag %>
+            </p>
 
-<p>
-  <b>Repository:</b>
-  <%= link_to_unless @passport.repository.nil?, @passport.repository.to_label, @passport.repository %>
-</p>
+            <p>
+              <b>Repository:</b>
+              <%= link_to_unless @passport.repository.nil?, @passport.repository.to_label, admin_repository_path(@passport.repository) %>
+            </p>
 
-<p>
-  <b>Item:</b>
-  <%= link_to_unless @passport.item.nil?, @passport.item.to_label, @passport.repository %>
-</p>
+            <p>
+              <b>Item:</b>
+              <%= link_to_unless @passport.item.nil?, @passport.item.to_label, admin_item_path(@passport.item) %>
+            </p>
 
-<p>
-  <b>Publish:</b>
-  <%= @passport.publish %>
-</p>
+            <p>
+              <b>Publish:</b>
+              <%= @passport.publish %>
+            </p>
 
-<p>
-  <b>Primary:</b>
-  <%= @passport.primary %>
-</p>
+            <p>
+              <b>Primary:</b>
+              <%= @passport.primary %>
+            </p>
 
-<p>
-  <b>Position:</b>
-  <%= @passport.position %>
-</p>
+            <p>
+              <b>Position:</b>
+              <%= @passport.position %>
+            </p>
 
-<p>
-  <b>Notes:</b>
-  <%= @passport.notes %>
-</p>
+            <p>
+              <b>Notes:</b>
+              <%= @passport.notes %>
+            </p>
 
-<p>
-  <b>Custom url:</b>
-  <%= @passport.custom_url %>
-</p>
+            <p>
+              <b>Custom url:</b>
+              <%= @passport.custom_url %>
+            </p>
 
-<p><%= link_to 'Edit', edit_admin_passport_path(@passport) %> |
-<%= link_to 'Back', admin_admin_passport_path %></p>
+          </td></tr></tbody></table>
 
+    <%= render 'nav_show_header_bar', :passport => @passport %>
+  </div>
+</div>

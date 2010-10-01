@@ -1,37 +1,39 @@
 <% @page_description = t(:index_description) -%>
+<% @page_title = controller.controller_name.capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title = t(:passport).capitalize %></h1>
-  <p><%= link_to 'New Passport', new_admin_passport_path %></p>
+  <div class="onecolumn"
+       <div class="content nomargin">
+       <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_passport_path} %>
+      <table  class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Tag</th>
+          <th>Repository</th>
+          <th>Item</th>
+          <th>Full url</th>
+          <th>Publish</th>
+          <th>Primary</th>
+          <th>Position</th>
+          <th>Custom url</th>
+          <th>Actions</th>
+        </tr>
 
-  <table class="styled">
-    <tr>
-      <th>Tag</th>
-      <th>Repository</th>
-      <th>Item</th>
-      <th>Full url</th>
-      <th>Publish</th>
-      <th>Primary</th>
-      <th>Position</th>
-      <th>Custom url</th>
-      <th>Actions</th>
-    </tr>
-
-    <% @passports.each do |passport| %>
-      <tr>
-        <td><%= passport.tag %></td>
-        <td><%= link_to(truncate(passport.repository.name, :length => 20), passport.repository) unless passport.repository.nil? %></td>
-        <td><%= link_to(truncate(passport.item.title, :length => 20), passport.item) unless passport.item.nil? %></td>
-        <td><%= link_to(truncate(passport.full_url, :length => 20), passport.full_url) unless passport.full_url.blank? %></td>
-        <td><%= show_check passport.publish %></td>
-        <td><%= show_check passport.primary %></td>
-        <td><%= passport.position %></td>
-        <td><%= truncate(passport.custom_url) %></td>
-        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_passport_path(passport) %>
-            <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_passport_path(passport) %>
-            <%= link_to image_tag("delete.png", :alt => 'delete'), admin_passport_path(passport), :confirm => 'Are you sure?', :method => :delete %></td>
-      </tr>
-    <% end %>
-  </table>
-  <p><%= link_to 'New Passport', new_admin_passport_path %></p>
+        <% @passports.each do |passport| %>
+          <tr>
+            <td><%= passport.tag %></td>
+            <td><%= link_to(truncate(passport.repository.name, :length => 20), admin_repository_path(passport.repository)) unless passport.repository.nil? %></td>
+            <td><%= link_to(truncate(passport.item.title, :length => 20), admin_item_path(passport.item)) unless passport.item.nil? %></td>
+            <td><%= link_to(truncate(passport.full_url, :length => 20), passport.full_url) unless passport.full_url.blank? %></td>
+            <td><%= show_check passport.publish %></td>
+            <td><%= show_check passport.primary %></td>
+            <td><%= passport.position %></td>
+            <td><%= truncate(passport.custom_url) %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_passport_path(passport) %>
+              <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_passport_path(passport) %>
+              <%= link_to image_tag("delete.png", :alt => 'delete'), admin_passport_path(passport), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
 </div>
