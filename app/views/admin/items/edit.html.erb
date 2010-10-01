@@ -1,15 +1,16 @@
 <% @page_description = t(:index_description) -%>
 <% @page_title = t(:item).capitalize -%>
 
+<% @back_path = admin_items_path %>
+<% @show_path = admin_item_path(@item) %>
+
 <div id="staticContent" class="clearfix">
   <div class="onecolumn"
 
        <div class="content nomargin">
-      <%= render 'nav_edit_header_bar' %>
-
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @new_path} %>
       <%= render 'form' %>
-
-      <%= render 'nav_edit_header_bar' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @new_path} %>
 
     </div>
   </div>

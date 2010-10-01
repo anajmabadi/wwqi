@@ -1,12 +1,14 @@
 <% @page_description = t(:new_description) -%>
-<% @page_title = t(:item).capitalize + ' | ' + t(:new).capitalize -%>
+<% @page_title = controller.controller_name.capitalize + ' | ' + t(:new).capitalize -%>
+
+<% @back_path = admin_items_path %>
 
 <div id="staticContent" class="clearfix">
   <div class="onecolumn"
     <div class="content nomargin">
-      <%= render 'nav_new_header_bar' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
       <%= render 'form' %>
-      <%= render 'nav_new_header_bar' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
     </div>
   </div>
 </div>

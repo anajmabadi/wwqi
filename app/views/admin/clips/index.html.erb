@@ -23,13 +23,13 @@
     <td><%= clip.publish %></td>
     <td><%= clip.notes %></td>
     <td><%= clip.recorded_on %></td>
-    <td><%= link_to 'Show', admin_clip_path(clip) %></td>
-    <td><%= link_to 'Edit', edit_admin_clip_path(clip) %></td>
-    <td><%= link_to 'Destroy', admin_clip_path(clip), :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to 'Show', admin_item_clip_path(clip) %></td>
+    <td><%= link_to 'Edit', edit_admin_item_clip_path(clip) %></td>
+    <td><%= link_to 'Destroy', admin_item_clip_path(clip), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New Clip', new_admin_clip_path %>
+<%= link_to 'New Clip', new_admin_item_clip_path %>

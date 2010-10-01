@@ -44,7 +44,7 @@ class Admin::ClipsController < Admin::AdminController
 
     respond_to do |format|
       if @clip.save
-        format.html { redirect_to(@clip, :notice => 'Clip was successfully created.') }
+        format.html { redirect_to(admin_item_clip_path(@clip), :notice => 'Clip was successfully created.') }
         format.xml  { render :xml => @clip, :status => :created, :location => @clip }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::ClipsController < Admin::AdminController
 
     respond_to do |format|
       if @clip.update_attributes(params[:clip])
-        format.html { redirect_to(@clip, :notice => 'Clip was successfully updated.') }
+        format.html { redirect_to(admin_item_clip_path(@clip), :notice => 'Clip was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::ClipsController < Admin::AdminController
     @clip.destroy
 
     respond_to do |format|
-      format.html { redirect_to(clips_url) }
+      format.html { redirect_to(admin_item_clips_path) }
       format.xml  { head :ok }
     end
   end
