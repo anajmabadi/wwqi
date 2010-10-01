@@ -1,7 +1,5 @@
 class Admin::ItemsController < Admin::AdminController
 
-  require 'yaml'
-  
   before_filter :admin_required, :except => [:index, :show]
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
 
@@ -96,8 +94,6 @@ class Admin::ItemsController < Admin::AdminController
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     begin
 
-      Rails.logger.info params[:item][:lock_version] + " vs " + @item.lock_version.to_s
-
       # manually check for a lock version
       if @item.lock_version != params[:item][:lock_version].to_i
         raise ActiveRecord::StaleObjectError
@@ -116,18 +112,24 @@ class Admin::ItemsController < Admin::AdminController
       elsif stale
         # write out the failed parameters
         begin
+
+          # construct a full path to the new file
           filename = 'stale_item_record_' + Time.now.strftime("%m%d%Y%H%M%S") + '.xml'
-          Rails.logger.info filename
           local_filename = Rails.root.join('public',filename)
+
+          # make a url the user can use to retrieve this file
           public_url = 'http://' + request.host + '/' + filename
-          Rails.logger.info local_filename.to_s
+
+          # convert the new item that cannot be saved to XML
           doc = params[:item].to_xml
-          Rails.logger.info doc.to_s
+
+          # save it out to that file.
           File.open(local_filename.to_s, 'w') {|f| f.write(doc) }
+          
         rescue StandardError => error
-          flash[:error] = "Item was edited by someone else first, but we were unable to save your work: " + error
+          flash[:error] = "Item was edited and saved by someone else while you were working on it, but we were unable to save your work: " + error
         else
-          flash[:error] = "Item was edited by someone else first, but we were able to save your work: " + public_url
+          flash[:error] = "Item was edited and saved by someone else while you were working on it, but we were able to save your work in this XML file: " + public_url
         end
         format.html { render :action => "show", :error => 'Item was edited by someone else first -- please save your work and reload the record.' }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }

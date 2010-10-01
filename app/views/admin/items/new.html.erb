@@ -2,10 +2,11 @@
 <% @page_title = t(:item).capitalize + ' | ' + t(:new).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-
-  <h1><%= t(:new).capitalize + ' ' + t(:item) %> </h1>
-  <%= link_to 'Back', admin_items_path %>
-  <%= render 'form' %>
-
-  <%= link_to 'Back', admin_items_path %>
+  <div class="onecolumn"
+    <div class="content nomargin">
+      <%= render 'nav_new_header_bar' %>
+      <%= render 'form' %>
+      <%= render 'nav_new_header_bar' %>
+    </div>
+  </div>
 </div>

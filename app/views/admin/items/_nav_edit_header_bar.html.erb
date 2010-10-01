@@ -1,0 +1,9 @@
+<div class="header">
+  <div class="description">
+    <h1><%= link_to 'Items', admin_items_path %> | <%= controller.action_name.capitalize %></h1>
+  </div>
+  <div class="tools">
+    <%= link_to 'Show', admin_item_path(@item) %> |
+    <%= link_to 'Back', admin_items_path %>
+  </div>
+</div>

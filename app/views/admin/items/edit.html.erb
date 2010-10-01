@@ -2,12 +2,15 @@
 <% @page_title = t(:item).capitalize -%>
 
 <div id="staticContent" class="clearfix">
+  <div class="onecolumn"
 
-  <h1>Editing item</h1>
+       <div class="content nomargin">
+      <%= render 'nav_edit_header_bar' %>
 
-  <%= render 'form' %>
+      <%= render 'form' %>
 
-  <%= link_to 'Show', admin_item_path(@item) %> |
-  <%= link_to 'Back', admin_items_path %>
-  
+      <%= render 'nav_edit_header_bar' %>
+
+    </div>
+  </div>
 </div>
