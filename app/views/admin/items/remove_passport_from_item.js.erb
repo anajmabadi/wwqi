@@ -1,1 +1,1 @@
-$('#item_passport_list>span').replaceWith('<%= escape_javascript(render 'admin/items/item_passport_list', :passports => @item.passports) %>');
+$('#item_passport_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_passports_list', :locals => {:passports => @item.passports}) %>');

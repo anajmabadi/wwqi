@@ -57,6 +57,7 @@ class Admin::PassportsController < Admin::AdminController
     @passport = Passport.new(params[:passport])
     @items = items_list
     @repositories = repositories_list
+    @item = @passport.item
     respond_to do |format|
       if @passport.save
         format.html { redirect_to(admin_passport_path(@passport), :notice => 'Passport was successfully created.') }
@@ -96,10 +97,11 @@ class Admin::PassportsController < Admin::AdminController
     @passport = Passport.find(params[:id])
     @item = @passport.item
     @passport.destroy
+    @passport = nil
 
     respond_to do |format|
       format.html { redirect_to(admin_passports_url) }
-      format.js { render :template => 'items/remove_passport_from_item' }
+      format.js { render :template => 'admin/items/remove_passport_from_item' }
       format.xml  { head :ok }
     end
   end

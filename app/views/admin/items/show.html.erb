@@ -138,7 +138,14 @@
           <%= render 'item_subjects_list', :subjects => @item.subjects %>
         </td>
         <td>
-          <%= render 'item_passports_list', :passports => @item.passports %>
+          <div id="item_passport_list"><%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %></div>
+          <div id="addPassport">
+            <% if @passport.nil? %>
+              <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
+            <% else %>
+              <%= render :partial => 'admin/items/add_passport_form', :locals => { :passport => @passport } %>
+            <% end %>
+          </div>
         </td>
       </tr>
       <tr>
