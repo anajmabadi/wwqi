@@ -2,85 +2,17 @@
 
   <ul class="nav">
     <li><%= link_to "Admin Home", "/admin" %> </li>
-    <li><%= link_to "Items", admin_items_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "Items...", admin_items_path %></li>
-            <li><%= link_to "Add Item", new_admin_item_path %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
-    </li>
-    <li><%= link_to "Collections", admin_collections_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "Collections...", admin_collections_path  %></li>
-            <li><%= link_to "Add Collection", new_admin_collection_path %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
-    </li>
-    <li><%= link_to "People", admin_people_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "People...", admin_people_path  %></li>
-            <li><%= link_to "New Person", new_admin_person_path  %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
-    </li>
+    <li><%= link_to "Items", admin_items_path %></li>
+    <li><%= link_to "Collections", admin_collections_path %></li>
+    <li><%= link_to "Clips", admin_clips_path %></li>
+    <li><%= link_to "People", admin_people_path %></li>
     <li><%= link_to "Exhibitions", admin_exhibitions_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "Exhibitions...", admin_exhibitions_path %></li>
-            <li><%= link_to "Add Exhibition", new_admin_exhibition_path %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
     </li>
     <li><%= link_to "Translations", admin_translations_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "Translations...", admin_translations_path %></li>
-            <li><%= link_to "Add Translation", new_admin_translation_path %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
     </li>
     <li><%= link_to "Pages", admin_pages_path %>
-      <div class="popup">
-        <div class="top"></div>
-        <div class="content">
-          <ul class="submenu">
-            <li><%= link_to "Pages...", admin_pages_path %></li>
-            <li><%= link_to "Add Page", new_admin_page_path %></li>
-          </ul>
-          <br class="clear"/>
-        </div>
-        <div class="footer"></div>
-      </div>
     </li>
-    <li><%= link_to "Reference", "#" %>
+    <li><%= link_to "Reference...", "#" %>
       <div class="popup">
         <div class="top"></div>
         <div class="content">

@@ -1,11 +1,13 @@
 Qajar::Application.routes.draw do
 
   namespace "admin" do
+
     resources :appearances, 
       :calendar_types,
       :categories,
       :categorizations,
       :classifications,
+      :clips,
       :clip_types,
       :collections,
       :owners,
@@ -25,8 +27,6 @@ Qajar::Application.routes.draw do
       resources :images
       resources :passports
     end
-
-    resources :clips
 
     resources :exhibitions do
       resources :panels
