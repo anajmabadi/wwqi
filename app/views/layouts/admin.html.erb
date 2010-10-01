@@ -31,8 +31,7 @@
     <div id="content" class="clearfix">
         <%= render 'admin/admin/admin_main_nav' -%>
 
-        <%= alert -%>
-        <%= notice -%>
+        <%= raw flash_messages %>
 
         <!-- rails template content -->
         <%= yield :layout %>

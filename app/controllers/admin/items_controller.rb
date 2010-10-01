@@ -79,7 +79,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.save
-        format.html { redirect_to(@item, :notice => 'Item was successfully created.') }
+        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully created.') }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
         format.html { render :action => "new" }
@@ -92,10 +92,28 @@ class Admin::ItemsController < Admin::AdminController
   # PUT /items/1.xml
   def update
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
+    begin
+
+      Rails.logger.info params[:item][:lock_version] + " vs " + @item.lock_version.to_s
+
+      # manually check for a lock version
+      if @item.lock_version != params[:item][:lock_version].to_i
+        raise ActiveRecord::StaleObjectError
+      else
+        saved = @item.update_attributes(params[:item])
+        stale = false
+      end
+      
+    rescue ActiveRecord::StaleObjectError
+      stale = true
+    end
     respond_to do |format|
-      if @item.update_attributes(params[:item])
-        format.html { redirect_to(@item, :notice => 'Item was successfully updated.') }
+      if saved
+        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
+      elsif stale
+        format.html { render :action => "edit", :error => 'Item was edit by someone else first -- please save your work and reload the record.' }
+        format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
       else
         format.html { render :action => "edit" }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }

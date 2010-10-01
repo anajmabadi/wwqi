@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100928141502) do
+ActiveRecord::Schema.define(:version => 20101001053825) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -55,11 +55,12 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
   create_table "appearances", :force => true do |t|
     t.integer  "item_id"
     t.integer  "person_id"
-    t.boolean  "publish",    :default => true
-    t.integer  "position",   :default => 0
+    t.boolean  "publish",      :default => true
+    t.integer  "position",     :default => 0
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "appearances", ["item_id"], :name => "index_appearances_on_item_id"
@@ -83,8 +84,9 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "person_id",                 :null => false
-    t.integer  "position",   :default => 1, :null => false
+    t.integer  "person_id",                   :null => false
+    t.integer  "position",     :default => 1, :null => false
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "appellations", ["person_id"], :name => "fk_appellations_people"
@@ -98,6 +100,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   create_table "categories", :force => true do |t|
@@ -107,6 +110,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "categories", ["parent_id"], :name => "index_categories_on_parent_id"
@@ -118,6 +122,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "categorizations", ["category_id"], :name => "index_categorizations_on_category_id"
@@ -137,11 +142,12 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
   create_table "classifications", :force => true do |t|
     t.integer  "subject_id"
     t.integer  "item_id"
-    t.boolean  "publish",    :default => true, :null => false
-    t.integer  "position",   :default => 0,    :null => false
+    t.boolean  "publish",      :default => true, :null => false
+    t.integer  "position",     :default => 0,    :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "classifications", ["item_id", "subject_id"], :name => "index_classifications_on_item_id_and_subject_id", :unique => true
@@ -168,6 +174,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "clip_types", ["publish"], :name => "index_clip_types_on_publish"
@@ -181,6 +188,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.integer  "position",     :default => 0,    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "clips", ["clip_type_id"], :name => "index_clips_on_clip_type_id"
@@ -224,6 +232,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.boolean  "private",        :default => false, :null => false
     t.integer  "items_count",    :default => 0,     :null => false
     t.boolean  "finding_aid",    :default => false, :null => false
+    t.integer  "lock_version",   :default => 0,     :null => false
   end
 
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
@@ -251,7 +260,8 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "position",   :default => 0, :null => false
+    t.integer  "position",     :default => 0, :null => false
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "exhibitions", ["featured"], :name => "featured"
@@ -287,6 +297,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "images", ["item_id"], :name => "index_images_on_item_id"
@@ -419,6 +430,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.decimal  "height",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.integer  "lock_version",                                    :default => 0,     :null => false
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -473,6 +485,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version",   :default => 0, :null => false
   end
 
   create_table "page_translations", :force => true do |t|
@@ -494,6 +507,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "pages", ["publish"], :name => "index_pages_on_publish"
@@ -516,6 +530,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version",  :default => 0,    :null => false
   end
 
   add_index "panels", ["exhibition_id"], :name => "index_panels_on_exhibition_id"
@@ -534,6 +549,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.string   "custom_url"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version",  :default => 0, :null => false
   end
 
   add_index "passports", ["item_id"], :name => "fk_passports_items"
@@ -545,15 +561,16 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
-    t.boolean  "major",       :default => false
+    t.boolean  "major",        :default => false
     t.integer  "dob"
     t.integer  "dod"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
-    t.boolean  "publish",     :default => true
-    t.integer  "items_count", :default => 0,     :null => false
+    t.boolean  "publish",      :default => true
+    t.integer  "items_count",  :default => 0,     :null => false
+    t.integer  "lock_version", :default => 0,     :null => false
   end
 
   add_index "people", ["publish"], :name => "index_people_on_publish"
@@ -578,7 +595,8 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.datetime "updated_at"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.integer  "items_count", :default => 0
+    t.integer  "items_count",  :default => 0
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "periods", ["end_at"], :name => "index_periods_end_at"
@@ -620,7 +638,8 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "items_count", :default => 0, :null => false
+    t.integer  "items_count",  :default => 0, :null => false
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "places", ["publish"], :name => "index_places_on_publish"
@@ -644,15 +663,17 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.datetime "updated_at"
     t.integer  "person_id"
     t.integer  "relative_id"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   create_table "repositories", :force => true do |t|
-    t.integer  "owner_id",                     :null => false
-    t.string   "url",                          :null => false
-    t.boolean  "publish",    :default => true, :null => false
+    t.integer  "owner_id",                       :null => false
+    t.string   "url",                            :null => false
+    t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "repositories", ["owner_id"], :name => "fk_repositories_owners"
@@ -697,6 +718,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version", :default => 0, :null => false
   end
 
   add_index "subject_types", ["publish"], :name => "index_subject_types_on_publish"
@@ -709,6 +731,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.datetime "updated_at"
     t.integer  "subject_type_id", :default => 7,     :null => false
     t.integer  "items_count",     :default => 0,     :null => false
+    t.integer  "lock_version",    :default => 0,     :null => false
   end
 
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
@@ -722,6 +745,7 @@ ActiveRecord::Schema.define(:version => 20100928141502) do
     t.boolean  "is_proc",        :default => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "lock_version",   :default => 0,     :null => false
   end
 
   add_index "translations", ["key"], :name => "index_translations_on_key"

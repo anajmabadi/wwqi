@@ -966,51 +966,47 @@ input.button_light:active
     text-align: center;
 }
 
-.alert_warning
+.warning
 {
-    margin: auto;
     background: #FFFBCC;
     border: 1px solid #E6DB55;
-    cursor: pointer;
-    margin: 10px 0 10px 0;
-    font-weight: bold;
     color: #69610A;
 }
 
-.alert_info
+.info
 {
-    margin: auto;
     background: #DBE3FF;
     border: 1px solid #A2B4EE;
-    cursor: pointer;
     color: #0888C3;
-    font-weight: bold;
 }
 
-.alert_success
+.notice
 {
-    margin: auto;
     background: #D5FFCE;
     border: 1px solid #9ADF8F;
-    cursor: pointer;
-    margin: 10px 0 10px 0;
     color: #508600;
-    font-weight: bold;
 }
 
-.alert_error
+.error
 {
-    margin: auto;
     background: #FFCECE;
     border: 1px solid #DF8F8F;
-    margin: 10px 0 10px 0;
     color: #E3302C;
-    font-weight: bold;
 }
 
-.alert_warning p, .alert_info p, .alert_success p, .alert_error p
+.warning p, .info p, .notice p, .error p
 {
-    margin: 15px;
+    margin: auto;
+}
+.warning, .info, .notice, .error 
+{
+    font-weight: bold;
+    left:0px;
+    right:0px;
+    width: 40%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 10px auto;
 }
 
 .graph_wrapper
