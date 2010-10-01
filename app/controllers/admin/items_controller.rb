@@ -1,5 +1,7 @@
 class Admin::ItemsController < Admin::AdminController
 
+  require 'yaml'
+  
   before_filter :admin_required, :except => [:index, :show]
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
 
@@ -112,7 +114,22 @@ class Admin::ItemsController < Admin::AdminController
         format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       elsif stale
-        format.html { render :action => "edit", :error => 'Item was edit by someone else first -- please save your work and reload the record.' }
+        # write out the failed parameters
+        begin
+          filename = 'stale_item_record_' + Time.now.strftime("%m%d%Y%H%M%S") + '.xml'
+          Rails.logger.info filename
+          local_filename = Rails.root.join('public',filename)
+          public_url = 'http://' + request.host + '/' + filename
+          Rails.logger.info local_filename.to_s
+          doc = params[:item].to_xml
+          Rails.logger.info doc.to_s
+          File.open(local_filename.to_s, 'w') {|f| f.write(doc) }
+        rescue StandardError => error
+          flash[:error] = "Item was edited by someone else first, but we were unable to save your work: " + error
+        else
+          flash[:error] = "Item was edited by someone else first, but we were able to save your work: " + public_url
+        end
+        format.html { render :action => "show", :error => 'Item was edited by someone else first -- please save your work and reload the record.' }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
       else
         format.html { render :action => "edit" }
