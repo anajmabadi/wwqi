@@ -150,13 +150,13 @@
         <td>
           <ul>
             <li>thumbnail: <%= link_to @item.thumbnail_url, :target => "_blank" %></li>
-            <li>slides: <% @item.slide_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
-            <li>previews: <% @item.preview_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
+            <li>slides: <ol><% @item.slide_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></ol></li>
+            <li>previews: <ol><% @item.preview_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></ol></li>
           </ul>
         </td>
         <td>
           <ul>
-            <li>tifs: <% @item.tif_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
+            <li>tifs: <ol><% @item.tif_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></ol></li>
             <li>clips: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, clip.clip_url('wav') %><% end %></li>
           </ul>
         </td>
