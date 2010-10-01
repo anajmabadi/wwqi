@@ -1,0 +1,13 @@
+<div class="ppagination">
+  <%= will_paginate passed_objects %>
+  <div class="admin_results">
+    <% if passed_objects.empty? -%>
+      <%= t(:no_records_found) -%>
+    <% else -%>
+      <%= "#{t(:results_prefix)}: #{localized_number(passed_objects.offset + 1)} - #{localized_number([passed_objects.offset + passed_objects.per_page,passed_objects.total_entries].min)} | #{localized_number(passed_objects.total_entries)}" %>
+    <% end -%>
+    <% unless @keyword_filter.blank? %>
+      for keyword = <%= @keyword_filter  %>
+    <% end %>
+  </div>
+</div>
