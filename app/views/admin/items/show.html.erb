@@ -133,19 +133,7 @@
           <b>Notes:</b>
           <%= @item.notes %>
         </td></tr>
-      <tr>
-        <td colspan="2">
-          <p>Media (right click links to download):</p>
-          <ul>
-            <li>thumbnail: <%= link_to "Thumbnail", @item.thumbnail_url, :target => "_blank" %></li>
-            <li>slide: <% @item.slide_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-            <li>preview: <% @item.preview_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-            <li>tif: <% @item.tif_urls.each_with_index do |url, page| %><%= link_to "p" + (page + 1).to_s, url, :target => "_blank" %> <% end %></li>
-            <li>clip: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, "mp3", clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, "wav", clip.clip_url('wav') %><% end %></li>
-          </ul>
-        </td>
-      </tr>
-      <tr>
+            <tr>
         <td>
           <%= render 'item_subjects_list', :subjects => @item.subjects %>
         </td>
@@ -153,6 +141,27 @@
           <%= render 'item_passports_list', :passports => @item.passports %>
         </td>
       </tr>
+      <tr>
+        <td colspan="2">
+          <h3>Media:</h3>
+          <p>Right click links to download file. Regular or Left click to view it in a new browser window.</p>
+        </td></tr>
+      <tr>
+        <td>
+          <ul>
+            <li>thumbnail: <%= link_to @item.thumbnail_url, :target => "_blank" %></li>
+            <li>slides: <% @item.slide_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
+            <li>previews: <% @item.preview_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
+          </ul>
+        </td>
+        <td>
+          <ul>
+            <li>tifs: <% @item.tif_urls.each_with_index do |url, page| %><li><%= link_to url, :target => "_blank" %></li><% end %></li>
+            <li>clips: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, clip.clip_url('wav') %><% end %></li>
+          </ul>
+        </td>
+      </tr>
+
     </table>
     <%= render 'nav_show_header_bar', :item => @item %>
   </div>
