@@ -11,7 +11,7 @@ class Admin::ItemsController < Admin::AdminController
     @subject_types = SubjectType.select_list
     
     @page = params[:page] || 1
-    @per_page = params[:per_page] || Item.per_page || 50
+    @per_page = params[:per_page] || Item.per_page || 100
 
     #grab the sort mode
     @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
