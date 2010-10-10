@@ -6,6 +6,8 @@ class Admin::ItemsController < Admin::AdminController
   # GET /items
   # GET /items.xml
   def index
+
+    # gather data for pull down lists
     @collections = Collection.select_list
     @periods = Period.select_list
     @subject_types = SubjectType.select_list
@@ -13,15 +15,15 @@ class Admin::ItemsController < Admin::AdminController
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 100
 
-    #grab the sort mode
-    @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
-    @order =  sort_order('item_translations.title')
-
+    @order = sort_order('item_translations.title')
+   
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
     @collection_filter = params[:collection_filter]
     @period_filter = params[:period_filter]
     @subject_type_filter = params[:subject_type_filter]
+
+    # unless @keyword_filter.nil? && @collection_filter.nil? && period_filer.nil? && subject_type_filter.nil?
 
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
@@ -41,6 +43,9 @@ class Admin::ItemsController < Admin::AdminController
     @query = [@query_conditions, @query_hash[:parameters]]
 
     @items = Item.paginate :conditions => @query, :include => [:collection], :per_page => @per_page, :page => @page, :order => @order
+
+    #cache the current search set in a session variable
+    session[:admin_items_index_url] = request.fullpath
     
     respond_to do |format|
       format.html # index.html.erb
