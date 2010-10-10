@@ -202,14 +202,15 @@ dd          { margin-left: 1.5em;}
 
 /* search styles
 -------------------------------------------------------------- */
-#search{
+/*#search{
 background:transparent url(/images/bg_search.jpg) no-repeat scroll 0 0;
 display:block;
 float:left;
 height:36px;
 width:175px;
 margin-top:5px;
-}
+}*/
+
 #big_search{
 	background:transparent url(/images/bg_keywordsearch.png) no-repeat scroll 100% 0;
 	display:block;
@@ -217,15 +218,27 @@ margin-top:5px;
 	height:36px;
 	margin:0 5px;
 }
+
+#simple_search{
+	background:#fff;
+	display:block;
+	float:right;
+	height:26px;
+	margin:0 ;
+}
+
+#simple_search input{
+	width:200px;
+}
 	#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 10px 0 0px;}
 
 .searchform input{
 	border: 0;
 	background: none;
-	margin: 3px 0 0 10px;
+	margin: 5px 10px 0 0px;
 	display: inline;
 	width: 115px;
-	float: left;
+	float: right;
 	outline:none
 	}
 	#browser .searchform input{width:210px; margin-top:7px; font-size:12px; line-height:20px;}
@@ -239,11 +252,14 @@ margin-top:5px;
 	float: left;
 	border: 0;
 	cursor: pointer;
-	margin: 3px 0 0 12px;
+	margin: 3px 12px 0 0px;
 	}
+	
+#simple_search .searchform button {margin-top:0}
+
 	#browser .searchform button{background: url(/images/collection_search_button_fa.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
 .searchform button:hover {
-	background: url(/images/searchbutton.gif) no-repeat 0 -23px;
+	background: url(/images/searchbutton.gif) no-repeat 0 -22px;
 	}
 	#big_search .searchform button{background: url(/images/btn_big_search.png) no-repeat 0 0;width: 39px; margin:1px 12px 0 0px;height: 34px; float:left;}
 #big_search .searchform button:hover {
@@ -703,11 +719,11 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #home_search_wrapper{
 	float:right;
-    width:267px;
-    height:40px;
+    width:255px;
+    height:26px;
 	margin-left:10px;
-	background:#c41230;
-	padding:5px 8px 0 0;
+	background:#222;
+	padding:10px;
 	margin-bottom:5px;
 }
 

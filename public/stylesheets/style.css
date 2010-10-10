@@ -193,14 +193,14 @@ dd          { margin-left: 1.5em;}
 
 /* search styles
 -------------------------------------------------------------- */
-#search{
+/*#search{
     background:transparent url(/images/bg_search.jpg) no-repeat scroll 0 0;
     display:block;
     float:right;
     height:36px;
     width:175px;
     margin-top:5px;
-}
+}*/
 #big_search{
 	background:transparent url(/images/bg_keywordsearch.png) no-repeat scroll 0 0;
 	display:block;
@@ -208,12 +208,25 @@ dd          { margin-left: 1.5em;}
 	height:36px;
 	margin:0 5px;
 }
+
+#simple_search{
+	background:#fff;
+	display:block;
+	float:left;
+	height:26px;
+	margin:0;
+}
+
+#simple_search input{
+	width:200px;
+}
+
 #browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
 
 .searchform input{
     border: 0;
     background: none;
-    margin: 3px 0 0 10px;
+    margin: 5px 0 0 10px;
     display: inline;
     width: 115px;
     float: left;
@@ -232,6 +245,9 @@ dd          { margin-left: 1.5em;}
     cursor: pointer;
     margin: 3px 0 0 12px;
 }
+
+#simple_search .searchform button {margin-top:0}
+
 #browser .searchform button{background: url(/images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
 .searchform button:hover {
     background: url(/images/searchbutton.gif) no-repeat 0 -22px;
@@ -240,6 +256,8 @@ dd          { margin-left: 1.5em;}
 #big_search .searchform button:hover {
 	background: url(/images/btn_big_search.png) no-repeat 0 -34px;
 	}
+
+
 
 
 
@@ -698,11 +716,11 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 
 #home_search_wrapper{
 	float:left;
-    width:267px;
-    height:40px;
+    width:255px;
+    height:26px;
 	margin-left:10px;
-	background:#c41230;
-	padding:5px 0 0 8px;
+	background:#222;
+	padding:10px;
 	margin-bottom:5px;
 }
 
