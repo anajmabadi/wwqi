@@ -215,6 +215,7 @@ dd          { margin-left: 1.5em;}
 	float:left;
 	height:26px;
 	margin:0;
+	width:255px;
 }
 
 #simple_search input{
