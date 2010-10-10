@@ -243,7 +243,7 @@ dd          { margin-left: 1.5em;}
     float: left;
     border: 0;
     cursor: pointer;
-    margin: 3px 0 0 12px;
+    margin: 3px 0 0 10px;
 }
 
 #simple_search .searchform button {margin-top:0}
