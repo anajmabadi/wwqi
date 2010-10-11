@@ -135,10 +135,12 @@
         </td></tr>
             <tr>
         <td>
+          <div id="item_subjects_list">
           <%= render 'item_subjects_list', :subjects => @item.subjects %>
+            </div>
         </td>
         <td>
-          <div id="item_passport_list"><%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %></div>
+          <div id="item_passports_list"><%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %></div>
           <div id="addPassport">
             <% if @passport.nil? %>
               <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>

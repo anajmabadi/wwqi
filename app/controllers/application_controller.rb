@@ -45,32 +45,35 @@ class ApplicationController < ActionController::Base
   end
   
   def record_activity
-    @activity = Activity.new
-    
-    # who is doing the activity?
-    @activity.session_id = session[:session_id] || 'testing' #record the session
-    @activity.browser = request.env['HTTP_USER_AGENT'] || 'testing'
-    @activity.ip_address = request.env['REMOTE_ADDR'] || 'testing'
-    
-    # what are they doing?
-    @activity.action = action_name # grab this from the controller
-    @activity.params = params.inspect # wrap this in an unless block if it might contain a password
+    # only record archive actions
+    if params[:controller] == 'archive' && Rails.env != 'development'
+      @activity = Activity.new
 
-    # track interesting objects for popularity, etc
-    @activity.collection_id = @collection.id if @collection
-    @activity.user_id = @user.id if @user
-    @activity.person_id = @person.id if @person
-    @activity.subject_id = @subject.id if @subject    
-    @activity.subject_type_id = @subject_type.id if @subject_type     
-    @activity.place_id = @place_id if @place
-    @activity.period_id = @period.id if @period
-    @activity.page_id = @page.id if @page && @page.class == Page     
-    @activity.item_id = @item.id if @item
+      # who is doing the activity?
+      @activity.session_id = session[:session_id] || 'testing' #record the session
+      @activity.browser = request.env['HTTP_USER_AGENT'] || 'testing'
+      @activity.ip_address = request.env['REMOTE_ADDR'] || 'testing'
 
-    @activity.success = true
-    
-    unless (@activity.save)
-      flash[:error] = "Unable to log activity."
+      # what are they doing?
+      @activity.action = action_name # grab this from the controller
+      @activity.params = params.inspect # wrap this in an unless block if it might contain a password
+
+      # track interesting objects for popularity, etc
+      @activity.collection_id = @collection.id if @collection
+      @activity.user_id = @user.id if @user
+      @activity.person_id = @person.id if @person
+      @activity.subject_id = @subject.id if @subject
+      @activity.subject_type_id = @subject_type.id if @subject_type
+      @activity.place_id = @place_id if @place
+      @activity.period_id = @period.id if @period
+      @activity.page_id = @page.id if @page && @page.class == Page
+      @activity.item_id = @item.id if @item
+
+      @activity.success = true
+
+      unless (@activity.save)
+        flash[:error] = "Unable to log activity."
+      end
     end
   end
   
