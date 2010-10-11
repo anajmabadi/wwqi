@@ -4,23 +4,19 @@
 
     <%= f.hidden_field(:item_id) %>
 
-    <% if @classification.errors.any? %>
+    <% if classification.errors.any? %>
       <div id="errorExplanation">
-        <h2><%= pluralize(@classification.errors.count, "error") %> prohibited this classification from being saved:</h2>
+        <h2><%= pluralize(classification.errors.count, "error") %> prohibited this classification from being saved:</h2>
         <ul>
-          <% @classification.errors.full_messages.each do |msg| %>
+          <% classification.errors.full_messages.each do |msg| %>
             <li><%= msg %></li>
           <% end %>
         </ul>
       </div>
     <% end %>
     <div class="field">
-      <%= f.label :item_id %><br />
-      <%= f.select :item_id, @items, {:include_blank => true} %>
-    </div>
-    <div class="field">
       <%= f.label :subject_id %><br />
-      <%= f.select :subject_id, @subjects, {:include_blank => true} %>
+      <%= f.select :subject_id, subjects, {:include_blank => true} %>
     </div>
 
     <div class="field">
@@ -39,5 +35,5 @@
       <%= f.submit %>
     </div>
   <% end %>
-  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_passport_to_item', :id => item.id }, :remote => true %>
+  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_classification_to_item', :id => item.id }, :remote => true %>
 </span>
