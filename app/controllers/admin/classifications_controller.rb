@@ -51,13 +51,16 @@ class Admin::ClassificationsController < Admin::AdminController
     @classification = Classification.new(params[:classification])
     @items = get_menu_items
     @subjects = get_menu_subjects
+    @item = @classification.item
     respond_to do |format|
       if @classification.save
         format.html { redirect_to(@classification, :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }
+        format.js { render :template => 'admin/items/add_classification_to_item' }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @classification.errors, :status => :unprocessable_entity }
+        format.js { render :template => 'admin/items/add_classification_to_item' }
       end
     end
   end
@@ -100,7 +103,7 @@ class Admin::ClassificationsController < Admin::AdminController
   end
 
   def get_menu_subjects
-     return Subject.find(:all, :include => :translations, :order => 'subject_translations.locale, subject_translations.name').map do |i|
+    return Subject.find(:all, :include => :translations, :order => 'subject_translations.locale, subject_translations.name').map do |i|
       [truncate(i.name)+' ['+i.id.to_s + ']',i.id]
     end
   end

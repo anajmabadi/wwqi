@@ -1,0 +1,2 @@
+$('#item_classifications_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_classifications_list', :locals => {:classifications => @item.classifications } ) %>');
+$('#addClassification>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/add_classification_button', :locals => {:classification => @classification, :item => @item }) %>');

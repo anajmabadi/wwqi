@@ -133,11 +133,18 @@
           <b>Notes:</b>
           <%= @item.notes %>
         </td></tr>
-            <tr>
+      <tr>
         <td>
-          <div id="item_subjects_list">
-          <%= render 'item_subjects_list', :subjects => @item.subjects %>
-            </div>
+          <div id="item_classifications_list">
+            <%= render 'item_classifications_list', :classifications => @item.classifications %>
+          </div>
+          <div id="addClassification">
+            <% if @classification.nil? %>
+              <%= render :partial => 'admin/items/add_classification_button', :locals => { :item => @item } %>
+            <% else %>
+              <%= render :partial => 'admin/items/add_classification_form', :locals => { :subject => @subject } %>
+            <% end %>
+          </div>
         </td>
         <td>
           <div id="item_passports_list"><%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %></div>
