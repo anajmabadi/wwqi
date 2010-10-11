@@ -253,24 +253,10 @@
         <% @items.each do |item| -%>
           <div class="item">
             <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-            <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
             <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
           </div>
         <% end -%>
       </div><!-- end of items -->
-    <% elsif @view_mode == 'slideshow' -%>
-      <% @extra_head_content = archive_slideshow_header -%>
-      <div class="slideshow_container">
-        <a class="prev" href="#" style="display: block;"></a>
-        <a class="next" href="#" style="display: block;"></a>
-        <div class="slideshow">
-          <ul>
-            <% @items.each do |item| -%>
-              <li><a href="/collections/detail/<%= item.id %>"><img src="<%= item.preview_url %>" height="320" alt="<%= item.category.name.downcase unless item.category.blank? %>" /></a><a class="title" href="/collections/detail/<%= item.id %>"><%= item.title -%></a></li>
-                <% end -%>
-          </ul>
-        </div>
-      </div>
     <% end -%>
 
     <%= render :partial => 'pagination_bar' %>
