@@ -251,7 +251,7 @@
       <% @extra_head_content = archive_grid_header -%>
       <div id="items">
         <% @items.each do |item| -%>
-          <div class="item <%= item.icon_class -%>">
+          <div class="item">
             <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
             <a class="type" href="<%= '/collections/page/1?medium_filter='+item.category_id.to_s %>" title="<%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %>"><%= t(:show_only) %> <%= item.category.name.downcase unless item.category.blank? %> </a>
             <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
