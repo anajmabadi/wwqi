@@ -4,7 +4,7 @@
 <% @back_path = session[:admin_collections_index_url] ||= admin_collections_path %>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn"
+  <div class="onecolumn">
     <div class="content nomargin">
       <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
       <%= render 'form' %>

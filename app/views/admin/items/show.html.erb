@@ -2,7 +2,8 @@
 <% @page_title = t(:item).capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn"><%= render 'nav_show_header_bar', :item => @item %>
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :item => @item %>
     <table class="styled" >
       <tr><td><h2>
             <%= @item.title_en %>
