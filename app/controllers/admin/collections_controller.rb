@@ -50,7 +50,7 @@ class Admin::CollectionsController < Admin::AdminController
 
     respond_to do |format|
       if @collection.save
-        format.html { redirect_to(@collection, :notice => 'Collection was successfully created.') }
+        format.html { redirect_to(admin_collection_url(@collection), :notice => 'Collection was successfully created.') }
         format.xml  { render :xml => @collection, :status => :created, :location => @collection }
       else
         format.html { render :action => "new" }
@@ -66,7 +66,7 @@ class Admin::CollectionsController < Admin::AdminController
 
     respond_to do |format|
       if @collection.update_attributes(params[:collection])
-        format.html { redirect_to(@collection, :notice => 'Collection was successfully updated.') }
+        format.html { redirect_to(admin_collection_url(@collection), :notice => 'Collection was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -82,7 +82,7 @@ class Admin::CollectionsController < Admin::AdminController
     @collection.destroy
 
     respond_to do |format|
-      format.html { redirect_to(collections_url) }
+      format.html { redirect_to(admin_collections_url) }
       format.xml  { head :ok }
     end
   end
