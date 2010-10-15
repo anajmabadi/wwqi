@@ -3,7 +3,11 @@
     <h1><%= controller.controller_name.capitalize %></h1>
   </div>
   <div class="tools">
-    <%= link_to 'New', new_passed_path %> | 
-    <%= link_to 'Show All', show_all_path %>
+    <% unless new_passed_path.nil? %>
+      <%= link_to 'New', new_passed_path %>
+    <% end %>
+    <% unless show_all_path.nil? %> |
+      <%= link_to 'Show All', show_all_path %>
+    <% end %>
   </div>
 </div>
