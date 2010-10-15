@@ -1,14 +1,21 @@
 <% @page_description = t(:edit_description) -%>
-<% @page_title = t(:collections).capitalize + ' | ' + t(:edit).capitalize -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
+
+<% @back_path = session[:admin_collections_index_url] ||= admin_collections_path %>
+<% @show_path = admin_collection_path(@collection) %>
 
 <div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <% @page_title = t(:collections).capitalize + ' | ' + t(:edit).capitalize -%>
 
-  <h1><%= @page_title %></h1>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
 
-  <p><%= link_to 'Show', admin_collection_url(@collection) %> | <%= link_to 'Back', admin_collections_path %></p>
+      <%= render 'form' %>
 
-  <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
 
-  <p><%= link_to 'Show', admin_collection_url(@collection) %> | <%= link_to 'Back', admin_collections_path %></p>
+    </div>
 
+  </div>
 </div>

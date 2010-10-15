@@ -9,7 +9,6 @@ class Admin::CollectionsController < Admin::AdminController
   # GET /collections.xml
   def index
     @collections = Collection.all
-
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @collections }

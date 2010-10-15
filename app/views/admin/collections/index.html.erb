@@ -1,32 +1,34 @@
 <% @page_description = t(:index_description) -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title = t(:collections).capitalize %></h1>
-  <%= link_to 'New collection', new_admin_collection_path %>
+  <div class="onecolumn"
+       <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_collection_path, :show_all_path => admin_collections_path } %>
 
-  <table class="styled">
-    <tr>
-      <th><%= t(:id) %></th>
-      <th><%= t(:name) %></th>
-      <th><%= t(:email) %></th>
-      <th><%= t(:website) %></th>
-      <th><%= t(:contact) %></th>
-      <th><%= t(:items) %></th>
-      <th><%= t(:actions) %></th>
-    </tr>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th><%= t(:id).capitalize %></th>
+          <th><%= t(:name).capitalize %></th>
+          <th><%= t(:email).capitalize %></th>
+          <th><%= t(:website).capitalize %></th>
+          <th><%= t(:contact).capitalize %></th>
+          <th><%= t(:items).capitalize %></th>
+          <th><%= t(:actions).capitalize %></th>
+        </tr>
 
-  <% @collections.each do |collection| %>
-    <tr>
-      <td><%= collection.id %></td>
-      <td><%= link_to collection.name, admin_collection_path(collection) %></td>
-      <td><%= mail_to collection.email, truncate(collection.email), :encode => 'javascript' unless collection.email.blank? %></td>
-      <td><%= link_to_unless(collection.website.blank?, truncate(collection.website), collection.website, :target => '_blank') %></td>
-      <td><%= truncate(collection.contact) %></td>
-      <td><%= collection.items.size %></td>
-      <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_collection_path(collection) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_collection_path(collection) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_collection_path(collection), :confirm => 'Are you sure?', :method => :delete %></td>
-    </tr>
-  <% end %>
-  </table>
-  <p>&nbsp;</p>
-  <%= link_to 'New collection', new_admin_collection_path %>
+        <% @collections.each do |collection| %>
+          <tr>
+            <td><%= collection.id %></td>
+            <td><%= link_to collection.name, admin_collection_path(collection) %></td>
+            <td><%= mail_to collection.email, truncate(collection.email), :encode => 'javascript' unless collection.email.blank? %></td>
+            <td><%= link_to_unless(collection.website.blank?, truncate(collection.website), collection.website, :target => '_blank') %></td>
+            <td><%= truncate(collection.contact) %></td>
+            <td><%= collection.items.size %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_collection_path(collection) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_collection_path(collection) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_collection_path(collection), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
 </div>
