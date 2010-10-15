@@ -525,6 +525,12 @@ ul.sortnav .label{font-size:10px; color:#C00}
     margin:5px 5px;
     overflow:hidden
 }
+#browser .listItem.highlight{
+	background:url(../images/bg_cell_highlight_2.jpg) bottom left repeat-x;
+	border:1px solid #ccc;
+	cursor:pointer;
+}
+
 
 #browser .listItem .item{ width:102px; height:auto;	}
 #browser .listItem.exhibit .item{ width:185px; height:auto;	}
@@ -873,7 +879,8 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
     width:910px;
     padding:5px;
     margin:5px auto;
-    background:#eee;
+    background:#fff;
+	border:1px solid #fff;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
     color:#444;
@@ -887,7 +894,7 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
     font-size:16px;
     color:#333;
     font-weight:bold;
-    margin:0 65px 0 0;
+    margin:0;
 }
 .listItem a{color:#333}
 .listItem h4{

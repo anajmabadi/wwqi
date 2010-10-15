@@ -238,10 +238,12 @@
               <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
             </div>
             <div class="description">
-              <a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>
+              <!--<a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>-->
               <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
               <h4><%= item.collection.name unless item.collection.blank? %></h4>
-              <p class="meta"><%= item.show_date unless item.show_date.blank? %></p>
+              <% unless item.show_date.blank? -%>
+			  	<p class="meta"><%= item.show_date  %></p>
+			  <% end -%>
               <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
             </div>
           </div>

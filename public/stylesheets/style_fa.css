@@ -231,7 +231,7 @@ margin-top:5px;
 #simple_search input{
 	width:200px;
 }
-	#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 10px 0 0px;}
+	#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll  100% 0;float:right!important;width:350px; margin:-5px 10px 0 0px;}
 
 .searchform input{
 	border: 0;
@@ -533,6 +533,12 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 	#browser .listItem .item{ width:102px; height:auto;	}
 	#browser .listItem.exhibit .item{ width:185px; height:auto;	}
+
+#browser .listItem.highlight{
+	background:url(../images/bg_cell_highlight_2.jpg) bottom left repeat-x;
+	border:1px solid #ccc;
+	cursor:pointer;
+}
 
 #browser .item img{
 	border:1px solid #ccc;
@@ -872,16 +878,15 @@ ul.sortnav .label{font-size:10px; color:#C00}
 /* list item styles
 -------------------------------------------------------------- */
 .listItem{
-	width:905px;
+	width:900px;
 	padding:10px;
 	margin:5px auto;
-	background:#eee;
+	background:#fff;
+	border:1px solid #fff;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	color:#444;
-	position:relative;
-
-	
+	position:relative;	
 }
 
 .listItem .description{margin-right:10px; float:right; width:760px;font-family:Tahoma, Geneva, sans-serif}
@@ -891,7 +896,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	font-size:18px;
 	color:#333;
 	font-weight:bold;
-	margin:0 0 65px 0;
+	margin:0
 }
 .listItem a{color:#333}
 .listItem h4{

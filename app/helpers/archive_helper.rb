@@ -167,6 +167,8 @@ module ArchiveHelper
   			$("#indexLinks a").removeClass('active').parent().removeClass('active');
   			return false;
   		});
+		
+		
 
 
   	});
@@ -314,22 +316,7 @@ module ArchiveHelper
           $("#periodFilter").msDropDown();
 
 
-          // tooltips
-          $('a[title]').qtip({
-          style: {
-          name: 'dark',
-          tip: true,
-          border: {
-          radius: 8
-          }
-          },
-          position: {
-          corner: {
-          target: 'topMiddle',
-          tooltip: 'bottomMiddle'
-          }
-          }
-          });
+         
 
       		$("#indexLinks a").click(function(){
 
@@ -363,7 +350,21 @@ module ArchiveHelper
       			$("#indexLinks a").removeClass('active').parent().removeClass('active');
       			return false;
       		});
+			
+			$(".listItem").hover(function(){
+				$(this).addClass("highlight");
+			},
+			function(){
+				$(this).removeClass("highlight");
+			});
+			
+			$(".listItem").click(function(){
+				window.location=$(this).find("a:first-child").attr("href");
+			})
+		
           });
+		  
+		  
           
      
         		
@@ -485,6 +486,8 @@ module ArchiveHelper
       		});
 
           });
+		  
+		  
           
 
       		
