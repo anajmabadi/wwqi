@@ -1,39 +1,37 @@
-<% @page_description = t(:people_index_description) -%>
-<% @page_title = t(:people) -%>
-<h1>Listing people</h1>
-<p><%= link_to 'New person', new_admin_person_path %></p>
-<table>
-  <tr>
-    <th>Id</th>
-    <th><%= Person.human_attribute_name("name") %></th>
-    <th>Vitals</th>
-    <th>Birth place</th>
-    <th>Loc name</th>
-    <th>Dob</th>
-    <th>Dod</th>
-    <th>Publish</th>
-    <th>Major</th>
-    <th>Actions</th>
-    <th></th>
-    <th></th>
-  </tr>
+<% @page_description = t(:index_description) -%>
 
-<% @people.each do |person| %>
-  <tr height="30">
-    <td><%= person.id %> </td>
-    <td><%= person.name %></td>
-    <td><%= person.vitals %></td>
-    <td><%= person.birth_place %></td>
-    <td><%= person.loc_name %></td>
-    <td><%= person.dob %></td>
-    <td><%= person.dod %></td>
-    <td><%= person.publish %></td>
-    <td><%= person.major %></td>
-    <td><%= link_to 'Show', admin_person_path(person) %></td>
-    <td><%= link_to 'Edit', edit_admin_person_path(person) %></td>
-    <td><%= link_to 'Destroy', admin_person_path(person), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<p><%= link_to 'New person', new_admin_person_path %></p>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_person_path, :show_all_path => admin_people_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th><%= sort_link "Id", "people.id" %></th>
+          <th><%= sort_link "Name", "person_translations.name" %></th>
+          <th>Vitals</th>
+          <th>Birth place</th>
+          <th><%= sort_link "LOC Name", "people.loc_name" %></th>
+          <th><%= sort_link "DOB", "people.dob" %></th>
+          <th><%= sort_link "DOD", "people.dod" %></th>
+          <th><%= sort_link "Publish", "people.publish" %></th>
+          <th><%= sort_link "Major", "people.major" %></th>
+          <th>Actions</th>
+        </tr>
+        <% @people.each do |person| %>
+          <tr>
+            <td><%= person.id %> </td>
+            <td><%= link_to person.name, admin_person_path(person) %></td>
+            <td><%= person.vitals %></td>
+            <td><%= person.birth_place %></td>
+            <td><%= truncate(person.loc_name) unless person.loc_name.nil? %></td>
+            <td><%= person.dob %></td>
+            <td><%= person.dod %></td>
+            <td><%= show_check person.publish %></td>
+            <td><%= show_check person.major %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_person_path(person) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_person_path(person) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_person_path(person), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

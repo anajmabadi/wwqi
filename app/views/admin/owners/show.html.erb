@@ -1,4 +1,10 @@
-<p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn"><%= render 'nav_show_header_bar', :owner => @owner %>
+    <table class="styled" >
+      <tr><td><p>
   <b>Name:</b>
   <%= @owner.name %>
 </p>
@@ -57,7 +63,8 @@
   <b>Notes:</b>
   <%= @owner.notes %>
 </p>
+        </td></tr></table>
 
-
-<%= link_to 'Edit', edit_admin_owner_path(@owner) %> |
-<%= link_to 'Back', admin_owners_path %>
+    <%= render 'nav_show_header_bar', :owner => @owner %>
+  </div>
+</div>
