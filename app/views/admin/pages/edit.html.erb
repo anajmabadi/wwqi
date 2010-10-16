@@ -1,6 +1,20 @@
-<h1>Editing page</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = session[:admin_pages_index_url] ||= admin_pages_path %>
+<% @show_path = admin_page_path(@page) %>
 
-<%= link_to 'Show', @page %> |
-<%= link_to 'Back', pages_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+
+      <%= render 'form' %>
+
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+
+    </div>
+
+  </div>
+</div>

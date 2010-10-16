@@ -1,31 +1,51 @@
-<p>
-  <b>Title:</b>
-  <%= @page.title %>
-</p>
-<p>
-  <b>Author:</b>
-  <%= @page.author %>
-</p>
-<p>
-  <b>Caption:</b>
-  <%= @page.caption %>
-</p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + ' | ' + t(:show).capitalize -%>
 
-<p>
-  <b>Body:</b>
-  <%= @page.body %>
-</p>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :page => @page %>
+    <table class="styled" >
+      <tr><td><div class="field">
+            <%= label @page, :title_en %><br />
+            <%= @page.title_en %>
+          </div></td>
+        <td><div class="field persianOnly">
+            <%= label @page, :title_fa %><br />
+            <%= @page.title_fa %>
+          </div></td></tr>
+      <tr><td><div class="field">
+            <%= label @page, :author_en %><br />
+            <%= @page.author_en %>
+          </div></td>
+        <td><div class="field persianOnly">
+            <%= label @page, :author_fa %><br />
+            <%= @page.author_fa %>
+          </div></td></tr>
+      <tr><td><div class="field">
+            <%= label @page, :caption_en %><br />
+            <%= @page.caption_en %>
+          </div></td>
+        <td><div class="field persianOnly">
+            <%= label @page, :caption_fa %><br />
+            <%= @page.caption_fa %>
+          </div></td></tr>
+      <tr><td><div class="field">
+            <%= label @page, :body_en %><br />
+            <%= @page.body_en %>
+          </div></td>
+        <td><div class="field persianOnly">
+            <%= label @page, :body_fa %><br />
+            <%= @page.body_fa %>
+          </div></td></tr>
+      <tr><td><div class="field">
+            <%= label @page, :publish %><br />
+            <%= @page.publish %>
+          </div></td>
+        <td><div class="field">
+            <%= label @page, :notes %><br />
+            <%= @page.notes %>
+          </div></td></tr>
+    </table>
+  </div>
+</div>
 
-<p>
-  <b>Publish:</b>
-  <%= @page.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @page.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_page_path(@page) %> |
-<%= link_to 'Back', pages_path %>

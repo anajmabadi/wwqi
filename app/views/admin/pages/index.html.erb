@@ -1,35 +1,34 @@
-<h1>Listing pages</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th>Id</th>
-    <th>Title</th>
-    <th>Author</th>
-    <th>Caption</th>
-    <th>Body</th>
-    <th>Publish</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_page_path, :show_all_path => admin_pages_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Id</th>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Caption</th>
+          <th>Body</th>
+          <th>Publish</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
 
-<% @pages.each do |page| %>
-  <tr>
-    <td><%= page.id %></td>
-    <td><%= page.title %></td>
-    <td><%= page.author  %></td>
-    <td><%= page.caption %></td>
-    <td><%= page.body %></td>
-    <td><%= page.publish %></td>
-    <td><%= page.notes %></td>
-    <td><%= link_to 'Show', page %></td>
-    <td><%= link_to 'Edit', edit_page_path(page) %></td>
-    <td><%= link_to 'Destroy', page, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New page', new_page_path %>
+        <% @pages.each do |page| %>
+          <tr>
+            <td><%= page.id %></td>
+            <td><%= page.title %></td>
+            <td><%= page.author  %></td>
+            <td><%= truncate(page.caption) unless page.caption.nil? %></td>
+            <td><%= truncate(page.body) unless page.body.nil? %></td>
+            <td><%= show_check page.publish %></td>
+            <td><%= truncate(page.notes) unless page.notes.nil? %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_page_path(page) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_page_path(page) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_page_path(page), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+    </div>
+  </div>
+</div>

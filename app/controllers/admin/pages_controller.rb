@@ -1,6 +1,4 @@
-class PagesController < Admin::AdminController
-
-  before_filter :admin_required, :except => [:page]
+class Admin::PagesController < Admin::AdminController
 
   # GET /pages
   # GET /pages.xml
@@ -47,7 +45,7 @@ class PagesController < Admin::AdminController
 
     respond_to do |format|
       if @page.save
-        format.html { redirect_to(@page, :notice => 'Page was successfully created.') }
+        format.html { redirect_to(admin_page_path(@page), :notice => 'Page was successfully created.') }
         format.xml  { render :xml => @page, :status => :created, :location => @page }
       else
         format.html { render :action => "new" }
@@ -63,7 +61,7 @@ class PagesController < Admin::AdminController
 
     respond_to do |format|
       if @page.update_attributes(params[:page])
-        format.html { redirect_to(@page, :notice => 'Page was successfully updated.') }
+        format.html { redirect_to(admin_page_path(@page), :notice => 'Page was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,7 +77,7 @@ class PagesController < Admin::AdminController
     @page.destroy
 
     respond_to do |format|
-      format.html { redirect_to(pages_url) }
+      format.html { redirect_to(admin_pages_url) }
       format.xml  { head :ok }
     end
   end
