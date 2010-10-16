@@ -64,12 +64,11 @@ Qajar::Application.routes.draw do
   match 'home' => 'home#index', :as => 'home'
 
   # hard coded pages using the pages table for their body text
-  match 'about' => 'pages#page', :as => :about, :id => 1, :page_name => 'about'
-  match 'contact' => 'pages#page', :as => :contact, :id => 3, :page_name => 'contact'
-  match 'permissions' => 'pages#page', :as => :permissions, :id => 6, :page_name => 'permissions'
-  match 'credits' => 'pages#page', :as => :credits, :id => 5, :page_name => 'credits'
-  match 'faq' => 'pages#page', :as => :faq, :id => 7, :page_name => 'faq'
-  match 'admin' => 'pages#admin', :as => :admin, :id => 8, :page_name => 'admin'
+  match 'about' => 'static_pages#page', :as => :about, :id => 1, :page_name => 'about'
+  match 'contact' => 'static_pages#page', :as => :contact, :id => 3, :page_name => 'contact'
+  match 'permissions' => 'static_pages#page', :as => :permissions, :id => 6, :page_name => 'permissions'
+  match 'credits' => 'static_pages#page', :as => :credits, :id => 5, :page_name => 'credits'
+  match 'faq' => 'static_pages#page', :as => :faq, :id => 7, :page_name => 'faq'
   
   match 'utilities' => 'utilities#index', :as => :utilities
   match 'utilities/rename_by_file_name' => 'utilities#rename_by_file_name', :as => :rename_by_file_name

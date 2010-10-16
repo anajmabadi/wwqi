@@ -1,33 +1,6 @@
-class PagesController < ApplicationController
+class PagesController < Admin::AdminController
 
   before_filter :admin_required, :except => [:page]
-
-  # hard-coded pages for the main navigation
-
-  def admin
-    begin
-      @page = Page.find(params[:id])
-      respond_to do |format|
-        format.html # show.html.erb
-        format.xml  { render :xml => @page }
-      end
-    rescue
-      handle_missing_page
-    end      
-  end
-  
-  def page
-    begin
-      @page = Page.find(params[:id])
-      @template = params[:page_name]
-      respond_to do |format|
-        format.html { render :template => "/pages/#{@template}.html.erb" } # /pages/about.html.erb
-        format.xml  { render :xml => @page }
-      end
-    rescue
-      handle_missing_page
-    end
-  end
 
   # GET /pages
   # GET /pages.xml
@@ -109,12 +82,6 @@ class PagesController < ApplicationController
       format.html { redirect_to(pages_url) }
       format.xml  { head :ok }
     end
-  end
-  
-  private
-  
-  def handle_missing_page()
-    redirect_to(:controller => "home", :action => "index", :notice => t(:page_not_found))
   end
   
 end
