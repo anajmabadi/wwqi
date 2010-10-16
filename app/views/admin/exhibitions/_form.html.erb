@@ -1,51 +1,76 @@
 <% form_for([:admin, @exhibition]) do |f| %>
   <%= f.error_messages %>
-
-  <div class="field">
-    <%= f.label :title %><br />
-    <%= f.text_field :title %>
-  </div>
-  <div class="field">
-    <%= f.label :caption %><br />
-    <%= f.text_field :caption %>
-  </div>
-  <div class="field">
-    <%= f.label :introduction %><br />
-    <%= f.text_area :introduction %>
-  </div>
-  <div class="field">
-    <%= f.label :conclusion %><br />
-    <%= f.text_area :conclusion %>
-  </div>
-  <div class="field">
-    <%= f.label :author %><br />
-    <%= f.text_field :author %>
-  </div>
-  <div class="field">
-    <%= f.label :display_date %><br />
-    <%= f.text_field :display_date %>
-  </div>
-<div class="field">
-    <%= f.label :date %><br />
-    <%= f.date_select :date %>
-  </div>
-  <div class="field">
-    <%= f.label :featured %><br />
-    <%= f.check_box :featured %>
-  </div>
-  <div class="field">
-    <%= f.label :publish %><br />
-    <%= f.check_box :publish %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes %>
-  </div>
-    <div class="field">
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td><div class="field">
+          <%= f.label :title_en %><br />
+          <%= f.text_field :title_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= f.label :title_fa %><br />
+          <%= f.text_field :title_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :caption_en %><br />
+          <%= f.text_field :caption_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= f.label :caption_fa %><br />
+          <%= f.text_field :caption_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :introduction_en %><br />
+          <%= f.text_area :introduction_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= f.label :introduction_fa %><br />
+          <%= f.text_area :introduction_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :conclusion_en %><br />
+          <%= f.text_area :conclusion_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= f.label :conclusion_fa %><br />
+          <%= f.text_area :conclusion_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :author_en %><br />
+          <%= f.text_field :author_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= f.label :author_fa %><br />
+          <%= f.text_field :author_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :display_date_en %><br />
+          <%= f.text_field :display_date_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= f.label :display_date_fa %><br />
+          <%= f.text_field :display_date_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :date %><br />
+          <%= f.date_select :date %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label :position %><br />
+          <%= f.text_field :position %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :featured %><br />
+          <%= f.check_box :featured %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label :publish %><br />
+          <%= f.check_box :publish %>
+        </div></td></tr>
+    <tr><td colspan="2"><div class="field">
+          <%= f.label :notes %><br />
+          <%= f.text_area :notes, :rows => 3 %>
+        </div></td></tr>
+    <tr><td><div class="actions">
+          <%= f.submit %>
+        </div></td></tr>
+  </table>
 <% end %>

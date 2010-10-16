@@ -1,58 +1,78 @@
-<p>
-  <b>Title:</b>
-  <%= @exhibition.title %>
-</p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = t(:item).capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Caption:</b>
-  <%= @exhibition.caption %>
-</p>
-
-<p>
-  <b>Introduction:</b>
-  <%= @exhibition.introduction %>
-</p>
-
-<p>
-  <b>Conclusion:</b>
-  <%= @exhibition.conclusion %>
-</p>
-
-<p>
-  <b>Author:</b>
-  <%= @exhibition.author %>
-</p>
-
-<p>
-  <b>Display Date:</b>
-  <%= @exhibition.display_date %>
-</p>
-
-<p>
-  <b>Date:</b>
-  <%= @exhibition.date %>
-</p>
-
-<p>
-  <b>Featured:</b>
-  <%= @exhibition.featured %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @exhibition.publish %>
-</p>
-
-<p>
-  <b>Position:</b>
-  <%= @exhibition.position %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @exhibition.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_exhibition_path(@exhibition) %> |
-<%= link_to 'Back', admin_exhibitions_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :exhibition => @exhibition %>
+     <table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td><div class="field">
+          <%= label @exhibition, :title_en %><br />
+          <%= @exhibition.title_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= label @exhibition, :title_fa %><br />
+          <%= @exhibition.title_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :caption_en %><br />
+          <%= @exhibition.caption_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= label @exhibition, :caption_fa %><br />
+          <%= @exhibition.caption_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :introduction_en %><br />
+          <%= @exhibition.introduction_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= label @exhibition, :introduction_fa %><br />
+          <%= @exhibition.introduction_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :conclusion_en %><br />
+          <%= @exhibition.conclusion_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= label @exhibition, :conclusion_fa %><br />
+          <%= @exhibition.conclusion_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :author_en %><br />
+          <%= @exhibition.author_en %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= label @exhibition, :author_fa %><br />
+          <%= @exhibition.author_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :display_date_en %><br />
+          <%= @exhibition.display_date_en %>
+        </div></td>
+    <td><div class="field persianOnly">
+          <%= label @exhibition, :display_date_fa %><br />
+          <%= @exhibition.display_date_fa %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :date %><br />
+          <%= @exhibition.date %>
+        </div></td>
+        <td><div class="field">
+          <%= label @exhibition, :position %><br />
+          <%= @exhibition.position %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= label @exhibition, :featured %><br />
+          <%= @exhibition.featured %>
+        </div></td>
+        <td><div class="field">
+          <%= label @exhibition, :publish %><br />
+          <%= @exhibition.publish %>
+        </div></td></tr>
+    <tr><td colspan="2"><div class="field">
+          <%= label @exhibition, :notes %><br />
+          <%= @exhibition.notes %>
+        </div></td></tr>
+  </table>
+  </div>
+</div>

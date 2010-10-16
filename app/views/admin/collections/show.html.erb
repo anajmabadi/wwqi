@@ -5,119 +5,119 @@
   <div class="onecolumn">
     <%= render 'nav_show_header_bar', :collection => @collection %>
     <table class="styled" >
-    <tr><td>
-        <b>Name_en:</b>
-        <%= @collection.name_en %>
-      </td><td>
-        <b>Name_fa:</b>
-        <%= @collection.name_fa %>
-      </td></tr>
-        <tr><td>
-        <b>Sort Name_en:</b>
-        <%= @collection.sort_name_en %>
-      </td><td>
-        <b>Sort Name_fa:</b>
-        <%= @collection.sort_name_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Caption_en:</b>
-        <%= @collection.caption_en %>
-      </td><td>
-        <b>Caption_fa:</b>
-        <%= @collection.caption_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Description_en:</b>
-        <%= @collection.description_en %>
-      </td><td>
-        <b>Description_fa:</b>
-        <%= @collection.description_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Research Tips_en:</b>
-        <%= @collection.tips_en %>
-      </td><td>
-        <b>Research Tips_fa:</b>
-        <%= @collection.tips_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Materials_en:</b>
-        <%= @collection.materials_en %>
-      </td><td>
-        <b>Materials_fa:</b>
-        <%= @collection.materials_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Dates_en:</b>
-        <%= @collection.dates_en %>
-      </td><td>
-        <b>Dates_fa:</b>
-        <%= @collection.dates_fa %>
-      </td></tr>
-    <tr><td>
-        <b>Repository_en:</b>
-        <%= @collection.repository_en %>
-      </td><td>
-        <b>Repository_fa:</b>
-        <%= @collection.repository_fa %>
-      </td></tr>
-    <tr><th colspan="2"><h3>Untranslated Fields</h3></th></tr>
-        <tr><td>
-        <b>Finding Aid:</b>
-        <%= @collection.finding_aid %>
-      </td>
+      <tr><td>
+          <b>Name_en:</b>
+          <%= @collection.name_en %>
+        </td><td>
+          <b>Name_fa:</b>
+          <%= @collection.name_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Sort Name_en:</b>
+          <%= @collection.sort_name_en %>
+        </td><td>
+          <b>Sort Name_fa:</b>
+          <%= @collection.sort_name_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Caption_en:</b>
+          <%= @collection.caption_en %>
+        </td><td>
+          <b>Caption_fa:</b>
+          <%= @collection.caption_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Description_en:</b>
+          <%= @collection.description_en %>
+        </td><td>
+          <b>Description_fa:</b>
+          <%= @collection.description_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Research Tips_en:</b>
+          <%= @collection.tips_en %>
+        </td><td>
+          <b>Research Tips_fa:</b>
+          <%= @collection.tips_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Materials_en:</b>
+          <%= @collection.materials_en %>
+        </td><td>
+          <b>Materials_fa:</b>
+          <%= @collection.materials_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Dates_en:</b>
+          <%= @collection.dates_en %>
+        </td><td>
+          <b>Dates_fa:</b>
+          <%= @collection.dates_fa %>
+        </td></tr>
+      <tr><td>
+          <b>Repository_en:</b>
+          <%= @collection.repository_en %>
+        </td><td>
+          <b>Repository_fa:</b>
+          <%= @collection.repository_fa %>
+        </td></tr>
+      <tr><th colspan="2"><h3>Untranslated Fields</h3></th></tr>
+      <tr><td>
+          <b>Finding Aid:</b>
+          <%= @collection.finding_aid %>
+        </td>
         <td>
-        <b>Private:</b>
-        <%= @collection.private %>
-      </td></tr>
-    <tr><td>
-        <b>Address:</b>
-        <%= @collection.address %>
-      </td>
-      <td>
-        <b>Address2:</b>
-        <%= @collection.address2 %>
-      </td></tr>
-    <tr><td>
-        <b>City:</b>
-        <%= @collection.city %>
-      </td>
-    <td>
-        <b>State province:</b>
-        <%= @collection.state_province %>
-      </td></tr>
+          <b>Private:</b>
+          <%= @collection.private %>
+        </td></tr>
+      <tr><td>
+          <b>Address:</b>
+          <%= @collection.address %>
+        </td>
+        <td>
+          <b>Address2:</b>
+          <%= @collection.address2 %>
+        </td></tr>
+      <tr><td>
+          <b>City:</b>
+          <%= @collection.city %>
+        </td>
+        <td>
+          <b>State province:</b>
+          <%= @collection.state_province %>
+        </td></tr>
 
-    <tr><td>
-        <b>Postal code:</b>
-        <%= @collection.postal_code %>
-      </td>
-      <td>
-        <b>Telephone:</b>
-        <%= @collection.telephone %>
-      </td></tr>
+      <tr><td>
+          <b>Postal code:</b>
+          <%= @collection.postal_code %>
+        </td>
+        <td>
+          <b>Telephone:</b>
+          <%= @collection.telephone %>
+        </td></tr>
 
-    <tr><td>
-        <b>Email:</b>
-        <%= mail_to @collection.email, nil, :encode => 'javascript' unless @collection.email.blank? %>
-      </td>
-      <td>
-        <b>Website:</b>
-        <%= link_to_unless @collection.website.blank?, @collection.website, @collection.website, :target => "_blank" %>
-      </td></tr>
+      <tr><td>
+          <b>Email:</b>
+          <%= mail_to @collection.email, nil, :encode => 'javascript' unless @collection.email.blank? %>
+        </td>
+        <td>
+          <b>Website:</b>
+          <%= link_to_unless @collection.website.blank?, @collection.website, @collection.website, :target => "_blank" %>
+        </td></tr>
 
-    <tr><td colspan="2">
-        <b>Contact:</b>
-        <%= @collection.contact %>
-      </td></tr>
-    <tr><td colspan="2">
-        <b>Publish:</b>
-        <%= @collection.publish %>
-      </td></tr>
-    <tr><td colspan="2">
-        <b>Notes:</b>
-        <%= @collection.notes %>
-      </td></tr>
-  </table>
+      <tr><td colspan="2">
+          <b>Contact:</b>
+          <%= @collection.contact %>
+        </td></tr>
+      <tr><td colspan="2">
+          <b>Publish:</b>
+          <%= @collection.publish %>
+        </td></tr>
+      <tr><td colspan="2">
+          <b>Notes:</b>
+          <%= @collection.notes %>
+        </td></tr>
+    </table>
+  </div>
 </div>
-
 

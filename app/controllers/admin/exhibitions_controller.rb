@@ -8,8 +8,14 @@ class Admin::ExhibitionsController < Admin::AdminController
     @exhibitions = Exhibition.all
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.xml  { render :xml => @exhibitions }
+      if @exhibitions.empty?
+        @exhibition = Exhibition.new
+        format.html { render :action => "new" }
+        format.xml  { render :xml => @exhibition }
+      else
+        format.html # index.html.erb
+        format.xml  { render :xml => @exhibitions }
+      end
     end
   end
 
@@ -47,7 +53,7 @@ class Admin::ExhibitionsController < Admin::AdminController
 
     respond_to do |format|
       if @exhibition.save
-        format.html { redirect_to(@exhibition, :notice => 'Exhibition was successfully created.') }
+        format.html { redirect_to(admin_exhibition_path(@exhibition), :notice => 'Exhibition was successfully created.') }
         format.xml  { render :xml => @exhibition, :status => :created, :location => @exhibition }
       else
         format.html { render :action => "new" }
@@ -63,7 +69,7 @@ class Admin::ExhibitionsController < Admin::AdminController
 
     respond_to do |format|
       if @exhibition.update_attributes(params[:exhibition])
-        format.html { redirect_to(@exhibition, :notice => 'Exhibition was successfully updated.') }
+        format.html { redirect_to(admin_exhibition_path(@exhibition), :notice => 'Exhibition was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,7 +85,7 @@ class Admin::ExhibitionsController < Admin::AdminController
     @exhibition.destroy
 
     respond_to do |format|
-      format.html { redirect_to(exhibitions_url) }
+      format.html { redirect_to(admin_exhibitions_url) }
       format.xml  { head :ok }
     end
   end
