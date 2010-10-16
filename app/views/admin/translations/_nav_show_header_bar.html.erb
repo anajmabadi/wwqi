@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="description">
+    <h1><%= link_to controller.controller_name.capitalize, admin_translations_path  %> | Show </h1>
+  </div>
+  <div class="tools">
+    <%= link_to 'Back', session[:admin_translations_index_url] ||= admin_translations_path %> |
+    <%= link_to 'Edit', edit_admin_translation_path(translation) %> |
+    <%= link_to 'Delete', admin_translation_path(translation), :method => :delete, :confirm => "Are you sure you want to delete this translation?" %> |
+    <%= link_to "New", new_admin_translation_path %>
+  </div>
+</div>

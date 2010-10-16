@@ -1,11 +1,16 @@
 <% @page_description = t(:edit_description) -%>
-<% @page_title = t(:translations).capitalize + ' | ' + t(:edit).capitalize -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
+
+<% @back_path = session[:admin_translations_index_url] ||= admin_translations_path %>
+<% @show_path = admin_translation_path(@translation) %>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1>
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
 
-  <%= render 'form' %>
-
-  <%= link_to 'Show', @translation %> |
-  <%= link_to 'Back', admin_translations_path %>
+    </div>
+  </div>
 </div>

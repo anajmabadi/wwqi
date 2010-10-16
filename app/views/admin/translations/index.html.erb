@@ -1,25 +1,29 @@
-<% @page_description = t(:translations_index_description) -%>
-<% @page_title = t(:translations).capitalize -%>
+<% @page_description = t(:index_description) -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= t(:translations).capitalize %></h1>
-  <%= render :partial => 'toolbar' %>
-  <table class="styled">
-    <tr>
-      <th>Locale</th>
-      <th>Key</th>
-      <th>Value</th>
-      <th>Actions</th>
-    </tr>
-    <% @translations.each do |translation| %>
-      <tr>
-        <td><%= translation.locale %></td>
-        <td><%= translation.key %></td>
-        <td<%= raw ' dir="' + (translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= truncate(translation.value) %></td>
-        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_translation_path(translation) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_translation_path(translation) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_translation_path(translation), :confirm => 'Are you sure?', :method => :delete %></td>
-      </tr>
-    <% end %>
-  </table>
-  <p>&nbsp;</p>
-  <%= render :partial => 'toolbar' %>
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_translation_path, :show_all_path => admin_translations_path } %>
+
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+          <tr>
+            <th><%= sort_link "Locale", "translation.locale" %></th>
+            <th><%= sort_link "Key", "translation.key" %></th>
+            <th><%= sort_link "Value", "translation.value" %></th>
+            <th>Is Proc</th>
+            <th>Actions</th>
+          </tr>
+          <% @translations.each do |translation| %>
+            <tr>
+              <td><%= translation.locale %></td>
+              <td><%= translation.key %></td>
+              <td<%= raw ' dir="' + (translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= truncate(translation.value) %></td>
+              <td><%= show_check translation.is_proc %></td>
+              <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_translation_path(translation) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_translation_path(translation) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_translation_path(translation), :confirm => 'Are you sure?', :method => :delete %></td>
+            </tr>
+          <% end %>
+        </table>
+        <br class="clear" />
+    </div>
+  </div>
 </div>

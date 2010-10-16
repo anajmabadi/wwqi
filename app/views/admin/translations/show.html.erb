@@ -1,34 +1,36 @@
 <% @page_description = t(:show_description) -%>
-<% @page_title = t(:translations).capitalize + ' | ' + t(:show).capitalize -%>
+<% @page_title = controller.controller_name.capitalize + ' | ' + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1><p>
-    <b>Locale:</b>
-    <%= @translation.locale %>
-  </p>
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :translation => @translation %>
+    <table class="styled" 
+      <tr><td>
+          <p>
+            <b>Locale:</b>
+            <%= @translation.locale %>
+          </p>
 
-  <p>
-    <b>Key:</b>
-    <%= @translation.key %>
-  </p>
+          <p>
+            <b>Key:</b>
+            <%= @translation.key %>
+          </p>
 
-  <p>
-    <b>Value:</b>
-    <span <%= raw ' dir="' + (@translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= @translation.value %></span>
-  </p>
+          <p>
+            <b>Value:</b>
+            <span <%= raw ' dir="' + (@translation.locale == 'fa' ? 'rtl' : 'ltr') + '"'-%>><%= @translation.value %></span>
+          </p>
 
-  <p>
-    <b>Interpolations:</b>
-    <%= @translation.interpolations %>
-  </p>
+          <p>
+            <b>Interpolations:</b>
+            <%= @translation.interpolations %>
+          </p>
 
-  <p>
-    <b>Is proc:</b>
-    <%= @translation.is_proc %>
-  </p>
-
-
-  <%= link_to 'Edit', edit_admin_translation_path(@translation) %> |
-  <%= link_to 'Back', admin_translations_path %> | 
-  <%= link_to 'New', new_admin_translation_path %>
+          <p>
+            <b>Is proc:</b>
+            <%= @translation.is_proc %>
+          </p>
+        </td></tr>
+    </table>
+  </div>
 </div>

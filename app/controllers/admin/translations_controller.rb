@@ -50,7 +50,7 @@ class Admin::TranslationsController < Admin::AdminController
 
     respond_to do |format|
       if @translation.save
-        format.html { redirect_to(@translation, :notice => 'Translation was successfully created.') }
+        format.html { redirect_to(admin_translation_path(@translation), :notice => 'Translation was successfully created.') }
         format.xml  { render :xml => @translation, :status => :created, :location => @translation }
       else
         format.html { render :action => "new" }
@@ -66,7 +66,7 @@ class Admin::TranslationsController < Admin::AdminController
 
     respond_to do |format|
       if @translation.update_attributes(params[:translation])
-        format.html { redirect_to(@translation, :notice => 'Translation was successfully updated.') }
+        format.html { redirect_to(admin_translation_path(@translation), :notice => 'Translation was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -82,7 +82,7 @@ class Admin::TranslationsController < Admin::AdminController
     @translation.destroy
 
     respond_to do |format|
-      format.html { redirect_to(translations_url) }
+      format.html { redirect_to(admin_translations_url) }
       format.xml  { head :ok }
     end
   end

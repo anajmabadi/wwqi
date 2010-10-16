@@ -1,27 +1,30 @@
 <% form_for([:admin, @translation]) do |f| %>
   <%= f.error_messages %>
-
-  <div class="field">
-    <%= f.label :locale %><br />
-    <%= f.text_field :locale %>
-  </div>
-  <div class="field">
-    <%= f.label :key %><br />
-    <%= f.text_field :key %>
-  </div>
-  <div class="field">
-    <%= f.label :value %><br />
-    <%= f.text_area :value, :dir => @translation.locale == 'fa' ? 'rtl' : 'ltr' %>
-  </div>
-  <div class="field">
-    <%= f.label :interpolations %><br />
-    <%= f.text_area :interpolations %>
-  </div>
-  <div class="field">
-    <%= f.label :is_proc %><br />
-    <%= f.check_box :is_proc %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <% @default_rows = 6 %>
+  <table class="global" width="100%" cellpadding="0" cellspacing="0" >
+    <tr><td>
+        <div class="field">
+          <%= f.label :locale %><br />
+          <%= f.text_field :locale %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :key %><br />
+          <%= f.text_field :key %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :value %><br />
+          <%= f.text_area :value, :rows => 3, :dir => @translation.locale == 'fa' ? 'rtl' : 'ltr' %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :interpolations %><br />
+          <%= f.text_area :interpolations, :rows => 3 %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :is_proc %><br />
+          <%= f.check_box :is_proc %>
+        </div></td></tr>
+    <tr><td><div class="actions">
+          <%= f.submit %>
+        </div></td></tr>
+  </table>
 <% end %>
