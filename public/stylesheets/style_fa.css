@@ -336,8 +336,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browser #head .itemTools{float:right; }
 #browser #head .sort{float:right; width:300px}
 
-#browser #head .itemTools .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
-#browser #head .itemTools .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
+#browser #head .itemTools .share{padding-right:15px; background:url(/images/share_icon.gif) 100% 6px no-repeat}
+#browser #head .itemTools .link{padding-right:15px; background:url(/images/link_icon.gif) 100% 6px no-repeat}
 
 
 #browser #browserContent{
@@ -872,7 +872,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	float:right;
 	color:#333;
 }
-#itemDetails p{font-family:Tahoma, Geneva, sans-serif}
+#itemDetails p{font-family:Tahoma, Geneva, sans-serif; margin-top:10px;}
 
 #itemDetails table td.title{
 	font-size:17px;
@@ -1475,4 +1475,19 @@ div.field {
 
 #catalogInfo ul li a{
 	color:#CA3723;
+}
+
+#zoomify_pane{position:relative}
+#downloadImage{
+	display:block;
+	width:65px;
+	height:15px;
+	background:url(../images/btn_download_fa.gif) top left no-repeat;
+	text-indent:-9999px;
+	margin:0px;
+	padding:0px;
+	font-size:1px;
+	position:absolute;
+	bottom:3px;
+	right:72px;
 }

@@ -1,4 +1,5 @@
-<div id="zoomify_pane" align="center" >
+<div id="zoomify_pane" align="center" style="height:<%= @swf_height %>px" >
+<a id="downloadImage" href="#">Download Image</a>
   <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" id="zoomify_swf" name="zoomify" width="<%= @swf_width %>" height="<%= @swf_height %>" >
     <param name="movie" value="<%= @viewer_url %>" />
     <param name="bgcolor" value="<%= @bg_color %>" />

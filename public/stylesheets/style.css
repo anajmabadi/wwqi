@@ -878,6 +878,10 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 	font-weight:bold;
 	line-height:21px;
 }
+
+#itemDetails p.itemDescription{
+	margin-top:10px;
+}
 	
 
 /* list item styles
@@ -1464,4 +1468,19 @@ div.field {
 
 #catalogInfo ul li a{
 	color:#CA3723;
+}
+
+#zoomify_pane{position:relative}
+#downloadImage{
+	display:block;
+	width:65px;
+	height:15px;
+	background:url(../images/btn_download.gif) top left no-repeat;
+	margin:0px;
+	padding:0px;
+	bottom:3px;
+	left:52px;
+	text-indent:-9999px;
+	font-size:1px;
+	position:absolute;
 }
