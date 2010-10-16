@@ -11,7 +11,7 @@ module ArchiveHelper
   
   def index_header_content
     return %{
-      <script src="javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script> 
+      <script src="javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script> 
       <script type="text/javascript" src="javascripts/facebox.js"></script>
 
     	<script language="javascript" type="application/javascript">
@@ -64,7 +64,7 @@ module ArchiveHelper
     return %{
     <link href="/stylesheets/dd<%= language_suffix -%>.css" media="screen" rel="stylesheet" type="text/css" />
     <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
-    <script src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script> 
+    <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script> 
 
   	<script language="javascript" type="application/javascript">
   	$(document).ready(function(){
@@ -180,7 +180,7 @@ module ArchiveHelper
     return s = %{
         <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
         <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
-        <script src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script>
+        <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
         <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
 
         <script language="javascript" type="application/javascript">
@@ -377,7 +377,7 @@ module ArchiveHelper
     return s = %{
         <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
         <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
-        <script src="/javascripts/jquery.qtip-1.0.0-rc3.min.js" type="text/javascript"></script>
+        <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
         <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
         <script language="javascript" type="application/javascript">
           $(document).ready(function(){
@@ -524,4 +524,34 @@ module ArchiveHelper
       </script>
     }
   end
+  
+  
+  def detail_header_content
+    return %{
+      <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script> 
+
+    	<script language="javascript" type="application/javascript">
+    	$(document).ready(function(){
+
+    		$('a[title]').qtip({ 
+    						   	   style: { 
+    							   name: 'dark', 
+    							   tip: true,
+    							    border: {
+    										 radius: 8
+    									  }
+    								}, 
+    							   position: {
+    								  corner: {
+    									 target: 'topMiddle',
+    									 tooltip: 'bottomMiddle'
+    								  }
+    						   		} 
+    		}); 
+    		
+    	});
+    	</script>
+    }
+  end
+  
 end

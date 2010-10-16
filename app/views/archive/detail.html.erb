@@ -1,5 +1,7 @@
 <% @page_description = t(:detail_description) -%>
 <% @page_title = t(:detail).capitalize -%>
+<% @extra_head_content = detail_header_content -%>
+
 <div id="browser" class="clearfix singleItemBrowser">
   <div id="head">
     <ul class="itemTools sortnav">
@@ -17,24 +19,24 @@
 	  	<div id="subjects">
 			<h3> Subjects </h3>
 			<ul>
-				<li><a href="">first subject</a></li>
-				<li><a href="">second subject</a></li>
+				<li><a href="#" title="view all items with this subject">first subject</a></li>
+				<li><a href="#" title="view all items with this subject">second subject</a></li>
 			</ul>
 		</div>
 		<div id="people">
 			<h3> People </h3>
 			<ul>
-				<li><a href="">first person</a></li>
-				<li><a href="">second person</a></li>
-				<li><a href="">third person</a></li>
+				<li><a href="#" title="view all items with this person">first person</a></li>
+				<li><a href="#" title="view all items with this person">second person</a></li>
+				<li><a href="#" title="view all items with this person">third person</a></li>
 			</ul>
 		</div>
 		<div id="places">
 			<h3> Places </h3>
 			<ul>
-				<li><a href="">first place</a></li>
-				<li><a href="">second place</a></li>
-				<li><a href="">third place</a></li>
+				<li><a href="#" title="view all items from this place">first place</a></li>
+				<li><a href="#" title="view all items from this place">second place</a></li>
+				<li><a href="#" title="view all items from this place">third place</a></li>
 			</ul>
 		</div>
 	  </div>
