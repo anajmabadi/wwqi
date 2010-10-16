@@ -333,7 +333,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	#browser.singleItemBrowser h2{width:auto}
 
 #browser #head .types,
-#browser #head .itemTools{float:left; }
+#browser #head .itemTools{float:right; }
 #browser #head .sort{float:right; width:300px}
 
 #browser #head .itemTools .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
@@ -863,16 +863,22 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #itemImage{
 	width:630px;
 	padding:0 10px;
-	float:right;
+	float:left;
 	}
 
 #itemDetails{
 	width:270px;
-	padding-left:10px;
-	float:left;
+	padding-right:10px;
+	float:right;
 	color:#333;
 }
 #itemDetails p{font-family:Tahoma, Geneva, sans-serif}
+
+#itemDetails table td.title{
+	font-size:17px;
+	font-weight:bold;
+	line-height:21px;
+}
 
 
 /* list item styles
@@ -1436,4 +1442,37 @@ div.field {
     cursor: pointer;
     margin: 7px 28px 0 0px;
 	outline:none
+}
+
+
+
+
+/* catalog information on item details page
+-------------------------------------------------------------- */
+#catalogInfo{
+	overflow:hidden;
+}
+
+#catalogInfo h3{
+	margin:0 0 10px 0;
+	padding:5px;
+	border-bottom:1px solid #ccc;
+	color:#777;
+	font-size:16px;
+	font-weight:bold;
+}
+
+#catalogInfo div{
+	width:200px;
+	float:right;
+	margin:0 8px 0 0;
+}
+
+#catalogInfo ul li{
+	background:url(../images/bullet-circle-fa.gif) 100% 2px no-repeat;
+	padding-right:20px;
+}
+
+#catalogInfo ul li a{
+	color:#CA3723;
 }

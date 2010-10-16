@@ -326,7 +326,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browser.singleItemBrowser h2{width:auto}
 
 #browser #head .types,
-#browser #head .itemTools{float:right}
+#browser #head .itemTools{float:left}
 #browser #head .sort{float:left; width:300px}
 
 
@@ -862,16 +862,23 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 #itemImage{
     width:630px;
     padding:0 10px;
-    float:left;
+    float:right;
 }
 
 #itemDetails{
     width:270px;
-    padding-right:10px;
+    padding-left:10px;
     float:right;
     color:#333;
+	float:left;
 }
 
+#itemDetails table td.title{
+	font-size:17px;
+	font-weight:bold;
+	line-height:21px;
+}
+	
 
 /* list item styles
 -------------------------------------------------------------- */
@@ -1425,4 +1432,36 @@ div.field {
     cursor: pointer;
     margin: 7px 0 0 28px;
 	outline:none
+}
+
+
+
+
+/* catalog information on item details page
+-------------------------------------------------------------- */
+#catalogInfo{
+	overflow:hidden;
+}
+
+#catalogInfo h3{
+	margin:0 0 10px 0;
+	padding:5px;
+	border-bottom:1px solid #ccc;
+	color:#777;
+	font-size:14px;
+}
+
+#catalogInfo div{
+	width:200px;
+	float:left;
+	margin:0 0 0 8px;
+}
+
+#catalogInfo ul li{
+	background:url(../images/bullet-circle.gif) 0 2px no-repeat;
+	padding-left:20px;
+}
+
+#catalogInfo ul li a{
+	color:#CA3723;
 }
