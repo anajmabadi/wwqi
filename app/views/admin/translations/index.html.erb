@@ -4,7 +4,7 @@
   <div class="onecolumn">
     <div class="content nomargin">
       <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_translation_path, :show_all_path => admin_translations_path } %>
-
+      <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @translations} %>
       <table class="global" width="100%" cellpadding="0" cellspacing="0">
           <tr>
             <th><%= sort_link "Locale", "translation.locale" %></th>
@@ -23,6 +23,7 @@
             </tr>
           <% end %>
         </table>
+        <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @translations} %>
         <br class="clear" />
     </div>
   </div>
