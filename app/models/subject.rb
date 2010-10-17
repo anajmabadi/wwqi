@@ -5,9 +5,9 @@ class Subject < ActiveRecord::Base
   has_many :classifications
   has_many :items, :through => :classifications, :order => :position
 
-  validates :name, :presence => true, :length =>{:maximum => 256}
-  validates :publish, :presence => true
-  
+  validates :name_en, :presence => true, :length =>{:maximum => 256}
+  validates :name_fa, :presence => true, :length =>{:maximum => 256}
+
   translates :name
   default_scope :include => :translations
   globalize_accessors :fa, :en

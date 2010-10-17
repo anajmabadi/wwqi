@@ -1,8 +1,14 @@
 <% @page_description = t(:new_description) -%>
-<% @page_title = t(:subject).capitalize + ' | ' + t(:new).capitalize -%>
+<% @page_title = controller.controller_name.capitalize + ' | ' + t(:new).capitalize -%>
+
+<% @back_path = session[:admin_subjects_index_url] ||= admin_subjects_path %>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1>
-  <%= render 'form' %>
-  <%= link_to 'Back', admin_subjects_path %>
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+    </div>
+  </div>
 </div>
