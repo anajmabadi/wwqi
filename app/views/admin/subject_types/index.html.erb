@@ -1,29 +1,29 @@
-<h1>Listing subject_types</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Publish</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_subject_type_path, :show_all_path => admin_subject_types_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Publish</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
 
-<% @subject_types.each do |subject_type| %>
-  <tr>
-    <td><%= subject_type.name %></td>
-    <td><%= subject_type.description %></td>
-    <td><%= subject_type.publish %></td>
-    <td><%= subject_type.notes %></td>
-    <td><%= link_to 'Show', admin_subject_type_path(subject_type) %></td>
-    <td><%= link_to 'Edit', edit_admin_subject_type_path(subject_type) %></td>
-    <td><%= link_to 'Destroy', admin_subject_type_path(subject_type), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Subject type', new_admin_subject_type_path %>
+        <% @subject_types.each do |subject_type| %>
+          <tr>
+            <td><%= link_to subject_type.name, admin_subject_type_path(subject_type) %></td>
+            <td><%= truncate(subject_type.description) unless subject_type.description.nil? %></td>
+            <td><%= show_check subject_type.publish %></td>
+            <td><%= truncate(subject_type.notes) unless subject_type.notes.nil? %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_subject_type_path(subject_type) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_subject_type_path(subject_type) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_subject_type_path(subject_type), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
+</div>

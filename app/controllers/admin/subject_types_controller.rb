@@ -44,7 +44,7 @@ class Admin::SubjectTypesController < Admin::AdminController
 
     respond_to do |format|
       if @subject_type.save
-        format.html { redirect_to(@subject_type, :notice => 'Subject type was successfully created.') }
+        format.html { redirect_to(admin_subject_type_path(@subject_type), :notice => 'Subject type was successfully created.') }
         format.xml  { render :xml => @subject_type, :status => :created, :location => @subject_type }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::SubjectTypesController < Admin::AdminController
 
     respond_to do |format|
       if @subject_type.update_attributes(params[:subject_type])
-        format.html { redirect_to(@subject_type, :notice => 'Subject type was successfully updated.') }
+        format.html { redirect_to(admin_subject_type_path(@subject_type), :notice => 'Subject type was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::SubjectTypesController < Admin::AdminController
     @subject_type.destroy
 
     respond_to do |format|
-      format.html { redirect_to(subject_types_url) }
+      format.html { redirect_to(admin_subject_types_path) }
       format.xml  { head :ok }
     end
   end

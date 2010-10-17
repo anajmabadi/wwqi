@@ -1,25 +1,54 @@
-<p class="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Name:</b>
-  <%= @subject_type.name %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @subject_type.description %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @subject_type.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @subject_type.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_subject_type_path(@subject_type) %> |
-<%= link_to 'Back', admin_subject_types_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :subject_type => @subject_type %>
+    <table class="global" width="50%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @subject_type, :name_en %><br />
+            <%= @subject_type.name_en%>
+          </div>
+        </td>
+        <td>
+          <div class="field persianOnly">
+            <%= label @subject_type, :name_fa %><br />
+            <%= @subject_type.name_fa %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @subject_type, :description_en %><br />
+            <%= @subject_type.description_en %>
+          </div>
+        </td>
+        <td>
+          <div class="field persianOnly">
+            <%= label @subject_type, :description_fa %><br />
+            <%= @subject_type.description_fa %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="field">
+            <%= label @subject_type, :publish %><br />
+            <%= @subject_type.publish %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="field">
+            <%= label @subject_type, :notes %><br />
+            <%= @subject_type.notes %>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
