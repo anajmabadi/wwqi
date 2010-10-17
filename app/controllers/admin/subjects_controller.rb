@@ -6,6 +6,7 @@ class Admin::SubjectsController < Admin::AdminController
     @page = params[:page] || 1
     @per_page = params[:per_page] || Subject.per_page || 100
     @subjects = Subject.paginate :all, :per_page => @per_page, :page => @page, :order => 'subject_translations.locale, subject_translations.name'
+    @subject_types = SubjectType.select_list
 
     respond_to do |format|
       format.html # index.html.erb

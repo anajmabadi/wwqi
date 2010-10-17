@@ -1,28 +1,32 @@
 <% @page_description = t(:index_description) -%>
-<% @page_title = t(:subject).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= t(:subject).capitalize %></h1>
-  <%= render :partial => 'toolbar' %>
-<table class="styled">
-  <tr>
-    <th>Name</th>
-    <th>Major</th>
-    <th>Publish</th>
-    <th>Notes</th>
-    <th>Actions</th>
-  </tr>
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_subject_path, :show_all_path => admin_subjects_path } %>
+      <%= render 'nav_filter_bar' %>
+      <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @subjects} %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th><%= sort_link 'Name', 'subject_translations.name' %></th>
+          <th><%= sort_link 'Major', 'subjects.major' %></th>
+          <th><%= sort_link 'Publish', 'subjects.publish' %></th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
 
-<% @subjects.each do |subject| %>
-  <tr>
-    <td><%= subject.name %></td>
-    <td><%= show_check(subject.major) %></td>
-    <td><%= show_check(subject.publish) %></td>
-    <td><%= truncate(subject.notes) %></td>
-    <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_subject_path(subject) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_subject_path(subject) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_subject_path(subject), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-  <p>&nbsp;</p>
-  <%= render :partial => 'toolbar' %>
+        <% @subjects.each do |subject| %>
+          <tr>
+            <td><%= subject.name %></td>
+            <td><%= show_check(subject.major) %></td>
+            <td><%= show_check(subject.publish) %></td>
+            <td><%= truncate(subject.notes) %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_subject_path(subject) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_subject_path(subject) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_subject_path(subject), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @subjects} %>
+      <br class="clear" />
+    </div>
+  </div>
 </div>
