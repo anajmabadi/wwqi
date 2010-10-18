@@ -222,7 +222,12 @@ dd          { margin-left: 1.5em;}
 	width:200px;
 }
 
+/* old browser search styles
 #browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll 0 0;float:left;width:350px; margin:-5px 0 0 10px;}
+#browser .searchform button{background: url(/images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
+#browser .searchform input{width:210px; margin-top:7px; font-size:12px; line-height:20px;}
+*/
+
 
 .searchform input{
     border: 0;
@@ -233,7 +238,7 @@ dd          { margin-left: 1.5em;}
     float: left;
     outline:none
 }
-#browser .searchform input{width:210px; margin-top:7px; font-size:12px; line-height:20px;}
+
 #big_search .searchform input{width:190px; margin:8px 0 0 10px; font-size:12px;}
 
 .searchform button {
@@ -249,7 +254,18 @@ dd          { margin-left: 1.5em;}
 
 #simple_search .searchform button {margin-top:0}
 
-#browser .searchform button{background: url(/images/collection_search_button.gif) no-repeat 0 0;width: 95px; margin:0 0 0 15px;height: 30px;}
+#browserFilters #simple_search{
+	margin:10px 10px 0 ;
+	float:left;
+	width:360px;
+}
+
+#browserFilters #simple_search input{
+	width:307px
+}
+
+
+
 .searchform button:hover {
     background: url(/images/searchbutton.gif) no-repeat 0 -22px;
 }
@@ -474,7 +490,18 @@ ul.sortnav .label{font-size:10px; color:#C00}
     width:230px;
 }
 
-#browserFilters h4{color:#aaa; font-weight:bold; text-transform:uppercase; font-size:15px;  margin-top:2px;}
+#browserFilters h4{
+	color:#888888;
+	display:block;
+	float:left;
+	font-size:12px;
+	font-weight:bold;
+	margin-top:14px;
+	text-transform:uppercase;
+}
+#browserFilters #indexLinks{float:left; margin:12px 0 0 10px;}
+#browserFilters #indexLinks a:hover{color:#c82a1c}
+
 #browserFilters p{padding:5px 15px 5px;}
 
 .paginationBar{
@@ -1404,7 +1431,7 @@ div.field {
 #timeLine h4{background:#ddd; margin:0; padding:5px 0 5px 5px;}
 
 
-.browserBarIndex{float:left;}
+.browserBarIndex{float:right;}
 .browserBarIndex li{margin-left:-5px;}
 
 
@@ -1483,4 +1510,163 @@ div.field {
 	text-indent:-9999px;
 	font-size:1px;
 	position:absolute;
+}
+
+
+
+/* new browser filters
+-------------------------------------------------------------- */
+#filterOptions a{
+	padding:0px;
+	color:#fff;
+	float:left;
+	width:200px;
+	color:#ef978d
+}
+
+#filterOptions #filterStatus{
+	font-size:16px;
+	padding-left:10px;
+	color:#fff;
+	width:150px;
+	background:url(../images/arrow_down.png) 100% 5px no-repeat;
+	margin-right:30px;
+}
+
+#filterOptions #filterStatus.open{
+	background:url(../images/arrow_up.png) 100% 5px no-repeat;
+}
+
+#filterOptions a#byPeriod{
+	width:230px;
+}
+
+#filterOptions a#byCollection{
+	width:320px;
+}
+#filterOptions a span{
+	font-size:14px;
+	font-weight:bold;
+	color:#fff;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	display:inline-block;
+	white-space:nowrap;
+	float:right;
+	margin-right:20px;
+}
+
+#filterOptions a#byGenre span{
+	width:133px;
+	
+}
+#filterOptions a#byPeriod span{
+	width:168px;
+	
+}
+#filterOptions a#byCollection span{
+	width:238px;	
+}
+
+#browser #head.filters{
+	background:url(../images/bg_browse_head_filters.png) 0 0 no-repeat;
+	position:relative;
+}
+
+#browser #head.filters.over{
+	background-position:0 -41px;
+}
+
+#filtersPanel{
+	height:300px;
+	width:100%;
+	position:absolute;
+	top:100%;
+	left:0;
+	background:#efefef url(../images/bg_filtersPanel.gif) top left repeat-y;
+	z-index:9999;
+	color:#333;
+	display:none;
+}
+
+#filtersPanel div{
+	float:left;
+}
+
+#filtersPanel ul li{
+	margin:0;
+	padding:0;
+}
+
+#filtersPanel ul li label{
+	padding-left:5px;
+	font-size:11px;
+}
+#filtersPanel ul li input{
+	font-size:11px;
+}
+
+#genreFilter{
+	width:201px;
+	margin-left:176px;
+}
+
+#periodFilter{
+	width:230px;
+
+}
+
+#collectionFilter{
+	width:330px;
+}
+
+#filtersPanel li.selectAll{
+	border-bottom:1px solid #ccc;
+}
+
+#filtersPanel .collectionFilterList,
+#filtersPanel .genreFilterList,
+#filtersPanel .periodFilterList{
+	height:270px;
+	overflow:auto;
+}
+
+#filterPanelButtonBar{
+	position:absolute;
+	top:100%;
+	left:0;
+	width:925px;
+	background:#ccc;
+	height:30px;
+	border-top:1px solid #ccc;
+	border-bottom:1px solid #ccc;
+	text-align:right;
+	padding:5px 15px 0 0;
+	
+}
+
+.redButton{
+	background:url(../images/red_gradient.gif) top left repeat-x;
+	height:25px;
+	line-height:25px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	padding:0 15px;
+	display:inline-block;
+	-border-radius:5px;
+	-moz-border-radius:5px
+}
+
+.blackButton{
+	background:url(../images/black_gradient.gif) top left repeat-x;
+	height:25px;
+	line-height:25px;
+	color:#fff;
+	font-weight:bold;
+	text-align:center;
+	padding:0 15px;
+	display:inline-block;
+	-border-radius:5px;
+	-moz-border-radius:5px
 }

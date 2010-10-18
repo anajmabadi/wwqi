@@ -1,0 +1,1824 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <meta name="csrf-param" content="authenticity_token"/>
+<meta name="csrf-token" content="XL3OuAWCGv69Nm6VC3BFc9Fn3fvv9XrxIAwzUJ8PffM="/>
+    
+    <title>Women's Worlds in Qajar Iran | Archive</title>
+      <meta name="description" content="The archive contains manuscripts, pictures, sound files relating to the history of women in Qajar Iran." />
+
+    <!-- facebook metatags -->
+    <meta property="og:title" content="Women's Worlds in Qajar Iran | Archive" />
+<meta property="og:site_name" content="Women's Worlds in Qajar Iran"/>
+<meta property="og:image" content="http://localhost/images/qajar_thumbnail.jpg" />
+<link rel="image_src" href="http://localhost/images/qajar_thumbnail.jpg" />
+
+    <!-- load the common styles to all pages -->
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+    <link href="/stylesheets/style.css?1287252684" media="screen" rel="stylesheet" type="text/css" />
+
+    <!-- load the common scripts -->
+    <script src="/javascripts/jquery.min.js?1283787289" type="text/javascript"></script>
+<script src="/javascripts/jquery-ui.min.js?1283787289" type="text/javascript"></script>
+<script src="/javascripts/rails.js?1283787289" type="text/javascript"></script>
+<script src="/javascripts/application.js?1281581546" type="text/javascript"></script>
+
+    <!-- load styles conditionally based on the controller name -->
+      
+        <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
+        
+        
+        <!-- should remove this line
+        <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
+        end remove -->
+        
+        <script language="javascript" type="application/javascript">
+          $(document).ready(function(){
+
+          
+
+		  /* should remove this stuff
+		  
+		  // fancy dropdowns for filters, and handling special cases
+          $("#mediumFilter").msDropDown();
+          $("#mediumFilter").change(function(){
+          if ($(this).val() =="more") $("#browserFiltersDropdown").show("slide");
+          else   $("#browserFiltersDropdown").hide("slide");
+          });
+
+          $("#browserFiltersDropdown .cancelButton ").click(function(){$("#browserFiltersDropdown").hide("slide");});
+
+		  
+          $("#collectionFilter").msDropDown();
+          $("#collectionFilter").change(function(){
+          if ($(this).val() =="more") window.location = "generic.html"
+          });
+          $("#nameFilter").msDropDown();
+          $("#nameFilter").change(function(){
+          if ($(this).val() =="more") window.location = "generic.html"
+          });
+          $("#subjectFilter").msDropDown();
+          $("#periodFilter").msDropDown();
+		 
+		  /* end remove */
+
+         
+
+      		$("#indexLinks a").click(function(){
+
+      			// if use is clicking on an already active index, then most likely they 
+      			// want to close the index panel
+      			if ($(this).hasClass('active')){
+      				$("#browserFiltersDropdown").slideUp();
+      				$(this).removeClass('active').parent().removeClass('active');
+      			}
+
+      			// if user clicks on an index that's not already active, then give the clicked link
+      			// the 'active' class, and if necessary open the index panel
+      			else {
+      				$(this).parent().siblings().removeClass('active').find('a').removeClass('active');
+      				$(this).addClass('active').parent().addClass('active');
+      					// show the appropriate index list
+					var showMe = $(this).attr("id")+"Content";
+					$(".indexContent").hide();
+					$("."+showMe).show();
+
+				if ($("#browserFiltersDropdown").css('display')=='none'){
+      					$("#browserFiltersDropdown").slideDown();
+      				}
+
+      			}
+      			return false;
+      		});
+
+      		$(".hideIndexPanel").click(function(){
+      			$("#browserFiltersDropdown").slideUp();
+      			$("#indexLinks a").removeClass('active').parent().removeClass('active');
+      			return false;
+      		});
+			
+			$(".listItem").hover(function(){
+				$(this).addClass("highlight");
+			},
+			function(){
+				$(this).removeClass("highlight");
+			});
+			
+			$(".listItem").click(function(){
+				window.location=$(this).find("a:first-child").attr("href");
+			})
+			
+			
+			
+			
+			
+			
+			
+			
+			// everything below this is new js
+		
+			// adding 'hover' class to filters header (don't want to rely on css :hover since it doesn't work on all browsers
+			$("#head.filters").hover(function(){
+				$(this).addClass("over");
+				}
+				,function(){
+				$(this).removeClass("over");
+			});
+			
+			$("#filterOptions a").click(function(){
+				$("#filtersPanel").slideToggle();
+				$("#filterStatus").toggleClass("open");
+			})
+			
+			// making sure when 'all' checkbox is selected we deselect hte others
+			$(".selectAll input").click(function(){
+					if ($(this).attr("checked")==true){
+						$(this).parent().parent().siblings().find("input").removeAttr("checked");	
+					}
+					
+					
+			});
+			
+			// if a normal item in the checklist is selected, unselect the 'all' chexkbox for that list
+			$(".genreFilterList input").click(function(){
+				if ($(this).attr("checked")==true){
+						$(this).parent().parent().siblings().find("input").removeAttr("checked");	
+				}
+				// if none of the checkboxes in the list are selected, then select the 'all' checkbox
+				if ($(this).parent().parent().find("input:checked").length<1){
+						$(this).parent().parent().siblings().find("input").attr("checked",true);	
+				}
+				
+			});
+			$(".collectionFilterList input").click(function(){
+				if ($(this).attr("checked")==true){
+						$(this).parent().parent().siblings().find("input").removeAttr("checked");	
+				}
+				if ($(this).parent().parent().find("input:checked").length<1){
+						$(this).parent().parent().siblings().find("input").attr("checked",true);	
+				}
+				
+			});
+			$(".periodFilterList input").click(function(){
+				if ($(this).attr("checked")==true){
+						$(this).parent().parent().siblings().find("input").removeAttr("checked");	
+				}
+				if ($(this).parent().parent().find("input:checked").length<1){
+						$(this).parent().parent().siblings().find("input").attr("checked",true);	
+				}
+				
+			});
+			
+			
+			$("#cancelFilters").click(function(){
+				$("#filtersPanel").slideToggle();
+				return false;
+			});
+			
+			$("#submitFilters").click(function(){
+				$("#filtersPanel").slideToggle();
+				updateFilterLabels();
+				return false;
+			});
+			
+			// this function sets the filter labels based on what checkboxes are selected
+			updateFilterLabels();
+			
+          });
+		  
+		  
+          
+     	updateFilterLabels = function(){
+			
+			var genreLabel, collectionLabel, periodLabel;
+			
+			// first handle All case
+			if ($("#genreFilter .selectAll input").attr("checked")==true){
+				genreLabel = "All";
+			}
+			// if only one filter is checked, show that label
+			else if ($(".genreFilterList input:checked").length==1){
+				genreLabel = $(".genreFilterList input:checked").next("label").first().html();
+			}
+			// else, if multiple filters are selected, just show 'multiple'
+			else if ($(".genreFilterList input:checked").length>1){
+				genreLabel = "Multiple"
+			}
+			
+			
+			
+			if ($("#collectionFilter .selectAll input").attr("checked")==true){
+				collectionLabel = "All";
+			}
+			else if ($(".collectionFilterList input:checked").length==1){
+				collectionLabel = $(".collectionFilterList input:checked").next("label").first().html();
+			}
+			else if ($(".collectionFilterList inpu:checkedt").length>1){
+				collectionLabel = "Multiple"
+			}
+			
+			
+			if ($("#periodFilter .selectAll input").attr("checked")==true){
+				periodLabel = "All";
+			}
+			else if ($(".periodFilterList input:checked").length==1){
+				periodLabel = $(".periodFilterList input:checked").next("label").first().html();
+			}
+			else if ($(".periodFilterList input:checked").length>1){
+				periodLabel = "Multiple"
+			}
+			
+			
+			// set the labels
+			$("#byGenre span").html(genreLabel);
+			$("#byCollection span").html(collectionLabel);
+			$("#byPeriod span").html( periodLabel);
+			
+			
+		}
+        
+          
+        </script>
+      </head>
+  <body>
+    <div id="header">
+  <div class="container">
+    <h1><a href="/home"><span>Women's Worlds in Qajar Iran</span></a></h1>
+    <span class="beta">beta</span>
+    <div id="tools">
+      <ul>
+        <li><a href="/contact">contact</a></li>
+        <li><a href="/faq">FAQ</a></li>
+      </ul>
+    </div>
+    <div id="nav">
+      <a class="lang" href="http://fa.localhost/archive/browser">فارسی</a>
+      <ul class="sortnav">
+        <li> <a href="/home" class="module-link">home</a></li>
+        <li class="active"> <a href="/archive" class="module-link">archive</a></li>
+      </ul>
+    </div>
+  </div> <!-- end container -->
+</div> <!-- end header -->
+    <div id="content" class="clearfix">
+      <div class="container clearfix">
+                
+        <!-- rails template content -->
+        
+<div id="browser" class="clearfix">
+  <div id="head" class="filters">
+  	<div id="filterOptions">
+    	<a class="filter" id="filterStatus" href="#"><strong class="filter">Search Filters</strong></a>
+        <a class="filter" id="byGenre" href="#">Genres: <span>All</span></a>
+        <a class="filter" id="byPeriod" href="#">Period: <span>All</span></a>
+        <a class="filter" id="byCollection" href="#">Collection: <span>All</span></a>
+       
+    </div>
+    <div id="filtersPanel">
+    	<form>
+        	<div id="genreFilter">
+            	<ul>
+                	<li class="selectAll"><input type="checkbox" name="allGenres"><label for="">All</label></li>
+                </ul>
+                <ul class="genreFilterList">
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Writings</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Legal Docsuments</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Artworks</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Photos</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Objects</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Oral History</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Concepts</label></li>
+	            </ul>
+            </div>
+            <div id="periodFilter">
+            	<ul>
+                	<li class="selectAll"><input type="checkbox" name="allPeriods"><label for="">All</label></li>
+                </ul>
+                <ul class="periodFilterList">
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Pre-Qajar Period</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Aqa Muhammad Khan Period</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Fath 'Ali Shah Period</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Muhammad Shah Period </label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Nasir al-Din Shah Period</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Muzaffar al-Din Shah Period</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Muhammad 'Ali Shah Period</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Ahmad Shah Period</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Early Pahlavi Period</label></li>
+	            </ul>
+            </div>
+            <div id="collectionFilter">
+            	<ul>
+                	<li class="selectAll"><input type="checkbox" name="allCollections"><label for="">All</label></li>
+                </ul>
+                <ul class="collectionFilterList">         	
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Bahram Sheikholeslami Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Hafez Farmayan Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Joel Montague Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Kamran Dowlatshahi Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Sadiqah Dawlatabadi Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Taj al-Muluk Tajbakhsh Zamandar Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Harvard College Library Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Mahdokht Sanati Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">More Collections</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Taj al-Muluk Tajbakhsh Zamandar Collection</label></li>
+	            	<li><input type="checkbox"  name="selectedGenre"><label for="">Harvard College Library Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Mahdokht Sanati Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">More Collections</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Harvard College Library Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">Mahdokht Sanati Collection</label></li>
+                    <li><input type="checkbox"  name="selectedGenre"><label for="">More Collections</label></li>
+	            </ul>
+            </div>
+        </form>
+        <div id="filterPanelButtonBar">
+            <a id="cancelFilters" class="blackButton" href="#">Close</a>
+            <a id="submitFilters" class="redButton" href="#">Search</a>
+        </div>
+        
+    </div>
+    <!--<div style="float:left" class="search">
+      <form action="/archive/browser/" class="searchform" method="get">
+        <input type="text" value="Enter a keyword" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+               onfocus="if(this.value=='Enter a keyword'){this.value='';this.style.color = '#000';}"
+               onblur="if(this.value==''){this.value='Enter a keyword';this.style.color = '#aaa';}" />
+        <button type="submit"></button>
+      </form>
+    </div>
+    <ul class="types sortnav">
+      <li>show:</li>
+      <li><a href="/archive/browser" id="allItems" class="module-link active">All Items</a></li>
+    </ul>-->
+  </div>
+  <div id="browserFilters" class="clearfix">
+    
+    <div class="clearfix" id="simple_search">
+        <form method="get" class="searchform" action="/archive/browser">
+          <input type="text" value="search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='search the archives';this.style.color = '#aaa';}">
+          <button id="search" type="submit"></button>
+        </form>
+ 	</div>  
+      
+    <div class="browserBarIndex"><h4>Browse by indexes</h4>
+      <ul id="indexLinks" class="types sortnav">
+        <li><a class="module-link" id="peopleIndex" href="#">person</a></li>
+        <li><a class="module-link" id="subjectsIndex" href="#">subject</a></li>
+        <li><a class="module-link" id="placesIndex" href="#">place</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="browserFiltersDropdown" class="clearfix">
+    <ul class="alphabet">
+
+      <li><a class="collectionlink" href="#A"><b>A</b></a></li>
+
+      <li><a class="collectionlink" href="#">B</a></li>
+
+
+      <li><a class="collectionlink" href="#">C</a></li>
+
+
+      <li><a class="collectionlink" href="#">D</a></li>
+
+
+      <li><a class="collectionlink" href="#">E</a></li>
+
+
+      <li><a class="collectionlink" href="#">F</a></li>
+
+
+      <li><a class="collectionlink" href="#">G</a></li>
+
+
+      <li><a class="collectionlink" href="#">H</a></li>
+
+
+      <li><a class="collectionlink" href="#">I</a></li>
+
+
+      <li><a class="collectionlink" href="#">J</a></li>
+
+
+      <li><a class="collectionlink" href="#">K</a></li>
+
+
+      <li><a class="collectionlink" href="#">L</a></li>
+
+
+      <li><a class="collectionlink" href="#">M</a></li>
+
+
+      <li><a class="collectionlink" href="#">N</a></li>
+
+
+      <li><a class="collectionlink" href="#">O</a></li>
+
+
+      <li><a class="collectionlink" href="#">P</a></li>
+
+
+      <li><a class="collectionlink" href="#">Q</a></li>
+
+
+      <li><a class="collectionlink" href="#">R</a></li>
+
+
+      <li><a class="collectionlink" href="#">S</a></li>
+
+
+      <li><a class="collectionlink" href="#">T</a></li>
+
+
+      <li><a class="collectionlink" href="#">U</a></li>
+
+
+      <li><a class="collectionlink" href="#">V</a></li>
+
+
+      <li><a class="collectionlink" href="#">W</a></li>
+
+
+      <li><a class="collectionlink" href="#">X</a></li>
+
+
+      <li><a class="collectionlink" href="#">Y</a></li>
+
+
+      <li><a class="collectionlink" href="#">Z</a></li>
+
+
+    </ul>
+    <a class="hideIndexPanel" href="#">Hide</a>
+
+    <div class="indexContent peopleIndexContent">
+      <p>&nbsp;</p>
+      <div id="indexCol1">
+        <ul>
+            <li>&raquo; <a href="/archive/browser?person_filter=202" title="'Ishrat Khanum">'Ishrat Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=203" title="Abbas Khan Tunikabuni Muntizam al-Mulk">Abbas Khan Tunika... (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=184" title="Afsanah Khanum">Afsanah Khanum (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=205" title="Akbar Mirza Bisharat al-Saltanah">Akbar Mirza Bisha... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=206" title="Amin al-Dawlah">Amin al-Dawlah (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=182" title="Aqa Ahmad">Aqa Ahmad (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=208" title="Aqa Hasan Mirza Shaykh al-Islam">Aqa Hasan Mirza S... (8)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=194" title="Aqa Mirza 'Abd al-Allah Amjad al-Vizarah">Aqa Mirza 'Abd al... (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=188" title="Aqa Mirza Hasan Khan Munshi Bashi">Aqa Mirza Hasan K... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=179" title="Aqa Mirza Hasan Shaykh al-Islam">Aqa Mirza Hasan S... (41)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=212" title="Aqa Mirza Husayn Shaykh al-Islam">Aqa Mirza Husayn ... (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=219" title="Aqa Mirza ʻAbd al-Allah Amjad al-Vizarah">Aqa Mirza ʻAbd al... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=213" title="Aqa Mirza Mahdi">Aqa Mirza Mahdi (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=214" title="Aqa Mirza Mahmud Shaykh al-Islam">Aqa Mirza Mahmud ... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=195" title="Aqa Mirza Mansur Shaykh al-Islam">Aqa Mirza Mansur ... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=183" title="Aqa Mirza Mufid Shaykh al-Islam">Aqa Mirza Mufid S... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=218" title="Aqa Mirza Sabuni">Aqa Mirza Sabuni (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=220" title="Ashraf al-Sadat">Ashraf al-Sadat (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=178" title="Asiyah Khanum">Asiyah Khanum (14)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=222" title="Atabak Aʾzam Amin al-Sultan">Atabak Aʾzam Amin... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=223" title="Aziz al-Muluk">Aziz al-Muluk (6)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=177" title="Balijah Khanum">Balijah Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=225" title="Bisharat Khanum">Bisharat Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=174" title="Farah al-Saltanah">Farah al-Saltanah (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=227" title="Fatimah Baygum Khanum">Fatimah Baygum Kh... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=189" title="Fatimah Sultan Khanum">Fatimah Sultan Kh... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=229" title="Gul Andam">Gul Andam (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=230" title="Haj Mirza Abu Turab">Haj Mirza Abu Turab (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=231" title="Haj Mirza Abu Turab Shaykh al-Islam">Haj Mirza Abu Tur... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=232" title="Haj Sayyid 'Ali Akbar">Haj Sayyid 'Ali A... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=181" title="Haj Umma Khanum">Haj Umma Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=176" title="Hajiyah Khanum">Hajiyah Khanum (7)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=235" title="Hajji Muhammad Qasim Tajir Hiravi">Hajji Muhammad Qa... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=236" title="Hasan Durudi">Hasan Durudi (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=282" title="ʻAziz al-Muluk">ʻAziz al-Muluk (4)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=284" title="ʻIshrat al-Muluk Khanum">ʻIshrat al-Muluk ... (5)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=283" title="ʻIshrat Khanum">ʻIshrat Khanum (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=180" title="Jahan Ara">Jahan Ara (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=196" title="Karbalai Musa">Karbalai Musa (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=151" title="Khadijah Khanum">Khadijah Khanum (1)</a></li>
+            </ul>
+          </div>
+          <div id="indexCol2">
+            <ul>
+            <li>&raquo; <a href="/archive/browser?person_filter=241" title="Khanum Jan">Khanum Jan (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=242" title="Khanum Khanumha">Khanum Khanumha (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=243" title="Mah Jahan Khanum">Mah Jahan Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=244" title="Manijah Safdari Qajar">Manijah Safdari Q... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=190" title="Maryam Khanum">Maryam Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=247" title="Mir Sayyid ʻAli Khan">Mir Sayyid ʻAli Khan (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=248" title="Mirza Buzurg Hakimbashi">Mirza Buzurg Haki... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=249" title="Mirza Hasan Durudi">Mirza Hasan Durudi (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=250" title="Mirza Hasan Khan Hakimbashi">Mirza Hasan Khan ... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=198" title="Mirza Ismaʻil Khan Shaykh al-Islam">Mirza Ismaʻil Kha... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=252" title="Mirza Mahdi Khan">Mirza Mahdi Khan (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=253" title="Mirza Qavam">Mirza Qavam (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=254" title="Mu'avin al-Mulk">Mu'avin al-Mulk (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=255" title="Mu'tamid al-Mulk">Mu'tamid al-Mulk (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=256" title="Muchul Khanum">Muchul Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=185" title="Mufakhar al-Dawlah">Mufakhar al-Dawlah (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=258" title="Munshi Bashi">Munshi Bashi (12)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=259" title="Mutamid al-Sultan">Mutamid al-Sultan (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=260" title="Muzaffar al-Saltanah">Muzaffar al-Saltanah (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=261" title="Muzaffar al-Saltanah Amir Tuman">Muzaffar al-Salta... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=262" title="Nushi Khanum">Nushi Khanum (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=263" title="Nushi Khanum Shaykh al-Islami">Nushi Khanum Shay... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=264" title="Qamar Khanum">Qamar Khanum (6)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=265" title="Rubabah Khanum">Rubabah Khanum (10)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=266" title="Rukhsarah Khanum">Rukhsarah Khanum (13)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=267" title="Sa'd al-Saltanah">Sa'd al-Saltanah (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=268" title="Sadiqah Khanum">Sadiqah Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=269" title="Sakinah Khanum">Sakinah Khanum (8)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=270" title="Salar Mansur">Salar Mansur (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=271" title="Sayf al-Islam">Sayf al-Islam (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=273" title="Sayyid al-Saltanah">Sayyid al-Saltanah (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=272" title="Sayyid Jamal al-Din Mojtahid">Sayyid Jamal al-D... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=274" title="Shah Jan">Shah Jan (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=275" title="Shahzadah Baygum">Shahzadah Baygum (5)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=276" title="Shawkat Khanum Ashraf al-Saltanah">Shawkat Khanum As... (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=277" title="Sidiqah Khanum">Sidiqah Khanum (5)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=278" title="Taj Khanum">Taj Khanum (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=279" title="Yumn al-Dawlah Dawlatshahi">Yumn al-Dawlah Da... (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=280" title="Zahra Khanum">Zahra Khanum (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?person_filter=281" title="Zivar Sarimi">Zivar Sarimi (1)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="indexContent subjectsIndexContent">
+      <p>&nbsp;</p>
+      <div id="indexCol1">
+        <ul>
+          <li>&raquo; <a href="/archive/browser?subject_filter=7" title="Bedding">Bedding (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=8" title="Behjat Ābad">Behjat Ābad (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=10" title="Black berries">Black berries (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=22" title="Charity">Charity (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=27" title="Clothing and dress">Clothing and dress (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=30" title="Consulates">Consulates (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=35" title="Deeds">Deeds (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=53" title="Gifts">Gifts (2)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=56" title="Gold">Gold (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=59" title="Grapes">Grapes (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=63" title="Household goods">Household goods (2)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=70" title="Illness">Illness (6)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=80" title="Lanterns">Lanterns (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=85" title="Mahmud Abad">Mahmud Abad (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=92" title="Medicine">Medicine (1)</a></li>
+            </ul>
+          </div>
+          <div id="indexCol2"><ul>
+          <li>&raquo; <a href="/archive/browser?subject_filter=95" title="Money">Money (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=99" title="Najaf">Najaf (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=228" title="Nanny">Nanny (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=105" title="Nuts">Nuts (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=113" title="Petition">Petition (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=115" title="Pilgrimages">Pilgrimages (2)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=128" title="Properties">Properties (3)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=133" title="Qazvin">Qazvin (2)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=139" title="Rasht">Rasht (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=140" title="Razjird">Razjird (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=150" title="Satin">Satin (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=154" title="Shahzadah 'Abd al-'Azim">Shahzadah 'Abd al... (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=181" title="Tobacco">Tobacco (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=183" title="Toothache">Toothache (1)</a></li>
+          <li>&raquo; <a href="/archive/browser?subject_filter=193" title="Weddings">Weddings (4)</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="indexContent placesIndexContent">
+      <p>&nbsp;</p>
+      <div id="indexCol1">
+        <ul>
+            <li>&raquo; <a href="/archive/browser?place_filter=1" title="Tehran, Iran">Tehran, Iran (89)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=2" title="Qazvin, Iran">Qazvin, Iran (12)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=3" title="Khak ʻAli, Iran">Khak ʻAli, Iran (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=4" title="Karbala, Iraq">Karbala, Iraq (5)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=5" title="Rasht, Iran">Rasht, Iran (3)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=6" title="Zanjan, Iran">Zanjan, Iran (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=7" title="Tunikabun, Iran">Tunikabun, Iran (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=8" title="Austin, Texas">Austin, Texas (1)</a></li>
+            </ul>
+          </div>
+          <div id="indexCol2">
+            <ul>
+            <li>&raquo; <a href="/archive/browser?place_filter=9" title="Paris, France">Paris, France (18)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=10" title="Ghent, Belgium">Ghent, Belgium (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=11" title="Isfahan, Iran">Isfahan, Iran (2)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=12" title="Cambridge, UK">Cambridge, UK (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=13" title="Switzerland">Switzerland (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=14" title="Germany">Germany (5)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=15" title="Nice, France">Nice, France (1)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=16" title="France">France (6)</a></li>
+            <li>&raquo; <a href="/archive/browser?place_filter=17" title="Hyderabad, India">Hyderabad, India (2)</a></li>
+        </ul>
+      </div>
+    </div>
+
+
+  </div>
+  <div id="browserMessage">
+    <p>
+        Displaying items : 1 - 100 | 417
+    </p>
+  </div>
+  <div id="browserContent" class="clearfix">
+
+      <div class="paginationBar clearfix">
+  <div class="sortnav paginate">
+    <div class="pagination"><span class="previous_page disabled">previous</span> <em>1</em> <a rel="next" href="/archive/browser?locale=en&amp;page=2">2</a> <a href="/archive/browser?locale=en&amp;page=3">3</a> <a href="/archive/browser?locale=en&amp;page=4">4</a> <a href="/archive/browser?locale=en&amp;page=5">5</a> <a class="next_page" rel="next" href="/archive/browser?locale=en&amp;page=2">next</a></div>
+  </div>
+  <ul class="sortnav" id="sort" style="float:left; width:200px;">
+    <li class="label">Sort By :</li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;sort_mode=alpha_dsc" class="module-link AZsort">A-Z</a><span class="down"></span></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;sort_mode=date_asc" class="module-link Datesort">Date</a><span class="up"></span></li>
+  </ul>
+  <ul class="sortnav" id="viewMode" style="float:left">
+    <li class="label">View Mode </li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;view_mode=list" class="module-link">List View</a></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;view_mode=grid" class="module-link">Grid View</a></li>
+  </ul>
+</div> 
+
+
+
+      <div id="items" class="list clearfix">
+
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1190"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1190.jpg" alt="A tragic story [draft]" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1190">view details</a>-->
+              <h3><a href="/archive/detail/1190">A tragic story [draft]</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1190"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1205"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1205.jpg" alt="A tragic story [partial typed copy]" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1205">view details</a>-->
+              <h3><a href="/archive/detail/1205">A tragic story [partial typed copy]</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1205"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/21"><img width="100" src="http://library.qajarwomen.org/thumbs/it_21.jpg" alt="Abbas Khan Tunikabuni Muntizam al-Mulk to Sakinah Khanum
+" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/21">view details</a>-->
+              <h3><a href="/archive/detail/21">Abbas Khan Tunikabuni Muntizam al-Mulk to Sakinah Khanum
+</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/21">Sakinah Khanum, daughter of Abbas Khan Tunikabuni Muntizam al-Mulk, wife of Aqa Hasan Mirza Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/167"><img width="100" src="http://library.qajarwomen.org/thumbs/it_167.jpg" alt="Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/167">view details</a>-->
+              <h3><a href="/archive/detail/167">Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/167">Abu al-Hasan Khan Baha Nizam writes to his brother-in-law Aqa Mirza Hasan Shaykh al-Islam about the death of his mother, Shahzadah Khanum (Galin Baji). She is the daughter of Bahram Mirza Mu'izz al-Dawlah and wife of Husayn Qoli Khan Buhlul. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/106"><img width="100" src="http://library.qajarwomen.org/thumbs/it_106.jpg" alt="Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 15 February 1907" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/106">view details</a>-->
+              <h3><a href="/archive/detail/106">Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 15 February 1907</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/106">Abu al-Hasan Khan Baha Nizam writes to his cousin and brother-in-law Aqa Mirza Hasan Shaykh al-Islam, seeking assistance to get his posting back at the Ministry of War. According to Bahram Sheikholeslami, he may have been dismissed  due to a dispute between Sipahdar A'zam, the Minister of War, and Aqa Mirza Hasan Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/94"><img width="100" src="http://library.qajarwomen.org/thumbs/it_94.jpg" alt="Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 29 October 1910" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/94">view details</a>-->
+              <h3><a href="/archive/detail/94">Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 29 October 1910</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/94">The letter concerns Abu al-Hasan Khan Baha Nizam's posting in Zanjan and events related to the constitutional revolution. Abu al-Hasan Khan Baha Nizam is a cousin and brother-in-law of Aqa Mirza Hasan Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/135"><img width="100" src="http://library.qajarwomen.org/thumbs/it_135.jpg" alt="Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 30 October 1911" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/135">view details</a>-->
+              <h3><a href="/archive/detail/135">Abu al-Hasan Khan Baha Nizam to Aqa Mirza Hasan Shaykh al-Islam, 30 October 1911</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/135">Abu al-Hasan Khan Baha Nizam writes to his brother-in-law, Aqa Mirza Hasan Shaykh al-Islam, about his dismissal from a post in the Ministry of War.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/95"><img width="100" src="http://library.qajarwomen.org/thumbs/it_95.jpg" alt="An unknown woman to Ashraf Sadat" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/95">view details</a>-->
+              <h3><a href="/archive/detail/95">An unknown woman to Ashraf Sadat</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/95">The recipient of the letter, Ashraf Sadat, is the daughter of Aqa Mirza Mansur Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/243"><img width="100" src="http://library.qajarwomen.org/thumbs/it_243.jpg" alt="Anvar al-Dawlah, daughter of Muzaffar al-Din Shah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/243">view details</a>-->
+              <h3><a href="/archive/detail/243">Anvar al-Dawlah, daughter of Muzaffar al-Din Shah</a></h3>
+              <h4>Nusrat Mozaffari Collection</h4>
+              <p> <a href="/archive/detail/243"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/23"><img width="100" src="http://library.qajarwomen.org/thumbs/it_23.jpg" alt="Aqa Ahmad to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/23">view details</a>-->
+              <h3><a href="/archive/detail/23">Aqa Ahmad to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/23">Aqa Ahmad, son of Haj Umma Khanum, is the maternal cousin of Aqa Hasan Mirza Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/209"><img width="100" src="http://library.qajarwomen.org/thumbs/it_209.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam at the Russian Consulate in Qazvin" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/209">view details</a>-->
+              <h3><a href="/archive/detail/209">Aqa Mirza Hasan Shaykh al-Islam at the Russian Consulate in Qazvin</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/209">Aga Mirza Hasan Shaykh al-Islam is seated in center of photograph.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/176"><img width="100" src="http://library.qajarwomen.org/thumbs/it_176.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to his wife Rukhsarah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/176">view details</a>-->
+              <h3><a href="/archive/detail/176">Aqa Mirza Hasan Shaykh al-Islam to his wife Rukhsarah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/176">Aqa Mirza Hasan Shaykh al-Islam writes a letter of apology to his wife Rukhsarah Khanum.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/177"><img width="100" src="http://library.qajarwomen.org/thumbs/it_177.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to his wife Rukhsarah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/177">view details</a>-->
+              <h3><a href="/archive/detail/177">Aqa Mirza Hasan Shaykh al-Islam to his wife Rukhsarah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/177">Aqa Mirza Hasan Shaykh al-Islam writes a letter of apology to his wife Rukhsarah Khanum.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/14"><img width="100" src="http://library.qajarwomen.org/thumbs/it_14.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/14">view details</a>-->
+              <h3><a href="/archive/detail/14">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/14">Aqa Mirza Hasan Shaykh al-Islam requests that Munshi Bashi purchase and send  household provisions, including grapes, watermelons, nuts, whey (kashk), bedding, lanterns and ice boxes. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/16"><img width="100" src="http://library.qajarwomen.org/thumbs/it_16.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/16">view details</a>-->
+              <h3><a href="/archive/detail/16">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/16">Aqa Hasan Mirza Shaykh al-Islam requests that Munshi Bashi ask Sayyid Jamal al-Din Mojtahid, a cleric in Qazvin, to pray for ʻIshrat Khanum, his daughter, who is suffering from fainting spells. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/18"><img width="100" src="http://library.qajarwomen.org/thumbs/it_18.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/18">view details</a>-->
+              <h3><a href="/archive/detail/18">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/18">Aqa Mirza Hasan Shaykh al-Islam writes to Munshi Bashi about the arrangements for the wedding of his daughter, Aziz al-Muluk. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/98"><img width="100" src="http://library.qajarwomen.org/thumbs/it_98.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/98">view details</a>-->
+              <h3><a href="/archive/detail/98">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/98">Aqa Mirza Hasan Shaykh al-Islam writes to Munshi Bashi, his administrator, about the dismissal of ʻIshrat al-Muluk Khanum's nanny and pregnancy of ʻAziz al-Muluk. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/99"><img width="100" src="http://library.qajarwomen.org/thumbs/it_99.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/99">view details</a>-->
+              <h3><a href="/archive/detail/99">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/99">Aqa Mirza Hasan Shaykh al-Islam writes to Munshi Bashi, his administrator, about the management of the properties and a transaction involving the daughter of Sa'd al-Saltanah. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/117"><img width="100" src="http://library.qajarwomen.org/thumbs/it_117.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/117">view details</a>-->
+              <h3><a href="/archive/detail/117">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/117"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/129"><img width="100" src="http://library.qajarwomen.org/thumbs/it_129.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 17 September 1912" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/129">view details</a>-->
+              <h3><a href="/archive/detail/129">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 17 September 1912</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/129">Aqa Mirza Hasan Shaykh al-Islam writes to Munshi Bashi about the seizure of Qamar Khanum's properties. According to Bahram Sheikholeslami, the stamp on the envelope is Hasan al-Husayni because Aqa Mirza Hasan Shaykh al-Islam had not yet been bestowed the family title of Shaykh al-Islam.   </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/130"><img width="100" src="http://library.qajarwomen.org/thumbs/it_130.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 23 August 1913" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/130">view details</a>-->
+              <h3><a href="/archive/detail/130">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 23 August 1913</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/130"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/145"><img width="100" src="http://library.qajarwomen.org/thumbs/it_145.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/145">view details</a>-->
+              <h3><a href="/archive/detail/145">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 31 March 1909</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/145">Aqa Mirza Hasan Shaykh al-Islam writes to Munshi Bashi about the distribution of a shipment of lettuce among family members. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/87"><img width="100" src="http://library.qajarwomen.org/thumbs/it_87.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 9 April 1913" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/87">view details</a>-->
+              <h3><a href="/archive/detail/87">Aqa Mirza Hasan Shaykh al-Islam to Munshi Bashi, 9 April 1913</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/87">Following the death of his father, Aqa Mirza Hasan Shaykh al-Islam orders Munshi Bashi to give Rafʻat al-Saltanah Mulkara, one of his father's wives, 700 tumans to settle an inheritance dispute. Aqa Mirza Hasan Shaykh al-Islam is the son of Sitarah Buhlul and Aqa Mirza Masʻud Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/171"><img width="100" src="http://library.qajarwomen.org/thumbs/it_171.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Rukhsarah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/171">view details</a>-->
+              <h3><a href="/archive/detail/171">Aqa Mirza Hasan Shaykh al-Islam to Rukhsarah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/171">Aqa Mirza Hasan Shaykh al-Islam writes to Rukhsarah Khanum about his first trip to Tehran. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/142"><img width="100" src="http://library.qajarwomen.org/thumbs/it_142.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/142">view details</a>-->
+              <h3><a href="/archive/detail/142">Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/142"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/141"><img width="100" src="http://library.qajarwomen.org/thumbs/it_141.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 8 April 1916" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/141">view details</a>-->
+              <h3><a href="/archive/detail/141">Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 8 April 1916</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/141"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/140"><img width="100" src="http://library.qajarwomen.org/thumbs/it_140.jpg" alt="Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, February 1916" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/140">view details</a>-->
+              <h3><a href="/archive/detail/140">Aqa Mirza Hasan Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, February 1916</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/140"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/113"><img width="100" src="http://library.qajarwomen.org/thumbs/it_113.jpg" alt="Aqa Mirza Mansur Shaykh al-Islam to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/113">view details</a>-->
+              <h3><a href="/archive/detail/113">Aqa Mirza Mansur Shaykh al-Islam to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/113"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/174"><img width="100" src="http://library.qajarwomen.org/thumbs/it_174.jpg" alt="Aqa Mirza Masʻud Shaykh al-Islam to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/174">view details</a>-->
+              <h3><a href="/archive/detail/174">Aqa Mirza Masʻud Shaykh al-Islam to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/174">Aqa Mirza Masʻud Shaykh al-Islam writes to his son, Aqa Mirza Hasan Shaykh al-Islam, about his problems with some of the women in the family.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/24"><img width="100" src="http://library.qajarwomen.org/thumbs/it_24.jpg" alt="Aqa Mirza Mufid Shaykh al-Islam to Shahzadah Baygum
+
+" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/24">view details</a>-->
+              <h3><a href="/archive/detail/24">Aqa Mirza Mufid Shaykh al-Islam to Shahzadah Baygum
+
+</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/24">Aqa Mirza Mufid Shaykh al-Islam writes to his daughter Shahzadah Baygum. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/25"><img width="100" src="http://library.qajarwomen.org/thumbs/it_25.jpg" alt="Aqa Mirza Mufid Shaykh al-Islam to Shahzadah Baygum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/25">view details</a>-->
+              <h3><a href="/archive/detail/25">Aqa Mirza Mufid Shaykh al-Islam to Shahzadah Baygum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/25">Aqa Mirza Mufid Shaykh al-Islam writes to his daughter Shahzadah Baygum. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/247"><img width="100" src="http://library.qajarwomen.org/thumbs/it_247.jpg" alt="Arghavan Baji" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/247">view details</a>-->
+              <h3><a href="/archive/detail/247">Arghavan Baji</a></h3>
+              <h4>Nusrat Mozaffari Collection</h4>
+              <p> <a href="/archive/detail/247">Arghavan Baji (seated), female slave of Shukuh al-Saltanah, mother of Muzaffar al-Din Shah </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1468"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1468.jpg" alt="Article about Sadiqah Dawlatabadi, [August 1961]" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1468">view details</a>-->
+              <h3><a href="/archive/detail/1468">Article about Sadiqah Dawlatabadi, [August 1961]</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1468"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/138"><img width="100" src="http://library.qajarwomen.org/thumbs/it_138.jpg" alt="Ashraf al-Sadat to Sayyid ʻAbd al-Allah Amjad al-Vizarah " /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/138">view details</a>-->
+              <h3><a href="/archive/detail/138">Ashraf al-Sadat to Sayyid ʻAbd al-Allah Amjad al-Vizarah </a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/138"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/84"><img width="100" src="http://library.qajarwomen.org/thumbs/it_84.jpg" alt="Asiyah Khanum to Munshi Bashi about purchase of clothes and fruits" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/84">view details</a>-->
+              <h3><a href="/archive/detail/84">Asiyah Khanum to Munshi Bashi about purchase of clothes and fruits</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/84">Asiyah Khanum orders Munshi Bashi, one of her father's administrators, to purchase clothing and fruit for the household. Asiyah Khanum is the daughter of Rukhsarah Khanum and Aqa Mirza Hasan Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/244"><img width="100" src="http://library.qajarwomen.org/thumbs/it_244.jpg" alt="Asiyah Khanum, daughter of Muhammad 'Ali Shah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/244">view details</a>-->
+              <h3><a href="/archive/detail/244">Asiyah Khanum, daughter of Muhammad 'Ali Shah</a></h3>
+              <h4></h4>
+              <p> <a href="/archive/detail/244"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1032"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1032.jpg" alt="Association of Patriotic Women of Iran to Sadiqah Dawlatabadi, 20 January 1924" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1032">view details</a>-->
+              <h3><a href="/archive/detail/1032">Association of Patriotic Women of Iran to Sadiqah Dawlatabadi, 20 January 1924</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1032"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/259"><img width="100" src="http://library.qajarwomen.org/thumbs/it_259.jpg" alt="Azarmidukht and Suzanne Charles at front gate of palace of Nizhat al-Saltanah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/259">view details</a>-->
+              <h3><a href="/archive/detail/259">Azarmidukht and Suzanne Charles at front gate of palace of Nizhat al-Saltanah</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/259">Left to right: Azarmidukht, daughter of Zinat al-Saltanah and Malik Mansur Mirza, and Suzanne Charles, wife of Amir Ismaʻil Mirza.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/216"><img width="100" src="http://library.qajarwomen.org/thumbs/it_216.jpg" alt="Badiʻ al-Zaman Dawlatshahi with children" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/216">view details</a>-->
+              <h3><a href="/archive/detail/216">Badiʻ al-Zaman Dawlatshahi with children</a></h3>
+              <h4>Kamran Dowlatshahi Collection</h4>
+              <p> <a href="/archive/detail/216">Clockwise from top-left: Zinat Nik Tabʻ, Badiʻ al-Zaman Dawlatshahi (seated), Bizhan Nik Tabʻ, Farrukh Mirza, Muhammad Sadiq Mirza Dawlatshahi. Two men standing are unidentified.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/11"><img width="100" src="http://library.qajarwomen.org/thumbs/it_11.jpg" alt="Balijah Khanum to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/11">view details</a>-->
+              <h3><a href="/archive/detail/11">Balijah Khanum to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/11">Balijah Khanum is the daughter of the paternal uncle of Aqa Mirza Hasan Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/265"><img width="100" src="http://library.qajarwomen.org/thumbs/it_265.jpg" alt="Best Student Award, Ninth Grade" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/265">view details</a>-->
+              <h3><a href="/archive/detail/265">Best Student Award, Ninth Grade</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/265">Certificate affixed on inside cover of Asadi Tusi's Garshasbnamah </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/264"><img width="100" src="http://library.qajarwomen.org/thumbs/it_264.jpg" alt="Best Student Award, Sixth Grade" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/264">view details</a>-->
+              <h3><a href="/archive/detail/264">Best Student Award, Sixth Grade</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/264">Certificate affixed on inside cover of Sa'di's Gulistan </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/194"><img width="100" src="http://library.qajarwomen.org/thumbs/it_194.jpg" alt="Calligraphy of Akhtar al-Muluk" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/194">view details</a>-->
+              <h3><a href="/archive/detail/194">Calligraphy of Akhtar al-Muluk</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/194">Akhtar al-Muluk, daughter of Sayyid ʻAbd al-Allah Amjad al-Vizarah and Shahr Banu Alvandi, student of the calligrapher Aqa Shaykh Riza </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/195"><img width="100" src="http://library.qajarwomen.org/thumbs/it_195.jpg" alt="Calligraphy of Akhtar al-Muluk" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/195">view details</a>-->
+              <h3><a href="/archive/detail/195">Calligraphy of Akhtar al-Muluk</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/195">Akhtar al-Muluk, daughter of Sayyid ʻAbd al-Allah Amjad al-Vizarah and Shahr Banu Alvandi, student of the calligrapher Aqa Shaykh Riza </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/271"><img width="100" src="http://library.qajarwomen.org/thumbs/it_271.jpg" alt="Chador" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/271">view details</a>-->
+              <h3><a href="/archive/detail/271">Chador</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/271">Belonged to Shahzadah Baygum, daughter Ziyaʼ al-Saltanah and Haj Mirza Masʻud Ansari, wife of Mir Husayn Khan Mir Findiriski </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/230"><img width="100" src="http://library.qajarwomen.org/thumbs/it_230.jpg" alt="Child with doll" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/230">view details</a>-->
+              <h3><a href="/archive/detail/230">Child with doll</a></h3>
+              <h4>Joel Montague Collection</h4>
+              <p> <a href="/archive/detail/230"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/120"><img width="100" src="http://library.qajarwomen.org/thumbs/it_120.jpg" alt="City Court of Qavzin to Munshi Bashi, 24 February 1914" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/120">view details</a>-->
+              <h3><a href="/archive/detail/120">City Court of Qavzin to Munshi Bashi, 24 February 1914</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/120">The city court of Qazvin requests assistance to mediate a dispute between a man and woman.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/108"><img width="100" src="http://library.qajarwomen.org/thumbs/it_108.jpg" alt="Clothier to Jahan Ara Hajiyah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/108">view details</a>-->
+              <h3><a href="/archive/detail/108">Clothier to Jahan Ara Hajiyah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/108">According to Bahram Sheikholeslami, the letter may concern the trousseau of Asiyah Khanum. Jahan Ara Hajiyah Khanum, daughter of Mulki Jahan Khanum and Mirza Hasan Khan Hakimbashi, is the grandmother of Asiyah Khanum. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/197"><img width="100" src="http://library.qajarwomen.org/thumbs/it_197.jpg" alt="Copy of endowment of daughter of Sayyid ʻAli Khan Kabir, wife of Haj Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/197">view details</a>-->
+              <h3><a href="/archive/detail/197">Copy of endowment of daughter of Sayyid ʻAli Khan Kabir, wife of Haj Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+			  	<p class="meta">ca. 1897 or 1898</p>
+              <p> <a href="/archive/detail/197"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/199"><img width="100" src="http://library.qajarwomen.org/thumbs/it_199.jpg" alt="Copy of will of Aqa Mirza Masʻud Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/199">view details</a>-->
+              <h3><a href="/archive/detail/199">Copy of will of Aqa Mirza Masʻud Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/199"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/250"><img width="100" src="http://library.qajarwomen.org/thumbs/it_250.jpg" alt="Daftar al Muluk, daughter of Najm al-Saltanah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/250">view details</a>-->
+              <h3><a href="/archive/detail/250">Daftar al Muluk, daughter of Najm al-Saltanah</a></h3>
+              <h4></h4>
+              <p> <a href="/archive/detail/250"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/102"><img width="100" src="http://library.qajarwomen.org/thumbs/it_102.jpg" alt="Daughter of Qavam al-Dawlah to Jahan Ara Hajiyah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/102">view details</a>-->
+              <h3><a href="/archive/detail/102">Daughter of Qavam al-Dawlah to Jahan Ara Hajiyah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/102">The author of the letter requests that Jahan Ara Hajiyah Khanum find her a female singer from Qavzin. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/202"><img width="100" src="http://library.qajarwomen.org/thumbs/it_202.jpg" alt="Diamond brooch " /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/202">view details</a>-->
+              <h3><a href="/archive/detail/202">Diamond brooch </a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/202">Belonged to Ziba Chihrah Mir Findiriski, daughter of Mir Husayn Khan Mir Findiriski and Shahzadah Baygum, wife of Sayyid Husayn Majd al-Islam Qazvini. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/45"><img width="100" src="http://library.qajarwomen.org/thumbs/it_45.jpg" alt="Document granting power of attorney to Aqa Mirza Hasan Shaykh al-Islam on behalf of Fatimah Baygum Khanum, wife of the deceased Muzaffar al-Saltanah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/45">view details</a>-->
+              <h3><a href="/archive/detail/45">Document granting power of attorney to Aqa Mirza Hasan Shaykh al-Islam on behalf of Fatimah Baygum Khanum, wife of the deceased Muzaffar al-Saltanah</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/45"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/189"><img width="100" src="http://library.qajarwomen.org/thumbs/it_189.jpg" alt="Dowry registry of Asiyah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/189">view details</a>-->
+              <h3><a href="/archive/detail/189">Dowry registry of Asiyah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/189"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/190"><img width="100" src="http://library.qajarwomen.org/thumbs/it_190.jpg" alt="Dowry registry of Sakinah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/190">view details</a>-->
+              <h3><a href="/archive/detail/190">Dowry registry of Sakinah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/190">Belonged to Sakinah Khanum, daughter of ʻAbbas Khan Tunikabuni Muntizam al-Mulk, wife of Aqa Mirza Hasan Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1035"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1035.jpg" alt="Edward Browne to Sadiqah Dawlatabadi, 14 October 1924
+" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1035">view details</a>-->
+              <h3><a href="/archive/detail/1035">Edward Browne to Sadiqah Dawlatabadi, 14 October 1924
+</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1035"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/204"><img width="100" src="http://library.qajarwomen.org/thumbs/it_204.jpg" alt="Emerald and diamond earrings " /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/204">view details</a>-->
+              <h3><a href="/archive/detail/204">Emerald and diamond earrings </a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/204">Belonged to Azar Shaykh al-Islami, who received it from her mother-in-law Akram al-Saltanah. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1040"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1040.jpg" alt="Employment contract of Sadiqah Dawlatabadi, 18 May 1931" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1040">view details</a>-->
+              <h3><a href="/archive/detail/1040">Employment contract of Sadiqah Dawlatabadi, 18 May 1931</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1040"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/193"><img width="100" src="http://library.qajarwomen.org/thumbs/it_193.jpg" alt="Endowment and will of Shahzadah Baygum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/193">view details</a>-->
+              <h3><a href="/archive/detail/193">Endowment and will of Shahzadah Baygum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+			  	<p class="meta">ca. 24 March 1905</p>
+              <p> <a href="/archive/detail/193">Shahzadah Baygum, daughter of Sharaf Jahan Khanum and Aqa Mirza Mufid Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1182"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1182.jpg" alt="Entry in scrapbook of Nasir [Dawlatabadi], 22 January 1940" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1182">view details</a>-->
+              <h3><a href="/archive/detail/1182">Entry in scrapbook of Nasir [Dawlatabadi], 22 January 1940</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1182"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1033"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1033.jpg" alt="Envelope, Association of Patriotic Women of Iran to Sadiqah Dawlatabadi, 20 January 1924" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1033">view details</a>-->
+              <h3><a href="/archive/detail/1033">Envelope, Association of Patriotic Women of Iran to Sadiqah Dawlatabadi, 20 January 1924</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1033"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1462"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1462.jpg" alt="Equal Rights, 23 October 1926" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1462">view details</a>-->
+              <h3><a href="/archive/detail/1462">Equal Rights, 23 October 1926</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1462"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/164"><img width="100" src="http://library.qajarwomen.org/thumbs/it_164.jpg" alt="Fakhr al-Muluk to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 14 July 1920" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/164">view details</a>-->
+              <h3><a href="/archive/detail/164">Fakhr al-Muluk to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 14 July 1920</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/164">According to Bahram Sheikholeslami, Fakhr al-Muluk was an actress and entertainer in Tehran. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/215"><img width="100" src="http://library.qajarwomen.org/thumbs/it_215.jpg" alt="Fakhr al-Saltanah Alburz" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/215">view details</a>-->
+              <h3><a href="/archive/detail/215">Fakhr al-Saltanah Alburz</a></h3>
+              <h4>Kamran Dowlatshahi Collection</h4>
+              <p> <a href="/archive/detail/215">Fakhr al-Saltanah Alburz, daughter of Mirza Shafiʻ Khan Mustawfi, wife of Ziyaʼ al-Dawlah Alburz </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/254"><img width="100" src="http://library.qajarwomen.org/thumbs/it_254.jpg" alt="Fakhr al-Taj Dawlatabadi" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/254">view details</a>-->
+              <h3><a href="/archive/detail/254">Fakhr al-Taj Dawlatabadi</a></h3>
+              <h4>Mahdokht Sanati Collection</h4>
+			  	<p class="meta">ca. 1945 or 1946</p>
+              <p> <a href="/archive/detail/254">Fakhr al-Taj Dawlatabadi, daughter of Marziah Khanum and Haj Mirza Hadi Dawlatabadi. According to verso caption, the photograph was taken when she was eighteen years of age. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/267"><img width="100" src="http://library.qajarwomen.org/thumbs/it_267.jpg" alt="Farah al-Saltanah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/267">view details</a>-->
+              <h3><a href="/archive/detail/267">Farah al-Saltanah</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/267">Poem (verso) written by Farah al-Saltaneh, daughter of Huma Khanum and ʻAbbas Mirza Qajar Iftikhar Nizam, wife of Malik Mansur Mirza. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/268"><img width="100" src="http://library.qajarwomen.org/thumbs/it_268.jpg" alt="Farah al-Saltanah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/268">view details</a>-->
+              <h3><a href="/archive/detail/268">Farah al-Saltanah</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/268">Poem (verso) written by Farah al-Saltaneh, daughter of Huma Khanum and ʻAbbas Mirza Qajar Iftikhar Nizam, wife of Malik Mansur Mirza. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/6"><img width="100" src="http://library.qajarwomen.org/thumbs/it_6.jpg" alt="Farah al-Saltanah to Aziz al-Muluk" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/6">view details</a>-->
+              <h3><a href="/archive/detail/6">Farah al-Saltanah to Aziz al-Muluk</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/6">Farah al-Saltanah, daughter of Yumn al-Dawlah Dawlatshahi and spouse of Aqa Mirza Hasan Shaykh al-Islam, writes to her step-daughter, Aziz al-Mulk.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/258"><img width="100" src="http://library.qajarwomen.org/thumbs/it_258.jpg" alt="Farah al-Saltanah, Taj al-Muluk and Afsar al-Muluk" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/258">view details</a>-->
+              <h3><a href="/archive/detail/258">Farah al-Saltanah, Taj al-Muluk and Afsar al-Muluk</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+			  	<p class="meta">ca. 19 April 1905</p>
+              <p> <a href="/archive/detail/258">Left to right: Farah al-Saltanah, Taj al-Muluk and Afsar al-Muluk </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/224"><img width="100" src="http://library.qajarwomen.org/thumbs/it_224.jpg" alt="Fatimah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/224">view details</a>-->
+              <h3><a href="/archive/detail/224">Fatimah Khanum</a></h3>
+              <h4>Hafez Farmayan Collection</h4>
+              <p> <a href="/archive/detail/224"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/225"><img width="100" src="http://library.qajarwomen.org/thumbs/it_225.jpg" alt="Fatimah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/225">view details</a>-->
+              <h3><a href="/archive/detail/225">Fatimah Khanum</a></h3>
+              <h4>Hafez Farmayan Collection</h4>
+              <p> <a href="/archive/detail/225"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1479"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1479.jpg" alt="Firaydun Sanʻati [to Qamar Taj], 21 February 1935" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1479">view details</a>-->
+              <h3><a href="/archive/detail/1479">Firaydun Sanʻati [to Qamar Taj], 21 February 1935</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1479"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/186"><img width="100" src="http://library.qajarwomen.org/thumbs/it_186.jpg" alt="First page of marriage contract" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/186">view details</a>-->
+              <h3><a href="/archive/detail/186">First page of marriage contract</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+			  	<p class="meta">ca. 12 February 1905</p>
+              <p> <a href="/archive/detail/186">Marriage certificate of Aqa Mirza Masʻud Shaykh al-Islam and Sitarah Buhlul, daughter of Tamasp Quli Khan Qazvini. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1280"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1280.jpg" alt="Fragment, [1956 or 1957]" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1280">view details</a>-->
+              <h3><a href="/archive/detail/1280">Fragment, [1956 or 1957]</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1280">Carbon copy of report on activities of Kanun-i banuvan. Starts on page 2.  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/252"><img width="100" src="http://library.qajarwomen.org/thumbs/it_252.jpg" alt="Gawhar Khanum, Ziba Khanum and Darab Mirza" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/252">view details</a>-->
+              <h3><a href="/archive/detail/252">Gawhar Khanum, Ziba Khanum and Darab Mirza</a></h3>
+              <h4></h4>
+              <p> <a href="/archive/detail/252">Dedicated to Nusrat al-Saltanah </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/272"><img width="100" src="http://library.qajarwomen.org/thumbs/it_272.jpg" alt="Gawhariyah" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/272">view details</a>-->
+              <h3><a href="/archive/detail/272">Gawhariyah</a></h3>
+              <h4>Harvard College Library Collection</h4>
+              <p> <a href="/archive/detail/272">A compilation of poems by Shams al-Shu'ara' initiated by Mirza Ahmad Khan Fatih al-Mulk in May 1901 and completed in July 1902. According to the book's introduction, Gawhar Khanum is the daughter of Musa Khan and Tayqun Khanum (a daughter of Fath 'Ali Shah).  </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/90"><img width="100" src="http://library.qajarwomen.org/thumbs/it_90.jpg" alt="Ghulam Hasan to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/90">view details</a>-->
+              <h3><a href="/archive/detail/90">Ghulam Hasan to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/90">Ghulam Hasan, a servant, writes to Aqa Mirza Hasan Shaykh al-Islam to protest his dismissal by a wife Aqa Mirza Masʻud Shaykh al-Islam. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/234"><img width="100" src="http://library.qajarwomen.org/thumbs/it_234.jpg" alt="Girl with doll" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/234">view details</a>-->
+              <h3><a href="/archive/detail/234">Girl with doll</a></h3>
+              <h4>Joel Montague Collection</h4>
+              <p> <a href="/archive/detail/234"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/236"><img width="100" src="http://library.qajarwomen.org/thumbs/it_236.jpg" alt="Girl with doll" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/236">view details</a>-->
+              <h3><a href="/archive/detail/236">Girl with doll</a></h3>
+              <h4>Joel Montague Collection</h4>
+              <p> <a href="/archive/detail/236"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/206"><img width="100" src="http://library.qajarwomen.org/thumbs/it_206.jpg" alt="Gloves of Shahzadah Baygum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/206">view details</a>-->
+              <h3><a href="/archive/detail/206">Gloves of Shahzadah Baygum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/206">Shahzadah Baygum, daughter Ziyaʼ al-Saltanah and Haj Mirza Masʻud Ansari, wife of Mir Husayn Khan Mir Findiriski </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/93"><img width="100" src="http://library.qajarwomen.org/thumbs/it_93.jpg" alt="Grandson of Bahram Mirza Muʻizz al-Dawlah to Aqa Mirza Hasan Shaykh al-Islam, 10 October 1895" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/93">view details</a>-->
+              <h3><a href="/archive/detail/93">Grandson of Bahram Mirza Muʻizz al-Dawlah to Aqa Mirza Hasan Shaykh al-Islam, 10 October 1895</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/93">The grandson of Bahram Mirza Muʻizz al-Dawlah writes to his maternal cousin, Aqa Mirza Hasan Shaykh al-Islam, about his experiences as postmaster of Rasht. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/211"><img width="100" src="http://library.qajarwomen.org/thumbs/it_211.jpg" alt="Group portrait" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/211">view details</a>-->
+              <h3><a href="/archive/detail/211">Group portrait</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/211">Right to left: Hidayat Allah Hakim Bashi, Aqa Mirza Buzurg Shaykh al-Islam, ʻAziz al-Muluk, Aqa Mirza Masʻud Shaykh al-Islam, Aqa Mirza Hasan Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/207"><img width="100" src="http://library.qajarwomen.org/thumbs/it_207.jpg" alt="Gulabtun" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/207">view details</a>-->
+              <h3><a href="/archive/detail/207">Gulabtun</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/207">Belonged to Navvab al-Hajiyah, daughter of Sayyid Husayn Majd al-Islam Qazvini and Ziba Chihrah Mir Findiriski, wife of Aqa Mirza Masʻud Shaykh al-Islam </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/217"><img width="100" src="http://library.qajarwomen.org/thumbs/it_217.jpg" alt="Gulrukh Salar" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/217">view details</a>-->
+              <h3><a href="/archive/detail/217">Gulrukh Salar</a></h3>
+              <h4>Kamran Dowlatshahi Collection</h4>
+              <p> <a href="/archive/detail/217">Gulrukh Salar (seated, right), mother of Badiʻ al-Zaman Dawlatshahi, wife of Muhammad Husayn Mirza Muʼayyid al-Dawlah </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/686"><img width="100" src="http://library.qajarwomen.org/thumbs/it_686.jpg" alt="Hadiyat al-muhibb" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/686">view details</a>-->
+              <h3><a href="/archive/detail/686">Hadiyat al-muhibb</a></h3>
+              <h4>Harvard College Library Collection</h4>
+              <p> <a href="/archive/detail/686">Lithograph, originally written in 1894 or 1895 [1312]. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/132"><img width="100" src="http://library.qajarwomen.org/thumbs/it_132.jpg" alt="Haj Mirza Abu Turab Shaykh al-Islam to Aqa Mirza Husayn Shaykh al-Islam, 20 November 1909" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/132">view details</a>-->
+              <h3><a href="/archive/detail/132">Haj Mirza Abu Turab Shaykh al-Islam to Aqa Mirza Husayn Shaykh al-Islam, 20 November 1909</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/132"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/180"><img width="100" src="http://library.qajarwomen.org/thumbs/it_180.jpg" alt="Haj Mirza Abu Turab Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 27 June 1910" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/180">view details</a>-->
+              <h3><a href="/archive/detail/180">Haj Mirza Abu Turab Shaykh al-Islam to Sayyid ʻAbd al-Allah Amjad al-Vizarah, 27 June 1910</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/180"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/208"><img width="100" src="http://library.qajarwomen.org/thumbs/it_208.jpg" alt="Haj Mirza Abu Turab Shaykh al-Islam with his son, Jalal Sultan, and daughter, Nushi Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/208">view details</a>-->
+              <h3><a href="/archive/detail/208">Haj Mirza Abu Turab Shaykh al-Islam with his son, Jalal Sultan, and daughter, Nushi Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/208"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/22"><img width="100" src="http://library.qajarwomen.org/thumbs/it_22.jpg" alt="Haj Umma Khanum to Rukhsarah Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/22">view details</a>-->
+              <h3><a href="/archive/detail/22">Haj Umma Khanum to Rukhsarah Khanum</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/22">Haj Umma Khanum, daughter of Aqa Mirza Mufid Shaykh al-Isalm and Sharaf Jahan Khanum, and wife of Hidayat Allah, invites Rukhsarah Khanum to visit her in the village of Razjird. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/9"><img width="100" src="http://library.qajarwomen.org/thumbs/it_9.jpg" alt="Hajiyah Khanum to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/9">view details</a>-->
+              <h3><a href="/archive/detail/9">Hajiyah Khanum to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/9">Hajiyah Khanum, daughter of Aqa Mirza Mufid Shaykh al-Islam and Sharaf Jahan Khanum, requests financial assistance for the family of her son, Mirza Mahdi Khan. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/83"><img width="100" src="http://library.qajarwomen.org/thumbs/it_83.jpg" alt="Hidayat Allah Hakimbashi to Aqa Mirza Hasan Shaykh al-Islam" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/83">view details</a>-->
+              <h3><a href="/archive/detail/83">Hidayat Allah Hakimbashi to Aqa Mirza Hasan Shaykh al-Islam</a></h3>
+              <h4>Bahram Sheikholeslami Collection</h4>
+              <p> <a href="/archive/detail/83">The letter is written by Hidayat Allah Hakimbashi, maternal uncle of Aqa Mirza Hasan Shaykh al-Islam's wife, Rukhsarah Khanum. </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1076"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1076.jpg" alt="Hotel invoice, [September 1947]" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1076">view details</a>-->
+              <h3><a href="/archive/detail/1076">Hotel invoice, [September 1947]</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1076"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1078"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1078.jpg" alt="Hotel invoice, 24 September 1947" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1078">view details</a>-->
+              <h3><a href="/archive/detail/1078">Hotel invoice, 24 September 1947</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1078"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1074"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1074.jpg" alt="Hotel invoice, 26 November 1947" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1074">view details</a>-->
+              <h3><a href="/archive/detail/1074">Hotel invoice, 26 November 1947</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1074"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1075"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1075.jpg" alt="Hotel invoice, 26 November 1947" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1075">view details</a>-->
+              <h3><a href="/archive/detail/1075">Hotel invoice, 26 November 1947</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1075"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/1079"><img width="100" src="http://library.qajarwomen.org/thumbs/it_1079.jpg" alt="Hotel invoice, 8 October 1947" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/1079">view details</a>-->
+              <h3><a href="/archive/detail/1079">Hotel invoice, 8 October 1947</a></h3>
+              <h4>Sadiqah Dawlatabadi Collection</h4>
+              <p> <a href="/archive/detail/1079"> </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/219"><img width="100" src="http://library.qajarwomen.org/thumbs/it_219.jpg" alt="Huma Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/219">view details</a>-->
+              <h3><a href="/archive/detail/219">Huma Khanum</a></h3>
+              <h4>Kamran Dowlatshahi Collection</h4>
+              <p> <a href="/archive/detail/219">Huma Khanum, about 60 years of age; wife of Mirza Zayn al-ʻAbidin Alburz Muʼtaman al-Sultan, mother of Ziyaʼ al-Dawlah Alburz </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/261"><img width="100" src="http://library.qajarwomen.org/thumbs/it_261.jpg" alt="Huma Khanum" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/261">view details</a>-->
+              <h3><a href="/archive/detail/261">Huma Khanum</a></h3>
+              <h4>Taj al-Muluk Tajbakhsh Zamandar Collection</h4>
+              <p> <a href="/archive/detail/261">Huma Khanum, wife of ʻAbbas Mirza Qajar Iftikhar Nizam, mother of Afsar al-Muluk </a></p>
+            </div>
+          </div>
+          <div class="listItem clearfix">
+            <div class="item">
+              <a href="/archive/detail/231"><img width="100" src="http://library.qajarwomen.org/thumbs/it_231.jpg" alt="Husband and wife" /></a>
+            </div>
+            <div class="description">
+              <!--<a class="view" href="/archive/detail/231">view details</a>-->
+              <h3><a href="/archive/detail/231">Husband and wife</a></h3>
+              <h4>Joel Montague Collection</h4>
+              <p> <a href="/archive/detail/231"> </a></p>
+            </div>
+          </div>
+      </div><!-- end of items -->
+
+      <div class="paginationBar clearfix">
+  <div class="sortnav paginate">
+    <div class="pagination"><span class="previous_page disabled">previous</span> <em>1</em> <a rel="next" href="/archive/browser?locale=en&amp;page=2">2</a> <a href="/archive/browser?locale=en&amp;page=3">3</a> <a href="/archive/browser?locale=en&amp;page=4">4</a> <a href="/archive/browser?locale=en&amp;page=5">5</a> <a class="next_page" rel="next" href="/archive/browser?locale=en&amp;page=2">next</a></div>
+  </div>
+  <ul class="sortnav" id="sort" style="float:left; width:200px;">
+    <li class="label">Sort By :</li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;sort_mode=alpha_dsc" class="module-link AZsort">A-Z</a><span class="down"></span></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;sort_mode=date_asc" class="module-link Datesort">Date</a><span class="up"></span></li>
+  </ul>
+  <ul class="sortnav" id="viewMode" style="float:left">
+    <li class="label">View Mode </li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;view_mode=list" class="module-link">List View</a></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;view_mode=grid" class="module-link">Grid View</a></li>
+  </ul>
+</div> 
+
+  </div>
+</div> <!-- end browser --><!-- end featured -->
+
+
+        <!-- end rails template content -->
+        
+      </div> <!-- end container -->
+    </div><!-- end content -->
+    <div id="pageFooterWrapper">
+  <div id="pageFooter">
+    <div class="columnWrapperFooter group">
+      <div class="leftWrapperFooter">
+        <ul class="footerNav">
+          <li><a href="/about">about</a></li>
+          <li><a href="/credits">credits</a></li>
+          <li><a href="/permissions">permissions</a></li>
+        </ul>
+        <p>Copyright &copy; 2010  WWQI. All rights reserved.</p>
+        <p></p>
+      <!-- AddThis Button BEGIN -->
+      <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+      <div class="addthis_toolbox addthis_default_style">
+      <a class="addthis_button_facebook"></a>
+      <a class="addthis_button_email"></a>
+      <a class="addthis_button_favorites"></a>
+      <a class="addthis_button_print"></a>
+      <span class="addthis_separator">|</span>
+      <a href="http://www.addthis.com/bookmark.php?v=250&amp;username=qajar" class="addthis_button_expanded">More</a>
+      </div>
+      <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar"></script>
+      <!-- AddThis Button END -->
+          </div><!-- closes leftWrapperFooter -->
+      <div class="rightWrapperFooter">
+        <a class="noimage" href="http://www.harvard.edu" target="_blank"><img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
+        <ul class="footerNav">
+          <li><a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog  </a></li>
+          <li><a href="http://www.fas.harvard.edu/~iohp/" target="_blank">Iranian Oral History Project</a></li>
+          <li><a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA Visual Resources</a></li>
+          <li><a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a></li>
+          <li><a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS Archival Finding Aids</a></li>
+          <li><a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">Ali Khan Album</a></li>
+        </ul>
+      </div><!-- closes rightWrapperFooter -->
+    </div><!-- closes columnWrapperFooter group -->
+  </div>
+</div>
+
+    
+  </body>
+</html>
