@@ -1,11 +1,9 @@
 class Admin::PeriodsController < Admin::AdminController
 
-  before_filter :admin_required, :except => [:index, :show]
-
   # GET /periods
   # GET /periods.xml
   def index
-    @periods = Period.all
+    @periods = Period.order('position')
 
     respond_to do |format|
       format.html # index.html.erb

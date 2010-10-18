@@ -26,7 +26,6 @@
             <td><%= show_check place.publish %></td>
             <td><%= truncate(place.notes) unless place.notes.nil? %></td>
             <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_place_path(place) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_place_path(place) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_place_path(place), :confirm => 'Are you sure?', :method => :delete %></td>
-
           </tr>
         <% end %>
       </table>

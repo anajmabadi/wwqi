@@ -1,35 +1,36 @@
 <% @page_description = t(:index_description) -%>
-<% @page_title = t(:period).capitalize -%>
-<h1>Listing periods</h1>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Caption</th>
-    <th>Description</th>
-    <th><%= Period.human_attribute_name(:start_year) %></th>
-    <th>End year</th>
-    <th>Position</th>
-    <th><%= t(:publish) %></th>
-    <th><%= t(:actions) %></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_period_path, :show_all_path => admin_periods_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Title En</th>
+          <th>Title Fa</th>
+          <th>Caption</th>
+          <th>Start at</th>
+          <th>End at</th>
+          <th>Position</th>
+          <th>Publish</th>
+          <th>Actions</th>
+        </tr>
 
-<% @periods.each do |period| %>
-  <tr>
-    <td><%= period.title %></td>
-    <td><%= period.caption %></td>
-    <td><%= period.description %></td>
-    <td><%= period.start_year %></td>
-    <td><%= period.end_year %></td>
-    <td><%= period.position %></td>
-    <td><%= period.publish %></td>
-    <td><%= link_to 'Show', admin_period_path(period) %> | <%= link_to 'Edit', edit_admin_period_path(period) %> | <%= link_to 'Destroy', admin_period_path(period), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+        <% @periods.each do |period| %>
+          <tr>
+            <td><%= link_to period.title_en, admin_period_path(period) %></td>
+            <td class="persianOnly"><%= link_to period.title_fa, admin_period_path(period) %></td>
+            <td><%= truncate(period.caption) unless period.caption.nil? %></td>
+            <td><%= period.start_at.strftime('%Y') %></td>
+            <td><%= period.end_at.strftime('%Y') %></td>
+            <td><%= period.position %></td>
+            <td><%= show_check period.publish %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_period_path(period) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_period_path(period) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_period_path(period), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
 
-<br />
-
-<%= link_to 'New period', new_admin_period_path %>
