@@ -19,6 +19,14 @@
         </div>
       </td>
     </tr>
+        <tr>
+      <td colspan="2">
+        <div class="field">
+          <%= label @subject, :subject_type_id %><br />
+          <%= link_to(@subject.subject_type.name, admin_subject_type_path(@subject.subject_type)) unless @subject.subject_type.nil? %>
+        </div>
+      </td>
+    </tr>
     <tr>
       <td>
         <div class="field">

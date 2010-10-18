@@ -51,7 +51,7 @@ class Admin::SubjectsController < Admin::AdminController
   # GET /subjects/new.xml
   def new
     @subject = Subject.new
-
+    @subject_types = SubjectType.select_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @subject }
@@ -61,13 +61,14 @@ class Admin::SubjectsController < Admin::AdminController
   # GET /subjects/1/edit
   def edit
     @subject = Subject.find(params[:id])
+    @subject_types = SubjectType.select_list
   end
 
   # POST /subjects
   # POST /subjects.xml
   def create
     @subject = Subject.new(params[:subject])
-
+    @subject_types = SubjectType.select_list
     respond_to do |format|
       if @subject.save
         format.html { redirect_to(admin_subject_path(@subject), :notice => 'Subject was successfully created.') }
@@ -83,7 +84,7 @@ class Admin::SubjectsController < Admin::AdminController
   # PUT /subjects/1.xml
   def update
     @subject = Subject.find(params[:id])
-
+    @subject_types = SubjectType.select_list
     respond_to do |format|
       if @subject.update_attributes(params[:subject])
         format.html { redirect_to(admin_subject_path(@subject), :notice => 'Subject was successfully updated.') }
