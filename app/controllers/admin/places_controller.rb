@@ -44,7 +44,7 @@ class Admin::PlacesController < Admin::AdminController
 
     respond_to do |format|
       if @place.save
-        format.html { redirect_to(@place, :notice => 'Place was successfully created.') }
+        format.html { redirect_to(admin_place_path(@place), :notice => 'Place was successfully created.') }
         format.xml  { render :xml => @place, :status => :created, :location => @place }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::PlacesController < Admin::AdminController
 
     respond_to do |format|
       if @place.update_attributes(params[:place])
-        format.html { redirect_to(@place, :notice => 'Place was successfully updated.') }
+        format.html { redirect_to(admin_place_path(@place), :notice => 'Place was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::PlacesController < Admin::AdminController
     @place.destroy
 
     respond_to do |format|
-      format.html { redirect_to(places_url) }
+      format.html { redirect_to(admin_places_url) }
       format.xml  { head :ok }
     end
   end

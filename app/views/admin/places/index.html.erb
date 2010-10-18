@@ -1,35 +1,36 @@
-<h1>Listing places</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Latitude</th>
-    <th>Longitude</th>
-    <th>X</th>
-    <th>Y</th>
-    <th>Publish</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_place_path, :show_all_path => admin_places_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Name</th>
+          <th>Latitude</th>
+          <th>Longitude</th>
+          <th>X</th>
+          <th>Y</th>
+          <th>Publish</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
 
-<% @places.each do |place| %>
-  <tr>
-    <td><%= place.name %></td>
-    <td><%= place.latitude %></td>
-    <td><%= place.longitude %></td>
-    <td><%= place.x %></td>
-    <td><%= place.y %></td>
-    <td><%= place.publish %></td>
-    <td><%= place.notes %></td>
-    <td><%= link_to 'Show', admin_place_path(place) %></td>
-    <td><%= link_to 'Edit', edit_admin_place_path(place) %></td>
-    <td><%= link_to 'Destroy', admin_place_path(place), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+        <% @places.each do |place| %>
+          <tr>
+            <td><%= link_to(place.name, admin_place_path(place)) %></td>
+            <td><%= place.latitude %></td>
+            <td><%= place.longitude %></td>
+            <td><%= place.x %></td>
+            <td><%= place.y %></td>
+            <td><%= show_check place.publish %></td>
+            <td><%= truncate(place.notes) unless place.notes.nil? %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_place_path(place) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_place_path(place) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_place_path(place), :confirm => 'Are you sure?', :method => :delete %></td>
 
-<br />
-
-<%= link_to 'New Place', new_admin_place_path %>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
