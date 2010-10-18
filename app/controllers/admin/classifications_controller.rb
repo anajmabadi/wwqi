@@ -86,10 +86,13 @@ class Admin::ClassificationsController < Admin::AdminController
   # DELETE /classifications/1.xml
   def destroy
     @classification = Classification.find(params[:id])
+    @item = @classification.item
     @classification.destroy
+    @classification = nil
 
     respond_to do |format|
       format.html { redirect_to(admin_classifications_url) }
+      format.js { render :template => 'admin/items/remove_classification_from_item' }
       format.xml  { head :ok }
     end
   end

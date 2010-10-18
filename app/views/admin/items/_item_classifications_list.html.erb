@@ -7,8 +7,10 @@
         </ul><h4><%=  link_to classification.subject.subject_type.name, admin_subject_type_path(classification.subject.subject_type) %>:</h4><ul>
           <% current_type_id = classification.subject.subject_type_id -%>
         <% end %>
-        <li><%= link_to truncate(classification.subject.name), admin_classification_path(classification) %>
-  <%# link_to image_tag("delete.png", :alt => 'delete'), admin_categorization_path(classification, :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %></li>
+        <li>
+          <%= link_to truncate(classification.subject.name), admin_classification_path(classification) %>
+          <%= link_to image_tag("delete.png", :alt => 'delete'), admin_classification_path(classification), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
+        </li>
       <% end -%>
     </ul>
   </div>
