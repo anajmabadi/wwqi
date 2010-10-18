@@ -1,12 +1,15 @@
 <% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
+
+<% @back_path = session[:admin_repositories_index_url] ||= admin_repositories_path %>
+<% @show_path = admin_repository_path(@repository) %>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title = t(:repository).capitalize + ' | ' + t(:edit).capitalize %></h1>
-  <p><%= link_to 'Show', @repository %> |
-<%= link_to 'Back', admin_repositories_path %></p>
-  <%= render 'form' %>
-  <p><%= link_to 'Show', @repository %> |
-<%= link_to 'Back', admin_repositories_path %></p>
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
 </div>
-
-

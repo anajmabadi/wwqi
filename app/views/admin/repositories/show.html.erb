@@ -2,53 +2,55 @@
 <% @page_title = t(:repository).capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1>
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :repository => @repository %>
 
-  <p>
-    <%= link_to 'Edit', edit_admin_repository_path(@repository) %> |
-    <%= link_to 'Back', admin_repositories_path %>
-  </p>
-
-  <p id="notice"><%= notice %></p>
-
-  <p>
-    <b>Name_en:</b>
-    <%= @repository.name_en %>
-  </p>
-
-  <p>
-    <b>Name_fa:</b>
-    <%= @repository.name_fa %>
-  </p>
-
-  <p><b>Url:</b>
-    <%= @repository.url %>
-  </p>
-  
-  <p>
-    <b>Owner:</b>
-    <%= @repository.owner %>
-  </p>
-
-  <p>
-    <b>Publish:</b>
-    <%= @repository.publish %>
-  </p>
-
-  <p>
-    <b>Notes:</b>
-    <%= @repository.notes %>
-  </p>
-
-  <p><b>Items:</b></p>
-  <ul>
-  <% @repository.passports.each do |passport|  -%>
-    <li><%= link_to passport.item.title, item_url(passport.item) %> (<%= link_to 'repository link', passport.full_url, :target => '_blank' %>) </li>
-  <% end -%>
-  </ul>
-  
-  <p>
-    <%= link_to 'Edit', edit_admin_repository_path(@repository) %> |
-    <%= link_to 'Back', admin_repositories_path %>
-  </p>
+    <table class="global" width="100%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @repository, :name_en %><br />
+            <%= @repository.name_en %>
+          </div></td>
+        <td>
+          <div class="field">
+            <%= label @repository, :name_fa %><br />
+            <%= @repository.name_fa %>
+          </div>
+        </td></tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @repository, :owner %><br />
+            <%= @repository.owner.name unless @repository.owner.nil? %>
+          </div></td><td>
+          <div class="field">
+            <%= label @repository, :publish %><br />
+            <%= @repository.publish %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @repository, :notes %><br />
+            <%= @repository.notes %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <p><b>Items:</b></p>
+          <ul>
+            <% @repository.passports.each do |passport|  -%>
+              <% unless passport.item.nil? || passport.repository.nil? %>
+              <li><%= link_to passport.item.to_label, admin_item_url(passport.item) %> --> <%= link_to 'show in external repository', passport.full_url, :target => '_blank' %> </li>
+              <% end %>
+            <% end -%>
+          </ul>
+        </td>
+      </tr>
+    </table>
+    <%= render 'nav_show_header_bar', :repository => @repository %>
+  </div>
 </div>
