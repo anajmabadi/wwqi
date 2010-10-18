@@ -44,7 +44,7 @@ class Admin::PanelsController < Admin::AdminController
 
     respond_to do |format|
       if @panel.save
-        format.html { redirect_to(@panel, :notice => 'Panel was successfully created.') }
+        format.html { redirect_to(admin_panel_path(@panel), :notice => 'Panel was successfully created.') }
         format.xml  { render :xml => @panel, :status => :created, :location => @panel }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::PanelsController < Admin::AdminController
 
     respond_to do |format|
       if @panel.update_attributes(params[:panel])
-        format.html { redirect_to(@panel, :notice => 'Panel was successfully updated.') }
+        format.html { redirect_to(admin_panel_path(@panel), :notice => 'Panel was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::PanelsController < Admin::AdminController
     @panel.destroy
 
     respond_to do |format|
-      format.html { redirect_to(panels_url) }
+      format.html { redirect_to(admin_panels_url) }
       format.xml  { head :ok }
     end
   end

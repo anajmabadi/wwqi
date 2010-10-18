@@ -47,7 +47,7 @@ class Admin::OwnersController < Admin::AdminController
 
     respond_to do |format|
       if @owner.save
-        format.html { redirect_to(@owner, :notice => 'Owner was successfully created.') }
+        format.html { redirect_to(admin_owners_path(@owner), :notice => 'Owner was successfully created.') }
         format.xml  { render :xml => @owner, :status => :created, :location => @owner }
       else
         format.html { render :action => "new" }
@@ -63,7 +63,7 @@ class Admin::OwnersController < Admin::AdminController
 
     respond_to do |format|
       if @owner.update_attributes(params[:owner])
-        format.html { redirect_to(@owner, :notice => 'Owner was successfully updated.') }
+        format.html { redirect_to(admin_owners_path(@owner), :notice => 'Owner was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -79,7 +79,7 @@ class Admin::OwnersController < Admin::AdminController
     @owner.destroy
 
     respond_to do |format|
-      format.html { redirect_to(owners_url) }
+      format.html { redirect_to(admin_owners_url) }
       format.xml  { head :ok }
     end
   end

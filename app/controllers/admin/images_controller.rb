@@ -44,7 +44,7 @@ class Admin::ImagesController < Admin::AdminController
 
     respond_to do |format|
       if @image.save
-        format.html { redirect_to(@image, :notice => 'Image was successfully created.') }
+        format.html { redirect_to(admin_image_path(@image), :notice => 'Image was successfully created.') }
         format.xml  { render :xml => @image, :status => :created, :location => @image }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::ImagesController < Admin::AdminController
 
     respond_to do |format|
       if @image.update_attributes(params[:image])
-        format.html { redirect_to(@image, :notice => 'Image was successfully updated.') }
+        format.html { redirect_to(admin_image_path(@image), :notice => 'Image was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::ImagesController < Admin::AdminController
     @image.destroy
 
     respond_to do |format|
-      format.html { redirect_to(images_url) }
+      format.html { redirect_to(admin_images_url) }
       format.xml  { head :ok }
     end
   end

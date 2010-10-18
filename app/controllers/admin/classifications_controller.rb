@@ -54,7 +54,7 @@ class Admin::ClassificationsController < Admin::AdminController
     @item = @classification.item
     respond_to do |format|
       if @classification.save
-        format.html { redirect_to(@classification, :notice => 'Classification was successfully created.') }
+        format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }
         format.js { render :template => 'admin/items/add_classification_to_item' }
       else
@@ -73,7 +73,7 @@ class Admin::ClassificationsController < Admin::AdminController
     @subjects = get_menu_subjects
     respond_to do |format|
       if @classification.update_attributes(params[:classification])
-        format.html { redirect_to(@classification, :notice => 'Classification was successfully updated.') }
+        format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -89,7 +89,7 @@ class Admin::ClassificationsController < Admin::AdminController
     @classification.destroy
 
     respond_to do |format|
-      format.html { redirect_to(classifications_url) }
+      format.html { redirect_to(admin_classifications_url) }
       format.xml  { head :ok }
     end
   end

@@ -44,7 +44,7 @@ class Admin::ClipTypesController < Admin::AdminController
 
     respond_to do |format|
       if @clip_type.save
-        format.html { redirect_to(@clip_type, :notice => 'Clip type was successfully created.') }
+        format.html { redirect_to(admin_clip_type_path(@clip_type), :notice => 'Clip type was successfully created.') }
         format.xml  { render :xml => @clip_type, :status => :created, :location => @clip_type }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::ClipTypesController < Admin::AdminController
 
     respond_to do |format|
       if @clip_type.update_attributes(params[:clip_type])
-        format.html { redirect_to(@clip_type, :notice => 'Clip type was successfully updated.') }
+        format.html { redirect_to(admin_clip_type_path(@clip_type), :notice => 'Clip type was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::ClipTypesController < Admin::AdminController
     @clip_type.destroy
 
     respond_to do |format|
-      format.html { redirect_to(clip_types_url) }
+      format.html { redirect_to(admin_clip_types_url) }
       format.xml  { head :ok }
     end
   end

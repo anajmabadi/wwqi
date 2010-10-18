@@ -45,7 +45,7 @@ class Admin::PeriodsController < Admin::AdminController
 
     respond_to do |format|
       if @period.save
-        format.html { redirect_to(@period, :notice => 'Period was successfully created.') }
+        format.html { redirect_to(admin_period_path(@period), :notice => 'Period was successfully created.') }
         format.xml  { render :xml => @period, :status => :created, :location => @period }
       else
         format.html { render :action => "new" }
@@ -61,7 +61,7 @@ class Admin::PeriodsController < Admin::AdminController
 
     respond_to do |format|
       if @period.update_attributes(params[:period])
-        format.html { redirect_to(@period, :notice => 'Period was successfully updated.') }
+        format.html { redirect_to(admin_period_path(@period), :notice => 'Period was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -77,7 +77,7 @@ class Admin::PeriodsController < Admin::AdminController
     @period.destroy
 
     respond_to do |format|
-      format.html { redirect_to(periods_url) }
+      format.html { redirect_to(admin_periods_path) }
       format.xml  { head :ok }
     end
   end

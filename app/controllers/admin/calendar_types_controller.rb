@@ -44,7 +44,7 @@ class Admin::CalendarTypesController < Admin::AdminController
 
     respond_to do |format|
       if @calendar_type.save
-        format.html { redirect_to(@calendar_type, :notice => 'Calendar type was successfully created.') }
+        format.html { redirect_to(admin_calendar_type_path(@calendar_type), :notice => 'Calendar type was successfully created.') }
         format.xml  { render :xml => @calendar_type, :status => :created, :location => @calendar_type }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::CalendarTypesController < Admin::AdminController
 
     respond_to do |format|
       if @calendar_type.update_attributes(params[:calendar_type])
-        format.html { redirect_to(@calendar_type, :notice => 'Calendar type was successfully updated.') }
+        format.html { redirect_to(admin_calendar_type_path(@calendar_type), :notice => 'Calendar type was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::CalendarTypesController < Admin::AdminController
     @calendar_type.destroy
 
     respond_to do |format|
-      format.html { redirect_to(calendar_types_url) }
+      format.html { redirect_to(admin_calendar_types_url) }
       format.xml  { head :ok }
     end
   end

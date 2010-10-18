@@ -1,8 +1,14 @@
 <% @page_description = t(:new_description) -%>
-<% @page_title = t(:period).capitalize -%>
+<% @page_title = controller.controller_name.capitalize.humanize + ' | ' + t(:new).capitalize -%>
 
-<h1>New <%=  t(:period) %></h1>
+<% @back_path = session[:admin_periods_index_url] ||= admin_periods_path %>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', admin_periods_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+    </div>
+  </div>
+</div>

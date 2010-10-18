@@ -44,7 +44,7 @@ class Admin::RelationshipsController < Admin::AdminController
 
     respond_to do |format|
       if @relationship.save
-        format.html { redirect_to(@relationship, :notice => 'Relationship was successfully created.') }
+        format.html { redirect_to(admin_relationship_path(@relationship), :notice => 'Relationship was successfully created.') }
         format.xml  { render :xml => @relationship, :status => :created, :location => @relationship }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class Admin::RelationshipsController < Admin::AdminController
 
     respond_to do |format|
       if @relationship.update_attributes(params[:relationship])
-        format.html { redirect_to(@relationship, :notice => 'Relationship was successfully updated.') }
+        format.html { redirect_to(admin_relationship_path(@relationship), :notice => 'Relationship was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class Admin::RelationshipsController < Admin::AdminController
     @relationship.destroy
 
     respond_to do |format|
-      format.html { redirect_to(relationships_url) }
+      format.html { redirect_to(admin_relationships_path) }
       format.xml  { head :ok }
     end
   end

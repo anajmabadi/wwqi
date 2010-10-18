@@ -45,7 +45,7 @@ class Admin::AppearancesController < Admin::AdminController
 
     respond_to do |format|
       if @appearance.save
-        format.html { redirect_to(@appearance, :notice => 'Appearance was successfully created.') }
+        format.html { redirect_to(admin_appearance_path(@appearance), :notice => 'Appearance was successfully created.') }
         format.xml  { render :xml => @appearance, :status => :created, :location => @appearance }
       else
         format.html { render :action => "new" }
@@ -61,7 +61,7 @@ class Admin::AppearancesController < Admin::AdminController
 
     respond_to do |format|
       if @appearance.update_attributes(params[:appearance])
-        format.html { redirect_to(@appearance, :notice => 'Appearance was successfully updated.') }
+        format.html { redirect_to(admin_appearance_path(@appearance), :notice => 'Appearance was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -77,7 +77,7 @@ class Admin::AppearancesController < Admin::AdminController
     @appearance.destroy
 
     respond_to do |format|
-      format.html { redirect_to(appearances_url) }
+      format.html { redirect_to(admin_appearances_url) }
       format.xml  { head :ok }
     end
   end

@@ -48,7 +48,7 @@ class Admin::CategorizationsController < Admin::AdminController
     @categories = category_list
     respond_to do |format|
       if @categorization.save
-        format.html { redirect_to(@categorization, :notice => 'Categorization was successfully created.') }
+        format.html { redirect_to(admin_categorization_path(@categorization), :notice => 'Categorization was successfully created.') }
         format.xml  { render :xml => @categorization, :status => :created, :location => @categorization }
       else
         format.html { render :action => "new" }
@@ -64,7 +64,7 @@ class Admin::CategorizationsController < Admin::AdminController
     @categories = category_list
     respond_to do |format|
       if @categorization.update_attributes(params[:categorization])
-        format.html { redirect_to(@categorization, :notice => 'Categorization was successfully updated.') }
+        format.html { redirect_to(admin_categorization_path(@categorization), :notice => 'Categorization was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -80,7 +80,7 @@ class Admin::CategorizationsController < Admin::AdminController
     @categorization.destroy
 
     respond_to do |format|
-      format.html { redirect_to(categorizations_url) }
+      format.html { redirect_to(admin_categorizations_url) }
       format.xml  { head :ok }
     end
   end
