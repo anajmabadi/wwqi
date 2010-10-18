@@ -26,7 +26,7 @@ class Item < ActiveRecord::Base
   has_many :repositories, :through => :passports
   
   # globalize2 accessors 
-  translates :title, :credit, :description, :display_date, :creator_label, :publisher
+  translates :title, :credit, :description, :display_date, :creator_label, :publisher, :transcript
   globalize_accessors :fa, :en
   default_scope :include => [:translations]
   
