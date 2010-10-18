@@ -1,6 +1,15 @@
-<h1>Editing owner</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = session[:admin_owners_index_url] ||= admin_owners_path %>
+<% @show_path = admin_owner_path(@owner) %>
 
-<%= link_to 'Show', @owner %> |
-<%= link_to 'Back', admin_owners_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

@@ -1,45 +1,36 @@
-<h1>Listing owners</h1>
+<% @page_description = t(:index_description) -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Address</th>
-    <th>Address2</th>
-    <th>State province</th>
-    <th>Postal code</th>
-    <th>Country</th>
-    <th>Telephone</th>
-    <th>Email</th>
-    <th>Url</th>
-    <th>Contact</th>
-    <th>Terms</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_owner_path, :show_all_path => admin_owners_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Name</th>
+          <th>State province</th>
+          <th>Postal code</th>
+          <th>Country</th>
+          <th>Telephone</th>
+          <th>Email</th>
+          <th>Url</th>
+          <th>Actions</th>
+        </tr>
 
-<% @owners.each do |owner| %>
-  <tr>
-    <td><%= owner.name %></td>
-    <td><%= owner.address %></td>
-    <td><%= owner.address2 %></td>
-    <td><%= owner.state_province %></td>
-    <td><%= owner.postal_code %></td>
-    <td><%= owner.country %></td>
-    <td><%= owner.telephone %></td>
-    <td><%= owner.email %></td>
-    <td><%= owner.url %></td>
-    <td><%= owner.contact %></td>
-    <td><%= owner.terms %></td>
-    <td><%= owner.notes %></td>
-    <td><%= link_to 'Show', admin_owner_path(owner) %></td>
-    <td><%= link_to 'Edit', edit_admin_owner_path(owner) %></td>
-    <td><%= link_to 'Destroy', admin_owner_path(owner), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
+        <% @owners.each do |owner| %>
+          <tr>
+            <td><%= link_to owner.name, admin_owner_path(owner) %></td>
+            <td><%= owner.state_province %></td>
+            <td><%= owner.postal_code %></td>
+            <td><%= owner.country %></td>
+            <td><%= owner.telephone %></td>
+            <td><%= owner.email %></td>
+            <td><%= link_to owner.url,owner.url unless owner.url.nil? %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_owner_path(owner) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_owner_path(owner) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_owner_path(owner), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
+</div>
 
-<br />
-
-<%= link_to 'New owner', new_admin_owner_path %>
