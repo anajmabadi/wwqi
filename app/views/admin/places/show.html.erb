@@ -1,38 +1,64 @@
-<p>
-  <b>Name:</b>
-  <%= @place.name %>
-</p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Latitude:</b>
-  <%= @place.latitude %>
-</p>
-
-<p>
-  <b>Longitude:</b>
-  <%= @place.longitude %>
-</p>
-
-<p>
-  <b>X:</b>
-  <%= @place.x %>
-</p>
-
-<p>
-  <b>Y:</b>
-  <%= @place.y %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @place.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @place.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_place_path(@place) %> |
-<%= link_to 'Back', admin_places_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :place => @place %>
+    <table class="global" width="80%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @place, :name_en %><br />
+            <%= @place.name_en %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @place, :name_fa %><br />
+            <%= @place.name_fa %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @place, :latitude %><br />
+            <%= @place.latitude %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @place, :longitude %><br />
+            <%= @place.longitude %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @place, :x %><br />
+            <%= @place.x %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @place, :y %><br />
+            <%= @place.y %>
+          </div>
+        </td></tr>
+      <tr><td>
+          <div class="field">
+            <%= label @place, :publish %><br />
+            <%= @place.publish %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @place, :notes %><br />
+            <%= @place.notes %>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>

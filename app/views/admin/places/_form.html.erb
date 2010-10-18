@@ -1,35 +1,49 @@
 <%= form_for([:admin, @place]) do |f| %>
   <%= f.error_messages %>
+  <%= f.hidden_field :lock_version %>
+  <table class="global" width="80%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
+        <div class="field">
+          <%= f.label :name_en %><br />
+          <%= f.text_field :name_en %>
+        </div>
+      </td>
+      <td>  <div class="field">
+          <%= f.label :name_fa %><br />
+          <%= f.text_field :name_fa %>
+        </div>
+      </td>
+    </tr>
+    <tr><td>
+        <div class="field">
+          <%= f.label :latitude %><br />
+          <%= f.text_field :latitude %>
+        </div>
+        <div class="field">
+          <%= f.label :longitude %><br />
+          <%= f.text_field :longitude %>
+        </div>
+        <div class="field">
+          <%= f.label :x %><br />
+          <%= f.text_field :x %>
+        </div>
+        <div class="field">
+          <%= f.label :y %><br />
+          <%= f.text_field :y %>
+        </div>
+        <div class="field">
+          <%= f.label :publish %><br />
+          <%= f.check_box :publish %>
+        </div>
+        <div class="field">
+          <%= f.label :notes %><br />
+          <%= f.text_area :notes %>
+        </div>
+        <div class="actions">
+          <%= f.submit %>
+        </div>
+      </td></tr>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :latitude %><br />
-    <%= f.text_field :latitude %>
-  </div>
-  <div class="field">
-    <%= f.label :longitude %><br />
-    <%= f.text_field :longitude %>
-  </div>
-  <div class="field">
-    <%= f.label :x %><br />
-    <%= f.text_field :x %>
-  </div>
-  <div class="field">
-    <%= f.label :y %><br />
-    <%= f.text_field :y %>
-  </div>
-  <div class="field">
-    <%= f.label :publish %><br />
-    <%= f.check_box :publish %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  </table>
 <% end %>
