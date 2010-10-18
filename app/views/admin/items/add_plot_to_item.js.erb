@@ -1,0 +1,2 @@
+$('#item_plots_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_plots_list', :locals => {:plots => @item.plots } ) %>');
+$('#addPlot>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/add_plot_button', :locals => {:plot => @plot, :item => @item }) %>');

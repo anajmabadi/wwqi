@@ -158,6 +158,18 @@
           </div>
         </td>
       </tr>
+      <tr><td colspan="2">
+          <div id="item_plots_list">
+            <%= render 'item_plots_list', :plots => @item.plots %>
+          </div>
+          <div id="addPlot">
+            <% if @plot.nil? %>
+              <%= render :partial => 'admin/items/add_plot_button', :locals => { :item => @item } %>
+            <% else %>
+              <%= render :partial => 'admin/items/add_plot_form', :locals => { :plot => @plot } %>
+            <% end %>
+          </div>
+        </td></tr>
       <tr>
         <td colspan="2">
           <h3>Media:</h3>

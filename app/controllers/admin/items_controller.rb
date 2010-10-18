@@ -156,6 +156,32 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
 
+    # remote functions for showing and hiding the add plot form
+  def show_add_plot_to_item
+    # retrieve @repositories for instant additions
+    @item = Item.find(params[:id])
+    @places = Place.select_list
+    @max_position = Plot.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+    @plot = Plot.new(
+      :item_id => params[:id],
+      :publish => true,
+      :position => @max_position + 1
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_plot_to_item
+    @plot = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
   # remote functions for showing and hiding the add passport form
   def show_add_passport_to_item
     # retrieve @repositories for instant additions

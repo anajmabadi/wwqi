@@ -1,0 +1,11 @@
+<span><div id="item_plots_list">
+    <h3>Plots:</h3>
+      <ul>
+        <% unless plots.empty? -%>
+          <%= render(plots) %>
+        <% else -%>
+          <li>No plots.</li>
+        <% end -%>
+      </ul>
+  </div>
+</span>

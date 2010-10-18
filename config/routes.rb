@@ -27,6 +27,8 @@ Qajar::Application.routes.draw do
         post :hide_add_passport_to_item
         post :show_add_classification_to_item
         post :hide_add_classification_to_item
+        post :show_add_plot_to_item
+        post :hide_add_plot_to_item
       end
     end
 
