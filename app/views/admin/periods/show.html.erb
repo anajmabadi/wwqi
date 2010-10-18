@@ -1,43 +1,84 @@
-<p>
-  <b>Title:</b>
-  <%= @period.title %>
-</p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:show).capitalize -%>
 
-<p>
-  <b>Caption:</b>
-  <%= @period.caption %>
-</p>
-
-<p>
-  <b>Description:</b>
-  <%= @period.description %>
-</p>
-
-<p>
-  <b>Start year:</b>
-  <%= @period.start_year %>
-</p>
-
-<p>
-  <b>End year:</b>
-  <%= @period.end_year %>
-</p>
-
-<p>
-  <b>Position:</b>
-  <%= @period.position %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @period.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @period.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_period_path(@period) %> |
-<%= link_to 'Back', admin_periods_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :period => @period %>
+    <table class="global" width="80%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @period, :title_en %><br />
+            <%= @period.title_en %>
+          </div>
+        </td>
+        <td>
+          <div class="field persianOnly">
+            <%= label @period, :title_fa %><br />
+            <%= @period.title_fa %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @period, :caption_en %><br />
+            <%= @period.caption_en %>
+          </div>
+        </td>
+        <td>
+          <div class="field persianOnly">
+            <%= label @period, :caption_fa %><br />
+            <%= @period.caption_fa %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @period, :description_en %><br />
+            <%= @period.description_en %>
+          </div></td>
+        <td>
+          <div class="field persianOnly">
+            <%= label @period, :description_fa %><br />
+            <%= @period.description_fa %>
+          </div></td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @period, :start_at %><br />
+            <%= @period.start_at %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @period, :end_at %><br />
+            <%= @period.end_at %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @period, :position %><br />
+            <%= @period.position %>
+          </div></td>
+        <td>
+          <div class="field">
+            <%= label @period, :publish %><br />
+            <%= @period.publish %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="field">
+            <%= label @period, :notes %><br />
+            <%= @period.notes %>
+          </div></td>
+      </tr>
+    </table> 
+  </div>
+</div>
