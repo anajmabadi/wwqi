@@ -16,6 +16,8 @@ class Item < ActiveRecord::Base
   has_many :images
   has_many :appearances
   has_many :people, :through => :appearances
+  has_many :plots, :order => 'plots.position'
+  has_many :places, :through => :plots, :order => 'plots.position'
   has_many :panels
   has_many :exhibitions, :through => :panels, :order => 'panels.position'
   has_many :clips, :order => :position
@@ -189,6 +191,11 @@ class Item < ActiveRecord::Base
 
   def to_label
     return truncate(self.title, :length => 60) + " (#{self.id.to_s})"
+  end
+
+
+  def self.select_list
+    return self.all(:conditions => ['item_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, item_translations.title', :order => 'item_translations.title').map {|item| [item.to_label, item.id]}
   end
   
   private

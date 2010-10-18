@@ -1,0 +1,40 @@
+
+<%= form_for([:admin, @plot]) do |f| %>
+  <% if @plot.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plot.errors.count, "error") %> prohibited this plot from being saved:</h2>
+
+      <ul>
+        <% @plot.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <table class="global" width="80%" cellpadding="0" cellspacing="0">
+    <tr><td><div class="field">
+          <%= f.label :item %><br />
+          <%= f.select :item_id, @items %>
+        </div></td>
+        <td><div class="field">
+          <%= f.label :place %><br />
+          <%= f.select :place_id, @places %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :publish %><br />
+          <%= f.check_box :publish %>
+        </div></td>
+      <td><div class="field">
+          <%= f.label :position %><br />
+          <%= f.text_field :position %>
+        </div></td></tr>
+    <tr><td><div class="field">
+          <%= f.label :notes %><br />
+          <%= f.text_area :notes, :rows=>3 %>
+        </div></td></tr>
+    <tr><td>
+        <div class="actions">
+          <%= f.submit %>
+        </div></td></tr>
+  </table>
+<% end %>

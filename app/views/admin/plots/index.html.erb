@@ -1,0 +1,31 @@
+<% @page_description = t(:index_description) -%>
+
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_plot_path, :show_all_path => admin_plots_path } %>
+      <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <th>Item</th>
+          <th>Place</th>
+          <th>Publish</th>
+          <th>Position</th>
+          <th>Notes</th>
+          <th>Actions</th>
+        </tr>
+
+        <% @plots.each do |plot| %>
+          <tr>
+            <td><%= link_to plot.item.title, admin_item_path(plot.item) unless plot.item.nil? %></td>
+            <td><%= link_to plot.place.name, admin_place_path(plot.place) unless plot.place.nil? %></td>
+            <td><%= show_check plot.publish %></td>
+            <td><%= plot.position %></td>
+            <td><%= truncate(plot.notes) %></td>
+            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_plot_path(plot) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_plot_path(plot) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_plot_path(plot), :confirm => 'Are you sure?', :method => :delete %></td>
+          </tr>
+        <% end %>
+      </table>
+      <br class="clear" />
+    </div>
+  </div>
+</div>

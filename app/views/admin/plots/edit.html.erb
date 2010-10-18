@@ -1,0 +1,15 @@
+<% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
+
+<% @back_path = session[:admin_plots_index_url] ||= admin_plots_path %>
+<% @show_path = admin_plot_path(@plot) %>
+
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

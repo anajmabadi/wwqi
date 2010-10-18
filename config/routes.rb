@@ -18,7 +18,8 @@ Qajar::Application.routes.draw do
       :repositories,
       :subject_types,
       :subjects,
-      :translations
+      :translations,
+      :plots
 
     resources :items do
       collection do

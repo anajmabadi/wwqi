@@ -1,0 +1,46 @@
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize.capitalize + " | " + t(:show).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <%= render 'nav_show_header_bar', :plot => @plot %>
+    <table class="global" width="80%" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @plot, :item %><br />
+            <%= link_to @plot.item.to_label, admin_item_path(@plot.item) unless @plot.item.nil? %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @plot, :place %><br />
+            <%= link_to @plot.place.name, admin_place_path(@plot.place) unless @plot.place.nil? %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <div class="field">
+            <%= label @plot, :position %><br />
+            <%= @plot.position %>
+          </div>
+        </td>
+        <td>
+          <div class="field">
+            <%= label @plot, :publish %><br />
+            <%= @plot.publish %>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <div class="field">
+            <%= label @plot, :notes %><br />
+            <%= @plot.notes %>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
