@@ -1,0 +1,28 @@
+<li class="collection_item">
+  <h3>
+    <%= collection.name %>
+  </h3>
+  <div class="collection_items_link">
+    <%= link_to(pluralize(collection.items.size, "item"), archive_browser_path(:collection_filter => collection.id)) unless collection.items.empty? %>
+  </div>
+  <div class="collection_details">
+    <% unless collection.description.blank? %>
+      <p><strong><%= t(:description).capitalize %>:</strong> <%= collection.description.blank? ? t(:in_progress).capitalize : collection.description %></p>
+    <% end %>
+    <% unless collection.dates.blank? %>
+      <p><strong><%= t(:dates).capitalize %>:</strong> <%= collection.dates.blank? ? t(:in_progress).capitalize : collection.dates %></p>
+    <% end %>
+    <% unless collection.repository.blank? %>
+      <p><strong><%= t(:repository).capitalize %>:</strong> <%= collection.repository.blank? ? t(:in_progress).capitalize : collection.repository %></p>
+    <% end %>
+    <% unless collection.materials.blank? %>
+      <p><strong><%= t(:materials).capitalize %>:</strong> <%= collection.materials.blank? ? t(:in_progress).capitalize : collection.materials %></p>
+    <% end %>
+    <% unless collection.tips.blank? %>
+      <p><strong><%= t(:tips).capitalize %>:</strong> <%= collection.tips.blank? ? t(:in_progress).capitalize : collection.tips %></p>
+    <% end %>
+    <% unless collection.website.blank? %>
+      <p><strong><%= t(:website).capitalize %>:</strong> <%= collection.website.blank? ? t(:in_progress).capitalize : link_to(collection.website, collection.website) %></p>
+    <% end %>
+  </div>
+</li>

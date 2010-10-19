@@ -13,7 +13,11 @@ class ArchiveController < ApplicationController
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
     session[:current_items] = nil
-  end  
+  end
+
+  def collections
+    @collections = Collection.where(['publish=? AND collection_translations.locale=?', 1, I18n.locale.to_s]).order('collection_translations.sort_name')
+  end
 
   def browser
     logger.info 'browser'

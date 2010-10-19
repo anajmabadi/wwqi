@@ -1,0 +1,12 @@
+<% @page_description = t(:collections_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:collections).capitalize -%>
+
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:collections).capitalize %></h1>
+  <ul>
+    <%= render :partial => 'collection', :collection => @collections %>
+  </ul>
+</div> <!-- end browser --><!-- end featured -->
+
+
