@@ -1,7 +1,5 @@
 class ArchiveController < ApplicationController
   
-  before_filter :admin_required, :except => [:index, :browser, :detail, :slides]
-  
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def index
