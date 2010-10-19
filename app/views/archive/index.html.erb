@@ -44,7 +44,7 @@
   <div class="boxed clearfix" style="margin-top:15px;">
     <div class="section clearfix" style="padding:0 10px; width:280px">
       <div class="collectionsBox clearfix">
-        <a href="#"><h4><%= t(:collections).capitalize %></h4></a>
+        <a href="<%= archive_collections_path %>"><h4><%= t(:collections).capitalize %></h4></a>
         <%= link_to t(:see_all_collections), archive_collections_path, { :class => "allCollections", :enabled => false } %>
         <div class="featuredCollection clearfix">
           <h6><%= t(:featured_collections) %></h6>
