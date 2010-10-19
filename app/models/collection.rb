@@ -23,7 +23,7 @@ class Collection < ActiveRecord::Base
     collection_set = []
     until collection_set.size == limit do
       collection = self.random
-      collection_set << collection unless collection_set.include?(collection) 
+      collection_set << collection unless collection_set.include?(collection) || collection.items.empty?
     end
     return collection_set
   end  

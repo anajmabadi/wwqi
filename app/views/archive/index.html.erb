@@ -52,13 +52,15 @@
           <div class="collectionContainerWrapper">
             <div class="collectionContainer clearfix">
               <% @random_collection_set.each do |collection| -%>
-                <div class="collection">
-                  <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
-                  <ul>
-                    <li><strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong></li>
-                    <li>&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %></li>
-                  </ul>
-                </div>
+                <% unless collection.items.empty? %>
+                  <div class="collection">
+                    <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
+                    <ul>
+                      <li><strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong></li>
+                      <li>&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %></li>
+                    </ul>
+                  </div>
+                <% end -%>
               <% end -%>
             </div>
           </div>

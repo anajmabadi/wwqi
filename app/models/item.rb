@@ -99,6 +99,10 @@ class Item < ActiveRecord::Base
     return Activity.find(:all, :select => 'DISTINCT item_id', :conditions => "item_id IS NOT NULL", :order => 'created_at DESC', :limit => limit).map { |ids| ids.item_id }
   end
 
+  def oral_history_class
+    return "oralhistory" unless self.clips.empty?
+  end
+
   def show_date
     date_to_show = ''
     if !self.display_date.blank?

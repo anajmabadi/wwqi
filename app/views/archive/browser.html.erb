@@ -180,10 +180,10 @@
             </ul>
           </div>
           <div id="indexCol<%= @current_column.to_s %>"><ul>
+            <% end %>
+            <li>&raquo; <%= link_to truncate(subject.name, :length => 20) + ' (' + localized_number(subject.items_count) + ')', archive_browser_path(:subject_filter => subject.id), :title => subject.name %></li>
+            <% @current_row += 1 %>
           <% end %>
-          <li>&raquo; <%= link_to truncate(subject.name, :length => 20) + ' (' + localized_number(subject.items_count) + ')', archive_browser_path(:subject_filter => subject.id), :title => subject.name %></li>
-          <% @current_row += 1 %>
-        <% end %>
         </ul>
       </div>
     </div>
@@ -234,16 +234,17 @@
 
         <% @items.each do |item| %>
           <div class="listItem clearfix">
-            <div class="item">
+            <div class="item <%= item.oral_history_class -%>">
               <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
+              <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
             </div>
             <div class="description">
               <!--<a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>-->
               <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
               <h4><%= item.collection.name unless item.collection.blank? %></h4>
               <% unless item.show_date.blank? -%>
-			  	<p class="meta"><%= item.show_date  %></p>
-			  <% end -%>
+                <p class="meta"><%= item.show_date  %></p>
+              <% end -%>
               <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
             </div>
           </div>
@@ -253,8 +254,9 @@
       <% @extra_head_content = archive_grid_header -%>
       <div id="items">
         <% @items.each do |item| -%>
-          <div class="item">
+          <div class="item <%= item.oral_history_class %>">
             <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
+            <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
             <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
           </div>
         <% end -%>
