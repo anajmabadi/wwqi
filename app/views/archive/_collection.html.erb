@@ -24,5 +24,8 @@
     <% unless collection.website.blank? %>
       <p><strong><%= t(:website).capitalize %>:</strong> <%= collection.website.blank? ? t(:in_progress).capitalize : link_to(collection.website, collection.website) %></p>
     <% end %>
+    <% if collection.finding_aid %>
+      <p><strong><%= t(:archival_finding_aids).capitalize %>:</strong> <%= link_to( collection.finding_aid_file_name, collection.finding_aid_url ) %></p>
+    <% end %>
   </div>
 </li>

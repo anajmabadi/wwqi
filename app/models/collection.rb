@@ -45,5 +45,14 @@ class Collection < ActiveRecord::Base
     value += ' (' + item_count + ')' unless item_count == 0
     return value
   end
+
+  def finding_aid_url
+    return LIBRARY_URL + FINDING_AID_DIR + finding_aid_file_name
+  end
+
+  # Library media file accessors
+  def finding_aid_file_name
+    return COLLECTION_PREFIX + id.to_s + ".pdf"
+  end
       
 end

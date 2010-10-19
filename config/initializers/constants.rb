@@ -7,6 +7,8 @@
   SLIDES_DIR = "slides/"
   TIFS_DIR = "tifs/"
   THUMBNAILS_DIR = "thumbs/"
+  FINDING_AID_DIR = "finding_aids/"
+  COLLECTION_PREFIX = "collection_"
   ZOOMIFY_DIR = "zoomify/"
   CLIPS_DIR = "clips/"
   FILE_PREFIX = "it_"
