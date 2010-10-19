@@ -16,7 +16,7 @@ class ArchiveController < ApplicationController
   end
 
   def collections
-    @collections = Collection.where(['publish=? AND collection_translations.locale=?', 1, I18n.locale.to_s]).order('collection_translations.sort_name')
+    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', 1, 0, I18n.locale.to_s]).order('collection_translations.sort_name')
   end
 
   def browser
