@@ -27,7 +27,7 @@
     </select>
   <% end %>
 
-  <%= form_tag('/items', :method => :get) do -%>
+  <%= form_tag{:controller => 'items', :action => :index, :page => 1}, :method => :get) do -%>
     <%= text_field_tag :keyword_filter, t(:search_prompt), :style => "color:#aaa;",
       :onfocus => "if(this.value=='#{t(:search_prompt)}'){this.value='';this.style.color = '#000';}",
       :onblur => "if(this.value==''){this.value='#{t(:search_prompt)}';this.style.color = '#aaa';}"%>
