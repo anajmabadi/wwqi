@@ -3,7 +3,7 @@
 
 
 <div id="staticContent" class="clearfix">
-  <h1><%= t(:subject_index).capitalize %></h1>
+  <h1><%= t(:subject_index).titleize %></h1>
   <ul class="subject_type_toc">
   <% @subject_types.each do |subject_type| %>
     <li><h3><%= link_to subject_type.name, archive_subjects_path(:anchor => subject_type.name ) %></h3></li>
