@@ -37,7 +37,7 @@ class Item < ActiveRecord::Base
   # validations
 #  validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
 #  validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
-#  validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
+   validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
 #  validates :width, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
