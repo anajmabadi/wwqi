@@ -8,7 +8,6 @@ class Item < ActiveRecord::Base
   belongs_to :collection, :counter_cache => true
   belongs_to :format
   belongs_to :medium
-  belongs_to :place
   belongs_to :calendar_type
   belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
 

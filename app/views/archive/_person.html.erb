@@ -1,0 +1,19 @@
+<li class="person_item">
+  <h3><%= link_to person.name, nil, :name => "person_#{person.id}" %></h3>
+  <div class="person_item_link"><%= link_to( pluralize(person.items.size, t(:item)), archive_browser_path(:person_filter => person.id)) unless person.items.empty? %></div>
+  <div class="person_details">
+    <% unless person.appellations.empty? %>
+      <h4><%= t(:alternate_names).titleize %></h4>
+      <% person.appellations.each do |appellation| %>
+        <li><%= appellation.name %></li>
+      <% end %>
+    <% end %>
+    <% unless person.relationships.empty? %>
+      <h4><%= t(:related_people).titleize %></h4>
+      <% person.relationships.each do |relationship|%>
+        <li><%= link_to "#{relationship.relative.name} (#{relationship.name})", archive_people_path(:anchor => "person_#{relationship.relative_id.to_s}") %></li>
+      <% end %>
+    <% end %>
+  </div>
+
+</li>

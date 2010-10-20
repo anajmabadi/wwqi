@@ -17,6 +17,18 @@ class ArchiveController < ApplicationController
     @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', 1, 0, I18n.locale.to_s]).order('collection_translations.sort_name')
   end
 
+  def subjects
+    @subject_types = SubjectType.where(['publish=? AND subject_type_translations.locale=?', 1, I18n.locale.to_s]).order('subject_type_translations.name')
+  end
+
+  def places
+    @places = Place.where(['publish=? AND place_translations.locale=?', 1, I18n.locale.to_s]).order('place_translations.name')
+  end
+
+  def people
+    @people = Person.where(['publish=? AND person_translations.locale=?', 1, I18n.locale.to_s]).order('person_translations.name')
+  end
+
   def browser
     logger.info 'browser'
     @subject_types = SubjectType.find(:all, :conditions => 'publish=1')
@@ -165,7 +177,12 @@ class ArchiveController < ApplicationController
     additional_query = ''
     begin
       @place = Place.find_by_id(filter_value.to_i)
-      additional_query += 'items.place_id = ' + @place.id.to_s
+      @ids = @place.items.map { |p| p.id }
+      unless @ids.empty?
+        additional_query += "items.id IN (#{@ids.join(",")})"
+      else
+        flash[:error] = "No items found. Showing all."
+      end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for place id #{filter_value}: #{error}."
     else

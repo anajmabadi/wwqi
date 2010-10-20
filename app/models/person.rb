@@ -5,6 +5,7 @@ class Person < ActiveRecord::Base
   has_many :appearances
   has_many :items, :through => :appearances
   has_many :appellations
+  has_many :relationships
 
   translates :name, :sort_name, :description, :vitals, :birth_place
   globalize_accessors :fa, :en

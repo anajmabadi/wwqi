@@ -1,0 +1,13 @@
+<% @page_description = t(:places_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:place_index).capitalize -%>
+
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:place_index).capitalize %></h1>
+  <ul class="places_list">
+   <%= render :partial => 'place', :collection => @places %>
+  </ul>
+</div>
+
+
+

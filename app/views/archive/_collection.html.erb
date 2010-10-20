@@ -3,7 +3,7 @@
     <%= collection.name %>
   </h3>
   <div class="collection_items_link">
-    <%= link_to(pluralize(collection.items.size, "item"), archive_browser_path(:collection_filter => collection.id)) unless collection.items.empty? %>
+    <%= link_to(pluralize(collection.items.size, t(:item)), archive_browser_path(:collection_filter => collection.id)) unless collection.items.empty? %>
   </div>
   <div class="collection_details">
     <% unless collection.description.blank? %>

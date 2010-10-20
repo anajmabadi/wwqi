@@ -1,0 +1,13 @@
+<% @page_description = t(:people_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:people_index).capitalize -%>
+
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:people_index).capitalize %></h1>
+  <ul class="people_list">
+   <%= render :partial => 'person', :collection => @people %>
+  </ul>
+</div>
+
+
+

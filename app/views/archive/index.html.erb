@@ -36,8 +36,8 @@
       </div>
     </div>
     <div class="content clearfix">
-      <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
-      <%= link_to raw(t(:advanced_search)), :action => 'browser' %>
+      <%= link_to raw('&raquo; ' + t(:browse_the_archive)), :action => 'browser' %>
+      <%= link_to raw('&raquo; ' + t(:advanced_search)), :action => 'browser' %>
     </div>
   </div>
 
@@ -70,9 +70,9 @@
     <div class="section" style="width:100px">
       <h4><%= t(:indexes).capitalize %></h4>
       <ul>
-        <li><a href="#"><%= raw t(:people_index) %></a></li>
-        <li><a href="#"><%= raw t(:subject_index) %></a></li>
-        <li><a href="#"><%= raw t(:place_index) %></a></li>
+        <li>&raquo; <%= link_to t(:people_index), archive_people_path %></li>
+        <li>&raquo; <%= link_to t(:subject_index), archive_subjects_path %></li>
+        <li>&raquo; <%= link_to t(:place_index), archive_places_path %></li>
       </ul>
     </div>
     <div class="section" style="width:220px">

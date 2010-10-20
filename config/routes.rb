@@ -58,7 +58,10 @@ Qajar::Application.routes.draw do
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
   match 'archive/collections' => 'archive#collections', :as => :archive_collections
-
+  match 'archive/subjects' => 'archive#subjects', :as => :archive_subjects
+  match 'archive/people' => 'archive#people', :as => :archive_people
+  match 'archive/places' => 'archive#places', :as => :archive_places
+  
   match 'archive/detail/:id/slides.:format' => 'archive#slides', :as => 'archive_detail_slides_xml'
 
   

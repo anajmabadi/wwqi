@@ -1,8 +1,7 @@
 class Place < ActiveRecord::Base
-  has_many :items
 
   has_many :plots, :order => 'plots.position'
-  has_many :items, :through => :plots, :order => 'plots.position', :as => :related_items
+  has_many :items, :through => :plots, :order => 'plots.position'
 
   translates :name
   globalize_accessors :fa, :en

@@ -1,0 +1,22 @@
+<% @page_description = t(:subjects_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:subject_index).capitalize -%>
+
+
+<div id="staticContent" class="clearfix">
+  <h1><%= t(:subject_index).capitalize %></h1>
+  <ul class="subject_type_toc">
+  <% @subject_types.each do |subject_type| %>
+    <li><h3><%= link_to subject_type.name, archive_subjects_path(:anchor => subject_type.name ) %></h3></li>
+  <% end %>
+  </ul>
+  <hr />
+  <% @subject_types.each do |subject_type| %>
+    <h3><%= link_to(subject_type.name, nil, :name => subject_type.name) %></h3>
+    <ul class="subjects_list">
+      <%= render :partial => 'subject', :collection => subject_type.subjects %>
+    </ul>
+  <% end %>
+</div>
+
+
+
