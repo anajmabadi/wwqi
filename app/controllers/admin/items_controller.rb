@@ -12,7 +12,7 @@ class Admin::ItemsController < Admin::AdminController
     @periods = Period.select_list
     @subject_types = SubjectType.select_list
     
-    @page = params[:page] || 1
+    @page = params[:page] || 1 
     @per_page = params[:per_page] || Item.per_page || 100
 
     @order = sort_order('item_translations.title')
