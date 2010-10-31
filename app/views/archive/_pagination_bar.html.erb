@@ -1,15 +1,15 @@
-  <div class="paginationBar clearfix">
+<div class="paginationBar clearfix">
   <div class="sortnav paginate">
-    <%= will_paginate @items, :inner_window => 2, :outer_window => 1 %>
+    <div class="pagination"><span class="previous_page disabled">previous</span> <em>1</em> <a rel="next" href="/archive/browser?locale=en&amp;page=2">2</a> <a href="/archive/browser?locale=en&amp;page=3">3</a> <a href="/archive/browser?locale=en&amp;page=4">4</a> <a href="/archive/browser?locale=en&amp;page=5">5</a> <a class="next_page" rel="next" href="/archive/browser?locale=en&amp;page=2">next</a></div>
   </div>
   <ul class="sortnav" id="sort" style="float:left; width:200px;">
-    <li class="label"><%= t(:sort_by) %> :</li>
-    <li class="<%= 'active' if @sort_mode[0,5] =='alpha' -%>"><%= link_to( t(:az_sort), url_for(params.merge(:sort_mode => (@sort_mode == 'alpha_asc' ? 'alpha_dsc':'alpha_asc'))), {:class => 'module-link AZsort'}) %><span class="<%= @sort_mode == 'alpha_asc' ? 'down':'up' -%>"></span></li>
-    <li class="<%= 'active' if @sort_mode[0,4] == 'date' -%>"><%= link_to( t(:date), url_for(params.merge(:sort_mode => (@sort_mode=='date_asc' ? 'date_dsc':'date_asc'))), {:class => 'module-link Datesort'}) %><span class="<%= @sort_mode == 'date_asc' ? 'down':'up' -%>"></span></li>
+    <li class="label">Sort By :</li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;sort_mode=alpha_dsc" class="module-link AZsort">A-Z</a><span class="down"></span></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;sort_mode=date_asc" class="module-link Datesort">Date</a><span class="up"></span></li>
   </ul>
   <ul class="sortnav" id="viewMode" style="float:left">
-    <li class="label"><%= t(:view_mode) %> </li>
-    <li class="<%= 'active' if @view_mode == 'list' -%>"><%= link_to( t(:list_view), url_for(params.merge(:view_mode => 'list')), {:class => 'module-link'}) -%></li>
-    <li class="<%= 'active' if @view_mode == 'grid' -%>"><%= link_to( t(:grid_view), url_for(params.merge(:view_mode => 'grid')), {:class => 'module-link'}) -%></li>
+    <li class="label">View Mode </li>
+    <li class="active"><a href="/archive/browser?locale=en&amp;view_mode=list" class="module-link">List View</a></li>
+    <li class=""><a href="/archive/browser?locale=en&amp;view_mode=grid" class="module-link">Grid View</a></li>
   </ul>
-</div> 
+</div>
