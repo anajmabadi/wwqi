@@ -8,7 +8,7 @@
   <form method="get" action="/archive/browser" id="archive_browse_filter">
     <div id="genreFilter">
       <ul>
-        <li class="selectAll"><input type="checkbox" name="allGenres" /><label for="">All</label></li>
+        <li class="selectAll"><input type="checkbox"  name="subject_type_filter[]" value="all" /><label for="">All</label></li>
       </ul>
       <ul class="genreFilterList">
         <% subject_types.each do |subject_type|  %>
@@ -18,7 +18,7 @@
     </div>
     <div id="periodFilter">
       <ul>
-        <li class="selectAll"><input type="checkbox" name="allPeriods" /><label for="">All</label></li>
+        <li class="selectAll"><input type="checkbox" name="period_filter[]" value="all" /><label for="">All</label></li>
       </ul>
       <ul class="periodFilterList">
         <% periods.each do |period|  %>

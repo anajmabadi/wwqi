@@ -159,22 +159,15 @@ class ArchiveController < ApplicationController
   end
 
   def build_collection_query(filter_value, query_hash)
-    logger.info "build_collection_query: " + filter_value.to_s
-
     if filter_value.kind_of?(Array)
       ids = filter_value
     else
       ids = [filter_value]
     end
     additional_parameter = ids.map { |id| id.to_i }.sort
-
-
-    logger.info "additional_parameter: " + additional_parameter.to_s
-
     query_hash[:conditions] << 'collection_id IN (:collection_ids)'
     query_hash[:parameters][:collection_ids] = additional_parameter unless additional_parameter.blank?
     return query_hash
-    
   end
   
   def build_place_query(filter_value, query_hash)
@@ -223,16 +216,35 @@ class ArchiveController < ApplicationController
   end
 
   def build_period_query(filter_value, query_hash)
-    additional_query = ''
+
+    if filter_value.kind_of?(Array)
+      ids = filter_value
+    else
+      ids = [filter_value]
+    end
+
+    ids_to_find = ids.map { |id| id.to_i }.sort
+
     begin
-      @period = Period.find_by_id(filter_value.to_i)
-      additional_query += "(sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}')"
+      periods = Period.find(ids_to_find)
+      if periods.size == 1
+        date_ranges = "(sort_date BETWEEN '#{periods[0].start_at.strftime("%Y-%m-%d")}' AND '#{periods[0].end_at.strftime("%Y-%m-%d")}')"
+      else
+        date_ranges = ''
+        periods.each_with_index do |period, index|
+          date_ranges += "(sort_date BETWEEN '#{period.start_at.strftime("%Y-%m-%d")}' AND '#{period.end_at.strftime("%Y-%m-%d")}')"
+          if index + 1 != periods.size
+            date_ranges += " OR "
+          end
+        end
+      end
+      query_hash[:conditions] << date_ranges
+    
     rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
+      flash[:error] = "A problem was encountered searching for period ids #{filter_value}: #{error}."
     else
       flash[:error] = nil
     ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
       return query_hash
     end
   end
