@@ -23,42 +23,10 @@
   <%= link_to(image_tag("/images/slideshow8#{language_suffix}.jpg", :id => "slide-img-8", :class => "slide", :alt => t(:explore_the_archive)), archive_path) %>
 </div>
 
- <!--
-<div id="featured">
-  <div id="head">
-    <h2><%= t(:featured_exhibits) %></h2>
-
-    <ul class="dots">
-      <li><a href="#" class="active" id="firstFeature">1</a></li>
-      <li><a href="#" id="secondFeature">2</a></li>
-      <li><a href="#" id="thirdFeature">3</a></li>
-      <li><a href="#" id="fourthFeature">4</a></li>
-    </ul>
-  </div>
- 
-  <div id="featuredContent" class="clearfix">
-    <div id="featureContainer">
-      <div class="featuredItem" style="background:url(/images/sheikh_feature.jpg) top left no-repeat">
-        <%= link_to @featured_exhibit.title, exhibits_path %>
-      </div>
-       <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
-          <a href="#"> Qajar Homes 2</a>
-      </div>
-      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
-          <a href="#"> Qajar Homes 3</a>
-      </div>
-      <div class="featuredItem" style="background:url(images/feature1.jpg) top left no-repeat">
-          <a href="#"> Qajar Homes 4</a>
-      </div>
-    </div>
-  </div>
-
-</div>
- --><!-- end featured -->
 <div id="home_search_wrapper">
  <div class="clearfix" id="simple_search">
         <form method="get" class="searchform" action="/archive/browser">
-          <input type="text" value="search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='search the archives';this.style.color = '#aaa';}">
+          <input type="text" value="search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='search the archives';this.style.color = '#aaa';}" />
           <button id="search" type="submit"></button>
         </form>
  </div>

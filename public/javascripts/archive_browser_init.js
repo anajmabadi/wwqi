@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
 
     $("#indexLinks a").click(function(){

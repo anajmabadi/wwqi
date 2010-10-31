@@ -62,8 +62,8 @@ module ArchiveHelper
   
   def browser_header_content
     return %{
-    <link href="/stylesheets/dd<%= language_suffix -%>.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src="javascripts/archive_browser_init.js" type="text/javascript"></script>
+    <link href="/stylesheets/dd#{language_suffix}.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="/javascripts/archive_browser_init.js" type="text/javascript"></script>
     }
   end
 
