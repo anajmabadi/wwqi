@@ -142,7 +142,7 @@ updateFilterLabels = function(){
     else if ($(".collectionFilterList input:checked").length==1){
         collectionLabel = $(".collectionFilterList input:checked").next("label").first().html();
     }
-    else if ($(".collectionFilterList input:checkedt").length>1){
+    else if ($(".collectionFilterList input:checked").length>1){
         collectionLabel = "Multiple"
     }
 
