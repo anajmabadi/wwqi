@@ -1,0 +1,19 @@
+<div id="items" class="list clearfix">
+  <% items.each do |item| %>
+    <div class="listItem clearfix">
+      <div class="item <%= item.oral_history_class -%>">
+        <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
+        <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
+      </div>
+      <div class="description">
+        <!--<a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>-->
+        <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
+        <h4><%= item.collection.name unless item.collection.blank? %></h4>
+        <% unless item.show_date.blank? -%>
+          <p class="meta"><%= item.show_date  %></p>
+        <% end -%>
+        <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
+      </div>
+    </div>
+  <% end %>
+</div>

@@ -1,0 +1,64 @@
+<div id="filterOptions">
+  <a class="filter" id="filterStatus" href="#"><strong class="filter">Search Filters</strong></a>
+  <a class="filter" id="byGenre" href="#">Genres: <span>All</span></a>
+  <a class="filter" id="byPeriod" href="#">Period: <span>All</span></a>
+  <a class="filter" id="byCollection" href="#">Collection: <span>All</span></a>
+</div>
+<div id="filtersPanel">
+  <form>
+    <div id="genreFilter">
+      <ul>
+        <li class="selectAll"><input type="checkbox" name="allGenres" /><label for="">All</label></li>
+      </ul>
+      <ul class="genreFilterList">
+        <% subject_types.each do |subject_type|  %>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Writings</label></li>
+        <% end %>
+      </ul>
+    </div>
+    <div id="periodFilter">
+      <ul>
+        <li class="selectAll"><input type="checkbox" name="allPeriods" /><label for="">All</label></li>
+      </ul>
+      <ul class="periodFilterList">
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Pre-Qajar Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Aqa Muhammad Khan Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Fath 'Ali Shah Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Muhammad Shah Period </label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Nasir al-Din Shah Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Muzaffar al-Din Shah Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Muhammad 'Ali Shah Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Ahmad Shah Period</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Early Pahlavi Period</label></li>
+      </ul>
+    </div>
+    <div id="collectionFilter">
+      <ul>
+        <li class="selectAll"><input type="checkbox" name="allCollections" /><label for="">All</label></li>
+      </ul>
+      <ul class="collectionFilterList">
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Bahram Sheikholeslami Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Hafez Farmayan Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Joel Montague Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Kamran Dowlatshahi Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Sadiqah Dawlatabadi Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Taj al-Muluk Tajbakhsh Zamandar Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Harvard College Library Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Mahdokht Sanati Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">More Collections</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Taj al-Muluk Tajbakhsh Zamandar Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Harvard College Library Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Mahdokht Sanati Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">More Collections</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Harvard College Library Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">Mahdokht Sanati Collection</label></li>
+        <li><input type="checkbox"  name="selectedGenre" /><label for="">More Collections</label></li>
+      </ul>
+    </div>
+  </form>
+  <div id="filterPanelButtonBar">
+    <a id="cancelFilters" class="blackButton" href="#">Close</a>
+    <a id="submitFilters" class="redButton" href="#">Search</a>
+  </div>
+
+</div>

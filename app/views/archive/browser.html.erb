@@ -3,115 +3,22 @@
 <% @extra_head_content = browser_header_content -%>
 
 <div id="browser" class="clearfix">
-  <div id="head">
-    <div style="float:left" class="search">
-      <form action="/archive/browser/" class="searchform" method="get">
-        <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-               onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
-               onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-        <button type="submit"></button>
-      </form>
-    </div>
-    <ul class="types sortnav">
-      <li><%= t(:show) %>:</li>
-      <li><a href="/archive/browser" id="allItems" class="module-link active"><%= t(:all_items) %></a></li>
-    </ul>
+  <div id="head" class="filters">
+    <%= render :partial => "browser_filters", :locals => { :subject_types => @subject_types, :periods => @periods, :collections => @collections }  %>
+    <%= render :partial => "browser_indexes"  %>
   </div>
-  <div id="browserFilters" class="clearfix">
-    <div class="column">
-      <h4><%= t(:genre) %>  </h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'subject_type_form') do -%>
-        <select id="mediumFilter" name="subject_type_filter" onChange="document.forms['subject_type_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @subject_type_filter.blank? || @subject_type_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @subject_types.each do |subject_type| -%>
-            <option value="<%= subject_type.id %>"<%= raw ' selected="selected"' if @subject_type_filter==subject_type.id.to_s -%>><%= subject_type.name %></option>
-          <% end -%>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:collection) %></h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'collection_form') do -%>
-        <select id="collectionFilter" name="collection_filter"  onChange="document.forms['collection_form'].submit()">
-          <option value="all" <%= raw 'selected="selected"' if @collection_filter.blank? || @collection_filter== 'all' -%>><%= t(:all).capitalize %></option>
-          <% @collections.each do |collection| -%>
-            <option value="<%= collection.id %>"<%= raw ' selected="selected"' if @collection_filter==collection.id.to_s -%>><%= collection.name %></option>
-          <% end -%>
-          <option value="more"><%= t(:more_collections) %></option>
-        </select>
-      <% end %>
-    </div>
-    <div class="column">
-      <h4><%= t(:period) %></h4>
-      <%= form_tag({:action => :browser, :page => 1}, :method => 'get', :name => 'period_form') do -%>
-        <select id="periodFilter" name="period_filter"  onChange="document.forms['period_form'].submit()">
-          <option value="all"<%= raw ' selected="selected"' if @period_filter.blank? || @period_filter== 'all' -%>><%= t(:all).capitalize %> </option>
-          <% @periods.each do |period| -%>
-            <option value="<%= period.id %>"<%= raw ' selected="selected"' if @period_filter==period.id.to_s -%>><%= period.title %></option>
-          <% end -%>
-        </select>
-      <% end %>
-    </div>
-    <div class="browserBarIndex"><h4><%= t(:indexes) %></h4>
-      <ul id="indexLinks" class="types sortnav">
-        <li><%= link_to t(:person), archive_people_path, :class=> "module-link", :id => "peopleIndex" -%></li>
-        <li><%= link_to t(:subject), archive_subjects_path, :class=>"module-link", :id=>"subjectsIndex" -%></li>
-        <li><%= link_to t(:place), archive_places_path, :class=> "module-link", :id=>"placesIndex" -%></li>
-      </ul>
-    </div>
-  </div>
-  <div id="browserMessage">
-    <p>
-      <% if @items.empty? -%>
-        <%= t(:no_records_found) -%>
-      <% else -%>
-        <%= "#{t(:results_prefix)}: #{localized_number(@items.offset + 1)} - #{localized_number([@items.offset + @items.per_page,@items.total_entries].min)} | #{localized_number(@items.total_entries)}" %>
-      <% end -%>
-    </p>
-  </div>
+
+  <%= render :partial => "browser_results_message", :locals => { :items => @items }  %>
+
   <div id="browserContent" class="clearfix">
-
     <%= render :partial => 'pagination_bar' %>
-
     <% if @view_mode == 'list' -%>
-
-      <% @extra_head_content = archive_list_header -%>
-
-      <div id="items" class="list clearfix">
-
-        <% @items.each do |item| %>
-          <div class="listItem clearfix">
-            <div class="item <%= item.oral_history_class -%>">
-              <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-              <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
-            </div>
-            <div class="description">
-              <!--<a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>-->
-              <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
-              <h4><%= item.collection.name unless item.collection.blank? %></h4>
-              <% unless item.show_date.blank? -%>
-                <p class="meta"><%= item.show_date  %></p>
-              <% end -%>
-              <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
-            </div>
-          </div>
-        <% end %>
-      </div><!-- end of items -->
+      <%= render :partial => 'items_list_view', :locals => { :items => @items } %>
     <% elsif @view_mode == 'grid' -%>
-      <% @extra_head_content = archive_grid_header -%>
-      <div id="items">
-        <% @items.each do |item| -%>
-          <div class="item <%= item.oral_history_class %>">
-            <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-            <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
-            <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
-          </div>
-        <% end -%>
-      </div><!-- end of items -->
+      <%= render :partial => 'items_grid_view', :locals => { :items => @items } %>
     <% end -%>
-
     <%= render :partial => 'pagination_bar' %>
-
   </div>
-</div> <!-- end browser --><!-- end featured -->
+
+</div>
 

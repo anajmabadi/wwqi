@@ -1,0 +1,15 @@
+<div id="browserFilters" class="clearfix">
+  <div class="clearfix" id="simple_search">
+    <form method="get" class="searchform" action="/archive/browser">
+      <input type="text" value="search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='search the archives';this.style.color = '#aaa';}" />
+      <button id="search" type="submit"></button>
+    </form>
+  </div>  
+  <div class="browserBarIndex"><h4><%= t(:indexes) %></h4>
+    <ul id="indexLinks" class="types sortnav">
+      <li><%= link_to t(:person), archive_people_path, :class=> "module-link", :id => "peopleIndex" -%></li>
+      <li><%= link_to t(:subject), archive_subjects_path, :class=>"module-link", :id=>"subjectsIndex" -%></li>
+      <li><%= link_to t(:place), archive_places_path, :class=> "module-link", :id=>"placesIndex" -%></li>
+    </ul>
+  </div>
+</div>
