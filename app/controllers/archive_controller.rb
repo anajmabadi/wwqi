@@ -65,7 +65,7 @@ class ArchiveController < ApplicationController
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
     
     @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
-    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
+    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter[0] == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
     @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
     @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
@@ -159,18 +159,22 @@ class ArchiveController < ApplicationController
   end
 
   def build_collection_query(filter_value, query_hash)
-    additional_query = ''
-    begin
-      @collection = Collection.find_by_id(filter_value.to_i)
-      additional_query += 'collection_id = ' + @collection.id.to_s
-    rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
+    logger.info "build_collection_query: " + filter_value.to_s
+
+    if filter_value.kind_of?(Array)
+      ids = filter_value
     else
-      flash[:error] = nil
-    ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      return query_hash
+      ids = [filter_value]
     end
+    additional_parameter = ids.map { |id| id.to_i }.sort
+
+
+    logger.info "additional_parameter: " + additional_parameter.to_s
+
+    query_hash[:conditions] << 'collection_id IN (:collection_ids)'
+    query_hash[:parameters][:collection_ids] = additional_parameter unless additional_parameter.blank?
+    return query_hash
+    
   end
   
   def build_place_query(filter_value, query_hash)
@@ -194,7 +198,7 @@ class ArchiveController < ApplicationController
   end
   
   def build_staff_favorites_query(query_hash)
-    query_hash[:conditions] << "items.favorite = 1" 
+    query_hash[:conditions] << "items.favorite = 1"
     return query_hash
   end
 
@@ -238,7 +242,7 @@ class ArchiveController < ApplicationController
     begin
       @subject = Subject.find_by_id(filter_value.to_i)
       @ids = @subject.items.map { |p| p.id }
-      unless @ids.empty? 
+      unless @ids.empty?
         additional_query += "items.id IN (#{@ids.join(",")})"
       else
         # if the person has no items, we should kill search
@@ -256,7 +260,7 @@ class ArchiveController < ApplicationController
     additional_query = ''
     begin
       @ids = Item.most_popular_ids(50)
-      unless @ids.empty? 
+      unless @ids.empty?
         additional_query += "items.id IN (#{@ids.join(",")})"
       else
         # if the most popular returns no items, we should kill search
@@ -274,7 +278,7 @@ class ArchiveController < ApplicationController
     additional_query = ''
     begin
       @ids = Item.recently_added_ids(50)
-      unless @ids.empty? 
+      unless @ids.empty?
         additional_query += "items.id IN (#{@ids.join(",")})"
       else
         # if the most popular returns no items, we should kill search
@@ -328,11 +332,11 @@ class ArchiveController < ApplicationController
     if I18n.locale == :en
       additional_query += "CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword" unless filter_value.blank?
     else
-      additional_query += "CONCAT_WS('|',item_translations.title, item_translations.description, accession_num, items.id) LIKE :keyword" unless filter_value.blank?      
+      additional_query += "CONCAT_WS('|',item_translations.title, item_translations.description, accession_num, items.id) LIKE :keyword" unless filter_value.blank?
     end
     
     query_hash[:conditions] << additional_query
-    query_hash[:parameters][:keyword] = filter_value  
+    query_hash[:parameters][:keyword] = filter_value
     return query_hash
   end
 

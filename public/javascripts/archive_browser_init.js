@@ -107,6 +107,7 @@ $(document).ready(function(){
     $("#submitFilters").click(function(){
         $("#filtersPanel").slideToggle();
         updateFilterLabels();
+        $("#archive_browse_filter").submit();
         return false;
     });
 

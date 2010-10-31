@@ -5,14 +5,14 @@
   <a class="filter" id="byCollection" href="#">Collection: <span>All</span></a>
 </div>
 <div id="filtersPanel">
-  <form method="get" action="/archive/browser">
+  <form method="get" action="/archive/browser" id="archive_browse_filter">
     <div id="genreFilter">
       <ul>
         <li class="selectAll"><input type="checkbox" name="allGenres" /><label for="">All</label></li>
       </ul>
       <ul class="genreFilterList">
         <% subject_types.each do |subject_type|  %>
-        <li><input type="checkbox"  name="subject_filter_<%= subject_type.id %>" value="<%subject_type.id %>" /><label for=""><%= subject_type.name %></label></li>
+        <li><input type="checkbox"  name="subject_type_filter[]" value="<%= subject_type.id %>" /><label for=""><%= subject_type.name %></label></li>
         <% end %>
       </ul>
     </div>
@@ -22,17 +22,17 @@
       </ul>
       <ul class="periodFilterList">
         <% periods.each do |period|  %>
-        <li><input type="checkbox"  name="selectedGenre" /><label for=""><%= period.title %></label></li>
+        <li><input type="checkbox" name="period_filter[]" value="<%= period.id %>" /><label for=""><%= period.title %></label></li>
         <% end %>
       </ul>
     </div>
     <div id="collectionFilter">
       <ul>
-        <li class="selectAll"><input type="checkbox" name="allCollections" /><label for="">All</label></li>
+        <li class="selectAll"><input type="checkbox" name="collection_filter[]" value="all" /><label for="">All</label></li>
       </ul>
       <ul class="collectionFilterList">
         <% collections.each do |collection| %>
-        <li><input type="checkbox"  name="selectedGenre" /><label for=""><%= collection.name %></label></li>
+        <li><input type="checkbox"  name="collection_filter[]" value="<%= collection.id %>" /><label for=""><%= collection.name %></label></li>
         <% end %>
       </ul>
     </div>
