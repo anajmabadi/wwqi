@@ -444,5 +444,4 @@ module ArchiveHelper
     	</script>
     }
   end
-  
 end

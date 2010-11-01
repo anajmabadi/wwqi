@@ -21,4 +21,8 @@ class Period < ActiveRecord::Base
   def self.select_list
     return self.all(:conditions => ['period_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, period_translations.title', :order => 'periods.start_at').map {|period| [period.title, period.id]}
   end
+
+  def to_label
+    return self.title
+  end
 end

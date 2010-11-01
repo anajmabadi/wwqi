@@ -63,7 +63,11 @@ class ArchiveController < ApplicationController
 
     
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
-    
+
+    @collection_filter_label = I18n.translate(:all)
+    @period_filter_label = I18n.translate(:all)
+    @subject_type_filter_label = I18n.translate(:all)
+
     @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter[0] == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
@@ -164,9 +168,16 @@ class ArchiveController < ApplicationController
     else
       ids = [filter_value]
     end
-    additional_parameter = ids.map { |id| id.to_i }.sort
+    ids_to_find = ids.map { |id| id.to_i }.sort
+
+    if ids_to_find.length == 1
+      @collection_filter_label = Collection.find(ids_to_find[0].to_i).name
+    else
+      @collection_filter_label = I18n.translate(:multiple)
+    end
+    
     query_hash[:conditions] << 'collection_id IN (:collection_ids)'
-    query_hash[:parameters][:collection_ids] = additional_parameter unless additional_parameter.blank?
+    query_hash[:parameters][:collection_ids] = ids_to_find unless ids_to_find.blank?
     return query_hash
   end
   
@@ -224,6 +235,12 @@ class ArchiveController < ApplicationController
     end
 
     ids_to_find = ids.map { |id| id.to_i }.sort
+
+    if ids_to_find.length == 1
+      @period_filter_label = Period.find(ids_to_find[0].to_i).title
+    else
+      @period_filter_label = I18n.translate(:multiple)
+    end
 
     begin
       periods = Period.find(ids_to_find)
@@ -305,11 +322,29 @@ class ArchiveController < ApplicationController
   end
   
   def build_subject_type_query(filter_value, query_hash)
-    logger.info("build_subject_type_query")
+
+    if filter_value.kind_of?(Array)
+      ids = filter_value
+    else
+      ids = [filter_value]
+    end
+
+    ids_to_find = ids.map { |id| id.to_i }.sort
+
+    if ids_to_find.length == 1
+      @subject_type_filter_label = SubjectType.find(ids_to_find[0].to_i).name
+    else
+      @subject_type_filter_label = I18n.translate(:multiple)
+    end
+
     additional_query = ''
     begin
-      @subject_type = SubjectType.find_by_id(filter_value.to_i)
-      @subjects = @subject_type.subjects
+      subject_types = SubjectType.find(ids_to_find)
+      subjects = []
+      subject_types.each do |subject_type|
+       subjects << subject_type.subjects
+      end
+
       @ids = []
       
       @subjects.each do |subject|

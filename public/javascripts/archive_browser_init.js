@@ -106,7 +106,7 @@ $(document).ready(function(){
 
     $("#submitFilters").click(function(){
         $("#filtersPanel").slideToggle();
-        updateFilterLabels();
+        //updateFilterLabels();
         $("#archive_browse_filter").submit();
         return false;
     });
@@ -124,7 +124,7 @@ updateFilterLabels = function(){
 
     // first handle All case
     if ($("#genreFilter .selectAll input").attr("checked")==true){
-        genreLabel = "All";
+        genreLabel = "<%= t(:all) %>";
     }
     // if only one filter is checked, show that label
     else if ($(".genreFilterList input:checked").length==1){
@@ -132,30 +132,30 @@ updateFilterLabels = function(){
     }
     // else, if multiple filters are selected, just show 'multiple'
     else if ($(".genreFilterList input:checked").length>1){
-        genreLabel = "Multiple"
+        genreLabel = "<%= t(:multiple) %>"
     }
 
 
 
     if ($("#collectionFilter .selectAll input").attr("checked")==true){
-        collectionLabel = "All";
+        collectionLabel = "<%= t(:all) %>";
     }
     else if ($(".collectionFilterList input:checked").length==1){
         collectionLabel = $(".collectionFilterList input:checked").next("label").first().html();
     }
     else if ($(".collectionFilterList input:checked").length>1){
-        collectionLabel = "Multiple"
+        collectionLabel = "<%= t(:multiple) %>"
     }
 
 
     if ($("#periodFilter .selectAll input").attr("checked")==true){
-        periodLabel = "All";
+        periodLabel = "<%= t(:all) %>";
     }
     else if ($(".periodFilterList input:checked").length==1){
         periodLabel = $(".periodFilterList input:checked").next("label").first().html();
     }
     else if ($(".periodFilterList input:checked").length>1){
-        periodLabel = "Multiple"
+        periodLabel = "<%= t(:multiple) %>"
     }
 
 

@@ -1,8 +1,8 @@
 <div id="filterOptions">
   <a class="filter" id="filterStatus" href="#"><strong class="filter">Search Filters</strong></a>
-  <a class="filter" id="byGenre" href="#">Genres: <span>All</span></a>
-  <a class="filter" id="byPeriod" href="#">Period: <span>All</span></a>
-  <a class="filter" id="byCollection" href="#">Collection: <span>All</span></a>
+  <a class="filter" id="byGenre" href="#"><%= t(:genre).capitalize %>: <span><%= truncate(@subject_type_filter_label) %></span></a>
+  <a class="filter" id="byPeriod" href="#"><%= t(:period).capitalize %>: <span><%= truncate(@period_filter_label) %></span></a>
+  <a class="filter" id="byCollection" href="#"><%= t(:collection).capitalize %>: <span><%= truncate(@collection_filter_label) %></span></a>
 </div>
 <div id="filtersPanel">
   <form method="get" action="/archive/browser" id="archive_browse_filter">

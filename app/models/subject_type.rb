@@ -14,4 +14,7 @@ class SubjectType < ActiveRecord::Base
     return self.all(:conditions => ['subject_type_translations.locale = ?', I18n.locale.to_s],:select => 'DISTINCT id, subject_type_translations.name', :order => 'subject_type_translations.name').map {|subject_type| [subject_type.name, subject_type.id]}
   end
 
+  def to_label
+    return name
+  end
 end

@@ -54,5 +54,8 @@ class Collection < ActiveRecord::Base
   def finding_aid_file_name
     return COLLECTION_PREFIX + id.to_s + ".pdf"
   end
-      
+
+  def to_label
+    return collection
+  end
 end
