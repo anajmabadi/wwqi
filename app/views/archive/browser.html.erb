@@ -3,11 +3,10 @@
 <% @extra_head_content = browser_header_content -%>
 
 <div id="browser" class="clearfix">
-  <div id="head" class="filters">
+  <div id="head" class="filters clearfix">
     <%= render :partial => "browser_filters", :locals => { :subject_types => @subject_types, :periods => @periods, :collections => @collections }  %>
-    <%= render :partial => "browser_indexes"  %>
   </div>
-
+  <%= render :partial => "browser_indexes"  %>
   <%= render :partial => "browser_results_message", :locals => { :items => @items }  %>
 
   <div id="browserContent" class="clearfix">

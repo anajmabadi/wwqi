@@ -267,7 +267,7 @@ margin-top:5px;
 }
 
 #browserFilters #simple_search input{
-	width:307px
+	width:300px
 }
 
 	
@@ -370,7 +370,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #staticContent{padding:30px; background:#fff; -moz-border-radius:10px; -webkit-border-radius:10px;}
 
 #browserMessage{
-	width:100%;
+	padding:5px 10px;
 	background-color:#666;
 }
 
@@ -1553,15 +1553,15 @@ div.field {
 }
 
 #filterOptions a#byGenre span{
-	width:133px;
+	width:153px;
 	
 }
 #filterOptions a#byPeriod span{
-	width:168px;
+	width:148px;
 	
 }
 #filterOptions a#byCollection span{
-	width:238px;	
+	width:258px;	
 }
 
 #browser #head.filters{
@@ -1651,6 +1651,7 @@ div.field {
 	padding:0 15px;
 	display:inline-block;
 	-border-radius:5px;
+	-webkit-border-radius:5px;
 	-moz-border-radius:5px
 }
 
@@ -1664,7 +1665,8 @@ div.field {
 	padding:0 15px;
 	display:inline-block;
 	-border-radius:5px;
-	-moz-border-radius:5px
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
 }
 
 
@@ -1892,4 +1894,40 @@ div.field {
 
 .archiveBigWrapper{
 	float:right;
+}
+
+#viewMode{
+	float:right;
+}
+#sort{
+	float:right; width:200px;
+}
+
+
+.noItems{
+	padding-right:200px;
+	color:#333;
+	background:url(../images/bg_nonFound.gif) 100% 0 no-repeat;
+	min-height:200px;
+}
+
+.noItems h2{
+	font-size:24px!important;
+	display:block!important;
+	font-weight:bold!important;
+	margin:0 0 20px 0!important;
+	padding:0!important;
+	color:#c41230!important;
+	float:none!important;
+}
+
+.noItems p{
+	font-size:16px;
+	color:#333;
+}
+
+.noItems ul li{
+	list-style:none;
+	padding-right:15px;
+	background:url(../images/bullet.gif) 100% 8px no-repeat;
 }
