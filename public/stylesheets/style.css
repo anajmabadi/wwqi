@@ -1909,7 +1909,7 @@ div.field {
 .noItems{
 	padding-left:200px;
 	color:#333;
-	background:url(../images/bg_nonFound.gif) 0 0 no-repeat;
+	background:url(/images/bg_nonFound.gif) 0 0 no-repeat;
 	min-height:200px;
 }
 

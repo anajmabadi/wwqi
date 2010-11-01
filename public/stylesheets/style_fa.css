@@ -1907,7 +1907,7 @@ div.field {
 .noItems{
 	padding-right:200px;
 	color:#333;
-	background:url(../images/bg_nonFound.gif) 100% 0 no-repeat;
+	background:url(/images/bg_nonFound.gif) 100% 0 no-repeat;
 	min-height:200px;
 }
 
