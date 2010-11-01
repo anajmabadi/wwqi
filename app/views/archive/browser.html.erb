@@ -10,13 +10,20 @@
   <%= render :partial => "browser_results_message", :locals => { :items => @items }  %>
 
   <div id="browserContent" class="clearfix">
-    <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } %>
-    <% if @view_mode == 'list' -%>
-      <%= render :partial => 'items_list_view', :locals => { :items => @items } %>
-    <% elsif @view_mode == 'grid' -%>
-      <%= render :partial => 'items_grid_view', :locals => { :items => @items } %>
-    <% end -%>
-    <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  %>
+    <% unless @items.empty?  %>
+
+      <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } %>
+
+      <% if @view_mode == 'list' -%>
+        <%= render :partial => 'items_list_view', :locals => { :items => @items } %>
+      <% elsif @view_mode == 'grid' -%>
+        <%= render :partial => 'items_grid_view', :locals => { :items => @items } %>
+      <% end -%>
+
+      <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  %>
+    <% else %>
+      <%= render :partial => 'no_items_found_view' %>
+    <% end %>
   </div>
 
 </div>
