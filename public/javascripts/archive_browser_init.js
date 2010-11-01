@@ -158,11 +158,4 @@ updateFilterLabels = function(){
         periodLabel = "<%= t(:multiple) %>"
     }
 
-
-    // set the labels
-    $("#byGenre span").html(genreLabel);
-    $("#byCollection span").html(collectionLabel);
-    $("#byPeriod span").html( periodLabel);
-
-
 }
