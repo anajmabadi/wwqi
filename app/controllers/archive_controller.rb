@@ -72,9 +72,9 @@ class ArchiveController < ApplicationController
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter[0] == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter[0] == 'all'
     @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
-    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter[0] == 'all'
+    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
     @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
-    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == ['all']
+    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter[0] == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
@@ -323,50 +323,53 @@ class ArchiveController < ApplicationController
   
   def build_subject_type_query(filter_value, query_hash)
 
-    if filter_value.kind_of?(Array)
-      ids = filter_value
-    else
-      ids = [filter_value]
-    end
+    #check if the value is an array, or make it one
+    subject_type_ids = filter_value.kind_of?(Array) ? filter_value : [filter_value]
 
-    ids_to_find = ids.map { |id| id.to_i }.sort
+    #turn parameter strings into proper integers for id finding
+    ids_to_find = subject_type_ids.map { |id| id.to_i }.uniq.sort
 
-    if ids_to_find.length == 1
-      @subject_type_filter_label = SubjectType.find(ids_to_find[0].to_i).name
-    else
-      @subject_type_filter_label = I18n.translate(:multiple)
-    end
-
+    # initialize the query string
     additional_query = ''
-    begin
+
+   #begin
+
+      # get the request subjects types
       subject_types = SubjectType.find(ids_to_find)
-      subjects = []
+
+      logger.info "subject_types.size: " + subject_types.size.to_s
+      
+      # harvest their items by looping through them
+      classifications = []
+
       subject_types.each do |subject_type|
-       subjects << subject_type.subjects
+        classifications += subject_type.classifications
       end
 
-      @ids = []
-      
-      @subjects.each do |subject|
-        @ids = @ids.concat(subject.items.map { |p| p.id })
-      end
-      
-      @ids = @ids.sort.uniq
-        
-      unless @ids.empty?
-        additional_query += "items.id IN (#{@ids.join(",")})"
+      logger.info "classifictions.size " + classifications.size.to_s
+
+      item_ids = classifications.map { |i| i.item_id }.uniq.sort
+      logger.info "item_ids: " + item_ids.to_s
+   
+      unless item_ids.empty?
+        additional_query += "items.id IN (#{item_ids.join(",")})"
+        logger.info "additional_query: " + additional_query
       else
         # if the subject type has no items, we should kill search
         flash[:error] = "No items found. Showing all."
       end
-    rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
-    else
-      flash[:error] = nil
-    ensure
+
+      # build the label needed for the filter display
+      @subject_type_filter_label = subject_type_ids.length == 1 ? subject_types[0].name : I18n.translate(:multiple)
+      
+    #rescue StandardError => error
+      #flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
+    #else
+      #flash[:error] = nil
+    #ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       return query_hash
-    end
+    #end
   end
   
   def build_keyword_query(filter_value, query_hash)

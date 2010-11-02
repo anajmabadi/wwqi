@@ -1,5 +1,6 @@
 class SubjectType < ActiveRecord::Base
   has_many :subjects
+  has_many :classifications, :through => :subjects, :source => :classifications, :uniq => true
     
   # globalize2 mixins
   translates :name, :description
