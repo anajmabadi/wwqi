@@ -332,7 +332,7 @@ class ArchiveController < ApplicationController
     # initialize the query string
     additional_query = ''
 
-   #begin
+   begin
 
       # get the request subjects types
       subject_types = SubjectType.find(ids_to_find)
@@ -356,20 +356,21 @@ class ArchiveController < ApplicationController
         logger.info "additional_query: " + additional_query
       else
         # if the subject type has no items, we should kill search
+        additional_query += "items.id IS NULL"
         flash[:error] = "No items found. Showing all."
       end
 
       # build the label needed for the filter display
       @subject_type_filter_label = subject_type_ids.length == 1 ? subject_types[0].name : I18n.translate(:multiple)
       
-    #rescue StandardError => error
-      #flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
-    #else
-      #flash[:error] = nil
-    #ensure
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for subject type #{filter_value.to_s}: #{error}."
+    else
+      flash[:error] = nil
+    ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       return query_hash
-    #end
+    end
   end
   
   def build_keyword_query(filter_value, query_hash)
