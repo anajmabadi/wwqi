@@ -343,7 +343,7 @@ class ArchiveController < ApplicationController
       classifications = []
 
       subject_types.each do |subject_type|
-        classifications += subject_type.classifications
+        classifications += subject_type.classifications(:select => 'item_id')
       end
 
       logger.info "classifictions.size " + classifications.size.to_s
