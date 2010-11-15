@@ -20,11 +20,10 @@ set :user, "cforcey"
 #	Subversion
 #############################################################
 
-set :scm, :subversion # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :repository,  "https://historicus.springloops.com/source/qajar/trunk"
-set :svn_username, "cforcey"
-set :svn_password, "kailiv14"
-set :checkout, "export"
+set :scm, :git # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :repository,  "git://github.com/cforcey/qajar_women.git"
+set :branch, "master"
+set :deploy_via, :remote_cache
 
 role :web, domain                          # Your HTTP server, Apache/etc
 role :app, domain                          # This may be the same as your `Web` server
