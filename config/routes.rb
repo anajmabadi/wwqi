@@ -1,5 +1,9 @@
 Qajar::Application.routes.draw do
 
+  get "contact/index"
+
+  get "contact/confirm"
+  
   namespace "admin" do
 
     resources :appearances, 
@@ -73,7 +77,8 @@ Qajar::Application.routes.draw do
 
   # hard coded pages using the pages table for their body text
   match 'about' => 'static_pages#page', :as => :about, :id => 1, :page_name => 'about'
-  match 'contact' => 'static_pages#page', :as => :contact, :id => 3, :page_name => 'contact'
+  match 'contact' => 'contact#index', :as => :contact, :id => 3, :page_name => 'contact'
+  match 'contact/create' => 'contact#create', :as => :contact_create
   match 'permissions' => 'static_pages#page', :as => :permissions, :id => 6, :page_name => 'permissions'
   match 'credits' => 'static_pages#page', :as => :credits, :id => 5, :page_name => 'credits'
   match 'faq' => 'static_pages#page', :as => :faq, :id => 7, :page_name => 'faq'

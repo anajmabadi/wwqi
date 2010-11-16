@@ -26,7 +26,7 @@
     <td><%= comment.email %></td>
     <td><%= comment.notes %></td>
     <td><%= link_to 'Show', admin_comment_path(comment) %></td>
-    <td><%= link_to 'Edit', admin_edit_comment_path(comment) %></td>
+    <td><%= link_to 'Edit', edit_admin_comment_path(comment) %></td>
     <td><%= link_to 'Destroy', admin_comment_path(comment), :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
@@ -34,4 +34,4 @@
 
 <br />
 
-<%= link_to 'New Comment', admin_new_comment_path %>
+<%= link_to 'New Comment', new_admin_comment_path %>
