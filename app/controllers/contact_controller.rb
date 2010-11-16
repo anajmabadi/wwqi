@@ -10,7 +10,7 @@ class ContactController < ApplicationController
     end
 
     def confirm
-        @comment = Comment.find(params[:id])
+        @comment = Comment.find(params[:id]) unless params[:id].blank?
 
         respond_to do |format|
             format.html # show.html.erb
