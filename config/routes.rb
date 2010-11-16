@@ -1,7 +1,5 @@
 Qajar::Application.routes.draw do
 
-  resources :comments
-
   namespace "admin" do
 
     resources :appearances, 
@@ -21,7 +19,8 @@ Qajar::Application.routes.draw do
       :subject_types,
       :subjects,
       :translations,
-      :plots
+      :plots,
+      :comments
 
     resources :items do
       collection do
