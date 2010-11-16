@@ -2,9 +2,6 @@ class ContactController < ApplicationController
     # GET /comments
     # GET /comments.xml
     def index
-        @comment = Comment.new
-        @ip = request.remote_ip
-        @page = Page.find(params[:id])
 
         respond_to do |format|
             format.html # index.html.erb
@@ -25,6 +22,8 @@ class ContactController < ApplicationController
     # GET /comments/new.xml
     def new
         @comment = Comment.new
+        @ip = request.remote_ip
+        @page = Page.find(3)
 
         respond_to do |format|
             format.html # new.html.erb
@@ -41,10 +40,12 @@ class ContactController < ApplicationController
     # POST /comments.xml
     def create
         @comment = Comment.new(params[:comment])
-
+        @ip = request.remote_ip
+        @page = Page.find(3)
+        
         respond_to do |format|
             if @comment.save
-                format.html { redirect_to(:action => 'confirm', :notice => 'Comment was successfully created.', :id => @comment) }
+                format.html { redirect_to(:action => 'confirm', :id => @comment) }
                 format.xml  { render :xml => @comment, :status => :created, :location => @comment }
             else
                 format.html { render :action => "new" }
