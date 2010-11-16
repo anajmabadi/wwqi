@@ -79,6 +79,7 @@ Qajar::Application.routes.draw do
   match 'about' => 'static_pages#page', :as => :about, :id => 1, :page_name => 'about'
   match 'contact' => 'contact#new', :as => :contact
   match 'contact/create' => 'contact#create', :as => :contact_create
+  match 'contact/confirm' => 'contact#confirm', :as => :contact_confirm
   match 'permissions' => 'static_pages#page', :as => :permissions, :id => 6, :page_name => 'permissions'
   match 'credits' => 'static_pages#page', :as => :credits, :id => 5, :page_name => 'credits'
   match 'faq' => 'static_pages#page', :as => :faq, :id => 7, :page_name => 'faq'
