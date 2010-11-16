@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101018190036) do
+ActiveRecord::Schema.define(:version => 20101116115017) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -236,6 +236,21 @@ ActiveRecord::Schema.define(:version => 20101018190036) do
   end
 
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
+
+  create_table "comments", :force => true do |t|
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "submitted_at"
+    t.string   "ip"
+    t.datetime "replied_at"
+    t.string   "name"
+    t.string   "email"
+    t.text     "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comments", ["submitted_at"], :name => "index_comments_on_submitted_at"
 
   create_table "exhibition_translations", :force => true do |t|
     t.integer  "exhibition_id"

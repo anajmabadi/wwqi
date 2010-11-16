@@ -7,4 +7,5 @@
   <em><%= raw @page.caption %></em>
   <% end %>
   <%= raw @page.body %>
-</div> <!-- end browser --><!-- end featured -->
+  <%= render :partial => 'contact_form', :locals => { :comment => @comment, :ip => @ip } %>
+</div> <!-- end browser --><!-- end featured --> 

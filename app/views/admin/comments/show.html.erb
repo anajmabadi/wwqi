@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Subject:</b>
+  <%= @comment.subject %>
+</p>
+
+<p>
+  <b>Body:</b>
+  <%= @comment.body %>
+</p>
+
+<p>
+  <b>Submitted at:</b>
+  <%= @comment.submitted_at %>
+</p>
+
+<p>
+  <b>Ip:</b>
+  <%= @comment.ip %>
+</p>
+
+<p>
+  <b>Replied at:</b>
+  <%= @comment.replied_at %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @comment.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @comment.email %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @comment.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_comment_path(@comment) %> |
+<%= link_to 'Back', comments_path %>
