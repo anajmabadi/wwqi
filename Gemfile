@@ -16,6 +16,8 @@ gem "railties", ">=3.0.0.beta4"
 
 gem 'farsifu'
 
+gem 'rubyzip'
+
 # jquery rails installer
 gem 'jquery-rails'
 

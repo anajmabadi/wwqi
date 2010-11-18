@@ -3,89 +3,102 @@
 <% @extra_head_content = detail_header_content -%>
 
 <div id="browser" class="clearfix singleItemBrowser">
-  <div id="head">
-    <ul class="itemTools sortnav">
-      <li><a href="#" class="module-link share"><%= t(:share).upcase %></a></li>
-      <li><a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a></li>
-      <li><%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %></li>
-      <li><%= link_to( t(:next_item).upcase, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %></li>
-    </ul>
-  </div>
-  <div id="browserContent" class="clearfix">
-    <div id="itemImage">
-      <%= render :partial => 'zoomify' %>
-
-
-      <div id="catalogInfo">
-        <div id="subjects">
-          <h3> Subjects </h3>
-          <ul>
-            <% @item.subjects.each do |subject| %>
+    <div id="head">
+        <ul class="itemTools sortnav">
             <li>
-              <%= link_to(subject.name, archive_browser_path(:subject_filter => subject.id), :title => "view all items with this subject") %>
+                <a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a>
             </li>
-            <% end %>
-          </ul>
-        </div>
-        <div id="people">
-          <h3> People </h3>
-          <ul>
-            <% @item.people.each do |person| %>
-              <li>
-                <%= link_to(person.name, archive_browser_path(:person_filter => person.id), :title => "view all items with this person") %>
-              </li>
-            <% end %>
-          </ul>
-        </div>
-        <div id="places">
-          <h3> Places </h3>
-          <ul>
-            <% @item.places.each do |place|  %>
             <li>
-              <%= link_to(place.name, archive_browser_path(:place_filter => place.id), :title => "view all items from this place") %>
+                <%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %>
             </li>
+            <li>
+                <%= link_to( t(:next_item).upcase, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %>
+            </li>
+        </ul>
+        <ul class="itemToolsRight sortnav">
+            <li>
+                <%= link_to t(:download).upcase,  archive_detail_download_path(@item) %>
+            </li>
+            <li>
+                <a href="#" class="module-link share"><%= t(:share).upcase %></a>
+            </li>
+        </ul>
+    </div>
+    <div id="browserContent" class="clearfix">
+        <div id="itemImage">
+            <%= render :partial => 'zoomify' %>
+ 
+            <% unless @item.subjects.empty? && @item.people.empty? && @item.places.empty? -%>
+              <div id="catalogInfo">
+                <div id="subjects">
+                    <h3> Subjects </h3>
+                    <ul>
+                        <% @item.subjects.each do |subject| %>
+                        <li>
+                            <%= link_to(subject.name, archive_browser_path(:subject_filter => subject.id), :title => "view all items with this subject") %>
+                        </li>
+                        <% end %>
+                    </ul>
+                </div>
+                <div id="people">
+                    <h3> People </h3>
+                    <ul>
+                        <% @item.people.each do |person| %>
+                        <li>
+                            <%= link_to(person.name, archive_browser_path(:person_filter => person.id), :title => "view all items with this person") %>
+                        </li>
+                        <% end %>
+                    </ul>
+                </div>
+                <div id="places">
+                    <h3> Places </h3>
+                    <ul>
+                        <% @item.places.each do |place|  %>
+                        <li>
+                            <%= link_to(place.name, archive_browser_path(:place_filter => place.id), :title => "view all items from this place") %>
+                        </li>
+                        <% end %>
+                    </ul>
+                </div>
+                
+            </div>
             <% end %>
-          </ul>
         </div>
-      </div>
+        <div id="itemDetails">
+            <table  class="styled">
+                <tr>
+                    <!--<th><%= t(:full_title).capitalize %> </th>-->
+                    <td colspan="2" class="title"><%= @item.title %> </td>
+                </tr>
+                <% unless @item.description.blank?  || @item.description.nil? %>
+                <tr class="odd">
+                    <td colspan="2"><%= raw @item.description %></td>
+                </tr>
+                <% end %>
+                <% unless @item.collection_id.blank?  || @item.collection.nil? %>
+                <tr>
+                    <th><%= t(:collection).capitalize %> </th>
+                    <td><%= link_to( @item.collection.name, archive_browser_path(:collection_filter => @item.collection.id)) %> </td>
+                </tr>
+                <% end %>
+                <% unless @item.show_date.blank? %>
+                <tr class="odd">
+                    <th><%= t(:date).capitalize %> </th>
+                    <td><%= @item.show_date %></td>
+                </tr>
+                <% end %>
+                <% unless @item.width + @item.height + @item.length + @item.depth == 0 %>
+                <tr>
+                    <th><%= t(:dimensions).capitalize %></th>
+                    <td><%= @item.dimension_label %></td>
+                </tr>
+                <% end %>
+            </table>
+            <% unless @item.clips.empty? %>
+            <% clip = @item.clips[0] -%>
+            <% @extra_head_content = archive_audio_head(clip.clip_url('mp3'), clip.clip_url('wav')) -%>
+            <%= raw css_audio_player(clip.title) %>
+            <% end %>
+        </div>
     </div>
-    <div id="itemDetails">
-      <table  class="styled">
-        <tr>
-          <!--<th><%= t(:full_title).capitalize %> </th>-->
-          <td colspan="2" class="title"><%= @item.title %> </td>
-        </tr>
-        <% unless @item.description.blank?  || @item.description.nil? %>
-          <tr class="odd">
-            <td colspan="2"><%= raw @item.description %></td>
-          </tr>
-        <% end %>
-        <% unless @item.collection_id.blank?  || @item.collection.nil? %>
-          <tr>
-            <th><%= t(:collection).capitalize %> </th>
-            <td><%= link_to( @item.collection.name, archive_browser_path(:collection_filter => @item.collection.id)) %> </td>
-          </tr>
-        <% end %>
-        <% unless @item.show_date.blank? %>
-          <tr class="odd">
-            <th><%= t(:date).capitalize %> </th>
-            <td><%= @item.show_date %></td>
-          </tr>
-        <% end %>
-        <% unless @item.width + @item.height + @item.length + @item.depth == 0 %>
-          <tr>
-            <th><%= t(:dimensions).capitalize %></th>
-            <td><%= @item.dimension_label %></td>
-          </tr>
-        <% end %>
-      </table>
-
-
-      <% unless @item.clips.empty? %>
-        <% clip = @item.clips[0] -%>
-        <% @extra_head_content = archive_audio_head(clip.clip_url('mp3'), clip.clip_url('wav')) -%>
-        <%= raw css_audio_player(clip.title) %>
-      <% end %>
-    </div>
-  </div>
 </div> <!-- end browser --><!-- end featured -->

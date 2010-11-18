@@ -173,7 +173,31 @@ class Item < ActiveRecord::Base
     end unless self.pages.nil?
     return file_urls
   end
-
+  
+  def tif_path(index=1)
+    return LIBRARY_PATH + TIFS_DIR + tif_file_name(index) unless index.nil?
+  end
+  
+  def tif_paths
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << tif_path(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+  
+  def zip_file_name()
+    return FILE_PREFIX + "#{self.id.to_s}.zip"
+  end
+  
+  def zip_url()
+    return LIBRARY_URL + ZIPS_DIR + zip_file_name()
+  end
+  
+  def zip_path()
+    return LIBRARY_PATH + ZIPS_DIR + zip_file_name()
+  end
+  
   def zoomify_folder_name(index=1)
     return "it_#{self.id.to_s}_#{index.to_s}_img" unless index.nil?
   end

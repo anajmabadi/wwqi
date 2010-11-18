@@ -7,6 +7,9 @@ Qajar::Application.configure do
 
   # providing a persian page number rendered
   require 'persian_link_renderer'
+  
+  # require zip to all convenience class
+  require 'zip_them_all'
 
   # In the development environment your application's code is reloaded on
   # every request.  This slows down response time but is perfect for development
