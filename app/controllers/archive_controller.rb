@@ -127,18 +127,25 @@ class ArchiveController < ApplicationController
     end
 
     def download
+
+        @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+        @error = false
+
         @item = Item.find_by_id(params[:id])
+        
         if @item.pages < 2
-            send_file @item.tif_path, :type=>"application/zip", :x_sendfile=>true
+            @file_to_send = @item.tif_path
         else
+            @file_to_send = @item.zip_path
             unless File.exists?(@item.zip_path)
                 #create a zip file if it is the first time
                 zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
-                send_file zip_them_all.zip, :type=>"application/zip", :x_sendfile=>true
-            else
-                send_file @item.zip_path, :type=>"application/zip", :x_sendfile=>true
+                Rails.logger.info "Did it work: " + zip_them_all.zip_file_path
+                zip_them_all.zip
             end
         end
+
+        send_file @file_to_send, :type=>"application/zip", :x_sendfile=>true
     end
 
     # zoomify requires a custom XML file for its gallery viewer
@@ -146,7 +153,7 @@ class ArchiveController < ApplicationController
         @id = params[:id]
         @slides = Image.find(:all, :conditions => ['publish=1 && item_id = ?', @id], :order => :position)
         unless @id.nil? || @slides.nil? || @slides.empty?
-            respond_to do |format|
+            respond_to do |endormat|
                 format.xml
             end
         else

@@ -181,7 +181,7 @@ class Item < ActiveRecord::Base
   def tif_paths
     file_urls = Array.new
     (1..self.pages).each do |page|
-      file_urls << tif_url(page)
+      file_urls << tif_path(page)
     end unless self.pages.nil?
     return file_urls
   end
