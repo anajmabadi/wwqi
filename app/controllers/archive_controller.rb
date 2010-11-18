@@ -116,27 +116,27 @@ class ArchiveController < ApplicationController
         @error = true
         end
 
-        def download
-            @item = Item.find_by_id(params[:id])
-            if @item.pages < 2
-                send_file @item.tif_url, :type=>"application/zip", :x_sendfile=>true
-            else
-                unless File.exists?(@item.zip_url)
-                    #create a zip file if it is the first time
-                    zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths])
-                    send_file zip_them_all.zip, :type=>"application/zip", :x_sendfile=>true
-                else
-                    send_file @item.zip_url, :type=>"application/zip", :x_sendfile=>true
-                end
-            end
-        end
-
         respond_to do |format|
             unless @error
                 format.html
                 format.xml  { render :xml => @item }
             else
                 redirect_to @return_url
+            end
+        end
+    end
+
+    def download
+        @item = Item.find_by_id(params[:id])
+        if @item.pages < 2
+            send_file @item.tif_path, :type=>"application/zip", :x_sendfile=>true
+        else
+            unless File.exists?(@item.zip_path)
+                #create a zip file if it is the first time
+                zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
+                send_file zip_them_all.zip, :type=>"application/zip", :x_sendfile=>true
+            else
+                send_file @item.zip_path, :type=>"application/zip", :x_sendfile=>true
             end
         end
     end

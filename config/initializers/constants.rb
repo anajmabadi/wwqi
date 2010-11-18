@@ -3,7 +3,7 @@
 
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
-  LIBRARY_PATH = "/var/www/vhosts/qajarwomen/subdomains/httpdocs/library/"
+  LIBRARY_PATH = Rails.env == "production" ? "/var/www/vhosts/qajarwomen/subdomains/library/httpdocs/" : "/volumes/passport/project_libraries/qajar/"
   PREVIEWS_DIR = "previews/"
   SLIDES_DIR = "slides/"
   TIFS_DIR = "tifs/"
