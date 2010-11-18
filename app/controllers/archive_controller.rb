@@ -132,20 +132,16 @@ class ArchiveController < ApplicationController
         @error = false
 
         @item = Item.find_by_id(params[:id])
-        
-        if @item.pages < 2
-            @file_to_send = @item.tif_path
-        else
-            @file_to_send = @item.zip_path
-            unless File.exists?(@item.zip_path)
-                #create a zip file if it is the first time
-                zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
-                Rails.logger.info "Did it work: " + zip_them_all.zip_file_path
-                zip_them_all.zip
-            end
+
+        @file_to_send = @item.zip_path
+        unless File.exists?(@item.zip_path)
+            #create a zip file if it is the first time
+            zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
+            Rails.logger.info "Did it work: " + zip_them_all.zip_file_path
+        zip_them_all.zip
         end
 
-        send_file @file_to_send, :type=>"application/zip", :x_sendfile=>true
+        send_file @file_to_send, :type=>"application/zip"
     end
 
     # zoomify requires a custom XML file for its gallery viewer
