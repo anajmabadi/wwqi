@@ -60,6 +60,7 @@ Qajar::Application.routes.draw do
   match 'admin' => 'admin/admin#index'
 
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
+  match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
   match 'archive/collections' => 'archive#collections', :as => :archive_collections

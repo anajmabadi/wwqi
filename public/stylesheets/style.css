@@ -343,13 +343,12 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #browser #head .types,
 #browser #head .itemTools{float:left}
-#browser #head .sort{float:left; width:300px}
-
-
-
-
-#browser #head .itemTools .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
+#browser #head .sort{float:left; width:300px;}
 #browser #head .itemTools .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
+
+#browser #head .itemToolsRight{float:right;}
+#browser #head .itemToolsRight .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
+#browser #head .itemToolsRight .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
 
 
 #browser #browserContent{
