@@ -6,6 +6,10 @@ Qajar::Application.configure do
 
   # providing a persian page number rendered
   require 'persian_link_renderer'
+  
+    
+  # require zip to all convenience class
+  require 'zip_them_all'
 
   # The production environment is meant for finished, "live" apps.
   # Code is not reloaded between requests
