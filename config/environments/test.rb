@@ -7,6 +7,10 @@ Qajar::Application.configure do
 
   # providing a persian page number rendered
   require 'persian_link_renderer'
+  
+    
+  # require zip to all convenience class
+  require 'zip_them_all'
 
   # The test environment is used exclusively to run your application's
   # test suite.  You never need to work with it otherwise.  Remember that
