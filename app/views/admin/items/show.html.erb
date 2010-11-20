@@ -2,208 +2,277 @@
 <% @page_title = t(:item).capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn">
-    <%= render 'nav_show_header_bar', :item => @item %>
-    <table class="styled" >
-      <tr><td><h2>
-            <%= @item.title_en %>
-          </h2></td>
-        <td><h2>
-            <%= @item.title_fa %>
-          </h2></td></tr>
-      <tr><td>
-          <b>Credit_en:</b>
-          <%= @item.credit_en %>
-        </td>
-        <td>
-          <b>Credit_fa:</b>
-          <%= @item.credit_fa %>
-        </td></tr>
-      <tr><td>
-          <b>Creator_en:</b>
-          <%= @item.creator.name_en unless @item.creator.nil? %>
-        </td><td>
-          <b>Creator_fa:</b>
-          <%= @item.creator.name_fa unless @item.creator.nil? %>
-        </td></tr>
-      <tr><td>
-          <b>Description_en:</b>
-          <%= @item.description_en %>
-        </td><td>
-          <b>Description_fa:</b>
-          <%= @item.description_fa %>
-        </td></tr>
-      <tr>
-        <td>
-          <b>Display date_en:</b>
-          <%= @item.display_date_en %>
-        </td>
-        <td>
-          <b>Display date_fa:</b>
-          <%= @item.display_date_fa %>
-        </td>
-      </tr>
-      <tr><td>
-          <b>Publisher_en:</b>
-          <%= @item.publisher_en %>
-        </td><td>
-          <b>Publisher_fa:</b>
-          <%= @item.publisher_fa %>
-        </td></tr>
-      <tr><td>
-          <b>Transcript_en:</b>
-          <%= @item.transcript_en %>
-        </td><td>
-          <b>Transcript_fa:</b>
-          <%= @item.transcript_fa %>
-        </td></tr>
-      <tr>
-        <td colspan="2">
-          <h3>Translated Relationships</h3>
-        </td>
-      </tr>
-      <tr><td>
-          <b>Owner_en:</b>
-          <%= @item.owner.name_en unless @item.owner.nil? %>
-        </td><td>
-          <b>Owner_fa:</b>
-          <%= @item.owner.name_fa unless @item.owner.nil? %>
-        </td></tr>
-      <tr><td>
-          <b>Collection_en:</b>
-          <%= @item.collection.name_en unless @item.collection.nil? %>
-        </td><td>
-          <b>Collection_fa:</b>
-          <%= @item.collection.name_fa unless @item.collection.nil? %>
-        </td></tr>
-      <tr><td colspan="2"><h3>Untranslated Fields</h3></td></tr>
-      <tr><td>
-          <b>Accession num:</b>
-          <%= @item.accession_num %>
-        </td>
-        <td>
-          <b>Urn:</b>
-          <%= @item.urn %>
-        </td></tr>
-      <tr><td>
-          <b>Pages:</b>
-          <%= @item.pages %>
-        </td>
-        <td>
-          <b>Bound:</b>
-          <%= @item.bound %>
-        </td></tr>
-      <tr><td>
-          <b>Source date:</b>
-          <%= @item.source_date %>
-        </td><td>
-          <b>Calendar Type:</b>
-          <%= @item.calendar_type.name unless @item.calendar_type_id.nil? %>
-        </td></tr>
-      <tr><td>
-          <b>Sort date:</b>
-          <%= @item.sort_date %>
-        </td><td>
-          <b>Circa:</b>
-          <%= @item.circa %>
-        </td></tr>
-      <tr><td>
-          <b>Width:</b>
-          <%= @item.width %>
-        </td><td>
-          <b>Height:</b>
-          <%= @item.height %>
-        </td></tr>
-
-      <tr><td>
-          <b>Depth:</b>
-          <%= @item.depth %>
-        </td><td>
-          <b>Length:</b>
-          <%= @item.length %>
-        </td></tr>
-      <tr><td>
-          <b>Staff Favorite:</b>
-          <%= @item.favorite %>
-        </td>
-        <td>
-          <b>Publish:</b>
-          <%= @item.publish %>
-        </td></tr>
-      <tr><td colspan="2">
-          <b>Notes:</b>
-          <%= @item.notes %>
-        </td></tr>
-      <tr>
-        <td>
-          <div id="item_classifications_list">
-            <%= render 'item_classifications_list', :classifications => @item.classifications %>
-          </div>
-          <div id="addClassification">
-            <% if @classification.nil? %>
-              <%= render :partial => 'admin/items/add_classification_button', :locals => { :item => @item } %>
-            <% else %>
-              <%= render :partial => 'admin/items/add_classification_form', :locals => { :subject => @subject } %>
-            <% end %>
-          </div>
-        </td>
-        <td>
-          <div id="item_passports_list"><%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %></div>
-          <div id="addPassport">
-            <% if @passport.nil? %>
-              <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
-            <% else %>
-              <%= render :partial => 'admin/items/add_passport_form', :locals => { :passport => @passport } %>
-            <% end %>
-          </div>
-        </td>
-      </tr>
-      <tr><td>
-          <div id="item_plots_list">
-            <%= render 'item_plots_list', :plots => @item.plots %>
-          </div>
-          <div id="addPlot">
-            <% if @plot.nil? %>
-              <%= render :partial => 'admin/items/add_plot_button', :locals => { :item => @item } %>
-            <% else %>
-              <%= render :partial => 'admin/items/add_plot_form', :locals => { :plot => @plot } %>
-            <% end %>
-          </div>
-        </td>
-        <td>
-          <div id="item_appearances_list">
-            <%= render 'item_appearances_list', :appearances => @item.appearances %>
-          </div>
-          <div id="addAppearance">
-            <% if @plot.nil? %>
-              <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item } %>
-            <% else %>
-              <%= render :partial => 'admin/items/add_appearance_form', :locals => { :appearance => @appearance } %>
-            <% end %>
-          </div>
-        </td></tr>
-      <tr>
-        <td colspan="2">
-          <h3>Media:</h3>
-          <p>Right click links to download file. Regular or Left click to view it in a new browser window.</p>
-        </td></tr>
-      <tr>
-        <td>
-          <ul>
-            <li>thumbnail: <%= link_to @item.thumbnail_url, @item.thumbnail_url, :popup => true %></li>
-            <li>slides: <ol><% @item.slide_urls.each_with_index do |url, page| %><li><%= link_to url, url, :target => "_blank" %></li><% end %></ol></li>
-            <li>previews: <ol><% @item.preview_urls.each_with_index do |url, page| %><li><%= link_to url, url, :target => "_blank" %></li><% end %></ol></li>
-          </ul>
-        </td>
-        <td>
-          <ul>
-            <li>tifs: <ol><% @item.tif_urls.each_with_index do |url, page| %><li><%= link_to url, url, :target => "_blank" %></li><% end %></ol></li>
-            <li>clips: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, clip.clip_url('wav') %><% end %></li>
-          </ul>
-        </td>
-      </tr>
-
-    </table>
-    <%= render 'nav_show_header_bar', :item => @item %>
-  </div>
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :item => @item %>
+        <table class="styled" >
+            <tbody>
+                <tr>
+                    <td><h2>
+                    <%= @item.title_en %>
+                    </h2></td>
+                    <td><h2>
+                    <%= @item.title_fa %>
+                    </h2></td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Credit_en:</b>
+                    <%= @item.credit_en %>
+                    </td>
+                    <td>
+                    <b>Credit_fa:</b>
+                    <%= @item.credit_fa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Creator_en:</b>
+                    <%= @item.creator.name_en unless @item.creator.nil? %>
+                    </td><td>
+                    <b>Creator_fa:</b>
+                    <%= @item.creator.name_fa unless @item.creator.nil? %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Description_en:</b>
+                    <%= @item.description_en %>
+                    </td><td>
+                    <b>Description_fa:</b>
+                    <%= @item.description_fa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Display date_en:</b>
+                    <%= @item.display_date_en %>
+                    </td>
+                    <td>
+                    <b>Display date_fa:</b>
+                    <%= @item.display_date_fa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Publisher_en:</b>
+                    <%= @item.publisher_en %>
+                    </td><td>
+                    <b>Publisher_fa:</b>
+                    <%= @item.publisher_fa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Transcript_en:</b>
+                    <%= @item.transcript_en %>
+                    </td><td>
+                    <b>Transcript_fa:</b>
+                    <%= @item.transcript_fa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <h3>Translated Relationships</h3>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Owner_en:</b>
+                    <%= @item.owner.name_en unless @item.owner.nil? %>
+                    </td><td>
+                    <b>Owner_fa:</b>
+                    <%= @item.owner.name_fa unless @item.owner.nil? %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Collection_en:</b>
+                    <%= @item.collection.name_en unless @item.collection.nil? %>
+                    </td><td>
+                    <b>Collection_fa:</b>
+                    <%= @item.collection.name_fa unless @item.collection.nil? %>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"><h3>Untranslated Fields</h3></td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Accession num:</b>
+                    <%= @item.accession_num %>
+                    </td>
+                    <td>
+                    <b>Urn:</b>
+                    <%= @item.urn %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Pages:</b>
+                    <%= @item.pages %>
+                    </td>
+                    <td>
+                    <b>Bound:</b>
+                    <%= @item.bound %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Source date:</b>
+                    <%= @item.source_date %>
+                    </td><td>
+                    <b>Calendar Type:</b>
+                    <%= @item.calendar_type.name unless @item.calendar_type_id.nil? %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Sort date:</b>
+                    <%= @item.sort_date %>
+                    </td><td>
+                    <b>Circa:</b>
+                    <%= @item.circa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Width:</b>
+                    <%= @item.width %>
+                    </td><td>
+                    <b>Height:</b>
+                    <%= @item.height %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Depth:</b>
+                    <%= @item.depth %>
+                    </td><td>
+                    <b>Length:</b>
+                    <%= @item.length %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Staff Favorite:</b>
+                    <%= @item.favorite %>
+                    </td>
+                    <td>
+                    <b>Publish:</b>
+                    <%= @item.publish %>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <b>Notes:</b>
+                    <%= @item.notes %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div id="item_classifications_list">
+                        <%= render 'item_classifications_list', :classifications => @item.classifications %>
+                    </div>
+                    <div id="addClassification">
+                        <% if @classification.nil? -%>
+                        <%= render :partial => 'admin/items/add_classification_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_classification_form', :locals => { :subject => @subject } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                    <td>
+                    <div id="item_passports_list">
+                        <%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %>
+                    </div>
+                    <div id="addPassport">
+                        <% if @passport.nil? -%>
+                        <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_passport_form', :locals => { :passport => @passport } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div id="item_plots_list">
+                        <%= render 'item_plots_list', :plots => @item.plots %>
+                    </div>
+                    <div id="addPlot">
+                        <% if @plot.nil? -%>
+                        <%= render :partial => 'admin/items/add_plot_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_plot_form', :locals => { :plot => @plot } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                    <td>
+                    <div id="item_appearances_list">
+                        <%= render 'item_appearances_list', :appearances => @item.appearances %>
+                    </div>
+                    <div id="addAppearance">
+                        <% if @appearance.nil? -%>
+                        <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_appearance_form', :locals => { :appearance => @appearance } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <h3>Media:</h3>
+                    <p>
+                        Right click links to download file. Regular or Left click to view it in a new browser window.
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <ul>
+                        <li>
+                            thumbnail: <%= link_to @item.thumbnail_url, @item.thumbnail_url, :target => "_blank" %>
+                        </li>
+                        <li>
+                            slides:
+                            <ol>
+                                <% @item.slide_urls.each_with_index do |url, page| %>
+                                <li>
+                                    <%= link_to url, url, :target => "_blank" %>
+                                </li><% end %>
+                            </ol>
+                        </li>
+                        <li>
+                            previews:
+                            <ol>
+                                <% @item.preview_urls.each_with_index do |url, page| %>
+                                <li>
+                                    <%= link_to url, url, :target => "_blank" %>
+                                </li><% end %>
+                            </ol>
+                        </li>
+                    </ul>
+                    </td>
+                    <td>
+                    <ul>
+                        <li>
+                            tifs:
+                            <ol>
+                                <% @item.tif_urls.each_with_index do |url, page| %>
+                                <li>
+                                    <%= link_to url, url, :target => "_blank" %>
+                                </li><% end %>
+                            </ol>
+                        </li>
+                        <li>
+                            clips: <% @item.clips.each do |clip| %><%= link_to_unless clip.clip_url("mp3").nil?, clip.clip_url('mp3') %> <%= link_to_unless clip.clip_url('wav').nil?, clip.clip_url('wav') %><% end %>
+                        </li>
+                    </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <%= render 'nav_show_header_bar', :item => @item %>
+    </div>
 </div>
