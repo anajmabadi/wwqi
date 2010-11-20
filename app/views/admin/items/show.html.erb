@@ -158,7 +158,7 @@
           </div>
         </td>
       </tr>
-      <tr><td colspan="2">
+      <tr><td>
           <div id="item_plots_list">
             <%= render 'item_plots_list', :plots => @item.plots %>
           </div>
@@ -167,6 +167,18 @@
               <%= render :partial => 'admin/items/add_plot_button', :locals => { :item => @item } %>
             <% else %>
               <%= render :partial => 'admin/items/add_plot_form', :locals => { :plot => @plot } %>
+            <% end %>
+          </div>
+        </td>
+        <td>
+          <div id="item_appearances_list">
+            <%= render 'item_appearances_list', :appearances => @item.appearances %>
+          </div>
+          <div id="addAppearance">
+            <% if @plot.nil? %>
+              <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item } %>
+            <% else %>
+              <%= render :partial => 'admin/items/add_appearance_form', :locals => { :appearance => @appearance } %>
             <% end %>
           </div>
         </td></tr>

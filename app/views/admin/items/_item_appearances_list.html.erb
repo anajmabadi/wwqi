@@ -1,0 +1,11 @@
+<span><div id="item_appearances_list">
+    <h3>People Appearances:</h3>
+      <ul>
+        <% unless appearances.empty? -%>
+          <%= render(appearances) %>
+        <% else -%>
+          <li>No appearances.</li>
+        <% end -%>
+      </ul>
+  </div>
+</span>
