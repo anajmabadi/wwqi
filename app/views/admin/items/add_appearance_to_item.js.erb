@@ -1,0 +1,2 @@
+$('#item_appearances_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_appearances_list', :locals => {:appearances => @item.appearances } ) %>');
+$('#addAppearance>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/add_appearance_button', :locals => {:appearance => @appearance, :item => @item }) %>');
