@@ -19,17 +19,17 @@
             <li>
                 <%= link_to t(:download).upcase,  archive_detail_download_path(@item) %>
             </li>
-            <li>
-                <a href="#" class="module-link share"><%= t(:share).upcase %></a>
-            </li>
         </ul>
+        <div class="add_this_tools">
+            <%= raw add_this_block_toolbar %>
+        </div>
     </div>
     <div id="browserContent" class="clearfix">
         <div id="itemImage">
             <%= render :partial => 'zoomify' %>
- 
+
             <% unless @item.subjects.empty? && @item.people.empty? && @item.places.empty? -%>
-              <div id="catalogInfo">
+            <div id="catalogInfo">
                 <div id="subjects">
                     <h3> Subjects </h3>
                     <ul>
@@ -60,7 +60,6 @@
                         <% end %>
                     </ul>
                 </div>
-                
             </div>
             <% end %>
         </div>
