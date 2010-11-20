@@ -178,7 +178,7 @@
       <tr>
         <td>
           <ul>
-            <li>thumbnail: <%= link_to @item.thumbnail_url, :target => "_blank" %></li>
+            <li>thumbnail: <%= link_to @item.thumbnail_url, @item.thumbnail_url, :popup => true %></li>
             <li>slides: <ol><% @item.slide_urls.each_with_index do |url, page| %><li><%= link_to url, url, :target => "_blank" %></li><% end %></ol></li>
             <li>previews: <ol><% @item.preview_urls.each_with_index do |url, page| %><li><%= link_to url, url, :target => "_blank" %></li><% end %></ol></li>
           </ul>
