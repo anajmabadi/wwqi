@@ -112,6 +112,23 @@ module ApplicationHelper
       <!-- AddThis Button END -->
     }
   end
+  
+  def add_this_block_toolbar
+      s= %{
+          <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style ">
+            <a class="addthis_button_email"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_stumbleupon"></a>
+            <a class="addthis_button_digg"></a>
+            <a class="addthis_button_compact"></a>
+            </div>
+            <script type="text/javascript">var addthis_config = {"data_track_clickback":true};</script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar"></script>
+            <!-- AddThis Button END -->
+      }
+  end
 
   def google_analytics_block
     if Rails.env == 'production'
