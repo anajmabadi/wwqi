@@ -350,7 +350,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browser #head .itemToolsRight .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
 #browser #head .itemToolsRight .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
 
-#browser #head .add_this_tools{float:right; overflow:auto; width:110px;}
+#browser #head .add_this_tools{float:right; overflow:auto; width:130px;}
 
 #browser #browserContent{
 	background:#fff;
