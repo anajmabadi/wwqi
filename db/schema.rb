@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123143106) do
+ActiveRecord::Schema.define(:version => 20101123194034) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -459,10 +459,12 @@ ActiveRecord::Schema.define(:version => 20101123143106) do
     t.integer  "year"
     t.integer  "month"
     t.integer  "day"
+    t.boolean  "editorial_dating",                                :default => false
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
   add_index "items", ["collection_id"], :name => "collection_id"
+  add_index "items", ["editorial_dating"], :name => "index_items_on_editorial_dating"
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
