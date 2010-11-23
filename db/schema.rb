@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101116115017) do
+ActiveRecord::Schema.define(:version => 20101123124929) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -209,6 +209,9 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
     t.text     "materials"
     t.text     "repository"
     t.text     "tips"
+    t.string   "creator"
+    t.text     "restrictions"
+    t.text     "history"
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
@@ -228,11 +231,16 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "publish",        :default => true,  :null => false
-    t.boolean  "private",        :default => false, :null => false
-    t.integer  "items_count",    :default => 0,     :null => false
-    t.boolean  "finding_aid",    :default => false, :null => false
-    t.integer  "lock_version",   :default => 0,     :null => false
+    t.boolean  "publish",           :default => true,  :null => false
+    t.boolean  "private",           :default => false, :null => false
+    t.integer  "items_count",       :default => 0,     :null => false
+    t.boolean  "finding_aid",       :default => false, :null => false
+    t.integer  "lock_version",      :default => 0,     :null => false
+    t.date     "acquired_on"
+    t.integer  "interview_id"
+    t.string   "acquired_by"
+    t.string   "processed_by"
+    t.text     "acquisition_notes"
   end
 
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
@@ -447,6 +455,9 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
     t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.integer  "lock_version",                                    :default => 0,     :null => false
+    t.integer  "year"
+    t.integer  "month"
+    t.integer  "day"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -454,6 +465,7 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
+  add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"
 
   create_table "media", :force => true do |t|
     t.integer  "position"
