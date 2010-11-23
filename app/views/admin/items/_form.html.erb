@@ -188,6 +188,7 @@
         <div class="field englishOnly">
             <%= f.label :editorial_era %> (Select Box)
             <br />
+            <%= f.select :era_id, Era.select_list, {:include_blank => true} %>
         </div>
         </td>
         <td>

@@ -44,16 +44,6 @@
                 </tr>
                 <tr>
                     <td>
-                    <b>Display date_en:</b>
-                    <%= @item.display_date_en %>
-                    </td>
-                    <td>
-                    <b>Display date_fa:</b>
-                    <%= @item.display_date_fa %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
                     <b>Publisher_en:</b>
                     <%= @item.publisher_en %>
                     </td><td>
@@ -118,6 +108,15 @@
                 </tr>
                 <tr>
                     <td>
+                    <b>Editorial Era (rough date assignment):</b>
+                    <%= @item.era.title unless @item.era.nil? %>
+                    </td><td>
+                    <b>Editorial dating (puts square brackets around dates):</b>
+                    <%= @item.editorial_dating %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     <b>Source date:</b>
                     <%= @item.source_date %>
                     </td><td>
@@ -138,6 +137,16 @@
                     </td><td>
                     <b>Circa:</b>
                     <%= @item.circa %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Display date_en:</b>
+                    <%= @item.display_date_en %>
+                    </td>
+                    <td>
+                    <b>Display date_fa:</b>
+                    <%= @item.display_date_fa %>
                     </td>
                 </tr>
                 <tr>

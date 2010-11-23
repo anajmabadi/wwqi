@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123221121) do
+ActiveRecord::Schema.define(:version => 20101123223545) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -478,6 +478,7 @@ ActiveRecord::Schema.define(:version => 20101123221121) do
     t.integer  "month"
     t.integer  "day"
     t.boolean  "editorial_dating",                                :default => false
+    t.integer  "era_id"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
