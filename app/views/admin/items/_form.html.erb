@@ -160,7 +160,7 @@
         </td>
         <td>
         <div class="field englishOnly">
-            <%= f.label :urn %>
+            <%= f.label :urn, 'Original File Name' %>
             <br />
             <%= f.text_area :urn, :rows => 3, :class => "englishOnly" %>
         </div>
@@ -169,14 +169,14 @@
     <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :pages %>
+            <%= f.label :pages, 'Pages/Images' %>
             <br />
             <%= f.text_field :pages, :size => 5, :class => "englishOnly" %>
         </div>
         </td>
         <td>
         <div class="field">
-            <%= f.label :bound %>
+            <%= f.label :bound, "Bound (shows in book viewer)" %>
             <br />
             <%= f.check_box :bound %>
         </div>
