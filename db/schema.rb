@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101116115017) do
+ActiveRecord::Schema.define(:version => 20101123121921) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -447,6 +447,9 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
     t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.integer  "lock_version",                                    :default => 0,     :null => false
+    t.integer  "year"
+    t.integer  "month"
+    t.integer  "day"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -454,6 +457,7 @@ ActiveRecord::Schema.define(:version => 20101116115017) do
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
+  add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"
 
   create_table "media", :force => true do |t|
     t.integer  "position"
