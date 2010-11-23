@@ -5,7 +5,7 @@ class Collection < ActiveRecord::Base
   has_many :owners, :through => :items
 
   # globalize2 accessors including extensions
-  translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips
+  translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips, :creator, :history, :restrictions
   globalize_accessors :fa, :en
   default_scope :include => :translations
 

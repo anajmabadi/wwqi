@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123121921) do
+ActiveRecord::Schema.define(:version => 20101123124929) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -209,6 +209,9 @@ ActiveRecord::Schema.define(:version => 20101123121921) do
     t.text     "materials"
     t.text     "repository"
     t.text     "tips"
+    t.string   "creator"
+    t.text     "restrictions"
+    t.text     "history"
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
@@ -228,11 +231,16 @@ ActiveRecord::Schema.define(:version => 20101123121921) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "publish",        :default => true,  :null => false
-    t.boolean  "private",        :default => false, :null => false
-    t.integer  "items_count",    :default => 0,     :null => false
-    t.boolean  "finding_aid",    :default => false, :null => false
-    t.integer  "lock_version",   :default => 0,     :null => false
+    t.boolean  "publish",           :default => true,  :null => false
+    t.boolean  "private",           :default => false, :null => false
+    t.integer  "items_count",       :default => 0,     :null => false
+    t.boolean  "finding_aid",       :default => false, :null => false
+    t.integer  "lock_version",      :default => 0,     :null => false
+    t.date     "acquired_on"
+    t.integer  "interview_id"
+    t.string   "acquired_by"
+    t.string   "processed_by"
+    t.text     "acquisition_notes"
   end
 
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
