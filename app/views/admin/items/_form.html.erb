@@ -50,6 +50,22 @@
         </div>
         </td>
     </tr>
+        <tr>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :remarks_en %>
+            <br />
+            <%= f.text_area :remarks_en, :rows => 8 %>
+        </div>
+        </td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :remarks_fa %>
+            <br />
+            <%= f.text_area :remarks_fa, :rows => 8 %>
+        </div>
+        </td>
+    </tr>
     <tr>
         <td>
         <div class="field englishOnly">
@@ -66,22 +82,7 @@
         </div>
         </td>
     </tr>
-    <tr>
-        <td>
-        <div class="field englishOnly">
-            <%= f.label :display_date_en %>
-            <br />
-            <%= f.text_field :display_date_en %>
-        </div>
-        </td>
-        <td>
-        <div class="field persianOnly">
-            <%= f.label :display_date_fa %>
-            <br />
-            <%= f.text_field :display_date_fa %>
-        </div>
-        </td>
-    </tr>
+    
     <tr>
         <td>
         <div class="field englishOnly">
@@ -159,7 +160,7 @@
         </td>
         <td>
         <div class="field englishOnly">
-            <%= f.label :urn %>
+            <%= f.label :urn, 'Original File Name' %>
             <br />
             <%= f.text_area :urn, :rows => 3, :class => "englishOnly" %>
         </div>
@@ -168,37 +169,37 @@
     <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :pages %>
+            <%= f.label :pages, 'Pages/Images' %>
             <br />
             <%= f.text_field :pages, :size => 5, :class => "englishOnly" %>
         </div>
         </td>
         <td>
         <div class="field">
-            <%= f.label :bound %>
+            <%= f.label :bound, "Bound (shows in book viewer)" %>
             <br />
             <%= f.check_box :bound %>
         </div>
         </td>
     </tr>
-    <tr>
+    <tr><td colspan="2"><hr /></td></tr>
+            <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :source_date %> (use with calendar type below)
+            <%= f.label :editorial_era %> (Select Box)
             <br />
-            <%= f.text_field :source_date, :class => "englishOnly" %>
         </div>
         </td>
         <td>
-        <div class="field englishOnly">
-            <%= f.label :calendar_type_id %>
+        <div class="field">
+            <%= f.label :editorial_date %>
             <br />
-            <%= f.select :calendar_type_id, CalendarType.select_list, {:include_blank => true}, :class => "englishOnly" %>
+            <%= f.check_box :circa %>
         </div>
         </td>
-    </tr>   
+    </tr>
     <tr>
-        <td colspan="2">
+        <td>
         <div class="field">
             <%= f.label :day %>: 
             <%= f.text_field :day, :class => "englishOnly", :size => 5%>
@@ -212,11 +213,27 @@
             <%= f.text_field :year, :class => "englishOnly", :size => 5 %>
         </div>
         </td>
+                <td>
+        <div class="field englishOnly">
+            <%= f.label :calendar_type_id %>
+            <br />
+            <%= f.select :calendar_type_id, CalendarType.select_list, {:include_blank => true}, :class => "englishOnly" %>
+        </div>
+        </td>
     </tr>
+    <tr>
+        <td colspan="2">
+        <div class="field englishOnly">
+            <%= f.label :source_date %> (use with calendar type below)
+            <br />
+            <%= f.text_field :source_date, :class => "englishOnly" %>
+        </div>
+        </td>
+    </tr>   
     <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :sort_date %> (YYYY-MM-DD Gregorian)
+            <%= f.label :sort_date %> (Calculated)
             <br />
             <%= f.text_field :sort_date, :class => "englishOnly" %>
         </div>
@@ -230,6 +247,45 @@
         </td>
     </tr>
 
+    <tr>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :display_date_en %>
+            <br />
+            <%= f.text_field :display_date_en %>
+        </div>
+        </td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :display_date_fa %>
+            <br />
+            <%= f.text_field :display_date_fa %>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p>محرم Muharram    فروردين Farvardin<br />
+صفر Safar   ارديبهشت    Urdibihisht<br />
+ربیع‌الاول  Rabiʻ al-Avval  خرداد   Khurdad<br />
+ربیع‌الثانی Rabiʻ al-Sani   تير Tir<br />
+جمادی‌الاول Jumada al-Avval مرداد   Murdad<br />
+جمادی‌الثانی    Jumada al-Sani  شهريور  Shahrivar<br />
+رجب Rajab   مهر Mihr<br />
+شعبان   Shaʻban آبان    Aban<br />
+رمضان   Ramazan آذر Azar<br />
+شوال    Shavval دى  Day<br />
+ذی‌القعده   Zuʻl Qaʻdah بهمن    Bahman<br />
+ذی‌الحجه    Zuʻl-Hijjah اسفند   Isfand
+</p>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <p>Preview of data display: ...</p>
+        </td>
+    </tr>
+    <tr><td colspan="2"><hr /></td></tr>
     <tr>
         <td>
         <div class="field englishOnly">

@@ -13,7 +13,7 @@
   <% @subject_types.each do |subject_type| %>
     <h3><%= link_to(subject_type.name, nil, :name => subject_type.name) %></h3>
     <ul class="subjects_list">
-      <%= render :partial => 'subject', :collection => subject_type.subjects %>
+      <%= render :partial => 'subject', :collection => @subjects.where(['subject_type_id = ?',subject_type.id]) %>
     </ul>
   <% end %>
 </div>

@@ -1,5 +1,5 @@
 class SubjectType < ActiveRecord::Base
-  has_many :subjects
+  has_many :subjects, :order => 'subject_translations.name'
   has_many :classifications, :through => :subjects, :source => :classifications, :uniq => true
     
   # globalize2 mixins
