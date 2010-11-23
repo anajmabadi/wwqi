@@ -186,7 +186,7 @@
             <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :editorial_era %> (Select Box)
+            <%= f.label :editorial_era %> (Use when no specific date is known)
             <br />
             <%= f.select :era_id, Era.select_list, {:include_blank => true} %>
         </div>
@@ -202,14 +202,14 @@
     <tr>
         <td>
         <div class="field">
+            <b>Sort date partial values: </b>
+            <br />
             <%= f.label :day %>: 
             <%= f.text_field :day, :class => "englishOnly", :size => 5%>
-        </div>
-        <div class="field">
+       
             <%= f.label :month %>: 
             <%= f.text_field :month, :class => "englishOnly", :size => 5%>
-        </div>
-        <div class="field englishOnly">
+       
             <%= f.label :year %>:
             <%= f.text_field :year, :class => "englishOnly", :size => 5 %>
         </div>
@@ -225,7 +225,7 @@
     <tr>
         <td colspan="2">
         <div class="field englishOnly">
-            <%= f.label :source_date %> (use with calendar type below)
+            <%= f.label :source_date %> (Use with machine readable fields above)
             <br />
             <%= f.text_field :source_date, :class => "englishOnly" %>
         </div>
@@ -304,18 +304,11 @@
         </td>
     </tr>
     <tr>
-        <td>
+        <td colspan="2">
         <div class="field englishOnly">
             <%= f.label :depth %>
             <br />
             <%= f.text_field :depth, :class => "englishOnly" %>
-        </div>
-        </td>
-        <td>
-        <div class="field englishOnly">
-            <%= f.label :length %>
-            <br />
-            <%= f.text_field :length, :class => "englishOnly" %>
         </div>
         </td>
     </tr>
