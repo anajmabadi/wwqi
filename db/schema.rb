@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123124929) do
+ActiveRecord::Schema.define(:version => 20101123143106) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -425,6 +425,7 @@ ActiveRecord::Schema.define(:version => 20101123124929) do
     t.datetime "updated_at"
     t.string   "publisher"
     t.text     "transcript"
+    t.text     "remarks"
   end
 
   add_index "item_translations", ["item_id"], :name => "index_item_translations_on_item_id"
