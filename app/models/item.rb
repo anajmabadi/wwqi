@@ -293,6 +293,9 @@ class Item < ActiveRecord::Base
       else
         unless self.era.nil?
           self.sort_year = self.era.year
+        else
+          # no date
+          self.sort_year = 2050
         end
       end
     end

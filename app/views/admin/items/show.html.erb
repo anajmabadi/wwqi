@@ -118,7 +118,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <b>Source date:</b>
+                    <b>Source date (label):</b>
                     <%= @item.source_date %>
                     </td><td>
                     <b>Calendar Type:</b>
@@ -135,6 +135,16 @@
                     Day: <%= @item.sort_day %>  |  Month: <%= @item.sort_month %>   |  Year: <%= @item.sort_year %>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                    <b>Editorial era:</b>
+                    <%= @item.era.title unless @item.era.nil? %>
+                    </td><td>
+                    <b>Editorial date ([]):</b>
+                    <%= @item.editorial_date unless @item.editorial_date.nil? %>
+                    </td>
+                </tr>
+
                 <tr>
                     <td>
                     <b>Sort date:</b>

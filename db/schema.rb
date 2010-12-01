@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101201214523) do
+ActiveRecord::Schema.define(:version => 20101201232510) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -481,6 +481,7 @@ ActiveRecord::Schema.define(:version => 20101201214523) do
     t.integer  "sort_year"
     t.integer  "sort_month"
     t.integer  "sort_day"
+    t.boolean  "editorial_date",                                  :default => false
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
