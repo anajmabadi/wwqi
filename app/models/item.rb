@@ -11,6 +11,7 @@ class Item < ActiveRecord::Base
   belongs_to :medium
   belongs_to :calendar_type
   belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
+  belings_to :era
 
   has_many :classifications
   has_many :images

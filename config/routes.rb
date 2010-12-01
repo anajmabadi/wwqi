@@ -24,7 +24,8 @@ Qajar::Application.routes.draw do
       :subjects,
       :translations,
       :plots,
-      :comments
+      :comments,
+      :eras
 
     resources :items do
       collection do

@@ -1,0 +1,2 @@
+module Admin::ErasHelper
+end

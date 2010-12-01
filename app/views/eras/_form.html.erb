@@ -1,0 +1,29 @@
+<%= form_for(@era) do |f| %>
+  <% if @era.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@era.errors.count, "error") %> prohibited this era from being saved:</h2>
+
+      <ul>
+      <% @era.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :year %><br />
+    <%= f.text_field :year %>
+  </div>
+  <div class="field">
+    <%= f.label :publish %><br />
+    <%= f.check_box :publish %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
