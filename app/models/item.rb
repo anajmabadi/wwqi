@@ -1,6 +1,7 @@
 class Item < ActiveRecord::Base
 
-
+  before_validation :set_sort_date
+  
   # truncate and other helpers
   include ActionView::Helpers::TextHelper
 
@@ -63,24 +64,44 @@ class Item < ActiveRecord::Base
   end 
   
   def absolute_date
-    case self.calendar_type_id 
-    when 1 then Calendar.absolute_from_gregorian(self.month, self.day, self.year) 
-    when 2 then Calendar.absolute_from_islamic(self.month, self.day, self.year) 
-    when 3 then Calendar.absolute_from_jalaali(self.month, self.day, self.year) 
-    else Calendar.absolute_from_gregorian(self.month, self.day, self.year) 
-    end
+    begin
+      my_month = self.month.blank? || self.month == 0 ? 1 : self.month
+      my_day = self.day.blank? || self.day == 0 ? 1 : self.day
+      my_year = self.year.blank? || self.year == 0 ? 2010 : self.year
+      
+      case self.calendar_type_id 
+        when 1 then Calendar.absolute_from_gregorian(my_month, my_day, my_year) 
+        when 2 then Calendar.absolute_from_islamic(my_month, my_day, my_year) 
+        when 3 then Calendar.absolute_from_jalaali(my_month, my_day, my_year) 
+        else Calendar.absolute_from_gregorian(my_month, my_day, my_year) 
+      end
+    rescue StandardError => e
+      nil
+    end   
   end
   
   def gregorian_date
+    begin
       Calendar.gregorian_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
   end
   
   def islamic_date
+    begin
       Calendar.islamic_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
   end
   
   def jalali_date
+    begin
       Calendar.jalaali_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
   end
   
   def self.added_since_date(months=1, limit=25)
@@ -260,4 +281,20 @@ class Item < ActiveRecord::Base
     return I18n.locale == :fa ? number.to_farsi : number.to_s
   end
 
+  def set_sort_date
+
+    if self.sort_year.blank?
+      # check source years
+      unless self.year.blank?
+        my_sort_date = self.gregorian_date
+        self.sort_year = my_sort_date[2]
+        self.sort_month = my_sort_date[0]
+        self.sort_day = my_sort_date[1]
+      else
+        unless self.era.nil?
+          self.sort_year = self.era.year
+        end
+      end
+    end
+  end
 end
