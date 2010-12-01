@@ -237,6 +237,18 @@
             <br />
             <%= f.text_field :sort_date, :class => "englishOnly" %>
         </div>
+        <div class="field">
+            <%= f.label :sort_day %>: 
+            <%= f.text_field :sort_day, :class => "englishOnly", :size => 5%>
+        </div>
+        <div class="field">
+            <%= f.label :sort_month %>: 
+            <%= f.text_field :sort_month, :class => "englishOnly", :size => 5%>
+        </div>
+        <div class="field englishOnly">
+            <%= f.label :sort_year %>:
+            <%= f.text_field :sort_year, :class => "englishOnly", :size => 5 %>
+        </div>
         </td>
         <td>
         <div class="field">

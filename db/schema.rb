@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123194034) do
+ActiveRecord::Schema.define(:version => 20101201120021) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -260,6 +260,24 @@ ActiveRecord::Schema.define(:version => 20101123194034) do
 
   add_index "comments", ["submitted_at"], :name => "index_comments_on_submitted_at"
 
+  create_table "era_translations", :force => true do |t|
+    t.integer  "era_id"
+    t.string   "locale"
+    t.string   "title"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "era_translations", ["era_id"], :name => "index_era_translations_on_era_id"
+  add_index "era_translations", ["title"], :name => "index_era_translations_on_title"
+
+  create_table "eras", :force => true do |t|
+    t.integer  "year"
+    t.boolean  "publish",    :default => true, :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "exhibition_translations", :force => true do |t|
     t.integer  "exhibition_id"
     t.string   "locale"
@@ -460,6 +478,10 @@ ActiveRecord::Schema.define(:version => 20101123194034) do
     t.integer  "month"
     t.integer  "day"
     t.boolean  "editorial_dating",                                :default => false
+    t.integer  "era_id"
+    t.integer  "sort_year"
+    t.integer  "sort_month"
+    t.integer  "sort_day"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -468,6 +490,7 @@ ActiveRecord::Schema.define(:version => 20101123194034) do
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_date"], :name => "sort_date"
+  add_index "items", ["sort_year", "sort_month", "sort_day"], :name => "index_items_on_sort_year_and_sort_month_and_sort_day"
   add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"
 
   create_table "media", :force => true do |t|
