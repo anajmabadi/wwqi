@@ -63,11 +63,24 @@ class Item < ActiveRecord::Base
   end 
   
   def absolute_date
-     Calendar.absolute_from_islamic(self.month, self.day, self.year) 
+    case self.calendar_type_id 
+    when 1 then Calendar.absolute_from_gregorian(self.month, self.day, self.year) 
+    when 2 then Calendar.absolute_from_islamic(self.month, self.day, self.year) 
+    when 3 then Calendar.absolute_from_jalaali(self.month, self.day, self.year) 
+    else Calendar.absolute_from_gregorian(self.month, self.day, self.year) 
+    end
   end
   
   def gregorian_date
       Calendar.gregorian_from_absolute(self.absolute_date)
+  end
+  
+  def islamic_date
+      Calendar.islamic_from_absolute(self.absolute_date)
+  end
+  
+  def jalali_date
+      Calendar.jalaali_from_absolute(self.absolute_date)
   end
   
   def self.added_since_date(months=1, limit=25)

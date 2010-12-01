@@ -186,7 +186,8 @@
             <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :editorial_era %> (Select Box)
+            <%= f.label :editorial_era %> 
+            <%# f.select :era_id, @eras %>
             <br />
         </div>
         </td>
@@ -201,15 +202,15 @@
     <tr>
         <td>
         <div class="field">
-            <%= f.label :day %>: 
+            <%= f.label :source_day %>: 
             <%= f.text_field :day, :class => "englishOnly", :size => 5%>
         </div>
         <div class="field">
-            <%= f.label :month %>: 
+            <%= f.label :source_month %>: 
             <%= f.text_field :month, :class => "englishOnly", :size => 5%>
         </div>
         <div class="field englishOnly">
-            <%= f.label :year %>:
+            <%= f.label :source_year %>:
             <%= f.text_field :year, :class => "englishOnly", :size => 5 %>
         </div>
         </td>
