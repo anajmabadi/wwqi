@@ -119,7 +119,10 @@
                 <tr>
                     <td>
                     <b>Source date (label):</b>
-                    <%= @item.source_date %>
+                    <%= @item.source_date %><br />
+                    
+                    <b>Source date partials:</b>
+                    Day: <%= @item.day %>  |  Month: <%= @item.month %>   |  Year: <%= @item.year %>
                     </td><td>
                     <b>Calendar Type:</b>
                     <%= @item.calendar_type.name unless @item.calendar_type_id.nil? %>
@@ -127,17 +130,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <b>Source date partials:</b>
-                    Day: <%= @item.day %>  |  Month: <%= @item.month %>   |  Year: <%= @item.year %>
-                    </td>
-                    <td>
-                    <b>Sort date partials:</b>
-                    Day: <%= @item.sort_day %>  |  Month: <%= @item.sort_month %>   |  Year: <%= @item.sort_year %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <b>Editorial era:</b>
+                    <b>Editorial era (*if no source date):</b>
                     <%= @item.era.title unless @item.era.nil? %>
                     </td><td>
                     <b>Editorial date ([]):</b>
@@ -147,9 +140,10 @@
 
                 <tr>
                     <td>
-                    <b>Sort date:</b>
-                    <%= @item.sort_date %>
-                    </td><td>
+                    <b>Sort date partials:</b>
+                    Day: <%= @item.sort_day %>  |  Month: <%= @item.sort_month %>   |  Year: <%= @item.sort_year %>
+                    </td>
+                    <td>
                     <b>Circa:</b>
                     <%= @item.circa %>
                     </td>
