@@ -86,7 +86,7 @@
                     <td><%= @item.show_date %></td>
                 </tr>
                 <% end %>
-                <% unless @item.width + @item.height + @item.length + @item.depth == 0 %>
+                <% unless @item.width + @item.height + @item.depth == 0 %>
                 <tr>
                     <th><%= t(:dimensions).capitalize %></th>
                     <td><%= @item.dimension_label %></td>

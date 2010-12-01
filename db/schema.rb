@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101201120021) do
+ActiveRecord::Schema.define(:version => 20101201214523) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -472,7 +472,6 @@ ActiveRecord::Schema.define(:version => 20101201120021) do
     t.decimal  "width",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "height",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
-    t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.integer  "lock_version",                                    :default => 0,     :null => false
     t.integer  "year"
     t.integer  "month"

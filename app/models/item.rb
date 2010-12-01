@@ -43,7 +43,6 @@ class Item < ActiveRecord::Base
 #  validates :width, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
-#  validates :length, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 
   validates :sort_year, :numericality => {:greater_than => 1500, :less_than => 2050}
   validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
@@ -241,7 +240,6 @@ class Item < ActiveRecord::Base
     dimensions_set = []
     dimensions_set << localize_number(self.width) unless self.width.nil? || self.width == 0
     dimensions_set << localize_number(self.height) unless self.height.nil? || self.height == 0
-    dimensions_set << localize_number(self.length) unless self.length.nil? || self.length == 0
     dimensions_set << localize_number(self.depth) unless self.depth.nil? || self.depth == 0
     label = dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit) unless dimensions_set.empty?
     return label
