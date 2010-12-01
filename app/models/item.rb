@@ -1,5 +1,6 @@
 class Item < ActiveRecord::Base
 
+
   # truncate and other helpers
   include ActionView::Helpers::TextHelper
 
@@ -47,9 +48,9 @@ class Item < ActiveRecord::Base
   validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
   validates :sort_day, :numericality => {:greater_than => 0, :less_than => 35}
   
-  validates :source_year, :numericality => {:greater_than => 1500, :less_than => 2050}
-  validates :source_month, :numericality => {:greater_than => 0, :less_than => 13}
-  validates :source_day, :numericality => {:greater_than => 0, :less_than => 35}
+  validates :year, :numericality => {:greater_than => 0, :less_than => 2050}
+  validates :month, :numericality => {:greater_than => 0, :less_than => 13}
+  validates :day, :numericality => {:greater_than => 0, :less_than => 35}
 
   def self.recently_added_ids(limit=25)
     ids = []
@@ -60,6 +61,14 @@ class Item < ActiveRecord::Base
     end
     return ids
   end 
+  
+  def absolute_date
+     Calendar.absolute_from_islamic(self.month, self.day, self.year) 
+  end
+  
+  def gregorian_date
+      Calendar.gregorian_from_absolute(self.absolute_date)
+  end
   
   def self.added_since_date(months=1, limit=25)
     ids = Item.find(:all, :select => 'items.id', :conditions => ["items.publish = ? AND item_translations.locale=? AND items.created_at >= ?", 1, I18n.locale.to_s, Time.now.months_ago(months)], :order => 'items.created_at DESC', :limit => limit).map { |item| item.id }
