@@ -22,23 +22,16 @@
     </div>
     <div class="field">
         <%= f.label :caption_en %>:
-        <%= f.text_area :caption_en, :rows => 3 %>
+        <%= f.text_area :caption_en, :rows => 1 %>
     </div>
     <div class="field">
         <%= f.label :caption_fa %>:
-        <%= f.text_area :caption_fa, :rows => 3, :class => 'persianOnly' %>
+        <%= f.text_area :caption_fa, :rows => 1, :class => 'persianOnly' %>
     </div>
     <div class="field">
-        <%= f.label :publish %>:
-        <%= f.check_box :publish %>
-    </div>
-    <div class="field">
-        <%= f.label :position %>:
-        <%= f.text_field :position, :size => 5 %>
-    </div>
-    <div class="field">
-        <%= f.label :notes %>:
-        <%= f.text_field :notes %>
+        <%= f.label :publish %>: <%= f.check_box :publish %>
+        <%= f.label :position %>: <%= f.text_field :position, :size => 5 %>
+        <%= f.label :notes %>: <%= f.text_field :notes %>
     </div>
     </div>
     <div class="field">

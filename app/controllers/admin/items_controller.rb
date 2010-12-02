@@ -182,7 +182,7 @@ class Admin::ItemsController < Admin::AdminController
   def show_add_appearance_to_item
     # retrieve @appearances for instant additions
     @item = Item.find(params[:id])
-    @people = Person.select_list
+    @people = Person.select_list_fa
     @max_position = Appearance.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @appearance = Appearance.new(
       :item_id => params[:id],

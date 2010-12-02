@@ -1,5 +1,7 @@
 Qajar::Application.routes.draw do
 
+
+
   get "contact/new"
 
   get "contact/confirm"

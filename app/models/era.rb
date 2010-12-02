@@ -1,4 +1,5 @@
 class Era < ActiveRecord::Base
+
   has_many :items
 
   translates :title
