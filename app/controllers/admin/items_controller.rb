@@ -343,7 +343,7 @@ class Admin::ItemsController < Admin::AdminController
     additional_query = ''
     begin
       @period = Period.find_by_id(filter_value.to_i)
-      additional_query += "(sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}')"
+      additional_query += "(sort_year BETWEEN '#{@period.start_at.strftime("%Y")}' AND '#{@period.end_at.strftime("%Y")}')"
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
     else
