@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101201232510) do
+ActiveRecord::Schema.define(:version => 20101202143652) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -539,7 +539,8 @@ ActiveRecord::Schema.define(:version => 20101201232510) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version",   :default => 0, :null => false
+    t.integer  "lock_version",   :default => 0,     :null => false
+    t.boolean  "private",        :default => false
   end
 
   create_table "page_translations", :force => true do |t|

@@ -83,12 +83,17 @@
         </div></td>
     </tr>
     <tr>
-      <td colspan="2">
+      <td>
         <div class="field">
-          <%= f.label :notes %><br />
-          <%= f.text_area :notes, :rows => 3 %>
+          <%= f.label :private %><br />
+          <%= f.check_box :private %>
         </div>
       </td>
+      <td>
+        <div class="field">
+          <%= f.label :terms %><br />
+          <%= f.text_area :terms, :rows => 3 %>
+        </div></td>
     </tr>
     <tr>
       <td>
