@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101123223545) do
+ActiveRecord::Schema.define(:version => 20101202164934) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -457,7 +457,6 @@ ActiveRecord::Schema.define(:version => 20101123223545) do
     t.integer  "collection_id"
     t.integer  "pages",                                           :default => 1,     :null => false
     t.integer  "format_id"
-    t.date     "sort_date"
     t.boolean  "circa",                                           :default => false, :null => false
     t.string   "dimensions"
     t.text     "notes"
@@ -472,13 +471,16 @@ ActiveRecord::Schema.define(:version => 20101123223545) do
     t.decimal  "width",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "height",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.decimal  "depth",            :precision => 10, :scale => 1, :default => 0.0,   :null => false
-    t.decimal  "length",           :precision => 10, :scale => 1, :default => 0.0,   :null => false
     t.integer  "lock_version",                                    :default => 0,     :null => false
     t.integer  "year"
     t.integer  "month"
     t.integer  "day"
     t.boolean  "editorial_dating",                                :default => false
     t.integer  "era_id"
+    t.integer  "sort_year"
+    t.integer  "sort_month"
+    t.integer  "sort_day"
+    t.boolean  "editorial_date",                                  :default => false
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -486,7 +488,7 @@ ActiveRecord::Schema.define(:version => 20101123223545) do
   add_index "items", ["editorial_dating"], :name => "index_items_on_editorial_dating"
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["publish"], :name => "publish"
-  add_index "items", ["sort_date"], :name => "sort_date"
+  add_index "items", ["sort_year", "sort_month", "sort_day"], :name => "index_items_on_sort_year_and_sort_month_and_sort_day"
   add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"
 
   create_table "media", :force => true do |t|
@@ -535,7 +537,8 @@ ActiveRecord::Schema.define(:version => 20101123223545) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version",   :default => 0, :null => false
+    t.integer  "lock_version",   :default => 0,     :null => false
+    t.boolean  "private",        :default => false
   end
 
   create_table "page_translations", :force => true do |t|

@@ -30,6 +30,7 @@ GEM
     activesupport (3.0.3)
     arel (2.0.4)
     builder (2.1.2)
+    calendar (1.11.4)
     capybara (0.4.0)
       celerity (>= 0.7.9)
       culerity (>= 0.2.4)
@@ -133,6 +134,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  calendar
   capybara
   cucumber
   cucumber-rails

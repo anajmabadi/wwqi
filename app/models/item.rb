@@ -1,5 +1,7 @@
 class Item < ActiveRecord::Base
 
+  before_validation :set_sort_date
+  
   # truncate and other helpers
   include ActionView::Helpers::TextHelper
 
@@ -42,7 +44,14 @@ class Item < ActiveRecord::Base
 #  validates :width, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
-#  validates :length, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
+
+  validates :sort_year, :numericality => {:greater_than => 1500, :less_than => 2050}
+  validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
+  validates :sort_day, :numericality => {:greater_than => 0, :less_than => 35}
+  
+  validates :year, :numericality => {:greater_than => 0, :less_than => 2050}
+  validates :month, :numericality => {:greater_than => 0, :less_than => 13}
+  validates :day, :numericality => {:greater_than => 0, :less_than => 35}
 
   def self.recently_added_ids(limit=25)
     ids = []
@@ -53,6 +62,47 @@ class Item < ActiveRecord::Base
     end
     return ids
   end 
+  
+  def absolute_date
+    begin
+      my_month = self.month.blank? || self.month == 0 ? 1 : self.month
+      my_day = self.day.blank? || self.day == 0 ? 1 : self.day
+      my_year = self.year.blank? || self.year == 0 ? 2010 : self.year
+      
+      case self.calendar_type_id 
+        when 1 then Calendar.absolute_from_gregorian(my_month, my_day, my_year) 
+        when 2 then Calendar.absolute_from_islamic(my_month, my_day, my_year) 
+        when 3 then Calendar.absolute_from_jalaali(my_month, my_day, my_year) 
+        else Calendar.absolute_from_gregorian(my_month, my_day, my_year) 
+      end
+    rescue StandardError => e
+      nil
+    end   
+  end
+  
+  def gregorian_date
+    begin
+      Calendar.gregorian_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
+  end
+  
+  def islamic_date
+    begin
+      Calendar.islamic_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
+  end
+  
+  def jalali_date
+    begin
+      Calendar.jalaali_from_absolute(self.absolute_date)
+    rescue StandardError => e
+      nil
+    end 
+  end
   
   def self.added_since_date(months=1, limit=25)
     ids = Item.find(:all, :select => 'items.id', :conditions => ["items.publish = ? AND item_translations.locale=? AND items.created_at >= ?", 1, I18n.locale.to_s, Time.now.months_ago(months)], :order => 'items.created_at DESC', :limit => limit).map { |item| item.id }
@@ -211,7 +261,6 @@ class Item < ActiveRecord::Base
     dimensions_set = []
     dimensions_set << localize_number(self.width) unless self.width.nil? || self.width == 0
     dimensions_set << localize_number(self.height) unless self.height.nil? || self.height == 0
-    dimensions_set << localize_number(self.length) unless self.length.nil? || self.length == 0
     dimensions_set << localize_number(self.depth) unless self.depth.nil? || self.depth == 0
     label = dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit) unless dimensions_set.empty?
     return label
@@ -232,4 +281,23 @@ class Item < ActiveRecord::Base
     return I18n.locale == :fa ? number.to_farsi : number.to_s
   end
 
+  def set_sort_date
+
+    if self.sort_year.blank?
+      # check source years
+      unless self.year.blank?
+        my_sort_date = self.gregorian_date
+        self.sort_year = my_sort_date[2]
+        self.sort_month = my_sort_date[0]
+        self.sort_day = my_sort_date[1]
+      else
+        unless self.era.nil?
+          self.sort_year = self.era.year
+        else
+          # no date
+          self.sort_year = 2050
+        end
+      end
+    end
+  end
 end

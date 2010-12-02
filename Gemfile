@@ -22,7 +22,7 @@ gem 'rubyzip'
 gem 'jquery-rails'
 
 #gem 'jalalidate'
-#gem 'calendar'
+gem 'calendar'
 
 # gem "bj"
 # gem "hpricot", "0.6"

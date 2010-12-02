@@ -2,6 +2,28 @@ class Admin::ItemsController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
+  
+  def util_update_sort_date
+    
+    @items = Item.all
+    @changed_items = []
+    @items.each do |item|
+      if item.sort_year.blank? || item.sort_month.blank? || item.sort_day.blank?
+        unless item.year.blank?
+          new_date = item.gregorian_date
+          item.sort_year = new_date[2] unless item.sort_year == new_date[2]
+          item.sort_month = new_date[0] unless item.sort_month == new_date[0]
+          item.sort_day = new_date[1] unless item.sort_day == new_date[1]
+          item.save
+          @changed_items << item.id.to_s
+        end
+      end
+    end
+    
+    flash[:notice] = "changed these item ids: " + @changed_items.to_s
+    redirect_to :action => 'index'
+    
+  end
 
   # GET /items
   # GET /items.xml
@@ -343,7 +365,7 @@ class Admin::ItemsController < Admin::AdminController
     additional_query = ''
     begin
       @period = Period.find_by_id(filter_value.to_i)
-      additional_query += "(sort_date BETWEEN '#{@period.start_at.strftime("%Y-%m-%d")}' AND '#{@period.end_at.strftime("%Y-%m-%d")}')"
+      additional_query += "(sort_year BETWEEN '#{@period.start_at.strftime("%Y")}' AND '#{@period.end_at.strftime("%Y")}')"
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period id #{filter_value}: #{error}."
     else

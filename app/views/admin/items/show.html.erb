@@ -108,58 +108,48 @@
                 </tr>
                 <tr>
                     <td>
-                    <b>Editorial Era (rough date assignment):</b>
-                    <%= @item.era.title unless @item.era.nil? %>
-                    </td><td>
-                    <b>Editorial dating (puts square brackets around dates):</b>
-                    <%= @item.editorial_dating %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <b>Source date:</b>
-                    <%= @item.source_date %>
+
+                    <b>Source date (label):</b>
+                    <%= @item.source_date %><br />
+                    
+                    <b>Source date partials:</b>
+                    Day: <%= @item.day %>  |  Month: <%= @item.month %>   |  Year: <%= @item.year %>
                     </td><td>
                     <b>Calendar Type:</b>
                     <%= @item.calendar_type.name unless @item.calendar_type_id.nil? %>
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                    <b>Source date partials:</b>
-                    Day: <%= @item.day %>  |  Month: <%= @item.month %>   |  Year: <%= @item.year %> 
+                    <td>
+                    <b>Editorial era (*if no source date):</b>
+                    <%= @item.era.title unless @item.era.nil? %>
+                    </td><td>
+                    <b>Editorial date ([]):</b>
+                    <%= @item.editorial_date unless @item.editorial_date.nil? %>
                     </td>
                 </tr>
+
                 <tr>
                     <td>
-                    <b>Sort date:</b>
-                    <%= @item.sort_date %>
-                    </td><td>
+                    <b>Sort date partials:</b>
+                    Day: <%= @item.sort_day %>  |  Month: <%= @item.sort_month %>   |  Year: <%= @item.sort_year %>
+                    </td>
+                    <td>
                     <b>Circa:</b>
                     <%= @item.circa %>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                    <b>Display date_en:</b>
-                    <%= @item.display_date_en %>
-                    </td>
-                    <td>
-                    <b>Display date_fa:</b>
-                    <%= @item.display_date_fa %>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                    <b>Width:</b>
-                    <%= @item.width %>
-                    </td><td>
-                    <b>Height:</b>
-                    <%= @item.height %>
-                    </td>
+                  <td colspan="2">
+                    <b>Date Preview: </b> Absolute: <%= @item.absolute_date %> Gregorian: <%= @item.gregorian_date %> Islamic: <%= @item.islamic_date %>  Jalali: <%= @item.jalali_date %>
+                  </td>
                 </tr>
                 <tr>
                     <td colspan="2">
+                    <b>Width:</b>
+                    <%= @item.width %> 
+                    <b>Height:</b>
+                    <%= @item.height %> 
                     <b>Depth:</b>
                     <%= @item.depth %>
                     </td>
