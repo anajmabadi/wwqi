@@ -37,6 +37,7 @@ Qajar::Application.routes.draw do
         post :hide_add_plot_to_item
         post :show_add_appearance_to_item
         post :hide_add_appearance_to_item
+        get :util_update_sort_date
       end
     end
 

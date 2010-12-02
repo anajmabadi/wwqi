@@ -55,9 +55,10 @@ class ArchiveController < ApplicationController
         @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
 
         #grab the sort mode
-        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
+        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode]
+        Rails.logger.info "++++ THIS IS MY SORT MODE: " + @sort_mode
         @order = build_order_query(@sort_mode)
-
+        Rails.logger.info "++++ THIS IS MY SORT order: " + @order
         # paginate the items
         @page = params[:page] || 1
         @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
@@ -263,11 +264,11 @@ class ArchiveController < ApplicationController
         begin
             periods = Period.find(ids_to_find)
             if periods.size == 1
-                date_ranges = "(sort_date BETWEEN '#{periods[0].start_at.strftime("%Y-%m-%d")}' AND '#{periods[0].end_at.strftime("%Y-%m-%d")}')"
+                date_ranges = "(sort_year BETWEEN '#{periods[0].start_at.strftime("%Y")}' AND '#{periods[0].end_at.strftime("%Y")}')"
             else
                 date_ranges = ''
                 periods.each_with_index do |period, index|
-                    date_ranges += "(sort_date BETWEEN '#{period.start_at.strftime("%Y-%m-%d")}' AND '#{period.end_at.strftime("%Y-%m-%d")}')"
+                    date_ranges += "(sort_year BETWEEN '#{period.start_at.strftime("%Y")}' AND '#{period.end_at.strftime("%Y")}')"
                     if index + 1 != periods.size
                         date_ranges += " OR "
                     end
@@ -414,8 +415,8 @@ class ArchiveController < ApplicationController
         additional_sort += case sort_mode
         when 'alpha_asc' then 'item_translations.locale, item_translations.title'
         when 'alpha_dsc' then 'item_translations.locale, item_translations.title DESC'
-        when 'date asc' then 'items.sort_date'
-        when 'date dsc' then 'items.sort_date DESC'
+        when 'date_asc' then 'items.sort_year, items.sort_month, items.sort_day'
+        when 'date_dsc' then 'items.sort_year DESC, items.sort_month DESC, items.sort_day DESC'
         else 'item_translations.locale, item_translations.title'
         end
         return additional_sort
