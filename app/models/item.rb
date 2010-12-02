@@ -45,13 +45,13 @@ class Item < ActiveRecord::Base
 #  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 #  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
 
-  validates :sort_year, :numericality => {:greater_than => 1500, :less_than => 2050}
-  validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
-  validates :sort_day, :numericality => {:greater_than => 0, :less_than => 35}
+#  validates :sort_year, :numericality => {:greater_than => 1500, :less_than => 2050}
+#  validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
+#  validates :sort_day, :numericality => {:greater_than => 0, :less_than => 35}
   
-  validates :year, :numericality => {:greater_than => 0, :less_than => 2050}
-  validates :month, :numericality => {:greater_than => 0, :less_than => 13}
-  validates :day, :numericality => {:greater_than => 0, :less_than => 35}
+#  validates :year, :numericality => {:greater_than => 0, :less_than => 2050}
+#  validates :month, :numericality => {:greater_than => 0, :less_than => 13}
+#  validates :day, :numericality => {:greater_than => 0, :less_than => 35}
 
   def self.recently_added_ids(limit=25)
     ids = []
