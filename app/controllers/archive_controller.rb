@@ -52,7 +52,7 @@ class ArchiveController < ApplicationController
         @staff_favorites_filter = params[:staff_favorites_filter]
 
         #grab view mode, using session or default of list if not present or junky
-        @view_mode = ['list','grid','slideshow'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
+        @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
 
         #grab the sort mode
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode]
