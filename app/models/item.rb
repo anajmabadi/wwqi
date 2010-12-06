@@ -157,8 +157,13 @@ class Item < ActiveRecord::Base
     date_to_show = ''
     if !self.display_date.blank?
       date_to_show += display_date
-    elsif !self.sort_date.blank?
-      date_to_show += sort_date.to_s
+    elsif !self.sort_year.blank?
+      date_to_show += sort_year.to_s
+    end
+    
+    # check for editorial
+    if self.editorial_date
+      date_to_show = "[#{date_to_show}]"
     end
     return I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
   end

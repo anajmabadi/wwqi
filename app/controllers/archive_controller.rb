@@ -55,10 +55,9 @@ class ArchiveController < ApplicationController
         @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
 
         #grab the sort mode
-        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode]
-        Rails.logger.info "++++ THIS IS MY SORT MODE: " + @sort_mode
+        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : (session[:sort_mode].blank? ? 'alpha_asc' : session[:sort_mode])
         @order = build_order_query(@sort_mode)
-        Rails.logger.info "++++ THIS IS MY SORT order: " + @order
+        
         # paginate the items
         @page = params[:page] || 1
         @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
