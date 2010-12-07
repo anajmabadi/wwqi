@@ -106,7 +106,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.save
-        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully created.') }
+        format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully created.') }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
         format.html { render :action => "new" }
@@ -134,7 +134,7 @@ class Admin::ItemsController < Admin::AdminController
     end
     respond_to do |format|
       if saved
-        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully updated.') }
+        format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       elsif stale
         # write out the failed parameters
@@ -291,7 +291,7 @@ class Admin::ItemsController < Admin::AdminController
     rescue ActiveRecord::RecordNotFound
       #TODO: Translate this field
       flash[:error] = "The item you were looking for could not be found."
-      redirect_to admin_items_path
+      redirect_to admin_items_url
     end
   end
 
