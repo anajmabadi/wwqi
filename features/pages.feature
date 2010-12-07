@@ -8,13 +8,6 @@ Feature: Informational pages show information to the User in English and Persian
 			When I go to the about page
 	    	Then I should be on the about page
 					And I should see "About"
-
-	 Scenario: gracefully redirect to the Home page when pages content is missing
-			Given I speak English
-				And I have no pages
-			When I go to the about page
-	    	Then I should be on the home page
-					And I should see "About Us"
 								
 	Scenario: show welcoming Persian about page
 			Given I speak Persian

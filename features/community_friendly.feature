@@ -9,7 +9,3 @@ Feature: site is community friendly with correct meta tags
         When I go to the home page
 				Then I should have facebook meta tags
 					
-	Scenario: offer sharing options
-		Given I speak English
-		When I go to the home page
-		Then I should have sharethis buttons
