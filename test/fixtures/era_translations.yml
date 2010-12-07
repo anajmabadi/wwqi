@@ -1,0 +1,141 @@
+--- 
+era_translations_001: 
+  id: "1"
+  era_id: "1"
+  locale: en
+  title: 20th century
+  created_at: 2010-11-23 17:25:08
+  updated_at: 2010-12-01 09:40:25
+era_translations_002: 
+  id: "2"
+  era_id: "1"
+  locale: fa
+  title: "\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB4 \xD9\x82"
+  created_at: 2010-11-23 17:25:56
+  updated_at: 2010-12-01 09:40:29
+era_translations_003: 
+  id: "3"
+  era_id: "2"
+  locale: en
+  title: 19th century
+  created_at: 2010-12-01 09:40:59
+  updated_at: 2010-12-01 09:41:01
+era_translations_004: 
+  id: "4"
+  era_id: "2"
+  locale: fa
+  title: "\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB4 \xD9\x82"
+  created_at: 2010-12-01 09:42:40
+  updated_at: 2010-12-01 09:42:42
+era_translations_005: 
+  id: "5"
+  era_id: "3"
+  locale: en
+  title: 18th century
+  created_at: 2010-12-01 09:43:26
+  updated_at: 2010-12-01 09:43:28
+era_translations_006: 
+  id: "6"
+  era_id: "3"
+  locale: fa
+  title: "\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB2 \xD9\x82"
+  created_at: 2010-12-01 09:43:44
+  updated_at: 2010-12-01 09:43:47
+era_translations_007: 
+  id: "7"
+  era_id: "4"
+  locale: en
+  title: undated
+  created_at: 2010-12-01 09:55:53
+  updated_at: 2010-12-01 09:55:55
+era_translations_008: 
+  id: "8"
+  era_id: "4"
+  locale: fa
+  title: "\xD8\xA8\xD8\xAF\xD9\x88\xD9\x86 \xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE"
+  created_at: 2010-12-01 09:56:05
+  updated_at: 2010-12-01 09:56:08
+era_translations_009: 
+  id: "9"
+  era_id: "5"
+  locale: en
+  title: early 20th century
+  created_at: 2010-12-01 10:25:48
+  updated_at: 
+era_translations_010: 
+  id: "10"
+  era_id: "5"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xD8\xB3\xD8\xB7 \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB4 \xD9\x82"
+  created_at: 2010-12-01 10:25:57
+  updated_at: 
+era_translations_011: 
+  id: "11"
+  era_id: "6"
+  locale: en
+  title: late 19th century
+  created_at: 2010-12-01 10:26:32
+  updated_at: 
+era_translations_012: 
+  id: "12"
+  era_id: "6"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xDB\x8C\xD9\x84  \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB4 \xD9\x82"
+  created_at: 2010-12-01 10:26:51
+  updated_at: 
+era_translations_013: 
+  id: "13"
+  era_id: "7"
+  locale: en
+  title: mid/late 19th century
+  created_at: 2010-12-01 10:27:08
+  updated_at: 
+era_translations_014: 
+  id: "14"
+  era_id: "7"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xD8\xAE\xD8\xB1 \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82"
+  created_at: 2010-12-01 10:27:28
+  updated_at: 
+era_translations_015: 
+  id: "15"
+  era_id: "8"
+  locale: en
+  title: early/mid 19th century
+  created_at: 2010-12-01 10:28:15
+  updated_at: 
+era_translations_016: 
+  id: "16"
+  era_id: "8"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xD8\xB3\xD8\xB7 \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82"
+  created_at: 2010-12-01 10:28:35
+  updated_at: 
+era_translations_017: 
+  id: "17"
+  era_id: "9"
+  locale: en
+  title: late 18th century
+  created_at: 2010-12-01 10:29:16
+  updated_at: 
+era_translations_018: 
+  id: "18"
+  era_id: "9"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xDB\x8C\xD9\x84 \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82"
+  created_at: 2010-12-01 10:29:38
+  updated_at: 
+era_translations_019: 
+  id: "19"
+  era_id: "10"
+  locale: en
+  title: mid/late 18th century
+  created_at: 2010-12-01 10:29:59
+  updated_at: 
+era_translations_020: 
+  id: "20"
+  era_id: "10"
+  locale: fa
+  title: "\xD8\xA7\xD9\x88\xD8\xA7\xD8\xAE\xD8\xB1 \xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB2 \xD9\x82"
+  created_at: 2010-12-01 10:30:38
+  updated_at: 

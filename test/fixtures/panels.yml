@@ -8,6 +8,7 @@ panels_001:
   notes: 
   created_at: 2010-05-28 02:45:35
   updated_at: 
+  lock_version: "0"
 panels_002: 
   id: "2"
   exhibition_id: "1"
@@ -17,6 +18,7 @@ panels_002:
   notes: 
   created_at: 2010-05-28 02:45:53
   updated_at: 
+  lock_version: "0"
 panels_003: 
   id: "3"
   exhibition_id: "1"
@@ -26,3 +28,4 @@ panels_003:
   notes: 
   created_at: 2010-05-28 02:46:12
   updated_at: 
+  lock_version: "0"

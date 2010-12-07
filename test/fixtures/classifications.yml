@@ -8,6 +8,7 @@ classifications_001:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_002: 
   id: "2"
   subject_id: "8"
@@ -17,6 +18,7 @@ classifications_002:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_003: 
   id: "3"
   subject_id: "133"
@@ -26,6 +28,7 @@ classifications_003:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_004: 
   id: "4"
   subject_id: "128"
@@ -35,6 +38,7 @@ classifications_004:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_005: 
   id: "5"
   subject_id: "85"
@@ -44,6 +48,7 @@ classifications_005:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_006: 
   id: "6"
   subject_id: "56"
@@ -53,6 +58,7 @@ classifications_006:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_007: 
   id: "7"
   subject_id: "99"
@@ -62,6 +68,7 @@ classifications_007:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_008: 
   id: "8"
   subject_id: "193"
@@ -71,6 +78,7 @@ classifications_008:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_009: 
   id: "11"
   subject_id: "53"
@@ -80,6 +88,7 @@ classifications_009:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_010: 
   id: "12"
   subject_id: "30"
@@ -89,6 +98,7 @@ classifications_010:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_011: 
   id: "13"
   subject_id: "113"
@@ -98,6 +108,7 @@ classifications_011:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_012: 
   id: "15"
   subject_id: "70"
@@ -107,6 +118,7 @@ classifications_012:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_013: 
   id: "16"
   subject_id: "92"
@@ -116,6 +128,7 @@ classifications_013:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_014: 
   id: "17"
   subject_id: "22"
@@ -125,6 +138,7 @@ classifications_014:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_015: 
   id: "18"
   subject_id: "27"
@@ -134,6 +148,7 @@ classifications_015:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_016: 
   id: "19"
   subject_id: "150"
@@ -143,6 +158,7 @@ classifications_016:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_017: 
   id: "20"
   subject_id: "193"
@@ -152,6 +168,7 @@ classifications_017:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_018: 
   id: "21"
   subject_id: "59"
@@ -161,6 +178,7 @@ classifications_018:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_019: 
   id: "22"
   subject_id: "105"
@@ -170,6 +188,7 @@ classifications_019:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_020: 
   id: "23"
   subject_id: "7"
@@ -179,6 +198,7 @@ classifications_020:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_021: 
   id: "24"
   subject_id: "80"
@@ -188,6 +208,7 @@ classifications_021:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_022: 
   id: "25"
   subject_id: "53"
@@ -197,6 +218,7 @@ classifications_022:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_023: 
   id: "26"
   subject_id: "95"
@@ -206,6 +228,7 @@ classifications_023:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_024: 
   id: "27"
   subject_id: "63"
@@ -215,6 +238,7 @@ classifications_024:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_025: 
   id: "28"
   subject_id: "70"
@@ -224,6 +248,7 @@ classifications_025:
   notes: 
   created_at: 2010-05-27 10:42:01
   updated_at: 
+  lock_version: "0"
 classifications_026: 
   id: "32"
   subject_id: "193"
@@ -233,6 +258,7 @@ classifications_026:
   notes: ""
   created_at: 2010-05-27 14:22:31
   updated_at: 2010-05-27 14:22:31
+  lock_version: "0"
 classifications_027: 
   id: "33"
   subject_id: "193"
@@ -242,6 +268,7 @@ classifications_027:
   notes: ""
   created_at: 2010-05-27 14:23:12
   updated_at: 2010-05-27 14:23:12
+  lock_version: "0"
 classifications_028: 
   id: "34"
   subject_id: "181"
@@ -251,6 +278,7 @@ classifications_028:
   notes: ""
   created_at: 2010-05-27 14:23:40
   updated_at: 2010-05-27 14:23:40
+  lock_version: "0"
 classifications_029: 
   id: "35"
   subject_id: "63"
@@ -260,6 +288,7 @@ classifications_029:
   notes: ""
   created_at: 2010-05-27 14:23:56
   updated_at: 2010-05-27 14:23:56
+  lock_version: "0"
 classifications_030: 
   id: "36"
   subject_id: "10"
@@ -269,6 +298,7 @@ classifications_030:
   notes: ""
   created_at: 2010-05-27 14:24:14
   updated_at: 2010-05-27 14:24:14
+  lock_version: "0"
 classifications_031: 
   id: "37"
   subject_id: "140"
@@ -278,6 +308,7 @@ classifications_031:
   notes: ""
   created_at: 2010-05-27 14:24:29
   updated_at: 2010-05-27 14:24:29
+  lock_version: "0"
 classifications_032: 
   id: "38"
   subject_id: "133"
@@ -287,6 +318,7 @@ classifications_032:
   notes: ""
   created_at: 2010-05-27 14:24:48
   updated_at: 2010-05-27 14:24:48
+  lock_version: "0"
 classifications_033: 
   id: "39"
   subject_id: "70"
@@ -296,6 +328,7 @@ classifications_033:
   notes: ""
   created_at: 2010-05-27 14:25:12
   updated_at: 2010-05-27 14:25:12
+  lock_version: "0"
 classifications_034: 
   id: "40"
   subject_id: "183"
@@ -305,6 +338,7 @@ classifications_034:
   notes: ""
   created_at: 2010-05-27 14:25:28
   updated_at: 2010-05-27 14:25:28
+  lock_version: "0"
 classifications_035: 
   id: "41"
   subject_id: "139"
@@ -314,6 +348,7 @@ classifications_035:
   notes: ""
   created_at: 2010-05-27 14:26:18
   updated_at: 2010-05-27 14:26:18
+  lock_version: "0"
 classifications_036: 
   id: "42"
   subject_id: "154"
@@ -323,6 +358,7 @@ classifications_036:
   notes: ""
   created_at: 2010-05-27 14:26:36
   updated_at: 2010-05-27 14:26:36
+  lock_version: "0"
 classifications_037: 
   id: "43"
   subject_id: "115"
@@ -332,6 +368,7 @@ classifications_037:
   notes: ""
   created_at: 2010-05-27 14:26:56
   updated_at: 2010-05-27 14:26:56
+  lock_version: "0"
 classifications_038: 
   id: "44"
   subject_id: "128"
@@ -341,6 +378,7 @@ classifications_038:
   notes: ""
   created_at: 2010-05-27 14:27:41
   updated_at: 2010-05-27 14:27:41
+  lock_version: "0"
 classifications_039: 
   id: "45"
   subject_id: "35"
@@ -350,6 +388,7 @@ classifications_039:
   notes: ""
   created_at: 2010-05-27 14:28:05
   updated_at: 2010-05-27 14:28:05
+  lock_version: "0"
 classifications_040: 
   id: "46"
   subject_id: "70"
@@ -359,6 +398,7 @@ classifications_040:
   notes: ""
   created_at: 2010-05-27 14:28:25
   updated_at: 2010-05-27 14:28:25
+  lock_version: "0"
 classifications_041: 
   id: "60"
   subject_id: "207"
@@ -368,6 +408,7 @@ classifications_041:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_042: 
   id: "61"
   subject_id: "207"
@@ -377,6 +418,7 @@ classifications_042:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_043: 
   id: "62"
   subject_id: "207"
@@ -386,6 +428,7 @@ classifications_043:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_044: 
   id: "63"
   subject_id: "207"
@@ -395,6 +438,7 @@ classifications_044:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_045: 
   id: "64"
   subject_id: "207"
@@ -404,6 +448,7 @@ classifications_045:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_046: 
   id: "65"
   subject_id: "207"
@@ -413,6 +458,7 @@ classifications_046:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_047: 
   id: "66"
   subject_id: "207"
@@ -422,6 +468,7 @@ classifications_047:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_048: 
   id: "67"
   subject_id: "207"
@@ -431,6 +478,7 @@ classifications_048:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_049: 
   id: "68"
   subject_id: "207"
@@ -440,6 +488,7 @@ classifications_049:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_050: 
   id: "69"
   subject_id: "207"
@@ -449,6 +498,7 @@ classifications_050:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_051: 
   id: "70"
   subject_id: "207"
@@ -458,6 +508,7 @@ classifications_051:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_052: 
   id: "71"
   subject_id: "207"
@@ -467,6 +518,7 @@ classifications_052:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_053: 
   id: "72"
   subject_id: "207"
@@ -476,6 +528,7 @@ classifications_053:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_054: 
   id: "73"
   subject_id: "207"
@@ -485,6 +538,7 @@ classifications_054:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_055: 
   id: "74"
   subject_id: "207"
@@ -494,6 +548,7 @@ classifications_055:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_056: 
   id: "75"
   subject_id: "207"
@@ -503,6 +558,7 @@ classifications_056:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_057: 
   id: "76"
   subject_id: "207"
@@ -512,6 +568,7 @@ classifications_057:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_058: 
   id: "77"
   subject_id: "207"
@@ -521,6 +578,7 @@ classifications_058:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_059: 
   id: "78"
   subject_id: "207"
@@ -530,6 +588,7 @@ classifications_059:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_060: 
   id: "79"
   subject_id: "207"
@@ -539,6 +598,7 @@ classifications_060:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_061: 
   id: "80"
   subject_id: "207"
@@ -548,6 +608,7 @@ classifications_061:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_062: 
   id: "81"
   subject_id: "207"
@@ -557,6 +618,7 @@ classifications_062:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_063: 
   id: "82"
   subject_id: "207"
@@ -566,6 +628,7 @@ classifications_063:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_064: 
   id: "83"
   subject_id: "207"
@@ -575,6 +638,7 @@ classifications_064:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_065: 
   id: "84"
   subject_id: "207"
@@ -584,6 +648,7 @@ classifications_065:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_066: 
   id: "85"
   subject_id: "207"
@@ -593,6 +658,7 @@ classifications_066:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_067: 
   id: "86"
   subject_id: "207"
@@ -602,6 +668,7 @@ classifications_067:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_068: 
   id: "87"
   subject_id: "207"
@@ -611,6 +678,7 @@ classifications_068:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_069: 
   id: "88"
   subject_id: "207"
@@ -620,6 +688,7 @@ classifications_069:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_070: 
   id: "89"
   subject_id: "207"
@@ -629,6 +698,7 @@ classifications_070:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_071: 
   id: "90"
   subject_id: "207"
@@ -638,6 +708,7 @@ classifications_071:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_072: 
   id: "91"
   subject_id: "207"
@@ -647,6 +718,7 @@ classifications_072:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_073: 
   id: "92"
   subject_id: "207"
@@ -656,6 +728,7 @@ classifications_073:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_074: 
   id: "93"
   subject_id: "207"
@@ -665,6 +738,7 @@ classifications_074:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_075: 
   id: "94"
   subject_id: "207"
@@ -674,6 +748,7 @@ classifications_075:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_076: 
   id: "95"
   subject_id: "207"
@@ -683,6 +758,7 @@ classifications_076:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_077: 
   id: "96"
   subject_id: "207"
@@ -692,6 +768,7 @@ classifications_077:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_078: 
   id: "97"
   subject_id: "207"
@@ -701,6 +778,7 @@ classifications_078:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_079: 
   id: "98"
   subject_id: "207"
@@ -710,6 +788,7 @@ classifications_079:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_080: 
   id: "99"
   subject_id: "207"
@@ -719,6 +798,7 @@ classifications_080:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_081: 
   id: "100"
   subject_id: "207"
@@ -728,6 +808,7 @@ classifications_081:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_082: 
   id: "101"
   subject_id: "207"
@@ -737,6 +818,7 @@ classifications_082:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_083: 
   id: "102"
   subject_id: "207"
@@ -746,6 +828,7 @@ classifications_083:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_084: 
   id: "103"
   subject_id: "207"
@@ -755,6 +838,7 @@ classifications_084:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_085: 
   id: "104"
   subject_id: "207"
@@ -764,6 +848,7 @@ classifications_085:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_086: 
   id: "105"
   subject_id: "207"
@@ -773,6 +858,7 @@ classifications_086:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_087: 
   id: "106"
   subject_id: "207"
@@ -782,6 +868,7 @@ classifications_087:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_088: 
   id: "107"
   subject_id: "207"
@@ -791,6 +878,7 @@ classifications_088:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_089: 
   id: "108"
   subject_id: "207"
@@ -800,6 +888,7 @@ classifications_089:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_090: 
   id: "109"
   subject_id: "207"
@@ -809,6 +898,7 @@ classifications_090:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_091: 
   id: "110"
   subject_id: "207"
@@ -818,6 +908,7 @@ classifications_091:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_092: 
   id: "111"
   subject_id: "207"
@@ -827,6 +918,7 @@ classifications_092:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_093: 
   id: "112"
   subject_id: "207"
@@ -836,6 +928,7 @@ classifications_093:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_094: 
   id: "113"
   subject_id: "207"
@@ -845,6 +938,7 @@ classifications_094:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_095: 
   id: "114"
   subject_id: "207"
@@ -854,6 +948,7 @@ classifications_095:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_096: 
   id: "115"
   subject_id: "207"
@@ -863,6 +958,7 @@ classifications_096:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_097: 
   id: "116"
   subject_id: "207"
@@ -872,6 +968,7 @@ classifications_097:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_098: 
   id: "117"
   subject_id: "207"
@@ -881,6 +978,7 @@ classifications_098:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_099: 
   id: "118"
   subject_id: "207"
@@ -890,6 +988,7 @@ classifications_099:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_100: 
   id: "119"
   subject_id: "207"
@@ -899,6 +998,7 @@ classifications_100:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_101: 
   id: "120"
   subject_id: "207"
@@ -908,6 +1008,7 @@ classifications_101:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_102: 
   id: "121"
   subject_id: "207"
@@ -917,6 +1018,7 @@ classifications_102:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_103: 
   id: "122"
   subject_id: "207"
@@ -926,6 +1028,7 @@ classifications_103:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_104: 
   id: "123"
   subject_id: "207"
@@ -935,6 +1038,7 @@ classifications_104:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_105: 
   id: "124"
   subject_id: "207"
@@ -944,6 +1048,7 @@ classifications_105:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_106: 
   id: "125"
   subject_id: "207"
@@ -953,6 +1058,7 @@ classifications_106:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_107: 
   id: "126"
   subject_id: "207"
@@ -962,6 +1068,7 @@ classifications_107:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_108: 
   id: "127"
   subject_id: "207"
@@ -971,6 +1078,7 @@ classifications_108:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_109: 
   id: "128"
   subject_id: "207"
@@ -980,6 +1088,7 @@ classifications_109:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_110: 
   id: "129"
   subject_id: "211"
@@ -989,6 +1098,7 @@ classifications_110:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_111: 
   id: "130"
   subject_id: "213"
@@ -998,6 +1108,7 @@ classifications_111:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_112: 
   id: "131"
   subject_id: "217"
@@ -1007,6 +1118,7 @@ classifications_112:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_113: 
   id: "132"
   subject_id: "217"
@@ -1016,6 +1128,7 @@ classifications_113:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_114: 
   id: "133"
   subject_id: "220"
@@ -1025,6 +1138,7 @@ classifications_114:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_115: 
   id: "134"
   subject_id: "220"
@@ -1034,6 +1148,7 @@ classifications_115:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_116: 
   id: "135"
   subject_id: "220"
@@ -1043,6 +1158,7 @@ classifications_116:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_117: 
   id: "136"
   subject_id: "220"
@@ -1052,6 +1168,7 @@ classifications_117:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_118: 
   id: "137"
   subject_id: "220"
@@ -1061,6 +1178,7 @@ classifications_118:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_119: 
   id: "138"
   subject_id: "220"
@@ -1070,6 +1188,7 @@ classifications_119:
   notes: 
   created_at: 2010-06-22 22:01:21
   updated_at: 
+  lock_version: "0"
 classifications_120: 
   id: "140"
   subject_id: "43"
@@ -1079,6 +1198,7 @@ classifications_120:
   notes: 
   created_at: 2010-06-30 21:49:55
   updated_at: 2010-06-30 21:49:55
+  lock_version: "0"
 classifications_121: 
   id: "141"
   subject_id: "46"
@@ -1088,6 +1208,7 @@ classifications_121:
   notes: 
   created_at: 2010-06-30 21:49:55
   updated_at: 2010-06-30 21:49:55
+  lock_version: "0"
 classifications_122: 
   id: "142"
   subject_id: "70"
@@ -1097,6 +1218,7 @@ classifications_122:
   notes: 
   created_at: 2010-06-30 21:49:55
   updated_at: 2010-06-30 21:49:55
+  lock_version: "0"
 classifications_123: 
   id: "143"
   subject_id: "126"
@@ -1106,6 +1228,7 @@ classifications_123:
   notes: 
   created_at: 2010-06-30 21:49:55
   updated_at: 2010-06-30 21:49:55
+  lock_version: "0"
 classifications_124: 
   id: "144"
   subject_id: "151"
@@ -1115,6 +1238,7 @@ classifications_124:
   notes: 
   created_at: 2010-06-30 21:49:55
   updated_at: 2010-06-30 21:49:55
+  lock_version: "0"
 classifications_125: 
   id: "145"
   subject_id: "207"
@@ -1124,6 +1248,7 @@ classifications_125:
   notes: 
   created_at: 2010-06-30 21:53:24
   updated_at: 2010-06-30 21:53:24
+  lock_version: "0"
 classifications_126: 
   id: "146"
   subject_id: "228"
@@ -1133,6 +1258,7 @@ classifications_126:
   notes: 
   created_at: 2010-06-30 22:01:20
   updated_at: 2010-06-30 22:01:20
+  lock_version: "0"
 classifications_127: 
   id: "147"
   subject_id: "207"
@@ -1142,6 +1268,7 @@ classifications_127:
   notes: 
   created_at: 2010-06-30 22:27:46
   updated_at: 2010-06-30 22:27:46
+  lock_version: "0"
 classifications_128: 
   id: "148"
   subject_id: "34"
@@ -1151,6 +1278,7 @@ classifications_128:
   notes: 
   created_at: 2010-06-30 22:29:33
   updated_at: 2010-06-30 22:29:33
+  lock_version: "0"
 classifications_129: 
   id: "149"
   subject_id: "43"
@@ -1160,6 +1288,7 @@ classifications_129:
   notes: 
   created_at: 2010-06-30 22:29:33
   updated_at: 2010-06-30 22:29:33
+  lock_version: "0"
 classifications_130: 
   id: "150"
   subject_id: "58"
@@ -1169,6 +1298,7 @@ classifications_130:
   notes: 
   created_at: 2010-06-30 22:29:33
   updated_at: 2010-06-30 22:29:33
+  lock_version: "0"
 classifications_131: 
   id: "151"
   subject_id: "94"
@@ -1178,6 +1308,7 @@ classifications_131:
   notes: 
   created_at: 2010-06-30 22:29:33
   updated_at: 2010-06-30 22:29:33
+  lock_version: "0"
 classifications_132: 
   id: "154"
   subject_id: "207"
@@ -1187,6 +1318,7 @@ classifications_132:
   notes: 
   created_at: 2010-07-01 18:45:09
   updated_at: 2010-07-01 18:45:09
+  lock_version: "0"
 classifications_133: 
   id: "155"
   subject_id: "151"
@@ -1196,6 +1328,7 @@ classifications_133:
   notes: 
   created_at: 2010-07-01 18:46:55
   updated_at: 2010-07-01 18:46:55
+  lock_version: "0"
 classifications_134: 
   id: "156"
   subject_id: "208"
@@ -1205,6 +1338,7 @@ classifications_134:
   notes: 
   created_at: 2010-07-01 18:54:09
   updated_at: 2010-07-01 18:54:09
+  lock_version: "0"
 classifications_135: 
   id: "157"
   subject_id: "208"
@@ -1214,6 +1348,7 @@ classifications_135:
   notes: 
   created_at: 2010-07-01 18:58:18
   updated_at: 2010-07-01 18:58:18
+  lock_version: "0"
 classifications_136: 
   id: "158"
   subject_id: "207"
@@ -1223,6 +1358,7 @@ classifications_136:
   notes: 
   created_at: 2010-07-01 19:14:09
   updated_at: 2010-07-01 19:14:09
+  lock_version: "0"
 classifications_137: 
   id: "159"
   subject_id: "29"
@@ -1232,6 +1368,7 @@ classifications_137:
   notes: 
   created_at: 2010-07-01 19:27:46
   updated_at: 2010-07-01 19:27:46
+  lock_version: "0"
 classifications_138: 
   id: "160"
   subject_id: "58"
@@ -1241,6 +1378,7 @@ classifications_138:
   notes: 
   created_at: 2010-07-01 19:27:46
   updated_at: 2010-07-01 19:27:46
+  lock_version: "0"
 classifications_139: 
   id: "162"
   subject_id: "43"
@@ -1250,6 +1388,7 @@ classifications_139:
   notes: 
   created_at: 2010-07-01 19:31:10
   updated_at: 2010-07-01 19:31:10
+  lock_version: "0"
 classifications_140: 
   id: "163"
   subject_id: "94"
@@ -1259,6 +1398,7 @@ classifications_140:
   notes: 
   created_at: 2010-07-01 19:31:10
   updated_at: 2010-07-01 19:31:10
+  lock_version: "0"
 classifications_141: 
   id: "164"
   subject_id: "207"
@@ -1268,6 +1408,7 @@ classifications_141:
   notes: 
   created_at: 2010-07-01 19:32:14
   updated_at: 2010-07-01 19:32:14
+  lock_version: "0"
 classifications_142: 
   id: "165"
   subject_id: "33"
@@ -1277,6 +1418,7 @@ classifications_142:
   notes: 
   created_at: 2010-07-01 19:35:54
   updated_at: 2010-07-01 19:35:54
+  lock_version: "0"
 classifications_143: 
   id: "166"
   subject_id: "70"
@@ -1286,6 +1428,7 @@ classifications_143:
   notes: 
   created_at: 2010-07-01 19:35:54
   updated_at: 2010-07-01 19:35:54
+  lock_version: "0"
 classifications_144: 
   id: "167"
   subject_id: "115"
@@ -1295,6 +1438,7 @@ classifications_144:
   notes: 
   created_at: 2010-07-01 19:35:54
   updated_at: 2010-07-01 19:35:54
+  lock_version: "0"
 classifications_145: 
   id: "168"
   subject_id: "207"
@@ -1304,6 +1448,7 @@ classifications_145:
   notes: 
   created_at: 2010-07-01 19:35:54
   updated_at: 2010-07-01 19:35:54
+  lock_version: "0"
 classifications_146: 
   id: "169"
   subject_id: "229"
@@ -1313,6 +1458,7 @@ classifications_146:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_147: 
   id: "170"
   subject_id: "229"
@@ -1322,6 +1468,7 @@ classifications_147:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_148: 
   id: "171"
   subject_id: "229"
@@ -1331,6 +1478,7 @@ classifications_148:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_149: 
   id: "172"
   subject_id: "229"
@@ -1340,6 +1488,7 @@ classifications_149:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_150: 
   id: "173"
   subject_id: "229"
@@ -1349,6 +1498,7 @@ classifications_150:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_151: 
   id: "174"
   subject_id: "229"
@@ -1358,6 +1508,7 @@ classifications_151:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_152: 
   id: "175"
   subject_id: "229"
@@ -1367,6 +1518,7 @@ classifications_152:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_153: 
   id: "176"
   subject_id: "229"
@@ -1376,6 +1528,7 @@ classifications_153:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_154: 
   id: "177"
   subject_id: "229"
@@ -1385,6 +1538,7 @@ classifications_154:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_155: 
   id: "178"
   subject_id: "229"
@@ -1394,6 +1548,7 @@ classifications_155:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_156: 
   id: "179"
   subject_id: "229"
@@ -1403,6 +1558,7 @@ classifications_156:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_157: 
   id: "180"
   subject_id: "229"
@@ -1412,6 +1568,7 @@ classifications_157:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_158: 
   id: "181"
   subject_id: "229"
@@ -1421,6 +1578,7 @@ classifications_158:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_159: 
   id: "182"
   subject_id: "229"
@@ -1430,6 +1588,7 @@ classifications_159:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_160: 
   id: "183"
   subject_id: "229"
@@ -1439,6 +1598,7 @@ classifications_160:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_161: 
   id: "184"
   subject_id: "229"
@@ -1448,6 +1608,7 @@ classifications_161:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_162: 
   id: "185"
   subject_id: "229"
@@ -1457,6 +1618,7 @@ classifications_162:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_163: 
   id: "186"
   subject_id: "229"
@@ -1466,6 +1628,7 @@ classifications_163:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_164: 
   id: "187"
   subject_id: "229"
@@ -1475,6 +1638,7 @@ classifications_164:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_165: 
   id: "188"
   subject_id: "229"
@@ -1484,6 +1648,7 @@ classifications_165:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_166: 
   id: "189"
   subject_id: "229"
@@ -1493,6 +1658,7 @@ classifications_166:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_167: 
   id: "190"
   subject_id: "229"
@@ -1502,6 +1668,7 @@ classifications_167:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_168: 
   id: "191"
   subject_id: "229"
@@ -1511,6 +1678,7 @@ classifications_168:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_169: 
   id: "192"
   subject_id: "229"
@@ -1520,6 +1688,7 @@ classifications_169:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_170: 
   id: "193"
   subject_id: "229"
@@ -1529,6 +1698,7 @@ classifications_170:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_171: 
   id: "194"
   subject_id: "229"
@@ -1538,6 +1708,7 @@ classifications_171:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_172: 
   id: "195"
   subject_id: "229"
@@ -1547,6 +1718,7 @@ classifications_172:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_173: 
   id: "196"
   subject_id: "229"
@@ -1556,6 +1728,7 @@ classifications_173:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_174: 
   id: "197"
   subject_id: "229"
@@ -1565,6 +1738,7 @@ classifications_174:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_175: 
   id: "198"
   subject_id: "229"
@@ -1574,6 +1748,7 @@ classifications_175:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_176: 
   id: "199"
   subject_id: "229"
@@ -1583,6 +1758,7 @@ classifications_176:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_177: 
   id: "200"
   subject_id: "229"
@@ -1592,6 +1768,7 @@ classifications_177:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_178: 
   id: "201"
   subject_id: "229"
@@ -1601,6 +1778,7 @@ classifications_178:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_179: 
   id: "202"
   subject_id: "229"
@@ -1610,6 +1788,7 @@ classifications_179:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_180: 
   id: "203"
   subject_id: "229"
@@ -1619,6 +1798,7 @@ classifications_180:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_181: 
   id: "204"
   subject_id: "229"
@@ -1628,6 +1808,7 @@ classifications_181:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_182: 
   id: "205"
   subject_id: "229"
@@ -1637,6 +1818,7 @@ classifications_182:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_183: 
   id: "206"
   subject_id: "229"
@@ -1646,6 +1828,7 @@ classifications_183:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_184: 
   id: "207"
   subject_id: "229"
@@ -1655,6 +1838,7 @@ classifications_184:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_185: 
   id: "208"
   subject_id: "229"
@@ -1664,6 +1848,7 @@ classifications_185:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_186: 
   id: "209"
   subject_id: "229"
@@ -1673,6 +1858,7 @@ classifications_186:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_187: 
   id: "210"
   subject_id: "229"
@@ -1682,6 +1868,7 @@ classifications_187:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_188: 
   id: "211"
   subject_id: "229"
@@ -1691,6 +1878,7 @@ classifications_188:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_189: 
   id: "212"
   subject_id: "229"
@@ -1700,6 +1888,7 @@ classifications_189:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_190: 
   id: "213"
   subject_id: "229"
@@ -1709,6 +1898,7 @@ classifications_190:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_191: 
   id: "214"
   subject_id: "229"
@@ -1718,6 +1908,7 @@ classifications_191:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_192: 
   id: "215"
   subject_id: "229"
@@ -1727,6 +1918,7 @@ classifications_192:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_193: 
   id: "216"
   subject_id: "229"
@@ -1736,6 +1928,7 @@ classifications_193:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_194: 
   id: "217"
   subject_id: "229"
@@ -1745,6 +1938,7 @@ classifications_194:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_195: 
   id: "218"
   subject_id: "229"
@@ -1754,6 +1948,7 @@ classifications_195:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_196: 
   id: "219"
   subject_id: "229"
@@ -1763,6 +1958,7 @@ classifications_196:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_197: 
   id: "220"
   subject_id: "229"
@@ -1772,6 +1968,7 @@ classifications_197:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_198: 
   id: "221"
   subject_id: "229"
@@ -1781,6 +1978,7 @@ classifications_198:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_199: 
   id: "222"
   subject_id: "229"
@@ -1790,6 +1988,7 @@ classifications_199:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_200: 
   id: "223"
   subject_id: "229"
@@ -1799,6 +1998,7 @@ classifications_200:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_201: 
   id: "224"
   subject_id: "231"
@@ -1808,6 +2008,7 @@ classifications_201:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_202: 
   id: "225"
   subject_id: "231"
@@ -1817,6 +2018,7 @@ classifications_202:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_203: 
   id: "226"
   subject_id: "231"
@@ -1826,6 +2028,7 @@ classifications_203:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_204: 
   id: "227"
   subject_id: "231"
@@ -1835,6 +2038,7 @@ classifications_204:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_205: 
   id: "228"
   subject_id: "231"
@@ -1844,6 +2048,7 @@ classifications_205:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_206: 
   id: "229"
   subject_id: "231"
@@ -1853,6 +2058,7 @@ classifications_206:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_207: 
   id: "230"
   subject_id: "231"
@@ -1862,6 +2068,7 @@ classifications_207:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_208: 
   id: "231"
   subject_id: "231"
@@ -1871,6 +2078,7 @@ classifications_208:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_209: 
   id: "232"
   subject_id: "231"
@@ -1880,6 +2088,7 @@ classifications_209:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_210: 
   id: "233"
   subject_id: "231"
@@ -1889,6 +2098,7 @@ classifications_210:
   notes: 
   created_at: 
   updated_at: 
+  lock_version: "0"
 classifications_211: 
   id: "234"
   subject_id: "207"
@@ -1898,3 +2108,1264 @@ classifications_211:
   notes: 
   created_at: 2010-08-04 15:58:57
   updated_at: 2010-08-04 15:58:57
+  lock_version: "0"
+classifications_212: 
+  id: "235"
+  subject_id: "74"
+  item_id: "44"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:02:21
+  updated_at: 2010-08-21 14:02:21
+  lock_version: "0"
+classifications_213: 
+  id: "236"
+  subject_id: "128"
+  item_id: "44"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:02:21
+  updated_at: 2010-08-21 14:02:21
+  lock_version: "0"
+classifications_214: 
+  id: "237"
+  subject_id: "133"
+  item_id: "44"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:02:21
+  updated_at: 2010-08-21 14:02:21
+  lock_version: "0"
+classifications_215: 
+  id: "238"
+  subject_id: "143"
+  item_id: "44"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:02:21
+  updated_at: 2010-08-21 14:02:21
+  lock_version: "0"
+classifications_216: 
+  id: "239"
+  subject_id: "8"
+  item_id: "43"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:12:30
+  updated_at: 2010-08-21 14:12:30
+  lock_version: "0"
+classifications_217: 
+  id: "240"
+  subject_id: "84"
+  item_id: "43"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:12:30
+  updated_at: 2010-08-21 14:12:30
+  lock_version: "0"
+classifications_218: 
+  id: "241"
+  subject_id: "128"
+  item_id: "43"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:12:30
+  updated_at: 2010-08-21 14:12:30
+  lock_version: "0"
+classifications_219: 
+  id: "242"
+  subject_id: "143"
+  item_id: "43"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:12:30
+  updated_at: 2010-08-21 14:12:30
+  lock_version: "0"
+classifications_220: 
+  id: "243"
+  subject_id: "29"
+  item_id: "67"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:28:05
+  updated_at: 2010-08-21 14:28:05
+  lock_version: "0"
+classifications_221: 
+  id: "244"
+  subject_id: "74"
+  item_id: "67"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:28:05
+  updated_at: 2010-08-21 14:28:05
+  lock_version: "0"
+classifications_222: 
+  id: "245"
+  subject_id: "12"
+  item_id: "61"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 14:42:26
+  updated_at: 2010-08-21 14:42:26
+  lock_version: "0"
+classifications_223: 
+  id: "246"
+  subject_id: "25"
+  item_id: "39"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 15:05:31
+  updated_at: 2010-08-21 15:05:31
+  lock_version: "0"
+classifications_224: 
+  id: "247"
+  subject_id: "95"
+  item_id: "39"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 15:05:31
+  updated_at: 2010-08-21 15:05:31
+  lock_version: "0"
+classifications_225: 
+  id: "248"
+  subject_id: "88"
+  item_id: "41"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 15:17:47
+  updated_at: 2010-08-21 15:17:47
+  lock_version: "0"
+classifications_226: 
+  id: "249"
+  subject_id: "143"
+  item_id: "38"
+  publish: "1"
+  position: "0"
+  notes: 
+  created_at: 2010-08-21 15:30:26
+  updated_at: 2010-08-21 15:30:26
+  lock_version: "0"
+classifications_227: 
+  id: "250"
+  subject_id: "144"
+  item_id: "1484"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-20 20:42:03
+  updated_at: 2010-10-20 20:42:03
+  lock_version: "0"
+classifications_228: 
+  id: "251"
+  subject_id: "107"
+  item_id: "1484"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-20 20:42:22
+  updated_at: 2010-10-20 20:42:22
+  lock_version: "0"
+classifications_229: 
+  id: "252"
+  subject_id: "74"
+  item_id: "1484"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-20 20:42:43
+  updated_at: 2010-10-20 20:42:43
+  lock_version: "0"
+classifications_230: 
+  id: "253"
+  subject_id: "220"
+  item_id: "1484"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-20 20:45:25
+  updated_at: 2010-10-20 20:45:25
+  lock_version: "0"
+classifications_231: 
+  id: "254"
+  subject_id: "213"
+  item_id: "1480"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-20 20:51:48
+  updated_at: 2010-10-20 20:51:48
+  lock_version: "0"
+classifications_232: 
+  id: "255"
+  subject_id: "88"
+  item_id: "1480"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-20 20:51:58
+  updated_at: 2010-10-20 20:51:58
+  lock_version: "0"
+classifications_233: 
+  id: "256"
+  subject_id: "95"
+  item_id: "1480"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-20 20:52:27
+  updated_at: 2010-10-20 20:52:27
+  lock_version: "0"
+classifications_234: 
+  id: "257"
+  subject_id: "233"
+  item_id: "1480"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-20 20:54:06
+  updated_at: 2010-10-20 20:54:06
+  lock_version: "0"
+classifications_235: 
+  id: "258"
+  subject_id: "215"
+  item_id: "1485"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 19:02:42
+  updated_at: 2010-10-21 19:02:42
+  lock_version: "0"
+classifications_236: 
+  id: "259"
+  subject_id: "74"
+  item_id: "1485"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 19:03:10
+  updated_at: 2010-10-21 19:03:10
+  lock_version: "0"
+classifications_237: 
+  id: "260"
+  subject_id: "95"
+  item_id: "1485"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 19:03:31
+  updated_at: 2010-10-21 19:03:31
+  lock_version: "0"
+classifications_238: 
+  id: "261"
+  subject_id: "128"
+  item_id: "1485"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-21 19:03:46
+  updated_at: 2010-10-21 19:03:46
+  lock_version: "0"
+classifications_239: 
+  id: "262"
+  subject_id: "215"
+  item_id: "1486"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 19:11:04
+  updated_at: 2010-10-21 19:11:04
+  lock_version: "0"
+classifications_240: 
+  id: "263"
+  subject_id: "74"
+  item_id: "1486"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 19:11:14
+  updated_at: 2010-10-21 19:11:14
+  lock_version: "0"
+classifications_241: 
+  id: "264"
+  subject_id: "128"
+  item_id: "1486"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 19:11:27
+  updated_at: 2010-10-21 19:11:27
+  lock_version: "0"
+classifications_242: 
+  id: "265"
+  subject_id: "95"
+  item_id: "1486"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-21 19:11:42
+  updated_at: 2010-10-21 19:11:42
+  lock_version: "0"
+classifications_243: 
+  id: "266"
+  subject_id: "207"
+  item_id: "1487"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 19:19:15
+  updated_at: 2010-10-21 19:19:15
+  lock_version: "0"
+classifications_244: 
+  id: "267"
+  subject_id: "103"
+  item_id: "1487"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 19:19:36
+  updated_at: 2010-10-21 19:19:36
+  lock_version: "0"
+classifications_245: 
+  id: "268"
+  subject_id: "128"
+  item_id: "1487"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 19:20:05
+  updated_at: 2010-10-21 19:20:05
+  lock_version: "0"
+classifications_246: 
+  id: "269"
+  subject_id: "74"
+  item_id: "1487"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-21 19:20:26
+  updated_at: 2010-10-21 19:20:26
+  lock_version: "0"
+classifications_247: 
+  id: "270"
+  subject_id: "95"
+  item_id: "1487"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2010-10-21 19:20:47
+  updated_at: 2010-10-21 19:20:47
+  lock_version: "0"
+classifications_248: 
+  id: "271"
+  subject_id: "70"
+  item_id: "1487"
+  publish: "1"
+  position: "6"
+  notes: ""
+  created_at: 2010-10-21 19:21:23
+  updated_at: 2010-10-21 19:21:23
+  lock_version: "0"
+classifications_249: 
+  id: "272"
+  subject_id: "215"
+  item_id: "1488"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 19:34:29
+  updated_at: 2010-10-21 19:34:29
+  lock_version: "0"
+classifications_250: 
+  id: "273"
+  subject_id: "74"
+  item_id: "1488"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 19:34:42
+  updated_at: 2010-10-21 19:34:42
+  lock_version: "0"
+classifications_251: 
+  id: "274"
+  subject_id: "95"
+  item_id: "1488"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 19:35:09
+  updated_at: 2010-10-21 19:35:09
+  lock_version: "0"
+classifications_252: 
+  id: "275"
+  subject_id: "219"
+  item_id: "1489"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 21:43:12
+  updated_at: 2010-10-21 21:43:12
+  lock_version: "0"
+classifications_253: 
+  id: "276"
+  subject_id: "74"
+  item_id: "1489"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 21:43:34
+  updated_at: 2010-10-21 21:43:34
+  lock_version: "0"
+classifications_254: 
+  id: "277"
+  subject_id: "95"
+  item_id: "1489"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 21:44:03
+  updated_at: 2010-10-21 21:44:03
+  lock_version: "0"
+classifications_255: 
+  id: "278"
+  subject_id: "128"
+  item_id: "1489"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-21 21:44:24
+  updated_at: 2010-10-21 21:44:24
+  lock_version: "0"
+classifications_256: 
+  id: "279"
+  subject_id: "215"
+  item_id: "1490"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-21 21:51:14
+  updated_at: 2010-10-21 21:51:14
+  lock_version: "0"
+classifications_257: 
+  id: "280"
+  subject_id: "128"
+  item_id: "1490"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-21 21:51:28
+  updated_at: 2010-10-21 21:51:28
+  lock_version: "0"
+classifications_258: 
+  id: "281"
+  subject_id: "74"
+  item_id: "1490"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-21 21:51:48
+  updated_at: 2010-10-21 21:51:48
+  lock_version: "0"
+classifications_259: 
+  id: "282"
+  subject_id: "95"
+  item_id: "1490"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-21 21:52:12
+  updated_at: 2010-10-21 21:52:12
+  lock_version: "0"
+classifications_260: 
+  id: "283"
+  subject_id: "17"
+  item_id: "1491"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-27 13:35:53
+  updated_at: 2010-10-27 13:35:53
+  lock_version: "0"
+classifications_261: 
+  id: "284"
+  subject_id: "128"
+  item_id: "1491"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-27 13:36:12
+  updated_at: 2010-10-27 13:36:12
+  lock_version: "0"
+classifications_262: 
+  id: "285"
+  subject_id: "95"
+  item_id: "1491"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-27 13:36:23
+  updated_at: 2010-10-27 13:36:23
+  lock_version: "0"
+classifications_263: 
+  id: "286"
+  subject_id: "219"
+  item_id: "1491"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-27 13:36:55
+  updated_at: 2010-10-27 13:36:55
+  lock_version: "0"
+classifications_264: 
+  id: "287"
+  subject_id: "2"
+  item_id: "1492"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-10-27 13:42:06
+  updated_at: 2010-10-27 13:42:06
+  lock_version: "0"
+classifications_265: 
+  id: "288"
+  subject_id: "95"
+  item_id: "1492"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-10-27 13:42:15
+  updated_at: 2010-10-27 13:42:15
+  lock_version: "0"
+classifications_266: 
+  id: "289"
+  subject_id: "128"
+  item_id: "1492"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-10-27 13:42:32
+  updated_at: 2010-10-27 13:42:32
+  lock_version: "0"
+classifications_267: 
+  id: "290"
+  subject_id: "219"
+  item_id: "1492"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-10-27 13:43:22
+  updated_at: 2010-10-27 13:43:22
+  lock_version: "0"
+classifications_268: 
+  id: "291"
+  subject_id: "97"
+  item_id: "30"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 01:47:03
+  updated_at: 2010-11-05 01:47:03
+  lock_version: "0"
+classifications_269: 
+  id: "292"
+  subject_id: "25"
+  item_id: "52"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 01:59:08
+  updated_at: 2010-11-05 01:59:08
+  lock_version: "0"
+classifications_270: 
+  id: "293"
+  subject_id: "70"
+  item_id: "51"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:08:19
+  updated_at: 2010-11-05 02:08:19
+  lock_version: "0"
+classifications_271: 
+  id: "294"
+  subject_id: "156"
+  item_id: "51"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:08:42
+  updated_at: 2010-11-05 02:08:42
+  lock_version: "0"
+classifications_272: 
+  id: "295"
+  subject_id: "88"
+  item_id: "56"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:14:03
+  updated_at: 2010-11-05 02:14:03
+  lock_version: "0"
+classifications_273: 
+  id: "296"
+  subject_id: "151"
+  item_id: "56"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:14:28
+  updated_at: 2010-11-05 02:14:28
+  lock_version: "0"
+classifications_274: 
+  id: "297"
+  subject_id: "29"
+  item_id: "57"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:21:23
+  updated_at: 2010-11-05 02:21:23
+  lock_version: "0"
+classifications_275: 
+  id: "298"
+  subject_id: "107"
+  item_id: "57"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:21:39
+  updated_at: 2010-11-05 02:21:39
+  lock_version: "0"
+classifications_276: 
+  id: "299"
+  subject_id: "109"
+  item_id: "57"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-05 02:24:07
+  updated_at: 2010-11-05 02:24:07
+  lock_version: "0"
+classifications_277: 
+  id: "300"
+  subject_id: "109"
+  item_id: "65"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:27:45
+  updated_at: 2010-11-05 02:27:45
+  lock_version: "0"
+classifications_278: 
+  id: "301"
+  subject_id: "128"
+  item_id: "66"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:38:47
+  updated_at: 2010-11-05 02:38:47
+  lock_version: "0"
+classifications_279: 
+  id: "302"
+  subject_id: "103"
+  item_id: "66"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:39:03
+  updated_at: 2010-11-05 02:39:03
+  lock_version: "0"
+classifications_280: 
+  id: "303"
+  subject_id: "181"
+  item_id: "66"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-05 02:39:23
+  updated_at: 2010-11-05 02:39:23
+  lock_version: "0"
+classifications_281: 
+  id: "304"
+  subject_id: "32"
+  item_id: "66"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-05 02:39:56
+  updated_at: 2010-11-05 02:39:56
+  lock_version: "0"
+classifications_282: 
+  id: "305"
+  subject_id: "176"
+  item_id: "66"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2010-11-05 02:40:13
+  updated_at: 2010-11-05 02:40:13
+  lock_version: "0"
+classifications_283: 
+  id: "306"
+  subject_id: "109"
+  item_id: "66"
+  publish: "1"
+  position: "6"
+  notes: ""
+  created_at: 2010-11-05 02:40:40
+  updated_at: 2010-11-05 02:40:40
+  lock_version: "0"
+classifications_284: 
+  id: "307"
+  subject_id: "27"
+  item_id: "37"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:44:29
+  updated_at: 2010-11-05 02:44:29
+  lock_version: "0"
+classifications_285: 
+  id: "308"
+  subject_id: "151"
+  item_id: "37"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:45:21
+  updated_at: 2010-11-05 02:45:21
+  lock_version: "0"
+classifications_286: 
+  id: "309"
+  subject_id: "70"
+  item_id: "77"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:50:05
+  updated_at: 2010-11-05 02:50:05
+  lock_version: "0"
+classifications_287: 
+  id: "310"
+  subject_id: "128"
+  item_id: "77"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 02:50:25
+  updated_at: 2010-11-05 02:50:25
+  lock_version: "0"
+classifications_288: 
+  id: "311"
+  subject_id: "136"
+  item_id: "77"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-05 02:50:43
+  updated_at: 2010-11-05 02:50:43
+  lock_version: "0"
+classifications_289: 
+  id: "312"
+  subject_id: "87"
+  item_id: "77"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-05 02:51:04
+  updated_at: 2010-11-05 02:51:04
+  lock_version: "0"
+classifications_290: 
+  id: "313"
+  subject_id: "64"
+  item_id: "77"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2010-11-05 02:51:21
+  updated_at: 2010-11-05 02:51:21
+  lock_version: "0"
+classifications_291: 
+  id: "314"
+  subject_id: "25"
+  item_id: "74"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 02:59:59
+  updated_at: 2010-11-05 02:59:59
+  lock_version: "0"
+classifications_292: 
+  id: "315"
+  subject_id: "18"
+  item_id: "79"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 03:04:05
+  updated_at: 2010-11-05 03:04:05
+  lock_version: "0"
+classifications_293: 
+  id: "316"
+  subject_id: "64"
+  item_id: "79"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 03:04:28
+  updated_at: 2010-11-05 03:04:28
+  lock_version: "0"
+classifications_294: 
+  id: "317"
+  subject_id: "95"
+  item_id: "79"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-05 03:04:47
+  updated_at: 2010-11-05 03:04:47
+  lock_version: "0"
+classifications_295: 
+  id: "318"
+  subject_id: "207"
+  item_id: "31"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 03:12:55
+  updated_at: 2010-11-05 03:12:55
+  lock_version: "0"
+classifications_296: 
+  id: "319"
+  subject_id: "95"
+  item_id: "31"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 03:13:18
+  updated_at: 2010-11-05 03:13:18
+  lock_version: "0"
+classifications_297: 
+  id: "320"
+  subject_id: "167"
+  item_id: "31"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-05 03:13:34
+  updated_at: 2010-11-05 03:13:34
+  lock_version: "0"
+classifications_298: 
+  id: "321"
+  subject_id: "64"
+  item_id: "63"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-05 03:19:10
+  updated_at: 2010-11-05 03:19:10
+  lock_version: "0"
+classifications_299: 
+  id: "322"
+  subject_id: "83"
+  item_id: "63"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-05 03:19:34
+  updated_at: 2010-11-05 03:19:34
+  lock_version: "0"
+classifications_300: 
+  id: "323"
+  subject_id: "151"
+  item_id: "36"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:08:20
+  updated_at: 2010-11-06 03:08:20
+  lock_version: "0"
+classifications_301: 
+  id: "324"
+  subject_id: "88"
+  item_id: "36"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-06 03:08:39
+  updated_at: 2010-11-06 03:08:39
+  lock_version: "0"
+classifications_302: 
+  id: "325"
+  subject_id: "109"
+  item_id: "58"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:18:30
+  updated_at: 2010-11-06 03:18:30
+  lock_version: "0"
+classifications_303: 
+  id: "326"
+  subject_id: "70"
+  item_id: "73"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:23:38
+  updated_at: 2010-11-06 03:23:38
+  lock_version: "0"
+classifications_304: 
+  id: "327"
+  subject_id: "134"
+  item_id: "73"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-06 03:24:10
+  updated_at: 2010-11-06 03:24:10
+  lock_version: "0"
+classifications_305: 
+  id: "328"
+  subject_id: "33"
+  item_id: "68"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:28:02
+  updated_at: 2010-11-06 03:28:02
+  lock_version: "0"
+classifications_306: 
+  id: "329"
+  subject_id: "53"
+  item_id: "40"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:38:19
+  updated_at: 2010-11-06 03:38:19
+  lock_version: "0"
+classifications_307: 
+  id: "330"
+  subject_id: "65"
+  item_id: "42"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:44:37
+  updated_at: 2010-11-06 03:44:37
+  lock_version: "0"
+classifications_308: 
+  id: "331"
+  subject_id: "23"
+  item_id: "33"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:49:51
+  updated_at: 2010-11-06 03:49:51
+  lock_version: "0"
+classifications_309: 
+  id: "332"
+  subject_id: "33"
+  item_id: "33"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-06 03:50:14
+  updated_at: 2010-11-06 03:50:14
+  lock_version: "0"
+classifications_310: 
+  id: "333"
+  subject_id: "181"
+  item_id: "49"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-06 03:54:51
+  updated_at: 2010-11-06 03:54:51
+  lock_version: "0"
+classifications_311: 
+  id: "334"
+  subject_id: "144"
+  item_id: "49"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-06 03:55:09
+  updated_at: 2010-11-06 03:55:09
+  lock_version: "0"
+classifications_312: 
+  id: "335"
+  subject_id: "49"
+  item_id: "49"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-06 03:55:26
+  updated_at: 2010-11-06 03:55:26
+  lock_version: "0"
+classifications_313: 
+  id: "336"
+  subject_id: "185"
+  item_id: "49"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-06 03:56:05
+  updated_at: 2010-11-06 03:56:05
+  lock_version: "0"
+classifications_314: 
+  id: "337"
+  subject_id: "12"
+  item_id: "27"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 03:31:18
+  updated_at: 2010-11-09 03:31:18
+  lock_version: "0"
+classifications_315: 
+  id: "338"
+  subject_id: "117"
+  item_id: "27"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 03:31:40
+  updated_at: 2010-11-09 03:31:40
+  lock_version: "0"
+classifications_316: 
+  id: "339"
+  subject_id: "88"
+  item_id: "27"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-09 03:32:12
+  updated_at: 2010-11-09 03:32:12
+  lock_version: "0"
+classifications_317: 
+  id: "340"
+  subject_id: "95"
+  item_id: "27"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-09 03:32:42
+  updated_at: 2010-11-09 03:32:42
+  lock_version: "0"
+classifications_318: 
+  id: "341"
+  subject_id: "70"
+  item_id: "60"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 03:38:45
+  updated_at: 2010-11-09 03:38:45
+  lock_version: "0"
+classifications_319: 
+  id: "342"
+  subject_id: "92"
+  item_id: "60"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 03:39:03
+  updated_at: 2010-11-09 03:39:03
+  lock_version: "0"
+classifications_320: 
+  id: "343"
+  subject_id: "115"
+  item_id: "60"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-09 03:39:26
+  updated_at: 2010-11-09 03:39:26
+  lock_version: "0"
+classifications_321: 
+  id: "344"
+  subject_id: "61"
+  item_id: "60"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-09 03:39:47
+  updated_at: 2010-11-09 03:39:47
+  lock_version: "0"
+classifications_322: 
+  id: "345"
+  subject_id: "157"
+  item_id: "60"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2010-11-09 03:40:07
+  updated_at: 2010-11-09 03:40:07
+  lock_version: "0"
+classifications_323: 
+  id: "346"
+  subject_id: "185"
+  item_id: "60"
+  publish: "1"
+  position: "6"
+  notes: ""
+  created_at: 2010-11-09 03:40:30
+  updated_at: 2010-11-09 03:40:30
+  lock_version: "0"
+classifications_324: 
+  id: "347"
+  subject_id: "109"
+  item_id: "60"
+  publish: "1"
+  position: "7"
+  notes: ""
+  created_at: 2010-11-09 03:40:57
+  updated_at: 2010-11-09 03:40:57
+  lock_version: "0"
+classifications_325: 
+  id: "348"
+  subject_id: "207"
+  item_id: "116"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 03:47:43
+  updated_at: 2010-11-09 03:47:43
+  lock_version: "0"
+classifications_326: 
+  id: "349"
+  subject_id: "39"
+  item_id: "89"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 03:53:55
+  updated_at: 2010-11-09 03:53:55
+  lock_version: "0"
+classifications_327: 
+  id: "350"
+  subject_id: "115"
+  item_id: "89"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 03:54:52
+  updated_at: 2010-11-09 03:54:52
+  lock_version: "0"
+classifications_328: 
+  id: "351"
+  subject_id: "69"
+  item_id: "89"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-09 03:55:27
+  updated_at: 2010-11-09 03:55:27
+  lock_version: "0"
+classifications_329: 
+  id: "352"
+  subject_id: "88"
+  item_id: "89"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2010-11-09 03:57:28
+  updated_at: 2010-11-09 03:57:28
+  lock_version: "0"
+classifications_330: 
+  id: "353"
+  subject_id: "89"
+  item_id: "89"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2010-11-09 03:57:55
+  updated_at: 2010-11-09 03:57:55
+  lock_version: "0"
+classifications_331: 
+  id: "354"
+  subject_id: "101"
+  item_id: "72"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 04:18:28
+  updated_at: 2010-11-09 04:18:28
+  lock_version: "0"
+classifications_332: 
+  id: "355"
+  subject_id: "68"
+  item_id: "72"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 04:18:52
+  updated_at: 2010-11-09 04:18:52
+  lock_version: "0"
+classifications_333: 
+  id: "356"
+  subject_id: "70"
+  item_id: "72"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2010-11-09 04:19:12
+  updated_at: 2010-11-09 04:19:12
+  lock_version: "0"
+classifications_334: 
+  id: "357"
+  subject_id: "50"
+  item_id: "75"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 04:27:35
+  updated_at: 2010-11-09 04:27:35
+  lock_version: "0"
+classifications_335: 
+  id: "358"
+  subject_id: "33"
+  item_id: "75"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 04:28:01
+  updated_at: 2010-11-09 04:28:01
+  lock_version: "0"
+classifications_336: 
+  id: "359"
+  subject_id: "34"
+  item_id: "70"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2010-11-09 04:36:03
+  updated_at: 2010-11-09 04:36:03
+  lock_version: "0"
+classifications_337: 
+  id: "360"
+  subject_id: "95"
+  item_id: "70"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2010-11-09 04:36:20
+  updated_at: 2010-11-09 04:36:20
+  lock_version: "0"

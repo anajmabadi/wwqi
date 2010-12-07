@@ -1,2 +1,21 @@
---- {}
-
+--- 
+relationships_001: 
+  id: "1"
+  position: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-10-19 15:26:18
+  updated_at: 
+  person_id: "18"
+  relative_id: "19"
+  lock_version: "0"
+relationships_002: 
+  id: "2"
+  position: "1"
+  publish: "1"
+  notes: 
+  created_at: 2010-10-19 15:28:54
+  updated_at: 
+  person_id: "19"
+  relative_id: "18"
+  lock_version: "0"

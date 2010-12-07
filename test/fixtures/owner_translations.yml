@@ -41,3 +41,45 @@ owner_translations_006:
   name: "\xD9\x86\xD8\xA7\xD9\x87\xDB\x8C\xD8\xAF \xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xDB\x8C"
   created_at: 2010-07-01 19:56:10
   updated_at: 2010-07-01 19:56:10
+owner_translations_007: 
+  id: "7"
+  owner_id: "4"
+  locale: en
+  name: Harvard University
+  created_at: 2010-09-06 16:11:33
+  updated_at: 2010-09-06 16:11:36
+owner_translations_008: 
+  id: "8"
+  owner_id: "4"
+  locale: fa
+  name: "\xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4\xDA\xAF\xD8\xA7\xD9\x87 \xD9\x87\xD8\xA7\xD8\xB1\xD9\x88\xD8\xA7\xD8\xB1\xD8\xAF"
+  created_at: 2010-09-06 16:13:28
+  updated_at: 2010-09-06 16:13:31
+owner_translations_009: 
+  id: "9"
+  owner_id: "5"
+  locale: en
+  name: Farshideh Mirbaghdadabadi
+  created_at: 2010-10-20 15:37:31
+  updated_at: 2010-10-20 15:37:31
+owner_translations_010: 
+  id: "10"
+  owner_id: "5"
+  locale: fa
+  name: ""
+  created_at: 2010-10-20 15:37:31
+  updated_at: 2010-10-20 15:37:31
+owner_translations_011: 
+  id: "11"
+  owner_id: "6"
+  locale: en
+  name: Ccsdfasd
+  created_at: 2010-12-02 14:43:32
+  updated_at: 2010-12-02 14:43:32
+owner_translations_012: 
+  id: "12"
+  owner_id: "6"
+  locale: fa
+  name: asdf
+  created_at: 2010-12-02 14:43:32
+  updated_at: 2010-12-02 14:43:32

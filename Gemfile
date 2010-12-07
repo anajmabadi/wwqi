@@ -33,15 +33,14 @@ gem 'calendar'
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
 group :test do
-  gem 'capybara'
   gem 'database_cleaner'
-  gem 'cucumber-rails'
+  gem 'cucumber-rails', ">= 0.3.2"
   gem 'cucumber'
-  gem "rspec", ">= 2.0.0.beta.1"
-  gem "rspec-rails", ">= 2.0.0.beta.13"
+  gem "rspec", ">= 2.0.0"
+  gem "rspec-rails", ">= 2.0.0"
   gem 'spork'
   gem 'launchy'    # So you can do Then show me the page
-  gem "webrat"
+  gem "webrat", ">= 0.7.2"
 end
 
 

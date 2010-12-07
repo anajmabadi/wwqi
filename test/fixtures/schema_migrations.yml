@@ -73,3 +73,53 @@ schema_migrations_036:
   version: "20100821011929"
 schema_migrations_037: 
   version: "20100821012616"
+schema_migrations_038: 
+  version: "20100823020559"
+schema_migrations_039: 
+  version: "20100902013438"
+schema_migrations_040: 
+  version: "20100902014507"
+schema_migrations_041: 
+  version: "20100902113308"
+schema_migrations_042: 
+  version: "20100906191153"
+schema_migrations_043: 
+  version: "20100906191154"
+schema_migrations_044: 
+  version: "20100908230455"
+schema_migrations_045: 
+  version: "20100928134408"
+schema_migrations_046: 
+  version: "20100928141502"
+schema_migrations_047: 
+  version: "20101001053825"
+schema_migrations_048: 
+  version: "20101018145532"
+schema_migrations_049: 
+  version: "20101018190036"
+schema_migrations_050: 
+  version: "20101116115017"
+schema_migrations_051: 
+  version: "20101123121921"
+schema_migrations_052: 
+  version: "20101123124929"
+schema_migrations_053: 
+  version: "20101123143106"
+schema_migrations_054: 
+  version: "20101123194034"
+schema_migrations_055: 
+  version: "20101123221121"
+schema_migrations_056: 
+  version: "20101123223545"
+schema_migrations_057: 
+  version: "20101201120021"
+schema_migrations_058: 
+  version: "20101201153745"
+schema_migrations_059: 
+  version: "20101201214523"
+schema_migrations_060: 
+  version: "20101201232510"
+schema_migrations_061: 
+  version: "20101202143652"
+schema_migrations_062: 
+  version: "20101202164934"

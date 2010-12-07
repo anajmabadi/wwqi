@@ -14,21 +14,25 @@ owners_001:
   notes: ""
   created_at: 2010-05-04 16:25:49
   updated_at: 2010-07-01 19:54:58
+  lock_version: "0"
+  private: "0"
 owners_002: 
   id: "2"
-  address: 
-  address2: 
-  state_province: 
-  postal_code: 
-  country: 
-  telephone: 
-  email: 
-  url: 
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
   contact: Bahram Sheikholeslami
-  terms: 
+  terms: ""
   notes: 
   created_at: 2010-05-04 16:25:43
-  updated_at: 2010-05-04 16:25:46
+  updated_at: 2010-12-02 14:40:29
+  lock_version: "1"
+  private: "1"
 owners_003: 
   id: "3"
   address: ""
@@ -44,3 +48,56 @@ owners_003:
   notes: ""
   created_at: 2010-07-01 19:55:10
   updated_at: 2010-07-01 19:56:31
+  lock_version: "0"
+  private: "0"
+owners_004: 
+  id: "4"
+  address: 
+  address2: 
+  state_province: 
+  postal_code: 
+  country: 
+  telephone: 
+  email: 
+  url: http://www.harvard.edu
+  contact: 
+  terms: 
+  notes: 
+  created_at: 
+  updated_at: 
+  lock_version: "0"
+  private: "0"
+owners_005: 
+  id: "5"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: ""
+  created_at: 2010-10-20 15:37:31
+  updated_at: 2010-10-20 15:37:31
+  lock_version: "0"
+  private: "0"
+owners_006: 
+  id: "6"
+  address: dafsdf
+  address2: asdf
+  state_province: asdf
+  postal_code: asdf
+  country: asdf
+  telephone: asdf
+  email: cforcey@historicusinc.com
+  url: www.tom.cole.com
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-02 14:43:32
+  updated_at: 2010-12-02 14:43:32
+  lock_version: "0"
+  private: "1"
