@@ -7,3 +7,4 @@ tmp/**/*
 *.pyo
 .project
 config/database.yml
+tmp/*
