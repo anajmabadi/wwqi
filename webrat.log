@@ -205,3 +205,6 @@ REQUESTING PAGE: GET /home with {} and HTTP headers {}
 REQUESTING PAGE: GET /home with {} and HTTP headers {}
 REQUESTING PAGE: GET /home with {} and HTTP headers {}
 REQUESTING PAGE: GET /home with {} and HTTP headers {}
+REQUESTING PAGE: GET /utilities with {} and HTTP headers {}
+REQUESTING PAGE: GET /admin/utilities with {} and HTTP headers {}
+REQUESTING PAGE: GET /admin/utilities/rename_by_file_name with {} and HTTP headers {"HTTP_REFERER"=>"/admin/utilities"}
