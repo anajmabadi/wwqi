@@ -22,7 +22,6 @@ Feature: home page welcomes user and provides navigation to site areas
 			And I should see "permissions"
 			And I should see "Home"
 			And I should see "archive"
-			And I should see "exhibits"
 			And I should see "contact"
 			And I should see "FAQ"
 						
@@ -34,7 +33,6 @@ Feature: home page welcomes user and provides navigation to site areas
 			And I should see "مجوزات حقوقی"
 			And I should see "خانه"
 			And I should see "آرشی"
-			And I should see "نمایشگاه ها"
 			And I should see "تماس با ما"
 			And I should see "سؤالات متداول"			
 		
@@ -48,17 +46,4 @@ Feature: home page welcomes user and provides navigation to site areas
 		When I go to the home page
 		And I follow "Women's Worlds in Qajar Iran"
 		Then I should be on the home page
-
-  Scenario: all slide show items link to archive search 
-		Given I speak English
-		And I have these subject types:
-			| name	| id	|
-			|	Writings | 1 |
-			|	Legal Documents | 2 |
-			|	Photographs | 4 |			
-			|	Artworks | 3 |
-			|	Everyday Objects | 5 |
-			|	Oral Histories | 6 |
-		When I go to the home page
-		Then I should have valid subject type archive links
 							
