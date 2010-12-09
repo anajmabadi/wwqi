@@ -1,0 +1,67 @@
+<span>
+    <hr />
+    <%= form_for(['admin', section], :remote => true) do |f| %>
+    <% if section.errors.any? -%>
+    <div id="error_explanation">
+        <h2><%= pluralize(section.errors.count, "error") %> prohibited this section from being saved:</h2>
+        <ul>
+            <% section.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
+    <% end -%>
+
+    <%= f.hidden_field(:item_id) %>
+
+    <div class="field">
+        <%= f.label :title_en %>:
+        <%= f.text_area :title_en, :rows => 1 %>
+    </div>
+    <div class="field">
+        <%= f.label :title_fa %>:
+        <%= f.text_area :title_fa, :rows => 1, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :caption_en %>:
+        <%= f.text_area :caption_en, :rows => 1 %>
+    </div>
+    <div class="field">
+        <%= f.label :caption_fa %>:
+        <%= f.text_area :caption_fa, :rows => 1, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :start_page %>: <%= f.text_field :start_page, :size => 5 %>
+    </div>
+    <div class="field">
+        <%= f.label :start_page_label_en %>:
+        <%= f.text_area :start_page_label_en, :rows => 1 %>
+    </div>
+    <div class="field">
+        <%= f.label :start_page_label_fa %>:
+        <%= f.text_area :start_page_label_fa, :rows => 1, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :end_page %>: <%= f.text_field :end_page, :size => 5 %>
+    </div>
+    <div class="field">
+        <%= f.label :end_page_label_en %>:
+        <%= f.text_area :end_page_label_en, :rows => 1 %>
+    </div>
+    <div class="field">
+        <%= f.label :end_page_label_fa %>:
+        <%= f.text_area :end_page_label_fa, :rows => 1, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :publish %>: <%= f.check_box :publish %>
+        <%= f.label :parent_id %>: <%= f.text_field :parent_id, :size => 5 %>
+        <%= f.label :notes %>: <%= f.text_field :notes %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+    <% end -%>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_section_to_item', :id => item.id }, :remote => true %>
+</span>

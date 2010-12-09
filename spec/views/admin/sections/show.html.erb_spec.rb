@@ -3,6 +3,7 @@ require 'spec_helper'
 describe "admin/sections/show.html.erb" do
   before(:each) do
     @section = assign(:section, stub_model(Section,
+      :item_id => 1,
       :title => "Title",
       :caption => "MyText",
       :start_page => 1,

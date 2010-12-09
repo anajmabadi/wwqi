@@ -41,13 +41,16 @@ class Admin::SectionsController < Admin::AdminController
   # POST /sections.xml
   def create
     @section = Section.new(params[:section])
-
+    @item = @section.item
+    @items = Item.select_list
     respond_to do |format|
       if @section.save
         format.html { redirect_to(admin_section_path(@section), :notice => 'Section was successfully created.') }
-        format.xml  { render :xml => @section, :status => :created, :location => @section }
+        format.xml  { render :xml => @section, :status => :created, :section => @section }
+        format.js { render :template => 'admin/items/add_section_to_item'}
       else
         format.html { render :action => "new" }
+        format.js { render :template => 'admin/items/add_section_to_item' }
         format.xml  { render :xml => @section.errors, :status => :unprocessable_entity }
       end
     end
@@ -73,10 +76,13 @@ class Admin::SectionsController < Admin::AdminController
   # DELETE /sections/1.xml
   def destroy
     @section = Section.find(params[:id])
+    @item = @section.item
     @section.destroy
+    @section = nil
 
     respond_to do |format|
       format.html { redirect_to(admin_sections_url) }
+      format.js { render :template => 'admin/items/remove_section_from_item' }
       format.xml  { head :ok }
     end
   end

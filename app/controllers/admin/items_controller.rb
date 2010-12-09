@@ -204,6 +204,28 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
   
+      # remote functions for showing and hiding the add sections form
+  def show_add_section_to_item
+    @item = Item.find(params[:id])
+    @section = Section.new(
+      :item_id => params[:id],
+      :publish => true
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_section_to_item
+    @section = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+  
     # remote functions for showing and hiding the add plot form
   def show_add_plot_to_item
     # retrieve @repositories for instant additions

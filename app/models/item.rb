@@ -28,6 +28,7 @@ class Item < ActiveRecord::Base
   has_many :passports, :order => 'passports.position'
   has_many :repositories, :through => :passports
   has_many :comps, :order => 'comps.position'  #join table for linking objects to each other -- must be specified in both directions
+  has_many :sections, :order => 'sections.start_page'
   
   # globalize2 accessors 
   translates :title, :credit, :description, :display_date, :creator_label, :publisher, :transcript, :remarks
