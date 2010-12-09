@@ -155,7 +155,7 @@
             <td>
             <b>Acquired On:</b>
             <br />
-            <%= f.date_select :acquired_on, :start_year => 2010 %>
+            <%= f.date_select :acquired_on, :start_year => 2010, :include_blank => true %>
             </td>
             <td>
             <b>Interview:</b>
@@ -231,11 +231,17 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+                                 <td>
+            <b>Last Edited:</b>
+            <br />
+            <%= f.date_select  :last_edited, :start_year => 2010, :include_blank => true %>
+            </td>
+            <td>
             <b>Publish:</b>
             <br />
             <%= f.check_box  :publish %>
             </td>
+ 
         </tr>
         <tr>
             <td>
