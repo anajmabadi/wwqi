@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209090205) do
+ActiveRecord::Schema.define(:version => 20101209142945) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -384,15 +384,12 @@ ActiveRecord::Schema.define(:version => 20101209090205) do
   create_table "items", :force => true do |t|
     t.string   "accession_num",                                   :default => "",    :null => false
     t.string   "urn"
-    t.integer  "creator_id"
     t.integer  "owner_id"
     t.integer  "collection_id"
     t.integer  "pages",                                           :default => 1,     :null => false
     t.integer  "format_id"
     t.boolean  "circa",                                           :default => false, :null => false
-    t.string   "dimensions"
     t.text     "notes"
-    t.integer  "place_id"
     t.boolean  "bound",                                           :default => false, :null => false
     t.boolean  "publish"
     t.datetime "created_at"
