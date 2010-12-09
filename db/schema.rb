@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209075023) do
+ActiveRecord::Schema.define(:version => 20101209090205) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -241,8 +241,10 @@ ActiveRecord::Schema.define(:version => 20101209075023) do
     t.string   "acquired_by"
     t.string   "processed_by"
     t.text     "acquisition_notes"
+    t.date     "last_edited"
   end
 
+  add_index "collections", ["last_edited"], :name => "index_collections_on_last_edited"
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
 
   create_table "comments", :force => true do |t|
