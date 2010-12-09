@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101202164934) do
+ActiveRecord::Schema.define(:version => 20101209022639) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -260,6 +260,22 @@ ActiveRecord::Schema.define(:version => 20101202164934) do
 
   add_index "comments", ["submitted_at"], :name => "index_comments_on_submitted_at"
 
+  create_table "comps", :force => true do |t|
+    t.integer  "item_id",                      :null => false
+    t.integer  "comp_id",                      :null => false
+    t.integer  "position",   :default => 1,    :null => false
+    t.boolean  "publish",    :default => true, :null => false
+    t.string   "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comps", ["comp_id"], :name => "index_comps_on_comp_id"
+  add_index "comps", ["item_id", "comp_id"], :name => "index_comps_on_item_id_and_comp_id", :unique => true
+  add_index "comps", ["item_id"], :name => "index_comps_on_item_id"
+  add_index "comps", ["position"], :name => "index_comps_on_position"
+  add_index "comps", ["publish"], :name => "index_comps_on_publish"
+
   create_table "era_translations", :force => true do |t|
     t.integer  "era_id"
     t.string   "locale"
@@ -344,92 +360,6 @@ ActiveRecord::Schema.define(:version => 20101202164934) do
   add_index "images", ["item_id"], :name => "index_images_on_item_id"
   add_index "images", ["position"], :name => "index_images_on_position"
   add_index "images", ["publish"], :name => "index_images_on_publish"
-
-  create_table "import", :force => true do |t|
-    t.integer "item_id",                                  :null => false
-    t.string  "accession_num",                            :null => false
-    t.string  "file_name",                                :null => false
-    t.integer "position",              :default => 1,     :null => false
-    t.string  "title",                                    :null => false
-    t.string  "title_fa",                                 :null => false
-    t.integer "category_id",                              :null => false
-    t.string  "material_type",                            :null => false
-    t.string  "material_type_fa",                         :null => false
-    t.string  "dimensions",                               :null => false
-    t.boolean "verso",                 :default => false, :null => false
-    t.boolean "bound",                 :default => false, :null => false
-    t.integer "pages",                 :default => 1,     :null => false
-    t.boolean "circa",                 :default => false, :null => false
-    t.integer "calendar_type_id",      :default => 2,     :null => false
-    t.string  "source_date",                              :null => false
-    t.string  "islamic_date",                             :null => false
-    t.string  "persian_date",                             :null => false
-    t.string  "gregorian_date",                           :null => false
-    t.integer "creator_id",                               :null => false
-    t.string  "creator_label",                            :null => false
-    t.string  "creator_label_fa",                         :null => false
-    t.integer "place_id",                                 :null => false
-    t.string  "place_created",                            :null => false
-    t.string  "place_created_fa",                         :null => false
-    t.string  "description",                              :null => false
-    t.binary  "description_fa",                           :null => false
-    t.string  "credit",                                   :null => false
-    t.string  "credit_fa",                                :null => false
-    t.string  "subject_names",                            :null => false
-    t.string  "subject_names_fa",                         :null => false
-    t.string  "subject_keywords",                         :null => false
-    t.string  "subject_keywords_fa",                      :null => false
-    t.text    "notes",                                    :null => false
-    t.text    "notes_fa",                                 :null => false
-    t.integer "corrections_additions",                    :null => false
-    t.integer "collection_id",         :default => 12,    :null => false
-  end
-
-  create_table "import_100621", :force => true do |t|
-    t.integer "item_id",                        :null => false
-    t.string  "accession_num",                  :null => false
-    t.string  "urn",                            :null => false
-    t.integer "position",                       :null => false
-    t.string  "title_en",                       :null => false
-    t.string  "title_fa",                       :null => false
-    t.integer "category_id",                    :null => false
-    t.string  "dimensions",                     :null => false
-    t.integer "verso",             :limit => 1, :null => false
-    t.integer "circa",             :limit => 1, :null => false
-    t.string  "islamic_date_en",                :null => false
-    t.string  "islamic_date_fa",                :null => false
-    t.string  "gregorian_date_en",              :null => false
-    t.string  "creator_label",                  :null => false
-    t.string  "creator_label_fa",               :null => false
-    t.string  "place_en",                       :null => false
-    t.integer "place_id",                       :null => false
-    t.string  "place_fa",                       :null => false
-    t.string  "olivia_id",                      :null => false
-    t.string  "harvard_url",                    :null => false
-    t.text    "description_en",                 :null => false
-    t.text    "description_fa",                 :null => false
-    t.text    "names_en",                       :null => false
-    t.text    "names_fa",                       :null => false
-    t.text    "keywords_en",                    :null => false
-    t.text    "keywords_fa",                    :null => false
-    t.integer "audio",             :limit => 1, :null => false
-    t.text    "notes",                          :null => false
-    t.text    "notes_fa",                       :null => false
-    t.string  "credit_en",                      :null => false
-    t.string  "credit_fa",                      :null => false
-    t.text    "corrections_en",                 :null => false
-    t.text    "corrections_fa",                 :null => false
-  end
-
-  create_table "import_people", :force => true do |t|
-    t.integer "item_id",                :null => false
-    t.string  "loc_name",               :null => false
-    t.string  "name",                   :null => false
-    t.string  "sort_name",              :null => false
-    t.integer "publish",   :limit => 1, :null => false
-    t.integer "major",     :limit => 1, :null => false
-    t.string  "locale",    :limit => 4, :null => false
-  end
 
   create_table "item_translations", :force => true do |t|
     t.integer  "item_id",                       :null => false

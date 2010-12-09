@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Item:</b>
+  <%= @comp.item_id %>
+</p>
+
+<p>
+  <b>Comps:</b>
+  <%= @comp.comps_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @comp.position %>
+</p>
+
+<p>
+  <b>Publish:</b>
+  <%= @comp.publish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @comp.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_comp_path(@comp) %> |
+<%= link_to 'Back', comps_path %>
