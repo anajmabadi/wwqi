@@ -69,22 +69,6 @@
     <tr>
         <td>
         <div class="field englishOnly">
-            <%= f.label :creator_label_en %>
-            <br />
-            <%= f.text_field :creator_label_en, :size => 55 %>
-        </div>
-        </td>
-        <td>
-        <div class="field persianOnly">
-            <%= f.label :creator_label_fa %>
-            <br />
-            <%= f.text_field :creator_label_fa, :size => 55 %>
-        </div>
-        </td>
-    </tr>
-    <tr>
-        <td>
-        <div class="field englishOnly">
             <%= f.label :publisher_en %>
             <br />
             <%= f.text_field :publisher_en %>
@@ -122,16 +106,16 @@
     <tr>
         <td>
         <div class="field">
-            <%= f.label :creator_id %>
+            <%= f.label :owner_id %>
             <br />
-            <%= f.select :creator_id, Person.select_list, {:include_blank => true} %>
+            <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
         </div>
         </td>
         <td>
         <div class="field">
-            <%= f.label :owner_id %>
+            <%= f.label :owner_tag %>
             <br />
-            <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
+            <%= f.text_field :owner_tag %>
         </div>
         </td>
     </tr>

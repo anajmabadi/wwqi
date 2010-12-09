@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209022639) do
+ActiveRecord::Schema.define(:version => 20101209075023) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -411,12 +411,14 @@ ActiveRecord::Schema.define(:version => 20101209022639) do
     t.integer  "sort_month"
     t.integer  "sort_day"
     t.boolean  "editorial_date",                                  :default => false
+    t.string   "owner_tag"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
   add_index "items", ["collection_id"], :name => "collection_id"
   add_index "items", ["editorial_dating"], :name => "index_items_on_editorial_dating"
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
+  add_index "items", ["owner_tag"], :name => "index_items_on_owner_tag"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_year", "sort_month", "sort_day"], :name => "index_items_on_sort_year_and_sort_month_and_sort_day"
   add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"
