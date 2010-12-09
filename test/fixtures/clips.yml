@@ -4,11 +4,12 @@ clips_001:
   item_id: "99"
   clip_type_id: "1"
   publish: "1"
-  notes: 
-  recorded_on: 
+  notes: ""
+  recorded_on: "2010-11-18"
   position: "1"
   created_at: 2010-05-28 11:03:43
-  updated_at: 
+  updated_at: 2010-11-18 05:20:25
+  lock_version: "1"
 clips_002: 
   id: "2"
   item_id: "106"
@@ -19,6 +20,7 @@ clips_002:
   position: "1"
   created_at: 2010-05-28 11:03:59
   updated_at: 
+  lock_version: "0"
 clips_003: 
   id: "3"
   item_id: "114"
@@ -29,6 +31,7 @@ clips_003:
   position: "1"
   created_at: 2010-05-28 11:04:24
   updated_at: 
+  lock_version: "0"
 clips_004: 
   id: "4"
   item_id: "121"
@@ -39,6 +42,7 @@ clips_004:
   position: "1"
   created_at: 2010-05-28 11:04:37
   updated_at: 
+  lock_version: "0"
 clips_005: 
   id: "5"
   item_id: "161"
@@ -49,6 +53,7 @@ clips_005:
   position: "1"
   created_at: 2010-05-28 11:04:51
   updated_at: 
+  lock_version: "0"
 clips_006: 
   id: "6"
   item_id: "177"
@@ -59,6 +64,7 @@ clips_006:
   position: "1"
   created_at: 2010-05-28 11:05:10
   updated_at: 
+  lock_version: "0"
 clips_007: 
   id: "7"
   item_id: "179"
@@ -69,6 +75,7 @@ clips_007:
   position: "1"
   created_at: 2010-05-28 11:05:21
   updated_at: 
+  lock_version: "0"
 clips_008: 
   id: "8"
   item_id: "181"
@@ -79,6 +86,7 @@ clips_008:
   position: "1"
   created_at: 2010-05-28 11:05:36
   updated_at: 
+  lock_version: "0"
 clips_009: 
   id: "9"
   item_id: "183"
@@ -89,6 +97,7 @@ clips_009:
   position: "1"
   created_at: 2010-05-28 11:05:49
   updated_at: 
+  lock_version: "0"
 clips_010: 
   id: "10"
   item_id: "186"
@@ -99,6 +108,7 @@ clips_010:
   position: "1"
   created_at: 2010-05-28 11:06:02
   updated_at: 
+  lock_version: "0"
 clips_011: 
   id: "11"
   item_id: "187"
@@ -109,6 +119,7 @@ clips_011:
   position: "1"
   created_at: 2010-05-28 11:06:14
   updated_at: 
+  lock_version: "0"
 clips_012: 
   id: "12"
   item_id: "188"
@@ -119,6 +130,7 @@ clips_012:
   position: "1"
   created_at: 2010-05-28 11:06:27
   updated_at: 
+  lock_version: "0"
 clips_013: 
   id: "13"
   item_id: "195"
@@ -129,6 +141,7 @@ clips_013:
   position: "1"
   created_at: 2010-05-28 11:06:40
   updated_at: 
+  lock_version: "0"
 clips_014: 
   id: "14"
   item_id: "199"
@@ -139,6 +152,7 @@ clips_014:
   position: "1"
   created_at: 2010-05-28 11:06:53
   updated_at: 
+  lock_version: "0"
 clips_015: 
   id: "15"
   item_id: "200"
@@ -149,6 +163,7 @@ clips_015:
   position: "1"
   created_at: 2010-05-28 11:07:20
   updated_at: 
+  lock_version: "0"
 clips_016: 
   id: "16"
   item_id: "201"
@@ -159,6 +174,7 @@ clips_016:
   position: "1"
   created_at: 2010-05-28 11:07:32
   updated_at: 
+  lock_version: "0"
 clips_017: 
   id: "17"
   item_id: "205"
@@ -169,6 +185,7 @@ clips_017:
   position: "1"
   created_at: 2010-05-28 11:07:47
   updated_at: 
+  lock_version: "0"
 clips_018: 
   id: "18"
   item_id: "1"
@@ -179,3 +196,4 @@ clips_018:
   position: "1"
   created_at: 2010-05-28 11:18:10
   updated_at: 
+  lock_version: "0"

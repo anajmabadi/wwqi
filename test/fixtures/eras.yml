@@ -1,0 +1,61 @@
+--- 
+eras_001: 
+  id: "1"
+  year: "1900"
+  publish: "1"
+  created_at: 2010-11-23 17:24:46
+  updated_at: 
+eras_002: 
+  id: "2"
+  year: "1800"
+  publish: "1"
+  created_at: 2010-12-01 09:42:04
+  updated_at: 
+eras_003: 
+  id: "3"
+  year: "1700"
+  publish: "1"
+  created_at: 2010-12-01 09:43:03
+  updated_at: 
+eras_004: 
+  id: "4"
+  year: "2050"
+  publish: "1"
+  created_at: 2010-12-01 09:55:05
+  updated_at: 2010-12-01 09:55:08
+eras_005: 
+  id: "5"
+  year: "1910"
+  publish: "1"
+  created_at: 2010-12-01 10:24:04
+  updated_at: 
+eras_006: 
+  id: "6"
+  year: "1880"
+  publish: "1"
+  created_at: 2010-12-01 10:24:16
+  updated_at: 
+eras_007: 
+  id: "7"
+  year: "1860"
+  publish: "1"
+  created_at: 2010-12-01 10:24:29
+  updated_at: 
+eras_008: 
+  id: "8"
+  year: "1810"
+  publish: "1"
+  created_at: 2010-12-01 10:24:38
+  updated_at: 
+eras_009: 
+  id: "9"
+  year: "1780"
+  publish: "1"
+  created_at: 2010-12-01 10:24:50
+  updated_at: 
+eras_010: 
+  id: "10"
+  year: "1760"
+  publish: "1"
+  created_at: 2010-12-01 10:25:00
+  updated_at: 

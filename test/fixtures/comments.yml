@@ -1,0 +1,25 @@
+--- 
+comments_001: 
+  id: "1"
+  subject: Test contact
+  body: "Message goes here "
+  submitted_at: 2010-11-16 16:40:27
+  ip: 24.147.53.50
+  replied_at: 
+  name: Charles Forcey
+  email: cforcey@historicusinc.com
+  notes: 
+  created_at: 2010-11-16 16:40:47
+  updated_at: 2010-11-16 16:40:47
+comments_002: 
+  id: "2"
+  subject: sdfgsdfg
+  body: sdfgsdfg
+  submitted_at: 2010-11-16 16:41:18
+  ip: 24.147.53.50
+  replied_at: 
+  name: fdsgsdfg
+  email: sdfgsdfg
+  notes: 
+  created_at: 2010-11-16 16:41:32
+  updated_at: 2010-11-16 16:41:32

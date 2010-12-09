@@ -76,7 +76,7 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 					And I have activities
 				When I go to the archive page
 				  And I follow "Most Popular"
-				Then I should see "archive browser"
+				Then I should see "Search Filters"
 
 			Scenario: show recent additions
 				Given I speak English
@@ -87,7 +87,7 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 					And I have activities
 				When I go to the archive page
 				  And I follow "Recent Additions"
-				Then I should see "archive browser"
+				Then I should see "Search Filters"
 			@dev	
 			Scenario: show staff favorites
 			Given I speak English
@@ -98,4 +98,4 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 				And I have activities
 			When I go to the archive page
 			  And I follow "Staff Favorites"
-			Then I should see "archive browser"
+			Then I should see "Search Filters"

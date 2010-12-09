@@ -1,6 +1,6 @@
 <div class="header">
   <div class="description">
-    <h1><%= link_to controller.controller_name.humanize.capitalize, back_path %> | <%= controller.action_name.capitalize %></h1>
+    <h1><%= link_to_unless controller.controller_name.nil?, controller.controller_name.humanize.capitalize, back_path %> | <%= controller.action_name.capitalize unless controller.action_name.nil? %></h1>
   </div>
   <div class="tools">
     <%= link_to 'Back', back_path %>

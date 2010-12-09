@@ -223,6 +223,20 @@
                     </td>
                 </tr>
                 <tr>
+                  <td>
+                    <div id="item_comps_list">
+                        <%= render 'item_comps_list', :comps => @item.comps %>
+                    </div>
+                    <div id="addComp">
+                        <% if @comp.nil? -%>
+                        <%= render :partial => 'admin/items/add_comp_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_comp_form', :locals => { :comp => @comp } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
                     <td colspan="2">
                     <h3>Media:</h3>
                     <p>

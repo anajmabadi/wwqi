@@ -136,7 +136,7 @@ subject_translations_020:
   id: "20"
   subject_id: "20"
   locale: en
-  name: Cemetery
+  name: Cemeteries
   created_at: 
   updated_at: 
 subject_translations_021: 
@@ -161,3019 +161,4237 @@ subject_translations_023:
   created_at: 
   updated_at: 
 subject_translations_024: 
-  id: "24"
-  subject_id: "24"
-  locale: en
-  name: Childbirth
-  created_at: 
-  updated_at: 
-subject_translations_025: 
   id: "25"
   subject_id: "25"
   locale: en
   name: Children
   created_at: 
   updated_at: 
-subject_translations_026: 
+subject_translations_025: 
   id: "26"
   subject_id: "26"
   locale: en
   name: Christmas
   created_at: 
   updated_at: 
-subject_translations_027: 
+subject_translations_026: 
   id: "27"
   subject_id: "27"
   locale: en
   name: Clothing and dress
   created_at: 
   updated_at: 
-subject_translations_028: 
+subject_translations_027: 
   id: "28"
   subject_id: "28"
   locale: en
   name: Cocoa
   created_at: 
   updated_at: 
-subject_translations_029: 
+subject_translations_028: 
   id: "29"
   subject_id: "29"
   locale: en
   name: Constitutional Revolution
   created_at: 
   updated_at: 
-subject_translations_030: 
+subject_translations_029: 
   id: "30"
   subject_id: "30"
   locale: en
   name: Consulates
   created_at: 
   updated_at: 
-subject_translations_031: 
+subject_translations_030: 
   id: "31"
   subject_id: "31"
   locale: en
   name: Courts
   created_at: 
   updated_at: 
-subject_translations_032: 
+subject_translations_031: 
   id: "32"
   subject_id: "32"
   locale: en
   name: Currency
   created_at: 
   updated_at: 
-subject_translations_033: 
+subject_translations_032: 
   id: "33"
   subject_id: "33"
   locale: en
   name: Death
   created_at: 
   updated_at: 
-subject_translations_034: 
+subject_translations_033: 
   id: "34"
   subject_id: "34"
   locale: en
-  name: Debt
+  name: Financial debt
   created_at: 
   updated_at: 
-subject_translations_035: 
+subject_translations_034: 
   id: "35"
   subject_id: "35"
   locale: en
   name: Deeds
   created_at: 
   updated_at: 
-subject_translations_036: 
+subject_translations_035: 
   id: "36"
   subject_id: "36"
   locale: en
   name: Demonstrations
   created_at: 
   updated_at: 
-subject_translations_037: 
+subject_translations_036: 
   id: "37"
   subject_id: "37"
   locale: en
   name: Diamonds
   created_at: 
   updated_at: 
-subject_translations_038: 
+subject_translations_037: 
   id: "38"
   subject_id: "38"
   locale: en
   name: Diplomats
   created_at: 
   updated_at: 
-subject_translations_039: 
+subject_translations_038: 
   id: "39"
   subject_id: "39"
   locale: en
   name: Divorce
   created_at: 
   updated_at: 
-subject_translations_040: 
+subject_translations_039: 
   id: "40"
   subject_id: "40"
   locale: en
   name: Dowry
   created_at: 
   updated_at: 
-subject_translations_041: 
+subject_translations_040: 
   id: "41"
   subject_id: "41"
   locale: en
   name: Dried orange blossoms
   created_at: 
   updated_at: 
-subject_translations_042: 
+subject_translations_041: 
   id: "42"
   subject_id: "42"
   locale: en
   name: Education
   created_at: 
   updated_at: 
-subject_translations_043: 
+subject_translations_042: 
   id: "43"
   subject_id: "43"
   locale: en
   name: Employment
   created_at: 
   updated_at: 
-subject_translations_044: 
+subject_translations_043: 
   id: "44"
   subject_id: "44"
   locale: en
   name: Endowments
   created_at: 
   updated_at: 
-subject_translations_045: 
+subject_translations_044: 
   id: "45"
   subject_id: "45"
   locale: en
   name: Exhibitions
   created_at: 
   updated_at: 
-subject_translations_046: 
+subject_translations_045: 
   id: "46"
   subject_id: "46"
   locale: en
   name: Fasts
   created_at: 
   updated_at: 
-subject_translations_047: 
+subject_translations_046: 
   id: "47"
   subject_id: "47"
   locale: en
   name: Festivals
   created_at: 
   updated_at: 
-subject_translations_048: 
+subject_translations_047: 
   id: "48"
   subject_id: "48"
   locale: en
   name: Firewood
   created_at: 
   updated_at: 
-subject_translations_049: 
+subject_translations_048: 
   id: "49"
   subject_id: "49"
   locale: en
   name: Fruits
   created_at: 
   updated_at: 
-subject_translations_050: 
+subject_translations_049: 
   id: "50"
   subject_id: "50"
   locale: en
   name: Funerals
   created_at: 
   updated_at: 
-subject_translations_051: 
+subject_translations_050: 
   id: "51"
   subject_id: "51"
   locale: en
   name: Games
   created_at: 
   updated_at: 
-subject_translations_052: 
+subject_translations_051: 
   id: "52"
   subject_id: "52"
   locale: en
   name: Gardens
   created_at: 
   updated_at: 
-subject_translations_053: 
+subject_translations_052: 
   id: "53"
   subject_id: "53"
   locale: en
   name: Gifts
   created_at: 
   updated_at: 
-subject_translations_054: 
+subject_translations_053: 
   id: "54"
   subject_id: "54"
   locale: en
   name: Ginger Breads
   created_at: 
   updated_at: 
-subject_translations_055: 
+subject_translations_054: 
   id: "55"
   subject_id: "55"
   locale: en
   name: Gloves
   created_at: 
   updated_at: 
-subject_translations_056: 
+subject_translations_055: 
   id: "56"
   subject_id: "56"
   locale: en
   name: Gold
   created_at: 
   updated_at: 
-subject_translations_057: 
+subject_translations_056: 
   id: "57"
   subject_id: "57"
   locale: en
   name: Gossip
   created_at: 
   updated_at: 
-subject_translations_058: 
+subject_translations_057: 
   id: "58"
   subject_id: "58"
   locale: en
   name: Government
   created_at: 
   updated_at: 
-subject_translations_059: 
+subject_translations_058: 
   id: "59"
   subject_id: "59"
   locale: en
   name: Grapes
   created_at: 
   updated_at: 
-subject_translations_060: 
+subject_translations_059: 
   id: "60"
   subject_id: "60"
   locale: en
   name: Group portraits
   created_at: 
   updated_at: 
-subject_translations_061: 
+subject_translations_060: 
   id: "61"
   subject_id: "61"
   locale: en
   name: Hazrat-i Masumah
   created_at: 
   updated_at: 
-subject_translations_062: 
+subject_translations_061: 
   id: "62"
   subject_id: "62"
   locale: en
   name: Horses
   created_at: 
   updated_at: 
-subject_translations_063: 
+subject_translations_062: 
   id: "63"
   subject_id: "63"
   locale: en
   name: Household goods
   created_at: 
   updated_at: 
-subject_translations_064: 
+subject_translations_063: 
   id: "64"
   subject_id: "64"
   locale: en
   name: Housing
   created_at: 
   updated_at: 
-subject_translations_065: 
+subject_translations_064: 
   id: "65"
   subject_id: "65"
   locale: en
   name: Humor
   created_at: 
   updated_at: 
-subject_translations_066: 
+subject_translations_065: 
   id: "66"
   subject_id: "66"
   locale: en
   name: Husband and wife
   created_at: 
   updated_at: 
-subject_translations_067: 
+subject_translations_066: 
   id: "67"
   subject_id: "67"
   locale: en
   name: "\xCA\xBBAbd al-Abad"
   created_at: 
   updated_at: 
-subject_translations_068: 
+subject_translations_067: 
   id: "68"
   subject_id: "68"
   locale: en
   name: "\xCA\xBBAid-i Ghadir"
   created_at: 
   updated_at: 
-subject_translations_069: 
+subject_translations_068: 
   id: "69"
   subject_id: "69"
   locale: en
   name: "\xCA\xBBAshura"
   created_at: 
   updated_at: 
-subject_translations_070: 
+subject_translations_069: 
   id: "70"
   subject_id: "70"
   locale: en
   name: Illness
   created_at: 
   updated_at: 
-subject_translations_071: 
+subject_translations_070: 
   id: "71"
   subject_id: "71"
   locale: en
   name: Imam Husayn
   created_at: 
   updated_at: 
-subject_translations_072: 
+subject_translations_071: 
   id: "72"
   subject_id: "72"
   locale: en
   name: Income
   created_at: 
   updated_at: 
-subject_translations_073: 
+subject_translations_072: 
   id: "73"
   subject_id: "73"
   locale: en
   name: Infants
   created_at: 
   updated_at: 
-subject_translations_074: 
+subject_translations_073: 
   id: "74"
   subject_id: "74"
   locale: en
   name: Inheritance
   created_at: 
   updated_at: 
-subject_translations_075: 
+subject_translations_074: 
   id: "75"
   subject_id: "75"
   locale: en
   name: Islamic law
   created_at: 
   updated_at: 
-subject_translations_076: 
+subject_translations_075: 
   id: "76"
   subject_id: "76"
   locale: en
   name: Jewelry
   created_at: 
   updated_at: 
-subject_translations_077: 
+subject_translations_076: 
   id: "77"
   subject_id: "77"
   locale: en
   name: Kabob
   created_at: 
   updated_at: 
-subject_translations_078: 
+subject_translations_077: 
   id: "78"
   subject_id: "78"
   locale: en
   name: Karbala
   created_at: 
   updated_at: 
-subject_translations_079: 
+subject_translations_078: 
   id: "79"
   subject_id: "79"
   locale: en
   name: Kirmanshah
   created_at: 
   updated_at: 
-subject_translations_080: 
+subject_translations_079: 
   id: "80"
   subject_id: "80"
   locale: en
   name: Lanterns
   created_at: 
   updated_at: 
-subject_translations_081: 
+subject_translations_080: 
   id: "81"
   subject_id: "81"
   locale: en
   name: Literacy
   created_at: 
   updated_at: 
-subject_translations_082: 
+subject_translations_081: 
   id: "82"
   subject_id: "82"
   locale: en
   name: Loans
   created_at: 
   updated_at: 
-subject_translations_083: 
+subject_translations_082: 
   id: "83"
   subject_id: "83"
   locale: en
   name: Love
   created_at: 
   updated_at: 
-subject_translations_084: 
+subject_translations_083: 
   id: "84"
   subject_id: "84"
   locale: en
   name: Lulah Jird
   created_at: 
   updated_at: 
-subject_translations_085: 
+subject_translations_084: 
   id: "85"
   subject_id: "85"
   locale: en
   name: Mahmud Abad
   created_at: 
   updated_at: 
-subject_translations_086: 
+subject_translations_085: 
   id: "86"
   subject_id: "86"
   locale: en
   name: Malaria
   created_at: 
   updated_at: 
-subject_translations_087: 
+subject_translations_086: 
   id: "87"
   subject_id: "87"
   locale: en
   name: Malaria
   created_at: 
   updated_at: 
-subject_translations_088: 
+subject_translations_087: 
   id: "88"
   subject_id: "88"
   locale: en
   name: Marriage
   created_at: 
   updated_at: 
-subject_translations_089: 
+subject_translations_088: 
   id: "89"
   subject_id: "89"
   locale: en
   name: Mashhad
   created_at: 
   updated_at: 
-subject_translations_090: 
+subject_translations_089: 
   id: "90"
   subject_id: "90"
   locale: en
   name: Meat
   created_at: 
   updated_at: 
-subject_translations_091: 
+subject_translations_090: 
   id: "91"
   subject_id: "91"
   locale: en
   name: Mecca
   created_at: 
   updated_at: 
-subject_translations_092: 
+subject_translations_091: 
   id: "92"
   subject_id: "92"
   locale: en
   name: Medicine
   created_at: 
   updated_at: 
-subject_translations_093: 
+subject_translations_092: 
   id: "93"
   subject_id: "93"
   locale: en
   name: Merchants
   created_at: 
   updated_at: 
-subject_translations_094: 
+subject_translations_093: 
   id: "94"
   subject_id: "94"
   locale: en
   name: Ministry of War
   created_at: 
   updated_at: 
-subject_translations_095: 
+subject_translations_094: 
   id: "95"
   subject_id: "95"
   locale: en
   name: Money
   created_at: 
   updated_at: 
-subject_translations_096: 
+subject_translations_095: 
   id: "96"
   subject_id: "96"
   locale: en
   name: Mosques
   created_at: 
   updated_at: 
-subject_translations_097: 
+subject_translations_096: 
   id: "97"
   subject_id: "97"
   locale: en
   name: Mourning ceremonies
   created_at: 
   updated_at: 
-subject_translations_098: 
+subject_translations_097: 
   id: "98"
   subject_id: "98"
   locale: en
   name: Music
   created_at: 
   updated_at: 
-subject_translations_099: 
+subject_translations_098: 
   id: "99"
   subject_id: "99"
   locale: en
   name: Najaf
   created_at: 
   updated_at: 
-subject_translations_100: 
+subject_translations_099: 
   id: "100"
   subject_id: "100"
   locale: en
   name: Najaf Abad
   created_at: 
   updated_at: 
-subject_translations_101: 
+subject_translations_100: 
   id: "101"
   subject_id: "101"
   locale: en
   name: Nawruz
   created_at: 
   updated_at: 
-subject_translations_102: 
+subject_translations_101: 
   id: "102"
   subject_id: "102"
   locale: en
   name: Needlework
   created_at: 
   updated_at: 
-subject_translations_103: 
+subject_translations_102: 
   id: "103"
   subject_id: "103"
   locale: en
   name: Newspapers
   created_at: 
   updated_at: 
-subject_translations_104: 
+subject_translations_103: 
   id: "104"
   subject_id: "104"
   locale: en
   name: Newspapers
   created_at: 
   updated_at: 
-subject_translations_105: 
+subject_translations_104: 
   id: "105"
   subject_id: "105"
   locale: en
   name: Nuts
   created_at: 
   updated_at: 
-subject_translations_106: 
+subject_translations_105: 
   id: "106"
   subject_id: "106"
   locale: en
   name: Oil
   created_at: 
   updated_at: 
-subject_translations_107: 
+subject_translations_106: 
   id: "107"
   subject_id: "107"
   locale: en
   name: Opium
   created_at: 
   updated_at: 
-subject_translations_108: 
+subject_translations_107: 
   id: "108"
   subject_id: "108"
   locale: en
   name: Palaces
   created_at: 
   updated_at: 
-subject_translations_109: 
+subject_translations_108: 
   id: "109"
   subject_id: "109"
   locale: en
   name: Paper
   created_at: 
   updated_at: 
-subject_translations_110: 
+subject_translations_109: 
   id: "110"
   subject_id: "110"
   locale: en
   name: Parties
   created_at: 
   updated_at: 
-subject_translations_111: 
+subject_translations_110: 
   id: "111"
   subject_id: "111"
   locale: en
   name: Pearls
   created_at: 
   updated_at: 
-subject_translations_112: 
+subject_translations_111: 
   id: "112"
   subject_id: "112"
   locale: en
   name: Peasants
   created_at: 
   updated_at: 
-subject_translations_113: 
+subject_translations_112: 
   id: "113"
   subject_id: "113"
   locale: en
   name: Petition
   created_at: 
   updated_at: 
-subject_translations_114: 
+subject_translations_113: 
   id: "114"
   subject_id: "114"
   locale: en
   name: Photographs
   created_at: 
   updated_at: 
-subject_translations_115: 
+subject_translations_114: 
   id: "115"
   subject_id: "115"
   locale: en
   name: Pilgrimages
   created_at: 
   updated_at: 
-subject_translations_116: 
+subject_translations_115: 
   id: "116"
   subject_id: "116"
   locale: en
   name: Pillage
   created_at: 
   updated_at: 
-subject_translations_117: 
+subject_translations_116: 
   id: "117"
   subject_id: "117"
   locale: en
   name: Pistachios
   created_at: 
   updated_at: 
-subject_translations_118: 
+subject_translations_117: 
   id: "118"
   subject_id: "118"
   locale: en
   name: Poetry
   created_at: 
   updated_at: 
-subject_translations_119: 
+subject_translations_118: 
   id: "119"
   subject_id: "119"
   locale: en
   name: Police
   created_at: 
   updated_at: 
-subject_translations_120: 
+subject_translations_119: 
   id: "120"
   subject_id: "120"
   locale: en
   name: Political parties
   created_at: 
   updated_at: 
-subject_translations_121: 
+subject_translations_120: 
   id: "121"
   subject_id: "121"
   locale: en
   name: Politics
   created_at: 
   updated_at: 
-subject_translations_122: 
+subject_translations_121: 
   id: "122"
   subject_id: "122"
   locale: en
   name: Portraits
   created_at: 
   updated_at: 
-subject_translations_123: 
+subject_translations_122: 
   id: "123"
   subject_id: "123"
   locale: en
   name: Postcard
   created_at: 
   updated_at: 
-subject_translations_124: 
+subject_translations_123: 
   id: "124"
   subject_id: "124"
   locale: en
   name: Poverty
   created_at: 
   updated_at: 
-subject_translations_125: 
+subject_translations_124: 
   id: "125"
   subject_id: "125"
   locale: en
   name: Powers of attorney
   created_at: 
   updated_at: 
-subject_translations_126: 
+subject_translations_125: 
   id: "126"
   subject_id: "126"
   locale: en
   name: Pregnancy
   created_at: 
   updated_at: 
-subject_translations_127: 
+subject_translations_126: 
   id: "127"
   subject_id: "127"
   locale: en
   name: Prices
   created_at: 
   updated_at: 
-subject_translations_128: 
+subject_translations_127: 
   id: "128"
   subject_id: "128"
   locale: en
   name: Properties
   created_at: 
   updated_at: 
-subject_translations_129: 
+subject_translations_128: 
   id: "129"
   subject_id: "129"
   locale: en
   name: Property disputes
   created_at: 
   updated_at: 
-subject_translations_130: 
+subject_translations_129: 
   id: "130"
   subject_id: "130"
   locale: en
   name: Prostitution
   created_at: 
   updated_at: 
-subject_translations_131: 
+subject_translations_130: 
   id: "131"
   subject_id: "131"
   locale: en
   name: Proverbs
   created_at: 
   updated_at: 
-subject_translations_132: 
+subject_translations_131: 
   id: "132"
   subject_id: "132"
   locale: en
   name: Public baths
   created_at: 
   updated_at: 
-subject_translations_133: 
+subject_translations_132: 
   id: "133"
   subject_id: "133"
   locale: en
   name: Qazvin
   created_at: 
   updated_at: 
-subject_translations_134: 
+subject_translations_133: 
   id: "134"
   subject_id: "134"
   locale: en
   name: Quail
   created_at: 
   updated_at: 
-subject_translations_135: 
+subject_translations_134: 
   id: "135"
   subject_id: "135"
   locale: en
   name: Quran
   created_at: 
   updated_at: 
-subject_translations_136: 
+subject_translations_135: 
   id: "136"
   subject_id: "136"
   locale: en
   name: Quranic divination
   created_at: 
   updated_at: 
-subject_translations_137: 
+subject_translations_136: 
   id: "137"
   subject_id: "137"
   locale: en
   name: Raisins
   created_at: 
   updated_at: 
-subject_translations_138: 
+subject_translations_137: 
   id: "138"
   subject_id: "138"
   locale: en
   name: Ramadan
   created_at: 
   updated_at: 
-subject_translations_139: 
+subject_translations_138: 
   id: "139"
   subject_id: "139"
   locale: en
   name: Rasht
   created_at: 
   updated_at: 
-subject_translations_140: 
+subject_translations_139: 
   id: "140"
   subject_id: "140"
   locale: en
   name: Razjird
   created_at: 
   updated_at: 
-subject_translations_141: 
+subject_translations_140: 
   id: "141"
   subject_id: "141"
   locale: en
   name: Recreation
   created_at: 
   updated_at: 
-subject_translations_142: 
+subject_translations_141: 
   id: "142"
   subject_id: "142"
   locale: en
   name: Religious rites
   created_at: 
   updated_at: 
-subject_translations_143: 
+subject_translations_142: 
   id: "143"
   subject_id: "143"
   locale: en
   name: Rental contract
   created_at: 
   updated_at: 
-subject_translations_144: 
+subject_translations_143: 
   id: "144"
   subject_id: "144"
   locale: en
   name: Rice
   created_at: 
   updated_at: 
-subject_translations_145: 
+subject_translations_144: 
   id: "145"
   subject_id: "145"
   locale: en
   name: Riots
   created_at: 
   updated_at: 
-subject_translations_146: 
+subject_translations_145: 
   id: "146"
   subject_id: "146"
   locale: en
   name: Rozih
   created_at: 
   updated_at: 
-subject_translations_147: 
+subject_translations_146: 
   id: "147"
   subject_id: "147"
   locale: en
   name: Rubies
   created_at: 
   updated_at: 
-subject_translations_148: 
+subject_translations_147: 
   id: "148"
   subject_id: "148"
   locale: en
   name: Russians
   created_at: 
   updated_at: 
-subject_translations_149: 
+subject_translations_148: 
   id: "149"
   subject_id: "149"
   locale: en
   name: Saffron
   created_at: 
   updated_at: 
-subject_translations_150: 
+subject_translations_149: 
   id: "150"
   subject_id: "150"
   locale: en
   name: Satin
   created_at: 
   updated_at: 
-subject_translations_151: 
+subject_translations_150: 
   id: "151"
   subject_id: "151"
   locale: en
   name: Servants
   created_at: 
   updated_at: 
-subject_translations_152: 
+subject_translations_151: 
   id: "152"
   subject_id: "152"
   locale: en
   name: Servants
   created_at: 
   updated_at: 
-subject_translations_153: 
+subject_translations_152: 
   id: "153"
   subject_id: "153"
   locale: en
   name: Sewing machine
   created_at: 
   updated_at: 
-subject_translations_154: 
+subject_translations_153: 
   id: "154"
   subject_id: "154"
   locale: en
   name: Shahzadah 'Abd al-'Azim
   created_at: 
   updated_at: 
-subject_translations_155: 
+subject_translations_154: 
   id: "155"
   subject_id: "155"
   locale: en
   name: Shimiran
   created_at: 
   updated_at: 
-subject_translations_156: 
+subject_translations_155: 
   id: "156"
   subject_id: "156"
   locale: en
   name: Shoes
   created_at: 
   updated_at: 
-subject_translations_157: 
+subject_translations_156: 
   id: "157"
   subject_id: "157"
   locale: en
   name: Shrines
   created_at: 
   updated_at: 
-subject_translations_158: 
+subject_translations_157: 
   id: "158"
   subject_id: "158"
   locale: en
   name: Singers
   created_at: 
   updated_at: 
-subject_translations_159: 
+subject_translations_158: 
   id: "159"
   subject_id: "159"
   locale: en
   name: Sisters
   created_at: 
   updated_at: 
-subject_translations_160: 
+subject_translations_159: 
   id: "160"
   subject_id: "160"
   locale: en
   name: Slaves
   created_at: 
   updated_at: 
-subject_translations_161: 
+subject_translations_160: 
   id: "161"
   subject_id: "161"
   locale: en
   name: Socks
   created_at: 
   updated_at: 
-subject_translations_162: 
+subject_translations_161: 
   id: "162"
   subject_id: "162"
   locale: en
   name: Soldiers
   created_at: 
   updated_at: 
-subject_translations_163: 
+subject_translations_162: 
   id: "163"
   subject_id: "163"
   locale: en
   name: Songs
   created_at: 
   updated_at: 
-subject_translations_164: 
+subject_translations_163: 
   id: "164"
   subject_id: "164"
   locale: en
   name: Spices
   created_at: 
   updated_at: 
-subject_translations_165: 
+subject_translations_164: 
   id: "165"
   subject_id: "165"
   locale: en
   name: Sports
   created_at: 
   updated_at: 
-subject_translations_166: 
+subject_translations_165: 
   id: "166"
   subject_id: "166"
   locale: en
   name: Stall
   created_at: 
   updated_at: 
-subject_translations_167: 
+subject_translations_166: 
   id: "167"
   subject_id: "167"
   locale: en
   name: Stipends
   created_at: 
   updated_at: 
-subject_translations_168: 
+subject_translations_167: 
   id: "168"
   subject_id: "168"
   locale: en
   name: Students
   created_at: 
   updated_at: 
-subject_translations_169: 
+subject_translations_168: 
   id: "169"
   subject_id: "169"
   locale: en
   name: Sugar
   created_at: 
   updated_at: 
-subject_translations_170: 
+subject_translations_169: 
   id: "170"
   subject_id: "170"
   locale: en
   name: Suicide
   created_at: 
   updated_at: 
-subject_translations_171: 
+subject_translations_170: 
   id: "171"
   subject_id: "171"
   locale: en
   name: Tablecloths
   created_at: 
   updated_at: 
-subject_translations_172: 
+subject_translations_171: 
   id: "172"
   subject_id: "172"
   locale: en
   name: Taxes
   created_at: 
   updated_at: 
-subject_translations_173: 
+subject_translations_172: 
   id: "173"
   subject_id: "173"
   locale: en
   name: Tea
   created_at: 
   updated_at: 
-subject_translations_174: 
+subject_translations_173: 
   id: "174"
   subject_id: "174"
   locale: en
   name: Teachers
   created_at: 
   updated_at: 
-subject_translations_175: 
+subject_translations_174: 
   id: "175"
   subject_id: "175"
   locale: en
   name: Tehran
   created_at: 
   updated_at: 
-subject_translations_176: 
+subject_translations_175: 
   id: "176"
   subject_id: "176"
   locale: en
   name: Telegram
   created_at: 
   updated_at: 
-subject_translations_177: 
+subject_translations_176: 
   id: "177"
   subject_id: "177"
   locale: en
   name: Textiles
   created_at: 
   updated_at: 
-subject_translations_178: 
+subject_translations_177: 
   id: "178"
   subject_id: "178"
   locale: en
   name: Tiflis
   created_at: 
   updated_at: 
-subject_translations_179: 
+subject_translations_178: 
   id: "179"
   subject_id: "179"
   locale: en
   name: Timber
   created_at: 
   updated_at: 
-subject_translations_180: 
+subject_translations_179: 
   id: "180"
   subject_id: "180"
   locale: en
   name: Tirmih
   created_at: 
   updated_at: 
-subject_translations_181: 
+subject_translations_180: 
   id: "181"
   subject_id: "181"
   locale: en
   name: Tobacco
   created_at: 
   updated_at: 
-subject_translations_182: 
+subject_translations_181: 
   id: "182"
   subject_id: "182"
   locale: en
   name: Tombs
   created_at: 
   updated_at: 
-subject_translations_183: 
+subject_translations_182: 
   id: "183"
   subject_id: "183"
   locale: en
   name: Toothache
   created_at: 
   updated_at: 
-subject_translations_184: 
+subject_translations_183: 
   id: "184"
   subject_id: "184"
   locale: en
   name: Transportation
   created_at: 
   updated_at: 
-subject_translations_185: 
+subject_translations_184: 
   id: "185"
   subject_id: "185"
   locale: en
   name: Travel
   created_at: 
   updated_at: 
-subject_translations_186: 
+subject_translations_185: 
   id: "186"
   subject_id: "186"
   locale: en
   name: Tunikabun
   created_at: 
   updated_at: 
-subject_translations_187: 
+subject_translations_186: 
   id: "187"
   subject_id: "187"
   locale: en
   name: Universities
   created_at: 
   updated_at: 
-subject_translations_188: 
+subject_translations_187: 
   id: "188"
   subject_id: "188"
   locale: en
   name: Velvet
   created_at: 
   updated_at: 
-subject_translations_189: 
+subject_translations_188: 
   id: "189"
   subject_id: "189"
   locale: en
   name: Visiting
   created_at: 
   updated_at: 
-subject_translations_190: 
+subject_translations_189: 
   id: "190"
   subject_id: "190"
   locale: en
   name: Wages
   created_at: 
   updated_at: 
-subject_translations_191: 
+subject_translations_190: 
   id: "191"
   subject_id: "191"
   locale: en
   name: Watches
   created_at: 
   updated_at: 
-subject_translations_192: 
+subject_translations_191: 
   id: "192"
   subject_id: "192"
   locale: en
   name: Weather
   created_at: 
   updated_at: 
-subject_translations_193: 
+subject_translations_192: 
   id: "193"
   subject_id: "193"
   locale: en
   name: Weddings
   created_at: 
   updated_at: 
-subject_translations_194: 
+subject_translations_193: 
   id: "194"
   subject_id: "194"
   locale: en
   name: Wheat
   created_at: 
   updated_at: 
-subject_translations_195: 
+subject_translations_194: 
   id: "195"
   subject_id: "195"
   locale: en
   name: Widows
   created_at: 
   updated_at: 
-subject_translations_196: 
+subject_translations_195: 
   id: "196"
   subject_id: "196"
   locale: en
   name: Wills
   created_at: 
   updated_at: 
-subject_translations_197: 
+subject_translations_196: 
   id: "197"
   subject_id: "197"
   locale: en
   name: Wine
   created_at: 
   updated_at: 
-subject_translations_198: 
+subject_translations_197: 
   id: "198"
   subject_id: "198"
   locale: en
   name: Women Suffrage
   created_at: 
   updated_at: 
-subject_translations_199: 
+subject_translations_198: 
   id: "199"
   subject_id: "199"
   locale: en
   name: Women's rights
   created_at: 
   updated_at: 
-subject_translations_200: 
+subject_translations_199: 
   id: "200"
   subject_id: "200"
   locale: en
   name: Women's servants
   created_at: 
   updated_at: 
-subject_translations_201: 
+subject_translations_200: 
   id: "201"
   subject_id: "201"
   locale: en
   name: Zanjan
   created_at: 
   updated_at: 
-subject_translations_202: 
+subject_translations_201: 
   id: "202"
   subject_id: "1"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_203: 
+subject_translations_202: 
   id: "203"
   subject_id: "2"
   locale: fa
   name: "\xDA\xA9\xD8\xB4\xD8\xA7\xD9\x88\xD8\xB1\xD8\xB2\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_204: 
+subject_translations_203: 
   id: "204"
   subject_id: "3"
   locale: fa
   name: "\xD9\x86\xD9\x81\xD9\x82\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_205: 
+subject_translations_204: 
   id: "205"
   subject_id: "4"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD9\x88\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_206: 
+subject_translations_205: 
   id: "206"
   subject_id: "5"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD8\xAC\xD9\x85\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_207: 
+subject_translations_206: 
   id: "207"
   subject_id: "6"
   locale: fa
   name: "\xD8\xAC\xD9\x88\xD8\xA7\xDB\x8C\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_208: 
+subject_translations_207: 
   id: "208"
   subject_id: "7"
   locale: fa
   name: "\xDA\x86\xD8\xA7\xD8\xAF\xD8\xB1 \xD8\xB4\xD8\xA8"
   created_at: 
   updated_at: 
-subject_translations_209: 
+subject_translations_208: 
   id: "209"
   subject_id: "8"
   locale: fa
   name: "\xD8\xA8\xD9\x87\xD8\xAC\xD8\xAA \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_210: 
+subject_translations_209: 
   id: "210"
   subject_id: "9"
   locale: fa
   name: "\xD8\xAB\xD8\xA8\xD8\xAA \xD8\xAA\xD9\x88\xD9\x84\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_211: 
+subject_translations_210: 
   id: "211"
   subject_id: "10"
   locale: fa
   name: "\xD8\xAA\xD9\x88\xD8\xAA \xD8\xB3\xDB\x8C\xD8\xA7\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_212: 
+subject_translations_211: 
   id: "212"
   subject_id: "11"
   locale: fa
   name: "\xD8\xA8\xD8\xB7\xD8\xB1\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_213: 
+subject_translations_212: 
   id: "213"
   subject_id: "12"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_214: 
+subject_translations_213: 
   id: "214"
   subject_id: "13"
   locale: fa
   name: "\xD8\xB4\xDB\x8C\xD8\xB1 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_215: 
+subject_translations_214: 
   id: "215"
   subject_id: "14"
   locale: fa
   name: "\xD8\xB1\xD8\xB4\xD9\x88\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_216: 
+subject_translations_215: 
   id: "216"
   subject_id: "15"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x85\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_217: 
+subject_translations_216: 
   id: "217"
   subject_id: "16"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD8\xA7\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_218: 
+subject_translations_217: 
   id: "218"
   subject_id: "17"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_219: 
+subject_translations_218: 
   id: "219"
   subject_id: "18"
   locale: fa
   name: "\xD8\xAA\xD8\xB9\xD9\x85\xDB\x8C\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_220: 
+subject_translations_219: 
   id: "220"
   subject_id: "19"
   locale: fa
   name: "\xD8\xA8\xD9\x84\xD8\xBA\xD9\x88\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_221: 
+subject_translations_220: 
   id: "221"
   subject_id: "20"
   locale: fa
   name: "\xDA\xAF\xD9\x88\xD8\xB1\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_222: 
+subject_translations_221: 
   id: "222"
   subject_id: "21"
   locale: fa
   name: "\xD8\xB0\xD8\xBA\xD8\xA7\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_223: 
+subject_translations_222: 
   id: "223"
   subject_id: "22"
   locale: fa
   name: "\xD8\xA7\xD8\xB9\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_224: 
+subject_translations_223: 
   id: "224"
   subject_id: "23"
   locale: fa
   name: "\xD9\x88\xD8\xB6\xD8\xB9 \xD8\xAD\xD9\x85\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_225: 
+subject_translations_224: 
   id: "225"
-  subject_id: "24"
+  subject_id: "23"
   locale: fa
   name: "\xD8\xB2\xD8\xA7\xDB\x8C\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_226: 
+subject_translations_225: 
   id: "226"
   subject_id: "25"
   locale: fa
   name: "\xD8\xA8\xDA\x86\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_227: 
+subject_translations_226: 
   id: "227"
   subject_id: "26"
   locale: fa
   name: "\xDA\xA9\xD8\xB1\xDB\x8C\xD8\xB3\xD9\x85\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_228: 
+subject_translations_227: 
   id: "228"
   subject_id: "27"
   locale: fa
   name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_229: 
+subject_translations_228: 
   id: "229"
   subject_id: "28"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xDA\xA9\xD8\xA7\xD8\xA6\xD9\x88"
   created_at: 
   updated_at: 
-subject_translations_230: 
+subject_translations_229: 
   id: "230"
   subject_id: "29"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD9\x82\xD9\x84\xD8\xA7\xD8\xA8 \xD9\x85\xD8\xB4\xD8\xB1\xD9\x88\xD8\xB7\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_231: 
+subject_translations_230: 
   id: "231"
   subject_id: "30"
   locale: fa
   name: "\xDA\xA9\xD9\x86\xD8\xB3\xD9\x88\xD9\x84\xDA\xAF\xD8\xB1\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_232: 
+subject_translations_231: 
   id: "232"
   subject_id: "31"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD8\xAF\xDA\xAF\xD8\xB3\xD8\xAA\xD8\xB1\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_233: 
+subject_translations_232: 
   id: "233"
   subject_id: "32"
   locale: fa
   name: " \xD8\xA7\xD8\xB1\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_234: 
+subject_translations_233: 
   id: "234"
   subject_id: "33"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xDA\xAF\n"
   created_at: 
   updated_at: 
-subject_translations_235: 
+subject_translations_234: 
   id: "235"
   subject_id: "34"
   locale: fa
-  name: "\xD8\xA8\xD8\xAF\xD9\x87\xDB\x8C"
+  name: "\xD8\xA8\xD8\xAF\xD9\x87\xDB\x8C \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_236: 
+subject_translations_235: 
   id: "236"
   subject_id: "35"
   locale: fa
   name: "\xD9\x82\xD8\xA8\xD8\xA7\xD9\x84\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_237: 
+subject_translations_236: 
   id: "237"
   subject_id: "36"
   locale: fa
   name: "\xD8\xAA\xD8\xB8\xD8\xA7\xD9\x87\xD8\xB1\xD8\xA7\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_238: 
+subject_translations_237: 
   id: "238"
   subject_id: "37"
   locale: fa
   name: "\xD8\xA7\xD9\x84\xD9\x85\xD8\xA7\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_239: 
+subject_translations_238: 
   id: "239"
   subject_id: "38"
   locale: fa
   name: "\xD8\xAF\xDB\x8C\xD9\xBE\xD9\x84\xD9\x85\xD8\xA7\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_240: 
+subject_translations_239: 
   id: "240"
   subject_id: "39"
   locale: fa
   name: "\xD8\xB7\xD9\x84\xD8\xA7\xD9\x82"
   created_at: 
   updated_at: 
-subject_translations_241: 
+subject_translations_240: 
   id: "241"
   subject_id: "40"
   locale: fa
   name: "\xD8\xAC\xD9\x87\xDB\x8C\xD8\xB2\xDB\x8C\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_242: 
+subject_translations_241: 
   id: "242"
   subject_id: "41"
   locale: fa
   name: "\xD8\xA8\xD9\x87\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xA7\xD8\xB1\xD9\x86\xD8\xAC"
   created_at: 
   updated_at: 
-subject_translations_243: 
+subject_translations_242: 
   id: "243"
   subject_id: "42"
   locale: fa
   name: "\xD8\xA2\xD9\x85\xD9\x88\xD8\xB2\xD8\xB4 \xD9\x88 \xD9\xBE\xD8\xB1\xD9\x88\xD8\xB1\xD8\xB4"
   created_at: 
   updated_at: 
-subject_translations_244: 
+subject_translations_243: 
   id: "244"
   subject_id: "43"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xAF\xD8\xA7\xD9\x85"
   created_at: 
   updated_at: 
-subject_translations_245: 
+subject_translations_244: 
   id: "245"
   subject_id: "44"
   locale: fa
   name: "\xD9\x88\xD9\x82\xD9\x81"
   created_at: 
   updated_at: 
-subject_translations_246: 
+subject_translations_245: 
   id: "246"
   subject_id: "45"
   locale: fa
   name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C\xD8\xB4\xDA\xAF\xD8\xA7\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_247: 
+subject_translations_246: 
   id: "247"
   subject_id: "46"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB2\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_248: 
+subject_translations_247: 
   id: "248"
   subject_id: "47"
   locale: fa
   name: "\xD8\xAC\xD8\xB4\xD9\x86\xD9\x88\xD8\xA7\xD8\xB1\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_249: 
+subject_translations_248: 
   id: "249"
   subject_id: "48"
   locale: fa
   name: "\xD9\x87\xDB\x8C\xD8\xB2\xD9\x85"
   created_at: 
   updated_at: 
-subject_translations_250: 
+subject_translations_249: 
   id: "250"
   subject_id: "49"
   locale: fa
   name: "\xD9\x85\xDB\x8C\xD9\x88\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_251: 
+subject_translations_250: 
   id: "251"
   subject_id: "50"
   locale: fa
   name: "\xD8\xAA\xD8\xB4\xDB\x8C\xDB\x8C\xD8\xB9"
   created_at: 
   updated_at: 
-subject_translations_252: 
+subject_translations_251: 
   id: "252"
   subject_id: "51"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_253: 
+subject_translations_252: 
   id: "253"
   subject_id: "52"
   locale: fa
   name: " \xD8\xA8\xD8\xA7\xD8\xBA"
   created_at: 
   updated_at: 
-subject_translations_254: 
+subject_translations_253: 
   id: "254"
   subject_id: "53"
   locale: fa
   name: "\xD9\x87\xD8\xAF\xDB\x8C\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_255: 
+subject_translations_254: 
   id: "255"
   subject_id: "54"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x86 \xD8\xB2\xD9\x86\xD8\xAC\xD8\xA8\xDB\x8C\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_256: 
+subject_translations_255: 
   id: "256"
   subject_id: "55"
   locale: fa
   name: "\xD8\xAF\xD8\xB3\xD8\xAA\xDA\xA9\xD8\xB4"
   created_at: 
   updated_at: 
-subject_translations_257: 
+subject_translations_256: 
   id: "257"
   subject_id: "56"
   locale: fa
   name: "\xD8\xB7\xD9\x84\xD8\xA7\n"
   created_at: 
   updated_at: 
-subject_translations_258: 
+subject_translations_257: 
   id: "258"
   subject_id: "57"
   locale: fa
   name: "\xD8\xBA\xDB\x8C\xD8\xA8\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_259: 
+subject_translations_258: 
   id: "259"
   subject_id: "58"
   locale: fa
   name: "\xD8\xAF\xD9\x88\xD9\x84\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_260: 
+subject_translations_259: 
   id: "260"
   subject_id: "59"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xDA\xAF\xD9\x88\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_261: 
+subject_translations_260: 
   id: "261"
   subject_id: "60"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD8\xAA\xD8\xB1\xD9\x87 \xDA\xAF\xD8\xB1\xD9\x88\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_262: 
+subject_translations_261: 
   id: "262"
   subject_id: "61"
   locale: fa
   name: "\xD8\xAD\xD8\xB6\xD8\xB1\xD8\xAA \xD9\x85\xD8\xB9\xD8\xB5\xD9\x88\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_263: 
+subject_translations_262: 
   id: "263"
   subject_id: "62"
   locale: fa
   name: " \xD8\xA7\xD8\xB3\xD8\xA8"
   created_at: 
   updated_at: 
-subject_translations_264: 
+subject_translations_263: 
   id: "264"
   subject_id: "63"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD9\x84\xD8\xA7\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xDA\xAF\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_265: 
+subject_translations_264: 
   id: "265"
   subject_id: "64"
   locale: fa
   name: "\xD9\x85\xD8\xB3\xDA\xA9\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_266: 
+subject_translations_265: 
   id: "266"
   subject_id: "65"
   locale: fa
   name: "\xD8\xB7\xD9\x86\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_267: 
+subject_translations_266: 
   id: "267"
   subject_id: "66"
   locale: fa
   name: "\xD8\xB2\xD9\x86 \xD9\x88 \xD8\xB4\xD9\x88\xD9\x87\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_268: 
+subject_translations_267: 
   id: "268"
   subject_id: "67"
   locale: fa
   name: "\xD8\xB9\xD8\xA8\xD8\xAF\xD9\x84 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_269: 
+subject_translations_268: 
   id: "269"
   subject_id: "68"
   locale: fa
   name: "\xD8\xB9\xDB\x8C\xD8\xAF \xD8\xBA\xD8\xAF\xDB\x8C\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_270: 
+subject_translations_269: 
   id: "270"
   subject_id: "69"
   locale: fa
   name: "\xD8\xB9\xD8\xA7\xD8\xB4\xD9\x88\xD8\xB1\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_271: 
+subject_translations_270: 
   id: "271"
   subject_id: "70"
   locale: fa
   name: "\xD8\xA8\xDB\x8C\xD9\x85\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_272: 
+subject_translations_271: 
   id: "272"
   subject_id: "71"
   locale: fa
   name: "\xD8\xA7\xD9\x85\xD8\xA7\xD9\x85 \xD8\xAD\xD8\xB3\xDB\x8C\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_273: 
+subject_translations_272: 
   id: "273"
   subject_id: "72"
   locale: fa
   name: "\xD8\xAF\xD8\xB1\xD8\xA2\xD9\x85\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_274: 
+subject_translations_273: 
   id: "274"
   subject_id: "73"
   locale: fa
   name: " \xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_275: 
+subject_translations_274: 
   id: "275"
   subject_id: "74"
   locale: fa
   name: "\xD8\xA7\xD8\xB1\xD8\xAB"
   created_at: 
   updated_at: 
-subject_translations_276: 
+subject_translations_275: 
   id: "276"
   subject_id: "75"
   locale: fa
   name: "\xD9\x82\xD8\xA7\xD9\x86\xD9\x88\xD9\x86 \xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_277: 
+subject_translations_276: 
   id: "277"
   subject_id: "76"
   locale: fa
   name: "\xD8\xAC\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1 \xD9\x81\xD8\xB1\xD9\x88\xD8\xB4\xD9\x8A"
   created_at: 
   updated_at: 
-subject_translations_278: 
+subject_translations_277: 
   id: "278"
   subject_id: "77"
   locale: fa
   name: "\xDA\xA9\xD8\xA8\xD8\xA7\xD8\xA8"
   created_at: 
   updated_at: 
-subject_translations_279: 
+subject_translations_278: 
   id: "279"
   subject_id: "78"
   locale: fa
   name: "\xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_280: 
+subject_translations_279: 
   id: "280"
   subject_id: "79"
   locale: fa
   name: "\xDA\xA9\xD8\xB1\xD9\x85\xD8\xA7\xD9\x86\xD8\xB4\xD8\xA7\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_281: 
+subject_translations_280: 
   id: "281"
   subject_id: "80"
   locale: fa
   name: "\xDA\x86\xD8\xB1\xD8\xA7\xD8\xBA \xD9\x81\xD8\xA7\xD9\x86\xD9\x88\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_282: 
+subject_translations_281: 
   id: "282"
   subject_id: "81"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_283: 
+subject_translations_282: 
   id: "283"
   subject_id: "82"
   locale: fa
   name: "\xD9\x82\xD8\xB1\xD8\xB6"
   created_at: 
   updated_at: 
-subject_translations_284: 
+subject_translations_283: 
   id: "284"
   subject_id: "83"
   locale: fa
   name: "\xD8\xB9\xD8\xB4\xD9\x82"
   created_at: 
   updated_at: 
-subject_translations_285: 
+subject_translations_284: 
   id: "285"
   subject_id: "84"
   locale: fa
   name: "\xD9\x84\xD9\x88\xD9\x84\xD9\x87 \xD8\xAC\xD8\xB1\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_286: 
+subject_translations_285: 
   id: "286"
   subject_id: "85"
   locale: fa
   name: "\xD9\x85\xD8\xAD\xD9\x85\xD9\x88\xD8\xAF\xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_287: 
+subject_translations_286: 
   id: "287"
   subject_id: "86"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_288: 
+subject_translations_287: 
   id: "288"
   subject_id: "87"
   locale: fa
   name: "\xD9\x86\xD9\x88\xD8\xA8\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_289: 
+subject_translations_288: 
   id: "289"
   subject_id: "88"
   locale: fa
   name: "\xD8\xB9\xD8\xB1\xD9\x88\xD8\xB3\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_290: 
+subject_translations_289: 
   id: "290"
   subject_id: "89"
   locale: fa
   name: "\xD9\x85\xD8\xB4\xD9\x87\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_291: 
+subject_translations_290: 
   id: "291"
   subject_id: "90"
   locale: fa
   name: "\xDA\xAF\xD9\x88\xD8\xB4\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_292: 
+subject_translations_291: 
   id: "292"
   subject_id: "91"
   locale: fa
   name: "\xD9\x85\xDA\xA9\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_293: 
+subject_translations_292: 
   id: "293"
   subject_id: "92"
   locale: fa
   name: "\xD9\xBE\xD8\xB2\xD8\xB4\xDA\xA9\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_294: 
+subject_translations_293: 
   id: "294"
   subject_id: "93"
   locale: fa
   name: "\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_295: 
+subject_translations_294: 
   id: "295"
   subject_id: "94"
   locale: fa
   name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xAC\xD9\x86\xDA\xAF"
   created_at: 
   updated_at: 
-subject_translations_296: 
+subject_translations_295: 
   id: "296"
   subject_id: "95"
   locale: fa
   name: "\xD9\xBE\xD9\x88\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_297: 
+subject_translations_296: 
   id: "297"
   subject_id: "96"
   locale: fa
   name: "\xD9\x85\xD8\xB3\xD8\xA7\xD8\xAC\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_298: 
+subject_translations_297: 
   id: "298"
   subject_id: "97"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD8\xB9\xD8\xB2\xD8\xA7\xD8\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_299: 
+subject_translations_298: 
   id: "299"
   subject_id: "98"
   locale: fa
   name: "\xD9\x85\xD9\x88\xD8\xB3\xDB\x8C\xD9\x82\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_300: 
+subject_translations_299: 
   id: "300"
   subject_id: "99"
   locale: fa
   name: "\xD9\x86\xD8\xAC\xD9\x81"
   created_at: 
   updated_at: 
-subject_translations_301: 
+subject_translations_300: 
   id: "301"
   subject_id: "100"
   locale: fa
   name: "\xD9\x86\xD8\xAC\xD9\x81 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_302: 
+subject_translations_301: 
   id: "302"
   subject_id: "101"
   locale: fa
   name: "\xD9\x86\xD9\x88\xD8\xB1\xD9\x88\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_303: 
+subject_translations_302: 
   id: "303"
   subject_id: "102"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xB2\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_304: 
+subject_translations_303: 
   id: "304"
   subject_id: "103"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB2\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_305: 
+subject_translations_304: 
   id: "305"
   subject_id: "104"
   locale: fa
   name: "\xD9\x85\xD8\xB7\xD8\xA8\xD9\x88\xD8\xB9\xD8\xA7\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_306: 
+subject_translations_305: 
   id: "306"
   subject_id: "105"
   locale: fa
   name: "\xD8\xA2\xD8\xAC\xDB\x8C\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_307: 
+subject_translations_306: 
   id: "307"
   subject_id: "106"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xBA\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_308: 
+subject_translations_307: 
   id: "308"
   subject_id: "107"
   locale: fa
   name: "\xD8\xAA\xD8\xB1\xDB\x8C\xD8\xA7\xDA\xA9"
   created_at: 
   updated_at: 
-subject_translations_309: 
+subject_translations_308: 
   id: "309"
   subject_id: "108"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xAE \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_310: 
+subject_translations_309: 
   id: "310"
   subject_id: "109"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xBA\xD8\xB0"
   created_at: 
   updated_at: 
-subject_translations_311: 
+subject_translations_310: 
   id: "311"
   subject_id: "110"
   locale: fa
   name: "\xD9\x85\xD9\x87\xD9\x85\xD8\xA7\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_312: 
+subject_translations_311: 
   id: "312"
   subject_id: "111"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD9\x88\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_313: 
+subject_translations_312: 
   id: "313"
   subject_id: "112"
   locale: fa
   name: "\xD8\xB1\xD8\xB9\xDB\x8C\xD8\xAA \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_314: 
+subject_translations_313: 
   id: "314"
   subject_id: "113"
   locale: fa
   name: "\xD8\xB9\xD8\xB1\xDB\x8C\xD8\xB6\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_315: 
+subject_translations_314: 
   id: "315"
   subject_id: "114"
   locale: fa
   name: "\xD8\xB9\xDA\xA9\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_316: 
+subject_translations_315: 
   id: "316"
   subject_id: "115"
   locale: fa
   name: "\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_317: 
+subject_translations_316: 
   id: "317"
   subject_id: "116"
   locale: fa
   name: "\xD8\xBA\xD8\xA7\xD8\xB1\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_318: 
+subject_translations_317: 
   id: "318"
   subject_id: "117"
   locale: fa
   name: "\xD9\xBE\xD8\xB3\xD8\xAA\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_319: 
+subject_translations_318: 
   id: "319"
   subject_id: "118"
   locale: fa
   name: "\xD8\xB4\xD8\xB9\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_320: 
+subject_translations_319: 
   id: "320"
   subject_id: "119"
   locale: fa
   name: "\xD9\xBE\xD9\x84\xDB\x8C\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_321: 
+subject_translations_320: 
   id: "321"
   subject_id: "120"
   locale: fa
   name: "\xD8\xAD\xD8\xB2\xD8\xA8 \xD8\xB3\xDB\x8C\xD8\xA7\xD8\xB3\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_322: 
+subject_translations_321: 
   id: "322"
   subject_id: "121"
   locale: fa
   name: "\xD8\xB3\xDB\x8C\xD8\xA7\xD8\xB3\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_323: 
+subject_translations_322: 
   id: "323"
   subject_id: "122"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD8\xAA\xD8\xB1\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_324: 
+subject_translations_323: 
   id: "324"
   subject_id: "123"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xB1\xD8\xAA \xD9\xBE\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_325: 
+subject_translations_324: 
   id: "325"
   subject_id: "124"
   locale: fa
   name: "\xD9\x81\xD9\x82\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_326: 
+subject_translations_325: 
   id: "326"
   subject_id: "125"
   locale: fa
   name: "\xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_327: 
+subject_translations_326: 
   id: "327"
   subject_id: "126"
   locale: fa
   name: "\xD8\xA2\xD8\xA8\xD8\xB3\xD8\xAA\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_328: 
+subject_translations_327: 
   id: "328"
   subject_id: "127"
   locale: fa
   name: "\xD9\x82\xDB\x8C\xD9\x85\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_329: 
+subject_translations_328: 
   id: "329"
   subject_id: "128"
   locale: fa
   name: "\xD8\xA7\xD9\x85\xD9\x84\xD8\xA7\xDA\xA9"
   created_at: 
   updated_at: 
-subject_translations_330: 
+subject_translations_329: 
   id: "330"
   subject_id: "129"
   locale: fa
   name: "\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x84\xD8\xA7\xD9\x81\xD8\xA7\xD8\xAA \xD8\xA7\xD9\x85\xD9\x88\xD8\xA7\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_331: 
+subject_translations_330: 
   id: "331"
   subject_id: "130"
   locale: fa
   name: "\xD9\x81\xD8\xAD\xD8\xB4\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_332: 
+subject_translations_331: 
   id: "332"
   subject_id: "131"
   locale: fa
   name: "\xD8\xB6\xD8\xB1\xD8\xA8 \xD8\xA7\xD9\x84\xD9\x85\xD8\xAB\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_333: 
+subject_translations_332: 
   id: "333"
   subject_id: "132"
   locale: fa
   name: "\xD8\xAD\xD9\x85\xD8\xA7\xD9\x85"
   created_at: 
   updated_at: 
-subject_translations_334: 
+subject_translations_333: 
   id: "334"
   subject_id: "133"
   locale: fa
   name: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_335: 
+subject_translations_334: 
   id: "335"
   subject_id: "134"
   locale: fa
   name: "\xDA\xA9\xD8\xA8\xDA\xA9"
   created_at: 
   updated_at: 
-subject_translations_336: 
+subject_translations_335: 
   id: "336"
   subject_id: "135"
   locale: fa
   name: "\xD9\x82\xD8\xB1\xD8\xA2\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_337: 
+subject_translations_336: 
   id: "337"
   subject_id: "136"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xA7\xD8\xB1\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_338: 
+subject_translations_337: 
   id: "338"
   subject_id: "137"
   locale: fa
   name: "\xDA\xA9\xD8\xB4\xD9\x85\xD8\xB4"
   created_at: 
   updated_at: 
-subject_translations_339: 
+subject_translations_338: 
   id: "339"
   subject_id: "138"
   locale: fa
   name: "\xD8\xB1\xD9\x85\xD8\xB6\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_340: 
+subject_translations_339: 
   id: "340"
   subject_id: "139"
   locale: fa
   name: "\xD8\xB1\xD8\xB4\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_341: 
+subject_translations_340: 
   id: "341"
   subject_id: "140"
   locale: fa
   name: "\xD8\xB1\xD8\xB2\xD8\xAC\xD8\xB1\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_342: 
+subject_translations_341: 
   id: "342"
   subject_id: "141"
   locale: fa
   name: "\xD8\xAA\xD9\x81\xD8\xB1\xDB\x8C\xD8\xAD"
   created_at: 
   updated_at: 
-subject_translations_343: 
+subject_translations_342: 
   id: "343"
   subject_id: "142"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD9\x85\xD8\xB0\xD9\x87\xD8\xA8\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_344: 
+subject_translations_343: 
   id: "344"
   subject_id: "143"
   locale: fa
   name: "\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_345: 
+subject_translations_344: 
   id: "345"
   subject_id: "144"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD9\x86\xD8\xAC"
   created_at: 
   updated_at: 
-subject_translations_346: 
+subject_translations_345: 
   id: "346"
   subject_id: "145"
   locale: fa
   name: "\xD8\xB4\xD9\x88\xD8\xB1\xD8\xB4"
   created_at: 
   updated_at: 
-subject_translations_347: 
+subject_translations_346: 
   id: "347"
   subject_id: "146"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB6\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_348: 
+subject_translations_347: 
   id: "348"
   subject_id: "147"
   locale: fa
   name: "\xD8\xB2\xD9\x85\xD8\xB1\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_349: 
+subject_translations_348: 
   id: "349"
   subject_id: "148"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB3 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_350: 
+subject_translations_349: 
   id: "350"
   subject_id: "149"
   locale: fa
   name: "\xD8\xB2\xD8\xB9\xD9\x81\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_351: 
+subject_translations_350: 
   id: "351"
   subject_id: "150"
   locale: fa
   name: "\xD8\xA7\xD8\xB7\xD9\x84\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_352: 
+subject_translations_351: 
   id: "352"
   subject_id: "151"
   locale: fa
   name: "\xD8\xAE\xD8\xAF\xD9\x85\xD8\xAA\xDA\xA9\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_353: 
+subject_translations_352: 
   id: "353"
   subject_id: "152"
   locale: fa
   name: "\xD9\x86\xD9\x88\xDA\xA9\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_354: 
+subject_translations_353: 
   id: "354"
   subject_id: "153"
   locale: fa
   name: "\xDA\x86\xD8\xB1\xD8\xAE \xD8\xAE\xDB\x8C\xD8\xA7\xD8\xB7\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_355: 
+subject_translations_354: 
   id: "355"
   subject_id: "154"
   locale: fa
   name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD8\xB9\xD8\xB8\xDB\x8C\xD9\x85"
   created_at: 
   updated_at: 
-subject_translations_356: 
+subject_translations_355: 
   id: "356"
   subject_id: "155"
   locale: fa
   name: "\xD8\xB4\xD9\x85\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_357: 
+subject_translations_356: 
   id: "357"
   subject_id: "156"
   locale: fa
   name: "\xDA\xA9\xD9\x81\xD8\xB4"
   created_at: 
   updated_at: 
-subject_translations_358: 
+subject_translations_357: 
   id: "358"
   subject_id: "157"
   locale: fa
   name: "\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA\xDA\xAF\xD8\xA7\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_359: 
+subject_translations_358: 
   id: "359"
   subject_id: "158"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD9\x86\xD9\x86\xD8\xAF\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_360: 
+subject_translations_359: 
   id: "360"
   subject_id: "159"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_361: 
+subject_translations_360: 
   id: "361"
   subject_id: "160"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD8\xAF\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_362: 
+subject_translations_361: 
   id: "362"
   subject_id: "161"
   locale: fa
   name: "\xD8\xAC\xD9\x88\xD8\xB1\xD8\xA7\xD8\xA8"
   created_at: 
   updated_at: 
-subject_translations_363: 
+subject_translations_362: 
   id: "363"
   subject_id: "162"
   locale: fa
   name: "\xD8\xB3\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xB2"
   created_at: 
   updated_at: 
-subject_translations_364: 
+subject_translations_363: 
   id: "364"
   subject_id: "163"
   locale: fa
   name: "\xD8\xA2\xD9\x87\xD9\x86\xDA\xAF"
   created_at: 
   updated_at: 
-subject_translations_365: 
+subject_translations_364: 
   id: "365"
   subject_id: "164"
   locale: fa
   name: "\xD8\xA7\xD8\xAF\xD9\x88\xDB\x8C\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_366: 
+subject_translations_365: 
   id: "366"
   subject_id: "165"
   locale: fa
   name: "\xD9\x88\xD8\xB1\xD8\xB2\xD8\xB4\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_367: 
+subject_translations_366: 
   id: "367"
   subject_id: "166"
   locale: fa
   name: "\xD8\xAF\xD8\xAE\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_368: 
+subject_translations_367: 
   id: "368"
   subject_id: "167"
   locale: fa
   name: "\xD8\xB4\xD9\x87\xD8\xB1\xDB\x8C\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_369: 
+subject_translations_368: 
   id: "369"
   subject_id: "168"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4 \xD8\xA2\xD9\x85\xD9\x88\xD8\xB2\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_370: 
+subject_translations_369: 
   id: "370"
   subject_id: "169"
   locale: fa
   name: "\xD9\x82\xD9\x86\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_371: 
+subject_translations_370: 
   id: "371"
   subject_id: "170"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xAF\xDA\xA9\xD8\xB4\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_372: 
+subject_translations_371: 
   id: "372"
   subject_id: "171"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_373: 
+subject_translations_372: 
   id: "373"
   subject_id: "172"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD9\x84\xDB\x8C\xD8\xA7\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_374: 
+subject_translations_373: 
   id: "374"
   subject_id: "173"
   locale: fa
   name: "\xDA\x86\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_375: 
+subject_translations_374: 
   id: "375"
   subject_id: "174"
   locale: fa
   name: "\xD9\x85\xD8\xB9\xD9\x84\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_376: 
+subject_translations_375: 
   id: "376"
   subject_id: "175"
   locale: fa
   name: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_377: 
+subject_translations_376: 
   id: "377"
   subject_id: "176"
   locale: fa
   name: "\xD8\xAA\xD9\x84\xDA\xAF\xD8\xB1\xD8\xA7\xD9\x81"
   created_at: 
   updated_at: 
-subject_translations_378: 
+subject_translations_377: 
   id: "378"
   subject_id: "177"
   locale: fa
   name: "\xD9\xBE\xD8\xA7\xD8\xB1\xDA\x86\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_379: 
+subject_translations_378: 
   id: "379"
   subject_id: "178"
   locale: fa
   name: "\xD8\xAA\xD9\x81\xD9\x84\xDB\x8C\xD8\xB3"
   created_at: 
   updated_at: 
-subject_translations_380: 
+subject_translations_379: 
   id: "380"
   subject_id: "179"
   locale: fa
   name: "\xD8\xA7\xD9\x84\xD9\x88\xD8\xA7\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_381: 
+subject_translations_380: 
   id: "381"
   subject_id: "180"
   locale: fa
   name: "\xD8\xAA\xD8\xB1\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_382: 
+subject_translations_381: 
   id: "382"
   subject_id: "181"
   locale: fa
   name: "\xD8\xAA\xD9\x86\xD8\xA8\xD8\xA7\xDA\xA9\xD9\x88"
   created_at: 
   updated_at: 
-subject_translations_383: 
+subject_translations_382: 
   id: "383"
   subject_id: "182"
   locale: fa
   name: "\xD9\x85\xD9\x82\xD8\xA8\xD8\xB1\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_384: 
+subject_translations_383: 
   id: "384"
   subject_id: "183"
   locale: fa
   name: "\xD8\xAF\xD9\x86\xD8\xAF\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_385: 
+subject_translations_384: 
   id: "385"
   subject_id: "184"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB1\xDA\xA9\xD8\xB4\xDB\x8C"
   created_at: 
   updated_at: 
-subject_translations_386: 
+subject_translations_385: 
   id: "386"
   subject_id: "185"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1"
   created_at: 
   updated_at: 
-subject_translations_387: 
+subject_translations_386: 
   id: "387"
   subject_id: "186"
   locale: fa
   name: "\xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_388: 
+subject_translations_387: 
   id: "388"
   subject_id: "187"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4\xDA\xAF\xD8\xA7\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_389: 
+subject_translations_388: 
   id: "389"
   subject_id: "188"
   locale: fa
   name: "\xD9\x85\xD8\xAE\xD9\x85\xD9\x84"
   created_at: 
   updated_at: 
-subject_translations_390: 
+subject_translations_389: 
   id: "390"
   subject_id: "189"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB2\xD8\xAF\xDB\x8C\xD8\xAF"
   created_at: 
   updated_at: 
-subject_translations_391: 
+subject_translations_390: 
   id: "391"
   subject_id: "190"
   locale: fa
   name: "\xD8\xAD\xD9\x82\xD9\x88\xD9\x82"
   created_at: 
   updated_at: 
-subject_translations_392: 
+subject_translations_391: 
   id: "392"
   subject_id: "191"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xD8\xB9\xD8\xAA"
   created_at: 
   updated_at: 
-subject_translations_393: 
+subject_translations_392: 
   id: "393"
   subject_id: "192"
   locale: fa
   name: " \xD8\xA2\xD8\xA8 \xD9\x88 \xD9\x87\xD9\x88\xD8\xA7"
   created_at: 
   updated_at: 
-subject_translations_394: 
+subject_translations_393: 
   id: "394"
   subject_id: "193"
   locale: fa
   name: "\xD8\xA7\xD8\xB2\xD8\xAF\xD9\x88\xD8\xA7\xD8\xAC"
   created_at: 
   updated_at: 
-subject_translations_395: 
+subject_translations_394: 
   id: "395"
   subject_id: "194"
   locale: fa
   name: "\xDA\xAF\xD9\x86\xD8\xAF\xD9\x85"
   created_at: 
   updated_at: 
-subject_translations_396: 
+subject_translations_395: 
   id: "396"
   subject_id: "195"
   locale: fa
   name: "\xD8\xA8\xDB\x8C\xD9\x88\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_397: 
+subject_translations_396: 
   id: "397"
   subject_id: "196"
   locale: fa
   name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_398: 
+subject_translations_397: 
   id: "398"
   subject_id: "197"
   locale: fa
   name: "\xD9\x85\xD8\xB4\xD8\xB1\xD9\x88\xD8\xA8"
   created_at: 
   updated_at: 
-subject_translations_399: 
+subject_translations_398: 
   id: "399"
   subject_id: "198"
   locale: fa
   name: "\xD8\xAD\xD9\x82 \xD8\xB1\xD8\xA7\xDB\x8C \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_400: 
+subject_translations_399: 
   id: "400"
   subject_id: "199"
   locale: fa
   name: "\xD8\xAD\xD9\x82\xD9\x88\xD9\x82 \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_401: 
+subject_translations_400: 
   id: "401"
   subject_id: "200"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xDB\x8C\xD9\x87"
   created_at: 
   updated_at: 
-subject_translations_402: 
+subject_translations_401: 
   id: "402"
   subject_id: "201"
   locale: fa
   name: "\xD8\xB2\xD9\x86\xD8\xAC\xD8\xA7\xD9\x86"
   created_at: 
   updated_at: 
-subject_translations_403: 
+subject_translations_402: 
   id: "403"
   subject_id: "207"
   locale: en
   name: letters
   created_at: 2010-03-22 22:30:35
   updated_at: 2010-03-22 22:30:35
-subject_translations_404: 
+subject_translations_403: 
   id: "404"
   subject_id: "208"
   locale: en
   name: prose
   created_at: 2010-03-22 22:34:49
   updated_at: 2010-03-22 22:34:49
-subject_translations_405: 
+subject_translations_404: 
   id: "405"
   subject_id: "209"
   locale: en
   name: poetry
   created_at: 2010-03-22 22:35:36
   updated_at: 2010-03-22 22:35:36
-subject_translations_406: 
+subject_translations_405: 
   id: "406"
   subject_id: "210"
   locale: en
   name: travel writings
   created_at: 2010-03-22 22:35:58
   updated_at: 2010-03-22 22:35:58
-subject_translations_407: 
+subject_translations_406: 
   id: "407"
   subject_id: "211"
   locale: en
   name: essays
   created_at: 2010-03-22 22:36:21
   updated_at: 2010-03-22 22:36:21
-subject_translations_408: 
+subject_translations_407: 
   id: "408"
   subject_id: "212"
   locale: en
   name: journals
   created_at: 2010-03-22 22:36:43
   updated_at: 2010-03-22 22:36:43
-subject_translations_409: 
+subject_translations_408: 
   id: "409"
   subject_id: "213"
   locale: en
   name: wedding contracts
   created_at: 2010-03-22 22:37:27
   updated_at: 2010-03-22 22:37:27
-subject_translations_410: 
+subject_translations_409: 
   id: "410"
   subject_id: "214"
   locale: en
   name: dowry documents
   created_at: 2010-03-22 22:37:54
   updated_at: 2010-03-22 22:37:54
-subject_translations_411: 
+subject_translations_410: 
   id: "411"
   subject_id: "215"
   locale: en
   name: settlements
   created_at: 2010-03-22 22:38:19
   updated_at: 2010-03-22 22:38:19
-subject_translations_412: 
+subject_translations_411: 
   id: "412"
   subject_id: "216"
   locale: en
   name: endowments
   created_at: 2010-03-22 22:38:56
   updated_at: 2010-03-22 22:38:56
-subject_translations_413: 
+subject_translations_412: 
   id: "413"
   subject_id: "217"
   locale: en
   name: powers of attorney
   created_at: 2010-03-22 22:39:24
   updated_at: 2010-03-22 22:39:24
-subject_translations_414: 
+subject_translations_413: 
   id: "414"
   subject_id: "218"
   locale: en
   name: wills
   created_at: 2010-03-22 22:39:47
   updated_at: 2010-03-22 22:39:47
-subject_translations_415: 
+subject_translations_414: 
   id: "415"
   subject_id: "219"
   locale: en
   name: sales
   created_at: 2010-03-22 22:40:17
   updated_at: 2010-03-22 22:40:17
-subject_translations_416: 
+subject_translations_415: 
   id: "416"
   subject_id: "220"
   locale: en
   name: other financial contracts
   created_at: 2010-03-22 22:40:41
   updated_at: 2010-03-22 22:40:41
-subject_translations_417: 
+subject_translations_416: 
   id: "417"
   subject_id: "221"
   locale: en
   name: calligraphy
   created_at: 2010-03-22 22:41:24
   updated_at: 2010-03-22 22:41:24
-subject_translations_418: 
+subject_translations_417: 
   id: "418"
   subject_id: "222"
   locale: en
   name: painting
   created_at: 2010-03-22 22:41:43
   updated_at: 2010-03-22 22:41:43
-subject_translations_419: 
+subject_translations_418: 
   id: "419"
   subject_id: "223"
   locale: en
   name: embroidery
   created_at: 2010-03-22 22:42:16
   updated_at: 2010-03-22 22:42:16
-subject_translations_420: 
+subject_translations_419: 
   id: "420"
   subject_id: "224"
   locale: en
   name: weaving
   created_at: 2010-03-22 22:42:54
   updated_at: 2010-03-22 22:42:54
-subject_translations_421: 
+subject_translations_420: 
   id: "421"
   subject_id: "225"
   locale: en
   name: other handicrafts
   created_at: 2010-03-22 22:43:20
   updated_at: 2010-03-22 22:43:20
-subject_translations_422: 
+subject_translations_421: 
   id: "422"
   subject_id: "226"
   locale: en
   name: music
   created_at: 2010-03-22 22:43:42
   updated_at: 2010-03-22 22:43:42
-subject_translations_423: 
+subject_translations_422: 
   id: "423"
   subject_id: "227"
   locale: en
   name: film
   created_at: 2010-03-22 22:44:02
   updated_at: 2010-03-22 22:44:02
-subject_translations_424: 
+subject_translations_423: 
   id: "424"
   subject_id: "207"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x87\xD8\xA7 "
   created_at: 2010-03-22 22:49:23
   updated_at: 2010-03-22 22:49:23
-subject_translations_425: 
+subject_translations_424: 
   id: "425"
   subject_id: "208"
   locale: fa
   name: "\xD9\x86\xD8\xAB\xD8\xB1"
   created_at: 2010-03-22 22:49:49
   updated_at: 2010-03-22 22:49:49
-subject_translations_426: 
+subject_translations_425: 
   id: "426"
   subject_id: "209"
   locale: fa
   name: "\xD8\xB4\xD8\xB9\xD8\xB1"
   created_at: 2010-03-22 22:50:23
   updated_at: 2010-03-22 22:50:23
-subject_translations_427: 
+subject_translations_426: 
   id: "427"
   subject_id: "210"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:50:46
   updated_at: 2010-03-22 22:50:46
-subject_translations_428: 
+subject_translations_427: 
   id: "428"
   subject_id: "211"
   locale: fa
   name: "\xD9\x85\xD9\x82\xD8\xA7\xD9\x84\xD8\xA7\xD8\xAA"
   created_at: 2010-03-22 22:51:04
   updated_at: 2010-03-22 22:51:04
-subject_translations_429: 
+subject_translations_428: 
   id: "429"
   subject_id: "212"
   locale: fa
   name: "\xD9\x86\xD8\xB4\xD8\xB1\xDB\x8C\xD8\xA7\xD8\xAA"
   created_at: 2010-03-22 22:51:24
   updated_at: 2010-03-22 22:51:24
-subject_translations_430: 
+subject_translations_429: 
   id: "430"
   subject_id: "213"
   locale: fa
   name: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:51:51
   updated_at: 2010-03-22 22:51:51
-subject_translations_431: 
+subject_translations_430: 
   id: "431"
   subject_id: "214"
   locale: fa
   name: "\xD9\xBE\xD8\xB4\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:52:13
   updated_at: 2010-03-22 22:52:13
-subject_translations_432: 
+subject_translations_431: 
   id: "432"
   subject_id: "215"
   locale: fa
   name: "\xD8\xB5\xD9\x84\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:52:35
   updated_at: 2010-03-22 22:52:35
-subject_translations_433: 
+subject_translations_432: 
   id: "433"
   subject_id: "216"
   locale: fa
   name: "\xD9\x88\xD9\x82\xD9\x81\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:52:57
   updated_at: 2010-03-22 22:52:57
-subject_translations_434: 
+subject_translations_433: 
   id: "434"
   subject_id: "217"
   locale: fa
   name: "\xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:53:24
   updated_at: 2010-03-22 22:53:24
-subject_translations_435: 
+subject_translations_434: 
   id: "435"
   subject_id: "218"
   locale: fa
   name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:53:43
   updated_at: 2010-03-22 22:53:43
-subject_translations_436: 
+subject_translations_435: 
   id: "436"
   subject_id: "219"
   locale: fa
   name: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:54:01
   updated_at: 2010-03-22 22:54:01
-subject_translations_437: 
+subject_translations_436: 
   id: "437"
   subject_id: "220"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD8\xAA\xD8\xB9\xD9\x87\xD8\xAF\xD8\xA7\xD8\xAA \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
   created_at: 2010-03-22 22:54:25
   updated_at: 2010-03-22 22:54:25
-subject_translations_438: 
+subject_translations_437: 
   id: "438"
   subject_id: "221"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xB4\xD9\x86\xD9\x88\xDB\x8C\xD8\xB3\xDB\x8C"
   created_at: 2010-03-22 22:55:16
   updated_at: 2010-03-22 22:55:16
-subject_translations_439: 
+subject_translations_438: 
   id: "439"
   subject_id: "222"
   locale: fa
   name: "\xD9\x86\xD9\x82\xD8\xA7\xD8\xB4\xDB\x8C"
   created_at: 2010-03-22 22:55:32
   updated_at: 2010-03-22 22:55:32
-subject_translations_440: 
+subject_translations_439: 
   id: "440"
   subject_id: "223"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xB2\xD9\x86 \xD8\xAF\xD9\x88\xD8\xB2\xDB\x8C"
   created_at: 2010-03-22 22:55:54
   updated_at: 2010-03-22 22:55:54
-subject_translations_441: 
+subject_translations_440: 
   id: "441"
   subject_id: "224"
   locale: fa
   name: "\xD9\x82\xD8\xA7\xD9\x84\xDB\x8C\xD8\xA8\xD8\xA7\xD9\x81\xDB\x8C"
   created_at: 2010-03-22 22:56:12
   updated_at: 2010-03-22 22:56:12
-subject_translations_442: 
+subject_translations_441: 
   id: "442"
   subject_id: "225"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xB3\xD8\xAA\xDB\x8C"
   created_at: 2010-03-22 22:56:33
   updated_at: 2010-03-22 22:56:33
-subject_translations_443: 
+subject_translations_442: 
   id: "443"
   subject_id: "226"
   locale: fa
   name: "\xD9\x85\xD9\x88\xD8\xB3\xDB\x8C\xD9\x82\xDB\x8C"
   created_at: 2010-03-22 22:56:50
   updated_at: 2010-03-22 22:56:50
-subject_translations_444: 
+subject_translations_443: 
   id: "444"
   subject_id: "227"
   locale: fa
   name: "\xD9\x81\xDB\x8C\xD9\x84\xD9\x85"
   created_at: 2010-03-22 22:57:08
   updated_at: 2010-03-22 22:57:08
-subject_translations_445: 
+subject_translations_444: 
   id: "445"
   subject_id: "228"
   locale: en
   name: Nanny
   created_at: 2010-06-30 22:00:18
   updated_at: 2010-06-30 22:00:18
-subject_translations_446: 
+subject_translations_445: 
   id: "446"
   subject_id: "228"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xDB\x8C\xD9\x87"
   created_at: 2010-06-30 22:35:03
   updated_at: 2010-06-30 22:35:03
-subject_translations_447: 
+subject_translations_446: 
   id: "447"
   subject_id: "229"
   locale: en
   name: photographs (misc)
   created_at: 2010-07-05 23:07:36
   updated_at: 2010-07-05 23:07:38
-subject_translations_448: 
+subject_translations_447: 
   id: "448"
   subject_id: "229"
   locale: fa
   name: "\xD8\xB9\xDA\xA9\xD8\xB3"
   created_at: 2010-07-05 23:08:22
   updated_at: 2010-07-05 23:08:25
-subject_translations_449: 
+subject_translations_448: 
   id: "449"
   subject_id: "230"
   locale: en
   name: artworks
   created_at: 2010-07-05 23:24:36
   updated_at: 2010-07-05 23:24:39
-subject_translations_450: 
+subject_translations_449: 
   id: "450"
   subject_id: "230"
   locale: fa
   name: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xDB\x8C"
   created_at: 2010-07-05 23:25:31
   updated_at: 2010-07-05 23:25:33
-subject_translations_451: 
+subject_translations_450: 
   id: "451"
   subject_id: "231"
   locale: en
   name: everyday objects (misc)
   created_at: 2010-07-05 23:29:20
   updated_at: 2010-07-05 23:29:23
-subject_translations_452: 
+subject_translations_451: 
   id: "452"
   subject_id: "231"
   locale: fa
   name: "\xD8\xA7\xD8\xB4\xDB\x8C\xD8\xA7\xD8\xA1 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD8\xB1\xD9\x88\xD8\xB2\xD9\x85\xD8\xB1\xD9\x87"
   created_at: 2010-07-05 23:29:38
   updated_at: 2010-07-05 23:29:41
-subject_translations_453: 
+subject_translations_452: 
   id: "453"
   subject_id: "232"
   locale: en
   name: oral histories (misc)
   created_at: 2010-07-05 23:34:25
   updated_at: 2010-07-05 23:34:28
-subject_translations_454: 
+subject_translations_453: 
   id: "454"
   subject_id: "232"
   locale: fa
   name: "\xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE \xD8\xB4\xD9\x81\xD8\xA7\xD9\x87\xDB\x8C"
   created_at: 2010-07-05 23:35:02
   updated_at: 2010-07-05 23:35:05
+subject_translations_454: 
+  id: "455"
+  subject_id: "233"
+  locale: en
+  name: Brideprice
+  created_at: 2010-10-20 20:53:25
+  updated_at: 2010-10-20 20:53:25
+subject_translations_455: 
+  id: "456"
+  subject_id: "233"
+  locale: fa
+  name: "\xD9\x85\xD9\x87\xD8\xB1\xDB\x8C\xD9\x87"
+  created_at: 2010-10-20 20:53:25
+  updated_at: 2010-10-20 20:53:25
+subject_translations_456: 
+  id: "457"
+  subject_id: "234"
+  locale: en
+  name: Actors
+  created_at: 2010-11-06 02:52:35
+  updated_at: 2010-11-06 02:52:35
+subject_translations_457: 
+  id: "458"
+  subject_id: "234"
+  locale: fa
+  name: "\xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C\xDA\xAF\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-11-06 02:52:35
+  updated_at: 2010-11-06 02:52:35
+subject_translations_458: 
+  id: "459"
+  subject_id: "235"
+  locale: en
+  name: Army
+  created_at: 2010-11-06 02:54:15
+  updated_at: 2010-11-06 02:54:15
+subject_translations_459: 
+  id: "460"
+  subject_id: "235"
+  locale: fa
+  name: "\xD8\xA7\xD8\xB1\xD8\xAA\xD8\xB4"
+  created_at: 2010-11-06 02:54:15
+  updated_at: 2010-11-06 02:54:15
+subject_translations_460: 
+  id: "461"
+  subject_id: "236"
+  locale: en
+  name: Apartments
+  created_at: 
+  updated_at: 2010-11-11 00:30:01
+subject_translations_461: 
+  id: "462"
+  subject_id: "236"
+  locale: fa
+  name: "\xD8\xA2\xD9\xBE\xD8\xA7\xD8\xB1\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 2010-11-11 00:30:01
+subject_translations_462: 
+  id: "463"
+  subject_id: "237"
+  locale: en
+  name: Armenians
+  created_at: 2010-11-11 00:31:16
+  updated_at: 2010-11-11 00:31:16
+subject_translations_463: 
+  id: "464"
+  subject_id: "237"
+  locale: fa
+  name: "\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x85\xD9\x86\xD9\x87"
+  created_at: 2010-11-11 00:31:16
+  updated_at: 2010-11-11 00:31:16
+subject_translations_464: 
+  id: "465"
+  subject_id: "238"
+  locale: en
+  name: Betrothal
+  created_at: 2010-11-11 00:32:18
+  updated_at: 2010-11-11 00:32:18
+subject_translations_465: 
+  id: "466"
+  subject_id: "238"
+  locale: fa
+  name: "\xD9\x86\xD8\xA7\xD9\x85\xD8\xB2\xD8\xAF\xDB\x8C"
+  created_at: 2010-11-11 00:32:18
+  updated_at: 2010-11-11 00:32:18
+subject_translations_466: 
+  id: "467"
+  subject_id: "239"
+  locale: en
+  name: Bicycles
+  created_at: 2010-11-11 00:34:51
+  updated_at: 2010-11-11 00:34:51
+subject_translations_467: 
+  id: "468"
+  subject_id: "239"
+  locale: fa
+  name: "\xD8\xAF\xD9\x88\xDA\x86\xD8\xB1\xD8\xAE\xD9\x87"
+  created_at: 2010-11-11 00:34:51
+  updated_at: 2010-11-11 00:34:51
+subject_translations_468: 
+  id: "469"
+  subject_id: "240"
+  locale: en
+  name: Abortion
+  created_at: 2010-11-11 00:37:15
+  updated_at: 2010-11-11 00:37:15
+subject_translations_469: 
+  id: "470"
+  subject_id: "240"
+  locale: fa
+  name: "\xD8\xB3\xD9\x82\xD8\xB7 \xD8\xAC\xD9\x86\xDB\x8C\xD9\x86"
+  created_at: 2010-11-11 00:37:15
+  updated_at: 2010-11-11 00:37:15
+subject_translations_470: 
+  id: "471"
+  subject_id: "241"
+  locale: en
+  name: Banks
+  created_at: 2010-11-21 07:52:24
+  updated_at: 2010-11-21 07:52:24
+subject_translations_471: 
+  id: "472"
+  subject_id: "241"
+  locale: fa
+  name: "\xD8\xA8\xD8\xA7\xD9\x86\xDA\xA9"
+  created_at: 2010-11-21 07:52:24
+  updated_at: 2010-11-21 07:52:24
+subject_translations_472: 
+  id: "473"
+  subject_id: "242"
+  locale: en
+  name: City planning
+  created_at: 2010-11-21 07:54:53
+  updated_at: 2010-11-21 07:54:53
+subject_translations_473: 
+  id: "474"
+  subject_id: "242"
+  locale: fa
+  name: "\xD8\xB4\xD9\x87\xD8\xB1\xD8\xB3\xD8\xA7\xD8\xB2\xDB\x8C"
+  created_at: 2010-11-21 07:54:53
+  updated_at: 2010-11-21 07:54:53
+subject_translations_474: 
+  id: "475"
+  subject_id: "243"
+  locale: en
+  name: City gates
+  created_at: 
+  updated_at: 
+subject_translations_475: 
+  id: "476"
+  subject_id: "243"
+  locale: fa
+  name: "\xD8\xAF\xD8\xB1\xD9\x88\xD8\xA7\xD8\xB2\xD9\x87 \xD8\xB4\xD9\x87\xD8\xB1"
+  created_at: 
+  updated_at: 
+subject_translations_476: 
+  id: "477"
+  subject_id: "244"
+  locale: en
+  name: Architecture
+  created_at: 
+  updated_at: 
+subject_translations_477: 
+  id: "478"
+  subject_id: "244"
+  locale: fa
+  name: "\xD9\x85\xD8\xB9\xD9\x85\xD8\xA7\xD8\xB1\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_478: 
+  id: "479"
+  subject_id: "245"
+  locale: en
+  name: Arrest
+  created_at: 
+  updated_at: 
+subject_translations_479: 
+  id: "480"
+  subject_id: "245"
+  locale: fa
+  name: "\xD8\xAF\xD8\xB3\xD8\xAA\xDA\xAF\xDB\x8C\xD8\xB1\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_480: 
+  id: "481"
+  subject_id: "246"
+  locale: en
+  name: Automobiles
+  created_at: 
+  updated_at: 
+subject_translations_481: 
+  id: "482"
+  subject_id: "246"
+  locale: fa
+  name: "\xD9\x85\xD8\xA7\xD8\xB4\xDB\x8C\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_482: 
+  id: "483"
+  subject_id: "246"
+  locale: fa
+  name: "\xD8\xAE\xD9\x88\xD8\xAF\xD8\xB1\xD9\x88"
+  created_at: 
+  updated_at: 
+subject_translations_483: 
+  id: "484"
+  subject_id: "247"
+  locale: en
+  name: Bahais
+  created_at: 
+  updated_at: 
+subject_translations_484: 
+  id: "485"
+  subject_id: "247"
+  locale: fa
+  name: "\xD8\xA8\xD9\x87\xD8\xA7\xDB\x8C\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_485: 
+  id: "486"
+  subject_id: "248"
+  locale: en
+  name: Books
+  created_at: 
+  updated_at: 
+subject_translations_486: 
+  id: "487"
+  subject_id: "248"
+  locale: fa
+  name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8"
+  created_at: 
+  updated_at: 
+subject_translations_487: 
+  id: "488"
+  subject_id: "249"
+  locale: en
+  name: Brothers and sisters
+  created_at: 
+  updated_at: 
+subject_translations_488: 
+  id: "489"
+  subject_id: "249"
+  locale: fa
+  name: "\xD8\xA8\xD8\xB1\xD8\xA7\xD8\xAF\xD8\xB1 \xD9\x88 \xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1"
+  created_at: 
+  updated_at: 
+subject_translations_489: 
+  id: "490"
+  subject_id: "250"
+  locale: en
+  name: Bullets
+  created_at: 
+  updated_at: 
+subject_translations_490: 
+  id: "491"
+  subject_id: "250"
+  locale: fa
+  name: "\xD9\x81\xD8\xB4\xD9\x86\xDA\xAF"
+  created_at: 
+  updated_at: 
+subject_translations_491: 
+  id: "492"
+  subject_id: "251"
+  locale: en
+  name: Building permits
+  created_at: 
+  updated_at: 
+subject_translations_492: 
+  id: "493"
+  subject_id: "251"
+  locale: fa
+  name: "\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB2\xD9\x87 \xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_493: 
+  id: "494"
+  subject_id: "252"
+  locale: en
+  name: British
+  created_at: 
+  updated_at: 
+subject_translations_494: 
+  id: "495"
+  subject_id: "252"
+  locale: fa
+  name: "\xD8\xA8\xD8\xB1\xDB\x8C\xD8\xAA\xD8\xA7\xD9\x86\xDB\x8C\xD8\xA7\xDB\x8C\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_495: 
+  id: "496"
+  subject_id: "253"
+  locale: en
+  name: Biruni
+  created_at: 
+  updated_at: 
+subject_translations_496: 
+  id: "497"
+  subject_id: "253"
+  locale: fa
+  name: "\xD8\xA8\xDB\x8C\xD8\xB1\xD9\x88\xD9\x86\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_497: 
+  id: "498"
+  subject_id: "254"
+  locale: en
+  name: Birds
+  created_at: 
+  updated_at: 
+subject_translations_498: 
+  id: "499"
+  subject_id: "254"
+  locale: fa
+  name: "\xD9\xBE\xD8\xB1\xD9\x86\xD8\xAF\xDA\xAF\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_499: 
+  id: "500"
+  subject_id: "255"
+  locale: en
+  name: Biography
+  created_at: 
+  updated_at: 
+subject_translations_500: 
+  id: "501"
+  subject_id: "255"
+  locale: fa
+  name: "\xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 "
+  created_at: 
+  updated_at: 
+subject_translations_501: 
+  id: "502"
+  subject_id: "20"
+  locale: fa
+  name: "\xD9\x82\xD8\xA8\xD8\xB1\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_502: 
+  id: "503"
+  subject_id: "256"
+  locale: en
+  name: Calligraphy
+  created_at: 
+  updated_at: 
+subject_translations_503: 
+  id: "504"
+  subject_id: "256"
+  locale: fa
+  name: "\xD8\xAE\xD8\xB7\xD8\xA7\xD8\xB7\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_504: 
+  id: "505"
+  subject_id: "257"
+  locale: en
+  name: Candles
+  created_at: 
+  updated_at: 
+subject_translations_505: 
+  id: "506"
+  subject_id: "257"
+  locale: fa
+  name: "\xD8\xB4\xD9\x85\xD8\xB9"
+  created_at: 
+  updated_at: 
+subject_translations_506: 
+  id: "507"
+  subject_id: "258"
+  locale: en
+  name: Caravansaries
+  created_at: 
+  updated_at: 
+subject_translations_507: 
+  id: "508"
+  subject_id: "258"
+  locale: fa
+  name: "\xDA\xA9\xD8\xA7\xD8\xB1\xD9\x88\xD8\xA7\xD9\x86\xD8\xB3\xD8\xB1\xD8\xA7"
+  created_at: 
+  updated_at: 
+subject_translations_508: 
+  id: "509"
+  subject_id: "259"
+  locale: en
+  name: Child custody
+  created_at: 
+  updated_at: 
+subject_translations_509: 
+  id: "510"
+  subject_id: "259"
+  locale: fa
+  name: "\xD8\xAD\xD8\xB6\xD8\xA7\xD9\x86\xD8\xAA \xD9\x81\xD8\xB1\xD8\xB2\xD9\x86\xD8\xAF"
+  created_at: 
+  updated_at: 
+subject_translations_510: 
+  id: "511"
+  subject_id: "260"
+  locale: en
+  name: Children & adults
+  created_at: 
+  updated_at: 
+subject_translations_511: 
+  id: "512"
+  subject_id: "260"
+  locale: fa
+  name: "\xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xA8\xD8\xB2\xD8\xB1\xDA\xAF\xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_512: 
+  id: "513"
+  subject_id: "261"
+  locale: en
+  name: Children's clothing
+  created_at: 
+  updated_at: 
+subject_translations_513: 
+  id: "514"
+  subject_id: "261"
+  locale: fa
+  name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3 \xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_514: 
+  id: "515"
+  subject_id: "262"
+  locale: en
+  name: Christians
+  created_at: 
+  updated_at: 
+subject_translations_515: 
+  id: "516"
+  subject_id: "262"
+  locale: fa
+  name: "\xD9\x85\xD8\xB3\xDB\x8C\xD8\xAD\xDB\x8C\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_516: 
+  id: "517"
+  subject_id: "263"
+  locale: en
+  name: Cinemas
+  created_at: 
+  updated_at: 
+subject_translations_517: 
+  id: "518"
+  subject_id: "263"
+  locale: fa
+  name: "\xD8\xB3\xDB\x8C\xD9\x86\xD9\x85\xD8\xA7"
+  created_at: 
+  updated_at: 
+subject_translations_518: 
+  id: "519"
+  subject_id: "264"
+  locale: en
+  name: Combs
+  created_at: 
+  updated_at: 
+subject_translations_519: 
+  id: "520"
+  subject_id: "264"
+  locale: fa
+  name: "\xD8\xB4\xD8\xA7\xD9\x86\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_520: 
+  id: "521"
+  subject_id: "265"
+  locale: en
+  name: Compensation (Law)
+  created_at: 
+  updated_at: 
+subject_translations_521: 
+  id: "522"
+  subject_id: "265"
+  locale: fa
+  name: "\xD8\xAE\xD8\xB3\xD8\xA7\xD8\xB1\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_522: 
+  id: "523"
+  subject_id: "266"
+  locale: en
+  name: Condolence notes
+  created_at: 
+  updated_at: 
+subject_translations_523: 
+  id: "524"
+  subject_id: "266"
+  locale: fa
+  name: "\xD8\xAA\xD8\xB3\xD9\x84\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 "
+  created_at: 
+  updated_at: 
+subject_translations_524: 
+  id: "525"
+  subject_id: "267"
+  locale: en
+  name: Conduct of life
+  created_at: 
+  updated_at: 
+subject_translations_525: 
+  id: "526"
+  subject_id: "267"
+  locale: fa
+  name: "\xD8\xB3\xD8\xA8\xDA\xA9 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C "
+  created_at: 
+  updated_at: 
+subject_translations_526: 
+  id: "527"
+  subject_id: "268"
+  locale: en
+  name: Cookbooks
+  created_at: 
+  updated_at: 
+subject_translations_527: 
+  id: "528"
+  subject_id: "268"
+  locale: fa
+  name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8 \xD8\xA2\xD8\xB4\xD9\xBE\xD8\xB2\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_528: 
+  id: "529"
+  subject_id: "269"
+  locale: en
+  name: Cooking
+  created_at: 
+  updated_at: 
+subject_translations_529: 
+  id: "530"
+  subject_id: "269"
+  locale: fa
+  name: "\xD8\xA2\xD8\xB4\xD9\xBE\xD8\xB2\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_530: 
+  id: "531"
+  subject_id: "270"
+  locale: en
+  name: Copper
+  created_at: 
+  updated_at: 
+subject_translations_531: 
+  id: "532"
+  subject_id: "270"
+  locale: fa
+  name: "\xD9\x85\xD8\xB3"
+  created_at: 
+  updated_at: 
+subject_translations_532: 
+  id: "533"
+  subject_id: "270"
+  locale: fa
+  name: "\xD8\xB8\xD8\xB1\xD9\x88\xD9\x81 \xD9\x85\xD8\xB3\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_533: 
+  id: "534"
+  subject_id: "271"
+  locale: en
+  name: Cosmetics
+  created_at: 
+  updated_at: 
+subject_translations_534: 
+  id: "535"
+  subject_id: "271"
+  locale: fa
+  name: "\xD9\x84\xD9\x88\xD8\xA7\xD8\xB2\xD9\x85 \xD8\xA2\xD8\xB1\xD8\xA7\xDB\x8C\xD8\xB4\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_535: 
+  id: "536"
+  subject_id: "272"
+  locale: en
+  name: Courtship
+  created_at: 
+  updated_at: 
+subject_translations_536: 
+  id: "537"
+  subject_id: "272"
+  locale: fa
+  name: "\xD8\xAE\xD9\x88\xD8\xA7\xD8\xB3\xD8\xAA\xDA\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_537: 
+  id: "538"
+  subject_id: "273"
+  locale: en
+  name: Crime
+  created_at: 
+  updated_at: 
+subject_translations_538: 
+  id: "539"
+  subject_id: "273"
+  locale: fa
+  name: "\xD8\xAC\xD9\x86\xD8\xA7\xDB\x8C\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_539: 
+  id: "540"
+  subject_id: "273"
+  locale: fa
+  name: "\xD8\xAC\xD8\xB1\xD9\x85"
+  created_at: 
+  updated_at: 
+subject_translations_540: 
+  id: "541"
+  subject_id: "274"
+  locale: en
+  name: Dance
+  created_at: 
+  updated_at: 
+subject_translations_541: 
+  id: "542"
+  subject_id: "274"
+  locale: fa
+  name: "\xD8\xB1\xD9\x82\xD8\xB5"
+  created_at: 
+  updated_at: 
+subject_translations_542: 
+  id: "543"
+  subject_id: "275"
+  locale: en
+  name: Dancers
+  created_at: 
+  updated_at: 
+subject_translations_543: 
+  id: "544"
+  subject_id: "275"
+  locale: fa
+  name: "\xD8\xB1\xD9\x82\xD8\xA7\xD8\xB5"
+  created_at: 
+  updated_at: 
+subject_translations_544: 
+  id: "545"
+  subject_id: "275"
+  locale: fa
+  name: "\xD8\xB1\xD9\x82\xD8\xB5\xD9\x86\xD8\xAF\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_545: 
+  id: "546"
+  subject_id: "276"
+  locale: en
+  name: Dar al-Funun
+  created_at: 
+  updated_at: 
+subject_translations_546: 
+  id: "547"
+  subject_id: "276"
+  locale: fa
+  name: "\xD8\xAF\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD9\x81\xD9\x86\xD9\x88\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_547: 
+  id: "548"
+  subject_id: "277"
+  locale: en
+  name: Dervishes
+  created_at: 
+  updated_at: 
+subject_translations_548: 
+  id: "549"
+  subject_id: "277"
+  locale: fa
+  name: "\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x88\xDB\x8C\xD8\xB4"
+  created_at: 
+  updated_at: 
+subject_translations_549: 
+  id: "550"
+  subject_id: "278"
+  locale: en
+  name: Diet
+  created_at: 
+  updated_at: 
+subject_translations_550: 
+  id: "551"
+  subject_id: "278"
+  locale: fa
+  name: "\xD8\xB1\xDA\x98\xDB\x8C\xD9\x85 \xD8\xBA\xD8\xB0\xD8\xA7\xDB\x8C\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_551: 
+  id: "552"
+  subject_id: "279"
+  locale: en
+  name: Divination (Quranic)
+  created_at: 
+  updated_at: 
+subject_translations_552: 
+  id: "553"
+  subject_id: "279"
+  locale: fa
+  name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xA7\xD8\xB1\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_553: 
+  id: "554"
+  subject_id: "280"
+  locale: en
+  name: Divination (Hafiz)
+  created_at: 
+  updated_at: 
+subject_translations_554: 
+  id: "555"
+  subject_id: "280"
+  locale: fa
+  name: "\xD9\x81\xD8\xA7\xD9\x84 (\xD8\xAD\xD8\xA7\xD9\x81\xD8\xB8)"
+  created_at: 
+  updated_at: 
+subject_translations_555: 
+  id: "556"
+  subject_id: "281"
+  locale: en
+  name: Dolls
+  created_at: 
+  updated_at: 
+subject_translations_556: 
+  id: "557"
+  subject_id: "281"
+  locale: fa
+  name: "\xD8\xB9\xD8\xB1\xD9\x88\xD8\xB3\xDA\xA9"
+  created_at: 
+  updated_at: 
+subject_translations_557: 
+  id: "558"
+  subject_id: "282"
+  locale: en
+  name: Dreams
+  created_at: 
+  updated_at: 
+subject_translations_558: 
+  id: "559"
+  subject_id: "282"
+  locale: fa
+  name: "\xD8\xAE\xD9\x88\xD8\xA7\xD8\xA8"
+  created_at: 
+  updated_at: 
+subject_translations_559: 
+  id: "560"
+  subject_id: "282"
+  locale: fa
+  name: "\xD8\xAA\xD8\xB9\xD8\xA8\xDB\x8C\xD8\xB1 \xD8\xAE\xD9\x88\xD8\xA7\xD8\xA8"
+  created_at: 
+  updated_at: 
+subject_translations_560: 
+  id: "561"
+  subject_id: "283"
+  locale: en
+  name: English language
+  created_at: 
+  updated_at: 
+subject_translations_561: 
+  id: "562"
+  subject_id: "283"
+  locale: fa
+  name: "\xD8\xB2\xD8\xA8\xD8\xA7\xD9\x86 \xD8\xA7\xD9\x86\xDA\xAF\xD9\x84\xDB\x8C\xD8\xB3\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_562: 
+  id: "563"
+  subject_id: "284"
+  locale: en
+  name: Entertainers
+  created_at: 
+  updated_at: 
+subject_translations_563: 
+  id: "564"
+  subject_id: "284"
+  locale: fa
+  name: "\xD9\x85\xD8\xB7\xD8\xB1\xD8\xA8"
+  created_at: 
+  updated_at: 
+subject_translations_564: 
+  id: "565"
+  subject_id: "285"
+  locale: en
+  name: Envelopes
+  created_at: 
+  updated_at: 
+subject_translations_565: 
+  id: "566"
+  subject_id: "285"
+  locale: fa
+  name: "\xD9\xBE\xD8\xA7\xDA\xA9\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_566: 
+  id: "567"
+  subject_id: "286"
+  locale: en
+  name: Etiquette
+  created_at: 
+  updated_at: 
+subject_translations_567: 
+  id: "568"
+  subject_id: "286"
+  locale: fa
+  name: "\xD8\xA2\xD8\xAF\xD8\xA7\xD8\xA8 \xD9\x85\xD8\xB9\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_568: 
+  id: "569"
+  subject_id: "287"
+  locale: en
+  name: European food
+  created_at: 
+  updated_at: 
+subject_translations_569: 
+  id: "570"
+  subject_id: "287"
+  locale: fa
+  name: "\xD8\xBA\xD8\xB0\xD8\xA7\xD9\x87\xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB1\xD9\x88\xD9\xBE\xD8\xA7\xDB\x8C\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_570: 
+  id: "571"
+  subject_id: "288"
+  locale: en
+  name: Executions
+  created_at: 
+  updated_at: 
+subject_translations_571: 
+  id: "572"
+  subject_id: "288"
+  locale: fa
+  name: "\xD8\xA7\xD8\xB9\xD8\xAF\xD8\xA7\xD9\x85"
+  created_at: 
+  updated_at: 
+subject_translations_572: 
+  id: "573"
+  subject_id: "289"
+  locale: en
+  name: Exterior views
+  created_at: 
+  updated_at: 
+subject_translations_573: 
+  id: "574"
+  subject_id: "289"
+  locale: fa
+  name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C \xD8\xA8\xDB\x8C\xD8\xB1\xD9\x88\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_574: 
+  id: "575"
+  subject_id: "290"
+  locale: en
+  name: Eyeglasses
+  created_at: 
+  updated_at: 
+subject_translations_575: 
+  id: "576"
+  subject_id: "290"
+  locale: fa
+  name: "\xD8\xB9\xDB\x8C\xD9\x86\xDA\xA9"
+  created_at: 
+  updated_at: 
+subject_translations_576: 
+  id: "577"
+  subject_id: "291"
+  locale: en
+  name: Family
+  created_at: 
+  updated_at: 
+subject_translations_577: 
+  id: "578"
+  subject_id: "291"
+  locale: fa
+  name: "\xD8\xAE\xD8\xA7\xD9\x86\xD9\x88\xD8\xA7\xD8\xAF\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_578: 
+  id: "579"
+  subject_id: "292"
+  locale: en
+  name: Fashion
+  created_at: 
+  updated_at: 
+subject_translations_579: 
+  id: "580"
+  subject_id: "292"
+  locale: fa
+  name: "\xD9\x85\xD8\xAF"
+  created_at: 
+  updated_at: 
+subject_translations_580: 
+  id: "581"
+  subject_id: "293"
+  locale: en
+  name: Fasting
+  created_at: 
+  updated_at: 
+subject_translations_581: 
+  id: "582"
+  subject_id: "293"
+  locale: fa
+  name: "\xD8\xB1\xD9\x88\xD8\xB2\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_582: 
+  id: "583"
+  subject_id: "294"
+  locale: en
+  name: Food
+  created_at: 
+  updated_at: 
+subject_translations_583: 
+  id: "584"
+  subject_id: "294"
+  locale: fa
+  name: "\xD8\xBA\xD8\xB0\xD8\xA7"
+  created_at: 
+  updated_at: 
+subject_translations_584: 
+  id: "585"
+  subject_id: "295"
+  locale: en
+  name: French language
+  created_at: 
+  updated_at: 
+subject_translations_585: 
+  id: "586"
+  subject_id: "295"
+  locale: fa
+  name: "\xD8\xB2\xD8\xA8\xD8\xA7\xD9\x86 \xD9\x81\xD8\xB1\xD8\xA7\xD9\x86\xD8\xB3\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_586: 
+  id: "587"
+  subject_id: "296"
+  locale: en
+  name: Friendship
+  created_at: 
+  updated_at: 
+subject_translations_587: 
+  id: "588"
+  subject_id: "296"
+  locale: fa
+  name: "\xD8\xAF\xD9\x88\xD8\xB3\xD8\xAA\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_588: 
+  id: "589"
+  subject_id: "297"
+  locale: en
+  name: Grain
+  created_at: 
+  updated_at: 
+subject_translations_589: 
+  id: "590"
+  subject_id: "297"
+  locale: fa
+  name: "\xD8\xBA\xD9\x84\xD8\xA7\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_590: 
+  id: "591"
+  subject_id: "298"
+  locale: en
+  name: Hairstyles
+  created_at: 
+  updated_at: 
+subject_translations_591: 
+  id: "592"
+  subject_id: "298"
+  locale: fa
+  name: "\xD8\xA2\xD8\xB1\xD8\xA7\xDB\x8C\xD8\xB4 \xD9\x85\xD9\x88"
+  created_at: 
+  updated_at: 
+subject_translations_592: 
+  id: "593"
+  subject_id: "299"
+  locale: en
+  name: Hajj (pilgrimage)
+  created_at: 
+  updated_at: 
+subject_translations_593: 
+  id: "594"
+  subject_id: "299"
+  locale: fa
+  name: "\xD8\xAD\xD8\xAC (\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA)"
+  created_at: 
+  updated_at: 
+subject_translations_594: 
+  id: "595"
+  subject_id: "300"
+  locale: en
+  name: Handkerchiefs
+  created_at: 
+  updated_at: 
+subject_translations_595: 
+  id: "596"
+  subject_id: "300"
+  locale: fa
+  name: "\xD8\xAF\xD8\xB3\xD8\xAA\xD9\x85\xD8\xA7\xD9\x84"
+  created_at: 
+  updated_at: 
+subject_translations_596: 
+  id: "597"
+  subject_id: "301"
+  locale: en
+  name: Hats
+  created_at: 
+  updated_at: 
+subject_translations_597: 
+  id: "598"
+  subject_id: "301"
+  locale: fa
+  name: "\xDA\xA9\xD9\x84\xD8\xA7\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_598: 
+  id: "599"
+  subject_id: "302"
+  locale: en
+  name: Health
+  created_at: 
+  updated_at: 
+subject_translations_599: 
+  id: "600"
+  subject_id: "302"
+  locale: fa
+  name: "\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xD8\xAA\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_600: 
+  id: "601"
+  subject_id: "303"
+  locale: en
+  name: Horse racing
+  created_at: 
+  updated_at: 
+subject_translations_601: 
+  id: "602"
+  subject_id: "303"
+  locale: fa
+  name: "\xD8\xA7\xD8\xB3\xD8\xA8 \xD8\xAF\xD9\x88\xD8\xA7\xD9\x86\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_602: 
+  id: "603"
+  subject_id: "304"
+  locale: en
+  name: Hospitality
+  created_at: 
+  updated_at: 
+subject_translations_603: 
+  id: "604"
+  subject_id: "304"
+  locale: fa
+  name: "\xD9\x85\xD9\x87\xD9\x85\xD8\xA7\xD9\x86 \xD9\x86\xD9\x88\xD8\xA7\xD8\xB2\xDB\x8C"
+  created_at: 
+  updated_at: 
+subject_translations_604: 
+  id: "605"
+  subject_id: "305"
+  locale: en
+  name: Hospitals
+  created_at: 
+  updated_at: 
+subject_translations_605: 
+  id: "606"
+  subject_id: "305"
+  locale: fa
+  name: "\xD9\x85\xD8\xB1\xDB\x8C\xD8\xB6\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_606: 
+  id: "607"
+  subject_id: "306"
+  locale: en
+  name: Hotels
+  created_at: 
+  updated_at: 
+subject_translations_607: 
+  id: "608"
+  subject_id: "306"
+  locale: fa
+  name: "\xD9\x87\xD8\xAA\xD9\x84"
+  created_at: 
+  updated_at: 
+subject_translations_608: 
+  id: "609"
+  subject_id: "307"
+  locale: en
+  name: Household expenditures
+  created_at: 
+  updated_at: 
+subject_translations_609: 
+  id: "610"
+  subject_id: "307"
+  locale: fa
+  name: "\xD8\xAE\xD8\xB1\xD8\xAC \xD8\xAE\xD8\xA7\xD9\x86\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_610: 
+  id: "611"
+  subject_id: "308"
+  locale: en
+  name: Hunting
+  created_at: 
+  updated_at: 
+subject_translations_611: 
+  id: "612"
+  subject_id: "308"
+  locale: fa
+  name: "\xD8\xB4\xDA\xA9\xD8\xA7\xD8\xB1"
+  created_at: 
+  updated_at: 
+subject_translations_612: 
+  id: "613"
+  subject_id: "309"
+  locale: en
+  name: Hygiene
+  created_at: 
+  updated_at: 
+subject_translations_613: 
+  id: "614"
+  subject_id: "309"
+  locale: fa
+  name: "\xD8\xA8\xD9\x87\xD8\xAF\xD8\xA7\xD8\xB4\xD8\xAA"
+  created_at: 
+  updated_at: 
+subject_translations_614: 
+  id: "615"
+  subject_id: "310"
+  locale: en
+  name: Interior views
+  created_at: 
+  updated_at: 
+subject_translations_615: 
+  id: "616"
+  subject_id: "310"
+  locale: fa
+  name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xA7\xD8\xAE\xD9\x84 "
+  created_at: 
+  updated_at: 
+subject_translations_616: 
+  id: "617"
+  subject_id: "311"
+  locale: en
+  name: International Alliance of Women and Peace
+  created_at: 
+  updated_at: 
+subject_translations_617: 
+  id: "618"
+  subject_id: "311"
+  locale: fa
+  name: " \xDA\xA9\xD9\x86\xDA\xAF\xD8\xB1\xD9\x87 \xDB\x8C \xD8\xA8\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x84\xDB\x8C \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xB5\xD9\x84\xD8\xAD"
+  created_at: 
+  updated_at: 
+subject_translations_618: 
+  id: "619"
+  subject_id: "312"
+  locale: en
+  name: Invitation cards
+  created_at: 
+  updated_at: 
+subject_translations_619: 
+  id: "620"
+  subject_id: "312"
+  locale: fa
+  name: "\xD8\xAF\xD8\xB9\xD9\x88\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 
+  updated_at: 
+subject_translations_620: 
+  id: "621"
+  subject_id: "313"
+  locale: en
+  name: Invoices
+  created_at: 
+  updated_at: 
+subject_translations_621: 
+  id: "622"
+  subject_id: "313"
+  locale: fa
+  name: "\xD8\xB5\xD9\x88\xD8\xB1\xD8\xAA \xD8\xAD\xD8\xB3\xD8\xA7\xD8\xA8"
+  created_at: 
+  updated_at: 
+subject_translations_622: 
+  id: "623"
+  subject_id: "314"
+  locale: en
+  name: Ivory
+  created_at: 
+  updated_at: 
+subject_translations_623: 
+  id: "624"
+  subject_id: "314"
+  locale: fa
+  name: "\xD8\xB9\xD8\xA7\xD8\xAC"
+  created_at: 
+  updated_at: 
+subject_translations_624: 
+  id: "625"
+  subject_id: "315"
+  locale: en
+  name: Kindergartens
+  created_at: 
+  updated_at: 
+subject_translations_625: 
+  id: "626"
+  subject_id: "315"
+  locale: fa
+  name: "\xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
+  created_at: 
+  updated_at: 
+subject_translations_626: 
+  id: "627"
+  subject_id: "316"
+  locale: en
+  name: Love
+  created_at: 2010-11-23 19:06:14
+  updated_at: 2010-11-23 19:06:14
+subject_translations_627: 
+  id: "628"
+  subject_id: "316"
+  locale: fa
+  name: "\xD8\xB9\xD8\xB4\xD9\x82"
+  created_at: 2010-11-23 19:06:14
+  updated_at: 2010-11-23 19:06:14
+subject_translations_628: 
+  id: "631"
+  subject_id: 
+  locale: 
+  name: 
+  created_at: 
+  updated_at: 

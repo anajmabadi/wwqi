@@ -1,7 +1,5 @@
 Qajar::Application.routes.draw do
 
-
-
   get "contact/new"
 
   get "contact/confirm"
@@ -27,7 +25,8 @@ Qajar::Application.routes.draw do
       :translations,
       :plots,
       :comments,
-      :eras
+      :eras,
+      :comps
 
     resources :items do
       collection do
@@ -39,6 +38,8 @@ Qajar::Application.routes.draw do
         post :hide_add_plot_to_item
         post :show_add_appearance_to_item
         post :hide_add_appearance_to_item
+        post :show_add_comp_to_item
+        post :hide_add_comp_to_item
         get :util_update_sort_date
       end
     end
@@ -91,9 +92,9 @@ Qajar::Application.routes.draw do
   match 'credits' => 'static_pages#page', :as => :credits, :id => 5, :page_name => 'credits'
   match 'faq' => 'static_pages#page', :as => :faq, :id => 7, :page_name => 'faq'
   
-  match 'utilities' => 'utilities#index', :as => :utilities
-  match 'utilities/rename_by_file_name' => 'utilities#rename_by_file_name', :as => :rename_by_file_name
-  match 'utilities/rename_thumbs_by_index/:collection_id' => 'utilities#rename_thumbs_by_index', :as => :rename_thumbs_by_index
+  match 'admin/utilities' => 'admin/utilities#index', :as => :admin_utilities
+  match 'admin/utilities/rename_by_file_name' => 'admin/utilities#rename_by_file_name', :as => :rename_by_file_name
+  match 'admin/utilities/rename_thumbs_by_index/:collection_id' => 'admin/utilities#rename_thumbs_by_index', :as => :rename_thumbs_by_index
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

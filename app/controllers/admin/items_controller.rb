@@ -106,7 +106,7 @@ class Admin::ItemsController < Admin::AdminController
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     respond_to do |format|
       if @item.save
-        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully created.') }
+        format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully created.') }
         format.xml  { render :xml => @item, :status => :created, :location => @item }
       else
         format.html { render :action => "new" }
@@ -134,7 +134,7 @@ class Admin::ItemsController < Admin::AdminController
     end
     respond_to do |format|
       if saved
-        format.html { redirect_to(admin_item_path(@item), :notice => 'Item was successfully updated.') }
+        format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully updated.') }
         format.xml  { head :ok }
       elsif stale
         # write out the failed parameters
@@ -178,7 +178,7 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
 
-  # remote functions for showing and hiding the add plot form
+  # remote functions for showing and hiding the add appearance form
   def show_add_appearance_to_item
     # retrieve @appearances for instant additions
     @item = Item.find(params[:id])
@@ -283,6 +283,32 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
   
+  # remote functions for showing and hiding the add comp form
+  def show_add_comp_to_item
+    # retrieve items for instant additions
+    @item = Item.find(params[:id])
+    @items = Item.select_list
+    @max_position = Comp.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+    @comp = Comp.new(
+      :item_id => params[:id],
+      :publish => true,
+      :position => @max_position + 1
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_comp_to_item
+    @comp = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+  
   private
   
   def find_item
@@ -291,7 +317,7 @@ class Admin::ItemsController < Admin::AdminController
     rescue ActiveRecord::RecordNotFound
       #TODO: Translate this field
       flash[:error] = "The item you were looking for could not be found."
-      redirect_to admin_items_path
+      redirect_to admin_items_url
     end
   end
 

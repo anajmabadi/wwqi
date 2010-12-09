@@ -1,0 +1,34 @@
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:show).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :comp => @comp %>
+        <table class="global" width="80%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
+                <p>
+                    <b>Item:</b>
+                    <%= @comp.item_id %>
+                </p>
+                <p>
+                    <b>Comp:</b>
+                    <%= @comp.comp_id %>
+                </p>
+                <p>
+                    <b>Position:</b>
+                    <%= @comp.position %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @comp.publish %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @comp.notes %>
+                </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

@@ -43,7 +43,7 @@ Feature: home page welcomes user and provides navigation to site areas
 		
 	Scenario: logo should link to home page
 		Given I speak English
-		When I go to the home page
-		And I follow "Women's Worlds in Qajar Iran"
+		And I am on the home page
+		When I follow "back to home"
 		Then I should be on the home page
 							

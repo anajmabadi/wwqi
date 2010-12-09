@@ -3,10 +3,10 @@ clip_translations_001:
   id: "1"
   clip_id: "1"
   locale: en
-  caption: 
+  caption: ""
   title: Listen to Bahram Sheikholeslami
   created_at: 
-  updated_at: 
+  updated_at: 2010-11-18 05:20:25
 clip_translations_002: 
   id: "2"
   clip_id: "2"
@@ -147,16 +147,16 @@ clip_translations_019:
   id: "19"
   clip_id: "1"
   locale: fa
-  caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  caption: ""
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
-  updated_at: 
+  updated_at: 2010-11-18 05:20:25
 clip_translations_020: 
   id: "20"
   clip_id: "2"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_021: 
@@ -164,7 +164,7 @@ clip_translations_021:
   clip_id: "3"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_022: 
@@ -172,7 +172,7 @@ clip_translations_022:
   clip_id: "4"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_023: 
@@ -180,7 +180,7 @@ clip_translations_023:
   clip_id: "5"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_024: 
@@ -188,7 +188,7 @@ clip_translations_024:
   clip_id: "6"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_025: 
@@ -196,7 +196,7 @@ clip_translations_025:
   clip_id: "7"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_026: 
@@ -204,7 +204,7 @@ clip_translations_026:
   clip_id: "8"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_027: 
@@ -212,7 +212,7 @@ clip_translations_027:
   clip_id: "9"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_028: 
@@ -220,7 +220,7 @@ clip_translations_028:
   clip_id: "10"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_029: 
@@ -228,7 +228,7 @@ clip_translations_029:
   clip_id: "11"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_030: 
@@ -236,7 +236,7 @@ clip_translations_030:
   clip_id: "12"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_031: 
@@ -244,7 +244,7 @@ clip_translations_031:
   clip_id: "13"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_032: 
@@ -252,7 +252,7 @@ clip_translations_032:
   clip_id: "14"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_033: 
@@ -260,7 +260,7 @@ clip_translations_033:
   clip_id: "15"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_034: 
@@ -268,7 +268,7 @@ clip_translations_034:
   clip_id: "16"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_035: 
@@ -276,7 +276,7 @@ clip_translations_035:
   clip_id: "17"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
 clip_translations_036: 
@@ -284,6 +284,6 @@ clip_translations_036:
   clip_id: "18"
   locale: fa
   caption: 
-  title: "\xDA\xAF\xD9\x88\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
+  title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
