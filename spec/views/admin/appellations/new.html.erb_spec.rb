@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe "admin_appellations/new.html.erb" do
   before(:each) do
-    assign(:appellation, stub_model(Admin::Appellation,
+    assign(:appellation, stub_model(Appellation,
       :new_record? => true
     ))
   end
