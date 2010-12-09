@@ -28,10 +28,10 @@ describe Section do
     @section.should_not be_valid
   end
   
-  it "should require a title" do
+  it "should NOT require a title" do
     @sample_attributes[:title] = nil
     @section.update_attributes(@sample_attributes)
-    @section.should_not be_valid
+    @section.should be_valid
   end
   
   it "should NOT require a parent_id" do
