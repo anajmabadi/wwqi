@@ -1,6 +1,6 @@
 class Item < ActiveRecord::Base
 
-  before_validation :set_sort_date
+  before_validation :set_sensible_date_defaults
   
   # truncate and other helpers
   include ActionView::Helpers::TextHelper
@@ -287,8 +287,11 @@ class Item < ActiveRecord::Base
     return I18n.locale == :fa ? number.to_farsi : number.to_s
   end
 
-  def set_sort_date
-
+  def set_sensible_date_defaults
+    
+    # set the source year if needed
+    self.year = self.era.year if self.year.blank? && !self.era.nil?
+    
     if self.sort_year.blank?
       # check source years
       unless self.year.blank?
@@ -305,5 +308,7 @@ class Item < ActiveRecord::Base
         end
       end
     end
+    
+    
   end
 end
