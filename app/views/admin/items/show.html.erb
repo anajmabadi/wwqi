@@ -88,6 +88,26 @@
                 </tr>
                 <tr>
                     <td>
+                    <b>Created at:</b>
+                    <%= @item.created_at.to_s %>
+                    </td>
+                    <td>
+                    <b>Updated at:</b>
+                    <%= @item.updated_at.to_s %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <b>Pages:</b>
+                    <%= @item.pages %>
+                    </td>
+                    <td>
+                    <b>Bound:</b>
+                    <%= @item.bound %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     <b>Accession num:</b>
                     <%= @item.accession_num %>
                     </td>
@@ -110,8 +130,9 @@
                     <td>
 
                     <b>Source date (label):</b>
-                    <%= @item.source_date %><br />
-                    
+                    <%= @item.source_date %>
+                    <br />
+
                     <b>Source date partials:</b>
                     Day: <%= @item.day %>  |  Month: <%= @item.month %>   |  Year: <%= @item.year %>
                     </td><td>
@@ -128,7 +149,6 @@
                     <%= @item.editorial_date unless @item.editorial_date.nil? %>
                     </td>
                 </tr>
-
                 <tr>
                     <td>
                     <b>Sort date partials:</b>
@@ -140,16 +160,16 @@
                     </td>
                 </tr>
                 <tr>
-                  <td colspan="2">
+                    <td colspan="2">
                     <b>Date Preview: </b> Absolute: <%= @item.absolute_date %> Gregorian: <%= @item.gregorian_date %> Islamic: <%= @item.islamic_date %>  Jalali: <%= @item.jalali_date %>
-                  </td>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">
                     <b>Width:</b>
-                    <%= @item.width %> 
+                    <%= @item.width %>
                     <b>Height:</b>
-                    <%= @item.height %> 
+                    <%= @item.height %>
                     <b>Depth:</b>
                     <%= @item.depth %>
                     </td>
@@ -223,7 +243,7 @@
                     </td>
                 </tr>
                 <tr>
-                  <td>
+                    <td>
                     <div id="item_comps_list">
                         <%= render 'item_comps_list', :comps => @item.comps %>
                     </div>
