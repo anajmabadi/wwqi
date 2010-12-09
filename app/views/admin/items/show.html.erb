@@ -253,6 +253,18 @@
                         <% end -%>
                     </div>
                     </td>
+                    <td>
+                    <div id="item_sections_list">
+                        <%= render 'item_sections_list', :sections => @item.sections %>
+                    </div>
+                    <div id="add_section">
+                        <% if @comp.nil? -%>
+                        <%= render :partial => 'admin/items/add_section_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_section_form', :locals => { :section => @section } %>
+                        <% end -%>
+                    </div>
+                    </td>
                 </tr>
                 <tr>
                     <td colspan="2">

@@ -4,31 +4,31 @@ describe Admin::AppellationsController do
   describe "routing" do
 
     it "recognizes and generates #index" do
-      { :get => "/admin_appellations" }.should route_to(:controller => "admin_appellations", :action => "index")
+      { :get => "/admin/appellations" }.should route_to(:controller => "admin/appellations", :action => "index")
     end
 
     it "recognizes and generates #new" do
-      { :get => "/admin_appellations/new" }.should route_to(:controller => "admin_appellations", :action => "new")
+      { :get => "/admin/appellations/new" }.should route_to(:controller => "admin/appellations", :action => "new")
     end
 
     it "recognizes and generates #show" do
-      { :get => "/admin_appellations/1" }.should route_to(:controller => "admin_appellations", :action => "show", :id => "1")
+      { :get => "/admin/appellations/1" }.should route_to(:controller => "admin/appellations", :action => "show", :id => "1")
     end
 
     it "recognizes and generates #edit" do
-      { :get => "/admin_appellations/1/edit" }.should route_to(:controller => "admin_appellations", :action => "edit", :id => "1")
+      { :get => "/admin/appellations/1/edit" }.should route_to(:controller => "admin/appellations", :action => "edit", :id => "1")
     end
 
     it "recognizes and generates #create" do
-      { :post => "/admin_appellations" }.should route_to(:controller => "admin_appellations", :action => "create")
+      { :post => "/admin/appellations" }.should route_to(:controller => "admin/appellations", :action => "create")
     end
 
     it "recognizes and generates #update" do
-      { :put => "/admin_appellations/1" }.should route_to(:controller => "admin_appellations", :action => "update", :id => "1")
+      { :put => "/admin/appellations/1" }.should route_to(:controller => "admin/appellations", :action => "update", :id => "1")
     end
 
     it "recognizes and generates #destroy" do
-      { :delete => "/admin_appellations/1" }.should route_to(:controller => "admin_appellations", :action => "destroy", :id => "1")
+      { :delete => "/admin/appellations/1" }.should route_to(:controller => "admin/appellations", :action => "destroy", :id => "1")
     end
 
   end

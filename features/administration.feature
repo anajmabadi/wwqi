@@ -24,3 +24,11 @@ Feature: Overview page for the administration of the site
         And I follow "Comps"
       Then I should be on the admin_comps page
         And I should see "Comps"
+        
+    Scenario: offer a sections page from the administration menu
+      Given I speak English
+        And I have pages
+      When I go to the admin page
+        And I follow "Sections"
+      Then I should be on the admin_sections page
+        And I should see "Sections"

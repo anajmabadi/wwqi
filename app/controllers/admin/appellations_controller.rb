@@ -2,22 +2,22 @@ class Admin::AppellationsController < Admin::AdminController
   # GET /admin/appellations
   # GET /admin/appellations.xml
   def index
-    @appelations = Appellation.all
+    @appellations = Appellation.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @appelations }
+      format.xml  { render :xml => @appellations }
     end
   end
 
   # GET /admin/appellations/1
   # GET /admin/appellations/1.xml
   def show
-    @appelation = Appellation.find(params[:id])
+    @appellation = Appellation.find(params[:id])
 
     respond_to do |format|
       format.html # show.html.erb
-      format.xml  { render :xml => @appelation }
+      format.xml  { render :xml => @appellation }
     end
   end
 
@@ -34,18 +34,18 @@ class Admin::AppellationsController < Admin::AdminController
 
   # GET /admin/appellations/1/edit
   def edit
-    @appelation = Appellation.find(params[:id])
+    @appellation = Appellation.find(params[:id])
   end
 
   # POST /admin/appellations
   # POST /admin/appellations.xml
   def create
-    @appelation = Appellation.new(params[:admin_appellation])
+    @appellation = Appellation.new(params[:admin_appellation])
 
     respond_to do |format|
-      if @appelation.save
+      if @appellation.save
         format.html { redirect_to(admin_appellation_path(@appellation), :notice => 'Appellation was successfully created.') }
-        format.xml  { render :xml => @appellation, :status => :created, :location => @appelation }
+        format.xml  { render :xml => @appellation, :status => :created, :location => @appellation }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @appellation.errors, :status => :unprocessable_entity }
@@ -56,10 +56,10 @@ class Admin::AppellationsController < Admin::AdminController
   # PUT /admin/appellations/1
   # PUT /admin/appellations/1.xml
   def update
-    @appelation = Appellation.find(params[:id])
+    @appellation = Appellation.find(params[:id])
 
     respond_to do |format|
-      if @appelation.update_attributes(params[:admin_appellation])
+      if @appellation.update_attributes(params[:admin_appellation])
         format.html { redirect_to(admin_appellation_path(@appellation), :notice => 'Appellation was successfully updated.') }
         format.xml  { head :ok }
       else
@@ -72,8 +72,8 @@ class Admin::AppellationsController < Admin::AdminController
   # DELETE /admin/appellations/1
   # DELETE /admin/appellations/1.xml
   def destroy
-    @appelation = Appellation.find(params[:id])
-    @appelation.destroy
+    @appellation = Appellation.find(params[:id])
+    @appellation.destroy
 
     respond_to do |format|
       format.html { redirect_to(admin_appellations_url) }

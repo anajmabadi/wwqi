@@ -1,0 +1,4 @@
+<li>
+  <%= link_to section.to_label, admin_section_path(section) unless section.nil? %>
+  <%= link_to image_tag("delete.png", :alt => 'delete'), admin_section_path(section), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
+</li>

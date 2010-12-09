@@ -26,7 +26,11 @@ Qajar::Application.routes.draw do
       :plots,
       :comments,
       :eras,
-      :comps
+      :comps, 
+      :sections,
+      :appellations,
+      :relationships,
+      :people
 
     resources :items do
       collection do
@@ -40,6 +44,8 @@ Qajar::Application.routes.draw do
         post :hide_add_appearance_to_item
         post :show_add_comp_to_item
         post :hide_add_comp_to_item
+        post :show_add_section_to_item
+        post :hide_add_section_to_item
         get :util_update_sort_date
       end
     end
@@ -55,10 +61,6 @@ Qajar::Application.routes.draw do
       resources :panels
     end
 
-    resources :people do
-      resources :appellations
-      resources :relationships
-    end
   end
 
   # The priority is based upon order of creation:
