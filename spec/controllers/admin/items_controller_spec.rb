@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ItemsController do
+describe Admin::ItemsController do
 
   def mock_item(stubs={})
     @mock_item ||= mock_model(Item, stubs).as_null_object
@@ -56,7 +56,7 @@ describe ItemsController do
       it "redirects to the created item" do
         Item.stub(:new) { mock_item(:save => true) }
         post :create, :item => {}
-        response.should redirect_to(item_url(mock_item))
+        response.should redirect_to(admin_item_url(mock_item))
       end
     end
 
@@ -94,7 +94,7 @@ describe ItemsController do
       it "redirects to the item" do
         Item.stub(:find) { mock_item(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(item_url(mock_item))
+        response.should redirect_to(admin_item_url(mock_item))
       end
     end
 
@@ -124,7 +124,7 @@ describe ItemsController do
     it "redirects to the items list" do
       Item.stub(:find) { mock_item(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(items_url)
+      response.should redirect_to(admin_items_url)
     end
   end
 

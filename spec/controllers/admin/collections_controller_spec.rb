@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CollectionsController do
+describe Admin::CollectionsController do
 
   def mock_collection(stubs={})
     @mock_collection ||= mock_model(Collection, stubs).as_null_object
@@ -50,7 +50,7 @@ describe CollectionsController do
       it "redirects to the created collection" do
         Collection.stub(:new) { mock_collection(:save => true) }
         post :create, :collection => {}
-        response.should redirect_to(collection_url(mock_collection))
+        response.should redirect_to(admin_collection_url(mock_collection))
       end
     end
 
@@ -88,7 +88,7 @@ describe CollectionsController do
       it "redirects to the collection" do
         Collection.stub(:find) { mock_collection(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(collection_url(mock_collection))
+        response.should redirect_to(admin_collection_url(mock_collection))
       end
     end
 
@@ -118,7 +118,7 @@ describe CollectionsController do
     it "redirects to the collections list" do
       Collection.stub(:find) { mock_collection(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(collections_url)
+      response.should redirect_to(admin_collections_url)
     end
   end
 

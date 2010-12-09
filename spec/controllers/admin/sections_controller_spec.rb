@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SectionsController do
+describe Admin::SectionsController do
 
   def mock_section(stubs={})
     (@mock_section ||= mock_model(Section).as_null_object).tap do |section|
@@ -52,7 +52,7 @@ describe SectionsController do
       it "redirects to the created section" do
         Section.stub(:new) { mock_section(:save => true) }
         post :create, :section => {}
-        response.should redirect_to(section_url(mock_section))
+        response.should redirect_to(admin_section_url(mock_section))
       end
     end
 
@@ -60,7 +60,7 @@ describe SectionsController do
       it "assigns a newly created but unsaved section as @section" do
         Section.stub(:new).with({'these' => 'params'}) { mock_section(:save => false) }
         post :create, :section => {'these' => 'params'}
-        assigns(:section).should be(mock_section)
+        assigns(:section).should be(admin_mock_section)
       end
 
       it "re-renders the 'new' template" do
@@ -90,7 +90,7 @@ describe SectionsController do
       it "redirects to the section" do
         Section.stub(:find) { mock_section(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(section_url(mock_section))
+        response.should redirect_to(admin_section_url(mock_section))
       end
     end
 
@@ -120,7 +120,7 @@ describe SectionsController do
     it "redirects to the sections list" do
       Section.stub(:find) { mock_section }
       delete :destroy, :id => "1"
-      response.should redirect_to(sections_url)
+      response.should redirect_to(admin_sections_url)
     end
   end
 

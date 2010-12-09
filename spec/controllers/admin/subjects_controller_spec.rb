@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SubjectsController do
+describe Admin::SubjectsController do
 
   def mock_subject(stubs={})
     @mock_subject ||= mock_model(Subject, stubs).as_null_object
@@ -50,7 +50,7 @@ describe SubjectsController do
       it "redirects to the created subject" do
         Subject.stub(:new) { mock_subject(:save => true) }
         post :create, :subject => {}
-        response.should redirect_to(subject_url(mock_subject))
+        response.should redirect_to(admin_subject_url(mock_subject))
       end
     end
 
@@ -88,7 +88,7 @@ describe SubjectsController do
       it "redirects to the subject" do
         Subject.stub(:find) { mock_subject(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(subject_url(mock_subject))
+        response.should redirect_to(admin_subject_url(mock_subject))
       end
     end
 
@@ -118,7 +118,7 @@ describe SubjectsController do
     it "redirects to the subjects list" do
       Subject.stub(:find) { mock_subject(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(subjects_url)
+      response.should redirect_to(admin_subjects_url)
     end
   end
 

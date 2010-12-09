@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PassportsController do
+describe Admin::PassportsController do
 
   def mock_passport(stubs={})
     @mock_passport ||= mock_model(Passport, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PassportsController do
       it "redirects to the created passport" do
         Passport.stub(:new) { mock_passport(:save => true) }
         post :create, :passport => {}
-        response.should redirect_to(passport_url(mock_passport))
+        response.should redirect_to(admin_passport_url(mock_passport))
       end
     end
 
@@ -88,7 +88,7 @@ describe PassportsController do
       it "redirects to the passport" do
         Passport.stub(:find) { mock_passport(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(passport_url(mock_passport))
+        response.should redirect_to(admin_passport_url(mock_passport))
       end
     end
 
@@ -118,7 +118,7 @@ describe PassportsController do
     it "redirects to the passports list" do
       Passport.stub(:find) { mock_passport }
       delete :destroy, :id => "1"
-      response.should redirect_to(passports_url)
+      response.should redirect_to(admin_passports_url)
     end
   end
 

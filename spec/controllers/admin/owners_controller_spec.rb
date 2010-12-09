@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe OwnersController do
+describe Admin::OwnersController do
 
   def mock_owner(stubs={})
     @mock_owner ||= mock_model(Owner, stubs).as_null_object
@@ -50,7 +50,7 @@ describe OwnersController do
       it "redirects to the created owner" do
         Owner.stub(:new) { mock_owner(:save => true) }
         post :create, :owner => {}
-        response.should redirect_to(owner_url(mock_owner))
+        response.should redirect_to(admin_owner_url(mock_owner))
       end
     end
 
@@ -88,7 +88,7 @@ describe OwnersController do
       it "redirects to the owner" do
         Owner.stub(:find) { mock_owner(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(owner_url(mock_owner))
+        response.should redirect_to(admin_owner_url(mock_owner))
       end
     end
 
@@ -118,7 +118,7 @@ describe OwnersController do
     it "redirects to the owners list" do
       Owner.stub(:find) { mock_owner(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(owners_url)
+      response.should redirect_to(admin_owners_url)
     end
   end
 

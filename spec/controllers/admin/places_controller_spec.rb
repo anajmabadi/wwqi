@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PlacesController do
+describe Admin::PlacesController do
 
   def mock_place(stubs={})
     @mock_place ||= mock_model(Place, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PlacesController do
       it "redirects to the created place" do
         Place.stub(:new) { mock_place(:save => true) }
         post :create, :place => {}
-        response.should redirect_to(place_url(mock_place))
+        response.should redirect_to(admin_place_url(mock_place))
       end
     end
 
@@ -88,7 +88,7 @@ describe PlacesController do
       it "redirects to the place" do
         Place.stub(:find) { mock_place(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(place_url(mock_place))
+        response.should redirect_to(admin_place_url(mock_place))
       end
     end
 
@@ -118,7 +118,7 @@ describe PlacesController do
     it "redirects to the places list" do
       Place.stub(:find) { mock_place(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(places_url)
+      response.should redirect_to(admin_places_url)
     end
   end
 

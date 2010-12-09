@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PlotsController do
+describe Admin::PlotsController do
 
   def mock_plot(stubs={})
     @mock_plot ||= mock_model(Plot, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PlotsController do
       it "redirects to the created plot" do
         Plot.stub(:new) { mock_plot(:save => true) }
         post :create, :plot => {}
-        response.should redirect_to(plot_url(mock_plot))
+        response.should redirect_to(admin_plot_url(mock_plot))
       end
     end
 
@@ -88,7 +88,7 @@ describe PlotsController do
       it "redirects to the plot" do
         Plot.stub(:find) { mock_plot(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(plot_url(mock_plot))
+        response.should redirect_to(admin_plot_url(mock_plot))
       end
     end
 
@@ -118,7 +118,7 @@ describe PlotsController do
     it "redirects to the plots list" do
       Plot.stub(:find) { mock_plot }
       delete :destroy, :id => "1"
-      response.should redirect_to(plots_url)
+      response.should redirect_to(admin_plots_url)
     end
   end
 

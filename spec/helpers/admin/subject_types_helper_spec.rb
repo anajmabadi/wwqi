@@ -10,6 +10,6 @@ require 'spec_helper'
 #     end
 #   end
 # end
-describe SubjectTypesHelper do
+describe Admin::SubjectTypesHelper do
   pending "add some examples to (or delete) #{__FILE__}"
 end

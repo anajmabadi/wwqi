@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CalendarTypesController do
+describe Admin::CalendarTypesController do
 
   def mock_calendar_type(stubs={})
     @mock_calendar_type ||= mock_model(CalendarType, stubs).as_null_object
@@ -50,7 +50,7 @@ describe CalendarTypesController do
       it "redirects to the created calendar_type" do
         CalendarType.stub(:new) { mock_calendar_type(:save => true) }
         post :create, :calendar_type => {}
-        response.should redirect_to(calendar_type_url(mock_calendar_type))
+        response.should redirect_to(admin_calendar_type_url(mock_calendar_type))
       end
     end
 
@@ -88,7 +88,7 @@ describe CalendarTypesController do
       it "redirects to the calendar_type" do
         CalendarType.stub(:find) { mock_calendar_type(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(calendar_type_url(mock_calendar_type))
+        response.should redirect_to(admin_calendar_type_url(mock_calendar_type))
       end
     end
 
@@ -118,7 +118,7 @@ describe CalendarTypesController do
     it "redirects to the calendar_types list" do
       CalendarType.stub(:find) { mock_calendar_type(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(calendar_types_url)
+      response.should redirect_to(admin_calendar_types_url)
     end
   end
 

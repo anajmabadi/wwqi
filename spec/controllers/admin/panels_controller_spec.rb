@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PanelsController do
+describe Admin::PanelsController do
 
   def mock_panel(stubs={})
     @mock_panel ||= mock_model(Panel, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PanelsController do
       it "redirects to the created panel" do
         Panel.stub(:new) { mock_panel(:save => true) }
         post :create, :panel => {}
-        response.should redirect_to(panel_url(mock_panel))
+        response.should redirect_to(admin_panel_url(mock_panel))
       end
     end
 
@@ -88,7 +88,7 @@ describe PanelsController do
       it "redirects to the panel" do
         Panel.stub(:find) { mock_panel(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(panel_url(mock_panel))
+        response.should redirect_to(admin_panel_url(mock_panel))
       end
     end
 
@@ -118,7 +118,7 @@ describe PanelsController do
     it "redirects to the panels list" do
       Panel.stub(:find) { mock_panel(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(panels_url)
+      response.should redirect_to(admin_panels_url)
     end
   end
 

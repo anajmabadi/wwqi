@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ExhibitionsController do
+describe Admin::ExhibitionsController do
 
   def mock_exhibition(stubs={})
     @mock_exhibition ||= mock_model(Exhibition, stubs).as_null_object
@@ -50,7 +50,7 @@ describe ExhibitionsController do
       it "redirects to the created exhibition" do
         Exhibition.stub(:new) { mock_exhibition(:save => true) }
         post :create, :exhibition => {}
-        response.should redirect_to(exhibition_url(mock_exhibition))
+        response.should redirect_to(admin_exhibition_url(mock_exhibition))
       end
     end
 
@@ -88,7 +88,7 @@ describe ExhibitionsController do
       it "redirects to the exhibition" do
         Exhibition.stub(:find) { mock_exhibition(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(exhibition_url(mock_exhibition))
+        response.should redirect_to(admin_exhibition_url(mock_exhibition))
       end
     end
 
@@ -118,7 +118,7 @@ describe ExhibitionsController do
     it "redirects to the exhibitions list" do
       Exhibition.stub(:find) { mock_exhibition(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(exhibitions_url)
+      response.should redirect_to(admin_exhibitions_url)
     end
   end
 

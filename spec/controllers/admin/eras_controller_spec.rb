@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ErasController do
+describe Admin::ErasController do
 
   def mock_era(stubs={})
     (@mock_era ||= mock_model(Era).as_null_object).tap do |era|
@@ -52,7 +52,7 @@ describe ErasController do
       it "redirects to the created era" do
         Era.stub(:new) { mock_era(:save => true) }
         post :create, :era => {}
-        response.should redirect_to(era_url(mock_era))
+        response.should redirect_to(admin_era_url(mock_era))
       end
     end
 
@@ -90,7 +90,7 @@ describe ErasController do
       it "redirects to the era" do
         Era.stub(:find) { mock_era(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(era_url(mock_era))
+        response.should redirect_to(admin_era_url(mock_era))
       end
     end
 
@@ -120,7 +120,7 @@ describe ErasController do
     it "redirects to the eras list" do
       Era.stub(:find) { mock_era }
       delete :destroy, :id => "1"
-      response.should redirect_to(eras_url)
+      response.should redirect_to(admin_eras_url)
     end
   end
 

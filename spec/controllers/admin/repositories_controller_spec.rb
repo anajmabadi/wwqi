@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RepositoriesController do
+describe Admin::RepositoriesController do
 
   def mock_repository(stubs={})
     @mock_repository ||= mock_model(Repository, stubs).as_null_object
@@ -50,7 +50,7 @@ describe RepositoriesController do
       it "redirects to the created repository" do
         Repository.stub(:new) { mock_repository(:save => true) }
         post :create, :repository => {}
-        response.should redirect_to(repository_url(mock_repository))
+        response.should redirect_to(admin_repository_url(mock_repository))
       end
     end
 
@@ -88,7 +88,7 @@ describe RepositoriesController do
       it "redirects to the repository" do
         Repository.stub(:find) { mock_repository(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(repository_url(mock_repository))
+        response.should redirect_to(admin_repository_url(mock_repository))
       end
     end
 
@@ -118,7 +118,7 @@ describe RepositoriesController do
     it "redirects to the repositories list" do
       Repository.stub(:find) { mock_repository }
       delete :destroy, :id => "1"
-      response.should redirect_to(repositories_url)
+      response.should redirect_to(admin_repositories_url)
     end
   end
 

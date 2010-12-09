@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ImagesController do
+describe Admin::ImagesController do
 
   def mock_image(stubs={})
     @mock_image ||= mock_model(Image, stubs).as_null_object
@@ -50,7 +50,7 @@ describe ImagesController do
       it "redirects to the created image" do
         Image.stub(:new) { mock_image(:save => true) }
         post :create, :image => {}
-        response.should redirect_to(image_url(mock_image))
+        response.should redirect_to(admin_image_url(mock_image))
       end
     end
 
@@ -88,7 +88,7 @@ describe ImagesController do
       it "redirects to the image" do
         Image.stub(:find) { mock_image(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(image_url(mock_image))
+        response.should redirect_to(admin_image_url(mock_image))
       end
     end
 
@@ -118,7 +118,7 @@ describe ImagesController do
     it "redirects to the images list" do
       Image.stub(:find) { mock_image(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(images_url)
+      response.should redirect_to(admin_images_url)
     end
   end
 

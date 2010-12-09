@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ClipTypesController do
+describe Admin::ClipTypesController do
 
   def mock_clip_type(stubs={})
     @mock_clip_type ||= mock_model(ClipType, stubs).as_null_object
@@ -50,7 +50,7 @@ describe ClipTypesController do
       it "redirects to the created clip_type" do
         ClipType.stub(:new) { mock_clip_type(:save => true) }
         post :create, :clip_type => {}
-        response.should redirect_to(clip_type_url(mock_clip_type))
+        response.should redirect_to(admin_clip_type_url(mock_clip_type))
       end
     end
 
@@ -88,7 +88,7 @@ describe ClipTypesController do
       it "redirects to the clip_type" do
         ClipType.stub(:find) { mock_clip_type(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(clip_type_url(mock_clip_type))
+        response.should redirect_to(admin_clip_type_url(mock_clip_type))
       end
     end
 
@@ -118,7 +118,7 @@ describe ClipTypesController do
     it "redirects to the clip_types list" do
       ClipType.stub(:find) { mock_clip_type(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(clip_types_url)
+      response.should redirect_to(admin_clip_types_url)
     end
   end
 

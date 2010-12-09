@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe SubjectTypesController do
+describe Admin::SubjectTypesController do
 
   def mock_subject_type(stubs={})
     @mock_subject_type ||= mock_model(SubjectType, stubs).as_null_object
@@ -50,7 +50,7 @@ describe SubjectTypesController do
       it "redirects to the created subject_type" do
         SubjectType.stub(:new) { mock_subject_type(:save => true) }
         post :create, :subject_type => {}
-        response.should redirect_to(subject_type_url(mock_subject_type))
+        response.should redirect_to(admin_subject_type_url(mock_subject_type))
       end
     end
 
@@ -88,7 +88,7 @@ describe SubjectTypesController do
       it "redirects to the subject_type" do
         SubjectType.stub(:find) { mock_subject_type(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(subject_type_url(mock_subject_type))
+        response.should redirect_to(admin_subject_type_url(mock_subject_type))
       end
     end
 
@@ -118,7 +118,7 @@ describe SubjectTypesController do
     it "redirects to the subject_types list" do
       SubjectType.stub(:find) { mock_subject_type(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(subject_types_url)
+      response.should redirect_to(admin_subject_types_url)
     end
   end
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CategorizationsController do
+describe Admin::CategorizationsController do
 
   def mock_categorization(stubs={})
     @mock_categorization ||= mock_model(Categorization, stubs).as_null_object
@@ -50,7 +50,7 @@ describe CategorizationsController do
       it "redirects to the created categorization" do
         Categorization.stub(:new) { mock_categorization(:save => true) }
         post :create, :categorization => {}
-        response.should redirect_to(categorization_url(mock_categorization))
+        response.should redirect_to(admin_categorization_url(mock_categorization))
       end
     end
 
@@ -88,7 +88,7 @@ describe CategorizationsController do
       it "redirects to the categorization" do
         Categorization.stub(:find) { mock_categorization(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(categorization_url(mock_categorization))
+        response.should redirect_to(admin_categorization_url(mock_categorization))
       end
     end
 
@@ -118,7 +118,7 @@ describe CategorizationsController do
     it "redirects to the categorizations list" do
       Categorization.stub(:find) { mock_categorization(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(categorizations_url)
+      response.should redirect_to(admin_categorizations_url)
     end
   end
 

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PeriodsController do
+describe Admin::PeriodsController do
 
   def mock_period(stubs={})
     @mock_period ||= mock_model(Period, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PeriodsController do
       it "redirects to the created period" do
         Period.stub(:new) { mock_period(:save => true) }
         post :create, :period => {}
-        response.should redirect_to(period_url(mock_period))
+        response.should redirect_to(admin_period_url(mock_period))
       end
     end
 
@@ -88,7 +88,7 @@ describe PeriodsController do
       it "redirects to the period" do
         Period.stub(:find) { mock_period(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(period_url(mock_period))
+        response.should redirect_to(admin_period_url(mock_period))
       end
     end
 
@@ -118,7 +118,7 @@ describe PeriodsController do
     it "redirects to the periods list" do
       Period.stub(:find) { mock_period(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(periods_url)
+      response.should redirect_to(admin_periods_url)
     end
   end
 

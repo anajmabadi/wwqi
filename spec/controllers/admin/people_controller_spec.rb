@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PeopleController do
+describe Admin::PeopleController do
 
   def mock_person(stubs={})
     @mock_person ||= mock_model(Person, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PeopleController do
       it "redirects to the created person" do
         Person.stub(:new) { mock_person(:save => true) }
         post :create, :person => {}
-        response.should redirect_to(person_url(mock_person))
+        response.should redirect_to(admin_person_url(mock_person))
       end
     end
 
@@ -88,7 +88,7 @@ describe PeopleController do
       it "redirects to the person" do
         Person.stub(:find) { mock_person(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(person_url(mock_person))
+        response.should redirect_to(admin_person_url(mock_person))
       end
     end
 
@@ -118,7 +118,7 @@ describe PeopleController do
     it "redirects to the people list" do
       Person.stub(:find) { mock_person(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(people_url)
+      response.should redirect_to(admin_people_url)
     end
   end
 

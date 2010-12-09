@@ -1,4 +1,4 @@
-class SectionsController < ApplicationController
+class Admin::SectionsController < Admin::AdminController
   # GET /sections
   # GET /sections.xml
   def index
@@ -44,7 +44,7 @@ class SectionsController < ApplicationController
 
     respond_to do |format|
       if @section.save
-        format.html { redirect_to(@section, :notice => 'Section was successfully created.') }
+        format.html { redirect_to(admin_section_path(@section), :notice => 'Section was successfully created.') }
         format.xml  { render :xml => @section, :status => :created, :location => @section }
       else
         format.html { render :action => "new" }
@@ -60,7 +60,7 @@ class SectionsController < ApplicationController
 
     respond_to do |format|
       if @section.update_attributes(params[:section])
-        format.html { redirect_to(@section, :notice => 'Section was successfully updated.') }
+        format.html { redirect_to(admin_section_path(@section), :notice => 'Section was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -76,7 +76,7 @@ class SectionsController < ApplicationController
     @section.destroy
 
     respond_to do |format|
-      format.html { redirect_to(sections_url) }
+      format.html { redirect_to(admin_sections_url) }
       format.xml  { head :ok }
     end
   end

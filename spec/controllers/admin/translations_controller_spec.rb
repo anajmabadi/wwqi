@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe TranslationsController do
+describe Admin::TranslationsController do
 
   def mock_translation(stubs={})
     @mock_translation ||= mock_model(Translation, stubs).as_null_object
@@ -50,7 +50,7 @@ describe TranslationsController do
       it "redirects to the created translation" do
         Translation.stub(:new) { mock_translation(:save => true) }
         post :create, :translation => {}
-        response.should redirect_to(translation_url(mock_translation))
+        response.should redirect_to(admin_translation_url(mock_translation))
       end
     end
 
@@ -88,7 +88,7 @@ describe TranslationsController do
       it "redirects to the translation" do
         Translation.stub(:find) { mock_translation(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(translation_url(mock_translation))
+        response.should redirect_to(admin_translation_url(mock_translation))
       end
     end
 
@@ -118,7 +118,7 @@ describe TranslationsController do
     it "redirects to the translations list" do
       Translation.stub(:find) { mock_translation(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(translations_url)
+      response.should redirect_to(admin_translations_url)
     end
   end
 

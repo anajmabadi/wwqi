@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209142945) do
+ActiveRecord::Schema.define(:version => 20101209151127) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -688,6 +688,37 @@ ActiveRecord::Schema.define(:version => 20101209142945) do
 
   add_index "repository_translations", ["name"], :name => "index_repository_translations_on_name"
   add_index "repository_translations", ["repository_id"], :name => "index_repository_translations_on_repository_id"
+
+  create_table "section_translations", :force => true do |t|
+    t.integer  "section_id"
+    t.string   "locale"
+    t.string   "title"
+    t.text     "caption"
+    t.string   "start_page_label"
+    t.string   "end_page_label"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "section_translations", ["section_id"], :name => "index_section_translations_on_section_id"
+  add_index "section_translations", ["title"], :name => "index_section_translations_on_title"
+
+  create_table "sections", :force => true do |t|
+    t.integer  "item_id",                      :null => false
+    t.integer  "start_page",                   :null => false
+    t.integer  "end_page",                     :null => false
+    t.integer  "parent_id"
+    t.boolean  "publish",    :default => true, :null => false
+    t.string   "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sections", ["end_page"], :name => "index_sections_on_end_page"
+  add_index "sections", ["item_id"], :name => "fk_sections_items"
+  add_index "sections", ["parent_id"], :name => "index_sections_on_parent_id"
+  add_index "sections", ["publish"], :name => "index_sections_on_publish"
+  add_index "sections", ["start_page"], :name => "index_sections_on_start_page"
 
   create_table "subject_translations", :force => true do |t|
     t.integer  "subject_id"

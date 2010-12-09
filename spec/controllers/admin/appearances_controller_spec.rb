@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe AppearancesController do
+describe Admin::AppearancesController do
 
   def mock_appearance(stubs={})
     @mock_appearance ||= mock_model(Appearance, stubs).as_null_object
@@ -50,7 +50,7 @@ describe AppearancesController do
       it "redirects to the created appearance" do
         Appearance.stub(:new) { mock_appearance(:save => true) }
         post :create, :appearance => {}
-        response.should redirect_to(appearance_url(mock_appearance))
+        response.should redirect_to(admin_appearance_url(mock_appearance))
       end
     end
 
@@ -88,7 +88,7 @@ describe AppearancesController do
       it "redirects to the appearance" do
         Appearance.stub(:find) { mock_appearance(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(appearance_url(mock_appearance))
+        response.should redirect_to(admin_appearance_url(mock_appearance))
       end
     end
 
@@ -118,7 +118,7 @@ describe AppearancesController do
     it "redirects to the appearances list" do
       Appearance.stub(:find) { mock_appearance(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(appearances_url)
+      response.should redirect_to(admin_appearances_url)
     end
   end
 

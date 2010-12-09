@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe RelationshipsController do
+describe Admin::RelationshipsController do
 
   def mock_relationship(stubs={})
     @mock_relationship ||= mock_model(Relationship, stubs).as_null_object
@@ -50,7 +50,7 @@ describe RelationshipsController do
       it "redirects to the created relationship" do
         Relationship.stub(:new) { mock_relationship(:save => true) }
         post :create, :relationship => {}
-        response.should redirect_to(relationship_url(mock_relationship))
+        response.should redirect_to(admin_relationship_url(mock_relationship))
       end
     end
 
@@ -88,7 +88,7 @@ describe RelationshipsController do
       it "redirects to the relationship" do
         Relationship.stub(:find) { mock_relationship(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(relationship_url(mock_relationship))
+        response.should redirect_to(admin_relationship_url(mock_relationship))
       end
     end
 
@@ -118,7 +118,7 @@ describe RelationshipsController do
     it "redirects to the relationships list" do
       Relationship.stub(:find) { mock_relationship(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(relationships_url)
+      response.should redirect_to(admin_relationships_url)
     end
   end
 

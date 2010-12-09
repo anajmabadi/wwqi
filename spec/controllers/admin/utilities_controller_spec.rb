@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe UtilitiesController do
+describe Admin::UtilitiesController do
 
   def mock_image(stubs={})
     @mock_image ||= mock_model(Image, :file_name => "test.tif").as_null_object

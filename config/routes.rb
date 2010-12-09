@@ -1,7 +1,5 @@
 Qajar::Application.routes.draw do
 
-  resources :sections
-
   get "contact/new"
 
   get "contact/confirm"
@@ -28,7 +26,8 @@ Qajar::Application.routes.draw do
       :plots,
       :comments,
       :eras,
-      :comps
+      :comps, 
+      :sections
 
     resources :items do
       collection do

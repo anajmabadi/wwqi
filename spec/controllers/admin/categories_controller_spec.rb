@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CategoriesController do
+describe Admin::CategoriesController do
 
   def mock_category(stubs={})
     @mock_category ||= mock_model(Category, stubs).as_null_object
@@ -50,7 +50,7 @@ describe CategoriesController do
       it "redirects to the created category" do
         Category.stub(:new) { mock_category(:save => true) }
         post :create, :category => {}
-        response.should redirect_to(category_url(mock_category))
+        response.should redirect_to(admin_category_url(mock_category))
       end
     end
 
@@ -88,7 +88,7 @@ describe CategoriesController do
       it "redirects to the category" do
         Category.stub(:find) { mock_category(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(category_url(mock_category))
+        response.should redirect_to(admin_category_url(mock_category))
       end
     end
 
@@ -118,7 +118,7 @@ describe CategoriesController do
     it "redirects to the categories list" do
       Category.stub(:find) { mock_category(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(categories_url)
+      response.should redirect_to(admin_categories_url)
     end
   end
 

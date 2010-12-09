@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe PagesController do
+describe Admin::PagesController do
 
   def mock_page(stubs={})
     @mock_page ||= mock_model(Page, stubs).as_null_object
@@ -50,7 +50,7 @@ describe PagesController do
       it "redirects to the created page" do
         Page.stub(:new) { mock_page(:save => true) }
         post :create, :page => {}
-        response.should redirect_to(page_url(mock_page))
+        response.should redirect_to(admin_page_url(mock_page))
       end
     end
 
@@ -88,7 +88,7 @@ describe PagesController do
       it "redirects to the page" do
         Page.stub(:find) { mock_page(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(page_url(mock_page))
+        response.should redirect_to(admin_page_url(mock_page))
       end
     end
 
@@ -118,7 +118,7 @@ describe PagesController do
     it "redirects to the pages list" do
       Page.stub(:find) { mock_page(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(pages_url)
+      response.should redirect_to(admin_pages_url)
     end
   end
 

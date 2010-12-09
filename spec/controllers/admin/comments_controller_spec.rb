@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CommentsController do
+describe Admin::CommentsController do
 
   def mock_comment(stubs={})
     @mock_comment ||= mock_model(Comment, stubs).as_null_object
@@ -50,7 +50,7 @@ describe CommentsController do
       it "redirects to the created comment" do
         Comment.stub(:new) { mock_comment(:save => true) }
         post :create, :comment => {}
-        response.should redirect_to(comment_url(mock_comment))
+        response.should redirect_to(admin_comment_url(mock_comment))
       end
     end
 
@@ -88,7 +88,7 @@ describe CommentsController do
       it "redirects to the comment" do
         Comment.stub(:find) { mock_comment(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(comment_url(mock_comment))
+        response.should redirect_to(admin_comment_url(mock_comment))
       end
     end
 
@@ -118,7 +118,7 @@ describe CommentsController do
     it "redirects to the comments list" do
       Comment.stub(:find) { mock_comment }
       delete :destroy, :id => "1"
-      response.should redirect_to(comments_url)
+      response.should redirect_to(admin_comments_url)
     end
   end
 

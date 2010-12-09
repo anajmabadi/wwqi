@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe ClassificationsController do
+describe Admin::ClassificationsController do
 
   def mock_classification(stubs={})
     @mock_classification ||= mock_model(Classification, stubs).as_null_object
@@ -50,7 +50,7 @@ describe ClassificationsController do
       it "redirects to the created classification" do
         Classification.stub(:new) { mock_classification(:save => true) }
         post :create, :classification => {}
-        response.should redirect_to(classification_url(mock_classification))
+        response.should redirect_to(admin_classification_url(mock_classification))
       end
     end
 
@@ -88,7 +88,7 @@ describe ClassificationsController do
       it "redirects to the classification" do
         Classification.stub(:find) { mock_classification(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(classification_url(mock_classification))
+        response.should redirect_to(admin_classification_url(mock_classification))
       end
     end
 
@@ -118,7 +118,7 @@ describe ClassificationsController do
     it "redirects to the classifications list" do
       Classification.stub(:find) { mock_classification(:destroy => true) }
       delete :destroy, :id => "1"
-      response.should redirect_to(classifications_url)
+      response.should redirect_to(admin_classifications_url)
     end
   end
 
