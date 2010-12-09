@@ -1,0 +1,39 @@
+<h1>Listing sections</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Caption</th>
+    <th>Start page</th>
+    <th>Start page label</th>
+    <th>End page</th>
+    <th>End page label</th>
+    <th>Parent</th>
+    <th>Publish</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @sections.each do |section| %>
+  <tr>
+    <td><%= section.title %></td>
+    <td><%= section.caption %></td>
+    <td><%= section.start_page %></td>
+    <td><%= section.start_page_label %></td>
+    <td><%= section.end_page %></td>
+    <td><%= section.end_page_label %></td>
+    <td><%= section.parent_id %></td>
+    <td><%= section.publish %></td>
+    <td><%= section.notes %></td>
+    <td><%= link_to 'Show', section %></td>
+    <td><%= link_to 'Edit', edit_section_path(section) %></td>
+    <td><%= link_to 'Destroy', section, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Section', new_section_path %>

@@ -1,5 +1,7 @@
 Qajar::Application.routes.draw do
 
+  resources :sections
+
   get "contact/new"
 
   get "contact/confirm"
