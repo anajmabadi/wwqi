@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe CompsController do
+describe Admin::CompsController do
 
   def mock_comp(stubs={})
     (@mock_comp ||= mock_model(Comp).as_null_object).tap do |comp|
@@ -52,7 +52,7 @@ describe CompsController do
       it "redirects to the created comp" do
         Comp.stub(:new) { mock_comp(:save => true) }
         post :create, :comp => {}
-        response.should redirect_to(comp_url(mock_comp))
+        response.should redirect_to(admin_comp_url(mock_comp))
       end
     end
 
@@ -90,7 +90,7 @@ describe CompsController do
       it "redirects to the comp" do
         Comp.stub(:find) { mock_comp(:update_attributes => true) }
         put :update, :id => "1"
-        response.should redirect_to(comp_url(mock_comp))
+        response.should redirect_to(admin_comp_url(mock_comp))
       end
     end
 
@@ -120,7 +120,7 @@ describe CompsController do
     it "redirects to the comps list" do
       Comp.stub(:find) { mock_comp }
       delete :destroy, :id => "1"
-      response.should redirect_to(comps_url)
+      response.should redirect_to(admin_comps_url)
     end
   end
 

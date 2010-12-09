@@ -1,6 +1,15 @@
-<h1>Editing comp</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = session[:admin_comps_index_url] ||= admin_comps_path %>
+<% @show_path = admin_comp_path(@comp) %>
 
-<%= link_to 'Show', @comp %> |
-<%= link_to 'Back', comps_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

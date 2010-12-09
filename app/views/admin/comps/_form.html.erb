@@ -1,4 +1,7 @@
-<%= form_for(@comp) do |f| %>
+<%= form_for([:admin, @comp]) do |f| %>
+  <table class="global" width="80%" cellpadding="0" cellspacing="0">
+    <tr>
+      <td>
   <% if @comp.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@comp.errors.count, "error") %> prohibited this comp from being saved:</h2>
@@ -16,8 +19,8 @@
     <%= f.text_field :item_id %>
   </div>
   <div class="field">
-    <%= f.label :comps_id %><br />
-    <%= f.text_field :comps_id %>
+    <%= f.label :comp_id %><br />
+    <%= f.text_field :comp_id %>
   </div>
   <div class="field">
     <%= f.label :position %><br />
@@ -34,4 +37,7 @@
   <div class="actions">
     <%= f.submit %>
   </div>
+  </tr>
+  </td>
+  </table>
 <% end %>
