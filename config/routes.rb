@@ -27,7 +27,10 @@ Qajar::Application.routes.draw do
       :comments,
       :eras,
       :comps, 
-      :sections
+      :sections,
+      :appellations,
+      :relationships,
+      :people
 
     resources :items do
       collection do
@@ -56,10 +59,6 @@ Qajar::Application.routes.draw do
       resources :panels
     end
 
-    resources :people do
-      resources :appellations
-      resources :relationships
-    end
   end
 
   # The priority is based upon order of creation:

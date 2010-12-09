@@ -60,7 +60,7 @@ describe Admin::SectionsController do
       it "assigns a newly created but unsaved section as @section" do
         Section.stub(:new).with({'these' => 'params'}) { mock_section(:save => false) }
         post :create, :section => {'these' => 'params'}
-        assigns(:section).should be(admin_mock_section)
+        assigns(:section).should be(mock_section)
       end
 
       it "re-renders the 'new' template" do
