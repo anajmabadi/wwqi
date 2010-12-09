@@ -26,3 +26,12 @@ Feature: an authorized user should be able to CRUD an item
       And I have an item titled "Sample Item"
       When I edit an item titled "Sample Item"
       Then I should have an item titled "New Title"
+      
+    #@javascript      
+    #Scenario: Adding a comp to an item
+     # Given I speak English
+      #And I have items
+      #When I go to the admin_items page
+      #And I follow "Arghavan Baji"
+      #And I add a comp titled "Chador"
+      #Then I should see "Unknown woman to Jahan Ara Hajiyah Khanum"

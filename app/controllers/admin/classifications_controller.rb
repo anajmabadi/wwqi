@@ -30,8 +30,8 @@ class Admin::ClassificationsController < Admin::AdminController
   # GET /classifications/new.xml
   def new
     @classification = Classification.new
-    @items = get_menu_items
-    @subjects = get_menu_subjects
+    @items = Item.select_list
+    @subjects = Subject.select_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @classification }
@@ -41,16 +41,16 @@ class Admin::ClassificationsController < Admin::AdminController
   # GET /classifications/1/edit
   def edit
     @classification = Classification.find(params[:id])
-    @items = get_menu_items
-    @subjects = get_menu_subjects
+    @items = Item.select_list
+    @subjects = Subject.select_list
   end
 
   # POST /classifications
   # POST /classifications.xml
   def create
     @classification = Classification.new(params[:classification])
-    @items = get_menu_items
-    @subjects = get_menu_subjects
+    @items = Item.select_list
+    @subjects = Subject.select_list
     @item = @classification.item
     respond_to do |format|
       if @classification.save
@@ -69,8 +69,8 @@ class Admin::ClassificationsController < Admin::AdminController
   # PUT /classifications/1.xml
   def update
     @classification = Classification.find(params[:id])
-    @items = get_menu_items
-    @subjects = get_menu_subjects
+    @items = Item.select_list
+    @subjects = Subject.select_list
     respond_to do |format|
       if @classification.update_attributes(params[:classification])
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully updated.') }
@@ -97,17 +97,4 @@ class Admin::ClassificationsController < Admin::AdminController
     end
   end
 
-  private
-
-  def get_menu_items
-    return Item.find(:all, :order => 'items.id').map do |i|
-      [truncate(i.title)+' ['+i.id.to_s + ']', i.id]
-    end
-  end
-
-  def get_menu_subjects
-    return Subject.find(:all, :include => :translations, :order => 'subject_translations.locale, subject_translations.name').map do |i|
-      [truncate(i.name)+' ['+i.id.to_s + ']',i.id]
-    end
-  end
 end

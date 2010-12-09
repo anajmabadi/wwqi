@@ -28,6 +28,12 @@ When /^I edit an item titled "([^"]*)"$/ do |arg1|
   click_button 'Update Item'
 end
 
+When /^I add a comp titled "([^"]*)"$/ do |arg1|
+  #click_button 'Add Comparable Item'
+  #select 'Comp', :with => arg1
+  #click_button 'Create Comp'
+end
+
 Then /^I should have an item titled "([^"]*)"$/ do |arg1|
   visit admin_items_path
   click_link arg1

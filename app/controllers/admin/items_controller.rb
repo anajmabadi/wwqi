@@ -178,7 +178,7 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
 
-  # remote functions for showing and hiding the add plot form
+  # remote functions for showing and hiding the add appearance form
   def show_add_appearance_to_item
     # retrieve @appearances for instant additions
     @item = Item.find(params[:id])
@@ -276,6 +276,32 @@ class Admin::ItemsController < Admin::AdminController
 
   def hide_add_classification_to_item
     @classification = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+  
+  # remote functions for showing and hiding the add comp form
+  def show_add_comp_to_item
+    # retrieve items for instant additions
+    @item = Item.find(params[:id])
+    @items = Item.select_list
+    @max_position = Comp.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+    @comp = Comp.new(
+      :item_id => params[:id],
+      :publish => true,
+      :position => @max_position + 1
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_comp_to_item
+    @comp = nil
     @item = Item.find(params[:id])
     respond_to do |format|
       format.html { render :action => "show", :id => @item }

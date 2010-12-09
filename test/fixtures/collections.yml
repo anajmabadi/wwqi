@@ -36,42 +36,18 @@ collections_002:
   contact: ""
   notes: ""
   created_at: 2010-03-30 16:00:17
-  updated_at: 2010-09-22 15:45:35
+  updated_at: 2010-12-06 16:52:51
   publish: "0"
   private: "0"
   items_count: "15"
   finding_aid: "0"
-  lock_version: "0"
-  acquired_on: 
+  lock_version: "3"
+  acquired_on: "2010-06-03"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: "Items in collection were acquired on three separate occasions. Nahid donated 15 photographs on July 29, 2009. Afsaneh acquired documents in Iran on June 3, 2010. Finally, Afsaneh and Nahid collected several additional photographs and an oral history August 4, 2010. "
 collections_003: 
-  id: "3"
-  address: ""
-  address2: ""
-  city: ""
-  state_province: ""
-  postal_code: ""
-  telephone: ""
-  email: ""
-  website: ""
-  contact: ""
-  notes: ""
-  created_at: 2010-03-30 16:00:46
-  updated_at: 2010-09-16 14:43:19
-  publish: "1"
-  private: "0"
-  items_count: "3"
-  finding_aid: "0"
-  lock_version: "0"
-  acquired_on: 
-  interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_004: 
   id: "4"
   address: ""
   address2: ""
@@ -82,20 +58,20 @@ collections_004:
   email: ""
   website: ""
   contact: ""
-  notes: "The photographs come from the collection of Mr. Joel Montague, a private collector, of Wellesley, Massachusetts. Mr. Montague has a collection of 200+ photographs from Iran, most dating to the early twentieth century. The collection largely consists of photographic reproductions of portraits of constitutional era figures. These were acquired in the form of an album from a dealer in the Friday bazaar, probably in the early 1970s. In addition, Mr. Montague has acquired 20-30 original photographs of the \xE2\x80\x98cabinet card\xE2\x80\x99 and \xE2\x80\x98carte visite\xE2\x80\x99 variety, many from the same dealer. These were purchased individually over several years, starting in the 1960s."
+  notes: ""
   created_at: 2010-03-30 16:01:47
-  updated_at: 2010-11-18 22:28:59
+  updated_at: 2010-12-06 17:39:04
   publish: "1"
   private: "0"
   items_count: "8"
   finding_aid: "0"
-  lock_version: "2"
-  acquired_on: 
+  lock_version: "3"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_005: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: "The photographs come from the collection of Mr. Joel Montague, a private collector, of Wellesley, Massachusetts. Mr. Montague has a collection of 200+ photographs from Iran, most dating to the early twentieth century. The collection largely consists of photographic reproductions of portraits of constitutional era figures. These were acquired in the form of an album from a dealer in the Friday bazaar, probably in the early 1970s. In addition, Mr. Montague has acquired 20-30 original photographs of the \xE2\x80\x98cabinet card\xE2\x80\x99 and \xE2\x80\x98carte visite\xE2\x80\x99 variety, many from the same dealer. These were purchased individually over several years, starting in the 1960s."
+collections_004: 
   id: "5"
   address: ""
   address2: ""
@@ -108,18 +84,18 @@ collections_005:
   contact: ""
   notes: "Audio needs to be logged, edited and uploaded. "
   created_at: 2010-03-30 17:32:34
-  updated_at: 2010-11-18 22:15:42
+  updated_at: 2010-12-06 17:41:15
   publish: "1"
   private: "0"
   items_count: "8"
   finding_aid: "0"
-  lock_version: "1"
-  acquired_on: 
+  lock_version: "2"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_006: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_005: 
   id: "6"
   address: ""
   address2: ""
@@ -143,7 +119,7 @@ collections_006:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
-collections_007: 
+collections_006: 
   id: "7"
   address: ""
   address2: ""
@@ -156,18 +132,18 @@ collections_007:
   contact: ""
   notes: ""
   created_at: 2010-03-30 17:33:11
-  updated_at: 2010-09-22 15:46:14
+  updated_at: 2010-12-06 18:12:12
   publish: "0"
   private: "0"
   items_count: "0"
   finding_aid: "0"
-  lock_version: "0"
-  acquired_on: 
+  lock_version: "1"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_008: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_007: 
   id: "8"
   address: ""
   address2: ""
@@ -180,18 +156,18 @@ collections_008:
   contact: ""
   notes: ""
   created_at: 2010-03-30 17:33:45
-  updated_at: 2010-03-30 17:37:56
+  updated_at: 2010-12-06 17:54:51
   publish: "1"
   private: "0"
   items_count: "215"
   finding_aid: "1"
-  lock_version: "0"
-  acquired_on: 
+  lock_version: "2"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_009: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_008: 
   id: "9"
   address: ""
   address2: ""
@@ -204,18 +180,18 @@ collections_009:
   contact: ""
   notes: ""
   created_at: 2010-03-30 17:33:59
-  updated_at: 2010-03-30 17:38:21
+  updated_at: 2010-12-06 18:02:05
   publish: "1"
   private: "0"
   items_count: "13"
   finding_aid: "0"
-  lock_version: "0"
-  acquired_on: 
+  lock_version: "1"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_010: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_009: 
   id: "10"
   address: ""
   address2: ""
@@ -239,7 +215,7 @@ collections_010:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
-collections_011: 
+collections_010: 
   id: "11"
   address: ""
   address2: ""
@@ -252,18 +228,18 @@ collections_011:
   contact: ""
   notes: Image captions need to be checked (MEQ). Audio needs to be logged, edited and uploaded. 7 items.
   created_at: 2010-07-08 17:23:40
-  updated_at: 2010-11-18 22:15:29
+  updated_at: 2010-12-06 18:04:26
   publish: "1"
   private: "0"
   items_count: "7"
   finding_aid: "0"
-  lock_version: "1"
-  acquired_on: 
+  lock_version: "2"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_012: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_011: 
   id: "12"
   address: ""
   address2: ""
@@ -276,18 +252,18 @@ collections_012:
   contact: ""
   notes: ""
   created_at: 2010-07-08 17:28:32
-  updated_at: 2010-07-22 16:31:36
+  updated_at: 2010-12-06 17:32:24
   publish: "1"
   private: "0"
-  items_count: "128"
+  items_count: "129"
   finding_aid: "0"
-  lock_version: "1"
-  acquired_on: 
+  lock_version: "8"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_013: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_012: 
   id: "13"
   address: ""
   address2: ""
@@ -302,18 +278,18 @@ collections_013:
     Khayrat-i hisan will be linked to the record in Harvard. The object will not actually be accessed through WWQI. Matt needs to add additional catalog information for the other items. 
     Number of item: 3 (4)
   created_at: 2010-07-08 17:29:31
-  updated_at: 2010-11-18 22:10:52
+  updated_at: 2010-12-06 18:06:17
   publish: "1"
   private: "0"
   items_count: "6"
   finding_aid: "0"
-  lock_version: "1"
-  acquired_on: 
+  lock_version: "2"
+  acquired_on: "2010-12-06"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
-collections_014: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_013: 
   id: "15"
   address: ""
   address2: ""
@@ -337,7 +313,7 @@ collections_014:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
-collections_015: 
+collections_014: 
   id: "16"
   address: ""
   address2: ""
@@ -361,3 +337,51 @@ collections_015:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
+collections_015: 
+  id: "17"
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
+  created_at: 2010-12-06 18:26:03
+  updated_at: 2010-12-06 18:26:03
+  publish: "0"
+  private: "0"
+  items_count: "0"
+  finding_aid: "0"
+  lock_version: "0"
+  acquired_on: "2010-12-06"
+  interview_id: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+collections_016: 
+  id: "18"
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
+  created_at: 2010-12-06 18:33:35
+  updated_at: 2010-12-06 18:34:23
+  publish: "0"
+  private: "0"
+  items_count: "0"
+  finding_aid: "0"
+  lock_version: "1"
+  acquired_on: "2010-12-06"
+  interview_id: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""

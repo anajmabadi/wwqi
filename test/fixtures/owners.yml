@@ -18,21 +18,21 @@ owners_001:
   private: "0"
 owners_002: 
   id: "2"
-  address: ""
-  address2: ""
-  state_province: ""
-  postal_code: ""
-  country: ""
-  telephone: ""
-  email: ""
-  url: ""
+  address: 
+  address2: 
+  state_province: 
+  postal_code: 
+  country: 
+  telephone: 
+  email: 
+  url: 
   contact: Bahram Sheikholeslami
-  terms: ""
+  terms: 
   notes: 
   created_at: 2010-05-04 16:25:43
-  updated_at: 2010-12-02 14:40:29
-  lock_version: "1"
-  private: "1"
+  updated_at: 2010-05-04 16:25:46
+  lock_version: "0"
+  private: "0"
 owners_003: 
   id: "3"
   address: ""
@@ -52,20 +52,20 @@ owners_003:
   private: "0"
 owners_004: 
   id: "4"
-  address: 
-  address2: 
-  state_province: 
-  postal_code: 
-  country: 
-  telephone: 
-  email: 
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
   url: http://www.harvard.edu
-  contact: 
-  terms: 
+  contact: ""
+  terms: ""
   notes: 
   created_at: 
-  updated_at: 
-  lock_version: "0"
+  updated_at: 2010-12-06 18:07:54
+  lock_version: "1"
   private: "0"
 owners_005: 
   id: "5"
@@ -86,18 +86,239 @@ owners_005:
   private: "0"
 owners_006: 
   id: "6"
-  address: dafsdf
-  address2: asdf
-  state_province: asdf
-  postal_code: asdf
-  country: asdf
-  telephone: asdf
-  email: cforcey@historicusinc.com
-  url: www.tom.cole.com
+  address: "1421 Linden Ave. "
+  address2: ""
+  state_province: Glendale, CA
+  postal_code: "91201"
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
   contact: ""
   terms: ""
   notes: 
-  created_at: 2010-12-02 14:43:32
-  updated_at: 2010-12-02 14:43:32
+  created_at: 2010-12-06 17:08:50
+  updated_at: 2010-12-06 17:08:50
+  lock_version: "0"
+  private: "1"
+owners_007: 
+  id: "7"
+  address: Cruquiusweg 31
+  address2: ""
+  state_province: Amsterdam
+  postal_code: "1019 AT "
+  country: The Netherlands
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 17:13:06
+  updated_at: 2010-12-06 17:13:06
+  lock_version: "0"
+  private: "1"
+owners_008: 
+  id: "8"
+  address: 24 Maugus Ave.
+  address2: Wellesley
+  state_province: MA
+  postal_code: 02481
+  country: U.S.
+  telephone: ""
+  email: joelmontague@hotmail.com
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 17:40:59
+  updated_at: 2010-12-06 17:40:59
+  lock_version: "0"
+  private: "1"
+owners_009: 
+  id: "9"
+  address: 1854 Falcon Ridge Dr.
+  address2: Petaluma
+  state_province: CA
+  postal_code: "94954"
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 17:44:48
+  updated_at: 2010-12-06 17:44:48
+  lock_version: "0"
+  private: "1"
+owners_010: 
+  id: "10"
+  address: Santa Barbara
+  address2: ""
+  state_province: CA
+  postal_code: ""
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:01:35
+  updated_at: 2010-12-06 18:01:35
+  lock_version: "0"
+  private: "1"
+owners_011: 
+  id: "11"
+  address: Austin
+  address2: ""
+  state_province: TX
+  postal_code: ""
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:05:27
+  updated_at: 2010-12-06 18:05:27
+  lock_version: "0"
+  private: "1"
+owners_012: 
+  id: "12"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:08:44
+  updated_at: 2010-12-06 18:08:44
+  lock_version: "0"
+  private: "1"
+owners_013: 
+  id: "13"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:26:39
+  updated_at: 2010-12-06 18:26:39
+  lock_version: "0"
+  private: "1"
+owners_014: 
+  id: "14"
+  address: "35 Willow Lane "
+  address2: "Sausalito "
+  state_province: CA
+  postal_code: ""
+  country: U.S.
+  telephone: 415-887-9489
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:32:25
+  updated_at: 2010-12-06 18:32:25
+  lock_version: "0"
+  private: "1"
+owners_015: 
+  id: "15"
+  address: 1050 North Point Street, Fontana West Bldg.
+  address2: San francisco
+  state_province: CA
+  postal_code: "94109"
+  country: U.S.
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:38:16
+  updated_at: 2010-12-06 18:38:16
+  lock_version: "0"
+  private: "1"
+owners_016: 
+  id: "16"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:39:29
+  updated_at: 2010-12-06 18:39:29
+  lock_version: "0"
+  private: "1"
+owners_017: 
+  id: "17"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:39:51
+  updated_at: 2010-12-06 18:39:51
+  lock_version: "0"
+  private: "1"
+owners_018: 
+  id: "18"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:40:41
+  updated_at: 2010-12-06 18:40:41
+  lock_version: "0"
+  private: "1"
+owners_019: 
+  id: "19"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-06 18:41:18
+  updated_at: 2010-12-06 18:41:18
   lock_version: "0"
   private: "1"

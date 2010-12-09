@@ -16,3 +16,11 @@ Feature: Overview page for the administration of the site
 				And I follow "Utilities"
 			Then I should be on the admin_utilities page
 				And I should see "Utilities"
+				
+    Scenario: offer a comps page from the administration menu
+      Given I speak English
+        And I have pages
+      When I go to the admin page
+        And I follow "Comps"
+      Then I should be on the admin_comps page
+        And I should see "Comps"

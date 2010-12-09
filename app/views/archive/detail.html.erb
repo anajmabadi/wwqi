@@ -92,6 +92,18 @@
                     <td><%= @item.dimension_label %></td>
                 </tr>
                 <% end %>
+                <% unless @item.comps.nil? %>
+                <tr>
+                    <th><%= t(:see_also) %></th>
+                    <td>
+                    <ul>
+                      <% @item.comps.each do |comp| -%>
+                        <li><%= link_to comp.comp.title, archive_detail_path(comp.comp_id) %></li>
+                      <% end -%>
+                    </ul>
+                    </td>
+                </tr>
+                <% end %>
             </table>
             <% unless @item.clips.empty? %>
             <% clip = @item.clips[0] -%>

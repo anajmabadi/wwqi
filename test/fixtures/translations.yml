@@ -3801,3 +3801,23 @@ translations_380:
   created_at: 2010-11-23 09:02:43
   updated_at: 
   lock_version: "0"
+translations_381: 
+  id: "394"
+  locale: en
+  key: see_also
+  value: See Also
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-09 00:01:09
+  updated_at: 
+  lock_version: "0"
+translations_382: 
+  id: "395"
+  locale: fa
+  key: see_also
+  value: "\xD9\x87\xD9\x85\xDA\x86\xD9\x86\xDB\x8C\xD9\x86 \xD8\xA8\xD8\xA8\xDB\x8C\xD9\x86\xDB\x8C\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-09 00:01:40
+  updated_at: 
+  lock_version: "0"

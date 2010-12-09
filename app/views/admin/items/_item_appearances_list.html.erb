@@ -1,12 +1,12 @@
 <span>
-    <div id="item_appearances_list">
     <h3>People Appearances:</h3>
-      <ul>
+    <ul>
         <% unless appearances.empty? -%>
-          <%= render(appearances) %>
+        <%= render(appearances) %>
         <% else -%>
-          <li>No appearances.</li>
+        <li>
+            No appearances.
+        </li>
         <% end -%>
-      </ul>
-  </div>
+    </ul>
 </span>

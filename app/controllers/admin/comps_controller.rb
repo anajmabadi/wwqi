@@ -41,14 +41,17 @@ class Admin::CompsController < Admin::AdminController
   # POST /comps.xml
   def create
     @comp = Comp.new(params[:comp])
-
+    @items = Item.select_list
+    @item = @comp.item
     respond_to do |format|
       if @comp.save
         format.html { redirect_to(admin_comp_path(@comp), :notice => 'Comp was successfully created.') }
         format.xml  { render :xml => @comp, :status => :created, :location => @comp }
+        format.js { render :template => 'admin/items/add_comp_to_item' }
       else
         format.html { render :action => "new" }
         format.xml  { render :xml => @comp.errors, :status => :unprocessable_entity }
+        format.js { render :template => 'admin/items/add_comp_to_item' }
       end
     end
   end
@@ -73,10 +76,13 @@ class Admin::CompsController < Admin::AdminController
   # DELETE /comps/1.xml
   def destroy
     @comp = Comp.find(params[:id])
+    @item = @comp.item
     @comp.destroy
+    @comp = nil
 
     respond_to do |format|
       format.html { redirect_to(admin_comps_url) }
+      format.js { render :template => 'admin/items/remove_comp_from_item' }
       format.xml  { head :ok }
     end
   end
