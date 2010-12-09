@@ -122,16 +122,16 @@
     <tr>
         <td>
         <div class="field">
-            <%= f.label :creator_id %>
+            <%= f.label :owner_id %>
             <br />
-            <%= f.select :creator_id, Person.select_list, {:include_blank => true} %>
+            <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
         </div>
         </td>
         <td>
         <div class="field">
-            <%= f.label :owner_id %>
+            <%= f.label :owner_tag %>
             <br />
-            <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
+            <%= f.text_field :owner_tag %>
         </div>
         </td>
     </tr>

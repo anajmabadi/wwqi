@@ -75,6 +75,13 @@
                     </td>
                 </tr>
                 <tr>
+                    <td colspan="2">
+                    <b>Owner Tag:</b>
+                    <%= @item.owner_tag unless @item.owner_tag.nil? %>
+                    </td>
+                </tr>
+                <tr>
+
                     <td>
                     <b>Collection_en:</b>
                     <%= @item.collection.name_en unless @item.collection.nil? %>
