@@ -290,8 +290,11 @@ class Item < ActiveRecord::Base
   def set_sensible_date_defaults
     
     # set the source year if needed
-    self.year = self.era.year if self.year.blank? && !self.era.nil?
-    
+    if self.year.blank? && !self.era.nil?
+      self.year = self.era.year 
+      self.calendar_type_id = 1
+    end
+      
     if self.sort_year.blank?
       # check source years
       unless self.year.blank?
