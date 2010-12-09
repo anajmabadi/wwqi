@@ -1,0 +1,11 @@
+<span><div id="item_comps_list">
+    <h3>Comps:</h3>
+      <ul>
+        <% unless comps.empty? -%>
+          <%= render(comps) %>
+        <% else -%>
+          <li>No comps.</li>
+        <% end -%>
+      </ul>
+  </div>
+</span>

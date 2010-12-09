@@ -1,0 +1,44 @@
+<span>
+    <hr />
+    <%= form_for(['admin', comp], :remote => true) do |f| %>
+    <% if comp.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(comp.errors.count, "error") %> prohibited this comp from being saved:</h2>
+        <ul>
+            <% comp.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+    <%= f.hidden_field(:item_id) %>
+
+    <div class="field">
+        <%= f.label :comp %>
+        <br />
+        <%= f.select :comp_id, @items %>
+    </div>
+    <div class="field">
+        <%= f.label :publish %>
+        <br />
+        <%= f.check_box :publish %>
+    </div>
+    <div class="field">
+        <%= f.label :position %>
+        <br />
+        <%= f.text_field :position %>
+    </div>
+    <div class="field">
+        <%= f.label :notes %>
+        <br />
+        <%= f.text_area :notes, :rows=>3 %>
+    </div>
+    <div class="actions">
+        <%= f.submit %>
+    </div>
+    <% end %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_comp_to_item', :id => item.id }, :remote => true %>
+</span>
