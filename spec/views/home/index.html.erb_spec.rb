@@ -4,14 +4,16 @@ require 'home_helper'
 describe "home/index.html.erb" do
   
   before(:each) do
-    assigns[:about_page] = stub("Page", :title => 'About', :body => '<p>Hello World!</p>')
-    assigns[:featured_exhibit] = stub("Exhibition", :title => 'Sample Exhibit', :description => "Sample Description", :featured => true)
+    assign(:about_page, stub_model(Page,
+        :title => "About",
+        :caption => "<p>Hello world.</p>",
+        :publish => true
+      ))
   end   
   
   it "displays the correct title and about message" do
     render
-    response.should contain("About")
-    response.should containt("Hello World")
+    response.should contain("Hello world")
   end  
   
 end
