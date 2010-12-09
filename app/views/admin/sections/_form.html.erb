@@ -18,7 +18,17 @@
         <div class="field">
             <%= f.label :item_id %>
             <br />
-            <%= f.text_field :item_id %>
+            <%= f.select :item_id, @items %>
+        </div>
+        <div class="field">
+            <%= f.label :start_page %>*
+            <br />
+            <%= f.text_field :start_page %>
+        </div>
+        <div class="field">
+            <%= f.label :end_page %>*
+            <br />
+            <%= f.text_field :end_page %>
         </div>
         <div class="field">
             <%= f.label :title %>
@@ -31,19 +41,9 @@
             <%= f.text_area :caption %>
         </div>
         <div class="field">
-            <%= f.label :start_page %>
-            <br />
-            <%= f.text_field :start_page %>
-        </div>
-        <div class="field">
             <%= f.label :start_page_label %>
             <br />
             <%= f.text_field :start_page_label %>
-        </div>
-        <div class="field">
-            <%= f.label :end_page %>
-            <br />
-            <%= f.text_field :end_page %>
         </div>
         <div class="field">
             <%= f.label :end_page_label %>

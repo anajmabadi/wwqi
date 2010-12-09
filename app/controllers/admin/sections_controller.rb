@@ -26,6 +26,7 @@ class Admin::SectionsController < Admin::AdminController
   def new
     @section = Section.new
 
+    @items = Item.select_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @section }
@@ -35,6 +36,8 @@ class Admin::SectionsController < Admin::AdminController
   # GET /sections/1/edit
   def edit
     @section = Section.find(params[:id])
+    
+    @items = Item.select_list
   end
 
   # POST /sections
@@ -61,6 +64,7 @@ class Admin::SectionsController < Admin::AdminController
   def update
     @section = Section.find(params[:id])
 
+    @items = Item.select_list
     respond_to do |format|
       if @section.update_attributes(params[:section])
         format.html { redirect_to(admin_section_path(@section), :notice => 'Section was successfully updated.') }

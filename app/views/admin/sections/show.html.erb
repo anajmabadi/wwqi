@@ -7,7 +7,18 @@
         <table class="global" width="80%" cellpadding="0" cellspacing="0">
             <tr>
                 <td>
-
+                <p>
+                    <b>Item:</b>
+                    <%= @section.item.to_label %>
+                </p>
+                <p>
+                    <b>Start page:</b>
+                    <%= @section.start_page %>
+                </p>
+                <p>
+                    <b>End page:</b>
+                    <%= @section.end_page %>
+                </p>
                 <p>
                     <b>Title:</b>
                     <%= @section.title %>
@@ -17,16 +28,8 @@
                     <%= @section.caption %>
                 </p>
                 <p>
-                    <b>Start page:</b>
-                    <%= @section.start_page %>
-                </p>
-                <p>
                     <b>Start page label:</b>
                     <%= @section.start_page_label %>
-                </p>
-                <p>
-                    <b>End page:</b>
-                    <%= @section.end_page %>
                 </p>
                 <p>
                     <b>End page label:</b>

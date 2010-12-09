@@ -15,6 +15,10 @@
     <% end -%>
 
     <%= f.hidden_field(:item_id) %>
+    <div class="field">
+        <%= f.label :start_page %>:* <%= f.text_field :start_page, :size => 5 %>
+        <%= f.label :end_page %>:* <%= f.text_field :end_page, :size => 5 %>
+    </div>
 
     <div class="field">
         <%= f.label :title_en %>:
@@ -33,18 +37,12 @@
         <%= f.text_area :caption_fa, :rows => 1, :class => 'persianOnly' %>
     </div>
     <div class="field">
-        <%= f.label :start_page %>: <%= f.text_field :start_page, :size => 5 %>
-    </div>
-    <div class="field">
         <%= f.label :start_page_label_en %>:
         <%= f.text_area :start_page_label_en, :rows => 1 %>
     </div>
     <div class="field">
         <%= f.label :start_page_label_fa %>:
         <%= f.text_area :start_page_label_fa, :rows => 1, :class => 'persianOnly' %>
-    </div>
-    <div class="field">
-        <%= f.label :end_page %>: <%= f.text_field :end_page, :size => 5 %>
     </div>
     <div class="field">
         <%= f.label :end_page_label_en %>:
@@ -64,4 +62,5 @@
     </div>
     <% end -%>
     <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_section_to_item', :id => item.id }, :remote => true %>
+    <p>* Required fields. </p>
 </span>
