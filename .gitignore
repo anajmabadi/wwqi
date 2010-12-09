@@ -8,3 +8,4 @@ tmp/**/*
 .project
 config/database.yml
 tmp/*
+webrat.log
