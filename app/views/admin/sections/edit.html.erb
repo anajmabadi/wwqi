@@ -1,6 +1,15 @@
-<h1>Editing section</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = 'Sections | Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = session[:admin_sections_index_url] ||= admin_sections_path %>
+<% @show_path = admin_section_path(@section) %>
 
-<%= link_to 'Show', @section %> |
-<%= link_to 'Back', sections_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

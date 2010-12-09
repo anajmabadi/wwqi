@@ -1,8 +1,9 @@
 require 'spec_helper'
 
-describe "sections/new.html.erb" do
+describe "admin/sections/new.html.erb" do
   before(:each) do
     assign(:section, stub_model(Section,
+      :item_id => 1,
       :title => "MyString",
       :caption => "MyText",
       :start_page => 1,
@@ -19,7 +20,8 @@ describe "sections/new.html.erb" do
     render
 
     # Run the generator again with the --webrat flag if you want to use webrat matchers
-    assert_select "form", :action => sections_path, :method => "post" do
+    assert_select "form", :action => admin_sections_path, :method => "post" do
+      assert_select "input#section_item_id", :name => "section[item_id]"
       assert_select "input#section_title", :name => "section[title]"
       assert_select "textarea#section_caption", :name => "section[caption]"
       assert_select "input#section_start_page", :name => "section[start_page]"

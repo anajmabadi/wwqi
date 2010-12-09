@@ -1,50 +1,51 @@
-<p id="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Title:</b>
-  <%= @section.title %>
-</p>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :section => @section %>
+        <table class="global" width="80%" cellpadding="0" cellspacing="0">
+            <tr>
+                <td>
 
-<p>
-  <b>Caption:</b>
-  <%= @section.caption %>
-</p>
-
-<p>
-  <b>Start page:</b>
-  <%= @section.start_page %>
-</p>
-
-<p>
-  <b>Start page label:</b>
-  <%= @section.start_page_label %>
-</p>
-
-<p>
-  <b>End page:</b>
-  <%= @section.end_page %>
-</p>
-
-<p>
-  <b>End page label:</b>
-  <%= @section.end_page_label %>
-</p>
-
-<p>
-  <b>Parent:</b>
-  <%= @section.parent_id %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @section.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @section.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_section_path(@section) %> |
-<%= link_to 'Back', sections_path %>
+                <p>
+                    <b>Title:</b>
+                    <%= @section.title %>
+                </p>
+                <p>
+                    <b>Caption:</b>
+                    <%= @section.caption %>
+                </p>
+                <p>
+                    <b>Start page:</b>
+                    <%= @section.start_page %>
+                </p>
+                <p>
+                    <b>Start page label:</b>
+                    <%= @section.start_page_label %>
+                </p>
+                <p>
+                    <b>End page:</b>
+                    <%= @section.end_page %>
+                </p>
+                <p>
+                    <b>End page label:</b>
+                    <%= @section.end_page_label %>
+                </p>
+                <p>
+                    <b>Parent:</b>
+                    <%= @section.parent_id %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @section.publish %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @section.notes %>
+                </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

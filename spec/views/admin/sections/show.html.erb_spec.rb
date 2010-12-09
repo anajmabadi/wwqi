@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe "sections/show.html.erb" do
+describe "admin/sections/show.html.erb" do
   before(:each) do
     @section = assign(:section, stub_model(Section,
       :title => "Title",
