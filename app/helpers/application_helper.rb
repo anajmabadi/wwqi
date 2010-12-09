@@ -1,5 +1,9 @@
 module ApplicationHelper
 
+  def floatstrip(x)
+    return x == x.to_i ? x.to_i.to_s : x.to_s
+  end
+    
   def sort_link(title, column, options = {})
     condition = options[:unless] if options.has_key?(:unless)
     sort_dir = params[:d] == 'up' ? 'down' : 'up'
