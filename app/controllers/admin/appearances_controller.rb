@@ -48,12 +48,12 @@ class Admin::AppearancesController < Admin::AdminController
         @items = Item.select_list
         @people = Person.select_list
         @item = @appearance.item
-
+        @persian_focus = !params[:persian_focus].blank? && params[:persian_focus]="true" ? true : false 
         respond_to do |format|
             if @appearance.save
                 format.html { redirect_to(admin_appearance_path(@appearance), :notice => 'Appearance was successfully created.') }
                 format.js { render :template => 'admin/items/add_appearance_to_item' }
-                format.xml  { render :xml => @appearance, :status => :created, :location => @appearance }
+                format.xml  { render :xml => @appearance, :status => :created, :appearance => @appearance }
             else
                 format.html { render :action => "new" }
                 format.js { render :template => 'admin/items/add_appearance_to_item' }

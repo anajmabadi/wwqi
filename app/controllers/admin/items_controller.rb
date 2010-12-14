@@ -78,7 +78,7 @@ class Admin::ItemsController < Admin::AdminController
   # GET /items/1
   # GET /items/1.xml
   def show
-    
+    @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @item }
@@ -181,8 +181,10 @@ class Admin::ItemsController < Admin::AdminController
   # remote functions for showing and hiding the add appearance form
   def show_add_appearance_to_item
     # retrieve @appearances for instant additions
+    @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
     @item = Item.find(params[:id])
-    @people = Person.select_list
+    @people = @persian_focus ? Person.select_list_fa : Person.select_list
+    @people_fa = Person.select_list_fa
     @max_position = Appearance.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @appearance = Appearance.new(
       :item_id => params[:id],
@@ -194,7 +196,7 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
-
+  
   def hide_add_appearance_to_item
     @appearance = nil
     @item = Item.find(params[:id])

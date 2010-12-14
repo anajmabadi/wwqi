@@ -1,5 +1,8 @@
 <span>
     <hr />
+    <p>
+    <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true %>
+    </p>
     <%= form_for(['admin', appearance], :remote => true) do |f| %>
     <% if appearance.errors.any? %>
     <div id="error_explanation">
@@ -16,10 +19,17 @@
 
     <%= f.hidden_field(:item_id) %>
 
+    <% unless persian_focus -%>
     <div class="field">
         <%= f.label :person_id %>:
         <%= f.select :person_id, @people %>
     </div>
+    <% else -%>
+    <div class="field">
+        <%= f.label :person_id %>:
+        <%= f.select :person_id, @people %>
+    </div>
+    <% end -%>
     <div class="field">
         <%= f.label :caption_en %>:
         <%= f.text_area :caption_en, :rows => 1 %>

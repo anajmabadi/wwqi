@@ -233,9 +233,9 @@
                     </div>
                     <div id="addAppearance">
                         <% if @appearance.nil? -%>
-                        <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item } %>
+                        <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item, :persian_focus => @persian_focus } %>
                         <% else -%>
-                        <%= render :partial => 'admin/items/add_appearance_form', :locals => { :appearance => @appearance } %>
+                        <%= render :partial => 'admin/items/add_appearance_form', :locals => { :appearance => @appearance, :persian_focus => @persian_focus } %>
                         <% end -%>
                     </div>
                     </td>
