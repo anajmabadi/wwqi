@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101209151127) do
+ActiveRecord::Schema.define(:version => 20101214193754) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -261,6 +261,17 @@ ActiveRecord::Schema.define(:version => 20101209151127) do
   end
 
   add_index "comments", ["submitted_at"], :name => "index_comments_on_submitted_at"
+
+  create_table "comp_translations", :force => true do |t|
+    t.integer  "comp_id"
+    t.string   "locale"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "comp_translations", ["caption"], :name => "index_comp_translations_on_caption"
+  add_index "comp_translations", ["comp_id"], :name => "index_comp_translations_on_comp_id"
 
   create_table "comps", :force => true do |t|
     t.integer  "item_id",                      :null => false

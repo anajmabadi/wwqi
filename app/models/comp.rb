@@ -7,4 +7,14 @@ class Comp < ActiveRecord::Base
   validates :position, :presence => true, :numericality => true
   validates :publish, :presence => true
 
+  translates :caption
+  globalize_accessors :en, :fa
+  default_scope :include => :translations
+  
+  def to_label
+    mylabel = ''
+    mylabel += self.comp.title unless self.comp.nil?
+    mylabel += " (#{self.caption })" unless self.caption.blank? 
+    return mylabel
+  end
 end

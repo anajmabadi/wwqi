@@ -9,11 +9,19 @@
                 <td>
                 <p>
                     <b>Item:</b>
-                    <%= @comp.item_id %>
+                    <%= link_to @comp.item.to_label, admin_item_path(@comp.item) unless @comp.item.nil? %>
                 </p>
                 <p>
                     <b>Comp:</b>
                     <%= @comp.comp_id %>
+                </p>
+                <p>
+                    <b>Caption_en:</b>
+                    <%= @comp.caption_en %>
+                </p>
+                <p>
+                    <b>Caption_fa:</b>
+                    <%= @comp.caption_fa %>
                 </p>
                 <p>
                     <b>Position:</b>

@@ -1,18 +1,18 @@
 <span>
     <hr />
     <%= form_for(['admin', comp], :remote => true) do |f| %>
-    <% if comp.errors.any? %>
+    <% if comp.errors.any? -%>
     <div id="error_explanation">
         <h2><%= pluralize(comp.errors.count, "error") %> prohibited this comp from being saved:</h2>
         <ul>
-            <% comp.errors.full_messages.each do |msg| %>
+            <% comp.errors.full_messages.each do |msg| -%>
             <li>
                 <%= msg %>
             </li>
-            <% end %>
+            <% end -%>
         </ul>
     </div>
-    <% end %>
+    <% end -%>
 
     <%= f.hidden_field(:item_id) %>
 
@@ -21,6 +21,40 @@
         <br />
         <%= f.select :comp_id, @items %>
     </div>
+    <div class="field">
+        <%= f.label :caption_en %>
+        <br />
+        <%= f.text_field :caption_en, :size => 25 %>
+    </div>
+    <div class="field">
+        <%= f.label :caption_fa %>
+        <br />
+        <%= f.text_field :caption_fa, :size => 25, :class => 'persianOnly' %>
+    </div>
+    <p>
+        <strong>Approved Captions:</strong>original
+        اصل
+
+        draft
+        چرکنویس
+
+        typed
+        تایپی
+
+        handwritten
+        دستخط
+
+        reply
+        پاسخ
+
+        dowry
+        جهیزیه
+
+        marriage contract
+        نکاح نامه
+
+        envelope پاکت
+    </p>
     <div class="field">
         <%= f.label :publish %>
         <br />
