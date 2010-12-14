@@ -3,15 +3,12 @@ items_001:
   id: "1"
   accession_num: Sheikholeslami_ANMEQ_100308_001
   urn: S001_001
-  creator_id: "170"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: date needs to be checked
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -32,19 +29,17 @@ items_001:
   sort_month: "11"
   sort_day: "2"
   editorial_date: "0"
+  owner_tag: 
 items_002: 
   id: "2"
   accession_num: Sheikholeslami_ANMEQ_100308_002
   urn: S002_001
-  creator_id: "171"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: ""
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -65,19 +60,17 @@ items_002:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_003: 
   id: "3"
   accession_num: Sheikholeslami_ANMEQ_100308_003
   urn: S003_001
-  creator_id: "172"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13.3 cm.
   notes: Need to find out which Munshi Bashi?
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -98,19 +91,17 @@ items_003:
   sort_month: "10"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_004: 
   id: "4"
   accession_num: Sheikholeslami_ANMEQ_100308_004
   urn: S004_001
-  creator_id: "172"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -131,19 +122,17 @@ items_004:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_005: 
   id: "5"
   accession_num: Sheikholeslami_ANMEQ_100308_005
   urn: S005_001
-  creator_id: "173"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 22 x 12 cm.
   notes: "There is another Shahzadah Baygum, daughter Ziya' al-Saltanah and Haj Mirza Mas'ud Ansari, marrried to Mir Husayn Khan Mir Findiriski. Is it the same one? "
-  place_id: "4"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -164,19 +153,17 @@ items_005:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_006: 
   id: "6"
   accession_num: Sheikholeslami_ANMEQ_100308_006
   urn: S006_001
-  creator_id: "174"
   owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: "1"
   circa: "0"
-  dimensions: 26 x 21 cm.
   notes: Letter also mentions an Ishrat Khanum and Akhtar Khanum.
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -197,19 +184,17 @@ items_006:
   sort_month: "8"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_007: 
   id: "7"
   accession_num: Sheikholeslami_ANMEQ_100308_007
   urn: S007_001
-  creator_id: "173"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 12.7 x 20 cm.
   notes: ""
-  place_id: "4"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -230,19 +215,17 @@ items_007:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_008: 
   id: "8"
   accession_num: Sheikholeslami_ANMEQ_100308_008
   urn: S008_001
-  creator_id: "171"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 26 x 21 cm.
   notes: He is mentioned in the letter. Who is he? To which consulate did she write?
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -263,19 +246,17 @@ items_008:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_009: 
   id: "9"
   accession_num: Sheikholeslami_ANMEQ_100308_009
   urn: S009_001
-  creator_id: "176"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 20.5 x 13 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -296,19 +277,17 @@ items_009:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_010: 
   id: "10"
   accession_num: Sheikholeslami_ANMEQ_100308_010
   urn: S010_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 12.5 x 22 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -329,19 +308,17 @@ items_010:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_011: 
   id: "11"
   accession_num: Sheikholeslami_ANMEQ_100308_011
   urn: S011_001
-  creator_id: "177"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 18 cm.
   notes: Balijah Khanum?
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -362,19 +339,17 @@ items_011:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_012: 
   id: "12"
   accession_num: Sheikholeslami_ANMEQ_100308_012
   urn: S012_001
-  creator_id: "178"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 26.5 cm.
   notes: Who is the second author of the letter.
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -395,19 +370,17 @@ items_012:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_013: 
   id: "13"
   accession_num: Sheikholeslami_ANMEQ_100308_013
   urn: S013_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13.5
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -428,19 +401,17 @@ items_013:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_014: 
   id: "14"
   accession_num: Sheikholeslami_ANMEQ_100308_014
   urn: S014_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 12.8 x 2.7 cm.
   notes: Mr. Sheykholeslam says that Sakinah Khanum is mentioned in this document but I didn't see any name except Aziz Almoluk's name in the letter.
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -461,19 +432,17 @@ items_014:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_015: 
   id: "15"
   accession_num: Sheikholeslami_ANMEQ_100308_015
   urn: S015_001
-  creator_id: "171"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: Who is Sadiqah Khanum?
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -494,19 +463,17 @@ items_015:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_016: 
   id: "16"
   accession_num: Sheikholeslami_ANMEQ_100308_016
   urn: S016_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: ""
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -527,19 +494,17 @@ items_016:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_017: 
   id: "17"
   accession_num: Sheikholeslami_ANMEQ_100308_017
   urn: S017_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -560,19 +525,17 @@ items_017:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_018: 
   id: "18"
   accession_num: Sheikholeslami_ANMEQ_100308_018
   urn: S018_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 14 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -593,19 +556,17 @@ items_018:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_019: 
   id: "19"
   accession_num: Sheikholeslami_ANMEQ_100308_019
   urn: S019_001
-  creator_id: "180"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 15.3 x 13 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -626,30 +587,28 @@ items_019:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_020: 
   id: "20"
   accession_num: Sheikholeslami_ANMEQ_100308_020
   urn: S020_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 16.7 x 21 cm.
-  notes: Is this letter written by Hidayat Allah
-  place_id: "0"
+  notes: Is this letter written by Hidayat Allah sfdsdfg
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-02 17:06:10
+  updated_at: 2010-12-09 08:02:28
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "16.7"
   depth: "0.0"
-  lock_version: "9"
+  lock_version: "11"
   year: 
   month: 
   day: 
@@ -659,19 +618,17 @@ items_020:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: sdfgsdfg
 items_021: 
   id: "21"
   accession_num: Sheikholeslami_ANMEQ_100308_021
   urn: S021_001
-  creator_id: "203"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 22 x 17.5 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -692,19 +649,17 @@ items_021:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_022: 
   id: "22"
   accession_num: Sheikholeslami_ANMEQ_100308_022
   urn: S022_001
-  creator_id: "181"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.3 x 20.5 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -725,19 +680,17 @@ items_022:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_023: 
   id: "23"
   accession_num: Sheikholeslami_ANMEQ_100308_023
   urn: S023_001
-  creator_id: "182"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 17.3 x 21.5 cm.
   notes: ""
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -758,19 +711,17 @@ items_023:
   sort_month: "11"
   sort_day: "4"
   editorial_date: "0"
+  owner_tag: 
 items_024: 
   id: "24"
   accession_num: Sheikholeslami_ANMEQ_100308_024
   urn: S024_001
-  creator_id: "183"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 21.7 cm.
   notes: Interesting recording. Who is this Shahzadeh Baygum aka Bibi Jan? In genealogy, there is a Hajjieh Shahzadeh? is this the same person
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -791,19 +742,17 @@ items_024:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_025: 
   id: "25"
   accession_num: Sheikholeslami_ANMEQ_100308_025
   urn: S025_001
-  creator_id: "183"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 15.3 x 22.4 cm.
   notes: Difficult to read. Useful to get someone else to take a look at this.
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -824,19 +773,17 @@ items_025:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_026: 
   id: "26"
   accession_num: Sheikholeslami_ANMEQ_100308_026
   urn: S026_001
-  creator_id: "172"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.4 x 21 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -857,19 +804,17 @@ items_026:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_027: 
   id: "27"
   accession_num: Sheikholeslami_ANMEQ_100308_027
   urn: S027_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.1 x 20.9 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -890,19 +835,17 @@ items_027:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_028: 
   id: "28"
   accession_num: Sheikholeslami_ANMEQ_100308_028
   urn: S028_001
-  creator_id: "172"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 21 cm.
   notes: Mirza Hasan Khan is Munshi Bashi. The handwriting is very different from the earlier letter also written by Rubabah Khanum. Are we sure these are both by her?
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -923,19 +866,17 @@ items_028:
   sort_month: "8"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_029: 
   id: "29"
   accession_num: Sheikholeslami_ANMEQ_100308_029
   urn: S029_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 17.6 cm.
   notes: Was this written by a man or a woman?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -956,19 +897,17 @@ items_029:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_030: 
   id: "30"
   accession_num: Sheikholeslami_ANMEQ_100308_030
   urn: S030_001
-  creator_id: "184"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 12 x 19 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -989,19 +928,17 @@ items_030:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_031: 
   id: "31"
   accession_num: Sheikholeslami_ANMEQ_100308_031
   urn: S031_001
-  creator_id: "174"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 20.5 cm.
   notes: Check if same Munshi Bashi and who is name of receiver?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1022,19 +959,17 @@ items_031:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_032: 
   id: "32"
   accession_num: Sheikholeslami_ANMEQ_100308_032
   urn: S032_001
-  creator_id: "171"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 27 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1055,19 +990,17 @@ items_032:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_033: 
   id: "33"
   accession_num: Sheikholeslami_ANMEQ_100308_033
   urn: S033_001
-  creator_id: "185"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 13.4 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1088,19 +1021,17 @@ items_033:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_034: 
   id: "34"
   accession_num: Sheikholeslami_ANMEQ_100308_034
   urn: S034_001
-  creator_id: "186"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 41.3 x 57 cm.
   notes: Do we want to do anything else with this document? Need a better English translation of the name of the organization.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1121,19 +1052,17 @@ items_034:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_035: 
   id: "35"
   accession_num: Sheikholeslami_ANMEQ_100308_035
   urn: S035_001
-  creator_id: "192"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 10.2 x 13.4 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1154,19 +1083,17 @@ items_035:
   sort_month: "11"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_036: 
   id: "36"
   accession_num: Sheikholeslami_ANMEQ_100308_036
   urn: S036_001
-  creator_id: "187"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 20.8 x 26.7 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1187,19 +1114,17 @@ items_036:
   sort_month: "1"
   sort_day: "30"
   editorial_date: "0"
+  owner_tag: 
 items_037: 
   id: "37"
   accession_num: Sheikholeslami_ANMEQ_100308_037
   urn: S037_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 20.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1220,19 +1145,17 @@ items_037:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_038: 
   id: "38"
   accession_num: Sheikholeslami_ANMEQ_100308_038
   urn: S038_001
-  creator_id: "188"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 35 x 21.5 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1253,19 +1176,17 @@ items_038:
   sort_month: "3"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_039: 
   id: "39"
   accession_num: Sheikholeslami_ANMEQ_100308_039
   urn: S039_001
-  creator_id: "189"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "1"
-  dimensions: 20 x 13 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1286,19 +1207,17 @@ items_039:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_040: 
   id: "40"
   accession_num: Sheikholeslami_ANMEQ_100308_040
   urn: S040_001
-  creator_id: "190"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 26 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1319,19 +1238,17 @@ items_040:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_041: 
   id: "41"
   accession_num: Sheikholeslami_ANMEQ_100308_041
   urn: S041_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 22.5 x 14.5 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1352,19 +1269,17 @@ items_041:
   sort_month: "5"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_042: 
   id: "42"
   accession_num: Sheikholeslami_ANMEQ_100308_042
   urn: S042_001
-  creator_id: "172"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 24.5 x 19 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1385,19 +1300,17 @@ items_042:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_043: 
   id: "43"
   accession_num: Sheikholeslami_ANMEQ_100308_043
   urn: S043_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 22 x 17.4 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1418,19 +1331,17 @@ items_043:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
+  owner_tag: 
 items_044: 
   id: "44"
   accession_num: Sheikholeslami_ANMEQ_100308_044
   urn: S044_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 22 x 35.7 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1451,19 +1362,17 @@ items_044:
   sort_month: "10"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_045: 
   id: "45"
   accession_num: Sheikholeslami_ANMEQ_100308_045
   urn: S045_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 17.6 x 22 cm.
   notes: Exact date needs to be found in document
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1484,19 +1393,17 @@ items_045:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_046: 
   id: "46"
   accession_num: Sheikholeslami_ANMEQ_100308_046
   urn: S046_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 21 cm.
   notes: Check this with BS.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1517,19 +1424,17 @@ items_046:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_047: 
   id: "47"
   accession_num: Sheikholeslami_ANMEQ_100308_047
   urn: S047_001
-  creator_id: "191"
   owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 8.4 cm.
   notes: ""
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1550,19 +1455,17 @@ items_047:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_048: 
   id: "48"
   accession_num: Sheikholeslami_ANMEQ_100308_048
   urn: S048_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 25.7 x 21 cm.
   notes: Letter is probably from one of the wives of Aqa Mirza Hasan Shaykh al-Islami. Need to ask BS again?
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1583,19 +1486,17 @@ items_048:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_049: 
   id: "49"
   accession_num: Sheikholeslami_ANMEQ_100308_049
   urn: S049_001
-  creator_id: "192"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 17.3 cm.
   notes: glass bottles; vegetables
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1616,19 +1517,17 @@ items_049:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_050: 
   id: "50"
   accession_num: Sheikholeslami_ANMEQ_100308_050
   urn: S050_001
-  creator_id: "193"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 13.3 x 20.6 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1649,19 +1548,17 @@ items_050:
   sort_month: "4"
   sort_day: "2"
   editorial_date: "0"
+  owner_tag: 
 items_051: 
   id: "51"
   accession_num: Sheikholeslami_ANMEQ_100308_051
   urn: S051_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: "1"
   circa: "0"
-  dimensions: 12.8 x 20.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1682,19 +1579,17 @@ items_051:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_052: 
   id: "52"
   accession_num: Sheikholeslami_ANMEQ_100308_052
   urn: S052_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 9.7 x 16 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1715,19 +1610,17 @@ items_052:
   sort_month: "7"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_053: 
   id: "53"
   accession_num: Sheikholeslami_ANMEQ_100308_053
   urn: S053_001
-  creator_id: "194"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: ""
-  place_id: "3"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1748,19 +1641,17 @@ items_053:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_054: 
   id: "54"
   accession_num: Sheikholeslami_ANMEQ_100308_054
   urn: S054_001
-  creator_id: "192"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 21 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1781,19 +1672,17 @@ items_054:
   sort_month: "9"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_055: 
   id: "55"
   accession_num: Sheikholeslami_ANMEQ_100308_055
   urn: S055_001
-  creator_id: "195"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 20.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1814,19 +1703,17 @@ items_055:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_056: 
   id: "56"
   accession_num: Sheikholeslami_ANMEQ_100308_056
   urn: S056_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 21.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1847,19 +1734,17 @@ items_056:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_057: 
   id: "57"
   accession_num: Sheikholeslami_ANMEQ_100308_057
   urn: S057_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 12.6 x 20 cm.
   notes: Is this the same Munshi Bashi?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1880,19 +1765,17 @@ items_057:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_058: 
   id: "58"
   accession_num: Sheikholeslami_ANMEQ_100308_058
   urn: S058_002
-  creator_id: "187"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 14.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1913,19 +1796,17 @@ items_058:
   sort_month: "9"
   sort_day: "6"
   editorial_date: "0"
+  owner_tag: 
 items_059: 
   id: "59"
   accession_num: Sheikholeslami_ANMEQ_100308_059
   urn: S059_001
-  creator_id: "196"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 12.6 x 19.3 cm.
   notes: "villages; tribes; Bihtu'i tribe; raiding; "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1946,21 +1827,19 @@ items_059:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_060: 
   id: "60"
   accession_num: Sheikholeslami_ANMEQ_100308_060
   urn: S060_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 11 x 21 cm.
   notes: |
     According to Bahram Sheikholeslami, this is the same friend who wrote to her in item no. S027_001
 
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -1981,19 +1860,17 @@ items_060:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_061: 
   id: "61"
   accession_num: Sheikholeslami_ANMEQ_100308_061
   urn: S061_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 6 x 10.8 cm.
   notes: 1 khavar is equal to 300 kilograms
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2014,19 +1891,17 @@ items_061:
   sort_month: "5"
   sort_day: "16"
   editorial_date: "0"
+  owner_tag: 
 items_062: 
   id: "62"
   accession_num: Sheikholeslami_ANMEQ_100308_062
   urn: S062_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: Who is Shah Jan? What is the name of the sender
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2047,19 +1922,17 @@ items_062:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_063: 
   id: "63"
   accession_num: Sheikholeslami_ANMEQ_100308_063
   urn: S063_001
-  creator_id: "174"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 25.8 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2080,19 +1953,17 @@ items_063:
   sort_month: "9"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_064: 
   id: "64"
   accession_num: Sheikholeslami_ANMEQ_100308_064
   urn: S064_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: "1"
   circa: "1"
-  dimensions: 22 x 26
   notes: ""
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2113,52 +1984,48 @@ items_064:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_065: 
   id: "65"
   accession_num: Sheikholeslami_ANMEQ_100308_065
   urn: S065_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13.2 x 21 cm.
   notes: What is a sargisi?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-05 02:26:09
+  updated_at: 2010-12-09 06:30:52
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "13.2"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "3"
+  year: "1910"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
+  era_id: "5"
+  sort_year: "1910"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: 
 items_066: 
   id: "66"
   accession_num: Sheikholeslami_ANMEQ_100308_066
   urn: S066_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13.5 x 21 cm.
   notes: What is a sargisi?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2179,19 +2046,17 @@ items_066:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_067: 
   id: "67"
   accession_num: Sheikholeslami_ANMEQ_100308_067
   urn: S067_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 20 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2212,19 +2077,17 @@ items_067:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
+  owner_tag: 
 items_068: 
   id: "68"
   accession_num: Sheikholeslami_ANMEQ_100308_068
   urn: S068_001
-  creator_id: "176"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 13.6 x 12.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2245,19 +2108,17 @@ items_068:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_069: 
   id: "69"
   accession_num: Sheikholeslami_ANMEQ_100308_069
   urn: S069_001
-  creator_id: "2"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 26.3 x 20.6 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2278,19 +2139,17 @@ items_069:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_070: 
   id: "70"
   accession_num: Sheikholeslami_ANMEQ_100308_070
   urn: S070_001
-  creator_id: "197"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 20.6 x 13 cm.
   notes: Barat is what in English?
-  place_id: "5"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2311,19 +2170,17 @@ items_070:
   sort_month: "1"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_071: 
   id: "71"
   accession_num: Sheikholeslami_ANMEQ_100308_071
   urn: S071_001
-  creator_id: "173"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 13.3 x 21.7 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2344,19 +2201,17 @@ items_071:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_072: 
   id: "72"
   accession_num: Sheikholeslami_ANMEQ_100308_072
   urn: S072_001
-  creator_id: "198"
   owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: "1"
   circa: "0"
-  dimensions: 13 x 20.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2377,19 +2232,17 @@ items_072:
   sort_month: "5"
   sort_day: "12"
   editorial_date: "0"
+  owner_tag: 
 items_073: 
   id: "73"
   accession_num: Sheikholeslami_ANMEQ_100308_073
   urn: S073_001
-  creator_id: "176"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 10 x 17.2 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2410,19 +2263,17 @@ items_073:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_074: 
   id: "74"
   accession_num: Sheikholeslami_ANMEQ_100308_074
   urn: S074_001
-  creator_id: "178"
   owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: "1"
   circa: "0"
-  dimensions: 27 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2443,19 +2294,17 @@ items_074:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_075: 
   id: "75"
   accession_num: Sheikholeslami_ANMEQ_100308_075
   urn: S075_001
-  creator_id: "192"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: "1"
   circa: "0"
-  dimensions: 20.7 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2476,19 +2325,17 @@ items_075:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_076: 
   id: "76"
   accession_num: Sheikholeslami_ANMEQ_100308_076
   urn: S076_001
-  creator_id: "200"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 20 x 12.8 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2509,19 +2356,17 @@ items_076:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_077: 
   id: "77"
   accession_num: Sheikholeslami_ANMEQ_100308_077
   urn: S077_001
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 12.4 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2542,19 +2387,17 @@ items_077:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_078: 
   id: "78"
   accession_num: Sheikholeslami_ANMEQ_100308_078
   urn: S078_001
-  creator_id: "277"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2575,19 +2418,17 @@ items_078:
   sort_month: "11"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_079: 
   id: "79"
   accession_num: Sheikholeslami_ANMEQ_100308_079
   urn: S079_001
-  creator_id: "178"
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 21 x 13.3 cm.
   notes: Who is Dadash Jan
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2608,19 +2449,17 @@ items_079:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_080: 
   id: "80"
   accession_num: Sheikholeslami_ANMEQ_100308_080
   urn: S080_001
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: "1"
   circa: "0"
-  dimensions: 20.8 x 26.6 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
@@ -2641,19 +2480,17 @@ items_080:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_081: 
   id: "81"
   accession_num: Sheikholeslami_ANMEQ_100308_081
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 20.6 x 11 cm.
   notes: "Keyword Mecca should be capitalized and moved to new place keyword field. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2674,19 +2511,17 @@ items_081:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_082: 
   id: "82"
   accession_num: Sheikholeslami_ANMEQ_100308_082
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 12.6 cm.
   notes: "Where are the envelopes per the recording? Perhaps, need to photograph complete set again. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2707,19 +2542,17 @@ items_082:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_083: 
   id: "83"
   accession_num: Sheikholeslami_ANMEQ_100308_083
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 22 x 13.4 cm.
   notes: "In MEQ genealogy, Hidayat Allah is the brother of Hajiyah Khanum. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2740,19 +2573,17 @@ items_083:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_084: 
   id: "84"
   accession_num: Sheikholeslami_ANMEQ_100308_084
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20.5 x 13.5 cm.
   notes: Do we know the date of Asiyah Khanum's birth? This would allow us to give an approximate date for the lettter. Only include first recording (100307_21)
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2773,19 +2604,17 @@ items_084:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_085: 
   id: "85"
   accession_num: Sheikholeslami_ANMEQ_100308_085
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20.5 x 26 cm.
   notes: Is there a better word for du'a to differentiate from salat?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2806,19 +2635,17 @@ items_085:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_086: 
   id: "86"
   accession_num: Sheikholeslami_ANMEQ_100308_086
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20.7 x 13.2 cm.
   notes: Does no'bih always mean malaria or should this be translated as fever? Religious beliefs? Treatments for illness
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2839,19 +2666,17 @@ items_086:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_087: 
   id: "87"
   accession_num: Sheikholeslami_ANMEQ_100308_087
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 20.7 x 26.3 cm.
   notes: Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2872,19 +2697,17 @@ items_087:
   sort_month: "4"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_088: 
   id: "88"
   accession_num: Sheikholeslami_ANMEQ_100308_088
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20.6 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2905,19 +2728,17 @@ items_088:
   sort_month: "1"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_089: 
   id: "89"
   accession_num: Sheikholeslami_ANMEQ_100308_089
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 20.6 x 15.6 cm.
   notes: Do we know name of sister? Qum.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2938,19 +2759,17 @@ items_089:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_090: 
   id: "90"
   accession_num: Sheikholeslami_ANMEQ_100308_090
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20.8 x 12 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -2971,19 +2790,17 @@ items_090:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_091: 
   id: "91"
   accession_num: Sheikholeslami_ANMEQ_100308_091
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 8.8 x 13.3 cm.
   notes: Need to check order of these documents.
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3004,19 +2821,17 @@ items_091:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_092: 
   id: "92"
   accession_num: Sheikholeslami_ANMEQ_100308_092
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 12.5 x 15 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3037,19 +2852,17 @@ items_092:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_093: 
   id: "93"
   accession_num: Sheikholeslami_ANMEQ_100308_093
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: Is the identification of sendor correct? This seems to be not Baba Nizam but his brother, Bisharat Humayun
-  place_id: "5"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3070,19 +2883,17 @@ items_093:
   sort_month: "10"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_094: 
   id: "94"
   accession_num: Sheikholeslami_ANMEQ_100308_094
   urn: ""
-  creator_id: "285"
   owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 17.8 x 22 cm.
   notes: Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam
-  place_id: "6"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3103,19 +2914,17 @@ items_094:
   sort_month: "10"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_095: 
   id: "95"
   accession_num: Sheikholeslami_ANMEQ_100308_095
   urn: ""
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 18.5 x 11.4 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3136,19 +2945,17 @@ items_095:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_096: 
   id: "96"
   accession_num: Sheikholeslami_ANMEQ_100308_096
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21.4 x 26.3 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3169,19 +2976,17 @@ items_096:
   sort_month: "3"
   sort_day: "2"
   editorial_date: "0"
+  owner_tag: 
 items_097: 
   id: "97"
   accession_num: Sheikholeslami_ANMEQ_100308_097
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 19.8 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3202,19 +3007,17 @@ items_097:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_098: 
   id: "98"
   accession_num: Sheikholeslami_ANMEQ_100308_098
   urn: ""
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20.4 x 13 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3235,19 +3038,17 @@ items_098:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_099: 
   id: "99"
   accession_num: Sheikholeslami_ANMEQ_100308_099
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 21.7 x 28 cm.
   notes: "Recording includes explanation of the multiple administrators that Aqa Mirza used for the estate: ie two munshi bashsi: Hasan Durudi who does work in the city and Askar Khan Mafi, who was the head of the Mafi tribe, and does work in the provinces||"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3268,19 +3069,17 @@ items_099:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_100: 
   id: "100"
   accession_num: Sheikholeslami_ANMEQ_100308_100
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3301,19 +3100,17 @@ items_100:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_101: 
   id: "101"
   accession_num: Sheikholeslami_ANMEQ_100308_101
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 19 x 24 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3334,19 +3131,17 @@ items_101:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_102: 
   id: "102"
   accession_num: Sheikholeslami_ANMEQ_100308_102
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 12.5 x 20.2 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3367,19 +3162,17 @@ items_102:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_103: 
   id: "103"
   accession_num: Sheikholeslami_ANMEQ_100308_103
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 12.4 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3400,19 +3193,17 @@ items_103:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_104: 
   id: "104"
   accession_num: Sheikholeslami_ANMEQ_100308_104
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.1 x 25.2 cm.
   notes: "Complete date is on envelope but cannot read. "
-  place_id: "2"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3433,19 +3224,17 @@ items_104:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_105: 
   id: "105"
   accession_num: Sheikholeslami_ANMEQ_100308_105
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 18.9 x 23.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3466,19 +3255,17 @@ items_105:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_106: 
   id: "106"
   accession_num: Sheikholeslami_ANMEQ_100308_106
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.4 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3499,19 +3286,17 @@ items_106:
   sort_month: "2"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_107: 
   id: "107"
   accession_num: Sheikholeslami_ANMEQ_100308_107
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 20.8 x 25.4 cm.
   notes: Is date right for this? Which Shahzadah Baygum?
-  place_id: "4"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3532,19 +3317,17 @@ items_107:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_108: 
   id: "108"
   accession_num: Sheikholeslami_ANMEQ_100308_108
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 13.5 x 10.7 cm.
   notes: Original image has now been split to allow for separate letter and envelope file. New images uploaded to ftp.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3565,19 +3348,17 @@ items_108:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_109: 
   id: "109"
   accession_num: Sheikholeslami_ANMEQ_100308_109
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 17 x 10.3 cm.
   notes: Original image has now been split to allow for separate letter and envelope file. New images uploaded to ftp.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3598,19 +3379,17 @@ items_109:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_110: 
   id: "110"
   accession_num: Sheikholeslami_ANMEQ_100308_110
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.5 cm.
   notes: ""
-  place_id: "7"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3631,19 +3410,17 @@ items_110:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_111: 
   id: "111"
   accession_num: Sheikholeslami_ANMEQ_100308_111
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 12.5 x 10.5 cm.
   notes: ""
-  place_id: "7"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3664,19 +3441,17 @@ items_111:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_112: 
   id: "112"
   accession_num: Sheikholeslami_ANMEQ_100308_112
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: "Which Haj Khanum Aqa and Shahzadah Baygum is this? "
-  place_id: "4"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3697,19 +3472,17 @@ items_112:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_113: 
   id: "113"
   accession_num: Sheikholeslami_ANMEQ_100308_113
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "1"
-  dimensions: 21 x 13.5 cm.
   notes: "SB gives date as 1257-8?. Is this correct? Check dates again with him before entering. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3730,19 +3503,17 @@ items_113:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_114: 
   id: "114"
   accession_num: Sheikholeslami_ANMEQ_100308_114
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3763,19 +3534,17 @@ items_114:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_115: 
   id: "115"
   accession_num: Sheikholeslami_ANMEQ_100308_115
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 10.5 x 13.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3796,19 +3565,17 @@ items_115:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_116: 
   id: "116"
   accession_num: Sheikholeslami_ANMEQ_100308_116
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 9.7 x 12 cm.
   notes: Who is sender of this letter?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3829,19 +3596,17 @@ items_116:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_117: 
   id: "117"
   accession_num: Sheikholeslami_ANMEQ_100308_117
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3862,19 +3627,17 @@ items_117:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_118: 
   id: "118"
   accession_num: Sheikholeslami_ANMEQ_100308_118
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: 21 x 14 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3895,19 +3658,17 @@ items_118:
   sort_month: "1"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_119: 
   id: "119"
   accession_num: Sheikholeslami_ANMEQ_100308_119
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 22 x 18 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3928,19 +3689,17 @@ items_119:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_120: 
   id: "120"
   accession_num: Sheikholeslami_ANMEQ_100308_120
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 19.8 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3961,19 +3720,17 @@ items_120:
   sort_month: "2"
   sort_day: "24"
   editorial_date: "0"
+  owner_tag: 
 items_121: 
   id: "121"
   accession_num: Sheikholeslami_ANMEQ_100308_121
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 19 x 23.3 cm.
   notes: Khanum Khanumha is the same as Khanum Aqa
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -3994,19 +3751,17 @@ items_121:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_122: 
   id: "122"
   accession_num: Sheikholeslami_ANMEQ_100308_122
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 17.5 x 11 cm.
   notes: "Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam. Hazrat-e Qiblah Gahi. Is Amjad al-Islam also Sayyid \xCA\xBBAbd al-Allah Amjad al-Vizarah?"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4027,19 +3782,17 @@ items_122:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_123: 
   id: "123"
   accession_num: Sheikholeslami_ANMEQ_100308_123
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21.8 x 14.2 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4060,19 +3813,17 @@ items_123:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_124: 
   id: "124"
   accession_num: Sheikholeslami_ANMEQ_100308_124
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21.2 x 13.2 cm.
   notes: Who is Khanum Jan?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4093,19 +3844,17 @@ items_124:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_125: 
   id: "125"
   accession_num: Sheikholeslami_ANMEQ_100308_125
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 13 x 20 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4126,19 +3875,17 @@ items_125:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_126: 
   id: "126"
   accession_num: Sheikholeslami_ANMEQ_100308_126
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: 20.8 x 26.6 cm.
   notes: It is possible that this letter dates to 1333 AH when the Russians occupied Qazvin. Check.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4159,19 +3906,17 @@ items_126:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_127: 
   id: "127"
   accession_num: Sheikholeslami_ANMEQ_100308_127
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20.4 x 26 cm.
   notes: "Check this again. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4192,19 +3937,17 @@ items_127:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_128: 
   id: "128"
   accession_num: Sheikholeslami_ANMEQ_100308_128
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21.3 x 26.3 cm.
   notes: ""
-  place_id: "4"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4225,19 +3968,17 @@ items_128:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_129: 
   id: "129"
   accession_num: Sheikholeslami_ANMEQ_100308_129
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.6 x 13 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4258,19 +3999,17 @@ items_129:
   sort_month: "9"
   sort_day: "17"
   editorial_date: "0"
+  owner_tag: 
 items_130: 
   id: "130"
   accession_num: Sheikholeslami_ANMEQ_100308_130
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.7 x 26 cm.
   notes: Amu Qizi is Rukhsarah Khanum after her death.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4291,19 +4030,17 @@ items_130:
   sort_month: "8"
   sort_day: "23"
   editorial_date: "0"
+  owner_tag: 
 items_131: 
   id: "131"
   accession_num: Sheikholeslami_ANMEQ_100308_131
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: "SB thinks the letters date to just before the constitutional revolution because the family is in Tehran. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4324,19 +4061,17 @@ items_131:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_132: 
   id: "132"
   accession_num: Sheikholeslami_ANMEQ_100308_132
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: 22 x 27.5 cm.
   notes: Amjad al-Islam is Amjad al-Vizarah, correct? There is alot on his teacher, Madam Russi.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4357,19 +4092,17 @@ items_132:
   sort_month: "11"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_133: 
   id: "133"
   accession_num: Sheikholeslami_ANMEQ_100308_133
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 11 x 16 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4390,19 +4123,17 @@ items_133:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_134: 
   id: "134"
   accession_num: Sheikholeslami_ANMEQ_100308_134
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: 22 x 12.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4423,19 +4154,17 @@ items_134:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_135: 
   id: "135"
   accession_num: Sheikholeslami_ANMEQ_100308_135
   urn: ""
-  creator_id: "285"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21.2 x 26.7 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4456,19 +4185,17 @@ items_135:
   sort_month: "10"
   sort_day: "30"
   editorial_date: "0"
+  owner_tag: 
 items_136: 
   id: "136"
   accession_num: Sheikholeslami_ANMEQ_100308_136
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20 x 25 cm.
   notes: Who is sender and receiver?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4489,19 +4216,17 @@ items_136:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_137: 
   id: "137"
   accession_num: Sheikholeslami_ANMEQ_100308_137
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 18 x 22 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4522,19 +4247,17 @@ items_137:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_138: 
   id: "138"
   accession_num: Sheikholeslami_ANMEQ_100308_138
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 17 x 22 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4555,19 +4278,17 @@ items_138:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_139: 
   id: "139"
   accession_num: Sheikholeslami_ANMEQ_100308_139
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16.2 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4588,19 +4309,17 @@ items_139:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_140: 
   id: "140"
   accession_num: Sheikholeslami_ANMEQ_100308_140
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: What does chism mean in this letter?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4621,19 +4340,17 @@ items_140:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_141: 
   id: "141"
   accession_num: Sheikholeslami_ANMEQ_100308_141
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4654,19 +4371,17 @@ items_141:
   sort_month: "4"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_142: 
   id: "142"
   accession_num: Sheikholeslami_ANMEQ_100308_142
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26 cm.
   notes: Hazrat-i Valah means Siphadar A'zam in these letters
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4687,19 +4402,17 @@ items_142:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_143: 
   id: "143"
   accession_num: Sheikholeslami_ANMEQ_100308_143
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 12.3 x 20 cm.
   notes: "Is the sender Muftakhar al-Dawlah or is she the wife of Muftakhar al-Dawlah? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4720,19 +4433,17 @@ items_143:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_144: 
   id: "144"
   accession_num: Sheikholeslami_ANMEQ_100308_144
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4753,19 +4464,17 @@ items_144:
   sort_month: "1"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_145: 
   id: "145"
   accession_num: Sheikholeslami_ANMEQ_100308_145
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 21 x 12.5 cm.
   notes: Hazrat-e Khodafand-i Gari is Aqa Mirza Mas'ud. This is addressed to Aqa Mirza Hasan M.B.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4786,19 +4495,17 @@ items_145:
   sort_month: "3"
   sort_day: "31"
   editorial_date: "0"
+  owner_tag: 
 items_146: 
   id: "146"
   accession_num: Sheikholeslami_ANMEQ_100308_146
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17 x 12.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4819,19 +4526,17 @@ items_146:
   sort_month: "8"
   sort_day: "13"
   editorial_date: "0"
+  owner_tag: 
 items_147: 
   id: "147"
   accession_num: Sheikholeslami_ANMEQ_100308_147
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 13.3 x 10.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4852,19 +4557,17 @@ items_147:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_148: 
   id: "148"
   accession_num: Sheikholeslami_ANMEQ_100308_148
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 10.5 cm.
   notes: Check this.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4885,19 +4588,17 @@ items_148:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_149: 
   id: "149"
   accession_num: Sheikholeslami_ANMEQ_100308_149
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 19.6 x 12.7 cm.
   notes: "Check this. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4918,19 +4619,17 @@ items_149:
   sort_month: "9"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_150: 
   id: "150"
   accession_num: Sheikholeslami_ANMEQ_100308_150
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.8 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4951,19 +4650,17 @@ items_150:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_151: 
   id: "151"
   accession_num: Sheikholeslami_ANMEQ_100308_151
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.5 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -4984,19 +4681,17 @@ items_151:
   sort_month: "8"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_152: 
   id: "152"
   accession_num: Sheikholeslami_ANMEQ_100308_152
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.6 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5017,19 +4712,17 @@ items_152:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_153: 
   id: "153"
   accession_num: Sheikholeslami_ANMEQ_100308_153
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 12 x 19 cm.
   notes: Amjad al-Islam is written in document. Is this Amjad al-Vizarah?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5050,19 +4743,17 @@ items_153:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_154: 
   id: "154"
   accession_num: Sheikholeslami_ANMEQ_100308_154
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.6 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5083,19 +4774,17 @@ items_154:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_155: 
   id: "155"
   accession_num: Sheikholeslami_ANMEQ_100308_155
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 13 x 10.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5116,19 +4805,17 @@ items_155:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_156: 
   id: "156"
   accession_num: Sheikholeslami_ANMEQ_100308_156
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 21 x 26.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5149,19 +4836,17 @@ items_156:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_157: 
   id: "157"
   accession_num: Sheikholeslami_ANMEQ_100308_157
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 9.7 x 12.7 cm.
   notes: Do we know the name of the sister, perhaps Zahra Khanum or Sidiqah Khanum (his two known sisters)
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5182,19 +4867,17 @@ items_157:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_158: 
   id: "158"
   accession_num: Sheikholeslami_ANMEQ_100308_158
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20 x 26 cm.
   notes: "Is Fakhri Mu\xCA\xBBazzam another name for Navvab al-Hajiyah, known sister of Amjad al-Vizarah?"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5215,19 +4898,17 @@ items_158:
   sort_month: "3"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_159: 
   id: "159"
   accession_num: Sheikholeslami_ANMEQ_100308_159
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14.4  x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5248,19 +4929,17 @@ items_159:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_160: 
   id: "160"
   accession_num: Sheikholeslami_ANMEQ_100308_160
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17 x 21 cm.
   notes: Is the daughter in the poem Akhtar al-Muluk or Qamar al-Muluk?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5281,19 +4960,17 @@ items_160:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_161: 
   id: "161"
   accession_num: Sheikholeslami_ANMEQ_100308_161
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 25.7 cm.
   notes: Who is receiver?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5314,19 +4991,17 @@ items_161:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_162: 
   id: "162"
   accession_num: Sheikholeslami_ANMEQ_100308_162
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 22 x 17.5 cm.
   notes: Do we know which Munshi Bashi?
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5347,19 +5022,17 @@ items_162:
   sort_month: "7"
   sort_day: "1"
   editorial_date: "0"
+  owner_tag: 
 items_163: 
   id: "163"
   accession_num: Sheikholeslami_ANMEQ_100308_163
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.5 x 13 cm.
   notes: Letter mentions Amjad al-Islam. Is it correct to assume this means Amjad al-Vizarah?
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5380,19 +5053,17 @@ items_163:
   sort_month: "4"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_164: 
   id: "164"
   accession_num: Sheikholeslami_ANMEQ_100308_164
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.8 x 25.7 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5413,19 +5084,17 @@ items_164:
   sort_month: "7"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_165: 
   id: "165"
   accession_num: Sheikholeslami_ANMEQ_100308_165
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.2 cm.
   notes: "Is this Akbar Mirza Bisharat Saltanah or Abol Qasim Bisharat Homayun? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5446,19 +5115,17 @@ items_165:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_166: 
   id: "166"
   accession_num: Sheikholeslami_ANMEQ_100308_166
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5479,19 +5146,17 @@ items_166:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_167: 
   id: "167"
   accession_num: Sheikholeslami_ANMEQ_100308_167
   urn: ""
-  creator_id: "285"
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 20 x 14 cm.
   notes: Is this the correct identification of Shahzadah Khanum? It is not clear from audio or genealogy.
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5512,19 +5177,17 @@ items_167:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_168: 
   id: "168"
   accession_num: Sheikholeslami_ANMEQ_100308_168
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 13 x 20.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5545,19 +5208,17 @@ items_168:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_169: 
   id: "169"
   accession_num: Sheikholeslami_ANMEQ_100308_169
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 12.6 x 21.6 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5578,19 +5239,17 @@ items_169:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_170: 
   id: "170"
   accession_num: Sheikholeslami_ANMEQ_100308_170
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 13.6 x 21.5 cm.
   notes: "Is the sender Khan Baba Khan? It looks like same handwriting as above letters which are by him. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5611,19 +5270,17 @@ items_170:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_171: 
   id: "171"
   accession_num: Sheikholeslami_ANMEQ_100308_171
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 25 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5644,19 +5301,17 @@ items_171:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_172: 
   id: "172"
   accession_num: Sheikholeslami_ANMEQ_100308_172
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.7 x 10.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5677,19 +5332,17 @@ items_172:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_173: 
   id: "173"
   accession_num: Sheikholeslami_ANMEQ_100308_173
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: 12.5 x 21 cm.
   notes: Asiyah?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5710,19 +5363,17 @@ items_173:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_174: 
   id: "174"
   accession_num: Sheikholeslami_ANMEQ_100308_174
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 21.5 x 13.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5743,19 +5394,17 @@ items_174:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_175: 
   id: "175"
   accession_num: Sheikholeslami_ANMEQ_100308_175
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 20.7 x 25.7 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5776,19 +5425,17 @@ items_175:
   sort_month: "1"
   sort_day: "24"
   editorial_date: "0"
+  owner_tag: 
 items_176: 
   id: "176"
   accession_num: Sheikholeslami_ANMEQ_100308_176
   urn: ""
-  creator_id: "179"
   owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 12.6 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5809,19 +5456,17 @@ items_176:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_177: 
   id: "177"
   accession_num: Sheikholeslami_ANMEQ_100308_177
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20.8 x 23.5 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5842,19 +5487,17 @@ items_177:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_178: 
   id: "178"
   accession_num: Sheikholeslami_ANMEQ_100308_178
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 35.5 x 22 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5875,19 +5518,17 @@ items_178:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_179: 
   id: "179"
   accession_num: Sheikholeslami_ANMEQ_100308_179
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 13 x 21.2 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5908,19 +5549,17 @@ items_179:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_180: 
   id: "180"
   accession_num: Sheikholeslami_ANMEQ_100308_180
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 25.7 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5941,19 +5580,17 @@ items_180:
   sort_month: "6"
   sort_day: "27"
   editorial_date: "0"
+  owner_tag: 
 items_181: 
   id: "181"
   accession_num: Sheikholeslami_ANMEQ_100308_181
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 13 cm.
   notes: Are the dim. for one page or both? Let's dbl check the names as well.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -5974,19 +5611,17 @@ items_181:
   sort_month: "3"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_182: 
   id: "182"
   accession_num: Sheikholeslami_ANMEQ_100308_182
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: 17.5 x 25.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6007,19 +5642,17 @@ items_182:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_183: 
   id: "183"
   accession_num: Sheikholeslami_ANMEQ_100308_183
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 23.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6040,19 +5673,17 @@ items_183:
   sort_month: "5"
   sort_day: "30"
   editorial_date: "0"
+  owner_tag: 
 items_184: 
   id: "184"
   accession_num: Sheikholeslami_ANMEQ_100308_184
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: 18 x 13.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6073,19 +5704,17 @@ items_184:
   sort_month: "9"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_185: 
   id: "185"
   accession_num: Sheikholeslami_ANMEQ_100308_185
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 25 x 18 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6106,19 +5735,17 @@ items_185:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_186: 
   id: "186"
   accession_num: Sheikholeslami_ANMEQ_100308_186
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: 36 x 50 cm.
   notes: She is the mother of Aqa Mirza Hasan Shaykh al-Islam. Only first page has survived
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6139,19 +5766,17 @@ items_186:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_187: 
   id: "187"
   accession_num: Sheikholeslami_ANMEQ_100308_187
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 43 x 35 cm.
   notes: Dim. seem incorrect
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6172,19 +5797,17 @@ items_187:
   sort_month: "1"
   sort_day: "19"
   editorial_date: "0"
+  owner_tag: 
 items_188: 
   id: "188"
   accession_num: Sheikholeslami_ANMEQ_100308_188
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "11"
   format_id: 
   circa: "0"
-  dimensions: 15 x 9 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6205,19 +5828,17 @@ items_188:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_189: 
   id: "189"
   accession_num: Sheikholeslami_ANMEQ_100308_189
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "13"
   format_id: 
   circa: "0"
-  dimensions: 16 x 10 cm.
   notes: What about the inventory of trousseau of Rukhsarah Khan, daughter of Aqa Mirza Buzurg Shaykh al-Islam? How does one spell pasheh nameh?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6238,19 +5859,17 @@ items_189:
   sort_month: "8"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_190: 
   id: "190"
   accession_num: Sheikholeslami_ANMEQ_100308_190
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: 16 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6271,19 +5890,17 @@ items_190:
   sort_month: "11"
   sort_day: "5"
   editorial_date: "0"
+  owner_tag: 
 items_191: 
   id: "191"
   accession_num: Sheikholeslami_ANMEQ_100308_191
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 55 x 36 cm.
   notes: "Check date. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6304,19 +5921,17 @@ items_191:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_192: 
   id: "192"
   accession_num: Sheikholeslami_ANMEQ_100308_192
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14 x 11 cm.
   notes: Check date.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6337,19 +5952,17 @@ items_192:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_193: 
   id: "193"
   accession_num: Sheikholeslami_ANMEQ_100308_193
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 36.5 x 24 cm.
   notes: "Check date. Remove photocopy which is not necessary. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6370,19 +5983,17 @@ items_193:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_194: 
   id: "194"
   accession_num: Sheikholeslami_ANMEQ_100308_194
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 30 x 36 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6403,19 +6014,17 @@ items_194:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_195: 
   id: "195"
   accession_num: Sheikholeslami_ANMEQ_100308_195
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 11 x 36 cm.
   notes: Use this recording for this and the one above possibly...
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6436,19 +6045,17 @@ items_195:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_196: 
   id: "196"
   accession_num: Sheikholeslami_ANMEQ_100308_196
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 46 x 27 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6469,19 +6076,17 @@ items_196:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_197: 
   id: "197"
   accession_num: Sheikholeslami_ANMEQ_100308_197
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: 43 x 29.2 cm.
   notes: Can we find the name of this woman in the doc?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6502,19 +6107,17 @@ items_197:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_198: 
   id: "198"
   accession_num: Sheikholeslami_ANMEQ_100308_198
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: What is the date of this document? Image uploaded to ftp.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6535,19 +6138,17 @@ items_198:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_199: 
   id: "199"
   accession_num: Sheikholeslami_ANMEQ_100308_199
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 324 x 21.2 cm.
   notes: The date of this doc needs to be checked? In the recording, he also mentions the name of the daughter of Sayyid 'Ali Khan Kabir, whose will we have above. I think its Fatima?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6568,19 +6169,17 @@ items_199:
   sort_month: "11"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_200: 
   id: "200"
   accession_num: Sheikholeslami_ANMEQ_100308_200
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 3 x 26.7 cm.
   notes: Is talismans okay as subject category
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6601,19 +6200,17 @@ items_200:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_201: 
   id: "201"
   accession_num: Sheikholeslami_ANMEQ_100308_201
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: "length: 90 cm."
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6634,19 +6231,17 @@ items_201:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_202: 
   id: "202"
   accession_num: Sheikholeslami_ANMEQ_100308_202
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 3 x 3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6667,19 +6262,17 @@ items_202:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_203: 
   id: "203"
   accession_num: Sheikholeslami_ANMEQ_100308_203
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 7.5 x 12 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6700,19 +6293,17 @@ items_203:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_204: 
   id: "204"
   accession_num: Sheikholeslami_ANMEQ_100308_204
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: "length: 3.5 cm."
   notes: Finish Persian. See recording for more info on the mother in law was
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6733,19 +6324,17 @@ items_204:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_205: 
   id: "205"
   accession_num: Sheikholeslami_ANMEQ_100308_205
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: "diam: 10 cm."
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6766,19 +6355,17 @@ items_205:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_206: 
   id: "206"
   accession_num: Sheikholeslami_ANMEQ_100308_206
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 8 x 9.5 cm.
   notes: "Dimensions are for each glove. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6799,19 +6386,17 @@ items_206:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_207: 
   id: "207"
   accession_num: Sheikholeslami_ANMEQ_100308_207
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 8.5 x 11 cm.
   notes: What is a gulabtun?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6832,19 +6417,17 @@ items_207:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_208: 
   id: "208"
   accession_num: Sheikholeslami_ANMEQ_100308_208
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14.3 x 10.2 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6865,19 +6448,17 @@ items_208:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_209: 
   id: "209"
   accession_num: Sheikholeslami_ANMEQ_100308_209
   urn: ""
-  creator_id: 
   owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 12 x 17.6 cm.
   notes: What is name of woman in the photo, Golshun Khanum? Which one is Shahzadah Bisharat al-Saltanah? Is he the same person as Akbar Mirza Bisharat al-Saltanah aka Sardar Mofakham?
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6898,19 +6479,17 @@ items_209:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_210: 
   id: "210"
   accession_num: Sheikholeslami_ANMEQ_100308_210
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 8.8 x 12 cm.
   notes: "Where was this taken, unclear in recording? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6931,19 +6510,17 @@ items_210:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_211: 
   id: "211"
   accession_num: Sheikholeslami_ANMEQ_100308_211
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 16 x 21 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6964,19 +6541,17 @@ items_211:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_212: 
   id: "212"
   accession_num: Sheikholeslami_ANMEQ_100308_212
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 13 x 9 cm.
   notes: Is 'teacher' okay to use? tutor?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -6997,19 +6572,17 @@ items_212:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_213: 
   id: "213"
   accession_num: Sheikholeslami_ANMEQ_100308_213
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: 35 x 26.6 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7030,19 +6603,17 @@ items_213:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_214: 
   id: "214"
   accession_num: Sheikholeslami_ANMEQ_100308_214
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 227 x 520 cm.
   notes: Not yet delivered.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7063,19 +6634,17 @@ items_214:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_215: 
   id: "215"
   accession_num: Dawlatshahi_AN_091030_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 8 x 7 cm.
   notes: "Original scan made by MEQ has been cropped to remove wrting on photo of photo. Verso not  included because (1) it was done recently and (2) same information now included in description. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7096,19 +6665,17 @@ items_215:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_216: 
   id: "216"
   accession_num: Dawlatshahi_AN_091030_002
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 17 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7129,19 +6696,17 @@ items_216:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_217: 
   id: "217"
   accession_num: Dawlatshahi_AN_091030_003
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 10 x 10 cm.
   notes: Image has been cropped.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7162,19 +6727,17 @@ items_217:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_218: 
   id: "218"
   accession_num: Dawlatshahi_AN_091030_004
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Image has been cropped. Verso has been removed because recent and contains same info as description. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7195,19 +6758,17 @@ items_218:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_219: 
   id: "219"
   accession_num: Dawlatshahi_AN_091030_005
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 10 x 6 cm.
   notes: "Image has been cropped to hide te1t. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7228,19 +6789,17 @@ items_219:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_220: 
   id: "220"
   accession_num: Dawlatshahi_AN_091030_006
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 21 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7261,19 +6820,17 @@ items_220:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_221: 
   id: "221"
   accession_num: Dawlatshahi_AN_091030_007
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16 x 10 cm.
   notes: Verso eliminated because te1t included in description.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7294,19 +6851,17 @@ items_221:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_222: 
   id: "222"
   accession_num: Dawlatshahi_AN_091030_008
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "5"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 13 x 9 cm.
   notes: Image has been cropped.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7327,19 +6882,17 @@ items_222:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_223: 
   id: "223"
   accession_num: Farmayan_MEQ_100205_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 63.5 x 33 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7360,19 +6913,17 @@ items_223:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_224: 
   id: "224"
   accession_num: Farmayan_MEQ_100205_002
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7393,19 +6944,17 @@ items_224:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_225: 
   id: "225"
   accession_num: Farmayan_MEQ_100205_003
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7426,19 +6975,17 @@ items_225:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_226: 
   id: "226"
   accession_num: Farmayan_MEQ_100205_004
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7459,19 +7006,17 @@ items_226:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_227: 
   id: "227"
   accession_num: Farmayan_MEQ_100205_005
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "8"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7492,19 +7037,17 @@ items_227:
   sort_month: "2"
   sort_day: "6"
   editorial_date: "0"
+  owner_tag: 
 items_228: 
   id: "228"
   accession_num: Farmayan_MEQ_100205_006
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7525,19 +7068,17 @@ items_228:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_229: 
   id: "229"
   accession_num: Farmayan_MEQ_100205_007
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "11"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7558,19 +7099,17 @@ items_229:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_230: 
   id: "230"
   accession_num: Montague_AN_260909_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350431?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 10.5 x 6.3 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7591,19 +7130,17 @@ items_230:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_231: 
   id: "231"
   accession_num: Montague_AN_260909_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350433?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 10.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7624,19 +7161,17 @@ items_231:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_232: 
   id: "232"
   accession_num: Montague_AN_260909_003
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350434?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 22 x 13.4 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7657,19 +7192,17 @@ items_232:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_233: 
   id: "233"
   accession_num: Montague_AN_260909_004
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350436?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 11 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7690,19 +7223,17 @@ items_233:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_234: 
   id: "234"
   accession_num: Montague_AN_260909_005
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350437?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 16.2 x 10.5 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7723,19 +7254,17 @@ items_234:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_235: 
   id: "235"
   accession_num: Montague_AN_260909_006
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350439?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17 x 11.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7756,19 +7285,17 @@ items_235:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_236: 
   id: "236"
   accession_num: Montague_AN_260909_007
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350440?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 16.2 x 10.5 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7789,19 +7316,17 @@ items_236:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_237: 
   id: "237"
   accession_num: Montague_AN_260909_008
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350442?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "4"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 10.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7822,19 +7347,17 @@ items_237:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_238: 
   id: "238"
   accession_num: Mozaffari_NM_290709_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350407?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16.5 x 11.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7855,19 +7378,17 @@ items_238:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_239: 
   id: "239"
   accession_num: Mozaffari_NM_290709_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350408?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 17.8 x 12.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7888,19 +7409,17 @@ items_239:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_240: 
   id: "240"
   accession_num: Mozaffari_NM_290709_003
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350409?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 10 x 15 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7921,19 +7440,17 @@ items_240:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_241: 
   id: "241"
   accession_num: Mozaffari_NM_290709_004
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350410?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 18 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7954,19 +7471,17 @@ items_241:
   sort_month: "9"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_242: 
   id: "242"
   accession_num: Mozaffari_NM_290709_005
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350411?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 18 x 13 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -7987,19 +7502,17 @@ items_242:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_243: 
   id: "243"
   accession_num: Mozaffari_NM_290709_006
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350412?buttons=y
-  creator_id: 
   owner_id: "3"
   collection_id: "2"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14 x 9 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8020,19 +7533,17 @@ items_243:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_244: 
   id: "244"
   accession_num: Mozaffari_NM_290709_007
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350414?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16.5 12.5 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8053,19 +7564,17 @@ items_244:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_245: 
   id: "245"
   accession_num: Mozaffari_NM_290709_008
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350415?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16 x 11 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8086,19 +7595,17 @@ items_245:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_246: 
   id: "246"
   accession_num: Mozaffari_NM_290709_009
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350416?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 16 x 11.3 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8119,19 +7626,17 @@ items_246:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_247: 
   id: "247"
   accession_num: Mozaffari_NM_290709_010
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350417?buttons=y
-  creator_id: 
   owner_id: "3"
   collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 14.8 x 10 cm.
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8152,19 +7657,17 @@ items_247:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_248: 
   id: "248"
   accession_num: Mozaffari_NM_290709_011
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350418?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 12.6 x 17.7 cm.
   notes: "From Nahid: The two men seated in this photo are Abdol Majid Mirza (left) and Abdol Amir Mirza (right). They are both sons of Abdol Hossein Mirza (not in the photo).  Abdol Ali Mirza also not in the photo was Abdol Hossein Mirza's brother. I don't know why his name was in the explanations. Keramat Saltaneh in the photo is the mother of Abdol Majid Mirza and Abdol Amir Mirza who are in the photo. Shawkat Aqa was the wife of Abdol Majid in the photo. Abdol Amir's wife is not present but their children Mu'azziz, Amir Reza and Purandokht are seated. Taqi Khan and Anushiravan Mirza standing in the photo with are the children of Shawkat Aqa and Majid Mirza. ||"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8185,19 +7688,17 @@ items_248:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_249: 
   id: "249"
   accession_num: Mozaffari_NM_290709_012
   urn: " http://nrs.harvard.edu/urn-3:FHCL:3350419?buttons=y"
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 17.5 x 10.8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8218,19 +7719,17 @@ items_249:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_250: 
   id: "250"
   accession_num: Mozaffari_NM_290709_013
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350420?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 13.8 x 8.7 cm.
   notes: "Daftar al-Mul\xC5\xABk\\\\Najm al-Sal\xE1\xB9\xADanah: Better not to put spouse of Azd os Soltan until I have a chance to check with Marzieh Khanum, or someone else. My mother's memory is not clear on this. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8251,19 +7750,17 @@ items_250:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_251: 
   id: "251"
   accession_num: Mozaffari_NM_290709_014
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350422?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 11 x 6.5 cm.
   notes: "Shukuh Saltaneh was the title of Mozafferdin Shah's mother but also the title of one of his daughters. This is not Shukuh Saltaneh. My mother's memory is wavering between Shukuh Dowleh, another one of Mozaffareddin Shah's daughters, and Mahin Dowleh, one of Mozaffareddin Shah's wives. Could we put Shukuh Dowleh or Mahin Saltaneh and allow me to state it for sure when I consult Marzieh Khanum or Farhad Diba?  "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8284,19 +7781,17 @@ items_251:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_252: 
   id: "252"
   accession_num: Mozaffari_NM_290709_015
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350423?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 17 x 10.8 cm.
   notes: "Nu\xE1\xB9\xA3rat al-Sal\xE1\xB9\xADanah\\\\D\xC4\x81r\xC4\x81b Mirz\xC4\x81\\\\Gawhar Kh\xC4\x81num\\\\Z\xC4\xABb\xC4\x81 Kh\xC4\x81num"
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8317,19 +7812,17 @@ items_252:
   sort_month: "8"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_253: 
   id: "253"
   accession_num: Sanati_AN_200909_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350425?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "3"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 9 x 14 cm.
   notes: Check to make sure that Furugh is also daughter of same parents as others. then include bio information in description.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8350,19 +7843,17 @@ items_253:
   sort_month: "12"
   sort_day: "17"
   editorial_date: "0"
+  owner_tag: 
 items_254: 
   id: "254"
   accession_num: Sanati_AN_200909_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350427?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "3"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 14 x 9 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8383,19 +7874,17 @@ items_254:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_255: 
   id: "255"
   accession_num: Sanati_AN_200909_003
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350430?buttons=y
-  creator_id: 
   owner_id: 
   collection_id: "3"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 14 x 9 cm.
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8416,19 +7905,17 @@ items_255:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_256: 
   id: "256"
   accession_num: Zamandar_MEQ_090814_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "4"
   format_id: 
   circa: "1"
-  dimensions: 20 x 14 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8449,19 +7936,17 @@ items_256:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_257: 
   id: "257"
   accession_num: Zamandar_MEQ_090814_002
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 15 x 11 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8482,19 +7967,17 @@ items_257:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_258: 
   id: "258"
   accession_num: Zamandar_MEQ_090814_003
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: 9 x 12 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8515,19 +7998,17 @@ items_258:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_259: 
   id: "259"
   accession_num: Zamandar_MEQ_090814_004
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 8.7 x 5.6 cm.
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8548,19 +8029,17 @@ items_259:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_260: 
   id: "260"
   accession_num: Zamandar_MEQ_090814_005
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: 5.8 x 4.7 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8581,19 +8060,17 @@ items_260:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_261: 
   id: "261"
   accession_num: Zamandar_MEQ_090814_006
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 11 x 8 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8614,19 +8091,17 @@ items_261:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_262: 
   id: "262"
   accession_num: Zamandar_MEQ_090814_007
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 9 x 14 cm.
   notes: ""
-  place_id: "10"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8647,19 +8122,17 @@ items_262:
   sort_month: "9"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_263: 
   id: "263"
   accession_num: Zamandar_MEQ_090814_008
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: 8.5 x 13.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8680,19 +8153,17 @@ items_263:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_264: 
   id: "264"
   accession_num: Zamandar_MEQ_090814_009
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 22 x 18 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8713,19 +8184,17 @@ items_264:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_265: 
   id: "265"
   accession_num: Zamandar_MEQ_090814_010
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 22 x 15 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8746,19 +8215,17 @@ items_265:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_266: 
   id: "266"
   accession_num: Zamandar_MEQ_090814_011
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 20 x 14 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8779,19 +8246,17 @@ items_266:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_267: 
   id: "267"
   accession_num: Zamandar_MEQ_100402_012
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14 x 9 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8812,19 +8277,17 @@ items_267:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_268: 
   id: "268"
   accession_num: Zamandar_MEQ_100402_013
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "9"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 14 x 8.5 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8845,19 +8308,17 @@ items_268:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_269: 
   id: "269"
   accession_num: Tarbiat_al_bunat_AN_090710_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "95"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8878,19 +8339,17 @@ items_269:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_270: 
   id: "270"
   accession_num: Nijat_al_muslimat_AN_090710_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "187"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: This photocopy of the lithograph is held in Malik National Library (ms. No. 5213). WWQI should get original.
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8911,19 +8370,17 @@ items_270:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_271: 
   id: "271"
   accession_num: Sheikholeslami_ANMEQ_100308_215
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 154 x 315 cm.
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8944,19 +8401,17 @@ items_271:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_272: 
   id: "272"
   accession_num: Gawhariyah_AN_090710_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3351228
-  creator_id: 
   owner_id: 
   collection_id: "13"
   pages: "414"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: 1 volume. Lithographed
-  place_id: "11"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -8977,19 +8432,17 @@ items_272:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_273: 
   id: "686"
   accession_num: Hadiyat_al_muhibb_AN_090710_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3351229
-  creator_id: 
   owner_id: 
   collection_id: "13"
   pages: "158"
   format_id: 
   circa: "0"
-  dimensions: "21 cm. "
   notes: "Publisher: Matba\xE2\x80\x98ah-i Mirza \xE2\x80\x98Ali Asghar"
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9010,19 +8463,17 @@ items_273:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_274: 
   id: "844"
   accession_num: Risalah-i hijabiyah_AN_090710_001
   urn: "http://nrs.harvard.edu/urn-3:FHCL:3351230 "
-  creator_id: 
   owner_id: 
   collection_id: "13"
   pages: "38"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Publisher: Kirabfurushi-i Adabiyah"
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9043,19 +8494,17 @@ items_274:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_275: 
   id: "882"
   accession_num: Zaban_i_zanan_AN_090710_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "39"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: photocopy of periodical
-  place_id: "11"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9076,19 +8525,17 @@ items_275:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_276: 
   id: "921"
   accession_num: Namah_i_banuvan_AN_090710_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9109,19 +8556,17 @@ items_276:
   sort_month: "3"
   sort_day: "21"
   editorial_date: "0"
+  owner_tag: 
 items_277: 
   id: "929"
   accession_num: Namah_i_banuvan_AN_090710_002
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "10"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9142,19 +8587,17 @@ items_277:
   sort_month: "4"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_278: 
   id: "939"
   accession_num: Namah_i_banuvan_AN_090710_003
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9175,19 +8618,17 @@ items_278:
   sort_month: "5"
   sort_day: "1"
   editorial_date: "0"
+  owner_tag: 
 items_279: 
   id: "945"
   accession_num: Namah_i_banuvan_AN_090710_004
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9208,19 +8649,17 @@ items_279:
   sort_month: "5"
   sort_day: "16"
   editorial_date: "0"
+  owner_tag: 
 items_280: 
   id: "951"
   accession_num: Namah_i_banuvan_AN_090710_005
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "10"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9241,19 +8680,17 @@ items_280:
   sort_month: "6"
   sort_day: "6"
   editorial_date: "0"
+  owner_tag: 
 items_281: 
   id: "961"
   accession_num: Namah_i_banuvan_AN_090710_006
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9274,19 +8711,17 @@ items_281:
   sort_month: "6"
   sort_day: "30"
   editorial_date: "0"
+  owner_tag: 
 items_282: 
   id: "967"
   accession_num: Namah_i_banuvan_AN_090710_007
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9307,19 +8742,17 @@ items_282:
   sort_month: "9"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_283: 
   id: "975"
   accession_num: Namah_i_banuvan_AN_090710_008
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9340,19 +8773,17 @@ items_283:
   sort_month: "9"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_284: 
   id: "983"
   accession_num: Namah_i_banuvan_AN_090710_009
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9373,19 +8804,17 @@ items_284:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_285: 
   id: "991"
   accession_num: Namah_i_banuvan_AN_090710_010
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9406,19 +8835,17 @@ items_285:
   sort_month: "11"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_286: 
   id: "999"
   accession_num: Namah_i_banuvan_AN_090710_011
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9439,19 +8866,17 @@ items_286:
   sort_month: "12"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_287: 
   id: "1007"
   accession_num: Namah_i_banuvan_AN_090710_012
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9472,19 +8897,17 @@ items_287:
   sort_month: "12"
   sort_day: "30"
   editorial_date: "0"
+  owner_tag: 
 items_288: 
   id: "1015"
   accession_num: Namah_i_banuvan_AN_090710_013
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "8"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9505,19 +8928,17 @@ items_288:
   sort_month: "1"
   sort_day: "31"
   editorial_date: "0"
+  owner_tag: 
 items_289: 
   id: "1023"
   accession_num: Dawlatabadi_AN_100520_001
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9538,19 +8959,17 @@ items_289:
   sort_month: "11"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_290: 
   id: "1024"
   accession_num: Dawlatabadi_AN_100520_002
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9571,19 +8990,17 @@ items_290:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_291: 
   id: "1025"
   accession_num: Dawlatabadi_AN_100520_003
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9604,19 +9021,17 @@ items_291:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_292: 
   id: "1026"
   accession_num: Dawlatabadi_AN_100520_004
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9637,19 +9052,17 @@ items_292:
   sort_month: "11"
   sort_day: "13"
   editorial_date: "0"
+  owner_tag: 
 items_293: 
   id: "1031"
   accession_num: Dawlatabadi_AN_100520_005
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9670,19 +9083,17 @@ items_293:
   sort_month: "7"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_294: 
   id: "1032"
   accession_num: Dawlatabadi_AN_100520_006
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9703,19 +9114,17 @@ items_294:
   sort_month: "8"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_295: 
   id: "1033"
   accession_num: Dawlatabadi_AN_100520_007
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Envelope
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9736,19 +9145,17 @@ items_295:
   sort_month: "8"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_296: 
   id: "1035"
   accession_num: Dawlatabadi_AN_100520_008
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "12"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9769,19 +9176,17 @@ items_296:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_297: 
   id: "1036"
   accession_num: Dawlatabadi_AN_100520_009
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Signed by \xCA\xBBIsa Sadiq."
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9802,19 +9207,17 @@ items_297:
   sort_month: "10"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_298: 
   id: "1037"
   accession_num: Dawlatabadi_AN_100520_010
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9835,19 +9238,17 @@ items_298:
   sort_month: "7"
   sort_day: "21"
   editorial_date: "0"
+  owner_tag: 
 items_299: 
   id: "1040"
   accession_num: Dawlatabadi_AN_100520_011
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9868,19 +9269,17 @@ items_299:
   sort_month: "9"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_300: 
   id: "1041"
   accession_num: Dawlatabadi_AN_100520_012
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9901,19 +9300,17 @@ items_300:
   sort_month: "5"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_301: 
   id: "1042"
   accession_num: Dawlatabadi_AN_100520_013
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Request to participate  women's education in Qom. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9934,19 +9331,17 @@ items_301:
   sort_month: "4"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_302: 
   id: "1043"
   accession_num: Dawlatabadi_AN_100520_014
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "1"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -9967,21 +9362,19 @@ items_302:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_303: 
   id: "1045"
   accession_num: Dawlatabadi_AN_100520_015
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: |
     Who is Mr. Shafa - director of Propaganda department? The letter concerns the celebrations for Women's Day, 17 Day?  Kanun-e Banuvan program. For a radio program with an orchestra of students of Kanun. Wants her speech to be spoken. 
 
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10002,19 +9395,17 @@ items_303:
   sort_month: "1"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_304: 
   id: "1046"
   accession_num: Dawlatabadi_AN_100520_016
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10035,19 +9426,17 @@ items_304:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_305: 
   id: "1047"
   accession_num: Dawlatabadi_AN_100520_017
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Probably a photocopy of original. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10068,19 +9457,17 @@ items_305:
   sort_month: "3"
   sort_day: "4"
   editorial_date: "0"
+  owner_tag: 
 items_306: 
   id: "1048"
   accession_num: Dawlatabadi_AN_100520_018
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Invitation addressed to Mr. and Mrs. Sanatizadah.
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10101,19 +9488,17 @@ items_306:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_307: 
   id: "1049"
   accession_num: Dawlatabadi_AN_100520_019
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Text of speech in French delivered by Sadiqah Dawlatabadi on 20 July 1927 in Paris.
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10134,19 +9519,17 @@ items_307:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_308: 
   id: "1053"
   accession_num: Dawlatabadi_AN_100520_020
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10167,19 +9550,17 @@ items_308:
   sort_month: "1"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_309: 
   id: "1055"
   accession_num: Dawlatabadi_AN_100520_021
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Does the cover need to be edited so first page appears separately at start of sequence? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10200,19 +9581,17 @@ items_309:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_310: 
   id: "1059"
   accession_num: Dawlatabadi_AN_100520_022
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "15"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Publisher information. Kanun-i banuvan? "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10233,19 +9612,17 @@ items_310:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_311: 
   id: "1074"
   accession_num: Dawlatabadi_AN_100520_023
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10266,19 +9643,17 @@ items_311:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
+  owner_tag: 
 items_312: 
   id: "1075"
   accession_num: Dawlatabadi_AN_100520_024
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10299,19 +9674,17 @@ items_312:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
+  owner_tag: 
 items_313: 
   id: "1076"
   accession_num: Dawlatabadi_AN_100520_025
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10332,19 +9705,17 @@ items_313:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_314: 
   id: "1077"
   accession_num: Dawlatabadi_AN_100520_026
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10365,19 +9736,17 @@ items_314:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
+  owner_tag: 
 items_315: 
   id: "1078"
   accession_num: Dawlatabadi_AN_100520_027
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10398,19 +9767,17 @@ items_315:
   sort_month: "9"
   sort_day: "24"
   editorial_date: "0"
+  owner_tag: 
 items_316: 
   id: "1079"
   accession_num: Dawlatabadi_AN_100520_028
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: check letter for more accurate date
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10431,19 +9798,17 @@ items_316:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_317: 
   id: "1081"
   accession_num: Dawlatabadi_AN_100520_029
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10464,19 +9829,17 @@ items_317:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_318: 
   id: "1085"
   accession_num: Dawlatabadi_AN_100520_030
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Letter in reply to request by Mahdokht Sanati for memories of Sadiqah Dawlatabadi.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10497,19 +9860,17 @@ items_318:
   sort_month: "11"
   sort_day: "19"
   editorial_date: "0"
+  owner_tag: 
 items_319: 
   id: "1086"
   accession_num: Dawlatabadi_AN_100520_031
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Letter in reply to request by Mahdokht Sanati for memories of Sadiqah Dawlatabadi.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10530,19 +9891,17 @@ items_319:
   sort_month: "2"
   sort_day: "26"
   editorial_date: "0"
+  owner_tag: 
 items_320: 
   id: "1088"
   accession_num: Dawlatabadi_AN_100520_032
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Check date again. In AN's book, listed as 31 May 1923?
-  place_id: "13"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10563,21 +9922,19 @@ items_320:
   sort_month: "6"
   sort_day: "5"
   editorial_date: "0"
+  owner_tag: 
 items_321: 
   id: "1090"
   accession_num: Dawlatabadi_AN_100520_033
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: |
     Penmanship translation?Let's check addresses again and also see if we can establish the year of this letter based on other information we have. 
 
-  place_id: "14"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10598,19 +9955,17 @@ items_321:
   sort_month: "7"
   sort_day: "24"
   editorial_date: "0"
+  owner_tag: 
 items_322: 
   id: "1092"
   accession_num: Dawlatabadi_AN_100520_034
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "14"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10631,19 +9986,17 @@ items_322:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_323: 
   id: "1094"
   accession_num: Dawlatabadi_AN_100520_035
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "14"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10664,19 +10017,17 @@ items_323:
   sort_month: "8"
   sort_day: "5"
   editorial_date: "0"
+  owner_tag: 
 items_324: 
   id: "1095"
   accession_num: Dawlatabadi_AN_100520_036
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "14"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10697,19 +10048,17 @@ items_324:
   sort_month: "8"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_325: 
   id: "1097"
   accession_num: Dawlatabadi_AN_100520_037
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "14"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10730,19 +10079,17 @@ items_325:
   sort_month: "8"
   sort_day: "24"
   editorial_date: "0"
+  owner_tag: 
 items_326: 
   id: "1098"
   accession_num: Dawlatabadi_AN_100520_038
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawlatabadi writes about her new accommodations in Paris.  "
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10763,19 +10110,17 @@ items_326:
   sort_month: "9"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_327: 
   id: "1100"
   accession_num: Dawlatabadi_AN_100520_039
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10796,19 +10141,17 @@ items_327:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_328: 
   id: "1101"
   accession_num: Dawlatabadi_AN_100520_040
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10829,19 +10172,17 @@ items_328:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_329: 
   id: "1103"
   accession_num: Dawlatabadi_AN_100520_041
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10862,19 +10203,17 @@ items_329:
   sort_month: "10"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_330: 
   id: "1104"
   accession_num: Dawlatabadi_AN_100520_042
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10895,19 +10234,17 @@ items_330:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_331: 
   id: "1105"
   accession_num: Dawlatabadi_AN_100520_043
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Sadiqah Dawlatabadi writes to Qamar Taj about a reception hosted by the Ambassador of Afghanistan in Paris.
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10928,19 +10265,17 @@ items_331:
   sort_month: "11"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_332: 
   id: "1106"
   accession_num: Dawlatabadi_AN_100520_044
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawlatabadi writes about a party hosted by the Alliance School in Paris. "
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10961,19 +10296,17 @@ items_332:
   sort_month: "12"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_333: 
   id: "1110"
   accession_num: Dawlatabadi_AN_100520_045
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -10994,19 +10327,17 @@ items_333:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
+  owner_tag: 
 items_334: 
   id: "1111"
   accession_num: Dawlatabadi_AN_100520_046
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11027,19 +10358,17 @@ items_334:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
+  owner_tag: 
 items_335: 
   id: "1114"
   accession_num: Dawlatabadi_AN_100520_047
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Sadiqah Dawlatabadi writes about her visit to Nice and engagement of Qamar Taj.
-  place_id: "15"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11060,19 +10389,17 @@ items_335:
   sort_month: "2"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_336: 
   id: "1116"
   accession_num: Dawlatabadi_AN_100520_048
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawlatabadi writes to Qamar Taj about \xCA\xBBAbd al-Husayn San\xCA\xBBatizadah."
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11093,19 +10420,17 @@ items_336:
   sort_month: "3"
   sort_day: "4"
   editorial_date: "0"
+  owner_tag: 
 items_337: 
   id: "1117"
   accession_num: Dawlatabadi_AN_100520_049
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11126,19 +10451,17 @@ items_337:
   sort_month: "3"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_338: 
   id: "1118"
   accession_num: Dawlatabadi_AN_100520_050
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawlatabadi congratulates San\xCA\xBBatizadah on his betrothal to Qamar Taj and  thanks him for a loan of 1,500 French francs."
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11159,19 +10482,17 @@ items_338:
   sort_month: "6"
   sort_day: "1"
   editorial_date: "0"
+  owner_tag: 
 items_339: 
   id: "1120"
   accession_num: Dawlatabadi_AN_100520_051
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Is there another letter that this is connected to?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11192,19 +10513,17 @@ items_339:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_340: 
   id: "1122"
   accession_num: Dawlatabadi_AN_100520_052
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: edolleh band is name of hot springs spa. Is she in Germany?
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11225,19 +10544,17 @@ items_340:
   sort_month: "9"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_341: 
   id: "1125"
   accession_num: Dawlatabadi_AN_100520_053
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: This is a reply to his letter. Yahya? who just had an appendoctomy and wants to return to Iran to live with him. Writes of article about French and Iranian economy
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11258,19 +10575,17 @@ items_341:
   sort_month: "10"
   sort_day: "25"
   editorial_date: "0"
+  owner_tag: 
 items_342: 
   id: "1126"
   accession_num: Dawlatabadi_AN_100520_054
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: gives her advice on pregnancy and breastfeeding and names for children
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11291,19 +10606,17 @@ items_342:
   sort_month: "3"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_343: 
   id: "1127"
   accession_num: Dawlatabadi_AN_100520_055
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Qamar Taj/Fakhr Taj. Humayun is name of baby. \xD9\x87\xD9\x85\xD8\xA7\xDB\x8C\xD9\x88\xD9\x86 \xD8\xB5\xD9\x86\xD8\xB9\xD8\xAA\xDB\x8C\xE2\x80\x8C\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87. husband's name is \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD8\xAD\xD8\xB3\xDB\x8C\xD9\x86 \xD8\xB5\xD9\x86\xD8\xB9\xD8\xAA\xDB\x8C"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11324,19 +10637,17 @@ items_343:
   sort_month: "11"
   sort_day: "27"
   editorial_date: "0"
+  owner_tag: 
 items_344: 
   id: "1128"
   accession_num: Dawlatabadi_AN_100520_056
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: probably in same envelope with date as one prior. missing first page problably. probably ca. May 1926
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11357,19 +10668,17 @@ items_344:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_345: 
   id: "1130"
   accession_num: Dawlatabadi_AN_100520_057
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Offers advice on pregnancy and child rearing
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11390,19 +10699,17 @@ items_345:
   sort_month: "5"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_346: 
   id: "1131"
   accession_num: Dawlatabadi_AN_100520_058
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: check that pages correspond
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11423,21 +10730,19 @@ items_346:
   sort_month: "12"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_347: 
   id: "1133"
   accession_num: Dawlatabadi_AN_100520_059
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: |
     check that pages correspond. Talks about her studies and hopes for doing some good for Iran, her life in Paris, 
 
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11458,19 +10763,17 @@ items_347:
   sort_month: "12"
   sort_day: "17"
   editorial_date: "0"
+  owner_tag: 
 items_348: 
   id: "1135"
   accession_num: Dawlatabadi_AN_100520_060
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawltabadi writes to Qamar Taj about attending the Congress of International Women's Alliance in Paris. "
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11491,19 +10794,17 @@ items_348:
   sort_month: "6"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_349: 
   id: "1138"
   accession_num: Dawlatabadi_AN_100520_061
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11524,19 +10825,17 @@ items_349:
   sort_month: "12"
   sort_day: "12"
   editorial_date: "0"
+  owner_tag: 
 items_350: 
   id: "1139"
   accession_num: Dawlatabadi_AN_100520_062
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Sadiqah Dawltabadi writes about the differences between life in France and Iran.
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11557,19 +10856,17 @@ items_350:
   sort_month: "2"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_351: 
   id: "1141"
   accession_num: Dawlatabadi_AN_100520_063
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11590,19 +10887,17 @@ items_351:
   sort_month: "3"
   sort_day: "11"
   editorial_date: "0"
+  owner_tag: 
 items_352: 
   id: "1143"
   accession_num: Dawlatabadi_AN_100520_064
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11623,19 +10918,17 @@ items_352:
   sort_month: "3"
   sort_day: "26"
   editorial_date: "0"
+  owner_tag: 
 items_353: 
   id: "1145"
   accession_num: Dawlatabadi_AN_100520_065
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: falls sick during her examination period at university. and tells her to keep healthy as well as her return to Iran and plans upon returning to serve Iran.
-  place_id: "16"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11656,19 +10949,17 @@ items_353:
   sort_month: "6"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_354: 
   id: "1148"
   accession_num: Dawlatabadi_AN_100520_066
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "It seems these two docs are related? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11689,19 +10980,17 @@ items_354:
   sort_month: "1"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_355: 
   id: "1150"
   accession_num: Dawlatabadi_AN_100520_067
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Qamar Taj probably fought with husband. Advises her on how to invest some money. Talks about Fereydoun and Mehri. 500 tuman. May have been her alimony. Probably divorced her husband.
-  place_id: "5"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11722,19 +11011,17 @@ items_355:
   sort_month: "11"
   sort_day: "19"
   editorial_date: "0"
+  owner_tag: 
 items_356: 
   id: "1151"
   accession_num: Dawlatabadi_AN_100520_068
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Mentions Mehri and Fereydoun and also hard work of opening schools. Mustafa Khan brought Fereydoun to her for five days. Talks about her protest to his looking dirty, a dispute over ownership of a rug. Qamar Taj is separating from her husband. It looks like she has received half of her alimony (mehriah)
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11755,19 +11042,17 @@ items_356:
   sort_month: "12"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_357: 
   id: "1153"
   accession_num: Dawlatabadi_AN_100520_069
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Does the letter talk about an abortion by Qamar Taj?
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11788,21 +11073,19 @@ items_357:
   sort_month: "10"
   sort_day: "2"
   editorial_date: "0"
+  owner_tag: 
 items_358: 
   id: "1154"
   accession_num: Dawlatabadi_AN_100520_070
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: |
     about relations with estranged ex-husband, Sanati, so that she comes back to home. Mustafa Khan||Nasr allah Khan||
 
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11823,19 +11106,17 @@ items_358:
   sort_month: "10"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_359: 
   id: "1156"
   accession_num: Dawlatabadi_AN_100520_071
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Nasr allah Khan brought letter to her. Qamar is teaching. Talks about her illness. Nafagh. alot of divorce talk which is about to happen.  Gaz sent by Qamar Taj. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11856,19 +11137,17 @@ items_359:
   sort_month: "11"
   sort_day: "12"
   editorial_date: "0"
+  owner_tag: 
 items_360: 
   id: "1158"
   accession_num: Dawlatabadi_AN_100520_072
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Fereydun staying with her and bought him boots but not galooshes. Sanatizadeh and alimony...looks like he is giving money to sd. Nasr Allah. Sadiqah Dawlatabadi writes to Qamar Taj about renting the home of \xCA\xBBIffat al-Muluk Khvajahnuri, where she plans to open a girl's school and dormitory. Hot water."
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11889,19 +11168,17 @@ items_360:
   sort_month: "11"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_361: 
   id: "1160"
   accession_num: Dawlatabadi_AN_100520_073
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Furugh gave birth. SD sends Gaz and flowers. Zika\xCA\xBE al-Dawlah lost her child. Sanatizadeh visits and they talk of custody.Asks to send a servant and names prices 5/4 tumans who can cook. Rugs sold for 18 tumans but I can get it back or give you the money. Got a servant for boy. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11922,19 +11199,17 @@ items_361:
   sort_month: "12"
   sort_day: "15"
   editorial_date: "0"
+  owner_tag: 
 items_362: 
   id: "1161"
   accession_num: Dawlatabadi_AN_100520_074
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Fereydoun got sick with orion/mumps. Sanati doesn't visit. Qamar Taj goes to Shiraz for a visit. Sanati gives some money for child's clothes. Male servant that can cook. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11955,19 +11230,17 @@ items_362:
   sort_month: "1"
   sort_day: "6"
   editorial_date: "0"
+  owner_tag: 
 items_363: 
   id: "1162"
   accession_num: Dawlatabadi_AN_100520_075
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Talks about important of travel and Qamar Taj's trip to Shiraz. Mahin...(Mahdukht)...more money for Fereydun. .talks about possible money that they can get from him. Poor state of clothing of Fereydoun....get a lawyer take him to court but at the end forgive him in order to get money
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -11988,19 +11261,17 @@ items_363:
   sort_month: "1"
   sort_day: "31"
   editorial_date: "0"
+  owner_tag: 
 items_364: 
   id: "1163"
   accession_num: Dawlatabadi_AN_100520_076
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "\xCA\xBBImad al-Shari\xCA\xBBah illness, her illness. Talked to Sanati. Sewing machine and watch won't get back. tells here to let her know if this is correct. if not, we'll take him to court. Tells to her to visit Tehran if she doesn't go away for new year holidays. Still needs a servant. Khadijah Sultan Khanum. Munis Aqa. Furugh. Talks about rug again. Telephoned Sarim al-Dawlah"
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12021,19 +11292,17 @@ items_364:
   sort_month: "2"
   sort_day: "21"
   editorial_date: "0"
+  owner_tag: 
 items_365: 
   id: "1165"
   accession_num: Dawlatabadi_AN_100520_077
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "replied to telegraph. mainly about money that want to get money from Sanati. Fereydun hurt his head on fountain. but in fact father beat him with a wooden club because he was stealing again.  will pay 10 tomans for SD to look after the boy. puts boy in new school. talks about her own vacation. She is taking fereydoun to visit mother. She has girl boarders in her house. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12054,19 +11323,17 @@ items_365:
   sort_month: "3"
   sort_day: "12"
   editorial_date: "0"
+  owner_tag: 
 items_366: 
   id: "1167"
   accession_num: Dawlatabadi_AN_100520_078
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Sanati visit. Fereydun difficult child. steals and lies. talks about problems with his behavior. Shouldnt stay with him. asks her to write a terse letter to him to get him to stop...truancy, etc. Munes, Immad, Mahdukht
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12087,19 +11354,17 @@ items_366:
   sort_month: "8"
   sort_day: "2"
   editorial_date: "0"
+  owner_tag: 
 items_367: 
   id: "1169"
   accession_num: Dawlatabadi_AN_100520_079
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sadiqah Dawlatabadi writes to Qamar Taj about adding another grade to her school so students can graduate with a high school diploma. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12120,19 +11385,17 @@ items_367:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_368: 
   id: "1171"
   accession_num: Dawlatabadi_AN_100520_080
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Qamar didn't go to US. talks more about starting 12 grade class and then stepping aside at school. Mentions seeing Hadi again. She has now moved to Golhak from Tehran.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12153,19 +11416,17 @@ items_368:
   sort_month: "9"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_369: 
   id: "1172"
   accession_num: Dawlatabadi_AN_100520_081
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "talks about her illnesses and schools. Start school in next year. Wrote an Ayeh Qoran. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12186,19 +11447,17 @@ items_369:
   sort_month: "3"
   sort_day: "16"
   editorial_date: "0"
+  owner_tag: 
 items_370: 
   id: "1173"
   accession_num: Dawlatabadi_AN_100520_082
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Mahin. Talks about going to Isfahan. Talks about buying a house for Mahin. Marriage. About getting back together with the family...confusing not sure exactly what she is talking about. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12219,20 +11478,18 @@ items_370:
   sort_month: "6"
   sort_day: "25"
   editorial_date: "0"
+  owner_tag: 
 items_371: 
   id: "1174"
   accession_num: Dawlatabadi_AN_100520_083
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "At the time of this letter, Fakri had separated from her husband and was working at the Ministry of Finance in Tehran. The kindergarten referred to is Shahpur Kindergarten, the first kindergarten in Isfahan, run by Qamar Taj Dawlatabadi.\n\
     Written on Kanuvan Banuvan stationary. Mahin. Talks about plays given at Kanun Banun and one that she wrote a play. Fakri. Qamar Taj coming to Tehran. might be work but difficult to live as a single women == have to live smply and not put make up on. Fakri. No makeup (toilet). Fakri is in Tehran. Need a good servant. Qamar want to come up with Mahin (is this the same as Mehri). Sanati wants to build an apartment in his house. uses the word apartment. If you come here maybe you can live together again. If you are nice, he will be nice. Sanati/. They have a Kindergarten (kudakestan) in Isfahan. Building of apartments. Putting banks in money. Kindergarten. Sadiqah Dawlatabadi was the head of Kanun-i banuvan from 1315 SH until the end of her life. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12253,19 +11510,17 @@ items_371:
   sort_month: "4"
   sort_day: "13"
   editorial_date: "0"
+  owner_tag: 
 items_372: 
   id: "1176"
   accession_num: Dawlatabadi_AN_100520_084
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: This letter is from Tehran to London. Qamar Taj first went to the United Kingdom in Shahrivar 1331 Sh to continue her education. This trip took fourteen months. Her next trip was from 1336 SH to 1340 SH with several short visits back to Iran. Got typhoid. Dr. Huchang who takes care of him. About events for women's day, 17 Day. 13 associations. Mehdi Dawlatabadi. Hadi Kuchelu. Fakri Giti wife of Hushang.Isfahan. Hadi is their child. Europe. Tehran. Golhak. Fakr al-Taj. Khanum Mrs.Mohtaram Taba'i. Ashraf (sister of Shah
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12286,19 +11541,17 @@ items_372:
   sort_month: "2"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_373: 
   id: "1178"
   accession_num: Dawlatabadi_AN_100520_085
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "1"
-  dimensions: ""
   notes: "May be a draft. This is a letter to Judiciary branch, about a woman who does a sit in at their offices so that her case is addressed. probably late 1330s. "
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12319,19 +11572,17 @@ items_373:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_374: 
   id: "1179"
   accession_num: Dawlatabadi_AN_100520_086
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Sent him a tie. asks him for history of textile industry. Talks about her life as a busy student who is always in demand. Also talks about the differences in post-high school educational systems of France and Germany. Something about his Isfahan office. "
-  place_id: "9"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12352,19 +11603,17 @@ items_374:
   sort_month: "2"
   sort_day: "9"
   editorial_date: "0"
+  owner_tag: 
 items_375: 
   id: "1181"
   accession_num: Dawlatabadi_AN_100520_087
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "SD is ill. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12385,19 +11634,17 @@ items_375:
   sort_month: "3"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_376: 
   id: "1182"
   accession_num: Dawlatabadi_AN_100520_088
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Photocopy.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12418,19 +11665,17 @@ items_376:
   sort_month: "1"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_377: 
   id: "1184"
   accession_num: Dawlatabadi_AN_100520_089
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "[after] September 1961"
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12451,19 +11696,17 @@ items_377:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_378: 
   id: "1205"
   accession_num: Dawlatabadi_AN_100520_091
   urn: ""
-  creator_id: "107"
   owner_id: 
   collection_id: "12"
   pages: "9"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12484,19 +11727,17 @@ items_378:
   sort_month: "9"
   sort_day: "28"
   editorial_date: "0"
+  owner_tag: 
 items_379: 
   id: "1214"
   accession_num: Dawlatabadi_AN_100520_092
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "12"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Partial typed version of untitled play, pages 33-44 on "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12517,19 +11758,17 @@ items_379:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_380: 
   id: "1226"
   accession_num: Dawlatabadi_AN_100520_093
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Reverse order of this document and its type copy...Or perhaps include as single document? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12550,19 +11789,17 @@ items_380:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_381: 
   id: "1232"
   accession_num: Dawlatabadi_AN_100520_094
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "5"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12583,19 +11820,17 @@ items_381:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_382: 
   id: "1237"
   accession_num: Dawlatabadi_AN_100520_095
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12616,19 +11851,17 @@ items_382:
   sort_month: "1"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_383: 
   id: "1241"
   accession_num: Dawlatabadi_AN_100520_096
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12649,19 +11882,17 @@ items_383:
   sort_month: "1"
   sort_day: "8"
   editorial_date: "0"
+  owner_tag: 
 items_384: 
   id: "1242"
   accession_num: Dawlatabadi_AN_100520_097
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "4"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "[n.d., 1327 SH]"
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12682,19 +11913,17 @@ items_384:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_385: 
   id: "1246"
   accession_num: Dawlatabadi_AN_100520_099
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12715,19 +11944,17 @@ items_385:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_386: 
   id: "1248"
   accession_num: Dawlatabadi_AN_100520_100
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Reply to Doctor Shafaq on the subject of Iranian men marrying foreign women.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12748,19 +11975,17 @@ items_386:
   sort_month: "3"
   sort_day: "3"
   editorial_date: "0"
+  owner_tag: 
 items_387: 
   id: "1251"
   accession_num: Dawlatabadi_AN_100520_101
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Is this an article given that she keeps talking about speaking to a group of women? "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12781,19 +12006,17 @@ items_387:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_388: 
   id: "1254"
   accession_num: Dawlatabadi_AN_100520_102
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "1"
-  dimensions: ""
   notes: "Speech by SD on bond purchases of people. People loans for Government. National loans. Very like given on 1330 as part of the 17 Day celebrations. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12814,19 +12037,17 @@ items_388:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_389: 
   id: "1257"
   accession_num: Dawlatabadi_AN_100520_103
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: 
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12847,19 +12068,17 @@ items_389:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_390: 
   id: "1260"
   accession_num: Dawlatabadi_AN_100520_104
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Delete this series as exact copy of prior files.
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12880,19 +12099,17 @@ items_390:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_391: 
   id: "1263"
   accession_num: Dawlatabadi_AN_100520_105
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12913,19 +12130,17 @@ items_391:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_392: 
   id: "1266"
   accession_num: Dawlatabadi_AN_100520_106
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Possibly for a radio broadcast. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12946,19 +12161,17 @@ items_392:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_393: 
   id: "1269"
   accession_num: Dawlatabadi_AN_100520_107
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Only the first page of this document is available. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -12979,19 +12192,17 @@ items_393:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_394: 
   id: "1270"
   accession_num: Dawlatabadi_AN_100520_108
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "delete this, copy of earlier file. "
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13012,19 +12223,17 @@ items_394:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_395: 
   id: "1271"
   accession_num: Dawlatabadi_AN_100520_109
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13045,19 +12254,17 @@ items_395:
   sort_month: "3"
   sort_day: "1"
   editorial_date: "0"
+  owner_tag: 
 items_396: 
   id: "1278"
   accession_num: Dawlatabadi_AN_100520_110
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13078,19 +12285,17 @@ items_396:
   sort_month: "1"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_397: 
   id: "1280"
   accession_num: Dawlatabadi_AN_100520_111
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13111,19 +12316,17 @@ items_397:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_398: 
   id: "1283"
   accession_num: Dawlatabadi_AN_100520_112
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: "Saraj al-Nisa\xCA\xBC Baygum was among the first group of female students at the University of Tehran. After returning to India, she sent this article to Sadiqah Dawlatabadi who appears to have edited it, possibly for publication in Zaban-i zanan.  \n"
-  place_id: "17"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13144,19 +12347,17 @@ items_398:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_399: 
   id: "1286"
   accession_num: Dawlatabadi_AN_100520_113
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13177,19 +12378,17 @@ items_399:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_400: 
   id: "1288"
   accession_num: Dawlatabadi_AN_100520_114
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13210,19 +12409,17 @@ items_400:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_401: 
   id: "1291"
   accession_num: Dawlatabadi_AN_100520_115
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "27"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13243,19 +12440,17 @@ items_401:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_402: 
   id: "1318"
   accession_num: Dawlatabadi_AN_100520_116
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "31"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13276,19 +12471,17 @@ items_402:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_403: 
   id: "1349"
   accession_num: Dawlatabadi_AN_100520_117
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "19"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13309,19 +12502,17 @@ items_403:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_404: 
   id: "1368"
   accession_num: Dawlatabadi_AN_100520_118
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "18"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13342,19 +12533,17 @@ items_404:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_405: 
   id: "1386"
   accession_num: Dawlatabadi_AN_100520_119
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "19"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13375,19 +12564,17 @@ items_405:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_406: 
   id: "1405"
   accession_num: Dawlatabadi_AN_100520_120
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "19"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13408,19 +12595,17 @@ items_406:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_407: 
   id: "1424"
   accession_num: Dawlatabadi_AN_100520_121
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "19"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13441,19 +12626,17 @@ items_407:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_408: 
   id: "1443"
   accession_num: Dawlatabadi_AN_100520_122
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "19"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13474,19 +12657,17 @@ items_408:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_409: 
   id: "1462"
   accession_num: Dawlatabadi_AN_100520_123
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "17"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13507,19 +12688,17 @@ items_409:
   sort_month: "10"
   sort_day: "23"
   editorial_date: "0"
+  owner_tag: 
 items_410: 
   id: "1465"
   accession_num: Dawlatabadi_AN_100520_124
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: In Khvandaniha, year 21, no. 90.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13540,19 +12719,17 @@ items_410:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_411: 
   id: "1466"
   accession_num: Dawlatabadi_AN_100520_125
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: In Ittala'at-i banuvan, no. 223, p.2 and 62.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13573,19 +12750,17 @@ items_411:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
+  owner_tag: 
 items_412: 
   id: "1468"
   accession_num: Dawlatabadi_AN_100520_126
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "0"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13606,19 +12781,17 @@ items_412:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_413: 
   id: "1469"
   accession_num: Dawlatabadi_AN_100520_127
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "6"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: undated, September 1961
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13639,19 +12812,17 @@ items_413:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_414: 
   id: "1475"
   accession_num: Dawlatabadi_AN_100520_128
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "3"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: ""
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13672,19 +12843,17 @@ items_414:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_415: 
   id: "1478"
   accession_num: Dawlatabadi_AN_100520_129
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Written in Arabic and Persian.
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13705,19 +12874,17 @@ items_415:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_416: 
   id: "1479"
   accession_num: Dawlatabadi_AN_100520_130
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: "12"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: ""
   notes: Likely written to Qamar Taj in Isfahan
-  place_id: "1"
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
@@ -13738,19 +12905,17 @@ items_416:
   sort_month: "2"
   sort_day: "21"
   editorial_date: "0"
+  owner_tag: 
 items_417: 
   id: "1480"
   accession_num: Mirbaghdadabadi_AN_100410_001
   urn: MB100410001
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "7"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-20 15:42:51
@@ -13771,19 +12936,17 @@ items_417:
   sort_month: "10"
   sort_day: "22"
   editorial_date: "0"
+  owner_tag: 
 items_418: 
   id: "1481"
   accession_num: ""
   urn: ""
-  creator_id: 
   owner_id: 
   collection_id: 
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-20 15:44:01
@@ -13804,19 +12967,17 @@ items_418:
   sort_month: 
   sort_day: 
   editorial_date: "0"
+  owner_tag: 
 items_419: 
   id: "1484"
   accession_num: Mirbaghdadabadi_AN_100410_002
   urn: MB100410002
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-20 20:33:37
@@ -13837,19 +12998,17 @@ items_419:
   sort_month: "12"
   sort_day: "10"
   editorial_date: "0"
+  owner_tag: 
 items_420: 
   id: "1485"
   accession_num: Mirbaghdadabadi_AN_100410_003
   urn: MB100410003
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 19:01:50
@@ -13870,19 +13029,17 @@ items_420:
   sort_month: "1"
   sort_day: "14"
   editorial_date: "0"
+  owner_tag: 
 items_421: 
   id: "1486"
   accession_num: Mirbaghdadabadi_AN_100410_004
   urn: MB100410004
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "1"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 19:09:21
@@ -13903,19 +13060,17 @@ items_421:
   sort_month: "10"
   sort_day: "13"
   editorial_date: "0"
+  owner_tag: 
 items_422: 
   id: "1487"
   accession_num: Mirbaghdadabadi_AN_100410_005
   urn: MB100410005
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 19:18:15
@@ -13936,19 +13091,17 @@ items_422:
   sort_month: "2"
   sort_day: "20"
   editorial_date: "0"
+  owner_tag: 
 items_423: 
   id: "1488"
   accession_num: Mirbaghdadabadi_AN_100410_006
   urn: MB100410006
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 19:33:37
@@ -13969,19 +13122,17 @@ items_423:
   sort_month: "6"
   sort_day: "29"
   editorial_date: "0"
+  owner_tag: 
 items_424: 
   id: "1489"
   accession_num: Mirbaghdadabadi_AN_100410_007
   urn: MB100410007
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 21:42:11
@@ -14002,19 +13153,17 @@ items_424:
   sort_month: "6"
   sort_day: "12"
   editorial_date: "0"
+  owner_tag: 
 items_425: 
   id: "1490"
   accession_num: Mirbaghdadabadi_AN_100410_008
   urn: MB100410008
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-21 21:50:39
@@ -14035,19 +13184,17 @@ items_425:
   sort_month: "4"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_426: 
   id: "1491"
   accession_num: Mirbaghdadabadi_AN_100410_009
   urn: MB100410009
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-27 13:35:19
@@ -14068,19 +13215,17 @@ items_426:
   sort_month: "4"
   sort_day: "18"
   editorial_date: "0"
+  owner_tag: 
 items_427: 
   id: "1492"
   accession_num: Mirbaghdadabadi_AN_100410_0010
   urn: MB100410010
-  creator_id: 
   owner_id: 
   collection_id: "15"
   pages: "2"
   format_id: 
   circa: "0"
-  dimensions: 
   notes: ""
-  place_id: 
   bound: "0"
   publish: "0"
   created_at: 2010-10-27 13:41:38
@@ -14101,3 +13246,4 @@ items_427:
   sort_month: "11"
   sort_day: "27"
   editorial_date: "0"
+  owner_tag: 

@@ -12,17 +12,18 @@ collections_001:
   contact: ""
   notes: ""
   created_at: 2010-03-22 20:51:20
-  updated_at: 2010-03-30 17:29:35
+  updated_at: 2010-12-09 09:09:35
   publish: "0"
   private: "0"
   items_count: "0"
   finding_aid: "0"
-  lock_version: "0"
+  lock_version: "1"
   acquired_on: 
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+  last_edited: "2011-02-03"
 collections_002: 
   id: "2"
   address: ""
@@ -47,6 +48,7 @@ collections_002:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: "Items in collection were acquired on three separate occasions. Nahid donated 15 photographs on July 29, 2009. Afsaneh acquired documents in Iran on June 3, 2010. Finally, Afsaneh and Nahid collected several additional photographs and an oral history August 4, 2010. "
+  last_edited: 
 collections_003: 
   id: "4"
   address: ""
@@ -71,6 +73,7 @@ collections_003:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: "The photographs come from the collection of Mr. Joel Montague, a private collector, of Wellesley, Massachusetts. Mr. Montague has a collection of 200+ photographs from Iran, most dating to the early twentieth century. The collection largely consists of photographic reproductions of portraits of constitutional era figures. These were acquired in the form of an album from a dealer in the Friday bazaar, probably in the early 1970s. In addition, Mr. Montague has acquired 20-30 original photographs of the \xE2\x80\x98cabinet card\xE2\x80\x99 and \xE2\x80\x98carte visite\xE2\x80\x99 variety, many from the same dealer. These were purchased individually over several years, starting in the 1960s."
+  last_edited: 
 collections_004: 
   id: "5"
   address: ""
@@ -95,6 +98,7 @@ collections_004:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_005: 
   id: "6"
   address: ""
@@ -119,6 +123,7 @@ collections_005:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
+  last_edited: 
 collections_006: 
   id: "7"
   address: ""
@@ -143,6 +148,7 @@ collections_006:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_007: 
   id: "8"
   address: ""
@@ -156,17 +162,18 @@ collections_007:
   contact: ""
   notes: ""
   created_at: 2010-03-30 17:33:45
-  updated_at: 2010-12-06 17:54:51
+  updated_at: 2010-12-09 09:13:42
   publish: "1"
   private: "0"
   items_count: "215"
   finding_aid: "1"
-  lock_version: "2"
+  lock_version: "3"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: "2012-04-04"
 collections_008: 
   id: "9"
   address: ""
@@ -191,6 +198,7 @@ collections_008:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_009: 
   id: "10"
   address: ""
@@ -215,6 +223,7 @@ collections_009:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
+  last_edited: 
 collections_010: 
   id: "11"
   address: ""
@@ -239,6 +248,7 @@ collections_010:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_011: 
   id: "12"
   address: ""
@@ -263,6 +273,7 @@ collections_011:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_012: 
   id: "13"
   address: ""
@@ -289,6 +300,7 @@ collections_012:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_013: 
   id: "15"
   address: ""
@@ -313,6 +325,7 @@ collections_013:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
+  last_edited: 
 collections_014: 
   id: "16"
   address: ""
@@ -337,6 +350,7 @@ collections_014:
   acquired_by: 
   processed_by: 
   acquisition_notes: 
+  last_edited: 
 collections_015: 
   id: "17"
   address: ""
@@ -361,6 +375,7 @@ collections_015:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 
 collections_016: 
   id: "18"
   address: ""
@@ -385,3 +400,4 @@ collections_016:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
+  last_edited: 

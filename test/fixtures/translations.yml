@@ -3821,3 +3821,23 @@ translations_382:
   created_at: 2010-12-09 00:01:40
   updated_at: 
   lock_version: "0"
+translations_383: 
+  id: "396"
+  locale: en
+  key: last_edited
+  value: Last Edited
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-09 04:15:08
+  updated_at: 
+  lock_version: "0"
+translations_384: 
+  id: "397"
+  locale: fa
+  key: last_edited
+  value: "\xD8\xA2\xD8\xAE\xD8\xB1\xDB\x8C\xD9\x86 \xD9\x88\xDB\x8C\xD8\xB1\xD8\xA7\xDB\x8C\xD8\xB4"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-09 04:15:38
+  updated_at: 
+  lock_version: "0"
