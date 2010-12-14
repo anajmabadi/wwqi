@@ -14,7 +14,6 @@ class Admin::CompsController < Admin::AdminController
   # GET /comps/1.xml
   def show
     @comp = Comp.find(params[:id])
-    @items = Item.select_list
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @comp }
@@ -26,6 +25,7 @@ class Admin::CompsController < Admin::AdminController
   def new
     @comp = Comp.new
 
+    @items = Item.select_list
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @comp }
@@ -35,6 +35,7 @@ class Admin::CompsController < Admin::AdminController
   # GET /comps/1/edit
   def edit
     @comp = Comp.find(params[:id])
+    @items = Item.select_list
   end
 
   # POST /comps
@@ -60,7 +61,7 @@ class Admin::CompsController < Admin::AdminController
   # PUT /comps/1.xml
   def update
     @comp = Comp.find(params[:id])
-
+    @items = Item.select_list
     respond_to do |format|
       if @comp.update_attributes(params[:comp])
         format.html { redirect_to(admin_comp_path(@comp), :notice => 'Comp was successfully updated.') }

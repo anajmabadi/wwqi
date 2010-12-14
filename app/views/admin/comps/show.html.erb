@@ -13,7 +13,7 @@
                 </p>
                 <p>
                     <b>Comp:</b>
-                    <%= @comp.comp_id %>
+                    <%= link_to @comp.comp.to_label, admin_item_path(@comp.comp) unless @comp.comp.nil?%>
                 </p>
                 <p>
                     <b>Caption_en:</b>
