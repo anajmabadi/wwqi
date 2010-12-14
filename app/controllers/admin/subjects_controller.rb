@@ -6,13 +6,13 @@ class Admin::SubjectsController < Admin::AdminController
     @page = params[:page] || 1
     @per_page = params[:per_page] || Subject.per_page || 100
 
-    @order = sort_order('subject_translations.name')
+    @order = sort_order('UPPER(subject_translations.name)')
 
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
     @subject_type_filter = params[:subject_type_filter]
 
-    @query_hash = { :conditions => ['subjects.publish=:publish'], :parameters => {:publish => 1} }
+    @query_hash = { :conditions => ['subject_translations.locale = :selected_locale'], :parameters => {:selected_locale => 'en'} }
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
 
