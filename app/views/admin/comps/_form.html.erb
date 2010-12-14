@@ -19,16 +19,16 @@
     <%= f.select :item_id, @items %>
   </div>
     <div class="field">
+    <%= f.label :comp_id %><br />
+    <%= f.select :comp_id, @items %>
+  </div>
+    <div class="field">
     <%= f.label :caption_en %><br />
     <%= f.text_field :caption_en %>
   </div>
     <div class="field">
     <%= f.label :caption_fa %><br />
     <%= f.text_field :caption_fa, :class => 'persianOnly' %>
-  </div>
-  <div class="field">
-    <%= f.label :comp_id %><br />
-    <%= f.text_field :comp_id %>
   </div>
   <div class="field">
     <%= f.label :position %><br />

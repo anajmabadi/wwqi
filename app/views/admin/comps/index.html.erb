@@ -6,6 +6,7 @@
             <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_comp_path, :show_all_path => admin_comps_path } %>
             <table class="global" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
+                    <th>Id</th>
                     <th>Item</th>
                     <th>Comp</th>
                     <th>Position</th>
@@ -15,8 +16,9 @@
                 </tr>
                 <% @comps.each do |comp| %>
                 <tr>
-                    <td><%= comp.item_id %></td>
-                    <td><%= comp.comp_id %></td>
+                    <td><%= link_to comp.id, admin_comp_path(comp) %></td>
+                    <td><%= link_to_unless comp.item.nil?, comp.item.to_label, admin_item_path(comp.item) %></td>
+                    <td><%= link_to_unless comp.comp.nil?, comp.comp.to_label, admin_item_path(comp.comp) %></td>
                     <td><%= comp.position %></td>
                     <td><%= show_check comp.publish %></td>
                     <td><%= comp.notes %></td>
