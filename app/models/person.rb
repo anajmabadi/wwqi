@@ -25,16 +25,20 @@ class Person < ActiveRecord::Base
   end
 
   def collections
-    return Collection.find(self.items.map { |item| collection_id }.uniq.sort) unless self.items.empty?
+    return Collection.find(self.items.map { |item| item.collection_id }.uniq.sort) unless self.items.empty?
   end
 
   def to_label
-    my_label = "#{self.name_en} (#{self.id.to_s}) | #{self.name_fa}" unless self.name_en.nil?
+    my_label = "#{self.name_en} (#{self.id.to_s}: #{collections_label}) | #{self.name_fa}" unless self.name_en.nil?
     return my_label
   end
   
   def to_label_fa
-    my_label = "#{self.name_fa} | #{self.name_en} (#{self.id.to_s})" unless self.name_fa.nil?
+    my_label = "#{self.name_fa} | #{self.name_en} (#{self.id.to_s}: #{collections_label})" unless self.name_fa.nil?
     return my_label
+  end
+  
+  def collections_label
+    return self.collections.nil? ? 'No Collection' : self.collections.map { |c| c.name }.join(", ") 
   end
 end
