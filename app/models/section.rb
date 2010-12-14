@@ -12,7 +12,15 @@ class Section < ActiveRecord::Base
   validates :publish, :presence => true
   
   def to_label
-    return self.title.blank? ?  self.page_range_display : self.title + ' (' + self.page_range_display + ')'
+    return "#{self.subsection_label} #{self.title.blank? ?  self.page_range_display : self.title} (#{self.page_range_display})"
+  end
+  
+  def subsection_label
+    return self.subsection? ? "+  " : "-  "
+  end
+  
+  def subsection?
+    return self.parent_id.nil? || self.parent_id == self.id ? false : true
   end
   
   def page_range_display
