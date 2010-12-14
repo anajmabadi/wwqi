@@ -1,4 +1,4 @@
 <li>
-  <%= link_to comp.comp.title, admin_item_path(comp.comp) unless comp.comp.nil? %>
+  <%= link_to comp.to_label, admin_item_path(comp.comp) unless comp.comp.nil? %>
   <%= link_to image_tag("delete.png", :alt => 'delete'), admin_comp_path(comp), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
 </li>

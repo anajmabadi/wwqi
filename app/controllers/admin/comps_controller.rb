@@ -14,7 +14,7 @@ class Admin::CompsController < Admin::AdminController
   # GET /comps/1.xml
   def show
     @comp = Comp.find(params[:id])
-
+    @items = Item.select_list
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @comp }
