@@ -29,7 +29,7 @@ class Person < ActiveRecord::Base
   end
 
   def to_label
-    my_label = "#{self.name_en}/#{self.name_fa} (#{self.id.to_s})" unless self.name_en.nil?
+    my_label = "#{self.name_en} (#{self.id.to_s}) | #{self.name_fa}" unless self.name_en.nil?
     return my_label
   end
 end
