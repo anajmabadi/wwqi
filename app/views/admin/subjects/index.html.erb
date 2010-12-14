@@ -8,6 +8,7 @@
       <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @subjects} %>
       <table class="global" width="100%" cellpadding="0" cellspacing="0">
         <tr>
+          <th><%= sort_link 'Id', 'subjects.id' %></th>
           <th><%= sort_link 'Name', 'subject_translations.name' %></th>
           <th><%= sort_link 'Subject Type', "subjects.subject_type_id" %></th>
           <th><%= sort_link 'Major', 'subjects.major' %></th>
@@ -18,7 +19,8 @@
 
         <% @subjects.each do |subject| %>
           <tr>
-            <td><%= subject.name %></td>
+            <td><%= link_to subject.id, admin_subject_path(subject) %></td>
+            <td><%= link_to subject.name, admin_subject_path(subject) %></td>
             <td><%= subject.subject_type.name unless subject.subject_type.nil? %></td>
             <td><%= show_check(subject.major) %></td>
             <td><%= show_check(subject.publish) %></td>
