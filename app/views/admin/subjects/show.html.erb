@@ -48,6 +48,18 @@
         </div>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">
+        <div class="field">
+          Related items:<br />
+          <ul>
+          <% @subject.items.each do |item| -%>
+            <li><%= link_to item.to_label, admin_item_path(item) %></li>
+          <% end -%>
+          </ul>
+        </div>
+      </td>
+    </tr>
   </table>
     <%= render 'nav_show_header_bar', :subject => @subject %>
   </div>
