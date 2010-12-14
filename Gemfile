@@ -14,7 +14,7 @@ gem "will_paginate", "~> 3.0.pre2"
 
 gem "railties", ">=3.0.0.beta4"
 
-gem 'farsifu', :git => 'git://github.com/cforcey/farsifu.git'
+gem 'farsifu'
 
 gem 'rubyzip'
 
