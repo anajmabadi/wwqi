@@ -61,10 +61,10 @@ person_translations_006:
   description: ""
   sort_name: "Dawlatshahi, Badi\xCA\xBB al-Zaman "
   vitals: ""
-  name: "Badi\xCA\xBB al-Zaman Dawlatshahi "
+  name: "Badi\xCA\xBB al-Zaman Dawlatshahi"
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
+  updated_at: 2010-12-11 05:06:47
 person_translations_007: 
   id: "7"
   person_id: "7"
@@ -126,11 +126,11 @@ person_translations_012:
   locale: en
   description: ""
   sort_name: "Salari, Shahla "
-  vitals: "1318"
+  vitals: ""
   name: Shahla Salari
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
+  updated_at: 2010-12-11 05:12:37
 person_translations_013: 
   id: "13"
   person_id: "13"
@@ -462,17 +462,6 @@ person_translations_042:
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
 person_translations_043: 
-  id: "43"
-  person_id: "43"
-  locale: en
-  description: ""
-  sort_name: Abu Turab Khan Nazm al-Dawlah Khvajahnuri
-  vitals: ""
-  name: Abu Turab Khan Nazm al-Dawlah Khvajahnuri
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_044: 
   id: "44"
   person_id: "44"
   locale: en
@@ -483,7 +472,7 @@ person_translations_044:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_045: 
+person_translations_044: 
   id: "45"
   person_id: "45"
   locale: en
@@ -494,7 +483,7 @@ person_translations_045:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_046: 
+person_translations_045: 
   id: "46"
   person_id: "46"
   locale: en
@@ -505,18 +494,7 @@ person_translations_046:
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_047: 
-  id: "47"
-  person_id: "47"
-  locale: en
-  description: ""
-  sort_name: Abu al-Fazl Mirza Salar al-Dawlah
-  vitals: ""
-  name: Abu al-Fazl Mirza Salar al-Dawlah
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_048: 
+person_translations_046: 
   id: "48"
   person_id: "48"
   locale: en
@@ -527,7 +505,7 @@ person_translations_048:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_049: 
+person_translations_047: 
   id: "49"
   person_id: "49"
   locale: en
@@ -538,7 +516,7 @@ person_translations_049:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_050: 
+person_translations_048: 
   id: "50"
   person_id: "50"
   locale: en
@@ -549,7 +527,7 @@ person_translations_050:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_051: 
+person_translations_049: 
   id: "51"
   person_id: "51"
   locale: en
@@ -560,7 +538,7 @@ person_translations_051:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_052: 
+person_translations_050: 
   id: "52"
   person_id: "52"
   locale: en
@@ -571,7 +549,7 @@ person_translations_052:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_053: 
+person_translations_051: 
   id: "53"
   person_id: "53"
   locale: en
@@ -582,7 +560,7 @@ person_translations_053:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_054: 
+person_translations_052: 
   id: "54"
   person_id: "54"
   locale: en
@@ -593,7 +571,7 @@ person_translations_054:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_055: 
+person_translations_053: 
   id: "55"
   person_id: "55"
   locale: en
@@ -604,7 +582,7 @@ person_translations_055:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_056: 
+person_translations_054: 
   id: "56"
   person_id: "56"
   locale: en
@@ -615,7 +593,7 @@ person_translations_056:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_057: 
+person_translations_055: 
   id: "57"
   person_id: "57"
   locale: en
@@ -626,7 +604,7 @@ person_translations_057:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_058: 
+person_translations_056: 
   id: "58"
   person_id: "58"
   locale: en
@@ -637,7 +615,7 @@ person_translations_058:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_059: 
+person_translations_057: 
   id: "59"
   person_id: "59"
   locale: en
@@ -648,7 +626,7 @@ person_translations_059:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_060: 
+person_translations_058: 
   id: "60"
   person_id: "60"
   locale: en
@@ -659,7 +637,7 @@ person_translations_060:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_061: 
+person_translations_059: 
   id: "61"
   person_id: "61"
   locale: en
@@ -670,7 +648,7 @@ person_translations_061:
   birth_place: Dizashib
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_062: 
+person_translations_060: 
   id: "62"
   person_id: "62"
   locale: en
@@ -681,7 +659,7 @@ person_translations_062:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_063: 
+person_translations_061: 
   id: "63"
   person_id: "63"
   locale: en
@@ -692,7 +670,7 @@ person_translations_063:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_064: 
+person_translations_062: 
   id: "64"
   person_id: "64"
   locale: en
@@ -703,7 +681,7 @@ person_translations_064:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_065: 
+person_translations_063: 
   id: "65"
   person_id: "65"
   locale: en
@@ -714,7 +692,7 @@ person_translations_065:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_066: 
+person_translations_064: 
   id: "66"
   person_id: "66"
   locale: en
@@ -725,7 +703,7 @@ person_translations_066:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_067: 
+person_translations_065: 
   id: "67"
   person_id: "67"
   locale: en
@@ -736,7 +714,7 @@ person_translations_067:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_068: 
+person_translations_066: 
   id: "68"
   person_id: "68"
   locale: en
@@ -747,7 +725,7 @@ person_translations_068:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_069: 
+person_translations_067: 
   id: "69"
   person_id: "69"
   locale: en
@@ -758,7 +736,7 @@ person_translations_069:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_070: 
+person_translations_068: 
   id: "70"
   person_id: "70"
   locale: en
@@ -769,7 +747,7 @@ person_translations_070:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_071: 
+person_translations_069: 
   id: "71"
   person_id: "71"
   locale: en
@@ -780,7 +758,7 @@ person_translations_071:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_072: 
+person_translations_070: 
   id: "72"
   person_id: "72"
   locale: en
@@ -791,7 +769,7 @@ person_translations_072:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_073: 
+person_translations_071: 
   id: "73"
   person_id: "73"
   locale: en
@@ -802,7 +780,7 @@ person_translations_073:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_074: 
+person_translations_072: 
   id: "74"
   person_id: "74"
   locale: en
@@ -813,18 +791,7 @@ person_translations_074:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_075: 
-  id: "75"
-  person_id: "75"
-  locale: en
-  description: ""
-  sort_name: Purandukht
-  vitals: ""
-  name: Purandukht
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_076: 
+person_translations_073: 
   id: "76"
   person_id: "76"
   locale: en
@@ -835,7 +802,7 @@ person_translations_076:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_077: 
+person_translations_074: 
   id: "77"
   person_id: "77"
   locale: en
@@ -846,7 +813,7 @@ person_translations_077:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_078: 
+person_translations_075: 
   id: "78"
   person_id: "78"
   locale: en
@@ -857,7 +824,7 @@ person_translations_078:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_079: 
+person_translations_076: 
   id: "79"
   person_id: "79"
   locale: en
@@ -868,7 +835,7 @@ person_translations_079:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_080: 
+person_translations_077: 
   id: "80"
   person_id: "80"
   locale: en
@@ -879,7 +846,7 @@ person_translations_080:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_081: 
+person_translations_078: 
   id: "81"
   person_id: "81"
   locale: en
@@ -890,7 +857,7 @@ person_translations_081:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_082: 
+person_translations_079: 
   id: "82"
   person_id: "82"
   locale: en
@@ -901,7 +868,7 @@ person_translations_082:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_083: 
+person_translations_080: 
   id: "83"
   person_id: "83"
   locale: en
@@ -912,7 +879,7 @@ person_translations_083:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_084: 
+person_translations_081: 
   id: "84"
   person_id: "84"
   locale: en
@@ -923,7 +890,7 @@ person_translations_084:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_085: 
+person_translations_082: 
   id: "85"
   person_id: "85"
   locale: en
@@ -934,7 +901,7 @@ person_translations_085:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_086: 
+person_translations_083: 
   id: "86"
   person_id: "86"
   locale: en
@@ -945,18 +912,18 @@ person_translations_086:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_087: 
+person_translations_084: 
   id: "87"
   person_id: "87"
   locale: en
   description: ""
   sort_name: Asiyah Khanum
   vitals: ""
-  name: Asiyah Khanum
+  name: Asiyah Khanum [Mozaffari Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_088: 
+  updated_at: 2010-12-14 15:40:14
+person_translations_085: 
   id: "88"
   person_id: "88"
   locale: en
@@ -967,7 +934,7 @@ person_translations_088:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_089: 
+person_translations_086: 
   id: "89"
   person_id: "89"
   locale: en
@@ -978,7 +945,7 @@ person_translations_089:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_090: 
+person_translations_087: 
   id: "90"
   person_id: "90"
   locale: en
@@ -989,7 +956,7 @@ person_translations_090:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_091: 
+person_translations_088: 
   id: "91"
   person_id: "91"
   locale: en
@@ -1000,18 +967,18 @@ person_translations_091:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_092: 
+person_translations_089: 
   id: "92"
   person_id: "92"
   locale: en
   description: ""
   sort_name: Taj al-Saltanah
   vitals: ""
-  name: Taj al-Saltanah
+  name: Taj al-Saltanah [Mozaffari Collection]
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_093: 
+  updated_at: 2010-12-14 17:53:54
+person_translations_090: 
   id: "93"
   person_id: "93"
   locale: en
@@ -1022,7 +989,7 @@ person_translations_093:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_094: 
+person_translations_091: 
   id: "94"
   person_id: "94"
   locale: en
@@ -1033,7 +1000,7 @@ person_translations_094:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_095: 
+person_translations_092: 
   id: "95"
   person_id: "95"
   locale: en
@@ -1044,7 +1011,7 @@ person_translations_095:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_096: 
+person_translations_093: 
   id: "96"
   person_id: "96"
   locale: en
@@ -1055,7 +1022,7 @@ person_translations_096:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_097: 
+person_translations_094: 
   id: "97"
   person_id: "97"
   locale: en
@@ -1066,7 +1033,7 @@ person_translations_097:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_098: 
+person_translations_095: 
   id: "98"
   person_id: "98"
   locale: en
@@ -1077,18 +1044,18 @@ person_translations_098:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_099: 
+person_translations_096: 
   id: "99"
   person_id: "99"
   locale: en
   description: ""
   sort_name: Zahra Khanum
   vitals: ""
-  name: Zahra Khanum
+  name: Zahra Khanum [Najmabadi Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_100: 
+  updated_at: 2010-12-14 17:56:13
+person_translations_097: 
   id: "100"
   person_id: "100"
   locale: en
@@ -1099,7 +1066,7 @@ person_translations_100:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_101: 
+person_translations_098: 
   id: "101"
   person_id: "101"
   locale: en
@@ -1110,7 +1077,7 @@ person_translations_101:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_102: 
+person_translations_099: 
   id: "102"
   person_id: "102"
   locale: en
@@ -1121,7 +1088,7 @@ person_translations_102:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_103: 
+person_translations_100: 
   id: "103"
   person_id: "103"
   locale: en
@@ -1132,7 +1099,7 @@ person_translations_103:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_104: 
+person_translations_101: 
   id: "104"
   person_id: "104"
   locale: en
@@ -1143,7 +1110,7 @@ person_translations_104:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_105: 
+person_translations_102: 
   id: "105"
   person_id: "105"
   locale: en
@@ -1154,7 +1121,7 @@ person_translations_105:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_106: 
+person_translations_103: 
   id: "106"
   person_id: "106"
   locale: en
@@ -1165,7 +1132,7 @@ person_translations_106:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_107: 
+person_translations_104: 
   id: "107"
   person_id: "107"
   locale: en
@@ -1176,7 +1143,7 @@ person_translations_107:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_108: 
+person_translations_105: 
   id: "108"
   person_id: "108"
   locale: en
@@ -1187,7 +1154,7 @@ person_translations_108:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_109: 
+person_translations_106: 
   id: "109"
   person_id: "109"
   locale: en
@@ -1198,7 +1165,7 @@ person_translations_109:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_110: 
+person_translations_107: 
   id: "110"
   person_id: "110"
   locale: en
@@ -1209,7 +1176,7 @@ person_translations_110:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_111: 
+person_translations_108: 
   id: "111"
   person_id: "111"
   locale: en
@@ -1220,7 +1187,7 @@ person_translations_111:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_112: 
+person_translations_109: 
   id: "112"
   person_id: "112"
   locale: en
@@ -1231,7 +1198,7 @@ person_translations_112:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_113: 
+person_translations_110: 
   id: "113"
   person_id: "113"
   locale: en
@@ -1242,7 +1209,7 @@ person_translations_113:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_114: 
+person_translations_111: 
   id: "114"
   person_id: "114"
   locale: en
@@ -1253,7 +1220,7 @@ person_translations_114:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_115: 
+person_translations_112: 
   id: "115"
   person_id: "115"
   locale: en
@@ -1264,7 +1231,7 @@ person_translations_115:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_116: 
+person_translations_113: 
   id: "116"
   person_id: "116"
   locale: en
@@ -1275,7 +1242,7 @@ person_translations_116:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_117: 
+person_translations_114: 
   id: "117"
   person_id: "117"
   locale: en
@@ -1286,29 +1253,7 @@ person_translations_117:
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_118: 
-  id: "118"
-  person_id: "118"
-  locale: en
-  description: ""
-  sort_name: "Shaykh al-Islami, Mir Sayyid "
-  vitals: ""
-  name: Mir Sayyid Shaykh al-Islami
-  birth_place: Mashhad
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_119: 
-  id: "119"
-  person_id: "119"
-  locale: en
-  description: ""
-  sort_name: "Shaykh al-Islami, \xCA\xBBaziz al-Muluk"
-  vitals: ""
-  name: "\xCA\xBBaziz al-Muluk Shaykh al-Islami"
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_120: 
+person_translations_115: 
   id: "120"
   person_id: "120"
   locale: en
@@ -1319,7 +1264,7 @@ person_translations_120:
   birth_place: Qazvin
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_121: 
+person_translations_116: 
   id: "121"
   person_id: "121"
   locale: en
@@ -1330,7 +1275,7 @@ person_translations_121:
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_122: 
+person_translations_117: 
   id: "122"
   person_id: "122"
   locale: en
@@ -1341,7 +1286,7 @@ person_translations_122:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_123: 
+person_translations_118: 
   id: "123"
   person_id: "123"
   locale: en
@@ -1352,7 +1297,7 @@ person_translations_123:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_124: 
+person_translations_119: 
   id: "124"
   person_id: "124"
   locale: en
@@ -1363,7 +1308,7 @@ person_translations_124:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_125: 
+person_translations_120: 
   id: "125"
   person_id: "125"
   locale: en
@@ -1374,7 +1319,7 @@ person_translations_125:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_126: 
+person_translations_121: 
   id: "126"
   person_id: "126"
   locale: en
@@ -1385,7 +1330,7 @@ person_translations_126:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_127: 
+person_translations_122: 
   id: "127"
   person_id: "127"
   locale: en
@@ -1396,7 +1341,7 @@ person_translations_127:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_128: 
+person_translations_123: 
   id: "128"
   person_id: "128"
   locale: en
@@ -1407,7 +1352,7 @@ person_translations_128:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_129: 
+person_translations_124: 
   id: "129"
   person_id: "129"
   locale: en
@@ -1418,7 +1363,7 @@ person_translations_129:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_130: 
+person_translations_125: 
   id: "130"
   person_id: "130"
   locale: en
@@ -1429,18 +1374,18 @@ person_translations_130:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_131: 
+person_translations_126: 
   id: "131"
   person_id: "131"
   locale: en
   description: ""
   sort_name: Afsar al-Muluk
   vitals: ""
-  name: Afsar al-Muluk
+  name: Afsar al-Muluk [Zamandar Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_132: 
+  updated_at: 2010-12-14 16:06:08
+person_translations_127: 
   id: "132"
   person_id: "132"
   locale: en
@@ -1451,7 +1396,7 @@ person_translations_132:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_133: 
+person_translations_128: 
   id: "133"
   person_id: "133"
   locale: en
@@ -1462,7 +1407,7 @@ person_translations_133:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_134: 
+person_translations_129: 
   id: "134"
   person_id: "134"
   locale: en
@@ -1473,7 +1418,7 @@ person_translations_134:
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_135: 
+person_translations_130: 
   id: "135"
   person_id: "135"
   locale: en
@@ -1484,7 +1429,7 @@ person_translations_135:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_136: 
+person_translations_131: 
   id: "136"
   person_id: "136"
   locale: en
@@ -1495,7 +1440,7 @@ person_translations_136:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_137: 
+person_translations_132: 
   id: "137"
   person_id: "137"
   locale: en
@@ -1506,7 +1451,7 @@ person_translations_137:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_138: 
+person_translations_133: 
   id: "138"
   person_id: "138"
   locale: en
@@ -1517,7 +1462,7 @@ person_translations_138:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_139: 
+person_translations_134: 
   id: "139"
   person_id: "139"
   locale: en
@@ -1528,7 +1473,7 @@ person_translations_139:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_140: 
+person_translations_135: 
   id: "140"
   person_id: "140"
   locale: en
@@ -1539,7 +1484,7 @@ person_translations_140:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_141: 
+person_translations_136: 
   id: "141"
   person_id: "141"
   locale: en
@@ -1550,7 +1495,7 @@ person_translations_141:
   birth_place: Tabriz
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_142: 
+person_translations_137: 
   id: "142"
   person_id: "142"
   locale: en
@@ -1561,7 +1506,7 @@ person_translations_142:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_143: 
+person_translations_138: 
   id: "143"
   person_id: "143"
   locale: en
@@ -1572,7 +1517,7 @@ person_translations_143:
   birth_place: Tabriz
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_144: 
+person_translations_139: 
   id: "144"
   person_id: "144"
   locale: en
@@ -1583,7 +1528,7 @@ person_translations_144:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_145: 
+person_translations_140: 
   id: "145"
   person_id: "145"
   locale: en
@@ -1594,7 +1539,7 @@ person_translations_145:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_146: 
+person_translations_141: 
   id: "146"
   person_id: "146"
   locale: en
@@ -1605,18 +1550,18 @@ person_translations_146:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_147: 
+person_translations_142: 
   id: "147"
   person_id: "147"
   locale: en
   description: ""
   sort_name: Irandukht
   vitals: ""
-  name: Irandukht
+  name: Irandukht [Zamandar Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_148: 
+  updated_at: 2010-12-14 16:15:10
+person_translations_143: 
   id: "148"
   person_id: "148"
   locale: en
@@ -1627,7 +1572,7 @@ person_translations_148:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_149: 
+person_translations_144: 
   id: "149"
   person_id: "149"
   locale: en
@@ -1638,7 +1583,7 @@ person_translations_149:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_150: 
+person_translations_145: 
   id: "150"
   person_id: "150"
   locale: en
@@ -1649,18 +1594,7 @@ person_translations_150:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_151: 
-  id: "151"
-  person_id: "151"
-  locale: en
-  description: ""
-  sort_name: Khadijah Khanum
-  vitals: ""
-  name: Khadijah Khanum
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_152: 
+person_translations_146: 
   id: "152"
   person_id: "152"
   locale: en
@@ -1671,18 +1605,18 @@ person_translations_152:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_153: 
+person_translations_147: 
   id: "153"
   person_id: "153"
   locale: en
   description: ""
   sort_name: Manizhah Khanum
   vitals: ""
-  name: Manizhah Khanum
+  name: Manizhah Khanum [Zamandar Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_154: 
+  updated_at: 2010-12-14 16:53:51
+person_translations_148: 
   id: "154"
   person_id: "154"
   locale: en
@@ -1693,7 +1627,7 @@ person_translations_154:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_155: 
+person_translations_149: 
   id: "155"
   person_id: "155"
   locale: en
@@ -1704,7 +1638,7 @@ person_translations_155:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_156: 
+person_translations_150: 
   id: "156"
   person_id: "156"
   locale: en
@@ -1715,7 +1649,7 @@ person_translations_156:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_157: 
+person_translations_151: 
   id: "157"
   person_id: "157"
   locale: en
@@ -1726,7 +1660,7 @@ person_translations_157:
   birth_place: Paris
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_158: 
+person_translations_152: 
   id: "158"
   person_id: "158"
   locale: en
@@ -1737,18 +1671,18 @@ person_translations_158:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_159: 
+person_translations_153: 
   id: "159"
   person_id: "159"
   locale: en
   description: ""
   sort_name: Farah al-Saltanah
   vitals: ""
-  name: Farah al-Saltanah
+  name: Farah al-Saltanah [Zamandar Collection]
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_160: 
+  updated_at: 2010-12-14 15:42:37
+person_translations_154: 
   id: "160"
   person_id: "160"
   locale: en
@@ -1759,7 +1693,7 @@ person_translations_160:
   birth_place: Tehran
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_161: 
+person_translations_155: 
   id: "161"
   person_id: "161"
   locale: en
@@ -1770,18 +1704,7 @@ person_translations_161:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_162: 
-  id: "162"
-  person_id: "162"
-  locale: en
-  description: ""
-  sort_name: Irandukht
-  vitals: ""
-  name: Irandukht
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_163: 
+person_translations_156: 
   id: "163"
   person_id: "163"
   locale: en
@@ -1792,7 +1715,7 @@ person_translations_163:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_164: 
+person_translations_157: 
   id: "164"
   person_id: "164"
   locale: en
@@ -1803,7 +1726,7 @@ person_translations_164:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_165: 
+person_translations_158: 
   id: "165"
   person_id: "165"
   locale: en
@@ -1814,7 +1737,7 @@ person_translations_165:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_166: 
+person_translations_159: 
   id: "166"
   person_id: "166"
   locale: en
@@ -1825,7 +1748,7 @@ person_translations_166:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_167: 
+person_translations_160: 
   id: "167"
   person_id: "167"
   locale: en
@@ -1836,7 +1759,7 @@ person_translations_167:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_168: 
+person_translations_161: 
   id: "168"
   person_id: "168"
   locale: en
@@ -1847,7 +1770,7 @@ person_translations_168:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_169: 
+person_translations_162: 
   id: "169"
   person_id: "169"
   locale: en
@@ -1858,7 +1781,7 @@ person_translations_169:
   birth_place: Kuhnamir
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_170: 
+person_translations_163: 
   id: "170"
   person_id: "1"
   locale: fa
@@ -1869,7 +1792,7 @@ person_translations_170:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 2010-03-24 17:44:37
-person_translations_171: 
+person_translations_164: 
   id: "171"
   person_id: "2"
   locale: fa
@@ -1880,7 +1803,7 @@ person_translations_171:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_172: 
+person_translations_165: 
   id: "172"
   person_id: "3"
   locale: fa
@@ -1891,7 +1814,7 @@ person_translations_172:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_173: 
+person_translations_166: 
   id: "173"
   person_id: "4"
   locale: fa
@@ -1902,7 +1825,7 @@ person_translations_173:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_174: 
+person_translations_167: 
   id: "174"
   person_id: "5"
   locale: fa
@@ -1913,7 +1836,7 @@ person_translations_174:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_175: 
+person_translations_168: 
   id: "175"
   person_id: "6"
   locale: fa
@@ -1924,7 +1847,7 @@ person_translations_175:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_176: 
+person_translations_169: 
   id: "176"
   person_id: "7"
   locale: fa
@@ -1935,7 +1858,7 @@ person_translations_176:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_177: 
+person_translations_170: 
   id: "177"
   person_id: "8"
   locale: fa
@@ -1946,7 +1869,7 @@ person_translations_177:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_178: 
+person_translations_171: 
   id: "178"
   person_id: "9"
   locale: fa
@@ -1957,7 +1880,7 @@ person_translations_178:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_179: 
+person_translations_172: 
   id: "179"
   person_id: "10"
   locale: fa
@@ -1968,7 +1891,7 @@ person_translations_179:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_180: 
+person_translations_173: 
   id: "180"
   person_id: "11"
   locale: fa
@@ -1979,18 +1902,18 @@ person_translations_180:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_181: 
+person_translations_174: 
   id: "181"
   person_id: "12"
   locale: fa
   description: ""
   sort_name: "\xD8\xB4\xD9\x87\xD9\x84\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xDB\x8C"
-  vitals: "1318"
+  vitals: ""
   name: "\xD8\xB4\xD9\x87\xD9\x84\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xDB\x8C"
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_182: 
+  updated_at: 2010-12-11 05:12:37
+person_translations_175: 
   id: "182"
   person_id: "13"
   locale: fa
@@ -2001,7 +1924,7 @@ person_translations_182:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_183: 
+person_translations_176: 
   id: "183"
   person_id: "14"
   locale: fa
@@ -2012,18 +1935,18 @@ person_translations_183:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_184: 
+person_translations_177: 
   id: "184"
   person_id: "15"
   locale: fa
   description: ""
   sort_name: ""
   vitals: ""
-  name: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA2\xD9\x82\xD8\xA7 \xD8\xAE\xD8\xA7\xD9\x86"
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_185: 
+  updated_at: 2010-12-11 05:21:10
+person_translations_178: 
   id: "185"
   person_id: "16"
   locale: fa
@@ -2034,7 +1957,7 @@ person_translations_185:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_186: 
+person_translations_179: 
   id: "186"
   person_id: "17"
   locale: fa
@@ -2045,7 +1968,7 @@ person_translations_186:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_187: 
+person_translations_180: 
   id: "187"
   person_id: "18"
   locale: fa
@@ -2056,7 +1979,7 @@ person_translations_187:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_188: 
+person_translations_181: 
   id: "188"
   person_id: "19"
   locale: fa
@@ -2067,7 +1990,7 @@ person_translations_188:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_189: 
+person_translations_182: 
   id: "189"
   person_id: "20"
   locale: fa
@@ -2078,7 +2001,7 @@ person_translations_189:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_190: 
+person_translations_183: 
   id: "190"
   person_id: "21"
   locale: fa
@@ -2089,7 +2012,7 @@ person_translations_190:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_191: 
+person_translations_184: 
   id: "191"
   person_id: "22"
   locale: fa
@@ -2100,7 +2023,7 @@ person_translations_191:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_192: 
+person_translations_185: 
   id: "192"
   person_id: "23"
   locale: fa
@@ -2111,7 +2034,7 @@ person_translations_192:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_193: 
+person_translations_186: 
   id: "193"
   person_id: "24"
   locale: fa
@@ -2122,7 +2045,7 @@ person_translations_193:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_194: 
+person_translations_187: 
   id: "194"
   person_id: "25"
   locale: fa
@@ -2133,7 +2056,7 @@ person_translations_194:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_195: 
+person_translations_188: 
   id: "195"
   person_id: "26"
   locale: fa
@@ -2144,7 +2067,7 @@ person_translations_195:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_196: 
+person_translations_189: 
   id: "196"
   person_id: "27"
   locale: fa
@@ -2155,7 +2078,7 @@ person_translations_196:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_197: 
+person_translations_190: 
   id: "197"
   person_id: "28"
   locale: fa
@@ -2166,7 +2089,7 @@ person_translations_197:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_198: 
+person_translations_191: 
   id: "198"
   person_id: "29"
   locale: fa
@@ -2177,7 +2100,7 @@ person_translations_198:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_199: 
+person_translations_192: 
   id: "199"
   person_id: "30"
   locale: fa
@@ -2188,7 +2111,7 @@ person_translations_199:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_200: 
+person_translations_193: 
   id: "200"
   person_id: "31"
   locale: fa
@@ -2199,7 +2122,7 @@ person_translations_200:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_201: 
+person_translations_194: 
   id: "201"
   person_id: "32"
   locale: fa
@@ -2210,7 +2133,7 @@ person_translations_201:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_202: 
+person_translations_195: 
   id: "202"
   person_id: "33"
   locale: fa
@@ -2221,7 +2144,7 @@ person_translations_202:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_203: 
+person_translations_196: 
   id: "203"
   person_id: "34"
   locale: fa
@@ -2232,7 +2155,7 @@ person_translations_203:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_204: 
+person_translations_197: 
   id: "204"
   person_id: "35"
   locale: fa
@@ -2243,7 +2166,7 @@ person_translations_204:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_205: 
+person_translations_198: 
   id: "205"
   person_id: "36"
   locale: fa
@@ -2254,7 +2177,7 @@ person_translations_205:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_206: 
+person_translations_199: 
   id: "206"
   person_id: "37"
   locale: fa
@@ -2265,7 +2188,7 @@ person_translations_206:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_207: 
+person_translations_200: 
   id: "207"
   person_id: "38"
   locale: fa
@@ -2276,7 +2199,7 @@ person_translations_207:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_208: 
+person_translations_201: 
   id: "208"
   person_id: "39"
   locale: fa
@@ -2287,7 +2210,7 @@ person_translations_208:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_209: 
+person_translations_202: 
   id: "209"
   person_id: "40"
   locale: fa
@@ -2298,7 +2221,7 @@ person_translations_209:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_210: 
+person_translations_203: 
   id: "210"
   person_id: "41"
   locale: fa
@@ -2309,7 +2232,7 @@ person_translations_210:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_211: 
+person_translations_204: 
   id: "211"
   person_id: "42"
   locale: fa
@@ -2320,18 +2243,7 @@ person_translations_211:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_212: 
-  id: "212"
-  person_id: "43"
-  locale: fa
-  description: ""
-  sort_name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xAA\xD8\xB1\xD8\xA7\xD8\xA8 \xD8\xAE\xD8\xA7\xD9\x86 \xD9\x86\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87 \xD8\xAE\xD9\x88\xD8\xA7\xD8\xAC\xD9\x87 \xD9\x86\xD9\x88\xD8\xB1\xDB\x8C"
-  vitals: ""
-  name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xAA\xD8\xB1\xD8\xA7\xD8\xA8 \xD8\xAE\xD8\xA7\xD9\x86 \xD9\x86\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87 \xD8\xAE\xD9\x88\xD8\xA7\xD8\xAC\xD9\x87 \xD9\x86\xD9\x88\xD8\xB1\xDB\x8C"
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_213: 
+person_translations_205: 
   id: "213"
   person_id: "44"
   locale: fa
@@ -2342,7 +2254,7 @@ person_translations_213:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_214: 
+person_translations_206: 
   id: "214"
   person_id: "45"
   locale: fa
@@ -2353,7 +2265,7 @@ person_translations_214:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_215: 
+person_translations_207: 
   id: "215"
   person_id: "46"
   locale: fa
@@ -2364,18 +2276,7 @@ person_translations_215:
   birth_place: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_216: 
-  id: "216"
-  person_id: "47"
-  locale: fa
-  description: ""
-  sort_name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD9\x81\xD8\xB6\xD9\x84 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
-  vitals: ""
-  name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD9\x81\xD8\xB6\xD9\x84 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_217: 
+person_translations_208: 
   id: "217"
   person_id: "48"
   locale: fa
@@ -2386,7 +2287,7 @@ person_translations_217:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_218: 
+person_translations_209: 
   id: "218"
   person_id: "49"
   locale: fa
@@ -2397,7 +2298,7 @@ person_translations_218:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_219: 
+person_translations_210: 
   id: "219"
   person_id: "50"
   locale: fa
@@ -2408,7 +2309,7 @@ person_translations_219:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_220: 
+person_translations_211: 
   id: "220"
   person_id: "51"
   locale: fa
@@ -2419,7 +2320,7 @@ person_translations_220:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_221: 
+person_translations_212: 
   id: "221"
   person_id: "52"
   locale: fa
@@ -2430,7 +2331,7 @@ person_translations_221:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_222: 
+person_translations_213: 
   id: "222"
   person_id: "53"
   locale: fa
@@ -2441,7 +2342,7 @@ person_translations_222:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_223: 
+person_translations_214: 
   id: "223"
   person_id: "54"
   locale: fa
@@ -2452,7 +2353,7 @@ person_translations_223:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_224: 
+person_translations_215: 
   id: "224"
   person_id: "55"
   locale: fa
@@ -2463,7 +2364,7 @@ person_translations_224:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_225: 
+person_translations_216: 
   id: "225"
   person_id: "56"
   locale: fa
@@ -2474,7 +2375,7 @@ person_translations_225:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_226: 
+person_translations_217: 
   id: "226"
   person_id: "57"
   locale: fa
@@ -2485,7 +2386,7 @@ person_translations_226:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_227: 
+person_translations_218: 
   id: "227"
   person_id: "58"
   locale: fa
@@ -2496,7 +2397,7 @@ person_translations_227:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_228: 
+person_translations_219: 
   id: "228"
   person_id: "59"
   locale: fa
@@ -2507,7 +2408,7 @@ person_translations_228:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_229: 
+person_translations_220: 
   id: "229"
   person_id: "60"
   locale: fa
@@ -2518,7 +2419,7 @@ person_translations_229:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_230: 
+person_translations_221: 
   id: "230"
   person_id: "61"
   locale: fa
@@ -2529,7 +2430,7 @@ person_translations_230:
   birth_place: "\xD8\xAF\xD8\xB2\xD8\xA7\xD8\xB4\xDB\x8C\xD8\xA8"
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_231: 
+person_translations_222: 
   id: "231"
   person_id: "62"
   locale: fa
@@ -2540,7 +2441,7 @@ person_translations_231:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_232: 
+person_translations_223: 
   id: "232"
   person_id: "63"
   locale: fa
@@ -2551,7 +2452,7 @@ person_translations_232:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_233: 
+person_translations_224: 
   id: "233"
   person_id: "64"
   locale: fa
@@ -2562,7 +2463,7 @@ person_translations_233:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_234: 
+person_translations_225: 
   id: "234"
   person_id: "65"
   locale: fa
@@ -2573,7 +2474,7 @@ person_translations_234:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_235: 
+person_translations_226: 
   id: "235"
   person_id: "66"
   locale: fa
@@ -2584,7 +2485,7 @@ person_translations_235:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_236: 
+person_translations_227: 
   id: "236"
   person_id: "67"
   locale: fa
@@ -2595,7 +2496,7 @@ person_translations_236:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_237: 
+person_translations_228: 
   id: "237"
   person_id: "68"
   locale: fa
@@ -2606,7 +2507,7 @@ person_translations_237:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_238: 
+person_translations_229: 
   id: "238"
   person_id: "69"
   locale: fa
@@ -2617,7 +2518,7 @@ person_translations_238:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_239: 
+person_translations_230: 
   id: "239"
   person_id: "70"
   locale: fa
@@ -2628,7 +2529,7 @@ person_translations_239:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_240: 
+person_translations_231: 
   id: "240"
   person_id: "71"
   locale: fa
@@ -2639,7 +2540,7 @@ person_translations_240:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_241: 
+person_translations_232: 
   id: "241"
   person_id: "72"
   locale: fa
@@ -2650,7 +2551,7 @@ person_translations_241:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_242: 
+person_translations_233: 
   id: "242"
   person_id: "73"
   locale: fa
@@ -2661,7 +2562,7 @@ person_translations_242:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_243: 
+person_translations_234: 
   id: "243"
   person_id: "74"
   locale: fa
@@ -2672,18 +2573,7 @@ person_translations_243:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_244: 
-  id: "244"
-  person_id: "75"
-  locale: fa
-  description: ""
-  sort_name: "\xD9\xBE\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86\xD8\xAF\xD8\xAE\xD8\xAA"
-  vitals: ""
-  name: "\xD9\xBE\xD9\x88\xD8\xB1\xD8\xA7\xD9\x86\xD8\xAF\xD8\xAE\xD8\xAA"
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_245: 
+person_translations_235: 
   id: "245"
   person_id: "76"
   locale: fa
@@ -2694,7 +2584,7 @@ person_translations_245:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_246: 
+person_translations_236: 
   id: "246"
   person_id: "77"
   locale: fa
@@ -2705,7 +2595,7 @@ person_translations_246:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_247: 
+person_translations_237: 
   id: "247"
   person_id: "78"
   locale: fa
@@ -2716,7 +2606,7 @@ person_translations_247:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_248: 
+person_translations_238: 
   id: "248"
   person_id: "79"
   locale: fa
@@ -2727,7 +2617,7 @@ person_translations_248:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_249: 
+person_translations_239: 
   id: "249"
   person_id: "80"
   locale: fa
@@ -2738,7 +2628,7 @@ person_translations_249:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_250: 
+person_translations_240: 
   id: "250"
   person_id: "81"
   locale: fa
@@ -2749,7 +2639,7 @@ person_translations_250:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_251: 
+person_translations_241: 
   id: "251"
   person_id: "82"
   locale: fa
@@ -2760,7 +2650,7 @@ person_translations_251:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_252: 
+person_translations_242: 
   id: "252"
   person_id: "83"
   locale: fa
@@ -2771,7 +2661,7 @@ person_translations_252:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_253: 
+person_translations_243: 
   id: "253"
   person_id: "84"
   locale: fa
@@ -2782,7 +2672,7 @@ person_translations_253:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_254: 
+person_translations_244: 
   id: "254"
   person_id: "85"
   locale: fa
@@ -2793,7 +2683,7 @@ person_translations_254:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_255: 
+person_translations_245: 
   id: "255"
   person_id: "86"
   locale: fa
@@ -2804,7 +2694,7 @@ person_translations_255:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_256: 
+person_translations_246: 
   id: "256"
   person_id: "87"
   locale: fa
@@ -2815,7 +2705,7 @@ person_translations_256:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_257: 
+person_translations_247: 
   id: "257"
   person_id: "88"
   locale: fa
@@ -2826,7 +2716,7 @@ person_translations_257:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_258: 
+person_translations_248: 
   id: "258"
   person_id: "89"
   locale: fa
@@ -2837,7 +2727,7 @@ person_translations_258:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_259: 
+person_translations_249: 
   id: "259"
   person_id: "90"
   locale: fa
@@ -2848,7 +2738,7 @@ person_translations_259:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_260: 
+person_translations_250: 
   id: "260"
   person_id: "91"
   locale: fa
@@ -2859,7 +2749,7 @@ person_translations_260:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_261: 
+person_translations_251: 
   id: "261"
   person_id: "92"
   locale: fa
@@ -2870,7 +2760,7 @@ person_translations_261:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_262: 
+person_translations_252: 
   id: "262"
   person_id: "93"
   locale: fa
@@ -2881,7 +2771,7 @@ person_translations_262:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_263: 
+person_translations_253: 
   id: "263"
   person_id: "94"
   locale: fa
@@ -2892,7 +2782,7 @@ person_translations_263:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_264: 
+person_translations_254: 
   id: "264"
   person_id: "95"
   locale: fa
@@ -2903,7 +2793,7 @@ person_translations_264:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_265: 
+person_translations_255: 
   id: "265"
   person_id: "96"
   locale: fa
@@ -2914,7 +2804,7 @@ person_translations_265:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_266: 
+person_translations_256: 
   id: "266"
   person_id: "97"
   locale: fa
@@ -2925,7 +2815,7 @@ person_translations_266:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_267: 
+person_translations_257: 
   id: "267"
   person_id: "98"
   locale: fa
@@ -2936,7 +2826,7 @@ person_translations_267:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_268: 
+person_translations_258: 
   id: "268"
   person_id: "99"
   locale: fa
@@ -2947,7 +2837,7 @@ person_translations_268:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_269: 
+person_translations_259: 
   id: "269"
   person_id: "100"
   locale: fa
@@ -2958,7 +2848,7 @@ person_translations_269:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_270: 
+person_translations_260: 
   id: "270"
   person_id: "101"
   locale: fa
@@ -2969,7 +2859,7 @@ person_translations_270:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_271: 
+person_translations_261: 
   id: "271"
   person_id: "102"
   locale: fa
@@ -2980,7 +2870,7 @@ person_translations_271:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_272: 
+person_translations_262: 
   id: "272"
   person_id: "103"
   locale: fa
@@ -2991,7 +2881,7 @@ person_translations_272:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_273: 
+person_translations_263: 
   id: "273"
   person_id: "104"
   locale: fa
@@ -3002,7 +2892,7 @@ person_translations_273:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_274: 
+person_translations_264: 
   id: "274"
   person_id: "105"
   locale: fa
@@ -3013,7 +2903,7 @@ person_translations_274:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_275: 
+person_translations_265: 
   id: "275"
   person_id: "106"
   locale: fa
@@ -3024,7 +2914,7 @@ person_translations_275:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_276: 
+person_translations_266: 
   id: "276"
   person_id: "107"
   locale: fa
@@ -3035,7 +2925,7 @@ person_translations_276:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_277: 
+person_translations_267: 
   id: "277"
   person_id: "108"
   locale: fa
@@ -3046,7 +2936,7 @@ person_translations_277:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_278: 
+person_translations_268: 
   id: "278"
   person_id: "109"
   locale: fa
@@ -3057,7 +2947,7 @@ person_translations_278:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_279: 
+person_translations_269: 
   id: "279"
   person_id: "110"
   locale: fa
@@ -3068,7 +2958,7 @@ person_translations_279:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_280: 
+person_translations_270: 
   id: "280"
   person_id: "111"
   locale: fa
@@ -3079,7 +2969,7 @@ person_translations_280:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_281: 
+person_translations_271: 
   id: "281"
   person_id: "112"
   locale: fa
@@ -3090,7 +2980,7 @@ person_translations_281:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_282: 
+person_translations_272: 
   id: "282"
   person_id: "113"
   locale: fa
@@ -3101,7 +2991,7 @@ person_translations_282:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_283: 
+person_translations_273: 
   id: "283"
   person_id: "114"
   locale: fa
@@ -3112,7 +3002,7 @@ person_translations_283:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_284: 
+person_translations_274: 
   id: "284"
   person_id: "115"
   locale: fa
@@ -3123,7 +3013,7 @@ person_translations_284:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_285: 
+person_translations_275: 
   id: "285"
   person_id: "116"
   locale: fa
@@ -3134,7 +3024,7 @@ person_translations_285:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_286: 
+person_translations_276: 
   id: "286"
   person_id: "117"
   locale: fa
@@ -3145,29 +3035,7 @@ person_translations_286:
   birth_place: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_287: 
-  id: "287"
-  person_id: "118"
-  locale: fa
-  description: ""
-  sort_name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB3\xDB\x8C\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
-  vitals: ""
-  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB3\xDB\x8C\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
-  birth_place: "\xD9\x85\xD8\xB4\xD9\x87\xD8\xAF"
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_288: 
-  id: "288"
-  person_id: "119"
-  locale: fa
-  description: ""
-  sort_name: "\xD8\xB9\xD8\xB2\xDB\x8C\xD8\xB2\xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x88\xDA\xA9 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C "
-  vitals: ""
-  name: "\xD8\xB9\xD8\xB2\xDB\x8C\xD8\xB2\xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x88\xDA\xA9 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C "
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_289: 
+person_translations_277: 
   id: "289"
   person_id: "120"
   locale: fa
@@ -3178,7 +3046,7 @@ person_translations_289:
   birth_place: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86"
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_290: 
+person_translations_278: 
   id: "290"
   person_id: "121"
   locale: fa
@@ -3189,7 +3057,7 @@ person_translations_290:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_291: 
+person_translations_279: 
   id: "291"
   person_id: "122"
   locale: fa
@@ -3200,7 +3068,7 @@ person_translations_291:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_292: 
+person_translations_280: 
   id: "292"
   person_id: "123"
   locale: fa
@@ -3211,7 +3079,7 @@ person_translations_292:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_293: 
+person_translations_281: 
   id: "293"
   person_id: "124"
   locale: fa
@@ -3222,7 +3090,7 @@ person_translations_293:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_294: 
+person_translations_282: 
   id: "294"
   person_id: "125"
   locale: fa
@@ -3233,7 +3101,7 @@ person_translations_294:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_295: 
+person_translations_283: 
   id: "295"
   person_id: "126"
   locale: fa
@@ -3244,7 +3112,7 @@ person_translations_295:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_296: 
+person_translations_284: 
   id: "296"
   person_id: "127"
   locale: fa
@@ -3255,7 +3123,7 @@ person_translations_296:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_297: 
+person_translations_285: 
   id: "297"
   person_id: "128"
   locale: fa
@@ -3266,7 +3134,7 @@ person_translations_297:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_298: 
+person_translations_286: 
   id: "298"
   person_id: "129"
   locale: fa
@@ -3277,7 +3145,7 @@ person_translations_298:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_299: 
+person_translations_287: 
   id: "299"
   person_id: "130"
   locale: fa
@@ -3288,7 +3156,7 @@ person_translations_299:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_300: 
+person_translations_288: 
   id: "300"
   person_id: "131"
   locale: fa
@@ -3299,7 +3167,7 @@ person_translations_300:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_301: 
+person_translations_289: 
   id: "301"
   person_id: "132"
   locale: fa
@@ -3310,7 +3178,7 @@ person_translations_301:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_302: 
+person_translations_290: 
   id: "302"
   person_id: "133"
   locale: fa
@@ -3321,7 +3189,7 @@ person_translations_302:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_303: 
+person_translations_291: 
   id: "303"
   person_id: "134"
   locale: fa
@@ -3332,7 +3200,7 @@ person_translations_303:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_304: 
+person_translations_292: 
   id: "304"
   person_id: "135"
   locale: fa
@@ -3343,7 +3211,7 @@ person_translations_304:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_305: 
+person_translations_293: 
   id: "305"
   person_id: "136"
   locale: fa
@@ -3354,7 +3222,7 @@ person_translations_305:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_306: 
+person_translations_294: 
   id: "306"
   person_id: "137"
   locale: fa
@@ -3365,7 +3233,7 @@ person_translations_306:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_307: 
+person_translations_295: 
   id: "307"
   person_id: "138"
   locale: fa
@@ -3376,7 +3244,7 @@ person_translations_307:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_308: 
+person_translations_296: 
   id: "308"
   person_id: "139"
   locale: fa
@@ -3387,7 +3255,7 @@ person_translations_308:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_309: 
+person_translations_297: 
   id: "309"
   person_id: "140"
   locale: fa
@@ -3398,7 +3266,7 @@ person_translations_309:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_310: 
+person_translations_298: 
   id: "310"
   person_id: "141"
   locale: fa
@@ -3409,7 +3277,7 @@ person_translations_310:
   birth_place: "\xD8\xAA\xD8\xA8\xD8\xB1\xDB\x8C\xD8\xB2"
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_311: 
+person_translations_299: 
   id: "311"
   person_id: "142"
   locale: fa
@@ -3420,18 +3288,18 @@ person_translations_311:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_312: 
+person_translations_300: 
   id: "312"
   person_id: "143"
   locale: fa
   description: ""
   sort_name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD9\x81\xD8\xAA\xD8\xAD \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
   vitals: ""
-  name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD9\x81\xD8\xAA\xD8\xAD \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  name: "\xD8\xA7\xD8\xA8\xD9\x88 \xD8\xA7\xD9\x84\xD9\x81\xD8\xAA\xD8\xAD \xD9\x85\xD9\x8A\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
   birth_place: ""
   created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_313: 
+  updated_at: 2010-12-11 07:29:28
+person_translations_301: 
   id: "313"
   person_id: "144"
   locale: fa
@@ -3442,7 +3310,7 @@ person_translations_313:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_314: 
+person_translations_302: 
   id: "314"
   person_id: "145"
   locale: fa
@@ -3453,7 +3321,7 @@ person_translations_314:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_315: 
+person_translations_303: 
   id: "315"
   person_id: "146"
   locale: fa
@@ -3464,7 +3332,7 @@ person_translations_315:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_316: 
+person_translations_304: 
   id: "316"
   person_id: "147"
   locale: fa
@@ -3475,7 +3343,7 @@ person_translations_316:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_317: 
+person_translations_305: 
   id: "317"
   person_id: "148"
   locale: fa
@@ -3486,7 +3354,7 @@ person_translations_317:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_318: 
+person_translations_306: 
   id: "318"
   person_id: "149"
   locale: fa
@@ -3497,7 +3365,7 @@ person_translations_318:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_319: 
+person_translations_307: 
   id: "319"
   person_id: "150"
   locale: fa
@@ -3508,18 +3376,7 @@ person_translations_319:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_320: 
-  id: "320"
-  person_id: "151"
-  locale: fa
-  description: ""
-  sort_name: "\xD8\xAE\xD8\xAF\xDB\x8C\xD8\xAC\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 "
-  vitals: ""
-  name: "\xD8\xAE\xD8\xAF\xDB\x8C\xD8\xAC\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 "
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_321: 
+person_translations_308: 
   id: "321"
   person_id: "152"
   locale: fa
@@ -3530,7 +3387,7 @@ person_translations_321:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_322: 
+person_translations_309: 
   id: "322"
   person_id: "153"
   locale: fa
@@ -3541,7 +3398,7 @@ person_translations_322:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_323: 
+person_translations_310: 
   id: "323"
   person_id: "154"
   locale: fa
@@ -3552,7 +3409,7 @@ person_translations_323:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_324: 
+person_translations_311: 
   id: "324"
   person_id: "155"
   locale: fa
@@ -3563,7 +3420,7 @@ person_translations_324:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_325: 
+person_translations_312: 
   id: "325"
   person_id: "156"
   locale: fa
@@ -3574,7 +3431,7 @@ person_translations_325:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_326: 
+person_translations_313: 
   id: "326"
   person_id: "157"
   locale: fa
@@ -3585,7 +3442,7 @@ person_translations_326:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_327: 
+person_translations_314: 
   id: "327"
   person_id: "158"
   locale: fa
@@ -3596,7 +3453,7 @@ person_translations_327:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_328: 
+person_translations_315: 
   id: "328"
   person_id: "159"
   locale: fa
@@ -3607,7 +3464,7 @@ person_translations_328:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_329: 
+person_translations_316: 
   id: "329"
   person_id: "160"
   locale: fa
@@ -3618,7 +3475,7 @@ person_translations_329:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_330: 
+person_translations_317: 
   id: "330"
   person_id: "161"
   locale: fa
@@ -3629,18 +3486,7 @@ person_translations_330:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_331: 
-  id: "331"
-  person_id: "162"
-  locale: fa
-  description: ""
-  sort_name: "\xD8\xA7\xD9\x8A\xD8\xB1\xD8\xA7\xD9\x86\xD8\xAF\xD8\xAE\xD8\xAA"
-  vitals: ""
-  name: "\xD8\xA7\xD9\x8A\xD8\xB1\xD8\xA7\xD9\x86\xD8\xAF\xD8\xAE\xD8\xAA"
-  birth_place: ""
-  created_at: 0000-00-00 00:00:00
-  updated_at: 0000-00-00 00:00:00
-person_translations_332: 
+person_translations_318: 
   id: "332"
   person_id: "163"
   locale: fa
@@ -3651,7 +3497,7 @@ person_translations_332:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_333: 
+person_translations_319: 
   id: "333"
   person_id: "164"
   locale: fa
@@ -3662,7 +3508,7 @@ person_translations_333:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_334: 
+person_translations_320: 
   id: "334"
   person_id: "165"
   locale: fa
@@ -3673,7 +3519,7 @@ person_translations_334:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_335: 
+person_translations_321: 
   id: "335"
   person_id: "166"
   locale: fa
@@ -3684,7 +3530,7 @@ person_translations_335:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_336: 
+person_translations_322: 
   id: "336"
   person_id: "167"
   locale: fa
@@ -3695,7 +3541,7 @@ person_translations_336:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_337: 
+person_translations_323: 
   id: "337"
   person_id: "168"
   locale: fa
@@ -3706,7 +3552,7 @@ person_translations_337:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_338: 
+person_translations_324: 
   id: "338"
   person_id: "169"
   locale: fa
@@ -3717,282 +3563,216 @@ person_translations_338:
   birth_place: ""
   created_at: 0000-00-00 00:00:00
   updated_at: 0000-00-00 00:00:00
-person_translations_339: 
+person_translations_325: 
   id: "339"
   person_id: "170"
   locale: en
-  description: 
+  description: ""
   sort_name: Qamar Khanum
-  vitals: 
+  vitals: ""
   name: Qamar Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_340: 
+  updated_at: 2010-12-11 06:13:44
+person_translations_326: 
   id: "340"
   person_id: "171"
   locale: en
-  description: 
+  description: ""
   sort_name: Sakinah Khanum
-  vitals: 
+  vitals: ""
   name: Sakinah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_341: 
+  updated_at: 2010-12-11 06:15:25
+person_translations_327: 
   id: "341"
   person_id: "172"
   locale: en
-  description: 
+  description: ""
   sort_name: Rubabah Khanum
-  vitals: 
+  vitals: ""
   name: Rubabah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_342: 
+  updated_at: 2010-12-11 06:36:32
+person_translations_328: 
   id: "342"
   person_id: "173"
   locale: en
-  description: 
+  description: ""
   sort_name: Shahzadah Baygum
-  vitals: 
+  vitals: ""
   name: Shahzadah Baygum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_343: 
+  updated_at: 2010-12-11 06:19:54
+person_translations_329: 
   id: "343"
   person_id: "174"
   locale: en
-  description: 
+  description: ""
   sort_name: Farah al-Saltanah
-  vitals: 
+  vitals: ""
   name: Farah al-Saltanah
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_344: 
-  id: "344"
-  person_id: "175"
-  locale: en
-  description: 
-  sort_name: Shahzadah Baygum
-  vitals: 
-  name: Shahzadah Baygum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_345: 
-  id: "345"
-  person_id: "176"
-  locale: en
-  description: 
-  sort_name: Hajiyah Khanum
-  vitals: 
-  name: Hajiyah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_346: 
+  updated_at: 2010-12-11 06:22:35
+person_translations_330: 
   id: "346"
   person_id: "177"
   locale: en
-  description: 
+  description: ""
   sort_name: Balijah Khanum
-  vitals: 
+  vitals: ""
   name: Balijah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_347: 
+  updated_at: 2010-12-11 06:29:17
+person_translations_331: 
   id: "347"
   person_id: "178"
   locale: en
-  description: 
+  description: ""
   sort_name: Asiyah Khanum
-  vitals: 
+  vitals: ""
   name: Asiyah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_348: 
+  updated_at: 2010-12-11 06:30:55
+person_translations_332: 
   id: "348"
   person_id: "179"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Hasan Shaykh al-Islam
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Hasan Shaykh al-Islam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_349: 
-  id: "349"
-  person_id: "180"
-  locale: en
-  description: 
-  sort_name: Jahan Ara
-  vitals: 
-  name: Jahan Ara
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_350: 
+  updated_at: 2010-12-11 06:32:31
+person_translations_333: 
   id: "350"
   person_id: "181"
   locale: en
-  description: 
+  description: ""
   sort_name: Haj Umma Khanum
-  vitals: 
+  vitals: ""
   name: Haj Umma Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_351: 
+  updated_at: 2010-12-11 06:45:01
+person_translations_334: 
   id: "351"
   person_id: "182"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Ahmad
-  vitals: 
+  vitals: ""
   name: Aqa Ahmad
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_352: 
+  updated_at: 2010-12-11 06:46:04
+person_translations_335: 
   id: "352"
   person_id: "183"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Mufid Shaykh al-Islam
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Mufid Shaykh al-Islam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_353: 
+  updated_at: 2010-12-11 06:46:59
+person_translations_336: 
   id: "353"
   person_id: "184"
   locale: en
-  description: 
+  description: ""
   sort_name: Afsanah Khanum
-  vitals: 
-  name: Afsanah Khanum
-  birth_place: 
+  vitals: ""
+  name: Afsanah Khanum [Sheikholeslami Collection]
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_354: 
+  updated_at: 2010-12-14 16:07:41
+person_translations_337: 
   id: "354"
   person_id: "185"
   locale: en
-  description: 
+  description: ""
   sort_name: Mufakhar al-Dawlah
-  vitals: 
+  vitals: ""
   name: Mufakhar al-Dawlah
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_355: 
-  id: "355"
-  person_id: "186"
-  locale: en
-  description: 
-  sort_name: Council for Assisting the Poor
-  vitals: 
-  name: Council for Assisting the Poor
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_356: 
+  updated_at: 2010-12-11 06:48:52
+person_translations_338: 
   id: "356"
   person_id: "187"
   locale: en
-  description: 
+  description: ""
   sort_name: Haj Mirza Abu Turab Shaykh al-Islam
-  vitals: 
-  name: Haj Mirza Abu Turab Shaykh al-Islam
-  birth_place: 
+  vitals: ""
+  name: Haj Mirza Abu Turab
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_357: 
+  updated_at: 2010-12-14 00:50:09
+person_translations_339: 
   id: "357"
   person_id: "188"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Hasan Khan Munshi Bashi
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Hasan Khan Munshi Bashi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_358: 
+  updated_at: 2010-12-11 06:52:48
+person_translations_340: 
   id: "358"
   person_id: "189"
   locale: en
-  description: 
+  description: ""
   sort_name: Fatimah Sultan Khanum
-  vitals: 
+  vitals: ""
   name: Fatimah Sultan Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_359: 
+  updated_at: 2010-12-11 06:53:44
+person_translations_341: 
   id: "359"
   person_id: "190"
   locale: en
-  description: 
+  description: ""
   sort_name: Maryam Khanum
-  vitals: 
-  name: Maryam Khanum
-  birth_place: 
+  vitals: ""
+  name: Maryam Baygum Khanum
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_360: 
-  id: "360"
-  person_id: "191"
-  locale: en
-  description: 
-  sort_name: Nushi Khanum
-  vitals: 
-  name: Nushi Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_361: 
+  updated_at: 2010-12-11 06:55:43
+person_translations_342: 
   id: "361"
   person_id: "192"
   locale: en
-  description: 
+  description: ""
   sort_name: Munshi Bashi
-  vitals: 
+  vitals: ""
   name: Munshi Bashi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_362: 
-  id: "362"
-  person_id: "193"
-  locale: en
-  description: 
-  sort_name: Ministry of Justice
-  vitals: 
-  name: Ministry of Justice
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_363: 
+  updated_at: 2010-12-11 06:58:10
+person_translations_343: 
   id: "363"
   person_id: "194"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
-  vitals: 
-  name: Aqa Mirza 'Abd al-Allah Amjad al-Vizarah
-  birth_place: 
+  vitals: ""
+  name: "Aqa Mirza \xCA\xBBAbd Allah Amjad al-Vizarah"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_364: 
+  updated_at: 2010-12-14 01:42:39
+person_translations_344: 
   id: "364"
   person_id: "195"
   locale: en
@@ -4003,7 +3783,7 @@ person_translations_364:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_365: 
+person_translations_345: 
   id: "365"
   person_id: "196"
   locale: en
@@ -4014,7 +3794,7 @@ person_translations_365:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_366: 
+person_translations_346: 
   id: "366"
   person_id: "197"
   locale: en
@@ -4025,326 +3805,249 @@ person_translations_366:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_367: 
+person_translations_347: 
   id: "367"
   person_id: "198"
   locale: en
-  description: 
+  description: ""
   sort_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
-  vitals: 
+  vitals: ""
   name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_368: 
+  updated_at: 2010-12-14 18:22:18
+person_translations_348: 
   id: "368"
   person_id: "199"
   locale: en
-  description: 
+  description: ""
   sort_name: Zivar Sarimi
-  vitals: 
-  name: Zivar Sarimi
-  birth_place: 
+  vitals: ""
+  name: Zivar Sarimi [Shaykh al-Islami Collection]
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_369: 
+  updated_at: 2010-12-14 18:04:46
+person_translations_349: 
   id: "369"
   person_id: "200"
   locale: en
-  description: 
+  description: ""
   sort_name: "\xCA\xBBAziz al-Muluk"
-  vitals: 
-  name: "\xCA\xBBAziz al-Muluk"
-  birth_place: 
+  vitals: ""
+  name: "\xCA\xBBAziz al-Muluk [Shaykh al-Islami Collection]"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_370: 
-  id: "370"
-  person_id: "201"
-  locale: en
-  description: 
-  sort_name: Sidiqah Khanum
-  vitals: 
-  name: Sidiqah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_371: 
+  updated_at: 2010-12-14 18:13:06
+person_translations_350: 
   id: "371"
   person_id: "170"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x82\xD9\x85\xD8\xB1\xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD9\x82\xD9\x85\xD8\xB1\xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_372: 
+  updated_at: 2010-12-11 06:13:44
+person_translations_351: 
   id: "372"
   person_id: "171"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xB3\xDA\xA9\xDB\x8C\xD9\x86\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xB3\xDA\xA9\xDB\x8C\xD9\x86\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_373: 
+  updated_at: 2010-12-11 06:15:25
+person_translations_352: 
   id: "373"
   person_id: "172"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xA8\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xA8\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_374: 
+  updated_at: 2010-12-11 06:36:32
+person_translations_353: 
   id: "374"
   person_id: "173"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87  \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87  \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_375: 
+  updated_at: 2010-12-11 06:19:54
+person_translations_354: 
   id: "375"
   person_id: "174"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x81\xD8\xB1\xD8\xAD \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
-  vitals: 
+  vitals: ""
   name: "\xD9\x81\xD8\xB1\xD8\xAD \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_376: 
-  id: "376"
-  person_id: "175"
-  locale: fa
-  description: 
-  sort_name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85"
-  vitals: 
-  name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_377: 
-  id: "377"
-  person_id: "176"
-  locale: fa
-  description: 
-  sort_name: "\xD8\xAD\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
-  name: "\xD8\xAD\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_378: 
+  updated_at: 2010-12-11 06:22:35
+person_translations_355: 
   id: "378"
   person_id: "177"
   locale: fa
-  description: 
+  description: ""
   sort_name: ""
-  vitals: 
-  name: ""
-  birth_place: 
+  vitals: ""
+  name: "\xD8\xA8\xD8\xA7\xD9\x84\xD8\xAC\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_379: 
+  updated_at: 2010-12-11 06:35:23
+person_translations_356: 
   id: "379"
   person_id: "178"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD8\xB3\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD8\xB3\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_380: 
+  updated_at: 2010-12-11 06:30:55
+person_translations_357: 
   id: "380"
   person_id: "179"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_381: 
-  id: "381"
-  person_id: "180"
-  locale: fa
-  description: 
-  sort_name: "\xD8\xAC\xD9\x87\xD8\xA7\xD9\x86 \xD8\xA2\xD8\xB1\xD8\xA7"
-  vitals: 
-  name: "\xD8\xAC\xD9\x87\xD8\xA7\xD9\x86 \xD8\xA2\xD8\xB1\xD8\xA7"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_382: 
+  updated_at: 2010-12-11 06:32:31
+person_translations_358: 
   id: "382"
   person_id: "181"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD8\xB9\xD9\x85\xD8\xA7 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD8\xB9\xD9\x85\xD8\xA7 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_383: 
+  updated_at: 2010-12-11 06:45:01
+person_translations_359: 
   id: "383"
   person_id: "182"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_384: 
+  updated_at: 2010-12-11 06:46:04
+person_translations_360: 
   id: "384"
   person_id: "183"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD9\x81\xDB\x8C\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD9\x81\xDB\x8C\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_385: 
+  updated_at: 2010-12-11 06:46:59
+person_translations_361: 
   id: "385"
   person_id: "184"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA7\xD9\x81\xD8\xB3\xD8\xA7\xD9\x86\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA7\xD9\x81\xD8\xB3\xD8\xA7\xD9\x86\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_386: 
+  updated_at: 2010-12-11 06:47:47
+person_translations_362: 
   id: "386"
   person_id: "185"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x85\xD9\x81\xD8\xAE\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
-  vitals: 
+  vitals: ""
   name: "\xD9\x85\xD9\x81\xD8\xAE\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_387: 
-  id: "387"
-  person_id: "186"
-  locale: fa
-  description: 
-  sort_name: "\xD9\x87\xDB\x8C\xD8\xA7\xD8\xAA \xD9\x85\xD8\xA8\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xAA \xD8\xA7\xD8\xB9\xD8\xA7\xD9\x86\xD9\x87 \xDB\x8C \xD9\x81\xD9\x82\xD8\xB1\xD8\xA7"
-  vitals: 
-  name: "\xD9\x87\xDB\x8C\xD8\xA7\xD8\xAA \xD9\x85\xD8\xA8\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xAA \xD8\xA7\xD8\xB9\xD8\xA7\xD9\x86\xD9\x87 \xDB\x8C \xD9\x81\xD9\x82\xD8\xB1\xD8\xA7"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_388: 
+  updated_at: 2010-12-11 06:48:52
+person_translations_363: 
   id: "388"
   person_id: "187"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xA8\xD9\x88\xD8\xAA\xD8\xB1\xD8\xA7\xD8\xA8 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  vitals: 
-  name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xA8\xD9\x88\xD8\xAA\xD8\xB1\xD8\xA7\xD8\xA8 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  birth_place: 
+  vitals: ""
+  name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xA8\xD9\x88\xD8\xAA\xD8\xB1\xD8\xA7\xD8\xA8"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_389: 
+  updated_at: 2010-12-14 00:50:09
+person_translations_364: 
   id: "389"
   person_id: "188"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD9\x85\xD9\x86\xD8\xB4\xDB\x8C \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD9\x85\xD9\x86\xD8\xB4\xDB\x8C \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_390: 
+  updated_at: 2010-12-11 06:52:48
+person_translations_365: 
   id: "390"
   person_id: "189"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x81\xD8\xA7\xD8\xB7\xD9\x85\xD9\x87 \xD8\xB3\xD9\x84\xD8\xB7\xD8\xA7\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
+  vitals: ""
   name: "\xD9\x81\xD8\xA7\xD8\xB7\xD9\x85\xD9\x87 \xD8\xB3\xD9\x84\xD8\xB7\xD8\xA7\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_391: 
+  updated_at: 2010-12-11 06:53:44
+person_translations_366: 
   id: "391"
   person_id: "190"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x85\xD8\xB1\xDB\x8C\xD9\x85 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
-  name: "\xD9\x85\xD8\xB1\xDB\x8C\xD9\x85 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xB1\xDB\x8C\xD9\x85 \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_392: 
-  id: "392"
-  person_id: "191"
-  locale: fa
-  description: 
-  sort_name: "\xD9\x86\xD9\x88\xD8\xB4\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
-  name: "\xD9\x86\xD9\x88\xD8\xB4\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_393: 
+  updated_at: 2010-12-11 06:55:43
+person_translations_367: 
   id: "393"
   person_id: "192"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x85\xD9\x86\xD8\xB4\xDB\x8C \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
-  vitals: 
+  vitals: ""
   name: "\xD9\x85\xD9\x86\xD8\xB4\xDB\x8C \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_394: 
-  id: "394"
-  person_id: "193"
-  locale: fa
-  description: 
-  sort_name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xB9\xD8\xAF\xD9\x84\xDB\x8C\xD9\x87 \xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85"
-  vitals: 
-  name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xB9\xD8\xAF\xD9\x84\xDB\x8C\xD9\x87 \xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_395: 
+  updated_at: 2010-12-11 06:58:10
+person_translations_368: 
   id: "395"
   person_id: "194"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD9\x84\xD9\x87 \xD8\xA7\xD9\x85\xD8\xAC\xD8\xAF\xD8\xA7\xD9\x84\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD9\x87"
-  vitals: 
+  vitals: ""
   name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD9\x84\xD9\x87 \xD8\xA7\xD9\x85\xD8\xAC\xD8\xAF\xD8\xA7\xD9\x84\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD9\x87"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_396: 
+  updated_at: 2010-12-14 01:42:39
+person_translations_369: 
   id: "396"
   person_id: "195"
   locale: fa
@@ -4355,7 +4058,7 @@ person_translations_396:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_397: 
+person_translations_370: 
   id: "397"
   person_id: "196"
   locale: fa
@@ -4366,7 +4069,7 @@ person_translations_397:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_398: 
+person_translations_371: 
   id: "398"
   person_id: "197"
   locale: fa
@@ -4377,62 +4080,40 @@ person_translations_398:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_399: 
+person_translations_372: 
   id: "399"
   person_id: "198"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xB3\xD9\x85\xD8\xA7\xD8\xB9\xDB\x8C\xD9\x84 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  vitals: 
-  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xB3\xD9\x85\xD8\xA7\xD8\xB9\xDB\x8C\xD9\x84 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
-  birth_place: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA7\xD8\xB3\xD9\x85\xD8\xA7\xD8\xB9\xDB\x8C\xD9\x84 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_400: 
+  updated_at: 2010-12-14 18:22:18
+person_translations_373: 
   id: "400"
   person_id: "199"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xB2\xDB\x8C\xD9\x88\xD8\xB1 \xD8\xB3\xD8\xA7\xD8\xB1\xD9\x85\xDB\x8C"
-  vitals: 
+  vitals: ""
   name: "\xD8\xB2\xDB\x8C\xD9\x88\xD8\xB1 \xD8\xB3\xD8\xA7\xD8\xB1\xD9\x85\xDB\x8C"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_401: 
+  updated_at: 2010-12-14 18:04:46
+person_translations_374: 
   id: "401"
   person_id: "200"
   locale: fa
-  description: 
+  description: ""
   sort_name: "\xD8\xB9\xD8\xB2\xDB\x8C\xD8\xB2\xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x88\xDA\xA9"
-  vitals: 
+  vitals: ""
   name: "\xD8\xB9\xD8\xB2\xDB\x8C\xD8\xB2\xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x88\xDA\xA9"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_402: 
-  id: "402"
-  person_id: "201"
-  locale: fa
-  description: 
-  sort_name: "\xD8\xB5\xD8\xAF\xDB\x8C\xD9\x82\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  vitals: 
-  name: "\xD8\xB5\xD8\xAF\xDB\x8C\xD9\x82\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_403: 
-  id: "914"
-  person_id: "151"
-  locale: en
-  description: 
-  sort_name: Khadijah Khanum
-  vitals: 
-  name: Khadijah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_404: 
+  updated_at: 2010-12-14 18:13:06
+person_translations_375: 
   id: "915"
   person_id: "170"
   locale: en
@@ -4443,7 +4124,7 @@ person_translations_404:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_405: 
+person_translations_376: 
   id: "916"
   person_id: "171"
   locale: en
@@ -4454,7 +4135,7 @@ person_translations_405:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_406: 
+person_translations_377: 
   id: "917"
   person_id: "172"
   locale: en
@@ -4465,7 +4146,7 @@ person_translations_406:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_407: 
+person_translations_378: 
   id: "918"
   person_id: "173"
   locale: en
@@ -4476,7 +4157,7 @@ person_translations_407:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_408: 
+person_translations_379: 
   id: "919"
   person_id: "174"
   locale: en
@@ -4487,29 +4168,7 @@ person_translations_408:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_409: 
-  id: "920"
-  person_id: "175"
-  locale: en
-  description: 
-  sort_name: Shahzadah Baygum
-  vitals: 
-  name: Shahzadah Baygum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_410: 
-  id: "921"
-  person_id: "176"
-  locale: en
-  description: 
-  sort_name: Hajiyah Khanum
-  vitals: 
-  name: Hajiyah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_411: 
+person_translations_380: 
   id: "922"
   person_id: "177"
   locale: en
@@ -4520,7 +4179,7 @@ person_translations_411:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_412: 
+person_translations_381: 
   id: "923"
   person_id: "178"
   locale: en
@@ -4531,7 +4190,7 @@ person_translations_412:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_413: 
+person_translations_382: 
   id: "924"
   person_id: "179"
   locale: en
@@ -4542,18 +4201,7 @@ person_translations_413:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_414: 
-  id: "925"
-  person_id: "180"
-  locale: en
-  description: 
-  sort_name: Jahan Ara
-  vitals: 
-  name: Jahan Ara
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_415: 
+person_translations_383: 
   id: "926"
   person_id: "181"
   locale: en
@@ -4564,7 +4212,7 @@ person_translations_415:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_416: 
+person_translations_384: 
   id: "927"
   person_id: "182"
   locale: en
@@ -4575,7 +4223,7 @@ person_translations_416:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_417: 
+person_translations_385: 
   id: "928"
   person_id: "183"
   locale: en
@@ -4586,7 +4234,7 @@ person_translations_417:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_418: 
+person_translations_386: 
   id: "929"
   person_id: "184"
   locale: en
@@ -4597,7 +4245,7 @@ person_translations_418:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_419: 
+person_translations_387: 
   id: "930"
   person_id: "185"
   locale: en
@@ -4608,7 +4256,7 @@ person_translations_419:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_420: 
+person_translations_388: 
   id: "931"
   person_id: "187"
   locale: en
@@ -4619,7 +4267,7 @@ person_translations_420:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_421: 
+person_translations_389: 
   id: "932"
   person_id: "188"
   locale: en
@@ -4630,7 +4278,7 @@ person_translations_421:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_422: 
+person_translations_390: 
   id: "933"
   person_id: "189"
   locale: en
@@ -4641,7 +4289,7 @@ person_translations_422:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_423: 
+person_translations_391: 
   id: "934"
   person_id: "190"
   locale: en
@@ -4652,18 +4300,7 @@ person_translations_423:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_424: 
-  id: "935"
-  person_id: "191"
-  locale: en
-  description: 
-  sort_name: Nushi Khanum
-  vitals: 
-  name: Nushi Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_425: 
+person_translations_392: 
   id: "936"
   person_id: "192"
   locale: en
@@ -4674,7 +4311,7 @@ person_translations_425:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_426: 
+person_translations_393: 
   id: "937"
   person_id: "194"
   locale: en
@@ -4685,7 +4322,7 @@ person_translations_426:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_427: 
+person_translations_394: 
   id: "938"
   person_id: "195"
   locale: en
@@ -4696,7 +4333,7 @@ person_translations_427:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_428: 
+person_translations_395: 
   id: "939"
   person_id: "196"
   locale: en
@@ -4707,7 +4344,7 @@ person_translations_428:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_429: 
+person_translations_396: 
   id: "940"
   person_id: "197"
   locale: en
@@ -4718,7 +4355,7 @@ person_translations_429:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_430: 
+person_translations_397: 
   id: "941"
   person_id: "198"
   locale: en
@@ -4729,7 +4366,7 @@ person_translations_430:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_431: 
+person_translations_398: 
   id: "942"
   person_id: "199"
   locale: en
@@ -4740,7 +4377,7 @@ person_translations_431:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_432: 
+person_translations_399: 
   id: "943"
   person_id: "200"
   locale: en
@@ -4751,150 +4388,106 @@ person_translations_432:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_433: 
-  id: "944"
-  person_id: "201"
-  locale: en
-  description: 
-  sort_name: Sidiqah Khanum
-  vitals: 
-  name: Sidiqah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_434: 
-  id: "945"
-  person_id: "202"
-  locale: en
-  description: 
-  sort_name: "'Ishrat Khanum"
-  vitals: 
-  name: "'Ishrat Khanum"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_435: 
+person_translations_400: 
   id: "946"
   person_id: "203"
   locale: en
-  description: 
+  description: ""
   sort_name: Abbas Khan Tunikabuni Muntizam al-Mulk
-  vitals: 
-  name: Abbas Khan Tunikabuni Muntizam al-Mulk
-  birth_place: 
+  vitals: ""
+  name: "\xCA\xBBAbbas Khan Tunikabuni Muntizam al-Mulk"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_436: 
-  id: "947"
-  person_id: "204"
-  locale: en
-  description: 
-  sort_name: Afsanah Khanum
-  vitals: 
-  name: Afsanah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_437: 
+  updated_at: 2010-12-11 07:17:54
+person_translations_401: 
   id: "948"
   person_id: "205"
   locale: en
-  description: 
+  description: ""
   sort_name: Akbar Mirza Bisharat al-Saltanah
-  vitals: 
+  vitals: ""
   name: Akbar Mirza Bisharat al-Saltanah
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_438: 
+  updated_at: 2010-12-11 07:34:29
+person_translations_402: 
   id: "949"
   person_id: "206"
   locale: en
-  description: 
+  description: ""
   sort_name: Amin al-Dawlah
-  vitals: 
+  vitals: ""
   name: Amin al-Dawlah
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_439: 
-  id: "950"
-  person_id: "207"
-  locale: en
-  description: 
-  sort_name: Aqa Ahmad
-  vitals: 
-  name: Aqa Ahmad
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_440: 
+  updated_at: 2010-12-14 16:12:13
+person_translations_403: 
   id: "955"
   person_id: "212"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Husayn Shaykh al-Islam
-  vitals: 
-  name: Aqa Mirza Husayn Shaykh al-Islam
-  birth_place: 
+  vitals: ""
+  name: Sayyid Husayn Majd al-Islam Qazvini
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_441: 
+  updated_at: 2010-12-11 07:42:02
+person_translations_404: 
   id: "956"
   person_id: "213"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Mahdi
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Mahdi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_442: 
+  updated_at: 2010-12-11 07:46:09
+person_translations_405: 
   id: "957"
   person_id: "214"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Mahmud Shaykh al-Islam
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Mahmud Shaykh al-Islam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_443: 
+  updated_at: 2010-12-11 07:47:48
+person_translations_406: 
   id: "959"
   person_id: "216"
   locale: en
-  description: 
+  description: ""
   sort_name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
-  vitals: 
+  vitals: ""
   name: "Aqa Mirza Mas\xCA\xBBud Shaykh al-Islam"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_444: 
+  updated_at: 2010-12-11 07:49:44
+person_translations_407: 
   id: "961"
   person_id: "218"
   locale: en
-  description: 
+  description: ""
   sort_name: Aqa Mirza Sabuni
-  vitals: 
+  vitals: ""
   name: Aqa Mirza Sabuni
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_445: 
+  updated_at: 2010-12-11 07:50:47
+person_translations_408: 
   id: "963"
   person_id: "220"
   locale: en
-  description: 
+  description: ""
   sort_name: Ashraf al-Sadat
-  vitals: 
+  vitals: ""
   name: Ashraf al-Sadat
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_446: 
+  updated_at: 2010-12-11 07:52:09
+person_translations_409: 
   id: "965"
   person_id: "222"
   locale: en
@@ -4905,645 +4498,392 @@ person_translations_446:
   birth_place: 
   created_at: 
   updated_at: 
-person_translations_447: 
-  id: "966"
-  person_id: "223"
-  locale: en
-  description: 
-  sort_name: Aziz al-Muluk
-  vitals: 
-  name: Aziz al-Muluk
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_448: 
+person_translations_410: 
   id: "968"
   person_id: "225"
   locale: en
-  description: 
+  description: ""
   sort_name: Bisharat Khanum
-  vitals: 
+  vitals: ""
   name: Bisharat Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_449: 
+  updated_at: 2010-12-14 03:53:29
+person_translations_411: 
   id: "970"
   person_id: "227"
   locale: en
-  description: 
+  description: ""
   sort_name: Fatimah Baygum Khanum
-  vitals: 
+  vitals: ""
   name: Fatimah Baygum Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_450: 
+  updated_at: 2010-12-11 07:54:20
+person_translations_412: 
   id: "972"
   person_id: "229"
   locale: en
-  description: 
+  description: ""
   sort_name: Gul Andam
-  vitals: 
+  vitals: ""
   name: Gul Andam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_451: 
+  updated_at: 2010-12-14 16:11:00
+person_translations_413: 
   id: "975"
   person_id: "232"
   locale: en
-  description: 
+  description: ""
   sort_name: Haj Sayyid 'Ali Akbar
-  vitals: 
-  name: Haj Sayyid 'Ali Akbar
-  birth_place: 
+  vitals: ""
+  name: "Haj Sayyid \xCA\xBBAli Akbar"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_452: 
-  id: "976"
-  person_id: "233"
-  locale: en
-  description: 
-  sort_name: Haj Umma Khanum
-  vitals: 
-  name: Haj Umma Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_453: 
+  updated_at: 2010-12-11 07:56:02
+person_translations_414: 
   id: "977"
   person_id: "234"
   locale: en
-  description: 
+  description: ""
   sort_name: Hajiyah Khanum
-  vitals: 
-  name: Hajiyah Khanum
-  birth_place: 
+  vitals: ""
+  name: Jahan Ara Hajiyah Khanum
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_454: 
+  updated_at: 2010-12-12 05:29:36
+person_translations_415: 
   id: "978"
   person_id: "235"
   locale: en
-  description: 
+  description: ""
   sort_name: Hajji Muhammad Qasim Tajir Hiravi
-  vitals: 
+  vitals: ""
   name: Hajji Muhammad Qasim Tajir Hiravi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_455: 
+  updated_at: 2010-12-14 08:22:38
+person_translations_416: 
   id: "979"
   person_id: "236"
   locale: en
-  description: 
+  description: ""
   sort_name: Hasan Durudi
-  vitals: 
+  vitals: ""
   name: Hasan Durudi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_456: 
-  id: "980"
-  person_id: "237"
-  locale: en
-  description: 
-  sort_name: Hasan Duruudi
-  vitals: 
-  name: Hasan Duruudi
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_457: 
-  id: "981"
-  person_id: "238"
-  locale: en
-  description: 
-  sort_name: Jahan Ara
-  vitals: 
-  name: Jahan Ara
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_458: 
-  id: "982"
-  person_id: "239"
-  locale: en
-  description: 
-  sort_name: Karbalai Musa
-  vitals: 
-  name: Karbalai Musa
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_459: 
+  updated_at: 2010-12-12 05:47:28
+person_translations_417: 
   id: "983"
   person_id: "240"
   locale: en
-  description: 
+  description: ""
   sort_name: Khadijah Khanum
-  vitals: 
+  vitals: ""
   name: Khadijah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_460: 
+  updated_at: 2010-12-14 16:38:47
+person_translations_418: 
   id: "984"
   person_id: "241"
   locale: en
-  description: 
+  description: ""
   sort_name: Khanum Jan
-  vitals: 
+  vitals: ""
   name: Khanum Jan
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_461: 
+  updated_at: 2010-12-14 03:03:46
+person_translations_419: 
   id: "985"
   person_id: "242"
   locale: en
-  description: 
+  description: ""
   sort_name: Khanum Khanumha
-  vitals: 
+  vitals: ""
   name: Khanum Khanumha
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_462: 
+  updated_at: 2010-12-12 06:51:33
+person_translations_420: 
   id: "986"
   person_id: "243"
   locale: en
-  description: 
+  description: ""
   sort_name: Mah Jahan Khanum
-  vitals: 
+  vitals: ""
   name: Mah Jahan Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_463: 
+  updated_at: 2010-12-12 03:33:32
+person_translations_421: 
   id: "987"
   person_id: "244"
   locale: en
-  description: 
+  description: ""
   sort_name: Manijah Safdari Qajar
-  vitals: 
+  vitals: ""
   name: Manijah Safdari Qajar
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_464: 
-  id: "988"
-  person_id: "245"
-  locale: en
-  description: 
-  sort_name: Maryam Khanum
-  vitals: 
-  name: Maryam Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_465: 
-  id: "989"
-  person_id: "246"
-  locale: en
-  description: 
-  sort_name: Mir Sayyid Ali Khan
-  vitals: 
-  name: Mir Sayyid Ali Khan
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_466: 
+  updated_at: 2010-12-14 16:44:34
+person_translations_422: 
   id: "990"
   person_id: "247"
   locale: en
-  description: 
+  description: ""
   sort_name: "Mir Sayyid \xCA\xBBAli Khan"
-  vitals: 
-  name: "Mir Sayyid \xCA\xBBAli Khan"
-  birth_place: 
+  vitals: ""
+  name: "Mir Sayyid \xCA\xBBAli Khan Shaykh al-Islami"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_467: 
-  id: "991"
-  person_id: "248"
-  locale: en
-  description: 
-  sort_name: Mirza Buzurg Hakimbashi
-  vitals: 
-  name: Mirza Buzurg Hakimbashi
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_468: 
+  updated_at: 2010-12-14 03:56:11
+person_translations_423: 
   id: "992"
   person_id: "249"
   locale: en
-  description: 
+  description: ""
   sort_name: Mirza Hasan Durudi
-  vitals: 
+  vitals: ""
   name: Mirza Hasan Durudi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_469: 
+  updated_at: 2010-12-14 16:50:50
+person_translations_424: 
   id: "993"
   person_id: "250"
   locale: en
-  description: 
+  description: ""
   sort_name: Mirza Hasan Khan Hakimbashi
-  vitals: 
+  vitals: ""
   name: Mirza Hasan Khan Hakimbashi
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_470: 
-  id: "994"
-  person_id: "251"
-  locale: en
-  description: 
-  sort_name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
-  vitals: 
-  name: "Mirza Isma\xCA\xBBil Khan Shaykh al-Islam"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_471: 
+  updated_at: 2010-12-11 07:14:49
+person_translations_425: 
   id: "995"
   person_id: "252"
   locale: en
-  description: 
+  description: ""
   sort_name: Mirza Mahdi Khan
-  vitals: 
+  vitals: ""
   name: Mirza Mahdi Khan
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_472: 
+  updated_at: 2010-12-12 05:31:40
+person_translations_426: 
   id: "996"
   person_id: "253"
   locale: en
-  description: 
+  description: ""
   sort_name: Mirza Qavam
-  vitals: 
+  vitals: ""
   name: Mirza Qavam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_473: 
+  updated_at: 2010-12-14 16:59:25
+person_translations_427: 
   id: "997"
   person_id: "254"
   locale: en
-  description: 
+  description: ""
   sort_name: Mu'avin al-Mulk
-  vitals: 
+  vitals: ""
   name: Mu'avin al-Mulk
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_474: 
+  updated_at: 2010-12-14 00:10:05
+person_translations_428: 
   id: "998"
   person_id: "255"
   locale: en
-  description: 
+  description: ""
   sort_name: Mu'tamid al-Mulk
-  vitals: 
-  name: Mu'tamid al-Mulk
-  birth_place: 
+  vitals: ""
+  name: "Mu\xCA\xBBtamad al-Mulk"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_475: 
+  updated_at: 2010-12-14 07:15:46
+person_translations_429: 
   id: "999"
   person_id: "256"
   locale: en
-  description: 
+  description: ""
   sort_name: Muchul Khanum
-  vitals: 
+  vitals: ""
   name: Muchul Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_476: 
-  id: "1000"
-  person_id: "257"
-  locale: en
-  description: 
-  sort_name: Mufakhar al-Dawlah
-  vitals: 
-  name: Mufakhar al-Dawlah
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_477: 
-  id: "1001"
-  person_id: "258"
-  locale: en
-  description: 
-  sort_name: Munshi Bashi
-  vitals: 
-  name: Munshi Bashi
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_478: 
+  updated_at: 2010-12-14 17:00:28
+person_translations_430: 
   id: "1002"
   person_id: "259"
   locale: en
-  description: 
+  description: ""
   sort_name: Mutamid al-Sultan
-  vitals: 
+  vitals: ""
   name: Mutamid al-Sultan
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_479: 
-  id: "1003"
-  person_id: "260"
-  locale: en
-  description: 
-  sort_name: Muzaffar al-Saltanah
-  vitals: 
-  name: Muzaffar al-Saltanah
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_480: 
+  updated_at: 2010-12-14 17:01:46
+person_translations_431: 
   id: "1004"
   person_id: "261"
   locale: en
-  description: 
+  description: ""
   sort_name: Muzaffar al-Saltanah Amir Tuman
-  vitals: 
+  vitals: ""
   name: Muzaffar al-Saltanah Amir Tuman
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_481: 
-  id: "1005"
-  person_id: "262"
-  locale: en
-  description: 
-  sort_name: Nushi Khanum
-  vitals: 
-  name: Nushi Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_482: 
+  updated_at: 2010-12-14 03:24:38
+person_translations_432: 
   id: "1006"
   person_id: "263"
   locale: en
-  description: 
+  description: ""
   sort_name: Nushi Khanum Shaykh al-Islami
-  vitals: 
+  vitals: ""
   name: Nushi Khanum Shaykh al-Islami
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_483: 
-  id: "1007"
-  person_id: "264"
-  locale: en
-  description: 
-  sort_name: Qamar Khanum
-  vitals: 
-  name: Qamar Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_484: 
-  id: "1008"
-  person_id: "265"
-  locale: en
-  description: 
-  sort_name: Rubabah Khanum
-  vitals: 
-  name: Rubabah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_485: 
+  updated_at: 2010-12-14 02:48:08
+person_translations_433: 
   id: "1009"
   person_id: "266"
   locale: en
-  description: 
+  description: ""
   sort_name: Rukhsarah Khanum
-  vitals: 
+  vitals: ""
   name: Rukhsarah Khanum
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_486: 
-  id: "1010"
-  person_id: "267"
-  locale: en
-  description: 
-  sort_name: Sa'd al-Saltanah
-  vitals: 
-  name: Sa'd al-Saltanah
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_487: 
-  id: "1011"
-  person_id: "268"
-  locale: en
-  description: 
-  sort_name: Sadiqah Khanum
-  vitals: 
-  name: Sadiqah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_488: 
-  id: "1012"
-  person_id: "269"
-  locale: en
-  description: 
-  sort_name: Sakinah Khanum
-  vitals: 
-  name: Sakinah Khanum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_489: 
+  updated_at: 2010-12-11 07:13:06
+person_translations_434: 
   id: "1013"
   person_id: "270"
   locale: en
-  description: 
+  description: ""
   sort_name: Salar Mansur
-  vitals: 
+  vitals: ""
   name: Salar Mansur
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_490: 
+  updated_at: 2010-12-12 03:10:05
+person_translations_435: 
   id: "1014"
   person_id: "271"
   locale: en
-  description: 
+  description: ""
   sort_name: Sayf al-Islam
-  vitals: 
+  vitals: ""
   name: Sayf al-Islam
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_491: 
+  updated_at: 2010-12-14 17:44:42
+person_translations_436: 
   id: "1015"
   person_id: "272"
   locale: en
-  description: 
+  description: ""
   sort_name: Sayyid Jamal al-Din Mojtahid
-  vitals: 
-  name: Sayyid Jamal al-Din Mojtahid
-  birth_place: 
+  vitals: ""
+  name: Sayyid Jamal al-Din Mujtahid
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_492: 
+  updated_at: 2010-12-12 07:06:27
+person_translations_437: 
   id: "1016"
   person_id: "273"
   locale: en
-  description: 
+  description: ""
   sort_name: Sayyid al-Saltanah
-  vitals: 
-  name: Sayyid al-Saltanah
-  birth_place: 
+  vitals: ""
+  name: "Sa\xE2\x80\x98d al-Saltanah"
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_493: 
+  updated_at: 2010-12-13 21:38:11
+person_translations_438: 
   id: "1017"
   person_id: "274"
   locale: en
-  description: 
+  description: ""
   sort_name: Shah Jan
-  vitals: 
+  vitals: ""
   name: Shah Jan
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_494: 
-  id: "1018"
-  person_id: "275"
-  locale: en
-  description: 
-  sort_name: Shahzadah Baygum
-  vitals: 
-  name: Shahzadah Baygum
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_495: 
+  updated_at: 2010-12-14 05:09:43
+person_translations_439: 
   id: "1019"
   person_id: "276"
   locale: en
-  description: 
+  description: ""
   sort_name: Shawkat Khanum Ashraf al-Saltanah
-  vitals: 
+  vitals: ""
   name: Shawkat Khanum Ashraf al-Saltanah
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_496: 
+  updated_at: 2010-12-14 02:51:59
+person_translations_440: 
   id: "1020"
   person_id: "277"
   locale: en
-  description: 
+  description: ""
   sort_name: Sidiqah Khanum
-  vitals: 
-  name: Sidiqah Khanum
-  birth_place: 
+  vitals: ""
+  name: Sadiqah Khanum [Sheikholeslami Collection]
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_497: 
+  updated_at: 2010-12-14 17:39:56
+person_translations_441: 
   id: "1021"
   person_id: "278"
   locale: en
-  description: 
+  description: ""
   sort_name: Taj Khanum
-  vitals: 
-  name: Taj Khanum
-  birth_place: 
+  vitals: ""
+  name: Taj Khanum [Sheikholeslami Collection]
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_498: 
-  id: "1022"
-  person_id: "279"
-  locale: en
-  description: 
-  sort_name: Yumn al-Dawlah Dawlatshahi
-  vitals: 
-  name: Yumn al-Dawlah Dawlatshahi
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_499: 
+  updated_at: 2010-12-14 17:48:21
+person_translations_442: 
   id: "1023"
   person_id: "280"
   locale: en
-  description: 
+  description: ""
   sort_name: Zahra Khanum
-  vitals: 
-  name: Zahra Khanum
-  birth_place: 
+  vitals: ""
+  name: Zahra Khanum [Shaykh al-Islami Collection]
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_500: 
-  id: "1024"
-  person_id: "281"
-  locale: en
-  description: 
-  sort_name: Zivar Sarimi
-  vitals: 
-  name: Zivar Sarimi
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_501: 
-  id: "1025"
-  person_id: "282"
-  locale: en
-  description: 
-  sort_name: "\xCA\xBBAziz al-Muluk"
-  vitals: 
-  name: "\xCA\xBBAziz al-Muluk"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_502: 
+  updated_at: 2010-12-14 17:59:55
+person_translations_443: 
   id: "1026"
   person_id: "283"
   locale: en
-  description: 
+  description: ""
   sort_name: "\xCA\xBBIshrat Khanum"
-  vitals: 
-  name: "\xCA\xBBIshrat Khanum"
-  birth_place: 
-  created_at: 
-  updated_at: 
-person_translations_503: 
-  id: "1027"
-  person_id: "284"
-  locale: en
-  description: 
-  sort_name: "\xCA\xBBIshrat al-Muluk Khanum"
-  vitals: 
+  vitals: ""
   name: "\xCA\xBBIshrat al-Muluk Khanum"
-  birth_place: 
+  birth_place: ""
   created_at: 
-  updated_at: 
-person_translations_504: 
+  updated_at: 2010-12-12 07:08:52
+person_translations_444: 
   id: "1028"
   person_id: "285"
   locale: fa
   description: "\xD8\xAF\xD8\xA7\xD9\x85\xD8\xA7\xD8\xAF \xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
   sort_name: 
   vitals: ""
-  name: "\xD8\xA7\xD8\xA8\xD9\x88 \xD8\xA7\xD9\x84\xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xA8\xD9\x87\xD8\xA7 \xD9\x86\xD8\xB8\xD8\xA7\xD9\x85"
+  name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xA8\xD9\x87\xD8\xA7 \xD9\x86\xD8\xB8\xD8\xA7\xD9\x85"
   birth_place: ""
   created_at: 2010-07-01 19:10:31
-  updated_at: 2010-07-01 19:16:56
-person_translations_505: 
+  updated_at: 2010-12-11 07:10:22
+person_translations_445: 
   id: "1029"
   person_id: "285"
   locale: en
@@ -5554,3 +4894,520 @@ person_translations_505:
   birth_place: ""
   created_at: 2010-07-01 19:12:22
   updated_at: 2010-07-01 19:17:40
+person_translations_446: 
+  id: "1030"
+  person_id: "277"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB5\xD8\xAF\xDB\x8C\xD9\x82\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-11 06:05:28
+  updated_at: 2010-12-11 06:05:28
+person_translations_447: 
+  id: "1031"
+  person_id: "266"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB1\xD8\xAE\xD8\xB3\xD8\xA7\xD8\xB1\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-11 07:13:06
+  updated_at: 2010-12-11 07:13:06
+person_translations_448: 
+  id: "1032"
+  person_id: "250"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xAD\xDA\xA9\xDB\x8C\xD9\x85 \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-11 07:14:49
+  updated_at: 2010-12-11 07:14:49
+person_translations_449: 
+  id: "1033"
+  person_id: "203"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB9\xD8\xA8\xD8\xA7\xD8\xB3 \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86\xDB\x8C \xD9\x85\xD9\x86\xD8\xAA\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xDA\xA9"
+  birth_place: ""
+  created_at: 2010-12-11 07:17:54
+  updated_at: 2010-12-11 07:17:54
+person_translations_450: 
+  id: "1036"
+  person_id: "205"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA7\xDA\xA9\xD8\xA8\xD8\xB1 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xA8\xD8\xB4\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2010-12-11 07:34:29
+  updated_at: 2010-12-11 07:34:29
+person_translations_451: 
+  id: "1037"
+  person_id: "212"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB3\xDB\x8C\xD8\xAF \xD8\xAD\xD8\xB3\xDB\x8C\xD9\x86 \xD9\x85\xD8\xAC\xD8\xAF \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85 \xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-11 07:42:02
+  updated_at: 2010-12-11 07:42:02
+person_translations_452: 
+  id: "1038"
+  person_id: "213"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD9\x87\xD8\xAF\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-11 07:46:09
+  updated_at: 2010-12-11 07:46:09
+person_translations_453: 
+  id: "1039"
+  person_id: "214"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD8\xAD\xD9\x85\xD9\x88\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-11 07:47:48
+  updated_at: 2010-12-11 07:47:48
+person_translations_454: 
+  id: "1040"
+  person_id: "216"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD8\xB3\xD8\xB9\xD9\x88\xD8\xAF \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-11 07:49:44
+  updated_at: 2010-12-11 07:49:44
+person_translations_455: 
+  id: "1041"
+  person_id: "218"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA2\xD9\x82\xD8\xA7 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xB5\xD8\xA7\xD8\xA8\xD9\x88\xD9\x86\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-11 07:50:47
+  updated_at: 2010-12-11 07:50:47
+person_translations_456: 
+  id: "1042"
+  person_id: "220"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA7\xD8\xB4\xD8\xB1\xD9\x81 \xD8\xA7\xD9\x84\xD8\xB3\xD8\xA7\xD8\xAF\xD8\xA7\xD8\xAA"
+  birth_place: ""
+  created_at: 2010-12-11 07:52:09
+  updated_at: 2010-12-11 07:52:09
+person_translations_457: 
+  id: "1043"
+  person_id: "227"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x81\xD8\xA7\xD8\xB7\xD9\x85\xD9\x87 \xD8\xA8\xDB\x8C\xDA\xAF\xD9\x85 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-11 07:54:20
+  updated_at: 2010-12-11 07:54:20
+person_translations_458: 
+  id: "1044"
+  person_id: "232"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAD\xD8\xA7\xD8\xAC \xD8\xB3\xDB\x8C\xD8\xAF \xD8\xB9\xD9\x84\xDB\x8C \xD8\xA7\xDA\xA9\xD8\xA8\xD8\xB1"
+  birth_place: ""
+  created_at: 2010-12-11 07:56:02
+  updated_at: 2010-12-11 07:56:02
+person_translations_459: 
+  id: "1046"
+  person_id: "270"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1 \xD9\x85\xD9\x86\xD8\xB5\xD9\x88\xD8\xB1"
+  birth_place: ""
+  created_at: 2010-12-12 03:10:05
+  updated_at: 2010-12-12 03:10:05
+person_translations_460: 
+  id: "1047"
+  person_id: "273"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB3\xD8\xB9\xD8\xAF \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2010-12-12 03:12:16
+  updated_at: 2010-12-12 03:12:16
+person_translations_461: 
+  id: "1048"
+  person_id: "243"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xA7\xD9\x87 \xD8\xAC\xD9\x87\xD8\xA7\xD9\x86 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-12 03:33:32
+  updated_at: 2010-12-12 03:33:32
+person_translations_462: 
+  id: "1050"
+  person_id: "234"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAC\xD9\x87\xD8\xA7\xD9\x86 \xD8\xA2\xD8\xB1\xD8\xA7 \xD8\xAD\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-12 05:29:36
+  updated_at: 2010-12-12 05:29:36
+person_translations_463: 
+  id: "1051"
+  person_id: "252"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x85\xD9\x87\xD8\xAF\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86"
+  birth_place: ""
+  created_at: 2010-12-12 05:31:40
+  updated_at: 2010-12-12 05:31:40
+person_translations_464: 
+  id: "1052"
+  person_id: "236"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAF\xD8\xB1\xD9\x88\xD8\xAF\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-12 05:47:28
+  updated_at: 2010-12-12 05:47:28
+person_translations_465: 
+  id: "1053"
+  person_id: "242"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD9\x87\xD8\xA7"
+  birth_place: ""
+  created_at: 2010-12-12 06:51:33
+  updated_at: 2010-12-12 06:51:33
+person_translations_466: 
+  id: "1054"
+  person_id: "272"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB3\xDB\x8C\xD8\xAF \xD8\xAC\xD9\x85\xD8\xA7\xD9\x84 \xD8\xA7\xD9\x84\xD8\xAF\xDB\x8C\xD9\x86 \xD9\x85\xD8\xAC\xD8\xAA\xD9\x87\xD8\xAF"
+  birth_place: ""
+  created_at: 2010-12-12 07:06:27
+  updated_at: 2010-12-12 07:06:27
+person_translations_467: 
+  id: "1055"
+  person_id: "283"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB9\xD8\xB4\xD8\xB1\xD8\xAA \xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x88\xDA\xA9 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-12 07:08:52
+  updated_at: 2010-12-12 07:09:43
+person_translations_468: 
+  id: "1056"
+  person_id: "286"
+  locale: en
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: Hidayat Allah Hakim Bashi
+  birth_place: ""
+  created_at: 2010-12-12 07:34:26
+  updated_at: 2010-12-12 07:34:26
+person_translations_469: 
+  id: "1057"
+  person_id: "286"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x87\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xAA \xD8\xA7\xD9\x84\xD9\x84\xD9\x87 \xD8\xAD\xDA\xA9\xDB\x8C\xD9\x85 \xD8\xA8\xD8\xA7\xD8\xB4\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-12 07:34:26
+  updated_at: 2010-12-12 07:34:26
+person_translations_470: 
+  id: "1058"
+  person_id: "254"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xB9\xD8\xA7\xD9\x88\xD9\x86 \xD8\xA7\xD9\x84\xD9\x85\xDA\xA9"
+  birth_place: ""
+  created_at: 2010-12-14 00:10:05
+  updated_at: 2010-12-14 00:10:05
+person_translations_471: 
+  id: "1059"
+  person_id: "263"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x86\xD9\x88\xD8\xB4\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-14 02:48:08
+  updated_at: 2010-12-14 02:50:05
+person_translations_472: 
+  id: "1060"
+  person_id: "276"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB4\xD9\x88\xDA\xA9\xD8\xAA \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD8\xA7\xD8\xB4\xD8\xB1\xD9\x81 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2010-12-14 02:51:59
+  updated_at: 2010-12-14 02:51:59
+person_translations_473: 
+  id: "1061"
+  person_id: "280"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB2\xD9\x87\xD8\xB1\xD8\xA7 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 02:52:59
+  updated_at: 2010-12-14 02:52:59
+person_translations_474: 
+  id: "1062"
+  person_id: "241"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD8\xAC\xD8\xA7\xD9\x86 "
+  birth_place: ""
+  created_at: 2010-12-14 03:03:46
+  updated_at: 2010-12-14 03:03:46
+person_translations_475: 
+  id: "1063"
+  person_id: "261"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87 \xD8\xA7\xD9\x85\xDB\x8C\xD8\xB1 \xD8\xAA\xD9\x88\xD9\x85\xD8\xA7\xD9\x86"
+  birth_place: ""
+  created_at: 2010-12-14 03:24:38
+  updated_at: 2010-12-14 03:24:38
+person_translations_476: 
+  id: "1064"
+  person_id: "287"
+  locale: en
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: Muhammad Quli Khan
+  birth_place: ""
+  created_at: 2010-12-14 03:44:30
+  updated_at: 2010-12-14 03:44:30
+person_translations_477: 
+  id: "1065"
+  person_id: "287"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD9\x82\xD9\x84\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86"
+  birth_place: ""
+  created_at: 2010-12-14 03:44:30
+  updated_at: 2010-12-14 03:44:30
+person_translations_478: 
+  id: "1066"
+  person_id: "225"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA8\xD8\xB4\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 03:53:29
+  updated_at: 2010-12-14 03:53:29
+person_translations_479: 
+  id: "1067"
+  person_id: "247"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1 \xD8\xB3\xDB\x8C\xD8\xAF \xD8\xB9\xD9\x84\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-14 03:56:11
+  updated_at: 2010-12-14 03:56:11
+person_translations_480: 
+  id: "1068"
+  person_id: "278"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAA\xD8\xA7\xD8\xAC \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 04:30:27
+  updated_at: 2010-12-14 04:30:27
+person_translations_481: 
+  id: "1069"
+  person_id: "274"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB4\xD8\xA7\xD9\x87 \xD8\xAC\xD8\xA7\xD9\x86"
+  birth_place: ""
+  created_at: 2010-12-14 05:09:43
+  updated_at: 2010-12-14 05:09:43
+person_translations_482: 
+  id: "1070"
+  person_id: "255"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xB9\xD8\xAA\xD9\x85\xD8\xAF \xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xDA\xA9"
+  birth_place: ""
+  created_at: 2010-12-14 07:15:46
+  updated_at: 2010-12-14 07:15:46
+person_translations_483: 
+  id: "1071"
+  person_id: "235"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAD\xD8\xA7\xD8\xAC\xDB\x8C \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD9\x82\xD8\xA7\xD8\xB3\xD9\x85 \xD8\xAA\xD8\xA7\xD8\xAC\xD8\xB1 \xD9\x87\xD8\xB1\xD9\x88\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-14 08:22:38
+  updated_at: 2010-12-14 08:22:38
+person_translations_484: 
+  id: "1072"
+  person_id: "229"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xDA\xAF\xD9\x84 \xD8\xA7\xD9\x86\xD8\xAF\xD8\xA7\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 16:11:00
+  updated_at: 2010-12-14 16:11:00
+person_translations_485: 
+  id: "1073"
+  person_id: "206"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xA7\xD9\x85\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  birth_place: ""
+  created_at: 2010-12-14 16:12:13
+  updated_at: 2010-12-14 16:12:13
+person_translations_486: 
+  id: "1074"
+  person_id: "240"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xAE\xD8\xAF\xDB\x8C\xD8\xAC\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 16:36:32
+  updated_at: 2010-12-14 16:36:32
+person_translations_487: 
+  id: "1075"
+  person_id: "244"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD9\x86\xDB\x8C\xDA\x98\xD9\x87 \xD8\xB5\xD9\x81\xD8\xAF\xD8\xB1\xDB\x8C \xD9\x82\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1"
+  birth_place: ""
+  created_at: 2010-12-14 16:44:34
+  updated_at: 2010-12-14 16:44:34
+person_translations_488: 
+  id: "1077"
+  person_id: "249"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xAF\xD8\xB1\xD9\x88\xD8\xAF\xDB\x8C"
+  birth_place: ""
+  created_at: 2010-12-14 16:50:50
+  updated_at: 2010-12-14 16:50:50
+person_translations_489: 
+  id: "1079"
+  person_id: "253"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7 \xD9\x82\xD9\x88\xD8\xA7\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 16:59:25
+  updated_at: 2010-12-14 16:59:25
+person_translations_490: 
+  id: "1080"
+  person_id: "256"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD9\x88\xDA\x86\xD9\x88\xD9\x84 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 17:00:28
+  updated_at: 2010-12-14 17:00:28
+person_translations_491: 
+  id: "1081"
+  person_id: "259"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD9\x85\xD8\xB9\xD8\xAA\xD9\x85\xD8\xAF \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD8\xA7\xD9\x86"
+  birth_place: ""
+  created_at: 2010-12-14 17:01:46
+  updated_at: 2010-12-14 17:01:46
+person_translations_492: 
+  id: "1082"
+  person_id: "271"
+  locale: fa
+  description: ""
+  sort_name: 
+  vitals: ""
+  name: "\xD8\xB3\xDB\x8C\xD9\x81 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85"
+  birth_place: ""
+  created_at: 2010-12-14 17:44:42
+  updated_at: 2010-12-14 17:44:42

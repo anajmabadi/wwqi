@@ -3,121 +3,121 @@ place_translations_001:
   id: "1"
   place_id: "1"
   locale: en
-  name: Tehran, Iran
+  name: Tehran
   created_at: 2010-04-11 18:31:28
-  updated_at: 2010-04-11 18:31:30
+  updated_at: 2010-12-14 20:54:03
 place_translations_002: 
   id: "2"
   place_id: "1"
   locale: fa
-  name: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:56
+  updated_at: 2010-12-14 20:54:03
 place_translations_003: 
   id: "3"
   place_id: "2"
   locale: en
-  name: Qazvin, Iran
+  name: Qazvin
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:54:26
 place_translations_004: 
   id: "4"
   place_id: "2"
   locale: fa
-  name: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86 \xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:54:26
 place_translations_005: 
   id: "5"
   place_id: "3"
   locale: en
-  name: "Khak \xCA\xBBAli, Iran"
+  name: "Khak \xCA\xBBAli"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:54:53
 place_translations_006: 
   id: "6"
   place_id: "3"
   locale: fa
-  name: "\xD8\xAE\xD8\xA7\xDA\xA9 \xD8\xB9\xD9\x84\xDB\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xAE\xD8\xA7\xDA\xA9 \xD8\xB9\xD9\x84\xDB\x8C"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:54:53
 place_translations_007: 
   id: "7"
   place_id: "4"
   locale: en
-  name: Karbala, Iraq
+  name: Karbala
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-08-30 22:30:22
+  updated_at: 2010-12-12 05:01:33
 place_translations_008: 
   id: "8"
   place_id: "4"
   locale: fa
-  name: "\xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84\xD8\xA7 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84\xD8\xA7"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-12 05:01:33
 place_translations_009: 
   id: "9"
   place_id: "5"
   locale: en
-  name: Rasht, Iran
+  name: Rasht
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:55:14
 place_translations_010: 
   id: "10"
   place_id: "5"
   locale: fa
-  name: "\xD8\xB1\xD8\xB4\xD8\xAA \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xB1\xD8\xB4\xD8\xAA"
   created_at: 2010-04-11 18:31:53
-  updated_at: 2010-04-11 18:31:53
+  updated_at: 2010-12-14 20:55:14
 place_translations_011: 
   id: "11"
   place_id: "6"
   locale: en
-  name: Zanjan, Iran
+  name: Zanjan
   created_at: 2010-06-23 14:44:56
-  updated_at: 
+  updated_at: 2010-12-14 20:55:34
 place_translations_012: 
   id: "12"
   place_id: "6"
   locale: fa
-  name: "\xD8\xB2\xD9\x86\xD8\xAC\xD8\xA7\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xB2\xD9\x86\xD8\xAC\xD8\xA7\xD9\x86"
   created_at: 2010-06-23 14:46:09
-  updated_at: 
+  updated_at: 2010-12-14 20:55:34
 place_translations_013: 
   id: "13"
   place_id: "7"
   locale: en
-  name: Tunikabun, Iran
+  name: Tunikabun
   created_at: 2010-06-23 14:47:09
-  updated_at: 
+  updated_at: 2010-12-14 20:55:55
 place_translations_014: 
   id: "14"
   place_id: "7"
   locale: fa
-  name: "\xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86"
   created_at: 2010-06-23 14:47:26
-  updated_at: 
+  updated_at: 2010-12-14 20:55:55
 place_translations_015: 
   id: "15"
   place_id: "8"
   locale: en
-  name: Austin, Texas
+  name: Austin
   created_at: 2010-06-23 14:48:52
-  updated_at: 
+  updated_at: 2010-12-14 20:56:31
 place_translations_016: 
   id: "16"
   place_id: "8"
   locale: fa
-  name: "\xD8\xA2\xD8\xB3\xD8\xAA\xD9\x86\xD8\x8C \xD8\xAA\xDA\xA9\xD8\xA7\xD8\xB3"
+  name: "\xD8\xA2\xD8\xB3\xD8\xAA\xD9\x86"
   created_at: 2010-06-23 14:49:08
-  updated_at: 
+  updated_at: 2010-12-14 20:56:31
 place_translations_017: 
   id: "17"
   place_id: "9"
   locale: en
-  name: Paris, France
+  name: Paris
   created_at: 2010-06-23 14:50:06
-  updated_at: 2010-06-23 14:50:09
+  updated_at: 2010-12-14 20:56:55
 place_translations_018: 
   id: "18"
   place_id: "9"
@@ -129,30 +129,30 @@ place_translations_019:
   id: "19"
   place_id: "10"
   locale: en
-  name: Ghent, Belgium
+  name: Ghent
   created_at: 2010-06-23 14:51:23
-  updated_at: 2010-06-23 14:51:25
+  updated_at: 2010-12-14 20:57:59
 place_translations_020: 
   id: "20"
   place_id: "10"
   locale: fa
-  name: "\xDA\xAF\xD8\xA7\xD9\x86\xD8\xAF\xD8\x8C \xD8\xA8\xD9\x84\xDA\x98\xDB\x8C\xDA\xA9"
+  name: "\xDA\xAF\xD8\xA7\xD9\x86\xD8\xAF"
   created_at: 2010-06-23 14:51:42
-  updated_at: 2010-06-23 14:51:44
+  updated_at: 2010-12-14 20:57:59
 place_translations_021: 
   id: "21"
   place_id: "11"
   locale: en
-  name: Isfahan, Iran
+  name: Isfahan
   created_at: 2010-06-23 14:52:46
-  updated_at: 2010-06-23 14:52:50
+  updated_at: 2010-12-14 20:57:27
 place_translations_022: 
   id: "22"
   place_id: "11"
   locale: fa
-  name: " \xD8\xA7\xD8\xB5\xD9\x81\xD9\x87\xD8\xA7\xD9\x86 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  name: "\xD8\xA7\xD8\xB5\xD9\x81\xD9\x87\xD8\xA7\xD9\x86"
   created_at: 2010-06-23 14:53:06
-  updated_at: 2010-06-23 14:53:08
+  updated_at: 2010-12-14 20:57:27
 place_translations_023: 
   id: "23"
   place_id: "12"
@@ -251,3 +251,129 @@ place_translations_036:
   name: "\xD9\x88\xD8\xA7\xD8\xB4\xD9\x86\xDA\xAF\xD8\xAA\xD9\x86"
   created_at: 2010-06-23 15:18:04
   updated_at: 2010-06-23 15:18:06
+place_translations_037: 
+  id: "37"
+  place_id: "19"
+  locale: en
+  name: Bihjat Abad, Iran
+  created_at: 2010-12-12 02:25:53
+  updated_at: 2010-12-12 02:25:53
+place_translations_038: 
+  id: "38"
+  place_id: "19"
+  locale: fa
+  name: "\xD8\xA8\xD9\x87\xD8\xAC\xD8\xAA \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-12-12 02:25:53
+  updated_at: 2010-12-12 02:25:53
+place_translations_039: 
+  id: "39"
+  place_id: "20"
+  locale: en
+  name: Chalah Maydan, Iran
+  created_at: 2010-12-12 02:36:23
+  updated_at: 2010-12-12 02:38:02
+place_translations_040: 
+  id: "40"
+  place_id: "20"
+  locale: fa
+  name: "\xDA\x86\xD8\xA7\xD9\x84\xD9\x87 \xD9\x85\xDB\x8C\xD8\xAF\xD8\xA7\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-12-12 02:36:23
+  updated_at: 2010-12-12 02:38:02
+place_translations_041: 
+  id: "41"
+  place_id: "21"
+  locale: en
+  name: Mahmud Abad, Iran
+  created_at: 2010-12-12 03:49:51
+  updated_at: 2010-12-12 03:49:51
+place_translations_042: 
+  id: "42"
+  place_id: "21"
+  locale: fa
+  name: "\xD9\x85\xD8\xAD\xD9\x85\xD9\x88\xD8\xAF \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-12-12 03:49:51
+  updated_at: 2010-12-12 03:49:51
+place_translations_043: 
+  id: "43"
+  place_id: "22"
+  locale: en
+  name: Najaf
+  created_at: 2010-12-12 05:00:13
+  updated_at: 2010-12-12 05:00:13
+place_translations_044: 
+  id: "44"
+  place_id: "22"
+  locale: fa
+  name: "\xD9\x86\xD8\xAC\xD9\x81"
+  created_at: 2010-12-12 05:00:13
+  updated_at: 2010-12-12 05:00:13
+place_translations_045: 
+  id: "45"
+  place_id: "23"
+  locale: en
+  name: Razjird, Iran
+  created_at: 2010-12-12 08:29:49
+  updated_at: 2010-12-12 08:29:49
+place_translations_046: 
+  id: "46"
+  place_id: "23"
+  locale: fa
+  name: "\xD8\xB1\xD8\xB2\xD8\xAC\xD8\xB1\xD8\xAF\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2010-12-12 08:29:49
+  updated_at: 2010-12-12 08:29:49
+place_translations_047: 
+  id: "47"
+  place_id: "24"
+  locale: en
+  name: Lulah Jird
+  created_at: 2010-12-14 02:03:14
+  updated_at: 2010-12-14 02:03:14
+place_translations_048: 
+  id: "48"
+  place_id: "24"
+  locale: fa
+  name: "\xD9\x84\xD9\x88\xD9\x84\xD9\x87 \xD8\xAC\xD8\xB1\xD8\xAF"
+  created_at: 2010-12-14 02:03:14
+  updated_at: 2010-12-14 02:03:14
+place_translations_049: 
+  id: "49"
+  place_id: "25"
+  locale: en
+  name: Tarum (Gilan)
+  created_at: 2010-12-14 03:47:15
+  updated_at: 2010-12-14 03:47:15
+place_translations_050: 
+  id: "50"
+  place_id: "25"
+  locale: fa
+  name: "\xD8\xB7\xD8\xA7\xD8\xB1\xD9\x85 (\xDA\xAF\xDB\x8C\xD9\x84\xD8\xA7\xD9\x86)"
+  created_at: 2010-12-14 03:47:15
+  updated_at: 2010-12-14 03:47:15
+place_translations_051: 
+  id: "51"
+  place_id: "26"
+  locale: en
+  name: Najaf Abad
+  created_at: 2010-12-14 03:59:29
+  updated_at: 2010-12-14 03:59:29
+place_translations_052: 
+  id: "52"
+  place_id: "26"
+  locale: fa
+  name: "\xD9\x86\xD8\xAC\xD9\x81 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
+  created_at: 2010-12-14 03:59:29
+  updated_at: 2010-12-14 03:59:29
+place_translations_053: 
+  id: "53"
+  place_id: "27"
+  locale: en
+  name: Kirmanshah
+  created_at: 2010-12-14 05:13:23
+  updated_at: 2010-12-14 05:13:23
+place_translations_054: 
+  id: "54"
+  place_id: "27"
+  locale: fa
+  name: "\xDA\xA9\xD8\xB1\xD9\x85\xD8\xA7\xD9\x86\xD8\xB4\xD8\xA7\xD9\x87"
+  created_at: 2010-12-14 05:13:23
+  updated_at: 2010-12-14 05:13:23

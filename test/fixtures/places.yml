@@ -6,35 +6,35 @@ places_001:
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-04-11 18:31:07
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:54:03
   items_count: "89"
-  lock_version: "0"
+  lock_version: "1"
 places_002: 
   id: "2"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:54:26
   items_count: "12"
-  lock_version: "0"
+  lock_version: "1"
 places_003: 
   id: "3"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:54:53
   items_count: "1"
-  lock_version: "0"
+  lock_version: "1"
 places_004: 
   id: "4"
   latitude: ""
@@ -44,93 +44,93 @@ places_004:
   publish: "1"
   notes: ""
   created_at: 
-  updated_at: 2010-08-30 22:30:21
+  updated_at: 2010-12-12 05:01:33
   items_count: "5"
-  lock_version: "0"
+  lock_version: "1"
 places_005: 
   id: "5"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:55:14
   items_count: "3"
-  lock_version: "0"
+  lock_version: "1"
 places_006: 
   id: "6"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:44:44
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:55:34
   items_count: "1"
-  lock_version: "0"
+  lock_version: "1"
 places_007: 
   id: "7"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:46:56
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:55:55
   items_count: "2"
-  lock_version: "0"
+  lock_version: "1"
 places_008: 
   id: "8"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:48:37
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:56:31
   items_count: "1"
-  lock_version: "0"
+  lock_version: "1"
 places_009: 
   id: "9"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:49:49
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:56:55
   items_count: "18"
-  lock_version: "0"
+  lock_version: "1"
 places_010: 
   id: "10"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:51:08
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:57:59
   items_count: "1"
-  lock_version: "0"
+  lock_version: "1"
 places_011: 
   id: "11"
-  latitude: 
-  longitude: 
+  latitude: ""
+  longitude: ""
   x: 
   y: 
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-23 14:52:26
-  updated_at: 2010-08-12 10:43:55
+  updated_at: 2010-12-14 20:57:27
   items_count: "2"
-  lock_version: "0"
+  lock_version: "1"
 places_012: 
   id: "12"
   latitude: 
@@ -213,5 +213,113 @@ places_018:
   notes: 
   created_at: 2010-06-23 15:16:32
   updated_at: 2010-06-23 15:16:35
+  items_count: "0"
+  lock_version: "0"
+places_019: 
+  id: "19"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-12 02:25:53
+  updated_at: 2010-12-12 02:25:53
+  items_count: "0"
+  lock_version: "0"
+places_020: 
+  id: "20"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-12 02:36:23
+  updated_at: 2010-12-12 02:38:02
+  items_count: "0"
+  lock_version: "1"
+places_021: 
+  id: "21"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-12 03:49:51
+  updated_at: 2010-12-12 03:49:51
+  items_count: "0"
+  lock_version: "0"
+places_022: 
+  id: "22"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-12 05:00:13
+  updated_at: 2010-12-12 05:00:13
+  items_count: "0"
+  lock_version: "0"
+places_023: 
+  id: "23"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-12 08:29:49
+  updated_at: 2010-12-12 08:29:49
+  items_count: "0"
+  lock_version: "0"
+places_024: 
+  id: "24"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 02:03:14
+  updated_at: 2010-12-14 02:03:14
+  items_count: "0"
+  lock_version: "0"
+places_025: 
+  id: "25"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 03:47:15
+  updated_at: 2010-12-14 03:47:15
+  items_count: "0"
+  lock_version: "0"
+places_026: 
+  id: "26"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 03:59:29
+  updated_at: 2010-12-14 03:59:29
+  items_count: "0"
+  lock_version: "0"
+places_027: 
+  id: "27"
+  latitude: ""
+  longitude: ""
+  x: 
+  y: 
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 05:13:23
+  updated_at: 2010-12-14 05:13:23
   items_count: "0"
   lock_version: "0"

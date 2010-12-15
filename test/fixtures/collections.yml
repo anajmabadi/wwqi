@@ -12,18 +12,18 @@ collections_001:
   contact: ""
   notes: ""
   created_at: 2010-03-22 20:51:20
-  updated_at: 2010-12-09 09:09:35
+  updated_at: 2010-03-30 17:29:35
   publish: "0"
   private: "0"
   items_count: "0"
   finding_aid: "0"
-  lock_version: "1"
+  lock_version: "0"
   acquired_on: 
   interview_id: 
-  acquired_by: ""
-  processed_by: ""
-  acquisition_notes: ""
-  last_edited: "2011-02-03"
+  acquired_by: 
+  processed_by: 
+  acquisition_notes: 
+  last_edited: 
 collections_002: 
   id: "2"
   address: ""
@@ -162,7 +162,7 @@ collections_007:
   contact: ""
   notes: ""
   created_at: 2010-03-30 17:33:45
-  updated_at: 2010-12-09 09:13:42
+  updated_at: 2010-12-09 09:22:35
   publish: "1"
   private: "0"
   items_count: "215"
@@ -173,7 +173,7 @@ collections_007:
   acquired_by: ""
   processed_by: ""
   acquisition_notes: ""
-  last_edited: "2012-04-04"
+  last_edited: "2010-12-06"
 collections_008: 
   id: "9"
   address: ""
@@ -396,6 +396,31 @@ collections_016:
   finding_aid: "0"
   lock_version: "1"
   acquired_on: "2010-12-06"
+  interview_id: 
+  acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+  last_edited: 
+collections_017: 
+  id: "19"
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
+  created_at: 2010-12-09 22:05:36
+  updated_at: 2010-12-09 22:05:36
+  publish: "1"
+  private: "0"
+  items_count: "1"
+  finding_aid: "0"
+  lock_version: "1"
+  acquired_on: 
   interview_id: 
   acquired_by: ""
   processed_by: ""

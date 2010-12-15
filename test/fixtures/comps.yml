@@ -1,46 +1,73 @@
 --- 
 comps_001: 
-  id: "2"
-  item_id: "1"
-  comp_id: "2"
-  position: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-09 03:57:44
-  updated_at: 2010-12-09 03:57:44
-comps_002: 
-  id: "3"
-  item_id: "20"
+  id: "9"
+  item_id: "1190"
   comp_id: "1205"
   position: "1"
   publish: "1"
   notes: ""
-  created_at: 2010-12-09 04:37:24
-  updated_at: 2010-12-09 04:37:24
-comps_003: 
-  id: "6"
-  item_id: "20"
-  comp_id: "247"
-  position: "4"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-09 04:53:29
-  updated_at: 2010-12-09 04:53:29
-comps_004: 
-  id: "7"
-  item_id: "20"
-  comp_id: "51"
-  position: "5"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-09 04:53:46
-  updated_at: 2010-12-09 04:53:46
-comps_005: 
-  id: "8"
+  created_at: 2010-12-09 05:56:53
+  updated_at: 2010-12-09 05:56:53
+comps_002: 
+  id: "10"
   item_id: "1205"
-  comp_id: "82"
+  comp_id: "1190"
   position: "1"
   publish: "1"
   notes: ""
-  created_at: 2010-12-09 04:59:55
-  updated_at: 2010-12-09 04:59:55
+  created_at: 2010-12-09 05:57:15
+  updated_at: 2010-12-09 05:57:15
+comps_003: 
+  id: "11"
+  item_id: "24"
+  comp_id: "25"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-13 22:51:23
+  updated_at: 2010-12-13 22:51:23
+comps_004: 
+  id: "12"
+  item_id: "25"
+  comp_id: "24"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-13 22:57:59
+  updated_at: 2010-12-13 22:57:59
+comps_005: 
+  id: "13"
+  item_id: "43"
+  comp_id: "44"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 02:19:18
+  updated_at: 2010-12-14 02:19:18
+comps_006: 
+  id: "14"
+  item_id: "44"
+  comp_id: "43"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 02:19:57
+  updated_at: 2010-12-14 02:19:57
+comps_007: 
+  id: "15"
+  item_id: "50"
+  comp_id: "45"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 03:21:33
+  updated_at: 2010-12-14 03:21:33
+comps_008: 
+  id: "16"
+  item_id: "45"
+  comp_id: "50"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-14 03:22:43
+  updated_at: 2010-12-14 03:22:43

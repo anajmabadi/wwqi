@@ -3,19 +3,19 @@ collection_translations_001:
   id: "1"
   collection_id: "1"
   locale: en
-  caption: ""
+  caption: 
   name: Private Collection
   created_at: 2010-03-22 20:51:20
-  updated_at: 2010-12-09 09:09:35
+  updated_at: 2010-03-22 20:51:20
   sort_name: Private Collection
-  description: ""
-  dates: ""
-  materials: ""
-  repository: ""
-  tips: ""
-  creator: ""
-  restrictions: ""
-  history: ""
+  description: 
+  dates: 
+  materials: 
+  repository: 
+  tips: 
+  creator: 
+  restrictions: 
+  history: 
 collection_translations_002: 
   id: "2"
   collection_id: "2"
@@ -71,19 +71,19 @@ collection_translations_005:
   id: "6"
   collection_id: "1"
   locale: fa
-  caption: ""
+  caption: 
   name: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD8\xAE\xD8\xB5\xD9\x88\xD8\xB5\xDB\x8C"
   created_at: 2010-03-30 17:29:35
-  updated_at: 2010-12-09 09:09:35
+  updated_at: 2010-03-30 17:29:35
   sort_name: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD8\xAE\xD8\xB5\xD9\x88\xD8\xB5\xDB\x8C"
-  description: ""
-  dates: ""
-  materials: ""
-  repository: ""
-  tips: ""
-  creator: ""
-  restrictions: ""
-  history: ""
+  description: 
+  dates: 
+  materials: 
+  repository: 
+  tips: 
+  creator: 
+  restrictions: 
+  history: 
 collection_translations_006: 
   id: "8"
   collection_id: "4"
@@ -539,6 +539,40 @@ collection_translations_032:
   dates: "\xDB\xB1\xDB\xB3\xDB\xB3\xDB\xB9 - \xDB\xB1\xDB\xB3\xDB\xB3\xDB\xB8 \xD9\x82 [\xDB\xB1\xDB\xB9\xDB\xB2\xDB\xB0 - \xDB\xB1\xDB\xB9\xDB\xB1\xDB\xB9]"
   materials: ""
   repository: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD8\xAE\xD8\xB5\xD9\x88\xD8\xB5\xDB\x8C \xD8\xA7\xD9\x81\xD8\xB3\xD8\xA7\xD9\x86\xD9\x87 \xD9\x86\xD8\xAC\xD9\x85 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xDB\x8C."
+  tips: ""
+  creator: ""
+  restrictions: ""
+  history: ""
+collection_translations_033: 
+  id: "37"
+  collection_id: "19"
+  locale: en
+  caption: Collection of manuscripts, marriage contracts and other legal documents from the Majlis Library in Tehran, Iran.
+  name: Majlis Library Collection
+  created_at: 2010-12-09 22:05:36
+  updated_at: 2010-12-09 22:05:36
+  sort_name: Majlis Library
+  description: ""
+  dates: ""
+  materials: ""
+  repository: ""
+  tips: ""
+  creator: ""
+  restrictions: ""
+  history: ""
+collection_translations_034: 
+  id: "38"
+  collection_id: "19"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB2 \xD9\x86\xD8\xB3\xD8\xAE\xD8\x8C \xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x88 \xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD9\x85\xD8\xAF\xD8\xA7\xD8\xB1\xDA\xA9 \xD8\xAD\xD9\x82\xD9\x88\xD9\x82\xDB\x8C \xD8\xA7\xD8\xB2 \xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87 \xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xD8\xAF\xD8\xB1 \xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86\xD8\x8C \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86."
+  name: "\xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87 \xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87 \xD9\x85\xD8\xAC\xD9\x84\xD8\xB3"
+  created_at: 2010-12-09 22:05:36
+  updated_at: 2010-12-09 22:05:36
+  sort_name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87 \xD9\x85\xD8\xAC\xD9\x84\xD8\xB3"
+  description: ""
+  dates: ""
+  materials: ""
+  repository: ""
   tips: ""
   creator: ""
   restrictions: ""

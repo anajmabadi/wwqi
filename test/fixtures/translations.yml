@@ -3805,22 +3805,22 @@ translations_381:
   id: "394"
   locale: en
   key: see_also
-  value: See Also
-  interpolations: 
+  value: Related Items
+  interpolations: ""
   is_proc: "0"
   created_at: 2010-12-09 00:01:09
-  updated_at: 
-  lock_version: "0"
+  updated_at: 2010-12-09 15:56:02
+  lock_version: "1"
 translations_382: 
   id: "395"
   locale: fa
   key: see_also
-  value: "\xD9\x87\xD9\x85\xDA\x86\xD9\x86\xDB\x8C\xD9\x86 \xD8\xA8\xD8\xA8\xDB\x8C\xD9\x86\xDB\x8C\xD8\xAF"
-  interpolations: 
+  value: "\xD8\xA7\xD8\xB3\xD9\x86\xD8\xA7\xD8\xAF \xD9\x85\xD8\xB1\xD8\xAA\xD8\xA8\xD8\xB7"
+  interpolations: ""
   is_proc: "0"
   created_at: 2010-12-09 00:01:40
-  updated_at: 
-  lock_version: "0"
+  updated_at: 2010-12-09 15:58:28
+  lock_version: "1"
 translations_383: 
   id: "396"
   locale: en
