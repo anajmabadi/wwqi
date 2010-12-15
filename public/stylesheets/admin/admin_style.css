@@ -1063,54 +1063,6 @@ div.slideshow ul li a.title{
     left:0;
 }
 
-/* rails errors */
-
-div.field, div.actions {
-  margin-bottom: 10px;
-}
-div.field {
-    color:grey;
-    font-weight: bold;
-}
-.notice {
-    color: green;
-}
-
-.fieldWithErrors {
-    padding: 2px;
-    background-color: red;
-    display: table;
-}
-
-#errorExplanation {
-    width: 400px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    background-color: #c00;
-    color: #fff;
-}
-
-#errorExplanation p {
-    color: #333;
-    margin-bottom: 0;
-    padding: 5px;
-}
-
-#errorExplanation ul li {
-    font-size: 12px;
-    list-style: square;
-}
 
 
 .beta{
@@ -1371,3 +1323,64 @@ div.field {
 
 .browserBarIndex{float:left;}
 .browserBarIndex li{margin-left:-5px;}
+
+/* rails errors */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+div.field {
+    color:grey;
+    font-weight: bold;
+}
+.notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+
+}
+
+.field_with_errors label {
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #c00;
+}
+
+#error_explanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#error_explanation ul {
+    margin: 20px 10px 0px 10px;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+    padding-left: 10px;
+    margin-left: 10px;
+}

@@ -1,7 +1,7 @@
 <span>
     <hr />
     <p>
-    <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true %>
+        <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true %>
     </p>
     <%= form_for(['admin', appearance], :remote => true) do |f| %>
     <% if appearance.errors.any? %>
@@ -21,28 +21,34 @@
 
     <% unless persian_focus -%>
     <div class="field">
-        <%= f.label :person_id %>:
+        <%= f.label :person_id %><br/>
         <%= f.select :person_id, @people %>
     </div>
     <% else -%>
     <div class="field">
-        <%= f.label :person_id %>:
+        <%= f.label :person_id %><br/>
         <%= f.select :person_id, @people %>
     </div>
     <% end -%>
     <div class="field">
-        <%= f.label :caption_en %>:
+        <%= f.label :caption_en %><br/>
         <%= f.text_area :caption_en, :rows => 1 %>
     </div>
     <div class="field">
-        <%= f.label :caption_fa %>:
+        <%= f.label :caption_fa %><br/>
         <%= f.text_area :caption_fa, :rows => 1, :class => 'persianOnly' %>
     </div>
-    <p><strong>Approved Captions/Roles: </strong> creator آفریننده, receiver گیرنده, copyist کاتب, former owner صاحب قبلی, interviewee مصاحبه شونده, interviewer مصاحبه کننده, publisher ناشر, printing house چاپخانه </p>
+    <p>
+        <strong>Approved Captions/Roles: </strong> creator آفریننده, receiver گیرنده, copyist کاتب, former owner صاحب قبلی, interviewee مصاحبه شونده, interviewer مصاحبه کننده, publisher ناشر, printing house چاپخانه
+    </p>
     <div class="field">
-        <%= f.label :publish %>: <%= f.check_box :publish %>
-        <%= f.label :position %>: <%= f.text_field :position, :size => 5 %>
-        <%= f.label :notes %>: <%= f.text_field :notes %>
+        <%= f.label :publish %> <br/><%= f.check_box :publish %>
+    </div>
+    <div class="field">
+        <%= f.label :position %> <br/><%= f.text_field :position, :size => 5 %>
+    </div>
+    <div class="field">
+        <%= f.label :notes %> <br/><%= f.text_field :notes %>
     </div>
     <div class="actions">
         <%= f.submit %>

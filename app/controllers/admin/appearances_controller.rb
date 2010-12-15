@@ -56,7 +56,7 @@ class Admin::AppearancesController < Admin::AdminController
                 format.xml  { render :xml => @appearance, :status => :created, :appearance => @appearance }
             else
                 format.html { render :action => "new" }
-                format.js { render :template => 'admin/items/add_appearance_to_item' }
+                format.js { render :template => 'admin/items/show_add_appearance_to_item',  :appearance => @appearance}
                 format.xml  { render :xml => @appearance.errors, :status => :unprocessable_entity }
             end
         end
