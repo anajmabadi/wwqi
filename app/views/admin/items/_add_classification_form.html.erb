@@ -32,8 +32,8 @@
       <%= f.text_field :notes %>
     </div>
     <div class="actions">
-      <%= f.submit %>
+        <%= button_to 'Save Classification', nil, :disable_with => t(:please_wait) %>
     </div>
   <% end %>
-  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_classification_to_item', :id => item.id }, :remote => true %>
+  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_classification_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
 </span>

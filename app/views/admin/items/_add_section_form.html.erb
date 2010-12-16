@@ -58,9 +58,9 @@
         <%= f.label :notes %>: <%= f.text_field :notes %>
     </div>
     <div class="actions">
-        <%= f.submit %>
+      <%= button_to 'Save Section', nil, :disable_with => t(:please_wait) %>
     </div>
     <% end -%>
-    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_section_to_item', :id => item.id }, :remote => true %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_section_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
     <p>* Required fields. </p>
 </span>
