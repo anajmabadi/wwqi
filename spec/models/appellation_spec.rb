@@ -48,10 +48,4 @@ describe Appellation do
     @appellation.should_not be_valid
   end
   
-  it "should not allow duplicate appellations" do  
-    @appellation.update_attributes(@sample_attributes)
-    @appellation.should be_valid
-    @appellation2 = Appearance.new(@sample_attributes)
-    @appellation2.should_not be_valid
-  end
 end
