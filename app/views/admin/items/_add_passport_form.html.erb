@@ -1,47 +1,59 @@
 <span>
-  <hr />
-  <%= form_for(['admin', passport], :remote => true) do |f| %>
+    <hr />
+    <%= form_for(['admin', passport], :remote => true) do |f| %>
     <% if passport.errors.any? %>
-      <div id="error_explanation">
+    <div id="error_explanation">
         <h2><%= pluralize(passport.errors.count, "error") %> prohibited this passport from being saved:</h2>
-
         <ul>
-          <% passport.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
+            <% passport.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
         </ul>
-      </div>
+    </div>
     <% end %>
 
     <%= f.hidden_field(:item_id) %>
 
     <div class="field">
-      <%= f.label :repository_id %>:
-      <%= f.select :repository_id, @repositories %>
-      <%= f.label :tag %>:
-      <%= f.text_field :tag %>
-      <%= f.label :publish %>:
-      <%= f.check_box :publish %>
-
-      <%= f.label :primary %>:
-      <%= f.check_box :primary %>
-
-      <%= f.label :position %>:
-      <%= f.text_field :position, :size => 5 %>
+        <%= f.label :repository_id %>
+        <br />
+        <%= f.select :repository_id, @repositories %>
     </div>
     <div class="field">
-
-      <%= f.label :custom_url %>:
-      <%= f.text_field :custom_url %>
-      <%= f.label :notes %>:
-      <%= f.text_field :notes %>
+        <%= f.label :tag %>
+        <br />
+        <%= f.text_field :tag %>
     </div>
     <div class="field">
-
+        <%= f.label :publish %>
+        <br />
+        <%= f.check_box :publish %>
+    </div>
+    <div class="field">
+        <%= f.label :primary %>
+        <br />
+        <%= f.check_box :primary %>
+    </div>
+    <div class="field">
+        <%= f.label :position %>
+        <br />
+        <%= f.text_field :position, :size => 5 %>
+    </div>
+    <div class="field">
+        <%= f.label :custom_url %>
+        <br />
+        <%= f.text_field :custom_url %>
+    </div>
+    <div class="field">
+        <%= f.label :notes %>
+        <br />
+        <%= f.text_field :notes %>
     </div>
     <div class="actions">
-      <%= button_to 'Save Passport', nil, :disable_with => t(:please_wait) %>
+        <%= button_to 'Save Passport', nil, :disable_with => t(:please_wait) %>
     </div>
-  <% end %>
-  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_passport_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
+    <% end %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_passport_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
 </span>
