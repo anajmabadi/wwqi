@@ -3841,3 +3841,63 @@ translations_384:
   created_at: 2010-12-09 04:15:38
   updated_at: 
   lock_version: "0"
+translations_385: 
+  id: "398"
+  locale: en
+  key: errors.messages.taken
+  value: taken
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 06:15:13
+  updated_at: 
+  lock_version: "0"
+translations_386: 
+  id: "399"
+  locale: fa
+  key: errors.messages.taken
+  value: "\xDA\xAF\xD8\xB1\xD9\x81\xD8\xAA\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 06:15:56
+  updated_at: 
+  lock_version: "0"
+translations_387: 
+  id: "400"
+  locale: en
+  key: attributes.person_id
+  value: Person id
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 06:23:50
+  updated_at: 
+  lock_version: "0"
+translations_388: 
+  id: "401"
+  locale: fa
+  key: attributes.person_id
+  value: "\xD8\xB4\xD9\x86\xD8\xA7\xD8\xB3\xD9\x87 \xD9\x86\xD9\x81\xD8\xB1"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 06:24:13
+  updated_at: 
+  lock_version: "0"
+translations_389: 
+  id: "402"
+  locale: en
+  key: please_wait
+  value: Please wait...
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 09:08:49
+  updated_at: 2010-12-15 09:08:55
+  lock_version: "0"
+translations_390: 
+  id: "403"
+  locale: fa
+  key: please_wait
+  value: "\xD9\x84\xD8\xB7\xD9\x81\xD8\xA7 \xD8\xB5\xD8\xA8\xD8\xB1 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF..."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-15 09:09:40
+  updated_at: 
+  lock_version: "0"

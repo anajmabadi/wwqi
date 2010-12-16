@@ -43,8 +43,8 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "activities", ["user_id"], :name => "index_activities_on_user_id"
 
   create_table "appearance_translations", :force => true do |t|
-    t.integer  "appearance_id"
-    t.string   "locale"
+    t.integer  "appearance_id", :default => 0,    :null => false
+    t.string   "locale",        :default => "en", :null => false
     t.text     "caption"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -53,16 +53,17 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "appearance_translations", ["appearance_id"], :name => "index_appearance_translations_on_appearance_id"
 
   create_table "appearances", :force => true do |t|
-    t.integer  "item_id"
-    t.integer  "person_id"
-    t.boolean  "publish",      :default => true
-    t.integer  "position",     :default => 0
+    t.integer  "item_id",      :default => 0,    :null => false
+    t.integer  "person_id",    :default => 0,    :null => false
+    t.boolean  "publish",      :default => true, :null => false
+    t.integer  "position",     :default => 0,    :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "lock_version", :default => 0,    :null => false
   end
 
+  add_index "appearances", ["item_id", "person_id"], :name => "index_appearances_unique", :unique => true
   add_index "appearances", ["item_id"], :name => "index_appearances_on_item_id"
   add_index "appearances", ["person_id"], :name => "index_appearances_on_person_id"
   add_index "appearances", ["position"], :name => "index_appearances_on_position"
@@ -81,12 +82,12 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
 
   create_table "appellations", :force => true do |t|
     t.text     "notes"
-    t.boolean  "publish"
+    t.boolean  "publish",      :default => true, :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "person_id",                   :null => false
-    t.integer  "position",     :default => 1, :null => false
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "person_id",                      :null => false
+    t.integer  "position",     :default => 1,    :null => false
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "appellations", ["person_id"], :name => "fk_appellations_people"
@@ -777,6 +778,7 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
 
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
   add_index "subjects", ["publish"], :name => "index_subjects_on_publish"
+  add_index "subjects", ["subject_type_id"], :name => "subject_type_id_2"
 
   create_table "translations", :force => true do |t|
     t.string   "locale"
