@@ -29,12 +29,14 @@ class Person < ActiveRecord::Base
   end
 
   def to_label
-    my_label = "#{self.name_en} (#{self.id.to_s}: #{collections_label}) | #{self.name_fa}" unless self.name_en.nil?
+    my_label = self.name_en.blank? ? "[#{self.name_fa}]" : self.name_en
+    my_label += " | #{self.id.to_s}: #{collections_label}" 
     return my_label
   end
   
   def to_label_fa
-    my_label = "#{self.name_fa} | #{self.name_en} (#{self.id.to_s}: #{collections_label})" unless self.name_fa.nil?
+    my_label = self.name_fa.blank? ? "[#{self.name_en}]" : self.name_fa
+    my_label += " | #{self.id.to_s}: #{collections_label}" 
     return my_label
   end
   
