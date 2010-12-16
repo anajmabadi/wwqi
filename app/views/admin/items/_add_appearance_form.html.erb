@@ -1,5 +1,4 @@
 <span>
-    <hr />
     <p>
         <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true, :disable_with => t(:please_wait) %>
     </p>
