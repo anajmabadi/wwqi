@@ -1,9 +1,9 @@
 <span>
     <hr />
     <p>
-        <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true %>
+        <%= button_to 'Toggle Persian/English', { :controller => "items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => !persian_focus }, :remote => true, :disable_with => t(:please_wait) %>
     </p>
-    <%= form_for(['admin', appearance], :remote => true) do |f| %>
+    <%= form_for(['admin', appearance], :remote => true, :persian_focus => persian_focus) do |f| %>
     <% if appearance.errors.any? %>
     <div id="error_explanation">
         <h2><%= pluralize(appearance.errors.count, "error") %> prohibited this appearance from being saved:</h2>
@@ -18,18 +18,11 @@
     <% end %>
 
     <%= f.hidden_field(:item_id) %>
-
-    <% unless persian_focus -%>
+    
     <div class="field">
         <%= f.label :person_id %><br/>
-        <%= f.select :person_id, @people %>
+        <%= f.select :person_id, people %>
     </div>
-    <% else -%>
-    <div class="field">
-        <%= f.label :person_id %><br/>
-        <%= f.select :person_id, @people %>
-    </div>
-    <% end -%>
     <div class="field">
         <%= f.label :caption_en %><br/>
         <%= f.text_area :caption_en, :rows => 1 %>
@@ -51,8 +44,8 @@
         <%= f.label :notes %> <br/><%= f.text_field :notes %>
     </div>
     <div class="actions">
-        <%= f.submit %>
+        <%= button_to 'Save Appearance', nil, :disable_with => t(:please_wait) %>
     </div>
     <% end %>
-    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_appearance_to_item', :id => item.id }, :remote => true %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_appearance_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
 </span>

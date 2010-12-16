@@ -190,7 +190,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <div id="item_classifications_list">
+                    <div id="item_classifications_list" class="item_detail_list">
                         <%= render 'item_classifications_list', :classifications => @item.classifications %>
                     </div>
                     <div id="addClassification">
@@ -202,7 +202,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="item_passports_list">
+                    <div id="item_passports_list" class="item_detail_list">
                         <%= render :partial => 'item_passports_list', :locals => {:passports => @item.passports} %>
                     </div>
                     <div id="addPassport">
@@ -215,8 +215,8 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                    <div id="item_plots_list">
+                    <td colspan="2">
+                    <div id="item_plots_list" class="item_detail_list">
                         <%= render 'item_plots_list', :plots => @item.plots %>
                     </div>
                     <div id="addPlot">
@@ -227,8 +227,10 @@
                         <% end -%>
                     </div>
                     </td>
-                    <td>
-                    <div id="item_appearances_list">
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                    <div id="item_appearances_list" class="item_detail_list">
                         <%= render 'item_appearances_list', :appearances => @item.appearances %>
                     </div>
                     <div id="addAppearance">
@@ -242,7 +244,7 @@
                 </tr>
                 <tr>
                     <td>
-                    <div id="item_comps_list">
+                    <div id="item_comps_list" class="item_detail_list">
                         <%= render 'item_comps_list', :comps => @item.comps %>
                     </div>
                     <div id="addComp">
@@ -254,7 +256,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="item_sections_list">
+                    <div id="item_sections_list" class="item_detail_list">
                         <%= render 'item_sections_list', :sections => @item.sections %>
                     </div>
                     <div id="add_section">

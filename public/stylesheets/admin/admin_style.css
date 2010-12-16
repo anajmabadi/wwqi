@@ -242,8 +242,6 @@ dd          { margin-left: 1.5em;}
 	}
 
 
-
-
 /* sortnav styles
 -------------------------------------------------------------- */
 
@@ -1384,3 +1382,8 @@ div.field {
     padding-left: 10px;
     margin-left: 10px;
 }
+
+.item_detail_list {
+  margin: 20px 0px 20px 0px;
+}
+

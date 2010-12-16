@@ -1,5 +1,5 @@
 <span>
   <%= button_to 'Add Person Appearance',
     { :controller => "admin/items", :action => 'show_add_appearance_to_item', :id => item.id, :persian_focus => persian_focus },
-      :remote => true %>
+      :remote => true, :disable_with => t(:please_wait) %>
 </span>
