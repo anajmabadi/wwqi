@@ -8,7 +8,9 @@ describe Clip do
       :title => "Sample title",
       :caption => "Sample caption",
       :position => 1,
-      :item_id => 1
+      :item_id => 1,
+      :recorded_on => Date.new,
+      :clip_type_id => 1
     }
   end
 
@@ -28,6 +30,19 @@ describe Clip do
     lambda { @clip.save(:validate => false) }.should raise_error
   end
   
+  it "should require a clip_type_id" do
+    @sample_attributes[:clip_type_id] = nil
+    @clip.attributes = @sample_attributes 
+    @clip.should_not be_valid
+    lambda { @clip.save(:validate => false) }.should raise_error
+  end
+
+  it "should require a title" do
+    @sample_attributes[:title] = nil
+    @clip.attributes = @sample_attributes 
+    @clip.should_not be_valid
+  end
+    
   it "should require a position" do
     @sample_attributes[:position] = nil
     @clip.attributes = @sample_attributes 
@@ -54,7 +69,7 @@ describe Clip do
   
   it "should return a valid clip url for a position" do
     @clip.update_attributes(@sample_attributes)
-    @clip.clip_url("wav").should == "http://library.qajarwomen.net/clips/it_#{@clip.item_id.to_s}_#{@clip.position.to_s}_clip.wav"
+    @clip.clip_url("wav").should == "http://library.qajarwomen.org/clips/it_#{@clip.item_id.to_s}_#{@clip.position.to_s}_clip.wav"
   end
   
 end
