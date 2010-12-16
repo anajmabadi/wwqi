@@ -8,6 +8,7 @@ describe Clip do
       :title => "Sample title",
       :caption => "Sample caption",
       :position => 1,
+      :publish => 1,
       :item_id => 1,
       :recorded_on => Date.new,
       :clip_type_id => 1
@@ -41,6 +42,13 @@ describe Clip do
     @sample_attributes[:title] = nil
     @clip.attributes = @sample_attributes 
     @clip.should_not be_valid
+  end
+  
+  it "should require a publish setting" do
+    @sample_attributes[:publish] = nil
+    @clip.attributes = @sample_attributes 
+    @clip.should_not be_valid
+    lambda { @clip.save(:validate => false) }.should raise_error
   end
     
   it "should require a position" do
