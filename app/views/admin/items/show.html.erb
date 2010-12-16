@@ -195,7 +195,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="addClassification">
+                    <div id="addClassification" class="item_detail_form">
                         <% if @classification.nil? -%>
                         <%= render :partial => 'admin/items/add_classification_button', :locals => { :item => @item } %>
                         <% else -%>
@@ -211,7 +211,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="addPassport">
+                    <div id="addPassport" class="item_detail_form">
                         <% if @passport.nil? -%>
                         <%= render :partial => 'admin/items/add_passport_button', :locals => { :item => @item } %>
                         <% else -%>
@@ -227,7 +227,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="addPlot">
+                    <div id="addPlot" class="item_detail_form">
                         <% if @plot.nil? -%>
                         <%= render :partial => 'admin/items/add_plot_button', :locals => { :item => @item } %>
                         <% else -%>
@@ -243,7 +243,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="addAppearance">
+                    <div id="addAppearance" class="item_detail_form">
                         <% if @appearance.nil? -%>
                         <%= render :partial => 'admin/items/add_appearance_button', :locals => { :item => @item, :persian_focus => @persian_focus } %>
                         <% else -%>
@@ -259,7 +259,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="addComp">
+                    <div id="addComp" class="item_detail_form">
                         <% if @comp.nil? -%>
                         <%= render :partial => 'admin/items/add_comp_button', :locals => { :item => @item } %>
                         <% else -%>
@@ -275,7 +275,7 @@
                     </div>
                     </td>
                     <td>
-                    <div id="add_section">
+                    <div id="add_section" class="item_detail_form">
                         <% if @comp.nil? -%>
                         <%= render :partial => 'admin/items/add_section_button', :locals => { :item => @item } %>
                         <% else -%>

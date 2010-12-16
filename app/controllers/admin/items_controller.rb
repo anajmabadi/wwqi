@@ -1,6 +1,5 @@
 class Admin::ItemsController < Admin::AdminController
 
-  before_filter :admin_required, :except => [:index, :show]
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
   
   def util_update_sort_date
