@@ -2,7 +2,7 @@ class Subject < ActiveRecord::Base
 
   belongs_to :subject_type
   
-  has_many :classifications
+  has_many :classifications, :dependent => :destroy
   has_many :items, :through => :classifications, :order => :position
 
   validates :name_en, :presence => true, :length =>{:maximum => 256}
