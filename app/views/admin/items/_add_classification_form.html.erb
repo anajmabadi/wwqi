@@ -4,15 +4,18 @@
     <%= f.hidden_field(:item_id) %>
 
     <% if classification.errors.any? %>
-      <div id="errorExplanation">
+    <div id="error_explanation">
         <h2><%= pluralize(classification.errors.count, "error") %> prohibited this classification from being saved:</h2>
         <ul>
-          <% classification.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
+            <% classification.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
         </ul>
-      </div>
+    </div>
     <% end %>
+    
     <div class="field">
       <%= f.label :subject_id %><br />
       <%= f.select :subject_id, subjects, {:include_blank => true} %>
