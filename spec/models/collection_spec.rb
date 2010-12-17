@@ -20,17 +20,28 @@ describe Collection do
       :processed_by => 'df',
       :acquisition_notes => 'kdkdkd',
       :last_edited => Date.new,
-      :name => "Sample Name",
-      :caption => "Sample Collection",
-      :description => "Sample Description",
-      :sort_name => "Sort Name",
-      :dates => "Dates",
-      :materials => "Materials",
-      :repository => "Repository",
-      :tips => "Tips",
-      :creator => "test",
-      :restrictions => "Restrictions",
-      :history => "History",
+      :name_en => "Sample Name",
+      :name_fa => "Sample Name",
+      :caption_en => "Sample Collection",
+      :caption_fa => "Sample Collection",
+      :description_en => "Sample Description",
+      :description_fa => "Sample Description",
+      :sort_name_en => "Sort Name",
+      :sort_name_fa => "Sort Name",
+      :dates_en => "Dates",
+      :dates_fa => "Dates",
+      :materials_en => "Materials",
+      :materials_fa => "Materials",
+      :repository_en => "Repository",
+      :repository_fa => "Repository",
+      :tips_en => "Tips",
+      :tips_fa => "Tips",
+      :creator_en => "test",
+      :creator_fa => "test",
+      :restrictions_en => "Restrictions",
+      :restrictions_fa => "Restrictions",
+      :history_en => "History",
+      :history_fa => "History",
       :publish => true,
       :notes => "sample note"
     }
@@ -41,18 +52,30 @@ describe Collection do
     @collection.should be_valid
   end
   
-  it "should require an name" do
-    @sample_attributes[:name] = nil
+  it "should require an name_en" do
+    @sample_attributes[:name_en] = nil
+    @collection.attributes = @sample_attributes 
+    @collection.should_not be_valid
+  end
+  
+  it "should require an name_fa" do
+    @sample_attributes[:name_fa] = nil
     @collection.attributes = @sample_attributes 
     @collection.should_not be_valid
   end
   
   it "should require a sort_name" do
-    @sample_attributes[:sort_name] = nil
+    @sample_attributes[:sort_name_en] = nil
     @collection.attributes = @sample_attributes 
     @collection.should_not be_valid
   end
 
+  it "should require a sort_name" do
+    @sample_attributes[:sort_name_fa] = nil
+    @collection.attributes = @sample_attributes 
+    @collection.should_not be_valid
+  end
+  
   it "should require a publish" do
     @sample_attributes[:publish] = nil
     @collection.attributes = @sample_attributes 

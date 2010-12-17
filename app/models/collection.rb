@@ -9,8 +9,10 @@ class Collection < ActiveRecord::Base
   globalize_accessors :fa, :en
   default_scope :include => :translations
   
-  validates :name, :presence => true, :length => {:maximum => 255}
-  validates :sort_name, :presence => true, :length => {:maximum => 255}
+  validates :name_en, :presence => true, :length => {:maximum => 255}
+  validates :sort_name_en, :presence => true, :length => {:maximum => 255}
+  validates :name_fa, :presence => true, :length => {:maximum => 255}
+  validates :sort_name_fa, :presence => true, :length => {:maximum => 255}
   validates :publish, :inclusion => { :in => [true,false] }
   validates :private, :inclusion => { :in => [true,false] }
   validates :finding_aid, :inclusion => { :in => [true,false] }
