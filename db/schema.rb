@@ -261,12 +261,12 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
 
   create_table "comments", :force => true do |t|
     t.string   "subject"
-    t.text     "body"
+    t.text     "body",                         :null => false
     t.datetime "submitted_at"
     t.string   "ip"
     t.datetime "replied_at"
-    t.string   "name"
-    t.string   "email"
+    t.string   "name",         :default => "", :null => false
+    t.string   "email",        :default => "", :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -275,8 +275,8 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "comments", ["submitted_at"], :name => "index_comments_on_submitted_at"
 
   create_table "comp_translations", :force => true do |t|
-    t.integer  "comp_id"
-    t.string   "locale"
+    t.integer  "comp_id",    :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
     t.string   "caption"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -284,6 +284,7 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
 
   add_index "comp_translations", ["caption"], :name => "index_comp_translations_on_caption"
   add_index "comp_translations", ["comp_id"], :name => "index_comp_translations_on_comp_id"
+  add_index "comp_translations", ["locale"], :name => "in_comp_translations_locale"
 
   create_table "comps", :force => true do |t|
     t.integer  "item_id",                      :null => false

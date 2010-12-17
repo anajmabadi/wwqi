@@ -2,10 +2,10 @@ class Comp < ActiveRecord::Base
   belongs_to :item
   belongs_to :comp, :class_name => 'Item'
 
-  validates :item_id, :presence => true, :numericality => true, :item_comp_different => true
+  validates :item_id, :presence => true, :numericality => true, :item_comp_different => true, :uniqueness => {:scope => :comp_id}
   validates :comp_id, :presence => true, :numericality => true
   validates :position, :presence => true, :numericality => true
-  validates :publish, :presence => true
+  validates :publish, :inclusion => { :in => [true,false] }
 
   translates :caption
   globalize_accessors :en, :fa

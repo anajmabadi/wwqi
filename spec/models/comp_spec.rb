@@ -47,4 +47,11 @@ describe Comp do
     @comp.should_not be_valid
   end
   
+  it "should not allow duplicate items and comps" do  
+    @comp.update_attributes(@sample_attributes)
+    @comp.should be_valid
+    @comp2 = Comp.new(@sample_attributes)
+    @comp2.should_not be_valid
+  end
+  
 end
