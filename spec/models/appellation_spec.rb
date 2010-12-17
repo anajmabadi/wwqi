@@ -7,8 +7,10 @@ describe Appellation do
       :person_id => 1,
       :position => 1,
       :publish => true,
-      :name => 'Sample name',
-      :sort_name => 'Sort name',
+      :name_en => 'Sample name',
+      :sort_name_en => 'Sort name',
+      :name_fa => 'Sample name',
+      :sort_name_fa => 'Sort name',
       :notes => 'sample notes'
     }
   end
@@ -24,11 +26,29 @@ describe Appellation do
     @appellation.should_not be_valid
   end
   
-  it "should require a person_id" do
-    @sample_attributes[:person_id] = nil
+  it "should require a name_en" do
+    @sample_attributes[:name_en] = nil
     @appellation.update_attributes(@sample_attributes)
     @appellation.should_not be_valid
   end
+  
+  it "should require a name_fa" do
+    @sample_attributes[:name_en] = nil
+    @appellation.update_attributes(@sample_attributes)
+    @appellation.should_not be_valid
+  end
+  
+  it "should require a sort_name_en" do
+    @sample_attributes[:name_en] = nil
+    @appellation.update_attributes(@sample_attributes)
+    @appellation.should_not be_valid
+  end
+  
+    it "should require a sort_name_fa" do
+    @sample_attributes[:name_en] = nil
+    @appellation.update_attributes(@sample_attributes)
+    @appellation.should_not be_valid
+  end  
   
   it "should require a position" do
     @sample_attributes[:position] = nil

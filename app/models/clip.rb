@@ -11,7 +11,8 @@ class Clip < ActiveRecord::Base
   validates :item_id, :presence => true, :numericality => true
   validates :clip_type_id, :presence => true, :numericality => true
   validates :position, :presence => true, :numericality => {:greater_than => 0, :less_than => 10001}
-  validates :title, :presence => true, :length => {:maximum => 255}
+  validates :title_en, :presence => true, :length => {:maximum => 255}
+  validates :title_fa, :presence => true, :length => {:maximum => 255}
   validates :publish, :inclusion => { :in => [true,false] }
   
   # media file accessors from library

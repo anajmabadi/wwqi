@@ -5,8 +5,10 @@ describe Clip do
   before(:each) do
     @clip = Clip.new
     @sample_attributes = {
-      :title => "Sample title",
-      :caption => "Sample caption",
+      :title_en => "Sample title",
+      :title_fa => "Sample title",
+      :caption_en => "Sample caption",
+      :caption_fa => "Sample caption",
       :position => 1,
       :publish => 1,
       :item_id => 1,
@@ -34,8 +36,14 @@ describe Clip do
     lambda { @clip.save(:validate => false) }.should raise_error
   end
 
-  it "should require a title" do
-    @sample_attributes[:title] = nil
+  it "should require an English title" do
+    @sample_attributes[:title_en] = nil
+    @clip.attributes = @sample_attributes 
+    @clip.should_not be_valid
+  end
+  
+  it "should require a Parsian title" do
+    @sample_attributes[:title_fa] = nil
     @clip.attributes = @sample_attributes 
     @clip.should_not be_valid
   end
