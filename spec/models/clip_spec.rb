@@ -14,10 +14,6 @@ describe Clip do
       :clip_type_id => 1
     }
   end
-
-  after(:each) do
-    @clip.destroy
-  end
   
   it "should be valid" do
     @clip.update_attributes(@sample_attributes)

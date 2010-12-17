@@ -1,13 +1,19 @@
 require 'farsifu'
 
 class Collection < ActiveRecord::Base
-  has_many :items
+  has_many :items, :dependent => :restrict
   has_many :owners, :through => :items
 
   # globalize2 accessors including extensions
   translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips, :creator, :history, :restrictions
   globalize_accessors :fa, :en
   default_scope :include => :translations
+  
+  validates :name, :presence => true, :length => {:maximum => 255}
+  validates :sort_name, :presence => true, :length => {:maximum => 255}
+  validates :publish, :inclusion => { :in => [true,false] }
+  validates :private, :inclusion => { :in => [true,false] }
+  validates :finding_aid, :inclusion => { :in => [true,false] }
 
   def self.select_list
     return self.all(:conditions => ['collection_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, collection_translations.name', :order => 'collection_translations.name').map {|collection| [collection.name, collection.id]}

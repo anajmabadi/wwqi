@@ -1,124 +1,129 @@
 <% form_for([:admin, @collection]) do |f| %>
-<%= f.error_messages %>
+
 <% @default_rows = 6 %>
 <table class="styled" >
     <tr>
+        <td colspan="2">
+        <%= f.error_messages %>
+        </td>
+    </tr>
+    <tr>
         <td class="field englishOnly">
-        <b>Name_en:</b>
+        <%= f.label :name, 'Name_en' %>
         <br />
         <%= f.text_field :name_en %>
         </td><td class="field persianOnly">
-        <b>Name_fa:</b>
+        <%= f.label :name, 'Name_fa' %>
         <br />
         <%= f.text_field :name_fa %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Sort Name_en:</b>
+        <%= f.label :sort_name, 'Sort Name_en' %>
         <br />
         <%= f.text_field :sort_name_en %>
         </td><td class="field persianOnly">
-        <b>Sort Name_fa:</b>
+        <%= f.label :sort_name, 'Sort Name_fa' %>
         <br />
         <%= f.text_field :sort_name_fa %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Caption_en:</b>
+        <%= f.label :caption, 'Caption_en' %>
         <br />
         <%= f.text_area :caption_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Caption_fa:</b>
+        <%= f.label :caption, 'Caption_fa'  %>
         <br />
         <%= f.text_area :caption_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Description_en:</b>
+        <%= f.label :description, 'Description_en' %>
         <br />
         <%= f.text_area :description_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Description_fa:</b>
+        <%= f.label :description, 'Description_fa' %>
         <br />
         <%= f.text_area :description_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Creator_en:</b>
+        <%= f.label :creator, 'Creator_en' %>
         <br />
         <%= f.text_field :creator_en %>
         </td><td class="field persianOnly">
-        <b>Creator_fa:</b>
+        <%= f.label :creator, 'Creator_fa' %>
         <br />
         <%= f.text_field :creator_fa %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Restrictions_en:</b>
+        <%= f.label :restrictions, 'Restrictions_en' %>
         <br />
         <%= f.text_area :restrictions_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Restrictions_fa:</b>
+        <%= f.label :restrictions, 'Restrictions_fa' %>
         <br />
         <%= f.text_area :restrictions_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>History_en:</b>
+        <%= f.label :history, 'History_en' %>
         <br />
         <%= f.text_area :history_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>History_fa:</b>
+        <%= f.label :history, 'History_fa' %>
         <br />
         <%= f.text_area :history_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Related Material_en:</b>
+        <%= f.label :tips, 'Related Material_en' %>
         <br />
         <%= f.text_area :tips_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Related Material_fa:</b>
+        <%= f.label :tips, 'Related Material_fa' %>
         <br />
         <%= f.text_area :tips_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Materials_en:</b>
+        <%= f.label :materials, 'Materials_en' %>
         <br />
         <%= f.text_area :materials_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Materials_fa:</b>
+        <%= f.label :materials, 'Materials_fa' %>
         <br />
         <%= f.text_area :materials_fa, :rows => @default_rows %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Dates_en:</b>
+        <%= f.label :dates, 'Dates_en' %>
         <br />
         <%= f.text_field :dates_en %>
         </td><td class="field persianOnly">
-        <b>Dates_fa:</b>
+        <%= f.label :dates, 'Dates_fa' %>
         <br />
         <%= f.text_field :dates_fa %>
         </td>
     </tr>
     <tr>
         <td class="field englishOnly">
-        <b>Repository_en:</b>
+        <%= f.label :repository, 'Repository_en' %>
         <br />
         <%= f.text_area :repository_en, :rows => @default_rows %>
         </td><td class="field persianOnly">
-        <b>Repository_fa:</b>
+        <%= f.label :repository, 'Repository_fa' %>
         <br />
         <%= f.text_area :repository_fa, :rows => @default_rows %>
         </td>
@@ -129,128 +134,110 @@
     <div class="field englishOnly">
         <tr>
             <td>
-            <b>Acquired By:</b>
+            <%= f.label :acquired_by %>
             <br />
             <%= f.text_field :acquired_by %>
             </td>
             <td>
-            <b>Processed By:</b>
+            <%= f.label :processed_by %>
             <br />
             <%= f.text_field :processed_by %>
             </td>
         </tr>
         <tr>
             <td>
-            <b>Acquired By:</b>
-            <br />
-            <%= f.text_field :acquired_by %>
-            </td>
-            <td>
-            <b>Processed By:</b>
-            <br />
-            <%= f.text_field :processed_by %>
-            </td>
-        </tr>
-                <tr>
-            <td>
-            <b>Acquired On:</b>
+            <%= f.label :acquired_on %>
             <br />
             <%= f.date_select :acquired_on, :start_year => 2010, :include_blank => true %>
             </td>
             <td>
-            <b>Interview:</b>
+            <%= f.label :acquisition_notes %>
             <br />
-            <%= '[coming soon with oral history table]' %>
+            <%= f.text_area :acquisition_notes, :rows => @default_rows %>
             </td>
         </tr>
         <tr>
             <td>
-            <b>Finding Aid: (upload PDF to the library archive findingaids directory)</b>
-            <br />
-            <%= f.check_box :finding_aid %>
-            </td>
-            <td>
-            <b>Private:</b>
-            <br />
-            <%= f.check_box :private %>
-            </td>
-        </tr>
-        <tr>
-            <td>
-            <b>Address:</b>
+            <%= f.label :address %>
             <br />
             <%= f.text_field :address %>
             </td>
             <td>
-            <b>Address2:</b>
+            <%= f.label :address2 %>
             <br />
             <%= f.text_field :address2 %>
             </td>
         </tr>
         <tr>
             <td>
-            <b>City:</b>
+            <%= f.label :city %>
             <br />
             <%= f.text_field :city %>
             </td>
             <td>
-            <b>State province:</b>
+            <%= f.label :state_province %>
             <br />
             <%= f.text_field :state_province %>
             </td>
         </tr>
         <tr>
             <td>
-            <b>Postal code:</b>
+            <%= f.label :postal_code %>
             <br />
             <%= f.text_field :postal_code %>
             </td>
             <td>
-            <b>Telephone:</b>
+            <%= f.label :telephone %>
             <br />
             <%= f.text_field :telephone %>
             </td>
         </tr>
         <tr>
             <td>
-            <b>Email:</b>
+            <%= f.label :email %>
             <br />
             <%= f.text_field :email %>
             </td>
             <td>
-            <b>Website:</b>
+            <%= f.label :website %>
             <br />
             <%= f.text_field :website %>
             </td>
         </tr>
         <tr>
             <td colspan="2">
-            <b>Contact:</b>
+            <%= f.label :contact %>
             <br />
             <%= f.text_field :contact %>
             </td>
         </tr>
         <tr>
-                                 <td>
-            <b>Last Edited:</b>
+            <td>
+            <%= f.label :last_edited %>
             <br />
             <%= f.date_select  :last_edited, :start_year => 2010, :include_blank => true %>
             </td>
             <td>
-            <b>Publish:</b>
+            <%= f.label :publish %>
             <br />
             <%= f.check_box  :publish %>
             </td>
- 
         </tr>
         <tr>
             <td>
-            <b>Acquisition Notes:</b>
+            <%= f.label :finding_aid, 'Finding Aid:' %>
             <br />
-            <%= f.text_area :acquisition_notes, :rows => @default_rows %>
+            <%= f.check_box :finding_aid %>
             </td>
             <td>
-            <b>Notes:</b>
+            <%= f.label :private %>
+            <br />
+            <%= f.check_box :private %>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+            <%= f.label :notes %>
             <br />
             <%= f.text_area :notes, :rows => @default_rows %>
             </td>

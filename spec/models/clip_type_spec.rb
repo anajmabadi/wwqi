@@ -10,10 +10,6 @@ describe ClipType do
       :notes => "sample note"
     }
   end
-
-  after(:each) do
-    @clip_type.destroy
-  end
   
   it "should be valid" do
     @clip_type.update_attributes(@sample_attributes)

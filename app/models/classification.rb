@@ -4,7 +4,7 @@ class Classification < ActiveRecord::Base
 
   validates :item_id, :presence => true, :numericality => true, :uniqueness => {:scope => :subject_id}
   validates :subject_id, :presence => true, :numericality => true
-  validates :publish, :presence => true
+  validates :publish, :inclusion => { :in => [true,false] }
   validates :position, :presence => true, :numericality => true
 
   # pagination code

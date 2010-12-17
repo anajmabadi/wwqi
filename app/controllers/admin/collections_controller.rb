@@ -77,9 +77,14 @@ class Admin::CollectionsController < Admin::AdminController
   # DELETE /collections/1
   # DELETE /collections/1.xml
   def destroy
-    @collection = Collection.find(params[:id])
-    @collection.destroy
-
+    
+    begin
+      @collection = Collection.find(params[:id])
+      @collection.destroy
+    rescue => e
+      flash[:error] = e.message
+    end
+    
     respond_to do |format|
       format.html { redirect_to(admin_collections_url) }
       format.xml  { head :ok }

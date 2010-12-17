@@ -2,7 +2,7 @@ class CalendarType < ActiveRecord::Base
   has_many :items, :dependent => :restrict
 
   validates :name, :presence => true, :uniqueness => true
-  validates :publish, :presence => true
+  validates :publish, :inclusion => { :in => [true,false] }
 
   def self.select_list
     return self.all(:select => 'DISTINCT id, name', :order => 'name').map {|calendar_type| [calendar_type.name, calendar_type.id]}

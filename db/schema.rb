@@ -209,13 +209,13 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "clips", ["publish"], :name => "index_clips_on_publish"
 
   create_table "collection_translations", :force => true do |t|
-    t.integer  "collection_id"
-    t.string   "locale"
+    t.integer  "collection_id", :default => 0,    :null => false
+    t.string   "locale",        :default => "en", :null => false
     t.string   "caption"
-    t.string   "name"
+    t.string   "name",          :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "sort_name"
+    t.string   "sort_name",     :default => "",   :null => false
     t.text     "description"
     t.string   "dates"
     t.text     "materials"
