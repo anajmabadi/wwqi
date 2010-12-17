@@ -2,52 +2,69 @@
 <% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn"><%= render 'nav_show_header_bar', :clip => @clip %>
-    <table class="styled" >
-      <tr><td><h2>
-            <%= @clip.title_en %>
-          </h2></td>
-        <td class="persianOnly"><h2>
-            <%= @clip.title_fa %>
-          </h2></td></tr>
-
-      <tr><td>
-          <b>Caption, en</b>
-          <%= @clip.caption_en %>
-        </td>
-        <td class="persianOnly">
-          <b>Caption, fa</b>
-          <%= @clip.caption_fa %>
-        </td></tr>
-
-      <tr><td colspan="2">
-          <b>Item</b>
-          <%= @clip.item.to_label unless @clip.item.nil? %>
-        </td></tr>
-
-      <tr><td>
-          <b>Clip type</b>
-          <%= @clip.clip_type.name unless @clip.clip_type.nil? %>
-        </td><td>
-          <b>Recorded on</b>
-          <%= @clip.recorded_on %>
-        </td></tr>
-      <tr><td>
-          <b>Position</b>
-          <%= @clip.position %>
-        </td>
-        <td>
-          <b>Publish</b>
-          <%= @clip.publish %>
-        </td></tr>
-
-      <tr><td colspan="2">
-          <b>Notes</b>
-          <%= @clip.notes %>
-        </td></tr>
-
-    </table>
-
-    <%= render 'nav_show_header_bar', :clip => @clip %>
-  </div>
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :clip => @clip %>
+        <table class="styled" >
+            <tr>
+                <td><h2>
+                <%= @clip.title_en %>
+                </h2></td>
+                <td class="persianOnly"><h2>
+                <%= @clip.title_fa %>
+                </h2></td>
+            </tr>
+            <tr>
+                <td>
+                <b>Caption, en</b>
+                <%= @clip.caption_en %>
+                </td>
+                <td class="persianOnly">
+                <b>Caption, fa</b>
+                <%= @clip.caption_fa %>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <b>Item</b>
+                <%= @clip.item.to_label unless @clip.item.nil? %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <b>Clip type</b>
+                <%= @clip.clip_type.name unless @clip.clip_type.nil? %>
+                </td><td>
+                <b>Recorded on</b>
+                <%= @clip.recorded_on %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <b>Duration</b>
+                <%= @clip.duration %>
+                </td>
+                <td>
+                <b>Owner</b>
+                <%= link_to_unless @clip.owner.nil?, @clip.owner.name, admin_owner_path(@clip.owner) unless @clip.owner.nil? %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <b>Position</b>
+                <%= @clip.position %>
+                </td>
+                <td>
+                <b>Publish</b>
+                <%= @clip.publish %>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <b>Notes</b>
+                <%= @clip.notes %>
+                </td>
+            </tr>
+        </table>
+        <%= render 'nav_show_header_bar', :clip => @clip %>
+    </div>
 </div>

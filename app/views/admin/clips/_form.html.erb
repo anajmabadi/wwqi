@@ -1,78 +1,120 @@
 <%= form_for([:admin, @clip]) do |f| %>
-  <% if @clip.errors.any? %>
-    <div id="errorExplanation">
-      <h2><%= pluralize(@clip.errors.count, "error") %> prohibited this clip from being saved:</h2>
-      <ul>
-        <% @clip.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+
+<%= f.hidden_field :lock_version %>
+<table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>  <% if @clip.errors.any? %>
+        <div id="errorExplanation">
+            <h2><%= pluralize(@clip.errors.count, "error") %> prohibited this clip from being saved:</h2>
+            <ul>
+                <% @clip.errors.full_messages.each do |msg| %>
+                <li>
+                    <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
         <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <%= f.hidden_field :lock_version %>
-  <table class="global" width="100%" cellpadding="0" cellspacing="0">
+        </td>
+    </tr>
     <tr>
-      <td>
+        <td>
         <div class="field englishOnly">
-          <%= f.label :title_en %><br />
-          <%= f.text_area :title_en, :rows => 3 %>
+            <%= f.label :title_en %>
+            <br />
+            <%= f.text_area :title_en, :rows => 3 %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :title_fa %><br />
-          <%= f.text_area :title_fa, :rows => 3 %>
+            <%= f.label :title_fa %>
+            <br />
+            <%= f.text_area :title_fa, :rows => 3 %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field englishOnly">
-          <%= f.label :caption_en %><br />
-          <%= f.text_area :caption_en, :rows => 3 %>
+            <%= f.label :caption_en %>
+            <br />
+            <%= f.text_area :caption_en, :rows => 3 %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :caption_fa %><br />
-          <%= f.text_area :caption_fa, :rows => 3 %>
+            <%= f.label :caption_fa %>
+            <br />
+            <%= f.text_area :caption_fa, :rows => 3 %>
         </div>
-      </td>
+        </td>
     </tr>
-    <tr><td colspan="2"><div class="field englishOnly">
-          <%= f.label :item_id %><br />
-          <%= f.select :item_id, @items %>
-        </div></td></tr>
-    <tr><td><div class="field englishOnly">
-          <%= f.label :clip_type_id %><br />
-          <%= f.select :clip_type_id, @clip_types %>
-        </div></td>
-        <td><div class="field englishOnly">
-          <%= f.label :recorded_on %><br />
-          <%= f.date_select :recorded_on %>
-        </div></td>
-    </tr>
-    <tr><td><div class="field englishOnly">
-          <%= f.label :position %><br />
-          <%= f.text_field :position %>
-        </div></td>
-        <td><div class="field englishOnly">
-          <%= f.label :publish %><br />
-          <%= f.check_box :publish %>
-        </div></td></tr>
-    <tr><td colspan="2"><div class="field englishOnly">
-          <%= f.label :notes %><br />
-          <%= f.text_area :notes, :rows => 3 %>
-        </div></td></tr>
-    <tr></tr>
     <tr>
-      <td colspan="2">
+        <td colspan="2">
+        <div class="field englishOnly">
+            <%= f.label :item_id %>
+            <br />
+            <%= f.select :item_id, @items %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :clip_type_id %>
+            <br />
+            <%= f.select :clip_type_id, @clip_types %>
+        </div></td>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :recorded_on %>
+            <br />
+            <%= f.date_select :recorded_on %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :duration %>
+            <br />
+            <%= f.text_field :duration %>
+        </div></td>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :owner_id %>
+            <br />
+            <%= f.select :owner_id, @owners, :include_blank => true %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :position %>
+            <br />
+            <%= f.text_field :position %>
+        </div></td>
+        <td>
+        <div class="field englishOnly">
+            <%= f.label :publish %>
+            <br />
+            <%= f.check_box :publish %>
+        </div></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <div class="field englishOnly">
+            <%= f.label :notes %>
+            <br />
+            <%= f.text_area :notes, :rows => 3 %>
+        </div></td>
+    </tr>
+    <tr>
+    </tr>
+    <tr>
+        <td colspan="2">
         <div class="actions">
-          <%= f.submit %>
+            <%= f.submit %>
         </div>
-      </td>
+        </td>
     </tr>
-
-  </table>
-
+</table>
 <% end %>

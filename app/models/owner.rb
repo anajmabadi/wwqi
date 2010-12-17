@@ -1,8 +1,8 @@
 class Owner < ActiveRecord::Base
-  has_many :items
+  has_many :items, :dependent => :restrict
   has_many :collections, :through => :items
-
-  has_many :repositories
+  has_many :clips, :dependent => :restrict
+  has_many :repositories, :dependent => :restrict
   has_many :passports, :through => :repositories
   
   translates :name

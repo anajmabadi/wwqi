@@ -26,6 +26,7 @@ class Admin::ClipsController < Admin::AdminController
   def new
     @clip = Clip.new
     @items = items_list
+    @owners = Owner.select_list
     @clip_types = clip_types_list
     respond_to do |format|
       format.html # new.html.erb
@@ -37,6 +38,7 @@ class Admin::ClipsController < Admin::AdminController
   def edit
     @clip = Clip.find(params[:id])
     @items = items_list
+    @owners = Owner.select_list
     @clip_types = clip_types_list
   end
 
@@ -46,6 +48,7 @@ class Admin::ClipsController < Admin::AdminController
     @clip = Clip.new(params[:clip])
     @items = items_list
     @clip_types = clip_types_list
+    @owners = Owner.select_list
     respond_to do |format|
       if @clip.save
         format.html { redirect_to(admin_clip_path(@clip), :notice => 'Clip was successfully created.') }
@@ -63,7 +66,7 @@ class Admin::ClipsController < Admin::AdminController
     @clip = Clip.find(params[:id])
     @items = items_list
     @clip_types = clip_types_list
-    
+    @owners = Owner.select_list
     respond_to do |format|
       if @clip.update_attributes(params[:clip])
         format.html { redirect_to(admin_clip_path(@clip), :notice => 'Clip was successfully updated.') }

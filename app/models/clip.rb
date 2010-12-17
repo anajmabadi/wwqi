@@ -1,6 +1,7 @@
 class Clip < ActiveRecord::Base
   belongs_to :item
   belongs_to :clip_type
+  belongs_to :owner
 
   # globalize2 mix-in
   translates :title, :caption
