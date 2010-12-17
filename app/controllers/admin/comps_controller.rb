@@ -46,10 +46,18 @@ class Admin::CompsController < Admin::AdminController
     @item = @comp.item
     respond_to do |format|
       if @comp.save
+        @max_position = Comp.maximum(:position, :conditions => ['item_id = ?', @item.id] ) || 0
+        @new_comp = Comp.new(
+          :item_id => params[:id],
+          :publish => true,
+          :position => @max_position + 1,
+          :item_id => @item.id
+        )
         format.html { redirect_to(admin_comp_path(@comp), :notice => 'Comp was successfully created.') }
-        format.xml  { render :xml => @comp, :status => :created, :location => @comp }
+        format.xml  { render :xml => @comp, :status => :created }
         format.js { render :template => 'admin/items/add_comp_to_item' }
       else
+        @new_comp = @comp
         format.html { render :action => "new" }
         format.xml  { render :xml => @comp.errors, :status => :unprocessable_entity }
         format.js { render :template => 'admin/items/add_comp_to_item' }
