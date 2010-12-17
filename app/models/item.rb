@@ -15,20 +15,20 @@ class Item < ActiveRecord::Base
   belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
   belongs_to :era
 
-  has_many :classifications
-  has_many :images
-  has_many :appearances
+  has_many :classifications, :dependent => :destroy
+  has_many :images, :dependent => :destroy
+  has_many :appearances, :dependent => :destroy
   has_many :people, :through => :appearances
-  has_many :plots, :order => 'plots.position'
+  has_many :plots, :order => 'plots.position', :dependent => :destroy
   has_many :places, :through => :plots, :order => 'plots.position'
-  has_many :panels
+  has_many :panels, :dependent => :destroy
   has_many :exhibitions, :through => :panels, :order => 'panels.position'
-  has_many :clips, :order => :position
+  has_many :clips, :order => :position, :dependent => :destroy
   has_many :subjects, :through => :classifications, :order => 'position'
-  has_many :passports, :order => 'passports.position'
+  has_many :passports, :order => 'passports.position', :dependent => :destroy
   has_many :repositories, :through => :passports
-  has_many :comps, :order => 'comps.position'  #join table for linking objects to each other -- must be specified in both directions
-  has_many :sections, :order => 'sections.start_page'
+  has_many :comps, :order => 'comps.position', :dependent => :destroy  #join table for linking objects to each other -- must be specified in both directions
+  has_many :sections, :order => 'sections.start_page', :dependent => :destroy
   
   # globalize2 accessors 
   translates :title, :credit, :description, :display_date, :creator_label, :publisher, :transcript, :remarks

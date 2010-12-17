@@ -50,7 +50,9 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
     t.datetime "updated_at"
   end
 
+  add_index "appearance_translations", ["appearance_id", "locale"], :name => "index_appearance_translations_unique", :unique => true
   add_index "appearance_translations", ["appearance_id"], :name => "index_appearance_translations_on_appearance_id"
+  add_index "appearance_translations", ["locale"], :name => "index_appearance_translations_locale"
 
   create_table "appearances", :force => true do |t|
     t.integer  "item_id",      :default => 0,    :null => false
@@ -70,15 +72,18 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "appearances", ["publish"], :name => "index_appearances_on_publish"
 
   create_table "appellation_translations", :force => true do |t|
-    t.integer  "appellation_id"
-    t.string   "locale"
+    t.integer  "appellation_id", :default => 0,    :null => false
+    t.string   "locale",         :default => "en", :null => false
     t.string   "sort_name"
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "appellation_translations", ["appellation_id", "locale"], :name => "index_appellations_translations_unique", :unique => true
   add_index "appellation_translations", ["appellation_id"], :name => "index_appellation_translations_on_appellation_id"
+  add_index "appellation_translations", ["locale"], :name => "index_appeallation_translations_locale"
+  add_index "appellation_translations", ["sort_name"], :name => "in_sort_name"
 
   create_table "appellations", :force => true do |t|
     t.text     "notes"
@@ -96,13 +101,16 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "appellations", ["publish"], :name => "publish"
 
   create_table "calendar_types", :force => true do |t|
-    t.string   "name"
-    t.boolean  "publish"
+    t.string   "name",         :default => "",   :null => false
+    t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version", :default => 0,    :null => false
   end
+
+  add_index "calendar_types", ["name"], :name => "in_calendar_types_name", :unique => true
+  add_index "calendar_types", ["publish"], :name => "in_calendar_types_publish"
 
   create_table "categories", :force => true do |t|
     t.integer  "parent_id"
@@ -141,8 +149,8 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "category_translations", ["category_id"], :name => "index_category_translations_on_category_id"
 
   create_table "classifications", :force => true do |t|
-    t.integer  "subject_id"
-    t.integer  "item_id"
+    t.integer  "subject_id",   :default => 0,    :null => false
+    t.integer  "item_id",      :default => 0,    :null => false
     t.boolean  "publish",      :default => true, :null => false
     t.integer  "position",     :default => 0,    :null => false
     t.text     "notes"
@@ -158,26 +166,29 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
   add_index "classifications", ["subject_id"], :name => "index_classifications_on_subject_id"
 
   create_table "clip_translations", :force => true do |t|
-    t.integer  "clip_id"
-    t.string   "locale"
-    t.text     "caption"
-    t.string   "title"
+    t.integer  "clip_id",    :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
+    t.text     "caption",                      :null => false
+    t.string   "title",      :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "clip_translations", ["clip_id", "locale"], :name => "in_clip_translations_unique", :unique => true
   add_index "clip_translations", ["clip_id"], :name => "index_clip_translations_on_clip_id"
+  add_index "clip_translations", ["locale"], :name => "in_clip_translations_locale"
 
   create_table "clip_types", :force => true do |t|
-    t.string   "name"
-    t.string   "extension"
-    t.boolean  "publish"
+    t.string   "name",                           :null => false
+    t.string   "extension",    :default => "",   :null => false
+    t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
+  add_index "clip_types", ["name"], :name => "in_clip_types_name", :unique => true
   add_index "clip_types", ["publish"], :name => "index_clip_types_on_publish"
 
   create_table "clips", :force => true do |t|

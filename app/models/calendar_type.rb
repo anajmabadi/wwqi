@@ -1,5 +1,5 @@
 class CalendarType < ActiveRecord::Base
-  has_many :items
+  has_many :items, :dependent => :restrict
 
   validates :name, :presence => true, :uniqueness => true
   validates :publish, :presence => true
