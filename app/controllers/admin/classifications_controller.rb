@@ -54,10 +54,17 @@ class Admin::ClassificationsController < Admin::AdminController
     @item = @classification.item
     respond_to do |format|
       if @classification.save
+        @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+        @new_classification = Classification.new(
+          :item_id => params[:id],
+          :publish => true,
+          :position => @max_position + 1
+        )
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }
         format.js { render :template => 'admin/items/add_classification_to_item' }
       else
+        @new_classification = @classification
         format.html { render :action => "new" }
         format.xml  { render :xml => @classification.errors, :status => :unprocessable_entity }
         format.js { render :template => 'admin/items/add_classification_to_item' }
