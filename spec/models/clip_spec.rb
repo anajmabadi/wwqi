@@ -13,7 +13,9 @@ describe Clip do
       :publish => 1,
       :item_id => 1,
       :recorded_on => Date.new,
-      :clip_type_id => 1
+      :clip_type_id => 1,
+      :owner_id => 1,
+      :duration => 20
     }
   end
   
@@ -70,6 +72,15 @@ describe Clip do
     @clip.update_attributes(@sample_attributes)
     @clip.should_not be_valid
     @sample_attributes[:position] = "abcd"
+    @clip.update_attributes(@sample_attributes)
+    @clip.should_not be_valid
+  end
+  
+  it "should require a numerical duration greater than 0" do
+    @sample_attributes[:duration] = 0
+    @clip.update_attributes(@sample_attributes)
+    @clip.should_not be_valid
+    @sample_attributes[:duration] = "abcd"
     @clip.update_attributes(@sample_attributes)
     @clip.should_not be_valid
   end

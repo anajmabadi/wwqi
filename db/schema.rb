@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101214193754) do
+ActiveRecord::Schema.define(:version => 20101217180144) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -201,10 +201,13 @@ ActiveRecord::Schema.define(:version => 20101214193754) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "lock_version", :default => 0,    :null => false
+    t.integer  "duration"
+    t.integer  "owner_id"
   end
 
   add_index "clips", ["clip_type_id"], :name => "index_clips_on_clip_type_id"
   add_index "clips", ["item_id"], :name => "index_clips_on_item_id"
+  add_index "clips", ["owner_id"], :name => "fk_clips_owners"
   add_index "clips", ["position"], :name => "index_clips_on_position"
   add_index "clips", ["publish"], :name => "index_clips_on_publish"
 

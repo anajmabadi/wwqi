@@ -14,6 +14,7 @@ class Clip < ActiveRecord::Base
   validates :title_en, :presence => true, :length => {:maximum => 255}
   validates :title_fa, :presence => true, :length => {:maximum => 255}
   validates :publish, :inclusion => { :in => [true,false] }
+  validates :duration, :presence => true, :numericality => {:greater_than => 0}
   
   # media file accessors from library
   def clip_file_name(format="wav")
