@@ -19,6 +19,14 @@
           </div>
         </td></tr>
       <tr>
+            <tr>
+        <td colspan='2'>
+          <div class="field">
+            <%= label @repository, :url %><br />
+            <%= @repository.url %>
+          </div>
+        </td>
+      </tr>
         <td>
           <div class="field">
             <%= label @repository, :owner %><br />
@@ -31,7 +39,7 @@
         </td>
       </tr>
       <tr>
-        <td>
+        <td colspan='2'>
           <div class="field">
             <%= label @repository, :notes %><br />
             <%= @repository.notes %>

@@ -43,6 +43,7 @@ class Admin::RepositoriesController < Admin::AdminController
   def create
     @repository = Repository.new(params[:repository])
 
+    @owners = owners_list
     respond_to do |format|
       if @repository.save
         format.html { redirect_to(admin_repository_path(@repository), :notice => 'Repository was successfully created.') }
@@ -59,6 +60,7 @@ class Admin::RepositoriesController < Admin::AdminController
   def update
     @repository = Repository.find(params[:id])
 
+    @owners = owners_list
     respond_to do |format|
       if @repository.update_attributes(params[:repository])
         format.html { redirect_to(admin_repository_path(@repository), :notice => 'Repository was successfully updated.') }
