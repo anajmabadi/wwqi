@@ -30,17 +30,22 @@ class Person < ActiveRecord::Base
 
   def to_label
     my_label = self.name_en.blank? ? "[#{self.name_fa}]" : self.name_en
-    my_label += " | #{self.id.to_s}: #{collections_label}" 
+    my_label += " | #{collections_label_en} #{self.id.to_s}" 
     return my_label
   end
   
   def to_label_fa
     my_label = self.name_fa.blank? ? "[#{self.name_en}]" : self.name_fa
-    my_label += " | #{self.id.to_s}: #{collections_label}" 
+    my_label += " | #{collections_label_fa} #{self.id.to_s}" 
     return my_label
   end
   
-  def collections_label
-    return self.collections.nil? ? 'No Collection' : self.collections.map { |c| c.name }.join(", ") 
+  def collections_label_en
+    return self.collections.nil? ? I18n.translate(:n_a) : self.collections.map { |c| c.name_en }.join(", ") 
   end
+
+  def collections_label_fa
+    return self.collections.nil? ? I18n.translate(:n_a, :locale => :fa) : self.collections.map { |c| c.name_fa }.join(", ") 
+  end
+
 end
