@@ -44,6 +44,8 @@ a.noimage{background:none !important}
 .englishOnly {direction: ltr;}
 .persianOnly {direction: rtl;unicode-bidi: embed;}
 
+td.persianOnly {text-align: right;}
+
 /* @end */
 
 /* @group Typography */

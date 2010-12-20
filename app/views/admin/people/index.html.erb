@@ -8,9 +8,9 @@
         <tr>
           <th><%= sort_link "Id", "people.id" %></th>
           <th><%= sort_link "Name", "person_translations.name" %></th>
+          <th>Name_fa</th>
           <th>Vitals</th>
           <th>Birth place</th>
-          <th><%= sort_link "LOC Name", "people.loc_name" %></th>
           <th><%= sort_link "DOB", "people.dob" %></th>
           <th><%= sort_link "DOD", "people.dod" %></th>
           <th><%= sort_link "Publish", "people.publish" %></th>
@@ -21,9 +21,9 @@
           <tr>
             <td><%= person.id %> </td>
             <td><%= link_to person.name, admin_person_path(person) %></td>
+            <td class="persianOnly"><%= person.name_fa unless person.name_fa.nil? %></td>
             <td><%= person.vitals %></td>
             <td><%= person.birth_place %></td>
-            <td><%= truncate(person.loc_name) unless person.loc_name.nil? %></td>
             <td><%= person.dob %></td>
             <td><%= person.dod %></td>
             <td><%= show_check person.publish %></td>
