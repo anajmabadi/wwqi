@@ -17,6 +17,13 @@ class Subject < ActiveRecord::Base
   @@per_page = 1000
 
   def self.select_list
-    return self.all(:conditions => ['subject_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, subject_translations.name', :order => 'subject_translations.name').map {|subject| [subject.name, subject.id]}
+    return self.all.map {|subject| [subject.to_label, subject.id]}.sort
+  end
+  
+  def to_label
+    my_label = ''
+    my_label += self.name_en unless self.name_en.blank?
+    my_label += " | #{self.name_fa}" unless self.name_fa.blank?
+    return my_label
   end
 end
