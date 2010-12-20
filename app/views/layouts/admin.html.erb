@@ -20,11 +20,23 @@
     <%= javascript_include_tag :defaults %>
 
     <!-- load the administration tags -->
-    <%= javascript_include_tag 'fancybox/jquery.fancybox-1.3.1.pack.js','jwysiwyg/jquery.wysiwyg.js','hint.js','jquery.visualize.js', 'jquery.tipsy.js','browser.js', 'custom.js' %>
+    <%= javascript_include_tag 'fancybox/jquery.fancybox-1.3.1.pack.js','fancybox/jquery.easing-1.3.pack.js','jwysiwyg/jquery.wysiwyg.js','hint.js','jquery.visualize.js', 'jquery.tipsy.js','browser.js', 'custom.js' %>
 
     <!-- load styles conditionally based on the controller name -->
     <%= raw @extra_head_content unless @extra_head_content.nil? -%>
 
+    <!-- fancy box script -->
+    <script>
+    
+      $(document).ready(function() {
+
+        $("a.inline").fancybox({
+          'hideOnContentClick': false
+        });
+        
+      });
+    </script>
+    
   </head>
   <body>
     <%= render 'shared/header' %>
