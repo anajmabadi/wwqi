@@ -1,5 +1,12 @@
 <div class="filterbar">
-
+  <%= form_tag({:controller => 'people', :action => :index, :page => 1}, :method => 'get', :id => 'collection_form', :name => 'collection_form') do -%>
+    <select id="collection_filter_admin" name="collection_filter"  onChange="$('#collection_form').submit()">
+      <option value="all" <%= raw 'selected="selected"' if @collection_filter.blank? || @collection_filter== 'all' -%>>All Collections</option>
+      <% @collections.each do |collection| -%>
+        <option value="<%= collection[1] %>"<%= raw ' selected="selected"' if @collection_filter==collection[1].to_s -%>><%= truncate(collection[0]) %></option>
+      <% end -%>
+    </select>
+  <% end %>
   <%= form_tag({:controller => 'people', :action => :index}, :method => :get) do -%>
     <%= text_field_tag :keyword_filter, t(:search_prompt), :style => "color:#aaa;",
       :onfocus => "if(this.value=='#{t(:search_prompt)}'){this.value='';this.style.color = '#000';}",

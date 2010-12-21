@@ -6,15 +6,18 @@ class Admin::PeopleController < Admin::AdminController
   # GET /people.xml
   def index
     
+    @collections = Collection.select_list
     @order = sort_order('person_translations.name') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
     
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
+    @collection_filter = params[:collection_filter]
 
     # unless @keyword_filter.nil? && @collection_filter.nil? && period_filer.nil? && subject_type_filter.nil?
 
     @query_hash = { :conditions => [], :parameters => {} }
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
+    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -134,5 +137,29 @@ class Admin::PeopleController < Admin::AdminController
     query_hash[:conditions] << additional_query
     query_hash[:parameters][:keyword] = filter_value
     return query_hash
+  end
+  
+  def build_collection_query(filter_value, query_hash)
+    additional_query = ''
+    begin
+      @collection = Collection.find_by_id(filter_value.to_i)
+      @appearance_ids = []
+      # now gather the items
+      @collection.items.each do |item|
+        @appearance_ids += item.appearances.map { |a| a.person_id } 
+        Rails.logger.info "@appearance_ids: " + @appearance_ids.join(",")
+      end
+      unless @appearance_ids.empty?
+        additional_query += "people.id IN (#{@appearance_ids.uniq.sort.join(",")})"
+        flash[:error] = nil
+      else
+        flash[:error] = "No people were found to be linked to items in that collection."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      return query_hash
+    end
   end
 end
