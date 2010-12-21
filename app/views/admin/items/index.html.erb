@@ -11,8 +11,8 @@
       <table  class="global" width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <th><%= sort_link "Id", 'items.id' %></th>
-          <th><%= sort_link "Title", 'item_translations.title' %></th>
-          <th><%= sort_link "Accession num", 'items.accession_num' %></th>
+          <th><%= sort_link "Title_en", 'title_en' %></th>
+          <th><%= sort_link "Title_fa", 'title_fa' %></th>
           <th><%= sort_link "Collection", 'items.collection_id' %></th>
           <th><%= sort_link "Pp", 'items.pages' %></th>
           <th><%= sort_link "Pub", 'items.publish' %></th>
@@ -23,8 +23,8 @@
         <% @items.each do |item| %>
           <tr>
             <td><%= item.id.to_s %></td>
-            <td><%= link_to truncate(item.title), admin_item_path(item), :title => item.title %></td>
-            <td><%= truncate(item.accession_num) unless item.accession_num.nil? %> </td>
+            <td><%= link_to_unless item.title_en.blank?, item.title_en, admin_item_path(item), :title => item.title_en %></td>
+            <td><%= link_to_unless item.title_fa.blank?, item.title_en, admin_item_path(item), :title => item.title_fa %></td>
             <td><%= truncate(item.collection.name, :length => 15) unless item.collection.nil? %></td>
             <td><%= item.pages %></td>
             <td><%= show_check item.publish %></td>
