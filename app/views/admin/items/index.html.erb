@@ -24,7 +24,7 @@
           <tr>
             <td><%= item.id.to_s %></td>
             <td><%= link_to_unless item.title_en.blank?, item.title_en, admin_item_path(item), :title => item.title_en %></td>
-            <td><%= link_to_unless item.title_fa.blank?, item.title_en, admin_item_path(item), :title => item.title_fa %></td>
+            <td class="persianOnly"><%= link_to_unless item.title_fa.blank?, item.title_fa, admin_item_path(item), :title => item.title_fa %></td>
             <td><%= truncate(item.collection.name, :length => 15) unless item.collection.nil? %></td>
             <td><%= item.pages %></td>
             <td><%= show_check item.publish %></td>

@@ -36,7 +36,8 @@ class Admin::ItemsController < Admin::AdminController
     @page = params[:page] || 1 
     @per_page = params[:per_page] || Item.per_page || 100
 
-    @order = sort_order('item_translations.title')
+    @sort_field = params[:c]
+    @order = sort_order('item_translations.title')  unless @sort_field == 'title_en' || @sort_field == 'title_fa'
    
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
@@ -46,7 +47,7 @@ class Admin::ItemsController < Admin::AdminController
 
     # unless @keyword_filter.nil? && @collection_filter.nil? && period_filer.nil? && subject_type_filter.nil?
 
-    @query_hash = { :conditions => ['item_translations.locale=:locale'], :parameters => {:locale => I18n.locale.to_s } }
+    @query_hash = { :conditions => [], :parameters => { } }
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter == 'all'
     #    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
@@ -63,7 +64,18 @@ class Admin::ItemsController < Admin::AdminController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    @items = Item.paginate :conditions => @query, :include => [:collection], :per_page => @per_page, :page => @page, :order => @order
+    @items = Item.where(@query).order(@order)
+    
+    if params[:c] == 'title_en'
+      @items = @items.sort_by(&:title_en)
+      @items.reverse! if params[:d] == 'down'
+    elsif params[:c] == 'title_fa'
+      @items = @items.sort_by(&:title_fa)
+      @items.reverse! if params[:d] == 'down'
+    end
+    
+    @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
+
 
     #cache the current search set in a session variable
     session[:admin_items_index_url] = request.fullpath
