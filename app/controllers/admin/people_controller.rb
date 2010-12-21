@@ -1,14 +1,13 @@
 class Admin::PeopleController < Admin::AdminController
 
   before_filter :admin_required, :except => [:index, :show]
-
   # GET /people
   # GET /people.xml
   def index
-    
+
     @collections = Collection.select_list
-    @order = sort_order('person_translations.name') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
-    
+    @order = sort_order('people.id') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
+
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
     @collection_filter = params[:collection_filter]
@@ -27,19 +26,22 @@ class Admin::PeopleController < Admin::AdminController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    
     @people = Person.where(@query).order(@order)
-    
-    if params[:c] == 'name_en' 
+
+    if params[:c] == 'name_en'
       @people = @people.sort_by(&:name_en)
       @people.reverse! if params[:d] == 'down'
     elsif params[:c] == 'name_fa'
       @people = @people.sort_by(&:name_fa)
       @people.reverse! if params[:d] == 'down'
     end
-    
+
     #cache the current search set in a session variable
     session[:admin_people_index_url] = request.fullpath
+
+    #cache the current search set in a session variable
+    session[:current_people] = @people.map { |i| i.id }
+    session[:order] = @order
 
     respond_to do |format|
       format.html # index.html.erb
@@ -50,12 +52,30 @@ class Admin::PeopleController < Admin::AdminController
   # GET /people/1
   # GET /people/1.xml
   def show
-    @person = Person.find(params[:id])
+    begin
+      @person = Person.find(params[:id])
+
+      #check if there is a current results set (i.e. something from the browser)
+      unless session[:current_people].nil? || session[:current_people].length < 1 || !session[:current_people].include?(@person.id)
+        @people = Person.find(session[:current_people], :order => session[:order])
+      else
+        @order = build_order_query('people.id')
+        @people = Person.all.order(@order)
+      end
+    rescue StandardError => error
+      flash[:error] = 'Person with id number ' + params[:id].to_s + ' was not found or your people set was invalid. Reload the people page.'
+      @error = true
+    end
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @person }
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
+      else
+        redirect_to @return_url
+      end
     end
+
   end
 
   # GET /people/new
@@ -117,8 +137,7 @@ class Admin::PeopleController < Admin::AdminController
       format.xml  { head :ok }
     end
   end
-  
-  
+
   private
 
   def build_keyword_query(filter_value, query_hash)
@@ -138,7 +157,7 @@ class Admin::PeopleController < Admin::AdminController
     query_hash[:parameters][:keyword] = filter_value
     return query_hash
   end
-  
+
   def build_collection_query(filter_value, query_hash)
     additional_query = ''
     begin
@@ -146,7 +165,7 @@ class Admin::PeopleController < Admin::AdminController
       @appearance_ids = []
       # now gather the items
       @collection.items.each do |item|
-        @appearance_ids += item.appearances.map { |a| a.person_id } 
+        @appearance_ids += item.appearances.map { |a| a.person_id }
         Rails.logger.info "@appearance_ids: " + @appearance_ids.join(",")
       end
       unless @appearance_ids.empty?
@@ -158,8 +177,8 @@ class Admin::PeopleController < Admin::AdminController
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for collection id #{filter_value}: #{error}."
     ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      return query_hash
+    query_hash[:conditions] << additional_query unless additional_query.blank?
+    return query_hash
     end
   end
 end
