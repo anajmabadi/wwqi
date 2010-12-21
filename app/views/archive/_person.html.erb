@@ -1,8 +1,6 @@
 <li class="person_item">
     <h3>
-    <% if person.major -%><em><% end -%>
     <%= link_to person.name, nil, :name => "person_#{person.id}" %>
-    <% if person.major -%></em><% end -%>
     </h3>
     <div class="person_item_link">
         <%= link_to( pluralize(person.items.size, t(:item)), archive_browser_path(:person_filter => person.id)) unless person.items.empty? %>
