@@ -36,7 +36,7 @@ class Admin::ItemsController < Admin::AdminController
     @page = params[:page] || 1 
     @per_page = params[:per_page] || Item.per_page || 100
 
-    @sort_field = params[:c]
+    @sort_field = params[:c] ||= 'title_en'
     @order = sort_order('item_translations.title')  unless @sort_field == 'title_en' || @sort_field == 'title_fa'
    
     # look for filters
