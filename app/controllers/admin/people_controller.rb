@@ -6,7 +6,7 @@ class Admin::PeopleController < Admin::AdminController
   # GET /people.xml
   def index
     
-    @order = sort_order('person_translations.name')
+    @order = sort_order('person_translations.name') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
     
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
@@ -24,8 +24,17 @@ class Admin::PeopleController < Admin::AdminController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
+    
     @people = Person.where(@query).order(@order)
-
+    
+    if params[:c] == 'name_en' 
+      @people = @people.sort_by(&:name_en)
+      @people.reverse! if params[:d] == 'down'
+    elsif params[:c] == 'name_fa'
+      @people = @people.sort_by(&:name_fa)
+      @people.reverse! if params[:d] == 'down'
+    end
+    
     #cache the current search set in a session variable
     session[:admin_people_index_url] = request.fullpath
 
