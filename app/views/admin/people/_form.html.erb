@@ -13,38 +13,46 @@
   <table class="global" width="100%" cellpadding="0" cellspacing="0">
         <tr><td><div class="field">
           <%= f.label :name_en %><br />
-          <%= f.text_field :name_en %>
+          <%= f.text_field :name_en, :size => 75 %>
         </div></td>
         <td><div class="field persianOnly">
           <%= f.label :name_fa %><br />
-          <%= f.text_field :name_fa %>
+          <%= f.text_field :name_fa, :size => 75 %>
+        </div></td></tr>
+                <tr><td><div class="field">
+          <%= f.label :sort_name_en %><br />
+          <%= f.text_field :sort_name_en, :size => 75 %>
+        </div></td>
+        <td><div class="field persianOnly">
+          <%= f.label :sort_name_fa %><br />
+          <%= f.text_field :sort_name_fa, :size => 75 %>
         </div></td></tr>
         <tr><td><div class="field ">
           <%= f.label :description_en %><br />
-          <%= f.text_field :description_en %>
+          <%= f.text_area :description_en, :cols => 75, :rows => 5 %>
         </div></td>
         <td><div class="field persianOnly">
           <%= f.label :description_fa %><br />
-          <%= f.text_field :description_fa %>
+          <%= f.text_area :description_fa, :cols => 75, :rows => 5 %>
         </div></td></tr>
         <tr><td><div class="field">
           <%= f.label :vitals_en %><br />
-          <%= f.text_field :vitals_en %>
+          <%= f.text_field :vitals_en, :size => 75 %>
         </div></td>
         <td><div class="field persianOnly">
           <%= f.label :vitals_fa %><br />
-          <%= f.text_field :vitals_fa %>
+          <%= f.text_field :vitals_fa, :size => 75 %>
         </div></td></tr>
         <tr><td><div class="field">
           <%= f.label :birth_place_en %><br />
-          <%= f.text_field :birth_place_en %>
+          <%= f.text_field :birth_place_en, :size => 75 %>
         </div></td><td><div class="field">
           <%= f.label :birth_place_fa %><br />
-          <%= f.text_field :birth_place_fa %>
+          <%= f.text_field :birth_place_fa, :size => 75 %>
         </div></td></tr>
         <tr><td colspan="2"><div class="field">
           <%= f.label :loc_name %><br />
-          <%= f.text_field :loc_name, :size => 130 %>
+          <%= f.text_field :loc_name, :size => 75 %>
         </div></td></tr>
         <tr><td><div class="field">
           <%= f.label :dob %><br />
@@ -64,7 +72,7 @@
         </div></td></tr>
         <tr><td colspan="2"><div class="field">
           <%= f.label :notes %><br />
-          <%= f.text_area :notes, :cols => 100, :rows => 3 %>
+          <%= f.text_area :notes, :cols => 75, :rows => 3 %>
         </div></td></tr>
         <tr><td>
         <div class="actions">
