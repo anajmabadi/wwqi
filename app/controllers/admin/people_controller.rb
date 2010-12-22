@@ -28,19 +28,15 @@ class Admin::PeopleController < Admin::AdminController
 
     @people = Person.where(@query).order(@order)
 
-    if params[:c] == 'name_en'
-      @people = @people.sort_by(&:name_en)
-      @people.reverse! if params[:d] == 'down'
-    elsif params[:c] == 'name_fa'
-      @people = @people.sort_by(&:name_fa)
-      @people.reverse! if params[:d] == 'down'
-    end
+    @people = sort_bilingual(@people, params[:c], params[:d]) if ["name_en", "name_fa"].include?params[:c]
 
     #cache the current search set in a session variable
     session[:admin_people_index_url] = request.fullpath
 
     #cache the current search set in a session variable
     session[:current_people] = @people.map { |i| i.id }
+    session[:sort_field] = params[:c]
+    session[:direction] = params[:d]
     session[:order] = @order
 
     respond_to do |format|
@@ -54,17 +50,20 @@ class Admin::PeopleController < Admin::AdminController
   def show
     begin
       @person = Person.find(params[:id])
+      @order = session[:order]
 
       #check if there is a current results set (i.e. something from the browser)
-      unless session[:current_people].nil? || session[:current_people].length < 1 || !session[:current_people].include?(@person.id)
-        @people = Person.find(session[:current_people], :order => session[:order])
+      unless session[:current_people].nil? || session[:current_people].empty? || !session[:current_people].include?(@person.id)
+        @people = Person.where(['people.id IN (?)', session[:current_people]]).order(@order)
       else
-        @order = build_order_query('people.id')
-        @people = Person.all.order(@order)
+      @people = Person.order(@order).all
       end
+
+      @people = sort_bilingual(@people, session[:sort_field], session[:direction]) if ["name_en", "name_fa"].include?session[:sort_field]
+      
     rescue StandardError => error
-      flash[:error] = 'Person with id number ' + params[:id].to_s + ' was not found or your people set was invalid. Reload the people page.'
-      @error = true
+      flash[:error] = error.message ||= 'Person with id number ' + params[:id].to_s + ' was not found or your people set was invalid. Reload the people page.'
+    @error = true
     end
 
     respond_to do |format|
@@ -72,7 +71,7 @@ class Admin::PeopleController < Admin::AdminController
         format.html
         format.xml  { render :xml => @item }
       else
-        redirect_to @return_url
+        redirect_to @return_url ||= admin_people_path
       end
     end
 
@@ -180,5 +179,16 @@ class Admin::PeopleController < Admin::AdminController
     query_hash[:conditions] << additional_query unless additional_query.blank?
     return query_hash
     end
+  end
+
+  def sort_bilingual(people, bilingual_field, direction)
+    Rails.logger.info("sort_bilingual: " + bilingual_field + ' | ' + direction)
+    people = case bilingual_field
+      when 'name_en' then people.sort_by(&:name_en)
+      when 'name_fa' then people.sort_by(&:name_fa)
+    else people
+    end
+    people.reverse! if direction == 'down'
+    return people
   end
 end
