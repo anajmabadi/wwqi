@@ -1,82 +1,141 @@
 <%= form_for([:admin, @person]) do |f| %>
-  <% if @person.errors.any? %>
-    <div id="errorExplanation">
-      <h2><%= pluralize(@person.errors.count, "error") %> prohibited this clip from being saved:</h2>
-      <ul>
-        <% @person.errors.full_messages.each do |msg| %>
-          <li><%= msg %></li>
+
+<%= f.hidden_field :lock_version %>
+<table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+        <% if @person.errors.any? %>
+        <div id="errorExplanation">
+            <h2><%= pluralize(@person.errors.count, "error") %> prohibited this clip from being saved:</h2>
+            <ul>
+                <% @person.errors.full_messages.each do |msg| %>
+                <li>
+                    <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
         <% end %>
-      </ul>
-    </div>
-  <% end %>
-  <%= f.hidden_field :lock_version %>
-  <table class="global" width="100%" cellpadding="0" cellspacing="0">
-        <tr><td><div class="field">
-          <%= f.label :name_en %><br />
-          <%= f.text_field :name_en, :size => 75 %>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :name_en %>
+            <br />
+            <%= f.text_field :name_en, :size => 75 %>
         </div></td>
-        <td><div class="field persianOnly">
-          <%= f.label :name_fa %><br />
-          <%= f.text_field :name_fa, :size => 75 %>
-        </div></td></tr>
-                <tr><td><div class="field">
-          <%= f.label :sort_name_en %><br />
-          <%= f.text_field :sort_name_en, :size => 75 %>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :name_fa %>
+            <br />
+            <%= f.text_field :name_fa, :size => 75 %>
         </div></td>
-        <td><div class="field persianOnly">
-          <%= f.label :sort_name_fa %><br />
-          <%= f.text_field :sort_name_fa, :size => 75 %>
-        </div></td></tr>
-        <tr><td><div class="field ">
-          <%= f.label :description_en %><br />
-          <%= f.text_area :description_en, :cols => 75, :rows => 5 %>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :sort_name_en %>
+            <br />
+            <%= f.text_field :sort_name_en, :size => 75 %>
         </div></td>
-        <td><div class="field persianOnly">
-          <%= f.label :description_fa %><br />
-          <%= f.text_area :description_fa, :cols => 75, :rows => 5 %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= f.label :vitals_en %><br />
-          <%= f.text_field :vitals_en, :size => 75 %>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :sort_name_fa %>
+            <br />
+            <%= f.text_field :sort_name_fa, :size => 75 %>
         </div></td>
-        <td><div class="field persianOnly">
-          <%= f.label :vitals_fa %><br />
-          <%= f.text_field :vitals_fa, :size => 75 %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= f.label :birth_place_en %><br />
-          <%= f.text_field :birth_place_en, :size => 75 %>
-        </div></td><td><div class="field">
-          <%= f.label :birth_place_fa %><br />
-          <%= f.text_field :birth_place_fa, :size => 75 %>
-        </div></td></tr>
-        <tr><td colspan="2"><div class="field">
-          <%= f.label :loc_name %><br />
-          <%= f.text_field :loc_name, :size => 75 %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= f.label :dob %><br />
-          <%= f.text_field :dob %>
+    </tr>
+    <tr>
+        <td>
+        <div class="field ">
+            <%= f.label :description_en %>
+            <br />
+            <%= f.text_area :description_en, :cols => 50, :rows => 5 %>
         </div></td>
-        <td><div class="field">
-          <%= f.label :dod %><br />
-          <%= f.text_field :dod %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= f.label :publish %><br />
-          <%= f.check_box :publish %>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :description_fa %>
+            <br />
+            <%= f.text_area :description_fa, :cols => 50, :rows => 5 %>
         </div></td>
-        <td><div class="field">
-          <%= f.label :major %><br />
-          <%= f.check_box :major %>
-        </div></td></tr>
-        <tr><td colspan="2"><div class="field">
-          <%= f.label :notes %><br />
-          <%= f.text_area :notes, :cols => 75, :rows => 3 %>
-        </div></td></tr>
-        <tr><td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :vitals_en %>
+            <br />
+            <%= f.text_field :vitals_en, :size => 75 %>
+        </div></td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :vitals_fa %>
+            <br />
+            <%= f.text_field :vitals_fa, :size => 75 %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :birth_place_en %>
+            <br />
+            <%= f.text_field :birth_place_en, :size => 75 %>
+        </div></td><td>
+        <div class="field">
+            <%= f.label :birth_place_fa %>
+            <br />
+            <%= f.text_field :birth_place_fa, :size => 75 %>
+        </div></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <div class="field">
+            <%= f.label :loc_name %>
+            <br />
+            <%= f.text_field :loc_name, :size => 75 %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :dob %>
+            <br />
+            <%= f.text_field :dob %>
+        </div></td>
+        <td>
+        <div class="field">
+            <%= f.label :dod %>
+            <br />
+            <%= f.text_field :dod %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :publish %>
+            <br />
+            <%= f.check_box :publish %>
+        </div></td>
+        <td>
+        <div class="field">
+            <%= f.label :major %>
+            <br />
+            <%= f.check_box :major %>
+        </div></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <div class="field">
+            <%= f.label :notes %>
+            <br />
+            <%= f.text_area :notes, :cols => 75, :rows => 3 %>
+        </div></td>
+    </tr>
+    <tr>
+        <td>
         <div class="actions">
-          <%= f.submit %>
-        </div></td></tr>
-  </table>
+            <%= f.submit %>
+        </div></td>
+    </tr>
+</table>
 <% end %>

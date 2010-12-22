@@ -2,14 +2,18 @@ class Person < ActiveRecord::Base
 
   extend ActiveModel::Translation
 
-  has_many :appearances
+  has_many :appearances, :dependent => :destroy
   has_many :items, :through => :appearances
-  has_many :appellations
-  has_many :relationships
+  has_many :appellations, :dependent => :destroy
+  has_many :relationships, :dependent => :destroy
 
   translates :name, :sort_name, :description, :vitals, :birth_place
   globalize_accessors :fa, :en
   default_scope :include => :translations
+  
+  validates :name_en, :name_fa, :sort_name_en, :sort_name_fa, :presence => true, :length => {:maximum => 255}
+  validates :publish, :major, :inclusion => { :in => [true,false] }
+  
   def self.select_list
     return self.all(:select => 'DISTINCT id, person_translations.name', :order => 'person_translations.sort_name').map {|person| [person.to_label, person.id]}.sort
   end
