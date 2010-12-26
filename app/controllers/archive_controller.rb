@@ -18,8 +18,7 @@ class ArchiveController < ApplicationController
   end
 
   def subjects
-    @subject_types = SubjectType.where(['publish=? AND subject_type_translations.locale=?', 1, I18n.locale.to_s]).order('subject_type_translations.name')
-    @subjects = Subject.where(['publish=? AND subject_translations.locale=?', 1, I18n.locale.to_s]).order('subject_translations.name')
+    @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', 1, 7, I18n.locale.to_s]).order('subject_translations.name')
   end
 
   def places
