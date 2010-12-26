@@ -1,10 +1,10 @@
 <div class="filterbar">
 
-  <%= form_tag({:controller => 'items', :action => :index, :page => 1}, :method => 'get', :id => 'subject_type_form', :name => 'subject_type_form') do -%>
-    <select id="medium_filter_admin" name="subject_type_filter" onChange="$('#subject_type_form').submit()">
-      <option value="all" <%= raw 'selected="selected"' if @subject_type_filter.blank? || @subject_type_filter== 'all' -%>>All Genres</option>
-      <% @subject_types.each do |subject_type| -%>
-        <option value="<%= subject_type[1] %>"<%= raw ' selected="selected"' if @subject_type_filter==subject_type[1].to_s -%>><%= truncate(subject_type[0]) %></option>
+  <%= form_tag({:controller => 'items', :action => :index, :page => 1}, :method => 'get', :id => 'genre_form', :name => 'genre_form') do -%>
+    <select id="genre_filter_admin" name="genre_filter" onChange="$('#genre_form').submit()">
+      <option value="all" <%= raw 'selected="selected"' if @genre_filter.blank? || @genre_filter== 'all' -%>>All Genres</option>
+      <% @genres.each do |subject| -%>
+        <option value="<%= subject.id %>"<%= raw ' selected="selected"' if @genre_filter==subject.id.to_s -%>><%= truncate(subject.name) %></option>
       <% end -%>
     </select>
   <% end %>

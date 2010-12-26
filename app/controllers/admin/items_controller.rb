@@ -1,25 +1,24 @@
 class Admin::ItemsController < Admin::AdminController
-  
   def util_update_sort_date
-    
+
     @items = Item.all
     @changed_items = []
     @items.each do |item|
       if item.sort_year.blank? || item.sort_month.blank? || item.sort_day.blank?
         unless item.year.blank?
-          new_date = item.gregorian_date
-          item.sort_year = new_date[2] unless item.sort_year == new_date[2]
-          item.sort_month = new_date[0] unless item.sort_month == new_date[0]
-          item.sort_day = new_date[1] unless item.sort_day == new_date[1]
-          item.save
-          @changed_items << item.id.to_s
+        new_date = item.gregorian_date
+        item.sort_year = new_date[2] unless item.sort_year == new_date[2]
+        item.sort_month = new_date[0] unless item.sort_month == new_date[0]
+        item.sort_day = new_date[1] unless item.sort_day == new_date[1]
+        item.save
+        @changed_items << item.id.to_s
         end
       end
     end
-    
+
     flash[:notice] = "changed these item ids: " + @changed_items.to_s
     redirect_to :action => 'index'
-    
+
   end
 
   # GET /items
@@ -29,19 +28,19 @@ class Admin::ItemsController < Admin::AdminController
     # gather data for pull down lists
     @collections = Collection.select_list
     @periods = Period.select_list
-    @subject_types = SubjectType.select_list
-    
-    @page = params[:page] || 1 
+    @genres = Subject.where(['subject_type_id = ? AND subject_translations.locale=?', 8, :en.to_s])
+
+    @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 100
 
     @sort_field = params[:c] ||= 'title_en'
     @order = sort_order('item_translations.title')  unless @sort_field == 'title_en' || @sort_field == 'title_fa'
-   
+
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
     @collection_filter = params[:collection_filter]
     @period_filter = params[:period_filter]
-    @subject_type_filter = params[:subject_type_filter]
+    @genre_filter = params[:genre_filter]
 
     # unless @keyword_filter.nil? && @collection_filter.nil? && period_filer.nil? && subject_type_filter.nil?
 
@@ -51,7 +50,7 @@ class Admin::ItemsController < Admin::AdminController
     #    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
     #    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter == 'all'
     #    @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
-    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
+    @query_hash = build_genre_query(@genre_filter, @query_hash) unless @genre_filter.nil? || @genre_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
 
     # assemble the query from the two sql injection safe parts
@@ -63,7 +62,7 @@ class Admin::ItemsController < Admin::AdminController
     @query = [@query_conditions, @query_hash[:parameters]]
 
     @items = Item.where(@query).order(@order)
-    
+
     if params[:c] == 'title_en'
       @items = @items.sort_by(&:title_en)
       @items.reverse! if params[:d] == 'down'
@@ -71,13 +70,12 @@ class Admin::ItemsController < Admin::AdminController
       @items = @items.sort_by(&:title_fa)
       @items.reverse! if params[:d] == 'down'
     end
-    
-    @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
+    @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
     #cache the current search set in a session variable
     session[:admin_items_index_url] = request.fullpath
-    
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @items }
@@ -130,16 +128,16 @@ class Admin::ItemsController < Admin::AdminController
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     begin
 
-      # manually check for a lock version
+    # manually check for a lock version
       if @item.lock_version != params[:item][:lock_version].to_i
         raise ActiveRecord::StaleObjectError
       else
         saved = @item.update_attributes(params[:item])
-        stale = false
+      stale = false
       end
-      
+
     rescue ActiveRecord::StaleObjectError
-      stale = true
+    stale = true
     end
     respond_to do |format|
       if saved
@@ -149,7 +147,7 @@ class Admin::ItemsController < Admin::AdminController
         # write out the failed parameters
         begin
 
-          # construct a full path to the new file
+        # construct a full path to the new file
           filename = 'stale_item_record_' + Time.now.strftime("%m%d%Y%H%M%S") + '.xml'
           local_filename = Rails.root.join('public',filename)
 
@@ -161,7 +159,7 @@ class Admin::ItemsController < Admin::AdminController
 
           # save it out to that file.
           File.open(local_filename.to_s, 'w') {|f| f.write(doc) }
-          
+
         rescue StandardError => error
           flash[:error] = "Item was edited and saved by someone else while you were working on it, but we were unable to save your work: " + error
         else
@@ -196,16 +194,16 @@ class Admin::ItemsController < Admin::AdminController
     @people_fa = Person.select_list_fa
     @max_position = Appearance.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @appearance = Appearance.new(
-      :item_id => params[:id],
-      :publish => true,
-      :position => @max_position + 1
+    :item_id => params[:id],
+    :publish => true,
+    :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
       format.js
     end
   end
-  
+
   def hide_add_appearance_to_item
     @appearance = nil
     @item = Item.find(params[:id])
@@ -214,13 +212,13 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
-  
-      # remote functions for showing and hiding the add sections form
+
+  # remote functions for showing and hiding the add sections form
   def show_add_section_to_item
     @item = Item.find(params[:id])
     @section = Section.new(
-      :item_id => params[:id],
-      :publish => true
+    :item_id => params[:id],
+    :publish => true
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -236,17 +234,17 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
-  
-    # remote functions for showing and hiding the add plot form
+
+  # remote functions for showing and hiding the add plot form
   def show_add_plot_to_item
     # retrieve @repositories for instant additions
     @item = Item.find(params[:id])
     @places = Place.select_list
     @max_position = Plot.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @plot = Plot.new(
-      :item_id => params[:id],
-      :publish => true,
-      :position => @max_position + 1
+    :item_id => params[:id],
+    :publish => true,
+    :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -270,10 +268,10 @@ class Admin::ItemsController < Admin::AdminController
     @repositories = repositories_list
     @max_position = Passport.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @passport = Passport.new(
-      :item_id => params[:id],
-      :publish => true,
-      :primary => false,
-      :position => @max_position + 1
+    :item_id => params[:id],
+    :publish => true,
+    :primary => false,
+    :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -297,9 +295,9 @@ class Admin::ItemsController < Admin::AdminController
     @subjects = Subject.select_list
     @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @classification = Classification.new(
-      :item_id => params[:id],
-      :publish => true,
-      :position => @max_position + 1
+    :item_id => params[:id],
+    :publish => true,
+    :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -315,7 +313,7 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
-  
+
   # remote functions for showing and hiding the add comp form
   def show_add_comp_to_item
     # retrieve items for instant additions
@@ -323,9 +321,9 @@ class Admin::ItemsController < Admin::AdminController
     @items = Item.select_list
     @max_position = Comp.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @comp = Comp.new(
-      :item_id => params[:id],
-      :publish => true,
-      :position => @max_position + 1
+    :item_id => params[:id],
+    :publish => true,
+    :position => @max_position + 1
     )
     respond_to do |format|
       format.html { render :action => "show", :id => @item }
@@ -341,14 +339,14 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
-  
+
   private
-  
+
   def find_item
     begin
       @item = Item.find(params[:id])
     rescue ActiveRecord::RecordNotFound
-      #TODO: Translate this field
+    #TODO: Translate this field
       flash[:error] = "The item you were looking for could not be found."
       redirect_to admin_items_url
     end
@@ -376,14 +374,13 @@ class Admin::ItemsController < Admin::AdminController
     return query_hash
   end
 
-
   def build_order_query(sort_mode)
     additional_sort = ''
     additional_sort += case sort_mode
-    when 'alpha_asc' then 'item_translations.locale, item_translations.title'
-    when 'alpha_dsc' then 'item_translations.locale, item_translations.title DESC'
-    when 'date asc' then 'items.sort_date'
-    when 'date dsc' then 'items.sort_date DESC'
+      when 'alpha_asc' then 'item_translations.locale, item_translations.title'
+      when 'alpha_dsc' then 'item_translations.locale, item_translations.title DESC'
+      when 'date asc' then 'items.sort_date'
+      when 'date dsc' then 'items.sort_date DESC'
     else 'item_translations.locale, item_translations.title'
     end
     return additional_sort
@@ -406,7 +403,7 @@ class Admin::ItemsController < Admin::AdminController
       unless @ids.empty?
         additional_query += "items.id IN (#{@ids.join(",")})"
       else
-        # if the subject type has no items, we should kill search
+      # if the subject type has no items, we should kill search
         flash[:error] = "No items found. Showing all."
       end
     rescue StandardError => error
@@ -414,11 +411,10 @@ class Admin::ItemsController < Admin::AdminController
     else
       flash[:error] = nil
     ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      return query_hash
+    query_hash[:conditions] << additional_query unless additional_query.blank?
+    return query_hash
     end
   end
-
 
   def build_period_query(filter_value, query_hash)
     additional_query = ''
@@ -430,8 +426,8 @@ class Admin::ItemsController < Admin::AdminController
     else
       flash[:error] = nil
     ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      return query_hash
+    query_hash[:conditions] << additional_query unless additional_query.blank?
+    return query_hash
     end
   end
 
@@ -445,9 +441,44 @@ class Admin::ItemsController < Admin::AdminController
     else
       flash[:error] = nil
     ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      return query_hash
+    query_hash[:conditions] << additional_query unless additional_query.blank?
+    return query_hash
     end
   end
-  
+
+  def build_genre_query(filter_value, query_hash)
+    additional_query = ''
+
+    if filter_value.kind_of?(Array)
+      ids_to_find = filter_value.map { |id| id.to_i }.sort
+      if ids_to_find.length == 1
+      @genre_label = Subject.find(ids_to_find[0].to_i).name
+      else
+      @genre_label = I18n.translate(:multiple)
+      end
+    else
+      ids_to_find = [filter_value.to_i]
+    end
+
+    begin
+      selected_subjects = Subject.find(ids_to_find)
+      item_ids = []
+      selected_subjects.each do |subject|
+        item_ids += subject.items.map { |p| p.id }
+      end
+
+      unless item_ids.empty?
+        additional_query += "items.id IN (#{item_ids.join(",")})"
+      else
+      # if the person has no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
+    ensure
+    query_hash[:conditions] << additional_query unless additional_query.blank?
+    return query_hash
+    end
+  end
+
 end
