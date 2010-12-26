@@ -27,7 +27,7 @@ clip_translations_004:
   id: "4"
   clip_id: "4"
   locale: en
-  caption: 
+  caption: ""
   title: Listen to Bahram Sheikholeslami
   created_at: 
   updated_at: 
@@ -67,7 +67,7 @@ clip_translations_009:
   id: "9"
   clip_id: "9"
   locale: en
-  caption: 
+  caption: ""
   title: Listen to Bahram Sheikholeslami
   created_at: 
   updated_at: 
@@ -171,7 +171,7 @@ clip_translations_022:
   id: "22"
   clip_id: "4"
   locale: fa
-  caption: 
+  caption: ""
   title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 
@@ -211,7 +211,7 @@ clip_translations_027:
   id: "27"
   clip_id: "9"
   locale: fa
-  caption: 
+  caption: ""
   title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
   updated_at: 

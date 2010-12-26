@@ -24,7 +24,7 @@ describe Classification do
   end
   
   it "should require a subject_id" do  
-    @sample_attributes[:item_id] = nil
+    @sample_attributes[:subject_id] = nil
     @classification.update_attributes(@sample_attributes)
     @classification.should_not be_valid
   end
@@ -47,7 +47,7 @@ describe Classification do
     @classification.should_not be_valid
   end
   
-  it "should not allow duplicate calendar types and items" do  
+  it "should not allow duplicate subject_id and items" do  
     @classification.update_attributes(@sample_attributes)
     @classification.should be_valid
     @classification2 = Classification.new(@sample_attributes)

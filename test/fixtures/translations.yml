@@ -3901,3 +3901,63 @@ translations_390:
   created_at: 2010-12-15 09:09:40
   updated_at: 
   lock_version: "0"
+translations_391: 
+  id: "404"
+  locale: en
+  key: errors.messages.greater_than
+  value: greater than
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-17 12:52:34
+  updated_at: 2010-12-17 12:52:38
+  lock_version: "0"
+translations_392: 
+  id: "405"
+  locale: fa
+  key: errors.messages.greater_than
+  value: "\xD8\xA8\xD8\xB2\xD8\xB1\xDA\xAF\xD8\xAA\xD8\xB1 \xD8\xA7\xD8\xB2"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-17 12:53:36
+  updated_at: 
+  lock_version: "0"
+translations_393: 
+  id: "406"
+  locale: en
+  key: errors.messages.less_than
+  value: less than
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-17 12:53:56
+  updated_at: 
+  lock_version: "0"
+translations_394: 
+  id: "407"
+  locale: fa
+  key: errors.messages.less_than
+  value: "\xDA\xA9\xD9\x85\xD8\xAA\xD8\xB1 \xD8\xA7\xD8\xB2"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-17 12:54:26
+  updated_at: 
+  lock_version: "0"
+translations_395: 
+  id: "408"
+  locale: en
+  key: n_a
+  value: N/A
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-20 11:31:01
+  updated_at: 
+  lock_version: "0"
+translations_396: 
+  id: "409"
+  locale: fa
+  key: n_a
+  value: "\xD9\x87\xDB\x8C\xDA\x86 \xDA\xA9\xD8\xAF\xD8\xA7\xD9\x85"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2010-12-20 11:32:50
+  updated_at: 
+  lock_version: "0"

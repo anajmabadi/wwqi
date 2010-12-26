@@ -1,2 +1,113 @@
---- {}
-
+--- 
+comp_translations_001: 
+  id: "1"
+  comp_id: "17"
+  locale: en
+  caption: ""
+  created_at: 2010-12-16 16:30:37
+  updated_at: 2010-12-16 16:30:37
+comp_translations_002: 
+  id: "2"
+  comp_id: "17"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-16 16:30:37
+  updated_at: 2010-12-16 16:30:37
+comp_translations_003: 
+  id: "3"
+  comp_id: "18"
+  locale: en
+  caption: ""
+  created_at: 2010-12-16 16:44:41
+  updated_at: 2010-12-16 16:44:41
+comp_translations_004: 
+  id: "4"
+  comp_id: "18"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-16 16:44:41
+  updated_at: 2010-12-16 16:44:41
+comp_translations_005: 
+  id: "5"
+  comp_id: "19"
+  locale: en
+  caption: ""
+  created_at: 2010-12-16 17:36:24
+  updated_at: 2010-12-16 17:36:24
+comp_translations_006: 
+  id: "6"
+  comp_id: "19"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-16 17:36:24
+  updated_at: 2010-12-16 17:36:24
+comp_translations_007: 
+  id: "7"
+  comp_id: "20"
+  locale: en
+  caption: ""
+  created_at: 2010-12-23 07:54:07
+  updated_at: 2010-12-23 07:54:07
+comp_translations_008: 
+  id: "8"
+  comp_id: "20"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-23 07:54:07
+  updated_at: 2010-12-23 07:54:07
+comp_translations_009: 
+  id: "9"
+  comp_id: "21"
+  locale: en
+  caption: ""
+  created_at: 2010-12-25 02:21:18
+  updated_at: 2010-12-25 02:21:18
+comp_translations_010: 
+  id: "10"
+  comp_id: "21"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-25 02:21:18
+  updated_at: 2010-12-25 02:21:18
+comp_translations_011: 
+  id: "11"
+  comp_id: "22"
+  locale: en
+  caption: ""
+  created_at: 2010-12-25 07:32:54
+  updated_at: 2010-12-25 07:32:54
+comp_translations_012: 
+  id: "12"
+  comp_id: "22"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-25 07:32:54
+  updated_at: 2010-12-25 07:32:54
+comp_translations_013: 
+  id: "13"
+  comp_id: "23"
+  locale: en
+  caption: ""
+  created_at: 2010-12-26 04:27:23
+  updated_at: 2010-12-26 04:27:23
+comp_translations_014: 
+  id: "14"
+  comp_id: "23"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-26 04:27:23
+  updated_at: 2010-12-26 04:27:23
+comp_translations_015: 
+  id: "15"
+  comp_id: "24"
+  locale: en
+  caption: ""
+  created_at: 2010-12-26 04:32:55
+  updated_at: 2010-12-26 04:32:55
+comp_translations_016: 
+  id: "16"
+  comp_id: "24"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-26 04:32:55
+  updated_at: 2010-12-26 04:32:55

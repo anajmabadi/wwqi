@@ -572,18 +572,19 @@ ActiveRecord::Schema.define(:version => 20101217180144) do
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
-    t.boolean  "major",        :default => false
+    t.boolean  "major",        :default => false, :null => false
     t.integer  "dob"
     t.integer  "dod"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
-    t.boolean  "publish",      :default => true
+    t.boolean  "publish",      :default => true,  :null => false
     t.integer  "items_count",  :default => 0,     :null => false
     t.integer  "lock_version", :default => 0,     :null => false
   end
 
+  add_index "people", ["major"], :name => "in_people_on_major"
   add_index "people", ["publish"], :name => "index_people_on_publish"
 
   create_table "period_translations", :force => true do |t|
@@ -616,18 +617,22 @@ ActiveRecord::Schema.define(:version => 20101217180144) do
   add_index "periods", ["start_at"], :name => "index_periods_start_at"
 
   create_table "person_translations", :force => true do |t|
-    t.integer  "person_id"
-    t.string   "locale"
+    t.integer  "person_id",   :default => 0,    :null => false
+    t.string   "locale",      :default => "en", :null => false
     t.text     "description"
-    t.string   "sort_name"
+    t.string   "sort_name",   :default => "",   :null => false
     t.string   "vitals"
-    t.string   "name"
+    t.string   "name",        :default => "",   :null => false
     t.string   "birth_place"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "person_translations", ["locale"], :name => "in_person_translations_locale"
+  add_index "person_translations", ["name"], :name => "in_person_translations_name"
+  add_index "person_translations", ["person_id", "locale"], :name => "in_person_translations_unique", :unique => true
   add_index "person_translations", ["person_id"], :name => "index_person_translations_on_person_id"
+  add_index "person_translations", ["sort_name"], :name => "in_person_translations_sort_name"
 
   create_table "place_translations", :force => true do |t|
     t.integer  "place_id"
@@ -748,41 +753,43 @@ ActiveRecord::Schema.define(:version => 20101217180144) do
   add_index "sections", ["start_page"], :name => "index_sections_on_start_page"
 
   create_table "subject_translations", :force => true do |t|
-    t.integer  "subject_id"
-    t.string   "locale"
-    t.string   "name"
+    t.integer  "subject_id", :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
+    t.string   "name",       :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "subject_translations", ["locale"], :name => "in_subject_translations_locale"
   add_index "subject_translations", ["name"], :name => "index_subject_translations_on_name"
   add_index "subject_translations", ["subject_id"], :name => "index_subject_translations_on_subject_id"
 
   create_table "subject_type_translations", :force => true do |t|
-    t.integer  "subject_type_id"
-    t.string   "locale"
-    t.string   "name"
+    t.integer  "subject_type_id", :default => 0,    :null => false
+    t.string   "locale",          :default => "en", :null => false
+    t.string   "name",            :default => "",   :null => false
     t.text     "description"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "subject_type_translations", ["locale"], :name => "in_subject_type_translations_locale"
   add_index "subject_type_translations", ["name"], :name => "index_subject_type_translations_on_name"
   add_index "subject_type_translations", ["subject_type_id"], :name => "index_40e3198922c547fbecf36d5442b606191b8975c3"
 
   create_table "subject_types", :force => true do |t|
-    t.boolean  "publish"
+    t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version", :default => 0,    :null => false
   end
 
   add_index "subject_types", ["publish"], :name => "index_subject_types_on_publish"
 
   create_table "subjects", :force => true do |t|
-    t.boolean  "major",           :default => false
-    t.boolean  "publish",         :default => true
+    t.boolean  "major",           :default => false, :null => false
+    t.boolean  "publish",         :default => true,  :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -46,8 +46,8 @@ pages_007:
   publish: "1"
   notes: ""
   created_at: 2010-03-29 17:07:54
-  updated_at: 2010-03-29 17:07:54
-  lock_version: "0"
+  updated_at: 2010-12-21 03:10:01
+  lock_version: "12"
 pages_008: 
   id: "8"
   publish: "1"

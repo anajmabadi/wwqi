@@ -12,14 +12,14 @@ items_001:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 21:09:22
+  updated_at: 2010-12-21 03:24:49
   source_date: 17 Muharram 1336
   calendar_type_id: "2"
   favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "11"
   year: "1336"
   month: "1"
   day: "17"
@@ -43,14 +43,14 @@ items_002:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 21:46:32
+  updated_at: 2010-12-23 05:19:43
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "6"
   year: "2050"
   month: 
   day: 
@@ -74,14 +74,14 @@ items_003:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 22:10:59
+  updated_at: 2010-12-23 05:21:34
   source_date: 2 Muharram 1336
   calendar_type_id: "2"
   favorite: "0"
   width: "13.3"
   height: "21.0"
   depth: "0.0"
-  lock_version: "6"
+  lock_version: "8"
   year: "1336"
   month: "1"
   day: "2"
@@ -101,18 +101,18 @@ items_004:
   pages: "1"
   format_id: "1"
   circa: "0"
-  notes: persian description
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 01:44:55
+  updated_at: 2010-12-16 19:59:30
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -136,14 +136,14 @@ items_005:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 22:46:25
+  updated_at: 2010-12-23 05:24:52
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "12.0"
   height: "22.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -167,14 +167,14 @@ items_006:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 22:57:12
+  updated_at: 2010-12-23 05:28:59
   source_date: ""
   calendar_type_id: "2"
   favorite: "0"
   width: "21.0"
   height: "26.0"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "7"
   year: "1339"
   month: "12"
   day: "15"
@@ -194,18 +194,18 @@ items_007:
   pages: "2"
   format_id: "1"
   circa: "0"
-  notes: multi dim.
+  notes: check Persian remark caption
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 18:19:11
+  updated_at: 2010-12-23 05:43:11
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.0"
   height: "12.7"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "8"
   year: "2050"
   month: 
   day: 
@@ -229,14 +229,14 @@ items_008:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 18:36:01
+  updated_at: 2010-12-23 05:45:01
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "26.0"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -291,14 +291,14 @@ items_010:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 21:55:26
+  updated_at: 2010-12-23 05:47:30
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "22.0"
   height: "12.5"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -322,14 +322,14 @@ items_011:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 18:47:14
+  updated_at: 2010-12-23 05:48:58
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "18.0"
   height: "11.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -353,14 +353,14 @@ items_012:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 18:58:14
+  updated_at: 2010-12-23 05:50:53
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "26.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -415,14 +415,14 @@ items_014:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:03:36
+  updated_at: 2010-12-21 21:16:11
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "2.7"
   height: "12.8"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -442,18 +442,20 @@ items_015:
   pages: "3"
   format_id: "1"
   circa: "0"
-  notes: Who is Sadiqah Khanum?
+  notes: |-
+    Who is Sadiqah Khanum?
+    Persian Remarks
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:17:45
+  updated_at: 2010-12-23 05:56:26
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "5"
+  lock_version: "8"
   year: "1800"
   month: 
   day: 
@@ -477,14 +479,14 @@ items_016:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-12 06:57:58
+  updated_at: 2010-12-23 06:00:03
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -508,14 +510,14 @@ items_017:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:19:06
+  updated_at: 2010-12-16 18:01:26
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "13.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -570,14 +572,14 @@ items_019:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:19:46
+  updated_at: 2010-12-23 06:03:09
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "15.3"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "6"
   year: "2050"
   month: 
   day: 
@@ -601,14 +603,14 @@ items_020:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:29:15
+  updated_at: 2010-12-21 21:14:48
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "16.7"
   depth: "0.0"
-  lock_version: "14"
+  lock_version: "16"
   year: "2050"
   month: 
   day: 
@@ -632,14 +634,14 @@ items_021:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:36:30
+  updated_at: 2010-12-23 06:07:32
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "17.5"
   height: "22.0"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "6"
   year: "2050"
   month: 
   day: 
@@ -663,14 +665,14 @@ items_022:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:43:18
+  updated_at: 2010-12-21 21:15:30
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.5"
   height: "13.3"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -694,14 +696,14 @@ items_023:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:46:44
+  updated_at: 2010-12-16 18:04:09
   source_date: ""
   calendar_type_id: "2"
   favorite: "0"
   width: "21.5"
   height: "17.3"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "4"
   year: "1314"
   month: "5"
   day: "28"
@@ -725,14 +727,14 @@ items_024:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:48:45
+  updated_at: 2010-12-21 21:18:12
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.7"
   height: "13.5"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "5"
   year: "2050"
   month: 
   day: 
@@ -756,14 +758,14 @@ items_025:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-13 22:55:18
+  updated_at: 2010-12-21 21:13:12
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "22.4"
   height: "15.3"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -849,14 +851,14 @@ items_028:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 19:58:22
+  updated_at: 2010-12-23 06:10:18
   source_date: 7 Dhu al-Qa'da 1336
   calendar_type_id: "2"
   favorite: "0"
   width: "21.0"
   height: "13.5"
   depth: "0.0"
-  lock_version: "5"
+  lock_version: "6"
   year: "1336"
   month: "11"
   day: "7"
@@ -880,14 +882,14 @@ items_029:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 20:10:48
+  updated_at: 2010-12-23 06:11:41
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "17.6"
   height: "11.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1159,14 +1161,14 @@ items_038:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 20:50:40
+  updated_at: 2010-12-16 16:37:28
   source_date: 11 Ramazan 1346
   calendar_type_id: "2"
   favorite: "0"
   width: "21.5"
   height: "35.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "1346"
   month: "9"
   day: "11"
@@ -1190,14 +1192,14 @@ items_039:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 01:24:30
+  updated_at: 2010-12-16 18:43:19
   source_date: Rabi' al-Sani 1333
   calendar_type_id: "2"
   favorite: "0"
   width: "13.0"
   height: "20.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "1333"
   month: "4"
   day: "0"
@@ -1221,14 +1223,14 @@ items_040:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 21:54:47
+  updated_at: 2010-12-20 19:21:23
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "26.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1314,14 +1316,14 @@ items_043:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 01:55:56
+  updated_at: 2010-12-20 19:27:14
   source_date: 24 Safar 1334
   calendar_type_id: "2"
   favorite: "0"
   width: "17.4"
   height: "22.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "1334"
   month: "2"
   day: "24"
@@ -1345,14 +1347,14 @@ items_044:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 02:07:37
+  updated_at: 2010-12-20 19:28:09
   source_date: 28 Dhu al Qa'da 1333
   calendar_type_id: "2"
   favorite: "0"
   width: "35.7"
   height: "22.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "1333"
   month: "11"
   day: "28"
@@ -1376,14 +1378,14 @@ items_045:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:26:55
+  updated_at: 2010-12-20 19:34:45
   source_date: "1338"
   calendar_type_id: "2"
   favorite: "0"
   width: "22.0"
   height: "17.6"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "5"
   year: "1338"
   month: "0"
   day: "0"
@@ -1407,14 +1409,14 @@ items_046:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 02:33:21
+  updated_at: 2010-12-20 19:59:02
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "13.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1438,14 +1440,14 @@ items_047:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 02:41:27
+  updated_at: 2010-12-23 06:16:10
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "8.4"
   height: "13.5"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -1469,14 +1471,14 @@ items_048:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:00:20
+  updated_at: 2010-12-20 20:06:05
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "25.7"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "2"
   year: "2050"
   month: 
   day: 
@@ -1500,14 +1502,14 @@ items_049:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:07:12
+  updated_at: 2010-12-20 20:12:44
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "17.3"
   height: "11.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1531,14 +1533,14 @@ items_050:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:16:20
+  updated_at: 2010-12-20 20:22:26
   source_date: 21 Rabi' al-Avval 1328
   calendar_type_id: "2"
   favorite: "0"
   width: "20.6"
   height: "13.3"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "1328"
   month: "3"
   day: "21"
@@ -1562,14 +1564,14 @@ items_051:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:33:19
+  updated_at: 2010-12-23 06:23:50
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.8"
   height: "12.8"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1593,14 +1595,14 @@ items_052:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 03:48:12
+  updated_at: 2010-12-23 06:27:08
   source_date: 17 Safar 1315
   calendar_type_id: "2"
   favorite: "0"
   width: "16.0"
   height: "9.7"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "6"
   year: "1315"
   month: "2"
   day: "17"
@@ -1624,23 +1626,23 @@ items_053:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:07:37
+  updated_at: 2010-12-23 06:28:48
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "3"
-  year: 
+  lock_version: "5"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
+  era_id: "4"
   sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
+  editorial_date: "1"
   owner_tag: ""
 items_054: 
   id: "54"
@@ -1655,14 +1657,14 @@ items_054:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:10:29
+  updated_at: 2010-12-23 06:30:47
   source_date: 24 Shawwal 1332
   calendar_type_id: "2"
   favorite: "0"
   width: "21.0"
   height: "13.5"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "1332"
   month: "10"
   day: "24"
@@ -1686,14 +1688,14 @@ items_055:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:17:23
+  updated_at: 2010-12-23 06:32:01
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.5"
   height: "13.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1717,14 +1719,14 @@ items_056:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:27:08
+  updated_at: 2010-12-20 22:19:34
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.8"
   height: "13.5"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -1748,14 +1750,14 @@ items_057:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:36:11
+  updated_at: 2010-12-23 06:33:52
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.0"
   height: "12.6"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -1779,14 +1781,14 @@ items_058:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:40:23
+  updated_at: 2010-12-20 22:26:50
   source_date: 13 Safar 1310
   calendar_type_id: "2"
   favorite: "0"
   width: "14.5"
   height: "11.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "1310"
   month: "2"
   day: "13"
@@ -1810,14 +1812,14 @@ items_059:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 04:53:31
+  updated_at: 2010-12-23 06:35:55
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "19.3"
   height: "12.6"
   depth: "0.0"
-  lock_version: "4"
+  lock_version: "6"
   year: "2050"
   month: 
   day: 
@@ -1843,14 +1845,14 @@ items_060:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:03:28
+  updated_at: 2010-12-21 21:19:57
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "11.0"
   depth: "0.0"
-  lock_version: "6"
+  lock_version: "8"
   year: "2050"
   month: 
   day: 
@@ -1870,18 +1872,18 @@ items_061:
   pages: "2"
   format_id: "1"
   circa: "0"
-  notes: how much is a khavar. 1 khavar is equal to 300 kilograms?
+  notes: how much is a kharvar. 1 kharvar is equal to 300 kilograms?
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:00:24
+  updated_at: 2010-12-20 22:40:09
   source_date: 14 Rabi' al-Sani 1326
   calendar_type_id: "2"
   favorite: "0"
   width: "10.8"
   height: "6.0"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "2"
   year: "1326"
   month: "4"
   day: "14"
@@ -1905,14 +1907,14 @@ items_062:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:06:39
+  updated_at: 2010-12-20 22:46:31
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -1936,14 +1938,14 @@ items_063:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:11:08
+  updated_at: 2010-12-23 06:37:26
   source_date: 23 Shavval 1333
   calendar_type_id: "2"
   favorite: "0"
   width: "21.0"
   height: "25.8"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "1333"
   month: "10"
   day: "23"
@@ -1967,14 +1969,14 @@ items_064:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:20:33
+  updated_at: 2010-12-23 06:46:04
   source_date: "1908"
   calendar_type_id: "1"
   favorite: "0"
   width: "26.0"
   height: "22.0"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "4"
   year: "1908"
   month: "0"
   day: "0"
@@ -1998,14 +2000,14 @@ items_065:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 05:23:12
+  updated_at: 2010-12-23 06:47:36
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "13.2"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -2029,14 +2031,14 @@ items_066:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 06:44:09
+  updated_at: 2010-12-23 06:48:43
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "13.5"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -2060,14 +2062,14 @@ items_067:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 07:25:39
+  updated_at: 2010-12-23 06:49:51
   source_date: 24 Muharram 1329
   calendar_type_id: "2"
   favorite: "0"
   width: "20.0"
   height: "13.0"
   depth: "0.0"
-  lock_version: "3"
+  lock_version: "5"
   year: "1329"
   month: "1"
   day: "24"
@@ -2091,14 +2093,14 @@ items_068:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 07:28:27
+  updated_at: 2010-12-23 06:50:54
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "12.3"
   height: "13.6"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "2050"
   month: 
   day: 
@@ -2122,14 +2124,14 @@ items_069:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 07:48:29
+  updated_at: 2010-12-21 21:28:50
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "20.6"
   height: "26.3"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "3"
   year: "2050"
   month: 
   day: 
@@ -2153,14 +2155,14 @@ items_070:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-12-14 08:07:35
+  updated_at: 2010-12-23 06:52:10
   source_date: 17 Safar 1332
   calendar_type_id: "2"
   favorite: "0"
   width: "13.0"
   height: "20.6"
   depth: "0.0"
-  lock_version: "2"
+  lock_version: "4"
   year: "1332"
   month: "2"
   day: "17"
@@ -2184,24 +2186,24 @@ items_071:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-15 06:50:49
+  updated_at: 2010-12-21 21:45:53
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.7"
   height: "13.3"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_072: 
   id: "72"
   accession_num: Sheikholeslami_ANMEQ_100308_072
@@ -2215,14 +2217,14 @@ items_072:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-09 04:17:17
+  updated_at: 2010-12-23 06:55:05
   source_date: 12 Muharram 1318
   calendar_type_id: "2"
   favorite: "0"
   width: "20.5"
   height: "13.0"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "5"
   year: "1318"
   month: "1"
   day: "12"
@@ -2232,7 +2234,7 @@ items_072:
   sort_month: "5"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_073: 
   id: "73"
   accession_num: Sheikholeslami_ANMEQ_100308_073
@@ -2246,24 +2248,24 @@ items_073:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-06 03:22:35
+  updated_at: 2010-12-22 01:10:02
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "17.2"
   height: "10.0"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_074: 
   id: "74"
   accession_num: Sheikholeslami_ANMEQ_100308_074
@@ -2277,24 +2279,24 @@ items_074:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-05 02:59:17
+  updated_at: 2010-12-23 06:58:15
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "21.0"
   height: "27.0"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "5"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_075: 
   id: "75"
   accession_num: Sheikholeslami_ANMEQ_100308_075
@@ -2308,24 +2310,24 @@ items_075:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-09 04:27:03
+  updated_at: 2010-12-22 01:26:39
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.0"
   height: "20.7"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_076: 
   id: "76"
   accession_num: Sheikholeslami_ANMEQ_100308_076
@@ -2339,24 +2341,24 @@ items_076:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-10-04 16:13:29
+  updated_at: 2010-12-23 06:59:54
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "12.8"
   height: "20.0"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "4"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_077: 
   id: "77"
   accession_num: Sheikholeslami_ANMEQ_100308_077
@@ -2370,24 +2372,24 @@ items_077:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-05 02:49:21
+  updated_at: 2010-12-23 21:06:27
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "12.4"
   height: "21.0"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "4"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_078: 
   id: "78"
   accession_num: Sheikholeslami_ANMEQ_100308_078
@@ -2401,14 +2403,14 @@ items_078:
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-15 06:49:04
+  updated_at: 2010-12-23 21:18:57
   source_date: 6 Muharram 1334
   calendar_type_id: "2"
   favorite: "0"
   width: "13.3"
   height: "21.0"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "5"
   year: "1334"
   month: "1"
   day: "6"
@@ -2418,7 +2420,7 @@ items_078:
   sort_month: "11"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_079: 
   id: "79"
   accession_num: Sheikholeslami_ANMEQ_100308_079
@@ -2428,28 +2430,28 @@ items_079:
   pages: "3"
   format_id: "1"
   circa: "0"
-  notes: Who is Dadash Jan
+  notes: Who is Dadash Jan? Haj Mirza Abu Turab?
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-11-05 03:02:47
+  updated_at: 2010-12-23 07:01:23
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "13.3"
   height: "21.0"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "5"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_080: 
   id: "80"
   accession_num: Sheikholeslami_ANMEQ_100308_080
@@ -2459,157 +2461,163 @@ items_080:
   pages: "3"
   format_id: "1"
   circa: "0"
-  notes: ""
+  notes: |-
+    What is the name of this woman?
+    Review doc to see if following removed names should be added as assoc. people: Amin al-Dawlah; Sayf al-Islam; Mirza Qavam; Mutamid al-Sultan
   bound: "0"
   publish: "1"
   created_at: 2010-05-04 16:30:24
-  updated_at: 2010-10-04 16:09:13
+  updated_at: 2010-12-23 21:07:40
   source_date: ""
   calendar_type_id: "1"
   favorite: "0"
   width: "26.6"
   height: "20.8"
   depth: "0.0"
-  lock_version: "1"
-  year: 
+  lock_version: "10"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_081: 
   id: "81"
   accession_num: Sheikholeslami_ANMEQ_100308_081
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  notes: "Keyword Mecca should be capitalized and moved to new place keyword field. "
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 07:07:49
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.0"
   height: "20.6"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
+  era_id: "4"
+  sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  editorial_date: "1"
+  owner_tag: ""
 items_082: 
   id: "82"
   accession_num: Sheikholeslami_ANMEQ_100308_082
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: "Where are the envelopes per the recording? Perhaps, need to photograph complete set again. "
+  notes: |-
+    Where are envelopes per the recording? Photo again?  
+    Add Mushir al-Saltanah to people
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 21:08:15
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.6"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_083: 
   id: "83"
   accession_num: Sheikholeslami_ANMEQ_100308_083
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: "In MEQ genealogy, Hidayat Allah is the brother of Hajiyah Khanum. "
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 21:18:28
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.4"
   height: "22.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_084: 
   id: "84"
   accession_num: Sheikholeslami_ANMEQ_100308_084
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: Do we know the date of Asiyah Khanum's birth? This would allow us to give an approximate date for the lettter. Only include first recording (100307_21)
+  notes: |-
+    When was Asiyah born? 
+    Only include first recording (100307_21)
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 21:15:17
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.5"
   height: "20.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_085: 
   id: "85"
   accession_num: Sheikholeslami_ANMEQ_100308_085
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -2618,91 +2626,91 @@ items_085:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 21:17:08
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.0"
   height: "20.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_086: 
   id: "86"
   accession_num: Sheikholeslami_ANMEQ_100308_086
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: Does no'bih always mean malaria or should this be translated as fever? Religious beliefs? Treatments for illness
+  notes: "subjects: Religious beliefs? Treatments for illness? "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 21:21:10
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.2"
   height: "20.7"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_087: 
   id: "87"
   accession_num: Sheikholeslami_ANMEQ_100308_087
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  notes: Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 02:26:03
   source_date: "2 Jumada al-Avval 1331 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.3"
   height: "20.7"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "4"
   year: "1331"
   month: "5"
   day: "2"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1913"
+  sort_month: "4"
+  sort_day: "9"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_088: 
   id: "88"
   accession_num: Sheikholeslami_ANMEQ_100308_088
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -2711,14 +2719,14 @@ items_088:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-11-15 06:58:52
+  updated_at: 2010-12-24 02:23:40
   source_date: "20 Rabi\xCA\xBB al-Avval 1201"
   calendar_type_id: "2"
   favorite: "0"
   width: "11.0"
   height: "20.6"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "4"
   year: "1201"
   month: "3"
   day: "20"
@@ -2728,29 +2736,29 @@ items_088:
   sort_month: "1"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_089: 
   id: "89"
   accession_num: Sheikholeslami_ANMEQ_100308_089
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
-  circa: "1"
-  notes: Do we know name of sister? Qum.
+  circa: "0"
+  notes: Do we know name of sister?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-11-09 03:56:21
-  source_date: "1199\xE2\x80\x931215 "
+  updated_at: 2010-12-24 02:21:39
+  source_date: ""
   calendar_type_id: "2"
   favorite: "0"
   width: "15.6"
   height: "20.6"
   depth: "0.0"
-  lock_version: "2"
-  year: "1199"
+  lock_version: "5"
+  year: "1200"
   month: "0"
   day: "0"
   editorial_dating: "0"
@@ -2759,12 +2767,12 @@ items_089:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_090: 
   id: "90"
   accession_num: Sheikholeslami_ANMEQ_100308_090
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -2773,60 +2781,60 @@ items_090:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-22 06:35:00
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.0"
   height: "20.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_091: 
   id: "91"
   accession_num: Sheikholeslami_ANMEQ_100308_091
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  notes: Need to check order of these documents.
+  notes: "Check dimensions. "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-22 07:00:40
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
-  width: "13.3"
-  height: "8.8"
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "14.2"
+  height: "22.1"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
+  era_id: "4"
+  sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  editorial_date: "1"
+  owner_tag: ""
 items_092: 
   id: "92"
   accession_num: Sheikholeslami_ANMEQ_100308_092
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -2835,55 +2843,56 @@ items_092:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-22 09:02:56
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "15.0"
   height: "12.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_093: 
   id: "93"
   accession_num: Sheikholeslami_ANMEQ_100308_093
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  notes: Is the identification of sendor correct? This seems to be not Baba Nizam but his brother, Bisharat Humayun
+  notes: "The sendor seems to be not Baba Nizam but his brother, Bisharat Humayun?\r\n\
+    The notes suggest that the letter refers to either Mu\xCA\xBBtamid al-Dawlah or \xD9\x85\xD8\xB9\xD8\xAA\xD9\x85\xD8\xAF \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87? Is this different from Mu\xCA\xBBtamid al-Mulk. And if so, which is correct? "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 02:16:03
   source_date: "20 Rabi\xCA\xBB al-Sani 1313 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "3"
   year: "1313"
   month: "4"
   day: "20"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1895"
+  sort_month: "10"
+  sort_day: "10"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_094: 
   id: "94"
   accession_num: Sheikholeslami_ANMEQ_100308_094
@@ -2893,18 +2902,19 @@ items_094:
   pages: "4"
   format_id: 
   circa: "0"
-  notes: Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam
+  notes: "Haj Dadash is Haj Mirza Abu Turab Shaykh al-Islam\r\n\
+    BS says envelope may not be part of letter. "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-11-21 07:34:59
+  updated_at: 2010-12-22 18:29:24
   source_date: "24 Shavval 1328 "
   calendar_type_id: "2"
   favorite: "0"
   width: "22.0"
   height: "17.8"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "3"
   year: "1328"
   month: "10"
   day: "24"
@@ -2914,7 +2924,7 @@ items_094:
   sort_month: "10"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_095: 
   id: "95"
   accession_num: Sheikholeslami_ANMEQ_100308_095
@@ -2928,29 +2938,29 @@ items_095:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-22 18:37:54
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.4"
   height: "18.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_096: 
   id: "96"
   accession_num: Sheikholeslami_ANMEQ_100308_096
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -2959,29 +2969,29 @@ items_096:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-22 18:45:42
   source_date: "17 Ramazan 1313 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.3"
   height: "21.4"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1313"
   month: "9"
   day: "17"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1896"
+  sort_month: "3"
+  sort_day: "2"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_097: 
   id: "97"
   accession_num: Sheikholeslami_ANMEQ_100308_097
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -2990,24 +3000,24 @@ items_097:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 07:52:44
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.0"
   height: "19.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_098: 
   id: "98"
   accession_num: Sheikholeslami_ANMEQ_100308_098
@@ -3021,60 +3031,60 @@ items_098:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 07:58:00
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.0"
   height: "20.4"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_099: 
   id: "99"
   accession_num: Sheikholeslami_ANMEQ_100308_099
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  notes: "Recording includes explanation of the multiple administrators that Aqa Mirza used for the estate: ie two munshi bashsi: Hasan Durudi who does work in the city and Askar Khan Mafi, who was the head of the Mafi tribe, and does work in the provinces||"
+  notes: "Recording includes explanation of the multiple administrators that Aqa Mirza used for the estate: ie two munshi bashsi: Hasan Durudi who does work in the city and Askar Khan Mafi, who was the head of the Mafi tribe, and does work in the provinces."
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 03:41:46
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "28.0"
   height: "21.7"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_100: 
   id: "100"
   accession_num: Sheikholeslami_ANMEQ_100308_100
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3083,29 +3093,29 @@ items_100:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 08:16:05
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_101: 
   id: "101"
   accession_num: Sheikholeslami_ANMEQ_100308_101
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3114,29 +3124,29 @@ items_101:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 10:01:49
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "24.0"
   height: "19.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_102: 
   id: "102"
   accession_num: Sheikholeslami_ANMEQ_100308_102
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -3145,91 +3155,92 @@ items_102:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 10:10:03
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "20.2"
   height: "12.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_103: 
   id: "103"
   accession_num: Sheikholeslami_ANMEQ_100308_103
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: ""
+  notes: "Amjad al-Islam is Amjad al-Vizarah?\r\n\
+    What is name of wife? "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-23 18:07:40
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.4"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_104: 
   id: "104"
   accession_num: Sheikholeslami_ANMEQ_100308_104
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  notes: "Complete date is on envelope but cannot read. "
+  notes: "Complete date is on envelope but cannot read it. "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 03:52:51
   source_date: "1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.2"
   height: "20.1"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "1"
+  sort_day: "1"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_105: 
   id: "105"
   accession_num: Sheikholeslami_ANMEQ_100308_105
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3238,29 +3249,29 @@ items_105:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 05:08:39
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "23.5"
   height: "18.9"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_106: 
   id: "106"
   accession_num: Sheikholeslami_ANMEQ_100308_106
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3269,14 +3280,14 @@ items_106:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-12-09 18:25:22
+  updated_at: 2010-12-24 05:21:29
   source_date: "2 Muharram 1325 "
   calendar_type_id: "2"
   favorite: "0"
   width: "13.4"
   height: "21.0"
   depth: "0.0"
-  lock_version: "1"
+  lock_version: "2"
   year: "1325"
   month: "1"
   day: "2"
@@ -3291,7 +3302,7 @@ items_107:
   id: "107"
   accession_num: Sheikholeslami_ANMEQ_100308_107
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -3300,29 +3311,29 @@ items_107:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 05:33:32
   source_date: "1260 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.4"
   height: "20.8"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1260"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1844"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_108: 
   id: "108"
   accession_num: Sheikholeslami_ANMEQ_100308_108
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -3331,29 +3342,29 @@ items_108:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 05:53:22
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "10.7"
   height: "13.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_109: 
   id: "109"
   accession_num: Sheikholeslami_ANMEQ_100308_109
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -3362,29 +3373,29 @@ items_109:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 06:01:42
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "10.3"
   height: "17.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_110: 
   id: "110"
   accession_num: Sheikholeslami_ANMEQ_100308_110
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
@@ -3393,29 +3404,29 @@ items_110:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 06:12:53
   source_date: "Rabi\xCA\xBB al-Avval 1326 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1326"
   month: "3"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
+  sort_year: "1908"
   sort_month: 
   sort_day: 
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_111: 
   id: "111"
   accession_num: Sheikholeslami_ANMEQ_100308_111
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3424,29 +3435,29 @@ items_111:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 06:33:56
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "10.5"
   height: "12.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_112: 
   id: "112"
   accession_num: Sheikholeslami_ANMEQ_100308_112
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3455,60 +3466,60 @@ items_112:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 06:46:38
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_113: 
   id: "113"
   accession_num: Sheikholeslami_ANMEQ_100308_113
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "7"
   format_id: 
-  circa: "1"
-  notes: "SB gives date as 1257-8?. Is this correct? Check dates again with him before entering. "
+  circa: "0"
+  notes: "SB gives date as 4 Rajab 1260. Is this correct? Check dates again with him before entering. "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 07:23:26
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
+  era_id: "4"
+  sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  editorial_date: "1"
+  owner_tag: ""
 items_114: 
   id: "114"
   accession_num: Sheikholeslami_ANMEQ_100308_114
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3517,29 +3528,29 @@ items_114:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 07:40:09
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_115: 
   id: "115"
   accession_num: Sheikholeslami_ANMEQ_100308_115
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3548,60 +3559,60 @@ items_115:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 07:49:35
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.5"
   height: "10.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_116: 
   id: "116"
   accession_num: Sheikholeslami_ANMEQ_100308_116
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
   circa: "0"
-  notes: Who is sender of this letter?
+  notes: Who is sender?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-11-09 03:48:26
+  updated_at: 2010-12-24 07:59:21
   source_date: ""
-  calendar_type_id: "2"
+  calendar_type_id: "1"
   favorite: "0"
   width: "12.0"
   height: "9.7"
   depth: "0.0"
-  lock_version: "2"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_117: 
   id: "117"
   accession_num: Sheikholeslami_ANMEQ_100308_117
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3610,29 +3621,29 @@ items_117:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 08:05:21
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.3"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
+  era_id: "4"
+  sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  editorial_date: "1"
+  owner_tag: ""
 items_118: 
   id: "118"
   accession_num: Sheikholeslami_ANMEQ_100308_118
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "4"
   format_id: 
@@ -3641,29 +3652,29 @@ items_118:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 08:20:52
   source_date: "6 Ramazan 1316 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "14.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1316"
   month: "9"
   day: "6"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1899"
+  sort_month: "1"
+  sort_day: "18"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_119: 
   id: "119"
   accession_num: Sheikholeslami_ANMEQ_100308_119
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3672,29 +3683,29 @@ items_119:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 08:37:30
   source_date: "1329 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "18.0"
   height: "22.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1329"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1911"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_120: 
   id: "120"
   accession_num: Sheikholeslami_ANMEQ_100308_120
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -3703,29 +3714,29 @@ items_120:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 08:59:26
   source_date: "28 Rabi\xCA\xBB al-Avval 1332 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "19.8"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1332"
   month: "3"
   day: "28"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1914"
+  sort_month: "2"
+  sort_day: "24"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_121: 
   id: "121"
   accession_num: Sheikholeslami_ANMEQ_100308_121
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3734,29 +3745,29 @@ items_121:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 09:15:26
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "23.3"
   height: "19.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_122: 
   id: "122"
   accession_num: Sheikholeslami_ANMEQ_100308_122
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3765,29 +3776,29 @@ items_122:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 09:28:43
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.0"
   height: "17.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_123: 
   id: "123"
   accession_num: Sheikholeslami_ANMEQ_100308_123
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3796,29 +3807,29 @@ items_123:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 09:38:40
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "14.2"
   height: "21.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_124: 
   id: "124"
   accession_num: Sheikholeslami_ANMEQ_100308_124
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3827,29 +3838,29 @@ items_124:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 09:54:05
   source_date: "Zu\xCA\xBBl Qa\xCA\xBBdah 1335 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.2"
   height: "21.2"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1335"
   month: "11"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1917"
+  sort_month: "8"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_125: 
   id: "125"
   accession_num: Sheikholeslami_ANMEQ_100308_125
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3858,91 +3869,91 @@ items_125:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 22:38:27
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "20.0"
   height: "13.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_126: 
   id: "126"
   accession_num: Sheikholeslami_ANMEQ_100308_126
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
-  circa: "1"
-  notes: It is possible that this letter dates to 1333 AH when the Russians occupied Qazvin. Check.
+  circa: "0"
+  notes: Need to check date with AN; but likely refers to Russian occupied Qazvin in 1333 AH.
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 22:57:58
   source_date: ""
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.6"
   height: "20.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
-  month: 
-  day: 
+  lock_version: "2"
+  year: "1333"
+  month: "0"
+  day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1914"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_127: 
   id: "127"
   accession_num: Sheikholeslami_ANMEQ_100308_127
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
   circa: "0"
-  notes: "Check this again. "
+  notes: "Check letter again. Do we know the receiver? Who's wedding? "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 23:39:55
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.0"
   height: "20.4"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_128: 
   id: "128"
   accession_num: Sheikholeslami_ANMEQ_100308_128
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -3951,29 +3962,29 @@ items_128:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 23:42:16
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.3"
   height: "21.3"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_129: 
   id: "129"
   accession_num: Sheikholeslami_ANMEQ_100308_129
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -3982,29 +3993,29 @@ items_129:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-24 23:54:08
   source_date: "5 Shavval 1330 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "20.6"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1330"
   month: "10"
   day: "5"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1912"
+  sort_month: "9"
+  sort_day: "17"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_130: 
   id: "130"
   accession_num: Sheikholeslami_ANMEQ_100308_130
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4013,29 +4024,29 @@ items_130:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 00:02:26
   source_date: "20 Ramazan 1331 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.0"
   height: "20.7"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1331"
   month: "9"
   day: "20"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1913"
+  sort_month: "8"
+  sort_day: "23"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_131: 
   id: "131"
   accession_num: Sheikholeslami_ANMEQ_100308_131
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: 
@@ -4044,60 +4055,60 @@ items_131:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 00:30:54
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_132: 
   id: "132"
   accession_num: Sheikholeslami_ANMEQ_100308_132
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "6"
   format_id: 
   circa: "0"
-  notes: Amjad al-Islam is Amjad al-Vizarah, correct? There is alot on his teacher, Madam Russi.
+  notes: Amjad al-Islam is Amjad al-Vizarah, correct? There is a lot on his teacher, Madam Russi.
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 00:49:06
   source_date: "7 Zu\xCA\xBBl Qa\xCA\xBBdah 1327 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "27.5"
   height: "22.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1327"
   month: "11"
   day: "7"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1909"
+  sort_month: "11"
+  sort_day: "20"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_133: 
   id: "133"
   accession_num: Sheikholeslami_ANMEQ_100308_133
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4106,55 +4117,55 @@ items_133:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 01:19:06
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "16.0"
   height: "11.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_134: 
   id: "134"
   accession_num: Sheikholeslami_ANMEQ_100308_134
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "7"
   format_id: 
   circa: "0"
-  notes: ""
+  notes: Is Sipahsalar Tunikabuni different than Muhammad Vali? LC lists name as "Sipahsalar Tunikabuni, Muhammad Vali"?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 01:50:19
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.5"
   height: "22.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_135: 
   id: "135"
   accession_num: Sheikholeslami_ANMEQ_100308_135
@@ -4168,14 +4179,14 @@ items_135:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 02:17:52
   source_date: "7 Zu\xCA\xBBl Qa\xCA\xBBdah 1329 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.7"
   height: "21.2"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1329"
   month: "11"
   day: "7"
@@ -4185,12 +4196,12 @@ items_135:
   sort_month: "10"
   sort_day: "30"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_136: 
   id: "136"
   accession_num: Sheikholeslami_ANMEQ_100308_136
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4199,29 +4210,29 @@ items_136:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 02:27:18
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "25.0"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_137: 
   id: "137"
   accession_num: Sheikholeslami_ANMEQ_100308_137
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4230,29 +4241,29 @@ items_137:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 03:02:07
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "22.0"
   height: "18.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_138: 
   id: "138"
   accession_num: Sheikholeslami_ANMEQ_100308_138
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4261,29 +4272,29 @@ items_138:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 03:08:05
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "22.0"
   height: "17.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_139: 
   id: "139"
   accession_num: Sheikholeslami_ANMEQ_100308_139
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4292,29 +4303,29 @@ items_139:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 03:18:32
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "21.0"
   height: "16.2"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_140: 
   id: "140"
   accession_num: Sheikholeslami_ANMEQ_100308_140
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4323,29 +4334,29 @@ items_140:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 03:45:33
   source_date: "Rabi\xCA\xBB al-Sani 1334 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1334"
   month: "4"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1916"
+  sort_month: "2"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_141: 
   id: "141"
   accession_num: Sheikholeslami_ANMEQ_100308_141
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4354,29 +4365,29 @@ items_141:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 04:17:49
   source_date: "4 Jumada al-Sani 1334 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1334"
   month: "6"
   day: "4"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1916"
+  sort_month: "4"
+  sort_day: "8"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_142: 
   id: "142"
   accession_num: Sheikholeslami_ANMEQ_100308_142
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4385,29 +4396,29 @@ items_142:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 04:38:16
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_143: 
   id: "143"
   accession_num: Sheikholeslami_ANMEQ_100308_143
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4416,29 +4427,29 @@ items_143:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 04:54:50
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "20.0"
   height: "12.3"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_144: 
   id: "144"
   accession_num: Sheikholeslami_ANMEQ_100308_144
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: 
@@ -4447,60 +4458,60 @@ items_144:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 05:29:33
   source_date: "26 Safar 1334 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1334"
   month: "2"
   day: "26"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1916"
+  sort_month: "1"
+  sort_day: "3"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_145: 
   id: "145"
   accession_num: Sheikholeslami_ANMEQ_100308_145
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
   circa: "0"
-  notes: Hazrat-e Khodafand-i Gari is Aqa Mirza Mas'ud. This is addressed to Aqa Mirza Hasan M.B.
+  notes: Hazrat-i Khodafand-i Gari is Aqa Mirza Mas'ud. This is addressed to Aqa Mirza Hasan M.B.
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 06:22:30
   source_date: "9 Rabi\xCA\xBB al-Avval 1327 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "12.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1327"
   month: "3"
   day: "9"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1909"
+  sort_month: "3"
+  sort_day: "31"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_146: 
   id: "146"
   accession_num: Sheikholeslami_ANMEQ_100308_146
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4509,29 +4520,29 @@ items_146:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 06:34:04
   source_date: "6 Sha\xCA\xBBban 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "12.5"
   height: "17.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "8"
   day: "6"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "8"
+  sort_day: "13"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_147: 
   id: "147"
   accession_num: Sheikholeslami_ANMEQ_100308_147
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4540,91 +4551,91 @@ items_147:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 06:42:47
   source_date: "Sha\xCA\xBBban 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "10.5"
   height: "13.3"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "8"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "8"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_148: 
   id: "148"
   accession_num: Sheikholeslami_ANMEQ_100308_148
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: Check this.
+  notes: Who is Galin Khanum?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 06:57:18
   source_date: "Ramazan 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "10.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1328"
   month: "9"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "9"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_149: 
   id: "149"
   accession_num: Sheikholeslami_ANMEQ_100308_149
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: "Check this. "
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 06:59:59
   source_date: "2 Ramazan 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "12.7"
   height: "19.6"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "9"
   day: "2"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "9"
+  sort_day: "7"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_150: 
   id: "150"
   accession_num: Sheikholeslami_ANMEQ_100308_150
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4633,29 +4644,29 @@ items_150:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 07:06:40
   source_date: "Sha\xCA\xBBban 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "17.8"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "8"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "8"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_151: 
   id: "151"
   accession_num: Sheikholeslami_ANMEQ_100308_151
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4664,29 +4675,29 @@ items_151:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 07:10:42
   source_date: "3 Sha\xCA\xBBban 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "17.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "8"
   day: "3"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "8"
+  sort_day: "10"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_152: 
   id: "152"
   accession_num: Sheikholeslami_ANMEQ_100308_152
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4695,29 +4706,29 @@ items_152:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:00
+  updated_at: 2010-12-25 07:22:37
   source_date: "Ramazan 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "17.6"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "9"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "9"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_153: 
   id: "153"
   accession_num: Sheikholeslami_ANMEQ_100308_153
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4726,29 +4737,29 @@ items_153:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 07:30:19
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "19.0"
   height: "12.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_154: 
   id: "154"
   accession_num: Sheikholeslami_ANMEQ_100308_154
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4757,29 +4768,29 @@ items_154:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 07:37:09
   source_date: "Sha\xCA\xBBban 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "17.6"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "8"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "8"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_155: 
   id: "155"
   accession_num: Sheikholeslami_ANMEQ_100308_155
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4788,29 +4799,29 @@ items_155:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 07:40:39
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "10.5"
   height: "13.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_156: 
   id: "156"
   accession_num: Sheikholeslami_ANMEQ_100308_156
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4819,60 +4830,60 @@ items_156:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 08:04:47
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.3"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_157: 
   id: "157"
   accession_num: Sheikholeslami_ANMEQ_100308_157
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: Do we know the name of the sister, perhaps Zahra Khanum or Sidiqah Khanum (his two known sisters)
+  notes: Do we know the name of the sister, perhaps Zahra Khanum or Sidiqah Khanum (his two known sisters)?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 08:12:58
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.7"
   height: "9.7"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_158: 
   id: "158"
   accession_num: Sheikholeslami_ANMEQ_100308_158
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -4881,29 +4892,29 @@ items_158:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 20:27:00
   source_date: "13 Shavval 1348 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "26.0"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1348"
   month: "10"
   day: "13"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1930"
+  sort_month: "3"
+  sort_day: "14"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_159: 
   id: "159"
   accession_num: Sheikholeslami_ANMEQ_100308_159
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -4912,29 +4923,29 @@ items_159:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 20:35:51
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.0"
   height: "14.4"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_160: 
   id: "160"
   accession_num: Sheikholeslami_ANMEQ_100308_160
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4943,29 +4954,29 @@ items_160:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 20:49:53
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "21.0"
   height: "17.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_161: 
   id: "161"
   accession_num: Sheikholeslami_ANMEQ_100308_161
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -4974,29 +4985,29 @@ items_161:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 20:52:31
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "25.7"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_162: 
   id: "162"
   accession_num: Sheikholeslami_ANMEQ_100308_162
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -5005,29 +5016,29 @@ items_162:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 21:03:00
   source_date: "7 \xCA\xBBAqrab (Aban) 1332"
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "17.5"
   height: "22.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1332"
   month: "8"
   day: "7"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1914"
+  sort_month: "7"
+  sort_day: "1"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_163: 
   id: "163"
   accession_num: Sheikholeslami_ANMEQ_100308_163
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -5036,29 +5047,29 @@ items_163:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 21:09:37
   source_date: "16 Safar 1323 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "20.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1323"
   month: "2"
   day: "16"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1905"
+  sort_month: "4"
+  sort_day: "22"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_164: 
   id: "164"
   accession_num: Sheikholeslami_ANMEQ_100308_164
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -5067,29 +5078,29 @@ items_164:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-25 21:20:32
   source_date: "27 Shavval 1338 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.7"
   height: "20.8"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1338"
   month: "10"
   day: "27"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1920"
+  sort_month: "7"
+  sort_day: "14"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_165: 
   id: "165"
   accession_num: Sheikholeslami_ANMEQ_100308_165
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5098,29 +5109,29 @@ items_165:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 00:15:20
   source_date: "Muharram 1340 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.2"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1340"
   month: "1"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1921"
+  sort_month: "9"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_166: 
   id: "166"
   accession_num: Sheikholeslami_ANMEQ_100308_166
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5129,24 +5140,24 @@ items_166:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 00:56:46
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.5"
   height: "21.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_167: 
   id: "167"
   accession_num: Sheikholeslami_ANMEQ_100308_167
@@ -5160,29 +5171,29 @@ items_167:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-12-09 18:09:17
+  updated_at: 2010-12-26 00:59:14
   source_date: ""
-  calendar_type_id: "2"
+  calendar_type_id: "1"
   favorite: "0"
   width: "14.0"
   height: "20.0"
   depth: "0.0"
-  lock_version: "4"
-  year: 
+  lock_version: "6"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
+  era_id: "4"
   sort_year: "2050"
   sort_month: 
   sort_day: 
-  editorial_date: "0"
+  editorial_date: "1"
   owner_tag: ""
 items_168: 
   id: "168"
   accession_num: Sheikholeslami_ANMEQ_100308_168
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5191,29 +5202,29 @@ items_168:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 01:23:01
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "20.5"
   height: "13.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_169: 
   id: "169"
   accession_num: Sheikholeslami_ANMEQ_100308_169
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -5222,29 +5233,29 @@ items_169:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 01:26:00
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "21.6"
   height: "12.6"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_170: 
   id: "170"
   accession_num: Sheikholeslami_ANMEQ_100308_170
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -5253,29 +5264,29 @@ items_170:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 01:47:05
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "21.5"
   height: "13.6"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_171: 
   id: "171"
   accession_num: Sheikholeslami_ANMEQ_100308_171
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5284,29 +5295,29 @@ items_171:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 01:53:18
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "25.0"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_172: 
   id: "172"
   accession_num: Sheikholeslami_ANMEQ_100308_172
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5315,91 +5326,60 @@ items_172:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 02:01:07
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "10.8"
   height: "17.7"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
 items_173: 
   id: "173"
   accession_num: Sheikholeslami_ANMEQ_100308_173
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: 
   circa: "0"
-  notes: Asiyah?
+  notes: "Is first letter addressed to Asiyah Khanum? "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 03:48:02
   source_date: "1309 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "21.0"
   height: "12.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1309"
-  month: "0"
-  day: "0"
+  month: "7"
+  day: "15"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1892"
+  sort_month: "2"
+  sort_day: "14"
   editorial_date: "0"
-  owner_tag: 
+  owner_tag: ""
 items_174: 
-  id: "174"
-  accession_num: Sheikholeslami_ANMEQ_100308_174
-  urn: ""
-  owner_id: 
-  collection_id: "8"
-  pages: "2"
-  format_id: 
-  circa: "0"
-  notes: ""
-  bound: "0"
-  publish: "1"
-  created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
-  source_date: ""
-  calendar_type_id: "2"
-  favorite: 
-  width: "13.8"
-  height: "21.5"
-  depth: "0.0"
-  lock_version: "0"
-  year: 
-  month: 
-  day: 
-  editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_175: 
   id: "175"
   accession_num: Sheikholeslami_ANMEQ_100308_175
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "3"
   format_id: 
@@ -5408,25 +5388,25 @@ items_175:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:16:23
   source_date: "15 Safar 1331 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.7"
   height: "20.7"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1331"
   month: "2"
   day: "15"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1913"
+  sort_month: "1"
+  sort_day: "24"
   editorial_date: "0"
-  owner_tag: 
-items_176: 
+  owner_tag: ""
+items_175: 
   id: "176"
   accession_num: Sheikholeslami_ANMEQ_100308_176
   urn: ""
@@ -5439,29 +5419,29 @@ items_176:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:26:38
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.6"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_177: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_176: 
   id: "177"
   accession_num: Sheikholeslami_ANMEQ_100308_177
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5470,29 +5450,29 @@ items_177:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:29:23
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "23.5"
   height: "20.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_178: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_177: 
   id: "178"
   accession_num: Sheikholeslami_ANMEQ_100308_178
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5501,29 +5481,29 @@ items_178:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:38:48
   source_date: "1321 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "22.0"
   height: "35.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1321"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1903"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_179: 
+  owner_tag: ""
+items_178: 
   id: "179"
   accession_num: Sheikholeslami_ANMEQ_100308_179
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5532,29 +5512,29 @@ items_179:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:43:55
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "21.2"
   height: "13.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_180: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_179: 
   id: "180"
   accession_num: Sheikholeslami_ANMEQ_100308_180
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5563,60 +5543,60 @@ items_180:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 04:51:20
   source_date: "18 Jumada al-Sani 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.7"
   height: "20.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "6"
   day: "18"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "6"
+  sort_day: "27"
   editorial_date: "0"
-  owner_tag: 
-items_181: 
+  owner_tag: ""
+items_180: 
   id: "181"
   accession_num: Sheikholeslami_ANMEQ_100308_181
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "8"
   format_id: 
   circa: "0"
-  notes: Are the dim. for one page or both? Let's dbl check the names as well.
+  notes: Are the dim. for one page or both? dbl check the names as well.
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:30:30
   source_date: "11 Ramazan 1311 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "16.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1311"
   month: "9"
   day: "11"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1894"
+  sort_month: "3"
+  sort_day: "20"
   editorial_date: "0"
-  owner_tag: 
-items_182: 
+  owner_tag: ""
+items_181: 
   id: "182"
   accession_num: Sheikholeslami_ANMEQ_100308_182
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "7"
   format_id: 
@@ -5625,29 +5605,29 @@ items_182:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:31:24
   source_date: "Jumada al-Sani 1332 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "25.5"
   height: "17.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1332"
   month: "6"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1914"
+  sort_month: "5"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_183: 
+  owner_tag: ""
+items_182: 
   id: "183"
   accession_num: Sheikholeslami_ANMEQ_100308_183
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "5"
   format_id: 
@@ -5656,29 +5636,29 @@ items_183:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:32:13
   source_date: "28 Zu\xCA\xBBl Qa\xCA\xBBdah 1345 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "23.5"
   height: "16.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1345"
   month: "11"
   day: "28"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1927"
+  sort_month: "5"
+  sort_day: "30"
   editorial_date: "0"
-  owner_tag: 
-items_184: 
+  owner_tag: ""
+items_183: 
   id: "184"
   accession_num: Sheikholeslami_ANMEQ_100308_184
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "7"
   format_id: 
@@ -5687,29 +5667,29 @@ items_184:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:32:59
   source_date: "25 Sha\xCA\xBBban 1327 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.5"
   height: "18.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "3"
   year: "1327"
   month: "8"
   day: "25"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1909"
+  sort_month: "9"
+  sort_day: "11"
   editorial_date: "0"
-  owner_tag: 
-items_185: 
+  owner_tag: ""
+items_184: 
   id: "185"
   accession_num: Sheikholeslami_ANMEQ_100308_185
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5718,60 +5698,60 @@ items_185:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:34:02
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "18.0"
   height: "25.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "4"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_186: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_185: 
   id: "186"
   accession_num: Sheikholeslami_ANMEQ_100308_186
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
-  circa: "1"
-  notes: She is the mother of Aqa Mirza Hasan Shaykh al-Islam. Only first page has survived
+  circa: "0"
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:26:35
   source_date: "1285 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "50.0"
   height: "36.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1285"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1870"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_187: 
+  owner_tag: ""
+items_186: 
   id: "187"
   accession_num: Sheikholeslami_ANMEQ_100308_187
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5780,29 +5760,29 @@ items_187:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:45:25
   source_date: "26 Shavval 1287 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "35.0"
   height: "43.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1287"
   month: "10"
   day: "26"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1871"
+  sort_month: "1"
+  sort_day: "19"
   editorial_date: "0"
-  owner_tag: 
-items_188: 
+  owner_tag: ""
+items_187: 
   id: "188"
   accession_num: Sheikholeslami_ANMEQ_100308_188
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "11"
   format_id: 
@@ -5811,60 +5791,60 @@ items_188:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 06:53:27
   source_date: ""
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "9.0"
   height: "15.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
-  month: 
-  day: 
+  lock_version: "1"
+  year: "1288"
+  month: "0"
+  day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_189: 
+  owner_tag: ""
+items_188: 
   id: "189"
   accession_num: Sheikholeslami_ANMEQ_100308_189
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "13"
   format_id: 
   circa: "0"
-  notes: What about the inventory of trousseau of Rukhsarah Khan, daughter of Aqa Mirza Buzurg Shaykh al-Islam? How does one spell pasheh nameh?
+  notes: What about the inventory of trousseau of Rukhsarah Khan, daughter of Aqa Mirza Buzurg Shaykh al-Islam? Who did she marry?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:10:13
   source_date: "7 Shavval 1332 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "10.0"
   height: "16.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1332"
   month: "10"
   day: "7"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1914"
+  sort_month: "8"
+  sort_day: "29"
   editorial_date: "0"
-  owner_tag: 
-items_190: 
+  owner_tag: ""
+items_189: 
   id: "190"
   accession_num: Sheikholeslami_ANMEQ_100308_190
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "7"
   format_id: 
@@ -5873,29 +5853,29 @@ items_190:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:13:07
   source_date: "26 Sha\xCA\xBBban 1322 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "16.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1322"
   month: "8"
   day: "26"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1904"
+  sort_month: "11"
+  sort_day: "5"
   editorial_date: "0"
-  owner_tag: 
-items_191: 
+  owner_tag: ""
+items_190: 
   id: "191"
   accession_num: Sheikholeslami_ANMEQ_100308_191
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5904,29 +5884,29 @@ items_191:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:19:00
   source_date: "24 Muharram 1311 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "36.0"
   height: "55.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1311"
   month: "1"
   day: "24"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1893"
+  sort_month: "8"
+  sort_day: "7"
   editorial_date: "0"
-  owner_tag: 
-items_192: 
+  owner_tag: ""
+items_191: 
   id: "192"
   accession_num: Sheikholeslami_ANMEQ_100308_192
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -5935,60 +5915,60 @@ items_192:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:31:37
   source_date: "1337 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "11.0"
   height: "14.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1337"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1919"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_193: 
+  owner_tag: ""
+items_192: 
   id: "193"
   accession_num: Sheikholeslami_ANMEQ_100308_193
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
-  circa: "1"
+  circa: "0"
   notes: "Check date. Remove photocopy which is not necessary. "
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
-  source_date: "1328 "
+  updated_at: 2010-12-26 07:36:39
+  source_date: "1328"
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "24.0"
   height: "36.5"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1328"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_194: 
+  owner_tag: ""
+items_193: 
   id: "194"
   accession_num: Sheikholeslami_ANMEQ_100308_194
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -5997,29 +5977,29 @@ items_194:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:44:25
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "36.0"
   height: "30.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_195: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_194: 
   id: "195"
   accession_num: Sheikholeslami_ANMEQ_100308_195
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -6028,29 +6008,29 @@ items_195:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:49:40
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "36.0"
   height: "11.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_196: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_195: 
   id: "196"
   accession_num: Sheikholeslami_ANMEQ_100308_196
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6059,91 +6039,91 @@ items_196:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 07:55:17
   source_date: "Zu\xCA\xBBl Qa\xCA\xBBdah 1281 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "27.0"
   height: "46.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1281"
   month: "11"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1865"
+  sort_month: "4"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_197: 
+  owner_tag: ""
+items_196: 
   id: "197"
   accession_num: Sheikholeslami_ANMEQ_100308_197
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
-  circa: "1"
-  notes: Can we find the name of this woman in the doc?
+  circa: "0"
+  notes: Can we find the name of this woman?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:05:19
   source_date: "1315 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "29.2"
   height: "43.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1315"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1897"
+  sort_month: "0"
+  sort_day: "0"
   editorial_date: "0"
-  owner_tag: 
-items_198: 
+  owner_tag: ""
+items_197: 
   id: "198"
   accession_num: Sheikholeslami_ANMEQ_100308_198
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: What is the date of this document? Image uploaded to ftp.
+  notes: What is the date of this document?
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:25:40
   source_date: ""
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "0.0"
   height: "0.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: 
   month: 
   day: 
   editorial_dating: "0"
   era_id: 
-  sort_year: 
+  sort_year: "2050"
   sort_month: 
   sort_day: 
   editorial_date: "0"
-  owner_tag: 
-items_199: 
+  owner_tag: ""
+items_198: 
   id: "199"
   accession_num: Sheikholeslami_ANMEQ_100308_199
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6152,29 +6132,29 @@ items_199:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:29:55
   source_date: "1 Jumada al-Avval 1311 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "21.2"
   height: "324.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1311"
   month: "5"
   day: "1"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1893"
+  sort_month: "11"
+  sort_day: "10"
   editorial_date: "0"
-  owner_tag: 
-items_200: 
+  owner_tag: ""
+items_199: 
   id: "200"
   accession_num: Sheikholeslami_ANMEQ_100308_200
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6183,29 +6163,29 @@ items_200:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:35:23
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "26.7"
   height: "3.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_201: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_200: 
   id: "201"
   accession_num: Sheikholeslami_ANMEQ_100308_201
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6214,29 +6194,29 @@ items_201:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-11 13:33:57
+  updated_at: 2010-12-26 08:41:49
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "0.0"
   height: "0.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_202: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_201: 
   id: "202"
   accession_num: Sheikholeslami_ANMEQ_100308_202
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6245,29 +6225,29 @@ items_202:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:45:45
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "3.0"
   height: "3.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_203: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_202: 
   id: "203"
   accession_num: Sheikholeslami_ANMEQ_100308_203
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "2"
   format_id: 
@@ -6276,60 +6256,60 @@ items_203:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 08:51:34
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.0"
   height: "7.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_204: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_203: 
   id: "204"
   accession_num: Sheikholeslami_ANMEQ_100308_204
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
   circa: "0"
-  notes: Finish Persian. See recording for more info on the mother in law was
+  notes: See recording for more info on the mother in law was.
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-11 13:33:57
+  updated_at: 2010-12-26 08:55:44
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "0.0"
   height: "0.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_205: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_204: 
   id: "205"
   accession_num: Sheikholeslami_ANMEQ_100308_205
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6338,29 +6318,29 @@ items_205:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-11 13:33:57
+  updated_at: 2010-12-26 09:02:13
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
-  width: "0.0"
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "10.0"
   height: "0.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_206: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_205: 
   id: "206"
   accession_num: Sheikholeslami_ANMEQ_100308_206
   urn: ""
-  owner_id: 
+  owner_id: "2"
   collection_id: "8"
   pages: "1"
   format_id: 
@@ -6369,25 +6349,25 @@ items_206:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-26 09:07:56
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "9.5"
   height: "8.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_207: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_206: 
   id: "207"
   accession_num: Sheikholeslami_ANMEQ_100308_207
   urn: ""
@@ -6418,7 +6398,7 @@ items_207:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_208: 
+items_207: 
   id: "208"
   accession_num: Sheikholeslami_ANMEQ_100308_208
   urn: ""
@@ -6449,7 +6429,7 @@ items_208:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_209: 
+items_208: 
   id: "209"
   accession_num: Sheikholeslami_ANMEQ_100308_209
   urn: ""
@@ -6480,7 +6460,7 @@ items_209:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_210: 
+items_209: 
   id: "210"
   accession_num: Sheikholeslami_ANMEQ_100308_210
   urn: ""
@@ -6511,7 +6491,7 @@ items_210:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_211: 
+items_210: 
   id: "211"
   accession_num: Sheikholeslami_ANMEQ_100308_211
   urn: ""
@@ -6542,7 +6522,7 @@ items_211:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_212: 
+items_211: 
   id: "212"
   accession_num: Sheikholeslami_ANMEQ_100308_212
   urn: ""
@@ -6573,7 +6553,7 @@ items_212:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_213: 
+items_212: 
   id: "213"
   accession_num: Sheikholeslami_ANMEQ_100308_213
   urn: ""
@@ -6604,7 +6584,7 @@ items_213:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_214: 
+items_213: 
   id: "214"
   accession_num: Sheikholeslami_ANMEQ_100308_214
   urn: ""
@@ -6635,7 +6615,7 @@ items_214:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_215: 
+items_214: 
   id: "215"
   accession_num: Dawlatshahi_AN_091030_001
   urn: ""
@@ -6666,7 +6646,7 @@ items_215:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_216: 
+items_215: 
   id: "216"
   accession_num: Dawlatshahi_AN_091030_002
   urn: ""
@@ -6697,7 +6677,7 @@ items_216:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_217: 
+items_216: 
   id: "217"
   accession_num: Dawlatshahi_AN_091030_003
   urn: ""
@@ -6728,7 +6708,7 @@ items_217:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_218: 
+items_217: 
   id: "218"
   accession_num: Dawlatshahi_AN_091030_004
   urn: ""
@@ -6759,7 +6739,7 @@ items_218:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_219: 
+items_218: 
   id: "219"
   accession_num: Dawlatshahi_AN_091030_005
   urn: ""
@@ -6790,7 +6770,7 @@ items_219:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_220: 
+items_219: 
   id: "220"
   accession_num: Dawlatshahi_AN_091030_006
   urn: ""
@@ -6821,7 +6801,7 @@ items_220:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_221: 
+items_220: 
   id: "221"
   accession_num: Dawlatshahi_AN_091030_007
   urn: ""
@@ -6852,7 +6832,7 @@ items_221:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_222: 
+items_221: 
   id: "222"
   accession_num: Dawlatshahi_AN_091030_008
   urn: ""
@@ -6883,7 +6863,7 @@ items_222:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_223: 
+items_222: 
   id: "223"
   accession_num: Farmayan_MEQ_100205_001
   urn: ""
@@ -6914,7 +6894,7 @@ items_223:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_224: 
+items_223: 
   id: "224"
   accession_num: Farmayan_MEQ_100205_002
   urn: ""
@@ -6945,7 +6925,7 @@ items_224:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_225: 
+items_224: 
   id: "225"
   accession_num: Farmayan_MEQ_100205_003
   urn: ""
@@ -6976,7 +6956,7 @@ items_225:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_226: 
+items_225: 
   id: "226"
   accession_num: Farmayan_MEQ_100205_004
   urn: ""
@@ -7007,7 +6987,7 @@ items_226:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_227: 
+items_226: 
   id: "227"
   accession_num: Farmayan_MEQ_100205_005
   urn: ""
@@ -7038,7 +7018,7 @@ items_227:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_228: 
+items_227: 
   id: "228"
   accession_num: Farmayan_MEQ_100205_006
   urn: ""
@@ -7069,7 +7049,7 @@ items_228:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_229: 
+items_228: 
   id: "229"
   accession_num: Farmayan_MEQ_100205_007
   urn: ""
@@ -7100,7 +7080,7 @@ items_229:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_230: 
+items_229: 
   id: "230"
   accession_num: Montague_AN_260909_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350431?buttons=y
@@ -7131,7 +7111,7 @@ items_230:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_231: 
+items_230: 
   id: "231"
   accession_num: Montague_AN_260909_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350433?buttons=y
@@ -7162,7 +7142,7 @@ items_231:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_232: 
+items_231: 
   id: "232"
   accession_num: Montague_AN_260909_003
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350434?buttons=y
@@ -7193,7 +7173,7 @@ items_232:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_233: 
+items_232: 
   id: "233"
   accession_num: Montague_AN_260909_004
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350436?buttons=y
@@ -7224,7 +7204,7 @@ items_233:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_234: 
+items_233: 
   id: "234"
   accession_num: Montague_AN_260909_005
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350437?buttons=y
@@ -7255,7 +7235,7 @@ items_234:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_235: 
+items_234: 
   id: "235"
   accession_num: Montague_AN_260909_006
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350439?buttons=y
@@ -7286,7 +7266,7 @@ items_235:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_236: 
+items_235: 
   id: "236"
   accession_num: Montague_AN_260909_007
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350440?buttons=y
@@ -7317,7 +7297,7 @@ items_236:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_237: 
+items_236: 
   id: "237"
   accession_num: Montague_AN_260909_008
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350442?buttons=y
@@ -7348,12 +7328,12 @@ items_237:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_238: 
+items_237: 
   id: "238"
   accession_num: Mozaffari_NM_290709_001
-  urn: http://nrs.harvard.edu/urn-3:FHCL:3350407?buttons=y
-  owner_id: 
-  collection_id: 
+  urn: ""
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7361,30 +7341,30 @@ items_238:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 03:44:40
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.5"
   height: "16.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_239: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_238: 
   id: "239"
   accession_num: Mozaffari_NM_290709_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350408?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7392,30 +7372,30 @@ items_239:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:04:53
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "12.5"
   height: "17.8"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_240: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_239: 
   id: "240"
   accession_num: Mozaffari_NM_290709_003
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350409?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7423,30 +7403,30 @@ items_240:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:00:43
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "15.0"
   height: "10.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "2"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_241: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_240: 
   id: "241"
   accession_num: Mozaffari_NM_290709_004
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350410?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7454,30 +7434,30 @@ items_241:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:11:47
   source_date: "10 Ramazan 1328 "
   calendar_type_id: "2"
-  favorite: 
+  favorite: "0"
   width: "13.0"
   height: "18.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: "1328"
   month: "9"
   day: "10"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1910"
+  sort_month: "9"
+  sort_day: "15"
   editorial_date: "0"
-  owner_tag: 
-items_242: 
+  owner_tag: ""
+items_241: 
   id: "242"
   accession_num: Mozaffari_NM_290709_005
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350411?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7485,25 +7465,25 @@ items_242:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:39:09
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "13.0"
   height: "18.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_243: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_242: 
   id: "243"
   accession_num: Mozaffari_NM_290709_006
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350412?buttons=y
@@ -7534,12 +7514,12 @@ items_243:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_244: 
+items_243: 
   id: "244"
   accession_num: Mozaffari_NM_290709_007
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350414?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7547,30 +7527,30 @@ items_244:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:22:26
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
-  width: "0.0"
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "12.5"
   height: "16.5"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "3"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_245: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_244: 
   id: "245"
   accession_num: Mozaffari_NM_290709_008
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350415?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7578,30 +7558,30 @@ items_245:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:41:20
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.0"
   height: "16.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_246: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_245: 
   id: "246"
   accession_num: Mozaffari_NM_290709_009
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350416?buttons=y
-  owner_id: 
-  collection_id: 
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7609,25 +7589,25 @@ items_246:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 18:44:52
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "11.3"
   height: "16.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_247: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_246: 
   id: "247"
   accession_num: Mozaffari_NM_290709_010
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350417?buttons=y
@@ -7658,7 +7638,7 @@ items_247:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_248: 
+items_247: 
   id: "248"
   accession_num: Mozaffari_NM_290709_011
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350418?buttons=y
@@ -7689,7 +7669,7 @@ items_248:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_249: 
+items_248: 
   id: "249"
   accession_num: Mozaffari_NM_290709_012
   urn: " http://nrs.harvard.edu/urn-3:FHCL:3350419?buttons=y"
@@ -7720,7 +7700,7 @@ items_249:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_250: 
+items_249: 
   id: "250"
   accession_num: Mozaffari_NM_290709_013
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350420?buttons=y
@@ -7751,12 +7731,12 @@ items_250:
   sort_day: 
   editorial_date: "0"
   owner_tag: ""
-items_251: 
+items_250: 
   id: "251"
   accession_num: Mozaffari_NM_290709_014
-  urn: http://nrs.harvard.edu/urn-3:FHCL:3350422?buttons=y
-  owner_id: 
-  collection_id: 
+  urn: "3350422"
+  owner_id: "3"
+  collection_id: "2"
   pages: "1"
   format_id: 
   circa: "0"
@@ -7764,25 +7744,25 @@ items_251:
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-08-21 01:59:01
+  updated_at: 2010-12-18 03:38:59
   source_date: ""
-  calendar_type_id: "2"
-  favorite: 
+  calendar_type_id: "1"
+  favorite: "0"
   width: "6.5"
   height: "11.0"
   depth: "0.0"
-  lock_version: "0"
-  year: 
+  lock_version: "1"
+  year: "2050"
   month: 
   day: 
   editorial_dating: "0"
-  era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
-  editorial_date: "0"
-  owner_tag: 
-items_252: 
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""
+items_251: 
   id: "252"
   accession_num: Mozaffari_NM_290709_015
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350423?buttons=y
@@ -7813,7 +7793,7 @@ items_252:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_253: 
+items_252: 
   id: "253"
   accession_num: Sanati_AN_200909_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350425?buttons=y
@@ -7844,7 +7824,7 @@ items_253:
   sort_day: "17"
   editorial_date: "0"
   owner_tag: 
-items_254: 
+items_253: 
   id: "254"
   accession_num: Sanati_AN_200909_002
   urn: http://nrs.harvard.edu/urn-3:FHCL:3350427?buttons=y
@@ -7875,7 +7855,7 @@ items_254:
   sort_day: "14"
   editorial_date: "0"
   owner_tag: 
-items_255: 
+items_254: 
   id: "256"
   accession_num: Zamandar_MEQ_090814_001
   urn: ""
@@ -7906,7 +7886,7 @@ items_255:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_256: 
+items_255: 
   id: "257"
   accession_num: Zamandar_MEQ_090814_002
   urn: ""
@@ -7937,7 +7917,7 @@ items_256:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_257: 
+items_256: 
   id: "258"
   accession_num: Zamandar_MEQ_090814_003
   urn: ""
@@ -7968,7 +7948,7 @@ items_257:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_258: 
+items_257: 
   id: "259"
   accession_num: Zamandar_MEQ_090814_004
   urn: ""
@@ -7999,7 +7979,7 @@ items_258:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_259: 
+items_258: 
   id: "260"
   accession_num: Zamandar_MEQ_090814_005
   urn: ""
@@ -8030,7 +8010,7 @@ items_259:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_260: 
+items_259: 
   id: "261"
   accession_num: Zamandar_MEQ_090814_006
   urn: ""
@@ -8061,7 +8041,7 @@ items_260:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_261: 
+items_260: 
   id: "262"
   accession_num: Zamandar_MEQ_090814_007
   urn: ""
@@ -8092,7 +8072,7 @@ items_261:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_262: 
+items_261: 
   id: "263"
   accession_num: Zamandar_MEQ_090814_008
   urn: ""
@@ -8123,7 +8103,7 @@ items_262:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_263: 
+items_262: 
   id: "264"
   accession_num: Zamandar_MEQ_090814_009
   urn: ""
@@ -8154,7 +8134,7 @@ items_263:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_264: 
+items_263: 
   id: "265"
   accession_num: Zamandar_MEQ_090814_010
   urn: ""
@@ -8185,7 +8165,7 @@ items_264:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_265: 
+items_264: 
   id: "266"
   accession_num: Zamandar_MEQ_090814_011
   urn: ""
@@ -8216,7 +8196,7 @@ items_265:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_266: 
+items_265: 
   id: "267"
   accession_num: Zamandar_MEQ_100402_012
   urn: ""
@@ -8247,7 +8227,7 @@ items_266:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_267: 
+items_266: 
   id: "268"
   accession_num: Zamandar_MEQ_100402_013
   urn: ""
@@ -8278,7 +8258,7 @@ items_267:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_268: 
+items_267: 
   id: "269"
   accession_num: Tarbiat_al_bunat_AN_090710_001
   urn: ""
@@ -8309,7 +8289,7 @@ items_268:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_269: 
+items_268: 
   id: "270"
   accession_num: Nijat_al_muslimat_AN_090710_001
   urn: ""
@@ -8340,7 +8320,7 @@ items_269:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_270: 
+items_269: 
   id: "271"
   accession_num: Sheikholeslami_ANMEQ_100308_215
   urn: ""
@@ -8371,7 +8351,7 @@ items_270:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_271: 
+items_270: 
   id: "272"
   accession_num: Gawhariyah_AN_090710_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3351228
@@ -8402,7 +8382,7 @@ items_271:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_272: 
+items_271: 
   id: "686"
   accession_num: Hadiyat_al_muhibb_AN_090710_001
   urn: http://nrs.harvard.edu/urn-3:FHCL:3351229
@@ -8433,7 +8413,7 @@ items_272:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_273: 
+items_272: 
   id: "844"
   accession_num: Risalah-i hijabiyah_AN_090710_001
   urn: "http://nrs.harvard.edu/urn-3:FHCL:3351230 "
@@ -8464,38 +8444,38 @@ items_273:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_274: 
+items_273: 
   id: "882"
   accession_num: Zaban_i_zanan_AN_090710_001
   urn: ""
-  owner_id: 
-  collection_id: 
+  owner_id: "1"
+  collection_id: "12"
   pages: "39"
   format_id: 
   circa: "0"
-  notes: photocopy of periodical
+  notes: ""
   bound: "0"
   publish: "1"
   created_at: 2010-08-11 13:33:56
-  updated_at: 2010-09-23 13:10:51
-  source_date: "1338 \xE2\x80\x93 1339 "
+  updated_at: 2010-12-18 22:50:01
+  source_date: "1338\xE2\x80\x931339 "
   calendar_type_id: "2"
   favorite: "0"
   width: "0.0"
   height: "0.0"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "2"
   year: "1338"
   month: "0"
   day: "0"
   editorial_dating: "0"
   era_id: 
-  sort_year: 
-  sort_month: 
-  sort_day: 
+  sort_year: "1919"
+  sort_month: "1"
+  sort_day: "1"
   editorial_date: "0"
-  owner_tag: 
-items_275: 
+  owner_tag: ""
+items_274: 
   id: "921"
   accession_num: Namah_i_banuvan_AN_090710_001
   urn: ""
@@ -8526,7 +8506,7 @@ items_275:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_276: 
+items_275: 
   id: "929"
   accession_num: Namah_i_banuvan_AN_090710_002
   urn: ""
@@ -8557,7 +8537,7 @@ items_276:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_277: 
+items_276: 
   id: "939"
   accession_num: Namah_i_banuvan_AN_090710_003
   urn: ""
@@ -8588,7 +8568,7 @@ items_277:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_278: 
+items_277: 
   id: "945"
   accession_num: Namah_i_banuvan_AN_090710_004
   urn: ""
@@ -8619,7 +8599,7 @@ items_278:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_279: 
+items_278: 
   id: "951"
   accession_num: Namah_i_banuvan_AN_090710_005
   urn: ""
@@ -8650,7 +8630,7 @@ items_279:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_280: 
+items_279: 
   id: "961"
   accession_num: Namah_i_banuvan_AN_090710_006
   urn: ""
@@ -8681,7 +8661,7 @@ items_280:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_281: 
+items_280: 
   id: "967"
   accession_num: Namah_i_banuvan_AN_090710_007
   urn: ""
@@ -8712,7 +8692,7 @@ items_281:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_282: 
+items_281: 
   id: "975"
   accession_num: Namah_i_banuvan_AN_090710_008
   urn: ""
@@ -8743,7 +8723,7 @@ items_282:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_283: 
+items_282: 
   id: "983"
   accession_num: Namah_i_banuvan_AN_090710_009
   urn: ""
@@ -8774,7 +8754,7 @@ items_283:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_284: 
+items_283: 
   id: "991"
   accession_num: Namah_i_banuvan_AN_090710_010
   urn: ""
@@ -8805,7 +8785,7 @@ items_284:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_285: 
+items_284: 
   id: "999"
   accession_num: Namah_i_banuvan_AN_090710_011
   urn: ""
@@ -8836,7 +8816,7 @@ items_285:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_286: 
+items_285: 
   id: "1007"
   accession_num: Namah_i_banuvan_AN_090710_012
   urn: ""
@@ -8867,7 +8847,7 @@ items_286:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_287: 
+items_286: 
   id: "1015"
   accession_num: Namah_i_banuvan_AN_090710_013
   urn: ""
@@ -8898,7 +8878,7 @@ items_287:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_288: 
+items_287: 
   id: "1023"
   accession_num: Dawlatabadi_AN_100520_001
   urn: ""
@@ -8929,7 +8909,7 @@ items_288:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_289: 
+items_288: 
   id: "1024"
   accession_num: Dawlatabadi_AN_100520_002
   urn: ""
@@ -8960,7 +8940,7 @@ items_289:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_290: 
+items_289: 
   id: "1025"
   accession_num: Dawlatabadi_AN_100520_003
   urn: ""
@@ -8991,7 +8971,7 @@ items_290:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_291: 
+items_290: 
   id: "1026"
   accession_num: Dawlatabadi_AN_100520_004
   urn: ""
@@ -9022,7 +9002,7 @@ items_291:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_292: 
+items_291: 
   id: "1031"
   accession_num: Dawlatabadi_AN_100520_005
   urn: ""
@@ -9053,7 +9033,7 @@ items_292:
   sort_day: "29"
   editorial_date: "0"
   owner_tag: 
-items_293: 
+items_292: 
   id: "1032"
   accession_num: Dawlatabadi_AN_100520_006
   urn: ""
@@ -9084,7 +9064,7 @@ items_293:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_294: 
+items_293: 
   id: "1033"
   accession_num: Dawlatabadi_AN_100520_007
   urn: ""
@@ -9115,7 +9095,7 @@ items_294:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_295: 
+items_294: 
   id: "1035"
   accession_num: Dawlatabadi_AN_100520_008
   urn: ""
@@ -9146,7 +9126,7 @@ items_295:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_296: 
+items_295: 
   id: "1036"
   accession_num: Dawlatabadi_AN_100520_009
   urn: ""
@@ -9177,7 +9157,7 @@ items_296:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_297: 
+items_296: 
   id: "1037"
   accession_num: Dawlatabadi_AN_100520_010
   urn: ""
@@ -9208,7 +9188,7 @@ items_297:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_298: 
+items_297: 
   id: "1040"
   accession_num: Dawlatabadi_AN_100520_011
   urn: ""
@@ -9239,7 +9219,7 @@ items_298:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_299: 
+items_298: 
   id: "1041"
   accession_num: Dawlatabadi_AN_100520_012
   urn: ""
@@ -9270,7 +9250,7 @@ items_299:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_300: 
+items_299: 
   id: "1042"
   accession_num: Dawlatabadi_AN_100520_013
   urn: ""
@@ -9301,7 +9281,7 @@ items_300:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_301: 
+items_300: 
   id: "1043"
   accession_num: Dawlatabadi_AN_100520_014
   urn: ""
@@ -9332,7 +9312,7 @@ items_301:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_302: 
+items_301: 
   id: "1045"
   accession_num: Dawlatabadi_AN_100520_015
   urn: ""
@@ -9365,7 +9345,7 @@ items_302:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_303: 
+items_302: 
   id: "1046"
   accession_num: Dawlatabadi_AN_100520_016
   urn: ""
@@ -9396,7 +9376,7 @@ items_303:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_304: 
+items_303: 
   id: "1047"
   accession_num: Dawlatabadi_AN_100520_017
   urn: ""
@@ -9427,7 +9407,7 @@ items_304:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_305: 
+items_304: 
   id: "1048"
   accession_num: Dawlatabadi_AN_100520_018
   urn: ""
@@ -9458,7 +9438,7 @@ items_305:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_306: 
+items_305: 
   id: "1049"
   accession_num: Dawlatabadi_AN_100520_019
   urn: ""
@@ -9489,7 +9469,7 @@ items_306:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_307: 
+items_306: 
   id: "1053"
   accession_num: Dawlatabadi_AN_100520_020
   urn: ""
@@ -9520,7 +9500,7 @@ items_307:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_308: 
+items_307: 
   id: "1055"
   accession_num: Dawlatabadi_AN_100520_021
   urn: ""
@@ -9551,7 +9531,7 @@ items_308:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_309: 
+items_308: 
   id: "1059"
   accession_num: Dawlatabadi_AN_100520_022
   urn: ""
@@ -9582,7 +9562,7 @@ items_309:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_310: 
+items_309: 
   id: "1074"
   accession_num: Dawlatabadi_AN_100520_023
   urn: ""
@@ -9613,7 +9593,7 @@ items_310:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_311: 
+items_310: 
   id: "1075"
   accession_num: Dawlatabadi_AN_100520_024
   urn: ""
@@ -9644,7 +9624,7 @@ items_311:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_312: 
+items_311: 
   id: "1076"
   accession_num: Dawlatabadi_AN_100520_025
   urn: ""
@@ -9675,7 +9655,7 @@ items_312:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_313: 
+items_312: 
   id: "1077"
   accession_num: Dawlatabadi_AN_100520_026
   urn: ""
@@ -9706,7 +9686,7 @@ items_313:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_314: 
+items_313: 
   id: "1078"
   accession_num: Dawlatabadi_AN_100520_027
   urn: ""
@@ -9737,7 +9717,7 @@ items_314:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_315: 
+items_314: 
   id: "1079"
   accession_num: Dawlatabadi_AN_100520_028
   urn: ""
@@ -9768,7 +9748,7 @@ items_315:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_316: 
+items_315: 
   id: "1081"
   accession_num: Dawlatabadi_AN_100520_029
   urn: ""
@@ -9799,7 +9779,7 @@ items_316:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_317: 
+items_316: 
   id: "1085"
   accession_num: Dawlatabadi_AN_100520_030
   urn: ""
@@ -9830,7 +9810,7 @@ items_317:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_318: 
+items_317: 
   id: "1086"
   accession_num: Dawlatabadi_AN_100520_031
   urn: ""
@@ -9861,7 +9841,7 @@ items_318:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_319: 
+items_318: 
   id: "1088"
   accession_num: Dawlatabadi_AN_100520_032
   urn: ""
@@ -9892,7 +9872,7 @@ items_319:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_320: 
+items_319: 
   id: "1090"
   accession_num: Dawlatabadi_AN_100520_033
   urn: ""
@@ -9925,7 +9905,7 @@ items_320:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_321: 
+items_320: 
   id: "1092"
   accession_num: Dawlatabadi_AN_100520_034
   urn: ""
@@ -9956,7 +9936,7 @@ items_321:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_322: 
+items_321: 
   id: "1094"
   accession_num: Dawlatabadi_AN_100520_035
   urn: ""
@@ -9987,7 +9967,7 @@ items_322:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_323: 
+items_322: 
   id: "1095"
   accession_num: Dawlatabadi_AN_100520_036
   urn: ""
@@ -10018,7 +9998,7 @@ items_323:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_324: 
+items_323: 
   id: "1097"
   accession_num: Dawlatabadi_AN_100520_037
   urn: ""
@@ -10049,7 +10029,7 @@ items_324:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_325: 
+items_324: 
   id: "1098"
   accession_num: Dawlatabadi_AN_100520_038
   urn: ""
@@ -10080,7 +10060,7 @@ items_325:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_326: 
+items_325: 
   id: "1100"
   accession_num: Dawlatabadi_AN_100520_039
   urn: ""
@@ -10111,7 +10091,7 @@ items_326:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_327: 
+items_326: 
   id: "1101"
   accession_num: Dawlatabadi_AN_100520_040
   urn: ""
@@ -10142,7 +10122,7 @@ items_327:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_328: 
+items_327: 
   id: "1103"
   accession_num: Dawlatabadi_AN_100520_041
   urn: ""
@@ -10173,7 +10153,7 @@ items_328:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_329: 
+items_328: 
   id: "1104"
   accession_num: Dawlatabadi_AN_100520_042
   urn: ""
@@ -10204,7 +10184,7 @@ items_329:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_330: 
+items_329: 
   id: "1105"
   accession_num: Dawlatabadi_AN_100520_043
   urn: ""
@@ -10235,7 +10215,7 @@ items_330:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_331: 
+items_330: 
   id: "1106"
   accession_num: Dawlatabadi_AN_100520_044
   urn: ""
@@ -10266,7 +10246,7 @@ items_331:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_332: 
+items_331: 
   id: "1110"
   accession_num: Dawlatabadi_AN_100520_045
   urn: ""
@@ -10297,7 +10277,7 @@ items_332:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_333: 
+items_332: 
   id: "1111"
   accession_num: Dawlatabadi_AN_100520_046
   urn: ""
@@ -10328,7 +10308,7 @@ items_333:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_334: 
+items_333: 
   id: "1114"
   accession_num: Dawlatabadi_AN_100520_047
   urn: ""
@@ -10359,7 +10339,7 @@ items_334:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_335: 
+items_334: 
   id: "1116"
   accession_num: Dawlatabadi_AN_100520_048
   urn: ""
@@ -10390,7 +10370,7 @@ items_335:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_336: 
+items_335: 
   id: "1117"
   accession_num: Dawlatabadi_AN_100520_049
   urn: ""
@@ -10421,7 +10401,7 @@ items_336:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_337: 
+items_336: 
   id: "1118"
   accession_num: Dawlatabadi_AN_100520_050
   urn: ""
@@ -10452,7 +10432,7 @@ items_337:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_338: 
+items_337: 
   id: "1120"
   accession_num: Dawlatabadi_AN_100520_051
   urn: ""
@@ -10483,7 +10463,7 @@ items_338:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_339: 
+items_338: 
   id: "1122"
   accession_num: Dawlatabadi_AN_100520_052
   urn: ""
@@ -10514,7 +10494,7 @@ items_339:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_340: 
+items_339: 
   id: "1125"
   accession_num: Dawlatabadi_AN_100520_053
   urn: ""
@@ -10545,7 +10525,7 @@ items_340:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_341: 
+items_340: 
   id: "1126"
   accession_num: Dawlatabadi_AN_100520_054
   urn: ""
@@ -10576,7 +10556,7 @@ items_341:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_342: 
+items_341: 
   id: "1127"
   accession_num: Dawlatabadi_AN_100520_055
   urn: ""
@@ -10607,7 +10587,7 @@ items_342:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_343: 
+items_342: 
   id: "1128"
   accession_num: Dawlatabadi_AN_100520_056
   urn: ""
@@ -10638,7 +10618,7 @@ items_343:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_344: 
+items_343: 
   id: "1130"
   accession_num: Dawlatabadi_AN_100520_057
   urn: ""
@@ -10669,7 +10649,7 @@ items_344:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_345: 
+items_344: 
   id: "1131"
   accession_num: Dawlatabadi_AN_100520_058
   urn: ""
@@ -10700,7 +10680,7 @@ items_345:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_346: 
+items_345: 
   id: "1133"
   accession_num: Dawlatabadi_AN_100520_059
   urn: ""
@@ -10733,7 +10713,7 @@ items_346:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_347: 
+items_346: 
   id: "1135"
   accession_num: Dawlatabadi_AN_100520_060
   urn: ""
@@ -10764,7 +10744,7 @@ items_347:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_348: 
+items_347: 
   id: "1138"
   accession_num: Dawlatabadi_AN_100520_061
   urn: ""
@@ -10795,7 +10775,7 @@ items_348:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_349: 
+items_348: 
   id: "1139"
   accession_num: Dawlatabadi_AN_100520_062
   urn: ""
@@ -10826,7 +10806,7 @@ items_349:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_350: 
+items_349: 
   id: "1141"
   accession_num: Dawlatabadi_AN_100520_063
   urn: ""
@@ -10857,7 +10837,7 @@ items_350:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_351: 
+items_350: 
   id: "1143"
   accession_num: Dawlatabadi_AN_100520_064
   urn: ""
@@ -10888,7 +10868,7 @@ items_351:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_352: 
+items_351: 
   id: "1145"
   accession_num: Dawlatabadi_AN_100520_065
   urn: ""
@@ -10919,7 +10899,7 @@ items_352:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_353: 
+items_352: 
   id: "1148"
   accession_num: Dawlatabadi_AN_100520_066
   urn: ""
@@ -10950,7 +10930,7 @@ items_353:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_354: 
+items_353: 
   id: "1150"
   accession_num: Dawlatabadi_AN_100520_067
   urn: ""
@@ -10981,7 +10961,7 @@ items_354:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_355: 
+items_354: 
   id: "1151"
   accession_num: Dawlatabadi_AN_100520_068
   urn: ""
@@ -11012,7 +10992,7 @@ items_355:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_356: 
+items_355: 
   id: "1153"
   accession_num: Dawlatabadi_AN_100520_069
   urn: ""
@@ -11043,7 +11023,7 @@ items_356:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_357: 
+items_356: 
   id: "1154"
   accession_num: Dawlatabadi_AN_100520_070
   urn: ""
@@ -11076,7 +11056,7 @@ items_357:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_358: 
+items_357: 
   id: "1156"
   accession_num: Dawlatabadi_AN_100520_071
   urn: ""
@@ -11107,7 +11087,7 @@ items_358:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_359: 
+items_358: 
   id: "1158"
   accession_num: Dawlatabadi_AN_100520_072
   urn: ""
@@ -11138,7 +11118,7 @@ items_359:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_360: 
+items_359: 
   id: "1160"
   accession_num: Dawlatabadi_AN_100520_073
   urn: ""
@@ -11169,7 +11149,7 @@ items_360:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_361: 
+items_360: 
   id: "1161"
   accession_num: Dawlatabadi_AN_100520_074
   urn: ""
@@ -11200,7 +11180,7 @@ items_361:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_362: 
+items_361: 
   id: "1162"
   accession_num: Dawlatabadi_AN_100520_075
   urn: ""
@@ -11231,7 +11211,7 @@ items_362:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_363: 
+items_362: 
   id: "1163"
   accession_num: Dawlatabadi_AN_100520_076
   urn: ""
@@ -11262,7 +11242,7 @@ items_363:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_364: 
+items_363: 
   id: "1165"
   accession_num: Dawlatabadi_AN_100520_077
   urn: ""
@@ -11293,7 +11273,7 @@ items_364:
   sort_day: "12"
   editorial_date: "0"
   owner_tag: 
-items_365: 
+items_364: 
   id: "1167"
   accession_num: Dawlatabadi_AN_100520_078
   urn: ""
@@ -11324,7 +11304,7 @@ items_365:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_366: 
+items_365: 
   id: "1169"
   accession_num: Dawlatabadi_AN_100520_079
   urn: ""
@@ -11355,7 +11335,7 @@ items_366:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_367: 
+items_366: 
   id: "1171"
   accession_num: Dawlatabadi_AN_100520_080
   urn: ""
@@ -11386,7 +11366,7 @@ items_367:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_368: 
+items_367: 
   id: "1172"
   accession_num: Dawlatabadi_AN_100520_081
   urn: ""
@@ -11417,7 +11397,7 @@ items_368:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_369: 
+items_368: 
   id: "1173"
   accession_num: Dawlatabadi_AN_100520_082
   urn: ""
@@ -11448,7 +11428,7 @@ items_369:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_370: 
+items_369: 
   id: "1174"
   accession_num: Dawlatabadi_AN_100520_083
   urn: ""
@@ -11480,7 +11460,7 @@ items_370:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_371: 
+items_370: 
   id: "1176"
   accession_num: Dawlatabadi_AN_100520_084
   urn: ""
@@ -11511,7 +11491,7 @@ items_371:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_372: 
+items_371: 
   id: "1178"
   accession_num: Dawlatabadi_AN_100520_085
   urn: ""
@@ -11542,7 +11522,7 @@ items_372:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_373: 
+items_372: 
   id: "1179"
   accession_num: Dawlatabadi_AN_100520_086
   urn: ""
@@ -11573,7 +11553,7 @@ items_373:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_374: 
+items_373: 
   id: "1181"
   accession_num: Dawlatabadi_AN_100520_087
   urn: ""
@@ -11604,7 +11584,7 @@ items_374:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_375: 
+items_374: 
   id: "1182"
   accession_num: Dawlatabadi_AN_100520_088
   urn: ""
@@ -11635,7 +11615,7 @@ items_375:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_376: 
+items_375: 
   id: "1184"
   accession_num: Dawlatabadi_AN_100520_089
   urn: ""
@@ -11666,7 +11646,7 @@ items_376:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_377: 
+items_376: 
   id: "1190"
   accession_num: Dawlatabadi_AN_100520_090
   urn: ""
@@ -11697,7 +11677,7 @@ items_377:
   sort_day: "1"
   editorial_date: "0"
   owner_tag: ""
-items_378: 
+items_377: 
   id: "1205"
   accession_num: Dawlatabadi_AN_100520_091
   urn: ""
@@ -11728,7 +11708,7 @@ items_378:
   sort_day: "28"
   editorial_date: "0"
   owner_tag: ""
-items_379: 
+items_378: 
   id: "1214"
   accession_num: Dawlatabadi_AN_100520_092
   urn: ""
@@ -11759,7 +11739,7 @@ items_379:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_380: 
+items_379: 
   id: "1226"
   accession_num: Dawlatabadi_AN_100520_093
   urn: ""
@@ -11790,7 +11770,7 @@ items_380:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_381: 
+items_380: 
   id: "1232"
   accession_num: Dawlatabadi_AN_100520_094
   urn: ""
@@ -11821,7 +11801,7 @@ items_381:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_382: 
+items_381: 
   id: "1237"
   accession_num: Dawlatabadi_AN_100520_095
   urn: ""
@@ -11852,7 +11832,7 @@ items_382:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_383: 
+items_382: 
   id: "1241"
   accession_num: Dawlatabadi_AN_100520_096
   urn: ""
@@ -11883,7 +11863,7 @@ items_383:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_384: 
+items_383: 
   id: "1242"
   accession_num: Dawlatabadi_AN_100520_097
   urn: ""
@@ -11914,7 +11894,7 @@ items_384:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_385: 
+items_384: 
   id: "1246"
   accession_num: Dawlatabadi_AN_100520_099
   urn: ""
@@ -11945,7 +11925,7 @@ items_385:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_386: 
+items_385: 
   id: "1248"
   accession_num: Dawlatabadi_AN_100520_100
   urn: ""
@@ -11976,7 +11956,7 @@ items_386:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_387: 
+items_386: 
   id: "1251"
   accession_num: Dawlatabadi_AN_100520_101
   urn: ""
@@ -12007,7 +11987,7 @@ items_387:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_388: 
+items_387: 
   id: "1254"
   accession_num: Dawlatabadi_AN_100520_102
   urn: ""
@@ -12038,7 +12018,7 @@ items_388:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_389: 
+items_388: 
   id: "1257"
   accession_num: Dawlatabadi_AN_100520_103
   urn: ""
@@ -12069,7 +12049,7 @@ items_389:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_390: 
+items_389: 
   id: "1260"
   accession_num: Dawlatabadi_AN_100520_104
   urn: ""
@@ -12100,7 +12080,7 @@ items_390:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_391: 
+items_390: 
   id: "1263"
   accession_num: Dawlatabadi_AN_100520_105
   urn: ""
@@ -12131,7 +12111,7 @@ items_391:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_392: 
+items_391: 
   id: "1266"
   accession_num: Dawlatabadi_AN_100520_106
   urn: ""
@@ -12162,7 +12142,7 @@ items_392:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_393: 
+items_392: 
   id: "1269"
   accession_num: Dawlatabadi_AN_100520_107
   urn: ""
@@ -12193,7 +12173,7 @@ items_393:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_394: 
+items_393: 
   id: "1270"
   accession_num: Dawlatabadi_AN_100520_108
   urn: ""
@@ -12224,7 +12204,7 @@ items_394:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_395: 
+items_394: 
   id: "1271"
   accession_num: Dawlatabadi_AN_100520_109
   urn: ""
@@ -12255,7 +12235,7 @@ items_395:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_396: 
+items_395: 
   id: "1278"
   accession_num: Dawlatabadi_AN_100520_110
   urn: ""
@@ -12286,7 +12266,7 @@ items_396:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_397: 
+items_396: 
   id: "1280"
   accession_num: Dawlatabadi_AN_100520_111
   urn: ""
@@ -12317,7 +12297,7 @@ items_397:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_398: 
+items_397: 
   id: "1283"
   accession_num: Dawlatabadi_AN_100520_112
   urn: ""
@@ -12348,7 +12328,7 @@ items_398:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_399: 
+items_398: 
   id: "1286"
   accession_num: Dawlatabadi_AN_100520_113
   urn: ""
@@ -12379,7 +12359,7 @@ items_399:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_400: 
+items_399: 
   id: "1288"
   accession_num: Dawlatabadi_AN_100520_114
   urn: ""
@@ -12410,7 +12390,7 @@ items_400:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_401: 
+items_400: 
   id: "1291"
   accession_num: Dawlatabadi_AN_100520_115
   urn: ""
@@ -12441,7 +12421,7 @@ items_401:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_402: 
+items_401: 
   id: "1318"
   accession_num: Dawlatabadi_AN_100520_116
   urn: ""
@@ -12472,7 +12452,7 @@ items_402:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_403: 
+items_402: 
   id: "1349"
   accession_num: Dawlatabadi_AN_100520_117
   urn: ""
@@ -12503,7 +12483,7 @@ items_403:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_404: 
+items_403: 
   id: "1368"
   accession_num: Dawlatabadi_AN_100520_118
   urn: ""
@@ -12534,7 +12514,7 @@ items_404:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_405: 
+items_404: 
   id: "1386"
   accession_num: Dawlatabadi_AN_100520_119
   urn: ""
@@ -12565,7 +12545,7 @@ items_405:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_406: 
+items_405: 
   id: "1405"
   accession_num: Dawlatabadi_AN_100520_120
   urn: ""
@@ -12596,7 +12576,7 @@ items_406:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_407: 
+items_406: 
   id: "1424"
   accession_num: Dawlatabadi_AN_100520_121
   urn: ""
@@ -12627,7 +12607,7 @@ items_407:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_408: 
+items_407: 
   id: "1443"
   accession_num: Dawlatabadi_AN_100520_122
   urn: ""
@@ -12658,7 +12638,7 @@ items_408:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_409: 
+items_408: 
   id: "1462"
   accession_num: Dawlatabadi_AN_100520_123
   urn: ""
@@ -12689,7 +12669,7 @@ items_409:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_410: 
+items_409: 
   id: "1465"
   accession_num: Dawlatabadi_AN_100520_124
   urn: ""
@@ -12720,7 +12700,7 @@ items_410:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_411: 
+items_410: 
   id: "1466"
   accession_num: Dawlatabadi_AN_100520_125
   urn: ""
@@ -12751,7 +12731,7 @@ items_411:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_412: 
+items_411: 
   id: "1468"
   accession_num: Dawlatabadi_AN_100520_126
   urn: ""
@@ -12782,7 +12762,7 @@ items_412:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_413: 
+items_412: 
   id: "1469"
   accession_num: Dawlatabadi_AN_100520_127
   urn: ""
@@ -12813,7 +12793,7 @@ items_413:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_414: 
+items_413: 
   id: "1475"
   accession_num: Dawlatabadi_AN_100520_128
   urn: ""
@@ -12844,7 +12824,7 @@ items_414:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_415: 
+items_414: 
   id: "1478"
   accession_num: Dawlatabadi_AN_100520_129
   urn: ""
@@ -12875,7 +12855,7 @@ items_415:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_416: 
+items_415: 
   id: "1479"
   accession_num: Dawlatabadi_AN_100520_130
   urn: ""
@@ -12906,7 +12886,7 @@ items_416:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_417: 
+items_416: 
   id: "1480"
   accession_num: Mirbaghdadabadi_AN_100410_001
   urn: MB100410001
@@ -12937,7 +12917,7 @@ items_417:
   sort_day: "22"
   editorial_date: "0"
   owner_tag: 
-items_418: 
+items_417: 
   id: "1481"
   accession_num: ""
   urn: ""
@@ -12968,7 +12948,7 @@ items_418:
   sort_day: 
   editorial_date: "0"
   owner_tag: 
-items_419: 
+items_418: 
   id: "1484"
   accession_num: Mirbaghdadabadi_AN_100410_002
   urn: MB100410002
@@ -12999,7 +12979,7 @@ items_419:
   sort_day: "10"
   editorial_date: "0"
   owner_tag: 
-items_420: 
+items_419: 
   id: "1485"
   accession_num: Mirbaghdadabadi_AN_100410_003
   urn: MB100410003
@@ -13030,7 +13010,7 @@ items_420:
   sort_day: "14"
   editorial_date: "0"
   owner_tag: 
-items_421: 
+items_420: 
   id: "1486"
   accession_num: Mirbaghdadabadi_AN_100410_004
   urn: MB100410004
@@ -13061,7 +13041,7 @@ items_421:
   sort_day: "13"
   editorial_date: "0"
   owner_tag: 
-items_422: 
+items_421: 
   id: "1487"
   accession_num: Mirbaghdadabadi_AN_100410_005
   urn: MB100410005
@@ -13092,7 +13072,7 @@ items_422:
   sort_day: "20"
   editorial_date: "0"
   owner_tag: 
-items_423: 
+items_422: 
   id: "1488"
   accession_num: Mirbaghdadabadi_AN_100410_006
   urn: MB100410006
@@ -13123,7 +13103,7 @@ items_423:
   sort_day: "29"
   editorial_date: "0"
   owner_tag: 
-items_424: 
+items_423: 
   id: "1489"
   accession_num: Mirbaghdadabadi_AN_100410_007
   urn: MB100410007
@@ -13154,7 +13134,7 @@ items_424:
   sort_day: "12"
   editorial_date: "0"
   owner_tag: 
-items_425: 
+items_424: 
   id: "1490"
   accession_num: Mirbaghdadabadi_AN_100410_008
   urn: MB100410008
@@ -13185,7 +13165,7 @@ items_425:
   sort_day: "18"
   editorial_date: "0"
   owner_tag: 
-items_426: 
+items_425: 
   id: "1491"
   accession_num: Mirbaghdadabadi_AN_100410_009
   urn: MB100410009
@@ -13216,7 +13196,7 @@ items_426:
   sort_day: "18"
   editorial_date: "0"
   owner_tag: 
-items_427: 
+items_426: 
   id: "1492"
   accession_num: Mirbaghdadabadi_AN_100410_0010
   urn: MB100410010
@@ -13247,7 +13227,7 @@ items_427:
   sort_day: "27"
   editorial_date: "0"
   owner_tag: 
-items_428: 
+items_427: 
   id: "1493"
   accession_num: Majlis_AN_100415_17
   urn: VM_1
@@ -13278,3 +13258,98 @@ items_428:
   sort_day: "1"
   editorial_date: "0"
   owner_tag: MS. 8984
+items_428: 
+  id: "1494"
+  accession_num: Cijoh_AN_101201_001
+  urn: ""
+  owner_id: 
+  collection_id: "21"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2010-12-17 15:48:02
+  updated_at: 2010-12-17 17:36:28
+  source_date: ""
+  calendar_type_id: "3"
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "2"
+  year: "1305"
+  month: "0"
+  day: "0"
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1926"
+  sort_month: "3"
+  sort_day: "22"
+  editorial_date: "0"
+  owner_tag: 6-P-1996
+items_429: 
+  id: "1495"
+  accession_num: Cijoh_AN_101201_002
+  urn: ""
+  owner_id: 
+  collection_id: "21"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2010-12-17 17:14:17
+  updated_at: 2010-12-17 17:35:33
+  source_date: ""
+  calendar_type_id: "3"
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "1"
+  year: "1300"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1921"
+  sort_month: "3"
+  sort_day: "21"
+  editorial_date: "0"
+  owner_tag: 7-P-1996
+items_430: 
+  id: "1496"
+  accession_num: Sheikholeslami_ANMEQ_100308_174
+  urn: |
+    S174
+
+  owner_id: "2"
+  collection_id: "8"
+  pages: "2"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2010-12-26 03:58:59
+  updated_at: 2010-12-26 03:58:59
+  source_date: ""
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "13.8"
+  height: "21.5"
+  depth: "0.0"
+  lock_version: "0"
+  year: "2050"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"
+  owner_tag: ""

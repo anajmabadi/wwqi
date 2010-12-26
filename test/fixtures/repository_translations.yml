@@ -13,3 +13,17 @@ repository_translations_002:
   name: VIA
   created_at: 2010-09-06 16:14:56
   updated_at: 2010-09-07 00:51:43
+repository_translations_003: 
+  id: "3"
+  repository_id: "2"
+  locale: en
+  name: Test
+  created_at: 2010-12-20 13:08:34
+  updated_at: 2010-12-20 13:08:34
+repository_translations_004: 
+  id: "4"
+  repository_id: "2"
+  locale: fa
+  name: Test
+  created_at: 2010-12-20 13:08:34
+  updated_at: 2010-12-20 13:08:34

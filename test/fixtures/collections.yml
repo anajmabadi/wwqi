@@ -87,12 +87,12 @@ collections_004:
   contact: ""
   notes: "Audio needs to be logged, edited and uploaded. "
   created_at: 2010-03-30 17:32:34
-  updated_at: 2010-12-06 17:41:15
+  updated_at: 2010-12-17 21:33:07
   publish: "1"
   private: "0"
   items_count: "8"
   finding_aid: "0"
-  lock_version: "2"
+  lock_version: "3"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
@@ -167,7 +167,7 @@ collections_007:
   private: "0"
   items_count: "215"
   finding_aid: "1"
-  lock_version: "3"
+  lock_version: "5"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
@@ -289,12 +289,12 @@ collections_012:
     Khayrat-i hisan will be linked to the record in Harvard. The object will not actually be accessed through WWQI. Matt needs to add additional catalog information for the other items. 
     Number of item: 3 (4)
   created_at: 2010-07-08 17:29:31
-  updated_at: 2010-12-06 18:06:17
+  updated_at: 2010-12-17 21:31:44
   publish: "1"
   private: "0"
   items_count: "6"
   finding_aid: "0"
-  lock_version: "2"
+  lock_version: "3"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
@@ -423,6 +423,31 @@ collections_017:
   acquired_on: 
   interview_id: 
   acquired_by: ""
+  processed_by: ""
+  acquisition_notes: ""
+  last_edited: 
+collections_018: 
+  id: "21"
+  address: ""
+  address2: ""
+  city: ""
+  state_province: ""
+  postal_code: ""
+  telephone: ""
+  email: ""
+  website: ""
+  contact: ""
+  notes: ""
+  created_at: 2010-12-17 17:34:39
+  updated_at: 2010-12-17 17:34:39
+  publish: "0"
+  private: "0"
+  items_count: "0"
+  finding_aid: "0"
+  lock_version: "0"
+  acquired_on: "2010-12-01"
+  interview_id: 
+  acquired_by: Afsaneh Najmabadi
   processed_by: ""
   acquisition_notes: ""
   last_edited: 
