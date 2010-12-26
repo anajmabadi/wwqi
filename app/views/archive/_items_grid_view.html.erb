@@ -1,9 +1,9 @@
 <div id="items">
   <% items.each do |item| -%>
     <div class="item <%= item.oral_history_class %>">
-      <a href="/collections/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
+      <a href="/archive/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
       <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
-      <a class="title" href="/collections/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
+      <a class="title" href="/archive/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
     </div>
   <% end -%>
 </div>
