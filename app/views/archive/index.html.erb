@@ -3,109 +3,115 @@
 <% @extra_head_content = index_header_content -%>
 
 <div id="browseByGenre" style="height:auto">
-  <div id="head">
-    <h2><%= t(:genres) %></h2>
-  </div>
-    <% first_column = true %>
-	<ul>
-    <% @subject_types.each do |subject_type| %>
-      <% unless subject_type.id > 6 %>
-        <li>
-          <%= link_to( subject_type.name, archive_browser_path(:subject_type_filter => subject_type.id)) %> 
-          <% if subject_type.show_menu? %>
-            <ul>
-              <% first_column = false -%>
-              <% subject_type.subjects.each do |subject| -%>
-                <li><%= link_to subject.name, archive_browser_path(:subject_filter => subject.id) %></li>
-              <% end -%>
-            </ul>
+    <div id="head">
+        <h2><%= t(:genres) %></h2>
+    </div>
+    <ul>
+        <% unless @subject_type.nil? %>
+          <% @subject_type.subjects.each do |subject| -%>
+          <li>
+              <%= link_to subject.name, archive_browser_path(:subject_filter => subject.id) %>
+          </li>
           <% end -%>
-		 </li>
-        <% end %>
-    <% end -%>
-	</ul>
-  </div><!-- end browseByGenre -->
-  <div class="clearfix archiveBigWrapper" >
-  <div id="browseByCollection">
-  	<div id="head">
-    	<h2><%= t(:collections).capitalize %></h2>
-  	</div>
+        <% end -%>
+    </ul>
+</div><!-- end browseByGenre -->
+<div class="clearfix archiveBigWrapper" >
+    <div id="browseByCollection">
+        <div id="head">
+            <h2><%= t(:collections).capitalize %></h2>
+        </div>
         <%= link_to t(:see_all_collections), archive_collections_path, { :class => "allCollections", :enabled => false } %>
         <div class="featuredCollection clearfix">
-          <div class="collectionContainerWrapper">
-            <div class="collectionContainer clearfix">
-              <% @random_collection_set.each do |collection| -%>
-                <div class="collection clearfix">
-                  <a href="#"><img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
-                  <ul>
-                    <li class="title"><strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong></li>
-                    <li class="count">&raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %></li>
-                  </ul>
+            <div class="collectionContainerWrapper">
+                <div class="collectionContainer clearfix">
+                    <% @random_collection_set.each do |collection| -%>
+                    <div class="collection clearfix">
+                        <a href="#">
+                        <img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
+                        <ul>
+                            <li class="title">
+                                <strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong>
+                            </li>
+                            <li class="count">
+                                &raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %>
+                            </li>
+                        </ul>
+                    </div>
+                    <% end -%>
                 </div>
-              <% end -%>
             </div>
-          </div>
         </div>
-   </div><!-- end browseByCollection -->
-  <div id="archiveThirdColumnWrapper">
-	  <div id="browseByIndex">
-		<div id="head">
-			<h2><%= t(:indexes).capitalize %></h2>
-		</div>
-		<ul>
-			<li><%= link_to t(:people_index), archive_people_path %></li>
-			<li><%= link_to t(:subject_index), archive_subjects_path %></li>
-			<li><%= link_to t(:place_index), archive_places_path %></li>
-		</ul>
-	  </div>
-	  
-	  <div id="quickPeek">
-		<div id="head">
-			<h2><%= t(:quick_peek).capitalize %></h2>
-		</div>
-		<ul>
-			<li><%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %></li>
-			<li><%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %></li>
-			<li><%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %></li>
-		</ul>
-	  </div>
-  </div>
-  
-  <div id="keywordSearch">
-		<div id="archive_search_wrapper">
-			<div class="clearfix" id="simple_search">
-			<form method="get" class="searchform" action="/archive/browser">
-			  <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-                 onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
-                 onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-          <button type="submit" id="search"></button>
-			</form>
-			</div>
-		</div>
-
-    <div class="content clearfix" style="background-color:#c41230">
-      <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
+    </div><!-- end browseByCollection -->
+    <div id="archiveThirdColumnWrapper">
+        <div id="browseByIndex">
+            <div id="head">
+                <h2><%= t(:indexes).capitalize %></h2>
+            </div>
+            <ul>
+                <li>
+                    <%= link_to t(:people_index), archive_people_path %>
+                </li>
+                <li>
+                    <%= link_to t(:subject_index), archive_subjects_path %>
+                </li>
+                <li>
+                    <%= link_to t(:place_index), archive_places_path %>
+                </li>
+            </ul>
+        </div>
+        <div id="quickPeek">
+            <div id="head">
+                <h2><%= t(:quick_peek).capitalize %></h2>
+            </div>
+            <ul>
+                <li>
+                    <%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %>
+                </li>
+                <li>
+                    <%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %>
+                </li>
+                <li>
+                    <%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %>
+                </li>
+            </ul>
+        </div>
     </div>
-	<div class="content clearfix">
-      <%= link_to raw(t(:advanced_search)), :action => 'browser' %>
+    <div id="keywordSearch">
+        <div id="archive_search_wrapper">
+            <div class="clearfix" id="simple_search">
+                <form method="get" class="searchform" action="/archive/browser">
+                    <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+                    onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
+                    onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+                    <button type="submit" id="search">
+                    </button>
+                </form>
+            </div>
+        </div>
+        <div class="content clearfix" style="background-color:#c41230">
+            <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
+        </div>
+        <div class="content clearfix">
+            <%= link_to raw(t(:advanced_search)), :action => 'browser' %>
+        </div>
+        <div class="content clearfix" id="recentlyViewed">
+            <h4><%= t(:recently_viewed_items) %></h4>
+            <div class="items">
+                <% @recently_viewed_items.each do |item| -%>
+                <div class="item">
+                    <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), archive_detail_path(:id => item.id), :title => item.title ) %>
+                </div>
+                <% end %>
+            </div>
+        </div>
     </div>
-	<div class="content clearfix" id="recentlyViewed">
-      <h4><%= t(:recently_viewed_items) %></h4>
-      <div class="items">
-        <% @recently_viewed_items.each do |item| -%>
-          <div class="item">
-            <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), archive_detail_path(:id => item.id), :title => item.title ) %>
-          </div>
-        <% end %>
-      </div>
+</div>
+<div id="browseByPeriod">
+    <div id="head">
+        <h2><%= t(:time_periods).capitalize %></h2>
     </div>
-  </div>
-  </div>
-  <div id="browseByPeriod">
-  		<div id="head">
-			<h2><%= t(:time_periods).capitalize %></h2>
-		</div>
-		<div id="timeLine">
+    <div id="timeLine">
         <%= link_to(@periods[0].caption, archive_browser_path(:period_filter => @periods[0].id), :title => @periods[0].title + ' (' + @periods[0].items_count.to_s + ')', :class => "first") %>
         <%= link_to(raw("<span>#{@periods[1].caption}</span>"), archive_browser_path(:period_filter => @periods[1].id), :title => @periods[1].title + ' (' + @periods[1].items_count.to_s + ')', :class => "second") %>
         <%= link_to(@periods[2].caption, archive_browser_path(:period_filter => @periods[2].id), :title => @periods[2].title + ' (' + @periods[2].items_count.to_s + ')', :class => "third") %>
@@ -115,8 +121,6 @@
         <%= link_to(raw("<span  style='left:-50px'>#{@periods[6].caption}</span>"), archive_browser_path(:period_filter => @periods[6].id), :title => @periods[6].title + ' (' + @periods[6].items_count.to_s + ')', :class => "seventh") %>
         <%= link_to(@periods[7].caption, archive_browser_path(:period_filter => @periods[7].id), :title => @periods[7].title + ' (' + @periods[7].items_count.to_s + ')', :class => "eighth") %>
         <%= link_to(@periods[8].caption, archive_browser_path(:period_filter => @periods[8].id), :title => @periods[8].title + ' (' + @periods[8].items_count.to_s + ')', :class => "ninth") %>
-      </div>
-		
-  </div>
-
+    </div>
+</div>
 </div>

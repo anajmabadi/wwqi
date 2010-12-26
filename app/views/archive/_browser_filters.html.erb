@@ -1,6 +1,6 @@
 <div id="filterOptions">
   <a class="filter" id="filterStatus" href="#"><strong class="filter">Search Filters</strong></a>
-  <a class="filter" id="byGenre" href="#"><%= t(:genre).capitalize %>: <span><%= truncate(@subject_type_filter_label.titleize) %></span></a>
+  <a class="filter" id="byGenre" href="#"><%= t(:genre).capitalize %>: <span><%= truncate(@subject_filter_label.titleize) %></span></a>
   <a class="filter" id="byPeriod" href="#"><%= t(:period).capitalize %>: <span><%= truncate(@period_filter_label.titleize) %></span></a>
   <a class="filter" id="byCollection" href="#"><%= t(:collection).capitalize %>: <span><%= truncate(@collection_filter_label.titleize) %></span></a>
 </div>
@@ -10,21 +10,21 @@
       <ul>
         <li class="selectAll">
           <input type="checkbox"
-                 name="subject_type_filter[]"
+                 name="subject_filter[]"
                  value="all"
-                 <%= @subject_type_filter.include?('all') ? 'checked="yes"' : "" unless @subject_type_filter.nil? -%>
+                 <%= @subject_filter.include?('all') ? 'checked="yes"' : "" unless @subject_filter.nil? -%>
                  />
           <label for="">All</label>
         </li>
       </ul>
       <ul class="genreFilterList">
-        <% subject_types.each do |subject_type|  %>
+        <% subject_type.subjects.each do |subject|  %>
           <li><input type="checkbox"
-                     name="subject_type_filter[]"
-                     value="<%= subject_type.id %>"
-                     <%= @subject_type_filter.include?(subject_type.id.to_s) ? 'checked="yes"' : "" unless @subject_type_filter.nil? -%>
+                     name="subject_filter[]"
+                     value="<%= subject.id %>"
+                     <%= @subject_filter.include?(subject.id.to_s) ? 'checked="yes"' : "" unless @subject_filter.nil? -%>
                      />
-            <label for=""><%= subject_type.name %></label>
+            <label for=""><%= subject.name %></label>
           </li>
         <% end %>
       </ul>
