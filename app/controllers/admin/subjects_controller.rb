@@ -6,13 +6,13 @@ class Admin::SubjectsController < Admin::AdminController
     @page = params[:page] || 1
     @per_page = params[:per_page] || Subject.per_page || 100
 
-    @order = sort_order('UPPER(subject_translations.name)')
+    @order = sort_order('subjects.id') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
 
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
     @subject_type_filter = params[:subject_type_filter]
 
-    @query_hash = { :conditions => ['subject_translations.locale = :selected_locale'], :parameters => {:selected_locale => 'en'} }
+    @query_hash = { :conditions => [], :parameters => {} }
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter == 'all'
     @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
 
@@ -24,7 +24,10 @@ class Admin::SubjectsController < Admin::AdminController
 
     @query = [@query_conditions, @query_hash[:parameters]]
     
-    @subjects = Subject.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
+    @subjects = Subject.where(@query).order(@order)
+
+    @subjects = sort_bilingual(@subjects, params[:c], params[:d]) if ["name_en", "name_fa"].include?(params[:c])
+    
     @subject_types = SubjectType.select_list
 
     #cache the current search set in a session variable
@@ -125,10 +128,21 @@ class Admin::SubjectsController < Admin::AdminController
     filter_value = filter_value.length > 256 ? filter_value[0..255] : filter_value
     filter_value = filter_value.upcase #locale insensitive
     filter_value = "%#{filter_value}%"
-    additional_query += "UPPER(subject_translations.name) LIKE :keyword" unless filter_value.blank?
-   
+    keyword_query = "UPPER(subject_translations.name) LIKE :keyword" unless filter_value.blank?
+    ids = Subject.where([keyword_query, {:keyword => filter_value}]).select('subjects.id').order('subjects.id').map { |i| i.id }
+    additional_query += "subjects.id IN (#{ids.uniq.join(",")})"
     query_hash[:conditions] << additional_query
-    query_hash[:parameters][:keyword] = filter_value
     return query_hash
   end
+  
+  def sort_bilingual(rows, bilingual_field, direction)
+    rows = case bilingual_field
+      when 'name_en' then rows.sort_by(&:name_en)
+      when 'name_fa' then rows.sort_by(&:name_fa)
+    else rows
+    end
+    rows.reverse! if direction == 'down'
+    return rows
+  end
+  
 end

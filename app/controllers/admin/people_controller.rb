@@ -164,7 +164,6 @@ class Admin::PeopleController < Admin::AdminController
       # now gather the items
       @collection.items.each do |item|
         @appearance_ids += item.appearances.map { |a| a.person_id }
-        Rails.logger.info "@appearance_ids: " + @appearance_ids.join(",")
       end
       unless @appearance_ids.empty?
         additional_query += "people.id IN (#{@appearance_ids.uniq.sort.join(",")})"
@@ -181,7 +180,6 @@ class Admin::PeopleController < Admin::AdminController
   end
 
   def sort_bilingual(people, bilingual_field, direction)
-    Rails.logger.info("sort_bilingual: " + bilingual_field + ' | ' + direction)
     people = case bilingual_field
       when 'name_en' then people.sort_by(&:name_en)
       when 'name_fa' then people.sort_by(&:name_fa)

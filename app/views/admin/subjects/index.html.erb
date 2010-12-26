@@ -5,31 +5,29 @@
     <div class="content nomargin">
       <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_subject_path, :show_all_path => admin_subjects_path } %>
       <%= render 'nav_filter_bar' %>
-      <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @subjects} %>
       <table class="global" width="100%" cellpadding="0" cellspacing="0">
         <tr>
           <th><%= sort_link 'Id', 'subjects.id' %></th>
-          <th><%= sort_link 'Name', 'subject_translations.name' %></th>
+          <th><%= sort_link 'Name en', 'name_en' %></th>
+          <th><%= sort_link 'Name fa', 'name_fa' %></th>
           <th><%= sort_link 'Subject Type', "subjects.subject_type_id" %></th>
           <th><%= sort_link 'Major', 'subjects.major' %></th>
           <th><%= sort_link 'Publish', 'subjects.publish' %></th>
-          <th>Notes</th>
           <th>Actions</th>
         </tr>
 
         <% @subjects.each do |subject| %>
           <tr>
             <td><%= link_to subject.id, admin_subject_path(subject) %></td>
-            <td><%= link_to subject.name, admin_subject_path(subject) %></td>
+            <td><%= link_to_unless subject.name_en.blank?, subject.name_en, admin_subject_path(subject) %></td>
+            <td class="persianOnly"><%= link_to_unless subject.name_fa.blank?, subject.name_fa, admin_subject_path(subject) %></td>
             <td><%= subject.subject_type.name unless subject.subject_type.nil? %></td>
             <td><%= show_check(subject.major) %></td>
             <td><%= show_check(subject.publish) %></td>
-            <td><%= truncate(subject.notes) %></td>
             <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_subject_path(subject) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_subject_path(subject) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_subject_path(subject), :confirm => 'Are you sure?', :method => :delete %></td>
           </tr>
         <% end %>
       </table>
-      <%= render :partial => 'admin/admin/nav_pagination_bar', :locals => {:passed_objects => @subjects} %>
       <br class="clear" />
     </div>
   </div>
