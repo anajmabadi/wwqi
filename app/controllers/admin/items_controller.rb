@@ -1,4 +1,7 @@
 class Admin::ItemsController < Admin::AdminController
+
+  before_filter :find_item, :only => [:show, :edit, :update, :destroy]
+
   def util_update_sort_date
 
     @items = Item.all
@@ -28,7 +31,7 @@ class Admin::ItemsController < Admin::AdminController
     # gather data for pull down lists
     @collections = Collection.select_list
     @periods = Period.select_list
-    @genres = Subject.where(['subject_type_id = ? AND subject_translations.locale=?', 8, :en.to_s])
+    @genres = Subject.genres.where(['subject_translations.locale=?', :en.to_s]).order('subject_translations.name')
 
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 100
@@ -292,7 +295,7 @@ class Admin::ItemsController < Admin::AdminController
   def show_add_classification_to_item
     # retrieve @repositories for instant additions
     @item = Item.find(params[:id])
-    @subjects = Subject.select_list
+    @subjects = Subject.concept_list
     @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @classification = Classification.new(
     :item_id => params[:id],
@@ -314,6 +317,31 @@ class Admin::ItemsController < Admin::AdminController
     end
   end
 
+  # remote functions for showing and hiding the add passport form
+  def show_add_genre_to_item
+    # retrieve @repositories for instant additions
+    @item = Item.find(params[:id])
+    @genres = Subject.genre_list
+    @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
+    @classification = Classification.new(
+    :item_id => params[:id],
+    :publish => true,
+    :position => @max_position + 1
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_genre_to_item
+    @classification = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
   # remote functions for showing and hiding the add comp form
   def show_add_comp_to_item
     # retrieve items for instant additions

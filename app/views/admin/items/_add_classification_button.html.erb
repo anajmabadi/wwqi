@@ -1,5 +1,5 @@
 <span>
-  <%= button_to 'Add Subject Classification',
-    { :controller => "admin/items", :action => 'show_add_classification_to_item', :id => item.id },
+  <%= button_to 'Add Concept Classification',
+    { :controller => "admin/items", :action => 'show_add_classification_to_item', :id => item.id, :add_concept => true },
       :remote => true, :disable_with => t(:please_wait) %>
 </span>

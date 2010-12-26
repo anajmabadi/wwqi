@@ -42,7 +42,8 @@ class Admin::ClassificationsController < Admin::AdminController
   def edit
     @classification = Classification.find(params[:id])
     @items = Item.select_list
-    @subjects = Subject.select_list
+    @subjects = Subject.concept_list
+    @genres = Subject.genre_list
   end
 
   # POST /classifications
@@ -50,8 +51,10 @@ class Admin::ClassificationsController < Admin::AdminController
   def create
     @classification = Classification.new(params[:classification])
     @items = Item.select_list
-    @subjects = Subject.select_list
+    @subjects = Subject.concept_list
+    @genres = Subject.genre_list
     @item = @classification.item
+    @add_concept = params[:classification][:add_concept] == 'true'
     respond_to do |format|
       if @classification.save
         @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', @item.id] ) || 0
@@ -63,12 +66,20 @@ class Admin::ClassificationsController < Admin::AdminController
         )
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }
-        format.js { render :template => 'admin/items/add_classification_to_item' }
+        if @classification.subject.subject_type_id == 8
+          format.js { render :template => 'admin/items/add_genre_to_item' }
+        else
+          format.js { render :template => 'admin/items/add_classification_to_item' }
+        end
       else
         @new_classification = @classification
         format.html { render :action => "new" }
         format.xml  { render :xml => @classification.errors, :status => :unprocessable_entity }
-        format.js { render :template => 'admin/items/add_classification_to_item' }
+        if @classification.subject.subject_type_id == 8
+          format.js { render :template => 'admin/items/add_genre_to_item' }
+        else
+          format.js { render :template => 'admin/items/add_classification_to_item' }
+        end
       end
     end
   end
@@ -78,7 +89,8 @@ class Admin::ClassificationsController < Admin::AdminController
   def update
     @classification = Classification.find(params[:id])
     @items = Item.select_list
-    @subjects = Subject.select_list
+    @subjects = Subject.concept_list
+    @genres = Subject.genre_list
     respond_to do |format|
       if @classification.update_attributes(params[:classification])
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully updated.') }

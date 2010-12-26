@@ -46,6 +46,8 @@ Qajar::Application.routes.draw do
         post :hide_add_comp_to_item
         post :show_add_section_to_item
         post :hide_add_section_to_item
+        post :show_add_genre_to_item
+        post :hide_add_genre_to_item
         get :util_update_sort_date
       end
     end

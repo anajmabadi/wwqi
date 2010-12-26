@@ -1,0 +1,5 @@
+<span>
+    <%= button_to 'Add Genre Classification',
+    { :controller => "admin/items", :action => 'show_add_genre_to_item', :id => item.id, :add_concept => false },
+    :remote => true, :disable_with => t(:please_wait) %>
+</span>

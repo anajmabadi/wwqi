@@ -1,7 +1,7 @@
 <span>
-    <h3>Concept Classifications:</h3>
+    <h3>Genre Classifications:</h3>
     <ul>
-        <% sorted_list = classifications.map { |c| [c.subject.to_label, c.id] if c.subject.subject_type_id == 7}.reject{ |c| c .nil? }.sort %>
+        <% sorted_list = classifications.map { |c| [c.subject.to_label, c.id] if c.subject.subject_type_id == 8 }.reject{ |c| c .nil? }.sort %>
         <% sorted_list.each do |short_classification| -%>
         <% unless short_classification.nil? %>
         <li>

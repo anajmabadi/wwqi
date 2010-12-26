@@ -199,6 +199,22 @@
                 </tr>
                 <tr>
                     <td>
+                    <div id="item_genres_list" class="item_detail_list">
+                        <%= render 'item_genres_list', :classifications => @item.classifications %>
+                    </div>
+                    </td>
+                    <td>
+                    <div id="add_genre" class="item_detail_form">
+                        <% if @classification.nil? -%>
+                        <%= render :partial => 'admin/items/add_genre_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_genre_form', :locals => { :classification => @classification } %>
+                        <% end -%>
+                    </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     <div id="item_classifications_list" class="item_detail_list">
                         <%= render 'item_classifications_list', :classifications => @item.classifications %>
                     </div>

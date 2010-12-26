@@ -16,10 +16,11 @@
     </div>
     <% end %>
 
+
     <div class="field">
-        <%= f.label :concept %>
+        <%= f.label :genre %>
         <br />
-        <%= f.select :subject_id, subjects, {:include_blank => true} %>
+        <%= f.select :subject_id, genres, {:include_blank => true} %>
     </div>
 
     <div class="field">
@@ -38,8 +39,8 @@
         <%= f.text_field :notes %>
     </div>
     <div class="actions">
-        <%= button_to 'Save Classification', nil, :disable_with => t(:please_wait) %>
+        <%= button_to 'Save Genre Classification', nil, :disable_with => t(:please_wait) %>
     </div>
     <% end %>
-    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_classification_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_genre_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
 </span>

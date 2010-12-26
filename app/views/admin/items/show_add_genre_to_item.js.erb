@@ -1,0 +1,1 @@
+$('#add_genre>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/add_genre_form', :locals => {:classification => @classification, :item => @item, :genres => @genres}) %>');
