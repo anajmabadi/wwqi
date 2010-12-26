@@ -10,7 +10,7 @@
         <% unless @subject_type.nil? %>
           <% @subject_type.subjects.each do |subject| -%>
           <li>
-              <%= link_to subject.name, archive_browser_path(:subject_filter => subject.id) %>
+              <%= link_to subject.name, archive_browser_path('subject_filter[]' => subject.id) %>
           </li>
           <% end -%>
         <% end -%>
