@@ -1,6 +1,5 @@
 class Admin::CategorizationsController < Admin::AdminController
 
-  before_filter :admin_required, :except => [:index, :show]
 
   # GET /categorizations
   # GET /categorizations.xml

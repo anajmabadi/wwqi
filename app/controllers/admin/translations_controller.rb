@@ -1,7 +1,5 @@
 class Admin::TranslationsController < Admin::AdminController
 
-  before_filter :admin_required, :except => [:index, :show]
-
   # GET /translations
   # GET /translations.xml
   def index
