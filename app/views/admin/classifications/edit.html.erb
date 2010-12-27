@@ -6,7 +6,7 @@
 
   <%= render 'form' %>
 
-  <%= link_to 'Show', @classification %> |
-  <%= link_to 'New', new_classification_path %> |
-  <%= link_to 'Back', classifications_path %>
+  <%= link_to 'Show', ['admin', @classification] %> |
+  <%= link_to 'New', new_admin_classification_path %> |
+  <%= link_to 'Back', admin_classifications_path %>
 </div>

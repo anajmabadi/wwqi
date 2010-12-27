@@ -19,9 +19,9 @@
         <td><%= link_to classification.subject.name, classification.subject unless classification.subject.name.nil? %></td>
         <td><%= link_to truncate(classification.item.title), classification.item unless classification.item.nil? %></td>
         <td><%= show_check classification.publish %></td>
-        <td><%=  classification.position %></td>
+        <td><%= classification.position %></td>
         <td><%= classification.notes %></td>
-        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), classification %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_classification_path(classification) %> <%= link_to image_tag("delete.png", :alt => 'delete'), classification, :confirm => 'Are you sure?', :method => :delete %></td>
+        <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), ['admin', classification] %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_classification_path(classification) %> <%= link_to image_tag("delete.png", :alt => 'delete'), ['admin', classification], :confirm => 'Are you sure?', :method => :delete %></td>
       </tr>
     <% end %>
   </table>

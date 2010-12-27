@@ -23,11 +23,11 @@ class Admin::SubjectsController < Admin::AdminController
     end
 
     @query = [@query_conditions, @query_hash[:parameters]]
-    
+
     @subjects = Subject.where(@query).order(@order)
 
     @subjects = sort_bilingual(@subjects, params[:c], params[:d]) if ["name_en", "name_fa"].include?(params[:c])
-    
+
     @subject_types = SubjectType.select_list
 
     #cache the current search set in a session variable
@@ -102,12 +102,22 @@ class Admin::SubjectsController < Admin::AdminController
   # DELETE /subjects/1
   # DELETE /subjects/1.xml
   def destroy
-    @subject = Subject.find(params[:id])
-    @subject.destroy
 
-    respond_to do |format|
-      format.html { redirect_to(admin_subjects_path) }
-      format.xml  { head :ok }
+    begin
+      @subject = Subject.find(params[:id])
+      @subject.destroy
+    rescue => error
+      @failure_message = error.message
+    ensure
+      respond_to do |format|
+        if @failure_message.blank?
+          flash[:notice] = 'Subject successfully deleted'
+        else
+          flash[:error] = @failure_message
+        end
+        format.html { redirect_to(session[:admin_subjects_index_url] ||= admin_subjects_path) }
+        format.xml  { head :ok }
+      end
     end
   end
 
@@ -121,7 +131,6 @@ class Admin::SubjectsController < Admin::AdminController
     return query_hash
   end
 
-
   def build_keyword_query(filter_value, query_hash)
     additional_query = ''
     filter_value = filter_value.lstrip
@@ -134,7 +143,7 @@ class Admin::SubjectsController < Admin::AdminController
     query_hash[:conditions] << additional_query
     return query_hash
   end
-  
+
   def sort_bilingual(rows, bilingual_field, direction)
     rows = case bilingual_field
       when 'name_en' then rows.sort_by(&:name_en)
@@ -144,5 +153,5 @@ class Admin::SubjectsController < Admin::AdminController
     rows.reverse! if direction == 'down'
     return rows
   end
-  
+
 end

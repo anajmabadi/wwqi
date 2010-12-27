@@ -6,12 +6,12 @@
 
   <p>
     <b>Subject:</b>
-    <%= @classification.subject_id %>
+    <%= link_to_unless @classification.subject.nil?, @classification.subject.to_label, admin_subject_path(@classification.subject) %>
   </p>
 
   <p>
     <b>Item:</b>
-    <%= @classification.item_id %>
+    <%= link_to_unless @classification.item.nil?, @classification.item.to_label, admin_item_path(@classification.item) %>
   </p>
 
   <p>
@@ -30,7 +30,7 @@
   </p>
 
 
-  <%= link_to 'Edit', edit_classification_path(@classification) %>
-   <%= link_to 'New', new_classification_path %>
-  <%= link_to 'Back', classifications_path %>
+  <%= link_to 'Edit', edit_admin_classification_path(@classification) %>
+   <%= link_to 'New', new_admin_classification_path %>
+  <%= link_to 'Back', admin_classifications_path %>
 </div>
