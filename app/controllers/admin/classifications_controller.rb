@@ -2,7 +2,6 @@ class Admin::ClassificationsController < Admin::AdminController
   # GET /classifications
   # GET /classifications.xml
   include ActionView::Helpers::TextHelper
-  
   def index
     # paginate the items
     @page = params[:page] || 1
@@ -55,31 +54,31 @@ class Admin::ClassificationsController < Admin::AdminController
     @genres = Subject.genre_list
     @item = @classification.item
     @add_concept = params[:classification][:add_concept] == 'true'
+
+    # figure out which template to show
+    if @classification.subject.subject_type_id == 8
+      @js_template = 'admin/items/add_genre_to_item'
+    else
+      @js_template =  'admin/items/add_classification_to_item'
+    end
+
     respond_to do |format|
       if @classification.save
         @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', @item.id] ) || 0
         @new_classification = Classification.new(
-          :item_id => params[:id],
-          :publish => true,
-          :position => @max_position + 1,
-          :item_id => @item.id
+        :item_id => params[:id],
+        :publish => true,
+        :position => @max_position + 1,
+        :item_id => @item.id
         )
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }
-        if @classification.subject.subject_type_id == 8
-          format.js { render :template => 'admin/items/add_genre_to_item' }
-        else
-          format.js { render :template => 'admin/items/add_classification_to_item' }
-        end
+        format.js { render :template => @js_template }
       else
         @new_classification = @classification
         format.html { render :action => "new" }
         format.xml  { render :xml => @classification.errors, :status => :unprocessable_entity }
-        if @classification.subject.subject_type_id == 8
-          format.js { render :template => 'admin/items/add_genre_to_item' }
-        else
-          format.js { render :template => 'admin/items/add_classification_to_item' }
-        end
+        format.js { render :template => @js_template }
       end
     end
   end
@@ -107,12 +106,21 @@ class Admin::ClassificationsController < Admin::AdminController
   def destroy
     @classification = Classification.find(params[:id])
     @item = @classification.item
+    
+    # figure out which template to show
+    if @classification.subject.subject_type_id == 8
+      @js_template = 'admin/items/remove_genre_from_item'
+    else
+      @js_template =  'admin/items/remove_classification_from_item'
+    end
+    
     @classification.destroy
     @classification = nil
-
+    
     respond_to do |format|
       format.html { redirect_to(admin_classifications_url) }
-      format.js { render :template => 'admin/items/remove_classification_from_item' }
+
+      format.js { render :template => @js_template }
       format.xml  { head :ok }
     end
   end
