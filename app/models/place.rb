@@ -1,6 +1,6 @@
 class Place < ActiveRecord::Base
 
-  has_many :plots, :order => 'plots.position'
+  has_many :plots, :order => 'plots.position', :dependent => :destroy
   has_many :items, :through => :plots, :order => 'plots.position'
 
   translates :name

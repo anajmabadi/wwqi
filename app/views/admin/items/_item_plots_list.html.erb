@@ -1,10 +1,20 @@
 <span>
     <h3>Plots:</h3>
-      <ul>
+    <ul>
         <% unless plots.empty? -%>
-          <%= render(plots) %>
+          <% sorted_list = plots.map { |c| [c.to_label, c.place_id, c.id]}.sort %>
+          <% sorted_list.each do |short_plot| -%>
+            <% unless short_plot.nil? %>
+            <li>
+                <%= link_to short_plot[0], admin_place_path(short_plot[1]) %>
+                <%= link_to image_tag("delete.png", :alt => 'delete'), admin_plot_path(short_plot[2]), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
+            </li>
+            <% end %>
+          <% end %>
         <% else -%>
-          <li>No plots.</li>
+          <li>
+              No plots.
+          </li>
         <% end -%>
-      </ul>
+    </ul>
 </span>

@@ -1,6 +1,6 @@
 <% unless plot.nil? || plot.place.nil? -%>
 <li>
-  <%= link_to plot.place.name, admin_place_path(plot.place.name) unless plot.place.nil? %>
+  <%= link_to_unless plot.place.nil?, plot.to_label, admin_place_path(plot.place) %>
   <%= link_to image_tag("delete.png", :alt => 'delete'), admin_plot_path(plot), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
 </li>
 <% end -%>

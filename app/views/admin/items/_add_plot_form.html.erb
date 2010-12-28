@@ -1,38 +1,52 @@
 <span>
-  <%= form_for(['admin', plot], :remote => true) do |f| %>
+    <%= form_for(['admin', plot], :remote => true) do |f| %>
     <% if plot.errors.any? %>
-      <div id="error_explanation">
+    <div id="error_explanation">
         <h2><%= pluralize(plot.errors.count, "error") %> prohibited this plot from being saved:</h2>
-
         <ul>
-          <% plot.errors.full_messages.each do |msg| %>
-            <li><%= msg %></li>
-          <% end %>
+            <% plot.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
         </ul>
-      </div>
+    </div>
     <% end %>
 
     <%= f.hidden_field(:item_id) %>
-
     <div class="field">
-      <%= f.label :place %><br />
-      <%= f.select :place_id, @places %>
+        <%= f.label :place %>
+        <br />
+        <%= f.select :place_id, places %>
     </div>
     <div class="field">
-      <%= f.label :publish %><br />
-      <%= f.check_box :publish %>
+        <%= f.label :caption_en %>
+        <br />
+        <%= f.text_field :caption_en %>
+    </div>
+    <div class="field persianOnly">
+        <%= f.label :caption_fa %>
+        <br />
+        <%= f.text_field :caption_fa %>
     </div>
     <div class="field">
-      <%= f.label :position %><br />
-      <%= f.text_field :position, :size => 5 %>
+        <%= f.label :publish %>
+        <br />
+        <%= f.check_box :publish %>
     </div>
     <div class="field">
-      <%= f.label :notes %><br />
-      <%= f.text_field :notes %>
+        <%= f.label :position %>
+        <br />
+        <%= f.text_field :position, :size => 5 %>
+    </div>
+    <div class="field">
+        <%= f.label :notes %>
+        <br />
+        <%= f.text_field :notes %>
     </div>
     <div class="actions">
-      <%= button_to 'Save Plot', nil, :disable_with => t(:please_wait) %>
+        <%= button_to 'Save Plot', nil, :disable_with => t(:please_wait) %>
     </div>
-  <% end %>
-  <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_plot_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
+    <% end %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_plot_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
 </span>

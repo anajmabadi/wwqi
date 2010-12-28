@@ -661,8 +661,8 @@ ActiveRecord::Schema.define(:version => 20101228152150) do
   add_index "places", ["publish"], :name => "index_places_on_publish"
 
   create_table "plot_translations", :force => true do |t|
-    t.integer  "plot_id"
-    t.string   "locale"
+    t.integer  "plot_id",    :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
     t.string   "caption"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -674,15 +674,16 @@ ActiveRecord::Schema.define(:version => 20101228152150) do
   add_index "plot_translations", ["plot_id"], :name => "index_plot_translations_on_plot_id"
 
   create_table "plots", :force => true do |t|
-    t.integer  "item_id"
-    t.integer  "place_id"
+    t.integer  "item_id",    :default => 0,    :null => false
+    t.integer  "place_id",   :default => 0,    :null => false
     t.text     "notes"
-    t.boolean  "publish"
-    t.integer  "position"
+    t.boolean  "publish",    :default => true, :null => false
+    t.integer  "position",   :default => 1,    :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "plots", ["item_id", "place_id"], :name => "index_plots_places_unique", :unique => true
   add_index "plots", ["item_id"], :name => "fk_plots_items"
   add_index "plots", ["place_id"], :name => "fk_plots_places"
   add_index "plots", ["position"], :name => "index_plots_on_position"
