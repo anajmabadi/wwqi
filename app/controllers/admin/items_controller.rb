@@ -1,7 +1,6 @@
 class Admin::ItemsController < Admin::AdminController
 
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
-
   def util_update_sort_date
 
     @items = Item.all
@@ -66,12 +65,16 @@ class Admin::ItemsController < Admin::AdminController
 
     @items = Item.where(@query).order(@order)
 
-    if params[:c] == 'title_en'
-      @items = @items.sort_by(&:title_en)
-      @items.reverse! if params[:d] == 'down'
-    elsif params[:c] == 'title_fa'
-      @items = @items.sort_by(&:title_fa)
-      @items.reverse! if params[:d] == 'down'
+    begin
+      if params[:c] == 'title_en'
+        @items = @items.sort_by(&:title_en)
+        @items.reverse! if params[:d] == 'down'
+      elsif params[:c] == 'title_fa'
+        @items = @items.sort_by(&:title_fa)
+        @items.reverse! if params[:d] == 'down'
+      end
+    rescue => error
+      flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
     end
 
     @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
@@ -342,6 +345,7 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
+
   # remote functions for showing and hiding the add comp form
   def show_add_comp_to_item
     # retrieve items for instant additions

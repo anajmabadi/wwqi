@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101217180144) do
+ActiveRecord::Schema.define(:version => 20101228152150) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -659,6 +659,19 @@ ActiveRecord::Schema.define(:version => 20101217180144) do
   end
 
   add_index "places", ["publish"], :name => "index_places_on_publish"
+
+  create_table "plot_translations", :force => true do |t|
+    t.integer  "plot_id"
+    t.string   "locale"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "plot_translations", ["caption"], :name => "index_plot_translations_on_caption"
+  add_index "plot_translations", ["locale", "plot_id"], :name => "index_plot_translations_on_locale_and_plot_id", :unique => true
+  add_index "plot_translations", ["locale"], :name => "index_plot_translations_on_locale"
+  add_index "plot_translations", ["plot_id"], :name => "index_plot_translations_on_plot_id"
 
   create_table "plots", :force => true do |t|
     t.integer  "item_id"
