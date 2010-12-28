@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101228152150) do
+ActiveRecord::Schema.define(:version => 20101228223641) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -166,12 +166,15 @@ ActiveRecord::Schema.define(:version => 20101228152150) do
   add_index "classifications", ["subject_id"], :name => "index_classifications_on_subject_id"
 
   create_table "clip_translations", :force => true do |t|
-    t.integer  "clip_id",    :default => 0,    :null => false
-    t.string   "locale",     :default => "en", :null => false
-    t.text     "caption",                      :null => false
-    t.string   "title",      :default => "",   :null => false
+    t.integer  "clip_id",     :default => 0,    :null => false
+    t.string   "locale",      :default => "en", :null => false
+    t.text     "caption",                       :null => false
+    t.string   "title",       :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "interviewer"
+    t.string   "interviewee"
+    t.string   "location"
   end
 
   add_index "clip_translations", ["clip_id", "locale"], :name => "in_clip_translations_unique", :unique => true

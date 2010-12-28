@@ -24,6 +24,36 @@
                 </td>
             </tr>
             <tr>
+                <td>
+                <b>Interviewer, en</b>
+                <%= @clip.interviewer_en %>
+                </td>
+                <td class="persianOnly">
+                <b>Interviewer, fa</b>
+                <%= @clip.interviewer_fa %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <b>Interviewee, en</b>
+                <%= @clip.interviewee_en %>
+                </td>
+                <td class="persianOnly">
+                <b>Interviewee, fa</b>
+                <%= @clip.interviewee_fa %>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <b>Location, en</b>
+                <%= @clip.location_en %>
+                </td>
+                <td class="persianOnly">
+                <b>Location, fa</b>
+                <%= @clip.location_fa %>
+                </td>
+            </tr>
+            <tr>
                 <td colspan="2">
                 <b>Item</b>
                 <%= @clip.item.to_label unless @clip.item.nil? %>

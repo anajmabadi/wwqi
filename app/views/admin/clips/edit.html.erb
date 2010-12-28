@@ -2,14 +2,14 @@
 <% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
 <% @back_path = admin_clips_path %>
-<% @show_path = admin_clip_path(@item) %>
+<% @show_path = admin_clip_path(@clip) %>
 
 <div id="staticContent" class="clearfix">
   <div class="onecolumn"
     <div class="content nomargin">
-      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @new_path} %> 
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %> 
       <%= render 'form' %>
-      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @new_path} %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
     </div>
   </div>
 </div>

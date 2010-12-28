@@ -4,7 +4,7 @@ class Clip < ActiveRecord::Base
   belongs_to :owner
 
   # globalize2 mix-in
-  translates :title, :caption
+  translates :title, :caption, :interviewer, :interviewee, :location
   default_scope :include => [:translations]
   globalize_accessors :fa, :en
   

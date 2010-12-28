@@ -15,7 +15,13 @@ describe Clip do
       :recorded_on => Date.new,
       :clip_type_id => 1,
       :owner_id => 1,
-      :duration => 20
+      :duration => 20,
+      :interviewer_en => 'Interviewer English',
+      :interviewer_fa => 'Interviewer Persian',
+      :interviewee_en => 'Interviewee English',
+      :interviewee_fa => 'Interviewee Persian',
+      :location_en => 'Interviewer English',
+      :location_fa => 'Interviewer Persian'
     }
   end
   
