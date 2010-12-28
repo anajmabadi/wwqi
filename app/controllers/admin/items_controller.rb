@@ -542,7 +542,7 @@ class Admin::ItemsController < Admin::AdminController
       end
       items.reverse! if direction == 'down'
     rescue => error
-      flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
+      flash[:error] = "A problem occured sorting by English or Farsi titles: " + error.message
     end
     return items
   end

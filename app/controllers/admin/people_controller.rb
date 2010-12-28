@@ -180,12 +180,16 @@ class Admin::PeopleController < Admin::AdminController
   end
 
   def sort_bilingual(people, bilingual_field, direction)
-    people = case bilingual_field
-      when 'name_en' then people.sort_by(&:name_en)
-      when 'name_fa' then people.sort_by(&:name_fa)
-    else people
-    end
-    people.reverse! if direction == 'down'
+    begin
+      people = case bilingual_field
+        when 'name_en' then people.sort_by(&:name_en)
+        when 'name_fa' then people.sort_by(&:name_fa)
+      else people
+      end
+      people.reverse! if direction == 'down'
+    rescue => error
+      flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
+    end  
     return people
   end
 end
