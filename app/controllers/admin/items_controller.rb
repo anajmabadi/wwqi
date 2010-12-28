@@ -65,17 +65,13 @@ class Admin::ItemsController < Admin::AdminController
 
     @items = Item.where(@query).order(@order)
 
-    begin
-      if params[:c] == 'title_en'
-        @items = @items.sort_by(&:title_en)
-        @items.reverse! if params[:d] == 'down'
-      elsif params[:c] == 'title_fa'
-        @items = @items.sort_by(&:title_fa)
-        @items.reverse! if params[:d] == 'down'
-      end
-    rescue => error
-      flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
-    end
+    @items = sort_bilingual(@items, params[:c], params[:d]) if ["title_en", "title_fa"].include?params[:c]
+
+    #cache the current search set in a session variable
+    session[:current_items] = @items.map { |i| i.id }
+    session[:sort_field] = params[:c]
+    session[:direction] = params[:d]
+    session[:order] = @order
 
     @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
@@ -92,10 +88,34 @@ class Admin::ItemsController < Admin::AdminController
   # GET /items/1.xml
   def show
     @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
-    respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @item }
+    @return_url = session[:admin_items_index_url]
+    
+    begin
+      @order = session[:order]
+
+      #check if there is a current results set (i.e. something from the browser)
+      unless session[:current_items].nil? || session[:current_items].empty? || !session[:current_items].include?(@item.id)
+        @items = Item.where(['items.id IN (?)', session[:current_items]]).order(@order)
+      else
+        @items = Item.order(@order).all
+      end
+
+      @items = sort_bilingual(@items, session[:sort_field], session[:direction]) if ["title_en", "title_fa"].include?session[:sort_field]
+      
+    rescue StandardError => error
+      flash[:error] = error.message ||= 'Item with id number ' + params[:id].to_s + ' was not found or your items set was invalid. Reload the items page.'
+      @error = true
     end
+
+    respond_to do |format|
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
+      else
+        format.html { redirect_to(admin_items_url, :error => flash[:error]) }
+      end
+    end
+
   end
 
   # GET /items/new
@@ -511,6 +531,20 @@ class Admin::ItemsController < Admin::AdminController
     query_hash[:conditions] << additional_query unless additional_query.blank?
     return query_hash
     end
+  end
+
+  def sort_bilingual(items, bilingual_field, direction)
+    begin
+      items = case bilingual_field
+        when 'title_en' then items.sort_by(&:title_en)
+        when 'title_fa' then items.sort_by(&:title_fa)
+      else items
+      end
+      items.reverse! if direction == 'down'
+    rescue => error
+      flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
+    end
+    return items
   end
 
 end

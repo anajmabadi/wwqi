@@ -3,7 +3,7 @@
 
 <div id="staticContent" class="clearfix">
     <div class="onecolumn">
-        <%= render 'nav_show_header_bar', :item => @item %>
+        <%= render 'nav_show_header_bar', :item => @item, :items => @items %>
         <table class="styled" >
             <tbody>
                 <tr>
@@ -362,6 +362,6 @@
                 </tr>
             </tbody>
         </table>
-        <%= render 'nav_show_header_bar', :item => @item %>
+        <%= render 'nav_show_header_bar', :item => @item, :items => @items %>
     </div>
 </div>

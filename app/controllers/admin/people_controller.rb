@@ -70,7 +70,7 @@ class Admin::PeopleController < Admin::AdminController
         format.html
         format.xml  { render :xml => @item }
       else
-        redirect_to @return_url ||= admin_people_path
+        format.html { redirect_to(admin_people_url, :error => flash[:error]) }
       end
     end
 
