@@ -135,7 +135,6 @@
                 </tr>
                 <tr>
                     <td>
-
                     <b>Source date (label):</b>
                     <%= @item.source_date %>
                     <br />
@@ -249,6 +248,9 @@
                     <td>
                     <div id="item_plots_list" class="item_detail_list">
                         <%= render 'item_plots_list', :plots => @item.plots %>
+                    </div>
+                    <div class="field">
+                        <%= render 'tip_plot_captions' %>
                     </div>
                     </td>
                     <td>
