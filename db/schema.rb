@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101228223641) do
+ActiveRecord::Schema.define(:version => 20101229002752) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -475,13 +475,17 @@ ActiveRecord::Schema.define(:version => 20101228223641) do
   add_index "medium_translations", ["medium_id"], :name => "index_medium_translations_on_medium_id"
 
   create_table "owner_translations", :force => true do |t|
-    t.integer  "owner_id"
-    t.string   "locale"
-    t.string   "name"
+    t.integer  "owner_id",   :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
+    t.string   "name",       :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "credit"
   end
 
+  add_index "owner_translations", ["locale"], :name => "in_owner_translations_locale"
+  add_index "owner_translations", ["name"], :name => "in_owner_translations_name"
+  add_index "owner_translations", ["owner_id", "locale"], :name => "in_owner_translations_unique"
   add_index "owner_translations", ["owner_id"], :name => "index_owner_translations_on_owner_id"
 
   create_table "owners", :force => true do |t|
@@ -499,7 +503,8 @@ ActiveRecord::Schema.define(:version => 20101228223641) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "lock_version",   :default => 0,     :null => false
-    t.boolean  "private",        :default => false
+    t.boolean  "private",        :default => false, :null => false
+    t.string   "city"
   end
 
   create_table "page_translations", :force => true do |t|

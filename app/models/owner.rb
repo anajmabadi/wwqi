@@ -5,9 +5,13 @@ class Owner < ActiveRecord::Base
   has_many :repositories, :dependent => :restrict
   has_many :passports, :through => :repositories
   
-  translates :name
+  translates :name, :credit
   default_scope :include => :translations
   globalize_accessors :fa, :en
+  
+  validates :name_en, :name_fa, :presence => true, :length => {:maximum => 255}
+  validates :credit_fa, :credit_en, :length => {:maximum => 255}
+  validates :private, :inclusion => { :in => [true,false] }
 
   def self.select_list
     return self.all(:conditions => ['owner_translations.locale = ?', I18n.locale.to_s],:select => 'DISTINCT id, owner_translations.name', :order => 'owner_translations.name').map {|owner| [owner.name, owner.id]}

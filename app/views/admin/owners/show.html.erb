@@ -24,6 +24,22 @@
             <tr>
                 <td>
                 <div class="field">
+                    <%= label @owner, :credit_en %>
+                    <br />
+                    <%= @owner.credit_en %>
+                </div>
+                </td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @owner, :credit_fa %>
+                    <br />
+                    <%= @owner.credit_fa %>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
                     <%= label @owner, :address %>
                     <br />
                     <%= @owner.address %>
@@ -40,11 +56,20 @@
             <tr>
                 <td>
                 <div class="field">
+                    <%= label @owner, :city %>
+                    <br />
+                    <%= @owner.city %>
+                </div>
+                </td>
+                <td>
+                <div class="field">
                     <%= label @owner, :state_province %>
                     <br />
                     <%= @owner.state_province %>
                 </div>
                 </td>
+            </tr>
+            <tr>
                 <td>
                 <div class="field">
                     <%= label @owner, :postal_code %>
@@ -52,8 +77,6 @@
                     <%= @owner.postal_code %>
                 </div>
                 </td>
-            </tr>
-            <tr>
                 <td>
                 <div class="field">
                     <%= label @owner, :country %>
@@ -61,6 +84,8 @@
                     <%= @owner.country %>
                 </div>
                 </td>
+            </tr>
+            <tr>
                 <td>
                 <div class="field">
                     <%= label @owner, :telephone %>
@@ -68,15 +93,16 @@
                     <%= @owner.telephone %>
                 </div>
                 </td>
-            </tr>
-            <tr>
                 <td>
                 <div class="field">
                     <%= label @owner, :email %>
                     <br />
                     <%= @owner.email %>
                 </div>
-                </td><td>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
                 <div class="field">
                     <%= label @owner, :url %>
                     <br />

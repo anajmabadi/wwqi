@@ -1,106 +1,141 @@
 <%= form_for([:admin, @owner]) do |f| %>
-  <%= f.error_messages %>
-  <%= f.hidden_field :lock_version %>
-  <table class="global" width="80%" cellpadding="0" cellspacing="0">
+<%= f.error_messages %>
+<%= f.hidden_field :lock_version %>
+<table class="global" width="80%" cellpadding="0" cellspacing="0">
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :name_en %><br />
-          <%= f.text_field :name_en %>
+            <%= f.label :name_en %>
+            <br />
+            <%= f.text_field :name_en %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :name_fa %><br />
-          <%= f.text_field :name_fa %>
+            <%= f.label :name_fa %>
+            <br />
+            <%= f.text_field :name_fa %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :address %><br />
-          <%= f.text_field :address %>
+            <%= f.label :credit_en %>
+            <br />
+            <%= f.text_field :credit_en %>
         </div>
-      </td>
-      <td>
-        <div class="field">
-          <%= f.label :address2 %><br />
-          <%= f.text_field :address2 %>
+        </td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :credit_fa %>
+            <br />
+            <%= f.text_field :credit_fa %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :state_province %><br />
-          <%= f.text_field :state_province %>
+            <%= f.label :address %>
+            <br />
+            <%= f.text_field :address %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field">
-          <%= f.label :postal_code %><br />
-          <%= f.text_field :postal_code %>
+            <%= f.label :address2 %>
+            <br />
+            <%= f.text_field :address2 %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :country %><br />
-          <%= f.text_field :country %>
+            <%= f.label :city %>
+            <br />
+            <%= f.text_field :city %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field">
-          <%= f.label :telephone %><br />
-          <%= f.text_field :telephone %>
+            <%= f.label :state_province %>
+            <br />
+            <%= f.text_field :state_province %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :email %><br />
-          <%= f.text_field :email %>
+            <%= f.label :postal_code %>
+            <br />
+            <%= f.text_field :postal_code %>
         </div>
-      </td><td>
+        </td>
+        <td>
         <div class="field">
-          <%= f.label :url %><br />
-          <%= f.text_field :url %>
+            <%= f.label :country %>
+            <br />
+            <%= f.text_field :country %>
         </div>
-      </td></tr>
+        </td>
+    </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :contact %><br />
-          <%= f.text_field :contact %>
+            <%= f.label :telephone %>
+            <br />
+            <%= f.text_field :telephone %>
         </div>
-      </td><td>
+        </td>
+        <td>
         <div class="field">
-          <%= f.label :terms %><br />
-          <%= f.text_area :terms, :rows => 3 %>
+            <%= f.label :email %>
+            <br />
+            <%= f.text_field :email %>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td colspan="2">
+        <div class="field">
+            <%= f.label :url %>
+            <br />
+            <%= f.text_field :url %>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
+            <%= f.label :contact %>
+            <br />
+            <%= f.text_field :contact %>
+        </div>
+        </td><td>
+        <div class="field">
+            <%= f.label :terms %>
+            <br />
+            <%= f.text_area :terms, :rows => 3 %>
         </div></td>
     </tr>
     <tr>
-      <td>
+        <td colspan="2">
         <div class="field">
-          <%= f.label :private %><br />
-          <%= f.check_box :private %>
+            <%= f.label :private %>
+            <br />
+            <%= f.check_box :private %>
         </div>
-      </td>
-      <td>
-        <div class="field">
-          <%= f.label :terms %><br />
-          <%= f.text_area :terms, :rows => 3 %>
-        </div></td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="actions">
-          <%= f.submit %>
+            <%= f.submit %>
         </div>
-      </td>
+        </td>
     </tr>
-  </table>
-  <% end %>
+</table>
+<% end %>
