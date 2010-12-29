@@ -16,6 +16,7 @@ owners_001:
   updated_at: 2010-12-09 18:18:31
   lock_version: "1"
   private: "0"
+  city: 
 owners_002: 
   id: "2"
   address: 
@@ -33,6 +34,7 @@ owners_002:
   updated_at: 2010-05-04 16:25:46
   lock_version: "0"
   private: "0"
+  city: 
 owners_003: 
   id: "3"
   address: ""
@@ -50,6 +52,7 @@ owners_003:
   updated_at: 2010-07-01 19:56:31
   lock_version: "0"
   private: "0"
+  city: 
 owners_004: 
   id: "4"
   address: ""
@@ -67,6 +70,7 @@ owners_004:
   updated_at: 2010-12-06 18:07:54
   lock_version: "1"
   private: "0"
+  city: 
 owners_005: 
   id: "5"
   address: ""
@@ -84,6 +88,7 @@ owners_005:
   updated_at: 2010-10-20 15:37:31
   lock_version: "0"
   private: "0"
+  city: 
 owners_006: 
   id: "6"
   address: "1421 Linden Ave. "
@@ -101,6 +106,7 @@ owners_006:
   updated_at: 2010-12-06 17:08:50
   lock_version: "0"
   private: "1"
+  city: 
 owners_007: 
   id: "7"
   address: Cruquiusweg 31
@@ -118,6 +124,7 @@ owners_007:
   updated_at: 2010-12-06 17:13:06
   lock_version: "0"
   private: "1"
+  city: 
 owners_008: 
   id: "8"
   address: 24 Maugus Ave.
@@ -135,6 +142,7 @@ owners_008:
   updated_at: 2010-12-06 17:40:59
   lock_version: "0"
   private: "1"
+  city: 
 owners_009: 
   id: "9"
   address: 1854 Falcon Ridge Dr.
@@ -152,6 +160,7 @@ owners_009:
   updated_at: 2010-12-06 17:44:48
   lock_version: "0"
   private: "1"
+  city: 
 owners_010: 
   id: "10"
   address: Santa Barbara
@@ -169,6 +178,7 @@ owners_010:
   updated_at: 2010-12-06 18:01:35
   lock_version: "0"
   private: "1"
+  city: 
 owners_011: 
   id: "11"
   address: Austin
@@ -186,6 +196,7 @@ owners_011:
   updated_at: 2010-12-06 18:05:27
   lock_version: "0"
   private: "1"
+  city: 
 owners_012: 
   id: "12"
   address: ""
@@ -203,6 +214,7 @@ owners_012:
   updated_at: 2010-12-06 18:08:44
   lock_version: "0"
   private: "1"
+  city: 
 owners_013: 
   id: "13"
   address: ""
@@ -220,6 +232,7 @@ owners_013:
   updated_at: 2010-12-06 18:26:39
   lock_version: "0"
   private: "1"
+  city: 
 owners_014: 
   id: "14"
   address: "35 Willow Lane "
@@ -237,6 +250,7 @@ owners_014:
   updated_at: 2010-12-06 18:32:25
   lock_version: "0"
   private: "1"
+  city: 
 owners_015: 
   id: "15"
   address: 1050 North Point Street, Fontana West Bldg.
@@ -254,6 +268,7 @@ owners_015:
   updated_at: 2010-12-06 18:38:16
   lock_version: "0"
   private: "1"
+  city: 
 owners_016: 
   id: "16"
   address: ""
@@ -271,6 +286,7 @@ owners_016:
   updated_at: 2010-12-06 18:39:29
   lock_version: "0"
   private: "1"
+  city: 
 owners_017: 
   id: "17"
   address: ""
@@ -288,6 +304,7 @@ owners_017:
   updated_at: 2010-12-06 18:39:51
   lock_version: "0"
   private: "1"
+  city: 
 owners_018: 
   id: "18"
   address: ""
@@ -305,6 +322,7 @@ owners_018:
   updated_at: 2010-12-06 18:40:41
   lock_version: "0"
   private: "1"
+  city: 
 owners_019: 
   id: "19"
   address: ""
@@ -322,6 +340,7 @@ owners_019:
   updated_at: 2010-12-06 18:41:18
   lock_version: "0"
   private: "1"
+  city: 
 owners_020: 
   id: "20"
   address: ""
@@ -339,3 +358,4 @@ owners_020:
   updated_at: 2010-12-09 22:03:40
   lock_version: "0"
   private: "0"
+  city: 

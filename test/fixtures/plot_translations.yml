@@ -1,0 +1,71 @@
+--- 
+plot_translations_001: 
+  id: "21"
+  plot_id: "478"
+  locale: en
+  caption: ""
+  created_at: 2010-12-28 20:34:53
+  updated_at: 2010-12-28 20:34:53
+plot_translations_002: 
+  id: "22"
+  plot_id: "478"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-28 20:34:53
+  updated_at: 2010-12-28 20:34:53
+plot_translations_003: 
+  id: "23"
+  plot_id: "479"
+  locale: en
+  caption: origin
+  created_at: 2010-12-28 20:35:07
+  updated_at: 2010-12-28 20:35:07
+plot_translations_004: 
+  id: "24"
+  plot_id: "479"
+  locale: fa
+  caption: origin
+  created_at: 2010-12-28 20:35:07
+  updated_at: 2010-12-28 20:35:07
+plot_translations_005: 
+  id: "25"
+  plot_id: "480"
+  locale: en
+  caption: origin
+  created_at: 2010-12-28 20:35:18
+  updated_at: 2010-12-28 20:35:18
+plot_translations_006: 
+  id: "26"
+  plot_id: "480"
+  locale: fa
+  caption: origin
+  created_at: 2010-12-28 20:35:18
+  updated_at: 2010-12-28 20:35:18
+plot_translations_007: 
+  id: "27"
+  plot_id: "481"
+  locale: en
+  caption: origin
+  created_at: 2010-12-28 20:35:41
+  updated_at: 2010-12-28 20:35:41
+plot_translations_008: 
+  id: "28"
+  plot_id: "481"
+  locale: fa
+  caption: origin
+  created_at: 2010-12-28 20:35:41
+  updated_at: 2010-12-28 20:35:41
+plot_translations_009: 
+  id: "29"
+  plot_id: "482"
+  locale: en
+  caption: ba
+  created_at: 2010-12-28 20:36:02
+  updated_at: 2010-12-28 20:36:02
+plot_translations_010: 
+  id: "30"
+  plot_id: "482"
+  locale: fa
+  caption: ""
+  created_at: 2010-12-28 20:36:02
+  updated_at: 2010-12-28 20:36:02

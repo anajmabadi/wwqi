@@ -1,101 +1,5 @@
 --- 
 subject_type_translations_001: 
-  id: "1"
-  subject_type_id: "1"
-  locale: en
-  name: Writings
-  description: ""
-  created_at: 2010-03-22 22:17:35
-  updated_at: 2010-03-22 22:17:35
-subject_type_translations_002: 
-  id: "2"
-  subject_type_id: "1"
-  locale: fa
-  name: "\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA\xD9\x87 \xD9\x87\xD8\xA7"
-  description: ""
-  created_at: 2010-03-22 22:25:55
-  updated_at: 2010-03-22 22:25:55
-subject_type_translations_003: 
-  id: "3"
-  subject_type_id: "2"
-  locale: en
-  name: Legal Docs
-  description: ""
-  created_at: 2010-03-22 22:26:51
-  updated_at: 2010-03-22 22:26:51
-subject_type_translations_004: 
-  id: "4"
-  subject_type_id: "2"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB3\xD9\x86\xD8\xA7\xD8\xAF \xD8\xAD\xD9\x82\xD9\x88\xD9\x82\xDB\x8C"
-  description: ""
-  created_at: 2010-03-22 22:27:56
-  updated_at: 2010-03-22 22:27:56
-subject_type_translations_005: 
-  id: "5"
-  subject_type_id: "3"
-  locale: en
-  name: Artworks
-  description: ""
-  created_at: 2010-03-22 22:28:33
-  updated_at: 2010-03-22 22:28:33
-subject_type_translations_006: 
-  id: "6"
-  subject_type_id: "4"
-  locale: en
-  name: Photos
-  description: ""
-  created_at: 2010-03-22 22:28:53
-  updated_at: 2010-03-22 22:28:53
-subject_type_translations_007: 
-  id: "7"
-  subject_type_id: "5"
-  locale: en
-  name: Objects
-  description: ""
-  created_at: 2010-03-22 22:29:49
-  updated_at: 2010-03-22 22:29:49
-subject_type_translations_008: 
-  id: "8"
-  subject_type_id: "6"
-  locale: en
-  name: Oral History
-  description: ""
-  created_at: 2010-03-22 22:30:10
-  updated_at: 2010-03-22 22:30:10
-subject_type_translations_009: 
-  id: "44"
-  subject_type_id: "3"
-  locale: fa
-  name: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xDB\x8C"
-  description: ""
-  created_at: 2010-03-22 22:54:52
-  updated_at: 2010-03-22 22:54:52
-subject_type_translations_010: 
-  id: "52"
-  subject_type_id: "4"
-  locale: fa
-  name: "\xD8\xB9\xDA\xA9\xD8\xB3"
-  description: ""
-  created_at: 2010-03-22 22:57:25
-  updated_at: 2010-03-22 22:57:25
-subject_type_translations_011: 
-  id: "53"
-  subject_type_id: "5"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB4\xDB\x8C\xD8\xA7\xD8\xA1 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD8\xB1\xD9\x88\xD8\xB2\xD9\x85\xD8\xB1\xD9\x87"
-  description: ""
-  created_at: 2010-03-22 22:57:44
-  updated_at: 2010-03-22 22:57:44
-subject_type_translations_012: 
-  id: "54"
-  subject_type_id: "6"
-  locale: fa
-  name: "\xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE \xD8\xB4\xD9\x81\xD8\xA7\xD9\x87\xDB\x8C"
-  description: ""
-  created_at: 2010-03-22 22:58:03
-  updated_at: 2010-03-22 22:58:03
-subject_type_translations_013: 
   id: "55"
   subject_type_id: "7"
   locale: en
@@ -103,7 +7,7 @@ subject_type_translations_013:
   description: ""
   created_at: 2010-06-22 22:03:39
   updated_at: 2010-11-21 14:14:52
-subject_type_translations_014: 
+subject_type_translations_002: 
   id: "56"
   subject_type_id: "7"
   locale: fa
@@ -111,7 +15,7 @@ subject_type_translations_014:
   description: ""
   created_at: 2010-06-22 22:04:18
   updated_at: 2010-11-21 14:14:52
-subject_type_translations_015: 
+subject_type_translations_003: 
   id: "57"
   subject_type_id: "8"
   locale: en
@@ -119,7 +23,7 @@ subject_type_translations_015:
   description: 
   created_at: 2010-12-26 03:07:01
   updated_at: 2010-12-26 03:07:03
-subject_type_translations_016: 
+subject_type_translations_004: 
   id: "58"
   subject_type_id: "8"
   locale: fa

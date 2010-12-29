@@ -49,23 +49,6 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 					| Pahlavi | 9 | 0 |
 			When I go to the archive page
 			Then I should have valid period archive links
-									
-	  Scenario: all subject type links take you to the correct archive browser page 
-			Given I speak English
-				And I have items
-				And I have collections
-				And I have subject types
-				And I have periods
-				And I have these subject types:
-					| name	| id	|
-					|	Writings | 1 |
-					|	Legal Docs | 2 |
-					|	Photos | 4 |			
-					|	Artworks | 3 |
-					|	Objects | 5 |
-					|	Oral History | 6 |
-			When I go to the archive page
-			Then I should have valid subject type archive links from archive
 			
 			Scenario: show most popular items
 				Given I speak English
