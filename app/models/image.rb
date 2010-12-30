@@ -1,6 +1,9 @@
 class Image < ActiveRecord::Base
   belongs_to :item
+  
   translates :title, :description
+  globalize_accessors :fa, :en
+  default_scope :include => [:translations]
 
   def tag_line
     tag = ''

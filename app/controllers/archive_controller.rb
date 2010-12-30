@@ -147,15 +147,24 @@ class ArchiveController < ApplicationController
   # zoomify requires a custom XML file for its gallery viewer
   def slides
     @id = params[:id]
-    @slides = Image.find(:all, :conditions => ['publish=1 && item_id = ?', @id], :order => :position)
+    @item = Item.find(@id)
+    begin
+      @slides = @item.images.where(['publish=?', true]).order('position')
+    rescue => error
+      flash[:error] = error.message
+    ensure
+      # no slides found so create some
+      if @slides.empty?
+        @slides = @item.create_images
+      end
+    end
     unless @id.nil? || @slides.nil? || @slides.empty?
       respond_to do |format|
         format.xml
       end
     else
-      flash[:error] = 'Unable to locate process slides for with id number ' + params[:id].to_s + '.'
+      flash[:error] = 'Unable to locate process slides for id number ' + params[:id].to_s + '.'
     end
-
   end
 
   private

@@ -16,7 +16,7 @@ class Item < ActiveRecord::Base
   belongs_to :era
 
   has_many :classifications, :dependent => :destroy
-  has_many :images, :dependent => :destroy
+  has_many :images, :order => :position, :dependent => :destroy
   has_many :appearances, :dependent => :destroy
   has_many :people, :through => :appearances
   has_many :plots, :order => 'plots.position', :dependent => :destroy
@@ -41,20 +41,16 @@ class Item < ActiveRecord::Base
 
   
   # validations
-#  validates :title, :presence => true, :length => { :maximum => 255, :minimum => 3 }
-#  validates :pages, :presence => true, :numericality => { :greater_than => 0, :less_than => 10001 }
    validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
-#  validates :width, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
-#  validates :height, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
-#  validates :depth, :presence => true, :numericality => { :greater_than_or_equal_to => 0, :less_than => 10001 }
-
-#  validates :sort_year, :numericality => {:greater_than => 1500, :less_than => 2050}
-#  validates :sort_month, :numericality => {:greater_than => 0, :less_than => 13}
-#  validates :sort_day, :numericality => {:greater_than => 0, :less_than => 35}
-  
-#  validates :year, :numericality => {:greater_than => 0, :less_than => 2050}
-#  validates :month, :numericality => {:greater_than => 0, :less_than => 13}
-#  validates :day, :numericality => {:greater_than => 0, :less_than => 35}
+   
+  def create_images
+    if self.images.empty? && !self.pages.nil? && self.pages != 0
+      (1..self.pages).each do |index|
+        image = Image.create(:item_id => self.id, :position => index, :publish => true, :verso => false, :title_en => self.title_en, :title_fa => self.title_fa)
+      end  
+    end
+    return self.images(true)
+  end
 
   def self.recently_added_ids(limit=25)
     ids = []
