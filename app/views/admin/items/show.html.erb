@@ -10,7 +10,7 @@
                     <td><h2>
                     <%= @item.title_en %>
                     </h2></td>
-                    <td><h2>
+                    <td class="persianOnly"><h2>
                     <%= @item.title_fa %>
                     </h2></td>
                 </tr>
@@ -19,7 +19,7 @@
                     <b>Credit_en:</b>
                     <%= @item.credit_en %>
                     </td>
-                    <td>
+                    <td class="persianOnly">
                     <b>Credit_fa:</b>
                     <%= @item.credit_fa %>
                     </td>
@@ -28,7 +28,7 @@
                     <td>
                     <b>Description_en:</b>
                     <%= @item.description_en %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Description_fa:</b>
                     <%= @item.description_fa %>
                     </td>
@@ -37,7 +37,7 @@
                     <td>
                     <b>Remarks_en:</b>
                     <%= @item.remarks_en %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Remarks_fa:</b>
                     <%= @item.remarks_fa %>
                     </td>
@@ -46,7 +46,7 @@
                     <td>
                     <b>Publisher_en:</b>
                     <%= @item.publisher_en %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Publisher_fa:</b>
                     <%= @item.publisher_fa %>
                     </td>
@@ -55,7 +55,7 @@
                     <td>
                     <b>Transcript_en:</b>
                     <%= @item.transcript_en %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Transcript_fa:</b>
                     <%= @item.transcript_fa %>
                     </td>
@@ -69,7 +69,7 @@
                     <td>
                     <b>Owner_en:</b>
                     <%= @item.owner.name_en unless @item.owner.nil? %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Owner_fa:</b>
                     <%= @item.owner.name_fa unless @item.owner.nil? %>
                     </td>
@@ -85,7 +85,7 @@
                     <td>
                     <b>Collection_en:</b>
                     <%= @item.collection.name_en unless @item.collection.nil? %>
-                    </td><td>
+                    </td><td class="persianOnly">
                     <b>Collection_fa:</b>
                     <%= @item.collection.name_fa unless @item.collection.nil? %>
                     </td>
@@ -107,6 +107,7 @@
                     <td>
                     <b>Pages:</b>
                     <%= @item.pages %>
+                    <%= link_to_unless @item.pages.nil?, 'See page image info', admin_item_images_path(@item) %>
                     </td>
                     <td>
                     <b>Bound:</b>
