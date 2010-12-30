@@ -1,40 +1,51 @@
-<p class="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:show).capitalize -%>
 
-<p>
-  <b>Title:</b>
-  <%= @image.title %>
-</p>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :image => @image %>
+        <table class="styled" >
+            <tr>
+                <td>
+                <p>
+                    <b>Title:</b>
+                    <%= @image.title %>
+                </p>
+                <p>
+                    <b>Description:</b>
+                    <%= @image.description %>
+                </p>
+                <p>
+                    <b>Width:</b>
+                    <%= @image.width %>
+                </p>
+                <p>
+                    <b>Depth:</b>
+                    <%= @image.depth %>
+                </p>
+                <p>
+                    <b>Height:</b>
+                    <%= @image.height %>
+                </p>
+                <p>
+                    <b>Verso:</b>
+                    <%= @image.verso %>
+                </p>
+                <p>
+                    <b>Position:</b>
+                    <%= @image.position %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @image.notes %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @image.publish %>
+                </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>
 
-<p>
-  <b>Description:</b>
-  <%= @image.description %>
-</p>
-
-<p>
-  <b>Dimensions:</b>
-  <%= @image.dimensions %>
-</p>
-
-<p>
-  <b>Verso:</b>
-  <%= @image.verso %>
-</p>
-
-<p>
-  <b>Position:</b>
-  <%= @image.position %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @image.notes %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @image.publish %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_image_path(@image) %> |
-<%= link_to 'Back', admin_images_path %>

@@ -1,6 +1,7 @@
 class Item < ActiveRecord::Base
 
   before_validation :set_sensible_date_defaults
+  after_create :create_images
   
   # truncate and other helpers
   include ActionView::Helpers::TextHelper
@@ -27,7 +28,7 @@ class Item < ActiveRecord::Base
   has_many :subjects, :through => :classifications, :order => 'position'
   has_many :passports, :order => 'passports.position', :dependent => :destroy
   has_many :repositories, :through => :passports
-  has_many :comps, :order => 'comps.position', :dependent => :destroy  #join table for linking objects to each other -- must be specified in both directions
+  has_many :comps, :order => 'comps.position', :dependent => :destroy  
   has_many :sections, :order => 'sections.start_page', :dependent => :destroy
   
   # globalize2 accessors 

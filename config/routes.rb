@@ -14,7 +14,6 @@ Qajar::Application.routes.draw do
       :clips,
       :clip_types,
       :collections,
-      :images,
       :owners,
       :pages,
       :periods,
@@ -33,6 +32,7 @@ Qajar::Application.routes.draw do
       :people
 
     resources :items do
+      resources :images
       collection do
         post :show_add_passport_to_item
         post :hide_add_passport_to_item
