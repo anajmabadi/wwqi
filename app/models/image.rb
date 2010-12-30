@@ -5,6 +5,11 @@ class Image < ActiveRecord::Base
   globalize_accessors :fa, :en
   default_scope :include => [:translations]
 
+  validates :title_en, :title_fa, :presence => true, :length => {:maximum => 255}  
+  validates :position, :presence => true, :numericality => true
+  validates :publish, :verso, :inclusion => { :in => [true,false] }
+  validates :item_id, :presence => true, :uniqueness => {:scope => :position}
+
   def tag_line
     tag = ''
     tag += title.nil? ? item.title : title

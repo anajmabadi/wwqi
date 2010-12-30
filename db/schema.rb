@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101229002752) do
+ActiveRecord::Schema.define(:version => 20101230143143) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -379,14 +379,16 @@ ActiveRecord::Schema.define(:version => 20101229002752) do
   create_table "images", :force => true do |t|
     t.integer  "item_id"
     t.string   "file_name"
-    t.string   "dimensions"
     t.boolean  "verso"
     t.integer  "position"
     t.text     "notes"
     t.boolean  "publish"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version",                                :default => 0,   :null => false
+    t.decimal  "width",        :precision => 10, :scale => 1, :default => 0.0, :null => false
+    t.decimal  "height",       :precision => 10, :scale => 1, :default => 0.0, :null => false
+    t.decimal  "depth",        :precision => 10, :scale => 1, :default => 0.0, :null => false
   end
 
   add_index "images", ["item_id"], :name => "index_images_on_item_id"
