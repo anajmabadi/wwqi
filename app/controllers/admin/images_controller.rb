@@ -5,6 +5,8 @@ class Admin::ImagesController < Admin::AdminController
     @item = Item.find(params[:item_id])
     @images = @item.images
 
+    session[:admin_item_images_index_url] = request.fullpath
+
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @images }
@@ -28,12 +30,12 @@ class Admin::ImagesController < Admin::AdminController
   def new
     @item = Item.find(params[:item_id])
     @maximum_position = @item.images.maximum(:position)
-    @image = Image.new({:item_id => @item.id, 
-                        :publish => true, 
-                        :verso => false, 
-                        :title_en => @item.title_en, 
-                        :title_fa => @item.title_fa, 
-                        :position => @maximum_position + 1})
+    @image = Image.new({:item_id => @item.id,
+      :publish => true,
+      :verso => false,
+      :title_en => @item.title_en,
+      :title_fa => @item.title_fa,
+      :position => @maximum_position + 1})
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @image }
@@ -55,7 +57,6 @@ class Admin::ImagesController < Admin::AdminController
       if @image.save
         @maximum_position = @item.images.maximum(:position)
         @item.update_attributes(:pages => @maximum_position) unless @maximum_position.nil?
-        Rails.logger.info "---------- item.pages: " + @item.pages.to_s + "  @maximum_position: " + @maximum_position.to_s
         format.html { redirect_to(admin_item_image_path({:item_id => @item.id, :id => @image.id}), :notice => 'Image was successfully created.') }
         format.xml  { render :xml => @image, :status => :created, :location => @image }
       else
@@ -72,7 +73,7 @@ class Admin::ImagesController < Admin::AdminController
     @item = Item.find(params[:item_id])
     respond_to do |format|
       if @image.update_attributes(params[:image])
-        format.html { redirect_to(admin_item_image_path({:item_id => @item.id, :id => @image.id}), :notice => 'Image was successfully updated.') }
+        format.html { redirect_to(admin_item_image_path(@item, @image), :notice => 'Image was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }
@@ -87,7 +88,8 @@ class Admin::ImagesController < Admin::AdminController
     @item = Item.find(params[:item_id])
     @image = Image.find(params[:id])
     @image.destroy
-
+    @maximum_position = @item.images.maximum(:position)
+    @item.update_attributes(:pages => @maximum_position) unless @maximum_position.nil?
     respond_to do |format|
       format.html { redirect_to(admin_item_images_url) }
       format.xml  { head :ok }

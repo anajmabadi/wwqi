@@ -1,4 +1,4 @@
-<%= form_for(['admin_item', @image]) do |f| %>
+<%= form_for([:admin, @item, @image]) do |f| %>
 <%= f.hidden_field :item_id %>
 <table class="styled" >
     <tr>
