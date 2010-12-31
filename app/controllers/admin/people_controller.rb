@@ -1,5 +1,4 @@
 class Admin::PeopleController < Admin::AdminController
-
   # GET /people
   # GET /people.xml
   def index
@@ -49,17 +48,8 @@ class Admin::PeopleController < Admin::AdminController
   def show
     begin
       @person = Person.find(params[:id])
-      @order = session[:order]
+      @people = load_people(@person)
 
-      #check if there is a current results set (i.e. something from the browser)
-      unless session[:current_people].nil? || session[:current_people].empty? || !session[:current_people].include?(@person.id)
-        @people = Person.where(['people.id IN (?)', session[:current_people]]).order(@order)
-      else
-      @people = Person.order(@order).all
-      end
-
-      @people = sort_bilingual(@people, session[:sort_field], session[:direction]) if ["name_en", "name_fa"].include?session[:sort_field]
-      
     rescue StandardError => error
       flash[:error] = error.message ||= 'Person with id number ' + params[:id].to_s + ' was not found or your people set was invalid. Reload the people page.'
     @error = true
@@ -96,7 +86,7 @@ class Admin::PeopleController < Admin::AdminController
   # POST /people.xml
   def create
     @person = Person.new(params[:person])
-
+    @people = load_people(@person)
     respond_to do |format|
       if @person.save
         format.html { redirect_to(admin_person_path(@person), :notice => 'Person was successfully created.') }
@@ -112,7 +102,7 @@ class Admin::PeopleController < Admin::AdminController
   # PUT /people/1.xml
   def update
     @person = Person.find(params[:id])
-
+    @people = load_people(@person)
     respond_to do |format|
       if @person.update_attributes(params[:person])
         format.html { redirect_to(admin_person_path(@person), :notice => 'Person was successfully updated.') }
@@ -189,7 +179,22 @@ class Admin::PeopleController < Admin::AdminController
       people.reverse! if direction == 'down'
     rescue => error
       flash[:error] = "A problem occured sorting by English or Farsi names: " + error.message
-    end  
+    end
+    return people
+  end
+
+  def load_people(person)
+
+    order = session[:order] ||= 'people.id'
+
+    #check if there is a current results set (i.e. something from the browser)
+    unless session[:current_people].nil? || session[:current_people].empty? || !session[:current_people].include?(person.id)
+      people = Person.where(['people.id IN (?)', session[:current_people]]).order(order)
+    else
+    people = Person.order(order).all
+    end
+
+    people = sort_bilingual(people, session[:sort_field], session[:direction]) if ["name_en", "name_fa"].include?session[:sort_field]
     return people
   end
 end
