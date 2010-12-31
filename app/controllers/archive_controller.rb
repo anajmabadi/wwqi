@@ -136,7 +136,7 @@ class ArchiveController < ApplicationController
     @file_to_send = @item.zip_path
     unless File.exists?(@item.zip_path)
       #create a zip file if it is the first time
-      zip_them_all = ZipThemAll.new(@item.zip_path, @item.preview_paths)
+      zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
       zip_them_all.zip
     end
 
