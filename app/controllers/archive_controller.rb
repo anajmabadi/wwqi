@@ -127,22 +127,21 @@ class ArchiveController < ApplicationController
   end
 
   def download
-
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @error = false
-    
     begin
       @item = Item.find_by_id(params[:id])
       @file_to_send = @item.zip_path
       unless File.exists?(@file_to_send)
         #create a zip file if it is the first time
-        zip_them_all = ZipThemAll.new(@item.zip_path, @item.preview_paths)
-        zip_them_all.zip
+        Rails.logger.debug "made it into the loop"
+      zip_them_all = ZipThemAll.new(@item.zip_path, @item.preview_paths)
+      zip_them_all.zip
       end
       send_file @file_to_send, :type=>"application/zip"
     rescue => error
       flash[:error] = error.message
-    end
+      @error = true
+    end 
   end
 
   # zoomify requires a custom XML file for its gallery viewer
