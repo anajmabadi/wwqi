@@ -139,7 +139,7 @@ class ArchiveController < ApplicationController
         zip_them_all.zip
         Rails.logger.error "Does zip exist: " + File.exists?(@file_to_send).to_s
       end
-      send_file @file_to_send, :type=>"application/zip"
+      send_file @file_to_send, :type => "application/zip", :disposition => 'inline'
     rescue => error
       flash[:error] = error.message
     @error = true
