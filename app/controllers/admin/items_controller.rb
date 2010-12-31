@@ -68,9 +68,9 @@ class Admin::ItemsController < Admin::AdminController
 
     #cache the current search set in a session variable
     session[:current_items] = @items.map { |i| i.id }
-    session[:sort_field] = params[:c]
-    session[:direction] = params[:d]
-    session[:order] = @order
+    session[:items_sort_field] = params[:c]
+    session[:items_direction] = params[:d]
+    session[:items_order] = @order
 
     @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
@@ -539,13 +539,13 @@ class Admin::ItemsController < Admin::AdminController
 
   def load_items(item)
     #check if there is a current results set (i.e. something from the browser)
-    order = session[:order] ||= 'items.id'
+    order = session[:items_order] ||= 'items.id'
     unless session[:current_items].nil? || session[:current_items].empty? || !session[:current_items].include?(item.id)
       items = Item.where(['items.id IN (?)', session[:current_items]]).order(order)
     else
     items = Item.order(order).all
     end
-    items = sort_bilingual(items, session[:sort_field], session[:direction]) if ["title_en", "title_fa"].include?session[:sort_field]
+    items = sort_bilingual(items, session[:items_sort_field], session[:items_direction]) if ["title_en", "title_fa"].include?session[:items_sort_field]
     return items
   end
 

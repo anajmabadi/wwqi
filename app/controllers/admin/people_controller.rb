@@ -33,9 +33,9 @@ class Admin::PeopleController < Admin::AdminController
 
     #cache the current search set in a session variable
     session[:current_people] = @people.map { |i| i.id }
-    session[:sort_field] = params[:c]
-    session[:direction] = params[:d]
-    session[:order] = @order
+    session[:people_sort_field] = params[:c]
+    session[:people_direction] = params[:d]
+    session[:people_order] = @order
 
     respond_to do |format|
       format.html # index.html.erb
@@ -185,7 +185,7 @@ class Admin::PeopleController < Admin::AdminController
 
   def load_people(person)
 
-    order = session[:order] ||= 'people.id'
+    order = session[:people_order] ||= 'people.id'
 
     #check if there is a current results set (i.e. something from the browser)
     unless session[:current_people].nil? || session[:current_people].empty? || !session[:current_people].include?(person.id)
@@ -194,7 +194,7 @@ class Admin::PeopleController < Admin::AdminController
     people = Person.order(order).all
     end
 
-    people = sort_bilingual(people, session[:sort_field], session[:direction]) if ["name_en", "name_fa"].include?session[:sort_field]
+    people = sort_bilingual(people, session[:people_sort_field], session[:people_direction]) if ["name_en", "name_fa"].include?session[:people_sort_field]
     return people
   end
 end

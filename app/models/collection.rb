@@ -64,6 +64,6 @@ class Collection < ActiveRecord::Base
   end
 
   def to_label
-    return collection
+    return "#{self.name_en.nil? ? 'N/A' : self.name_en} (#{self.id.to_s})" 
   end
 end

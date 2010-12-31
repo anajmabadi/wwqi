@@ -10,10 +10,10 @@ class Person < ActiveRecord::Base
   translates :name, :sort_name, :description, :vitals, :birth_place
   globalize_accessors :fa, :en
   default_scope :include => :translations
-  
+
   validates :name_en, :name_fa, :sort_name_en, :sort_name_fa, :presence => true, :length => {:maximum => 255}
   validates :publish, :major, :inclusion => { :in => [true,false] }
-  
+
   def self.select_list
     return self.all(:select => 'DISTINCT id, person_translations.name', :order => 'person_translations.sort_name').map {|person| [person.to_label, person.id]}.sort
   end
@@ -28,8 +28,12 @@ class Person < ActiveRecord::Base
     return value
   end
 
-  def collections
-    return Collection.find(self.items.map { |item| item.collection_id }.uniq.sort) unless self.items.empty?
+  def included_collections
+    collection_ids = self.items.map { |i| i.collection_id }.reject { |i| i.nil? }.uniq.sort
+    unless collection_ids.empty?
+      my_set = Collection.find(collection_ids)
+    end
+    return my_set ||= []
   end
 
   def to_label
@@ -45,11 +49,11 @@ class Person < ActiveRecord::Base
   end
 
   def collections_label_en
-    return self.collections.nil? ? I18n.translate(:n_a) : self.collections.map { |c| c.name_en }.join(", ")
+    return self.included_collections.nil? ? I18n.translate(:n_a) : self.included_collections.map { |c| c.name_en }.join(", ")
   end
 
   def collections_label_fa
-    return self.collections.nil? ? I18n.translate(:n_a, :locale => :fa) : self.collections.map { |c| c.name_fa }.join(", ")
+    return self.included_collections.nil? ? I18n.translate(:n_a, :locale => :fa) : self.included_collections.map { |c| c.name_fa }.join(", ")
   end
 
 end

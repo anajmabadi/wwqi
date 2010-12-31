@@ -2,73 +2,152 @@
 <% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn"><%= render 'nav_show_header_bar', :person => @person %>
-    <table class="styled" >
-      <tr><td><div class="field">
-          <%= label @person, :name_en %><br />
-          <%= @person.name_en %>
-        </div></td>
-        <td><div class="field persianOnly">
-          <%= label @person, :name_fa %><br />
-          <%= @person.name_fa %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= label @person, :sort_name_en %><br />
-          <%= @person.sort_name_en %>
-        </div></td>
-        <td><div class="field persianOnly">
-          <%= label @person, :sort_name_fa %><br />
-          <%= @person.sort_name_fa %>
-        </div></td></tr>
-        <tr><td><div class="field ">
-          <%= label @person, :description_en %><br />
-          <%= @person.description_en %>
-        </div></td>
-        <td><div class="field persianOnly">
-          <%= label @person, :description_fa %><br />
-          <%= @person.description_fa %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= label @person, :vitals_en %><br />
-          <%= @person.vitals_en %>
-        </div></td>
-        <td><div class="field persianOnly">
-          <%= label @person, :vitals_fa %><br />
-          <%= @person.vitals_fa %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= label @person, :birth_place_en %><br />
-          <%= @person.birth_place_en %>
-        </div></td><td><div class="field">
-          <%= label @person, :birth_place_fa %><br />
-          <%= @person.birth_place_fa %>
-        </div></td></tr>
-        <tr><td colspan="2"><div class="field">
-          <%= label @person, :loc_name %><br />
-          <%= @person.loc_name %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= label @person, :dob %><br />
-          <%= @person.dob %>
-        </div></td>
-        <td><div class="field">
-          <%= label @person, :dod %><br />
-          <%= @person.dod %>
-        </div></td></tr>
-        <tr><td><div class="field">
-          <%= label @person, :publish %><br />
-          <%= show_check @person.publish %>
-        </div></td>
-        <td><div class="field">
-          <%= label @person, :major %><br />
-          <%= show_check @person.major %>
-        </div></td></tr>
-        <tr><td colspan="2"><div class="field">
-          <%= label @person, :notes %><br />
-          <%= @person.notes %>
-        </div></td></tr>
-    </table>
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :person => @person %>
+        <table class="styled" >
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :name_en %>
+                    <br />
+                    <%= @person.name_en %>
+                </div></td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @person, :name_fa %>
+                    <br />
+                    <%= @person.name_fa %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :sort_name_en %>
+                    <br />
+                    <%= @person.sort_name_en %>
+                </div></td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @person, :sort_name_fa %>
+                    <br />
+                    <%= @person.sort_name_fa %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field ">
+                    <%= label @person, :description_en %>
+                    <br />
+                    <%= @person.description_en %>
+                </div></td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @person, :description_fa %>
+                    <br />
+                    <%= @person.description_fa %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :vitals_en %>
+                    <br />
+                    <%= @person.vitals_en %>
+                </div></td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @person, :vitals_fa %>
+                    <br />
+                    <%= @person.vitals_fa %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :birth_place_en %>
+                    <br />
+                    <%= @person.birth_place_en %>
+                </div></td><td>
+                <div class="field">
+                    <%= label @person, :birth_place_fa %>
+                    <br />
+                    <%= @person.birth_place_fa %>
+                </div></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <div class="field">
+                    <%= label @person, :loc_name %>
+                    <br />
+                    <%= @person.loc_name %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :dob %>
+                    <br />
+                    <%= @person.dob %>
+                </div></td>
+                <td>
+                <div class="field">
+                    <%= label @person, :dod %>
+                    <br />
+                    <%= @person.dod %>
+                </div></td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
+                    <%= label @person, :publish %>
+                    <br />
+                    <%= show_check @person.publish %>
+                </div></td>
+                <td>
+                <div class="field">
+                    <%= label @person, :major %>
+                    <br />
+                    <%= show_check @person.major %>
+                </div></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <div class="field">
+                    <%= label @person, :notes %>
+                    <br />
+                    <%= @person.notes %>
+                </div></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <div class="field">
+                    <%= label @person, :items %>
+                    <br />
+                    <ul>
+                        <% @person.items.each do |item| -%>
+                        <li>
+                            <%= link_to_unless item.nil?, item.to_label, admin_item_path(item) %>
+                        </li>
+                        <% end unless @person.items.nil? %>
+                    </ul>
+                </div></td>
+                            </tr>
+            <tr>
+                <td colspan="2">
 
-    <%= render 'nav_show_header_bar', :person => @person %>
-  </div>
+                <div class="field">
+                    <%= label @person, :collections %>
+                    <br />
+                    <ul>
+                        <% @person.included_collections.each do |collection| -%>
+                        <li>
+                            <%= link_to_unless collection.nil?, collection.to_label, admin_collection_path(collection) %>
+                        </li>
+                        <% end unless @person.included_collections.nil? %>
+                    </ul>
+                </div></td>
+            </tr>
+        </table>
+        <%= render 'nav_show_header_bar', :person => @person %>
+    </div>
 </div>
