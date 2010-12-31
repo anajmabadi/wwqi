@@ -136,9 +136,8 @@ class ArchiveController < ApplicationController
     @file_to_send = @item.zip_path
     unless File.exists?(@item.zip_path)
       #create a zip file if it is the first time
-      zip_them_all = ZipThemAll.new(@item.zip_path, @item.tif_paths)
-      Rails.logger.info "Did it work: " + zip_them_all.zip_file_path
-    zip_them_all.zip
+      zip_them_all = ZipThemAll.new(@item.zip_path, @item.preview_paths)
+      zip_them_all.zip
     end
 
     send_file @file_to_send, :type=>"application/zip"
@@ -153,9 +152,9 @@ class ArchiveController < ApplicationController
     rescue => error
       flash[:error] = error.message
     ensure
-      # no slides found so create some
+    # no slides found so create some
       if @slides.empty?
-        @slides = @item.create_images
+      @slides = @item.create_images
       end
     end
     unless @id.nil? || @slides.nil? || @slides.empty?
@@ -213,9 +212,9 @@ class ArchiveController < ApplicationController
     if filter_value.kind_of?(Array)
       ids_to_find = filter_value.map { |id| id.to_i }.sort
       if ids_to_find.length == 1
-        @subject_filter_label = Subject.find(ids_to_find[0].to_i).name
+      @subject_filter_label = Subject.find(ids_to_find[0].to_i).name
       else
-        @subject_filter_label = I18n.translate(:multiple)
+      @subject_filter_label = I18n.translate(:multiple)
       end
     else
       ids_to_find = [filter_value.to_i]

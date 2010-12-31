@@ -200,6 +200,18 @@ class Item < ActiveRecord::Base
     return file_urls
   end
 
+  def preview_path(index=1)
+    return LIBRARY_PATH + PREVIEWS_DIR + preview_file_name(index) unless index.nil?
+  end
+  
+  def preview_paths
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << preview_path(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+  
   def slide_file_name(index=1)
     return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
   end
