@@ -2,7 +2,6 @@ class Admin::ItemsController < Admin::AdminController
 
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
   def util_update_sort_date
-
     @items = Item.all
     @changed_items = []
     @items.each do |item|
@@ -89,22 +88,11 @@ class Admin::ItemsController < Admin::AdminController
   def show
     @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
     @return_url = session[:admin_items_index_url]
-    
     begin
-      @order = session[:order]
-
-      #check if there is a current results set (i.e. something from the browser)
-      unless session[:current_items].nil? || session[:current_items].empty? || !session[:current_items].include?(@item.id)
-        @items = Item.where(['items.id IN (?)', session[:current_items]]).order(@order)
-      else
-        @items = Item.order(@order).all
-      end
-
-      @items = sort_bilingual(@items, session[:sort_field], session[:direction]) if ["title_en", "title_fa"].include?session[:sort_field]
-      
+      @items = load_items(@item)
     rescue StandardError => error
-      flash[:error] = error.message ||= 'Item with id number ' + params[:id].to_s + ' was not found or your items set was invalid. Reload the items page.'
-      @error = true
+      flash[:error] = error.message ||= 'Your items set was invalid. Reload the items page.'
+    @error = true
     end
 
     respond_to do |format|
@@ -137,6 +125,7 @@ class Admin::ItemsController < Admin::AdminController
   def create
     @item = Item.new(params[:item])
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
+    @items = load_items(@item)
     respond_to do |format|
       if @item.save
         format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully created.') }
@@ -152,6 +141,7 @@ class Admin::ItemsController < Admin::AdminController
   # PUT /items/1.xml
   def update
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
+    @items = load_items(@item)
     begin
 
     # manually check for a lock version
@@ -191,7 +181,7 @@ class Admin::ItemsController < Admin::AdminController
         else
           flash[:error] = "Item was edited and saved by someone else while you were working on it, but we were able to save your work in this XML file: " + public_url
         end
-        format.html { render :action => "show", :error => 'Item was edited by someone else first -- please save your work and reload the record.' }
+        format.html { redirect_to(admin_item_url(@item), :error => 'Item was edited by someone else first -- please save your work and reload the record.') }
         format.xml  { render :xml => @item.errors, :status => :unprocessable_entity }
       else
         format.html { render :action => "edit" }
@@ -544,6 +534,18 @@ class Admin::ItemsController < Admin::AdminController
     rescue => error
       flash[:error] = "A problem occured sorting by English or Farsi titles: " + error.message
     end
+    return items
+  end
+
+  def load_items(item)
+    #check if there is a current results set (i.e. something from the browser)
+    order = session[:order] ||= 'items.id'
+    unless session[:current_items].nil? || session[:current_items].empty? || !session[:current_items].include?(item.id)
+      items = Item.where(['items.id IN (?)', session[:current_items]]).order(order)
+    else
+    items = Item.order(order).all
+    end
+    items = sort_bilingual(items, session[:sort_field], session[:direction]) if ["title_en", "title_fa"].include?session[:sort_field]
     return items
   end
 
