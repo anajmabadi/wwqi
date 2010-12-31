@@ -2,7 +2,6 @@
 require 'spec_helper'
 
 describe Item do
-  fixtures :translations
   
   before(:each) do
     @item = Item.new
@@ -11,7 +10,28 @@ describe Item do
       :pages => 2,
       :accession_num => "ABCD-00011",
       :width => 23.4,
-      :height => 19.2
+      :height => 19.2,
+      :depth => 2.3,
+      :urn => 'test',
+      :owner_id => 1,
+      :collection_id => 2,
+      :format_id => 1,
+      :circa => false,
+      :notes => 'String',
+      :bound => true,
+      :publish => true,
+      :source_date => '12 May 1920',
+      :calendar_type_id => 1,
+      :favorite => true,
+      :year => 1233,
+      :month => 12,
+      :day => 23,
+      :editorial_dating => true,
+      :era_id => 1,
+      :sort_year => 2222,
+      :sort_day => 22,
+      :sort_month => 12,
+      :owner_tag => 'hello'
     }
   end
 
@@ -20,38 +40,44 @@ describe Item do
     @item.should be_valid
   end
   
-  it "should require a title" do
-    @sample_attributes[:title] = nil
-    @item.update_attributes(@sample_attributes)
-    @item.should_not be_valid
-  end
-  
-  it "should require a title longer than 2 characters and shorter than 255 characters" do
-    @sample_attributes[:title] = "12"
-    @item.update_attributes(@sample_attributes)
-    @item.should_not be_valid
-    @sample_attributes[:title] = 'a' * 256
-    @item.update_attributes(@sample_attributes)
-    @item.should_not be_valid
-  end
-  
-  it "should require an accession_num" do
+  it "should require an accession num" do
     @sample_attributes[:accession_num] = nil
-    @item.update_attributes(@sample_attributes)
-    @item.should_not be_valid
-  end
-  
-  it "should require an accession_num longer than 2 characters and shorter than 255 characters" do
-    @sample_attributes[:accession_num] = "12"
-    @item.update_attributes(@sample_attributes)
-    @item.should_not be_valid
-    @sample_attributes[:accession_num] = 'a' * 256
     @item.update_attributes(@sample_attributes)
     @item.should_not be_valid
   end
   
   it "should require pages" do
     @sample_attributes[:pages] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+  
+  it "should require circa" do
+    @sample_attributes[:circa] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+  
+  it "should require bound" do
+    @sample_attributes[:bound] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+  
+  it "should require publish" do
+    @sample_attributes[:publish] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+  
+  it "should require favorite" do
+    @sample_attributes[:favorite] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+  
+  it "should require editorial_date" do
+    @sample_attributes[:editorial_date] = nil
     @item.update_attributes(@sample_attributes)
     @item.should_not be_valid
   end
@@ -72,6 +98,24 @@ describe Item do
     @sample_attributes[:pages] = -100
     @item.update_attributes(@sample_attributes)
     @item.should_not be_valid  
+  end
+  
+  it "should require width" do
+    @sample_attributes[:width] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end
+    
+  it "should require height" do
+    @sample_attributes[:height] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
+  end  
+  
+  it "should require depth" do
+    @sample_attributes[:depth] = nil
+    @item.update_attributes(@sample_attributes)
+    @item.should_not be_valid
   end
   
   # testing the file accessors from the library
@@ -126,19 +170,10 @@ describe Item do
     @item.zoomify_url(1).should == "http://library.qajarwomen.org/zoomify/it_#{@item.id.to_s}_1_img"
   end
   
-  it "should return a valid dimensions string in English" do
-    old_locale = I18n.locale
-    I18n.locale = :en
+  it "should not allow duplicate persons and items" do  
     @item.update_attributes(@sample_attributes)
-    @item.dimension_label.should == "23.4 x 19.2 cm"
-    I18n.locale = old_locale
-  end
-
-  it "should return a valid dimensions string in Persian" do
-    old_locale = I18n.locale
-    I18n.locale = :fa
-    @item.update_attributes(@sample_attributes)
-    @item.dimension_label.should == "۲۳.۴ * ۱۹.۲ سانتیمتر"
-    I18n.locale = old_locale
+    @item.should be_valid
+    @item2 = Item.new(@sample_attributes)
+    @item2.should_not be_valid
   end
 end

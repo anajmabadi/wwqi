@@ -7,7 +7,6 @@ class Item < ActiveRecord::Base
   include ActionView::Helpers::TextHelper
   include ApplicationHelper
 
-
   belongs_to :owner
   belongs_to :collection, :counter_cache => true
   belongs_to :format
@@ -42,7 +41,10 @@ class Item < ActiveRecord::Base
 
   
   # validations
-   validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }
+  validates :accession_num, :presence => true, :length => { :maximum => 255, :minimum => 3 }, :uniqueness => true
+  validates :pages, :presence => true, :numericality => {:greater_than => 0, :less_than => 10001 }
+  validates :width, :height, :depth, :presence => true, :numericality => true
+  validates :publish, :bound, :favorite, :editorial_date, :circa, :inclusion => { :in => [true,false] }
    
   def create_images
     if self.images.empty? && !self.pages.nil? && self.pages != 0
