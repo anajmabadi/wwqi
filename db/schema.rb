@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101230143143) do
+ActiveRecord::Schema.define(:version => 20101231031451) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -377,18 +377,18 @@ ActiveRecord::Schema.define(:version => 20101230143143) do
   add_index "image_translations", ["image_id"], :name => "index_image_translations_on_image_id"
 
   create_table "images", :force => true do |t|
-    t.integer  "item_id"
+    t.integer  "item_id",                                     :default => 0,     :null => false
     t.string   "file_name"
-    t.boolean  "verso"
-    t.integer  "position"
+    t.boolean  "verso",                                       :default => false, :null => false
+    t.integer  "position",                                    :default => 0,     :null => false
     t.text     "notes"
-    t.boolean  "publish"
+    t.boolean  "publish",                                     :default => true,  :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version",                                :default => 0,   :null => false
-    t.decimal  "width",        :precision => 10, :scale => 1, :default => 0.0, :null => false
-    t.decimal  "height",       :precision => 10, :scale => 1, :default => 0.0, :null => false
-    t.decimal  "depth",        :precision => 10, :scale => 1, :default => 0.0, :null => false
+    t.integer  "lock_version",                                :default => 0,     :null => false
+    t.decimal  "width",        :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.decimal  "height",       :precision => 10, :scale => 1, :default => 0.0,   :null => false
+    t.decimal  "depth",        :precision => 10, :scale => 1, :default => 0.0,   :null => false
   end
 
   add_index "images", ["item_id"], :name => "index_images_on_item_id"
@@ -775,6 +775,16 @@ ActiveRecord::Schema.define(:version => 20101230143143) do
   add_index "sections", ["parent_id"], :name => "index_sections_on_parent_id"
   add_index "sections", ["publish"], :name => "index_sections_on_publish"
   add_index "sections", ["start_page"], :name => "index_sections_on_start_page"
+
+  create_table "sessions", :force => true do |t|
+    t.string   "session_id", :null => false
+    t.text     "data"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "sessions", ["session_id"], :name => "index_sessions_on_session_id"
+  add_index "sessions", ["updated_at"], :name => "index_sessions_on_updated_at"
 
   create_table "subject_translations", :force => true do |t|
     t.integer  "subject_id", :default => 0,    :null => false
