@@ -2,7 +2,7 @@ require 'farsifu'
 
 class Collection < ActiveRecord::Base
   has_many :items, :dependent => :restrict
-  has_many :owners, :through => :items
+  has_many :owners, :through => :items, :uniq => true
 
   # globalize2 accessors including extensions
   translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips, :creator, :history, :restrictions

@@ -17,4 +17,10 @@ class Owner < ActiveRecord::Base
     return self.all(:conditions => ['owner_translations.locale = ?', I18n.locale.to_s],:select => 'DISTINCT id, owner_translations.name', :order => 'owner_translations.name').map {|owner| [owner.name, owner.id]}
   end
   
+  def to_label
+    my_label = ''
+    my_label += self.name_en unless self.name_en.nil?
+    my_label += " (#{self.items.count.to_s} items)" unless self.items.empty?
+    return my_label
+  end
 end

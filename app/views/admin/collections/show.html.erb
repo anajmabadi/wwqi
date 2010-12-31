@@ -163,7 +163,8 @@
                 <%= @collection.contact %>
                 </td>
             </tr>
-            <tr><td>
+            <tr>
+                <td>
                 <b>Last edited:</b>
                 <%= @collection.last_edited %>
                 </td>
@@ -176,6 +177,18 @@
                 <td colspan="2">
                 <b>Notes:</b>
                 <%= @collection.notes %>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                <b>Owners:</b>
+                <ul>
+                    <% @collection.owners.each do |owner| -%>
+                    <li>
+                        <%= link_to_unless owner.nil?, owner.to_label, admin_owner_path(owner) %>
+                    </li>
+                    <% end unless @collection.owners.nil? %>
+                </ul>
                 </td>
             </tr>
         </table>
