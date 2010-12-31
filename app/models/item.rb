@@ -264,8 +264,8 @@ class Item < ActiveRecord::Base
   
   def dimension_label
     dimensions_set = []
-    dimensions_set << localize_number(floatstrip(self.width)) unless self.width.nil? || self.width == 0
     dimensions_set << localize_number(floatstrip(self.height)) unless self.height.nil? || self.height == 0
+    dimensions_set << localize_number(floatstrip(self.width)) unless self.width.nil? || self.width == 0
     dimensions_set << localize_number(floatstrip(self.depth)) unless self.depth.nil? || self.depth == 0
     label = dimensions_set.join(" #{I18n.translate(:dimension_separator)} ") + ' ' + I18n.translate(:dimension_unit) unless dimensions_set.empty?
     return label
