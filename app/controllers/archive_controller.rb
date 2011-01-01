@@ -102,7 +102,8 @@ class ArchiveController < ApplicationController
 
   def detail
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-
+    @my_archive_ids = my_archive_from_cookie
+    
     begin
       @item = Item.find_by_id(params[:id])
 
@@ -147,6 +148,42 @@ class ArchiveController < ApplicationController
       flash[:error] = error.message
     @error = true
     end
+  end
+  
+  def forget
+    
+    id_to_forget = params[:id].to_i
+    
+    unless id_to_forget.nil?
+      my_ids = my_archive_from_cookie
+      my_ids.delete(id_to_forget)
+      cookies[:my_archive] = my_ids.sort.join(",")
+    else
+      flash[:error] = "No item id to forget from My Archive."  
+    end
+    
+    respond_to do |format|
+        format.html { redirect_to archive_detail_path(:id => id_to_forget) }
+    end
+
+  end
+
+  def remember
+    
+    id_to_remember = params[:id].to_i
+    
+    unless id_to_remember.nil?
+      my_ids = my_archive_from_cookie
+      my_ids << id_to_remember
+      cookies[:my_archive] = my_ids.sort.join(",")
+    else
+      flash[:error] = "No item id to remember in My Archive."  
+    end
+
+    respond_to do |format|
+        format.html { redirect_to archive_detail_path(:id => id_to_remember) }
+    end
+
   end
 
   # zoomify requires a custom XML file for its gallery viewer
@@ -457,7 +494,11 @@ class ArchiveController < ApplicationController
   end
   
   def my_archive_from_cookie
-    return [2, 3, 4, 5]
+    # initialize the cookie store if nil?
+    if cookies[:my_archive].nil?
+      cookies[:my_archive] = [].join(",")
+    end
+    return cookies[:my_archive].split(",").map{ |i| i.to_i }.sort
   end
 
 end

@@ -9,15 +9,22 @@
                 <a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a>
             </li>
             <li>
-                <%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.index(@item) == 0 %>
+                <%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.nil? || @items.index(@item) == 0 %>
             </li>
             <li>
-                <%= link_to( t(:next_item).upcase, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.index(@item) == @items.size - 1  %>
+                <%= link_to( t(:next_item).upcase, :action => :detail, :id => @items[@items.index(@item)+1]) unless @items.nil? || @items.index(@item) == @items.size - 1  %>
             </li>
         </ul>
         <ul class="itemToolsRight sortnav">
             <li>
                 <%= link_to t(:download).upcase,  archive_detail_download_path(@item) %>
+            </li>
+            <li>
+                <% if @my_archive_ids.include?(@item.id) -%>
+                <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(@item) %>
+                <% else -%>
+                <%= link_to t(:add_to_my_archive), archive_detail_remember_path(@item) %>
+                <% end -%>
             </li>
         </ul>
         <div class="add_this_tools">
@@ -97,9 +104,11 @@
                     <th><%= t(:see_also) %></th>
                     <td>
                     <ul>
-                      <% @item.comps.each do |comp| -%>
-                        <li><%= link_to comp.comp.title, archive_detail_path(comp.comp_id) %></li>
-                      <% end -%>
+                        <% @item.comps.each do |comp| -%>
+                        <li>
+                            <%= link_to comp.comp.title, archive_detail_path(comp.comp_id) %>
+                        </li>
+                        <% end -%>
                     </ul>
                     </td>
                 </tr>

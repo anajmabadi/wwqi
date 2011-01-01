@@ -72,6 +72,8 @@ Qajar::Application.routes.draw do
 
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
   match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
+  match 'archive/detail/:id/forget' => 'archive#forget', :as => :archive_detail_forget
+  match 'archive/detail/:id/remember' => 'archive#remember', :as => :archive_detail_remember
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
   match 'archive/collections' => 'archive#collections', :as => :archive_collections
