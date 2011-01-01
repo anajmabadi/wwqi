@@ -4,4 +4,5 @@
   <% else -%>
     <%= "#{t(:results_prefix)}: #{localized_number(items.offset + 1)} - #{localized_number([items.offset + items.per_page,items.total_entries].min)} | #{localized_number(items.total_entries)}" %>
   <% end -%>
+  <%=" filtered by My Archive"  unless @my_archive_filter.nil? %>
 </div>

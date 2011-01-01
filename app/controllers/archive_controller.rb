@@ -49,6 +49,8 @@ class ArchiveController < ApplicationController
     @most_popular_filter = params[:most_popular_filter]
     @recent_additions_filter = params[:recent_additions_filter]
     @staff_favorites_filter = params[:staff_favorites_filter]
+    @my_archive_ids = my_archive_from_cookie
+    @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -78,6 +80,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
+    @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -99,7 +102,8 @@ class ArchiveController < ApplicationController
 
   def detail
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-
+    @my_archive_ids = my_archive_from_cookie
+    
     begin
       @item = Item.find_by_id(params[:id])
 
@@ -144,6 +148,42 @@ class ArchiveController < ApplicationController
       flash[:error] = error.message
     @error = true
     end
+  end
+  
+  def forget
+    
+    id_to_forget = params[:id].to_i
+    
+    unless id_to_forget.nil?
+      my_ids = my_archive_from_cookie
+      my_ids.delete(id_to_forget)
+      cookies[:my_archive] = my_ids.sort.join(",")
+    else
+      flash[:error] = "No item id to forget from My Archive."  
+    end
+    
+    respond_to do |format|
+        format.html { redirect_to archive_detail_path(:id => id_to_forget) }
+    end
+
+  end
+
+  def remember
+    
+    id_to_remember = params[:id].to_i
+    
+    unless id_to_remember.nil?
+      my_ids = my_archive_from_cookie
+      my_ids << id_to_remember
+      cookies[:my_archive] = my_ids.sort.join(",")
+    else
+      flash[:error] = "No item id to remember in My Archive."  
+    end
+
+    respond_to do |format|
+        format.html { redirect_to archive_detail_path(:id => id_to_remember) }
+    end
+
   end
 
   # zoomify requires a custom XML file for its gallery viewer
@@ -445,6 +485,20 @@ class ArchiveController < ApplicationController
     else 'item_translations.locale, item_translations.title'
     end
     return additional_sort
+  end
+  
+  def build_my_archive_query(filter_value, query_hash)
+    query_hash[:conditions] << "items.id IN (:my_archive_ids)"
+    query_hash[:parameters][:my_archive_ids] = filter_value.sort
+    return query_hash
+  end
+  
+  def my_archive_from_cookie
+    # initialize the cookie store if nil?
+    if cookies[:my_archive].nil?
+      cookies[:my_archive] = [].join(",")
+    end
+    return cookies[:my_archive].split(",").map{ |i| i.to_i }.sort
   end
 
 end

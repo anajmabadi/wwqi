@@ -91,13 +91,13 @@ clip_translations_009:
   id: "9"
   clip_id: "9"
   locale: en
-  caption: Charles
+  caption: ""
   title: Listen to Bahram Sheikholeslami
   created_at: 
-  updated_at: 2010-12-28 22:50:42
-  interviewer: Budd
-  interviewee: Forcey
-  location: Hello
+  updated_at: 
+  interviewer: 
+  interviewee: 
+  location: 
 clip_translations_010: 
   id: "10"
   clip_id: "10"
@@ -289,13 +289,13 @@ clip_translations_027:
   id: "27"
   clip_id: "9"
   locale: fa
-  caption: Charles
+  caption: ""
   title: "\xD8\xB4\xD9\x86\xDB\x8C\xD8\xAF\xD9\x86\xDB\x8C"
   created_at: 
-  updated_at: 2010-12-28 22:50:42
-  interviewer: Budd
-  interviewee: Forcey
-  location: Hello
+  updated_at: 
+  interviewer: 
+  interviewee: 
+  location: 
 clip_translations_028: 
   id: "28"
   clip_id: "10"

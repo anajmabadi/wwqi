@@ -143,3 +143,147 @@ comps_016:
   notes: ""
   created_at: 2010-12-26 04:32:55
   updated_at: 2010-12-26 04:32:55
+comps_017: 
+  id: "25"
+  item_id: "257"
+  comp_id: "256"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-27 10:37:32
+  updated_at: 2010-12-27 10:37:32
+comps_018: 
+  id: "26"
+  item_id: "256"
+  comp_id: "257"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-27 10:40:48
+  updated_at: 2010-12-27 10:40:48
+comps_019: 
+  id: "27"
+  item_id: "844"
+  comp_id: "686"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-28 01:37:23
+  updated_at: 2010-12-28 01:37:23
+comps_020: 
+  id: "28"
+  item_id: "686"
+  comp_id: "844"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-28 01:38:42
+  updated_at: 2010-12-28 01:38:42
+comps_021: 
+  id: "29"
+  item_id: "1226"
+  comp_id: "1232"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 08:43:31
+  updated_at: 2010-12-30 08:43:31
+comps_022: 
+  id: "30"
+  item_id: "1232"
+  comp_id: "1226"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 08:46:00
+  updated_at: 2010-12-30 08:46:00
+comps_023: 
+  id: "31"
+  item_id: "1257"
+  comp_id: "1260"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:30:48
+  updated_at: 2010-12-30 09:30:48
+comps_024: 
+  id: "32"
+  item_id: "1260"
+  comp_id: "1257"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:33:11
+  updated_at: 2010-12-30 09:33:11
+comps_025: 
+  id: "33"
+  item_id: "1269"
+  comp_id: "1266"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:44:12
+  updated_at: 2010-12-30 09:44:12
+comps_026: 
+  id: "34"
+  item_id: "1269"
+  comp_id: "1270"
+  position: "2"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:44:26
+  updated_at: 2010-12-30 09:44:26
+comps_027: 
+  id: "35"
+  item_id: "1270"
+  comp_id: "1266"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:46:59
+  updated_at: 2010-12-30 09:46:59
+comps_028: 
+  id: "36"
+  item_id: "1270"
+  comp_id: "1269"
+  position: "2"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 09:47:13
+  updated_at: 2010-12-30 09:47:13
+comps_029: 
+  id: "37"
+  item_id: "1286"
+  comp_id: "1283"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 10:24:01
+  updated_at: 2010-12-30 10:24:01
+comps_030: 
+  id: "38"
+  item_id: "1283"
+  comp_id: "1286"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 10:24:53
+  updated_at: 2010-12-30 10:24:53
+comps_031: 
+  id: "39"
+  item_id: "1469"
+  comp_id: "1475"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 12:26:08
+  updated_at: 2010-12-30 12:26:08
+comps_032: 
+  id: "40"
+  item_id: "1475"
+  comp_id: "1469"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 12:32:50
+  updated_at: 2010-12-30 12:32:50

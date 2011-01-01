@@ -21,31 +21,31 @@ subject_translations_003:
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_004: 
-  id: "5"
-  subject_id: "5"
+  id: "4"
+  subject_id: "4"
   locale: en
-  name: Associations
+  name: Andaruni
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_005: 
-  id: "8"
-  subject_id: "8"
+  id: "6"
+  subject_id: "6"
   locale: en
-  name: "Behjat \xC4\x80bad"
+  name: Awards
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_006: 
-  id: "10"
-  subject_id: "10"
+  id: "7"
+  subject_id: "7"
   locale: en
-  name: Black berries
+  name: Bedding
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_007: 
-  id: "11"
-  subject_id: "11"
+  id: "9"
+  subject_id: "9"
   locale: en
-  name: Bottles
+  name: Birth records
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_008: 
@@ -91,5931 +91,4909 @@ subject_translations_013:
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
 subject_translations_014: 
-  id: "18"
-  subject_id: "18"
-  locale: en
-  name: Buildings repair
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_015: 
-  id: "19"
-  subject_id: "19"
-  locale: en
-  name: Bulgur
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_016: 
   id: "21"
   subject_id: "21"
   locale: en
   name: Charcoal
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_017: 
+subject_translations_015: 
   id: "22"
   subject_id: "22"
   locale: en
   name: Charity
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_018: 
+subject_translations_016: 
   id: "23"
   subject_id: "23"
   locale: en
   name: Childbirth
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_019: 
+subject_translations_017: 
   id: "25"
   subject_id: "25"
   locale: en
   name: Children
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_020: 
+subject_translations_018: 
   id: "26"
   subject_id: "26"
   locale: en
   name: Christmas
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_021: 
+subject_translations_019: 
   id: "27"
   subject_id: "27"
   locale: en
   name: Clothing and dress
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_022: 
+subject_translations_020: 
   id: "28"
   subject_id: "28"
   locale: en
   name: Cocoa
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_023: 
+subject_translations_021: 
   id: "29"
   subject_id: "29"
   locale: en
   name: Constitutional Revolution
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_024: 
+subject_translations_022: 
   id: "30"
   subject_id: "30"
   locale: en
   name: Consulates
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_025: 
+subject_translations_023: 
   id: "31"
   subject_id: "31"
   locale: en
   name: Courts
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_026: 
+subject_translations_024: 
   id: "32"
   subject_id: "32"
   locale: en
   name: Currency
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_027: 
+subject_translations_025: 
   id: "33"
   subject_id: "33"
   locale: en
   name: Death
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_028: 
-  id: "34"
-  subject_id: "34"
-  locale: en
-  name: Financial debt
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_029: 
+subject_translations_026: 
   id: "35"
   subject_id: "35"
   locale: en
   name: Deeds
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_030: 
+subject_translations_027: 
   id: "37"
   subject_id: "37"
   locale: en
   name: Diamonds
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_031: 
+subject_translations_028: 
   id: "38"
   subject_id: "38"
   locale: en
   name: Diplomats
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_032: 
+subject_translations_029: 
   id: "39"
   subject_id: "39"
   locale: en
   name: Divorce
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_033: 
+subject_translations_030: 
   id: "40"
   subject_id: "40"
   locale: en
   name: Dowry
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_034: 
-  id: "41"
-  subject_id: "41"
-  locale: en
-  name: Dried orange blossoms
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_035: 
+subject_translations_031: 
   id: "42"
   subject_id: "42"
   locale: en
   name: Education
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_036: 
+subject_translations_032: 
   id: "43"
   subject_id: "43"
   locale: en
   name: Employment
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_037: 
+subject_translations_033: 
   id: "45"
   subject_id: "45"
   locale: en
   name: Exhibitions
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_038: 
+subject_translations_034: 
   id: "46"
   subject_id: "46"
   locale: en
   name: Fasts
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_039: 
+subject_translations_035: 
   id: "47"
   subject_id: "47"
   locale: en
   name: Festivals
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_040: 
+subject_translations_036: 
   id: "48"
   subject_id: "48"
   locale: en
   name: Firewood
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_041: 
+subject_translations_037: 
   id: "49"
   subject_id: "49"
   locale: en
   name: Fruits
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_042: 
+subject_translations_038: 
   id: "50"
   subject_id: "50"
   locale: en
   name: Funerals
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_043: 
-  id: "51"
-  subject_id: "51"
-  locale: en
-  name: Games
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_044: 
+subject_translations_039: 
   id: "52"
   subject_id: "52"
   locale: en
   name: Gardens
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_045: 
+subject_translations_040: 
   id: "53"
   subject_id: "53"
   locale: en
   name: Gifts
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_046: 
-  id: "54"
-  subject_id: "54"
-  locale: en
-  name: Ginger Breads
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_047: 
+subject_translations_041: 
   id: "55"
   subject_id: "55"
   locale: en
   name: Gloves
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_048: 
+subject_translations_042: 
   id: "56"
   subject_id: "56"
   locale: en
   name: Gold
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_049: 
+subject_translations_043: 
   id: "57"
   subject_id: "57"
   locale: en
   name: Gossip
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_050: 
+subject_translations_044: 
   id: "58"
   subject_id: "58"
   locale: en
   name: Government
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_051: 
+subject_translations_045: 
   id: "59"
   subject_id: "59"
   locale: en
   name: Grapes
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_052: 
+subject_translations_046: 
   id: "60"
   subject_id: "60"
   locale: en
   name: Group portraits
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_053: 
+subject_translations_047: 
   id: "61"
   subject_id: "61"
   locale: en
   name: Hazrat-i Masumah
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_054: 
+subject_translations_048: 
   id: "62"
   subject_id: "62"
   locale: en
   name: Horses
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_055: 
+subject_translations_049: 
   id: "63"
   subject_id: "63"
   locale: en
   name: Household goods
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_056: 
+subject_translations_050: 
   id: "64"
   subject_id: "64"
   locale: en
   name: Housing
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_057: 
+subject_translations_051: 
   id: "65"
   subject_id: "65"
   locale: en
   name: Humor
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_058: 
+subject_translations_052: 
   id: "66"
   subject_id: "66"
   locale: en
   name: Husband and wife
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_059: 
-  id: "67"
-  subject_id: "67"
-  locale: en
-  name: "\xCA\xBBAbd al-Abad"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_060: 
+subject_translations_053: 
   id: "68"
   subject_id: "68"
   locale: en
   name: "\xCA\xBBAid-i Ghadir"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_061: 
+subject_translations_054: 
   id: "69"
   subject_id: "69"
   locale: en
   name: "\xCA\xBBAshura"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_062: 
+subject_translations_055: 
   id: "70"
   subject_id: "70"
   locale: en
   name: Illness
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_063: 
+subject_translations_056: 
   id: "71"
   subject_id: "71"
   locale: en
   name: Imam Husayn
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_064: 
+subject_translations_057: 
   id: "72"
   subject_id: "72"
   locale: en
   name: Income
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_065: 
+subject_translations_058: 
   id: "73"
   subject_id: "73"
   locale: en
   name: Infants
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_066: 
+subject_translations_059: 
   id: "74"
   subject_id: "74"
   locale: en
   name: Inheritance
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_067: 
-  id: "75"
-  subject_id: "75"
-  locale: en
-  name: Islamic law
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_068: 
+subject_translations_060: 
   id: "76"
   subject_id: "76"
   locale: en
   name: Jewelry
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_069: 
-  id: "77"
-  subject_id: "77"
-  locale: en
-  name: Kabob
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_070: 
-  id: "78"
-  subject_id: "78"
-  locale: en
-  name: Karbala
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_071: 
-  id: "79"
-  subject_id: "79"
-  locale: en
-  name: Kirmanshah
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_072: 
+subject_translations_061: 
   id: "80"
   subject_id: "80"
   locale: en
   name: Lanterns
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_073: 
-  id: "84"
-  subject_id: "84"
-  locale: en
-  name: Lulah Jird
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_074: 
-  id: "85"
-  subject_id: "85"
-  locale: en
-  name: Mahmud Abad
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_075: 
-  id: "89"
-  subject_id: "89"
-  locale: en
-  name: Mashhad
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_076: 
-  id: "91"
-  subject_id: "91"
-  locale: en
-  name: Mecca
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_077: 
+subject_translations_062: 
   id: "95"
   subject_id: "95"
   locale: en
   name: Money
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_078: 
-  id: "99"
-  subject_id: "99"
-  locale: en
-  name: Najaf
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_079: 
-  id: "100"
-  subject_id: "100"
-  locale: en
-  name: Najaf Abad
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_080: 
-  id: "105"
-  subject_id: "105"
-  locale: en
-  name: Nuts
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_081: 
+subject_translations_063: 
   id: "113"
   subject_id: "113"
   locale: en
   name: Petitions
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_082: 
+subject_translations_064: 
   id: "115"
   subject_id: "115"
   locale: en
   name: Pilgrimages
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_083: 
+subject_translations_065: 
   id: "116"
   subject_id: "116"
   locale: en
   name: Pillage
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_084: 
+subject_translations_066: 
   id: "121"
   subject_id: "121"
   locale: en
   name: Politics
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_085: 
+subject_translations_067: 
   id: "127"
   subject_id: "127"
   locale: en
   name: Prices
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_086: 
+subject_translations_068: 
   id: "128"
   subject_id: "128"
   locale: en
   name: Properties
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_087: 
-  id: "129"
-  subject_id: "129"
-  locale: en
-  name: Property disputes
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_088: 
+subject_translations_069: 
   id: "130"
   subject_id: "130"
   locale: en
   name: Prostitution
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_089: 
-  id: "131"
-  subject_id: "131"
-  locale: en
-  name: Proverbs
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_090: 
-  id: "133"
-  subject_id: "133"
-  locale: en
-  name: Qazvin
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_091: 
-  id: "136"
-  subject_id: "136"
-  locale: en
-  name: Quranic divination
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_092: 
+subject_translations_070: 
   id: "138"
   subject_id: "138"
   locale: en
   name: Ramadan
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_093: 
-  id: "139"
-  subject_id: "139"
-  locale: en
-  name: Rasht
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_094: 
-  id: "140"
-  subject_id: "140"
-  locale: en
-  name: Razjird
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_095: 
+subject_translations_071: 
   id: "141"
   subject_id: "141"
   locale: en
   name: Recreation
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_096: 
+subject_translations_072: 
   id: "142"
   subject_id: "142"
   locale: en
   name: Religious rites
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_097: 
-  id: "146"
-  subject_id: "146"
-  locale: en
-  name: Rozih
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_098: 
+subject_translations_073: 
   id: "154"
   subject_id: "154"
   locale: en
   name: Shahzadah 'Abd al-'Azim
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_099: 
-  id: "155"
-  subject_id: "155"
-  locale: en
-  name: Shimiran
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_100: 
-  id: "163"
-  subject_id: "163"
-  locale: en
-  name: Songs
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_101: 
-  id: "166"
-  subject_id: "166"
-  locale: en
-  name: Stall
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_102: 
+subject_translations_074: 
   id: "167"
   subject_id: "167"
   locale: en
   name: Stipends
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_103: 
+subject_translations_075: 
   id: "170"
   subject_id: "170"
   locale: en
   name: Suicide
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_104: 
-  id: "175"
-  subject_id: "175"
-  locale: en
-  name: Tehran
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_105: 
+subject_translations_076: 
   id: "177"
   subject_id: "177"
   locale: en
   name: Textiles
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_106: 
-  id: "178"
-  subject_id: "178"
-  locale: en
-  name: Tiflis
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_107: 
+subject_translations_077: 
   id: "183"
   subject_id: "183"
   locale: en
   name: Toothache
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_108: 
-  id: "186"
-  subject_id: "186"
-  locale: en
-  name: Tunikabun
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_109: 
+subject_translations_078: 
   id: "189"
   subject_id: "189"
   locale: en
   name: Visiting
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_110: 
-  id: "190"
-  subject_id: "190"
-  locale: en
-  name: Wages
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_111: 
+subject_translations_079: 
   id: "193"
   subject_id: "193"
   locale: en
   name: Weddings
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_112: 
-  id: "198"
-  subject_id: "198"
-  locale: en
-  name: Women Suffrage
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_113: 
+subject_translations_080: 
   id: "200"
   subject_id: "200"
   locale: en
   name: Women's servants
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_114: 
-  id: "201"
-  subject_id: "201"
-  locale: en
-  name: Zanjan
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_115: 
+subject_translations_081: 
   id: "202"
   subject_id: "1"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD8\xB2"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_116: 
+subject_translations_082: 
   id: "203"
   subject_id: "2"
   locale: fa
   name: "\xDA\xA9\xD8\xB4\xD8\xA7\xD9\x88\xD8\xB1\xD8\xB2\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_117: 
+subject_translations_083: 
   id: "204"
   subject_id: "3"
   locale: fa
   name: "\xD9\x86\xD9\x81\xD9\x82\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_118: 
-  id: "206"
-  subject_id: "5"
+subject_translations_084: 
+  id: "205"
+  subject_id: "4"
   locale: fa
-  name: "\xD8\xA7\xD9\x86\xD8\xAC\xD9\x85\xD9\x86"
+  name: "\xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD9\x88\xD9\x86\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_119: 
-  id: "209"
-  subject_id: "8"
+subject_translations_085: 
+  id: "207"
+  subject_id: "6"
   locale: fa
-  name: "\xD8\xA8\xD9\x87\xD8\xAC\xD8\xAA \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
+  name: "\xD8\xAC\xD9\x88\xD8\xA7\xDB\x8C\xD8\xB2"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_120: 
-  id: "211"
-  subject_id: "10"
+subject_translations_086: 
+  id: "208"
+  subject_id: "7"
   locale: fa
-  name: "\xD8\xAA\xD9\x88\xD8\xAA \xD8\xB3\xDB\x8C\xD8\xA7\xD9\x87"
+  name: "\xDA\x86\xD8\xA7\xD8\xAF\xD8\xB1 \xD8\xB4\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_121: 
-  id: "212"
-  subject_id: "11"
+subject_translations_087: 
+  id: "210"
+  subject_id: "9"
   locale: fa
-  name: "\xD8\xA8\xD8\xB7\xD8\xB1\xDB\x8C"
+  name: "\xD8\xAB\xD8\xA8\xD8\xAA \xD8\xAA\xD9\x88\xD9\x84\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_122: 
+subject_translations_088: 
   id: "213"
   subject_id: "12"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_123: 
+subject_translations_089: 
   id: "214"
   subject_id: "13"
   locale: fa
   name: "\xD8\xB4\xDB\x8C\xD8\xB1 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_124: 
+subject_translations_090: 
   id: "215"
   subject_id: "14"
   locale: fa
   name: "\xD8\xB1\xD8\xB4\xD9\x88\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_125: 
+subject_translations_091: 
   id: "216"
   subject_id: "15"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x85\xD8\xA7\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_126: 
+subject_translations_092: 
   id: "217"
   subject_id: "16"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD8\xA7\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_127: 
+subject_translations_093: 
   id: "218"
   subject_id: "17"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_128: 
-  id: "219"
-  subject_id: "18"
-  locale: fa
-  name: "\xD8\xAA\xD8\xB9\xD9\x85\xDB\x8C\xD8\xB1"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_129: 
-  id: "220"
-  subject_id: "19"
-  locale: fa
-  name: "\xD8\xA8\xD9\x84\xD8\xBA\xD9\x88\xD8\xB1"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_130: 
+subject_translations_094: 
   id: "222"
   subject_id: "21"
   locale: fa
   name: "\xD8\xB0\xD8\xBA\xD8\xA7\xD9\x84"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_131: 
+subject_translations_095: 
   id: "223"
   subject_id: "22"
   locale: fa
   name: "\xD8\xA7\xD8\xB9\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_132: 
+subject_translations_096: 
   id: "224"
   subject_id: "23"
   locale: fa
   name: "\xD9\x88\xD8\xB6\xD8\xB9 \xD8\xAD\xD9\x85\xD9\x84"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_133: 
+subject_translations_097: 
   id: "225"
   subject_id: "23"
   locale: fa
   name: "\xD8\xB2\xD8\xA7\xDB\x8C\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_134: 
+subject_translations_098: 
   id: "226"
   subject_id: "25"
   locale: fa
   name: "\xD8\xA8\xDA\x86\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_135: 
+subject_translations_099: 
   id: "227"
   subject_id: "26"
   locale: fa
   name: "\xDA\xA9\xD8\xB1\xDB\x8C\xD8\xB3\xD9\x85\xD8\xB3"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_136: 
+subject_translations_100: 
   id: "228"
   subject_id: "27"
   locale: fa
   name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_137: 
+subject_translations_101: 
   id: "229"
   subject_id: "28"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xDA\xA9\xD8\xA7\xD8\xA6\xD9\x88"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_138: 
+subject_translations_102: 
   id: "230"
   subject_id: "29"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD9\x82\xD9\x84\xD8\xA7\xD8\xA8 \xD9\x85\xD8\xB4\xD8\xB1\xD9\x88\xD8\xB7\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_139: 
+subject_translations_103: 
   id: "231"
   subject_id: "30"
   locale: fa
   name: "\xDA\xA9\xD9\x86\xD8\xB3\xD9\x88\xD9\x84\xDA\xAF\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_140: 
+subject_translations_104: 
   id: "232"
   subject_id: "31"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD8\xAF\xDA\xAF\xD8\xB3\xD8\xAA\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_141: 
+subject_translations_105: 
   id: "233"
   subject_id: "32"
   locale: fa
   name: " \xD8\xA7\xD8\xB1\xD8\xB2"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_142: 
+subject_translations_106: 
   id: "234"
   subject_id: "33"
   locale: fa
-  name: "\xD9\x85\xD8\xB1\xDA\xAF\n"
+  name: "\xD9\x85\xD8\xB1\xDA\xAF"
   created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_143: 
-  id: "235"
-  subject_id: "34"
-  locale: fa
-  name: "\xD8\xA8\xD8\xAF\xD9\x87\xDB\x8C \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_144: 
+  updated_at: 2010-12-28 11:22:12
+subject_translations_107: 
   id: "236"
   subject_id: "35"
   locale: fa
   name: "\xD9\x82\xD8\xA8\xD8\xA7\xD9\x84\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_145: 
+subject_translations_108: 
   id: "238"
   subject_id: "37"
   locale: fa
   name: "\xD8\xA7\xD9\x84\xD9\x85\xD8\xA7\xD8\xB3"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_146: 
+subject_translations_109: 
   id: "239"
   subject_id: "38"
   locale: fa
   name: "\xD8\xAF\xDB\x8C\xD9\xBE\xD9\x84\xD9\x85\xD8\xA7\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_147: 
+subject_translations_110: 
   id: "240"
   subject_id: "39"
   locale: fa
   name: "\xD8\xB7\xD9\x84\xD8\xA7\xD9\x82"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_148: 
+subject_translations_111: 
   id: "241"
   subject_id: "40"
   locale: fa
   name: "\xD8\xAC\xD9\x87\xDB\x8C\xD8\xB2\xDB\x8C\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_149: 
-  id: "242"
-  subject_id: "41"
-  locale: fa
-  name: "\xD8\xA8\xD9\x87\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xA7\xD8\xB1\xD9\x86\xD8\xAC"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_150: 
+subject_translations_112: 
   id: "243"
   subject_id: "42"
   locale: fa
-  name: "\xD8\xA2\xD9\x85\xD9\x88\xD8\xB2\xD8\xB4 \xD9\x88 \xD9\xBE\xD8\xB1\xD9\x88\xD8\xB1\xD8\xB4"
+  name: "\xD8\xAA\xD8\xAD\xD8\xB5\xDB\x8C\xD9\x84\xD8\xA7\xD8\xAA"
   created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_151: 
+  updated_at: 2010-12-28 11:34:04
+subject_translations_113: 
   id: "244"
   subject_id: "43"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xAF\xD8\xA7\xD9\x85"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_152: 
+subject_translations_114: 
   id: "246"
   subject_id: "45"
   locale: fa
   name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C\xD8\xB4\xDA\xAF\xD8\xA7\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_153: 
+subject_translations_115: 
   id: "247"
   subject_id: "46"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB2\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_154: 
+subject_translations_116: 
   id: "248"
   subject_id: "47"
   locale: fa
   name: "\xD8\xAC\xD8\xB4\xD9\x86\xD9\x88\xD8\xA7\xD8\xB1\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_155: 
+subject_translations_117: 
   id: "249"
   subject_id: "48"
   locale: fa
   name: "\xD9\x87\xDB\x8C\xD8\xB2\xD9\x85"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_156: 
+subject_translations_118: 
   id: "250"
   subject_id: "49"
   locale: fa
   name: "\xD9\x85\xDB\x8C\xD9\x88\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_157: 
+subject_translations_119: 
   id: "251"
   subject_id: "50"
   locale: fa
   name: "\xD8\xAA\xD8\xB4\xDB\x8C\xDB\x8C\xD8\xB9"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_158: 
-  id: "252"
-  subject_id: "51"
-  locale: fa
-  name: "\xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C \xD9\x87\xD8\xA7"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_159: 
+subject_translations_120: 
   id: "253"
   subject_id: "52"
   locale: fa
   name: " \xD8\xA8\xD8\xA7\xD8\xBA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_160: 
+subject_translations_121: 
   id: "254"
   subject_id: "53"
   locale: fa
   name: "\xD9\x87\xD8\xAF\xDB\x8C\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_161: 
-  id: "255"
-  subject_id: "54"
-  locale: fa
-  name: "\xD9\x86\xD8\xA7\xD9\x86 \xD8\xB2\xD9\x86\xD8\xAC\xD8\xA8\xDB\x8C\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_162: 
+subject_translations_122: 
   id: "256"
   subject_id: "55"
   locale: fa
   name: "\xD8\xAF\xD8\xB3\xD8\xAA\xDA\xA9\xD8\xB4"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_163: 
+subject_translations_123: 
   id: "257"
   subject_id: "56"
   locale: fa
   name: "\xD8\xB7\xD9\x84\xD8\xA7\n"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_164: 
+subject_translations_124: 
   id: "258"
   subject_id: "57"
   locale: fa
   name: "\xD8\xBA\xDB\x8C\xD8\xA8\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_165: 
+subject_translations_125: 
   id: "259"
   subject_id: "58"
   locale: fa
   name: "\xD8\xAF\xD9\x88\xD9\x84\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_166: 
+subject_translations_126: 
   id: "260"
   subject_id: "59"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xDA\xAF\xD9\x88\xD8\xB1"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_167: 
+subject_translations_127: 
   id: "261"
   subject_id: "60"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD8\xAA\xD8\xB1\xD9\x87 \xDA\xAF\xD8\xB1\xD9\x88\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_168: 
+subject_translations_128: 
   id: "262"
   subject_id: "61"
   locale: fa
   name: "\xD8\xAD\xD8\xB6\xD8\xB1\xD8\xAA \xD9\x85\xD8\xB9\xD8\xB5\xD9\x88\xD9\x85\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_169: 
+subject_translations_129: 
   id: "263"
   subject_id: "62"
   locale: fa
   name: " \xD8\xA7\xD8\xB3\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_170: 
+subject_translations_130: 
   id: "264"
   subject_id: "63"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD9\x84\xD8\xA7\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xDA\xAF\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_171: 
+subject_translations_131: 
   id: "265"
   subject_id: "64"
   locale: fa
   name: "\xD9\x85\xD8\xB3\xDA\xA9\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_172: 
+subject_translations_132: 
   id: "266"
   subject_id: "65"
   locale: fa
   name: "\xD8\xB7\xD9\x86\xD8\xB2"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_173: 
+subject_translations_133: 
   id: "267"
   subject_id: "66"
   locale: fa
   name: "\xD8\xB2\xD9\x86 \xD9\x88 \xD8\xB4\xD9\x88\xD9\x87\xD8\xB1"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_174: 
-  id: "268"
-  subject_id: "67"
-  locale: fa
-  name: "\xD8\xB9\xD8\xA8\xD8\xAF\xD9\x84 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_175: 
+subject_translations_134: 
   id: "269"
   subject_id: "68"
   locale: fa
   name: "\xD8\xB9\xDB\x8C\xD8\xAF \xD8\xBA\xD8\xAF\xDB\x8C\xD8\xB1"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_176: 
+subject_translations_135: 
   id: "270"
   subject_id: "69"
   locale: fa
   name: "\xD8\xB9\xD8\xA7\xD8\xB4\xD9\x88\xD8\xB1\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_177: 
+subject_translations_136: 
   id: "271"
   subject_id: "70"
   locale: fa
   name: "\xD8\xA8\xDB\x8C\xD9\x85\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_178: 
+subject_translations_137: 
   id: "272"
   subject_id: "71"
   locale: fa
   name: "\xD8\xA7\xD9\x85\xD8\xA7\xD9\x85 \xD8\xAD\xD8\xB3\xDB\x8C\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_179: 
+subject_translations_138: 
   id: "273"
   subject_id: "72"
   locale: fa
   name: "\xD8\xAF\xD8\xB1\xD8\xA2\xD9\x85\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_180: 
+subject_translations_139: 
   id: "274"
   subject_id: "73"
   locale: fa
   name: " \xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_181: 
+subject_translations_140: 
   id: "275"
   subject_id: "74"
   locale: fa
   name: "\xD8\xA7\xD8\xB1\xD8\xAB"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_182: 
-  id: "276"
-  subject_id: "75"
-  locale: fa
-  name: "\xD9\x82\xD8\xA7\xD9\x86\xD9\x88\xD9\x86 \xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_183: 
+subject_translations_141: 
   id: "277"
   subject_id: "76"
   locale: fa
   name: "\xD8\xAC\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1 \xD9\x81\xD8\xB1\xD9\x88\xD8\xB4\xD9\x8A"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_184: 
-  id: "278"
-  subject_id: "77"
-  locale: fa
-  name: "\xDA\xA9\xD8\xA8\xD8\xA7\xD8\xA8"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_185: 
-  id: "279"
-  subject_id: "78"
-  locale: fa
-  name: "\xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_186: 
-  id: "280"
-  subject_id: "79"
-  locale: fa
-  name: "\xDA\xA9\xD8\xB1\xD9\x85\xD8\xA7\xD9\x86\xD8\xB4\xD8\xA7\xD9\x87"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_187: 
+subject_translations_142: 
   id: "281"
   subject_id: "80"
   locale: fa
   name: "\xDA\x86\xD8\xB1\xD8\xA7\xD8\xBA \xD9\x81\xD8\xA7\xD9\x86\xD9\x88\xD8\xB3"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_188: 
-  id: "285"
-  subject_id: "84"
-  locale: fa
-  name: "\xD9\x84\xD9\x88\xD9\x84\xD9\x87 \xD8\xAC\xD8\xB1\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_189: 
-  id: "286"
-  subject_id: "85"
-  locale: fa
-  name: "\xD9\x85\xD8\xAD\xD9\x85\xD9\x88\xD8\xAF\xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_190: 
-  id: "290"
-  subject_id: "89"
-  locale: fa
-  name: "\xD9\x85\xD8\xB4\xD9\x87\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_191: 
-  id: "292"
-  subject_id: "91"
-  locale: fa
-  name: "\xD9\x85\xDA\xA9\xD9\x87"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_192: 
+subject_translations_143: 
   id: "296"
   subject_id: "95"
   locale: fa
   name: "\xD9\xBE\xD9\x88\xD9\x84"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_193: 
-  id: "300"
-  subject_id: "99"
-  locale: fa
-  name: "\xD9\x86\xD8\xAC\xD9\x81"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_194: 
-  id: "301"
-  subject_id: "100"
-  locale: fa
-  name: "\xD9\x86\xD8\xAC\xD9\x81 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_195: 
-  id: "306"
-  subject_id: "105"
-  locale: fa
-  name: "\xD8\xA2\xD8\xAC\xDB\x8C\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_196: 
+subject_translations_144: 
   id: "314"
   subject_id: "113"
   locale: fa
   name: "\xD8\xB9\xD8\xB1\xDB\x8C\xD8\xB6\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_197: 
+subject_translations_145: 
   id: "316"
   subject_id: "115"
   locale: fa
   name: "\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_198: 
+subject_translations_146: 
   id: "317"
   subject_id: "116"
   locale: fa
   name: "\xD8\xBA\xD8\xA7\xD8\xB1\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_199: 
+subject_translations_147: 
   id: "322"
   subject_id: "121"
   locale: fa
   name: "\xD8\xB3\xDB\x8C\xD8\xA7\xD8\xB3\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_200: 
+subject_translations_148: 
   id: "328"
   subject_id: "127"
   locale: fa
   name: "\xD9\x82\xDB\x8C\xD9\x85\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_201: 
+subject_translations_149: 
   id: "329"
   subject_id: "128"
   locale: fa
   name: "\xD8\xA7\xD9\x85\xD9\x84\xD8\xA7\xDA\xA9"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_202: 
-  id: "330"
-  subject_id: "129"
-  locale: fa
-  name: "\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x84\xD8\xA7\xD9\x81\xD8\xA7\xD8\xAA \xD8\xA7\xD9\x85\xD9\x88\xD8\xA7\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_203: 
+subject_translations_150: 
   id: "331"
   subject_id: "130"
   locale: fa
   name: "\xD9\x81\xD8\xAD\xD8\xB4\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_204: 
-  id: "332"
-  subject_id: "131"
-  locale: fa
-  name: "\xD8\xB6\xD8\xB1\xD8\xA8 \xD8\xA7\xD9\x84\xD9\x85\xD8\xAB\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_205: 
-  id: "334"
-  subject_id: "133"
-  locale: fa
-  name: "\xD9\x82\xD8\xB2\xD9\x88\xDB\x8C\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_206: 
-  id: "337"
-  subject_id: "136"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xA7\xD8\xB1\xD9\x87"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_207: 
+subject_translations_151: 
   id: "339"
   subject_id: "138"
   locale: fa
   name: "\xD8\xB1\xD9\x85\xD8\xB6\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_208: 
-  id: "340"
-  subject_id: "139"
-  locale: fa
-  name: "\xD8\xB1\xD8\xB4\xD8\xAA"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_209: 
-  id: "341"
-  subject_id: "140"
-  locale: fa
-  name: "\xD8\xB1\xD8\xB2\xD8\xAC\xD8\xB1\xD8\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_210: 
+subject_translations_152: 
   id: "342"
   subject_id: "141"
   locale: fa
   name: "\xD8\xAA\xD9\x81\xD8\xB1\xDB\x8C\xD8\xAD"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_211: 
+subject_translations_153: 
   id: "343"
   subject_id: "142"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD9\x85\xD8\xB0\xD9\x87\xD8\xA8\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_212: 
-  id: "347"
-  subject_id: "146"
-  locale: fa
-  name: "\xD8\xB1\xD9\x88\xD8\xB6\xD9\x87"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_213: 
+subject_translations_154: 
   id: "355"
   subject_id: "154"
   locale: fa
   name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD8\xB9\xD8\xB8\xDB\x8C\xD9\x85"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_214: 
-  id: "356"
-  subject_id: "155"
-  locale: fa
-  name: "\xD8\xB4\xD9\x85\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_215: 
-  id: "364"
-  subject_id: "163"
-  locale: fa
-  name: "\xD8\xA2\xD9\x87\xD9\x86\xDA\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_216: 
-  id: "367"
-  subject_id: "166"
-  locale: fa
-  name: "\xD8\xAF\xD8\xAE\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_217: 
+subject_translations_155: 
   id: "368"
   subject_id: "167"
   locale: fa
   name: "\xD8\xB4\xD9\x87\xD8\xB1\xDB\x8C\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_218: 
+subject_translations_156: 
   id: "371"
   subject_id: "170"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xAF\xDA\xA9\xD8\xB4\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_219: 
-  id: "376"
-  subject_id: "175"
-  locale: fa
-  name: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_220: 
+subject_translations_157: 
   id: "378"
   subject_id: "177"
   locale: fa
   name: "\xD9\xBE\xD8\xA7\xD8\xB1\xDA\x86\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_221: 
-  id: "379"
-  subject_id: "178"
-  locale: fa
-  name: "\xD8\xAA\xD9\x81\xD9\x84\xDB\x8C\xD8\xB3"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_222: 
+subject_translations_158: 
   id: "384"
   subject_id: "183"
   locale: fa
   name: "\xD8\xAF\xD9\x86\xD8\xAF\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_223: 
-  id: "387"
-  subject_id: "186"
-  locale: fa
-  name: "\xD8\xAA\xD9\x86\xDA\xA9\xD8\xA7\xD8\xA8\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_224: 
+subject_translations_159: 
   id: "390"
   subject_id: "189"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB2\xD8\xAF\xDB\x8C\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_225: 
-  id: "391"
-  subject_id: "190"
-  locale: fa
-  name: "\xD8\xAD\xD9\x82\xD9\x88\xD9\x82"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_226: 
+subject_translations_160: 
   id: "394"
   subject_id: "193"
   locale: fa
   name: "\xD8\xA7\xD8\xB2\xD8\xAF\xD9\x88\xD8\xA7\xD8\xAC"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_227: 
-  id: "399"
-  subject_id: "198"
-  locale: fa
-  name: "\xD8\xAD\xD9\x82 \xD8\xB1\xD8\xA7\xDB\x8C \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_228: 
+subject_translations_161: 
   id: "401"
   subject_id: "200"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xDB\x8C\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_229: 
-  id: "402"
-  subject_id: "201"
-  locale: fa
-  name: "\xD8\xB2\xD9\x86\xD8\xAC\xD8\xA7\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_230: 
+subject_translations_162: 
   id: "403"
   subject_id: "207"
   locale: en
   name: letters
   created_at: 2010-03-22 22:30:35
   updated_at: 2010-03-22 22:30:35
-subject_translations_231: 
+subject_translations_163: 
   id: "404"
   subject_id: "208"
   locale: en
-  name: prose
+  name: manuscripts and lithographs
   created_at: 2010-03-22 22:34:49
-  updated_at: 2010-03-22 22:34:49
-subject_translations_232: 
+  updated_at: 2010-12-26 23:18:06
+subject_translations_164: 
   id: "405"
   subject_id: "209"
   locale: en
   name: poetry
   created_at: 2010-03-22 22:35:36
   updated_at: 2010-03-22 22:35:36
-subject_translations_233: 
+subject_translations_165: 
   id: "406"
   subject_id: "210"
   locale: en
   name: travel writings
   created_at: 2010-03-22 22:35:58
   updated_at: 2010-03-22 22:35:58
-subject_translations_234: 
-  id: "407"
-  subject_id: "211"
-  locale: en
-  name: essays
-  created_at: 2010-03-22 22:36:21
-  updated_at: 2010-03-22 22:36:21
-subject_translations_235: 
+subject_translations_166: 
   id: "408"
   subject_id: "212"
   locale: en
-  name: journals
+  name: printed materials
   created_at: 2010-03-22 22:36:43
-  updated_at: 2010-03-22 22:36:43
-subject_translations_236: 
+  updated_at: 2010-12-26 23:19:15
+subject_translations_167: 
   id: "409"
   subject_id: "213"
   locale: en
-  name: wedding contracts
+  name: marriage and dowry documents
   created_at: 2010-03-22 22:37:27
-  updated_at: 2010-03-22 22:37:27
-subject_translations_237: 
-  id: "410"
-  subject_id: "214"
-  locale: en
-  name: dowry documents
-  created_at: 2010-03-22 22:37:54
-  updated_at: 2010-03-22 22:37:54
-subject_translations_238: 
+  updated_at: 2010-12-26 23:22:53
+subject_translations_168: 
   id: "411"
   subject_id: "215"
   locale: en
-  name: settlements
+  name: sales and settlements
   created_at: 2010-03-22 22:38:19
-  updated_at: 2010-03-22 22:38:19
-subject_translations_239: 
+  updated_at: 2010-12-26 23:31:22
+subject_translations_169: 
   id: "412"
   subject_id: "216"
   locale: en
   name: endowments
   created_at: 2010-03-22 22:38:56
   updated_at: 2010-03-22 22:38:56
-subject_translations_240: 
-  id: "413"
-  subject_id: "217"
-  locale: en
-  name: powers of attorney
-  created_at: 2010-03-22 22:39:24
-  updated_at: 2010-03-22 22:39:24
-subject_translations_241: 
+subject_translations_170: 
   id: "414"
   subject_id: "218"
   locale: en
-  name: wills
+  name: wills and powers of attorney
   created_at: 2010-03-22 22:39:47
-  updated_at: 2010-03-22 22:39:47
-subject_translations_242: 
-  id: "415"
-  subject_id: "219"
-  locale: en
-  name: sales
-  created_at: 2010-03-22 22:40:17
-  updated_at: 2010-03-22 22:40:17
-subject_translations_243: 
+  updated_at: 2010-12-26 23:34:42
+subject_translations_171: 
   id: "416"
   subject_id: "220"
   locale: en
-  name: other financial contracts
+  name: other financial documents
   created_at: 2010-03-22 22:40:41
-  updated_at: 2010-03-22 22:40:41
-subject_translations_244: 
+  updated_at: 2010-12-26 23:36:31
+subject_translations_172: 
   id: "418"
   subject_id: "222"
   locale: en
   name: painting
   created_at: 2010-03-22 22:41:43
   updated_at: 2010-03-22 22:41:43
-subject_translations_245: 
+subject_translations_173: 
   id: "419"
   subject_id: "223"
   locale: en
   name: embroidery
   created_at: 2010-03-22 22:42:16
   updated_at: 2010-03-22 22:42:16
-subject_translations_246: 
+subject_translations_174: 
   id: "420"
   subject_id: "224"
   locale: en
-  name: weaving
+  name: other artworks
   created_at: 2010-03-22 22:42:54
-  updated_at: 2010-03-22 22:42:54
-subject_translations_247: 
+  updated_at: 2010-12-26 23:49:59
+subject_translations_175: 
   id: "421"
   subject_id: "225"
   locale: en
-  name: other handicrafts
+  name: handicrafts
   created_at: 2010-03-22 22:43:20
-  updated_at: 2010-03-22 22:43:20
-subject_translations_248: 
+  updated_at: 2010-12-26 23:47:40
+subject_translations_176: 
   id: "422"
   subject_id: "226"
   locale: en
   name: music
   created_at: 2010-03-22 22:43:42
   updated_at: 2010-03-22 22:43:42
-subject_translations_249: 
-  id: "423"
-  subject_id: "227"
-  locale: en
-  name: film
-  created_at: 2010-03-22 22:44:02
-  updated_at: 2010-03-22 22:44:02
-subject_translations_250: 
+subject_translations_177: 
   id: "424"
   subject_id: "207"
   locale: fa
-  name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x87\xD8\xA7 "
+  name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:49:23
-  updated_at: 2010-03-22 22:49:23
-subject_translations_251: 
+  updated_at: 2010-12-26 23:11:33
+subject_translations_178: 
   id: "425"
   subject_id: "208"
   locale: fa
-  name: "\xD9\x86\xD8\xAB\xD8\xB1"
+  name: "\xD8\xAF\xD8\xB3\xD8\xAA\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA\xD9\x87 \xD9\x88 \xDA\x86\xD8\xA7\xD9\xBE \xD8\xB3\xD9\x86\xDA\xAF\xDB\x8C"
   created_at: 2010-03-22 22:49:49
-  updated_at: 2010-03-22 22:49:49
-subject_translations_252: 
+  updated_at: 2010-12-26 23:18:06
+subject_translations_179: 
   id: "426"
   subject_id: "209"
   locale: fa
   name: "\xD8\xB4\xD8\xB9\xD8\xB1"
   created_at: 2010-03-22 22:50:23
   updated_at: 2010-03-22 22:50:23
-subject_translations_253: 
+subject_translations_180: 
   id: "427"
   subject_id: "210"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:50:46
   updated_at: 2010-03-22 22:50:46
-subject_translations_254: 
-  id: "428"
-  subject_id: "211"
-  locale: fa
-  name: "\xD9\x85\xD9\x82\xD8\xA7\xD9\x84\xD8\xA7\xD8\xAA"
-  created_at: 2010-03-22 22:51:04
-  updated_at: 2010-03-22 22:51:04
-subject_translations_255: 
+subject_translations_181: 
   id: "429"
   subject_id: "212"
   locale: fa
-  name: "\xD9\x86\xD8\xB4\xD8\xB1\xDB\x8C\xD8\xA7\xD8\xAA"
+  name: "\xDA\x86\xD8\xA7\xD9\xBE\xDB\x8C"
   created_at: 2010-03-22 22:51:24
-  updated_at: 2010-03-22 22:51:24
-subject_translations_256: 
+  updated_at: 2010-12-26 23:19:15
+subject_translations_182: 
   id: "430"
   subject_id: "213"
   locale: fa
-  name: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  name: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x88 \xD9\xBE\xD8\xB4\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:51:51
-  updated_at: 2010-03-22 22:51:51
-subject_translations_257: 
-  id: "431"
-  subject_id: "214"
-  locale: fa
-  name: "\xD9\xBE\xD8\xB4\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
-  created_at: 2010-03-22 22:52:13
-  updated_at: 2010-03-22 22:52:13
-subject_translations_258: 
+  updated_at: 2010-12-26 23:22:53
+subject_translations_183: 
   id: "432"
   subject_id: "215"
   locale: fa
-  name: "\xD8\xB5\xD9\x84\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  name: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x88 \xD8\xB5\xD9\x84\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:52:35
-  updated_at: 2010-03-22 22:52:35
-subject_translations_259: 
+  updated_at: 2010-12-26 23:31:22
+subject_translations_184: 
   id: "433"
   subject_id: "216"
   locale: fa
   name: "\xD9\x88\xD9\x82\xD9\x81\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:52:57
   updated_at: 2010-03-22 22:52:57
-subject_translations_260: 
-  id: "434"
-  subject_id: "217"
-  locale: fa
-  name: "\xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
-  created_at: 2010-03-22 22:53:24
-  updated_at: 2010-03-22 22:53:24
-subject_translations_261: 
+subject_translations_185: 
   id: "435"
   subject_id: "218"
   locale: fa
-  name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x88 \xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-03-22 22:53:43
-  updated_at: 2010-03-22 22:53:43
-subject_translations_262: 
-  id: "436"
-  subject_id: "219"
-  locale: fa
-  name: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
-  created_at: 2010-03-22 22:54:01
-  updated_at: 2010-03-22 22:54:01
-subject_translations_263: 
+  updated_at: 2010-12-26 23:34:42
+subject_translations_186: 
   id: "437"
   subject_id: "220"
   locale: fa
-  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD8\xAA\xD8\xB9\xD9\x87\xD8\xAF\xD8\xA7\xD8\xAA \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
+  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD8\xA7\xD8\xB3\xD9\x86\xD8\xA7\xD8\xAF \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
   created_at: 2010-03-22 22:54:25
-  updated_at: 2010-03-22 22:54:25
-subject_translations_264: 
+  updated_at: 2010-12-26 23:36:31
+subject_translations_187: 
   id: "439"
   subject_id: "222"
   locale: fa
   name: "\xD9\x86\xD9\x82\xD8\xA7\xD8\xB4\xDB\x8C"
   created_at: 2010-03-22 22:55:32
   updated_at: 2010-03-22 22:55:32
-subject_translations_265: 
+subject_translations_188: 
   id: "440"
   subject_id: "223"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xB2\xD9\x86 \xD8\xAF\xD9\x88\xD8\xB2\xDB\x8C"
   created_at: 2010-03-22 22:55:54
   updated_at: 2010-03-22 22:55:54
-subject_translations_266: 
+subject_translations_189: 
   id: "441"
   subject_id: "224"
   locale: fa
-  name: "\xD9\x82\xD8\xA7\xD9\x84\xDB\x8C\xD8\xA8\xD8\xA7\xD9\x81\xDB\x8C"
+  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xDB\x8C"
   created_at: 2010-03-22 22:56:12
-  updated_at: 2010-03-22 22:56:12
-subject_translations_267: 
+  updated_at: 2010-12-26 23:49:59
+subject_translations_190: 
   id: "442"
   subject_id: "225"
   locale: fa
-  name: "\xD8\xB3\xD8\xA7\xDB\x8C\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xB3\xD8\xAA\xDB\x8C"
+  name: "\xD9\x87\xD9\x86\xD8\xB1\xD9\x87\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xB3\xD8\xAA\xDB\x8C"
   created_at: 2010-03-22 22:56:33
-  updated_at: 2010-03-22 22:56:33
-subject_translations_268: 
+  updated_at: 2010-12-26 23:47:40
+subject_translations_191: 
   id: "443"
   subject_id: "226"
   locale: fa
   name: "\xD9\x85\xD9\x88\xD8\xB3\xDB\x8C\xD9\x82\xDB\x8C"
   created_at: 2010-03-22 22:56:50
   updated_at: 2010-03-22 22:56:50
-subject_translations_269: 
-  id: "444"
-  subject_id: "227"
-  locale: fa
-  name: "\xD9\x81\xDB\x8C\xD9\x84\xD9\x85"
-  created_at: 2010-03-22 22:57:08
-  updated_at: 2010-03-22 22:57:08
-subject_translations_270: 
+subject_translations_192: 
   id: "447"
   subject_id: "229"
   locale: en
-  name: photographs (misc)
+  name: photographs
   created_at: 2010-07-05 23:07:36
-  updated_at: 2010-07-05 23:07:38
-subject_translations_271: 
+  updated_at: 2010-12-26 23:45:26
+subject_translations_193: 
   id: "448"
   subject_id: "229"
   locale: fa
   name: "\xD8\xB9\xDA\xA9\xD8\xB3"
   created_at: 2010-07-05 23:08:22
   updated_at: 2010-07-05 23:08:25
-subject_translations_272: 
+subject_translations_194: 
   id: "449"
   subject_id: "230"
   locale: en
-  name: artworks
+  name: calligraphy
   created_at: 2010-07-05 23:24:36
-  updated_at: 2010-07-05 23:24:39
-subject_translations_273: 
+  updated_at: 2010-12-26 23:44:18
+subject_translations_195: 
   id: "450"
   subject_id: "230"
   locale: fa
-  name: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD9\x87\xD9\x86\xD8\xB1\xDB\x8C"
+  name: "\xD8\xAE\xD9\x88\xD8\xB4\xD9\x86\xD9\x88\xDB\x8C\xD8\xB3\xDB\x8C"
   created_at: 2010-07-05 23:25:31
-  updated_at: 2010-07-05 23:25:33
-subject_translations_274: 
+  updated_at: 2010-12-26 23:44:18
+subject_translations_196: 
   id: "451"
   subject_id: "231"
   locale: en
-  name: everyday objects (misc)
+  name: everyday objects
   created_at: 2010-07-05 23:29:20
-  updated_at: 2010-07-05 23:29:23
-subject_translations_275: 
+  updated_at: 2010-12-26 23:53:00
+subject_translations_197: 
   id: "452"
   subject_id: "231"
   locale: fa
   name: "\xD8\xA7\xD8\xB4\xDB\x8C\xD8\xA7\xD8\xA1 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD8\xB1\xD9\x88\xD8\xB2\xD9\x85\xD8\xB1\xD9\x87"
   created_at: 2010-07-05 23:29:38
   updated_at: 2010-07-05 23:29:41
-subject_translations_276: 
+subject_translations_198: 
   id: "453"
   subject_id: "232"
   locale: en
-  name: oral histories (misc)
+  name: oral histories
   created_at: 2010-07-05 23:34:25
-  updated_at: 2010-07-05 23:34:28
-subject_translations_277: 
+  updated_at: 2010-12-26 23:53:53
+subject_translations_199: 
   id: "454"
   subject_id: "232"
   locale: fa
   name: "\xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE \xD8\xB4\xD9\x81\xD8\xA7\xD9\x87\xDB\x8C"
   created_at: 2010-07-05 23:35:02
   updated_at: 2010-07-05 23:35:05
-subject_translations_278: 
+subject_translations_200: 
   id: "455"
   subject_id: "233"
   locale: en
   name: Brideprice
   created_at: 2010-10-20 20:53:25
   updated_at: 2010-10-20 20:53:25
-subject_translations_279: 
+subject_translations_201: 
   id: "456"
   subject_id: "233"
   locale: fa
   name: "\xD9\x85\xD9\x87\xD8\xB1\xDB\x8C\xD9\x87"
   created_at: 2010-10-20 20:53:25
   updated_at: 2010-10-20 20:53:25
-subject_translations_280: 
+subject_translations_202: 
   id: "457"
   subject_id: "234"
   locale: en
   name: Actors
   created_at: 2010-11-06 02:52:35
   updated_at: 2010-11-06 02:52:35
-subject_translations_281: 
+subject_translations_203: 
   id: "458"
   subject_id: "234"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C\xDA\xAF\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-11-06 02:52:35
   updated_at: 2010-11-06 02:52:35
-subject_translations_282: 
+subject_translations_204: 
   id: "459"
   subject_id: "235"
   locale: en
   name: Army
   created_at: 2010-11-06 02:54:15
   updated_at: 2010-11-06 02:54:15
-subject_translations_283: 
+subject_translations_205: 
   id: "460"
   subject_id: "235"
   locale: fa
   name: "\xD8\xA7\xD8\xB1\xD8\xAA\xD8\xB4"
   created_at: 2010-11-06 02:54:15
   updated_at: 2010-11-06 02:54:15
-subject_translations_284: 
+subject_translations_206: 
   id: "461"
   subject_id: "236"
   locale: en
   name: Apartments
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_285: 
+subject_translations_207: 
   id: "462"
   subject_id: "236"
   locale: fa
   name: "\xD8\xA2\xD9\xBE\xD8\xA7\xD8\xB1\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_286: 
+subject_translations_208: 
   id: "463"
   subject_id: "237"
   locale: en
   name: Armenians
   created_at: 2010-11-11 00:31:16
   updated_at: 2010-11-11 00:31:16
-subject_translations_287: 
+subject_translations_209: 
   id: "464"
   subject_id: "237"
   locale: fa
   name: "\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x85\xD9\x86\xD9\x87"
   created_at: 2010-11-11 00:31:16
   updated_at: 2010-11-11 00:31:16
-subject_translations_288: 
+subject_translations_210: 
   id: "465"
   subject_id: "238"
   locale: en
   name: Betrothal
   created_at: 2010-11-11 00:32:18
   updated_at: 2010-11-11 00:32:18
-subject_translations_289: 
+subject_translations_211: 
   id: "466"
   subject_id: "238"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x85\xD8\xB2\xD8\xAF\xDB\x8C"
   created_at: 2010-11-11 00:32:18
   updated_at: 2010-11-11 00:32:18
-subject_translations_290: 
+subject_translations_212: 
   id: "467"
   subject_id: "239"
   locale: en
   name: Bicycles
   created_at: 2010-11-11 00:34:51
   updated_at: 2010-11-11 00:34:51
-subject_translations_291: 
+subject_translations_213: 
   id: "468"
   subject_id: "239"
   locale: fa
   name: "\xD8\xAF\xD9\x88\xDA\x86\xD8\xB1\xD8\xAE\xD9\x87"
   created_at: 2010-11-11 00:34:51
   updated_at: 2010-11-11 00:34:51
-subject_translations_292: 
+subject_translations_214: 
   id: "469"
   subject_id: "240"
   locale: en
   name: Abortion
   created_at: 2010-11-11 00:37:15
   updated_at: 2010-11-11 00:37:15
-subject_translations_293: 
+subject_translations_215: 
   id: "470"
   subject_id: "240"
   locale: fa
   name: "\xD8\xB3\xD9\x82\xD8\xB7 \xD8\xAC\xD9\x86\xDB\x8C\xD9\x86"
   created_at: 2010-11-11 00:37:15
   updated_at: 2010-11-11 00:37:15
-subject_translations_294: 
+subject_translations_216: 
   id: "471"
   subject_id: "241"
   locale: en
   name: Banks
   created_at: 2010-11-21 07:52:24
   updated_at: 2010-11-21 07:52:24
-subject_translations_295: 
+subject_translations_217: 
   id: "472"
   subject_id: "241"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD9\x86\xDA\xA9"
   created_at: 2010-11-21 07:52:24
   updated_at: 2010-11-21 07:52:24
-subject_translations_296: 
+subject_translations_218: 
   id: "473"
   subject_id: "242"
   locale: en
   name: City planning
   created_at: 2010-11-21 07:54:53
   updated_at: 2010-11-21 07:54:53
-subject_translations_297: 
+subject_translations_219: 
   id: "474"
   subject_id: "242"
   locale: fa
   name: "\xD8\xB4\xD9\x87\xD8\xB1\xD8\xB3\xD8\xA7\xD8\xB2\xDB\x8C"
   created_at: 2010-11-21 07:54:53
   updated_at: 2010-11-21 07:54:53
-subject_translations_298: 
+subject_translations_220: 
   id: "475"
   subject_id: "243"
   locale: en
   name: City gates
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_299: 
+subject_translations_221: 
   id: "476"
   subject_id: "243"
   locale: fa
   name: "\xD8\xAF\xD8\xB1\xD9\x88\xD8\xA7\xD8\xB2\xD9\x87 \xD8\xB4\xD9\x87\xD8\xB1"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_300: 
+subject_translations_222: 
   id: "477"
   subject_id: "244"
   locale: en
   name: Architecture
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_301: 
+subject_translations_223: 
   id: "478"
   subject_id: "244"
   locale: fa
   name: "\xD9\x85\xD8\xB9\xD9\x85\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_302: 
+subject_translations_224: 
   id: "479"
   subject_id: "245"
   locale: en
   name: Arrest
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_303: 
+subject_translations_225: 
   id: "480"
   subject_id: "245"
   locale: fa
   name: "\xD8\xAF\xD8\xB3\xD8\xAA\xDA\xAF\xDB\x8C\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_304: 
+subject_translations_226: 
   id: "481"
   subject_id: "246"
   locale: en
   name: Automobiles
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_305: 
+subject_translations_227: 
   id: "482"
   subject_id: "246"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD8\xB4\xDB\x8C\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_306: 
+subject_translations_228: 
   id: "483"
   subject_id: "246"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xAF\xD8\xB1\xD9\x88"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_307: 
+subject_translations_229: 
   id: "484"
   subject_id: "247"
   locale: en
   name: Bahais
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_308: 
+subject_translations_230: 
   id: "485"
   subject_id: "247"
   locale: fa
   name: "\xD8\xA8\xD9\x87\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_309: 
+subject_translations_231: 
   id: "486"
   subject_id: "248"
   locale: en
   name: Books
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_310: 
+subject_translations_232: 
   id: "487"
   subject_id: "248"
   locale: fa
   name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_311: 
+subject_translations_233: 
   id: "488"
   subject_id: "249"
   locale: en
   name: Brothers and sisters
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_312: 
+subject_translations_234: 
   id: "489"
   subject_id: "249"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD8\xA7\xD8\xAF\xD8\xB1 \xD9\x88 \xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_313: 
-  id: "490"
-  subject_id: "250"
-  locale: en
-  name: Bullets
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_314: 
-  id: "491"
-  subject_id: "250"
-  locale: fa
-  name: "\xD9\x81\xD8\xB4\xD9\x86\xDA\xAF"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_315: 
+subject_translations_235: 
   id: "492"
   subject_id: "251"
   locale: en
   name: Building permits
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_316: 
+subject_translations_236: 
   id: "493"
   subject_id: "251"
   locale: fa
   name: "\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB2\xD9\x87 \xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_317: 
+subject_translations_237: 
   id: "494"
   subject_id: "252"
   locale: en
   name: British
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_318: 
+subject_translations_238: 
   id: "495"
   subject_id: "252"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xDB\x8C\xD8\xAA\xD8\xA7\xD9\x86\xDB\x8C\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_319: 
-  id: "496"
-  subject_id: "253"
-  locale: en
-  name: Biruni
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_320: 
-  id: "497"
-  subject_id: "253"
-  locale: fa
-  name: "\xD8\xA8\xDB\x8C\xD8\xB1\xD9\x88\xD9\x86\xDB\x8C"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_321: 
+subject_translations_239: 
   id: "498"
   subject_id: "254"
   locale: en
   name: Birds
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_322: 
+subject_translations_240: 
   id: "499"
   subject_id: "254"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD9\x86\xD8\xAF\xDA\xAF\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_323: 
+subject_translations_241: 
   id: "500"
   subject_id: "255"
   locale: en
   name: Biography
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_324: 
+subject_translations_242: 
   id: "501"
   subject_id: "255"
   locale: fa
   name: "\xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 "
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_325: 
+subject_translations_243: 
   id: "503"
   subject_id: "256"
   locale: en
   name: Calligraphy
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_326: 
+subject_translations_244: 
   id: "504"
   subject_id: "256"
   locale: fa
   name: "\xD8\xAE\xD8\xB7\xD8\xA7\xD8\xB7\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_327: 
-  id: "505"
-  subject_id: "257"
-  locale: en
-  name: Candles
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_328: 
-  id: "506"
-  subject_id: "257"
-  locale: fa
-  name: "\xD8\xB4\xD9\x85\xD8\xB9"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_329: 
+subject_translations_245: 
   id: "507"
   subject_id: "258"
   locale: en
   name: Caravansaries
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_330: 
+subject_translations_246: 
   id: "508"
   subject_id: "258"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xB1\xD9\x88\xD8\xA7\xD9\x86\xD8\xB3\xD8\xB1\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_331: 
+subject_translations_247: 
   id: "509"
   subject_id: "259"
   locale: en
   name: Child custody
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_332: 
+subject_translations_248: 
   id: "510"
   subject_id: "259"
   locale: fa
   name: "\xD8\xAD\xD8\xB6\xD8\xA7\xD9\x86\xD8\xAA \xD9\x81\xD8\xB1\xD8\xB2\xD9\x86\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_333: 
+subject_translations_249: 
   id: "511"
   subject_id: "260"
   locale: en
   name: Children & adults
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_334: 
+subject_translations_250: 
   id: "512"
   subject_id: "260"
   locale: fa
   name: "\xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xA8\xD8\xB2\xD8\xB1\xDA\xAF\xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_335: 
+subject_translations_251: 
   id: "513"
   subject_id: "261"
   locale: en
   name: Children's clothing
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_336: 
+subject_translations_252: 
   id: "514"
   subject_id: "261"
   locale: fa
   name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3 \xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_337: 
+subject_translations_253: 
   id: "515"
   subject_id: "262"
   locale: en
   name: Christians
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_338: 
+subject_translations_254: 
   id: "516"
   subject_id: "262"
   locale: fa
   name: "\xD9\x85\xD8\xB3\xDB\x8C\xD8\xAD\xDB\x8C\xD8\xA7\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_339: 
+subject_translations_255: 
   id: "517"
   subject_id: "263"
   locale: en
   name: Cinemas
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_340: 
+subject_translations_256: 
   id: "518"
   subject_id: "263"
   locale: fa
   name: "\xD8\xB3\xDB\x8C\xD9\x86\xD9\x85\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_341: 
+subject_translations_257: 
   id: "519"
   subject_id: "264"
   locale: en
   name: Combs
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_342: 
+subject_translations_258: 
   id: "520"
   subject_id: "264"
   locale: fa
   name: "\xD8\xB4\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_343: 
+subject_translations_259: 
   id: "521"
   subject_id: "265"
   locale: en
   name: Compensation (Law)
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_344: 
+subject_translations_260: 
   id: "522"
   subject_id: "265"
   locale: fa
   name: "\xD8\xAE\xD8\xB3\xD8\xA7\xD8\xB1\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_345: 
+subject_translations_261: 
   id: "523"
   subject_id: "266"
   locale: en
   name: Condolence notes
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_346: 
+subject_translations_262: 
   id: "524"
   subject_id: "266"
   locale: fa
   name: "\xD8\xAA\xD8\xB3\xD9\x84\xDB\x8C\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 "
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_347: 
+subject_translations_263: 
   id: "525"
   subject_id: "267"
   locale: en
   name: Conduct of life
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_348: 
+subject_translations_264: 
   id: "526"
   subject_id: "267"
   locale: fa
   name: "\xD8\xB3\xD8\xA8\xDA\xA9 \xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xDB\x8C "
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_349: 
+subject_translations_265: 
   id: "527"
   subject_id: "268"
   locale: en
   name: Cookbooks
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_350: 
+subject_translations_266: 
   id: "528"
   subject_id: "268"
   locale: fa
   name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8 \xD8\xA2\xD8\xB4\xD9\xBE\xD8\xB2\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_351: 
+subject_translations_267: 
   id: "529"
   subject_id: "269"
   locale: en
   name: Cooking
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_352: 
+subject_translations_268: 
   id: "530"
   subject_id: "269"
   locale: fa
   name: "\xD8\xA2\xD8\xB4\xD9\xBE\xD8\xB2\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_353: 
+subject_translations_269: 
   id: "531"
   subject_id: "270"
   locale: en
   name: Copper
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_354: 
+subject_translations_270: 
   id: "532"
   subject_id: "270"
   locale: fa
   name: "\xD9\x85\xD8\xB3"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_355: 
+subject_translations_271: 
   id: "533"
   subject_id: "270"
   locale: fa
   name: "\xD8\xB8\xD8\xB1\xD9\x88\xD9\x81 \xD9\x85\xD8\xB3\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_356: 
+subject_translations_272: 
   id: "534"
   subject_id: "271"
   locale: en
   name: Cosmetics
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_357: 
+subject_translations_273: 
   id: "535"
   subject_id: "271"
   locale: fa
   name: "\xD9\x84\xD9\x88\xD8\xA7\xD8\xB2\xD9\x85 \xD8\xA2\xD8\xB1\xD8\xA7\xDB\x8C\xD8\xB4\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_358: 
+subject_translations_274: 
   id: "536"
   subject_id: "272"
   locale: en
   name: Courtship
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_359: 
+subject_translations_275: 
   id: "537"
   subject_id: "272"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD8\xB3\xD8\xAA\xDA\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_360: 
+subject_translations_276: 
   id: "538"
   subject_id: "273"
   locale: en
   name: Crime
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_361: 
+subject_translations_277: 
   id: "539"
   subject_id: "273"
   locale: fa
   name: "\xD8\xAC\xD9\x86\xD8\xA7\xDB\x8C\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_362: 
+subject_translations_278: 
   id: "540"
   subject_id: "273"
   locale: fa
   name: "\xD8\xAC\xD8\xB1\xD9\x85"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_363: 
-  id: "541"
-  subject_id: "274"
-  locale: en
-  name: Dance
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_364: 
-  id: "542"
-  subject_id: "274"
-  locale: fa
-  name: "\xD8\xB1\xD9\x82\xD8\xB5"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_365: 
+subject_translations_279: 
   id: "543"
   subject_id: "275"
   locale: en
   name: Dancers
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_366: 
+subject_translations_280: 
   id: "544"
   subject_id: "275"
   locale: fa
   name: "\xD8\xB1\xD9\x82\xD8\xA7\xD8\xB5"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_367: 
+subject_translations_281: 
   id: "545"
   subject_id: "275"
   locale: fa
   name: "\xD8\xB1\xD9\x82\xD8\xB5\xD9\x86\xD8\xAF\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_368: 
+subject_translations_282: 
   id: "546"
   subject_id: "276"
   locale: en
   name: Dar al-Funun
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_369: 
+subject_translations_283: 
   id: "547"
   subject_id: "276"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD8\xB1\xD8\xA7\xD9\x84\xD9\x81\xD9\x86\xD9\x88\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_370: 
+subject_translations_284: 
   id: "548"
   subject_id: "277"
   locale: en
   name: Dervishes
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_371: 
+subject_translations_285: 
   id: "549"
   subject_id: "277"
   locale: fa
   name: "\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x88\xDB\x8C\xD8\xB4"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_372: 
+subject_translations_286: 
   id: "550"
   subject_id: "278"
   locale: en
   name: Diet
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_373: 
+subject_translations_287: 
   id: "551"
   subject_id: "278"
   locale: fa
   name: "\xD8\xB1\xDA\x98\xDB\x8C\xD9\x85 \xD8\xBA\xD8\xB0\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_374: 
+subject_translations_288: 
   id: "552"
   subject_id: "279"
   locale: en
   name: Divination (Quranic)
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_375: 
+subject_translations_289: 
   id: "553"
   subject_id: "279"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xAA\xD8\xAE\xD8\xA7\xD8\xB1\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_376: 
+subject_translations_290: 
   id: "554"
   subject_id: "280"
   locale: en
   name: Divination (Hafiz)
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_377: 
+subject_translations_291: 
   id: "555"
   subject_id: "280"
   locale: fa
   name: "\xD9\x81\xD8\xA7\xD9\x84 (\xD8\xAD\xD8\xA7\xD9\x81\xD8\xB8)"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_378: 
+subject_translations_292: 
   id: "556"
   subject_id: "281"
   locale: en
   name: Dolls
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_379: 
+subject_translations_293: 
   id: "557"
   subject_id: "281"
   locale: fa
   name: "\xD8\xB9\xD8\xB1\xD9\x88\xD8\xB3\xDA\xA9"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_380: 
+subject_translations_294: 
   id: "558"
   subject_id: "282"
   locale: en
   name: Dreams
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_381: 
+subject_translations_295: 
   id: "559"
   subject_id: "282"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_382: 
+subject_translations_296: 
   id: "560"
   subject_id: "282"
   locale: fa
   name: "\xD8\xAA\xD8\xB9\xD8\xA8\xDB\x8C\xD8\xB1 \xD8\xAE\xD9\x88\xD8\xA7\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_383: 
+subject_translations_297: 
   id: "561"
   subject_id: "283"
   locale: en
   name: English language
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_384: 
+subject_translations_298: 
   id: "562"
   subject_id: "283"
   locale: fa
   name: "\xD8\xB2\xD8\xA8\xD8\xA7\xD9\x86 \xD8\xA7\xD9\x86\xDA\xAF\xD9\x84\xDB\x8C\xD8\xB3\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_385: 
+subject_translations_299: 
   id: "563"
   subject_id: "284"
   locale: en
   name: Entertainers
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_386: 
+subject_translations_300: 
   id: "564"
   subject_id: "284"
   locale: fa
   name: "\xD9\x85\xD8\xB7\xD8\xB1\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_387: 
+subject_translations_301: 
   id: "565"
   subject_id: "285"
   locale: en
   name: Envelopes
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_388: 
+subject_translations_302: 
   id: "566"
   subject_id: "285"
   locale: fa
   name: "\xD9\xBE\xD8\xA7\xDA\xA9\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_389: 
+subject_translations_303: 
   id: "567"
   subject_id: "286"
   locale: en
   name: Etiquette
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_390: 
+subject_translations_304: 
   id: "568"
   subject_id: "286"
   locale: fa
   name: "\xD8\xA2\xD8\xAF\xD8\xA7\xD8\xA8 \xD9\x85\xD8\xB9\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_391: 
+subject_translations_305: 
   id: "569"
   subject_id: "287"
   locale: en
   name: European food
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_392: 
+subject_translations_306: 
   id: "570"
   subject_id: "287"
   locale: fa
   name: "\xD8\xBA\xD8\xB0\xD8\xA7\xD9\x87\xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB1\xD9\x88\xD9\xBE\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_393: 
-  id: "571"
-  subject_id: "288"
-  locale: en
-  name: Executions
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_394: 
-  id: "572"
-  subject_id: "288"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB9\xD8\xAF\xD8\xA7\xD9\x85"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_395: 
+subject_translations_307: 
   id: "573"
   subject_id: "289"
   locale: en
   name: Exterior views
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_396: 
+subject_translations_308: 
   id: "574"
   subject_id: "289"
   locale: fa
   name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C \xD8\xA8\xDB\x8C\xD8\xB1\xD9\x88\xD9\x86"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_397: 
+subject_translations_309: 
   id: "575"
   subject_id: "290"
   locale: en
   name: Eyeglasses
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_398: 
+subject_translations_310: 
   id: "576"
   subject_id: "290"
   locale: fa
   name: "\xD8\xB9\xDB\x8C\xD9\x86\xDA\xA9"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_399: 
+subject_translations_311: 
   id: "577"
   subject_id: "291"
   locale: en
   name: Family
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_400: 
+subject_translations_312: 
   id: "578"
   subject_id: "291"
   locale: fa
   name: "\xD8\xAE\xD8\xA7\xD9\x86\xD9\x88\xD8\xA7\xD8\xAF\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_401: 
+subject_translations_313: 
   id: "579"
   subject_id: "292"
   locale: en
   name: Fashion
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_402: 
+subject_translations_314: 
   id: "580"
   subject_id: "292"
   locale: fa
   name: "\xD9\x85\xD8\xAF"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_403: 
+subject_translations_315: 
   id: "583"
   subject_id: "294"
   locale: en
   name: Food
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_404: 
+subject_translations_316: 
   id: "584"
   subject_id: "294"
   locale: fa
   name: "\xD8\xBA\xD8\xB0\xD8\xA7"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_405: 
+subject_translations_317: 
   id: "585"
   subject_id: "295"
   locale: en
   name: French language
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_406: 
+subject_translations_318: 
   id: "586"
   subject_id: "295"
   locale: fa
   name: "\xD8\xB2\xD8\xA8\xD8\xA7\xD9\x86 \xD9\x81\xD8\xB1\xD8\xA7\xD9\x86\xD8\xB3\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_407: 
+subject_translations_319: 
   id: "587"
   subject_id: "296"
   locale: en
   name: Friendship
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_408: 
+subject_translations_320: 
   id: "588"
   subject_id: "296"
   locale: fa
   name: "\xD8\xAF\xD9\x88\xD8\xB3\xD8\xAA\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_409: 
+subject_translations_321: 
   id: "591"
   subject_id: "298"
   locale: en
   name: Hairstyles
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_410: 
+subject_translations_322: 
   id: "592"
   subject_id: "298"
   locale: fa
   name: "\xD8\xA2\xD8\xB1\xD8\xA7\xDB\x8C\xD8\xB4 \xD9\x85\xD9\x88"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_411: 
+subject_translations_323: 
   id: "593"
   subject_id: "299"
   locale: en
   name: Hajj (pilgrimage)
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_412: 
+subject_translations_324: 
   id: "594"
   subject_id: "299"
   locale: fa
   name: "\xD8\xAD\xD8\xAC (\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA)"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_413: 
-  id: "595"
-  subject_id: "300"
-  locale: en
-  name: Handkerchiefs
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_414: 
-  id: "596"
-  subject_id: "300"
-  locale: fa
-  name: "\xD8\xAF\xD8\xB3\xD8\xAA\xD9\x85\xD8\xA7\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_415: 
+subject_translations_325: 
   id: "597"
   subject_id: "301"
   locale: en
   name: Hats
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_416: 
+subject_translations_326: 
   id: "598"
   subject_id: "301"
   locale: fa
   name: "\xDA\xA9\xD9\x84\xD8\xA7\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_417: 
+subject_translations_327: 
   id: "599"
   subject_id: "302"
   locale: en
   name: Health
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_418: 
+subject_translations_328: 
   id: "600"
   subject_id: "302"
   locale: fa
   name: "\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xD8\xAA\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_419: 
+subject_translations_329: 
   id: "601"
   subject_id: "303"
   locale: en
   name: "Horse \xD9\x8Dracing"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_420: 
+subject_translations_330: 
   id: "602"
   subject_id: "303"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xA8 \xD8\xAF\xD9\x88\xD8\xA7\xD9\x86\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_421: 
+subject_translations_331: 
   id: "603"
   subject_id: "304"
   locale: en
   name: Hospitality
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_422: 
+subject_translations_332: 
   id: "604"
   subject_id: "304"
   locale: fa
   name: "\xD9\x85\xD9\x87\xD9\x85\xD8\xA7\xD9\x86 \xD9\x86\xD9\x88\xD8\xA7\xD8\xB2\xDB\x8C"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_423: 
+subject_translations_333: 
   id: "605"
   subject_id: "305"
   locale: en
   name: Hospitals
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_424: 
+subject_translations_334: 
   id: "606"
   subject_id: "305"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xDB\x8C\xD8\xB6\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_425: 
-  id: "607"
-  subject_id: "306"
-  locale: en
-  name: Hotels
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_426: 
-  id: "608"
-  subject_id: "306"
-  locale: fa
-  name: "\xD9\x87\xD8\xAA\xD9\x84"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_427: 
+subject_translations_335: 
   id: "609"
   subject_id: "307"
   locale: en
   name: Household expenditures
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_428: 
+subject_translations_336: 
   id: "610"
   subject_id: "307"
   locale: fa
   name: "\xD8\xAE\xD8\xB1\xD8\xAC \xD8\xAE\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_429: 
-  id: "611"
-  subject_id: "308"
-  locale: en
-  name: Hunting
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_430: 
-  id: "612"
-  subject_id: "308"
-  locale: fa
-  name: "\xD8\xB4\xDA\xA9\xD8\xA7\xD8\xB1"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_431: 
+subject_translations_337: 
   id: "613"
   subject_id: "309"
   locale: en
   name: Hygiene
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_432: 
+subject_translations_338: 
   id: "614"
   subject_id: "309"
   locale: fa
   name: "\xD8\xA8\xD9\x87\xD8\xAF\xD8\xA7\xD8\xB4\xD8\xAA"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_433: 
+subject_translations_339: 
   id: "615"
   subject_id: "310"
   locale: en
   name: Interior views
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_434: 
+subject_translations_340: 
   id: "616"
   subject_id: "310"
   locale: fa
   name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C \xD8\xAF\xD8\xA7\xD8\xAE\xD9\x84 "
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_435: 
+subject_translations_341: 
   id: "617"
   subject_id: "311"
   locale: en
   name: International Alliance of Women and Peace
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_436: 
+subject_translations_342: 
   id: "618"
   subject_id: "311"
   locale: fa
   name: " \xDA\xA9\xD9\x86\xDA\xAF\xD8\xB1\xD9\x87 \xDB\x8C \xD8\xA8\xDB\x8C\xD9\x86 \xD8\xA7\xD9\x84\xD9\x85\xD9\x84\xD9\x84\xDB\x8C \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xB5\xD9\x84\xD8\xAD"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_437: 
+subject_translations_343: 
   id: "619"
   subject_id: "312"
   locale: en
   name: Invitation cards
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_438: 
+subject_translations_344: 
   id: "620"
   subject_id: "312"
   locale: fa
   name: "\xD8\xAF\xD8\xB9\xD9\x88\xD8\xAA \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_439: 
+subject_translations_345: 
   id: "621"
   subject_id: "313"
   locale: en
   name: Invoices
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_440: 
+subject_translations_346: 
   id: "622"
   subject_id: "313"
   locale: fa
   name: "\xD8\xB5\xD9\x88\xD8\xB1\xD8\xAA \xD8\xAD\xD8\xB3\xD8\xA7\xD8\xA8"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_441: 
+subject_translations_347: 
   id: "623"
   subject_id: "314"
   locale: en
   name: Ivory
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_442: 
+subject_translations_348: 
   id: "624"
   subject_id: "314"
   locale: fa
   name: "\xD8\xB9\xD8\xA7\xD8\xAC"
   created_at: 2010-12-26 03:26:45
   updated_at: 2010-12-26 03:26:45
-subject_translations_443: 
-  id: "625"
-  subject_id: "315"
-  locale: en
-  name: Kindergartens
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_444: 
-  id: "626"
-  subject_id: "315"
-  locale: fa
-  name: "\xDA\xA9\xD9\x88\xD8\xAF\xDA\xA9\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
-  created_at: 2010-12-26 03:26:45
-  updated_at: 2010-12-26 03:26:45
-subject_translations_445: 
+subject_translations_349: 
   id: "631"
   subject_id: "318"
   locale: en
   name: Kurds
   created_at: 2010-12-13 17:21:23
   updated_at: 2010-12-13 17:21:23
-subject_translations_446: 
+subject_translations_350: 
   id: "632"
   subject_id: "318"
   locale: fa
   name: "\xDA\xA9\xD8\xB1\xD8\xAF\xD9\x87\xD8\xA7"
   created_at: 2010-12-13 17:21:23
   updated_at: 2010-12-13 17:21:23
-subject_translations_447: 
+subject_translations_351: 
   id: "633"
   subject_id: "319"
   locale: en
   name: Letter writing
   created_at: 2010-12-13 17:26:31
   updated_at: 2010-12-13 17:26:31
-subject_translations_448: 
+subject_translations_352: 
   id: "634"
   subject_id: "319"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x86\xDA\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-13 17:26:31
   updated_at: 2010-12-13 17:26:31
-subject_translations_449: 
+subject_translations_353: 
   id: "635"
   subject_id: "320"
   locale: en
   name: Literacy
   created_at: 2010-12-13 17:27:12
   updated_at: 2010-12-13 17:27:12
-subject_translations_450: 
+subject_translations_354: 
   id: "636"
   subject_id: "320"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xA7\xD8\xAF"
   created_at: 2010-12-13 17:27:12
   updated_at: 2010-12-13 17:27:12
-subject_translations_451: 
+subject_translations_355: 
   id: "637"
   subject_id: "321"
   locale: en
   name: Loans
   created_at: 2010-12-13 17:27:56
   updated_at: 2010-12-13 17:27:56
-subject_translations_452: 
+subject_translations_356: 
   id: "638"
   subject_id: "321"
   locale: fa
   name: "\xD9\x82\xD8\xB1\xD8\xB6"
   created_at: 2010-12-13 17:27:56
   updated_at: 2010-12-13 17:27:56
-subject_translations_453: 
+subject_translations_357: 
   id: "639"
   subject_id: "322"
   locale: en
   name: Love
   created_at: 2010-12-13 17:28:29
   updated_at: 2010-12-13 17:28:29
-subject_translations_454: 
+subject_translations_358: 
   id: "640"
   subject_id: "322"
   locale: fa
   name: "\xD8\xB9\xD8\xB4\xD9\x82"
   created_at: 2010-12-13 17:28:29
   updated_at: 2010-12-13 17:28:29
-subject_translations_455: 
+subject_translations_359: 
   id: "641"
   subject_id: "323"
   locale: en
   name: Love letters
   created_at: 2010-12-13 17:29:08
   updated_at: 2010-12-13 21:16:15
-subject_translations_456: 
+subject_translations_360: 
   id: "642"
   subject_id: "323"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x87\xD8\xA7\xDB\x8C \xD8\xB9\xD8\xA7\xD8\xB4\xD9\x82\xD8\xA7\xD9\x86\xD9\x87"
   created_at: 2010-12-13 17:29:08
   updated_at: 2010-12-13 17:29:08
-subject_translations_457: 
+subject_translations_361: 
   id: "643"
   subject_id: "324"
   locale: en
   name: Malaria
   created_at: 2010-12-13 17:30:04
   updated_at: 2010-12-13 17:30:04
-subject_translations_458: 
+subject_translations_362: 
   id: "644"
   subject_id: "324"
   locale: fa
-  name: "\xD9\x85\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xA7\xD8\x8C \xD9\x86\xD9\x88\xD8\xA8\xD9\x87"
+  name: "\xD9\x85\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xA7"
   created_at: 2010-12-13 17:30:04
-  updated_at: 2010-12-13 17:30:04
-subject_translations_459: 
+  updated_at: 2010-12-28 12:30:41
+subject_translations_363: 
   id: "645"
   subject_id: "325"
   locale: en
   name: Marriage
   created_at: 2010-12-13 17:30:48
   updated_at: 2010-12-13 17:30:48
-subject_translations_460: 
+subject_translations_364: 
   id: "646"
   subject_id: "325"
   locale: fa
   name: "\xD8\xA7\xD8\xB2\xD8\xAF\xD9\x88\xD8\xA7\xD8\xAC"
   created_at: 2010-12-13 17:30:48
   updated_at: 2010-12-13 17:30:48
-subject_translations_461: 
+subject_translations_365: 
   id: "647"
   subject_id: "326"
   locale: en
   name: Marriage broker
   created_at: 2010-12-13 17:31:31
   updated_at: 2010-12-13 17:31:31
-subject_translations_462: 
+subject_translations_366: 
   id: "648"
   subject_id: "326"
   locale: fa
   name: "\xD8\xAF\xD9\x84\xD8\xA7\xD9\x84 \xD8\xB2\xD9\x86"
   created_at: 2010-12-13 17:31:31
   updated_at: 2010-12-13 17:31:31
-subject_translations_463: 
+subject_translations_367: 
   id: "649"
   subject_id: "327"
   locale: en
   name: Meat
   created_at: 2010-12-13 17:32:19
   updated_at: 2010-12-13 17:32:19
-subject_translations_464: 
+subject_translations_368: 
   id: "650"
   subject_id: "327"
   locale: fa
   name: "\xDA\xAF\xD9\x88\xD8\xB4\xD8\xAA"
   created_at: 2010-12-13 17:32:19
   updated_at: 2010-12-13 17:32:19
-subject_translations_465: 
+subject_translations_369: 
   id: "651"
   subject_id: "328"
   locale: en
   name: Medicine
   created_at: 2010-12-13 17:33:30
   updated_at: 2010-12-13 17:33:30
-subject_translations_466: 
+subject_translations_370: 
   id: "652"
   subject_id: "328"
   locale: fa
-  name: "\xD9\xBE\xD8\xB2\xD8\xB4\xDA\xA9\xDB\x8C\xD8\x8C \xD8\xB9\xD9\x84\xD9\x85 \xD8\xB7\xD8\xA8"
+  name: "\xD9\xBE\xD8\xB2\xD8\xB4\xDA\xA9\xDB\x8C"
   created_at: 2010-12-13 17:33:30
-  updated_at: 2010-12-13 17:33:30
-subject_translations_467: 
-  id: "653"
-  subject_id: "329"
-  locale: en
-  name: Men
-  created_at: 2010-12-13 17:33:54
-  updated_at: 2010-12-13 17:33:54
-subject_translations_468: 
-  id: "654"
-  subject_id: "329"
-  locale: fa
-  name: "\xD9\x85\xD8\xB1\xD8\xAF\xD8\xA7\xD9\x86"
-  created_at: 2010-12-13 17:33:54
-  updated_at: 2010-12-13 17:33:54
-subject_translations_469: 
+  updated_at: 2010-12-28 12:34:06
+subject_translations_371: 
   id: "655"
   subject_id: "330"
   locale: en
   name: Men's clothing
   created_at: 2010-12-13 17:34:38
   updated_at: 2010-12-13 21:16:47
-subject_translations_470: 
+subject_translations_372: 
   id: "656"
   subject_id: "330"
   locale: fa
   name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3 \xD9\x85\xD8\xB1\xD8\xAF\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 17:34:38
   updated_at: 2010-12-13 17:34:38
-subject_translations_471: 
+subject_translations_373: 
   id: "657"
   subject_id: "331"
   locale: en
   name: Merchants
   created_at: 2010-12-13 17:35:45
   updated_at: 2010-12-13 17:35:45
-subject_translations_472: 
+subject_translations_374: 
   id: "658"
   subject_id: "331"
   locale: fa
   name: "\xD8\xAA\xD8\xAC\xD8\xA7\xD8\xB1"
   created_at: 2010-12-13 17:35:45
   updated_at: 2010-12-13 17:35:45
-subject_translations_473: 
+subject_translations_375: 
   id: "659"
   subject_id: "332"
   locale: en
   name: Military uniforms
   created_at: 2010-12-13 17:36:22
   updated_at: 2010-12-13 21:18:39
-subject_translations_474: 
+subject_translations_376: 
   id: "660"
   subject_id: "332"
   locale: fa
   name: "\xD9\x84\xD8\xA8\xD8\xA7\xD8\xB3 \xD9\x86\xD8\xB8\xD8\xA7\xD9\x85\xDB\x8C"
   created_at: 2010-12-13 17:36:22
   updated_at: 2010-12-13 17:36:22
-subject_translations_475: 
-  id: "661"
-  subject_id: "333"
-  locale: en
-  name: Minarets
-  created_at: 2010-12-13 17:36:54
-  updated_at: 2010-12-13 17:36:54
-subject_translations_476: 
-  id: "662"
-  subject_id: "333"
-  locale: fa
-  name: "\xD9\x85\xD9\x86\xD8\xA7\xD8\xB1\xD9\x87"
-  created_at: 2010-12-13 17:36:54
-  updated_at: 2010-12-13 17:36:54
-subject_translations_477: 
+subject_translations_377: 
   id: "663"
   subject_id: "334"
   locale: en
   name: Ministry of Culture
   created_at: 2010-12-13 17:37:31
   updated_at: 2010-12-13 17:37:31
-subject_translations_478: 
+subject_translations_378: 
   id: "664"
   subject_id: "334"
   locale: fa
   name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD9\x81\xD8\xB1\xD9\x87\xD9\x86\xDA\xAF"
   created_at: 2010-12-13 17:37:31
   updated_at: 2010-12-13 17:37:31
-subject_translations_479: 
+subject_translations_379: 
   id: "665"
   subject_id: "335"
   locale: en
   name: Ministry of Education
   created_at: 2010-12-13 17:38:14
   updated_at: 2010-12-13 17:38:14
-subject_translations_480: 
+subject_translations_380: 
   id: "666"
   subject_id: "335"
   locale: fa
   name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xB9\xD9\x84\xD9\x88\xD9\x85 \xD9\x88 \xD9\x85\xD8\xB9\xD8\xA7\xD8\xB1\xD9\x81"
   created_at: 2010-12-13 17:38:14
   updated_at: 2010-12-13 17:38:14
-subject_translations_481: 
+subject_translations_381: 
   id: "667"
   subject_id: "336"
   locale: en
   name: Ministry of Justice
   created_at: 2010-12-13 17:38:52
   updated_at: 2010-12-13 17:38:52
-subject_translations_482: 
+subject_translations_382: 
   id: "668"
   subject_id: "336"
   locale: fa
   name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xB9\xD8\xAF\xD9\x84\xDB\x8C\xD9\x87"
   created_at: 2010-12-13 17:38:52
   updated_at: 2010-12-13 17:38:52
-subject_translations_483: 
+subject_translations_383: 
   id: "669"
   subject_id: "337"
   locale: en
   name: Ministry of War
   created_at: 2010-12-13 17:39:27
   updated_at: 2010-12-13 17:39:27
-subject_translations_484: 
+subject_translations_384: 
   id: "670"
   subject_id: "337"
   locale: fa
   name: "\xD9\x88\xD8\xB2\xD8\xA7\xD8\xB1\xD8\xAA \xD8\xAC\xD9\x86\xDA\xAF"
   created_at: 2010-12-13 17:39:27
   updated_at: 2010-12-13 17:39:27
-subject_translations_485: 
+subject_translations_385: 
   id: "673"
   subject_id: "339"
   locale: en
   name: Mosques
   created_at: 2010-12-13 17:40:33
   updated_at: 2010-12-13 17:40:33
-subject_translations_486: 
+subject_translations_386: 
   id: "674"
   subject_id: "339"
   locale: fa
   name: "\xD9\x85\xD8\xB3\xD8\xAC\xD8\xAF"
   created_at: 2010-12-13 17:40:33
   updated_at: 2010-12-13 17:40:33
-subject_translations_487: 
+subject_translations_387: 
   id: "675"
   subject_id: "340"
   locale: en
   name: Motherhood
   created_at: 2010-12-13 17:40:56
   updated_at: 2010-12-13 17:40:56
-subject_translations_488: 
+subject_translations_388: 
   id: "676"
   subject_id: "340"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD8\xAF\xD8\xB1\xDB\x8C"
   created_at: 2010-12-13 17:40:56
   updated_at: 2010-12-13 17:40:56
-subject_translations_489: 
+subject_translations_389: 
   id: "677"
   subject_id: "341"
   locale: en
   name: Mothers and daughters
   created_at: 2010-12-13 17:41:39
   updated_at: 2010-12-13 21:19:47
-subject_translations_490: 
+subject_translations_390: 
   id: "678"
   subject_id: "341"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xAF\xD8\xAE\xD8\xAA\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 17:41:39
   updated_at: 2010-12-13 17:41:39
-subject_translations_491: 
+subject_translations_391: 
   id: "679"
   subject_id: "342"
   locale: en
-  name: Motion pictures, films
+  name: Motion pictures
   created_at: 2010-12-13 17:42:28
-  updated_at: 2010-12-13 21:20:15
-subject_translations_492: 
+  updated_at: 2010-12-28 12:37:27
+subject_translations_392: 
   id: "680"
   subject_id: "342"
   locale: fa
   name: "\xD9\x81\xDB\x8C\xD9\x84\xD9\x85"
   created_at: 2010-12-13 17:42:28
   updated_at: 2010-12-13 17:42:28
-subject_translations_493: 
+subject_translations_393: 
   id: "681"
   subject_id: "343"
   locale: en
   name: Mourning ceremonies
   created_at: 2010-12-13 17:43:04
   updated_at: 2010-12-13 21:20:37
-subject_translations_494: 
+subject_translations_394: 
   id: "682"
   subject_id: "343"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD8\xB9\xD8\xB2\xD8\xA7\xD8\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-13 17:43:04
   updated_at: 2010-12-13 17:43:04
-subject_translations_495: 
+subject_translations_395: 
   id: "683"
   subject_id: "344"
   locale: en
   name: Music
   created_at: 2010-12-13 17:43:42
   updated_at: 2010-12-13 17:43:42
-subject_translations_496: 
+subject_translations_396: 
   id: "684"
   subject_id: "344"
   locale: fa
   name: "\xD9\x85\xD9\x88\xD8\xB3\xDB\x8C\xD9\x82\xDB\x8C"
   created_at: 2010-12-13 17:43:42
   updated_at: 2010-12-13 17:43:42
-subject_translations_497: 
+subject_translations_397: 
   id: "685"
   subject_id: "345"
   locale: en
   name: Musicians
   created_at: 2010-12-13 17:44:20
   updated_at: 2010-12-13 17:44:20
-subject_translations_498: 
+subject_translations_398: 
   id: "686"
   subject_id: "345"
   locale: fa
   name: "\xD9\x86\xD9\x88\xD8\xA7\xD8\xB2\xD9\x86\xD8\xAF\xDA\xAF\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 17:44:20
   updated_at: 2010-12-13 17:44:20
-subject_translations_499: 
+subject_translations_399: 
   id: "687"
   subject_id: "346"
   locale: en
   name: Nanny
   created_at: 2010-12-13 17:44:49
   updated_at: 2010-12-13 17:44:49
-subject_translations_500: 
+subject_translations_400: 
   id: "688"
   subject_id: "346"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xDB\x8C\xD9\x87"
   created_at: 2010-12-13 17:44:49
   updated_at: 2010-12-13 17:44:49
-subject_translations_501: 
+subject_translations_401: 
   id: "689"
   subject_id: "347"
   locale: en
   name: Nawruz
   created_at: 2010-12-13 17:45:31
   updated_at: 2010-12-13 17:45:31
-subject_translations_502: 
+subject_translations_402: 
   id: "690"
   subject_id: "347"
   locale: fa
   name: "\xD9\x86\xD9\x88\xD8\xB1\xD9\x88\xD8\xB2"
   created_at: 2010-12-13 17:45:31
   updated_at: 2010-12-13 17:45:31
-subject_translations_503: 
-  id: "691"
-  subject_id: "348"
-  locale: en
-  name: Neckties
-  created_at: 2010-12-13 17:46:18
-  updated_at: 2010-12-13 17:46:18
-subject_translations_504: 
-  id: "692"
-  subject_id: "348"
-  locale: fa
-  name: "\xDA\xA9\xD8\xB1\xD8\xA7\xD9\x88\xD8\xA7\xD8\xAA"
-  created_at: 2010-12-13 17:46:18
-  updated_at: 2010-12-13 17:46:18
-subject_translations_505: 
+subject_translations_403: 
   id: "693"
   subject_id: "349"
   locale: en
   name: Needlework
   created_at: 2010-12-13 17:47:08
   updated_at: 2010-12-13 17:47:08
-subject_translations_506: 
+subject_translations_404: 
   id: "694"
   subject_id: "349"
   locale: fa
   name: "\xD8\xB3\xD9\x88\xD8\xB2\xD9\x86 \xDA\xA9\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-13 17:47:08
   updated_at: 2010-12-13 17:47:08
-subject_translations_507: 
+subject_translations_405: 
   id: "695"
   subject_id: "350"
   locale: en
   name: Newspapers
   created_at: 2010-12-13 17:47:51
   updated_at: 2010-12-13 17:47:51
-subject_translations_508: 
+subject_translations_406: 
   id: "696"
   subject_id: "350"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB2\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 17:47:51
   updated_at: 2010-12-13 17:47:51
-subject_translations_509: 
+subject_translations_407: 
   id: "697"
   subject_id: "351"
   locale: en
   name: Nurses
   created_at: 2010-12-13 17:48:32
   updated_at: 2010-12-13 17:48:32
-subject_translations_510: 
+subject_translations_408: 
   id: "698"
   subject_id: "351"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD8\xB3\xD8\xAA\xD8\xA7\xD8\xB1"
   created_at: 2010-12-13 17:48:32
   updated_at: 2010-12-13 17:48:32
-subject_translations_511: 
+subject_translations_409: 
   id: "701"
   subject_id: "353"
   locale: en
   name: Obituaries
   created_at: 2010-12-13 17:49:49
   updated_at: 2010-12-13 17:49:49
-subject_translations_512: 
+subject_translations_410: 
   id: "702"
   subject_id: "353"
   locale: fa
   name: "\xD8\xA2\xDA\xAF\xD9\x87\xDB\x8C \xD9\x81\xD9\x88\xD8\xAA"
   created_at: 2010-12-13 17:49:49
   updated_at: 2010-12-13 17:49:49
-subject_translations_513: 
+subject_translations_411: 
   id: "703"
   subject_id: "354"
   locale: en
   name: Oil
   created_at: 2010-12-13 17:50:25
   updated_at: 2010-12-13 17:50:25
-subject_translations_514: 
+subject_translations_412: 
   id: "704"
   subject_id: "354"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xBA\xD9\x86"
   created_at: 2010-12-13 17:50:25
   updated_at: 2010-12-13 17:50:25
-subject_translations_515: 
+subject_translations_413: 
   id: "705"
   subject_id: "355"
   locale: en
   name: Opium
   created_at: 2010-12-13 17:50:56
   updated_at: 2010-12-13 17:50:56
-subject_translations_516: 
+subject_translations_414: 
   id: "706"
   subject_id: "355"
   locale: fa
   name: "\xD8\xAA\xD8\xB1\xDB\x8C\xD8\xA7\xDA\xA9"
   created_at: 2010-12-13 17:50:56
   updated_at: 2010-12-13 17:50:56
-subject_translations_517: 
+subject_translations_415: 
   id: "707"
   subject_id: "356"
   locale: en
   name: Outdoor recreation
   created_at: 2010-12-13 17:51:46
   updated_at: 2010-12-13 21:21:16
-subject_translations_518: 
+subject_translations_416: 
   id: "708"
   subject_id: "356"
   locale: fa
   name: "\xD8\xAA\xD9\x81\xD8\xB1\xDB\x8C\xD8\xAD"
   created_at: 2010-12-13 17:51:46
   updated_at: 2010-12-13 17:51:46
-subject_translations_519: 
+subject_translations_417: 
   id: "709"
   subject_id: "357"
   locale: en
   name: Palaces
   created_at: 2010-12-13 17:52:15
   updated_at: 2010-12-13 17:52:15
-subject_translations_520: 
+subject_translations_418: 
   id: "710"
   subject_id: "357"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xAE"
   created_at: 2010-12-13 17:52:15
   updated_at: 2010-12-13 17:52:15
-subject_translations_521: 
+subject_translations_419: 
   id: "711"
   subject_id: "358"
   locale: en
   name: Paper
   created_at: 2010-12-13 17:52:48
   updated_at: 2010-12-13 17:52:48
-subject_translations_522: 
+subject_translations_420: 
   id: "712"
   subject_id: "358"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xBA\xD8\xB0"
   created_at: 2010-12-13 17:52:48
   updated_at: 2010-12-13 17:52:48
-subject_translations_523: 
+subject_translations_421: 
   id: "713"
   subject_id: "359"
   locale: en
   name: Parenting
   created_at: 2010-12-13 17:53:26
   updated_at: 2010-12-13 17:53:26
-subject_translations_524: 
+subject_translations_422: 
   id: "714"
   subject_id: "359"
   locale: fa
   name: "\xD9\x88\xD8\xB8\xD8\xA7\xDB\x8C\xD9\x81 \xD9\x88\xD8\xA7\xD9\x84\xD8\xAF\xDB\x8C\xD9\x86"
   created_at: 2010-12-13 17:53:26
   updated_at: 2010-12-13 17:53:26
-subject_translations_525: 
-  id: "715"
-  subject_id: "360"
-  locale: en
-  name: Parks
-  created_at: 2010-12-13 17:53:53
-  updated_at: 2010-12-13 17:53:53
-subject_translations_526: 
-  id: "716"
-  subject_id: "360"
-  locale: fa
-  name: "\xD9\xBE\xD8\xA7\xD8\xB1\xDA\xA9"
-  created_at: 2010-12-13 17:53:53
-  updated_at: 2010-12-13 17:53:53
-subject_translations_527: 
+subject_translations_423: 
   id: "717"
   subject_id: "361"
   locale: en
   name: Parties
   created_at: 2010-12-13 17:54:20
   updated_at: 2010-12-13 17:54:20
-subject_translations_528: 
+subject_translations_424: 
   id: "718"
   subject_id: "361"
   locale: fa
   name: "\xD9\x85\xD9\x87\xD9\x85\xD8\xA7\xD9\x86\xDB\x8C"
   created_at: 2010-12-13 17:54:20
   updated_at: 2010-12-13 17:54:20
-subject_translations_529: 
+subject_translations_425: 
   id: "719"
   subject_id: "362"
   locale: en
   name: Passports
   created_at: 2010-12-13 17:54:57
   updated_at: 2010-12-13 17:54:57
-subject_translations_530: 
+subject_translations_426: 
   id: "720"
   subject_id: "362"
   locale: fa
   name: "\xDA\xAF\xD8\xB0\xD8\xB1\xD9\x86\xD8\xA7\xD9\x85\xD9\x87\xD8\x8C \xD9\xBE\xD8\xA7\xD8\xB3\xD9\xBE\xD9\x88\xD8\xB1\xD8\xAA"
   created_at: 2010-12-13 17:54:57
   updated_at: 2010-12-13 17:54:57
-subject_translations_531: 
-  id: "721"
-  subject_id: "363"
-  locale: en
-  name: Patriotism
-  created_at: 2010-12-13 17:56:12
-  updated_at: 2010-12-13 17:56:12
-subject_translations_532: 
-  id: "722"
-  subject_id: "363"
-  locale: fa
-  name: "\xD9\x88\xD8\xB7\xD9\x86\xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xDB\x8C\xD8\x8C \xD9\x88\xD8\xB7\xD9\x86 \xD9\xBE\xD8\xB1\xD8\xB3\xD8\xAA\xDB\x8C"
-  created_at: 2010-12-13 17:56:12
-  updated_at: 2010-12-13 17:56:12
-subject_translations_533: 
+subject_translations_427: 
   id: "723"
   subject_id: "364"
   locale: en
   name: Pearls
   created_at: 2010-12-13 17:57:19
   updated_at: 2010-12-13 17:57:19
-subject_translations_534: 
+subject_translations_428: 
   id: "724"
   subject_id: "364"
   locale: fa
   name: "\xD9\x85\xD8\xB1\xD9\x88\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAF"
   created_at: 2010-12-13 17:57:19
   updated_at: 2010-12-13 17:57:19
-subject_translations_535: 
+subject_translations_429: 
   id: "725"
   subject_id: "365"
   locale: en
   name: Peasants
   created_at: 2010-12-13 17:57:51
   updated_at: 2010-12-13 17:57:51
-subject_translations_536: 
+subject_translations_430: 
   id: "726"
   subject_id: "365"
   locale: fa
   name: "\xD8\xB1\xD8\xB9\xDB\x8C\xD8\xAA"
   created_at: 2010-12-13 17:57:51
   updated_at: 2010-12-13 17:57:51
-subject_translations_537: 
+subject_translations_431: 
   id: "727"
   subject_id: "366"
   locale: en
   name: Penmanship
   created_at: 2010-12-13 17:58:26
   updated_at: 2010-12-13 17:58:26
-subject_translations_538: 
+subject_translations_432: 
   id: "728"
   subject_id: "366"
   locale: fa
   name: "\xD9\x85\xD8\xB4\xD9\x82 \xD8\xAE\xD8\xB7"
   created_at: 2010-12-13 17:58:26
   updated_at: 2010-12-13 17:58:26
-subject_translations_539: 
+subject_translations_433: 
   id: "729"
   subject_id: "367"
   locale: en
   name: Perfume
   created_at: 2010-12-13 17:59:06
   updated_at: 2010-12-13 17:59:06
-subject_translations_540: 
+subject_translations_434: 
   id: "730"
   subject_id: "367"
   locale: fa
   name: "\xD8\xB9\xD8\xB7\xD8\xB1"
   created_at: 2010-12-13 17:59:06
   updated_at: 2010-12-13 17:59:06
-subject_translations_541: 
+subject_translations_435: 
   id: "731"
   subject_id: "368"
   locale: en
   name: Periodicals
   created_at: 2010-12-13 17:59:39
   updated_at: 2010-12-13 17:59:39
-subject_translations_542: 
+subject_translations_436: 
   id: "732"
   subject_id: "368"
   locale: fa
   name: "\xD9\x86\xD8\xB4\xD8\xB1\xDB\x8C\xD9\x87"
   created_at: 2010-12-13 17:59:39
   updated_at: 2010-12-13 17:59:39
-subject_translations_543: 
+subject_translations_437: 
   id: "735"
   subject_id: "370"
   locale: en
   name: Photographs
   created_at: 2010-12-13 18:00:41
   updated_at: 2010-12-13 18:00:41
-subject_translations_544: 
+subject_translations_438: 
   id: "736"
   subject_id: "370"
   locale: fa
   name: "\xD8\xB9\xDA\xA9\xD8\xB3"
   created_at: 2010-12-13 18:00:41
   updated_at: 2010-12-13 18:00:41
-subject_translations_545: 
+subject_translations_439: 
   id: "737"
   subject_id: "371"
   locale: en
   name: Photography
   created_at: 2010-12-13 18:01:12
   updated_at: 2010-12-13 18:01:12
-subject_translations_546: 
+subject_translations_440: 
   id: "738"
   subject_id: "371"
   locale: fa
   name: "\xD8\xB9\xDA\xA9\xD8\xA7\xD8\xB3\xDB\x8C"
   created_at: 2010-12-13 18:01:12
   updated_at: 2010-12-13 18:01:12
-subject_translations_547: 
+subject_translations_441: 
   id: "741"
   subject_id: "373"
   locale: en
   name: Pistachios
   created_at: 2010-12-13 18:04:56
   updated_at: 2010-12-13 18:04:56
-subject_translations_548: 
+subject_translations_442: 
   id: "742"
   subject_id: "373"
   locale: fa
   name: "\xD9\xBE\xD8\xB3\xD8\xAA\xD9\x87"
   created_at: 2010-12-13 18:04:56
   updated_at: 2010-12-13 18:04:56
-subject_translations_549: 
+subject_translations_443: 
   id: "743"
   subject_id: "374"
   locale: en
   name: Plays
   created_at: 2010-12-13 18:05:24
   updated_at: 2010-12-13 18:05:24
-subject_translations_550: 
+subject_translations_444: 
   id: "744"
   subject_id: "374"
   locale: fa
   name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C\xD8\xB4\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 18:05:24
   updated_at: 2010-12-13 18:05:24
-subject_translations_551: 
+subject_translations_445: 
   id: "745"
   subject_id: "375"
   locale: en
   name: Poetry
   created_at: 2010-12-13 18:05:55
   updated_at: 2010-12-13 18:05:55
-subject_translations_552: 
+subject_translations_446: 
   id: "746"
   subject_id: "375"
   locale: fa
   name: "\xD8\xB4\xD8\xB9\xD8\xB1"
   created_at: 2010-12-13 18:05:55
   updated_at: 2010-12-13 18:05:55
-subject_translations_553: 
+subject_translations_447: 
   id: "747"
   subject_id: "376"
   locale: en
   name: Poets
   created_at: 2010-12-13 18:06:21
   updated_at: 2010-12-13 18:06:21
-subject_translations_554: 
+subject_translations_448: 
   id: "748"
   subject_id: "376"
   locale: fa
   name: "\xD8\xB4\xD8\xA7\xD8\xB9\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 18:06:21
   updated_at: 2010-12-13 18:06:21
-subject_translations_555: 
+subject_translations_449: 
   id: "749"
   subject_id: "377"
   locale: en
   name: Police
   created_at: 2010-12-13 18:07:03
   updated_at: 2010-12-13 20:36:39
-subject_translations_556: 
+subject_translations_450: 
   id: "750"
   subject_id: "377"
   locale: fa
   name: "\xD9\xBE\xD9\x84\xDB\x8C\xD8\xB3"
   created_at: 2010-12-13 18:07:03
   updated_at: 2010-12-13 20:36:39
-subject_translations_557: 
-  id: "751"
-  subject_id: "378"
-  locale: en
-  name: Political parties
-  created_at: 2010-12-13 18:07:47
-  updated_at: 2010-12-13 21:22:16
-subject_translations_558: 
-  id: "752"
-  subject_id: "378"
-  locale: fa
-  name: "\xD8\xA7\xD8\xAD\xD8\xB2\xD8\xA7\xD8\xA8 \xD8\xB3\xDB\x8C\xD8\xA7\xD8\xB3\xDB\x8C"
-  created_at: 2010-12-13 18:07:47
-  updated_at: 2010-12-13 18:07:47
-subject_translations_559: 
+subject_translations_451: 
   id: "753"
   subject_id: "379"
   locale: en
   name: Pollution
   created_at: 2010-12-13 18:08:28
   updated_at: 2010-12-13 18:08:28
-subject_translations_560: 
+subject_translations_452: 
   id: "754"
   subject_id: "379"
   locale: fa
   name: "\xD8\xA2\xD9\x84\xD9\x88\xD8\xAF\xDA\xAF\xDB\x8C"
   created_at: 2010-12-13 18:08:28
   updated_at: 2010-12-13 18:08:28
-subject_translations_561: 
+subject_translations_453: 
   id: "755"
   subject_id: "380"
   locale: en
   name: Portraits
   created_at: 2010-12-13 18:08:59
   updated_at: 2010-12-13 18:08:59
-subject_translations_562: 
+subject_translations_454: 
   id: "756"
   subject_id: "380"
   locale: fa
   name: "\xD9\xBE\xD8\xB1\xD8\xAA\xD8\xB1\xD9\x87"
   created_at: 2010-12-13 18:08:59
   updated_at: 2010-12-13 18:08:59
-subject_translations_563: 
+subject_translations_455: 
   id: "757"
   subject_id: "381"
   locale: en
   name: Postcards
   created_at: 2010-12-13 18:09:39
   updated_at: 2010-12-13 18:09:39
-subject_translations_564: 
+subject_translations_456: 
   id: "758"
   subject_id: "381"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD8\xB1\xD8\xAA \xD9\xBE\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x84"
   created_at: 2010-12-13 18:09:39
   updated_at: 2010-12-13 18:09:39
-subject_translations_565: 
+subject_translations_457: 
   id: "759"
   subject_id: "382"
   locale: en
   name: Poverty
   created_at: 2010-12-13 18:10:11
   updated_at: 2010-12-13 18:10:11
-subject_translations_566: 
+subject_translations_458: 
   id: "760"
   subject_id: "382"
   locale: fa
   name: "\xD9\x81\xD9\x82\xD8\xB1"
   created_at: 2010-12-13 18:10:11
   updated_at: 2010-12-13 18:10:11
-subject_translations_567: 
+subject_translations_459: 
   id: "761"
   subject_id: "383"
   locale: en
   name: Powers of attorney
   created_at: 2010-12-13 18:10:59
   updated_at: 2010-12-13 21:22:43
-subject_translations_568: 
+subject_translations_460: 
   id: "762"
   subject_id: "383"
   locale: fa
   name: "\xD9\x88\xDA\xA9\xD8\xA7\xD9\x84\xD8\xAA\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 18:10:59
   updated_at: 2010-12-13 18:10:59
-subject_translations_569: 
+subject_translations_461: 
   id: "763"
   subject_id: "384"
   locale: en
   name: Prayer beads
   created_at: 2010-12-13 18:11:26
   updated_at: 2010-12-13 21:23:11
-subject_translations_570: 
+subject_translations_462: 
   id: "764"
   subject_id: "384"
   locale: fa
   name: "\xD8\xAA\xD8\xB3\xD8\xA8\xDB\x8C\xD8\xAD"
   created_at: 2010-12-13 18:11:26
   updated_at: 2010-12-13 18:11:26
-subject_translations_571: 
+subject_translations_463: 
   id: "765"
   subject_id: "385"
   locale: en
   name: Prayer rugs
   created_at: 2010-12-13 18:11:59
   updated_at: 2010-12-13 21:23:42
-subject_translations_572: 
+subject_translations_464: 
   id: "766"
   subject_id: "385"
   locale: fa
   name: "\xD8\xAC\xD8\xA7\xD9\x86\xD9\x85\xD8\xA7\xD8\xB2"
   created_at: 2010-12-13 18:11:59
   updated_at: 2010-12-13 18:11:59
-subject_translations_573: 
+subject_translations_465: 
   id: "767"
   subject_id: "386"
   locale: en
   name: Pregnancy
   created_at: 2010-12-13 18:12:31
   updated_at: 2010-12-13 18:12:31
-subject_translations_574: 
+subject_translations_466: 
   id: "768"
   subject_id: "386"
   locale: fa
   name: "\xD8\xA2\xD8\xA8\xD8\xB3\xD8\xAA\xD9\x86\xDB\x8C\xD8\x8C \xD8\xA8\xD8\xA7\xD8\xB1\xD8\xAF\xD8\xA7\xD8\xB1\xDB\x8C"
   created_at: 2010-12-13 18:12:31
   updated_at: 2010-12-13 18:12:31
-subject_translations_575: 
+subject_translations_467: 
   id: "769"
   subject_id: "387"
   locale: en
   name: Press
   created_at: 2010-12-13 18:13:06
   updated_at: 2010-12-13 18:13:06
-subject_translations_576: 
+subject_translations_468: 
   id: "770"
   subject_id: "387"
   locale: fa
   name: "\xD9\x85\xD8\xB7\xD8\xA8\xD9\x88\xD8\xB9\xD8\xA7\xD8\xAA"
   created_at: 2010-12-13 18:13:06
   updated_at: 2010-12-13 18:13:06
-subject_translations_577: 
-  id: "771"
-  subject_id: "388"
-  locale: en
-  name: Property deeds
-  created_at: 2010-12-13 18:14:04
-  updated_at: 2010-12-13 21:24:07
-subject_translations_578: 
-  id: "772"
-  subject_id: "388"
-  locale: fa
-  name: "\xD9\x82\xD8\xA8\xD8\xA7\xD9\x84\xD9\x87 \xD9\x85\xD8\xA7\xD9\x84\xDB\x8C"
-  created_at: 2010-12-13 18:14:04
-  updated_at: 2010-12-13 18:14:04
-subject_translations_579: 
+subject_translations_469: 
   id: "773"
   subject_id: "389"
   locale: en
   name: Proverbs
   created_at: 2010-12-13 18:17:08
   updated_at: 2010-12-13 18:17:08
-subject_translations_580: 
+subject_translations_470: 
   id: "774"
   subject_id: "389"
   locale: fa
   name: "\xD8\xB6\xD8\xB1\xD8\xA8 \xD8\xA7\xD9\x84\xD9\x85\xD8\xAB\xD9\x84"
   created_at: 2010-12-13 18:17:08
   updated_at: 2010-12-13 18:17:08
-subject_translations_581: 
+subject_translations_471: 
   id: "775"
   subject_id: "390"
   locale: en
   name: Public baths
   created_at: 2010-12-13 18:17:42
   updated_at: 2010-12-13 21:25:26
-subject_translations_582: 
+subject_translations_472: 
   id: "776"
   subject_id: "390"
   locale: fa
   name: "\xD8\xAD\xD9\x85\xD8\xA7\xD9\x85 \xD8\xB9\xD9\x85\xD9\x88\xD9\x85\xDB\x8C"
   created_at: 2010-12-13 18:17:42
   updated_at: 2010-12-13 18:17:42
-subject_translations_583: 
+subject_translations_473: 
   id: "777"
   subject_id: "391"
   locale: en
   name: Qanat
   created_at: 2010-12-13 18:18:16
   updated_at: 2010-12-13 18:18:16
-subject_translations_584: 
+subject_translations_474: 
   id: "778"
   subject_id: "391"
   locale: fa
   name: "\xD9\x82\xD9\x86\xD8\xA7\xD8\xAA"
   created_at: 2010-12-13 18:18:16
   updated_at: 2010-12-13 18:18:16
-subject_translations_585: 
-  id: "779"
-  subject_id: "392"
-  locale: en
-  name: Quail
-  created_at: 2010-12-13 18:18:52
-  updated_at: 2010-12-13 18:18:52
-subject_translations_586: 
-  id: "780"
-  subject_id: "392"
-  locale: fa
-  name: "\xDA\xA9\xD8\xA8\xDA\xA9"
-  created_at: 2010-12-13 18:18:52
-  updated_at: 2010-12-13 18:18:52
-subject_translations_587: 
+subject_translations_475: 
   id: "781"
   subject_id: "393"
   locale: en
   name: Quran
   created_at: 2010-12-13 18:19:17
   updated_at: 2010-12-13 18:19:17
-subject_translations_588: 
+subject_translations_476: 
   id: "782"
   subject_id: "393"
   locale: fa
   name: "\xD9\x82\xD8\xB1\xD8\xA2\xD9\x86"
   created_at: 2010-12-13 18:19:17
   updated_at: 2010-12-13 18:19:17
-subject_translations_589: 
-  id: "783"
-  subject_id: "394"
-  locale: en
-  name: Raisins
-  created_at: 2010-12-13 18:19:48
-  updated_at: 2010-12-13 18:19:48
-subject_translations_590: 
-  id: "784"
-  subject_id: "394"
-  locale: fa
-  name: "\xDA\xA9\xD8\xB4\xD9\x85\xD8\xB4"
-  created_at: 2010-12-13 18:19:48
-  updated_at: 2010-12-13 18:19:48
-subject_translations_591: 
+subject_translations_477: 
   id: "785"
   subject_id: "395"
   locale: en
   name: Rawzah
   created_at: 2010-12-13 18:20:38
   updated_at: 2010-12-13 18:20:38
-subject_translations_592: 
+subject_translations_478: 
   id: "786"
   subject_id: "395"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB6\xD9\x87"
   created_at: 2010-12-13 18:20:38
   updated_at: 2010-12-13 18:20:38
-subject_translations_593: 
-  id: "787"
-  subject_id: "396"
-  locale: en
-  name: Religious rituals
-  created_at: 2010-12-13 18:21:46
-  updated_at: 2010-12-13 21:25:53
-subject_translations_594: 
-  id: "788"
-  subject_id: "396"
-  locale: fa
-  name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD9\x85\xD8\xB0\xD9\x87\xD8\xA8\xDB\x8C"
-  created_at: 2010-12-13 18:21:46
-  updated_at: 2010-12-13 18:21:46
-subject_translations_595: 
+subject_translations_479: 
   id: "789"
   subject_id: "397"
   locale: en
   name: Rental contract
   created_at: 2010-12-13 18:22:30
   updated_at: 2010-12-13 21:26:13
-subject_translations_596: 
+subject_translations_480: 
   id: "790"
   subject_id: "397"
   locale: fa
   name: "\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 18:22:30
   updated_at: 2010-12-13 18:22:30
-subject_translations_597: 
+subject_translations_481: 
   id: "791"
   subject_id: "398"
   locale: en
   name: Rice
   created_at: 2010-12-13 18:22:59
   updated_at: 2010-12-13 18:22:59
-subject_translations_598: 
+subject_translations_482: 
   id: "792"
   subject_id: "398"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD9\x86\xD8\xAC"
   created_at: 2010-12-13 18:22:59
   updated_at: 2010-12-13 18:22:59
-subject_translations_599: 
-  id: "793"
-  subject_id: "399"
-  locale: en
-  name: Riots
-  created_at: 2010-12-13 18:23:28
-  updated_at: 2010-12-13 18:23:28
-subject_translations_600: 
-  id: "794"
-  subject_id: "399"
-  locale: fa
-  name: "\xD8\xB4\xD9\x88\xD8\xB1\xD8\xB4"
-  created_at: 2010-12-13 18:23:28
-  updated_at: 2010-12-13 18:23:28
-subject_translations_601: 
-  id: "795"
-  subject_id: "400"
-  locale: en
-  name: Rites and ceremonies
-  created_at: 2010-12-13 18:24:00
-  updated_at: 2010-12-13 21:26:38
-subject_translations_602: 
-  id: "796"
-  subject_id: "400"
-  locale: fa
-  name: "\xD8\xA2\xD8\xAF\xD8\xA7\xD8\xA8 \xD9\x88 \xD8\xB1\xD8\xB3\xD9\x88\xD9\x85"
-  created_at: 2010-12-13 18:24:00
-  updated_at: 2010-12-13 18:24:00
-subject_translations_603: 
+subject_translations_483: 
   id: "797"
   subject_id: "401"
   locale: en
   name: Rubies
   created_at: 2010-12-13 18:24:27
   updated_at: 2010-12-13 18:24:27
-subject_translations_604: 
+subject_translations_484: 
   id: "798"
   subject_id: "401"
   locale: fa
   name: "\xD8\xB2\xD9\x85\xD8\xB1\xD8\xAF"
   created_at: 2010-12-13 18:24:27
   updated_at: 2010-12-13 18:24:27
-subject_translations_605: 
+subject_translations_485: 
   id: "799"
   subject_id: "402"
   locale: en
   name: Rugs
   created_at: 2010-12-13 18:24:57
   updated_at: 2010-12-13 18:24:57
-subject_translations_606: 
+subject_translations_486: 
   id: "800"
   subject_id: "402"
   locale: fa
   name: "\xD9\x81\xD8\xB1\xD8\xB4"
   created_at: 2010-12-13 18:24:57
   updated_at: 2010-12-13 18:24:57
-subject_translations_607: 
+subject_translations_487: 
   id: "801"
   subject_id: "403"
   locale: en
   name: Russians
   created_at: 2010-12-13 18:25:35
   updated_at: 2010-12-13 18:25:35
-subject_translations_608: 
+subject_translations_488: 
   id: "802"
   subject_id: "403"
   locale: fa
   name: "\xD8\xB1\xD9\x88\xD8\xB3"
   created_at: 2010-12-13 18:25:35
   updated_at: 2010-12-13 18:25:35
-subject_translations_609: 
+subject_translations_489: 
   id: "803"
   subject_id: "404"
   locale: en
   name: Saffron
   created_at: 2010-12-13 18:26:07
   updated_at: 2010-12-13 18:26:07
-subject_translations_610: 
+subject_translations_490: 
   id: "804"
   subject_id: "404"
   locale: fa
   name: "\xD8\xB2\xD8\xB9\xD9\x81\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 18:26:07
   updated_at: 2010-12-13 18:26:07
-subject_translations_611: 
+subject_translations_491: 
   id: "805"
   subject_id: "405"
   locale: en
   name: Salary
   created_at: 2010-12-13 18:26:36
   updated_at: 2010-12-13 18:26:36
-subject_translations_612: 
+subject_translations_492: 
   id: "806"
   subject_id: "405"
   locale: fa
   name: "\xD8\xAD\xD9\x82\xD9\x88\xD9\x82"
   created_at: 2010-12-13 18:26:36
   updated_at: 2010-12-13 18:26:36
-subject_translations_613: 
+subject_translations_493: 
   id: "807"
   subject_id: "406"
   locale: en
   name: Satin
   created_at: 2010-12-13 18:27:35
   updated_at: 2010-12-13 18:27:35
-subject_translations_614: 
+subject_translations_494: 
   id: "808"
   subject_id: "406"
   locale: fa
   name: "\xD8\xA7\xD8\xB7\xD9\x84\xD8\xB3"
   created_at: 2010-12-13 18:27:35
   updated_at: 2010-12-13 18:27:35
-subject_translations_615: 
+subject_translations_495: 
   id: "809"
   subject_id: "407"
   locale: en
   name: Satire
   created_at: 2010-12-13 18:28:04
   updated_at: 2010-12-13 18:28:04
-subject_translations_616: 
+subject_translations_496: 
   id: "810"
   subject_id: "407"
   locale: fa
   name: "\xD9\x87\xD8\xAC\xD9\x88"
   created_at: 2010-12-13 18:28:04
   updated_at: 2010-12-13 18:28:04
-subject_translations_617: 
+subject_translations_497: 
   id: "811"
   subject_id: "408"
   locale: en
   name: Schoolgirls
   created_at: 2010-12-13 18:28:48
   updated_at: 2010-12-13 18:28:48
-subject_translations_618: 
+subject_translations_498: 
   id: "812"
   subject_id: "408"
   locale: fa
   name: "\xD8\xAF\xD8\xAE\xD8\xAA\xD8\xB1\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4 \xD8\xA2\xD9\x85\xD9\x88\xD8\xB2"
   created_at: 2010-12-13 18:28:48
   updated_at: 2010-12-13 18:28:48
-subject_translations_619: 
+subject_translations_499: 
   id: "813"
   subject_id: "409"
   locale: en
   name: Schools
   created_at: 2010-12-13 18:29:18
   updated_at: 2010-12-13 18:29:18
-subject_translations_620: 
+subject_translations_500: 
   id: "814"
   subject_id: "409"
   locale: fa
   name: "\xD9\x85\xD8\xAF\xD8\xB1\xD8\xB3\xD9\x87"
   created_at: 2010-12-13 18:29:18
   updated_at: 2010-12-13 18:29:18
-subject_translations_621: 
+subject_translations_501: 
   id: "815"
   subject_id: "410"
   locale: en
   name: Servants
   created_at: 2010-12-13 18:30:25
   updated_at: 2010-12-13 18:30:25
-subject_translations_622: 
+subject_translations_502: 
   id: "816"
   subject_id: "410"
   locale: fa
   name: "\xD8\xAE\xD8\xAF\xD9\x85\xD8\xAA\xDA\xA9\xD8\xA7\xD8\xB1"
   created_at: 2010-12-13 18:30:25
   updated_at: 2010-12-13 18:30:25
-subject_translations_623: 
+subject_translations_503: 
   id: "817"
   subject_id: "411"
   locale: en
-  name: Servants, female, women's servants
+  name: Servants, female
   created_at: 2010-12-13 18:31:28
-  updated_at: 2010-12-13 21:27:04
-subject_translations_624: 
+  updated_at: 2010-12-28 13:14:30
+subject_translations_504: 
   id: "818"
   subject_id: "411"
   locale: fa
   name: "\xDA\xA9\xD9\x84\xD9\x81\xD8\xAA"
   created_at: 2010-12-13 18:31:28
   updated_at: 2010-12-13 18:31:28
-subject_translations_625: 
+subject_translations_505: 
   id: "819"
   subject_id: "412"
   locale: en
-  name: Servants, male; men's servants
+  name: Servants, male
   created_at: 2010-12-13 18:32:19
-  updated_at: 2010-12-13 21:27:36
-subject_translations_626: 
+  updated_at: 2010-12-28 13:15:16
+subject_translations_506: 
   id: "820"
   subject_id: "412"
   locale: fa
   name: "\xD9\x86\xD9\x88\xDA\xA9\xD8\xB1"
   created_at: 2010-12-13 18:32:19
   updated_at: 2010-12-13 18:32:19
-subject_translations_627: 
-  id: "821"
-  subject_id: "413"
-  locale: en
-  name: Sewing machines
-  created_at: 2010-12-13 18:33:09
-  updated_at: 2010-12-13 21:28:04
-subject_translations_628: 
-  id: "822"
-  subject_id: "413"
-  locale: fa
-  name: "\xDA\x86\xD8\xB1\xD8\xAE \xD8\xAE\xDB\x8C\xD8\xA7\xD8\xB7\xDB\x8C"
-  created_at: 2010-12-13 18:33:09
-  updated_at: 2010-12-13 18:33:09
-subject_translations_629: 
+subject_translations_507: 
   id: "823"
   subject_id: "414"
   locale: en
   name: Shoes
   created_at: 2010-12-13 18:33:45
   updated_at: 2010-12-13 20:38:14
-subject_translations_630: 
+subject_translations_508: 
   id: "824"
   subject_id: "414"
   locale: fa
   name: "\xDA\xA9\xD9\x81\xD8\xB4"
   created_at: 2010-12-13 18:33:45
   updated_at: 2010-12-13 20:38:14
-subject_translations_631: 
+subject_translations_509: 
   id: "825"
   subject_id: "415"
   locale: en
   name: Shrines
   created_at: 2010-12-13 18:35:25
   updated_at: 2010-12-13 18:35:25
-subject_translations_632: 
+subject_translations_510: 
   id: "826"
   subject_id: "415"
   locale: fa
   name: "\xD8\xB2\xDB\x8C\xD8\xA7\xD8\xB1\xD8\xAA\xDA\xAF\xD8\xA7\xD9\x87"
   created_at: 2010-12-13 18:35:25
   updated_at: 2010-12-13 18:35:25
-subject_translations_633: 
+subject_translations_511: 
   id: "827"
   subject_id: "416"
   locale: en
   name: Silver
   created_at: 2010-12-13 18:35:52
   updated_at: 2010-12-13 18:35:52
-subject_translations_634: 
+subject_translations_512: 
   id: "828"
   subject_id: "416"
   locale: fa
   name: "\xD9\x86\xD9\x82\xD8\xB1\xD9\x87"
   created_at: 2010-12-13 18:35:52
   updated_at: 2010-12-13 18:35:52
-subject_translations_635: 
+subject_translations_513: 
   id: "829"
   subject_id: "417"
   locale: en
   name: Singers
   created_at: 2010-12-13 18:36:36
   updated_at: 2010-12-13 18:36:36
-subject_translations_636: 
+subject_translations_514: 
   id: "830"
   subject_id: "417"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD9\x86\xD9\x86\xD8\xAF\xD9\x87"
   created_at: 2010-12-13 18:36:36
   updated_at: 2010-12-13 18:36:36
-subject_translations_637: 
+subject_translations_515: 
   id: "831"
   subject_id: "418"
   locale: en
   name: Sisters
   created_at: 2010-12-13 18:37:03
   updated_at: 2010-12-13 18:37:03
-subject_translations_638: 
+subject_translations_516: 
   id: "832"
   subject_id: "418"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xD8\xB1"
   created_at: 2010-12-13 18:37:03
   updated_at: 2010-12-13 18:37:03
-subject_translations_639: 
+subject_translations_517: 
   id: "833"
   subject_id: "419"
   locale: en
   name: Slaves
   created_at: 2010-12-13 18:37:29
   updated_at: 2010-12-13 18:37:29
-subject_translations_640: 
+subject_translations_518: 
   id: "834"
   subject_id: "419"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD8\xAF\xD9\x87"
   created_at: 2010-12-13 18:37:29
   updated_at: 2010-12-13 18:37:29
-subject_translations_641: 
+subject_translations_519: 
   id: "835"
   subject_id: "420"
   locale: en
   name: Snow
   created_at: 2010-12-13 18:37:54
   updated_at: 2010-12-13 18:37:54
-subject_translations_642: 
+subject_translations_520: 
   id: "836"
   subject_id: "420"
   locale: fa
   name: "\xD8\xA8\xD8\xB1\xD9\x81"
   created_at: 2010-12-13 18:37:54
   updated_at: 2010-12-13 18:37:54
-subject_translations_643: 
+subject_translations_521: 
   id: "837"
   subject_id: "421"
   locale: en
-  name: Society of Iranian Patriotic Women
+  name: Society of Patriotic Women of Iran
   created_at: 2010-12-13 18:38:47
-  updated_at: 2010-12-13 18:38:47
-subject_translations_644: 
+  updated_at: 2010-12-28 07:02:23
+subject_translations_522: 
   id: "838"
   subject_id: "421"
   locale: fa
   name: "\xD8\xAC\xD9\x85\xD8\xB9\xDB\x8C\xD8\xAA \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86 \xD9\x88\xD8\xB7\xD9\x86\xD8\xAE\xD9\x88\xD8\xA7\xD9\x87 \xD8\xA7\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 18:38:47
   updated_at: 2010-12-13 18:38:47
-subject_translations_645: 
+subject_translations_523: 
   id: "839"
   subject_id: "422"
   locale: en
   name: Socks
   created_at: 2010-12-13 18:39:17
   updated_at: 2010-12-13 18:39:17
-subject_translations_646: 
+subject_translations_524: 
   id: "840"
   subject_id: "422"
   locale: fa
   name: "\xD8\xAC\xD9\x88\xD8\xB1\xD8\xA7\xD8\xA8"
   created_at: 2010-12-13 18:39:17
   updated_at: 2010-12-13 18:39:17
-subject_translations_647: 
+subject_translations_525: 
   id: "841"
   subject_id: "423"
   locale: en
   name: Soldiers
   created_at: 2010-12-13 18:39:54
   updated_at: 2010-12-13 18:39:54
-subject_translations_648: 
+subject_translations_526: 
   id: "842"
   subject_id: "423"
   locale: fa
   name: "\xD8\xB3\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xB2"
   created_at: 2010-12-13 18:39:54
   updated_at: 2010-12-13 18:39:54
-subject_translations_649: 
+subject_translations_527: 
   id: "843"
   subject_id: "424"
   locale: en
   name: Speeches
   created_at: 2010-12-13 18:40:54
   updated_at: 2010-12-13 18:40:54
-subject_translations_650: 
+subject_translations_528: 
   id: "844"
   subject_id: "424"
   locale: fa
   name: "\xD8\xB3\xD8\xAE\xD9\x86\xD8\xB1\xD8\xA7\xD9\x86\xDB\x8C"
   created_at: 2010-12-13 18:40:54
   updated_at: 2010-12-13 18:40:54
-subject_translations_651: 
+subject_translations_529: 
   id: "845"
   subject_id: "425"
   locale: en
   name: Spices
   created_at: 2010-12-13 18:41:20
   updated_at: 2010-12-13 18:41:20
-subject_translations_652: 
+subject_translations_530: 
   id: "846"
   subject_id: "425"
   locale: fa
   name: "\xD8\xA7\xD8\xAF\xD9\x88\xDB\x8C\xD9\x87"
   created_at: 2010-12-13 18:41:20
   updated_at: 2010-12-13 18:41:20
-subject_translations_653: 
+subject_translations_531: 
   id: "847"
   subject_id: "426"
   locale: en
   name: Sports
   created_at: 2010-12-13 18:41:45
   updated_at: 2010-12-13 18:41:45
-subject_translations_654: 
+subject_translations_532: 
   id: "848"
   subject_id: "426"
   locale: fa
   name: "\xD9\x88\xD8\xB1\xD8\xB2\xD8\xB4"
   created_at: 2010-12-13 18:41:45
   updated_at: 2010-12-13 18:41:45
-subject_translations_655: 
+subject_translations_533: 
   id: "849"
   subject_id: "427"
   locale: en
   name: Stables
   created_at: 2010-12-13 18:42:20
   updated_at: 2010-12-13 18:42:20
-subject_translations_656: 
+subject_translations_534: 
   id: "850"
   subject_id: "427"
   locale: fa
   name: "\xD8\xB7\xD9\x88\xDB\x8C\xD9\x84\xD9\x87"
   created_at: 2010-12-13 18:42:20
   updated_at: 2010-12-13 18:42:20
-subject_translations_657: 
+subject_translations_535: 
   id: "851"
   subject_id: "428"
   locale: en
   name: Stamps
   created_at: 2010-12-13 18:42:44
   updated_at: 2010-12-13 18:42:44
-subject_translations_658: 
+subject_translations_536: 
   id: "852"
   subject_id: "428"
   locale: fa
   name: "\xD8\xAA\xD9\x85\xD8\xA8\xD8\xB1"
   created_at: 2010-12-13 18:42:44
   updated_at: 2010-12-13 18:42:44
-subject_translations_659: 
+subject_translations_537: 
   id: "853"
   subject_id: "429"
   locale: en
   name: Stationery
   created_at: 2010-12-13 18:44:10
   updated_at: 2010-12-13 18:44:10
-subject_translations_660: 
+subject_translations_538: 
   id: "854"
   subject_id: "429"
   locale: fa
   name: "\xD9\x84\xD9\x88\xD8\xA7\xD8\xB2\xD9\x85 \xD8\xA7\xD9\x84\xD8\xAA\xD8\xAD\xD8\xB1\xDB\x8C\xD8\xB1"
   created_at: 2010-12-13 18:44:10
   updated_at: 2010-12-13 18:44:10
-subject_translations_661: 
+subject_translations_539: 
   id: "855"
   subject_id: "430"
   locale: en
   name: Students
   created_at: 2010-12-13 18:44:49
   updated_at: 2010-12-13 18:44:49
-subject_translations_662: 
+subject_translations_540: 
   id: "856"
   subject_id: "430"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4 \xD8\xA2\xD9\x85\xD9\x88\xD8\xB2"
   created_at: 2010-12-13 18:44:49
   updated_at: 2010-12-13 18:44:49
-subject_translations_663: 
-  id: "857"
-  subject_id: "431"
-  locale: en
-  name: Sufi literature
-  created_at: 2010-12-13 18:46:20
-  updated_at: 2010-12-13 21:28:33
-subject_translations_664: 
-  id: "858"
-  subject_id: "431"
-  locale: fa
-  name: "\xD8\xA7\xD8\xAF\xD8\xA8\xDB\x8C\xD8\xA7\xD8\xAA \xD8\xB9\xD8\xB1\xD9\x81\xD8\xA7\xD9\x86\xDB\x8C"
-  created_at: 2010-12-13 18:46:20
-  updated_at: 2010-12-13 18:46:20
-subject_translations_665: 
+subject_translations_541: 
   id: "859"
   subject_id: "432"
   locale: en
   name: Sugar
   created_at: 2010-12-13 18:47:10
   updated_at: 2010-12-13 18:47:10
-subject_translations_666: 
+subject_translations_542: 
   id: "860"
   subject_id: "432"
   locale: fa
   name: "\xD8\xB4\xDA\xA9\xD8\xB1 \xD9\x88 \xD9\x82\xD9\x86\xD8\xAF"
   created_at: 2010-12-13 18:47:10
   updated_at: 2010-12-13 18:47:10
-subject_translations_667: 
+subject_translations_543: 
   id: "861"
   subject_id: "433"
   locale: en
   name: Tablecloths
   created_at: 2010-12-13 18:48:51
   updated_at: 2010-12-13 18:48:51
-subject_translations_668: 
+subject_translations_544: 
   id: "862"
   subject_id: "433"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x87"
   created_at: 2010-12-13 18:48:51
   updated_at: 2010-12-13 18:48:51
-subject_translations_669: 
+subject_translations_545: 
   id: "863"
   subject_id: "434"
   locale: en
-  name: Talismans; Amulets
+  name: Talismans
   created_at: 2010-12-13 18:49:31
-  updated_at: 2010-12-13 18:49:31
-subject_translations_670: 
+  updated_at: 2010-12-28 13:22:50
+subject_translations_546: 
   id: "864"
   subject_id: "434"
   locale: fa
-  name: "\xD8\xB7\xD9\x84\xD8\xB3\xD9\x85\xD8\x8C \xD8\xAD\xD8\xB1\xD8\xB2"
+  name: "\xD8\xB7\xD9\x84\xD8\xB3\xD9\x85"
   created_at: 2010-12-13 18:49:31
-  updated_at: 2010-12-13 18:49:31
-subject_translations_671: 
+  updated_at: 2010-12-28 13:22:50
+subject_translations_547: 
   id: "865"
   subject_id: "435"
   locale: en
   name: Taxes
   created_at: 2010-12-13 18:50:28
   updated_at: 2010-12-13 18:50:28
-subject_translations_672: 
+subject_translations_548: 
   id: "866"
   subject_id: "435"
   locale: fa
   name: "\xD9\x85\xD8\xA7\xD9\x84\xDB\x8C\xD8\xA7\xD8\xAA"
   created_at: 2010-12-13 18:50:28
   updated_at: 2010-12-13 18:50:28
-subject_translations_673: 
+subject_translations_549: 
   id: "867"
   subject_id: "436"
   locale: en
   name: Tea
   created_at: 2010-12-13 18:51:00
   updated_at: 2010-12-13 18:51:00
-subject_translations_674: 
+subject_translations_550: 
   id: "868"
   subject_id: "436"
   locale: fa
   name: "\xDA\x86\xD8\xA7\xDB\x8C"
   created_at: 2010-12-13 18:51:00
   updated_at: 2010-12-13 18:51:00
-subject_translations_675: 
+subject_translations_551: 
   id: "869"
   subject_id: "437"
   locale: en
   name: Teachers
   created_at: 2010-12-13 18:51:33
   updated_at: 2010-12-13 18:51:33
-subject_translations_676: 
+subject_translations_552: 
   id: "870"
   subject_id: "437"
   locale: fa
   name: "\xD9\x85\xD8\xB9\xD9\x84\xD9\x85"
   created_at: 2010-12-13 18:51:33
   updated_at: 2010-12-13 18:51:33
-subject_translations_677: 
+subject_translations_553: 
   id: "871"
   subject_id: "438"
   locale: en
   name: Telegrams
   created_at: 2010-12-13 18:52:57
   updated_at: 2010-12-13 18:52:57
-subject_translations_678: 
+subject_translations_554: 
   id: "872"
   subject_id: "438"
   locale: fa
   name: "\xD8\xAA\xD9\x84\xDA\xAF\xD8\xB1\xD8\xA7\xD9\x81"
   created_at: 2010-12-13 18:52:57
   updated_at: 2010-12-13 18:52:57
-subject_translations_679: 
+subject_translations_555: 
   id: "873"
   subject_id: "439"
   locale: en
   name: Telephones
   created_at: 2010-12-13 18:53:44
   updated_at: 2010-12-13 18:53:44
-subject_translations_680: 
+subject_translations_556: 
   id: "874"
   subject_id: "439"
   locale: fa
   name: "\xD8\xAA\xD9\x84\xD9\x81\xD9\x86"
   created_at: 2010-12-13 18:53:44
   updated_at: 2010-12-13 18:53:44
-subject_translations_681: 
+subject_translations_557: 
   id: "875"
   subject_id: "440"
   locale: en
-  name: Theaters
+  name: Theater
   created_at: 2010-12-13 18:54:31
-  updated_at: 2010-12-13 18:54:31
-subject_translations_682: 
+  updated_at: 2010-12-28 13:26:05
+subject_translations_558: 
   id: "876"
   subject_id: "440"
   locale: fa
   name: "\xD8\xAA\xD8\xA6\xD8\xA7\xD8\xAA\xD8\xB1"
   created_at: 2010-12-13 18:54:31
   updated_at: 2010-12-13 18:54:31
-subject_translations_683: 
+subject_translations_559: 
   id: "877"
   subject_id: "441"
   locale: en
   name: Therapeutics
   created_at: 2010-12-13 18:55:36
   updated_at: 2010-12-13 18:55:36
-subject_translations_684: 
+subject_translations_560: 
   id: "878"
   subject_id: "441"
   locale: fa
   name: "\xD8\xAE\xD9\x88\xD8\xA7\xD8\xB5 \xD8\xAF\xD8\xB1\xD9\x85\xD8\xA7\xD9\x86\xDB\x8C"
   created_at: 2010-12-13 18:55:36
   updated_at: 2010-12-13 18:55:36
-subject_translations_685: 
+subject_translations_561: 
   id: "879"
   subject_id: "442"
   locale: en
   name: Timber
   created_at: 2010-12-13 19:02:22
   updated_at: 2010-12-13 19:02:22
-subject_translations_686: 
+subject_translations_562: 
   id: "880"
   subject_id: "442"
   locale: fa
   name: "\xD8\xA7\xD9\x84\xD9\x88\xD8\xA7\xD8\xB1"
   created_at: 2010-12-13 19:02:22
   updated_at: 2010-12-13 19:02:22
-subject_translations_687: 
+subject_translations_563: 
   id: "881"
   subject_id: "443"
   locale: en
   name: Tirmih
   created_at: 2010-12-13 19:02:58
   updated_at: 2010-12-13 19:02:58
-subject_translations_688: 
+subject_translations_564: 
   id: "882"
   subject_id: "443"
   locale: fa
   name: "\xD8\xAA\xD8\xB1\xD9\x85\xD9\x87"
   created_at: 2010-12-13 19:02:58
   updated_at: 2010-12-13 19:02:58
-subject_translations_689: 
+subject_translations_565: 
   id: "883"
   subject_id: "444"
   locale: en
   name: Tobacco
   created_at: 2010-12-13 19:03:41
   updated_at: 2010-12-13 19:03:41
-subject_translations_690: 
+subject_translations_566: 
   id: "884"
   subject_id: "444"
   locale: fa
   name: "\xD8\xAA\xD9\x86\xD8\xA8\xD8\xA7\xDA\xA9\xD9\x88"
   created_at: 2010-12-13 19:03:41
   updated_at: 2010-12-13 19:03:41
-subject_translations_691: 
+subject_translations_567: 
   id: "885"
   subject_id: "445"
   locale: en
   name: Tombs
   created_at: 2010-12-13 19:04:03
   updated_at: 2010-12-13 19:04:47
-subject_translations_692: 
+subject_translations_568: 
   id: "886"
   subject_id: "445"
   locale: fa
   name: "\xD9\x85\xD9\x82\xD8\xA8\xD8\xB1\xD9\x87"
   created_at: 2010-12-13 19:04:03
   updated_at: 2010-12-13 19:04:03
-subject_translations_693: 
+subject_translations_569: 
   id: "889"
   subject_id: "447"
   locale: en
   name: Toys
   created_at: 2010-12-13 19:05:55
   updated_at: 2010-12-13 19:05:55
-subject_translations_694: 
+subject_translations_570: 
   id: "890"
   subject_id: "447"
   locale: fa
   name: "\xD8\xA7\xD8\xB3\xD8\xA8\xD8\xA7\xD8\xA8 \xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C"
   created_at: 2010-12-13 19:05:55
   updated_at: 2010-12-13 19:05:55
-subject_translations_695: 
+subject_translations_571: 
   id: "891"
   subject_id: "448"
   locale: en
   name: Transportation
   created_at: 2010-12-13 19:06:31
   updated_at: 2010-12-13 19:06:31
-subject_translations_696: 
+subject_translations_572: 
   id: "892"
   subject_id: "448"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB1\xDA\xA9\xD8\xB4\xDB\x8C"
   created_at: 2010-12-13 19:06:31
   updated_at: 2010-12-13 19:06:31
-subject_translations_697: 
+subject_translations_573: 
   id: "893"
   subject_id: "449"
   locale: en
   name: Travel
   created_at: 2010-12-13 19:07:06
   updated_at: 2010-12-13 19:07:06
-subject_translations_698: 
+subject_translations_574: 
   id: "894"
   subject_id: "449"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1"
   created_at: 2010-12-13 19:07:06
   updated_at: 2010-12-13 19:07:16
-subject_translations_699: 
+subject_translations_575: 
   id: "895"
   subject_id: "450"
   locale: en
   name: Travel writing
   created_at: 2010-12-13 19:07:41
   updated_at: 2010-12-13 21:30:48
-subject_translations_700: 
+subject_translations_576: 
   id: "896"
   subject_id: "450"
   locale: fa
   name: "\xD8\xB3\xD9\x81\xD8\xB1\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 19:07:41
   updated_at: 2010-12-13 19:07:41
-subject_translations_701: 
+subject_translations_577: 
   id: "897"
   subject_id: "451"
   locale: en
   name: Trees
   created_at: 2010-12-13 19:08:13
   updated_at: 2010-12-13 19:08:13
-subject_translations_702: 
+subject_translations_578: 
   id: "898"
   subject_id: "451"
   locale: fa
   name: "\xD8\xAF\xD8\xB1\xD8\xAE\xD8\xAA\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 19:08:13
   updated_at: 2010-12-13 19:08:13
-subject_translations_703: 
-  id: "899"
-  subject_id: "452"
-  locale: en
-  name: Tribes
-  created_at: 2010-12-13 19:08:42
-  updated_at: 2010-12-13 19:08:42
-subject_translations_704: 
-  id: "900"
-  subject_id: "452"
-  locale: fa
-  name: "\xD8\xA7\xDB\x8C\xD9\x84"
-  created_at: 2010-12-13 19:08:42
-  updated_at: 2010-12-13 19:08:42
-subject_translations_705: 
+subject_translations_579: 
   id: "901"
   subject_id: "453"
   locale: en
   name: Tuition
   created_at: 2010-12-13 19:09:11
   updated_at: 2010-12-13 19:09:11
-subject_translations_706: 
+subject_translations_580: 
   id: "902"
   subject_id: "453"
   locale: fa
   name: "\xD8\xB4\xD9\x87\xD8\xB1\xDB\x8C\xD9\x87"
   created_at: 2010-12-13 19:09:11
   updated_at: 2010-12-13 19:09:11
-subject_translations_707: 
+subject_translations_581: 
   id: "903"
   subject_id: "454"
   locale: en
   name: Turquoise
   created_at: 2010-12-13 19:10:48
   updated_at: 2010-12-13 19:10:48
-subject_translations_708: 
+subject_translations_582: 
   id: "904"
   subject_id: "454"
   locale: fa
   name: "\xD9\x81\xDB\x8C\xD8\xB1\xD9\x88\xD8\xB2\xD9\x87"
   created_at: 2010-12-13 19:10:48
   updated_at: 2010-12-13 19:10:48
-subject_translations_709: 
+subject_translations_583: 
   id: "905"
   subject_id: "455"
   locale: en
   name: Typhoid
   created_at: 2010-12-13 19:11:21
   updated_at: 2010-12-13 19:11:21
-subject_translations_710: 
+subject_translations_584: 
   id: "906"
   subject_id: "455"
   locale: fa
   name: "\xD8\xAA\xDB\x8C\xD9\x81\xD9\x88\xD8\xB3"
   created_at: 2010-12-13 19:11:21
   updated_at: 2010-12-13 19:11:21
-subject_translations_711: 
+subject_translations_585: 
   id: "907"
   subject_id: "456"
   locale: en
   name: Universities
   created_at: 2010-12-13 19:12:00
   updated_at: 2010-12-13 19:12:00
-subject_translations_712: 
+subject_translations_586: 
   id: "908"
   subject_id: "456"
   locale: fa
   name: "\xD8\xAF\xD8\xA7\xD9\x86\xD8\xB4\xDA\xAF\xD8\xA7\xD9\x87"
   created_at: 2010-12-13 19:12:00
   updated_at: 2010-12-13 19:12:00
-subject_translations_713: 
-  id: "909"
-  subject_id: "457"
-  locale: en
-  name: Upper class
-  created_at: 2010-12-13 19:12:52
-  updated_at: 2010-12-13 21:30:15
-subject_translations_714: 
-  id: "910"
-  subject_id: "457"
-  locale: fa
-  name: "\xD8\xB7\xD8\xA8\xD9\x82\xD9\x87 \xD9\x85\xD8\xB1\xD9\x81\xD9\x87 \xD8\xA7\xD8\xAC\xD8\xAA\xD9\x85\xD8\xA7\xD8\xB9"
-  created_at: 2010-12-13 19:12:52
-  updated_at: 2010-12-13 19:12:52
-subject_translations_715: 
+subject_translations_587: 
   id: "911"
   subject_id: "458"
   locale: en
   name: Urbanization
   created_at: 2010-12-13 19:13:23
   updated_at: 2010-12-13 19:13:23
-subject_translations_716: 
+subject_translations_588: 
   id: "912"
   subject_id: "458"
   locale: fa
   name: "\xD8\xB4\xD9\x87\xD8\xB1\xD8\xB3\xD8\xA7\xD8\xB2\xDB\x8C"
   created_at: 2010-12-13 19:13:23
   updated_at: 2010-12-13 19:13:23
-subject_translations_717: 
-  id: "913"
-  subject_id: "459"
-  locale: en
-  name: Vase
-  created_at: 2010-12-13 19:13:49
-  updated_at: 2010-12-13 19:13:49
-subject_translations_718: 
-  id: "914"
-  subject_id: "459"
-  locale: fa
-  name: "\xDA\xAF\xD9\x84\xD8\xAF\xD8\xA7\xD9\x86"
-  created_at: 2010-12-13 19:13:49
-  updated_at: 2010-12-13 19:13:49
-subject_translations_719: 
+subject_translations_589: 
   id: "915"
   subject_id: "460"
   locale: en
   name: Veils
   created_at: 2010-12-13 19:14:23
   updated_at: 2010-12-13 19:14:23
-subject_translations_720: 
+subject_translations_590: 
   id: "916"
   subject_id: "460"
   locale: fa
   name: "\xD8\xAD\xD8\xAC\xD8\xA7\xD8\xA8"
   created_at: 2010-12-13 19:14:23
   updated_at: 2010-12-13 19:14:23
-subject_translations_721: 
+subject_translations_591: 
   id: "917"
   subject_id: "461"
   locale: en
   name: Velvet
   created_at: 2010-12-13 19:14:49
   updated_at: 2010-12-13 19:14:49
-subject_translations_722: 
+subject_translations_592: 
   id: "918"
   subject_id: "461"
   locale: fa
   name: "\xD9\x85\xD8\xAE\xD9\x85\xD9\x84"
   created_at: 2010-12-13 19:14:49
   updated_at: 2010-12-13 19:14:49
-subject_translations_723: 
+subject_translations_593: 
   id: "919"
   subject_id: "462"
   locale: en
   name: Villages
   created_at: 2010-12-13 19:15:19
   updated_at: 2010-12-13 19:15:19
-subject_translations_724: 
+subject_translations_594: 
   id: "920"
   subject_id: "462"
   locale: fa
   name: "\xD8\xAF\xD9\x87"
   created_at: 2010-12-13 19:15:19
   updated_at: 2010-12-13 19:15:19
-subject_translations_725: 
+subject_translations_595: 
   id: "921"
   subject_id: "463"
   locale: en
-  name: Watches
+  name: Wrist watches
   created_at: 2010-12-13 19:15:55
-  updated_at: 2010-12-13 19:15:55
-subject_translations_726: 
+  updated_at: 2010-12-29 08:01:02
+subject_translations_596: 
   id: "922"
   subject_id: "463"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xD8\xB9\xD8\xAA (\xD9\x85\xDA\x86\xDB\x8C)"
   created_at: 2010-12-13 19:15:55
   updated_at: 2010-12-13 19:15:55
-subject_translations_727: 
+subject_translations_597: 
   id: "923"
   subject_id: "464"
   locale: en
   name: Water
   created_at: 2010-12-13 19:16:50
   updated_at: 2010-12-13 19:16:50
-subject_translations_728: 
+subject_translations_598: 
   id: "924"
   subject_id: "464"
   locale: fa
   name: "\xD8\xA2\xD8\xA8"
   created_at: 2010-12-13 19:16:50
   updated_at: 2010-12-13 19:16:50
-subject_translations_729: 
+subject_translations_599: 
   id: "925"
   subject_id: "465"
   locale: en
   name: Weather
   created_at: 2010-12-13 19:17:18
   updated_at: 2010-12-13 19:17:18
-subject_translations_730: 
+subject_translations_600: 
   id: "926"
   subject_id: "465"
   locale: fa
   name: "\xD8\xA2\xD8\xA8 \xD9\x88 \xD9\x87\xD9\x88\xD8\xA7"
   created_at: 2010-12-13 19:17:18
   updated_at: 2010-12-13 19:17:18
-subject_translations_731: 
+subject_translations_601: 
   id: "929"
   subject_id: "467"
   locale: en
   name: Wheat
   created_at: 2010-12-13 19:18:48
   updated_at: 2010-12-13 19:18:48
-subject_translations_732: 
+subject_translations_602: 
   id: "930"
   subject_id: "467"
   locale: fa
   name: "\xDA\xAF\xD9\x86\xD8\xAF\xD9\x85"
   created_at: 2010-12-13 19:18:48
   updated_at: 2010-12-13 19:18:48
-subject_translations_733: 
+subject_translations_603: 
   id: "931"
   subject_id: "468"
   locale: en
   name: Widows
   created_at: 2010-12-13 19:34:35
   updated_at: 2010-12-13 19:34:35
-subject_translations_734: 
+subject_translations_604: 
   id: "932"
   subject_id: "468"
   locale: fa
   name: "\xD8\xA8\xDB\x8C\xD9\x88\xD9\x87"
   created_at: 2010-12-13 19:34:35
   updated_at: 2010-12-13 19:34:35
-subject_translations_735: 
+subject_translations_605: 
   id: "933"
   subject_id: "469"
   locale: en
   name: Wills
   created_at: 2010-12-13 19:35:06
   updated_at: 2010-12-13 19:35:06
-subject_translations_736: 
+subject_translations_606: 
   id: "934"
   subject_id: "469"
   locale: fa
   name: "\xD9\x88\xD8\xB5\xDB\x8C\xD8\xAA\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-13 19:35:06
   updated_at: 2010-12-13 19:35:06
-subject_translations_737: 
+subject_translations_607: 
   id: "935"
   subject_id: "470"
   locale: en
   name: Wine
   created_at: 2010-12-13 19:35:36
   updated_at: 2010-12-13 19:35:36
-subject_translations_738: 
+subject_translations_608: 
   id: "936"
   subject_id: "470"
   locale: fa
   name: "\xD9\x85\xD8\xB4\xD8\xB1\xD9\x88\xD8\xA8"
   created_at: 2010-12-13 19:35:36
   updated_at: 2010-12-13 19:35:36
-subject_translations_739: 
+subject_translations_609: 
   id: "937"
   subject_id: "471"
   locale: en
   name: Women
   created_at: 2010-12-13 19:36:57
   updated_at: 2010-12-13 19:36:57
-subject_translations_740: 
+subject_translations_610: 
   id: "938"
   subject_id: "471"
   locale: fa
   name: "\xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 19:36:57
   updated_at: 2010-12-13 19:36:57
-subject_translations_741: 
+subject_translations_611: 
   id: "939"
   subject_id: "472"
   locale: en
   name: Women poets
   created_at: 2010-12-13 19:37:26
   updated_at: 2010-12-13 21:29:11
-subject_translations_742: 
+subject_translations_612: 
   id: "940"
   subject_id: "472"
   locale: fa
   name: "\xD8\xB2\xD9\x86\xD8\xA7\xD9\x86 \xD8\xB4\xD8\xA7\xD8\xB9\xD8\xB1\xD9\x87"
   created_at: 2010-12-13 19:37:26
   updated_at: 2010-12-13 19:37:26
-subject_translations_743: 
+subject_translations_613: 
   id: "941"
   subject_id: "473"
   locale: en
   name: Women's rights
   created_at: 2010-12-13 19:38:01
   updated_at: 2010-12-13 21:29:32
-subject_translations_744: 
+subject_translations_614: 
   id: "942"
   subject_id: "473"
   locale: fa
   name: "\xD8\xAD\xD9\x82\xD9\x88\xD9\x82 \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 19:38:01
   updated_at: 2010-12-13 19:38:01
-subject_translations_745: 
+subject_translations_615: 
   id: "943"
   subject_id: "474"
   locale: en
   name: Women's suffrage
   created_at: 2010-12-13 19:38:41
   updated_at: 2010-12-13 21:29:54
-subject_translations_746: 
+subject_translations_616: 
   id: "944"
   subject_id: "474"
   locale: fa
   name: "\xD8\xAD\xD9\x82 \xD8\xB1\xD8\xA3\xDB\x8C \xD8\xB2\xD9\x86\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 19:38:41
   updated_at: 2010-12-13 19:38:41
-subject_translations_747: 
+subject_translations_617: 
   id: "945"
   subject_id: "475"
   locale: en
   name: World War, 1914-1918
   created_at: 2010-12-13 19:39:36
   updated_at: 2010-12-13 19:39:36
-subject_translations_748: 
+subject_translations_618: 
   id: "946"
   subject_id: "475"
   locale: fa
   name: "\xD8\xAC\xD9\x86\xDA\xAF \xD8\xAC\xD9\x87\xD8\xA7\xD9\x86\xDB\x8C \xD8\xA7\xD9\x88\xD9\x84\xD8\x8C \xDB\xB1\xDB\xB9\xDB\xB1\xDB\xB8-\xDB\xB1\xDB\xB9\xDB\xB1\xDB\xB4"
   created_at: 2010-12-13 19:39:36
   updated_at: 2010-12-13 19:39:36
-subject_translations_749: 
+subject_translations_619: 
   id: "947"
   subject_id: "476"
   locale: en
   name: Wrestling
   created_at: 2010-12-13 19:40:08
   updated_at: 2010-12-13 19:40:08
-subject_translations_750: 
+subject_translations_620: 
   id: "948"
   subject_id: "476"
   locale: fa
   name: "\xDA\xA9\xD8\xB4\xD8\xAA\xDB\x8C"
   created_at: 2010-12-13 19:40:08
   updated_at: 2010-12-13 19:40:08
-subject_translations_751: 
+subject_translations_621: 
   id: "949"
   subject_id: "477"
   locale: en
   name: Yakh-chal
   created_at: 2010-12-13 19:41:29
   updated_at: 2010-12-13 19:41:29
-subject_translations_752: 
+subject_translations_622: 
   id: "950"
   subject_id: "477"
   locale: fa
   name: "\xDB\x8C\xD8\xAE\xDA\x86\xD8\xA7\xD9\x84"
   created_at: 2010-12-13 19:41:29
   updated_at: 2010-12-13 19:41:29
-subject_translations_753: 
+subject_translations_623: 
   id: "951"
   subject_id: "478"
   locale: en
   name: Zoroastrians
   created_at: 2010-12-13 19:42:06
   updated_at: 2010-12-13 19:42:06
-subject_translations_754: 
+subject_translations_624: 
   id: "952"
   subject_id: "478"
   locale: fa
   name: "\xD8\xB2\xD8\xB1\xD8\xAA\xD8\xB4\xD8\xAA\xDB\x8C"
   created_at: 2010-12-13 19:42:06
   updated_at: 2010-12-13 19:42:06
-subject_translations_755: 
-  id: "953"
-  subject_id: "479"
-  locale: en
-  name: Agriculture labors
-  created_at: 2010-12-13 20:03:27
-  updated_at: 2010-12-13 21:11:29
-subject_translations_756: 
-  id: "954"
-  subject_id: "479"
-  locale: fa
-  name: "\xD9\x81\xD8\xB9\xD8\xA7\xD9\x84\xDB\x8C\xD8\xAA \xD9\x87\xD8\xA7\xDB\x8C \xDA\xA9\xD8\xB4\xD8\xA7\xD9\x88\xD8\xB1\xD8\xB2\xDB\x8C"
-  created_at: 2010-12-13 20:03:27
-  updated_at: 2010-12-13 20:03:27
-subject_translations_757: 
-  id: "955"
-  subject_id: "480"
-  locale: en
-  name: Air shows
-  created_at: 2010-12-13 20:04:12
-  updated_at: 2010-12-13 21:11:47
-subject_translations_758: 
-  id: "956"
-  subject_id: "480"
-  locale: fa
-  name: "\xD9\x86\xD9\x85\xD8\xA7\xDB\x8C\xD8\xB4 \xD9\x87\xD9\x88\xD8\xA7\xD9\x86\xD9\x88\xD8\xB1\xD8\xAF\xDB\x8C"
-  created_at: 2010-12-13 20:04:12
-  updated_at: 2010-12-13 20:04:12
-subject_translations_759: 
-  id: "957"
-  subject_id: "481"
-  locale: en
-  name: Amusement parks
-  created_at: 2010-12-13 20:04:54
-  updated_at: 2010-12-13 21:12:03
-subject_translations_760: 
-  id: "958"
-  subject_id: "481"
-  locale: fa
-  name: "\xD8\xB4\xD9\x87\xD8\xB1\xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C"
-  created_at: 2010-12-13 20:04:54
-  updated_at: 2010-12-13 20:04:54
-subject_translations_761: 
+subject_translations_625: 
   id: "961"
   subject_id: "483"
   locale: en
   name: Bakeries
   created_at: 2010-12-13 20:06:01
   updated_at: 2010-12-13 20:06:01
-subject_translations_762: 
+subject_translations_626: 
   id: "962"
   subject_id: "483"
   locale: fa
   name: "\xD9\x86\xD8\xA7\xD9\x86\xD9\x88\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-13 20:06:01
   updated_at: 2010-12-13 20:06:01
-subject_translations_763: 
+subject_translations_627: 
   id: "963"
   subject_id: "484"
   locale: en
   name: Beaches
   created_at: 2010-12-13 20:06:37
   updated_at: 2010-12-13 20:06:37
-subject_translations_764: 
+subject_translations_628: 
   id: "964"
   subject_id: "484"
   locale: fa
   name: "\xD8\xB3\xD8\xA7\xD8\xAD\xD9\x84\xD8\x8C \xD9\xBE\xD9\x84\xD8\xA7\xDA\x98"
   created_at: 2010-12-13 20:06:37
   updated_at: 2010-12-13 20:06:37
-subject_translations_765: 
+subject_translations_629: 
   id: "965"
   subject_id: "485"
   locale: en
   name: Beauty (personal)
   created_at: 2010-12-13 20:07:14
   updated_at: 2010-12-13 20:07:14
-subject_translations_766: 
+subject_translations_630: 
   id: "966"
   subject_id: "485"
   locale: fa
   name: "\xD8\xB2\xDB\x8C\xD8\xA8\xD8\xA7\xDB\x8C\xDB\x8C"
   created_at: 2010-12-13 20:07:14
   updated_at: 2010-12-13 20:07:14
-subject_translations_767: 
+subject_translations_631: 
   id: "967"
   subject_id: "486"
   locale: en
   name: Birthdays
   created_at: 2010-12-13 20:07:52
   updated_at: 2010-12-13 20:07:52
-subject_translations_768: 
+subject_translations_632: 
   id: "968"
   subject_id: "486"
   locale: fa
   name: "\xD8\xAA\xD9\x88\xD9\x84\xD8\xAF"
   created_at: 2010-12-13 20:07:52
   updated_at: 2010-12-13 20:07:52
-subject_translations_769: 
-  id: "969"
-  subject_id: "487"
-  locale: en
-  name: Blind persons
-  created_at: 2010-12-13 20:08:47
-  updated_at: 2010-12-13 21:12:28
-subject_translations_770: 
-  id: "970"
-  subject_id: "487"
-  locale: fa
-  name: "\xD8\xA7\xD9\x81\xD8\xB1\xD8\xA7\xD8\xAF \xD9\x86\xD8\xA7\xD8\xA8\xDB\x8C\xD9\x86\xD8\xA7"
-  created_at: 2010-12-13 20:08:47
-  updated_at: 2010-12-13 20:08:47
-subject_translations_771: 
+subject_translations_633: 
   id: "971"
   subject_id: "488"
   locale: en
   name: Boardinghouses
   created_at: 2010-12-13 20:09:24
   updated_at: 2010-12-13 20:09:24
-subject_translations_772: 
+subject_translations_634: 
   id: "972"
   subject_id: "488"
   locale: fa
   name: "\xD9\xBE\xD8\xA7\xD9\x86\xD8\xB3\xDB\x8C\xD9\x88\xD9\x86"
   created_at: 2010-12-13 20:09:24
   updated_at: 2010-12-13 20:09:24
-subject_translations_773: 
+subject_translations_635: 
   id: "973"
   subject_id: "489"
   locale: en
   name: Boycotts
   created_at: 2010-12-13 20:09:55
   updated_at: 2010-12-13 20:09:55
-subject_translations_774: 
+subject_translations_636: 
   id: "974"
   subject_id: "489"
   locale: fa
   name: "\xD8\xAA\xD8\xAD\xD8\xB1\xDB\x8C\xD9\x85"
   created_at: 2010-12-13 20:09:55
   updated_at: 2010-12-13 20:09:55
-subject_translations_775: 
-  id: "975"
-  subject_id: "490"
-  locale: en
-  name: Brickmaking
-  created_at: 2010-12-13 20:10:41
-  updated_at: 2010-12-13 20:10:41
-subject_translations_776: 
-  id: "976"
-  subject_id: "490"
-  locale: fa
-  name: "\xD8\xA2\xD8\xAC\xD8\xB1\xD9\xBE\xD8\xB2\xDB\x8C"
-  created_at: 2010-12-13 20:10:41
-  updated_at: 2010-12-13 20:10:41
-subject_translations_777: 
-  id: "977"
-  subject_id: "491"
-  locale: en
-  name: Bridges
-  created_at: 2010-12-13 20:12:28
-  updated_at: 2010-12-13 20:12:28
-subject_translations_778: 
-  id: "978"
-  subject_id: "491"
-  locale: fa
-  name: "\xD9\xBE\xD9\x84"
-  created_at: 2010-12-13 20:12:28
-  updated_at: 2010-12-13 20:12:28
-subject_translations_779: 
-  id: "979"
-  subject_id: "492"
-  locale: en
-  name: Building construction
-  created_at: 2010-12-13 20:13:25
-  updated_at: 2010-12-13 21:12:53
-subject_translations_780: 
-  id: "980"
-  subject_id: "492"
-  locale: fa
-  name: "\xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86 \xD8\xB3\xD8\xA7\xD8\xB2\xDB\x8C"
-  created_at: 2010-12-13 20:13:25
-  updated_at: 2010-12-13 20:13:25
-subject_translations_781: 
+subject_translations_637: 
   id: "981"
   subject_id: "493"
   locale: en
   name: Buildings, repair and construction
   created_at: 2010-12-13 20:13:51
   updated_at: 2010-12-13 20:13:51
-subject_translations_782: 
+subject_translations_638: 
   id: "982"
   subject_id: "493"
   locale: fa
   name: "\xD8\xAA\xD8\xB9\xD9\x85\xDB\x8C\xD8\xB1 \xD8\xB3\xD8\xA7\xD8\xAE\xD8\xAA\xD9\x85\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 20:13:51
   updated_at: 2010-12-13 20:13:51
-subject_translations_783: 
-  id: "983"
-  subject_id: "494"
-  locale: en
-  name: Camping
-  created_at: 2010-12-13 20:14:22
-  updated_at: 2010-12-13 20:14:22
-subject_translations_784: 
-  id: "984"
-  subject_id: "494"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB1\xD8\xAF\xD9\x88"
-  created_at: 2010-12-13 20:14:22
-  updated_at: 2010-12-13 20:14:22
-subject_translations_785: 
+subject_translations_639: 
   id: "985"
   subject_id: "495"
   locale: en
   name: Canals
   created_at: 2010-12-13 20:14:53
   updated_at: 2010-12-13 20:14:53
-subject_translations_786: 
+subject_translations_640: 
   id: "986"
   subject_id: "495"
   locale: fa
   name: "\xDA\xA9\xD8\xA7\xD9\x86\xD8\xA7\xD9\x84 (\xD8\xA2\xD8\xA8)"
   created_at: 2010-12-13 20:14:53
   updated_at: 2010-12-13 20:14:53
-subject_translations_787: 
-  id: "987"
-  subject_id: "496"
-  locale: en
-  name: Card games
-  created_at: 2010-12-13 20:15:40
-  updated_at: 2010-12-13 21:13:15
-subject_translations_788: 
-  id: "988"
-  subject_id: "496"
-  locale: fa
-  name: "\xD9\x88\xD8\xB1\xD9\x82 \xD8\xA8\xD8\xA7\xD8\xB2\xDB\x8C"
-  created_at: 2010-12-13 20:15:40
-  updated_at: 2010-12-13 20:15:40
-subject_translations_789: 
+subject_translations_641: 
   id: "989"
   subject_id: "497"
   locale: en
   name: Cemeteries
   created_at: 2010-12-13 20:16:11
   updated_at: 2010-12-13 20:16:11
-subject_translations_790: 
+subject_translations_642: 
   id: "990"
   subject_id: "497"
   locale: fa
   name: "\xD9\x82\xD8\xA8\xD8\xB1\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 20:16:11
   updated_at: 2010-12-13 20:16:11
-subject_translations_791: 
+subject_translations_643: 
   id: "993"
   subject_id: "499"
   locale: en
   name: Cigarettes
   created_at: 2010-12-13 20:17:07
   updated_at: 2010-12-13 20:17:07
-subject_translations_792: 
+subject_translations_644: 
   id: "994"
   subject_id: "499"
   locale: fa
   name: "\xD8\xB3\xDB\x8C\xDA\xAF\xD8\xA7\xD8\xB1"
   created_at: 2010-12-13 20:17:07
   updated_at: 2010-12-13 20:17:07
-subject_translations_793: 
-  id: "995"
-  subject_id: "500"
-  locale: en
-  name: Custody of children
-  created_at: 2010-12-13 20:17:53
-  updated_at: 2010-12-13 21:13:42
-subject_translations_794: 
-  id: "996"
-  subject_id: "500"
-  locale: fa
-  name: "\xD8\xAD\xD8\xB6\xD8\xA7\xD9\x86\xD8\xAA \xD9\x81\xD8\xB1\xD8\xB2\xD9\x86\xD8\xAF\xD8\xA7\xD9\x86"
-  created_at: 2010-12-13 20:17:53
-  updated_at: 2010-12-13 20:17:53
-subject_translations_795: 
+subject_translations_645: 
   id: "997"
   subject_id: "501"
   locale: en
   name: Demonstrations
   created_at: 2010-12-13 20:18:28
   updated_at: 2010-12-13 20:18:28
-subject_translations_796: 
+subject_translations_646: 
   id: "998"
   subject_id: "501"
   locale: fa
   name: "\xD8\xAA\xD8\xB8\xD8\xA7\xD9\x87\xD8\xB1\xD8\xA7\xD8\xAA"
   created_at: 2010-12-13 20:18:28
   updated_at: 2010-12-13 20:18:28
-subject_translations_797: 
+subject_translations_647: 
   id: "999"
   subject_id: "502"
   locale: en
   name: Earthquakes
   created_at: 2010-12-13 20:18:55
   updated_at: 2010-12-13 20:18:55
-subject_translations_798: 
+subject_translations_648: 
   id: "1000"
   subject_id: "502"
   locale: fa
   name: "\xD8\xB2\xD9\x85\xDB\x8C\xD9\x86 \xD9\x84\xD8\xB1\xD8\xB2\xD9\x87"
   created_at: 2010-12-13 20:18:55
   updated_at: 2010-12-13 20:18:55
-subject_translations_799: 
+subject_translations_649: 
   id: "1003"
   subject_id: "504"
   locale: en
   name: Fathers and daughters
   created_at: 2010-12-13 20:20:05
   updated_at: 2010-12-13 21:14:22
-subject_translations_800: 
+subject_translations_650: 
   id: "1004"
   subject_id: "504"
   locale: fa
   name: "\xD9\xBE\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x88 \xD8\xAF\xD8\xAE\xD8\xAA\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 20:20:05
   updated_at: 2010-12-13 20:20:05
-subject_translations_801: 
+subject_translations_651: 
   id: "1005"
   subject_id: "505"
   locale: en
   name: Fathers and sons
   created_at: 2010-12-13 20:20:40
   updated_at: 2010-12-13 21:14:52
-subject_translations_802: 
+subject_translations_652: 
   id: "1006"
   subject_id: "505"
   locale: fa
   name: "\xD9\xBE\xD8\xAF\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x88 \xD9\xBE\xD8\xB3\xD8\xB1\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 20:20:40
   updated_at: 2010-12-13 20:20:40
-subject_translations_803: 
-  id: "1007"
-  subject_id: "506"
-  locale: en
-  name: Floods
-  created_at: 2010-12-13 20:21:08
-  updated_at: 2010-12-13 20:21:08
-subject_translations_804: 
-  id: "1008"
-  subject_id: "506"
-  locale: fa
-  name: "\xD8\xB3\xDB\x8C\xD9\x84"
-  created_at: 2010-12-13 20:21:08
-  updated_at: 2010-12-13 20:21:08
-subject_translations_805: 
-  id: "1009"
-  subject_id: "507"
-  locale: en
-  name: Funeral rites and ceremonies
-  created_at: 2010-12-13 20:21:49
-  updated_at: 2010-12-13 21:15:16
-subject_translations_806: 
-  id: "1010"
-  subject_id: "507"
-  locale: fa
-  name: "\xD9\x85\xD8\xB1\xD8\xA7\xD8\xB3\xD9\x85 \xD8\xB3\xD9\x88\xDA\xAF\xD9\x88\xD8\xA7\xD8\xB1\xDB\x8C"
-  created_at: 2010-12-13 20:21:49
-  updated_at: 2010-12-13 20:21:49
-subject_translations_807: 
-  id: "1011"
-  subject_id: "508"
-  locale: en
-  name: Government officials
-  created_at: 2010-12-13 20:22:29
-  updated_at: 2010-12-13 21:17:52
-subject_translations_808: 
-  id: "1012"
-  subject_id: "508"
-  locale: fa
-  name: "\xD9\x85\xD8\xB3\xD8\xA6\xD9\x88\xD9\x84\xDB\x8C\xD9\x86 \xD8\xAF\xD9\x88\xD9\x84\xD8\xAA"
-  created_at: 2010-12-13 20:22:29
-  updated_at: 2010-12-13 20:22:29
-subject_translations_809: 
-  id: "1013"
-  subject_id: "509"
-  locale: en
-  name: Harvesting
-  created_at: 2010-12-13 20:22:53
-  updated_at: 2010-12-13 20:22:53
-subject_translations_810: 
-  id: "1014"
-  subject_id: "509"
-  locale: fa
-  name: "\xD8\xAF\xD8\xB1\xD9\x88"
-  created_at: 2010-12-13 20:22:53
-  updated_at: 2010-12-13 20:22:53
-subject_translations_811: 
+subject_translations_653: 
   id: "1015"
   subject_id: "510"
   locale: en
   name: Jewish people
   created_at: 2010-12-13 20:23:18
   updated_at: 2010-12-17 17:16:34
-subject_translations_812: 
+subject_translations_654: 
   id: "1016"
   subject_id: "510"
   locale: fa
   name: "\xDB\x8C\xD9\x87\xD9\x88\xD8\xAF\xDB\x8C\xD8\xA7\xD9\x86"
   created_at: 2010-12-13 20:23:18
   updated_at: 2010-12-13 20:23:18
-subject_translations_813: 
-  id: "1017"
-  subject_id: "511"
-  locale: en
-  name: Land titles
-  created_at: 2010-12-13 20:24:01
-  updated_at: 2010-12-13 21:17:15
-subject_translations_814: 
-  id: "1018"
-  subject_id: "511"
-  locale: fa
-  name: "\xD9\x82\xD8\xA8\xD8\xA7\xD9\x84\xD9\x87 \xD8\xA7\xD9\x85\xD9\x84\xD8\xA7\xDA\xA9"
-  created_at: 2010-12-13 20:24:01
-  updated_at: 2010-12-13 20:24:01
-subject_translations_815: 
-  id: "1019"
-  subject_id: "512"
-  locale: en
-  name: Landlords
-  created_at: 2010-12-13 20:24:37
-  updated_at: 2010-12-13 20:24:37
-subject_translations_816: 
-  id: "1020"
-  subject_id: "512"
-  locale: fa
-  name: "\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x87\xD8\x8C \xD9\x85\xD8\xA7\xD9\x84\xDA\xA9 \xD8\xB2\xD9\x85\xDB\x8C\xD9\x86"
-  created_at: 2010-12-13 20:24:37
-  updated_at: 2010-12-13 20:24:37
-subject_translations_817: 
+subject_translations_655: 
   id: "1021"
   subject_id: "513"
   locale: en
   name: Lawyers
   created_at: 2010-12-13 20:25:02
   updated_at: 2010-12-13 20:25:02
-subject_translations_818: 
+subject_translations_656: 
   id: "1022"
   subject_id: "513"
   locale: fa
   name: "\xD9\x88\xDA\xA9\xDB\x8C\xD9\x84"
   created_at: 2010-12-13 20:25:02
   updated_at: 2010-12-13 20:25:02
-subject_translations_819: 
+subject_translations_657: 
   id: "1023"
   subject_id: "514"
   locale: en
   name: Mystics
   created_at: 2010-12-13 20:25:29
   updated_at: 2010-12-13 20:25:29
-subject_translations_820: 
+subject_translations_658: 
   id: "1024"
   subject_id: "514"
   locale: fa
   name: "\xD8\xB9\xD8\xA7\xD8\xB1\xD9\x81"
   created_at: 2010-12-13 20:25:29
   updated_at: 2010-12-13 20:25:29
-subject_translations_821: 
+subject_translations_659: 
   id: "1025"
   subject_id: "515"
   locale: en
   name: Orchards
   created_at: 2010-12-13 20:25:58
   updated_at: 2010-12-13 20:25:58
-subject_translations_822: 
+subject_translations_660: 
   id: "1026"
   subject_id: "515"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xBA \xD9\x85\xDB\x8C\xD9\x88\xD9\x87"
   created_at: 2010-12-13 20:25:58
   updated_at: 2010-12-13 20:25:58
-subject_translations_823: 
+subject_translations_661: 
   id: "1027"
   subject_id: "516"
   locale: en
   name: Orphans
   created_at: 2010-12-13 20:26:22
   updated_at: 2010-12-13 20:26:22
-subject_translations_824: 
+subject_translations_662: 
   id: "1028"
   subject_id: "516"
   locale: fa
   name: "\xDB\x8C\xD8\xAA\xDB\x8C\xD9\x85"
   created_at: 2010-12-13 20:26:22
   updated_at: 2010-12-13 20:26:22
-subject_translations_825: 
-  id: "1029"
-  subject_id: "517"
-  locale: en
-  name: Parades
-  created_at: 2010-12-13 20:26:48
-  updated_at: 2010-12-13 20:26:48
-subject_translations_826: 
-  id: "1030"
-  subject_id: "517"
-  locale: fa
-  name: "\xD8\xB1\xDA\x98\xD9\x87"
-  created_at: 2010-12-13 20:26:48
-  updated_at: 2010-12-13 20:26:48
-subject_translations_827: 
+subject_translations_663: 
   id: "1031"
   subject_id: "518"
   locale: en
   name: Prayer
   created_at: 2010-12-13 20:27:13
   updated_at: 2010-12-13 20:27:13
-subject_translations_828: 
+subject_translations_664: 
   id: "1032"
   subject_id: "518"
   locale: fa
   name: "\xD8\xB1\xDA\x98\xD9\x87"
   created_at: 2010-12-13 20:27:13
   updated_at: 2010-12-13 20:27:13
-subject_translations_829: 
-  id: "1033"
-  subject_id: "519"
-  locale: en
-  name: Princes
-  created_at: 2010-12-13 20:27:46
-  updated_at: 2010-12-13 20:27:46
-subject_translations_830: 
-  id: "1034"
-  subject_id: "519"
-  locale: fa
-  name: "\xD8\xB4\xD8\xA7\xD9\x87\xD8\xB2\xD8\xA7\xD8\xAF\xDA\xAF\xD8\xA7\xD9\x86"
-  created_at: 2010-12-13 20:27:46
-  updated_at: 2010-12-13 20:27:46
-subject_translations_831: 
+subject_translations_665: 
   id: "1035"
   subject_id: "520"
   locale: en
   name: Railroads
   created_at: 2010-12-13 20:28:12
   updated_at: 2010-12-13 20:28:12
-subject_translations_832: 
+subject_translations_666: 
   id: "1036"
   subject_id: "520"
   locale: fa
   name: "\xD8\xB1\xD8\xA7\xD9\x87 \xD8\xA2\xD9\x87\xD9\x86"
   created_at: 2010-12-13 20:28:12
   updated_at: 2010-12-13 20:28:12
-subject_translations_833: 
-  id: "1037"
-  subject_id: "521"
-  locale: en
-  name: Aristocracy
-  created_at: 2010-12-13 20:28:41
-  updated_at: 2010-12-13 20:28:41
-subject_translations_834: 
-  id: "1038"
-  subject_id: "521"
-  locale: fa
-  name: "\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA7\xD9\x81\xDB\x8C\xD8\xAA"
-  created_at: 2010-12-13 20:28:41
-  updated_at: 2010-12-13 20:28:41
-subject_translations_835: 
+subject_translations_667: 
   id: "1039"
   subject_id: "522"
   locale: en
   name: Property management
   created_at: 2010-12-13 20:50:46
   updated_at: 2010-12-13 21:24:39
-subject_translations_836: 
+subject_translations_668: 
   id: "1040"
   subject_id: "522"
   locale: fa
   name: "\xD8\xA7\xD8\xAF\xD8\xA7\xD8\xB1\xD9\x87 \xD8\xA7\xD9\x85\xD9\x84\xD8\xA7\xDA\xA9"
   created_at: 2010-12-13 20:50:46
   updated_at: 2010-12-13 20:50:46
-subject_translations_837: 
+subject_translations_669: 
   id: "1041"
   subject_id: "523"
   locale: en
   name: Apologies
   created_at: 2010-12-14 00:01:25
   updated_at: 2010-12-14 00:01:25
-subject_translations_838: 
+subject_translations_670: 
   id: "1042"
   subject_id: "523"
   locale: fa
   name: "\xD8\xB9\xD8\xB0\xD8\xB1 \xD8\xAE\xD9\x88\xD8\xA7\xD9\x87\xDB\x8C"
   created_at: 2010-12-14 00:01:25
   updated_at: 2010-12-14 00:01:25
-subject_translations_839: 
+subject_translations_671: 
   id: "1043"
   subject_id: "524"
   locale: en
   name: Bihtu'i tribe
   created_at: 2010-12-14 04:52:24
   updated_at: 2010-12-14 04:52:24
-subject_translations_840: 
+subject_translations_672: 
   id: "1044"
   subject_id: "524"
   locale: fa
   name: "\xD8\xA8\xD9\x87\xD8\xAA\xD9\x88\xD8\xA6\xDB\x8C"
   created_at: 2010-12-14 04:52:24
   updated_at: 2010-12-14 04:52:24
-subject_translations_841: 
+subject_translations_673: 
   id: "1045"
   subject_id: "525"
   locale: en
   name: Rent
   created_at: 2010-12-16 16:40:56
   updated_at: 2010-12-16 16:40:56
-subject_translations_842: 
+subject_translations_674: 
   id: "1046"
   subject_id: "525"
   locale: fa
   name: "\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1\xD9\x87"
   created_at: 2010-12-16 16:40:56
   updated_at: 2010-12-16 16:40:56
-subject_translations_843: 
+subject_translations_675: 
   id: "1047"
   subject_id: "526"
   locale: en
   name: Flowers
   created_at: 2010-12-17 17:39:55
   updated_at: 2010-12-17 17:39:55
-subject_translations_844: 
+subject_translations_676: 
   id: "1048"
   subject_id: "526"
   locale: fa
   name: "\xDA\xAF\xD9\x84"
   created_at: 2010-12-17 17:39:55
   updated_at: 2010-12-17 17:39:55
-subject_translations_845: 
+subject_translations_677: 
   id: "1049"
   subject_id: "527"
   locale: en
   name: Pomegranates
   created_at: 2010-12-22 04:44:42
   updated_at: 2010-12-22 04:44:42
-subject_translations_846: 
+subject_translations_678: 
   id: "1050"
   subject_id: "527"
   locale: fa
   name: "\xD8\xA7\xD9\x86\xD8\xA7\xD8\xB1"
   created_at: 2010-12-22 04:44:42
   updated_at: 2010-12-22 04:44:42
-subject_translations_847: 
+subject_translations_679: 
   id: "1051"
   subject_id: "528"
   locale: en
   name: Murder
   created_at: 2010-12-22 06:00:55
   updated_at: 2010-12-22 06:00:55
-subject_translations_848: 
+subject_translations_680: 
   id: "1052"
   subject_id: "528"
   locale: fa
   name: "\xD9\x82\xD8\xAA\xD9\x84"
   created_at: 2010-12-22 06:00:55
   updated_at: 2010-12-22 06:00:55
-subject_translations_849: 
+subject_translations_681: 
   id: "1053"
   subject_id: "529"
   locale: en
   name: Debt
   created_at: 2010-12-24 05:03:33
   updated_at: 2010-12-24 05:03:33
-subject_translations_850: 
+subject_translations_682: 
   id: "1054"
   subject_id: "529"
   locale: fa
   name: "\xD8\xA8\xD8\xAF\xD9\x87\xDB\x8C"
   created_at: 2010-12-24 05:03:33
   updated_at: 2010-12-24 05:03:33
-subject_translations_851: 
+subject_translations_683: 
   id: "1055"
   subject_id: "530"
   locale: en
   name: Grocery
   created_at: 2010-12-24 07:50:55
   updated_at: 2010-12-24 07:50:55
-subject_translations_852: 
+subject_translations_684: 
   id: "1056"
   subject_id: "530"
   locale: fa
   name: "\xD8\xA8\xD9\x82\xD8\xA7\xD9\x84\xDB\x8C"
   created_at: 2010-12-24 07:50:55
   updated_at: 2010-12-24 07:50:55
-subject_translations_853: 
+subject_translations_685: 
   id: "1057"
   subject_id: "531"
   locale: en
   name: Military occupation
   created_at: 2010-12-24 23:03:23
   updated_at: 2010-12-24 23:03:23
-subject_translations_854: 
+subject_translations_686: 
   id: "1058"
   subject_id: "531"
   locale: fa
   name: "\xD8\xA7\xD8\xB4\xD8\xBA\xD8\xA7\xD9\x84 \xD9\x86\xD8\xB8\xD8\xA7\xD9\x85\xDB\x8C"
   created_at: 2010-12-24 23:03:23
   updated_at: 2010-12-24 23:03:23
-subject_translations_855: 
+subject_translations_687: 
   id: "1059"
   subject_id: "532"
   locale: en
   name: Endowments
   created_at: 2010-12-25 03:38:28
   updated_at: 2010-12-25 03:38:28
-subject_translations_856: 
+subject_translations_688: 
   id: "1060"
   subject_id: "532"
   locale: fa
   name: "\xD9\x88\xD9\x82\xD9\x81\xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
   created_at: 2010-12-25 03:38:28
   updated_at: 2010-12-25 03:38:28
-subject_translations_857: 
+subject_translations_689: 
   id: "1061"
   subject_id: "533"
   locale: en
-  name: Bazaars (Markets)
+  name: Bazaars
   created_at: 2010-12-25 04:24:26
-  updated_at: 2010-12-25 04:24:26
-subject_translations_858: 
+  updated_at: 2010-12-28 10:43:44
+subject_translations_690: 
   id: "1062"
   subject_id: "533"
   locale: fa
   name: "\xD8\xA8\xD8\xA7\xD8\xB2\xD8\xA7\xD8\xB1"
   created_at: 2010-12-25 04:24:26
   updated_at: 2010-12-25 04:24:26
-subject_translations_859: 
+subject_translations_691: 
   id: "1063"
   subject_id: "534"
   locale: en
   name: "Ta\xCA\xBBziyah"
   created_at: 2010-12-26 01:32:17
   updated_at: 2010-12-26 01:32:17
-subject_translations_860: 
+subject_translations_692: 
   id: "1064"
   subject_id: "534"
   locale: fa
   name: " \xD8\xAA\xD8\xB9\xD8\xB2\xDB\x8C\xD9\x87"
   created_at: 2010-12-26 01:32:17
   updated_at: 2010-12-26 01:32:17
+subject_translations_693: 
+  id: "1065"
+  subject_id: "535"
+  locale: en
+  name: Maps
+  created_at: 2010-12-26 23:54:37
+  updated_at: 2010-12-28 13:41:10
+subject_translations_694: 
+  id: "1066"
+  subject_id: "535"
+  locale: fa
+  name: "\xD9\x86\xD9\x82\xD8\xB4\xD9\x87"
+  created_at: 2010-12-26 23:54:37
+  updated_at: 2010-12-26 23:54:37
+subject_translations_695: 
+  id: "1067"
+  subject_id: "536"
+  locale: en
+  name: Genealogies
+  created_at: 2010-12-26 23:55:04
+  updated_at: 2010-12-28 13:40:20
+subject_translations_696: 
+  id: "1068"
+  subject_id: "536"
+  locale: fa
+  name: "\xD8\xB4\xD8\xAC\xD8\xB1\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-12-26 23:55:04
+  updated_at: 2010-12-26 23:55:04
+subject_translations_697: 
+  id: "1069"
+  subject_id: "537"
+  locale: en
+  name: maps
+  created_at: 2010-12-27 01:50:07
+  updated_at: 2010-12-27 01:50:07
+subject_translations_698: 
+  id: "1070"
+  subject_id: "537"
+  locale: fa
+  name: "\xD9\x86\xD9\x82\xD8\xB4\xD9\x87"
+  created_at: 2010-12-27 01:50:07
+  updated_at: 2010-12-27 01:50:07
+subject_translations_699: 
+  id: "1071"
+  subject_id: "538"
+  locale: en
+  name: genealogies
+  created_at: 2010-12-27 01:50:42
+  updated_at: 2010-12-27 01:50:42
+subject_translations_700: 
+  id: "1072"
+  subject_id: "538"
+  locale: fa
+  name: "\xD8\xB4\xD8\xAC\xD8\xB1\xD9\x87 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87"
+  created_at: 2010-12-27 01:50:42
+  updated_at: 2010-12-27 01:50:42
+subject_translations_701: 
+  id: "1073"
+  subject_id: "539"
+  locale: en
+  name: Airplanes
+  created_at: 2010-12-27 11:37:22
+  updated_at: 2010-12-27 11:37:22
+subject_translations_702: 
+  id: "1074"
+  subject_id: "539"
+  locale: fa
+  name: "\xD9\x87\xD9\x88\xD8\xA7\xD9\xBE\xDB\x8C\xD9\x85\xD8\xA7"
+  created_at: 2010-12-27 11:37:22
+  updated_at: 2010-12-27 11:37:22
+subject_translations_703: 
+  id: "1075"
+  subject_id: "540"
+  locale: en
+  name: Islamic ethics
+  created_at: 2010-12-28 01:04:55
+  updated_at: 2010-12-28 01:04:55
+subject_translations_704: 
+  id: "1076"
+  subject_id: "540"
+  locale: fa
+  name: "\xD8\xA7\xD8\xAE\xD9\x84\xD8\xA7\xD9\x82 \xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xDB\x8C"
+  created_at: 2010-12-28 01:04:55
+  updated_at: 2010-12-28 01:04:55
+subject_translations_705: 
+  id: "1077"
+  subject_id: "541"
+  locale: en
+  name: Radio
+  created_at: 2010-12-28 08:22:33
+  updated_at: 2010-12-28 08:22:33
+subject_translations_706: 
+  id: "1078"
+  subject_id: "541"
+  locale: fa
+  name: "\xD8\xB1\xD8\xA7\xD8\xAF\xDB\x8C\xD9\x88"
+  created_at: 2010-12-28 08:22:33
+  updated_at: 2010-12-28 08:22:33
+subject_translations_707: 
+  id: "1079"
+  subject_id: "542"
+  locale: en
+  name: Kanun-i banuvan [Women's Center]
+  created_at: 2010-12-29 06:14:20
+  updated_at: 2010-12-29 06:14:20
+subject_translations_708: 
+  id: "1080"
+  subject_id: "542"
+  locale: fa
+  name: "\xDA\xA9\xD8\xA7\xD9\x86\xD9\x88\xD9\x86 \xD8\xA8\xD8\xA7\xD9\x86\xD9\x88\xD8\xA7\xD9\x86"
+  created_at: 2010-12-29 06:14:20
+  updated_at: 2010-12-29 06:14:20
+subject_translations_709: 
+  id: "1081"
+  subject_id: "543"
+  locale: en
+  name: "Jam\xCA\xBBiyat-i rah-i naw [Society for a New Path]"
+  created_at: 2010-12-29 06:28:21
+  updated_at: 2010-12-29 06:28:21
+subject_translations_710: 
+  id: "1082"
+  subject_id: "543"
+  locale: fa
+  name: "\xD8\xAC\xD9\x85\xD8\xB9\xDB\x8C\xD8\xAA \xD8\xB1\xD8\xA7\xD9\x87 \xD9\x86\xD9\x88"
+  created_at: 2010-12-29 06:28:21
+  updated_at: 2010-12-29 06:28:21
+subject_translations_711: 
+  id: "1083"
+  subject_id: "544"
+  locale: en
+  name: Hotels
+  created_at: 2010-12-29 07:02:57
+  updated_at: 2010-12-29 07:02:57
+subject_translations_712: 
+  id: "1084"
+  subject_id: "544"
+  locale: fa
+  name: "\xD9\x87\xD8\xAA\xD9\x84 \xD9\x87\xD8\xA7"
+  created_at: 2010-12-29 07:02:57
+  updated_at: 2010-12-29 07:02:57
+subject_translations_713: 
+  id: "1085"
+  subject_id: "545"
+  locale: en
+  name: writings
+  created_at: 2010-12-30 08:10:09
+  updated_at: 2010-12-30 08:10:09
+subject_translations_714: 
+  id: "1086"
+  subject_id: "545"
+  locale: fa
+  name: "\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA\xD9\x87 \xD9\x87\xD8\xA7"
+  created_at: 2010-12-30 08:10:09
+  updated_at: 2010-12-30 08:10:09

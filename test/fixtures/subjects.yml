@@ -1,56 +1,56 @@
 --- 
 subjects_001: 
   id: "1"
-  major: "0"
-  publish: "0"
-  notes: ""
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_002: 
-  id: "2"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_003: 
-  id: "3"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_004: 
-  id: "5"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_005: 
-  id: "8"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 08:38:51
   subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
+  items_count: "0"
+  lock_version: "2"
+subjects_002: 
+  id: "2"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 08:30:43
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_003: 
+  id: "3"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 08:32:54
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_004: 
+  id: "4"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 08:34:07
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_005: 
+  id: "6"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 08:35:57
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
 subjects_006: 
-  id: "10"
+  id: "7"
   major: "1"
   publish: "1"
   notes: 
@@ -60,106 +60,86 @@ subjects_006:
   items_count: "1"
   lock_version: "0"
 subjects_007: 
-  id: "11"
-  major: "0"
-  publish: "0"
-  notes: 
+  id: "9"
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 08:37:47
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_008: 
   id: "12"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:26:13
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_009: 
   id: "13"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:27:22
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_010: 
   id: "14"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:28:26
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_011: 
   id: "15"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:29:25
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_012: 
   id: "16"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:30:28
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_013: 
   id: "17"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 10:31:40
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 subjects_014: 
-  id: "18"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_015: 
-  id: "19"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_016: 
   id: "21"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:04:07
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_017: 
+  lock_version: "1"
+subjects_015: 
   id: "22"
   major: "1"
   publish: "1"
@@ -169,37 +149,37 @@ subjects_017:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_018: 
+subjects_016: 
   id: "23"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:06:19
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_019: 
+  lock_version: "1"
+subjects_017: 
   id: "25"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:05:36
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_020: 
+  lock_version: "1"
+subjects_018: 
   id: "26"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:08:39
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_021: 
+  lock_version: "1"
+subjects_019: 
   id: "27"
   major: "1"
   publish: "1"
@@ -209,27 +189,27 @@ subjects_021:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_022: 
+subjects_020: 
   id: "28"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:10:09
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_023: 
+  lock_version: "1"
+subjects_021: 
   id: "29"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 11:11:26
   subject_type_id: "7"
   items_count: "1"
-  lock_version: "0"
-subjects_024: 
+  lock_version: "1"
+subjects_022: 
   id: "30"
   major: "1"
   publish: "1"
@@ -239,47 +219,37 @@ subjects_024:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_025: 
+subjects_023: 
   id: "31"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:15:36
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_026: 
+  lock_version: "1"
+subjects_024: 
   id: "32"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:18:25
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_027: 
+  lock_version: "1"
+subjects_025: 
   id: "33"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 11:22:12
   subject_type_id: "7"
   items_count: "1"
-  lock_version: "0"
-subjects_028: 
-  id: "34"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_029: 
+  lock_version: "1"
+subjects_026: 
   id: "35"
   major: "1"
   publish: "1"
@@ -289,157 +259,137 @@ subjects_029:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_030: 
+subjects_027: 
   id: "37"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:24:56
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_031: 
+  lock_version: "1"
+subjects_028: 
   id: "38"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:25:59
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_032: 
+  lock_version: "1"
+subjects_029: 
   id: "39"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:47:30
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_033: 
+  lock_version: "1"
+subjects_030: 
   id: "40"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:48:05
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_034: 
-  id: "41"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_035: 
+  lock_version: "1"
+subjects_031: 
   id: "42"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:34:04
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_036: 
+  lock_version: "1"
+subjects_032: 
   id: "43"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 11:41:25
   subject_type_id: "7"
   items_count: "3"
-  lock_version: "0"
-subjects_037: 
+  lock_version: "1"
+subjects_033: 
   id: "45"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:39:08
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_038: 
+  lock_version: "1"
+subjects_034: 
   id: "46"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 11:42:53
   subject_type_id: "7"
   items_count: "1"
-  lock_version: "0"
-subjects_039: 
+  lock_version: "1"
+subjects_035: 
   id: "47"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:44:22
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_040: 
+  lock_version: "1"
+subjects_036: 
   id: "48"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:49:07
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_041: 
+  lock_version: "1"
+subjects_037: 
   id: "49"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:51:10
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_042: 
+  lock_version: "1"
+subjects_038: 
   id: "50"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:51:58
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_043: 
-  id: "51"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_044: 
+  lock_version: "1"
+subjects_039: 
   id: "52"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:56:18
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_045: 
+  lock_version: "1"
+subjects_040: 
   id: "53"
   major: "1"
   publish: "1"
@@ -449,27 +399,17 @@ subjects_045:
   subject_type_id: "7"
   items_count: "2"
   lock_version: "0"
-subjects_046: 
-  id: "54"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_047: 
+subjects_041: 
   id: "55"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 11:58:44
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_048: 
+  lock_version: "1"
+subjects_042: 
   id: "56"
   major: "1"
   publish: "1"
@@ -479,27 +419,27 @@ subjects_048:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_049: 
+subjects_043: 
   id: "57"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:00:07
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_050: 
+  lock_version: "1"
+subjects_044: 
   id: "58"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
+  updated_at: 2010-12-28 12:00:51
   subject_type_id: "7"
   items_count: "2"
-  lock_version: "0"
-subjects_051: 
+  lock_version: "1"
+subjects_045: 
   id: "59"
   major: "1"
   publish: "1"
@@ -509,37 +449,37 @@ subjects_051:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_052: 
+subjects_046: 
   id: "60"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:05:45
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_053: 
+  lock_version: "1"
+subjects_047: 
   id: "61"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:09:05
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_054: 
+  lock_version: "1"
+subjects_048: 
   id: "62"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:10:04
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_055: 
+  lock_version: "1"
+subjects_049: 
   id: "63"
   major: "1"
   publish: "1"
@@ -549,67 +489,57 @@ subjects_055:
   subject_type_id: "7"
   items_count: "2"
   lock_version: "0"
-subjects_056: 
+subjects_050: 
   id: "64"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_057: 
-  id: "65"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_058: 
-  id: "66"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_059: 
-  id: "67"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_060: 
-  id: "68"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_061: 
-  id: "69"
-  major: "0"
-  publish: "0"
+  major: "1"
+  publish: "1"
   notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-12-22 06:28:06
+  updated_at: 2010-12-28 12:13:47
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_062: 
+subjects_051: 
+  id: "65"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:14:19
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_052: 
+  id: "66"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:16:39
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_053: 
+  id: "68"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:42:47
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_054: 
+  id: "69"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:42:07
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "2"
+subjects_055: 
   id: "70"
   major: "1"
   publish: "1"
@@ -619,97 +549,57 @@ subjects_062:
   subject_type_id: "7"
   items_count: "6"
   lock_version: "0"
-subjects_063: 
+subjects_056: 
   id: "71"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:17:47
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_064: 
+  lock_version: "1"
+subjects_057: 
   id: "72"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:18:39
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_065: 
+  lock_version: "1"
+subjects_058: 
   id: "73"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:19:51
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_066: 
+  lock_version: "1"
+subjects_059: 
   id: "74"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:20:01
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_067: 
-  id: "75"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_068: 
+  lock_version: "1"
+subjects_060: 
   id: "76"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:21:03
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_069: 
-  id: "77"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_070: 
-  id: "78"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_071: 
-  id: "79"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_072: 
+  lock_version: "1"
+subjects_061: 
   id: "80"
   major: "1"
   publish: "1"
@@ -719,47 +609,7 @@ subjects_072:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_073: 
-  id: "84"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_074: 
-  id: "85"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_075: 
-  id: "89"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_076: 
-  id: "91"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_077: 
+subjects_062: 
   id: "95"
   major: "1"
   publish: "1"
@@ -769,37 +619,7 @@ subjects_077:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_078: 
-  id: "99"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_079: 
-  id: "100"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_080: 
-  id: "105"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:30
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_081: 
+subjects_063: 
   id: "113"
   major: "1"
   publish: "1"
@@ -809,7 +629,7 @@ subjects_081:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "1"
-subjects_082: 
+subjects_064: 
   id: "115"
   major: "1"
   publish: "1"
@@ -819,37 +639,37 @@ subjects_082:
   subject_type_id: "7"
   items_count: "2"
   lock_version: "0"
-subjects_083: 
+subjects_065: 
   id: "116"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:50:08
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_084: 
+  lock_version: "2"
+subjects_066: 
   id: "121"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:51:37
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_085: 
+  lock_version: "1"
+subjects_067: 
   id: "127"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:53:35
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_086: 
+  lock_version: "1"
+subjects_068: 
   id: "128"
   major: "1"
   publish: "1"
@@ -859,117 +679,47 @@ subjects_086:
   subject_type_id: "7"
   items_count: "3"
   lock_version: "0"
-subjects_087: 
-  id: "129"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_088: 
+subjects_069: 
   id: "130"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_089: 
-  id: "131"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_090: 
-  id: "133"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:31
-  subject_type_id: "7"
-  items_count: "2"
-  lock_version: "0"
-subjects_091: 
-  id: "136"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 12:58:48
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_092: 
+  lock_version: "1"
+subjects_070: 
   id: "138"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:03:37
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_093: 
-  id: "139"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:31
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_094: 
-  id: "140"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-08-12 10:45:31
-  subject_type_id: "7"
-  items_count: "1"
-  lock_version: "0"
-subjects_095: 
+  lock_version: "1"
+subjects_071: 
   id: "141"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:05:28
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_096: 
+  lock_version: "1"
+subjects_072: 
   id: "142"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:07:19
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_097: 
-  id: "146"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_098: 
+  lock_version: "1"
+subjects_073: 
   id: "154"
   major: "1"
   publish: "1"
@@ -979,87 +729,37 @@ subjects_098:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_099: 
-  id: "155"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_100: 
-  id: "163"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_101: 
-  id: "166"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_102: 
+subjects_074: 
   id: "167"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:19:52
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_103: 
+  lock_version: "1"
+subjects_075: 
   id: "170"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:21:17
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_104: 
-  id: "175"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_105: 
+  lock_version: "1"
+subjects_076: 
   id: "177"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:25:06
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_106: 
-  id: "178"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_107: 
+  lock_version: "1"
+subjects_077: 
   id: "183"
   major: "1"
   publish: "1"
@@ -1069,37 +769,17 @@ subjects_107:
   subject_type_id: "7"
   items_count: "1"
   lock_version: "0"
-subjects_108: 
-  id: "186"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_109: 
+subjects_078: 
   id: "189"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:33:49
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_110: 
-  id: "190"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_111: 
+  lock_version: "1"
+subjects_079: 
   id: "193"
   major: "1"
   publish: "1"
@@ -1109,57 +789,37 @@ subjects_111:
   subject_type_id: "7"
   items_count: "4"
   lock_version: "0"
-subjects_112: 
-  id: "198"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_113: 
+subjects_080: 
   id: "200"
-  major: "0"
-  publish: "0"
-  notes: 
+  major: "1"
+  publish: "1"
+  notes: ""
   created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
+  updated_at: 2010-12-28 13:38:29
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_114: 
-  id: "201"
-  major: "0"
-  publish: "0"
-  notes: 
-  created_at: 2010-06-22 22:06:41
-  updated_at: 2010-06-22 22:06:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_115: 
+  lock_version: "1"
+subjects_081: 
   id: "207"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:30:35
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:11:33
   subject_type_id: "8"
   items_count: "76"
-  lock_version: "0"
-subjects_116: 
+  lock_version: "1"
+subjects_082: 
   id: "208"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:34:49
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:18:06
   subject_type_id: "8"
   items_count: "2"
-  lock_version: "0"
-subjects_117: 
+  lock_version: "1"
+subjects_083: 
   id: "209"
   major: "1"
   publish: "1"
@@ -1169,67 +829,47 @@ subjects_117:
   subject_type_id: "8"
   items_count: "0"
   lock_version: "0"
-subjects_118: 
+subjects_084: 
   id: "210"
-  major: "1"
-  publish: "1"
-  notes: 
+  major: "0"
+  publish: "0"
+  notes: ""
   created_at: 2010-03-22 22:35:58
-  updated_at: 2010-03-22 22:50:46
+  updated_at: 2010-12-26 23:19:55
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_119: 
-  id: "211"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-03-22 22:36:21
-  updated_at: 2010-08-12 10:45:31
-  subject_type_id: "8"
-  items_count: "1"
-  lock_version: "0"
-subjects_120: 
+  lock_version: "1"
+subjects_085: 
   id: "212"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:36:43
-  updated_at: 2010-03-22 22:51:24
+  updated_at: 2010-12-26 23:19:15
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_121: 
+  lock_version: "1"
+subjects_086: 
   id: "213"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:37:27
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:22:53
   subject_type_id: "8"
   items_count: "1"
-  lock_version: "0"
-subjects_122: 
-  id: "214"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-03-22 22:37:54
-  updated_at: 2010-03-22 22:52:13
-  subject_type_id: "8"
-  items_count: "0"
-  lock_version: "0"
-subjects_123: 
+  lock_version: "1"
+subjects_087: 
   id: "215"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:38:19
-  updated_at: 2010-03-22 22:52:35
+  updated_at: 2010-12-26 23:31:22
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_124: 
+  lock_version: "1"
+subjects_088: 
   id: "216"
   major: "1"
   publish: "1"
@@ -1239,47 +879,27 @@ subjects_124:
   subject_type_id: "8"
   items_count: "0"
   lock_version: "0"
-subjects_125: 
-  id: "217"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-03-22 22:39:24
-  updated_at: 2010-08-12 10:45:31
-  subject_type_id: "8"
-  items_count: "2"
-  lock_version: "0"
-subjects_126: 
+subjects_089: 
   id: "218"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:39:47
-  updated_at: 2010-03-22 22:53:43
+  updated_at: 2010-12-26 23:34:42
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_127: 
-  id: "219"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-03-22 22:40:17
-  updated_at: 2010-03-22 22:54:01
-  subject_type_id: "8"
-  items_count: "0"
-  lock_version: "0"
-subjects_128: 
+  lock_version: "1"
+subjects_090: 
   id: "220"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:40:41
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:36:31
   subject_type_id: "8"
   items_count: "6"
-  lock_version: "0"
-subjects_129: 
+  lock_version: "1"
+subjects_091: 
   id: "222"
   major: "1"
   publish: "1"
@@ -1289,7 +909,7 @@ subjects_129:
   subject_type_id: "8"
   items_count: "0"
   lock_version: "0"
-subjects_130: 
+subjects_092: 
   id: "223"
   major: "1"
   publish: "1"
@@ -1299,27 +919,27 @@ subjects_130:
   subject_type_id: "8"
   items_count: "0"
   lock_version: "0"
-subjects_131: 
+subjects_093: 
   id: "224"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:42:54
-  updated_at: 2010-03-22 22:56:12
+  updated_at: 2010-12-26 23:49:59
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_132: 
+  lock_version: "1"
+subjects_094: 
   id: "225"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-03-22 22:43:20
-  updated_at: 2010-03-22 22:56:33
+  updated_at: 2010-12-26 23:47:40
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_133: 
+  lock_version: "1"
+subjects_095: 
   id: "226"
   major: "1"
   publish: "1"
@@ -1329,57 +949,47 @@ subjects_133:
   subject_type_id: "8"
   items_count: "0"
   lock_version: "0"
-subjects_134: 
-  id: "227"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-03-22 22:44:02
-  updated_at: 2010-03-22 22:57:08
-  subject_type_id: "8"
-  items_count: "0"
-  lock_version: "0"
-subjects_135: 
+subjects_096: 
   id: "229"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-07-05 23:07:04
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:45:26
   subject_type_id: "8"
   items_count: "55"
-  lock_version: "0"
-subjects_136: 
+  lock_version: "1"
+subjects_097: 
   id: "230"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-07-05 23:24:03
-  updated_at: 2010-07-05 23:24:05
+  updated_at: 2010-12-26 23:44:18
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_137: 
+  lock_version: "1"
+subjects_098: 
   id: "231"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-07-05 23:28:27
-  updated_at: 2010-08-12 10:45:31
+  updated_at: 2010-12-26 23:53:00
   subject_type_id: "8"
   items_count: "10"
-  lock_version: "0"
-subjects_138: 
+  lock_version: "1"
+subjects_099: 
   id: "232"
   major: "1"
   publish: "1"
-  notes: 
+  notes: ""
   created_at: 2010-07-05 23:35:20
-  updated_at: 2010-07-05 23:35:23
+  updated_at: 2010-12-26 23:53:53
   subject_type_id: "8"
   items_count: "0"
-  lock_version: "0"
-subjects_139: 
+  lock_version: "1"
+subjects_100: 
   id: "233"
   major: "1"
   publish: "1"
@@ -1389,7 +999,7 @@ subjects_139:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_140: 
+subjects_101: 
   id: "234"
   major: "1"
   publish: "1"
@@ -1399,7 +1009,7 @@ subjects_140:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_141: 
+subjects_102: 
   id: "235"
   major: "1"
   publish: "1"
@@ -1409,7 +1019,7 @@ subjects_141:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_142: 
+subjects_103: 
   id: "236"
   major: "1"
   publish: "1"
@@ -1419,7 +1029,7 @@ subjects_142:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_143: 
+subjects_104: 
   id: "237"
   major: "1"
   publish: "1"
@@ -1429,7 +1039,7 @@ subjects_143:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_144: 
+subjects_105: 
   id: "238"
   major: "1"
   publish: "1"
@@ -1439,7 +1049,7 @@ subjects_144:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_145: 
+subjects_106: 
   id: "239"
   major: "1"
   publish: "1"
@@ -1449,7 +1059,7 @@ subjects_145:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_146: 
+subjects_107: 
   id: "240"
   major: "1"
   publish: "1"
@@ -1459,7 +1069,7 @@ subjects_146:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_147: 
+subjects_108: 
   id: "241"
   major: "1"
   publish: "1"
@@ -1469,7 +1079,7 @@ subjects_147:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_148: 
+subjects_109: 
   id: "242"
   major: "1"
   publish: "1"
@@ -1479,7 +1089,7 @@ subjects_148:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_149: 
+subjects_110: 
   id: "243"
   major: "1"
   publish: "1"
@@ -1489,7 +1099,7 @@ subjects_149:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_150: 
+subjects_111: 
   id: "244"
   major: "1"
   publish: "1"
@@ -1499,7 +1109,7 @@ subjects_150:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_151: 
+subjects_112: 
   id: "245"
   major: "1"
   publish: "1"
@@ -1509,7 +1119,7 @@ subjects_151:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_152: 
+subjects_113: 
   id: "246"
   major: "1"
   publish: "1"
@@ -1519,7 +1129,7 @@ subjects_152:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_153: 
+subjects_114: 
   id: "247"
   major: "1"
   publish: "1"
@@ -1529,7 +1139,7 @@ subjects_153:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_154: 
+subjects_115: 
   id: "248"
   major: "1"
   publish: "1"
@@ -1539,7 +1149,7 @@ subjects_154:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_155: 
+subjects_116: 
   id: "249"
   major: "1"
   publish: "1"
@@ -1549,17 +1159,7 @@ subjects_155:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_156: 
-  id: "250"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_157: 
+subjects_117: 
   id: "251"
   major: "1"
   publish: "1"
@@ -1569,7 +1169,7 @@ subjects_157:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_158: 
+subjects_118: 
   id: "252"
   major: "1"
   publish: "1"
@@ -1579,17 +1179,7 @@ subjects_158:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_159: 
-  id: "253"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_160: 
+subjects_119: 
   id: "254"
   major: "1"
   publish: "1"
@@ -1599,7 +1189,7 @@ subjects_160:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_161: 
+subjects_120: 
   id: "255"
   major: "1"
   publish: "1"
@@ -1609,7 +1199,7 @@ subjects_161:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_162: 
+subjects_121: 
   id: "256"
   major: "1"
   publish: "1"
@@ -1619,17 +1209,7 @@ subjects_162:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_163: 
-  id: "257"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_164: 
+subjects_122: 
   id: "258"
   major: "1"
   publish: "1"
@@ -1639,7 +1219,7 @@ subjects_164:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_165: 
+subjects_123: 
   id: "259"
   major: "1"
   publish: "1"
@@ -1649,7 +1229,7 @@ subjects_165:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_166: 
+subjects_124: 
   id: "260"
   major: "1"
   publish: "1"
@@ -1659,7 +1239,7 @@ subjects_166:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_167: 
+subjects_125: 
   id: "261"
   major: "1"
   publish: "1"
@@ -1669,7 +1249,7 @@ subjects_167:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_168: 
+subjects_126: 
   id: "262"
   major: "1"
   publish: "1"
@@ -1679,7 +1259,7 @@ subjects_168:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_169: 
+subjects_127: 
   id: "263"
   major: "1"
   publish: "1"
@@ -1689,7 +1269,7 @@ subjects_169:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_170: 
+subjects_128: 
   id: "264"
   major: "1"
   publish: "1"
@@ -1699,7 +1279,7 @@ subjects_170:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_171: 
+subjects_129: 
   id: "265"
   major: "1"
   publish: "1"
@@ -1709,7 +1289,7 @@ subjects_171:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_172: 
+subjects_130: 
   id: "266"
   major: "1"
   publish: "1"
@@ -1719,7 +1299,7 @@ subjects_172:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_173: 
+subjects_131: 
   id: "267"
   major: "1"
   publish: "1"
@@ -1729,7 +1309,7 @@ subjects_173:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_174: 
+subjects_132: 
   id: "268"
   major: "1"
   publish: "1"
@@ -1739,7 +1319,7 @@ subjects_174:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_175: 
+subjects_133: 
   id: "269"
   major: "1"
   publish: "1"
@@ -1749,7 +1329,7 @@ subjects_175:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_176: 
+subjects_134: 
   id: "270"
   major: "1"
   publish: "1"
@@ -1759,7 +1339,7 @@ subjects_176:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_177: 
+subjects_135: 
   id: "271"
   major: "1"
   publish: "1"
@@ -1769,7 +1349,7 @@ subjects_177:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_178: 
+subjects_136: 
   id: "272"
   major: "1"
   publish: "1"
@@ -1779,7 +1359,7 @@ subjects_178:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_179: 
+subjects_137: 
   id: "273"
   major: "1"
   publish: "1"
@@ -1789,17 +1369,7 @@ subjects_179:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_180: 
-  id: "274"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_181: 
+subjects_138: 
   id: "275"
   major: "1"
   publish: "1"
@@ -1809,7 +1379,7 @@ subjects_181:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_182: 
+subjects_139: 
   id: "276"
   major: "1"
   publish: "1"
@@ -1819,7 +1389,7 @@ subjects_182:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_183: 
+subjects_140: 
   id: "277"
   major: "1"
   publish: "1"
@@ -1829,7 +1399,7 @@ subjects_183:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_184: 
+subjects_141: 
   id: "278"
   major: "1"
   publish: "1"
@@ -1839,7 +1409,7 @@ subjects_184:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_185: 
+subjects_142: 
   id: "279"
   major: "1"
   publish: "1"
@@ -1849,7 +1419,7 @@ subjects_185:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_186: 
+subjects_143: 
   id: "280"
   major: "1"
   publish: "1"
@@ -1859,7 +1429,7 @@ subjects_186:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_187: 
+subjects_144: 
   id: "281"
   major: "1"
   publish: "1"
@@ -1869,7 +1439,7 @@ subjects_187:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_188: 
+subjects_145: 
   id: "282"
   major: "1"
   publish: "1"
@@ -1879,7 +1449,7 @@ subjects_188:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_189: 
+subjects_146: 
   id: "283"
   major: "1"
   publish: "1"
@@ -1889,7 +1459,7 @@ subjects_189:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_190: 
+subjects_147: 
   id: "284"
   major: "1"
   publish: "1"
@@ -1899,7 +1469,7 @@ subjects_190:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_191: 
+subjects_148: 
   id: "285"
   major: "1"
   publish: "1"
@@ -1909,7 +1479,7 @@ subjects_191:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_192: 
+subjects_149: 
   id: "286"
   major: "1"
   publish: "1"
@@ -1919,7 +1489,7 @@ subjects_192:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_193: 
+subjects_150: 
   id: "287"
   major: "1"
   publish: "1"
@@ -1929,17 +1499,7 @@ subjects_193:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_194: 
-  id: "288"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_195: 
+subjects_151: 
   id: "289"
   major: "1"
   publish: "1"
@@ -1949,7 +1509,7 @@ subjects_195:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_196: 
+subjects_152: 
   id: "290"
   major: "1"
   publish: "1"
@@ -1959,7 +1519,7 @@ subjects_196:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_197: 
+subjects_153: 
   id: "291"
   major: "1"
   publish: "1"
@@ -1969,7 +1529,7 @@ subjects_197:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_198: 
+subjects_154: 
   id: "292"
   major: "1"
   publish: "1"
@@ -1979,7 +1539,7 @@ subjects_198:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_199: 
+subjects_155: 
   id: "294"
   major: "1"
   publish: "1"
@@ -1989,7 +1549,7 @@ subjects_199:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_200: 
+subjects_156: 
   id: "295"
   major: "1"
   publish: "1"
@@ -1999,7 +1559,7 @@ subjects_200:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_201: 
+subjects_157: 
   id: "296"
   major: "1"
   publish: "1"
@@ -2009,7 +1569,7 @@ subjects_201:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_202: 
+subjects_158: 
   id: "298"
   major: "1"
   publish: "1"
@@ -2019,7 +1579,7 @@ subjects_202:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_203: 
+subjects_159: 
   id: "299"
   major: "1"
   publish: "1"
@@ -2029,17 +1589,7 @@ subjects_203:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_204: 
-  id: "300"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_205: 
+subjects_160: 
   id: "301"
   major: "1"
   publish: "1"
@@ -2049,7 +1599,7 @@ subjects_205:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_206: 
+subjects_161: 
   id: "302"
   major: "1"
   publish: "1"
@@ -2059,7 +1609,7 @@ subjects_206:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_207: 
+subjects_162: 
   id: "303"
   major: "1"
   publish: "1"
@@ -2069,7 +1619,7 @@ subjects_207:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "2"
-subjects_208: 
+subjects_163: 
   id: "304"
   major: "1"
   publish: "1"
@@ -2079,7 +1629,7 @@ subjects_208:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_209: 
+subjects_164: 
   id: "305"
   major: "1"
   publish: "1"
@@ -2089,17 +1639,7 @@ subjects_209:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_210: 
-  id: "306"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_211: 
+subjects_165: 
   id: "307"
   major: "1"
   publish: "1"
@@ -2109,17 +1649,7 @@ subjects_211:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_212: 
-  id: "308"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_213: 
+subjects_166: 
   id: "309"
   major: "1"
   publish: "1"
@@ -2129,7 +1659,7 @@ subjects_213:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_214: 
+subjects_167: 
   id: "310"
   major: "1"
   publish: "1"
@@ -2139,7 +1669,7 @@ subjects_214:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_215: 
+subjects_168: 
   id: "311"
   major: "1"
   publish: "1"
@@ -2149,7 +1679,7 @@ subjects_215:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_216: 
+subjects_169: 
   id: "312"
   major: "1"
   publish: "1"
@@ -2159,7 +1689,7 @@ subjects_216:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_217: 
+subjects_170: 
   id: "313"
   major: "1"
   publish: "1"
@@ -2169,7 +1699,7 @@ subjects_217:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_218: 
+subjects_171: 
   id: "314"
   major: "1"
   publish: "1"
@@ -2179,17 +1709,7 @@ subjects_218:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_219: 
-  id: "315"
-  major: "1"
-  publish: "1"
-  notes: 
-  created_at: 2010-12-26 03:26:58
-  updated_at: 2010-12-26 03:26:58
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_220: 
+subjects_172: 
   id: "318"
   major: "1"
   publish: "1"
@@ -2199,7 +1719,7 @@ subjects_220:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_221: 
+subjects_173: 
   id: "319"
   major: "1"
   publish: "1"
@@ -2209,7 +1729,7 @@ subjects_221:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_222: 
+subjects_174: 
   id: "320"
   major: "1"
   publish: "1"
@@ -2219,7 +1739,7 @@ subjects_222:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_223: 
+subjects_175: 
   id: "321"
   major: "1"
   publish: "1"
@@ -2229,7 +1749,7 @@ subjects_223:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_224: 
+subjects_176: 
   id: "322"
   major: "1"
   publish: "1"
@@ -2239,7 +1759,7 @@ subjects_224:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_225: 
+subjects_177: 
   id: "323"
   major: "1"
   publish: "1"
@@ -2249,17 +1769,17 @@ subjects_225:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_226: 
+subjects_178: 
   id: "324"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 17:30:04
-  updated_at: 2010-12-13 17:30:04
+  updated_at: 2010-12-28 12:30:41
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_227: 
+  lock_version: "1"
+subjects_179: 
   id: "325"
   major: "1"
   publish: "1"
@@ -2269,7 +1789,7 @@ subjects_227:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_228: 
+subjects_180: 
   id: "326"
   major: "1"
   publish: "1"
@@ -2279,7 +1799,7 @@ subjects_228:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_229: 
+subjects_181: 
   id: "327"
   major: "1"
   publish: "1"
@@ -2289,27 +1809,17 @@ subjects_229:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_230: 
+subjects_182: 
   id: "328"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 17:33:30
-  updated_at: 2010-12-13 17:33:30
+  updated_at: 2010-12-28 12:34:06
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_231: 
-  id: "329"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 17:33:54
-  updated_at: 2010-12-13 17:33:54
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_232: 
+  lock_version: "1"
+subjects_183: 
   id: "330"
   major: "1"
   publish: "1"
@@ -2319,7 +1829,7 @@ subjects_232:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "2"
-subjects_233: 
+subjects_184: 
   id: "331"
   major: "1"
   publish: "1"
@@ -2329,7 +1839,7 @@ subjects_233:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_234: 
+subjects_185: 
   id: "332"
   major: "1"
   publish: "1"
@@ -2339,17 +1849,7 @@ subjects_234:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_235: 
-  id: "333"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 17:36:54
-  updated_at: 2010-12-13 17:36:54
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_236: 
+subjects_186: 
   id: "334"
   major: "1"
   publish: "1"
@@ -2359,7 +1859,7 @@ subjects_236:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_237: 
+subjects_187: 
   id: "335"
   major: "1"
   publish: "1"
@@ -2369,7 +1869,7 @@ subjects_237:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_238: 
+subjects_188: 
   id: "336"
   major: "1"
   publish: "1"
@@ -2379,7 +1879,7 @@ subjects_238:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_239: 
+subjects_189: 
   id: "337"
   major: "1"
   publish: "1"
@@ -2389,7 +1889,7 @@ subjects_239:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_240: 
+subjects_190: 
   id: "339"
   major: "1"
   publish: "1"
@@ -2399,7 +1899,7 @@ subjects_240:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_241: 
+subjects_191: 
   id: "340"
   major: "1"
   publish: "1"
@@ -2409,7 +1909,7 @@ subjects_241:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_242: 
+subjects_192: 
   id: "341"
   major: "1"
   publish: "1"
@@ -2419,17 +1919,17 @@ subjects_242:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_243: 
+subjects_193: 
   id: "342"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 17:42:28
-  updated_at: 2010-12-13 21:20:15
+  updated_at: 2010-12-28 12:37:27
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "1"
-subjects_244: 
+  lock_version: "2"
+subjects_194: 
   id: "343"
   major: "1"
   publish: "1"
@@ -2439,7 +1939,7 @@ subjects_244:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_245: 
+subjects_195: 
   id: "344"
   major: "1"
   publish: "1"
@@ -2449,7 +1949,7 @@ subjects_245:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_246: 
+subjects_196: 
   id: "345"
   major: "1"
   publish: "1"
@@ -2459,7 +1959,7 @@ subjects_246:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_247: 
+subjects_197: 
   id: "346"
   major: "1"
   publish: "1"
@@ -2469,7 +1969,7 @@ subjects_247:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_248: 
+subjects_198: 
   id: "347"
   major: "1"
   publish: "1"
@@ -2479,17 +1979,7 @@ subjects_248:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_249: 
-  id: "348"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 17:46:18
-  updated_at: 2010-12-13 17:46:18
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_250: 
+subjects_199: 
   id: "349"
   major: "1"
   publish: "1"
@@ -2499,7 +1989,7 @@ subjects_250:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_251: 
+subjects_200: 
   id: "350"
   major: "1"
   publish: "1"
@@ -2509,7 +1999,7 @@ subjects_251:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_252: 
+subjects_201: 
   id: "351"
   major: "1"
   publish: "1"
@@ -2519,7 +2009,7 @@ subjects_252:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_253: 
+subjects_202: 
   id: "353"
   major: "1"
   publish: "1"
@@ -2529,7 +2019,7 @@ subjects_253:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_254: 
+subjects_203: 
   id: "354"
   major: "1"
   publish: "1"
@@ -2539,7 +2029,7 @@ subjects_254:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_255: 
+subjects_204: 
   id: "355"
   major: "1"
   publish: "1"
@@ -2549,7 +2039,7 @@ subjects_255:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_256: 
+subjects_205: 
   id: "356"
   major: "1"
   publish: "1"
@@ -2559,7 +2049,7 @@ subjects_256:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_257: 
+subjects_206: 
   id: "357"
   major: "1"
   publish: "1"
@@ -2569,7 +2059,7 @@ subjects_257:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_258: 
+subjects_207: 
   id: "358"
   major: "1"
   publish: "1"
@@ -2579,7 +2069,7 @@ subjects_258:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_259: 
+subjects_208: 
   id: "359"
   major: "1"
   publish: "1"
@@ -2589,17 +2079,7 @@ subjects_259:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_260: 
-  id: "360"
-  major: "0"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 17:53:53
-  updated_at: 2010-12-13 17:53:53
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_261: 
+subjects_209: 
   id: "361"
   major: "1"
   publish: "1"
@@ -2609,7 +2089,7 @@ subjects_261:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_262: 
+subjects_210: 
   id: "362"
   major: "1"
   publish: "1"
@@ -2619,17 +2099,7 @@ subjects_262:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_263: 
-  id: "363"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 17:56:12
-  updated_at: 2010-12-13 17:56:12
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_264: 
+subjects_211: 
   id: "364"
   major: "1"
   publish: "1"
@@ -2639,7 +2109,7 @@ subjects_264:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_265: 
+subjects_212: 
   id: "365"
   major: "1"
   publish: "1"
@@ -2649,7 +2119,7 @@ subjects_265:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_266: 
+subjects_213: 
   id: "366"
   major: "1"
   publish: "1"
@@ -2659,7 +2129,7 @@ subjects_266:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_267: 
+subjects_214: 
   id: "367"
   major: "1"
   publish: "1"
@@ -2669,7 +2139,7 @@ subjects_267:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_268: 
+subjects_215: 
   id: "368"
   major: "1"
   publish: "1"
@@ -2679,7 +2149,7 @@ subjects_268:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_269: 
+subjects_216: 
   id: "370"
   major: "1"
   publish: "1"
@@ -2689,7 +2159,7 @@ subjects_269:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_270: 
+subjects_217: 
   id: "371"
   major: "1"
   publish: "1"
@@ -2699,7 +2169,7 @@ subjects_270:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_271: 
+subjects_218: 
   id: "373"
   major: "1"
   publish: "1"
@@ -2709,7 +2179,7 @@ subjects_271:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_272: 
+subjects_219: 
   id: "374"
   major: "1"
   publish: "1"
@@ -2719,7 +2189,7 @@ subjects_272:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_273: 
+subjects_220: 
   id: "375"
   major: "1"
   publish: "1"
@@ -2729,7 +2199,7 @@ subjects_273:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_274: 
+subjects_221: 
   id: "376"
   major: "1"
   publish: "1"
@@ -2739,7 +2209,7 @@ subjects_274:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_275: 
+subjects_222: 
   id: "377"
   major: "1"
   publish: "1"
@@ -2749,17 +2219,7 @@ subjects_275:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_276: 
-  id: "378"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:07:47
-  updated_at: 2010-12-13 21:22:16
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_277: 
+subjects_223: 
   id: "379"
   major: "1"
   publish: "1"
@@ -2769,7 +2229,7 @@ subjects_277:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_278: 
+subjects_224: 
   id: "380"
   major: "1"
   publish: "1"
@@ -2779,7 +2239,7 @@ subjects_278:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_279: 
+subjects_225: 
   id: "381"
   major: "1"
   publish: "1"
@@ -2789,7 +2249,7 @@ subjects_279:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_280: 
+subjects_226: 
   id: "382"
   major: "1"
   publish: "1"
@@ -2799,7 +2259,7 @@ subjects_280:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_281: 
+subjects_227: 
   id: "383"
   major: "1"
   publish: "1"
@@ -2809,7 +2269,7 @@ subjects_281:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_282: 
+subjects_228: 
   id: "384"
   major: "1"
   publish: "1"
@@ -2819,7 +2279,7 @@ subjects_282:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_283: 
+subjects_229: 
   id: "385"
   major: "1"
   publish: "1"
@@ -2829,7 +2289,7 @@ subjects_283:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_284: 
+subjects_230: 
   id: "386"
   major: "1"
   publish: "1"
@@ -2839,7 +2299,7 @@ subjects_284:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_285: 
+subjects_231: 
   id: "387"
   major: "1"
   publish: "1"
@@ -2849,17 +2309,7 @@ subjects_285:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_286: 
-  id: "388"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:14:04
-  updated_at: 2010-12-13 21:24:07
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_287: 
+subjects_232: 
   id: "389"
   major: "1"
   publish: "1"
@@ -2869,7 +2319,7 @@ subjects_287:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_288: 
+subjects_233: 
   id: "390"
   major: "1"
   publish: "1"
@@ -2879,7 +2329,7 @@ subjects_288:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_289: 
+subjects_234: 
   id: "391"
   major: "1"
   publish: "1"
@@ -2889,17 +2339,7 @@ subjects_289:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_290: 
-  id: "392"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:18:52
-  updated_at: 2010-12-13 18:18:52
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_291: 
+subjects_235: 
   id: "393"
   major: "1"
   publish: "1"
@@ -2909,17 +2349,7 @@ subjects_291:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_292: 
-  id: "394"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:19:48
-  updated_at: 2010-12-13 18:19:48
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_293: 
+subjects_236: 
   id: "395"
   major: "1"
   publish: "1"
@@ -2929,17 +2359,7 @@ subjects_293:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_294: 
-  id: "396"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:21:46
-  updated_at: 2010-12-13 21:25:53
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_295: 
+subjects_237: 
   id: "397"
   major: "1"
   publish: "1"
@@ -2949,7 +2369,7 @@ subjects_295:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_296: 
+subjects_238: 
   id: "398"
   major: "1"
   publish: "1"
@@ -2959,27 +2379,7 @@ subjects_296:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_297: 
-  id: "399"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:23:28
-  updated_at: 2010-12-13 18:23:28
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_298: 
-  id: "400"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:24:00
-  updated_at: 2010-12-13 21:26:38
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_299: 
+subjects_239: 
   id: "401"
   major: "1"
   publish: "1"
@@ -2989,7 +2389,7 @@ subjects_299:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_300: 
+subjects_240: 
   id: "402"
   major: "1"
   publish: "1"
@@ -2999,7 +2399,7 @@ subjects_300:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_301: 
+subjects_241: 
   id: "403"
   major: "1"
   publish: "1"
@@ -3009,7 +2409,7 @@ subjects_301:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_302: 
+subjects_242: 
   id: "404"
   major: "1"
   publish: "1"
@@ -3019,7 +2419,7 @@ subjects_302:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_303: 
+subjects_243: 
   id: "405"
   major: "1"
   publish: "1"
@@ -3029,7 +2429,7 @@ subjects_303:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_304: 
+subjects_244: 
   id: "406"
   major: "1"
   publish: "1"
@@ -3039,7 +2439,7 @@ subjects_304:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_305: 
+subjects_245: 
   id: "407"
   major: "1"
   publish: "1"
@@ -3049,7 +2449,7 @@ subjects_305:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_306: 
+subjects_246: 
   id: "408"
   major: "1"
   publish: "1"
@@ -3059,7 +2459,7 @@ subjects_306:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_307: 
+subjects_247: 
   id: "409"
   major: "1"
   publish: "1"
@@ -3069,7 +2469,7 @@ subjects_307:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_308: 
+subjects_248: 
   id: "410"
   major: "1"
   publish: "1"
@@ -3079,37 +2479,27 @@ subjects_308:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_309: 
+subjects_249: 
   id: "411"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 18:31:28
-  updated_at: 2010-12-13 21:27:04
+  updated_at: 2010-12-28 13:14:30
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "1"
-subjects_310: 
+  lock_version: "2"
+subjects_250: 
   id: "412"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 18:32:19
-  updated_at: 2010-12-13 21:27:36
+  updated_at: 2010-12-28 13:15:16
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "1"
-subjects_311: 
-  id: "413"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:33:09
-  updated_at: 2010-12-13 21:28:04
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_312: 
+  lock_version: "2"
+subjects_251: 
   id: "414"
   major: "1"
   publish: "1"
@@ -3119,7 +2509,7 @@ subjects_312:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_313: 
+subjects_252: 
   id: "415"
   major: "1"
   publish: "1"
@@ -3129,7 +2519,7 @@ subjects_313:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_314: 
+subjects_253: 
   id: "416"
   major: "1"
   publish: "1"
@@ -3139,7 +2529,7 @@ subjects_314:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_315: 
+subjects_254: 
   id: "417"
   major: "1"
   publish: "1"
@@ -3149,7 +2539,7 @@ subjects_315:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_316: 
+subjects_255: 
   id: "418"
   major: "1"
   publish: "1"
@@ -3159,7 +2549,7 @@ subjects_316:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_317: 
+subjects_256: 
   id: "419"
   major: "1"
   publish: "1"
@@ -3169,7 +2559,7 @@ subjects_317:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_318: 
+subjects_257: 
   id: "420"
   major: "1"
   publish: "1"
@@ -3179,17 +2569,17 @@ subjects_318:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_319: 
+subjects_258: 
   id: "421"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 18:38:47
-  updated_at: 2010-12-13 18:38:47
+  updated_at: 2010-12-28 07:02:23
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_320: 
+  lock_version: "1"
+subjects_259: 
   id: "422"
   major: "1"
   publish: "1"
@@ -3199,7 +2589,7 @@ subjects_320:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_321: 
+subjects_260: 
   id: "423"
   major: "1"
   publish: "1"
@@ -3209,7 +2599,7 @@ subjects_321:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_322: 
+subjects_261: 
   id: "424"
   major: "1"
   publish: "1"
@@ -3219,7 +2609,7 @@ subjects_322:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_323: 
+subjects_262: 
   id: "425"
   major: "1"
   publish: "1"
@@ -3229,7 +2619,7 @@ subjects_323:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_324: 
+subjects_263: 
   id: "426"
   major: "1"
   publish: "1"
@@ -3239,7 +2629,7 @@ subjects_324:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_325: 
+subjects_264: 
   id: "427"
   major: "1"
   publish: "1"
@@ -3249,7 +2639,7 @@ subjects_325:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_326: 
+subjects_265: 
   id: "428"
   major: "1"
   publish: "1"
@@ -3259,7 +2649,7 @@ subjects_326:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_327: 
+subjects_266: 
   id: "429"
   major: "1"
   publish: "1"
@@ -3269,7 +2659,7 @@ subjects_327:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_328: 
+subjects_267: 
   id: "430"
   major: "1"
   publish: "1"
@@ -3279,17 +2669,7 @@ subjects_328:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_329: 
-  id: "431"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 18:46:20
-  updated_at: 2010-12-13 21:28:33
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_330: 
+subjects_268: 
   id: "432"
   major: "1"
   publish: "1"
@@ -3299,7 +2679,7 @@ subjects_330:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_331: 
+subjects_269: 
   id: "433"
   major: "1"
   publish: "1"
@@ -3309,17 +2689,17 @@ subjects_331:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_332: 
+subjects_270: 
   id: "434"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 18:49:31
-  updated_at: 2010-12-13 18:49:31
+  updated_at: 2010-12-28 13:22:50
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_333: 
+  lock_version: "1"
+subjects_271: 
   id: "435"
   major: "1"
   publish: "1"
@@ -3329,7 +2709,7 @@ subjects_333:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_334: 
+subjects_272: 
   id: "436"
   major: "1"
   publish: "1"
@@ -3339,7 +2719,7 @@ subjects_334:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_335: 
+subjects_273: 
   id: "437"
   major: "1"
   publish: "1"
@@ -3349,7 +2729,7 @@ subjects_335:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_336: 
+subjects_274: 
   id: "438"
   major: "1"
   publish: "1"
@@ -3359,7 +2739,7 @@ subjects_336:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_337: 
+subjects_275: 
   id: "439"
   major: "1"
   publish: "1"
@@ -3369,17 +2749,17 @@ subjects_337:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_338: 
+subjects_276: 
   id: "440"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 18:54:31
-  updated_at: 2010-12-13 18:54:31
+  updated_at: 2010-12-28 13:26:05
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_339: 
+  lock_version: "1"
+subjects_277: 
   id: "441"
   major: "1"
   publish: "1"
@@ -3389,7 +2769,7 @@ subjects_339:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_340: 
+subjects_278: 
   id: "442"
   major: "1"
   publish: "1"
@@ -3399,7 +2779,7 @@ subjects_340:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_341: 
+subjects_279: 
   id: "443"
   major: "1"
   publish: "1"
@@ -3409,7 +2789,7 @@ subjects_341:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_342: 
+subjects_280: 
   id: "444"
   major: "1"
   publish: "1"
@@ -3419,7 +2799,7 @@ subjects_342:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_343: 
+subjects_281: 
   id: "445"
   major: "1"
   publish: "1"
@@ -3429,7 +2809,7 @@ subjects_343:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_344: 
+subjects_282: 
   id: "447"
   major: "1"
   publish: "1"
@@ -3439,7 +2819,7 @@ subjects_344:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_345: 
+subjects_283: 
   id: "448"
   major: "1"
   publish: "1"
@@ -3449,7 +2829,7 @@ subjects_345:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_346: 
+subjects_284: 
   id: "449"
   major: "1"
   publish: "1"
@@ -3459,7 +2839,7 @@ subjects_346:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_347: 
+subjects_285: 
   id: "450"
   major: "1"
   publish: "1"
@@ -3469,7 +2849,7 @@ subjects_347:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_348: 
+subjects_286: 
   id: "451"
   major: "1"
   publish: "1"
@@ -3479,17 +2859,7 @@ subjects_348:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_349: 
-  id: "452"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 19:08:42
-  updated_at: 2010-12-13 19:08:42
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_350: 
+subjects_287: 
   id: "453"
   major: "1"
   publish: "1"
@@ -3499,7 +2869,7 @@ subjects_350:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_351: 
+subjects_288: 
   id: "454"
   major: "1"
   publish: "1"
@@ -3509,7 +2879,7 @@ subjects_351:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_352: 
+subjects_289: 
   id: "455"
   major: "1"
   publish: "1"
@@ -3519,7 +2889,7 @@ subjects_352:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_353: 
+subjects_290: 
   id: "456"
   major: "1"
   publish: "1"
@@ -3529,17 +2899,7 @@ subjects_353:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_354: 
-  id: "457"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 19:12:52
-  updated_at: 2010-12-13 21:30:15
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_355: 
+subjects_291: 
   id: "458"
   major: "1"
   publish: "1"
@@ -3549,17 +2909,7 @@ subjects_355:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_356: 
-  id: "459"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 19:13:49
-  updated_at: 2010-12-13 19:13:49
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_357: 
+subjects_292: 
   id: "460"
   major: "1"
   publish: "1"
@@ -3569,7 +2919,7 @@ subjects_357:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_358: 
+subjects_293: 
   id: "461"
   major: "1"
   publish: "1"
@@ -3579,7 +2929,7 @@ subjects_358:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_359: 
+subjects_294: 
   id: "462"
   major: "1"
   publish: "1"
@@ -3589,17 +2939,17 @@ subjects_359:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_360: 
+subjects_295: 
   id: "463"
   major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-13 19:15:55
-  updated_at: 2010-12-13 19:15:55
+  updated_at: 2010-12-29 08:01:02
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_361: 
+  lock_version: "1"
+subjects_296: 
   id: "464"
   major: "1"
   publish: "1"
@@ -3609,7 +2959,7 @@ subjects_361:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_362: 
+subjects_297: 
   id: "465"
   major: "1"
   publish: "1"
@@ -3619,7 +2969,7 @@ subjects_362:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_363: 
+subjects_298: 
   id: "467"
   major: "1"
   publish: "1"
@@ -3629,7 +2979,7 @@ subjects_363:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_364: 
+subjects_299: 
   id: "468"
   major: "1"
   publish: "1"
@@ -3639,7 +2989,7 @@ subjects_364:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_365: 
+subjects_300: 
   id: "469"
   major: "1"
   publish: "1"
@@ -3649,7 +2999,7 @@ subjects_365:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_366: 
+subjects_301: 
   id: "470"
   major: "1"
   publish: "1"
@@ -3659,7 +3009,7 @@ subjects_366:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_367: 
+subjects_302: 
   id: "471"
   major: "1"
   publish: "1"
@@ -3669,7 +3019,7 @@ subjects_367:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_368: 
+subjects_303: 
   id: "472"
   major: "1"
   publish: "1"
@@ -3679,7 +3029,7 @@ subjects_368:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_369: 
+subjects_304: 
   id: "473"
   major: "1"
   publish: "1"
@@ -3689,7 +3039,7 @@ subjects_369:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_370: 
+subjects_305: 
   id: "474"
   major: "1"
   publish: "1"
@@ -3699,7 +3049,7 @@ subjects_370:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_371: 
+subjects_306: 
   id: "475"
   major: "1"
   publish: "1"
@@ -3709,7 +3059,7 @@ subjects_371:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_372: 
+subjects_307: 
   id: "476"
   major: "1"
   publish: "1"
@@ -3719,7 +3069,7 @@ subjects_372:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_373: 
+subjects_308: 
   id: "477"
   major: "1"
   publish: "1"
@@ -3729,7 +3079,7 @@ subjects_373:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_374: 
+subjects_309: 
   id: "478"
   major: "1"
   publish: "1"
@@ -3739,37 +3089,7 @@ subjects_374:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_375: 
-  id: "479"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:03:27
-  updated_at: 2010-12-13 21:11:29
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_376: 
-  id: "480"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:04:12
-  updated_at: 2010-12-13 21:11:47
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_377: 
-  id: "481"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:04:54
-  updated_at: 2010-12-13 21:12:03
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_378: 
+subjects_310: 
   id: "483"
   major: "1"
   publish: "1"
@@ -3779,7 +3099,7 @@ subjects_378:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_379: 
+subjects_311: 
   id: "484"
   major: "1"
   publish: "1"
@@ -3789,7 +3109,7 @@ subjects_379:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_380: 
+subjects_312: 
   id: "485"
   major: "1"
   publish: "1"
@@ -3799,7 +3119,7 @@ subjects_380:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_381: 
+subjects_313: 
   id: "486"
   major: "1"
   publish: "1"
@@ -3809,17 +3129,7 @@ subjects_381:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_382: 
-  id: "487"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:08:47
-  updated_at: 2010-12-13 21:12:28
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_383: 
+subjects_314: 
   id: "488"
   major: "1"
   publish: "1"
@@ -3829,7 +3139,7 @@ subjects_383:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_384: 
+subjects_315: 
   id: "489"
   major: "1"
   publish: "1"
@@ -3839,37 +3149,7 @@ subjects_384:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_385: 
-  id: "490"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:10:41
-  updated_at: 2010-12-13 20:10:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_386: 
-  id: "491"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:12:28
-  updated_at: 2010-12-13 20:12:28
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_387: 
-  id: "492"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:13:25
-  updated_at: 2010-12-13 21:12:53
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_388: 
+subjects_316: 
   id: "493"
   major: "1"
   publish: "1"
@@ -3879,17 +3159,7 @@ subjects_388:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_389: 
-  id: "494"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:14:22
-  updated_at: 2010-12-13 20:14:22
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_390: 
+subjects_317: 
   id: "495"
   major: "1"
   publish: "1"
@@ -3899,17 +3169,7 @@ subjects_390:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_391: 
-  id: "496"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:15:40
-  updated_at: 2010-12-13 21:13:15
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_392: 
+subjects_318: 
   id: "497"
   major: "1"
   publish: "1"
@@ -3919,7 +3179,7 @@ subjects_392:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_393: 
+subjects_319: 
   id: "499"
   major: "1"
   publish: "1"
@@ -3929,17 +3189,7 @@ subjects_393:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_394: 
-  id: "500"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:17:53
-  updated_at: 2010-12-13 21:13:42
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_395: 
+subjects_320: 
   id: "501"
   major: "1"
   publish: "1"
@@ -3949,7 +3199,7 @@ subjects_395:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_396: 
+subjects_321: 
   id: "502"
   major: "1"
   publish: "1"
@@ -3959,7 +3209,7 @@ subjects_396:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_397: 
+subjects_322: 
   id: "504"
   major: "1"
   publish: "1"
@@ -3969,7 +3219,7 @@ subjects_397:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_398: 
+subjects_323: 
   id: "505"
   major: "1"
   publish: "1"
@@ -3979,47 +3229,7 @@ subjects_398:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_399: 
-  id: "506"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:21:08
-  updated_at: 2010-12-13 20:21:08
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_400: 
-  id: "507"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:21:49
-  updated_at: 2010-12-13 21:15:16
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_401: 
-  id: "508"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:22:29
-  updated_at: 2010-12-13 21:17:52
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_402: 
-  id: "509"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:22:53
-  updated_at: 2010-12-13 20:22:53
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_403: 
+subjects_324: 
   id: "510"
   major: "1"
   publish: "1"
@@ -4029,27 +3239,7 @@ subjects_403:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_404: 
-  id: "511"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:24:01
-  updated_at: 2010-12-13 21:17:15
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "1"
-subjects_405: 
-  id: "512"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:24:37
-  updated_at: 2010-12-13 20:24:37
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_406: 
+subjects_325: 
   id: "513"
   major: "1"
   publish: "1"
@@ -4059,7 +3249,7 @@ subjects_406:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_407: 
+subjects_326: 
   id: "514"
   major: "1"
   publish: "1"
@@ -4069,7 +3259,7 @@ subjects_407:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_408: 
+subjects_327: 
   id: "515"
   major: "1"
   publish: "1"
@@ -4079,7 +3269,7 @@ subjects_408:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_409: 
+subjects_328: 
   id: "516"
   major: "1"
   publish: "1"
@@ -4089,17 +3279,7 @@ subjects_409:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_410: 
-  id: "517"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:26:48
-  updated_at: 2010-12-13 20:26:48
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_411: 
+subjects_329: 
   id: "518"
   major: "1"
   publish: "1"
@@ -4109,17 +3289,7 @@ subjects_411:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_412: 
-  id: "519"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:27:46
-  updated_at: 2010-12-13 20:27:46
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_413: 
+subjects_330: 
   id: "520"
   major: "1"
   publish: "1"
@@ -4129,17 +3299,7 @@ subjects_413:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_414: 
-  id: "521"
-  major: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-13 20:28:41
-  updated_at: 2010-12-13 20:28:41
-  subject_type_id: "7"
-  items_count: "0"
-  lock_version: "0"
-subjects_415: 
+subjects_331: 
   id: "522"
   major: "1"
   publish: "1"
@@ -4149,7 +3309,7 @@ subjects_415:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "1"
-subjects_416: 
+subjects_332: 
   id: "523"
   major: "1"
   publish: "1"
@@ -4159,7 +3319,7 @@ subjects_416:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_417: 
+subjects_333: 
   id: "524"
   major: "1"
   publish: "1"
@@ -4169,17 +3329,17 @@ subjects_417:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_418: 
+subjects_334: 
   id: "525"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-16 16:40:56
-  updated_at: 2010-12-16 16:40:56
+  updated_at: 2010-12-28 13:09:03
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_419: 
+  lock_version: "1"
+subjects_335: 
   id: "526"
   major: "1"
   publish: "1"
@@ -4189,7 +3349,7 @@ subjects_419:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_420: 
+subjects_336: 
   id: "527"
   major: "1"
   publish: "1"
@@ -4199,73 +3359,183 @@ subjects_420:
   subject_type_id: "7"
   items_count: "0"
   lock_version: "0"
-subjects_421: 
+subjects_337: 
   id: "528"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-22 06:00:55
-  updated_at: 2010-12-22 06:00:55
+  updated_at: 2010-12-28 12:38:48
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_422: 
+  lock_version: "1"
+subjects_338: 
   id: "529"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-24 05:03:33
-  updated_at: 2010-12-24 05:03:33
+  updated_at: 2010-12-28 11:23:24
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_423: 
+  lock_version: "1"
+subjects_339: 
   id: "530"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-24 07:50:55
-  updated_at: 2010-12-24 07:50:55
+  updated_at: 2010-12-28 12:06:57
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_424: 
+  lock_version: "1"
+subjects_340: 
   id: "531"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-24 23:03:23
-  updated_at: 2010-12-24 23:03:23
+  updated_at: 2010-12-28 12:35:35
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_425: 
+  lock_version: "1"
+subjects_341: 
   id: "532"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-25 03:38:28
-  updated_at: 2010-12-25 03:38:28
+  updated_at: 2010-12-28 11:42:00
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_426: 
+  lock_version: "1"
+subjects_342: 
   id: "533"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-25 04:24:26
-  updated_at: 2010-12-25 04:24:26
+  updated_at: 2010-12-28 10:43:44
   subject_type_id: "7"
   items_count: "0"
-  lock_version: "0"
-subjects_427: 
+  lock_version: "1"
+subjects_343: 
   id: "534"
-  major: "0"
+  major: "1"
   publish: "1"
   notes: ""
   created_at: 2010-12-26 01:32:17
-  updated_at: 2010-12-26 01:32:17
+  updated_at: 2010-12-28 13:23:35
   subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_344: 
+  id: "535"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-26 23:54:37
+  updated_at: 2010-12-28 13:41:10
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_345: 
+  id: "536"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-26 23:55:04
+  updated_at: 2010-12-28 13:40:20
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_346: 
+  id: "537"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-27 01:50:07
+  updated_at: 2010-12-27 01:50:07
+  subject_type_id: "8"
+  items_count: "0"
+  lock_version: "0"
+subjects_347: 
+  id: "538"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-27 01:50:42
+  updated_at: 2010-12-27 01:50:42
+  subject_type_id: "8"
+  items_count: "0"
+  lock_version: "0"
+subjects_348: 
+  id: "539"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-27 11:37:22
+  updated_at: 2010-12-28 10:35:19
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "1"
+subjects_349: 
+  id: "540"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-28 01:04:55
+  updated_at: 2010-12-28 01:04:55
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "0"
+subjects_350: 
+  id: "541"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-28 08:22:33
+  updated_at: 2010-12-28 08:22:33
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "0"
+subjects_351: 
+  id: "542"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-29 06:14:20
+  updated_at: 2010-12-29 06:14:20
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "0"
+subjects_352: 
+  id: "543"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-29 06:28:21
+  updated_at: 2010-12-29 06:28:21
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "0"
+subjects_353: 
+  id: "544"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-29 07:02:57
+  updated_at: 2010-12-29 07:02:57
+  subject_type_id: "7"
+  items_count: "0"
+  lock_version: "0"
+subjects_354: 
+  id: "545"
+  major: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2010-12-30 08:10:09
+  updated_at: 2010-12-30 08:10:09
+  subject_type_id: "8"
   items_count: "0"
   lock_version: "0"

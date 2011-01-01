@@ -475,3 +475,115 @@ place_translations_068:
   name: "\xD8\xAE\xD8\xB1\xD9\x85 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
   created_at: 2010-12-25 02:48:19
   updated_at: 2010-12-25 02:48:19
+place_translations_069: 
+  id: "69"
+  place_id: "35"
+  locale: en
+  name: Kirind
+  created_at: 2010-12-28 06:09:53
+  updated_at: 2010-12-28 06:09:53
+place_translations_070: 
+  id: "70"
+  place_id: "35"
+  locale: fa
+  name: "\xDA\xA9\xD8\xB1\xD9\x86\xD8\xAF"
+  created_at: 2010-12-28 06:09:53
+  updated_at: 2010-12-28 06:09:53
+place_translations_071: 
+  id: "71"
+  place_id: "36"
+  locale: en
+  name: Berlin
+  created_at: 2010-12-29 08:20:44
+  updated_at: 2010-12-29 08:20:44
+place_translations_072: 
+  id: "72"
+  place_id: "36"
+  locale: fa
+  name: "\xD8\xA8\xD8\xB1\xD9\x84\xDB\x8C\xD9\x86"
+  created_at: 2010-12-29 08:20:44
+  updated_at: 2010-12-29 08:20:44
+place_translations_073: 
+  id: "73"
+  place_id: "37"
+  locale: en
+  name: Afghanistan
+  created_at: 2010-12-29 09:32:13
+  updated_at: 2010-12-29 09:32:13
+place_translations_074: 
+  id: "74"
+  place_id: "37"
+  locale: fa
+  name: "\xD8\xA7\xD9\x81\xD8\xBA\xD8\xA7\xD9\x86\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86"
+  created_at: 2010-12-29 09:32:13
+  updated_at: 2010-12-29 09:32:13
+place_translations_075: 
+  id: "75"
+  place_id: "38"
+  locale: en
+  name: Kirman
+  created_at: 2010-12-29 09:58:18
+  updated_at: 2010-12-29 09:58:18
+place_translations_076: 
+  id: "76"
+  place_id: "38"
+  locale: fa
+  name: "\xDA\xA9\xD8\xB1\xD9\x85\xD8\xA7\xD9\x86"
+  created_at: 2010-12-29 09:58:18
+  updated_at: 2010-12-29 09:58:18
+place_translations_077: 
+  id: "77"
+  place_id: "39"
+  locale: en
+  name: Qulhak
+  created_at: 2010-12-30 05:28:00
+  updated_at: 2010-12-30 05:28:00
+place_translations_078: 
+  id: "78"
+  place_id: "39"
+  locale: fa
+  name: "\xD9\x82\xD9\x84\xD9\x87\xDA\xA9"
+  created_at: 2010-12-30 05:28:00
+  updated_at: 2010-12-30 05:28:00
+place_translations_079: 
+  id: "79"
+  place_id: "40"
+  locale: en
+  name: Shiraz
+  created_at: 2010-12-30 06:30:49
+  updated_at: 2010-12-30 06:30:49
+place_translations_080: 
+  id: "80"
+  place_id: "40"
+  locale: fa
+  name: "\xD8\xB4\xDB\x8C\xD8\xB1\xD8\xA7\xD8\xB2"
+  created_at: 2010-12-30 06:30:49
+  updated_at: 2010-12-30 06:30:49
+place_translations_081: 
+  id: "81"
+  place_id: "41"
+  locale: en
+  name: United States
+  created_at: 2010-12-30 07:06:41
+  updated_at: 2010-12-30 07:06:41
+place_translations_082: 
+  id: "82"
+  place_id: "41"
+  locale: fa
+  name: "\xD8\xA7\xDB\x8C\xD8\xA7\xD9\x84\xD8\xA7\xD8\xAA \xD9\x85\xD8\xAA\xD8\xAD\xD8\xAF\xD9\x87 \xD8\xA2\xD9\x85\xD8\xB1\xDB\x8C\xDA\xA9\xD8\xA7"
+  created_at: 2010-12-30 07:06:41
+  updated_at: 2010-12-30 07:06:41
+place_translations_083: 
+  id: "83"
+  place_id: "42"
+  locale: en
+  name: London
+  created_at: 2010-12-30 07:20:56
+  updated_at: 2010-12-30 07:20:56
+place_translations_084: 
+  id: "84"
+  place_id: "42"
+  locale: fa
+  name: "\xD9\x84\xD9\x86\xD8\xAF\xD9\x86"
+  created_at: 2010-12-30 07:20:56
+  updated_at: 2010-12-30 07:20:56
