@@ -71,14 +71,25 @@ Feature: 	An archive landing page that orients the user to the many ways to view
 				When I go to the archive page
 				  And I follow "Recent Additions"
 				Then I should see "Search Filters"
-			@dev	
+
 			Scenario: show staff favorites
-			Given I speak English
-				And I have items
-				And I have collections
-				And I have subject types
-				And I have periods
-				And I have activities
-			When I go to the archive page
-			  And I follow "Staff Favorites"
-			Then I should see "Search Filters"
+  			Given I speak English
+  				And I have items
+  				And I have collections
+  				And I have subject types
+  				And I have periods
+  				And I have activities
+  			When I go to the archive page
+  			  And I follow "Staff Favorites"
+  			Then I should see "Search Filters"
+@dev  			
+      Scenario: show my archive selections
+        Given I speak English
+          And I have items
+          And I have collections
+          And I have subject types
+          And I have periods
+          And I have activities
+        When I go to the archive page
+          And I follow "My Archive"
+        Then I should see "Search Filters"

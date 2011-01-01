@@ -49,6 +49,7 @@ class ArchiveController < ApplicationController
     @most_popular_filter = params[:most_popular_filter]
     @recent_additions_filter = params[:recent_additions_filter]
     @staff_favorites_filter = params[:staff_favorites_filter]
+    @my_archive_filter = params[:my_archive] == 'true' ? my_archive_from_cookie : nil
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -78,6 +79,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
+    @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -445,6 +447,16 @@ class ArchiveController < ApplicationController
     else 'item_translations.locale, item_translations.title'
     end
     return additional_sort
+  end
+  
+  def build_my_archive_query(filter_value, query_hash)
+    query_hash[:conditions] << "items.id IN (:my_archive_ids)"
+    query_hash[:parameters][:my_archive_ids] = filter_value.sort
+    return query_hash
+  end
+  
+  def my_archive_from_cookie
+    return [2, 3, 4, 5]
   end
 
 end

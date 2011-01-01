@@ -27,17 +27,17 @@ people_002:
   lock_version: "2"
 people_003: 
   id: "3"
-  loc_name: "M\xC4\xABrz\xC4\x81 Zayn al-\xCA\xBB\xC4\x80bid\xC4\xABn Alburz Mu\xCA\xBCtaman al-Sul\xE1\xB9\xAD\xC4\x81n"
+  loc_name: "Mu\xCA\xBCtaman, Zayn al-\xCA\xBBA\xCC\x84bidi\xCC\x84n"
   major: "0"
   dob: "0"
   dod: "0"
-  notes: "Original Collection: Dowlatshahi "
+  notes: ""
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-11 04:56:38
+  updated_at: 2010-12-27 05:54:28
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "1"
+  lock_version: "2"
 people_004: 
   id: "4"
   loc_name: "Anv\xC4\x81r al-Mul\xC5\xABk"
@@ -59,11 +59,11 @@ people_005:
   dod: "0"
   notes: "Original Collection: Dowlatshahi "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-11 05:04:00
+  updated_at: 2010-12-31 01:18:57
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "1"
+  lock_version: "2"
 people_006: 
   id: "6"
   loc_name: "Bad\xC4\xAB\xCA\xBB al-Zam\xC4\x81n Dawlatsh\xC4\x81h\xC4\xAB"
@@ -85,11 +85,11 @@ people_007:
   dod: "0"
   notes: "Original Collection: Dowlatshahi "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-11 05:07:24
+  updated_at: 2010-12-31 01:19:15
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "1"
+  lock_version: "3"
 people_008: 
   id: "8"
   loc_name: "Mu\xE1\xB8\xA5ammad \xE1\xB8\xA4usayn M\xC4\xABrz\xC4\x81 Mu\xCA\xBCayyid al-Dawlah"
@@ -898,17 +898,17 @@ people_069:
   lock_version: "0"
 people_070: 
   id: "72"
-  loc_name: "\xCA\xBBAbd al-\xCA\xBBAl\xC4\xAB Mirz\xC4\x81 "
+  loc_name: "\xCA\xBBAbd al-Majid Mirz\xC4\x81 "
   major: "0"
   dob: "0"
   dod: "0"
   notes: "Original Collection: Mozaffari Mirza Muhammad Khan (?), paternal uncle? "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-08-23 02:13:55
+  updated_at: 2010-12-27 08:45:44
   country: 
   publish: "0"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 people_071: 
   id: "73"
   loc_name: "Shuk\xC5\xABh al-Dawlah"
@@ -1002,17 +1002,17 @@ people_077:
   lock_version: "0"
 people_078: 
   id: "81"
-  loc_name: "\xCA\xBBAbd al-Am\xC4\xABr"
+  loc_name: "\xCA\xBBAbd al-Am\xC4\xABr M\xC4\xABrza"
   major: "0"
   dob: "0"
   dod: "0"
   notes: "Original Collection: Mozaffari "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-08-23 02:13:55
+  updated_at: 2010-12-27 08:50:04
   country: 
   publish: "0"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 people_079: 
   id: "82"
   loc_name: "Mah\xC4\xABn al-Sal\xE1\xB9\xADanah"
@@ -1086,11 +1086,11 @@ people_084:
   dod: "0"
   notes: "Original Collection: Mozaffari "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-14 15:40:14
+  updated_at: 2010-12-27 08:25:04
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "1"
+  lock_version: "2"
 people_085: 
   id: "88"
   loc_name: "Mah\xC4\xABn al-Dawlah"
@@ -1385,11 +1385,11 @@ people_107:
   dod: "0"
   notes: "Original Collection: Sanati "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-08-23 02:13:55
+  updated_at: 2010-12-29 07:45:45
   country: 
   publish: "0"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 people_108: 
   id: "111"
   loc_name: "Fur\xC5\xABgh Shah\xC4\x81b Dawlat\xCA\xB9\xC4\x81b\xC4\x81d\xC4\xAB"
@@ -1632,11 +1632,11 @@ people_126:
   dod: "0"
   notes: "Collection: Zamandar "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-14 16:06:08
+  updated_at: 2010-12-27 11:03:34
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "2"
+  lock_version: "3"
 people_127: 
   id: "132"
   loc_name: "Malikah Jah\xC4\x81n"
@@ -1827,11 +1827,11 @@ people_141:
   dod: "0"
   notes: "Original Collection: Zamandar "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-08-23 02:13:55
+  updated_at: 2010-12-27 11:07:14
   country: 
   publish: "0"
   items_count: "0"
-  lock_version: "0"
+  lock_version: "1"
 people_142: 
   id: "147"
   loc_name: "\xC4\xAAr\xC4\x81ndukht"
@@ -1905,11 +1905,11 @@ people_147:
   dod: "0"
   notes: "Original Collection: Zamandar "
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-14 16:53:51
+  updated_at: 2010-12-28 13:51:14
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "1"
+  lock_version: "2"
 people_148: 
   id: "154"
   loc_name: "\xE1\xB8\xA4am\xC4\xABd Q\xC4\x81j\xC4\x81r"
@@ -1983,11 +1983,11 @@ people_153:
   dod: "0"
   notes: wife of Malik Mansur Mirza Shu'a Saltanah
   created_at: 2010-03-24 12:00:00
-  updated_at: 2010-12-14 15:42:50
+  updated_at: 2010-12-27 11:03:58
   country: 
   publish: "1"
   items_count: "0"
-  lock_version: "2"
+  lock_version: "3"
 people_154: 
   id: "160"
   loc_name: "G\xC4\xABt\xC4\xAB Afr\xC5\xABz Kh\xC4\x81num"
@@ -2256,11 +2256,11 @@ people_174:
   dod: 
   notes: ""
   created_at: 
-  updated_at: 2010-12-21 05:57:22
+  updated_at: 2010-12-31 01:20:56
   country: 
   publish: "1"
   items_count: "2"
-  lock_version: "4"
+  lock_version: "5"
 people_175: 
   id: "185"
   loc_name: Muftakhar al-Dawlah
@@ -2548,19 +2548,6 @@ people_196:
   items_count: "1"
   lock_version: "2"
 people_197: 
-  id: "222"
-  loc_name: "Atabak A\xCA\xBEzam Amin al-Sultan"
-  major: "1"
-  dob: 
-  dod: 
-  notes: ""
-  created_at: 
-  updated_at: 2010-12-26 09:03:00
-  country: 
-  publish: "1"
-  items_count: "1"
-  lock_version: "1"
-people_198: 
   id: "225"
   loc_name: "Bish\xC4\x81rat Kh\xC4\x81num"
   major: "0"
@@ -2573,7 +2560,7 @@ people_198:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_199: 
+people_198: 
   id: "227"
   loc_name: "F\xC4\x81\xE1\xB9\xADimah Baygum Kh\xC4\x81num"
   major: "0"
@@ -2586,7 +2573,7 @@ people_199:
   publish: "1"
   items_count: "2"
   lock_version: "2"
-people_200: 
+people_199: 
   id: "229"
   loc_name: Gul Andam
   major: "0"
@@ -2599,7 +2586,7 @@ people_200:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_201: 
+people_200: 
   id: "232"
   loc_name: "\xE1\xB8\xA4\xC4\x81j Sayy\xC4\xABd \xCA\xBBAl\xC4\xAB Akbar"
   major: "0"
@@ -2612,7 +2599,7 @@ people_201:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_202: 
+people_201: 
   id: "234"
   loc_name: "Jaha\xCC\x84n A\xCC\x84ra\xCC\x84 \xE1\xB8\xA4\xC4\x81j\xC4\xAByah Kh\xC4\x81num"
   major: "0"
@@ -2625,7 +2612,7 @@ people_202:
   publish: "1"
   items_count: "7"
   lock_version: "2"
-people_203: 
+people_202: 
   id: "235"
   loc_name: "Hajj\xC4\xAB Mu\xE1\xB8\xA5ammad Qa\xCC\x84sim Ta\xCC\x84jir Hirav\xC4\xAB"
   major: "0"
@@ -2638,7 +2625,7 @@ people_203:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_204: 
+people_203: 
   id: "236"
   loc_name: "\xE1\xB8\xA4asan Dur\xC5\xABd\xC4\xAB"
   major: "0"
@@ -2651,7 +2638,7 @@ people_204:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_205: 
+people_204: 
   id: "240"
   loc_name: "Khad\xC4\xABjah Kh\xC4\x81num"
   major: "0"
@@ -2667,7 +2654,7 @@ people_205:
   publish: "1"
   items_count: "1"
   lock_version: "4"
-people_206: 
+people_205: 
   id: "241"
   loc_name: "Kh\xC4\x81num J\xC4\x81n "
   major: "0"
@@ -2680,7 +2667,7 @@ people_206:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_207: 
+people_206: 
   id: "242"
   loc_name: "Kh\xC4\x81num Kh\xC4\x81numh\xC4\x81"
   major: "0"
@@ -2693,7 +2680,7 @@ people_207:
   publish: "1"
   items_count: "2"
   lock_version: "2"
-people_208: 
+people_207: 
   id: "243"
   loc_name: "Ma\xCC\x84h Jaha\xCC\x84n Kha\xCC\x84num"
   major: "0"
@@ -2706,7 +2693,7 @@ people_208:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_209: 
+people_208: 
   id: "244"
   loc_name: Manijah Safdari Qajar
   major: "1"
@@ -2719,7 +2706,7 @@ people_209:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_210: 
+people_209: 
   id: "247"
   loc_name: "M\xC4\xABr Sayy\xC4\xABd \xCA\xBBAl\xC4\xAB Kh\xC4\x81n Shaykh al-Isl\xC4\x81m\xC4\xAB"
   major: "0"
@@ -2732,7 +2719,7 @@ people_210:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_211: 
+people_210: 
   id: "249"
   loc_name: Mirza Hasan Durudi
   major: "0"
@@ -2745,7 +2732,7 @@ people_211:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_212: 
+people_211: 
   id: "250"
   loc_name: "M\xC4\xABrz\xC4\x81 \xE1\xB8\xA4asan Kh\xC4\x81n \xE1\xB8\xA4ak\xC4\xABm B\xC4\x81sh\xC4\xAB"
   major: "0"
@@ -2758,7 +2745,7 @@ people_212:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_213: 
+people_212: 
   id: "252"
   loc_name: "M\xC4\xABrz\xC4\x81 Mahd\xC4\xAB Kh\xC4\x81n"
   major: "0"
@@ -2771,7 +2758,7 @@ people_213:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_214: 
+people_213: 
   id: "253"
   loc_name: Mirza Qavam
   major: "1"
@@ -2784,7 +2771,7 @@ people_214:
   publish: "1"
   items_count: "1"
   lock_version: "1"
-people_215: 
+people_214: 
   id: "254"
   loc_name: "Mu\xCA\xBBa\xCC\x84vin al-Mulk"
   major: "0"
@@ -2797,7 +2784,7 @@ people_215:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_216: 
+people_215: 
   id: "255"
   loc_name: "Mu\xCA\xBBtamad al-Mulk"
   major: "0"
@@ -2810,7 +2797,7 @@ people_216:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_217: 
+people_216: 
   id: "256"
   loc_name: Muchul Khanum
   major: "0"
@@ -2823,7 +2810,7 @@ people_217:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_218: 
+people_217: 
   id: "259"
   loc_name: Mutamid al-Sultan
   major: "1"
@@ -2836,7 +2823,7 @@ people_218:
   publish: "1"
   items_count: "1"
   lock_version: "1"
-people_219: 
+people_218: 
   id: "261"
   loc_name: "Mu\xE1\xBA\x93affar al-Sal\xE1\xB9\xADanah Am\xC4\xABr T\xC5\xABm\xC4\x81n"
   major: "0"
@@ -2849,7 +2836,7 @@ people_219:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_220: 
+people_219: 
   id: "263"
   loc_name: "N\xC5\xABsh\xC4\xAB Kh\xC4\x81num Shaykh al-Isl\xC4\x81m\xC4\xAB"
   major: "0"
@@ -2862,7 +2849,7 @@ people_220:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_221: 
+people_220: 
   id: "266"
   loc_name: "Rukhs\xC4\x81rah Kh\xC4\x81num"
   major: "0"
@@ -2875,7 +2862,7 @@ people_221:
   publish: "1"
   items_count: "13"
   lock_version: "2"
-people_222: 
+people_221: 
   id: "270"
   loc_name: "Sa\xCC\x84la\xCC\x84r Mans\xCC\xA3u\xCC\x84r"
   major: "0"
@@ -2888,7 +2875,7 @@ people_222:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_223: 
+people_222: 
   id: "271"
   loc_name: Sayf al-Islam
   major: "1"
@@ -2901,7 +2888,7 @@ people_223:
   publish: "1"
   items_count: "1"
   lock_version: "1"
-people_224: 
+people_223: 
   id: "272"
   loc_name: "Sayy\xC4\xABd Jam\xC4\x81l al-D\xC4\xABn Mujtahid"
   major: "0"
@@ -2914,7 +2901,7 @@ people_224:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_225: 
+people_224: 
   id: "273"
   loc_name: "Sa\xE2\x80\x98d al-Sal\xE1\xB9\xADanah"
   major: "0"
@@ -2927,7 +2914,7 @@ people_225:
   publish: "1"
   items_count: "1"
   lock_version: "3"
-people_226: 
+people_225: 
   id: "274"
   loc_name: "Sh\xC4\x81h J\xC4\x81n"
   major: "0"
@@ -2940,7 +2927,7 @@ people_226:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_227: 
+people_226: 
   id: "276"
   loc_name: "Shawkat Kh\xC4\x81num Ashraf al-Sal\xE1\xB9\xADanah"
   major: "0"
@@ -2953,7 +2940,7 @@ people_227:
   publish: "1"
   items_count: "1"
   lock_version: "2"
-people_228: 
+people_227: 
   id: "277"
   loc_name: "S\xCC\xA3adi\xCC\x84qah Kh\xC4\x81num"
   major: "0"
@@ -2966,7 +2953,7 @@ people_228:
   publish: "1"
   items_count: "5"
   lock_version: "3"
-people_229: 
+people_228: 
   id: "278"
   loc_name: "T\xC4\x81j Kh\xC4\x81num"
   major: "0"
@@ -2979,7 +2966,7 @@ people_229:
   publish: "1"
   items_count: "1"
   lock_version: "4"
-people_230: 
+people_229: 
   id: "280"
   loc_name: "Zahr\xC4\x81 Kh\xC4\x81num"
   major: "0"
@@ -2992,7 +2979,7 @@ people_230:
   publish: "1"
   items_count: "3"
   lock_version: "3"
-people_231: 
+people_230: 
   id: "283"
   loc_name: "\xCA\xBBIshrat al-Mul\xC5\xABk Kh\xC4\x81num"
   major: "0"
@@ -3005,7 +2992,7 @@ people_231:
   publish: "1"
   items_count: "2"
   lock_version: "3"
-people_232: 
+people_231: 
   id: "285"
   loc_name: "Ab\xC5\xAB al-\xE1\xB8\xA4asan Kh\xC4\x81n Bah\xC4\x81 Ni\xE1\xBA\x93\xC4\x81m"
   major: "0"
@@ -3018,7 +3005,7 @@ people_232:
   publish: "1"
   items_count: "0"
   lock_version: "3"
-people_233: 
+people_232: 
   id: "286"
   loc_name: "Hidayat All\xC4\x81h H\xCC\xA3aki\xCC\x84m B\xC4\x81sh\xC4\xAB"
   major: "0"
@@ -3031,7 +3018,7 @@ people_233:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_234: 
+people_233: 
   id: "287"
   loc_name: "Mu\xE1\xB8\xA5ammad Qul\xC4\xAB Kh\xC4\x81n"
   major: "0"
@@ -3044,7 +3031,7 @@ people_234:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_235: 
+people_234: 
   id: "288"
   loc_name: "Sh\xC4\x81hz\xC4\x81dah Kh\xC4\x81num (Gal\xC4\xABn B\xC4\x81j\xC4\xAB)"
   major: "0"
@@ -3057,7 +3044,7 @@ people_235:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_236: 
+people_235: 
   id: "290"
   loc_name: "Akhtar al-Mul\xC5\xABk"
   major: "0"
@@ -3070,7 +3057,7 @@ people_236:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_237: 
+people_236: 
   id: "291"
   loc_name: "Farru\xCC\x84kh Arshadi\xCC\x84 Aru\xCC\x84n Ya\xCA\xBBqu\xCC\x84b\xCA\xB9zadah (La\xCC\x84lah\xCA\xB9za\xCC\x84ri\xCC\x84)"
   major: "0"
@@ -3083,7 +3070,7 @@ people_237:
   publish: "0"
   items_count: "0"
   lock_version: "0"
-people_238: 
+people_237: 
   id: "292"
   loc_name: Mushir al-Saltanah
   major: "0"
@@ -3096,7 +3083,7 @@ people_238:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_239: 
+people_238: 
   id: "297"
   loc_name: ""
   major: "0"
@@ -3109,7 +3096,7 @@ people_239:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_240: 
+people_239: 
   id: "299"
   loc_name: "Zarri\xCC\x84n Kh\xC4\x81num"
   major: "0"
@@ -3122,7 +3109,7 @@ people_240:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_241: 
+people_240: 
   id: "300"
   loc_name: "\xC4\x80q\xC4\x81 M\xC4\xABrz\xC4\x81 Mu\xE1\xB8\xA5ammad Taq\xC4\xAB Shaykh al-Isl\xC4\x81m"
   major: "0"
@@ -3135,7 +3122,7 @@ people_241:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_242: 
+people_241: 
   id: "302"
   loc_name: Muhammad Vali Khan Tunikabuni
   major: "0"
@@ -3148,7 +3135,7 @@ people_242:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_243: 
+people_242: 
   id: "303"
   loc_name: Haj Khanum Aqa
   major: "0"
@@ -3161,7 +3148,7 @@ people_243:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_244: 
+people_243: 
   id: "304"
   loc_name: Navvab al-Hajiyah
   major: "0"
@@ -3174,7 +3161,7 @@ people_244:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_245: 
+people_244: 
   id: "305"
   loc_name: Aqa Muhammad Hasan
   major: "0"
@@ -3187,7 +3174,7 @@ people_245:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_246: 
+people_245: 
   id: "306"
   loc_name: "Muhammad \xCA\xBBAli Tunikabuni"
   major: "0"
@@ -3200,7 +3187,7 @@ people_246:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_247: 
+people_246: 
   id: "307"
   loc_name: "Karbala\xCA\xBCi Ma\xCA\xBBsumah Khanum"
   major: "0"
@@ -3213,7 +3200,7 @@ people_247:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_248: 
+people_247: 
   id: "308"
   loc_name: Khayr al-Nisa
   major: "0"
@@ -3226,7 +3213,7 @@ people_248:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_249: 
+people_248: 
   id: "309"
   loc_name: Zinat al-Sadat
   major: "0"
@@ -3239,7 +3226,7 @@ people_249:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_250: 
+people_249: 
   id: "310"
   loc_name: Hajji Husayn Khan
   major: "0"
@@ -3252,7 +3239,7 @@ people_250:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_251: 
+people_250: 
   id: "311"
   loc_name: "\xC4\x80q\xC4\x81 M\xC4\xABrz\xC4\x81 Buzurg Shaykh al-Isl\xC4\x81m"
   major: "0"
@@ -3265,7 +3252,7 @@ people_251:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_252: 
+people_251: 
   id: "312"
   loc_name: "Sadr A\xCA\xBBzam"
   major: "0"
@@ -3278,7 +3265,7 @@ people_252:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_253: 
+people_252: 
   id: "313"
   loc_name: "Sipahda\xCC\x84r A\xCA\xBBz\xCC\xA3am"
   major: "0"
@@ -3291,7 +3278,7 @@ people_253:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_254: 
+people_253: 
   id: "314"
   loc_name: Ashraf al-Saltanah
   major: "0"
@@ -3304,7 +3291,7 @@ people_254:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_255: 
+people_254: 
   id: "315"
   loc_name: "Sipahda\xCC\x84r Tunuka\xCC\x84buni\xCC\x84, Muh\xCC\xA3ammad Vali\xCC\x84 ibn H\xCC\xA3abi\xCC\x84b Alla\xCC\x84h, 1848-1926 "
   major: "0"
@@ -3317,7 +3304,7 @@ people_255:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_256: 
+people_255: 
   id: "316"
   loc_name: Yahya Khan Asif al-Dawlah Qajar
   major: "0"
@@ -3330,7 +3317,7 @@ people_256:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_257: 
+people_256: 
   id: "317"
   loc_name: ""
   major: "0"
@@ -3343,7 +3330,7 @@ people_257:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_258: 
+people_257: 
   id: "318"
   loc_name: ""
   major: "0"
@@ -3356,7 +3343,7 @@ people_258:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_259: 
+people_258: 
   id: "319"
   loc_name: "Fakhri Mu\xCA\xBBazzam"
   major: "0"
@@ -3369,7 +3356,7 @@ people_259:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_260: 
+people_259: 
   id: "320"
   loc_name: ""
   major: "0"
@@ -3382,7 +3369,7 @@ people_260:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_261: 
+people_260: 
   id: "321"
   loc_name: Fakhr al-Muluk
   major: "0"
@@ -3395,7 +3382,7 @@ people_261:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_262: 
+people_261: 
   id: "322"
   loc_name: ""
   major: "0"
@@ -3408,7 +3395,7 @@ people_262:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_263: 
+people_262: 
   id: "323"
   loc_name: Khan Baba Khan Buhlul
   major: "0"
@@ -3421,7 +3408,7 @@ people_263:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_264: 
+people_263: 
   id: "324"
   loc_name: Mulki Jahan Khanum
   major: "0"
@@ -3434,7 +3421,7 @@ people_264:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_265: 
+people_264: 
   id: "325"
   loc_name: ""
   major: "0"
@@ -3447,7 +3434,7 @@ people_265:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_266: 
+people_265: 
   id: "326"
   loc_name: ""
   major: "0"
@@ -3460,7 +3447,7 @@ people_266:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_267: 
+people_266: 
   id: "327"
   loc_name: ""
   major: "0"
@@ -3473,7 +3460,7 @@ people_267:
   publish: "1"
   items_count: "0"
   lock_version: "2"
-people_268: 
+people_267: 
   id: "328"
   loc_name: ""
   major: "0"
@@ -3486,7 +3473,7 @@ people_268:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_269: 
+people_268: 
   id: "329"
   loc_name: ""
   major: "0"
@@ -3499,7 +3486,7 @@ people_269:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_270: 
+people_269: 
   id: "330"
   loc_name: ""
   major: "0"
@@ -3512,7 +3499,7 @@ people_270:
   publish: "1"
   items_count: "0"
   lock_version: "1"
-people_271: 
+people_270: 
   id: "331"
   loc_name: ""
   major: "0"
@@ -3525,7 +3512,7 @@ people_271:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_272: 
+people_271: 
   id: "332"
   loc_name: ""
   major: "0"
@@ -3538,7 +3525,7 @@ people_272:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_273: 
+people_272: 
   id: "333"
   loc_name: ""
   major: "0"
@@ -3551,7 +3538,7 @@ people_273:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_274: 
+people_273: 
   id: "334"
   loc_name: ""
   major: "0"
@@ -3564,7 +3551,7 @@ people_274:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_275: 
+people_274: 
   id: "335"
   loc_name: "Z\xC4\xABb\xC4\x81 Chihrah M\xC4\xABr Findirisk\xC4\xAB"
   major: "0"
@@ -3577,7 +3564,7 @@ people_275:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_276: 
+people_275: 
   id: "336"
   loc_name: ""
   major: "0"
@@ -3590,7 +3577,7 @@ people_276:
   publish: "1"
   items_count: "0"
   lock_version: "0"
-people_277: 
+people_276: 
   id: "337"
   loc_name: "Z\xCC\xA4iy\xC4\x81\xCA\xBC al-Sal\xE1\xB9\xADanah"
   major: "0"
@@ -3599,6 +3586,721 @@ people_277:
   notes: ""
   created_at: 2010-12-26 09:12:06
   updated_at: 2010-12-26 09:12:06
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_277: 
+  id: "338"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-26 21:17:26
+  updated_at: 2010-12-26 21:17:26
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_278: 
+  id: "339"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 06:30:05
+  updated_at: 2010-12-27 06:30:05
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_279: 
+  id: "340"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 06:39:36
+  updated_at: 2010-12-27 06:39:36
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_280: 
+  id: "341"
+  loc_name: Farmayan, Hafez F.
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 06:52:07
+  updated_at: 2010-12-27 06:52:07
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_281: 
+  id: "342"
+  loc_name: "Sykes, Percy Molesworth, Sir, 1867-1945 "
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 06:57:53
+  updated_at: 2010-12-27 06:57:53
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_282: 
+  id: "343"
+  loc_name: "Sykes, Ella, d. 1939 "
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 07:00:18
+  updated_at: 2010-12-27 07:00:18
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_283: 
+  id: "344"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 09:03:03
+  updated_at: 2010-12-27 09:03:03
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_284: 
+  id: "345"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 11:17:39
+  updated_at: 2010-12-30 05:55:56
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "1"
+people_285: 
+  id: "346"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 23:22:08
+  updated_at: 2010-12-27 23:22:08
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_286: 
+  id: "347"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-27 23:48:41
+  updated_at: 2010-12-27 23:54:21
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "1"
+people_287: 
+  id: "348"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 00:14:03
+  updated_at: 2010-12-28 00:14:03
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_288: 
+  id: "349"
+  loc_name: "Madani\xCC\x84 Ka\xCC\x84sha\xCC\x84ni\xCC\x84, \xCA\xBBAbd al-Rasu\xCC\x84l, 1826 or 7-1907 or 8"
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 00:53:46
+  updated_at: 2010-12-28 00:53:46
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_289: 
+  id: "350"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 03:09:34
+  updated_at: 2010-12-28 03:09:34
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_290: 
+  id: "351"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 06:25:54
+  updated_at: 2010-12-28 06:25:54
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_291: 
+  id: "352"
+  loc_name: "Riz\xCC\xA4a\xCC\x84 Sha\xCC\x84h Pahlavi\xCC\x84, Shah of Iran, 1878-1944"
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 06:31:54
+  updated_at: 2010-12-28 06:31:54
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_292: 
+  id: "353"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 06:33:29
+  updated_at: 2010-12-28 06:33:29
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_293: 
+  id: "354"
+  loc_name: "Browne, Edward Granville, 1862-1926 "
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 07:33:24
+  updated_at: 2010-12-28 07:33:24
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_294: 
+  id: "355"
+  loc_name: "S\xCC\xA3adi\xCC\x84q, \xCA\xBBI\xCC\x84sa\xCC\x81"
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 07:42:27
+  updated_at: 2010-12-28 07:42:27
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_295: 
+  id: "356"
+  loc_name: "Mosaddeq, Mohammad, 1880-1967 "
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 08:07:01
+  updated_at: 2010-12-28 08:07:01
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_296: 
+  id: "357"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 09:12:20
+  updated_at: 2010-12-28 09:12:20
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_297: 
+  id: "358"
+  loc_name: Ruqiyah Sultan Khanum
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 22:55:57
+  updated_at: 2010-12-28 22:55:57
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_298: 
+  id: "359"
+  loc_name: "Mu\xCA\xBBtamid al-Sultan Akbar Khan"
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 22:56:40
+  updated_at: 2010-12-28 22:56:40
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_299: 
+  id: "360"
+  loc_name: Mirza Qasim Khan Sarim al-Sultan
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 22:57:36
+  updated_at: 2010-12-28 22:57:36
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_300: 
+  id: "361"
+  loc_name: Muhammad Ishaq Tajir Ardabili
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-28 23:02:57
+  updated_at: 2010-12-28 23:02:57
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_301: 
+  id: "362"
+  loc_name: Aqa Sayyid Hasan Sabbagh
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 01:44:54
+  updated_at: 2010-12-29 01:44:54
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_302: 
+  id: "363"
+  loc_name: Tuba Khanum
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 01:47:31
+  updated_at: 2010-12-29 01:47:31
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_303: 
+  id: "364"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 01:57:42
+  updated_at: 2010-12-29 01:57:42
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_304: 
+  id: "367"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 02:36:23
+  updated_at: 2010-12-29 02:36:23
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_305: 
+  id: "370"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 02:45:16
+  updated_at: 2010-12-29 02:45:16
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_306: 
+  id: "371"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 02:57:36
+  updated_at: 2010-12-29 02:57:36
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_307: 
+  id: "372"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 02:58:49
+  updated_at: 2010-12-29 02:58:49
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_308: 
+  id: "373"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 03:55:48
+  updated_at: 2010-12-29 03:55:48
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_309: 
+  id: "374"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 06:49:53
+  updated_at: 2010-12-29 06:49:53
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_310: 
+  id: "375"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 07:39:00
+  updated_at: 2010-12-29 07:39:00
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_311: 
+  id: "376"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 07:51:31
+  updated_at: 2010-12-29 07:51:31
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_312: 
+  id: "377"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 08:06:14
+  updated_at: 2010-12-29 08:06:14
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_313: 
+  id: "378"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 08:07:47
+  updated_at: 2010-12-29 08:07:47
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_314: 
+  id: "379"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-29 11:16:24
+  updated_at: 2010-12-29 11:16:24
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_315: 
+  id: "380"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 04:01:29
+  updated_at: 2010-12-30 04:01:29
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_316: 
+  id: "381"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 04:25:53
+  updated_at: 2010-12-30 04:25:53
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_317: 
+  id: "382"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 04:46:35
+  updated_at: 2010-12-30 04:46:35
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_318: 
+  id: "383"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 05:11:58
+  updated_at: 2010-12-30 05:45:29
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "1"
+people_319: 
+  id: "385"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 05:32:47
+  updated_at: 2010-12-30 05:32:47
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_320: 
+  id: "386"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 07:23:29
+  updated_at: 2010-12-30 07:23:29
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_321: 
+  id: "387"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 09:06:17
+  updated_at: 2010-12-30 09:06:17
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_322: 
+  id: "388"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 09:11:02
+  updated_at: 2010-12-30 09:11:02
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_323: 
+  id: "389"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 09:23:23
+  updated_at: 2010-12-30 09:23:23
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_324: 
+  id: "390"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 09:41:05
+  updated_at: 2010-12-30 09:41:05
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_325: 
+  id: "391"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 10:10:40
+  updated_at: 2010-12-30 10:10:40
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_326: 
+  id: "392"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 10:33:47
+  updated_at: 2010-12-30 10:33:47
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_327: 
+  id: "393"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 10:35:25
+  updated_at: 2010-12-30 10:35:25
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_328: 
+  id: "394"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 10:36:31
+  updated_at: 2010-12-30 10:36:31
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_329: 
+  id: "395"
+  loc_name: Winsor, Mary, 1869-1956
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-30 11:49:57
+  updated_at: 2010-12-30 11:49:57
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "0"
+people_330: 
+  id: "396"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-31 01:10:16
+  updated_at: 2010-12-31 01:10:37
+  country: 
+  publish: "1"
+  items_count: "0"
+  lock_version: "1"
+people_331: 
+  id: "397"
+  loc_name: ""
+  major: "0"
+  dob: 
+  dod: 
+  notes: ""
+  created_at: 2010-12-31 01:20:26
+  updated_at: 2010-12-31 01:20:26
   country: 
   publish: "1"
   items_count: "0"
