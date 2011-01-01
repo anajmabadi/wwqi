@@ -21,9 +21,9 @@
             </li>
             <li>
                 <% if @my_archive_ids.include?(@item.id) -%>
-                <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(@item) %>
+                <%= link_to t(:remove_from_my_archive) + " (#{@my_archive_ids.size.to_s})", archive_detail_forget_path(@item) %>
                 <% else -%>
-                <%= link_to t(:add_to_my_archive), archive_detail_remember_path(@item) %>
+                <%= link_to t(:add_to_my_archive) + " (#{@my_archive_ids.size.to_s})", archive_detail_remember_path(@item) %>
                 <% end -%>
             </li>
         </ul>

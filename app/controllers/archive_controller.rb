@@ -157,7 +157,9 @@ class ArchiveController < ApplicationController
     unless id_to_forget.nil?
       my_ids = my_archive_from_cookie
       my_ids.delete(id_to_forget)
-      my_archive_to_cookie(my_ids)
+      unless my_archive_to_cookie(my_ids)
+        flash[:notice] = "Item could not be removed from My Archive."
+      end
     else
       flash[:error] = "No item id to forget from My Archive."  
     end
@@ -175,7 +177,9 @@ class ArchiveController < ApplicationController
     unless id_to_remember.nil?
       my_ids = my_archive_from_cookie
       my_ids << id_to_remember
-      my_archive_to_cookie(my_ids)
+      unless my_archive_to_cookie(my_ids)
+        flash[:notice] = "Item could not be saved to My Archive. Is you browser set to accept cookies?"
+      end
     else
       flash[:error] = "No item id to remember in My Archive."  
     end

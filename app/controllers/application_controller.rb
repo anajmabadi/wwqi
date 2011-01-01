@@ -41,11 +41,12 @@ class ApplicationController < ActionController::Base
     if cookies[:my_archive].nil?
       my_archive_to_cookie
     end
-    return cookies[:my_archive].split(",").map{ |i| i.to_i }.sort
+    return cookies[:my_archive].split(",").map{ |i| i.to_i }
   end
   
   def my_archive_to_cookie(my_ids=[])
     cookies.permanent[:my_archive] = my_ids.join(",")
+    return my_ids == my_archive_from_cookie
   end
 
   protected

@@ -1934,3 +1934,27 @@ div.field {
     font-size: 12px;
     list-style: square;
 }
+
+/********  Notifications   ********/
+
+#notification_block {
+  padding: 5px;
+}
+
+#notification_block .error {
+  color: red;
+  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 5px 80px 5px 80px;
+}
+
+#notification_block .notice {
+  color: green;
+  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 5px 80px 5px 80px;
+}
