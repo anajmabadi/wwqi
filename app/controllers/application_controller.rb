@@ -34,6 +34,19 @@ class ApplicationController < ActionController::Base
     parsed_locale = request.subdomains.first.to_sym
     (I18n.available_locales.include? parsed_locale) ? parsed_locale  : :en
   end
+  
+  # my archive management routines
+  def my_archive_from_cookie
+    # initialize the cookie store if nil?
+    if cookies[:my_archive].nil?
+      my_archive_to_cookie
+    end
+    return cookies[:my_archive].split(",").map{ |i| i.to_i }.sort
+  end
+  
+  def my_archive_to_cookie(my_ids=[])
+    cookies.permanent[:my_archive] = my_ids.join(",")
+  end
 
   protected
 

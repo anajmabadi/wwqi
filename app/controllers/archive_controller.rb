@@ -7,7 +7,7 @@ class ArchiveController < ApplicationController
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
     @random_collection_set = Collection.random_set
     @recently_viewed_items = Item.recently_viewed(8)
-
+    @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
     session[:current_items] = nil
@@ -157,7 +157,7 @@ class ArchiveController < ApplicationController
     unless id_to_forget.nil?
       my_ids = my_archive_from_cookie
       my_ids.delete(id_to_forget)
-      cookies[:my_archive] = my_ids.sort.join(",")
+      my_archive_to_cookie(my_ids)
     else
       flash[:error] = "No item id to forget from My Archive."  
     end
@@ -175,7 +175,7 @@ class ArchiveController < ApplicationController
     unless id_to_remember.nil?
       my_ids = my_archive_from_cookie
       my_ids << id_to_remember
-      cookies[:my_archive] = my_ids.sort.join(",")
+      my_archive_to_cookie(my_ids)
     else
       flash[:error] = "No item id to remember in My Archive."  
     end
@@ -491,14 +491,6 @@ class ArchiveController < ApplicationController
     query_hash[:conditions] << "items.id IN (:my_archive_ids)"
     query_hash[:parameters][:my_archive_ids] = filter_value.sort
     return query_hash
-  end
-  
-  def my_archive_from_cookie
-    # initialize the cookie store if nil?
-    if cookies[:my_archive].nil?
-      cookies[:my_archive] = [].join(",")
-    end
-    return cookies[:my_archive].split(",").map{ |i| i.to_i }.sort
   end
 
 end

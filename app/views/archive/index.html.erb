@@ -66,7 +66,7 @@
             </div>
             <ul>
                 <li>
-                    <%= link_to t(:my_archive), archive_browser_path(:my_archive => true) %>
+                    <%= link_to t(:my_archive) + " (#{@my_archive_ids.size.to_s})", archive_browser_path(:my_archive => true) %>
                 </li>
                 <li>
                     <%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %>
