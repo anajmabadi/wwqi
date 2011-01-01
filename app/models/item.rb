@@ -288,7 +288,20 @@ class Item < ActiveRecord::Base
   def to_label
     return truncate(self.title, :length => 60) + " (#{self.id.to_s})"
   end
-
+  
+  def credit_label
+    my_label = ''
+    my_label += self.owner.nil? ? I18n.translate(:n_a) : self.owner.name
+    my_label += " (" + self.owner_tag + ")" unless self.owner_tag.blank?
+    unless self.credit.blank?
+      my_label +=  ". #{self.credit}" 
+    else
+      unless self.owner.credit.blank? 
+        my_label += ". #{self.owner.credit}"
+      end
+    end  
+    return my_label  
+  end
 
   def self.select_list
     return self.all(:conditions => ['item_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, item_translations.title', :order => 'item_translations.title').map {|item| [item.to_label, item.id]}

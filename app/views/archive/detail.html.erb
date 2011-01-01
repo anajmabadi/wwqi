@@ -99,6 +99,10 @@
                     <td><%= @item.dimension_label %></td>
                 </tr>
                 <% end %>
+                <tr>
+                    <th><%= t(:owner).capitalize %></th>
+                    <td><%= @item.credit_label %></td>
+                </tr>
                 <% unless @item.comps.nil? %>
                 <tr>
                     <th><%= t(:see_also) %></th>
