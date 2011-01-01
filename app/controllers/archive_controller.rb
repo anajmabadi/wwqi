@@ -49,7 +49,8 @@ class ArchiveController < ApplicationController
     @most_popular_filter = params[:most_popular_filter]
     @recent_additions_filter = params[:recent_additions_filter]
     @staff_favorites_filter = params[:staff_favorites_filter]
-    @my_archive_filter = params[:my_archive] == 'true' ? my_archive_from_cookie : nil
+    @my_archive_ids = my_archive_from_cookie
+    @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'

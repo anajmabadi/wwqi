@@ -10,7 +10,7 @@
       <li><%= link_to t(:person), archive_people_path, :class=> "module-link", :id => "peopleIndex" -%></li>
       <li><%= link_to t(:subject), archive_subjects_path, :class=>"module-link", :id=>"subjectsIndex" -%></li>
       <li><%= link_to t(:place), archive_places_path, :class=> "module-link", :id=>"placesIndex" -%></li>
-      <li><%= link_to t(:my_archive), archive_browser_path(:my_archive => @my_archive_filter.nil?), :class=>"module-link #{'active' unless @my_archive_filter.nil?}", :id => 'my_archive_link' -%></li>
+      <li><%= link_to t(:my_archive) + " (#{@my_archive_ids.size.to_s})", archive_browser_path(:my_archive => @my_archive_filter.nil?), :class=>"module-link #{'active' unless @my_archive_filter.nil?}", :id => 'my_archive_link' -%></li>
     </ul>
   </div>
 </div>
