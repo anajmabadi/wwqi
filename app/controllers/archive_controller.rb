@@ -131,7 +131,7 @@ class ArchiveController < ApplicationController
   end
   
   def advanced_search
-    @fields = ['all fields', 'title']
+    @fields = ['all fields', 'personal name', 'title', 'place', 'genre', 'subject','collection','repository']
     @operators = ['and', 'or', 'not']
   end
 

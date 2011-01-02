@@ -6,25 +6,79 @@
     <div id="archive_advanced_search_wrapper">
         <div class="clearfix" id="advanced_search">
             <%= form_tag(archive_browser_path, :method=> :post, :class => "advanced_search_form") do %>
-                <table>
-                    <tr>
-                        <td>
-                        <%= text_field_tag :value_1, nil, :size => 50 %> <%= select_tag :field_1, options_for_select(@fields) %> <%= select_tag :operator_1, options_for_select(@operators) %>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <%= text_field_tag :value_2, nil, :size => 50 %> <%= select_tag :field_2, options_for_select(@fields) %> <%= select_tag :operator_2, options_for_select(@operators) %>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                        <%= text_field_tag :value_3, nil, :size => 50 %> <%= select_tag :field_3, options_for_select(@fields) %> <%= select_tag :operator_3, options_for_select(@operators) %>
-                        </td>
-                    </tr>
-                </table>
-                <%= submit_tag 'Submit'%>
+            <table class="styled">
+                <tr>
+                    <td>
+
+                    </td>
+                    <td>
+                    <%= text_field_tag :value_1, nil, :size => 50 %></td>
+                    <td>
+                    <%= select_tag :field_1, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td><%= select_tag :operator_1, options_for_select(@operators) %></td>
+                    <td>
+                    <%= text_field_tag :value_2, nil, :size => 50 %>
+                    </td>
+                    <td>
+                    <%= select_tag :field_2, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td><%= select_tag :operator_2, options_for_select(@operators) %>
+
+                    </td>
+                    <td>
+                    <%= text_field_tag :value_3, nil, :size => 50 %>
+                    </td>
+                    <td>
+                    <%= select_tag :field_3, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <%= t(:advanced_search_date_range_prompt) %>
+                    </td>
+                    <td colspan="2"><%= text_field_tag :start_year, nil, :size => 5 %> - <%= text_field_tag :end_year, nil, :size => 5 %></td>
+                </tr>
+            </table>
+            <%= submit_tag 'Submit'%>
             <% end -%>
+            <div id="advanced_search_tips">
+                <ul>
+                    <li>
+                        Use the virtual keyboard to submit queries in Arabic script.
+                        (Submit searches with and without the definite article to obtain
+                        maximum results.)
+                    </li>
+                    <li>
+                        To search partial words, use an asterisk as <strong>wildcard</strong> at the beginning, middle, or end of your search term, whether entered in Roman or Arabic script.
+                    </li>
+                    <li>
+                        You can use <strong>and, or,</strong> and <strong>not</strong> operators (multiple words without quotes will be searched as if they were combined with the ‘and’ operator).
+                    </li>
+                    <li>
+                        Search for a phrase by enclosing it in double quotes, e.g. "Persian poetry"
+                    </li>
+                </ul>
+                <p>
+                    Note 1: <strong>Names of authors</strong> sometimes reflect the
+                    authority record present in the OCLC database. These authorities were
+                    created by OCLC member libraries as well as by the Library of Congress.
+                    Names may therefore be presented in unusual or unfamiliar form. If your
+                    first name search returns zero results, expand the search to retrieve
+                    multiple name forms by using a wildcard.
+                </p>
+                <p>
+                    Note 2: <strong>Transliteration conventions</strong> used in cataloging include <a href="http://www.loc.gov/catdir/cpso/roman.html" target="_blank">ALA-LC Romanization Tables</a>
+                    for Arabic and Persian. Ottoman Turkish is spelled according to the
+                    rules of modern Turkish. Wildcards are also encouraged to retrieve
+                    records with alternative spellings, especially in the case of Turkish
+                    (e.g., Ahme* retrieves both Ahmed and Ahmet).
+                </p>
+            </div>
         </div>
     </div>
 </div>
