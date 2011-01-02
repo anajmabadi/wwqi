@@ -1,17 +1,30 @@
 <% @page_description = t(:advanced_search_description) -%>
 <% @page_title = t(:archive).capitalize + " | " + t(:advanced_search).capitalize -%>
 
-
 <div id="staticContent" class="clearfix">
-  <h1><%= t(:advanced_search).titleize %></h1>
+    <h1><%= t(:advanced_search).titleize %></h1>
     <div id="archive_advanced_search_wrapper">
         <div class="clearfix" id="advanced_search">
-            <form method="get" class="advanced_searchform" action="/archive/browser">
-                <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-                onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
-                onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+            <%= form_tag(archive_browser_path, :method=> :post, :class => "advanced_search_form") do %>
+                <table>
+                    <tr>
+                        <td>
+                        <%= text_field_tag :value_1, nil, :size => 50 %> <%= select_tag :field_1, options_for_select(@fields) %> <%= select_tag :operator_1, options_for_select(@operators) %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <%= text_field_tag :value_2, nil, :size => 50 %> <%= select_tag :field_2, options_for_select(@fields) %> <%= select_tag :operator_2, options_for_select(@operators) %>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <%= text_field_tag :value_3, nil, :size => 50 %> <%= select_tag :field_3, options_for_select(@fields) %> <%= select_tag :operator_3, options_for_select(@operators) %>
+                        </td>
+                    </tr>
+                </table>
                 <%= submit_tag 'Submit'%>
-            </form>
+            <% end -%>
         </div>
     </div>
 </div>

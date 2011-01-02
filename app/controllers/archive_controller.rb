@@ -129,6 +129,11 @@ class ArchiveController < ApplicationController
       end
     end
   end
+  
+  def advanced_search
+    @fields = ['all fields', 'title']
+    @operators = ['and', 'or', 'not']
+  end
 
   def download
     @error = false
