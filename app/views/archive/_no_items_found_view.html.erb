@@ -1,14 +1,17 @@
 <div id="items">
   <div class="noItems">
-    <h2>Sorry, we could not find matching items.</h2>
-    <p>Here are some search tips for you: </p>
+    <h2><%= t(:no_records_found) %></h2>
+    <p><%= t(:here_are_some_search_tips) %> </p>
     <ul>
-      <li>Select fewer filters at one time</li>
-      <li>Use the 
-        <%= link_to t(:people), archive_people_path %>,
-        <%= link_to t(:place), archive_places_path %>, and
-        <%= link_to t(:subject), archive_subjects_path %> indexes</li>
-      <li>Try variations of any keywords</li>
+      <li><%= t(:tip_select_fewer_filters) %></li>
+      <li><%= t(:tip_use_indexes) %>
+        <ul>
+          <li><%= link_to t(:people), archive_people_path %></li>
+          <li><%= link_to t(:place), archive_places_path %></li>
+          <li><%= link_to t(:subject), archive_subjects_path %></li>
+        </ul>
+      </li>
+      <li><%= t(:tip_try_variations) %></li>
     </ul>
   </div>
 </div>
