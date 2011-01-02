@@ -296,7 +296,7 @@ class Item < ActiveRecord::Base
     unless self.credit.blank?
       my_label +=  ". #{self.credit}" 
     else
-      unless self.owner.credit.blank? 
+      unless self.owner.nil? || self.owner.credit.blank? 
         my_label += ". #{self.owner.credit}"
       end
     end  
