@@ -52,7 +52,10 @@ class ArchiveController < ApplicationController
     @my_archive_ids = my_archive_from_cookie
     @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
     @repository_filter = params[:repository_filter]
-    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } 
+    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i }
+    @boolean_keyword_filter = { :values => [ params[:value_1], params[:value_2], params[:value_3] ],
+      :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
+      :operators => [ '', params[:operator_1], params[:operator_2] ]  }
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -85,6 +88,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
     @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
     @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year] == 0 && @year_range_filter[:end_year] == 0)
+    @query_hash = build_boolean_keyword_query(@boolean_keyword_filter, @query_hash) unless @boolean_keyword_filter[:values][0].blank? && @boolean_keyword_filter[:values][1].blank? && @boolean_keyword_filter[:values][2].blank?
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -397,14 +401,13 @@ class ArchiveController < ApplicationController
     end
   end
 
-  
   def build_year_range_query(filter_value, query_hash)
-    
+
     start_year = (!filter_value[:start_year].nil?  && filter_value[:start_year] > 0 && filter_value[:start_year] < 3000) ? filter_value[:start_year] : 0
     end_year = (!filter_value[:end_year].nil?  && filter_value[:end_year] > 0  && filter_value[:end_year] < 3000) ? filter_value[:end_year] : 0
 
     end_year = 0 unless filter_value[:end_year] >= start_year
-    
+
     if start_year > 0 && end_year > 0
       date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{end_year}')"
     elsif start_year > 0
@@ -414,11 +417,10 @@ class ArchiveController < ApplicationController
     else
       date_ranges = ''
     end
-    
+
     query_hash[:conditions] << date_ranges unless date_ranges.blank?
     return query_hash
   end
-
 
   def build_most_popular_query(filter_value, query_hash)
     additional_query = ''
@@ -506,6 +508,69 @@ class ArchiveController < ApplicationController
     query_hash[:conditions] << additional_query unless additional_query.blank?
     return query_hash
     end
+  end
+
+  def clean_keyword(filter_value)
+    filter_value = filter_value.lstrip
+    filter_value = filter_value.length > 256 ? filter_value[0..255] : filter_value
+    filter_value = filter_value.upcase #locale insensitive
+    filter_value = "%#{filter_value}%"
+    return filter_value
+  end
+
+  def build_boolean_keyword_query(filter_value, query_hash)
+    additional_query = ''
+    keywords = []
+
+    # turn keyword fields into word arrays and git rid of little words
+    filter_value[:values].each_with_index do |value, index|
+      keywords[index] = value.split(" ").reject { |k| k == "" || k.nil? || k.length<2 }.map { |k| clean_keyword(k) } unless value.blank?
+    end
+    
+    # assemble the query by field for each keyword set
+    keywords.each_with_index do |values, outer_index|
+
+      # take each keyword and build a field specific query for it
+      field = filter_value[:fields][outer_index]
+      outer_operator = filter_value[:operators][outer_index]
+      
+      Rails.logger.info "********* field: " + field + " values = #{values.to_s}"
+      
+      # initialize the subqueries
+      subqueries = []
+
+      # cycle through the inner keywords with an assumed AND
+      values.each_with_index do |value, inner_index|
+        
+        Rails.logger.info "********* Loop records: outer_index = #{outer_index.to_s}, inner_index = #{inner_index.to_s}, value = #{value}"
+        
+        unless value.blank?
+       
+          # test for AND requirement
+          inner_operator = inner_index > 0 ? ' AND ' : ''
+          
+          subqueries << case field
+            when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword"
+          else "#{inner_operator}UPPER(accession_num) LIKE :keyword_#{outer_index}_#{inner_index}"
+          end
+          
+          #store the parameter in a unique key
+          query_hash[:parameters]["keyword_#{outer_index}_#{inner_index}".to_sym] = value
+          
+          Rails.logger.info "********* :keyword_#{outer_index}_#{inner_index}: " + query_hash[:parameters][:keyword_0_0]
+        
+        end
+        
+      end
+      
+      additional_query += " #{outer_operator} #{subqueries.join(' ')}" unless subqueries.empty?
+      Rails.logger.info "********* :additional_query: " + additional_query
+      
+    end
+
+    query_hash[:conditions] << additional_query
+    return query_hash
   end
 
   def build_keyword_query(filter_value, query_hash)
