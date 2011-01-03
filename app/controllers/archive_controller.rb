@@ -51,6 +51,7 @@ class ArchiveController < ApplicationController
     @staff_favorites_filter = params[:staff_favorites_filter]
     @my_archive_ids = my_archive_from_cookie
     @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
+    @repository_filter = params[:repository_filter]
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -71,6 +72,7 @@ class ArchiveController < ApplicationController
 
     @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
     @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter[0] == 'all'
+    @query_hash = build_repository_query(@repository_filter, @query_hash) unless @repository_filter.nil? || @repository_filter[0] == 'all'
     @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter[0] == 'all'
     @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
     @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter[0] == 'all'
@@ -239,6 +241,21 @@ class ArchiveController < ApplicationController
     end
   end
 
+  def build_repository_query(filter_value, query_hash)
+    if filter_value.kind_of?(Array)
+    ids = filter_value
+    else
+      ids = [filter_value]
+    end
+    ids_to_find = ids.map { |id| id.to_i }.sort
+
+    item_ids = Passport.where(['repository_id IN (?)', ids_to_find]).map { |p| p.item_id }.uniq.sort
+
+    query_hash[:conditions] << 'items.id IN (:repository_item_ids)'
+    query_hash[:parameters][:repository_item_ids] = item_ids unless item_ids.blank?
+    return query_hash
+  end
+
   def build_collection_query(filter_value, query_hash)
     if filter_value.kind_of?(Array)
     ids = filter_value
@@ -257,6 +274,8 @@ class ArchiveController < ApplicationController
     query_hash[:parameters][:collection_ids] = ids_to_find unless ids_to_find.blank?
     return query_hash
   end
+
+
 
   def build_subject_query(filter_value, query_hash)
     additional_query = ''
