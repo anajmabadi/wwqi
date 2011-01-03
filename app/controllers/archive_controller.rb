@@ -52,7 +52,7 @@ class ArchiveController < ApplicationController
     @my_archive_ids = my_archive_from_cookie
     @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
     @repository_filter = params[:repository_filter]
-    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i }
+    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } 
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -84,7 +84,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
     @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
-    @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year].nil? && @year_range_filter[:end_year].nil?)
+    @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year] == 0 && @year_range_filter[:end_year] == 0)
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -400,22 +400,22 @@ class ArchiveController < ApplicationController
   
   def build_year_range_query(filter_value, query_hash)
     
-    start_year = (!filter_value[:start_year].nil?  && filter_value[:start_year] > 0 && filter_value[:start_year] < 3000) ? filter_value[:start_year] : nil
-    end_year = (!filter_value[:end_year].nil?  && filter_value[:end_year] > 0  && filter_value[:end_year] < 3000) ? filter_value[:end_year] : nil
+    start_year = (!filter_value[:start_year].nil?  && filter_value[:start_year] > 0 && filter_value[:start_year] < 3000) ? filter_value[:start_year] : 0
+    end_year = (!filter_value[:end_year].nil?  && filter_value[:end_year] > 0  && filter_value[:end_year] < 3000) ? filter_value[:end_year] : 0
 
-    end_year = nil unless (start_year > 0 && filter_value[:end_year] >= start_year)
+    end_year = 0 unless filter_value[:end_year] >= start_year
     
-    if !start_year.nil? && !end_year.nil?
+    if start_year > 0 && end_year > 0
       date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{end_year}')"
-    elsif !start_year.nil?
+    elsif start_year > 0
       date_ranges = "(sort_year > '#{start_year}')"
-    elsif !start_year.nil?
+    elsif end_year > 0
       date_ranges = "(sort_year < '#{end_year}')"
     else
       date_ranges = ''
     end
     
-    query_hash[:conditions] << date_ranges
+    query_hash[:conditions] << date_ranges unless date_ranges.blank?
     return query_hash
   end
 
