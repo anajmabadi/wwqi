@@ -105,6 +105,12 @@
                     <td><%= @item.credit_label %></td>
                 </tr>
                 <% end -%>
+                <% unless @item.accession_num.nil? -%>
+                <tr>
+                    <th><%= t(:accession_num).capitalize %></th>
+                    <td><%= @item.accession_num %></td>
+                </tr>
+                <% end -%>
                 <% unless @item.comps.nil? %>
                 <tr>
                     <th><%= t(:see_also) %></th>

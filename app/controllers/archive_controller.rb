@@ -139,7 +139,13 @@ class ArchiveController < ApplicationController
   end
 
   def advanced_search
-    @fields = [I18n.translate(:everything), I18n.translate(:personal_name), I18n.translate(:title), I18n.translate(:place), I18n.translate(:genre), I18n.translate(:subject),I18n.translate(:collection),I18n.translate(:repository)]
+    @fields = [ [I18n.translate(:everything), 'everything'],
+      [I18n.translate(:title), 'title'],
+      [I18n.translate(:accession_num), 'accession_num'],
+      [I18n.translate(:description), 'description'],
+      [I18n.translate(:transcript), 'transcript'],
+      [I18n.translate(:credit), 'credit'],
+      [I18n.translate(:item_id), 'item id'] ]
     @operators = [ [I18n.translate(:operator_and), "AND"], [I18n.translate(:operator_or), "OR"], [I18n.translate(:operator_not), "AND NOT"] ]
     @collections = Collection.where(['publish=?',true]).map { |c| [c.name, c.id]}.sort
     @genres = Subject.genres.where(['publish=?',true]).map { |s| [s.name, s.id]}.sort
@@ -526,47 +532,52 @@ class ArchiveController < ApplicationController
     filter_value[:values].each_with_index do |value, index|
       keywords[index] = value.split(" ").reject { |k| k == "" || k.nil? || k.length<2 }.map { |k| clean_keyword(k) } unless value.blank?
     end
-    
+
     # assemble the query by field for each keyword set
     keywords.each_with_index do |values, outer_index|
 
-      # take each keyword and build a field specific query for it
+    # take each keyword and build a field specific query for it
       field = filter_value[:fields][outer_index]
       outer_operator = filter_value[:operators][outer_index]
-      
+
       Rails.logger.info "********* field: " + field + " values = #{values.to_s}"
-      
+
       # initialize the subqueries
       subqueries = []
 
       # cycle through the inner keywords with an assumed AND
       values.each_with_index do |value, inner_index|
-        
+
         Rails.logger.info "********* Loop records: outer_index = #{outer_index.to_s}, inner_index = #{inner_index.to_s}, value = #{value}"
-        
+
         unless value.blank?
-       
+
           # test for AND requirement
           inner_operator = inner_index > 0 ? ' AND ' : ''
-          
+
           subqueries << case field
             when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
-            when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword"
+            when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'description' then "#{inner_operator}UPPER(item_translations.description) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'transcript' then "#{inner_operator}UPPER(item_translations.transcript) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'accession_num' then "#{inner_operator}UPPER(items.accession_num) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'credit' then "#{inner_operator}UPPER(item_translations.credit) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'item_id' then "#{inner_operator}CONCAT('|',items.id,'|') LIKE :keyword_#{outer_index}_#{inner_index}"
           else "#{inner_operator}UPPER(accession_num) LIKE :keyword_#{outer_index}_#{inner_index}"
           end
-          
+
           #store the parameter in a unique key
           query_hash[:parameters]["keyword_#{outer_index}_#{inner_index}".to_sym] = value
-          
+
           Rails.logger.info "********* :keyword_#{outer_index}_#{inner_index}: " + query_hash[:parameters][:keyword_0_0]
-        
+
         end
-        
+
       end
-      
+
       additional_query += " #{outer_operator} #{subqueries.join(' ')}" unless subqueries.empty?
       Rails.logger.info "********* :additional_query: " + additional_query
-      
+
     end
 
     query_hash[:conditions] << additional_query
