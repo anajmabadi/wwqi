@@ -52,6 +52,7 @@ class ArchiveController < ApplicationController
     @my_archive_ids = my_archive_from_cookie
     @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
     @repository_filter = params[:repository_filter]
+    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i }
 
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
@@ -83,6 +84,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
     @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
+    @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year].nil? && @year_range_filter[:end_year].nil?)
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -105,7 +107,7 @@ class ArchiveController < ApplicationController
   def detail
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
-    
+
     begin
       @item = Item.find_by_id(params[:id])
 
@@ -131,7 +133,7 @@ class ArchiveController < ApplicationController
       end
     end
   end
-  
+
   def advanced_search
     @fields = [I18n.translate(:everything), I18n.translate(:personal_name), I18n.translate(:title), I18n.translate(:place), I18n.translate(:genre), I18n.translate(:subject),I18n.translate(:collection),I18n.translate(:repository)]
     @operators = [I18n.translate(:operator_and), I18n.translate(:operator_or), I18n.translate(:operator_not)]
@@ -146,9 +148,9 @@ class ArchiveController < ApplicationController
       @item = Item.find_by_id(params[:id])
       @file_to_send = @item.zip_path
       unless File.exists?(@file_to_send)
-        #create a zip file if it is the first time
-        zip_them_all = ZipThemAll.new(@file_to_send, @item.preview_paths)
-        zip_them_all.zip
+      #create a zip file if it is the first time
+      zip_them_all = ZipThemAll.new(@file_to_send, @item.preview_paths)
+      zip_them_all.zip
       end
       send_file @file_to_send, :type => "application/zip"
     rescue => error
@@ -156,11 +158,11 @@ class ArchiveController < ApplicationController
     @error = true
     end
   end
-  
+
   def forget
-    
+
     id_to_forget = params[:id].to_i
-    
+
     unless id_to_forget.nil?
       my_ids = my_archive_from_cookie
       my_ids.delete(id_to_forget)
@@ -168,19 +170,19 @@ class ArchiveController < ApplicationController
         flash[:notice] = "Item could not be removed from My Archive."
       end
     else
-      flash[:error] = "No item id to forget from My Archive."  
+      flash[:error] = "No item id to forget from My Archive."
     end
-    
+
     respond_to do |format|
-        format.html { redirect_to archive_detail_path(:id => id_to_forget) }
+      format.html { redirect_to archive_detail_path(:id => id_to_forget) }
     end
 
   end
 
   def remember
-    
+
     id_to_remember = params[:id].to_i
-    
+
     unless id_to_remember.nil?
       my_ids = my_archive_from_cookie
       my_ids << id_to_remember
@@ -188,11 +190,11 @@ class ArchiveController < ApplicationController
         flash[:notice] = "Item could not be saved to My Archive. Is you browser set to accept cookies?"
       end
     else
-      flash[:error] = "No item id to remember in My Archive."  
+      flash[:error] = "No item id to remember in My Archive."
     end
 
     respond_to do |format|
-        format.html { redirect_to archive_detail_path(:id => id_to_remember) }
+      format.html { redirect_to archive_detail_path(:id => id_to_remember) }
     end
 
   end
@@ -274,8 +276,6 @@ class ArchiveController < ApplicationController
     query_hash[:parameters][:collection_ids] = ids_to_find unless ids_to_find.blank?
     return query_hash
   end
-
-
 
   def build_subject_query(filter_value, query_hash)
     additional_query = ''
@@ -397,6 +397,29 @@ class ArchiveController < ApplicationController
     end
   end
 
+  
+  def build_year_range_query(filter_value, query_hash)
+    
+    start_year = (!filter_value[:start_year].nil?  && filter_value[:start_year] > 0 && filter_value[:start_year] < 3000) ? filter_value[:start_year] : nil
+    end_year = (!filter_value[:end_year].nil?  && filter_value[:end_year] > 0  && filter_value[:end_year] < 3000) ? filter_value[:end_year] : nil
+
+    end_year = nil unless (start_year > 0 && filter_value[:end_year] >= start_year)
+    
+    if !start_year.nil? && !end_year.nil?
+      date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{end_year}')"
+    elsif !start_year.nil?
+      date_ranges = "(sort_year > '#{start_year}')"
+    elsif !start_year.nil?
+      date_ranges = "(sort_year < '#{end_year}')"
+    else
+      date_ranges = ''
+    end
+    
+    query_hash[:conditions] << date_ranges
+    return query_hash
+  end
+
+
   def build_most_popular_query(filter_value, query_hash)
     additional_query = ''
     begin
@@ -514,7 +537,7 @@ class ArchiveController < ApplicationController
     end
     return additional_sort
   end
-  
+
   def build_my_archive_query(filter_value, query_hash)
     query_hash[:conditions] << "items.id IN (:my_archive_ids)"
     query_hash[:parameters][:my_archive_ids] = filter_value.sort
