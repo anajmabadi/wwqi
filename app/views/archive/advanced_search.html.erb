@@ -9,7 +9,7 @@
             <table class="styled">
                 <tr>
                     <td>
-
+                    <%= t(:search_prompt) %>
                     </td>
                     <td>
                     <%= text_field_tag :value_1, nil, :size => 50 %></td>
@@ -39,45 +39,30 @@
                 </tr>
                 <tr>
                     <td>
+                    <%= label_tag :collection_id, t(:filter_results_by_collection) %><br />
+                    <%= select_tag :collection_id, options_for_select(@collections), {:multiple => true} %>
+                    </td>
+                    <td>
+                    <%= label_tag :subject_id, t(:filter_results_by_genre) %><br />
+                    <%= select_tag :subject_id, options_for_select(@genres), {:multiple => true} %>
+                    </td>
+                    <td>
+                    <%= label_tag :repository_id, t(:filter_results_by_repository) %><br />
+                    <%= select_tag :repository_id, options_for_select(@repositories), {:multiple => true} %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
                     <%= t(:advanced_search_date_range_prompt) %>
                     </td>
                     <td colspan="2"><%= text_field_tag :start_year, nil, :size => 5 %> - <%= text_field_tag :end_year, nil, :size => 5 %></td>
                 </tr>
             </table>
-            <%= submit_tag 'Submit'%>
+            <%= submit_tag t(:submit) %>
             <% end -%>
             <div id="advanced_search_tips">
-                <ul>
-                    <li>
-                        Use the virtual keyboard to submit queries in Arabic script.
-                        (Submit searches with and without the definite article to obtain
-                        maximum results.)
-                    </li>
-                    <li>
-                        To search partial words, use an asterisk as <strong>wildcard</strong> at the beginning, middle, or end of your search term, whether entered in Roman or Arabic script.
-                    </li>
-                    <li>
-                        You can use <strong>and, or,</strong> and <strong>not</strong> operators (multiple words without quotes will be searched as if they were combined with the ‘and’ operator).
-                    </li>
-                    <li>
-                        Search for a phrase by enclosing it in double quotes, e.g. "Persian poetry"
-                    </li>
-                </ul>
-                <p>
-                    Note 1: <strong>Names of authors</strong> sometimes reflect the
-                    authority record present in the OCLC database. These authorities were
-                    created by OCLC member libraries as well as by the Library of Congress.
-                    Names may therefore be presented in unusual or unfamiliar form. If your
-                    first name search returns zero results, expand the search to retrieve
-                    multiple name forms by using a wildcard.
-                </p>
-                <p>
-                    Note 2: <strong>Transliteration conventions</strong> used in cataloging include <a href="http://www.loc.gov/catdir/cpso/roman.html" target="_blank">ALA-LC Romanization Tables</a>
-                    for Arabic and Persian. Ottoman Turkish is spelled according to the
-                    rules of modern Turkish. Wildcards are also encouraged to retrieve
-                    records with alternative spellings, especially in the case of Turkish
-                    (e.g., Ahme* retrieves both Ahmed and Ahmet).
-                </p>
+                <h2><%= t(:search_tips) %></h2>
+                <%= raw(t(:advanced_search_tips)) %>
             </div>
         </div>
     </div>
