@@ -129,6 +129,14 @@ class ArchiveController < ApplicationController
       end
     end
   end
+  
+  def advanced_search
+    @fields = [I18n.translate(:everything), I18n.translate(:personal_name), I18n.translate(:title), I18n.translate(:place), I18n.translate(:genre), I18n.translate(:subject),I18n.translate(:collection),I18n.translate(:repository)]
+    @operators = [I18n.translate(:operator_and), I18n.translate(:operator_or), I18n.translate(:operator_not)]
+    @collections = Collection.where(['publish=?',true]).map { |c| [c.name, c.id]}.sort
+    @genres = Subject.genres.where(['publish=?',true]).map { |s| [s.name, s.id]}.sort
+    @repositories = Repository.where(['publish=?',true]).map { |r| [r.name, r.id]}.sort
+  end
 
   def download
     @error = false

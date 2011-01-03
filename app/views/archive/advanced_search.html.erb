@@ -1,0 +1,69 @@
+<% @page_description = t(:advanced_search_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:advanced_search).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+    <h1><%= t(:advanced_search).titleize %></h1>
+    <div id="archive_advanced_search_wrapper">
+        <div class="clearfix" id="advanced_search">
+            <%= form_tag(archive_browser_path, :method=> :post, :class => "advanced_search_form") do %>
+            <table class="styled">
+                <tr>
+                    <td>
+                    <%= t(:search_prompt) %>
+                    </td>
+                    <td>
+                    <%= text_field_tag :value_1, nil, :size => 50 %></td>
+                    <td>
+                    <%= select_tag :field_1, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td><%= select_tag :operator_1, options_for_select(@operators) %></td>
+                    <td>
+                    <%= text_field_tag :value_2, nil, :size => 50 %>
+                    </td>
+                    <td>
+                    <%= select_tag :field_2, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td><%= select_tag :operator_2, options_for_select(@operators) %>
+
+                    </td>
+                    <td>
+                    <%= text_field_tag :value_3, nil, :size => 50 %>
+                    </td>
+                    <td>
+                    <%= select_tag :field_3, options_for_select(@fields) %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <%= label_tag :collection_id, t(:filter_results_by_collection) %><br />
+                    <%= select_tag :collection_id, options_for_select(@collections), {:multiple => true} %>
+                    </td>
+                    <td>
+                    <%= label_tag :subject_id, t(:filter_results_by_genre) %><br />
+                    <%= select_tag :subject_id, options_for_select(@genres), {:multiple => true} %>
+                    </td>
+                    <td>
+                    <%= label_tag :repository_id, t(:filter_results_by_repository) %><br />
+                    <%= select_tag :repository_id, options_for_select(@repositories), {:multiple => true} %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <%= t(:advanced_search_date_range_prompt) %>
+                    </td>
+                    <td colspan="2"><%= text_field_tag :start_year, nil, :size => 5 %> - <%= text_field_tag :end_year, nil, :size => 5 %></td>
+                </tr>
+            </table>
+            <%= submit_tag t(:submit) %>
+            <% end -%>
+            <div id="advanced_search_tips">
+                <h2><%= t(:search_tips) %></h2>
+                <%= raw(t(:advanced_search_tips)) %>
+            </div>
+        </div>
+    </div>
+</div>
