@@ -39,23 +39,23 @@
                 </tr>
                 <tr>
                     <td>
-                    <%= label_tag :collection_id, t(:filter_results_by_collection) %><br />
-                    <%= select_tag :collection_id, options_for_select(@collections), {:multiple => true} %>
+                    <%= label_tag :collection_filter, t(:filter_results_by_collection) %><br />
+                    <%= select_tag :collection_filter, options_for_select(@collections), {:multiple => true} %>
                     </td>
                     <td>
-                    <%= label_tag :subject_id, t(:filter_results_by_genre) %><br />
-                    <%= select_tag :subject_id, options_for_select(@genres), {:multiple => true} %>
+                    <%= label_tag :subject_filter, t(:filter_results_by_genre) %><br />
+                    <%= select_tag :subject_filter, options_for_select(@genres), {:multiple => true} %>
                     </td>
                     <td>
-                    <%= label_tag :repository_id, t(:filter_results_by_repository) %><br />
-                    <%= select_tag :repository_id, options_for_select(@repositories), {:multiple => true} %>
+                    <%= label_tag :repository_filter, t(:filter_results_by_repository) %><br />
+                    <%= select_tag :repository_filter, options_for_select(@repositories), {:multiple => true} %>
                     </td>
                 </tr>
                 <tr>
                     <td>
                     <%= t(:advanced_search_date_range_prompt) %>
                     </td>
-                    <td colspan="2"><%= text_field_tag :start_year, nil, :size => 5 %> - <%= text_field_tag :end_year, nil, :size => 5 %></td>
+                    <td colspan="2"><%= text_field_tag :start_year_filter, nil, :size => 5 %> - <%= text_field_tag :end_year_filter, nil, :size => 5 %></td>
                 </tr>
             </table>
             <%= submit_tag t(:submit) %>

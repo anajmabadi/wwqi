@@ -145,11 +145,8 @@ class ArchiveController < ApplicationController
       @file_to_send = @item.zip_path
       unless File.exists?(@file_to_send)
         #create a zip file if it is the first time
-        Rails.logger.error "made it into the loop"
         zip_them_all = ZipThemAll.new(@file_to_send, @item.preview_paths)
-        Rails.logger.error "Did it work: " + zip_them_all.zip_file_path
         zip_them_all.zip
-        Rails.logger.error "Does zip exist: " + File.exists?(@file_to_send).to_s
       end
       send_file @file_to_send, :type => "application/zip"
     rescue => error
