@@ -4,7 +4,7 @@
 
 <div id="browser" class="clearfix">
   <div id="head" class="filters clearfix">
-    <%= render :partial => "browser_filters", :locals => { :subject_type => @subject_type, :periods => @periods, :collections => @collections }  %>
+    <%= render :partial => "browser_filters", :locals => { :genres => @genres, :periods => @periods, :collections => @collections }  %>
   </div>
   <%= render :partial => "browser_indexes"  %>
   <%= render :partial => "browser_results_message", :locals => { :items => @items }  %>

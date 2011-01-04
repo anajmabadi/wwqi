@@ -3,7 +3,7 @@ class ArchiveController < ApplicationController
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def index
-    @subject_type = SubjectType.find(8)
+    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
     @random_collection_set = Collection.random_set
     @recently_viewed_items = Item.recently_viewed(8)
@@ -14,29 +14,29 @@ class ArchiveController < ApplicationController
   end
 
   def collections
-    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', 1, 0, I18n.locale.to_s]).order('collection_translations.sort_name')
+    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
   end
 
   def subjects
-    @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', 1, 7, I18n.locale.to_s]).order('subject_translations.name')
+    @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', true, 7, I18n.locale.to_s]).order('subject_translations.name')
   end
 
   def places
-    @places = Place.where(['publish=? AND place_translations.locale=?', 1, I18n.locale.to_s]).order('place_translations.name')
+    @places = Place.where(['publish=? AND place_translations.locale=?', true, I18n.locale.to_s]).order('place_translations.name')
   end
 
   def people
-    @people = Person.where(['publish=? AND person_translations.locale=?', 1, I18n.locale.to_s]).order('person_translations.name')
+    @people = Person.where(['publish=? AND person_translations.locale=?', true, I18n.locale.to_s]).order('person_translations.name')
   end
 
   def browser
     logger.info 'browser'
-    @subject_type = SubjectType.find(8)
-    @people = Person.find(:all, :conditions => "items_count > 0 AND people.publish = 1 AND person_translations.locale = '#{I18n.locale.to_s}'", :order => 'person_translations.sort_name')
-    @collections = Collection.find(:all, :conditions => 'collections.publish=1', :order => 'collection_translations.sort_name, collection_translations.name')
-    @periods = Period.find(:all, :conditions => 'periods.publish=1', :order => 'periods.position')
-    @places = Place.find(:all, :conditions => "places.publish=1 AND items_count > 0 AND place_translations.locale = '#{I18n.locale.to_s}'")
-    @subjects = Subject.find(:all, :conditions => "subjects.publish=1 AND subjects.subject_type_id = 7 AND subjects.items_count > 0 AND subject_translations.locale='#{I18n.locale.to_s}'", :order => 'subject_translations.name')
+    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
+    @people = Person.where(["items_count > ? AND people.publish = ? AND person_translations.locale = ?", 0, true, I18n.locale.to_s]).order('person_translations.sort_name')
+    @collections = Collection.where(['collections.publish=?', true]).order('collection_translations.sort_name, collection_translations.name')
+    @periods = Period.where(['periods.publish=?',true]).order('periods.position')
+    @places = Place.where(["places.publish=? AND items_count > ? AND place_translations.locale = ?", true, 0, I18n.locale.to_s])
+    @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subjects.items_count > ? AND subject_translations.locale=?", true, 7, 0, I18n.locale.to_s]).order('subject_translations.name')
 
     #grab filter categories
     @collection_filter = params[:collection_filter]
