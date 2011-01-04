@@ -60,15 +60,15 @@ class Item < ActiveRecord::Base
   end  
   
   def concept_list
-    return self.subjects.where("subject_type_id=7").map { |subject| "#{subject.name} (#{subject.id})" }.join(",")
+    return self.subjects.where("subject_type_id=7").map { |subject| subject.to_label }.join(", ") unless self.subjects.empty?
   end
   
   def genre_list
-    return self.subjects.where("subject_type_id=8").map { |subject| "#{subject.name} (#{subject.id})" }.join(",")
+    return self.subjects.where("subject_type_id=8").map { |subject| subject.to_label }.join(", ") unless self.subjects.empty?
   end
   
   def person_list
-    return self.people.map { |person| "#{person.name} (#{person.id})" }.join(",")
+    return self.people.map { |person| "#{person.name} (#{person.id})" }.join(", ") unless self.people.empty?
   end
   
   def create_images
