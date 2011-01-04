@@ -46,6 +46,11 @@ class Item < ActiveRecord::Base
   validates :width, :height, :depth, :presence => true, :numericality => true
   validates :publish, :bound, :favorite, :editorial_date, :circa, :inclusion => { :in => [true,false] }
    
+   
+  def csv_fields
+    return %w[id accession_num bound calendar_type_id circa collection_id created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_en credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa]
+  end 
+  
   def create_images
     if self.images.empty? && !self.pages.nil? && self.pages != 0
       (1..self.pages).each do |index|

@@ -7,6 +7,22 @@ class ApplicationController < ActionController::Base
   #log activity
   after_filter :record_activity
 
+  # csv generation code
+  def make_custom_csv(collection)
+    csv_string = CSV.generate do |csv|
+        # header row
+        fields = collection[0].csv_fields ||= collection[0].attribute_names
+        csv << fields
+        
+        # data rows
+        collection.each do |record|
+          values = fields.map { |field| record.send(field) if record.respond_to?(field) }
+          csv << values
+        end
+      end
+      return csv_string
+  end
+  
   #column sorting code
   def sort_order(default)
     "#{(params[:c] || default.to_s).gsub(/[\s;'\"]/,'')} #{params[:d] == 'down' ? 'DESC' : 'ASC'}"
