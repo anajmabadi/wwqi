@@ -1,0 +1,29 @@
+<h1>Listing alternate_titles</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Caption</th>
+    <th>Publish</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @alternate_titles.each do |alternate_title| %>
+  <tr>
+    <td><%= alternate_title.name %></td>
+    <td><%= alternate_title.caption %></td>
+    <td><%= alternate_title.publish %></td>
+    <td><%= alternate_title.notes %></td>
+    <td><%= link_to 'Show', alternate_title %></td>
+    <td><%= link_to 'Edit', edit_alternate_title_path(alternate_title) %></td>
+    <td><%= link_to 'Destroy', alternate_title, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Alternate title', new_alternate_title_path %>

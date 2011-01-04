@@ -32,7 +32,7 @@ Qajar::Application.routes.draw do
       :people
 
     resources :items do
-      resources :images
+      resources :images, :alternate_titles
       collection do
         post :show_add_passport_to_item
         post :hide_add_passport_to_item
