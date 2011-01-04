@@ -1,6 +1,20 @@
-<h1>Editing alternate_title</h1>
+<% @page_description = t(:edit_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = session[:admin_item_images_index_url] ||= admin_item_alternate_titles_path %>
+<% @show_path = admin_item_image_path(@item, @alternate_title) %>
 
-<%= link_to 'Show', @alternate_title %> |
-<%= link_to 'Back', alternate_titles_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn">
+    <div class="content nomargin">
+
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+
+      <%= render 'form' %>
+
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+
+    </div>
+
+  </div>
+</div>

@@ -3,7 +3,7 @@ class Admin::AlternateTitlesController < Admin::AdminController
   # GET /alternate_titles.xml
   def index
     @alternate_titles = AlternateTitle.all
-
+    @item = Item.find(params[:item_id])
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @alternate_titles }
@@ -14,7 +14,7 @@ class Admin::AlternateTitlesController < Admin::AdminController
   # GET /alternate_titles/1.xml
   def show
     @alternate_title = AlternateTitle.find(params[:id])
-
+    @item = Item.find(params[:item_id])
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @alternate_title }
@@ -24,8 +24,8 @@ class Admin::AlternateTitlesController < Admin::AdminController
   # GET /alternate_titles/new
   # GET /alternate_titles/new.xml
   def new
-    @alternate_title = AlternateTitle.new
-
+    @alternate_title = AlternateTitle.new(:item_id => params[:item_id])
+    @item = Item.find(params[:item_id])
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @alternate_title }
@@ -35,6 +35,7 @@ class Admin::AlternateTitlesController < Admin::AdminController
   # GET /alternate_titles/1/edit
   def edit
     @alternate_title = AlternateTitle.find(params[:id])
+    @item = Item.find(params[:item_id])
   end
 
   # POST /alternate_titles
@@ -49,7 +50,7 @@ class Admin::AlternateTitlesController < Admin::AdminController
         :item_id => params[:item_id],
         :publish => true
         )
-        format.html { redirect_to( admin_item_alternate_title_path(@alternate_title), :notice => 'Alternate title was successfully created.') }
+        format.html { redirect_to( admin_item_alternate_title_path(:item_id => @alternate_title.item_id, :id => @alternate_title.id), :notice => 'Alternate title was successfully created.') }
         format.xml  { render :xml => @alternate_title, :status => :created, :location => @alternate_title }
         format.js { render :template => @js_template }
       else
@@ -65,10 +66,10 @@ class Admin::AlternateTitlesController < Admin::AdminController
   # PUT /alternate_titles/1.xml
   def update
     @alternate_title = AlternateTitle.find(params[:id])
-
+    @item = Item.find(params[:item_id])
     respond_to do |format|
       if @alternate_title.update_attributes(params[:alternate_title])
-        format.html { redirect_to(admin_item_alternate_title_path(@alternate_title), :notice => 'Alternate title was successfully updated.') }
+        format.html { redirect_to(admin_item_alternate_title_path(:item_id => @alternate_title.item_id, :id => @alternate_title.id), :notice => 'Alternate title was successfully updated.') }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

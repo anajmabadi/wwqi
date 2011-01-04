@@ -13,6 +13,7 @@ class AlternateTitle < ActiveRecord::Base
   def to_label
     my_label = self.title_en
     my_label += " | #{self.title_fa}" unless self.title_fa.blank?
+    my_label += " - #{self.caption_en}" unless self.caption_en.blank?
     my_label += " (#{self.id.to_s})"
     return my_label
   end
