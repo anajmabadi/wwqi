@@ -48,8 +48,28 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[id accession_num bound calendar_type_id circa collection_id created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_en credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa]
+    return %w[id accession_num bound calendar_type_id circa collection_id collection_name created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_name owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_en credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa concept_list genre_list person_list]
   end 
+  
+  def owner_name
+    return self.owner.name unless self.owner.nil?
+  end
+  
+  def collection_name
+    return self.collection.name unless self.collection.nil?
+  end  
+  
+  def concept_list
+    return self.subjects.where("subject_type_id=7").map { |subject| "#{subject.name} (#{subject.id})" }.join(",")
+  end
+  
+  def genre_list
+    return self.subjects.where("subject_type_id=8").map { |subject| "#{subject.name} (#{subject.id})" }.join(",")
+  end
+  
+  def person_list
+    return self.people.map { |person| "#{person.name} (#{person.id})" }.join(",")
+  end
   
   def create_images
     if self.images.empty? && !self.pages.nil? && self.pages != 0
