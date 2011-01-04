@@ -32,7 +32,7 @@ Qajar::Application.routes.draw do
       :people
 
     resources :items do
-      resources :images
+      resources :images, :alternate_titles
       collection do
         post :show_add_passport_to_item
         post :hide_add_passport_to_item
@@ -48,6 +48,8 @@ Qajar::Application.routes.draw do
         post :hide_add_section_to_item
         post :show_add_genre_to_item
         post :hide_add_genre_to_item
+        post :show_add_alternate_title_to_item
+        post :hide_add_alternate_title_to_item
         get :util_update_sort_date
         get :export
       end

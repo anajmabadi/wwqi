@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101231031451) do
+ActiveRecord::Schema.define(:version => 20110104171618) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -41,6 +41,30 @@ ActiveRecord::Schema.define(:version => 20101231031451) do
   add_index "activities", ["subject_id"], :name => "index_activities_on_subject_id"
   add_index "activities", ["subject_type_id"], :name => "index_activities_on_subject_type_id"
   add_index "activities", ["user_id"], :name => "index_activities_on_user_id"
+
+  create_table "alternate_title_translations", :force => true do |t|
+    t.integer  "alternate_title_id"
+    t.string   "locale"
+    t.string   "title"
+    t.string   "caption"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "alternate_title_translations", ["alternate_title_id"], :name => "index_9fc7d2daa22862304c3f93457c5762fa67f887a5"
+  add_index "alternate_title_translations", ["caption"], :name => "index_alternate_title_translations_on_caption"
+  add_index "alternate_title_translations", ["title"], :name => "index_alternate_title_translations_on_title"
+
+  create_table "alternate_titles", :force => true do |t|
+    t.integer  "item_id",    :default => 0
+    t.boolean  "publish"
+    t.string   "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "alternate_titles", ["item_id"], :name => "index_alternate_titles_on_item_id"
+  add_index "alternate_titles", ["publish"], :name => "index_alternate_titles_on_publish"
 
   create_table "appearance_translations", :force => true do |t|
     t.integer  "appearance_id", :default => 0,    :null => false

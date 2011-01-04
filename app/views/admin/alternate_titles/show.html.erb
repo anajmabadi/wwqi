@@ -1,0 +1,38 @@
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:show).capitalize -%>
+
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :alternate_title => @alternate_title %>
+        <table class="styled" >
+            <tr>
+                <td>
+                <p>
+                    <b>Title en:</b>
+                    <%= @alternate_title.title_en %>
+                </p>
+                <p>
+                    <b>Title fa:</b>
+                    <%= @alternate_title.title_fa %>
+                </p>
+                <p>
+                    <b>Caption en:</b>
+                    <%= @alternate_title.caption_en %>
+                </p>
+                <p>
+                    <b>Caption fa:</b>
+                    <%= @alternate_title.caption_fa %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @alternate_title.publish %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @alternate_title.notes %>
+                </p>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>

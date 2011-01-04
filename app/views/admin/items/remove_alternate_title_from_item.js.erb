@@ -1,0 +1,1 @@
+$('#item_alternate_titles_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_alternate_titles_list', :locals => {:alternate_titles => @item.alternate_titles, :item => @item}) %>');

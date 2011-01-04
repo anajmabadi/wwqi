@@ -14,7 +14,8 @@ class Item < ActiveRecord::Base
   belongs_to :calendar_type
   belongs_to :creator, :class_name => "Person", :foreign_key => :creator_id
   belongs_to :era
-
+  
+  has_many :alternate_titles, :dependent => :destroy
   has_many :classifications, :dependent => :destroy
   has_many :images, :order => :position, :dependent => :destroy
   has_many :appearances, :dependent => :destroy

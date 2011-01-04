@@ -1,0 +1,51 @@
+<span>
+    <%= form_for(['admin', @item, alternate_title], :remote => true) do |f| %>
+    <% if alternate_title.errors.any? %>
+    <div id="error_explanation">
+        <h2><%= pluralize(alternate_title.errors.count, "error") %> prohibited this alternate title from being saved:</h2>
+        <ul>
+            <% alternate_title.errors.full_messages.each do |msg| %>
+            <li>
+                <%= msg %>
+            </li>
+            <% end %>
+        </ul>
+    </div>
+    <% end %>
+
+    <%= f.hidden_field(:item_id) %>
+
+    <div class="field">
+        <%= f.label :title_en %>
+        <br/>
+        <%= f.text_field :title_en %>
+    </div>
+    <div class="field">
+        <%= f.label :title_fa %>
+        <br/>
+        <%= f.text_field :title_fa, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :caption_en %>
+        <br/>
+        <%= f.text_field :caption_en %>
+    </div>
+    <div class="field">
+        <%= f.label :caption_fa %>
+        <br/>
+        <%= f.text_field :caption_fa, :class => 'persianOnly' %>
+    </div>
+    <div class="field">
+        <%= f.label :publish %>
+        <br/><%= f.check_box :publish %>
+    </div>
+    <div class="field">
+        <%= f.label :notes %>
+        <br/><%= f.text_field :notes %>
+    </div>
+    <div class="actions">
+        <%= button_to 'Save Alternate Title', nil, :disable_with => t(:please_wait) %>
+    </div>
+    <% end %>
+    <%= button_to 'Cancel', { :controller => "items", :action => 'hide_add_alternate_title_to_item', :id => item.id }, :remote => true, :disable_with => t(:please_wait) %>
+</span>
