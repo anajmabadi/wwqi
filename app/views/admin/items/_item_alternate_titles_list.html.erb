@@ -1,0 +1,14 @@
+<span>
+    <h3>Alternate Titles:</h3>
+    <ul>
+        <% sorted_list = alternate_titles.sort_by(&:title_en) %>
+        <% sorted_list.each do |alternate_title| -%>
+        <% unless alternate_title.nil? %>
+        <li>
+            <%= link_to alternate_title.to_label, admin_item_alternate_title_path( :item_id => item.id, :id => alternate_title.id ) %>
+            <%= link_to image_tag("delete.png", :alt => 'delete'), admin_item_alternate_title_path(:item_id => item.id, :id => alternate_title.id), :confirm => 'Are you sure?', :method => :delete, :remote => 'true' %>
+        </li>
+        <% end %>
+        <% end  %>
+    </ul>
+</span>

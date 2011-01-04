@@ -81,7 +81,6 @@
                     </td>
                 </tr>
                 <tr>
-
                     <td>
                     <b>Collection_en:</b>
                     <%= @item.collection.name_en unless @item.collection.nil? %>
@@ -185,6 +184,22 @@
                     <td colspan="2">
                     <b>Notes:</b>
                     <%= @item.notes %>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    <div id="item_alternate_titles_list" class="item_detail_list">
+                        <%= render :partial => 'item_alternate_titles_list', :locals => {:alternate_titles => @item.alternate_titles, :item => @item} %>
+                    </div>
+                    </td>
+                    <td>
+                    <div id="add_alternate_title" class="item_detail_form">
+                        <% if @alternate_title.nil? -%>
+                        <%= render :partial => 'admin/items/add_alternate_title_button', :locals => { :item => @item } %>
+                        <% else -%>
+                        <%= render :partial => 'admin/items/add_alternate_title_form', :locals => { :alternate_title => @alternate_title } %>
+                        <% end -%>
+                    </div>
                     </td>
                 </tr>
                 <tr>

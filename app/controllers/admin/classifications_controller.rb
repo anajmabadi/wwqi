@@ -66,10 +66,9 @@ class Admin::ClassificationsController < Admin::AdminController
       if @classification.save
         @max_position = Classification.maximum(:position, :conditions => ['item_id = ?', @item.id] ) || 0
         @new_classification = Classification.new(
-        :item_id => params[:id],
+        :item_id => @item.id,
         :publish => true,
-        :position => @max_position + 1,
-        :item_id => @item.id
+        :position => @max_position + 1
         )
         format.html { redirect_to(admin_classification_path(@classification), :notice => 'Classification was successfully created.') }
         format.xml  { render :xml => @classification, :status => :created, :location => @classification }

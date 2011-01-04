@@ -1,0 +1,2 @@
+$('#item_alternate_titles_list>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/item_alternate_titles_list', :locals => {:alternate_titles => @item.alternate_titles, :item => @item } ) %>');
+$('#add_alternate_title>span').replaceWith('<%= escape_javascript(render :partial => 'admin/items/add_alternate_title_form', :locals => {:alternate_title => @new_alternate_title, :item => @item }) %>');

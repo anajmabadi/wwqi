@@ -262,6 +262,29 @@ class Admin::ItemsController < Admin::AdminController
       format.js
     end
   end
+  
+  # remote functions for showing and hiding the add alternate title form
+  def show_add_alternate_title_to_item
+    # retrieve @alternate_titles for instant additions
+    @item = Item.find(params[:id])
+    @alternate_title = AlternateTitle.new(
+    :item_id => params[:id],
+    :publish => true
+    )
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
+
+  def hide_add_alternate_title_to_item
+    @alternate_title = nil
+    @item = Item.find(params[:id])
+    respond_to do |format|
+      format.html { render :action => "show", :id => @item }
+      format.js
+    end
+  end
 
   # remote functions for showing and hiding the add sections form
   def show_add_section_to_item
