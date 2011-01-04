@@ -556,14 +556,14 @@ class ArchiveController < ApplicationController
           inner_operator = inner_index > 0 ? ' AND ' : ''
 
           subqueries << case field
-            when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(item_translations.credit), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'description' then "#{inner_operator}UPPER(item_translations.description) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'transcript' then "#{inner_operator}UPPER(item_translations.transcript) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'accession_num' then "#{inner_operator}UPPER(items.accession_num) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'credit' then "#{inner_operator}UPPER(item_translations.credit) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'item_id' then "#{inner_operator}CONCAT('|',items.id,'|') LIKE :keyword_#{outer_index}_#{inner_index}"
-          else "#{inner_operator}UPPER(accession_num) LIKE :keyword_#{outer_index}_#{inner_index}"
+          else "#{inner_operator}UPPER(title) LIKE :keyword_#{outer_index}_#{inner_index}"
           end
 
           #store the parameter in a unique key

@@ -1,6 +1,9 @@
 class Admin::ItemsController < Admin::AdminController
 
+  require 'csv'
+
   before_filter :find_item, :only => [:show, :edit, :update, :destroy]
+
   def util_update_sort_date
     @items = Item.all
     @changed_items = []
@@ -72,6 +75,7 @@ class Admin::ItemsController < Admin::AdminController
     session[:items_direction] = params[:d]
     session[:items_order] = @order
 
+    @items_full_set = @items
     @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
     #cache the current search set in a session variable
@@ -79,8 +83,38 @@ class Admin::ItemsController < Admin::AdminController
 
     respond_to do |format|
       format.html # index.html.erb
+      format.csv do
+        csv_string = make_custom_csv(@items_full_set)
+        # send it to the browsah
+        send_data csv_string,
+                :type => 'text/csv; charset=utf-8; header=present',
+                :disposition => "attachment; filename=items.csv"
+      end
+      format.xml  { render :xml => @items_full_set }
+    end
+  end
+
+  def export
+    begin
+      @items = Item.find(session[:current_items])
+      @items = Item.all if @items.empty?
+    rescue => error
+      flash[:error] = "There was a problem finding the current item set: " + error.message
+    @error = true
+    end
+
+    respond_to do |format|
+      format.html { redirect_to admin_items_path, :error => flash[:error] }
+      format.csv do
+        csv_string = make_custom_csv(@items)
+        # send it to the browsah
+        send_data csv_string,
+                :type => 'text/csv; charset=utf-8; header=present',
+                :disposition => "attachment; filename=items.csv"
+      end
       format.xml  { render :xml => @items }
     end
+
   end
 
   # GET /items/1

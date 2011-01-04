@@ -9,5 +9,9 @@
     <% unless show_all_path.nil? %> |
       <%= link_to 'Show All', show_all_path %>
     <% end %>
+    <% unless export_passed_path.nil? %> |
+      <%= link_to "Export CSV", export_passed_path %>
+    <% end %>
+        
   </div>
 </div>
