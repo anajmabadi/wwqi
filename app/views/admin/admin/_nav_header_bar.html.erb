@@ -10,8 +10,7 @@
       <%= link_to 'Show All', show_all_path %>
     <% end %>
     <% %>
-    <% if self.respond_to?(:export_passed_path) %> |
-      <%= link_to_unless export_passed_path.nil?, "Export CSV", export_passed_path %>
-    <% end %>
+    <% export_passed_path = export_passed_path ||= "#" %> |
+    <%= link_to_unless export_passed_path.nil?, "Export CSV", export_passed_path %>
   </div>
 </div>
