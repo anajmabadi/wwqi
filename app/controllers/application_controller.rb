@@ -11,7 +11,14 @@ class ApplicationController < ActionController::Base
   def make_custom_csv(collection)
     csv_string = CSV.generate do |csv|
         # header row
-        fields = collection[0].csv_fields ||= collection[0].attribute_names
+        if collection[0].respond_to?('csv_fields')
+          fields = collection[0].csv_fields ||= collection[0].attribute_names
+        else
+          fields = collection[0].attribute_names
+          unless collection[0].translations.nil?
+            fields += collection[0].translations.columns
+          end
+        end
         csv << fields
         
         # data rows

@@ -49,7 +49,7 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[id accession_num bound calendar_type_id circa collection_id collection_name created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_name owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_en credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa concept_list genre_list person_list place_list]
+    return %w[id accession_num bound calendar_type_id circa collection_id collection_name_en collection_name_fa created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_name_en owner_name_fa owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_fa credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa concept_list genre_list person_list place_list comp_list has_clip?]
   end 
   
   def owner_name
@@ -74,6 +74,14 @@ class Item < ActiveRecord::Base
   
   def place_list
     return self.places.map { |place| "#{place.name} (#{place.id})" }.join(", ") unless self.places.empty?
+  end
+  
+  def comp_list
+    return self.comps.map { |comp| comp.item.to_label }.join(", ") unless self.comps.empty?
+  end
+  
+  def has_clip?
+    return !self.clips.empty?
   end
   
   def create_images
