@@ -105,12 +105,6 @@
                     <td><%= @item.credit_label %></td>
                 </tr>
                 <% end -%>
-                <% unless @item.id.nil? -%>
-                <tr>
-                    <th><%= t(:item_id).capitalize %></th>
-                    <td><%= @item.id %></td>
-                </tr>
-                <% end -%>
                 <% unless @item.comps.nil? %>
                 <tr>
                     <th><%= t(:see_also) %></th>
