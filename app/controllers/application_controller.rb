@@ -77,7 +77,7 @@ class ApplicationController < ActionController::Base
   #basis security
   def admin_required
     authenticate_or_request_with_http_basic do |user_name, password|
-      user_name == 'admin' && password == 'Qajar'
+      user_name == 'Editor2011' && password == 'Q@j@r2011'
     end if Rails.env == 'production' || params[:admin_http]
   end
   
