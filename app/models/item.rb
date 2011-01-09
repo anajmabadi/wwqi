@@ -128,6 +128,10 @@ class Item < ActiveRecord::Base
     end 
   end
   
+  def gregorian_date_label
+    return "#{localized_number(self.gregorian_date[0])}/#{localized_number(self.gregorian_date[1])}/#{localized_number(self.gregorian_date[2])}" unless self.gregorian_date.nil? || self.gregorian_date.empty? 
+  end
+  
   def islamic_date
     begin
       Calendar.islamic_from_absolute(self.absolute_date)
@@ -136,12 +140,31 @@ class Item < ActiveRecord::Base
     end 
   end
   
+  def islamic_date_label
+    return "#{localized_number(self.islamic_date[0])}/#{localized_number(self.islamic_date[1])}/#{localized_number(self.islamic_date[2])}" unless self.islamic_date.nil? || self.islamic_date.empty? 
+  end
+  
   def jalali_date
     begin
       Calendar.jalaali_from_absolute(self.absolute_date)
     rescue StandardError => e
       nil
     end 
+  end
+  
+  def jalali_date_label
+    return "#{localized_number(self.jalali_date[0])}/#{localized_number(self.jalali_date[1])}/#{localized_number(self.jalali_date[2])}" unless self.jalali_date.nil? || self.jalali_date.empty? 
+  end
+  
+  def localized_source_date 
+    my_localized_date = ''
+    unless self.year.nil? || self.year == 0
+      my_localized_date = case I18n.locale
+        when :fa then "#{self.islamic_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.jalali_date_label}#{I18n.translate(:secondary_date_suffix)}"
+        else "#{self.gregorian_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.islamic_date_label}#{I18n.translate(:secondary_date_suffix)}"
+      end
+    end
+    return my_localized_date
   end
   
   def self.added_since_date(months=1, limit=25)
@@ -197,15 +220,22 @@ class Item < ActiveRecord::Base
     date_to_show = ''
     if !self.display_date.blank?
       date_to_show += display_date
+    elsif self.year == 2050 || self.sort_year == 2050
+      date_to_show += I18n.translate(:undated)  
+    elsif !self.year.blank? 
+      date_to_show += self.localized_source_date
     elsif !self.sort_year.blank?
-      date_to_show += sort_year.to_s
+      date_to_show += localized_number(sort_year)
     end
     
     # check for editorial
     if self.editorial_date
-      date_to_show = "[#{date_to_show}]"
+      date_to_show = "#{I18n.translate(:editorial_date_prefix)}#{date_to_show}#{I18n.translate(:editorial_date_suffix)}"
     end
-    return I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
+    
+    date_to_show = I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
+    
+    return date_to_show
   end
 
   # TODO: Find the right place for this special XML route
