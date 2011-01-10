@@ -6,7 +6,10 @@ describe Item do
   before(:each) do
     @item = Item.new
     @sample_attributes = {
-      :title => "Sample title",
+      :title_en => "Sample title",
+      :title_fa => "Sample farsi title",
+      :published_en => "My pub details",
+      :published_fa => "Still pub details but in farsi",
       :pages => 2,
       :accession_num => "ABCD-00011",
       :width => 23.4,

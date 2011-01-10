@@ -32,7 +32,7 @@ class Item < ActiveRecord::Base
   has_many :sections, :order => 'sections.start_page', :dependent => :destroy
   
   # globalize2 accessors 
-  translates :title, :credit, :description, :display_date, :creator_label, :publisher, :transcript, :remarks
+  translates :title, :credit, :description, :display_date, :creator_label, :published, :transcript, :remarks
   globalize_accessors :fa, :en
   default_scope :include => [:translations]
   
