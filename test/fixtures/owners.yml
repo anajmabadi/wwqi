@@ -49,10 +49,10 @@ owners_003:
   terms: ""
   notes: ""
   created_at: 2010-07-01 19:55:10
-  updated_at: 2010-07-01 19:56:31
-  lock_version: "0"
+  updated_at: 2011-01-09 05:31:46
+  lock_version: "1"
   private: "0"
-  city: 
+  city: ""
 owners_004: 
   id: "4"
   address: ""
@@ -307,6 +307,24 @@ owners_017:
   city: 
 owners_018: 
   id: "20"
+  address: Parliament Library - Baharestan Square- Tehran
+  address2: "\xD8\xAA\xD9\x87\xD8\xB1\xD8\xA7\xD9\x86 - \xD8\xB6\xD9\x84\xD8\xB9 \xD8\xAC\xD9\x86\xD9\x88\xD8\xA8 \xD8\xB4\xD8\xB1\xD9\x82\xD9\x8A \xD9\x85\xD9\x8A\xD8\xAF\xD8\xA7\xD9\x86 \xD8\xA8\xD9\x87\xD8\xA7\xD8\xB1\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86 - \xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8\xD8\xAE\xD8\xA7\xD9\x86\xD9\x87 \xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xD8\xB4\xD9\x88\xD8\xB1\xD8\xA7\xD9\x8A \xD8\xA7\xD8\xB3\xD9\x84\xD8\xA7\xD9\x85\xD9\x8A"
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: http://www.ical.ir
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2010-12-09 22:03:40
+  updated_at: 2011-01-08 06:27:56
+  lock_version: "5"
+  private: "0"
+  city: ""
+owners_019: 
+  id: "21"
   address: ""
   address2: ""
   state_province: ""
@@ -318,8 +336,26 @@ owners_018:
   contact: ""
   terms: ""
   notes: 
-  created_at: 2010-12-09 22:03:40
-  updated_at: 2010-12-09 22:03:40
+  created_at: 2011-01-08 22:22:07
+  updated_at: 2011-01-08 22:22:07
   lock_version: "0"
   private: "0"
-  city: 
+  city: ""
+owners_020: 
+  id: "22"
+  address: ""
+  address2: ""
+  state_province: ""
+  postal_code: ""
+  country: ""
+  telephone: ""
+  email: ""
+  url: ""
+  contact: ""
+  terms: ""
+  notes: 
+  created_at: 2011-01-09 00:10:20
+  updated_at: 2011-01-09 00:10:20
+  lock_version: "0"
+  private: "0"
+  city: ""

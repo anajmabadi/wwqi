@@ -587,3 +587,59 @@ place_translations_084:
   name: "\xD9\x84\xD9\x86\xD8\xAF\xD9\x86"
   created_at: 2010-12-30 07:20:56
   updated_at: 2010-12-30 07:20:56
+place_translations_085: 
+  id: "85"
+  place_id: "43"
+  locale: en
+  name: Baku
+  created_at: 2011-01-02 08:11:35
+  updated_at: 2011-01-02 08:11:35
+place_translations_086: 
+  id: "86"
+  place_id: "43"
+  locale: fa
+  name: "\xD8\xA8\xD8\xA7\xDA\xA9\xD9\x88"
+  created_at: 2011-01-02 08:11:35
+  updated_at: 2011-01-02 08:11:35
+place_translations_087: 
+  id: "87"
+  place_id: "44"
+  locale: en
+  name: Kazim Abad
+  created_at: 2011-01-02 09:11:27
+  updated_at: 2011-01-02 09:11:27
+place_translations_088: 
+  id: "88"
+  place_id: "44"
+  locale: fa
+  name: "\xDA\xA9\xD8\xA7\xD8\xB8\xD9\x85 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-02 09:11:27
+  updated_at: 2011-01-02 09:11:27
+place_translations_089: 
+  id: "89"
+  place_id: "45"
+  locale: en
+  name: Shimiran
+  created_at: 2011-01-06 07:59:21
+  updated_at: 2011-01-06 08:16:44
+place_translations_090: 
+  id: "90"
+  place_id: "45"
+  locale: fa
+  name: "\xD8\xB4\xD9\x85\xDB\x8C\xD8\xB1\xD8\xA7\xD9\x86"
+  created_at: 2011-01-06 07:59:21
+  updated_at: 2011-01-06 07:59:21
+place_translations_091: 
+  id: "91"
+  place_id: "46"
+  locale: en
+  name: Nizamiyah
+  created_at: 2011-01-06 08:00:40
+  updated_at: 2011-01-06 08:00:40
+place_translations_092: 
+  id: "92"
+  place_id: "46"
+  locale: fa
+  name: "\xD9\x86\xD8\xB8\xD8\xA7\xD9\x85\xDB\x8C\xD9\x87"
+  created_at: 2011-01-06 08:00:40
+  updated_at: 2011-01-06 08:00:40

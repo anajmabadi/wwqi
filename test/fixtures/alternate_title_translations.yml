@@ -1,0 +1,17 @@
+--- 
+alternate_title_translations_001: 
+  id: "1"
+  alternate_title_id: "1"
+  locale: en
+  title: "T\xCA\xBCadib al-Nisvan"
+  caption: ""
+  created_at: 2011-01-08 22:55:40
+  updated_at: 2011-01-08 22:55:40
+alternate_title_translations_002: 
+  id: "2"
+  alternate_title_id: "1"
+  locale: fa
+  title: "\xD8\xAA\xD8\xA3\xD8\xAF\xDB\x8C\xD8\xA8 \xD8\xA7\xD9\x84\xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86"
+  caption: ""
+  created_at: 2011-01-08 22:55:40
+  updated_at: 2011-01-08 22:55:40

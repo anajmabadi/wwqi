@@ -1,337 +1,379 @@
 --- 
 comp_translations_001: 
-  id: "1"
-  comp_id: "17"
-  locale: en
-  caption: ""
-  created_at: 2010-12-16 16:30:37
-  updated_at: 2010-12-16 16:30:37
-comp_translations_002: 
-  id: "2"
-  comp_id: "17"
-  locale: fa
-  caption: ""
-  created_at: 2010-12-16 16:30:37
-  updated_at: 2010-12-16 16:30:37
-comp_translations_003: 
   id: "3"
   comp_id: "18"
   locale: en
   caption: ""
   created_at: 2010-12-16 16:44:41
   updated_at: 2010-12-16 16:44:41
-comp_translations_004: 
+comp_translations_002: 
   id: "4"
   comp_id: "18"
   locale: fa
   caption: ""
   created_at: 2010-12-16 16:44:41
   updated_at: 2010-12-16 16:44:41
-comp_translations_005: 
+comp_translations_003: 
   id: "5"
   comp_id: "19"
   locale: en
   caption: ""
   created_at: 2010-12-16 17:36:24
   updated_at: 2010-12-16 17:36:24
-comp_translations_006: 
+comp_translations_004: 
   id: "6"
   comp_id: "19"
   locale: fa
   caption: ""
   created_at: 2010-12-16 17:36:24
   updated_at: 2010-12-16 17:36:24
-comp_translations_007: 
+comp_translations_005: 
   id: "7"
   comp_id: "20"
   locale: en
   caption: ""
   created_at: 2010-12-23 07:54:07
   updated_at: 2010-12-23 07:54:07
-comp_translations_008: 
+comp_translations_006: 
   id: "8"
   comp_id: "20"
   locale: fa
   caption: ""
   created_at: 2010-12-23 07:54:07
   updated_at: 2010-12-23 07:54:07
-comp_translations_009: 
+comp_translations_007: 
   id: "9"
   comp_id: "21"
   locale: en
   caption: ""
   created_at: 2010-12-25 02:21:18
   updated_at: 2010-12-25 02:21:18
-comp_translations_010: 
+comp_translations_008: 
   id: "10"
   comp_id: "21"
   locale: fa
   caption: ""
   created_at: 2010-12-25 02:21:18
   updated_at: 2010-12-25 02:21:18
-comp_translations_011: 
+comp_translations_009: 
   id: "11"
   comp_id: "22"
   locale: en
   caption: ""
   created_at: 2010-12-25 07:32:54
   updated_at: 2010-12-25 07:32:54
-comp_translations_012: 
+comp_translations_010: 
   id: "12"
   comp_id: "22"
   locale: fa
   caption: ""
   created_at: 2010-12-25 07:32:54
   updated_at: 2010-12-25 07:32:54
-comp_translations_013: 
+comp_translations_011: 
   id: "13"
   comp_id: "23"
   locale: en
   caption: ""
   created_at: 2010-12-26 04:27:23
   updated_at: 2010-12-26 04:27:23
-comp_translations_014: 
+comp_translations_012: 
   id: "14"
   comp_id: "23"
   locale: fa
   caption: ""
   created_at: 2010-12-26 04:27:23
   updated_at: 2010-12-26 04:27:23
-comp_translations_015: 
+comp_translations_013: 
   id: "15"
   comp_id: "24"
   locale: en
   caption: ""
   created_at: 2010-12-26 04:32:55
   updated_at: 2010-12-26 04:32:55
-comp_translations_016: 
+comp_translations_014: 
   id: "16"
   comp_id: "24"
   locale: fa
   caption: ""
   created_at: 2010-12-26 04:32:55
   updated_at: 2010-12-26 04:32:55
-comp_translations_017: 
+comp_translations_015: 
   id: "17"
   comp_id: "25"
   locale: en
   caption: ""
   created_at: 2010-12-27 10:37:32
   updated_at: 2010-12-27 10:37:32
-comp_translations_018: 
+comp_translations_016: 
   id: "18"
   comp_id: "25"
   locale: fa
   caption: ""
   created_at: 2010-12-27 10:37:32
   updated_at: 2010-12-27 10:37:32
-comp_translations_019: 
+comp_translations_017: 
   id: "19"
   comp_id: "26"
   locale: en
   caption: ""
   created_at: 2010-12-27 10:40:48
   updated_at: 2010-12-27 10:40:48
-comp_translations_020: 
+comp_translations_018: 
   id: "20"
   comp_id: "26"
   locale: fa
   caption: ""
   created_at: 2010-12-27 10:40:48
   updated_at: 2010-12-27 10:40:48
-comp_translations_021: 
+comp_translations_019: 
   id: "21"
   comp_id: "27"
   locale: en
   caption: ""
   created_at: 2010-12-28 01:37:24
   updated_at: 2010-12-28 01:37:24
-comp_translations_022: 
+comp_translations_020: 
   id: "22"
   comp_id: "27"
   locale: fa
   caption: ""
   created_at: 2010-12-28 01:37:24
   updated_at: 2010-12-28 01:37:24
-comp_translations_023: 
+comp_translations_021: 
   id: "23"
   comp_id: "28"
   locale: en
   caption: ""
   created_at: 2010-12-28 01:38:42
   updated_at: 2010-12-28 01:38:42
-comp_translations_024: 
+comp_translations_022: 
   id: "24"
   comp_id: "28"
   locale: fa
   caption: ""
   created_at: 2010-12-28 01:38:42
   updated_at: 2010-12-28 01:38:42
-comp_translations_025: 
+comp_translations_023: 
   id: "25"
   comp_id: "29"
   locale: en
   caption: typed
   created_at: 2010-12-30 08:43:31
   updated_at: 2010-12-30 08:43:31
-comp_translations_026: 
+comp_translations_024: 
   id: "26"
   comp_id: "29"
   locale: fa
   caption: "\xD8\xAA\xD8\xA7\xDB\x8C\xD9\xBE\xDB\x8C"
   created_at: 2010-12-30 08:43:31
   updated_at: 2010-12-30 08:43:31
-comp_translations_027: 
+comp_translations_025: 
   id: "27"
   comp_id: "30"
   locale: en
   caption: typed
   created_at: 2010-12-30 08:46:00
   updated_at: 2010-12-30 08:46:00
-comp_translations_028: 
+comp_translations_026: 
   id: "28"
   comp_id: "30"
   locale: fa
   caption: "\xD8\xAA\xD8\xA7\xDB\x8C\xD9\xBE\xDB\x8C"
   created_at: 2010-12-30 08:46:00
   updated_at: 2010-12-30 08:46:00
-comp_translations_029: 
+comp_translations_027: 
   id: "29"
   comp_id: "31"
   locale: en
   caption: carbon copy
   created_at: 2010-12-30 09:30:48
   updated_at: 2010-12-30 09:30:48
-comp_translations_030: 
+comp_translations_028: 
   id: "30"
   comp_id: "31"
   locale: fa
   caption: "\xDA\xA9\xD9\xBE\xDB\x8C \xDA\xA9\xD8\xA7\xD8\xB1\xD8\xA8\xD9\x86"
   created_at: 2010-12-30 09:30:48
   updated_at: 2010-12-30 09:30:48
-comp_translations_031: 
+comp_translations_029: 
   id: "31"
   comp_id: "32"
   locale: en
   caption: original
   created_at: 2010-12-30 09:33:11
   updated_at: 2010-12-30 09:33:11
-comp_translations_032: 
+comp_translations_030: 
   id: "32"
   comp_id: "32"
   locale: fa
   caption: "\xD8\xA7\xD8\xB5\xD9\x84"
   created_at: 2010-12-30 09:33:11
   updated_at: 2010-12-30 09:33:11
-comp_translations_033: 
+comp_translations_031: 
   id: "33"
   comp_id: "33"
   locale: en
   caption: ""
   created_at: 2010-12-30 09:44:12
   updated_at: 2010-12-30 09:44:12
-comp_translations_034: 
+comp_translations_032: 
   id: "34"
   comp_id: "33"
   locale: fa
   caption: ""
   created_at: 2010-12-30 09:44:12
   updated_at: 2010-12-30 09:44:12
-comp_translations_035: 
+comp_translations_033: 
   id: "35"
   comp_id: "34"
   locale: en
   caption: ""
   created_at: 2010-12-30 09:44:26
   updated_at: 2010-12-30 09:44:26
-comp_translations_036: 
+comp_translations_034: 
   id: "36"
   comp_id: "34"
   locale: fa
   caption: ""
   created_at: 2010-12-30 09:44:26
   updated_at: 2010-12-30 09:44:26
-comp_translations_037: 
+comp_translations_035: 
   id: "37"
   comp_id: "35"
   locale: en
   caption: ""
   created_at: 2010-12-30 09:46:59
   updated_at: 2010-12-30 09:46:59
-comp_translations_038: 
+comp_translations_036: 
   id: "38"
   comp_id: "35"
   locale: fa
   caption: ""
   created_at: 2010-12-30 09:46:59
   updated_at: 2010-12-30 09:46:59
-comp_translations_039: 
+comp_translations_037: 
   id: "39"
   comp_id: "36"
   locale: en
   caption: ""
   created_at: 2010-12-30 09:47:13
   updated_at: 2010-12-30 09:47:13
-comp_translations_040: 
+comp_translations_038: 
   id: "40"
   comp_id: "36"
   locale: fa
   caption: ""
   created_at: 2010-12-30 09:47:13
   updated_at: 2010-12-30 09:47:13
-comp_translations_041: 
+comp_translations_039: 
   id: "41"
   comp_id: "37"
   locale: en
   caption: ""
   created_at: 2010-12-30 10:24:01
   updated_at: 2010-12-30 10:24:01
-comp_translations_042: 
+comp_translations_040: 
   id: "42"
   comp_id: "37"
   locale: fa
   caption: ""
   created_at: 2010-12-30 10:24:01
   updated_at: 2010-12-30 10:24:01
-comp_translations_043: 
+comp_translations_041: 
   id: "43"
   comp_id: "38"
   locale: en
   caption: ""
   created_at: 2010-12-30 10:24:53
   updated_at: 2010-12-30 10:24:53
-comp_translations_044: 
+comp_translations_042: 
   id: "44"
   comp_id: "38"
   locale: fa
   caption: ""
   created_at: 2010-12-30 10:24:53
   updated_at: 2010-12-30 10:24:53
-comp_translations_045: 
+comp_translations_043: 
   id: "45"
   comp_id: "39"
   locale: en
   caption: ""
   created_at: 2010-12-30 12:26:08
   updated_at: 2010-12-30 12:26:08
-comp_translations_046: 
+comp_translations_044: 
   id: "46"
   comp_id: "39"
   locale: fa
   caption: ""
   created_at: 2010-12-30 12:26:08
   updated_at: 2010-12-30 12:26:08
-comp_translations_047: 
+comp_translations_045: 
   id: "47"
   comp_id: "40"
   locale: en
   caption: ""
   created_at: 2010-12-30 12:32:50
   updated_at: 2010-12-30 12:32:50
-comp_translations_048: 
+comp_translations_046: 
   id: "48"
   comp_id: "40"
   locale: fa
   caption: ""
   created_at: 2010-12-30 12:32:50
   updated_at: 2010-12-30 12:32:50
+comp_translations_047: 
+  id: "49"
+  comp_id: "41"
+  locale: en
+  caption: ""
+  created_at: 2011-01-08 22:59:56
+  updated_at: 2011-01-08 22:59:56
+comp_translations_048: 
+  id: "50"
+  comp_id: "41"
+  locale: fa
+  caption: ""
+  created_at: 2011-01-08 22:59:56
+  updated_at: 2011-01-08 22:59:56
+comp_translations_049: 
+  id: "51"
+  comp_id: "42"
+  locale: en
+  caption: ""
+  created_at: 2011-01-08 23:04:44
+  updated_at: 2011-01-08 23:04:44
+comp_translations_050: 
+  id: "52"
+  comp_id: "42"
+  locale: fa
+  caption: ""
+  created_at: 2011-01-08 23:04:44
+  updated_at: 2011-01-08 23:04:44
+comp_translations_051: 
+  id: "53"
+  comp_id: "43"
+  locale: en
+  caption: ""
+  created_at: 2011-01-09 02:40:48
+  updated_at: 2011-01-09 02:40:48
+comp_translations_052: 
+  id: "54"
+  comp_id: "43"
+  locale: fa
+  caption: ""
+  created_at: 2011-01-09 02:40:48
+  updated_at: 2011-01-09 02:40:48
+comp_translations_053: 
+  id: "55"
+  comp_id: "44"
+  locale: en
+  caption: ""
+  created_at: 2011-01-09 02:44:50
+  updated_at: 2011-01-09 02:44:50
+comp_translations_054: 
+  id: "56"
+  comp_id: "44"
+  locale: fa
+  caption: ""
+  created_at: 2011-01-09 02:44:50
+  updated_at: 2011-01-09 02:44:50

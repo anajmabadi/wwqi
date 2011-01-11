@@ -40,9 +40,9 @@ collections_002:
   updated_at: 2010-12-06 16:52:51
   publish: "0"
   private: "0"
-  items_count: "15"
+  items_count: "16"
   finding_aid: "0"
-  lock_version: "3"
+  lock_version: "4"
   acquired_on: "2010-06-03"
   interview_id: 
   acquired_by: ""
@@ -165,9 +165,9 @@ collections_007:
   updated_at: 2010-12-09 09:22:35
   publish: "1"
   private: "0"
-  items_count: "216"
+  items_count: "215"
   finding_aid: "1"
-  lock_version: "6"
+  lock_version: "5"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
@@ -265,9 +265,9 @@ collections_011:
   updated_at: 2010-12-06 17:32:24
   publish: "1"
   private: "0"
-  items_count: "129"
+  items_count: "130"
   finding_aid: "0"
-  lock_version: "8"
+  lock_version: "9"
   acquired_on: "2010-12-06"
   interview_id: 
   acquired_by: ""
@@ -314,17 +314,17 @@ collections_013:
   contact: ""
   notes: ""
   created_at: 2010-10-14 18:34:05
-  updated_at: 2010-10-20 15:30:22
-  publish: "0"
+  updated_at: 2011-01-05 02:15:15
+  publish: "1"
   private: "0"
-  items_count: "10"
+  items_count: "21"
   finding_aid: "0"
-  lock_version: "11"
-  acquired_on: 
+  lock_version: "23"
+  acquired_on: "2010-04-10"
   interview_id: 
-  acquired_by: 
-  processed_by: 
-  acquisition_notes: 
+  acquired_by: Afsaneh Najmabadi
+  processed_by: Ramyar Rossoukh
+  acquisition_notes: ""
   last_edited: 
 collections_014: 
   id: "16"
@@ -342,9 +342,9 @@ collections_014:
   updated_at: 2010-10-20 15:47:27
   publish: "0"
   private: "0"
-  items_count: "1"
+  items_count: "0"
   finding_aid: "0"
-  lock_version: "1"
+  lock_version: "0"
   acquired_on: 
   interview_id: 
   acquired_by: 
@@ -414,12 +414,12 @@ collections_017:
   contact: ""
   notes: ""
   created_at: 2010-12-09 22:05:36
-  updated_at: 2010-12-09 22:05:36
+  updated_at: 2011-01-07 20:26:17
   publish: "1"
   private: "0"
-  items_count: "1"
+  items_count: "4"
   finding_aid: "0"
-  lock_version: "1"
+  lock_version: "5"
   acquired_on: 
   interview_id: 
   acquired_by: ""

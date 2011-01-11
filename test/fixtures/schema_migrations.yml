@@ -151,3 +151,7 @@ schema_migrations_075:
   version: "20101230143143"
 schema_migrations_076: 
   version: "20101231031451"
+schema_migrations_077: 
+  version: "20110104171618"
+schema_migrations_078: 
+  version: "20110110000518"

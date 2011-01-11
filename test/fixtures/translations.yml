@@ -1963,7 +1963,7 @@ translations_197:
   id: "210"
   locale: en
   key: no_records_found
-  value: No items found for your search.
+  value: "Sorry, we could not find matching items. "
   interpolations: ""
   is_proc: "0"
   created_at: 2010-05-20 01:57:55
@@ -1973,7 +1973,7 @@ translations_198:
   id: "211"
   locale: fa
   key: no_records_found
-  value: "\xD9\x82\xD8\xB7\xD8\xB9\xD9\x87\xE2\x80\x8C\xD8\xA7\xDB\x8C \xDB\x8C\xD8\xA7\xD9\x81\xD8\xAA \xD9\x86\xD8\xB4\xD8\xAF."
+  value: "\xD8\xA8\xD8\xA7 \xD8\xB9\xD8\xB1\xD8\xB6 \xD9\xBE\xD9\x88\xD8\xB2\xD8\xB4 \xD8\xA8\xD8\xB1\xD8\xA7\xDB\x8C \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD8\xB4\xD9\x85\xD8\xA7 \xD9\x85\xD9\x88\xD8\xB1\xD8\xAF\xDB\x8C \xDB\x8C\xD8\xA7\xD9\x81\xD8\xAA \xD9\x86\xD8\xB4\xD8\xAF."
   interpolations: ""
   is_proc: "0"
   created_at: 2010-05-20 01:58:47
@@ -3063,7 +3063,7 @@ translations_307:
   id: "320"
   locale: en
   key: advanced_search
-  value: Advanced Search (coming soon)
+  value: Advanced Search
   interpolations: 
   is_proc: "0"
   created_at: 2010-08-11 20:36:21
@@ -4019,5 +4019,605 @@ translations_402:
   interpolations: 
   is_proc: "0"
   created_at: 2011-01-01 12:52:55
+  updated_at: 
+  lock_version: "0"
+translations_403: 
+  id: "416"
+  locale: en
+  key: item_added_to_archive_message
+  value: Item added to My Archive.
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-01 16:00:12
+  updated_at: 
+  lock_version: "0"
+translations_404: 
+  id: "417"
+  locale: fa
+  key: item_added_to_archive_message
+  value: "\xD8\xA2\xDB\x8C\xD8\xAA\xD9\x85 \xD9\x87\xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB6\xD8\xA7\xD9\x81\xD9\x87 \xD8\xB4\xD8\xAF\xD9\x87 \xD8\xA8\xD9\x87 \xD8\xA2\xD8\xB1\xD8\xB4\xDB\x8C\xD9\x88 \xD9\x85\xD9\x86."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-01 16:01:17
+  updated_at: 
+  lock_version: "0"
+translations_405: 
+  id: "418"
+  locale: en
+  key: item_removed_from_archive_message
+  value: Item removed from My Archive.
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-01 16:01:52
+  updated_at: 
+  lock_version: "0"
+translations_406: 
+  id: "419"
+  locale: fa
+  key: item_removed_from_archive_message
+  value: "\xD8\xA2\xD8\xB1\xD8\xB4\xDB\x8C\xD9\x88 \xD9\x85\xD9\x88\xD8\xB1\xD8\xAF\xDB\x8C \xD8\xA7\xD8\xB2 \xD9\x85\xD9\x86 \xD8\xA8\xD8\xB1\xD8\xAF\xD8\xA7\xD8\xB4\xD8\xAA\xD9\x87 \xD8\xB4\xD8\xAF."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-01 16:02:16
+  updated_at: 
+  lock_version: "0"
+translations_407: 
+  id: "420"
+  locale: en
+  key: here_are_some_search_tips
+  value: "Here are some search tips: "
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 09:57:09
+  updated_at: 
+  lock_version: "0"
+translations_408: 
+  id: "421"
+  locale: fa
+  key: here_are_some_search_tips
+  value: "\xDA\x86\xD9\x86\xD8\xAF \xD9\xBE\xDB\x8C\xD8\xB4\xD9\x86\xD9\x87\xD8\xA7\xD8\xAF \xD8\xA8\xD8\xB1\xD8\xA7\xDB\x8C \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD9\x85\xD8\xA4\xD8\xAB\xD8\xB1\xD8\xAA\xD8\xB1:"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 09:57:02
+  updated_at: 
+  lock_version: "0"
+translations_409: 
+  id: "422"
+  locale: en
+  key: tip_select_fewer_filters
+  value: Select fewer filters at one time
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 09:57:06
+  updated_at: 
+  lock_version: "0"
+translations_410: 
+  id: "423"
+  locale: fa
+  key: tip_select_fewer_filters
+  value: "\xD8\xA7\xD8\xB2 \xD8\xAA\xD8\xB9\xD8\xAF\xD8\xA7\xD8\xAF \xDA\xA9\xD9\x85\xD8\xAA\xD8\xB1\xDB\x8C \xD9\x81\xDB\x8C\xD9\x84\xD8\xAA\xD8\xB1 \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88 \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 09:56:59
+  updated_at: 
+  lock_version: "0"
+translations_411: 
+  id: "424"
+  locale: en
+  key: tip_use_indexes
+  value: "Use the indexes:"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 09:56:56
+  updated_at: 
+  lock_version: "0"
+translations_412: 
+  id: "425"
+  locale: fa
+  key: tip_use_indexes
+  value: "\xD8\xA7\xD8\xB2 \xD9\x81\xD9\x87\xD8\xB1\xD8\xB3\xD8\xAA  \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:00:15
+  updated_at: 
+  lock_version: "0"
+translations_413: 
+  id: "426"
+  locale: en
+  key: tip_try_variations
+  value: Try variations of any keywords
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:00:12
+  updated_at: 
+  lock_version: "0"
+translations_414: 
+  id: "427"
+  locale: fa
+  key: tip_try_variations
+  value: "\xD8\xA7\xD8\xB2\xDA\xA9\xD9\x84\xDB\x8C\xD8\xAF\xD9\x88\xD8\xA7\xDA\x98\xD9\x87 \xD9\x87\xD8\xA7\xDB\x8C\xDB\x8C \xD9\x85\xD8\xB1\xD8\xA8\xD9\x88\xD8\xB7 \xD8\xA8\xD9\x87 \xDA\xA9\xD9\x84\xD9\x85\xD9\x87 \xD9\x85\xD9\x88\xD8\xB1\xD8\xAF \xD9\x86\xD8\xB8\xD8\xB1 \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:00:08
+  updated_at: 
+  lock_version: "0"
+translations_415: 
+  id: "428"
+  locale: en
+  key: showing_no_records
+  value: "Found no matching items.  "
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:18:19
+  updated_at: 
+  lock_version: "0"
+translations_416: 
+  id: "429"
+  locale: fa
+  key: showing_no_records
+  value: "\xD9\x86\xD8\xB4\xD8\xA7\xD9\x86 \xD9\x85\xDB\x8C \xD8\xAF\xD9\x87\xD8\xAF \xD9\x87\xDB\x8C\xDA\x86 \xD9\x85\xD9\x86\xD8\xB7\xD8\xA8\xD9\x82."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:19:21
+  updated_at: 
+  lock_version: "0"
+translations_417: 
+  id: "430"
+  locale: en
+  key: advanced_search_description
+  value: Advanced search form allowing complex queries of the Qajar Archive.
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:51:10
+  updated_at: 
+  lock_version: "0"
+translations_418: 
+  id: "431"
+  locale: fa
+  key: advanced_search_description
+  value: "\xD9\x81\xD8\xB1\xD9\x85 \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88 \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD9\xBE\xDB\x8C\xD8\xB4\xD8\xB1\xD9\x81\xD8\xAA\xD9\x87 \xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB2\xD9\x87 \xD9\x85\xDB\x8C \xD8\xAF\xD9\x87\xD8\xAF \xD9\x86\xD9\x85\xD8\xA7\xDB\x8C\xD8\xB4 \xD8\xAF\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xB4\xD8\xAF \xD9\xBE\xDB\x8C\xDA\x86\xDB\x8C\xD8\xAF\xD9\x87 \xD8\xA7\xDB\x8C \xD8\xA7\xD8\xB2 \xD8\xA8\xD8\xA7\xDB\x8C\xDA\xAF\xD8\xA7\xD9\x86\xDB\x8C \xD9\x82\xD8\xA7\xD8\xAC\xD8\xA7\xD8\xB1."
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 10:51:55
+  updated_at: 
+  lock_version: "0"
+translations_419: 
+  id: "432"
+  locale: en
+  key: advanced_search_date_range_prompt
+  value: "Limit results to items within this range of four-digit years:"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 16:55:53
+  updated_at: 
+  lock_version: "0"
+translations_420: 
+  id: "433"
+  locale: fa
+  key: advanced_search_date_range_prompt
+  value: "\xD9\x86\xD8\xAA\xD8\xA7\xDB\x8C\xD8\xAC \xD9\x85\xD8\xAD\xD8\xAF\xD9\x88\xD8\xAF \xD8\xA8\xD9\x87 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85 \xD8\xAF\xD8\xB1 \xD8\xAF\xD8\xA7\xD8\xAE\xD9\x84 \xD8\xA7\xDB\x8C\xD9\x86 \xD9\x85\xD8\xAD\xD8\xAF\xD9\x88\xD8\xAF\xD9\x87 \xD8\xA7\xD8\xB2 \xD8\xB3\xD8\xA7\xD9\x84 \xDA\x86\xD9\x87\xD8\xA7\xD8\xB1 \xD8\xB1\xD9\x82\xD9\x85\xDB\x8C :"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 18:55:37
+  updated_at: 
+  lock_version: "0"
+translations_421: 
+  id: "434"
+  locale: en
+  key: advanced_search_tips
+  value: <ul><li>Use an asterisk (*) as a wildcard to search partial words.</li><li>Use <strong>and, or,</strong> and <strong>not</strong> operators.</li><li>Use quotes to search for a phrase.</li><li><strong>Names</strong> often reflect authority records and may therefore be presented in unusual or unfamiliar form. If a name search produces no results, try alternate spellings or use a wildcard.</li><li><strong>Transliteration conventions </strong>are based on a simplified form of the<a href="http://www.loc.gov/catdir/cpso/roman.html"> ALA-LC Romanization Tables</a> for Persian.</li></ul>
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 18:55:32
+  updated_at: 
+  lock_version: "0"
+translations_422: 
+  id: "435"
+  locale: fa
+  key: advanced_search_tips
+  value: "<ul><li>\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAA\xDB\x8C \xD8\xA8\xD8\xB1\xD8\xA7\xDB\x8C \xDA\xA9\xD9\x85\xDA\xA9 \xD8\xA8\xD9\x87 \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88</li><li>\xD8\xA8\xD8\xA7 \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xD8\xA7\xD8\xB2 \xD8\xB5\xD9\x81\xD8\xAD\xD9\x87 \xD8\xA7\xD9\x84\xD9\x81\xD8\xA8\xD8\xA7\xDB\x8C \xD9\x85\xD8\xAC\xD8\xA7\xD8\xB2\xDB\x8C \xD8\xA8\xD9\x87 \xD9\x81\xD8\xA7\xD8\xB1\xD8\xB3\xDB\x8C \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF</li><li>\xD8\xA7\xD8\xB2 * \xD8\xA8\xD8\xB1\xD8\xA7\xDB\x8C \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88\xDB\x8C \xD9\x84\xD8\xBA\xD8\xA7\xD8\xAA \xD9\x86\xD8\xA7\xD9\x82\xD8\xB5 \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF.</li><li>\xD8\xA7\xD8\xB2 \xD9\x88\xD8\x8C \xDB\x8C\xD8\xA7\xD8\x8C \xD9\x88 \xD8\xA8\xD8\xAC\xD8\xB2 \xD8\xA7\xD8\xB3\xD8\xAA\xD9\x81\xD8\xA7\xD8\xAF\xD9\x87 \xDA\xA9\xD9\x86\xDB\x8C\xD8\xAF</li></ul>"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 18:56:51
+  updated_at: 
+  lock_version: "0"
+translations_423: 
+  id: "436"
+  locale: en
+  key: search_tips
+  value: Search tips
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 18:57:49
+  updated_at: 
+  lock_version: "0"
+translations_424: 
+  id: "437"
+  locale: fa
+  key: search_tips
+  value: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAA\xDB\x8C \xD8\xA8\xD8\xB1\xD8\xA7\xDB\x8C \xDA\xA9\xD9\x85\xDA\xA9 \xD8\xA8\xD9\x87 \xD8\xAC\xD8\xB3\xD8\xAA\xD8\xAC\xD9\x88"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 18:58:17
+  updated_at: 
+  lock_version: "0"
+translations_425: 
+  id: "438"
+  locale: en
+  key: filter_results_by_collection
+  value: Limit to items in collection
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:04:16
+  updated_at: 
+  lock_version: "0"
+translations_426: 
+  id: "439"
+  locale: fa
+  key: filter_results_by_collection
+  value: "\xD9\x85\xD8\xAD\xD8\xAF\xD9\x88\xD8\xAF \xD8\xA8\xD9\x87 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85 \xD9\x85\xD9\x88\xD8\xAC\xD9\x88\xD8\xAF \xD8\xAF\xD8\xB1 \xD9\x85\xD8\xAC\xD9\x85\xD9\x88\xD8\xB9\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:04:13
+  updated_at: 
+  lock_version: "0"
+translations_427: 
+  id: "440"
+  locale: en
+  key: filter_results_by_genre
+  value: Limit to items in genre
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:04:39
+  updated_at: 
+  lock_version: "0"
+translations_428: 
+  id: "441"
+  locale: fa
+  key: filter_results_by_genre
+  value: "\xD9\x85\xD8\xAD\xD8\xAF\xD9\x88\xD8\xAF \xD8\xA8\xD9\x87 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85 \xD9\x85\xD9\x88\xD8\xAC\xD9\x88\xD8\xAF \xD8\xAF\xD8\xB1 \xDA\x98\xD8\xA7\xD9\x86\xD8\xB1"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:05:16
+  updated_at: 
+  lock_version: "0"
+translations_429: 
+  id: "442"
+  locale: en
+  key: filter_results_by_repository
+  value: Limit to items in repository
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:05:43
+  updated_at: 
+  lock_version: "0"
+translations_430: 
+  id: "443"
+  locale: fa
+  key: filter_results_by_repository
+  value: "\xD9\x85\xD8\xAD\xD8\xAF\xD9\x88\xD8\xAF \xD8\xA8\xD9\x87 \xD8\xA7\xD9\x82\xD9\x84\xD8\xA7\xD9\x85 \xD9\x85\xD9\x88\xD8\xAC\xD9\x88\xD8\xAF \xD8\xAF\xD8\xB1 \xD8\xA7\xD9\x86\xD8\xA8\xD8\xA7\xD8\xB1"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:17:34
+  updated_at: 
+  lock_version: "0"
+translations_431: 
+  id: "444"
+  locale: en
+  key: submit
+  value: Submit
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:17:30
+  updated_at: 
+  lock_version: "0"
+translations_432: 
+  id: "445"
+  locale: fa
+  key: submit
+  value: "\xD8\xB1\xD9\x81\xD8\xAA\xD9\x86"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:18:02
+  updated_at: 
+  lock_version: "0"
+translations_433: 
+  id: "446"
+  locale: en
+  key: operator_and
+  value: and
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:27:29
+  updated_at: 
+  lock_version: "0"
+translations_434: 
+  id: "447"
+  locale: fa
+  key: operator_and
+  value: "\xD9\x88"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:28:05
+  updated_at: 
+  lock_version: "0"
+translations_435: 
+  id: "448"
+  locale: en
+  key: operator_or
+  value: or
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:28:36
+  updated_at: 
+  lock_version: "0"
+translations_436: 
+  id: "449"
+  locale: fa
+  key: operator_or
+  value: "\xDB\x8C\xD8\xA7"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:28:53
+  updated_at: 
+  lock_version: "0"
+translations_437: 
+  id: "450"
+  locale: en
+  key: operator_not
+  value: not
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:29:13
+  updated_at: 
+  lock_version: "0"
+translations_438: 
+  id: "451"
+  locale: fa
+  key: operator_not
+  value: "\xD9\x86\xD9\x87"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:29:50
+  updated_at: 
+  lock_version: "0"
+translations_439: 
+  id: "452"
+  locale: en
+  key: everything
+  value: everything
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:30:19
+  updated_at: 
+  lock_version: "0"
+translations_440: 
+  id: "453"
+  locale: fa
+  key: everything
+  value: "\xD9\x87\xD9\x85\xD9\x87 \xDA\x86\xDB\x8C\xD8\xB2"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:30:48
+  updated_at: 
+  lock_version: "0"
+translations_441: 
+  id: "454"
+  locale: en
+  key: personal_name
+  value: Personal name
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:31:34
+  updated_at: 
+  lock_version: "0"
+translations_442: 
+  id: "455"
+  locale: fa
+  key: personal_name
+  value: "\xD9\x86\xD8\xA7\xD9\x85 \xD8\xB4\xD8\xAE\xD8\xB5\xDB\x8C"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:32:09
+  updated_at: 
+  lock_version: "0"
+translations_443: 
+  id: "456"
+  locale: en
+  key: reset
+  value: reset
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:56:07
+  updated_at: 
+  lock_version: "0"
+translations_444: 
+  id: "457"
+  locale: fa
+  key: reset
+  value: "\xD8\xA8\xD8\xA7\xD8\xB2 \xD9\x86\xD8\xB4\xD8\xA7\xD9\x86\xD8\xAF\xD9\x86"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-02 19:56:36
+  updated_at: 
+  lock_version: "0"
+translations_445: 
+  id: "458"
+  locale: en
+  key: item_id
+  value: item id
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:50:52
+  updated_at: 
+  lock_version: "0"
+translations_446: 
+  id: "459"
+  locale: fa
+  key: item_id
+  value: "\xD8\xB4\xD9\x85\xD8\xA7\xD8\xB1\xD9\x87 \xD8\xA7\xD8\xAE\xD8\xB0"
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2011-01-03 16:51:43
+  updated_at: 2011-01-09 00:27:54
+  lock_version: "1"
+translations_447: 
+  id: "460"
+  locale: en
+  key: credit
+  value: credit
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:54:59
+  updated_at: 
+  lock_version: "0"
+translations_448: 
+  id: "461"
+  locale: fa
+  key: credit
+  value: "\xD8\xA7\xD8\xB9\xD8\xAA\xD8\xA8\xD8\xA7\xD8\xB1"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:55:26
+  updated_at: 
+  lock_version: "0"
+translations_449: 
+  id: "462"
+  locale: en
+  key: transcript
+  value: transcript
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:56:07
+  updated_at: 
+  lock_version: "0"
+translations_450: 
+  id: "463"
+  locale: fa
+  key: transcript
+  value: "\xD8\xB1\xD9\x88\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:56:22
+  updated_at: 
+  lock_version: "0"
+translations_451: 
+  id: "464"
+  locale: en
+  key: accession_num
+  value: accession number
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-03 16:56:51
+  updated_at: 
+  lock_version: "0"
+translations_452: 
+  id: "465"
+  locale: fa
+  key: accession_num
+  value: "\xD8\xB4\xD9\x85\xD8\xA7\xD8\xB1\xD9\x87 \xD8\xA7\xD8\xAE\xD8\xB0"
+  interpolations: ""
+  is_proc: "0"
+  created_at: 2011-01-03 16:57:20
+  updated_at: 2011-01-05 18:16:44
+  lock_version: "1"
+translations_453: 
+  id: "466"
+  locale: en
+  key: editorial_date_prefix
+  value: "["
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 09:24:50
+  updated_at: 
+  lock_version: "0"
+translations_454: 
+  id: "467"
+  locale: fa
+  key: editorial_date_prefix
+  value: "["
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 09:25:23
+  updated_at: 
+  lock_version: "0"
+translations_455: 
+  id: "468"
+  locale: en
+  key: editorial_date_suffix
+  value: "]"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 09:25:41
+  updated_at: 
+  lock_version: "0"
+translations_456: 
+  id: "469"
+  locale: fa
+  key: editorial_date_suffix
+  value: "]"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 09:25:55
+  updated_at: 
+  lock_version: "0"
+translations_457: 
+  id: "470"
+  locale: en
+  key: secondary_date_prefix
+  value: (
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:01:30
+  updated_at: 
+  lock_version: "0"
+translations_458: 
+  id: "471"
+  locale: fa
+  key: secondary_date_prefix
+  value: (
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:01:43
+  updated_at: 
+  lock_version: "0"
+translations_459: 
+  id: "472"
+  locale: en
+  key: secondary_date_suffix
+  value: )
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:02:03
+  updated_at: 
+  lock_version: "0"
+translations_460: 
+  id: "473"
+  locale: fa
+  key: secondary_date_suffix
+  value: )
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:02:25
+  updated_at: 
+  lock_version: "0"
+translations_461: 
+  id: "474"
+  locale: en
+  key: undated
+  value: undated
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:07:45
+  updated_at: 
+  lock_version: "0"
+translations_462: 
+  id: "475"
+  locale: fa
+  key: undated
+  value: "\xD8\xA8\xD8\xAF\xD9\x88\xD9\x86 \xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE"
+  interpolations: 
+  is_proc: "0"
+  created_at: 2011-01-09 10:08:18
   updated_at: 
   lock_version: "0"

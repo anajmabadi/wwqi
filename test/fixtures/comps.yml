@@ -72,15 +72,6 @@ comps_008:
   created_at: 2010-12-14 03:22:43
   updated_at: 2010-12-14 03:22:43
 comps_009: 
-  id: "17"
-  item_id: "1"
-  comp_id: "166"
-  position: "1"
-  publish: "1"
-  notes: ""
-  created_at: 2010-12-16 16:30:37
-  updated_at: 2010-12-16 16:30:37
-comps_010: 
   id: "18"
   item_id: "166"
   comp_id: "1"
@@ -89,7 +80,7 @@ comps_010:
   notes: ""
   created_at: 2010-12-16 16:44:41
   updated_at: 2010-12-16 16:44:41
-comps_011: 
+comps_010: 
   id: "19"
   item_id: "167"
   comp_id: "170"
@@ -98,7 +89,7 @@ comps_011:
   notes: ""
   created_at: 2010-12-16 17:36:24
   updated_at: 2010-12-16 17:36:24
-comps_012: 
+comps_011: 
   id: "20"
   item_id: "97"
   comp_id: "85"
@@ -107,7 +98,7 @@ comps_012:
   notes: ""
   created_at: 2010-12-23 07:54:07
   updated_at: 2010-12-23 07:54:07
-comps_013: 
+comps_012: 
   id: "21"
   item_id: "135"
   comp_id: "106"
@@ -116,7 +107,7 @@ comps_013:
   notes: ""
   created_at: 2010-12-25 02:21:18
   updated_at: 2010-12-25 02:21:18
-comps_014: 
+comps_013: 
   id: "22"
   item_id: "153"
   comp_id: "105"
@@ -125,7 +116,7 @@ comps_014:
   notes: ""
   created_at: 2010-12-25 07:32:54
   updated_at: 2010-12-25 07:32:54
-comps_015: 
+comps_014: 
   id: "23"
   item_id: "176"
   comp_id: "177"
@@ -134,7 +125,7 @@ comps_015:
   notes: ""
   created_at: 2010-12-26 04:27:23
   updated_at: 2010-12-26 04:27:23
-comps_016: 
+comps_015: 
   id: "24"
   item_id: "177"
   comp_id: "176"
@@ -143,7 +134,7 @@ comps_016:
   notes: ""
   created_at: 2010-12-26 04:32:55
   updated_at: 2010-12-26 04:32:55
-comps_017: 
+comps_016: 
   id: "25"
   item_id: "257"
   comp_id: "256"
@@ -152,7 +143,7 @@ comps_017:
   notes: ""
   created_at: 2010-12-27 10:37:32
   updated_at: 2010-12-27 10:37:32
-comps_018: 
+comps_017: 
   id: "26"
   item_id: "256"
   comp_id: "257"
@@ -161,7 +152,7 @@ comps_018:
   notes: ""
   created_at: 2010-12-27 10:40:48
   updated_at: 2010-12-27 10:40:48
-comps_019: 
+comps_018: 
   id: "27"
   item_id: "844"
   comp_id: "686"
@@ -170,7 +161,7 @@ comps_019:
   notes: ""
   created_at: 2010-12-28 01:37:23
   updated_at: 2010-12-28 01:37:23
-comps_020: 
+comps_019: 
   id: "28"
   item_id: "686"
   comp_id: "844"
@@ -179,7 +170,7 @@ comps_020:
   notes: ""
   created_at: 2010-12-28 01:38:42
   updated_at: 2010-12-28 01:38:42
-comps_021: 
+comps_020: 
   id: "29"
   item_id: "1226"
   comp_id: "1232"
@@ -188,7 +179,7 @@ comps_021:
   notes: ""
   created_at: 2010-12-30 08:43:31
   updated_at: 2010-12-30 08:43:31
-comps_022: 
+comps_021: 
   id: "30"
   item_id: "1232"
   comp_id: "1226"
@@ -197,7 +188,7 @@ comps_022:
   notes: ""
   created_at: 2010-12-30 08:46:00
   updated_at: 2010-12-30 08:46:00
-comps_023: 
+comps_022: 
   id: "31"
   item_id: "1257"
   comp_id: "1260"
@@ -206,7 +197,7 @@ comps_023:
   notes: ""
   created_at: 2010-12-30 09:30:48
   updated_at: 2010-12-30 09:30:48
-comps_024: 
+comps_023: 
   id: "32"
   item_id: "1260"
   comp_id: "1257"
@@ -215,7 +206,7 @@ comps_024:
   notes: ""
   created_at: 2010-12-30 09:33:11
   updated_at: 2010-12-30 09:33:11
-comps_025: 
+comps_024: 
   id: "33"
   item_id: "1269"
   comp_id: "1266"
@@ -224,7 +215,7 @@ comps_025:
   notes: ""
   created_at: 2010-12-30 09:44:12
   updated_at: 2010-12-30 09:44:12
-comps_026: 
+comps_025: 
   id: "34"
   item_id: "1269"
   comp_id: "1270"
@@ -233,7 +224,7 @@ comps_026:
   notes: ""
   created_at: 2010-12-30 09:44:26
   updated_at: 2010-12-30 09:44:26
-comps_027: 
+comps_026: 
   id: "35"
   item_id: "1270"
   comp_id: "1266"
@@ -242,7 +233,7 @@ comps_027:
   notes: ""
   created_at: 2010-12-30 09:46:59
   updated_at: 2010-12-30 09:46:59
-comps_028: 
+comps_027: 
   id: "36"
   item_id: "1270"
   comp_id: "1269"
@@ -251,7 +242,7 @@ comps_028:
   notes: ""
   created_at: 2010-12-30 09:47:13
   updated_at: 2010-12-30 09:47:13
-comps_029: 
+comps_028: 
   id: "37"
   item_id: "1286"
   comp_id: "1283"
@@ -260,7 +251,7 @@ comps_029:
   notes: ""
   created_at: 2010-12-30 10:24:01
   updated_at: 2010-12-30 10:24:01
-comps_030: 
+comps_029: 
   id: "38"
   item_id: "1283"
   comp_id: "1286"
@@ -269,7 +260,7 @@ comps_030:
   notes: ""
   created_at: 2010-12-30 10:24:53
   updated_at: 2010-12-30 10:24:53
-comps_031: 
+comps_030: 
   id: "39"
   item_id: "1469"
   comp_id: "1475"
@@ -278,7 +269,7 @@ comps_031:
   notes: ""
   created_at: 2010-12-30 12:26:08
   updated_at: 2010-12-30 12:26:08
-comps_032: 
+comps_031: 
   id: "40"
   item_id: "1475"
   comp_id: "1469"
@@ -287,3 +278,39 @@ comps_032:
   notes: ""
   created_at: 2010-12-30 12:32:50
   updated_at: 2010-12-30 12:32:50
+comps_032: 
+  id: "41"
+  item_id: "1512"
+  comp_id: "1493"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2011-01-08 22:59:56
+  updated_at: 2011-01-08 22:59:56
+comps_033: 
+  id: "42"
+  item_id: "1493"
+  comp_id: "1512"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2011-01-08 23:04:44
+  updated_at: 2011-01-08 23:04:44
+comps_034: 
+  id: "43"
+  item_id: "7"
+  comp_id: "5"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2011-01-09 02:40:48
+  updated_at: 2011-01-09 02:40:48
+comps_035: 
+  id: "44"
+  item_id: "2"
+  comp_id: "8"
+  position: "1"
+  publish: "1"
+  notes: ""
+  created_at: 2011-01-09 02:44:50
+  updated_at: 2011-01-09 02:44:50

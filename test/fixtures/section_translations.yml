@@ -19,3 +19,184 @@ section_translations_002:
   end_page_label: ""
   created_at: 2010-12-09 22:12:31
   updated_at: 2010-12-09 22:12:31
+section_translations_003: 
+  id: "28"
+  section_id: "16"
+  locale: en
+  title: Blank page
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:40:55
+  updated_at: 2011-01-05 01:40:55
+section_translations_004: 
+  id: "29"
+  section_id: "16"
+  locale: fa
+  title: "Blank page\t\n\n\
+    \xD8\xA8\xD8\xB1\xDA\xAF \xD9\x81\xD8\xA7\xD8\xB5\xD9\x84\xD9\x87 \xD8\xB3\xD9\x81\xDB\x8C\xD8\xAF"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:40:55
+  updated_at: 2011-01-05 01:40:55
+section_translations_005: 
+  id: "30"
+  section_id: "17"
+  locale: en
+  title: "Refutation of Ta\xE2\x80\x99dib al-niswan [Disciplining of Women]"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:42:35
+  updated_at: 2011-01-05 01:42:35
+section_translations_006: 
+  id: "31"
+  section_id: "17"
+  locale: fa
+  title: "\xD9\xBE\xD8\xA7\xD8\xB3\xD8\xAE \xD8\xA8\xD9\x87 \xD8\xAA\xD8\xA3\xD8\xAF\xDB\x8C\xD8\xA8 \xD8\xA7\xD9\x84\xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:42:35
+  updated_at: 2011-01-05 01:42:35
+section_translations_007: 
+  id: "32"
+  section_id: "18"
+  locale: en
+  title: "The book of Ma\xE2\x80\x98ayib al-rijal [Vices of Men] : preface"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:43:15
+  updated_at: 2011-01-05 01:43:15
+section_translations_008: 
+  id: "33"
+  section_id: "18"
+  locale: fa
+  title: ""
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:43:15
+  updated_at: 2011-01-05 01:43:15
+section_translations_009: 
+  id: "34"
+  section_id: "19"
+  locale: en
+  title: "First Chapter: On Manners of Drinking Wine"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:43:48
+  updated_at: 2011-01-05 01:43:48
+section_translations_010: 
+  id: "35"
+  section_id: "19"
+  locale: fa
+  title: "\xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xD8\xA7\xD9\x88\xD9\x84: \xD8\xA7\xD8\xB7\xD9\x88\xD8\xA7\xD8\xB1 \xD8\xB4\xD8\xB1\xD8\xA7\xD8\xA8\xD8\xAE\xD9\x88\xD8\xA7\xD8\xB1"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:43:48
+  updated_at: 2011-01-05 01:43:48
+section_translations_011: 
+  id: "36"
+  section_id: "20"
+  locale: en
+  title: "Second Chapter: On Manners of Gambling"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:44:16
+  updated_at: 2011-01-05 01:44:16
+section_translations_012: 
+  id: "37"
+  section_id: "20"
+  locale: fa
+  title: "\xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xD8\xAF\xD9\x88\xD9\x85: \xDA\xA9\xD8\xB1\xD8\xAF\xD8\xA7\xD8\xB1 \xD8\xA7\xD9\x87\xD9\x84 \xD9\x82\xD9\x85\xD8\xA7\xD8\xB1"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:44:16
+  updated_at: 2011-01-05 01:44:16
+section_translations_013: 
+  id: "38"
+  section_id: "21"
+  locale: en
+  title: "Third Chapter: On Charas, Bhang, Hashish, Opium, and Cannabis"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:45:05
+  updated_at: 2011-01-05 01:45:05
+section_translations_014: 
+  id: "39"
+  section_id: "21"
+  locale: fa
+  title: "\xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xD8\xB3\xD9\x88\xD9\x85: \xD8\xAF\xD8\xB1 \xD8\xAA\xD9\x81\xD8\xB5\xDB\x8C\xD9\x84 \xD8\xAC\xD8\xB1\xD8\xB3 \xD9\x88 \xD8\xA8\xD9\x86\xDA\xAF \xD9\x88 \xD9\x88\xD8\xA7\xD9\xBE\xD9\x88\xD8\xB1 \xD9\x88 \xD8\xA7\xD8\xB3\xD8\xB1\xD8\xA7\xD8\xB1"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:45:05
+  updated_at: 2011-01-05 01:45:05
+section_translations_015: 
+  id: "40"
+  section_id: "22"
+  locale: en
+  title: "Fourth Chapter: On Conversations between Hooligans and Ruffians, Coxcombs and Profligates"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:45:41
+  updated_at: 2011-01-05 01:45:41
+section_translations_016: 
+  id: "41"
+  section_id: "22"
+  locale: fa
+  title: "\xD9\x85\xD8\xAC\xD9\x84\xD8\xB3 \xDA\x86\xD9\x87\xD8\xA7\xD8\xB1\xD9\x85: \xD8\xB4\xD8\xB1\xD8\xAD \xDA\xAF\xD9\x81\xD8\xAA\xDA\xAF\xD9\x88 \xD9\x88 \xD8\xA7\xD9\x88\xD8\xB6\xD8\xA7\xD8\xB9 \xD8\xB9\xD8\xA8\xD8\xA7\xD8\xA6\xD8\xB1\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x82\xD8\xB1\xD8\xA7\xD8\xAA\xD8\x8C \xD8\xA7\xD8\xAC\xD8\xA7\xD9\x85\xD8\xB1\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x88\xD8\xA7\xD8\xB7"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:45:41
+  updated_at: 2011-01-05 01:45:41
+section_translations_017: 
+  id: "42"
+  section_id: "23"
+  locale: en
+  title: On the treatment of wives by husbands
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:46:16
+  updated_at: 2011-01-05 01:46:16
+section_translations_018: 
+  id: "43"
+  section_id: "23"
+  locale: fa
+  title: "\xD8\xB4\xD8\xB1\xD8\xAD \xD8\xB2\xD9\x86\xD8\xAF\xD8\xA7\xD8\xB1\xDB\x8C \xD9\x85\xD8\xB1\xD8\xAF\xD9\x87\xD8\xA7"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:46:16
+  updated_at: 2011-01-05 01:46:16
+section_translations_019: 
+  id: "44"
+  section_id: "24"
+  locale: en
+  title: The Story and Tale of Bibi Khanum
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:47:01
+  updated_at: 2011-01-05 01:47:01
+section_translations_020: 
+  id: "45"
+  section_id: "24"
+  locale: fa
+  title: "\xD8\xAD\xDA\xA9\xD8\xA7\xDB\x8C\xD8\xAA \xD9\x88 \xD8\xB3\xD8\xB1\xDA\xAF\xD8\xB0\xD8\xB4\xD8\xAA \xD8\xA8\xDB\x8C \xD8\xA8\xDB\x8C \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  caption: ""
+  start_page_label: ""
+  end_page_label: ""
+  created_at: 2011-01-05 01:47:01
+  updated_at: 2011-01-05 01:47:01

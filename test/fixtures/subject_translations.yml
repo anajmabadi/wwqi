@@ -4997,3 +4997,101 @@ subject_translations_714:
   name: "\xD9\x86\xD9\x88\xD8\xB4\xD8\xAA\xD9\x87 \xD9\x87\xD8\xA7"
   created_at: 2010-12-30 08:10:09
   updated_at: 2010-12-30 08:10:09
+subject_translations_715: 
+  id: "1087"
+  subject_id: "546"
+  locale: en
+  name: Debtor and creditor
+  created_at: 2011-01-02 07:30:33
+  updated_at: 2011-01-02 07:30:33
+subject_translations_716: 
+  id: "1088"
+  subject_id: "546"
+  locale: fa
+  name: "\xD8\xA8\xD8\xAF\xD9\x87\xDA\xA9\xD8\xA7\xD8\xB1 \xD9\x88 \xD8\xA8\xD8\xB3\xD8\xAA\xD8\xA7\xD9\x86\xDA\xA9\xD8\xA7\xD8\xB1"
+  created_at: 2011-01-02 07:30:33
+  updated_at: 2011-01-02 07:30:33
+subject_translations_717: 
+  id: "1089"
+  subject_id: "547"
+  locale: en
+  name: Advice books and moral tales
+  created_at: 2011-01-02 20:07:59
+  updated_at: 2011-01-02 20:07:59
+subject_translations_718: 
+  id: "1090"
+  subject_id: "547"
+  locale: fa
+  name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8 \xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD8\xB2"
+  created_at: 2011-01-02 20:07:59
+  updated_at: 2011-01-02 20:07:59
+subject_translations_719: 
+  id: "1091"
+  subject_id: "548"
+  locale: en
+  name: Husbands
+  created_at: 2011-01-04 04:03:47
+  updated_at: 2011-01-04 04:03:47
+subject_translations_720: 
+  id: "1092"
+  subject_id: "548"
+  locale: fa
+  name: "\xD8\xB4\xD9\x88\xD9\x87\xD8\xB1"
+  created_at: 2011-01-04 04:03:47
+  updated_at: 2011-01-04 04:03:47
+subject_translations_721: 
+  id: "1093"
+  subject_id: "549"
+  locale: en
+  name: petitions
+  created_at: 2011-01-05 06:54:57
+  updated_at: 2011-01-05 06:56:09
+subject_translations_722: 
+  id: "1094"
+  subject_id: "549"
+  locale: fa
+  name: "\xD8\xB9\xD8\xB1\xDB\x8C\xD8\xB6\xD9\x87"
+  created_at: 2011-01-05 06:54:57
+  updated_at: 2011-01-05 06:54:57
+subject_translations_723: 
+  id: "1095"
+  subject_id: "550"
+  locale: en
+  name: advice books
+  created_at: 2011-01-05 07:01:01
+  updated_at: 2011-01-05 07:01:01
+subject_translations_724: 
+  id: "1096"
+  subject_id: "550"
+  locale: fa
+  name: "\xDA\xA9\xD8\xAA\xD8\xA7\xD8\xA8 \xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD8\xB2"
+  created_at: 2011-01-05 07:01:01
+  updated_at: 2011-01-05 07:01:01
+subject_translations_725: 
+  id: "1097"
+  subject_id: "551"
+  locale: en
+  name: Population
+  created_at: 2011-01-08 06:05:19
+  updated_at: 2011-01-08 06:06:14
+subject_translations_726: 
+  id: "1098"
+  subject_id: "551"
+  locale: fa
+  name: "\xD8\xAC\xD9\x85\xD8\xB9\xDB\x8C\xD8\xAA"
+  created_at: 2011-01-08 06:05:19
+  updated_at: 2011-01-08 06:06:14
+subject_translations_727: 
+  id: "1099"
+  subject_id: "552"
+  locale: en
+  name: Interviews
+  created_at: 2011-01-09 06:25:33
+  updated_at: 2011-01-09 06:25:33
+subject_translations_728: 
+  id: "1100"
+  subject_id: "552"
+  locale: fa
+  name: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87"
+  created_at: 2011-01-09 06:25:33
+  updated_at: 2011-01-09 06:25:33
