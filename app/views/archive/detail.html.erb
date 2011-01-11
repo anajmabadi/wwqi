@@ -38,16 +38,20 @@
             <% unless @item.subjects.empty? && @item.people.empty? && @item.places.empty? -%>
             <div id="catalogInfo">
                 <div id="subjects">
+                    <% unless @item.subjects.concepts.empty %>
                     <h3> Subjects </h3>
                     <ul>
-                        <% @item.subjects.each do |subject| %>
+                        <% @item.subjects.concepts.each do |subject| %>
                         <li>
                             <%= link_to(subject.name, archive_browser_path(:subject_filter => subject.id), :title => "view all items with this subject") %>
                         </li>
                         <% end %>
                     </ul>
+                    <% end %>
                 </div>
                 <div id="people">
+                  
+                    <% unless @item.people.empty %>
                     <h3> People </h3>
                     <ul>
                         <% @item.people.each do |person| %>
@@ -56,8 +60,11 @@
                         </li>
                         <% end %>
                     </ul>
+                    <% end %>
                 </div>
                 <div id="places">
+                  
+                    <% unless @item.places.empty %>
                     <h3> Places </h3>
                     <ul>
                         <% @item.places.each do |place|  %>
@@ -66,6 +73,7 @@
                         </li>
                         <% end %>
                     </ul>
+                    <% end %>
                 </div>
             </div>
             <% end %>
@@ -103,6 +111,12 @@
                 <tr>
                     <th><%= t(:owner).capitalize %></th>
                     <td><%= @item.credit_label %></td>
+                </tr>
+                <% end -%>
+                <% unless @item.subjects.genres.empty? -%>
+                <tr>
+                    <th><%= t(:genres).capitalize %></th>
+                    <td><%= @item.subjects.genres.map { |g| g.name }.join(", ") %></td>
                 </tr>
                 <% end -%>
                 <% unless @item.comps.nil? %>
