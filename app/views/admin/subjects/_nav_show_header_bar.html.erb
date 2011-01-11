@@ -1,11 +1,15 @@
 <div class="header">
-  <div class="description">
-    <h1><%= link_to controller.controller_name.capitalize, admin_subjects_path  %> | Show </h1>
-  </div>
-  <div class="tools">
-    <%= link_to 'Back', session[:admin_subjects_index_url] ||= admin_subjects_path %> |
-    <%= link_to 'Edit', edit_admin_subject_path(subject) %> |
-    <%= link_to 'Delete', admin_subject_path(subject), :method => :delete, :confirm => "Are you sure you want to delete this subject?" %> |
-    <%= link_to "New", new_admin_subject_path %>
-  </div>
+    <div class="description">
+        <h1><%= link_to controller.controller_name.capitalize, admin_subjects_path  %> | Show </h1>
+    </div>
+    <div class="tools">
+        <%= link_to 'Back', session[:admin_subjects_index_url] ||= admin_subjects_path %> |
+        <% unless @subjects.nil? || subject.nil? -%>
+        <%= link_to_unless @subjects.index(subject) == 0, 'Previous', :action => :show, :id => @subjects[@subjects.index(subject)-1]  %> |
+        <%= link_to_unless @subjects.index(subject) == @subjects.size - 1, 'Next', :action => :show, :id => @subjects[@subjects.index(subject)+1]  %> |
+        <% end %>
+        <%= link_to 'Edit', edit_admin_subject_path(subject) %> |
+        <%= link_to 'Delete', admin_subject_path(subject), :method => :delete, :confirm => "Are you sure you want to delete this subject?" %> |
+        <%= link_to "New", new_admin_subject_path %>
+    </div>
 </div>

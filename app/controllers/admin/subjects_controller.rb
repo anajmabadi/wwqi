@@ -32,6 +32,11 @@ class Admin::SubjectsController < Admin::AdminController
 
     #cache the current search set in a session variable
     session[:admin_subjects_index_url] = request.fullpath
+    #cache the current search set in a session variable
+    session[:current_subects] = @subjects.map { |i| i.id }
+    session[:subject_sort_field] = params[:c]
+    session[:subject_direction] = params[:d]
+    session[:subject_order] = @order
 
     respond_to do |format|
       format.html # index.html.erb
@@ -42,11 +47,23 @@ class Admin::SubjectsController < Admin::AdminController
   # GET /subjects/1
   # GET /subjects/1.xml
   def show
-    @subject = Subject.find(params[:id])
+
+    begin
+      @subject = Subject.find(params[:id])
+      @subjects = load_subjects(@subject)
+
+    rescue StandardError => error
+      flash[:error] = error.message ||= 'Person with id number ' + params[:id].to_s + ' was not found or your people set was invalid. Reload the people page.'
+      @error = true
+    end
 
     respond_to do |format|
-      format.html # show.html.erb
-      format.xml  { render :xml => @subject }
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
+      else
+        format.html { redirect_to(admin_subjects_url, :error => flash[:error]) }
+      end
     end
   end
 
@@ -154,4 +171,18 @@ class Admin::SubjectsController < Admin::AdminController
     return rows
   end
 
+  def load_subjects(subject)
+
+    order = session[:subject_order] ||= 'subjects.id'
+
+    #check if there is a current results set (i.e. something from the browser)
+    unless session[:current_subjects].nil? || session[:current_subjects].empty? || !session[:current_subjects].include?(subject.id)
+      subjects = Subject.where(['subjects.id IN (?)', session[:current_subjects]]).order(order)
+    else
+      subjects = Subject.order(order).all
+    end
+
+    subjects = sort_bilingual(subjects, session[:subject_sort_field], session[:subject_direction]) if ["name_en", "name_fa"].include?session[:subject_sort_field]
+    return subjects
+  end
 end
