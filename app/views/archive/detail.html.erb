@@ -35,10 +35,10 @@
         <div id="itemImage">
             <%= render :partial => 'zoomify' %>
 
-            <% unless @item.subjects.empty? && @item.people.empty? && @item.places.empty? -%>
+            <% unless @item.subjects.concepts.empty? && @item.people.empty? && @item.places.empty? -%>
             <div id="catalogInfo">
                 <div id="subjects">
-                    <% unless @item.subjects.concepts.empty %>
+                    <% unless @item.subjects.concepts.empty? %>
                     <h3> Subjects </h3>
                     <ul>
                         <% @item.subjects.concepts.each do |subject| %>
@@ -51,7 +51,7 @@
                 </div>
                 <div id="people">
                   
-                    <% unless @item.people.empty %>
+                    <% unless @item.people.empty? %>
                     <h3> People </h3>
                     <ul>
                         <% @item.people.each do |person| %>
@@ -64,7 +64,7 @@
                 </div>
                 <div id="places">
                   
-                    <% unless @item.places.empty %>
+                    <% unless @item.places.empty? %>
                     <h3> Places </h3>
                     <ul>
                         <% @item.places.each do |place|  %>
@@ -119,7 +119,7 @@
                     <td><%= @item.subjects.genres.map { |g| g.name }.join(", ") %></td>
                 </tr>
                 <% end -%>
-                <% unless @item.comps.nil? %>
+                <% unless @item.comps.empty? %>
                 <tr>
                     <th><%= t(:see_also) %></th>
                     <td>
