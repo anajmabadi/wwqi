@@ -7,8 +7,8 @@
             <div class="filterbar"><h5><%= link_to_unless @item.nil?, @item.to_label, admin_item_path(@item) %>, <%= @item.pages %> pages</h5></div>
             <table class="global" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
-                    <th>Title</th>
-                    <th>Description</th>
+                    <th>Title en</th>
+                    <th>Title fa</th>
                     <th>Verso</th>
                     <th>Position</th>
                     <th>Publish</th>
@@ -16,8 +16,8 @@
                 </tr>
                 <% @images.each do |image| %>
                 <tr>
-                    <td><%= link_to_unless image.title.blank?, truncate(image.title), '#' %></td>
-                    <td><%= truncate(image.description) unless image.description.blank? %></td>
+                    <td><%= link_to_unless image.title_en.blank?, truncate(image.title_en), admin_item_image_path({:item_id => @item.id, :id => image.id}) %></td>
+                    <td class="persianOnly"><%= link_to_unless image.title_fa.blank?, truncate(image.title_fa), admin_item_image_path({:item_id => @item.id, :id => image.id}) %></td>
                     <td><%= show_check image.verso %></td>
                     <td><%= image.position %></td>
                     <td><%= show_check image.publish %></td>
