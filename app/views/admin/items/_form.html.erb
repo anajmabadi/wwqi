@@ -119,18 +119,27 @@
         </td>
     </tr>
     <tr>
-        <td>
+        <td colspan="2">
         <div class="field">
             <%= f.label :owner_id %>
             <br />
             <%= f.select :owner_id, Owner.select_list, {:include_blank => true} %>
         </div>
         </td>
+    </tr>
+    <tr>
         <td>
         <div class="field">
-            <%= f.label :owner_tag %>
+            <%= f.label :owner_tag_en %>
             <br />
-            <%= f.text_field :owner_tag %>
+            <%= f.text_field :owner_tag_en %>
+        </div>
+        </td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :owner_tag_fa %>
+            <br />
+            <%= f.text_field :owner_tag_fa %>
         </div>
         </td>
     </tr>

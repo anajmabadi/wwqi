@@ -1203,3 +1203,87 @@ plot_translations_172:
   caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
   created_at: 2011-01-09 07:13:04
   updated_at: 2011-01-09 07:13:04
+plot_translations_173: 
+  id: "209"
+  plot_id: "570"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 07:47:14
+  updated_at: 2011-01-11 07:47:14
+plot_translations_174: 
+  id: "210"
+  plot_id: "570"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 07:47:14
+  updated_at: 2011-01-11 07:47:14
+plot_translations_175: 
+  id: "211"
+  plot_id: "571"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 08:00:54
+  updated_at: 2011-01-11 08:00:54
+plot_translations_176: 
+  id: "212"
+  plot_id: "571"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 08:00:54
+  updated_at: 2011-01-11 08:00:54
+plot_translations_177: 
+  id: "213"
+  plot_id: "572"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 08:14:02
+  updated_at: 2011-01-11 08:14:02
+plot_translations_178: 
+  id: "214"
+  plot_id: "572"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 08:14:02
+  updated_at: 2011-01-11 08:14:02
+plot_translations_179: 
+  id: "215"
+  plot_id: "573"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 08:41:03
+  updated_at: 2011-01-11 08:41:03
+plot_translations_180: 
+  id: "216"
+  plot_id: "573"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 08:41:03
+  updated_at: 2011-01-11 08:41:03
+plot_translations_181: 
+  id: "217"
+  plot_id: "574"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 09:17:25
+  updated_at: 2011-01-11 09:17:25
+plot_translations_182: 
+  id: "218"
+  plot_id: "574"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 09:17:25
+  updated_at: 2011-01-11 09:17:25
+plot_translations_183: 
+  id: "219"
+  plot_id: "575"
+  locale: en
+  caption: place created
+  created_at: 2011-01-11 09:23:41
+  updated_at: 2011-01-11 09:23:41
+plot_translations_184: 
+  id: "220"
+  plot_id: "575"
+  locale: fa
+  caption: "\xD9\x85\xD8\xAD\xD9\x84 \xD8\xA7\xDB\x8C\xD8\xAC\xD8\xA7\xD8\xAF"
+  created_at: 2011-01-11 09:23:41
+  updated_at: 2011-01-11 09:23:41

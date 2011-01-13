@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110110000518) do
+ActiveRecord::Schema.define(:version => 20110113061303) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -433,6 +433,7 @@ ActiveRecord::Schema.define(:version => 20110110000518) do
     t.string   "published"
     t.text     "transcript"
     t.text     "remarks"
+    t.string   "owner_tag"
   end
 
   add_index "item_translations", ["item_id", "locale"], :name => "in_item_translations_unique", :unique => true
@@ -469,7 +470,6 @@ ActiveRecord::Schema.define(:version => 20110110000518) do
     t.integer  "sort_month"
     t.integer  "sort_day"
     t.boolean  "editorial_date",                                  :default => false, :null => false
-    t.string   "owner_tag"
   end
 
   add_index "items", ["accession_num"], :name => "accession_num", :unique => true
@@ -478,7 +478,6 @@ ActiveRecord::Schema.define(:version => 20110110000518) do
   add_index "items", ["editorial_dating"], :name => "index_items_on_editorial_dating"
   add_index "items", ["favorite"], :name => "index_items_on_favorite"
   add_index "items", ["owner_id"], :name => "owner_id"
-  add_index "items", ["owner_tag"], :name => "index_items_on_owner_tag"
   add_index "items", ["publish"], :name => "publish"
   add_index "items", ["sort_year", "sort_month", "sort_day"], :name => "index_items_on_sort_year_and_sort_month_and_sort_day"
   add_index "items", ["year", "month", "day"], :name => "index_items_on_year_and_month_and_day"

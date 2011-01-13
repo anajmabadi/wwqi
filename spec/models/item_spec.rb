@@ -34,7 +34,8 @@ describe Item do
       :sort_year => 2222,
       :sort_day => 22,
       :sort_month => 12,
-      :owner_tag => 'hello'
+      :owner_tag_en => 'hello',
+      :owner_tag_fa => 'hello'
     }
   end
 

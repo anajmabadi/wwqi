@@ -29,7 +29,6 @@ items_001:
   sort_month: "11"
   sort_day: "2"
   editorial_date: "0"
-  owner_tag: ""
 items_002: 
   id: "2"
   accession_num: Sheikholeslami_ANMEQ_100308_002
@@ -60,7 +59,6 @@ items_002:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_003: 
   id: "3"
   accession_num: Sheikholeslami_ANMEQ_100308_003
@@ -91,7 +89,6 @@ items_003:
   sort_month: "10"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_004: 
   id: "4"
   accession_num: Sheikholeslami_ANMEQ_100308_004
@@ -122,7 +119,6 @@ items_004:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_005: 
   id: "5"
   accession_num: Sheikholeslami_ANMEQ_100308_005
@@ -153,7 +149,6 @@ items_005:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_006: 
   id: "6"
   accession_num: Sheikholeslami_ANMEQ_100308_006
@@ -184,7 +179,6 @@ items_006:
   sort_month: "8"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_007: 
   id: "7"
   accession_num: Sheikholeslami_ANMEQ_100308_007
@@ -215,7 +209,6 @@ items_007:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_008: 
   id: "8"
   accession_num: Sheikholeslami_ANMEQ_100308_008
@@ -246,7 +239,6 @@ items_008:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_009: 
   id: "9"
   accession_num: Sheikholeslami_ANMEQ_100308_009
@@ -277,7 +269,6 @@ items_009:
   sort_month: 
   sort_day: 
   editorial_date: "0"
-  owner_tag: ""
 items_010: 
   id: "10"
   accession_num: Sheikholeslami_ANMEQ_100308_010
@@ -308,7 +299,6 @@ items_010:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_011: 
   id: "11"
   accession_num: Sheikholeslami_ANMEQ_100308_011
@@ -339,7 +329,6 @@ items_011:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_012: 
   id: "12"
   accession_num: Sheikholeslami_ANMEQ_100308_012
@@ -370,7 +359,6 @@ items_012:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_013: 
   id: "13"
   accession_num: Sheikholeslami_ANMEQ_100308_013
@@ -401,7 +389,6 @@ items_013:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_014: 
   id: "14"
   accession_num: Sheikholeslami_ANMEQ_100308_014
@@ -432,7 +419,6 @@ items_014:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_015: 
   id: "15"
   accession_num: Sheikholeslami_ANMEQ_100308_015
@@ -465,7 +451,6 @@ items_015:
   sort_month: "7"
   sort_day: "19"
   editorial_date: "1"
-  owner_tag: ""
 items_016: 
   id: "16"
   accession_num: Sheikholeslami_ANMEQ_100308_016
@@ -496,7 +481,6 @@ items_016:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_017: 
   id: "17"
   accession_num: Sheikholeslami_ANMEQ_100308_017
@@ -527,7 +511,6 @@ items_017:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_018: 
   id: "18"
   accession_num: Sheikholeslami_ANMEQ_100308_018
@@ -558,7 +541,6 @@ items_018:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_019: 
   id: "19"
   accession_num: Sheikholeslami_ANMEQ_100308_019
@@ -589,7 +571,6 @@ items_019:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_020: 
   id: "20"
   accession_num: Sheikholeslami_ANMEQ_100308_020
@@ -620,7 +601,6 @@ items_020:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_021: 
   id: "21"
   accession_num: Sheikholeslami_ANMEQ_100308_021
@@ -651,7 +631,6 @@ items_021:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_022: 
   id: "22"
   accession_num: Sheikholeslami_ANMEQ_100308_022
@@ -682,7 +661,6 @@ items_022:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_023: 
   id: "23"
   accession_num: Sheikholeslami_ANMEQ_100308_023
@@ -713,7 +691,6 @@ items_023:
   sort_month: "11"
   sort_day: "4"
   editorial_date: "0"
-  owner_tag: ""
 items_024: 
   id: "24"
   accession_num: Sheikholeslami_ANMEQ_100308_024
@@ -744,7 +721,6 @@ items_024:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_025: 
   id: "25"
   accession_num: Sheikholeslami_ANMEQ_100308_025
@@ -775,7 +751,6 @@ items_025:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_026: 
   id: "26"
   accession_num: Sheikholeslami_ANMEQ_100308_026
@@ -806,7 +781,6 @@ items_026:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_027: 
   id: "27"
   accession_num: Sheikholeslami_ANMEQ_100308_027
@@ -837,7 +811,6 @@ items_027:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_028: 
   id: "28"
   accession_num: Sheikholeslami_ANMEQ_100308_028
@@ -868,7 +841,6 @@ items_028:
   sort_month: "8"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_029: 
   id: "29"
   accession_num: Sheikholeslami_ANMEQ_100308_029
@@ -899,7 +871,6 @@ items_029:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_030: 
   id: "30"
   accession_num: Sheikholeslami_ANMEQ_100308_030
@@ -930,7 +901,6 @@ items_030:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_031: 
   id: "31"
   accession_num: Sheikholeslami_ANMEQ_100308_031
@@ -961,7 +931,6 @@ items_031:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_032: 
   id: "32"
   accession_num: Sheikholeslami_ANMEQ_100308_032
@@ -992,7 +961,6 @@ items_032:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_033: 
   id: "33"
   accession_num: Sheikholeslami_ANMEQ_100308_033
@@ -1023,7 +991,6 @@ items_033:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_034: 
   id: "34"
   accession_num: Sheikholeslami_ANMEQ_100308_034
@@ -1054,7 +1021,6 @@ items_034:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_035: 
   id: "35"
   accession_num: Sheikholeslami_ANMEQ_100308_035
@@ -1085,7 +1051,6 @@ items_035:
   sort_month: "11"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_036: 
   id: "36"
   accession_num: Sheikholeslami_ANMEQ_100308_036
@@ -1116,7 +1081,6 @@ items_036:
   sort_month: "1"
   sort_day: "30"
   editorial_date: "0"
-  owner_tag: ""
 items_037: 
   id: "37"
   accession_num: Sheikholeslami_ANMEQ_100308_037
@@ -1147,7 +1111,6 @@ items_037:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_038: 
   id: "38"
   accession_num: Sheikholeslami_ANMEQ_100308_038
@@ -1178,7 +1141,6 @@ items_038:
   sort_month: "3"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_039: 
   id: "39"
   accession_num: Sheikholeslami_ANMEQ_100308_039
@@ -1209,7 +1171,6 @@ items_039:
   sort_month: "2"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_040: 
   id: "40"
   accession_num: Sheikholeslami_ANMEQ_100308_040
@@ -1240,7 +1201,6 @@ items_040:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_041: 
   id: "41"
   accession_num: Sheikholeslami_ANMEQ_100308_041
@@ -1271,7 +1231,6 @@ items_041:
   sort_month: "5"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_042: 
   id: "42"
   accession_num: Sheikholeslami_ANMEQ_100308_042
@@ -1302,7 +1261,6 @@ items_042:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_043: 
   id: "43"
   accession_num: Sheikholeslami_ANMEQ_100308_043
@@ -1333,7 +1291,6 @@ items_043:
   sort_month: "12"
   sort_day: "31"
   editorial_date: "0"
-  owner_tag: ""
 items_044: 
   id: "44"
   accession_num: Sheikholeslami_ANMEQ_100308_044
@@ -1364,7 +1321,6 @@ items_044:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_045: 
   id: "45"
   accession_num: Sheikholeslami_ANMEQ_100308_045
@@ -1395,7 +1351,6 @@ items_045:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_046: 
   id: "46"
   accession_num: Sheikholeslami_ANMEQ_100308_046
@@ -1426,7 +1381,6 @@ items_046:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_047: 
   id: "47"
   accession_num: Sheikholeslami_ANMEQ_100308_047
@@ -1457,7 +1411,6 @@ items_047:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_048: 
   id: "48"
   accession_num: Sheikholeslami_ANMEQ_100308_048
@@ -1488,7 +1441,6 @@ items_048:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_049: 
   id: "49"
   accession_num: Sheikholeslami_ANMEQ_100308_049
@@ -1519,7 +1471,6 @@ items_049:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_050: 
   id: "50"
   accession_num: Sheikholeslami_ANMEQ_100308_050
@@ -1550,7 +1501,6 @@ items_050:
   sort_month: "4"
   sort_day: "2"
   editorial_date: "0"
-  owner_tag: ""
 items_051: 
   id: "51"
   accession_num: Sheikholeslami_ANMEQ_100308_051
@@ -1581,7 +1531,6 @@ items_051:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_052: 
   id: "52"
   accession_num: Sheikholeslami_ANMEQ_100308_052
@@ -1612,7 +1561,6 @@ items_052:
   sort_month: "7"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_053: 
   id: "53"
   accession_num: Sheikholeslami_ANMEQ_100308_053
@@ -1643,7 +1591,6 @@ items_053:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_054: 
   id: "54"
   accession_num: Sheikholeslami_ANMEQ_100308_054
@@ -1674,7 +1621,6 @@ items_054:
   sort_month: "9"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_055: 
   id: "55"
   accession_num: Sheikholeslami_ANMEQ_100308_055
@@ -1705,7 +1651,6 @@ items_055:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_056: 
   id: "56"
   accession_num: Sheikholeslami_ANMEQ_100308_056
@@ -1736,7 +1681,6 @@ items_056:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_057: 
   id: "57"
   accession_num: Sheikholeslami_ANMEQ_100308_057
@@ -1767,7 +1711,6 @@ items_057:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_058: 
   id: "58"
   accession_num: Sheikholeslami_ANMEQ_100308_058
@@ -1798,7 +1741,6 @@ items_058:
   sort_month: "9"
   sort_day: "6"
   editorial_date: "0"
-  owner_tag: ""
 items_059: 
   id: "59"
   accession_num: Sheikholeslami_ANMEQ_100308_059
@@ -1829,7 +1771,6 @@ items_059:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_060: 
   id: "60"
   accession_num: Sheikholeslami_ANMEQ_100308_060
@@ -1862,7 +1803,6 @@ items_060:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_061: 
   id: "61"
   accession_num: Sheikholeslami_ANMEQ_100308_061
@@ -1893,7 +1833,6 @@ items_061:
   sort_month: "5"
   sort_day: "16"
   editorial_date: "0"
-  owner_tag: ""
 items_062: 
   id: "62"
   accession_num: Sheikholeslami_ANMEQ_100308_062
@@ -1924,7 +1863,6 @@ items_062:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_063: 
   id: "63"
   accession_num: Sheikholeslami_ANMEQ_100308_063
@@ -1955,7 +1893,6 @@ items_063:
   sort_month: "9"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_064: 
   id: "64"
   accession_num: Sheikholeslami_ANMEQ_100308_064
@@ -1986,7 +1923,6 @@ items_064:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_065: 
   id: "65"
   accession_num: Sheikholeslami_ANMEQ_100308_065
@@ -2017,7 +1953,6 @@ items_065:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_066: 
   id: "66"
   accession_num: Sheikholeslami_ANMEQ_100308_066
@@ -2048,7 +1983,6 @@ items_066:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_067: 
   id: "67"
   accession_num: Sheikholeslami_ANMEQ_100308_067
@@ -2079,7 +2013,6 @@ items_067:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
-  owner_tag: ""
 items_068: 
   id: "68"
   accession_num: Sheikholeslami_ANMEQ_100308_068
@@ -2110,7 +2043,6 @@ items_068:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_069: 
   id: "69"
   accession_num: Sheikholeslami_ANMEQ_100308_069
@@ -2141,7 +2073,6 @@ items_069:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_070: 
   id: "70"
   accession_num: Sheikholeslami_ANMEQ_100308_070
@@ -2172,7 +2103,6 @@ items_070:
   sort_month: "1"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_071: 
   id: "71"
   accession_num: Sheikholeslami_ANMEQ_100308_071
@@ -2203,7 +2133,6 @@ items_071:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_072: 
   id: "72"
   accession_num: Sheikholeslami_ANMEQ_100308_072
@@ -2234,7 +2163,6 @@ items_072:
   sort_month: "5"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_073: 
   id: "73"
   accession_num: Sheikholeslami_ANMEQ_100308_073
@@ -2265,7 +2193,6 @@ items_073:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_074: 
   id: "74"
   accession_num: Sheikholeslami_ANMEQ_100308_074
@@ -2296,7 +2223,6 @@ items_074:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_075: 
   id: "75"
   accession_num: Sheikholeslami_ANMEQ_100308_075
@@ -2327,7 +2253,6 @@ items_075:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_076: 
   id: "76"
   accession_num: Sheikholeslami_ANMEQ_100308_076
@@ -2358,7 +2283,6 @@ items_076:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_077: 
   id: "77"
   accession_num: Sheikholeslami_ANMEQ_100308_077
@@ -2389,7 +2313,6 @@ items_077:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_078: 
   id: "78"
   accession_num: Sheikholeslami_ANMEQ_100308_078
@@ -2420,7 +2343,6 @@ items_078:
   sort_month: "11"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_079: 
   id: "79"
   accession_num: Sheikholeslami_ANMEQ_100308_079
@@ -2451,7 +2373,6 @@ items_079:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_080: 
   id: "80"
   accession_num: Sheikholeslami_ANMEQ_100308_080
@@ -2484,7 +2405,6 @@ items_080:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_081: 
   id: "81"
   accession_num: Sheikholeslami_ANMEQ_100308_081
@@ -2515,7 +2435,6 @@ items_081:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_082: 
   id: "82"
   accession_num: Sheikholeslami_ANMEQ_100308_082
@@ -2548,7 +2467,6 @@ items_082:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_083: 
   id: "83"
   accession_num: Sheikholeslami_ANMEQ_100308_083
@@ -2579,7 +2497,6 @@ items_083:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_084: 
   id: "84"
   accession_num: Sheikholeslami_ANMEQ_100308_084
@@ -2612,7 +2529,6 @@ items_084:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_085: 
   id: "85"
   accession_num: Sheikholeslami_ANMEQ_100308_085
@@ -2643,7 +2559,6 @@ items_085:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_086: 
   id: "86"
   accession_num: Sheikholeslami_ANMEQ_100308_086
@@ -2674,7 +2589,6 @@ items_086:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_087: 
   id: "87"
   accession_num: Sheikholeslami_ANMEQ_100308_087
@@ -2705,7 +2619,6 @@ items_087:
   sort_month: "4"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_088: 
   id: "88"
   accession_num: Sheikholeslami_ANMEQ_100308_088
@@ -2736,7 +2649,6 @@ items_088:
   sort_month: "1"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_089: 
   id: "89"
   accession_num: Sheikholeslami_ANMEQ_100308_089
@@ -2767,7 +2679,6 @@ items_089:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_090: 
   id: "90"
   accession_num: Sheikholeslami_ANMEQ_100308_090
@@ -2798,7 +2709,6 @@ items_090:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_091: 
   id: "91"
   accession_num: Sheikholeslami_ANMEQ_100308_091
@@ -2829,7 +2739,6 @@ items_091:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_092: 
   id: "92"
   accession_num: Sheikholeslami_ANMEQ_100308_092
@@ -2860,7 +2769,6 @@ items_092:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_093: 
   id: "93"
   accession_num: Sheikholeslami_ANMEQ_100308_093
@@ -2892,7 +2800,6 @@ items_093:
   sort_month: "10"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_094: 
   id: "94"
   accession_num: Sheikholeslami_ANMEQ_100308_094
@@ -2924,7 +2831,6 @@ items_094:
   sort_month: "10"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_095: 
   id: "95"
   accession_num: Sheikholeslami_ANMEQ_100308_095
@@ -2955,7 +2861,6 @@ items_095:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_096: 
   id: "96"
   accession_num: Sheikholeslami_ANMEQ_100308_096
@@ -2986,7 +2891,6 @@ items_096:
   sort_month: "3"
   sort_day: "2"
   editorial_date: "0"
-  owner_tag: ""
 items_097: 
   id: "97"
   accession_num: Sheikholeslami_ANMEQ_100308_097
@@ -3017,7 +2921,6 @@ items_097:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_098: 
   id: "98"
   accession_num: Sheikholeslami_ANMEQ_100308_098
@@ -3048,7 +2951,6 @@ items_098:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_099: 
   id: "99"
   accession_num: Sheikholeslami_ANMEQ_100308_099
@@ -3079,7 +2981,6 @@ items_099:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_100: 
   id: "100"
   accession_num: Sheikholeslami_ANMEQ_100308_100
@@ -3110,7 +3011,6 @@ items_100:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_101: 
   id: "101"
   accession_num: Sheikholeslami_ANMEQ_100308_101
@@ -3141,7 +3041,6 @@ items_101:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_102: 
   id: "102"
   accession_num: Sheikholeslami_ANMEQ_100308_102
@@ -3172,7 +3071,6 @@ items_102:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_103: 
   id: "103"
   accession_num: Sheikholeslami_ANMEQ_100308_103
@@ -3204,7 +3102,6 @@ items_103:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_104: 
   id: "104"
   accession_num: Sheikholeslami_ANMEQ_100308_104
@@ -3235,7 +3132,6 @@ items_104:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_105: 
   id: "105"
   accession_num: Sheikholeslami_ANMEQ_100308_105
@@ -3266,7 +3162,6 @@ items_105:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_106: 
   id: "106"
   accession_num: Sheikholeslami_ANMEQ_100308_106
@@ -3297,7 +3192,6 @@ items_106:
   sort_month: "2"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_107: 
   id: "107"
   accession_num: Sheikholeslami_ANMEQ_100308_107
@@ -3328,7 +3222,6 @@ items_107:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_108: 
   id: "108"
   accession_num: Sheikholeslami_ANMEQ_100308_108
@@ -3359,7 +3252,6 @@ items_108:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_109: 
   id: "109"
   accession_num: Sheikholeslami_ANMEQ_100308_109
@@ -3390,7 +3282,6 @@ items_109:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_110: 
   id: "110"
   accession_num: Sheikholeslami_ANMEQ_100308_110
@@ -3421,7 +3312,6 @@ items_110:
   sort_month: 
   sort_day: 
   editorial_date: "0"
-  owner_tag: ""
 items_111: 
   id: "111"
   accession_num: Sheikholeslami_ANMEQ_100308_111
@@ -3452,7 +3342,6 @@ items_111:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_112: 
   id: "112"
   accession_num: Sheikholeslami_ANMEQ_100308_112
@@ -3483,7 +3372,6 @@ items_112:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_113: 
   id: "113"
   accession_num: Sheikholeslami_ANMEQ_100308_113
@@ -3514,7 +3402,6 @@ items_113:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_114: 
   id: "114"
   accession_num: Sheikholeslami_ANMEQ_100308_114
@@ -3545,7 +3432,6 @@ items_114:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_115: 
   id: "115"
   accession_num: Sheikholeslami_ANMEQ_100308_115
@@ -3576,7 +3462,6 @@ items_115:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_116: 
   id: "116"
   accession_num: Sheikholeslami_ANMEQ_100308_116
@@ -3607,7 +3492,6 @@ items_116:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_117: 
   id: "117"
   accession_num: Sheikholeslami_ANMEQ_100308_117
@@ -3638,7 +3522,6 @@ items_117:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_118: 
   id: "118"
   accession_num: Sheikholeslami_ANMEQ_100308_118
@@ -3669,7 +3552,6 @@ items_118:
   sort_month: "1"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_119: 
   id: "119"
   accession_num: Sheikholeslami_ANMEQ_100308_119
@@ -3700,7 +3582,6 @@ items_119:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_120: 
   id: "120"
   accession_num: Sheikholeslami_ANMEQ_100308_120
@@ -3731,7 +3612,6 @@ items_120:
   sort_month: "2"
   sort_day: "24"
   editorial_date: "0"
-  owner_tag: ""
 items_121: 
   id: "121"
   accession_num: Sheikholeslami_ANMEQ_100308_121
@@ -3762,7 +3642,6 @@ items_121:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_122: 
   id: "122"
   accession_num: Sheikholeslami_ANMEQ_100308_122
@@ -3793,7 +3672,6 @@ items_122:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_123: 
   id: "123"
   accession_num: Sheikholeslami_ANMEQ_100308_123
@@ -3824,7 +3702,6 @@ items_123:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_124: 
   id: "124"
   accession_num: Sheikholeslami_ANMEQ_100308_124
@@ -3855,7 +3732,6 @@ items_124:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_125: 
   id: "125"
   accession_num: Sheikholeslami_ANMEQ_100308_125
@@ -3886,7 +3762,6 @@ items_125:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_126: 
   id: "126"
   accession_num: Sheikholeslami_ANMEQ_100308_126
@@ -3917,7 +3792,6 @@ items_126:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_127: 
   id: "127"
   accession_num: Sheikholeslami_ANMEQ_100308_127
@@ -3948,7 +3822,6 @@ items_127:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_128: 
   id: "128"
   accession_num: Sheikholeslami_ANMEQ_100308_128
@@ -3979,7 +3852,6 @@ items_128:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_129: 
   id: "129"
   accession_num: Sheikholeslami_ANMEQ_100308_129
@@ -4010,7 +3882,6 @@ items_129:
   sort_month: "9"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_130: 
   id: "130"
   accession_num: Sheikholeslami_ANMEQ_100308_130
@@ -4041,7 +3912,6 @@ items_130:
   sort_month: "8"
   sort_day: "23"
   editorial_date: "0"
-  owner_tag: ""
 items_131: 
   id: "131"
   accession_num: Sheikholeslami_ANMEQ_100308_131
@@ -4072,7 +3942,6 @@ items_131:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_132: 
   id: "132"
   accession_num: Sheikholeslami_ANMEQ_100308_132
@@ -4103,7 +3972,6 @@ items_132:
   sort_month: "11"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_133: 
   id: "133"
   accession_num: Sheikholeslami_ANMEQ_100308_133
@@ -4134,7 +4002,6 @@ items_133:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_134: 
   id: "134"
   accession_num: Sheikholeslami_ANMEQ_100308_134
@@ -4165,7 +4032,6 @@ items_134:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_135: 
   id: "135"
   accession_num: Sheikholeslami_ANMEQ_100308_135
@@ -4196,7 +4062,6 @@ items_135:
   sort_month: "10"
   sort_day: "30"
   editorial_date: "0"
-  owner_tag: ""
 items_136: 
   id: "136"
   accession_num: Sheikholeslami_ANMEQ_100308_136
@@ -4227,7 +4092,6 @@ items_136:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_137: 
   id: "137"
   accession_num: Sheikholeslami_ANMEQ_100308_137
@@ -4258,7 +4122,6 @@ items_137:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_138: 
   id: "138"
   accession_num: Sheikholeslami_ANMEQ_100308_138
@@ -4289,7 +4152,6 @@ items_138:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_139: 
   id: "139"
   accession_num: Sheikholeslami_ANMEQ_100308_139
@@ -4320,7 +4182,6 @@ items_139:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_140: 
   id: "140"
   accession_num: Sheikholeslami_ANMEQ_100308_140
@@ -4351,7 +4212,6 @@ items_140:
   sort_month: "2"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_141: 
   id: "141"
   accession_num: Sheikholeslami_ANMEQ_100308_141
@@ -4382,7 +4242,6 @@ items_141:
   sort_month: "4"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_142: 
   id: "142"
   accession_num: Sheikholeslami_ANMEQ_100308_142
@@ -4413,7 +4272,6 @@ items_142:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_143: 
   id: "143"
   accession_num: Sheikholeslami_ANMEQ_100308_143
@@ -4444,7 +4302,6 @@ items_143:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_144: 
   id: "144"
   accession_num: Sheikholeslami_ANMEQ_100308_144
@@ -4475,7 +4332,6 @@ items_144:
   sort_month: "1"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_145: 
   id: "145"
   accession_num: Sheikholeslami_ANMEQ_100308_145
@@ -4506,7 +4362,6 @@ items_145:
   sort_month: "3"
   sort_day: "31"
   editorial_date: "0"
-  owner_tag: ""
 items_146: 
   id: "146"
   accession_num: Sheikholeslami_ANMEQ_100308_146
@@ -4537,7 +4392,6 @@ items_146:
   sort_month: "8"
   sort_day: "13"
   editorial_date: "0"
-  owner_tag: ""
 items_147: 
   id: "147"
   accession_num: Sheikholeslami_ANMEQ_100308_147
@@ -4568,7 +4422,6 @@ items_147:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_148: 
   id: "148"
   accession_num: Sheikholeslami_ANMEQ_100308_148
@@ -4599,7 +4452,6 @@ items_148:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_149: 
   id: "149"
   accession_num: Sheikholeslami_ANMEQ_100308_149
@@ -4630,7 +4482,6 @@ items_149:
   sort_month: "9"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_150: 
   id: "150"
   accession_num: Sheikholeslami_ANMEQ_100308_150
@@ -4661,7 +4512,6 @@ items_150:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_151: 
   id: "151"
   accession_num: Sheikholeslami_ANMEQ_100308_151
@@ -4692,7 +4542,6 @@ items_151:
   sort_month: "8"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_152: 
   id: "152"
   accession_num: Sheikholeslami_ANMEQ_100308_152
@@ -4723,7 +4572,6 @@ items_152:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_153: 
   id: "153"
   accession_num: Sheikholeslami_ANMEQ_100308_153
@@ -4754,7 +4602,6 @@ items_153:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_154: 
   id: "154"
   accession_num: Sheikholeslami_ANMEQ_100308_154
@@ -4785,7 +4632,6 @@ items_154:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_155: 
   id: "155"
   accession_num: Sheikholeslami_ANMEQ_100308_155
@@ -4816,7 +4662,6 @@ items_155:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_156: 
   id: "156"
   accession_num: Sheikholeslami_ANMEQ_100308_156
@@ -4847,7 +4692,6 @@ items_156:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_157: 
   id: "157"
   accession_num: Sheikholeslami_ANMEQ_100308_157
@@ -4878,7 +4722,6 @@ items_157:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_158: 
   id: "158"
   accession_num: Sheikholeslami_ANMEQ_100308_158
@@ -4909,7 +4752,6 @@ items_158:
   sort_month: "3"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_159: 
   id: "159"
   accession_num: Sheikholeslami_ANMEQ_100308_159
@@ -4940,7 +4782,6 @@ items_159:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_160: 
   id: "160"
   accession_num: Sheikholeslami_ANMEQ_100308_160
@@ -4971,7 +4812,6 @@ items_160:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_161: 
   id: "161"
   accession_num: Sheikholeslami_ANMEQ_100308_161
@@ -5002,7 +4842,6 @@ items_161:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_162: 
   id: "162"
   accession_num: Sheikholeslami_ANMEQ_100308_162
@@ -5033,7 +4872,6 @@ items_162:
   sort_month: "7"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_163: 
   id: "163"
   accession_num: Sheikholeslami_ANMEQ_100308_163
@@ -5064,7 +4902,6 @@ items_163:
   sort_month: "4"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_164: 
   id: "164"
   accession_num: Sheikholeslami_ANMEQ_100308_164
@@ -5095,7 +4932,6 @@ items_164:
   sort_month: "7"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_165: 
   id: "165"
   accession_num: Sheikholeslami_ANMEQ_100308_165
@@ -5126,7 +4962,6 @@ items_165:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_166: 
   id: "166"
   accession_num: Sheikholeslami_ANMEQ_100308_166
@@ -5157,7 +4992,6 @@ items_166:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_167: 
   id: "167"
   accession_num: Sheikholeslami_ANMEQ_100308_167
@@ -5188,7 +5022,6 @@ items_167:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_168: 
   id: "168"
   accession_num: Sheikholeslami_ANMEQ_100308_168
@@ -5219,7 +5052,6 @@ items_168:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_169: 
   id: "169"
   accession_num: Sheikholeslami_ANMEQ_100308_169
@@ -5250,7 +5082,6 @@ items_169:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_170: 
   id: "170"
   accession_num: Sheikholeslami_ANMEQ_100308_170
@@ -5281,7 +5112,6 @@ items_170:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_171: 
   id: "171"
   accession_num: Sheikholeslami_ANMEQ_100308_171
@@ -5312,7 +5142,6 @@ items_171:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_172: 
   id: "172"
   accession_num: Sheikholeslami_ANMEQ_100308_172
@@ -5343,7 +5172,6 @@ items_172:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_173: 
   id: "173"
   accession_num: Sheikholeslami_ANMEQ_100308_173
@@ -5374,7 +5202,6 @@ items_173:
   sort_month: "2"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_174: 
   id: "174"
   accession_num: Sheikholeslami_ANMEQ_100308_174
@@ -5407,7 +5234,6 @@ items_174:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_175: 
   id: "175"
   accession_num: Sheikholeslami_ANMEQ_100308_175
@@ -5438,7 +5264,6 @@ items_175:
   sort_month: "1"
   sort_day: "24"
   editorial_date: "0"
-  owner_tag: ""
 items_176: 
   id: "176"
   accession_num: Sheikholeslami_ANMEQ_100308_176
@@ -5469,7 +5294,6 @@ items_176:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_177: 
   id: "177"
   accession_num: Sheikholeslami_ANMEQ_100308_177
@@ -5500,7 +5324,6 @@ items_177:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_178: 
   id: "178"
   accession_num: Sheikholeslami_ANMEQ_100308_178
@@ -5531,7 +5354,6 @@ items_178:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_179: 
   id: "179"
   accession_num: Sheikholeslami_ANMEQ_100308_179
@@ -5562,7 +5384,6 @@ items_179:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_180: 
   id: "180"
   accession_num: Sheikholeslami_ANMEQ_100308_180
@@ -5593,7 +5414,6 @@ items_180:
   sort_month: "6"
   sort_day: "27"
   editorial_date: "0"
-  owner_tag: ""
 items_181: 
   id: "181"
   accession_num: Sheikholeslami_ANMEQ_100308_181
@@ -5624,7 +5444,6 @@ items_181:
   sort_month: "3"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_182: 
   id: "182"
   accession_num: Sheikholeslami_ANMEQ_100308_182
@@ -5655,7 +5474,6 @@ items_182:
   sort_month: "5"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_183: 
   id: "183"
   accession_num: Sheikholeslami_ANMEQ_100308_183
@@ -5686,7 +5504,6 @@ items_183:
   sort_month: "5"
   sort_day: "30"
   editorial_date: "0"
-  owner_tag: ""
 items_184: 
   id: "184"
   accession_num: Sheikholeslami_ANMEQ_100308_184
@@ -5717,7 +5534,6 @@ items_184:
   sort_month: "9"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_185: 
   id: "185"
   accession_num: Sheikholeslami_ANMEQ_100308_185
@@ -5748,7 +5564,6 @@ items_185:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_186: 
   id: "186"
   accession_num: Sheikholeslami_ANMEQ_100308_186
@@ -5779,7 +5594,6 @@ items_186:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_187: 
   id: "187"
   accession_num: Sheikholeslami_ANMEQ_100308_187
@@ -5810,7 +5624,6 @@ items_187:
   sort_month: "1"
   sort_day: "19"
   editorial_date: "0"
-  owner_tag: ""
 items_188: 
   id: "188"
   accession_num: Sheikholeslami_ANMEQ_100308_188
@@ -5841,7 +5654,6 @@ items_188:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_189: 
   id: "189"
   accession_num: Sheikholeslami_ANMEQ_100308_189
@@ -5872,7 +5684,6 @@ items_189:
   sort_month: "8"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_190: 
   id: "190"
   accession_num: Sheikholeslami_ANMEQ_100308_190
@@ -5903,7 +5714,6 @@ items_190:
   sort_month: "11"
   sort_day: "5"
   editorial_date: "0"
-  owner_tag: ""
 items_191: 
   id: "191"
   accession_num: Sheikholeslami_ANMEQ_100308_191
@@ -5934,7 +5744,6 @@ items_191:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_192: 
   id: "192"
   accession_num: Sheikholeslami_ANMEQ_100308_192
@@ -5965,7 +5774,6 @@ items_192:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_193: 
   id: "193"
   accession_num: Sheikholeslami_ANMEQ_100308_193
@@ -5996,7 +5804,6 @@ items_193:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_194: 
   id: "194"
   accession_num: Sheikholeslami_ANMEQ_100308_194
@@ -6027,7 +5834,6 @@ items_194:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_195: 
   id: "195"
   accession_num: Sheikholeslami_ANMEQ_100308_195
@@ -6058,7 +5864,6 @@ items_195:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_196: 
   id: "196"
   accession_num: Sheikholeslami_ANMEQ_100308_196
@@ -6089,7 +5894,6 @@ items_196:
   sort_month: "4"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_197: 
   id: "197"
   accession_num: Sheikholeslami_ANMEQ_100308_197
@@ -6120,7 +5924,6 @@ items_197:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_198: 
   id: "198"
   accession_num: Sheikholeslami_ANMEQ_100308_198
@@ -6151,7 +5954,6 @@ items_198:
   sort_month: 
   sort_day: 
   editorial_date: "0"
-  owner_tag: ""
 items_199: 
   id: "199"
   accession_num: Sheikholeslami_ANMEQ_100308_199
@@ -6182,7 +5984,6 @@ items_199:
   sort_month: "11"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_200: 
   id: "200"
   accession_num: Sheikholeslami_ANMEQ_100308_200
@@ -6213,7 +6014,6 @@ items_200:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_201: 
   id: "201"
   accession_num: Sheikholeslami_ANMEQ_100308_201
@@ -6244,7 +6044,6 @@ items_201:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_202: 
   id: "202"
   accession_num: Sheikholeslami_ANMEQ_100308_202
@@ -6275,7 +6074,6 @@ items_202:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_203: 
   id: "203"
   accession_num: Sheikholeslami_ANMEQ_100308_203
@@ -6306,7 +6104,6 @@ items_203:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_204: 
   id: "204"
   accession_num: Sheikholeslami_ANMEQ_100308_204
@@ -6337,7 +6134,6 @@ items_204:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_205: 
   id: "205"
   accession_num: Sheikholeslami_ANMEQ_100308_205
@@ -6368,7 +6164,6 @@ items_205:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_206: 
   id: "206"
   accession_num: Sheikholeslami_ANMEQ_100308_206
@@ -6399,7 +6194,6 @@ items_206:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_207: 
   id: "207"
   accession_num: Sheikholeslami_ANMEQ_100308_207
@@ -6430,7 +6224,6 @@ items_207:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_208: 
   id: "208"
   accession_num: Sheikholeslami_ANMEQ_100308_208
@@ -6461,7 +6254,6 @@ items_208:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_209: 
   id: "209"
   accession_num: Sheikholeslami_ANMEQ_100308_209
@@ -6492,7 +6284,6 @@ items_209:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_210: 
   id: "210"
   accession_num: Sheikholeslami_ANMEQ_100308_210
@@ -6523,7 +6314,6 @@ items_210:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_211: 
   id: "211"
   accession_num: Sheikholeslami_ANMEQ_100308_211
@@ -6554,7 +6344,6 @@ items_211:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_212: 
   id: "212"
   accession_num: Sheikholeslami_ANMEQ_100308_212
@@ -6585,7 +6374,6 @@ items_212:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_213: 
   id: "213"
   accession_num: Sheikholeslami_ANMEQ_100308_213
@@ -6616,7 +6404,6 @@ items_213:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_214: 
   id: "214"
   accession_num: Sheikholeslami_ANMEQ_100308_214
@@ -6647,7 +6434,6 @@ items_214:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_215: 
   id: "215"
   accession_num: Dawlatshahi_AN_091030_001
@@ -6678,7 +6464,6 @@ items_215:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_216: 
   id: "216"
   accession_num: Dawlatshahi_AN_091030_002
@@ -6709,7 +6494,6 @@ items_216:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_217: 
   id: "217"
   accession_num: Dawlatshahi_AN_091030_003
@@ -6740,7 +6524,6 @@ items_217:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_218: 
   id: "218"
   accession_num: Dawlatshahi_AN_091030_004
@@ -6771,7 +6554,6 @@ items_218:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_219: 
   id: "219"
   accession_num: Dawlatshahi_AN_091030_005
@@ -6802,7 +6584,6 @@ items_219:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_220: 
   id: "220"
   accession_num: Dawlatshahi_AN_091030_006
@@ -6833,7 +6614,6 @@ items_220:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_221: 
   id: "221"
   accession_num: Dawlatshahi_AN_091030_007
@@ -6865,7 +6645,6 @@ items_221:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_222: 
   id: "222"
   accession_num: Dawlatshahi_AN_091030_008
@@ -6896,7 +6675,6 @@ items_222:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_223: 
   id: "223"
   accession_num: Farmayan_MEQ_100205_001
@@ -6927,7 +6705,6 @@ items_223:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_224: 
   id: "224"
   accession_num: Farmayan_MEQ_100205_002
@@ -6958,7 +6735,6 @@ items_224:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_225: 
   id: "225"
   accession_num: Farmayan_MEQ_100205_003
@@ -6989,7 +6765,6 @@ items_225:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_226: 
   id: "226"
   accession_num: Farmayan_MEQ_100205_004
@@ -7020,7 +6795,6 @@ items_226:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_227: 
   id: "227"
   accession_num: Farmayan_MEQ_100205_005
@@ -7051,7 +6825,6 @@ items_227:
   sort_month: "2"
   sort_day: "6"
   editorial_date: "0"
-  owner_tag: ""
 items_228: 
   id: "228"
   accession_num: Farmayan_MEQ_100205_006
@@ -7082,7 +6855,6 @@ items_228:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_229: 
   id: "229"
   accession_num: Farmayan_MEQ_100205_007
@@ -7113,7 +6885,6 @@ items_229:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_230: 
   id: "230"
   accession_num: Montague_AN_260909_001
@@ -7144,7 +6915,6 @@ items_230:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_231: 
   id: "231"
   accession_num: Montague_AN_260909_002
@@ -7175,7 +6945,6 @@ items_231:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_232: 
   id: "232"
   accession_num: Montague_AN_260909_003
@@ -7206,7 +6975,6 @@ items_232:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_233: 
   id: "233"
   accession_num: Montague_AN_260909_004
@@ -7237,7 +7005,6 @@ items_233:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_234: 
   id: "234"
   accession_num: Montague_AN_260909_005
@@ -7268,7 +7035,6 @@ items_234:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_235: 
   id: "235"
   accession_num: Montague_AN_260909_006
@@ -7299,7 +7065,6 @@ items_235:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_236: 
   id: "236"
   accession_num: Montague_AN_260909_007
@@ -7330,7 +7095,6 @@ items_236:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_237: 
   id: "237"
   accession_num: Montague_AN_260909_008
@@ -7361,7 +7125,6 @@ items_237:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_238: 
   id: "238"
   accession_num: Mozaffari_NM_290709_001
@@ -7392,7 +7155,6 @@ items_238:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_239: 
   id: "239"
   accession_num: Mozaffari_NM_290709_002
@@ -7423,7 +7185,6 @@ items_239:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_240: 
   id: "240"
   accession_num: Mozaffari_NM_290709_003
@@ -7454,7 +7215,6 @@ items_240:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_241: 
   id: "241"
   accession_num: Mozaffari_NM_290709_004
@@ -7485,7 +7245,6 @@ items_241:
   sort_month: "10"
   sort_day: "6"
   editorial_date: "0"
-  owner_tag: ""
 items_242: 
   id: "242"
   accession_num: Mozaffari_NM_290709_005
@@ -7516,7 +7275,6 @@ items_242:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_243: 
   id: "243"
   accession_num: Mozaffari_NM_290709_006
@@ -7547,7 +7305,6 @@ items_243:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_244: 
   id: "244"
   accession_num: Mozaffari_NM_290709_007
@@ -7578,7 +7335,6 @@ items_244:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_245: 
   id: "245"
   accession_num: Mozaffari_NM_290709_008
@@ -7609,7 +7365,6 @@ items_245:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_246: 
   id: "246"
   accession_num: Mozaffari_NM_290709_009
@@ -7640,7 +7395,6 @@ items_246:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_247: 
   id: "247"
   accession_num: Mozaffari_NM_290709_010
@@ -7671,7 +7425,6 @@ items_247:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_248: 
   id: "248"
   accession_num: Mozaffari_NM_290709_011
@@ -7702,7 +7455,6 @@ items_248:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_249: 
   id: "249"
   accession_num: Mozaffari_NM_290709_012
@@ -7733,7 +7485,6 @@ items_249:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_250: 
   id: "250"
   accession_num: Mozaffari_NM_290709_013
@@ -7764,7 +7515,6 @@ items_250:
   sort_month: 
   sort_day: 
   editorial_date: "1"
-  owner_tag: ""
 items_251: 
   id: "251"
   accession_num: Mozaffari_NM_290709_014
@@ -7795,7 +7545,6 @@ items_251:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_252: 
   id: "252"
   accession_num: Mozaffari_NM_290709_015
@@ -7826,7 +7575,6 @@ items_252:
   sort_month: "8"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_253: 
   id: "253"
   accession_num: Sanati_AN_200909_001
@@ -7857,7 +7605,6 @@ items_253:
   sort_month: "12"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_254: 
   id: "254"
   accession_num: Sanati_AN_200909_002
@@ -7888,7 +7635,6 @@ items_254:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_255: 
   id: "256"
   accession_num: Zamandar_MEQ_090814_001
@@ -7919,7 +7665,6 @@ items_255:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_256: 
   id: "257"
   accession_num: Zamandar_MEQ_090814_002
@@ -7950,7 +7695,6 @@ items_256:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_257: 
   id: "258"
   accession_num: Zamandar_MEQ_090814_003
@@ -7981,7 +7725,6 @@ items_257:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_258: 
   id: "259"
   accession_num: Zamandar_MEQ_090814_004
@@ -8012,7 +7755,6 @@ items_258:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_259: 
   id: "260"
   accession_num: Zamandar_MEQ_090814_005
@@ -8043,7 +7785,6 @@ items_259:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_260: 
   id: "261"
   accession_num: Zamandar_MEQ_090814_006
@@ -8074,7 +7815,6 @@ items_260:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_261: 
   id: "262"
   accession_num: Zamandar_MEQ_090814_007
@@ -8105,7 +7845,6 @@ items_261:
   sort_month: "9"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_262: 
   id: "263"
   accession_num: Zamandar_MEQ_090814_008
@@ -8136,7 +7875,6 @@ items_262:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_263: 
   id: "264"
   accession_num: Zamandar_MEQ_090814_009
@@ -8167,7 +7905,6 @@ items_263:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_264: 
   id: "265"
   accession_num: Zamandar_MEQ_090814_010
@@ -8198,7 +7935,6 @@ items_264:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_265: 
   id: "266"
   accession_num: Zamandar_MEQ_090814_011
@@ -8229,7 +7965,6 @@ items_265:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_266: 
   id: "267"
   accession_num: Zamandar_MEQ_100402_012
@@ -8260,7 +7995,6 @@ items_266:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_267: 
   id: "268"
   accession_num: Zamandar_MEQ_100402_013
@@ -8291,7 +8025,6 @@ items_267:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_268: 
   id: "269"
   accession_num: Tarbiat_al_bunat_AN_090710_001
@@ -8322,7 +8055,6 @@ items_268:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_269: 
   id: "270"
   accession_num: Nijat_al_muslimat_AN_090710_001
@@ -8353,7 +8085,6 @@ items_269:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: MS. 5213
 items_270: 
   id: "271"
   accession_num: Sheikholeslami_ANMEQ_100308_215
@@ -8384,7 +8115,6 @@ items_270:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_271: 
   id: "272"
   accession_num: Gawhariyah_AN_090710_001
@@ -8415,7 +8145,6 @@ items_271:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_272: 
   id: "686"
   accession_num: Hadiyat_al_muhibb_AN_090710_001
@@ -8446,7 +8175,6 @@ items_272:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_273: 
   id: "844"
   accession_num: Risalah-i hijabiyah_AN_090710_001
@@ -8477,7 +8205,6 @@ items_273:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_274: 
   id: "882"
   accession_num: Zaban_i_zanan_AN_090710_001
@@ -8508,7 +8235,6 @@ items_274:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_275: 
   id: "921"
   accession_num: Namah_i_banuvan_AN_090710_001
@@ -8539,7 +8265,6 @@ items_275:
   sort_month: "7"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_276: 
   id: "929"
   accession_num: Namah_i_banuvan_AN_090710_002
@@ -8570,7 +8295,6 @@ items_276:
   sort_month: "8"
   sort_day: "16"
   editorial_date: "0"
-  owner_tag: ""
 items_277: 
   id: "939"
   accession_num: Namah_i_banuvan_AN_090710_003
@@ -8601,7 +8325,6 @@ items_277:
   sort_month: "9"
   sort_day: "4"
   editorial_date: "0"
-  owner_tag: ""
 items_278: 
   id: "945"
   accession_num: Namah_i_banuvan_AN_090710_004
@@ -8632,7 +8355,6 @@ items_278:
   sort_month: "9"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_279: 
   id: "951"
   accession_num: Namah_i_banuvan_AN_090710_005
@@ -8663,7 +8385,6 @@ items_279:
   sort_month: "10"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_280: 
   id: "961"
   accession_num: Namah_i_banuvan_AN_090710_006
@@ -8694,7 +8415,6 @@ items_280:
   sort_month: "11"
   sort_day: "5"
   editorial_date: "0"
-  owner_tag: ""
 items_281: 
   id: "967"
   accession_num: Namah_i_banuvan_AN_090710_007
@@ -8725,7 +8445,6 @@ items_281:
   sort_month: "1"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_282: 
   id: "975"
   accession_num: Namah_i_banuvan_AN_090710_008
@@ -8756,7 +8475,6 @@ items_282:
   sort_month: "1"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_283: 
   id: "983"
   accession_num: Namah_i_banuvan_AN_090710_009
@@ -8787,7 +8505,6 @@ items_283:
   sort_month: "2"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_284: 
   id: "991"
   accession_num: Namah_i_banuvan_AN_090710_010
@@ -8818,7 +8535,6 @@ items_284:
   sort_month: "3"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_285: 
   id: "999"
   accession_num: Namah_i_banuvan_AN_090710_011
@@ -8849,7 +8565,6 @@ items_285:
   sort_month: "4"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_286: 
   id: "1007"
   accession_num: Namah_i_banuvan_AN_090710_012
@@ -8880,7 +8595,6 @@ items_286:
   sort_month: "5"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_287: 
   id: "1015"
   accession_num: Namah_i_banuvan_AN_090710_013
@@ -8911,7 +8625,6 @@ items_287:
   sort_month: "6"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_288: 
   id: "1023"
   accession_num: Dawlatabadi_AN_100520_001
@@ -8942,7 +8655,6 @@ items_288:
   sort_month: "4"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_289: 
   id: "1024"
   accession_num: Dawlatabadi_AN_100520_002
@@ -8973,7 +8685,6 @@ items_289:
   sort_month: "4"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_290: 
   id: "1025"
   accession_num: Dawlatabadi_AN_100520_003
@@ -9004,7 +8715,6 @@ items_290:
   sort_month: "4"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_291: 
   id: "1026"
   accession_num: Dawlatabadi_AN_100520_004
@@ -9035,7 +8745,6 @@ items_291:
   sort_month: "4"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_292: 
   id: "1031"
   accession_num: Dawlatabadi_AN_100520_005
@@ -9066,7 +8775,6 @@ items_292:
   sort_month: "12"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_293: 
   id: "1032"
   accession_num: Dawlatabadi_AN_100520_006
@@ -9097,7 +8805,6 @@ items_293:
   sort_month: "1"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_294: 
   id: "1033"
   accession_num: Dawlatabadi_AN_100520_007
@@ -9128,7 +8835,6 @@ items_294:
   sort_month: "1"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_295: 
   id: "1035"
   accession_num: Dawlatabadi_AN_100520_008
@@ -9159,7 +8865,6 @@ items_295:
   sort_month: "10"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_296: 
   id: "1036"
   accession_num: Dawlatabadi_AN_100520_009
@@ -9190,7 +8895,6 @@ items_296:
   sort_month: "10"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_297: 
   id: "1037"
   accession_num: Dawlatabadi_AN_100520_010
@@ -9221,7 +8925,6 @@ items_297:
   sort_month: "7"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_298: 
   id: "1040"
   accession_num: Dawlatabadi_AN_100520_011
@@ -9252,7 +8955,6 @@ items_298:
   sort_month: "5"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_299: 
   id: "1041"
   accession_num: Dawlatabadi_AN_100520_012
@@ -9283,7 +8985,6 @@ items_299:
   sort_month: "2"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_300: 
   id: "1042"
   accession_num: Dawlatabadi_AN_100520_013
@@ -9314,7 +9015,6 @@ items_300:
   sort_month: "1"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_301: 
   id: "1043"
   accession_num: Dawlatabadi_AN_100520_014
@@ -9345,7 +9045,6 @@ items_301:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_302: 
   id: "1045"
   accession_num: Dawlatabadi_AN_100520_015
@@ -9378,7 +9077,6 @@ items_302:
   sort_month: "1"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_303: 
   id: "1046"
   accession_num: Dawlatabadi_AN_100520_016
@@ -9409,7 +9107,6 @@ items_303:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_304: 
   id: "1047"
   accession_num: Dawlatabadi_AN_100520_017
@@ -9440,7 +9137,6 @@ items_304:
   sort_month: "3"
   sort_day: "4"
   editorial_date: "0"
-  owner_tag: ""
 items_305: 
   id: "1048"
   accession_num: Dawlatabadi_AN_100520_018
@@ -9471,7 +9167,6 @@ items_305:
   sort_month: "7"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_306: 
   id: "1049"
   accession_num: Dawlatabadi_AN_100520_019
@@ -9502,7 +9197,6 @@ items_306:
   sort_month: "7"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_307: 
   id: "1053"
   accession_num: Dawlatabadi_AN_100520_020
@@ -9533,7 +9227,6 @@ items_307:
   sort_month: "1"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_308: 
   id: "1055"
   accession_num: Dawlatabadi_AN_100520_021
@@ -9564,7 +9257,6 @@ items_308:
   sort_month: "1"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_309: 
   id: "1059"
   accession_num: Dawlatabadi_AN_100520_022
@@ -9595,7 +9287,6 @@ items_309:
   sort_month: "6"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_310: 
   id: "1074"
   accession_num: Dawlatabadi_AN_100520_023
@@ -9626,7 +9317,6 @@ items_310:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
-  owner_tag: ""
 items_311: 
   id: "1075"
   accession_num: Dawlatabadi_AN_100520_024
@@ -9657,7 +9347,6 @@ items_311:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
-  owner_tag: ""
 items_312: 
   id: "1076"
   accession_num: Dawlatabadi_AN_100520_025
@@ -9688,7 +9377,6 @@ items_312:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_313: 
   id: "1077"
   accession_num: Dawlatabadi_AN_100520_026
@@ -9719,7 +9407,6 @@ items_313:
   sort_month: "11"
   sort_day: "26"
   editorial_date: "0"
-  owner_tag: ""
 items_314: 
   id: "1078"
   accession_num: Dawlatabadi_AN_100520_027
@@ -9750,7 +9437,6 @@ items_314:
   sort_month: "9"
   sort_day: "24"
   editorial_date: "0"
-  owner_tag: ""
 items_315: 
   id: "1079"
   accession_num: Dawlatabadi_AN_100520_028
@@ -9781,7 +9467,6 @@ items_315:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_316: 
   id: "1081"
   accession_num: Dawlatabadi_AN_100520_029
@@ -9812,7 +9497,6 @@ items_316:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_317: 
   id: "1085"
   accession_num: Dawlatabadi_AN_100520_030
@@ -9843,7 +9527,6 @@ items_317:
   sort_month: "11"
   sort_day: "19"
   editorial_date: "0"
-  owner_tag: ""
 items_318: 
   id: "1086"
   accession_num: Dawlatabadi_AN_100520_031
@@ -9874,7 +9557,6 @@ items_318:
   sort_month: "9"
   sort_day: "13"
   editorial_date: "0"
-  owner_tag: ""
 items_319: 
   id: "1088"
   accession_num: Dawlatabadi_AN_100520_032
@@ -9905,7 +9587,6 @@ items_319:
   sort_month: "6"
   sort_day: "5"
   editorial_date: "0"
-  owner_tag: ""
 items_320: 
   id: "1090"
   accession_num: Dawlatabadi_AN_100520_033
@@ -9936,7 +9617,6 @@ items_320:
   sort_month: "7"
   sort_day: "24"
   editorial_date: "0"
-  owner_tag: ""
 items_321: 
   id: "1092"
   accession_num: Dawlatabadi_AN_100520_034
@@ -9967,7 +9647,6 @@ items_321:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_322: 
   id: "1094"
   accession_num: Dawlatabadi_AN_100520_035
@@ -9998,7 +9677,6 @@ items_322:
   sort_month: "8"
   sort_day: "5"
   editorial_date: "0"
-  owner_tag: ""
 items_323: 
   id: "1095"
   accession_num: Dawlatabadi_AN_100520_036
@@ -10029,7 +9707,6 @@ items_323:
   sort_month: "8"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_324: 
   id: "1097"
   accession_num: Dawlatabadi_AN_100520_037
@@ -10060,7 +9737,6 @@ items_324:
   sort_month: "8"
   sort_day: "24"
   editorial_date: "0"
-  owner_tag: ""
 items_325: 
   id: "1098"
   accession_num: Dawlatabadi_AN_100520_038
@@ -10091,7 +9767,6 @@ items_325:
   sort_month: "9"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_326: 
   id: "1100"
   accession_num: Dawlatabadi_AN_100520_039
@@ -10122,7 +9797,6 @@ items_326:
   sort_month: "10"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_327: 
   id: "1101"
   accession_num: Dawlatabadi_AN_100520_040
@@ -10153,7 +9827,6 @@ items_327:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_328: 
   id: "1103"
   accession_num: Dawlatabadi_AN_100520_041
@@ -10184,7 +9857,6 @@ items_328:
   sort_month: "10"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_329: 
   id: "1104"
   accession_num: Dawlatabadi_AN_100520_042
@@ -10215,7 +9887,6 @@ items_329:
   sort_month: "11"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_330: 
   id: "1105"
   accession_num: Dawlatabadi_AN_100520_043
@@ -10246,7 +9917,6 @@ items_330:
   sort_month: "11"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_331: 
   id: "1106"
   accession_num: Dawlatabadi_AN_100520_044
@@ -10277,7 +9947,6 @@ items_331:
   sort_month: "12"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_332: 
   id: "1110"
   accession_num: Dawlatabadi_AN_100520_045
@@ -10308,7 +9977,6 @@ items_332:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
-  owner_tag: ""
 items_333: 
   id: "1111"
   accession_num: Dawlatabadi_AN_100520_046
@@ -10339,7 +10007,6 @@ items_333:
   sort_month: "1"
   sort_day: "25"
   editorial_date: "0"
-  owner_tag: ""
 items_334: 
   id: "1114"
   accession_num: Dawlatabadi_AN_100520_047
@@ -10370,7 +10037,6 @@ items_334:
   sort_month: "2"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_335: 
   id: "1116"
   accession_num: Dawlatabadi_AN_100520_048
@@ -10401,7 +10067,6 @@ items_335:
   sort_month: "3"
   sort_day: "4"
   editorial_date: "0"
-  owner_tag: ""
 items_336: 
   id: "1117"
   accession_num: Dawlatabadi_AN_100520_049
@@ -10432,7 +10097,6 @@ items_336:
   sort_month: "3"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_337: 
   id: "1118"
   accession_num: Dawlatabadi_AN_100520_050
@@ -10463,7 +10127,6 @@ items_337:
   sort_month: "6"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_338: 
   id: "1120"
   accession_num: Dawlatabadi_AN_100520_051
@@ -10494,7 +10157,6 @@ items_338:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_339: 
   id: "1122"
   accession_num: Dawlatabadi_AN_100520_052
@@ -10525,7 +10187,6 @@ items_339:
   sort_month: "9"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_340: 
   id: "1125"
   accession_num: Dawlatabadi_AN_100520_053
@@ -10556,7 +10217,6 @@ items_340:
   sort_month: "10"
   sort_day: "25"
   editorial_date: "0"
-  owner_tag: ""
 items_341: 
   id: "1126"
   accession_num: Dawlatabadi_AN_100520_054
@@ -10587,7 +10247,6 @@ items_341:
   sort_month: "3"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_342: 
   id: "1127"
   accession_num: Dawlatabadi_AN_100520_055
@@ -10618,7 +10277,6 @@ items_342:
   sort_month: "5"
   sort_day: "19"
   editorial_date: "0"
-  owner_tag: ""
 items_343: 
   id: "1128"
   accession_num: Dawlatabadi_AN_100520_056
@@ -10649,7 +10307,6 @@ items_343:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_344: 
   id: "1130"
   accession_num: Dawlatabadi_AN_100520_057
@@ -10680,7 +10337,6 @@ items_344:
   sort_month: "5"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_345: 
   id: "1131"
   accession_num: Dawlatabadi_AN_100520_058
@@ -10711,7 +10367,6 @@ items_345:
   sort_month: "12"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_346: 
   id: "1133"
   accession_num: Dawlatabadi_AN_100520_059
@@ -10742,7 +10397,6 @@ items_346:
   sort_month: "12"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_347: 
   id: "1135"
   accession_num: Dawlatabadi_AN_100520_060
@@ -10773,7 +10427,6 @@ items_347:
   sort_month: "6"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_348: 
   id: "1138"
   accession_num: Dawlatabadi_AN_100520_061
@@ -10804,7 +10457,6 @@ items_348:
   sort_month: "12"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_349: 
   id: "1139"
   accession_num: Dawlatabadi_AN_100520_062
@@ -10835,7 +10487,6 @@ items_349:
   sort_month: "2"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_350: 
   id: "1141"
   accession_num: Dawlatabadi_AN_100520_063
@@ -10866,7 +10517,6 @@ items_350:
   sort_month: "3"
   sort_day: "11"
   editorial_date: "0"
-  owner_tag: ""
 items_351: 
   id: "1143"
   accession_num: Dawlatabadi_AN_100520_064
@@ -10897,7 +10547,6 @@ items_351:
   sort_month: "3"
   sort_day: "26"
   editorial_date: "0"
-  owner_tag: ""
 items_352: 
   id: "1145"
   accession_num: Dawlatabadi_AN_100520_065
@@ -10928,7 +10577,6 @@ items_352:
   sort_month: "6"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_353: 
   id: "1148"
   accession_num: Dawlatabadi_AN_100520_066
@@ -10959,7 +10607,6 @@ items_353:
   sort_month: "1"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_354: 
   id: "1150"
   accession_num: Dawlatabadi_AN_100520_067
@@ -10990,7 +10637,6 @@ items_354:
   sort_month: "8"
   sort_day: "28"
   editorial_date: "0"
-  owner_tag: ""
 items_355: 
   id: "1151"
   accession_num: Dawlatabadi_AN_100520_068
@@ -11021,7 +10667,6 @@ items_355:
   sort_month: "9"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_356: 
   id: "1153"
   accession_num: Dawlatabadi_AN_100520_069
@@ -11052,7 +10697,6 @@ items_356:
   sort_month: "10"
   sort_day: "2"
   editorial_date: "0"
-  owner_tag: ""
 items_357: 
   id: "1154"
   accession_num: Dawlatabadi_AN_100520_070
@@ -11085,7 +10729,6 @@ items_357:
   sort_month: "10"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_358: 
   id: "1156"
   accession_num: Dawlatabadi_AN_100520_071
@@ -11116,7 +10759,6 @@ items_358:
   sort_month: "11"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_359: 
   id: "1158"
   accession_num: Dawlatabadi_AN_100520_072
@@ -11147,7 +10789,6 @@ items_359:
   sort_month: "11"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_360: 
   id: "1160"
   accession_num: Dawlatabadi_AN_100520_073
@@ -11178,7 +10819,6 @@ items_360:
   sort_month: "12"
   sort_day: "15"
   editorial_date: "0"
-  owner_tag: ""
 items_361: 
   id: "1161"
   accession_num: Dawlatabadi_AN_100520_074
@@ -11209,7 +10849,6 @@ items_361:
   sort_month: "1"
   sort_day: "6"
   editorial_date: "0"
-  owner_tag: ""
 items_362: 
   id: "1162"
   accession_num: Dawlatabadi_AN_100520_075
@@ -11240,7 +10879,6 @@ items_362:
   sort_month: "1"
   sort_day: "31"
   editorial_date: "0"
-  owner_tag: ""
 items_363: 
   id: "1163"
   accession_num: Dawlatabadi_AN_100520_076
@@ -11271,7 +10909,6 @@ items_363:
   sort_month: "2"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_364: 
   id: "1165"
   accession_num: Dawlatabadi_AN_100520_077
@@ -11302,7 +10939,6 @@ items_364:
   sort_month: "3"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_365: 
   id: "1167"
   accession_num: Dawlatabadi_AN_100520_078
@@ -11333,7 +10969,6 @@ items_365:
   sort_month: "5"
   sort_day: "13"
   editorial_date: "0"
-  owner_tag: ""
 items_366: 
   id: "1169"
   accession_num: Dawlatabadi_AN_100520_079
@@ -11364,7 +10999,6 @@ items_366:
   sort_month: "3"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_367: 
   id: "1171"
   accession_num: Dawlatabadi_AN_100520_080
@@ -11395,7 +11029,6 @@ items_367:
   sort_month: "9"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_368: 
   id: "1172"
   accession_num: Dawlatabadi_AN_100520_081
@@ -11426,7 +11059,6 @@ items_368:
   sort_month: "3"
   sort_day: "16"
   editorial_date: "0"
-  owner_tag: ""
 items_369: 
   id: "1173"
   accession_num: Dawlatabadi_AN_100520_082
@@ -11457,7 +11089,6 @@ items_369:
   sort_month: "5"
   sort_day: "5"
   editorial_date: "0"
-  owner_tag: ""
 items_370: 
   id: "1174"
   accession_num: Dawlatabadi_AN_100520_083
@@ -11489,7 +11120,6 @@ items_370:
   sort_month: "4"
   sort_day: "13"
   editorial_date: "0"
-  owner_tag: ""
 items_371: 
   id: "1176"
   accession_num: Dawlatabadi_AN_100520_084
@@ -11520,7 +11150,6 @@ items_371:
   sort_month: "2"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_372: 
   id: "1178"
   accession_num: Dawlatabadi_AN_100520_085
@@ -11551,7 +11180,6 @@ items_372:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_373: 
   id: "1179"
   accession_num: Dawlatabadi_AN_100520_086
@@ -11582,7 +11210,6 @@ items_373:
   sort_month: "2"
   sort_day: "9"
   editorial_date: "0"
-  owner_tag: ""
 items_374: 
   id: "1181"
   accession_num: Dawlatabadi_AN_100520_087
@@ -11613,7 +11240,6 @@ items_374:
   sort_month: "8"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_375: 
   id: "1182"
   accession_num: Dawlatabadi_AN_100520_088
@@ -11644,7 +11270,6 @@ items_375:
   sort_month: "1"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_376: 
   id: "1184"
   accession_num: Dawlatabadi_AN_100520_089
@@ -11675,7 +11300,6 @@ items_376:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_377: 
   id: "1190"
   accession_num: Dawlatabadi_AN_100520_090
@@ -11706,7 +11330,6 @@ items_377:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_378: 
   id: "1205"
   accession_num: Dawlatabadi_AN_100520_091
@@ -11737,7 +11360,6 @@ items_378:
   sort_month: "9"
   sort_day: "28"
   editorial_date: "0"
-  owner_tag: ""
 items_379: 
   id: "1214"
   accession_num: Dawlatabadi_AN_100520_092
@@ -11768,7 +11390,6 @@ items_379:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_380: 
   id: "1226"
   accession_num: Dawlatabadi_AN_100520_093
@@ -11799,7 +11420,6 @@ items_380:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_381: 
   id: "1232"
   accession_num: Dawlatabadi_AN_100520_094
@@ -11830,7 +11450,6 @@ items_381:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_382: 
   id: "1237"
   accession_num: Dawlatabadi_AN_100520_095
@@ -11861,7 +11480,6 @@ items_382:
   sort_month: "1"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_383: 
   id: "1241"
   accession_num: Dawlatabadi_AN_100520_096
@@ -11892,7 +11510,6 @@ items_383:
   sort_month: "1"
   sort_day: "8"
   editorial_date: "0"
-  owner_tag: ""
 items_384: 
   id: "1242"
   accession_num: Dawlatabadi_AN_100520_097
@@ -11923,7 +11540,6 @@ items_384:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_385: 
   id: "1246"
   accession_num: Dawlatabadi_AN_100520_099
@@ -11954,7 +11570,6 @@ items_385:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_386: 
   id: "1248"
   accession_num: Dawlatabadi_AN_100520_100
@@ -11985,7 +11600,6 @@ items_386:
   sort_month: "8"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_387: 
   id: "1251"
   accession_num: Dawlatabadi_AN_100520_101
@@ -12016,7 +11630,6 @@ items_387:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_388: 
   id: "1254"
   accession_num: Dawlatabadi_AN_100520_102
@@ -12047,7 +11660,6 @@ items_388:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_389: 
   id: "1257"
   accession_num: Dawlatabadi_AN_100520_103
@@ -12078,7 +11690,6 @@ items_389:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_390: 
   id: "1260"
   accession_num: Dawlatabadi_AN_100520_104
@@ -12109,7 +11720,6 @@ items_390:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_391: 
   id: "1263"
   accession_num: Dawlatabadi_AN_100520_105
@@ -12140,7 +11750,6 @@ items_391:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_392: 
   id: "1266"
   accession_num: Dawlatabadi_AN_100520_106
@@ -12171,7 +11780,6 @@ items_392:
   sort_month: "3"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_393: 
   id: "1269"
   accession_num: Dawlatabadi_AN_100520_107
@@ -12202,7 +11810,6 @@ items_393:
   sort_month: "3"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_394: 
   id: "1270"
   accession_num: Dawlatabadi_AN_100520_108
@@ -12233,7 +11840,6 @@ items_394:
   sort_month: "3"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_395: 
   id: "1271"
   accession_num: Dawlatabadi_AN_100520_109
@@ -12264,7 +11870,6 @@ items_395:
   sort_month: "3"
   sort_day: "1"
   editorial_date: "0"
-  owner_tag: ""
 items_396: 
   id: "1278"
   accession_num: Dawlatabadi_AN_100520_110
@@ -12295,7 +11900,6 @@ items_396:
   sort_month: "1"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_397: 
   id: "1280"
   accession_num: Dawlatabadi_AN_100520_111
@@ -12326,7 +11930,6 @@ items_397:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_398: 
   id: "1283"
   accession_num: Dawlatabadi_AN_100520_112
@@ -12357,7 +11960,6 @@ items_398:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_399: 
   id: "1286"
   accession_num: Dawlatabadi_AN_100520_113
@@ -12388,7 +11990,6 @@ items_399:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_400: 
   id: "1288"
   accession_num: Dawlatabadi_AN_100520_114
@@ -12419,7 +12020,6 @@ items_400:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_401: 
   id: "1291"
   accession_num: Dawlatabadi_AN_100520_115
@@ -12450,7 +12050,6 @@ items_401:
   sort_month: "12"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_402: 
   id: "1318"
   accession_num: Dawlatabadi_AN_100520_116
@@ -12481,7 +12080,6 @@ items_402:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_403: 
   id: "1349"
   accession_num: Dawlatabadi_AN_100520_117
@@ -12512,7 +12110,6 @@ items_403:
   sort_month: "11"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_404: 
   id: "1368"
   accession_num: Dawlatabadi_AN_100520_118
@@ -12543,7 +12140,6 @@ items_404:
   sort_month: "12"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_405: 
   id: "1386"
   accession_num: Dawlatabadi_AN_100520_119
@@ -12574,7 +12170,6 @@ items_405:
   sort_month: "3"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_406: 
   id: "1405"
   accession_num: Dawlatabadi_AN_100520_120
@@ -12605,7 +12200,6 @@ items_406:
   sort_month: "5"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_407: 
   id: "1424"
   accession_num: Dawlatabadi_AN_100520_121
@@ -12636,7 +12230,6 @@ items_407:
   sort_month: "6"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_408: 
   id: "1443"
   accession_num: Dawlatabadi_AN_100520_122
@@ -12667,7 +12260,6 @@ items_408:
   sort_month: "7"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_409: 
   id: "1462"
   accession_num: Dawlatabadi_AN_100520_123
@@ -12698,7 +12290,6 @@ items_409:
   sort_month: "10"
   sort_day: "23"
   editorial_date: "0"
-  owner_tag: ""
 items_410: 
   id: "1465"
   accession_num: Dawlatabadi_AN_100520_124
@@ -12729,7 +12320,6 @@ items_410:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_411: 
   id: "1466"
   accession_num: Dawlatabadi_AN_100520_125
@@ -12760,7 +12350,6 @@ items_411:
   sort_month: "8"
   sort_day: "7"
   editorial_date: "0"
-  owner_tag: ""
 items_412: 
   id: "1468"
   accession_num: Dawlatabadi_AN_100520_126
@@ -12791,7 +12380,6 @@ items_412:
   sort_month: "8"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_413: 
   id: "1469"
   accession_num: Dawlatabadi_AN_100520_127
@@ -12822,7 +12410,6 @@ items_413:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_414: 
   id: "1475"
   accession_num: Dawlatabadi_AN_100520_128
@@ -12853,7 +12440,6 @@ items_414:
   sort_month: "9"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_415: 
   id: "1478"
   accession_num: Dawlatabadi_AN_100520_129
@@ -12884,7 +12470,6 @@ items_415:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_416: 
   id: "1479"
   accession_num: Dawlatabadi_AN_100520_130
@@ -12915,7 +12500,6 @@ items_416:
   sort_month: "2"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_417: 
   id: "1480"
   accession_num: Mirbaghdadabadi_AN_100410_001
@@ -12946,7 +12530,6 @@ items_417:
   sort_month: "10"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: ""
 items_418: 
   id: "1484"
   accession_num: Mirbaghdadabadi_AN_100410_002
@@ -12977,7 +12560,6 @@ items_418:
   sort_month: "12"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_419: 
   id: "1485"
   accession_num: Mirbaghdadabadi_AN_100410_003
@@ -13008,7 +12590,6 @@ items_419:
   sort_month: "1"
   sort_day: "14"
   editorial_date: "0"
-  owner_tag: ""
 items_420: 
   id: "1486"
   accession_num: Mirbaghdadabadi_AN_100410_004
@@ -13039,7 +12620,6 @@ items_420:
   sort_month: "10"
   sort_day: "13"
   editorial_date: "0"
-  owner_tag: ""
 items_421: 
   id: "1487"
   accession_num: Mirbaghdadabadi_AN_100410_005
@@ -13070,7 +12650,6 @@ items_421:
   sort_month: "2"
   sort_day: "20"
   editorial_date: "0"
-  owner_tag: ""
 items_422: 
   id: "1488"
   accession_num: Mirbaghdadabadi_AN_100410_006
@@ -13101,7 +12680,6 @@ items_422:
   sort_month: "6"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_423: 
   id: "1489"
   accession_num: Mirbaghdadabadi_AN_100410_007
@@ -13132,7 +12710,6 @@ items_423:
   sort_month: "6"
   sort_day: "12"
   editorial_date: "0"
-  owner_tag: ""
 items_424: 
   id: "1490"
   accession_num: Mirbaghdadabadi_AN_100410_008
@@ -13163,7 +12740,6 @@ items_424:
   sort_month: "4"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_425: 
   id: "1491"
   accession_num: Mirbaghdadabadi_AN_100410_009
@@ -13194,7 +12770,6 @@ items_425:
   sort_month: "4"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_426: 
   id: "1492"
   accession_num: Mirbaghdadabadi_AN_100410_0010
@@ -13225,7 +12800,6 @@ items_426:
   sort_month: "11"
   sort_day: "27"
   editorial_date: "0"
-  owner_tag: ""
 items_427: 
   id: "1493"
   accession_num: Majlis_AN_100415_17
@@ -13256,7 +12830,6 @@ items_427:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_428: 
   id: "1494"
   accession_num: Cijoh_AN_101201_001
@@ -13287,7 +12860,6 @@ items_428:
   sort_month: "3"
   sort_day: "22"
   editorial_date: "0"
-  owner_tag: 6-P-1996
 items_429: 
   id: "1495"
   accession_num: Cijoh_AN_101201_002
@@ -13318,7 +12890,6 @@ items_429:
   sort_month: "3"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: 7-P-1996
 items_430: 
   id: "1496"
   accession_num: Daqiqi_MM_100520_001
@@ -13349,7 +12920,6 @@ items_430:
   sort_month: "1"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_431: 
   id: "1497"
   accession_num: Dawlatabadi_AN_100520_098
@@ -13380,7 +12950,6 @@ items_431:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_432: 
   id: "1498"
   accession_num: Mirbaghdadabadi_AN_100410_0011
@@ -13411,7 +12980,6 @@ items_432:
   sort_month: "11"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_433: 
   id: "1499"
   accession_num: Mirbaghdadabadi_AN_100410_0012
@@ -13442,7 +13010,6 @@ items_433:
   sort_month: "1"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_434: 
   id: "1500"
   accession_num: Mirbaghdadabadi_AN_100410_0013
@@ -13473,7 +13040,6 @@ items_434:
   sort_month: "7"
   sort_day: "4"
   editorial_date: "0"
-  owner_tag: ""
 items_435: 
   id: "1501"
   accession_num: Mirbaghdadabadi_AN_100410_0014
@@ -13504,7 +13070,6 @@ items_435:
   sort_month: "11"
   sort_day: "21"
   editorial_date: "0"
-  owner_tag: ""
 items_436: 
   id: "1502"
   accession_num: Mirbaghdadabadi_AN_100410_0015
@@ -13535,7 +13100,6 @@ items_436:
   sort_month: "11"
   sort_day: "10"
   editorial_date: "0"
-  owner_tag: ""
 items_437: 
   id: "1503"
   accession_num: Mirbaghdadabadi_AN_100410_0016
@@ -13566,7 +13130,6 @@ items_437:
   sort_month: "6"
   sort_day: "2"
   editorial_date: "0"
-  owner_tag: ""
 items_438: 
   id: "1504"
   accession_num: Mirbaghdadabadi_AN_100410_0017
@@ -13597,7 +13160,6 @@ items_438:
   sort_month: "2"
   sort_day: "29"
   editorial_date: "0"
-  owner_tag: ""
 items_439: 
   id: "1505"
   accession_num: Mirbaghdadabadi_AN_100410_0018
@@ -13628,7 +13190,6 @@ items_439:
   sort_month: "12"
   sort_day: "30"
   editorial_date: "0"
-  owner_tag: ""
 items_440: 
   id: "1506"
   accession_num: Mirbaghdadabadi_AN_100410_0019
@@ -13659,7 +13220,6 @@ items_440:
   sort_month: "5"
   sort_day: "17"
   editorial_date: "0"
-  owner_tag: ""
 items_441: 
   id: "1507"
   accession_num: Mirbaghdadabadi_AN_100410_0020
@@ -13690,7 +13250,6 @@ items_441:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_442: 
   id: "1508"
   accession_num: Mirbaghdadabadi_AN_100410_0021
@@ -13721,7 +13280,6 @@ items_442:
   sort_month: "9"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_443: 
   id: "1509"
   accession_num: Mirbaghdadabadi_AN_100410_0022
@@ -13752,7 +13310,6 @@ items_443:
   sort_month: "9"
   sort_day: "18"
   editorial_date: "0"
-  owner_tag: ""
 items_444: 
   id: "1510"
   accession_num: Majlis_AN_100415_001
@@ -13783,7 +13340,6 @@ items_444:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_445: 
   id: "1511"
   accession_num: Majlis_AN_100415_002
@@ -13816,7 +13372,6 @@ items_445:
   sort_month: "1"
   sort_day: "1"
   editorial_date: "1"
-  owner_tag: ""
 items_446: 
   id: "1512"
   accession_num: Majlis_AN_100415_003
@@ -13847,7 +13402,6 @@ items_446:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
 items_447: 
   id: "1513"
   accession_num: Mozaffari_NMAN_100802_027
@@ -13878,12 +13432,11 @@ items_447:
   sort_month: "8"
   sort_day: "3"
   editorial_date: "0"
-  owner_tag: ""
 items_448: 
   id: "1514"
   accession_num: Mozaffari_NMAN_100802_003
   urn: Mozaffari-geneve_0003.tiff
-  owner_id: "1"
+  owner_id: "23"
   collection_id: "2"
   pages: "1"
   format_id: 
@@ -13892,14 +13445,14 @@ items_448:
   bound: "0"
   publish: "0"
   created_at: 2011-01-09 05:05:21
-  updated_at: 2011-01-09 05:05:21
+  updated_at: 2011-01-11 07:44:31
   source_date: ""
   calendar_type_id: 
   favorite: "0"
   width: "15.0"
   height: "20.2"
   depth: "0.0"
-  lock_version: "0"
+  lock_version: "1"
   year: 
   month: 
   day: 
@@ -13909,4 +13462,273 @@ items_448:
   sort_month: "0"
   sort_day: "0"
   editorial_date: "0"
-  owner_tag: ""
+items_449: 
+  id: "1515"
+  accession_num: Mozaffari_NMAN_100802_001
+  urn: mozaffari-geneve_0001.tiff
+  owner_id: "23"
+  collection_id: "2"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-11 07:57:55
+  updated_at: 2011-01-11 07:57:55
+  source_date: ""
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "12.5"
+  height: "17.7"
+  depth: "0.0"
+  lock_version: "0"
+  year: "2050"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "0"
+items_450: 
+  id: "1516"
+  accession_num: Mozaffari_NMAN_100802_002
+  urn: Mozaffari-geneve_0002.tiff
+  owner_id: "23"
+  collection_id: "2"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-11 08:11:27
+  updated_at: 2011-01-11 08:11:27
+  source_date: ""
+  calendar_type_id: 
+  favorite: "0"
+  width: "24.0"
+  height: "18.4"
+  depth: "0.0"
+  lock_version: "0"
+  year: 
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1925"
+  sort_month: "0"
+  sort_day: "0"
+  editorial_date: "0"
+items_451: 
+  id: "1517"
+  accession_num: Mozaffari_NMAN_100802_004
+  urn: Mozaffari-geneve_0004.tiff
+  owner_id: "23"
+  collection_id: "2"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: is this the same salar al-dawlah?
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-11 08:38:52
+  updated_at: 2011-01-11 08:52:36
+  source_date: ""
+  calendar_type_id: 
+  favorite: "0"
+  width: "19.0"
+  height: "12.5"
+  depth: "0.0"
+  lock_version: "1"
+  year: 
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1955"
+  sort_month: "0"
+  sort_day: "0"
+  editorial_date: "0"
+items_452: 
+  id: "1518"
+  accession_num: Mozaffari_NMAN_100802_005
+  urn: Mozaffari-geneve_0005.tiff
+  owner_id: "23"
+  collection_id: "2"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-11 09:15:26
+  updated_at: 2011-01-11 09:15:26
+  source_date: ""
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "11.4"
+  height: "17.7"
+  depth: "0.0"
+  lock_version: "0"
+  year: "2050"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "0"
+items_453: 
+  id: "1519"
+  accession_num: Mozaffari_NMAN_100802_006
+  urn: Mozaffari-geneve_0006.tiff
+  owner_id: "23"
+  collection_id: "2"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-11 09:21:02
+  updated_at: 2011-01-11 09:21:02
+  source_date: ""
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "5.0"
+  height: "7.0"
+  depth: "0.0"
+  lock_version: "0"
+  year: "2050"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: "4"
+  sort_year: "2050"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "0"
+items_454: 
+  id: "1520"
+  accession_num: Majlis_AN_100415_004
+  urn: 02-00750-00001
+  owner_id: "20"
+  collection_id: "23"
+  pages: "133"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+  source_date: ""
+  calendar_type_id: 
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "0"
+  year: 
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1956"
+  sort_month: "0"
+  sort_day: "0"
+  editorial_date: "0"
+items_455: 
+  id: "1521"
+  accession_num: Majlis_AN_100415_005
+  urn: 02-00090-00001
+  owner_id: "20"
+  collection_id: "19"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-12 08:27:48
+  updated_at: 2011-01-12 08:32:37
+  source_date: ""
+  calendar_type_id: "2"
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "1"
+  year: "1345"
+  month: "11"
+  day: "6"
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1927"
+  sort_month: "5"
+  sort_day: "8"
+  editorial_date: "0"
+items_456: 
+  id: "1522"
+  accession_num: Majlis_AN_100415_006
+  urn: 02-00089-00001
+  owner_id: "20"
+  collection_id: "19"
+  pages: "1"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-12 08:41:55
+  updated_at: 2011-01-12 08:41:55
+  source_date: ""
+  calendar_type_id: "2"
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "0"
+  year: "1345"
+  month: "11"
+  day: "6"
+  editorial_dating: "0"
+  era_id: 
+  sort_year: "1927"
+  sort_month: "5"
+  sort_day: "8"
+  editorial_date: "0"
+items_457: 
+  id: "1523"
+  accession_num: Majlis_AN_100415_007
+  urn: 12-01913-00001
+  owner_id: "20"
+  collection_id: "19"
+  pages: "19"
+  format_id: 
+  circa: "0"
+  notes: ""
+  bound: "0"
+  publish: "0"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 23:15:20
+  source_date: ""
+  calendar_type_id: "1"
+  favorite: "0"
+  width: "0.0"
+  height: "0.0"
+  depth: "0.0"
+  lock_version: "5"
+  year: "1800"
+  month: 
+  day: 
+  editorial_dating: "0"
+  era_id: "2"
+  sort_year: "1800"
+  sort_month: "1"
+  sort_day: "1"
+  editorial_date: "1"

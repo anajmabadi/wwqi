@@ -52,6 +52,13 @@ describe Person do
     @person.update_attributes(@sample_attributes)
     @person.should_not be_valid
   end
+  
+  it "should require an loc name" do  
+    @sample_attributes[:loc_name] = nil
+    @person.update_attributes(@sample_attributes)
+    @person.should_not be_valid
+  end
+  
     
   it "should require a publish" do  
     @sample_attributes[:publish] = nil

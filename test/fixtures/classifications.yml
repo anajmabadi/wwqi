@@ -16699,3 +16699,403 @@ classifications_1670:
   created_at: 2011-01-09 07:13:55
   updated_at: 2011-01-09 07:13:55
   lock_version: "0"
+classifications_1671: 
+  id: "1846"
+  subject_id: "229"
+  item_id: "1514"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 07:44:59
+  updated_at: 2011-01-11 07:44:59
+  lock_version: "0"
+classifications_1672: 
+  id: "1847"
+  subject_id: "346"
+  item_id: "1514"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 07:45:26
+  updated_at: 2011-01-11 07:45:26
+  lock_version: "0"
+classifications_1673: 
+  id: "1848"
+  subject_id: "73"
+  item_id: "1514"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 07:45:37
+  updated_at: 2011-01-11 07:45:37
+  lock_version: "0"
+classifications_1674: 
+  id: "1849"
+  subject_id: "229"
+  item_id: "1515"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 07:59:36
+  updated_at: 2011-01-11 07:59:36
+  lock_version: "0"
+classifications_1675: 
+  id: "1850"
+  subject_id: "380"
+  item_id: "1515"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 08:00:03
+  updated_at: 2011-01-11 08:00:03
+  lock_version: "0"
+classifications_1676: 
+  id: "1851"
+  subject_id: "350"
+  item_id: "1515"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 08:00:14
+  updated_at: 2011-01-11 08:00:14
+  lock_version: "0"
+classifications_1677: 
+  id: "1852"
+  subject_id: "289"
+  item_id: "1515"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-11 08:00:24
+  updated_at: 2011-01-11 08:00:24
+  lock_version: "0"
+classifications_1678: 
+  id: "1853"
+  subject_id: "229"
+  item_id: "1516"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 08:11:52
+  updated_at: 2011-01-11 08:11:52
+  lock_version: "0"
+classifications_1679: 
+  id: "1854"
+  subject_id: "60"
+  item_id: "1516"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 08:12:13
+  updated_at: 2011-01-11 08:12:13
+  lock_version: "0"
+classifications_1680: 
+  id: "1855"
+  subject_id: "310"
+  item_id: "1516"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 08:12:28
+  updated_at: 2011-01-11 08:12:28
+  lock_version: "0"
+classifications_1681: 
+  id: "1856"
+  subject_id: "229"
+  item_id: "1517"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 08:39:17
+  updated_at: 2011-01-11 08:39:17
+  lock_version: "0"
+classifications_1682: 
+  id: "1857"
+  subject_id: "347"
+  item_id: "1517"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 08:39:34
+  updated_at: 2011-01-11 08:39:34
+  lock_version: "0"
+classifications_1683: 
+  id: "1858"
+  subject_id: "361"
+  item_id: "1517"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 08:39:58
+  updated_at: 2011-01-11 08:39:58
+  lock_version: "0"
+classifications_1684: 
+  id: "1859"
+  subject_id: "60"
+  item_id: "1517"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-11 08:41:30
+  updated_at: 2011-01-11 08:41:30
+  lock_version: "0"
+classifications_1685: 
+  id: "1860"
+  subject_id: "229"
+  item_id: "1518"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 09:15:50
+  updated_at: 2011-01-11 09:15:50
+  lock_version: "0"
+classifications_1686: 
+  id: "1861"
+  subject_id: "361"
+  item_id: "1518"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 09:16:34
+  updated_at: 2011-01-11 09:16:34
+  lock_version: "0"
+classifications_1687: 
+  id: "1862"
+  subject_id: "25"
+  item_id: "1518"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 09:16:46
+  updated_at: 2011-01-11 09:16:46
+  lock_version: "0"
+classifications_1688: 
+  id: "1863"
+  subject_id: "60"
+  item_id: "1518"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-11 09:17:01
+  updated_at: 2011-01-11 09:17:01
+  lock_version: "0"
+classifications_1689: 
+  id: "1864"
+  subject_id: "229"
+  item_id: "1519"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-11 09:21:48
+  updated_at: 2011-01-11 09:21:48
+  lock_version: "0"
+classifications_1690: 
+  id: "1865"
+  subject_id: "73"
+  item_id: "1519"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-11 09:22:09
+  updated_at: 2011-01-11 09:22:09
+  lock_version: "0"
+classifications_1691: 
+  id: "1866"
+  subject_id: "60"
+  item_id: "1519"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-11 09:22:46
+  updated_at: 2011-01-11 09:22:46
+  lock_version: "0"
+classifications_1692: 
+  id: "1867"
+  subject_id: "208"
+  item_id: "1520"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-12 08:15:02
+  updated_at: 2011-01-12 08:15:02
+  lock_version: "0"
+classifications_1693: 
+  id: "1868"
+  subject_id: "209"
+  item_id: "1520"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-12 08:15:12
+  updated_at: 2011-01-12 08:15:12
+  lock_version: "0"
+classifications_1694: 
+  id: "1869"
+  subject_id: "376"
+  item_id: "1520"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-12 08:15:41
+  updated_at: 2011-01-12 08:15:41
+  lock_version: "0"
+classifications_1695: 
+  id: "1870"
+  subject_id: "375"
+  item_id: "1520"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-12 08:15:51
+  updated_at: 2011-01-12 08:15:51
+  lock_version: "0"
+classifications_1696: 
+  id: "1871"
+  subject_id: "472"
+  item_id: "1520"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2011-01-12 08:16:04
+  updated_at: 2011-01-12 08:16:04
+  lock_version: "0"
+classifications_1697: 
+  id: "1872"
+  subject_id: "213"
+  item_id: "1521"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-12 08:33:16
+  updated_at: 2011-01-12 08:33:16
+  lock_version: "0"
+classifications_1698: 
+  id: "1873"
+  subject_id: "325"
+  item_id: "1521"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-12 08:33:48
+  updated_at: 2011-01-12 08:33:48
+  lock_version: "0"
+classifications_1699: 
+  id: "1874"
+  subject_id: "233"
+  item_id: "1521"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-12 08:34:25
+  updated_at: 2011-01-12 08:34:25
+  lock_version: "0"
+classifications_1700: 
+  id: "1875"
+  subject_id: "56"
+  item_id: "1521"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-12 08:34:39
+  updated_at: 2011-01-12 08:34:39
+  lock_version: "0"
+classifications_1701: 
+  id: "1876"
+  subject_id: "213"
+  item_id: "1522"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-12 08:42:40
+  updated_at: 2011-01-12 08:42:40
+  lock_version: "0"
+classifications_1702: 
+  id: "1877"
+  subject_id: "325"
+  item_id: "1522"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-12 08:43:03
+  updated_at: 2011-01-12 08:43:03
+  lock_version: "0"
+classifications_1703: 
+  id: "1878"
+  subject_id: "233"
+  item_id: "1522"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-12 08:43:16
+  updated_at: 2011-01-12 08:43:16
+  lock_version: "0"
+classifications_1704: 
+  id: "1879"
+  subject_id: "56"
+  item_id: "1522"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-12 08:43:30
+  updated_at: 2011-01-12 08:43:30
+  lock_version: "0"
+classifications_1705: 
+  id: "1880"
+  subject_id: "208"
+  item_id: "1523"
+  publish: "1"
+  position: "1"
+  notes: ""
+  created_at: 2011-01-12 09:49:21
+  updated_at: 2011-01-12 09:49:21
+  lock_version: "0"
+classifications_1706: 
+  id: "1881"
+  subject_id: "268"
+  item_id: "1523"
+  publish: "1"
+  position: "2"
+  notes: ""
+  created_at: 2011-01-12 09:49:40
+  updated_at: 2011-01-12 09:49:40
+  lock_version: "0"
+classifications_1707: 
+  id: "1882"
+  subject_id: "294"
+  item_id: "1523"
+  publish: "1"
+  position: "3"
+  notes: ""
+  created_at: 2011-01-12 09:49:59
+  updated_at: 2011-01-12 09:49:59
+  lock_version: "0"
+classifications_1708: 
+  id: "1883"
+  subject_id: "302"
+  item_id: "1523"
+  publish: "1"
+  position: "4"
+  notes: ""
+  created_at: 2011-01-12 09:50:26
+  updated_at: 2011-01-12 09:50:26
+  lock_version: "0"
+classifications_1709: 
+  id: "1884"
+  subject_id: "287"
+  item_id: "1523"
+  publish: "1"
+  position: "5"
+  notes: ""
+  created_at: 2011-01-12 09:50:36
+  updated_at: 2011-01-12 09:50:36
+  lock_version: "0"
+classifications_1710: 
+  id: "1885"
+  subject_id: "269"
+  item_id: "1523"
+  publish: "1"
+  position: "6"
+  notes: ""
+  created_at: 2011-01-12 09:51:15
+  updated_at: 2011-01-12 09:51:15
+  lock_version: "0"

@@ -11,7 +11,7 @@ class Person < ActiveRecord::Base
   globalize_accessors :fa, :en
   default_scope :include => :translations
 
-  validates :name_en, :name_fa, :sort_name_en, :sort_name_fa, :presence => true, :length => {:maximum => 255}
+  validates :name_en, :name_fa, :sort_name_en, :sort_name_fa, :loc_name, :presence => true, :length => {:maximum => 255}
   validates :publish, :major, :inclusion => { :in => [true,false] }
 
   def self.select_list

@@ -35754,22 +35754,6 @@ image_translations_4456:
   created_at: 2011-01-08 22:53:51
   updated_at: 2011-01-08 22:53:51
 image_translations_4457: 
-  id: "4549"
-  image_id: "2232"
-  locale: en
-  description: 
-  title: Marzieh Khanum Nusrat Muzaffari Interview, Part 1
-  created_at: 2011-01-09 00:07:55
-  updated_at: 2011-01-09 00:07:55
-image_translations_4458: 
-  id: "4550"
-  image_id: "2232"
-  locale: fa
-  description: 
-  title: "\xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
-  created_at: 2011-01-09 00:07:55
-  updated_at: 2011-01-09 00:07:55
-image_translations_4459: 
   id: "4551"
   image_id: "2233"
   locale: en
@@ -35777,7 +35761,7 @@ image_translations_4459:
   title: Marziah Khanum with her nanny, [1917]
   created_at: 2011-01-09 05:05:21
   updated_at: 2011-01-09 05:05:21
-image_translations_4460: 
+image_translations_4458: 
   id: "4552"
   image_id: "2233"
   locale: fa
@@ -35785,3 +35769,2643 @@ image_translations_4460:
   title: "\xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85 \xD8\xA8\xD8\xA7 \xD8\xAF\xD8\xA7\xDB\x8C\xD9\x87 \xD8\xA7\xD8\xB4\xD8\x8C [\xDB\xB1\xDB\xB2\xDB\xB9\xDB\xB6 \xD8\xB4]"
   created_at: 2011-01-09 05:05:21
   updated_at: 2011-01-09 05:05:21
+image_translations_4459: 
+  id: "4553"
+  image_id: "2234"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4460: 
+  id: "4554"
+  image_id: "2234"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4461: 
+  id: "4555"
+  image_id: "2235"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4462: 
+  id: "4556"
+  image_id: "2235"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4463: 
+  id: "4557"
+  image_id: "2236"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4464: 
+  id: "4558"
+  image_id: "2236"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4465: 
+  id: "4559"
+  image_id: "2237"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4466: 
+  id: "4560"
+  image_id: "2237"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4467: 
+  id: "4561"
+  image_id: "2238"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4468: 
+  id: "4562"
+  image_id: "2238"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4469: 
+  id: "4563"
+  image_id: "2239"
+  locale: en
+  description: 
+  title: Marzieh Khanum Interview, Part 1
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4470: 
+  id: "4564"
+  image_id: "2239"
+  locale: fa
+  description: 
+  title: "\xD9\x85\xD8\xB5\xD8\xA7\xD8\xAD\xD8\xA8\xD9\x87 \xDB\x8C \xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD8\x8C \xD9\x82\xD8\xB3\xD9\x85\xD8\xAA \xD8\xA7\xD9\x88\xD9\x84"
+  created_at: 2011-01-10 17:46:27
+  updated_at: 2011-01-10 17:46:27
+image_translations_4471: 
+  id: "4565"
+  image_id: "2240"
+  locale: en
+  description: 
+  title: Sale agreement over water rights to Kazim Abad qanat, 27 November 1920
+  created_at: 2011-01-11 03:31:00
+  updated_at: 2011-01-11 03:31:00
+image_translations_4472: 
+  id: "4566"
+  image_id: "2240"
+  locale: fa
+  description: 
+  title: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x85\xD8\xB9\xD8\xA7\xD9\x85\xD9\x84\xD9\x87 \xD8\xB3\xD9\x87\xD9\x85 \xD8\xA2\xD8\xA8 \xD9\x82\xD9\x86\xD8\xA7\xD8\xAA \xDA\xA9\xD8\xA7\xD8\xB8\xD9\x85 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xD8\x8C \xDB\xB1\xDB\xB5 \xD8\xB1\xD8\xA8\xDB\x8C\xD8\xB9\xE2\x80\x8C\xD8\xA7\xD9\x84\xD8\xA7\xD9\x88\xD9\x84 \xDB\xB1\xDB\xB3\xDB\xB3\xDB\xB9"
+  created_at: 2011-01-11 03:31:00
+  updated_at: 2011-01-11 03:31:00
+image_translations_4473: 
+  id: "4567"
+  image_id: "2241"
+  locale: en
+  description: 
+  title: Sale agreement over water rights to Kazim Abad qanat, 27 November 1920
+  created_at: 2011-01-11 03:31:00
+  updated_at: 2011-01-11 03:31:00
+image_translations_4474: 
+  id: "4568"
+  image_id: "2241"
+  locale: fa
+  description: 
+  title: "\xD8\xA8\xDB\x8C\xD8\xB9 \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD9\x85\xD8\xB9\xD8\xA7\xD9\x85\xD9\x84\xD9\x87 \xD8\xB3\xD9\x87\xD9\x85 \xD8\xA2\xD8\xA8 \xD9\x82\xD9\x86\xD8\xA7\xD8\xAA \xDA\xA9\xD8\xA7\xD8\xB8\xD9\x85 \xD8\xA2\xD8\xA8\xD8\xA7\xD8\xAF\xD8\x8C \xDB\xB1\xDB\xB5 \xD8\xB1\xD8\xA8\xDB\x8C\xD8\xB9\xE2\x80\x8C\xD8\xA7\xD9\x84\xD8\xA7\xD9\x88\xD9\x84 \xDB\xB1\xDB\xB3\xDB\xB3\xDB\xB9"
+  created_at: 2011-01-11 03:31:00
+  updated_at: 2011-01-11 03:31:00
+image_translations_4475: 
+  id: "4569"
+  image_id: "2242"
+  locale: en
+  description: 
+  title: Ahmad Khan Zahir, undated
+  created_at: 2011-01-11 07:57:55
+  updated_at: 2011-01-11 07:57:55
+image_translations_4476: 
+  id: "4570"
+  image_id: "2242"
+  locale: fa
+  description: 
+  title: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF \xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB8\xD9\x87\xDB\x8C\xD8\xB1\xD8\x8C \xD8\xA8\xD8\xAF\xD9\x88\xD9\x86 \xD8\xAA\xD8\xA7\xD8\xB1\xDB\x8C\xD8\xAE"
+  created_at: 2011-01-11 07:57:55
+  updated_at: 2011-01-11 07:57:55
+image_translations_4477: 
+  id: "4571"
+  image_id: "2243"
+  locale: en
+  description: 
+  title: Daughters of Muzaffar al-Din Shah and other female household members, [1925]
+  created_at: 2011-01-11 08:11:27
+  updated_at: 2011-01-11 08:11:27
+image_translations_4478: 
+  id: "4572"
+  image_id: "2243"
+  locale: fa
+  description: 
+  title: "\xD8\xAC\xD9\x85\xD8\xB9\xDB\x8C \xD8\xA7\xD8\xB2 \xD8\xAF\xD8\xAE\xD8\xAA\xD8\xB1\xD8\xA7\xD9\x86 \xD9\x85\xD8\xB8\xD9\x81\xD8\xB1\xD8\xA7\xD9\x84\xD8\xAF\xDB\x8C\xD9\x86 \xD8\xB4\xD8\xA7\xD9\x87 \xD9\x88 \xD8\xA8\xD8\xB1\xD8\xAE\xDB\x8C \xD8\xAF\xDB\x8C\xDA\xAF\xD8\xB1 \xD8\xA7\xD8\xB2 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85\xD9\x87\xD8\xA7\xDB\x8C \xD8\xA7\xD9\x86\xD8\xAF\xD8\xB1\xD9\x88\xD9\x86\xD8\x8C [\xDB\xB1\xDB\xB3\xDB\xB0\xDB\xB4 \xD8\xB4]"
+  created_at: 2011-01-11 08:11:27
+  updated_at: 2011-01-11 08:11:27
+image_translations_4479: 
+  id: "4573"
+  image_id: "2244"
+  locale: en
+  description: 
+  title: "A\xE2\x80\x98zam al-Saltanah at Nawruz party with family, [1955]"
+  created_at: 2011-01-11 08:38:52
+  updated_at: 2011-01-11 08:38:52
+image_translations_4480: 
+  id: "4574"
+  image_id: "2244"
+  locale: fa
+  description: 
+  title: "\xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87\xD8\x8C [\xDB\xB1\xDB\xB3\xDB\xB3\xDB\xB4 \xD8\xB4]"
+  created_at: 2011-01-11 08:38:52
+  updated_at: 2011-01-11 08:38:52
+image_translations_4481: 
+  id: "4575"
+  image_id: "2245"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4482: 
+  id: "4576"
+  image_id: "2245"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4483: 
+  id: "4577"
+  image_id: "2246"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4484: 
+  id: "4578"
+  image_id: "2246"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4485: 
+  id: "4579"
+  image_id: "2247"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4486: 
+  id: "4580"
+  image_id: "2247"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4487: 
+  id: "4581"
+  image_id: "2248"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4488: 
+  id: "4582"
+  image_id: "2248"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4489: 
+  id: "4583"
+  image_id: "2249"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4490: 
+  id: "4584"
+  image_id: "2249"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4491: 
+  id: "4585"
+  image_id: "2250"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4492: 
+  id: "4586"
+  image_id: "2250"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4493: 
+  id: "4587"
+  image_id: "2251"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4494: 
+  id: "4588"
+  image_id: "2251"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4495: 
+  id: "4589"
+  image_id: "2252"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4496: 
+  id: "4590"
+  image_id: "2252"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4497: 
+  id: "4591"
+  image_id: "2253"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4498: 
+  id: "4592"
+  image_id: "2253"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4499: 
+  id: "4593"
+  image_id: "2254"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4500: 
+  id: "4594"
+  image_id: "2254"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4501: 
+  id: "4595"
+  image_id: "2255"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4502: 
+  id: "4596"
+  image_id: "2255"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4503: 
+  id: "4597"
+  image_id: "2256"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4504: 
+  id: "4598"
+  image_id: "2256"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4505: 
+  id: "4599"
+  image_id: "2257"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4506: 
+  id: "4600"
+  image_id: "2257"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4507: 
+  id: "4601"
+  image_id: "2258"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4508: 
+  id: "4602"
+  image_id: "2258"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4509: 
+  id: "4603"
+  image_id: "2259"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4510: 
+  id: "4604"
+  image_id: "2259"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4511: 
+  id: "4605"
+  image_id: "2260"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4512: 
+  id: "4606"
+  image_id: "2260"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4513: 
+  id: "4607"
+  image_id: "2261"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4514: 
+  id: "4608"
+  image_id: "2261"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4515: 
+  id: "4609"
+  image_id: "2262"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4516: 
+  id: "4610"
+  image_id: "2262"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4517: 
+  id: "4611"
+  image_id: "2263"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4518: 
+  id: "4612"
+  image_id: "2263"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4519: 
+  id: "4613"
+  image_id: "2264"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4520: 
+  id: "4614"
+  image_id: "2264"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4521: 
+  id: "4615"
+  image_id: "2265"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4522: 
+  id: "4616"
+  image_id: "2265"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4523: 
+  id: "4617"
+  image_id: "2266"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4524: 
+  id: "4618"
+  image_id: "2266"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4525: 
+  id: "4619"
+  image_id: "2267"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4526: 
+  id: "4620"
+  image_id: "2267"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4527: 
+  id: "4621"
+  image_id: "2268"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4528: 
+  id: "4622"
+  image_id: "2268"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4529: 
+  id: "4623"
+  image_id: "2269"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4530: 
+  id: "4624"
+  image_id: "2269"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4531: 
+  id: "4625"
+  image_id: "2270"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4532: 
+  id: "4626"
+  image_id: "2270"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4533: 
+  id: "4627"
+  image_id: "2271"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4534: 
+  id: "4628"
+  image_id: "2271"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4535: 
+  id: "4629"
+  image_id: "2272"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4536: 
+  id: "4630"
+  image_id: "2272"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4537: 
+  id: "4631"
+  image_id: "2273"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4538: 
+  id: "4632"
+  image_id: "2273"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4539: 
+  id: "4633"
+  image_id: "2274"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4540: 
+  id: "4634"
+  image_id: "2274"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4541: 
+  id: "4635"
+  image_id: "2275"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4542: 
+  id: "4636"
+  image_id: "2275"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4543: 
+  id: "4637"
+  image_id: "2276"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4544: 
+  id: "4638"
+  image_id: "2276"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4545: 
+  id: "4639"
+  image_id: "2277"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4546: 
+  id: "4640"
+  image_id: "2277"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4547: 
+  id: "4641"
+  image_id: "2278"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4548: 
+  id: "4642"
+  image_id: "2278"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4549: 
+  id: "4643"
+  image_id: "2279"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4550: 
+  id: "4644"
+  image_id: "2279"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4551: 
+  id: "4645"
+  image_id: "2280"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4552: 
+  id: "4646"
+  image_id: "2280"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4553: 
+  id: "4647"
+  image_id: "2281"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4554: 
+  id: "4648"
+  image_id: "2281"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4555: 
+  id: "4649"
+  image_id: "2282"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4556: 
+  id: "4650"
+  image_id: "2282"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4557: 
+  id: "4651"
+  image_id: "2283"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4558: 
+  id: "4652"
+  image_id: "2283"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4559: 
+  id: "4653"
+  image_id: "2284"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4560: 
+  id: "4654"
+  image_id: "2284"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4561: 
+  id: "4655"
+  image_id: "2285"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4562: 
+  id: "4656"
+  image_id: "2285"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4563: 
+  id: "4657"
+  image_id: "2286"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4564: 
+  id: "4658"
+  image_id: "2286"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4565: 
+  id: "4659"
+  image_id: "2287"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4566: 
+  id: "4660"
+  image_id: "2287"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4567: 
+  id: "4661"
+  image_id: "2288"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4568: 
+  id: "4662"
+  image_id: "2288"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4569: 
+  id: "4663"
+  image_id: "2289"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4570: 
+  id: "4664"
+  image_id: "2289"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4571: 
+  id: "4665"
+  image_id: "2290"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4572: 
+  id: "4666"
+  image_id: "2290"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4573: 
+  id: "4667"
+  image_id: "2291"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4574: 
+  id: "4668"
+  image_id: "2291"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4575: 
+  id: "4669"
+  image_id: "2292"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4576: 
+  id: "4670"
+  image_id: "2292"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4577: 
+  id: "4671"
+  image_id: "2293"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4578: 
+  id: "4672"
+  image_id: "2293"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4579: 
+  id: "4673"
+  image_id: "2294"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4580: 
+  id: "4674"
+  image_id: "2294"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4581: 
+  id: "4675"
+  image_id: "2295"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4582: 
+  id: "4676"
+  image_id: "2295"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4583: 
+  id: "4677"
+  image_id: "2296"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4584: 
+  id: "4678"
+  image_id: "2296"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4585: 
+  id: "4679"
+  image_id: "2297"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4586: 
+  id: "4680"
+  image_id: "2297"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4587: 
+  id: "4681"
+  image_id: "2298"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4588: 
+  id: "4682"
+  image_id: "2298"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4589: 
+  id: "4683"
+  image_id: "2299"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4590: 
+  id: "4684"
+  image_id: "2299"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4591: 
+  id: "4685"
+  image_id: "2300"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4592: 
+  id: "4686"
+  image_id: "2300"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4593: 
+  id: "4687"
+  image_id: "2301"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4594: 
+  id: "4688"
+  image_id: "2301"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4595: 
+  id: "4689"
+  image_id: "2302"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4596: 
+  id: "4690"
+  image_id: "2302"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4597: 
+  id: "4691"
+  image_id: "2303"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4598: 
+  id: "4692"
+  image_id: "2303"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4599: 
+  id: "4693"
+  image_id: "2304"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:42
+  updated_at: 2011-01-12 08:13:42
+image_translations_4600: 
+  id: "4694"
+  image_id: "2304"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4601: 
+  id: "4695"
+  image_id: "2305"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4602: 
+  id: "4696"
+  image_id: "2305"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4603: 
+  id: "4697"
+  image_id: "2306"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4604: 
+  id: "4698"
+  image_id: "2306"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4605: 
+  id: "4699"
+  image_id: "2307"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4606: 
+  id: "4700"
+  image_id: "2307"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4607: 
+  id: "4701"
+  image_id: "2308"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4608: 
+  id: "4702"
+  image_id: "2308"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4609: 
+  id: "4703"
+  image_id: "2309"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4610: 
+  id: "4704"
+  image_id: "2309"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4611: 
+  id: "4705"
+  image_id: "2310"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4612: 
+  id: "4706"
+  image_id: "2310"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4613: 
+  id: "4707"
+  image_id: "2311"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4614: 
+  id: "4708"
+  image_id: "2311"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4615: 
+  id: "4709"
+  image_id: "2312"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4616: 
+  id: "4710"
+  image_id: "2312"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4617: 
+  id: "4711"
+  image_id: "2313"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4618: 
+  id: "4712"
+  image_id: "2313"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4619: 
+  id: "4713"
+  image_id: "2314"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4620: 
+  id: "4714"
+  image_id: "2314"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4621: 
+  id: "4715"
+  image_id: "2315"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4622: 
+  id: "4716"
+  image_id: "2315"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4623: 
+  id: "4717"
+  image_id: "2316"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4624: 
+  id: "4718"
+  image_id: "2316"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4625: 
+  id: "4719"
+  image_id: "2317"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4626: 
+  id: "4720"
+  image_id: "2317"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4627: 
+  id: "4721"
+  image_id: "2318"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4628: 
+  id: "4722"
+  image_id: "2318"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4629: 
+  id: "4723"
+  image_id: "2319"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4630: 
+  id: "4724"
+  image_id: "2319"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4631: 
+  id: "4725"
+  image_id: "2320"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4632: 
+  id: "4726"
+  image_id: "2320"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4633: 
+  id: "4727"
+  image_id: "2321"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4634: 
+  id: "4728"
+  image_id: "2321"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4635: 
+  id: "4729"
+  image_id: "2322"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4636: 
+  id: "4730"
+  image_id: "2322"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4637: 
+  id: "4731"
+  image_id: "2323"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4638: 
+  id: "4732"
+  image_id: "2323"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4639: 
+  id: "4733"
+  image_id: "2324"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4640: 
+  id: "4734"
+  image_id: "2324"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4641: 
+  id: "4735"
+  image_id: "2325"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4642: 
+  id: "4736"
+  image_id: "2325"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4643: 
+  id: "4737"
+  image_id: "2326"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4644: 
+  id: "4738"
+  image_id: "2326"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4645: 
+  id: "4739"
+  image_id: "2327"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4646: 
+  id: "4740"
+  image_id: "2327"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4647: 
+  id: "4741"
+  image_id: "2328"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4648: 
+  id: "4742"
+  image_id: "2328"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4649: 
+  id: "4743"
+  image_id: "2329"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4650: 
+  id: "4744"
+  image_id: "2329"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4651: 
+  id: "4745"
+  image_id: "2330"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4652: 
+  id: "4746"
+  image_id: "2330"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4653: 
+  id: "4747"
+  image_id: "2331"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4654: 
+  id: "4748"
+  image_id: "2331"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4655: 
+  id: "4749"
+  image_id: "2332"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4656: 
+  id: "4750"
+  image_id: "2332"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4657: 
+  id: "4751"
+  image_id: "2333"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4658: 
+  id: "4752"
+  image_id: "2333"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4659: 
+  id: "4753"
+  image_id: "2334"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4660: 
+  id: "4754"
+  image_id: "2334"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4661: 
+  id: "4755"
+  image_id: "2335"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4662: 
+  id: "4756"
+  image_id: "2335"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4663: 
+  id: "4757"
+  image_id: "2336"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4664: 
+  id: "4758"
+  image_id: "2336"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4665: 
+  id: "4759"
+  image_id: "2337"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4666: 
+  id: "4760"
+  image_id: "2337"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4667: 
+  id: "4761"
+  image_id: "2338"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4668: 
+  id: "4762"
+  image_id: "2338"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4669: 
+  id: "4763"
+  image_id: "2339"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4670: 
+  id: "4764"
+  image_id: "2339"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4671: 
+  id: "4765"
+  image_id: "2340"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4672: 
+  id: "4766"
+  image_id: "2340"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4673: 
+  id: "4767"
+  image_id: "2341"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4674: 
+  id: "4768"
+  image_id: "2341"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4675: 
+  id: "4769"
+  image_id: "2342"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4676: 
+  id: "4770"
+  image_id: "2342"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4677: 
+  id: "4771"
+  image_id: "2343"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4678: 
+  id: "4772"
+  image_id: "2343"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4679: 
+  id: "4773"
+  image_id: "2344"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4680: 
+  id: "4774"
+  image_id: "2344"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4681: 
+  id: "4775"
+  image_id: "2345"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4682: 
+  id: "4776"
+  image_id: "2345"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4683: 
+  id: "4777"
+  image_id: "2346"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4684: 
+  id: "4778"
+  image_id: "2346"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4685: 
+  id: "4779"
+  image_id: "2347"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4686: 
+  id: "4780"
+  image_id: "2347"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4687: 
+  id: "4781"
+  image_id: "2348"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4688: 
+  id: "4782"
+  image_id: "2348"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4689: 
+  id: "4783"
+  image_id: "2349"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4690: 
+  id: "4784"
+  image_id: "2349"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4691: 
+  id: "4785"
+  image_id: "2350"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4692: 
+  id: "4786"
+  image_id: "2350"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4693: 
+  id: "4787"
+  image_id: "2351"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4694: 
+  id: "4788"
+  image_id: "2351"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4695: 
+  id: "4789"
+  image_id: "2352"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4696: 
+  id: "4790"
+  image_id: "2352"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4697: 
+  id: "4791"
+  image_id: "2353"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4698: 
+  id: "4792"
+  image_id: "2353"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4699: 
+  id: "4793"
+  image_id: "2354"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4700: 
+  id: "4794"
+  image_id: "2354"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4701: 
+  id: "4795"
+  image_id: "2355"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4702: 
+  id: "4796"
+  image_id: "2355"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4703: 
+  id: "4797"
+  image_id: "2356"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4704: 
+  id: "4798"
+  image_id: "2356"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4705: 
+  id: "4799"
+  image_id: "2357"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4706: 
+  id: "4800"
+  image_id: "2357"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4707: 
+  id: "4801"
+  image_id: "2358"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4708: 
+  id: "4802"
+  image_id: "2358"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4709: 
+  id: "4803"
+  image_id: "2359"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4710: 
+  id: "4804"
+  image_id: "2359"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4711: 
+  id: "4805"
+  image_id: "2360"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4712: 
+  id: "4806"
+  image_id: "2360"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4713: 
+  id: "4807"
+  image_id: "2361"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4714: 
+  id: "4808"
+  image_id: "2361"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4715: 
+  id: "4809"
+  image_id: "2362"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4716: 
+  id: "4810"
+  image_id: "2362"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4717: 
+  id: "4811"
+  image_id: "2363"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4718: 
+  id: "4812"
+  image_id: "2363"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4719: 
+  id: "4813"
+  image_id: "2364"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4720: 
+  id: "4814"
+  image_id: "2364"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4721: 
+  id: "4815"
+  image_id: "2365"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4722: 
+  id: "4816"
+  image_id: "2365"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4723: 
+  id: "4817"
+  image_id: "2366"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4724: 
+  id: "4818"
+  image_id: "2366"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4725: 
+  id: "4819"
+  image_id: "2367"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4726: 
+  id: "4820"
+  image_id: "2367"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4727: 
+  id: "4821"
+  image_id: "2368"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4728: 
+  id: "4822"
+  image_id: "2368"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4729: 
+  id: "4823"
+  image_id: "2369"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4730: 
+  id: "4824"
+  image_id: "2369"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4731: 
+  id: "4825"
+  image_id: "2370"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4732: 
+  id: "4826"
+  image_id: "2370"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4733: 
+  id: "4827"
+  image_id: "2371"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4734: 
+  id: "4828"
+  image_id: "2371"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4735: 
+  id: "4829"
+  image_id: "2372"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4736: 
+  id: "4830"
+  image_id: "2372"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4737: 
+  id: "4831"
+  image_id: "2373"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4738: 
+  id: "4832"
+  image_id: "2373"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4739: 
+  id: "4833"
+  image_id: "2374"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4740: 
+  id: "4834"
+  image_id: "2374"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4741: 
+  id: "4835"
+  image_id: "2375"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4742: 
+  id: "4836"
+  image_id: "2375"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4743: 
+  id: "4837"
+  image_id: "2376"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4744: 
+  id: "4838"
+  image_id: "2376"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4745: 
+  id: "4839"
+  image_id: "2377"
+  locale: en
+  description: 
+  title: "Collection of Women\xCA\xBBs Poetry, 1956 or 1957"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4746: 
+  id: "4840"
+  image_id: "2377"
+  locale: fa
+  description: 
+  title: "\xD8\xA2\xD8\xAB\xD8\xA7\xD8\xB1 \xD8\xAD\xD8\xB3\xD8\xA7\xD9\x86 \xD8\xAF\xD8\xB1 \xD8\xA8\xD8\xAF\xD8\xA7\xDB\x8C\xD8\xB9 \xD8\xA7\xD8\xB4\xD8\xB9\xD8\xA7\xD8\xB1 \xD9\x86\xD8\xB3\xD9\x88\xD8\xA7\xD9\x86\xD8\x8C \xDB\xB1\xDB\xB3\xDB\xB7\xDB\xB6 \xD9\x82"
+  created_at: 2011-01-12 08:13:43
+  updated_at: 2011-01-12 08:13:43
+image_translations_4747: 
+  id: "4841"
+  image_id: "2378"
+  locale: en
+  description: 
+  title: "Marriage contract of Aqa \xCA\xBBAbd al-Samad and Bibi Fatimah, 8 May 1927"
+  created_at: 2011-01-12 08:27:48
+  updated_at: 2011-01-12 08:27:48
+image_translations_4748: 
+  id: "4842"
+  image_id: "2378"
+  locale: fa
+  description: 
+  title: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD8\xA8\xDB\x8C\xD9\x86 \xD8\xA2\xD9\x82\xD8\xA7 \xD8\xB9\xD8\xA8\xD8\xAF\xD8\xA7\xD9\x84\xD8\xB5\xD9\x85\xD8\xAF \xD9\x88 \xD8\xA8\xDB\x8C \xD8\xA8\xDB\x8C \xD9\x81\xD8\xA7\xD8\xB7\xD9\x85\xD9\x87\xD8\x8C \xDB\xB6 \xD8\xB0\xDB\x8C\xE2\x80\x8C\xD8\xA7\xD9\x84\xD9\x82\xD8\xB9\xD8\xAF\xD9\x87 \xDB\xB1\xDB\xB3\xDB\xB4\xDB\xB5"
+  created_at: 2011-01-12 08:27:48
+  updated_at: 2011-01-12 08:27:48
+image_translations_4749: 
+  id: "4843"
+  image_id: "2379"
+  locale: en
+  description: 
+  title: "Marriage certificate of Karbala\xCA\xBCi \xCA\xBBAli and Bibi Hajar, 7 October 1877"
+  created_at: 2011-01-12 08:41:55
+  updated_at: 2011-01-12 08:41:55
+image_translations_4750: 
+  id: "4844"
+  image_id: "2379"
+  locale: fa
+  description: 
+  title: "\xD9\x86\xDA\xA9\xD8\xA7\xD8\xAD \xD9\x86\xD8\xA7\xD9\x85\xD9\x87 \xD8\xA8\xDB\x8C\xD9\x86 \xDA\xA9\xD8\xB1\xD8\xA8\xD9\x84\xD8\xA7\xDB\x8C\xDB\x8C \xD8\xB9\xD9\x84\xDB\x8C \xD9\x81\xD8\xB1\xD8\xB2\xD9\x86\xD8\xAF \xD8\xA2\xD9\x82\xD8\xA7 \xD8\xB1\xD8\xAC\xD8\xA8\xD8\xB9\xD9\x84\xDB\x8C \xD9\x88 \xD8\xA8\xDB\x8C \xD8\xA8\xDB\x8C \xD9\x87\xD8\xA7\xD8\xAC\xD8\xB1\xD8\x8C \xDB\xB2\xDB\xB9 \xD8\xB1\xD9\x85\xD8\xB6\xD8\xA7\xD9\x86 \xDB\xB1\xDB\xB2\xDB\xB9\xDB\xB4"
+  created_at: 2011-01-12 08:41:55
+  updated_at: 2011-01-12 08:41:55
+image_translations_4751: 
+  id: "4845"
+  image_id: "2380"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4752: 
+  id: "4846"
+  image_id: "2380"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4753: 
+  id: "4847"
+  image_id: "2381"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4754: 
+  id: "4848"
+  image_id: "2381"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4755: 
+  id: "4849"
+  image_id: "2382"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4756: 
+  id: "4850"
+  image_id: "2382"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4757: 
+  id: "4851"
+  image_id: "2383"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4758: 
+  id: "4852"
+  image_id: "2383"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4759: 
+  id: "4853"
+  image_id: "2384"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4760: 
+  id: "4854"
+  image_id: "2384"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4761: 
+  id: "4855"
+  image_id: "2385"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4762: 
+  id: "4856"
+  image_id: "2385"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4763: 
+  id: "4857"
+  image_id: "2386"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4764: 
+  id: "4858"
+  image_id: "2386"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4765: 
+  id: "4859"
+  image_id: "2387"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4766: 
+  id: "4860"
+  image_id: "2387"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4767: 
+  id: "4861"
+  image_id: "2388"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4768: 
+  id: "4862"
+  image_id: "2388"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4769: 
+  id: "4863"
+  image_id: "2389"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4770: 
+  id: "4864"
+  image_id: "2389"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4771: 
+  id: "4865"
+  image_id: "2390"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4772: 
+  id: "4866"
+  image_id: "2390"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4773: 
+  id: "4867"
+  image_id: "2391"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4774: 
+  id: "4868"
+  image_id: "2391"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4775: 
+  id: "4869"
+  image_id: "2392"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4776: 
+  id: "4870"
+  image_id: "2392"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4777: 
+  id: "4871"
+  image_id: "2393"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4778: 
+  id: "4872"
+  image_id: "2393"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4779: 
+  id: "4873"
+  image_id: "2394"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4780: 
+  id: "4874"
+  image_id: "2394"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4781: 
+  id: "4875"
+  image_id: "2395"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4782: 
+  id: "4876"
+  image_id: "2395"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4783: 
+  id: "4877"
+  image_id: "2396"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4784: 
+  id: "4878"
+  image_id: "2396"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4785: 
+  id: "4879"
+  image_id: "2397"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4786: 
+  id: "4880"
+  image_id: "2397"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4787: 
+  id: "4881"
+  image_id: "2398"
+  locale: en
+  description: 
+  title: The science of cooking food, making drinks, food preservation and food pairing, [19th century]
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45
+image_translations_4788: 
+  id: "4882"
+  image_id: "2398"
+  locale: fa
+  description: 
+  title: "\xD8\xB9\xD9\x84\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB7\xD8\xA8\xD8\xAE \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB7\xD9\x85\xD8\xB9\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD8\xA7\xD8\xB4\xD8\xB1\xD8\xA8\xD9\x87 \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB2\xD9\x88\xD8\xB1\xD8\xA7\xD8\xAA \xD9\x88 \xD8\xA7\xD9\x84\xD9\x85\xD8\xB9\xD8\xA7\xD8\xAC\xDB\x8C\xD9\x86\xD8\x8C [\xD9\x82\xD8\xB1\xD9\x86 \xDB\xB1\xDB\xB3 \xD9\x82]"
+  created_at: 2011-01-12 09:48:45
+  updated_at: 2011-01-12 09:48:45

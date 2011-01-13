@@ -8315,3 +8315,311 @@ person_translations_756:
   birth_place: ""
   created_at: 2011-01-09 06:41:24
   updated_at: 2011-01-09 06:41:24
+person_translations_757: 
+  id: "1398"
+  person_id: "445"
+  locale: en
+  description: ""
+  sort_name: Ahmad Khan Zahir
+  vitals: ""
+  name: Ahmad Khan Zahir
+  birth_place: ""
+  created_at: 2011-01-11 08:02:30
+  updated_at: 2011-01-11 08:02:30
+person_translations_758: 
+  id: "1399"
+  person_id: "445"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF\xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB8\xD9\x87\xDB\x8C\xD8\xB1"
+  vitals: ""
+  name: "\xD8\xA7\xD8\xAD\xD9\x85\xD8\xAF\xD8\xAE\xD8\xA7\xD9\x86 \xD8\xB8\xD9\x87\xDB\x8C\xD8\xB1"
+  birth_place: ""
+  created_at: 2011-01-11 08:02:31
+  updated_at: 2011-01-11 08:02:31
+person_translations_759: 
+  id: "1400"
+  person_id: "446"
+  locale: en
+  description: ""
+  sort_name: "Kawkab A\xE2\x80\x98zam"
+  vitals: ""
+  name: "Kawkab A\xE2\x80\x98zam"
+  birth_place: ""
+  created_at: 2011-01-11 08:17:11
+  updated_at: 2011-01-11 08:17:11
+person_translations_760: 
+  id: "1401"
+  person_id: "446"
+  locale: fa
+  description: ""
+  sort_name: "\xDA\xA9\xD9\x88\xDA\xA9\xD8\xA8 \xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85"
+  vitals: ""
+  name: "\xDA\xA9\xD9\x88\xDA\xA9\xD8\xA8 \xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85"
+  birth_place: ""
+  created_at: 2011-01-11 08:17:11
+  updated_at: 2011-01-11 08:17:11
+person_translations_761: 
+  id: "1402"
+  person_id: "447"
+  locale: en
+  description: ""
+  sort_name: Kawkab al-Saltanah
+  vitals: ""
+  name: Kawkab al-Saltanah
+  birth_place: ""
+  created_at: 2011-01-11 08:20:03
+  updated_at: 2011-01-11 08:20:03
+person_translations_762: 
+  id: "1403"
+  person_id: "447"
+  locale: fa
+  description: ""
+  sort_name: "\xDA\xA9\xD9\x88\xDA\xA9\xD8\xA8 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xDA\xA9\xD9\x88\xDA\xA9\xD8\xA8 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:20:03
+  updated_at: 2011-01-11 08:20:03
+person_translations_763: 
+  id: "1404"
+  person_id: "448"
+  locale: en
+  description: ""
+  sort_name: Qamar al-Saltanah
+  vitals: ""
+  name: Qamar al-Saltanah
+  birth_place: ""
+  created_at: 2011-01-11 08:21:10
+  updated_at: 2011-01-11 08:21:10
+person_translations_764: 
+  id: "1405"
+  person_id: "448"
+  locale: fa
+  description: ""
+  sort_name: "\xD9\x82\xD9\x85\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xD9\x82\xD9\x85\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:21:10
+  updated_at: 2011-01-11 08:21:10
+person_translations_765: 
+  id: "1406"
+  person_id: "449"
+  locale: en
+  description: ""
+  sort_name: "\xE2\x80\x98Izzat al-Dawlah"
+  vitals: ""
+  name: "\xE2\x80\x98Izzat al-Dawlah"
+  birth_place: ""
+  created_at: 2011-01-11 08:22:16
+  updated_at: 2011-01-11 08:22:16
+person_translations_766: 
+  id: "1407"
+  person_id: "449"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xB9\xD8\xB2\xD8\xAA \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  vitals: ""
+  name: "\xD8\xB9\xD8\xB2\xD8\xAA \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:22:16
+  updated_at: 2011-01-11 08:22:16
+person_translations_767: 
+  id: "1408"
+  person_id: "450"
+  locale: en
+  description: ""
+  sort_name: Nur al-Saltanah
+  vitals: ""
+  name: Nur al-Saltanah
+  birth_place: ""
+  created_at: 2011-01-11 08:23:14
+  updated_at: 2011-01-11 08:23:14
+person_translations_768: 
+  id: "1409"
+  person_id: "450"
+  locale: fa
+  description: ""
+  sort_name: "\xD9\x86\xD9\x88\xD8\xB1\xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xD9\x86\xD9\x88\xD8\xB1\xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:23:14
+  updated_at: 2011-01-11 08:23:14
+person_translations_769: 
+  id: "1410"
+  person_id: "451"
+  locale: en
+  description: ""
+  sort_name: Aqdas al-Saltanah
+  vitals: ""
+  name: Aqdas al-Saltanah
+  birth_place: ""
+  created_at: 2011-01-11 08:24:16
+  updated_at: 2011-01-11 08:24:16
+person_translations_770: 
+  id: "1411"
+  person_id: "451"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xA7\xD9\x82\xD8\xAF\xD8\xB3 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xD8\xA7\xD9\x82\xD8\xAF\xD8\xB3 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:24:16
+  updated_at: 2011-01-11 08:24:16
+person_translations_771: 
+  id: "1412"
+  person_id: "452"
+  locale: en
+  description: ""
+  sort_name: Abu al-Hasan Mirza
+  vitals: ""
+  name: Abu al-Hasan Mirza
+  birth_place: ""
+  created_at: 2011-01-11 08:46:47
+  updated_at: 2011-01-11 08:46:47
+person_translations_772: 
+  id: "1413"
+  person_id: "452"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD8\xAD\xD8\xB3\xD9\x86 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7"
+  vitals: ""
+  name: "\xD8\xA7\xD8\xA8\xD9\x88\xD8\xA7\xD9\x84\xD8\xAD\xD8\xB3\xD9\x86 \xD9\x85\xDB\x8C\xD8\xB1\xD8\xB2\xD8\xA7"
+  birth_place: ""
+  created_at: 2011-01-11 08:46:47
+  updated_at: 2011-01-11 08:46:47
+person_translations_773: 
+  id: "1414"
+  person_id: "453"
+  locale: en
+  description: ""
+  sort_name: Manizhah Khanum
+  vitals: ""
+  name: Manizhah Khanum
+  birth_place: ""
+  created_at: 2011-01-11 08:48:46
+  updated_at: 2011-01-11 08:48:46
+person_translations_774: 
+  id: "1415"
+  person_id: "453"
+  locale: fa
+  description: ""
+  sort_name: "\xD9\x85\xD9\x86\xDB\x8C\xDA\x98\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  vitals: ""
+  name: "\xD9\x85\xD9\x86\xDB\x8C\xDA\x98\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  birth_place: ""
+  created_at: 2011-01-11 08:48:46
+  updated_at: 2011-01-11 08:48:46
+person_translations_775: 
+  id: "1416"
+  person_id: "454"
+  locale: en
+  description: ""
+  sort_name: Salar al-Dawlah
+  vitals: ""
+  name: Salar al-Dawlah
+  birth_place: ""
+  created_at: 2011-01-11 08:50:19
+  updated_at: 2011-01-11 08:50:19
+person_translations_776: 
+  id: "1417"
+  person_id: "454"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  vitals: ""
+  name: "\xD8\xB3\xD8\xA7\xD9\x84\xD8\xA7\xD8\xB1 \xD8\xA7\xD9\x84\xD8\xAF\xD9\x88\xD9\x84\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:50:19
+  updated_at: 2011-01-11 08:50:19
+person_translations_777: 
+  id: "1418"
+  person_id: "455"
+  locale: en
+  description: ""
+  sort_name: Shah Saltanah
+  vitals: ""
+  name: Shah Saltanah
+  birth_place: ""
+  created_at: 2011-01-11 08:51:42
+  updated_at: 2011-01-11 08:51:42
+person_translations_778: 
+  id: "1419"
+  person_id: "455"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xB4\xD8\xA7\xD9\x87 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xD8\xB4\xD8\xA7\xD9\x87 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:51:42
+  updated_at: 2011-01-11 08:51:42
+person_translations_779: 
+  id: "1420"
+  person_id: "456"
+  locale: en
+  description: ""
+  sort_name: "A\xE2\x80\x98zam al-Saltanah"
+  vitals: ""
+  name: "A\xE2\x80\x98zam al-Saltanah"
+  birth_place: ""
+  created_at: 2011-01-11 08:58:16
+  updated_at: 2011-01-11 08:58:16
+person_translations_780: 
+  id: "1421"
+  person_id: "456"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  vitals: ""
+  name: "\xD8\xA7\xD8\xB9\xD8\xB8\xD9\x85 \xD8\xA7\xD9\x84\xD8\xB3\xD9\x84\xD8\xB7\xD9\x86\xD9\x87"
+  birth_place: ""
+  created_at: 2011-01-11 08:58:16
+  updated_at: 2011-01-11 08:58:16
+person_translations_781: 
+  id: "1422"
+  person_id: "457"
+  locale: en
+  description: ""
+  sort_name: "Shaykh Hasan ibn \xCA\xBBAli Jabiri Ansari Isfahani "
+  vitals: ""
+  name: "Shaykh Hasan ibn \xCA\xBBAli Jabiri Ansari Isfahani "
+  birth_place: ""
+  created_at: 2011-01-12 08:18:17
+  updated_at: 2011-01-12 08:18:17
+person_translations_782: 
+  id: "1423"
+  person_id: "457"
+  locale: fa
+  description: ""
+  sort_name: " \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xA8\xD9\x86 \xD8\xB9\xD9\x84\xDB\x8C \xD8\xAC\xD8\xA7\xD8\xA8\xD8\xB1\xDB\x8C \xD8\xA7\xD9\x86\xD8\xB5\xD8\xA7\xD8\xB1\xDB\x8C \xD8\xA7\xD8\xB5\xD9\x81\xD9\x87\xD8\xA7\xD9\x86\xDB\x8C"
+  vitals: ""
+  name: " \xD8\xB4\xDB\x8C\xD8\xAE \xD8\xAD\xD8\xB3\xD9\x86 \xD8\xA8\xD9\x86 \xD8\xB9\xD9\x84\xDB\x8C \xD8\xAC\xD8\xA7\xD8\xA8\xD8\xB1\xDB\x8C \xD8\xA7\xD9\x86\xD8\xB5\xD8\xA7\xD8\xB1\xDB\x8C \xD8\xA7\xD8\xB5\xD9\x81\xD9\x87\xD8\xA7\xD9\x86\xDB\x8C"
+  birth_place: ""
+  created_at: 2011-01-12 08:18:17
+  updated_at: 2011-01-12 08:18:17
+person_translations_783: 
+  id: "1424"
+  person_id: "458"
+  locale: en
+  description: ""
+  sort_name: "Sayyid Muhammad Tabataba\xCA\xBCi Bihbahani"
+  vitals: ""
+  name: "Sayyid Muhammad Tabataba\xCA\xBCi Bihbahani"
+  birth_place: ""
+  created_at: 2011-01-12 09:54:14
+  updated_at: 2011-01-12 09:54:14
+person_translations_784: 
+  id: "1425"
+  person_id: "458"
+  locale: fa
+  description: ""
+  sort_name: "\xD8\xB3\xDB\x8C\xD8\xAF \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB7\xD8\xA8\xD8\xA7\xD8\xB7\xD8\xA8\xD8\xA7\xDB\x8C\xDB\x8C \xD8\xA8\xD9\x87\xD8\xA8\xD9\x87\xD8\xA7\xD9\x86\xDB\x8C"
+  vitals: ""
+  name: "\xD8\xB3\xDB\x8C\xD8\xAF \xD9\x85\xD8\xAD\xD9\x85\xD8\xAF \xD8\xB7\xD8\xA8\xD8\xA7\xD8\xB7\xD8\xA8\xD8\xA7\xDB\x8C\xDB\x8C \xD8\xA8\xD9\x87\xD8\xA8\xD9\x87\xD8\xA7\xD9\x86\xDB\x8C"
+  birth_place: ""
+  created_at: 2011-01-12 09:54:14
+  updated_at: 2011-01-12 09:54:14

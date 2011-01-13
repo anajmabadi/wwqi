@@ -319,3 +319,19 @@ owner_translations_040:
   created_at: 2011-01-09 00:10:20
   updated_at: 2011-01-09 00:10:20
   credit: ""
+owner_translations_041: 
+  id: "45"
+  owner_id: "23"
+  locale: en
+  name: Marzieh Khanum
+  created_at: 2011-01-11 07:40:11
+  updated_at: 2011-01-11 07:40:11
+  credit: Marzieh Khanum
+owner_translations_042: 
+  id: "46"
+  owner_id: "23"
+  locale: fa
+  name: "\xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"
+  created_at: 2011-01-11 07:40:11
+  updated_at: 2011-01-11 07:40:11
+  credit: "\xD9\x85\xD8\xB1\xD8\xB6\xDB\x8C\xD9\x87 \xD8\xAE\xD8\xA7\xD9\x86\xD9\x85"

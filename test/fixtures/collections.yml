@@ -40,9 +40,9 @@ collections_002:
   updated_at: 2010-12-06 16:52:51
   publish: "0"
   private: "0"
-  items_count: "16"
+  items_count: "21"
   finding_aid: "0"
-  lock_version: "4"
+  lock_version: "9"
   acquired_on: "2010-06-03"
   interview_id: 
   acquired_by: ""
@@ -417,9 +417,9 @@ collections_017:
   updated_at: 2011-01-07 20:26:17
   publish: "1"
   private: "0"
-  items_count: "4"
+  items_count: "7"
   finding_aid: "0"
-  lock_version: "5"
+  lock_version: "8"
   acquired_on: 
   interview_id: 
   acquired_by: ""
@@ -492,9 +492,9 @@ collections_020:
   updated_at: 2010-12-27 23:37:14
   publish: "1"
   private: "0"
-  items_count: "0"
+  items_count: "1"
   finding_aid: "0"
-  lock_version: "0"
+  lock_version: "1"
   acquired_on: 
   interview_id: 
   acquired_by: ""
