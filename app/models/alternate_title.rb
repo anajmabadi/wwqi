@@ -2,7 +2,6 @@ class AlternateTitle < ActiveRecord::Base
   belongs_to :item
 
   validates :item_id, :presence => true, :numericality => true
-  validates :title_en, :presence => true
   validates :publish, :inclusion => { :in => [true,false] }
 
   # globalize2 accessors 
