@@ -50,7 +50,7 @@
                     <% end %>
                 </div>
                 <div id="people">
-                  
+
                     <% unless @item.people.empty? %>
                     <h3> People </h3>
                     <ul>
@@ -63,7 +63,7 @@
                     <% end %>
                 </div>
                 <div id="places">
-                  
+
                     <% unless @item.places.empty? %>
                     <h3> Places </h3>
                     <ul>
@@ -87,6 +87,22 @@
                 <% unless @item.description.blank?  || @item.description.nil? %>
                 <tr class="odd">
                     <td colspan="2"><%= raw @item.description %></td>
+                </tr>
+                <% end %>
+                <% unless @item.alternate_titles.empty? %>
+                <tr>
+                    <th><%= t(:alternate_titles).capitalize %></th>
+                    <td>
+                    <ul>
+                        <% @item.alternate_titles.each do |alternate_title| -%>
+                          <% unless alternate_title.title.blank? -%>
+                            <li>
+                                <%= alternate_title.title %>
+                            </li>
+                          <% end -%>
+                        <% end -%>
+                    </ul>
+                    </td>
                 </tr>
                 <% end %>
                 <% unless @item.collection_id.blank?  || @item.collection.nil? %>
