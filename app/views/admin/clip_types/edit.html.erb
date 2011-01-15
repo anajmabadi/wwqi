@@ -1,6 +1,15 @@
-<h1>Editing clip_type</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = controller.controller_name.humanize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = admin_clip_types_path %>
+<% @show_path = admin_clip_type_path(@clip) %>
 
-<%= link_to 'Show', @clip_type %> |
-<%= link_to 'Back', admin_clip_types_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn"
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %> 
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

@@ -1,25 +1,32 @@
-<p class="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.humanize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Name:</b>
-  <%= @clip_type.name %>
-</p>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :clip => @clip %>
+        <table class="styled" >
+            <tr>
+                <td>
 
-<p>
-  <b>Extension:</b>
-  <%= @clip_type.extension %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @clip_type.publish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @clip_type.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_clip_type_path(@clip_type) %> |
-<%= link_to 'Back', admin_clip_types_path %>
+                <p>
+                    <b>Name:</b>
+                    <%= @clip_type.name %>
+                </p>
+                <p>
+                    <b>Extension:</b>
+                    <%= @clip_type.extension %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @clip_type.publish %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @clip_type.notes %>
+                </p>
+                </td>
+            </tr>
+        </table>
+        <%= render 'nav_show_header_bar', :clip => @clip %>
+    </div>
+</div>

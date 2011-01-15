@@ -1,5 +1,5 @@
 <% @page_description = t(:new_description) -%>
-<% @page_title = controller.controller_name.capitalize + ' | ' + t(:new).capitalize -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:new).capitalize -%>
 
 <% @back_path = admin_clips_path %>
 <div id="staticContent" class="clearfix">

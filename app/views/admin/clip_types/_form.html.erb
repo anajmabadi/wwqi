@@ -1,32 +1,44 @@
 <%= form_for([:admin, @clip_type]) do |f| %>
-  <% if @clip_type.errors.any? %>
-  <div id="errorExplanation">
-    <h2><%= pluralize(@clip_type.errors.count, "error") %> prohibited this clip_type from being saved:</h2>
-    <ul>
-    <% @clip_type.errors.full_messages.each do |msg| %>
-      <li><%= msg %></li>
-    <% end %>
-    </ul>
-  </div>
-  <% end %>
+<table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
+        <% if @clip_type.errors.any? %>
+        <div id="errorExplanation">
+            <h2><%= pluralize(@clip_type.errors.count, "error") %> prohibited this clip_type from being saved:</h2>
+            <ul>
+                <% @clip_type.errors.full_messages.each do |msg| %>
+                <li>
+                    <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :extension %><br />
-    <%= f.text_field :extension %>
-  </div>
-  <div class="field">
-    <%= f.label :publish %><br />
-    <%= f.check_box :publish %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_area :notes %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+        <div class="field">
+            <%= f.label :name %>
+            <br />
+            <%= f.text_field :name %>
+        </div>
+        <div class="field">
+            <%= f.label :extension %>
+            <br />
+            <%= f.text_field :extension %>
+        </div>
+        <div class="field">
+            <%= f.label :publish %>
+            <br />
+            <%= f.check_box :publish %>
+        </div>
+        <div class="field">
+            <%= f.label :notes %>
+            <br />
+            <%= f.text_area :notes, :rows => 3 %>
+        </div>
+        <div class="actions">
+            <%= f.submit %>
+        </div>
+        </td>
+    </tr>
+</table>
 <% end %>
