@@ -80,6 +80,9 @@ class Admin::CollectionsController < Admin::AdminController
     
     begin
       @collection = Collection.find(params[:id])
+      # clear the items cache to avoid mistaken restrictions on dependent records
+      @items = @collection.items(true)
+      # now destroy the collection
       @collection.destroy
     rescue => e
       flash[:error] = e.message
