@@ -158,13 +158,60 @@ class Item < ActiveRecord::Base
   
   def localized_source_date 
     my_localized_date = ''
+    
+    # check for a sort year and no source year
+    self.year = self.year ||= self.sort_year
+    self.month = self.month ||= self.sort_month
+    self.day = self.day ||= self.sort_day
+    
+    # pick jalali or islamic based on year
+    @greg = self.gregorian_date
+    @date = Date.new(@greg[2],@greg[1],@greg[0])
+    
+    if @date < Date.new(1925,4,1)
+      @persian_date_label = self.islamic_date_label
+    else
+      @persian_date_label = self.jalali_date_label
+    end
+    
+    
+    # run the localized date routines
     unless self.year.nil? || self.year == 0
       my_localized_date = case I18n.locale
-        when :fa then "#{self.islamic_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.jalali_date_label}#{I18n.translate(:secondary_date_suffix)}"
-        else "#{self.gregorian_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.islamic_date_label}#{I18n.translate(:secondary_date_suffix)}"
+        when :fa then "#{self.islamic_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.gregorian_date_label}#{I18n.translate(:secondary_date_suffix)}"
+        else "#{self.gregorian_date_label} #{I18n.translate(:secondary_date_prefix)}#{@persian_date_label}#{I18n.translate(:secondary_date_suffix)}"
       end
+    else 
+        flash[:error] = "An invalid sort date has been detected."
     end
     return my_localized_date
+  end
+  
+  
+  def show_date
+    date_to_show = ''
+    if !self.display_date.blank?
+      # there is a text override to the date that should be displayed
+      date_to_show += display_date
+    elsif self.year == 2050 || self.sort_year == 2050
+      # there is a nonsense date entered to indicate the lack of any date and put the item last in sorts
+      date_to_show += I18n.translate(:undated) 
+    elsif !self.era.nil?
+      # there is a shorthand editorial era
+      date_to_show += self.era.title     
+    elsif !self.year.blank? || !self.sort_year.blank?
+      # one of the numerical date fields has been filled out, so the date set should be calculated from those
+      date_to_show += self.localized_source_date
+    end
+   
+    date_to_show = I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
+    
+    # check for editorial
+    if self.editorial_date
+      date_to_show = "#{I18n.translate(:editorial_date_prefix)}#{date_to_show}#{I18n.translate(:editorial_date_suffix)}"
+    end
+    
+    return date_to_show
   end
   
   def self.added_since_date(months=1, limit=25)
@@ -216,29 +263,6 @@ class Item < ActiveRecord::Base
     return "oralhistory" unless self.clips.empty?
   end
 
-  def show_date
-    date_to_show = ''
-    if !self.display_date.blank?
-      date_to_show += display_date
-    elsif self.year == 2050 || self.sort_year == 2050
-      date_to_show += I18n.translate(:undated) 
-    elsif !self.era.nil?
-      date_to_show += self.era.title     
-    elsif !self.year.blank? 
-      date_to_show += self.localized_source_date
-    elsif !self.sort_year.blank?
-      date_to_show += localized_number(sort_year)
-    end
-   
-    date_to_show = I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
-    
-    # check for editorial
-    if self.editorial_date
-      date_to_show = "#{I18n.translate(:editorial_date_prefix)}#{date_to_show}#{I18n.translate(:editorial_date_suffix)}"
-    end
-    
-    return date_to_show
-  end
 
   # TODO: Find the right place for this special XML route
   def slides_xml_url
