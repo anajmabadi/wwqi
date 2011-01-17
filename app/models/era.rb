@@ -1,6 +1,6 @@
 class Era < ActiveRecord::Base
 
-  has_many :items
+  has_many :items, :dependent => :restrict
 
   translates :title
   globalize_accessors :en, :fa

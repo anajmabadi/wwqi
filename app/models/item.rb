@@ -221,7 +221,9 @@ class Item < ActiveRecord::Base
     if !self.display_date.blank?
       date_to_show += display_date
     elsif self.year == 2050 || self.sort_year == 2050
-      date_to_show += I18n.translate(:undated)  
+      date_to_show += I18n.translate(:undated) 
+    elsif !self.era.nil?
+      date_to_show += self.era.title     
     elsif !self.year.blank? 
       date_to_show += self.localized_source_date
     elsif !self.sort_year.blank?
