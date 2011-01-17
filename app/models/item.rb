@@ -129,7 +129,13 @@ class Item < ActiveRecord::Base
   end
   
   def gregorian_date_label
-    return "#{localized_number(self.gregorian_date[0])}/#{localized_number(self.gregorian_date[1])}/#{localized_number(self.gregorian_date[2])}" unless self.gregorian_date.nil? || self.gregorian_date.empty? 
+       my_label = ''  
+   unless self.gregorian_date.nil? || self.gregorian_date.empty? 
+      my_label += localized_number(self.gregorian_date[1]) + "/" unless self.day.blank?
+      my_label += localized_number(self.gregorian_date[0]) + "/" unless self.month.blank?
+      my_label += localized_number(self.gregorian_date[2]) unless self.year.blank?
+    end
+    return my_label
   end
   
   def islamic_date
@@ -141,7 +147,13 @@ class Item < ActiveRecord::Base
   end
   
   def islamic_date_label
-    return "#{localized_number(self.islamic_date[0])}/#{localized_number(self.islamic_date[1])}/#{localized_number(self.islamic_date[2])}" unless self.islamic_date.nil? || self.islamic_date.empty? 
+   my_label = ''  
+   unless self.islamic_date.nil? || self.islamic_date.empty? 
+      my_label += localized_number(self.islamic_date[1]) + "/" unless self.day.blank?
+      my_label += localized_number(self.islamic_date[0]) + "/" unless self.month.blank?
+      my_label += localized_number(self.islamic_date[2]) unless self.year.blank?
+    end
+    return my_label
   end
   
   def jalali_date
@@ -153,7 +165,13 @@ class Item < ActiveRecord::Base
   end
   
   def jalali_date_label
-    return "#{localized_number(self.jalali_date[0])}/#{localized_number(self.jalali_date[1])}/#{localized_number(self.jalali_date[2])}" unless self.jalali_date.nil? || self.jalali_date.empty? 
+   my_label = ''  
+   unless self.jalali_date.nil? || self.jalali_date.empty? 
+      my_label += localized_number(self.jalali_date[0]) + "/" unless self.day.blank?
+      my_label += localized_number(self.jalali_date[1]) + "/" unless self.month.blank?
+      my_label += localized_number(self.jalali_date[2]) unless self.year.blank?
+    end
+    return my_label
   end
   
   def localized_source_date 
