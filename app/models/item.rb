@@ -229,13 +229,13 @@ class Item < ActiveRecord::Base
     elsif !self.sort_year.blank?
       date_to_show += localized_number(sort_year)
     end
+   
+    date_to_show = I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
     
     # check for editorial
     if self.editorial_date
       date_to_show = "#{I18n.translate(:editorial_date_prefix)}#{date_to_show}#{I18n.translate(:editorial_date_suffix)}"
     end
-    
-    date_to_show = I18n.translate(:circa) + ' ' +  date_to_show if self.circa && date_to_show != ''
     
     return date_to_show
   end
