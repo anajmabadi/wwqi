@@ -56,4 +56,8 @@ class Person < ActiveRecord::Base
     return self.included_collections.nil? ? I18n.translate(:n_a, :locale => :fa) : self.included_collections.map { |c| c.name_fa }.join(", ")
   end
 
+  def items_count
+    return self.items(true).where('items.publish=?', true).count
+  end
+
 end
