@@ -1,5 +1,7 @@
 Qajar::Application.routes.draw do
 
+  resources :months
+
   get "contact/new"
 
   get "contact/confirm"

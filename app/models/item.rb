@@ -148,8 +148,8 @@ class Item < ActiveRecord::Base
   def gregorian_date_label
     my_label = ''  
     unless self.gregorian_date.nil? || self.gregorian_date.empty? 
-      my_label += localized_number(self.gregorian_date[1]) + "/" unless self.day.blank?
-      my_label += localized_number(self.gregorian_date[0]) + "/" unless self.month.blank?
+      my_label += localized_number(self.gregorian_date[1]) + " " unless self.day.blank?
+      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 1, true, self.gregorian_date[0]).first.name  + " " unless self.month.blank?
       if my_label == ''
         #we have just a year and need to show year range
         my_label += localize_year_range_label(self.gregorian_year_range) unless self.year.blank?
@@ -171,8 +171,8 @@ class Item < ActiveRecord::Base
   def islamic_date_label
    my_label = ''  
    unless self.islamic_date.nil? || self.islamic_date.empty? 
-      my_label += localized_number(self.islamic_date[1]) + "/" unless self.day.blank?
-      my_label += localized_number(self.islamic_date[0]) + "/" unless self.month.blank?
+      my_label += localized_number(self.islamic_date[1]) + " " unless self.day.blank?
+      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 2, true, self.islamic_date[0]).first.name + " " unless self.month.blank?
       if my_label == ''
         my_label += localize_year_range_label(self.islamic_year_range)
       else
@@ -206,8 +206,8 @@ class Item < ActiveRecord::Base
   def jalali_date_label
    my_label = ''  
    unless self.jalali_date.nil? || self.jalali_date.empty? 
-      my_label += localized_number(self.jalali_date[0]) + "/" unless self.day.blank?
-      my_label += localized_number(self.jalali_date[1]) + "/" unless self.month.blank?
+      my_label += localized_number(self.jalali_date[0]) + " " unless self.day.blank?
+      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 3, true, self.jalali_date[0]).first.name  + " " unless self.month.blank?
       if my_label == ''
         my_label += localize_year_range_label(self.jalali_year_range)
       else
@@ -236,7 +236,8 @@ class Item < ActiveRecord::Base
     
     # pick jalali or islamic based on year
     greg = self.gregorian_date
-    date = Date.new(greg[2],greg[1],greg[0])
+    Rails.logger.info "-----my greg date: " + greg.join(", ")
+    date = Date.new(greg[2],greg[0],greg[1])
     
     if date < Date.new(1925,4,1)
       my_label = self.islamic_date_label + " " + I18n.translate(:calendar_abbreviation_islamic)

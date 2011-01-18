@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @month.name %>
+</p>
+
+<p>
+  <b>Calendar type:</b>
+  <%= @month.calendar_type_id %>
+</p>
+
+<p>
+  <b>Position:</b>
+  <%= @month.position %>
+</p>
+
+<p>
+  <b>Pubish:</b>
+  <%= @month.pubish %>
+</p>
+
+<p>
+  <b>Notes:</b>
+  <%= @month.notes %>
+</p>
+
+
+<%= link_to 'Edit', edit_month_path(@month) %> |
+<%= link_to 'Back', months_path %>

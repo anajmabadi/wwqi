@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110113061303) do
+ActiveRecord::Schema.define(:version => 20110118152023) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -503,6 +503,30 @@ ActiveRecord::Schema.define(:version => 20110113061303) do
   end
 
   add_index "medium_translations", ["medium_id"], :name => "index_medium_translations_on_medium_id"
+
+  create_table "month_translations", :force => true do |t|
+    t.integer  "month_id",   :default => 0,    :null => false
+    t.string   "locale",     :default => "en", :null => false
+    t.string   "name",       :default => "",   :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "month_translations", ["month_id"], :name => "index_month_translations_on_month_id"
+  add_index "month_translations", ["name"], :name => "index_month_translations_on_name"
+
+  create_table "months", :force => true do |t|
+    t.integer  "calendar_type_id",                   :null => false
+    t.integer  "position",         :default => 1,    :null => false
+    t.boolean  "publish",          :default => true, :null => false
+    t.string   "notes"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "months", ["calendar_type_id"], :name => "index_months_on_calendar_type_id"
+  add_index "months", ["position"], :name => "index_months_on_position"
+  add_index "months", ["publish"], :name => "index_months_on_publish"
 
   create_table "owner_translations", :force => true do |t|
     t.integer  "owner_id",   :default => 0,    :null => false

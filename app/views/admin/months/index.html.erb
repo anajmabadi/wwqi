@@ -1,0 +1,31 @@
+<h1>Listing months</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Calendar type</th>
+    <th>Position</th>
+    <th>Pubish</th>
+    <th>Notes</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @months.each do |month| %>
+  <tr>
+    <td><%= month.name %></td>
+    <td><%= month.calendar_type_id %></td>
+    <td><%= month.position %></td>
+    <td><%= month.pubish %></td>
+    <td><%= month.notes %></td>
+    <td><%= link_to 'Show', month %></td>
+    <td><%= link_to 'Edit', edit_month_path(month) %></td>
+    <td><%= link_to 'Destroy', month, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Month', new_month_path %>
