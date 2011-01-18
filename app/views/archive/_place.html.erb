@@ -1,4 +1,6 @@
+<% if place.items_count > 0 -%>
 <li class="place_item">
     <%= place.name %>
-    <%= link_to( pluralize(place.items.size, t(:item)), archive_browser_path(:place_filter => place.id)) unless place.items.empty? %>
+    <%= link_to( "#{t(:items)}: #{localized_number(place.items_count)}", archive_browser_path(:place_filter => place.id)) unless place.items.empty? %>
 </li>
+<% end -%>

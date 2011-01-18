@@ -5,7 +5,7 @@ class Subject < ActiveRecord::Base
   has_many :classifications, :dependent => :destroy
   has_many :items, :through => :classifications, :order => :position
 
-  validates :name_en, :name_fa, :presence => true, :length =>{:maximum => 255}
+  validates :name_en, :name_fa, :presence => true, :length =>  {:maximum => 255}
   validates :subject_type_id, :presence => true, :numericality => true
   validates :publish, :inclusion => { :in => [true,false] }
   validates :major, :inclusion => { :in => [true,false] }
@@ -43,5 +43,9 @@ class Subject < ActiveRecord::Base
     my_label += self.name_en unless self.name_en.blank?
     my_label += " | #{self.name_fa}" unless self.name_fa.blank?
     return my_label
+  end
+  
+  def items_count
+    return self.items(true).where('items.publish=?', true).count
   end
 end

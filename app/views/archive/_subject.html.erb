@@ -1,4 +1,6 @@
+<% if subject.items_count > 0 -%> 
 <li class="subject_item">
     <%= subject.name %>
-    <%= link_to(pluralize(subject.items.size, t(:item)), archive_browser_path(:subject_filter => subject.id)) unless subject.items.empty? %>
+    <%= link_to( "#{t(:items)}: #{localized_number(subject.items_count)}", archive_browser_path(:subject_filter => subject.id)) %>
 </li>
+<% end -%>

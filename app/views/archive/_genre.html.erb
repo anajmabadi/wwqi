@@ -1,4 +1,6 @@
+<% if genre.items_count > 0 -%> 
 <li class="genre_item">
     <%= genre.name %>
-    <%= link_to(pluralize(genre.items.size, t(:item)), archive_browser_path(:subject_filter => genre.id)) unless genre.items.empty? %>
+    <%= link_to( "#{t(:item)}: #{localized_number(genre.items_count)}", archive_browser_path(:subject_filter => genre.id)) unless genre.items.empty? %>
 </li>
+<% end -%>

@@ -25,4 +25,13 @@ class Period < ActiveRecord::Base
   def to_label
     return self.title
   end
+  
+  def items
+    return Item.where("sort_year BETWEEN '#{self.start_at.strftime("%Y")}' AND '#{self.end_at.strftime("%Y")}'").all
+  end
+  
+  def items_count
+    return self.items.size
+  end
+  
 end

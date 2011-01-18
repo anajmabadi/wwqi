@@ -36,11 +36,15 @@ class Collection < ActiveRecord::Base
     return collection_set
   end  
 
+  def items_count
+    return self.items(true).where('items.publish=?', true).count
+  end
+  
   def item_count_string
     if I18n.locale == :fa
-      items.size.to_farsi
+      self.items(true).size.to_farsi
     else
-      items.size.to_s
+      self.items(true).size.to_s
     end
   end
   
@@ -50,7 +54,7 @@ class Collection < ActiveRecord::Base
 
   def tag_line
     value = name
-    value += ' (' + item_count + ')' unless item_count == 0
+    value += ' (' + self.item_count_string + ')' unless self.items(true).size == 0
     return value
   end
 
@@ -60,7 +64,7 @@ class Collection < ActiveRecord::Base
 
   # Library media file accessors
   def finding_aid_file_name
-    return COLLECTION_PREFIX + id.to_s + ".pdf"
+    return COLLECTION_PREFIX + self.id.to_s + ".pdf"
   end
 
   def to_label

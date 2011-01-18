@@ -36,11 +36,11 @@ class ArchiveController < ApplicationController
   def browser
     logger.info 'browser'
     @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
-    @people = Person.where(["items_count > ? AND people.publish = ? AND person_translations.locale = ?", 0, true, I18n.locale.to_s]).order('person_translations.sort_name')
+    @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
     @collections = Collection.where(['collections.publish=?', true]).order('collection_translations.sort_name, collection_translations.name')
     @periods = Period.where(['periods.publish=?',true]).order('periods.position')
-    @places = Place.where(["places.publish=? AND items_count > ? AND place_translations.locale = ?", true, 0, I18n.locale.to_s])
-    @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subjects.items_count > ? AND subject_translations.locale=?", true, 7, 0, I18n.locale.to_s]).order('subject_translations.name')
+    @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
+    @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
 
     #grab filter categories
     @collection_filter = params[:collection_filter]
