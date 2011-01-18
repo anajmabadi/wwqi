@@ -29,6 +29,10 @@ class ArchiveController < ApplicationController
     @people = Person.where(['publish=? AND person_translations.locale=?', true, I18n.locale.to_s]).order('person_translations.name')
   end
 
+  def genres
+    @genres = Subject.where(['publish=? AND subject_translations.locale=? AND subject_type_id = ?', true, I18n.locale.to_s, 8]).order('subject_translations.name')
+  end
+  
   def browser
     logger.info 'browser'
     @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')

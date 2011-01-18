@@ -3,7 +3,7 @@
 
 
 <div id="staticContent" class="clearfix">
-  <h1><%= t(:place_index).titleize %></h1>
+  <h1><%= link_to t(:archive).capitalize, archive_path %> | <%= t(:place_index).titleize %></h1>
   <ul class="places_list">
    <%= render :partial => 'place', :collection => @places %>
   </ul>

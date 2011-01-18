@@ -1,0 +1,10 @@
+<% @page_description = t(:genres_description) -%>
+<% @page_title = t(:archive).capitalize + " | " + t(:genres_index).titleize -%>
+
+<div id="staticContent" class="clearfix">
+    <h1><%= link_to t(:archive).capitalize, archive_path %> | <%= t(:genres_index).titleize %></h1>
+    <ul class="genres_list">
+        <%= render :partial => 'genre', :collection => @genres %>
+    </ul>
+</div>
+

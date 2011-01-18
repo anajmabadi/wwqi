@@ -2,7 +2,7 @@
 <% @page_title = t(:archive).capitalize + " | " + t(:subject_index).capitalize -%>
 
 <div id="staticContent" class="clearfix">
-    <h1><%= t(:subject_index).titleize %></h1>
+    <h1><%= link_to t(:archive).capitalize, archive_path %> | <%= t(:subject_index).titleize %></h1>
     <ul class="subjects_list">
         <%= render :partial => 'subject', :collection => @subjects %>
     </ul>

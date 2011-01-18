@@ -82,6 +82,7 @@ Qajar::Application.routes.draw do
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
   match 'archive/collections' => 'archive#collections', :as => :archive_collections
   match 'archive/subjects' => 'archive#subjects', :as => :archive_subjects
+  match 'archive/genres' => 'archive#genres', :as => :archive_genres
   match 'archive/people' => 'archive#people', :as => :archive_people
   match 'archive/places' => 'archive#places', :as => :archive_places
   match 'archive/advanced_search' => 'archive#advanced_search', :as => :archive_advanced_search
