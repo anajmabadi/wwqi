@@ -1,7 +1,5 @@
 Qajar::Application.routes.draw do
 
-  resources :months
-
   get "contact/new"
 
   get "contact/confirm"
@@ -31,7 +29,8 @@ Qajar::Application.routes.draw do
       :sections,
       :appellations,
       :relationships,
-      :people
+      :people,
+      :months
 
     resources :items do
       resources :images, :alternate_titles

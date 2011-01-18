@@ -1,6 +1,15 @@
-<h1>Editing month</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<%= render 'form' %>
+<% @back_path = admin_months_path %>
+<% @show_path = admin_month_path(@month) %>
 
-<%= link_to 'Show', @month %> |
-<%= link_to 'Back', months_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn"
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %> 
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_edit_header_bar', :locals => {:back_path => @back_path, :show_path => @show_path} %>
+    </div>
+  </div>
+</div>

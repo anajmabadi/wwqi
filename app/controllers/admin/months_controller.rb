@@ -1,8 +1,11 @@
-class MonthsController < Admin::AdminController
+class Admin::MonthsController < Admin::AdminController
+  
+  before_filter :get_calendar_types, :only => [:new, :edit, :update, :create]
+  
   # GET /months
   # GET /months.xml
   def index
-    @months = Month.all
+    @months = Month.order('calendar_type_id, position').all
 
     respond_to do |format|
       format.html # index.html.erb
@@ -80,4 +83,11 @@ class MonthsController < Admin::AdminController
       format.xml  { head :ok }
     end
   end
+  
+  private
+  
+  def get_calendar_types
+    @calendar_types = CalendarType.order('name').all.map { |c| [c.name, c.id] }
+  end
+  
 end

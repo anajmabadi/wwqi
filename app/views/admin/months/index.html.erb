@@ -1,31 +1,33 @@
-<h1>Listing months</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = controller.controller_name.humanize -%>
 
-<table>
-  <tr>
-    <th>Name</th>
-    <th>Calendar type</th>
-    <th>Position</th>
-    <th>Pubish</th>
-    <th>Notes</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @months.each do |month| %>
-  <tr>
-    <td><%= month.name %></td>
-    <td><%= month.calendar_type_id %></td>
-    <td><%= month.position %></td>
-    <td><%= month.pubish %></td>
-    <td><%= month.notes %></td>
-    <td><%= link_to 'Show', month %></td>
-    <td><%= link_to 'Edit', edit_month_path(month) %></td>
-    <td><%= link_to 'Destroy', month, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Month', new_month_path %>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <div class="content nomargin">
+            <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_month_path, :show_all_path => admin_months_path } %>
+            <table  class="global" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>Name en</th>
+                    <th>Name fa</th>
+                    <th>Calendar type</th>
+                    <th>Position</th>
+                    <th>Publish</th>
+                    <th>Notes</th>
+                    <th>Actions</th>
+                </tr>
+                <% @months.each do |month| %>
+                <tr>
+                    <td><%= month.name_en %></td>
+                    <td><%= month.name_fa %></td>
+                    <td><%= month.calendar_type.name unless month.calendar_type.nil? %></td>
+                    <td><%= month.position %></td>
+                    <td><%= show_check month.publish %></td>
+                    <td><%= month.notes %></td>
+                    <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_month_path(month) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_month_path(month) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_month_path(month), :confirm => 'Are you sure?', :method => :delete %></td>
+                </tr>
+                <% end %>
+            </table>
+            <br class="clear" />
+        </div>
+    </div>
+</div>

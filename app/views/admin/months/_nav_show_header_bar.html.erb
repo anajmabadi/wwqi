@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="description">
+    <h1><%= link_to controller.controller_name.humanize, admin_months_path  %> | Show </h1>
+  </div>
+  <div class="tools">
+    <%= link_to 'Back', admin_months_path %> |
+    <%= link_to 'Edit', edit_admin_month_path(month) %> |
+    <%= link_to 'Delete', admin_month_path(month), :method => :delete, :confirm => "Are you sure you want to delete this month?" %> |
+    <%= link_to "New", new_admin_month_path %> 
+  </div>
+</div>

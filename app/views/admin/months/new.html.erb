@@ -1,5 +1,13 @@
-<h1>New month</h1>
+<% @page_description = t(:new_description) -%>
+<% @page_title = controller.controller_name.humanize + ' | ' + t(:new).capitalize -%>
 
-<%= render 'form' %>
-
-<%= link_to 'Back', months_path %>
+<% @back_path = admin_months_path %>
+<div id="staticContent" class="clearfix">
+  <div class="onecolumn"
+    <div class="content nomargin">
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path} %>
+      <%= render 'form' %>
+      <%= render :partial => 'admin/admin/nav_new_header_bar', :locals => {:back_path => @back_path}  %>
+    </div>
+  </div>
+</div>

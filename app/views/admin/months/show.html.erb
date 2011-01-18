@@ -1,30 +1,41 @@
-<p id="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Name:</b>
-  <%= @month.name %>
-</p>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :month => @month %>
+        <table class="styled" >
+            <tr>
+                <td>
 
-<p>
-  <b>Calendar type:</b>
-  <%= @month.calendar_type_id %>
-</p>
+                <p>
+                    <b>Name en:</b>
+                    <%= @month.name_en %>
+                </p>
+                                <p>
+                    <b>Name fa:</b>
+                    <%= @month.name_fa %>
+                </p>
+                <p>
+                    <b>Calendar type:</b>
+                    <%= @month.calendar_type.name unless @month.calendar_type.nil? %>
+                </p>
+                <p>
+                    <b>Position:</b>
+                    <%= @month.position %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @month.publish %>
+                </p>
+                <p>
+                    <b>Notes:</b>
+                    <%= @month.notes %>
+                </p>
+                </td>
+            </tr>
+        </table>
+        <%= render 'nav_show_header_bar', :month => @month %>
+    </div>
+</div>
 
-<p>
-  <b>Position:</b>
-  <%= @month.position %>
-</p>
-
-<p>
-  <b>Pubish:</b>
-  <%= @month.pubish %>
-</p>
-
-<p>
-  <b>Notes:</b>
-  <%= @month.notes %>
-</p>
-
-
-<%= link_to 'Edit', edit_month_path(@month) %> |
-<%= link_to 'Back', months_path %>

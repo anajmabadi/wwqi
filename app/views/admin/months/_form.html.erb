@@ -1,37 +1,60 @@
-<%= form_for(@month) do |f| %>
-  <% if @month.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@month.errors.count, "error") %> prohibited this month from being saved:</h2>
+<%= form_for([:admin, @month]) do |f| %>
+<table class="global" width="100%" cellpadding="0" cellspacing="0">
+    <tr>
+        <td>
 
-      <ul>
-      <% @month.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+        <% if @month.errors.any? %>
+        <div id="error_explanation">
+            <h2><%= pluralize(@month.errors.count, "error") %> prohibited this month from being saved:</h2>
+            <ul>
+                <% @month.errors.full_messages.each do |msg| %>
+                <li>
+                    <%= msg %>
+                </li>
+                <% end %>
+            </ul>
+        </div>
+        <% end %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :calendar_type_id %><br />
-    <%= f.text_field :calendar_type_id %>
-  </div>
-  <div class="field">
-    <%= f.label :position %><br />
-    <%= f.text_field :position %>
-  </div>
-  <div class="field">
-    <%= f.label :pubish %><br />
-    <%= f.check_box :pubish %>
-  </div>
-  <div class="field">
-    <%= f.label :notes %><br />
-    <%= f.text_field :notes %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+
+        <div class="field">
+            <%= f.label :name_en %>
+            <br />
+            <%= f.text_field :name_en %>
+        </div>
+        <div class="field persianOnly">
+            <%= f.label :name_fa %>
+            <br />
+            <%= f.text_field :name_fa %>
+        </div>
+        <div class="field">
+            <%= f.label :calendar_type_id %>
+            <br />
+            <%= f.select :calendar_type_id, @calendar_types %>
+        </div>
+        <div class="field">
+            <%= f.label :position %>
+            <br />
+            <%= f.text_field :position %>
+        </div>
+        <div class="field">
+            <%= f.label :publish %>
+            <br />
+            <%= f.check_box :publish %>
+        </div>
+        <div class="field">
+            <%= f.label :notes %>
+            <br />
+            <%= f.text_field :notes, :rows => 3 %>
+        </div>
+        <div class="actions">
+            <%= f.submit %>
+        </div>
+        </td>
+    </tr>
+</table>
 <% end %>
