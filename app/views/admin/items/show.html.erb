@@ -160,8 +160,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td colspan="2">
-                    <b>Date Preview: </b> Absolute: <%= @item.absolute_date %> Gregorian: <%= @item.gregorian_date %> Islamic: <%= @item.islamic_date %>  Jalali: <%= @item.jalali_date %>
+                    <td>
+                    <b>Date Conversions: </b> Absolute: <%= @item.absolute_date %> Gregorian: <%= @item.gregorian_date %> Islamic: <%= @item.islamic_date %>  Jalali: <%= @item.jalali_date %>
+                    </td>
+                    <td>
+                      <b>Date Preview:</b> <%= @item.show_date %>
                     </td>
                 </tr>
                 <tr>
