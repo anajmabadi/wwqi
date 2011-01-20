@@ -268,8 +268,12 @@ class Item < ActiveRecord::Base
     return my_localized_date
   end
   
-  def show_date
+  def show_date(my_locale = I18n.locale)
     date_to_show = ''
+    if my_locale != I18n.locale
+      old_locale = I18n.locale
+      I18n.locale = my_locale
+    end
     if !self.display_date.blank?
       # there is a text override to the date that should be displayed
       date_to_show += display_date
@@ -290,6 +294,8 @@ class Item < ActiveRecord::Base
     if self.editorial_date
       date_to_show = "#{I18n.translate(:editorial_date_prefix)}#{date_to_show}#{I18n.translate(:editorial_date_suffix)}"
     end
+    
+    I18n.locale = old_locale unless old_locale.nil?
     
     return date_to_show
   end
