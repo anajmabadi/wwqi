@@ -252,9 +252,9 @@ class Item < ActiveRecord::Base
     my_localized_date = ''
     
     # check for a sort year and no source year
-    self.year = self.year ||= self.sort_year
-    self.month = self.month ||= self.sort_month
-    self.day = self.day ||= self.sort_day
+    self.year = self.year
+    self.month = self.month
+    self.day = self.day
     
     # run the localized date routines
     unless self.year.nil? || self.year == 0
@@ -270,10 +270,13 @@ class Item < ActiveRecord::Base
   
   def show_date(my_locale = I18n.locale)
     date_to_show = ''
+    
+    # test for a passed in locale, used by admin system for preview
     if my_locale != I18n.locale
       old_locale = I18n.locale
       I18n.locale = my_locale
     end
+    
     if !self.display_date.blank?
       # there is a text override to the date that should be displayed
       date_to_show += display_date
@@ -283,7 +286,7 @@ class Item < ActiveRecord::Base
     elsif self.year == 2050 || self.sort_year == 2050
       # there is a nonsense date entered to indicate the lack of any date and put the item last in sorts
       date_to_show += I18n.translate(:undated) 
-    elsif !self.year.blank? || !self.sort_year.blank?
+    elsif !self.year.blank?
       # one of the numerical date fields has been filled out, so the date set should be calculated from those
       date_to_show += self.localized_source_date
     end
@@ -506,8 +509,8 @@ class Item < ActiveRecord::Base
       unless self.year.blank?
         my_sort_date = self.gregorian_date
         self.sort_year = my_sort_date[2]
-        self.sort_month = my_sort_date[0]
-        self.sort_day = my_sort_date[1]
+        self.sort_month = my_sort_date[0] unless self.month.blank?
+        self.sort_day = my_sort_date[1] unless self.day.blank?
       else
         unless self.era.nil?
           self.sort_year = self.era.year
