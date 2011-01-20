@@ -277,12 +277,12 @@ class Item < ActiveRecord::Base
     if !self.display_date.blank?
       # there is a text override to the date that should be displayed
       date_to_show += display_date
-    elsif self.year == 2050 || self.sort_year == 2050
-      # there is a nonsense date entered to indicate the lack of any date and put the item last in sorts
-      date_to_show += I18n.translate(:undated) 
     elsif !self.era.nil?
       # there is a shorthand editorial era
       date_to_show += self.era.title     
+    elsif self.year == 2050 || self.sort_year == 2050
+      # there is a nonsense date entered to indicate the lack of any date and put the item last in sorts
+      date_to_show += I18n.translate(:undated) 
     elsif !self.year.blank? || !self.sort_year.blank?
       # one of the numerical date fields has been filled out, so the date set should be calculated from those
       date_to_show += self.localized_source_date
