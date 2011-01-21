@@ -120,44 +120,12 @@ class Item < ActiveRecord::Base
     end   
   end
   
-  def gregorian_year_range
-    possible_years = []  
-    self.day = 1  
-    (1..12).each do |month|
-      self.month = month
-      gregorian_year = self.gregorian_date[2]
-      possible_years.push( gregorian_year ) unless possible_years.include?(gregorian_year)
-    end
-    self.day = nil
-    self.month = nil
-    return possible_years 
-  end
-  
-  def localize_year_range_label(year_range=[])
-    return year_range.map { |year| localized_number(year) }.join(" #{I18n.translate(:year_range_separator)} ")
-  end
-  
   def gregorian_date
     begin
       Calendar.gregorian_from_absolute(self.absolute_date)
     rescue StandardError => e
       nil
     end 
-  end
-  
-  def gregorian_date_label
-    my_label = ''  
-    unless self.gregorian_date.nil? || self.gregorian_date.empty? 
-      my_label += localized_number(self.gregorian_date[1]) + " " unless self.day.blank?
-      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 1, true, self.gregorian_date[0]).first.name  + " " unless self.month.blank?
-      if my_label == ''
-        #we have just a year and need to show year range
-        my_label += localize_year_range_label(self.gregorian_year_range) unless self.year.blank?
-      else
-        my_label += localized_number(self.gregorian_date[2]) unless self.year.blank?
-      end
-    end
-    return my_label
   end
   
   def islamic_date
@@ -168,33 +136,6 @@ class Item < ActiveRecord::Base
     end 
   end
   
-  def islamic_date_label
-   my_label = ''  
-   unless self.islamic_date.nil? || self.islamic_date.empty? 
-      my_label += localized_number(self.islamic_date[1]) + " " unless self.day.blank?
-      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 2, true, self.islamic_date[0]).first.name + " " unless self.month.blank?
-      if my_label == ''
-        my_label += localize_year_range_label(self.islamic_year_range)
-      else
-        my_label += localized_number(self.islamic_date[2]) unless self.year.blank?
-      end
-    end
-    return my_label
-  end
-  
-  def islamic_year_range
-    possible_years = []  
-    self.day = 1  
-    (1..12).each do |month|
-      self.month = month
-      islamic_year = self.islamic_date[2]
-      possible_years.push( islamic_year ) unless possible_years.include?(islamic_year)
-    end
-    self.day = nil
-    self.month = nil
-    return possible_years 
-  end
-  
   def jalali_date
     begin
       Calendar.jalaali_from_absolute(self.absolute_date)
@@ -203,46 +144,108 @@ class Item < ActiveRecord::Base
     end 
   end
   
-  def jalali_date_label
-   my_label = ''  
-   unless self.jalali_date.nil? || self.jalali_date.empty? 
-      my_label += localized_number(self.jalali_date[0]) + " " unless self.day.blank?
-      my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', 3, true, self.jalali_date[0]).first.name  + " " unless self.month.blank?
-      if my_label == ''
-        my_label += localize_year_range_label(self.jalali_year_range)
-      else
-        my_label += localized_number(self.jalali_date[2]) unless self.year.blank?
-      end
+  def date_by_calendar_type(input_calendar_type_id=1)
+    return case input_calendar_type_id
+    when 1 then gregorian_date
+    when 2 then islamic_date
+    when 3 then jalali_date
+    else gregorian_date
     end
+  end
+  
+  def date_range(input_calendar_type_id=1)
+    
+    input_date = gregorian_date if input_date.nil?
+    
+    possible_years = []  
+    possible_months = [] 
+    
+    if self.month.blank? || self.month == 0 
+      self.day = 1  
+      (1..12).each do |month|
+        self.month = month
+        possible_year = date_by_calendar_type(input_calendar_type_id)[2]
+        possible_years.push( possible_year ) unless possible_years.include?(possible_year) 
+        
+        Rails.logger.info "------- month: " + month.to_s
+        Rails.logger.info "------- possible_year: " + possible_year.to_s
+        Rails.logger.info "------- possible_years: " + possible_years.join(", ")
+      end
+      self.day = nil
+      self.month = nil
+    else
+      (1..31).each do |day|
+        begin
+          self.day = day
+          possible_month = input_date[0]
+          possible_year = input_date[2]
+          possible_months.push( possible_month ) unless possible_months.include?(possible_month)
+          possible_years.push( possible_year ) unless possible_years.include?(possible_year)
+        rescue => error
+          Rails.logger.info error.message
+        end  
+      end
+      self.day = nil
+    end
+    return {:possible_months => possible_months, :possible_years => possible_years }
+  end
+  
+  def localize_date_range_label(input_date, input_calendar_type_id=1)
+    my_label = ''
+    
+    # get a date range for this input value
+    my_date_range = self.date_range(input_calendar_type_id)
+    
+    Rails.logger.info "--------my_date_range[:possible_months]: " + my_date_range[:possible_months].join(", ")
+    
+    
+    Rails.logger.info "--------my_date_range[:possible_years]: " + my_date_range[:possible_years].join(", ")
+    
+    my_dates = []
+    
+    unless my_date_range[:possible_months].empty?
+      my_date_range[:possible_months].each_with_index do |month, index|
+        my_month = Month.where('calendar_type_id=? AND publish=? AND position = ?', input_calendar_type_id, true, month).first.name unless month.nil?
+        my_year = localized_number(my_date_range[:possible_years][index])
+        my_dates << my_month + " " + my_year
+      end
+    else 
+        my_dates =  my_date_range[:possible_years].map { |year| localized_number(year) } unless my_date_range[:possible_years].nil? || my_date_range[:possible_years].empty?
+    end
+    my_label += my_dates.join(" #{I18n.translate(:year_range_separator)} ")
+    
     return my_label
   end
   
-  def jalali_year_range
-    possible_years = []  
-    self.day = 1  
-    (1..12).each do |month|
-      self.month = month
-      jalali_year = self.jalali_date[2]
-      possible_years.push( jalali_year ) unless possible_years.include?(jalali_year)
+  def date_label(input_date, input_calendar_type_id=1)
+    
+    my_label = ''  
+    
+    unless input_date.nil? || input_date.empty? 
+      
+      # we have a full date      
+      unless self.day.blank? || self.month.blank?
+        my_label += localized_number(input_date[1]) + " " unless self.day.blank?
+        my_label += Month.where('calendar_type_id=? AND publish=? AND position = ?', input_calendar_type_id, true, input_date[0]).first.name  + " " unless self.month.blank?
+      else
+        # we have a partial date  
+        my_label += self.localize_date_range_label(input_date, input_calendar_type_id) unless self.year.blank?
+      end
+      
     end
-    self.day = nil
-    self.month = nil
-    return possible_years 
+    
+    return my_label
   end
   
   # a function that shows the correct date system pre and post 4.1.1925
   def persian_date_label
     my_label = ''
     
-    # pick jalali or islamic based on year
-    greg = self.gregorian_date
-    Rails.logger.info "-----my greg date: " + greg.join(", ")
-    date = Date.new(greg[2],greg[0],greg[1])
-    
-    if date < Date.new(1925,4,1)
-      my_label = self.islamic_date_label + " " + I18n.translate(:calendar_abbreviation_islamic)
+    # use the source date calendar type to pick sort date, defaulting to Jalali is gregorian
+    if self.calendar_type_id == 2
+      my_label = self.date_label(self.islamic_date,2) + " " + I18n.translate(:calendar_abbreviation_islamic)
     else
-      my_label = self.jalali_date_label + " " + I18n.translate(:calendar_abbreviation_persian)
+      my_label = self.date_label(self.jalali_date,3) + " " + I18n.translate(:calendar_abbreviation_persian)
     end
     
     return my_label
@@ -251,20 +254,16 @@ class Item < ActiveRecord::Base
   def localized_source_date 
     my_localized_date = ''
     
-    # check for a sort year and no source year
-    self.year = self.year
-    self.month = self.month
-    self.day = self.day
-    
     # run the localized date routines
     unless self.year.nil? || self.year == 0
       my_localized_date = case I18n.locale
-        when :fa then "#{self.persian_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.gregorian_date_label}#{I18n.translate(:secondary_date_suffix)}"
-        else "#{self.gregorian_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.persian_date_label}#{I18n.translate(:secondary_date_suffix)}"
+        when :fa then "#{self.persian_date_label} #{I18n.translate(:secondary_date_prefix)}#{self.date_label(self.gregorian_date,1)}#{I18n.translate(:secondary_date_suffix)}"
+        else "#{self.date_label(self.gregorian_date,1)} #{I18n.translate(:secondary_date_prefix)}#{self.persian_date_label}#{I18n.translate(:secondary_date_suffix)}"
       end
     else 
-        flash[:error] = "An invalid sort date has been detected."
+        flash[:error] = "An invalid source date has been detected."
     end
+    
     return my_localized_date
   end
   
