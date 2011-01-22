@@ -33,7 +33,7 @@ class Admin::ItemsController < Admin::AdminController
     @collections = Collection.select_list
     @periods = Period.select_list
     @genres = Subject.genres.where(['subject_translations.locale=?', :en.to_s]).order('subject_translations.name')
-
+    
     @page = params[:page] || 1
     @per_page = params[:per_page] || Item.per_page || 100
 
@@ -144,6 +144,8 @@ class Admin::ItemsController < Admin::AdminController
   # GET /items/new.xml
   def new
     @item = Item.new
+    
+    @months = Month.where(['publish=?', true]).order('position, calendar_type_id')
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @item }
@@ -152,6 +154,8 @@ class Admin::ItemsController < Admin::AdminController
 
   # GET /items/1/edit
   def edit
+    
+    @months = Month.where(['publish=?', true]).order('position, calendar_type_id')
   end
 
   # POST /items
@@ -160,6 +164,8 @@ class Admin::ItemsController < Admin::AdminController
     @item = Item.new(params[:item])
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     @items = load_items(@item)
+    
+    @months = Month.where(['publish=?', true]).order('position, calendar_type_id')
     respond_to do |format|
       if @item.save
         format.html { redirect_to(admin_item_url(@item), :notice => 'Item was successfully created.') }
@@ -176,6 +182,8 @@ class Admin::ItemsController < Admin::AdminController
   def update
     @item.subjects = Subject.find(params[:subject_ids]) if params[:subject_ids]
     @items = load_items(@item)
+    
+    @months = Month.where(['publish=?', true]).order('position, calendar_type_id')
     begin
 
     # manually check for a lock version
