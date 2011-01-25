@@ -3,10 +3,9 @@ class ArchiveController < ApplicationController
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def index
-    @major_genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.major=?", true, 8, I18n.locale.to_s, true]).limit(8).order('subject_translations.name')
-    @minor_genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.major=?", true, 8, I18n.locale.to_s, false]).order('subject_translations.name')
+    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.major=?", true, 8, I18n.locale.to_s, true]).limit(8).order('subject_translations.name')
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
-    @random_collection_set = Collection.random_set
+    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
     @recently_viewed_items = Item.recently_viewed(8)
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable

@@ -1,18 +1,22 @@
 <h3 class="active"><%= link_to t(:genres), archive_genres_path %></h3>
 <div class="list" style="display:block">
     <ul class="default">
-        <% @major_genres.each do |genre| -%>
+        <% @genres.each_with_index do |genre, index| -%>
+        <% if genre.major  && index < 8 -%>
         <li>
             <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
         </li>
+        <% end -%>
         <% end -%>
     </ul>
     <ul class="more">
-        <% @minor_genres.each do |genre| -%>
+        <% @genres.each do |genre| -%>
+        <% unless genre.major %>
         <li>
             <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
         </li>
         <% end -%>
-    </ul>
+        <% end -%>
+     </ul>
     <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>
 </div>

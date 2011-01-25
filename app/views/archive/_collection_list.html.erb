@@ -1,42 +1,22 @@
 <h3><%= link_to t(:collections).capitalize, archive_collections_path %></h3>
-<div class="list" style="display:block">
+<div class="list">
     <ul class="default">
-        <% @major_collections.each do |genre| -%>
-        <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
-        </li>
+        <% @collections.each_with_index do |collection, index| -%>
+          <% if collection.major && index < 3 -%>
+          <li>
+              <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= collection.items.count %>)</span>
+          </li>
+          <% end -%>
         <% end -%>
     </ul>
     <ul class="more">
-        <% @minor_genres.each do |genre| -%>
-        <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
-        </li>
+        <% @collections.each do |collection| -%>
+          <% unless collection.major %>
+          <li>
+              <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= collection.items.count %>)</span>
+          </li>
+          <% end -%>
         <% end -%>
     </ul>
-    <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>
+    <%= link_to t(:see_more), archive_collections_path, :class => "moreLink" %>
 </div>
-
-
-    <div class="list">
-        <ul>
-            <li>
-                <a href="#">Taj al-Muluk Tajbakhsh Zama...</a> <span>(13)</span>
-            </li>
-            <li>
-                <a href="#">Kamran Dowlatshahi Collection</a> <span>(8)</span>
-            </li>
-            <li>
-                <a href="#">Dawlatabadi Collection </a>  <span>(18)</span>
-            </li>
-        </ul>
-        <ul class="more">
-            <li>
-                <a href="/archive/genres">Another Collection</a> <span>(18)</span>
-            </li>
-            <li>
-                <a href="/archive/people">One more Collection</a> <span>(18)</span>
-            </li>
-        </ul>
-        <a class="moreLink" href="/#">see more</a>
-    </div>
