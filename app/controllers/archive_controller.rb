@@ -3,7 +3,8 @@ class ArchiveController < ApplicationController
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def index
-    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
+    @major_genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.major=?", true, 8, I18n.locale.to_s, true]).limit(8).order('subject_translations.name')
+    @minor_genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.major=?", true, 8, I18n.locale.to_s, false]).order('subject_translations.name')
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
     @random_collection_set = Collection.random_set
     @recently_viewed_items = Item.recently_viewed(8)

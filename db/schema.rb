@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110118205111) do
+ActiveRecord::Schema.define(:version => 20110125165739) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -284,9 +284,11 @@ ActiveRecord::Schema.define(:version => 20110118205111) do
     t.string   "processed_by"
     t.text     "acquisition_notes"
     t.date     "last_edited"
+    t.boolean  "major",             :default => false
   end
 
   add_index "collections", ["last_edited"], :name => "index_collections_on_last_edited"
+  add_index "collections", ["major"], :name => "index_collections_on_major"
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
 
   create_table "comments", :force => true do |t|
@@ -438,6 +440,7 @@ ActiveRecord::Schema.define(:version => 20110118205111) do
   add_index "item_translations", ["item_id", "locale"], :name => "in_item_translations_unique", :unique => true
   add_index "item_translations", ["item_id"], :name => "index_item_translations_on_item_id"
   add_index "item_translations", ["locale"], :name => "in_item_translations_locale"
+  add_index "item_translations", ["owner_tag"], :name => "in_item_translations_owner_tag"
   add_index "item_translations", ["title"], :name => "title"
 
   create_table "items", :force => true do |t|
@@ -667,10 +670,12 @@ ActiveRecord::Schema.define(:version => 20110118205111) do
     t.datetime "updated_at"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version", :default => 0,     :null => false
+    t.boolean  "major",        :default => false
   end
 
   add_index "periods", ["end_at"], :name => "index_periods_end_at"
+  add_index "periods", ["major"], :name => "index_periods_on_major"
   add_index "periods", ["position"], :name => "index_periods_on_position"
   add_index "periods", ["publish"], :name => "index_periods_on_publish"
   add_index "periods", ["start_at"], :name => "index_periods_start_at"
@@ -713,9 +718,11 @@ ActiveRecord::Schema.define(:version => 20110118205111) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0, :null => false
+    t.integer  "lock_version", :default => 0,     :null => false
+    t.boolean  "major",        :default => false
   end
 
+  add_index "places", ["major"], :name => "index_places_on_major"
   add_index "places", ["publish"], :name => "index_places_on_publish"
 
   create_table "plot_translations", :force => true do |t|

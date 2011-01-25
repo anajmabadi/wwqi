@@ -2,134 +2,178 @@
 <% @page_title = t(:archive).capitalize -%>
 
 <% content_for :head do %>
-  <%= render 'head_index_content' %>
+<%= render 'head_index_content' %>
 <% end %>
 
-<div id="browseByGenre" style="height:auto">
+<div id="browseBar" style="height:auto">
     <div id="head">
-        <h2><%= t(:genres) %></h2>
+        <%= link_to t(:see_all_items), archive_browser_path, :class => "blackButton right" %><h2><%= t(:browse).capitalize %></h2>
     </div>
-    <ul>
-        <% unless @genres.empty? %>
-        <% @genres.each do |subject| -%>
-        <li>
-            <%= link_to subject.name, archive_browser_path('subject_filter[]' => subject.id) %>
-        </li>
-        <% end -%>
-        <% end -%>
-    </ul>
-</div><!-- end browseByGenre -->
+    
+    <%= render "genre_list" %>
+    
+    <%= render "collection_list" %>
+    
+    <h3><a href="#">People</a></h3>
+    <div class="list">
+        <ul>
+            <li>
+                <a href="#">Item 1</a> <span>(13)</span>
+            </li>
+            <li>
+                <a href="#">Item 2</a> <span>(8)</span>
+            </li>
+            <li>
+                <a href="#">Item 3 </a>  <span>(18)</span>
+            </li>
+        </ul>
+        <ul class="more">
+            <li>
+                <a href="#">Item 4</a> <span>(18)</span>
+            </li>
+            <li>
+                <a href="#">Item 5</a> <span>(18)</span>
+            </li>
+        </ul>
+        <a class="moreLink" href="/#">see more</a>
+    </div>
+    <h3><a href="#">Places</a></h3>
+    <div class="list">
+        <ul>
+            <li>
+                <a href="#">Item 1</a> <span>(13)</span>
+            </li>
+            <li>
+                <a href="#">Item 2</a> <span>(8)</span>
+            </li>
+            <li>
+                <a href="#">Item 3 </a>  <span>(18)</span>
+            </li>
+        </ul>
+        <ul class="more">
+            <li>
+                <a href="#">Item 4</a> <span>(18)</span>
+            </li>
+            <li>
+                <a href="#">Item 5</a> <span>(18)</span>
+            </li>
+        </ul>
+        <a class="moreLink" href="/#">see more</a>
+    </div>
+    <h3><a href="#">Subjects</a></h3>
+    <div class="list">
+        <ul>
+            <li>
+                <a href="#">Item 1</a> <span>(13)</span>
+            </li>
+            <li>
+                <a href="#">Item 2</a> <span>(8)</span>
+            </li>
+            <li>
+                <a href="#">Item 3 </a>  <span>(18)</span>
+            </li>
+        </ul>
+        <ul class="more">
+            <li>
+                <a href="#">Item 4</a> <span>(18)</span>
+            </li>
+            <li>
+                <a href="#">Item 5</a> <span>(18)</span>
+            </li>
+        </ul>
+        <a class="moreLink" href="/#">see more</a>
+    </div>
+    <h3 class="last"><a href="#">Time Periods</a></h3>
+    <div class="list">
+        <ul>
+            <li>
+                <a href="#">Item 1</a> <span>(13)</span>
+            </li>
+            <li>
+                <a href="#">Item 2</a> <span>(8)</span>
+            </li>
+            <li>
+                <a href="#">Item 3 </a>  <span>(18)</span>
+            </li>
+        </ul>
+        <ul class="more">
+            <li>
+                <a href="#">Item 4</a> <span>(18)</span>
+            </li>
+            <li>
+                <a href="#">Item 5</a> <span>(18)</span>
+            </li>
+        </ul>
+        <a class="moreLink" href="/#">see more</a>
+    </div>
+</div><!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
-    <div id="browseByCollection">
-        <div id="head">
-            <h2><%= t(:collections).capitalize %></h2>
+    <div id="archive_search_wrapper">
+        <span class="right"><a href="#">Advanced Search</a></span>
+        <h2> Search</h2>
+        <div class="clearfix" id="simple_search">
+            <form method="get" class="searchform" action="/archive/browser">
+                <input type="text" value="Enter a keyword" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+                onfocus="if(this.value=='Enter a keyword'){this.value='';this.style.color = '#000';}"
+                onblur="if(this.value==''){this.value='Enter a keyword';this.style.color = '#aaa';}" />
+                <button type="submit" id="search">
+                </button>
+            </form>
         </div>
-        <%= link_to t(:see_all_collections), archive_collections_path, { :class => "allCollections", :enabled => false } %>
-        <div class="featuredCollection clearfix">
-            <div class="collectionContainerWrapper">
-                <div class="collectionContainer clearfix">
-                    <% @random_collection_set.each do |collection| -%>
-                    <div class="collection clearfix">
-                        <a href="#">
-                        <img alt="<%= collection.items[0].title %>" src="<%= collection.items[0].thumbnail_url %>"/></a>
-                        <ul>
-                            <li class="title">
-                                <strong><%= link_to truncate(collection.name, :length => 30), archive_browser_path(:collection_filter => collection) %></strong>
-                            </li>
-                            <li class="count">
-                                &raquo; <%= link_to( (collection.item_count_string + ' ' + t(:items) if collection), archive_browser_path(:collection_filter => collection)) %>
-                            </li>
-                        </ul>
-                    </div>
-                    <% end -%>
-                </div>
-            </div>
-        </div>
-    </div><!-- end browseByCollection -->
-    <div id="archiveThirdColumnWrapper">
-        <div id="browseByIndex">
-            <div id="head">
-                <h2><%= t(:indexes).capitalize %></h2>
-            </div>
-            <ul>
-                <li>
-                    <%= link_to t(:genres_index), archive_genres_path %>
-                </li>
-                <li>
-                    <%= link_to t(:people_index), archive_people_path %>
-                </li>
-                <li>
-                    <%= link_to t(:subject_index), archive_subjects_path %>
-                </li>
-                <li>
-                    <%= link_to t(:place_index), archive_places_path %>
-                </li>
-            </ul>
-        </div>
-        <div id="quickPeek">
-            <div id="head">
-                <h2><%= t(:quick_peek).capitalize %></h2>
-            </div>
-            <ul>
-                <li>
-                    <%= link_to t(:my_archive) + " (#{@my_archive_ids.size.to_s})", archive_browser_path(:my_archive => true) %>
-                </li>
-                <li>
-                    <%= link_to(raw(t(:recent_additions)), :action => :browser, :recent_additions_filter => true) %>
-                </li>
-                <li>
-                    <%= link_to(raw(t(:most_popular_items)), :action => :browser, :most_popular_filter => true) %>
-                </li>
-                <li>
-                    <%= link_to(raw(t(:collection_highlights)), :action => :browser, :staff_favorites_filter => true) %>
-                </li>
-            </ul>
-        </div>
+        <span class="examples"> Examples: "dowry", or "legal AND marriage" </span>
     </div>
-    <div id="keywordSearch">
-        <div id="archive_search_wrapper">
-            <div class="clearfix" id="simple_search">
-                <form method="get" class="searchform" action="/archive/browser">
-                    <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-                    onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
-                    onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-                    <button type="submit" id="search">
-                    </button>
-                </form>
+    <div id="archive_index_wrapper">
+        <h2> Indices</h2>
+        <ul>
+            <li>
+                <a href="#">Genre</a>
+            </li>
+            <li>
+                <a href="#">People</a>
+            </li>
+            <li>
+                <a href="#">Place</a>
+            </li>
+            <li>
+                <a href="#">Subject</a>
+            </li>
+        </ul>
+    </div>
+    <div id="archive_welcome">
+        <h2>Popular Searches</h2>
+        <div id="highlightedLinks">
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_manuscript.png" /><span> Manuscripts and Lithos </span></a>
             </div>
-        </div>
-        <div class="content clearfix" style="background-color:#c41230">
-            <%= link_to raw(t(:browse_the_archive)), :action => 'browser' %>
-        </div>
-        <div class="content clearfix">
-            <%= link_to raw(t(:advanced_search)), archive_advanced_search_path %>
-        </div>
-        <div class="content clearfix" id="recentlyViewed">
-            <h4><%= t(:recently_viewed_items) %></h4>
-            <div class="items">
-                <% @recently_viewed_items.each do |item| -%>
-                <div class="item">
-                    <%= link_to( image_tag(item.thumbnail_url, :alt => item.title ), archive_detail_path(:id => item.id), :title => item.title ) %>
-                </div>
-                <% end %>
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_objects.png" /><span> Objects </span></a>
+            </div>
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_legal.png" /><span>  Legal and Financial </span></a>
+            </div>
+            <div class="thumb right-0">
+                <a href="#">
+                <img src="../images/thumb_photos.png" /><span> Images </span></a>
+            </div>
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_letters.png" /><span> Letters </span></a>
+            </div>
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_oral_history.png" /><span> Sound Recordings </span></a>
+            </div>
+            <div class="thumb">
+                <a href="#">
+                <img src="../images/thumb_translations.png" /><span> Translations </span></a>
+            </div>
+            <div class="thumb right-0">
+                <a href="#">
+                <img src="../images/thumb_recent.png" /><span> Recent Additions </span></a>
             </div>
         </div>
     </div>
-</div>
-<div id="browseByPeriod">
-    <div id="head">
-        <h2><%= t(:time_periods).capitalize %></h2>
-    </div>
-    <div id="timeLine">
-        <%= link_to(@periods[0].caption, archive_browser_path(:period_filter => @periods[0].id), :title => @periods[0].title + ' (' + @periods[0].items.size.to_s + ')', :class => "first") %>
-        <%= link_to(raw("<span>#{@periods[1].caption}</span>"), archive_browser_path(:period_filter => @periods[1].id), :title => @periods[1].title + ' (' + @periods[1].items.size.to_s + ')', :class => "second") %>
-        <%= link_to(@periods[2].caption, archive_browser_path(:period_filter => @periods[2].id), :title => @periods[2].title + ' (' + @periods[2].items.size.to_s + ')', :class => "third") %>
-        <%= link_to(raw("<span>#{@periods[3].caption}</span>"), archive_browser_path(:period_filter => @periods[3].id), :title => @periods[3].title + ' (' + @periods[3].items.size.to_s + ')', :class => "fourth") %>
-        <%= link_to(@periods[4].caption, archive_browser_path(:period_filter => @periods[4].id), :title => @periods[4].title + ' (' + @periods[4].items.size.to_s + ')', :class => "fifth") %>
-        <%= link_to(@periods[5].caption, archive_browser_path(:period_filter => @periods[5].id), :title => @periods[5].title + ' (' + @periods[5].items.size.to_s + ')', :class => "sixth") %>
-        <%= link_to(raw("<span  style='left:-50px'>#{@periods[6].caption}</span>"), archive_browser_path(:period_filter => @periods[6].id), :title => @periods[6].title + ' (' + @periods[6].items.size.to_s + ')', :class => "seventh") %>
-        <%= link_to(@periods[7].caption, archive_browser_path(:period_filter => @periods[7].id), :title => @periods[7].title + ' (' + @periods[7].items.size.to_s + ')', :class => "eighth") %>
-        <%= link_to(@periods[8].caption, archive_browser_path(:period_filter => @periods[8].id), :title => @periods[8].title + ' (' + @periods[8].items.size.to_s + ')', :class => "ninth") %>
-    </div>
-</div>
 </div>
