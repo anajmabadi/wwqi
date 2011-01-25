@@ -1,0 +1,30 @@
+<!-- a generic text page -->
+<script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
+<script language="javascript" type="application/javascript">
+    $(document).ready( function() {
+
+        $(".types li a").click( function() {
+            $(this).parent().siblings().removeClass("active").find("a").removeClass("active");
+            $(this).parent().addClass("active");
+
+            return false;
+        });
+
+        $('a[title]').qtip({
+            style: {
+                name: 'dark',
+                tip: true,
+                border: {
+                    radius: 8
+                }
+            },
+            position: {
+                corner: {
+                    target: 'topMiddle',
+                    tooltip: 'bottomMiddle'
+                }
+            }
+        });
+
+    });
+</script>

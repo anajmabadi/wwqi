@@ -9,57 +9,6 @@ module ArchiveHelper
     return style
   end
   
-  def index_header_content
-    return %{
-      <script src="javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script> 
-      <script type="text/javascript" src="javascripts/facebox.js"></script>
-
-    	<script language="javascript" type="application/javascript">
-    	$(document).ready(function(){
-
-    		$('a[title]').qtip({ 
-    						   	   style: { 
-    							   name: 'dark', 
-    							   tip: true,
-    							    border: {
-    										 radius: 8
-    									  }
-    								}, 
-    							   position: {
-    								  corner: {
-    									 target: 'bottomMiddle',
-    									 tooltip: 'topMiddle'
-    								  }
-    						   		} 
-    		}); 
-    		
-    		$("#mediaTypes .column").hover(function(){
-
-            $(this).addClass("hover");
-            $('ul',this).css('visibility', 'visible');
-
-    		}, function(){
-
-    			$(this).removeClass("hover");
-    			$('ul',this).css('visibility', 'hidden');
-
-    		});
-
-    		$(".featuredCollection a.next").click(function(){
-    			$(".collectionContainerWrapper").animate({"scrollLeft":"+="+261 +"px"},200);
-    			return false;
-    		});
-    		$(".featuredCollection a.prev").click(function(){
-    			$(".collectionContainerWrapper").animate({"scrollLeft":"-=" + 261 +"px"},200);
-    			return false;
-    		});
-
-
-    	});
-    	</script>
-    }
-  end
-  
   def browser_header_content
     return %{
     <link href="/stylesheets/dd#{language_suffix}.css" media="screen" rel="stylesheet" type="text/css" />

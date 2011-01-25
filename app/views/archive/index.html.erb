@@ -1,6 +1,9 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-<% @extra_head_content = index_header_content -%>
+
+<% content_for :head do %>
+  <%= render 'head_index_content' %>
+<% end %>
 
 <div id="browseByGenre" style="height:auto">
     <div id="head">
