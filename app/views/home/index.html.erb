@@ -1,9 +1,10 @@
 <% @page_description = t(:home_description) -%>
 <% @page_title = t(:home).capitalize -%>
-<% @extra_head_content = capture do %>
-  <script type="text/javascript" src="/javascripts/jquery.cycle.all.2.72.js"></script>
-  <%= raw which_script? -%>
-<% end -%>
+
+
+<% content_for :head do %>
+  <%= render 'head_index_content' %>
+<% end %>
   
 <!--<div id="universalSearch">
 	<form action="/archive/browser" class="searchform" method="get">
