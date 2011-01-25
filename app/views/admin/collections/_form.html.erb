@@ -213,9 +213,9 @@
         </tr>
         <tr>
             <td>
-            <%= f.label :last_edited %>
+            <%= f.label :major %>
             <br />
-            <%= f.date_select  :last_edited, :start_year => 2010, :include_blank => true %>
+            <%= f.check_box :major %>
             </td>
             <td>
             <%= f.label :publish %>
@@ -236,7 +236,12 @@
             </td>
         </tr>
         <tr>
-            <td colspan="2">
+            <td>
+            <%= f.label :last_edited %>
+            <br />
+            <%= f.date_select  :last_edited, :start_year => 2010, :include_blank => true %>
+            </td>
+            <td>
             <%= f.label :notes %>
             <br />
             <%= f.text_area :notes, :rows => @default_rows %>

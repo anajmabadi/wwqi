@@ -1,21 +1,17 @@
 <h3><%= link_to t(:collections).capitalize, archive_collections_path %></h3>
 <div class="list">
     <ul class="default">
-        <% @collections.each_with_index do |collection, index| -%>
-          <% if collection.major && index < 3 -%>
-          <li>
-              <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= collection.items.count %>)</span>
-          </li>
-          <% end -%>
+        <% @collections.where("major=?",true).limit(3).each do |collection| -%>
+        <li>
+            <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= localized_number(collection.items.count) %>)</span>
+        </li>
         <% end -%>
     </ul>
     <ul class="more">
-        <% @collections.each do |collection| -%>
-          <% unless collection.major %>
-          <li>
-              <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= collection.items.count %>)</span>
-          </li>
-          <% end -%>
+        <% @collections.where("major=?",false).limit(10).each do |collection| -%>
+        <li>
+            <%= link_to truncate(collection.name, :length => 26), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= localized_number(collection.items.count) %>)</span>
+        </li>
         <% end -%>
     </ul>
     <%= link_to t(:see_more), archive_collections_path, :class => "moreLink" %>

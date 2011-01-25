@@ -9,103 +9,18 @@
     <div id="head">
         <%= link_to t(:see_all_items), archive_browser_path, :class => "blackButton right" %><h2><%= t(:browse).capitalize %></h2>
     </div>
-    
     <%= render "genre_list" %>
-    
+
     <%= render "collection_list" %>
-    
-    <h3><a href="#">People</a></h3>
-    <div class="list">
-        <ul>
-            <li>
-                <a href="#">Item 1</a> <span>(13)</span>
-            </li>
-            <li>
-                <a href="#">Item 2</a> <span>(8)</span>
-            </li>
-            <li>
-                <a href="#">Item 3 </a>  <span>(18)</span>
-            </li>
-        </ul>
-        <ul class="more">
-            <li>
-                <a href="#">Item 4</a> <span>(18)</span>
-            </li>
-            <li>
-                <a href="#">Item 5</a> <span>(18)</span>
-            </li>
-        </ul>
-        <a class="moreLink" href="/#">see more</a>
-    </div>
-    <h3><a href="#">Places</a></h3>
-    <div class="list">
-        <ul>
-            <li>
-                <a href="#">Item 1</a> <span>(13)</span>
-            </li>
-            <li>
-                <a href="#">Item 2</a> <span>(8)</span>
-            </li>
-            <li>
-                <a href="#">Item 3 </a>  <span>(18)</span>
-            </li>
-        </ul>
-        <ul class="more">
-            <li>
-                <a href="#">Item 4</a> <span>(18)</span>
-            </li>
-            <li>
-                <a href="#">Item 5</a> <span>(18)</span>
-            </li>
-        </ul>
-        <a class="moreLink" href="/#">see more</a>
-    </div>
-    <h3><a href="#">Subjects</a></h3>
-    <div class="list">
-        <ul>
-            <li>
-                <a href="#">Item 1</a> <span>(13)</span>
-            </li>
-            <li>
-                <a href="#">Item 2</a> <span>(8)</span>
-            </li>
-            <li>
-                <a href="#">Item 3 </a>  <span>(18)</span>
-            </li>
-        </ul>
-        <ul class="more">
-            <li>
-                <a href="#">Item 4</a> <span>(18)</span>
-            </li>
-            <li>
-                <a href="#">Item 5</a> <span>(18)</span>
-            </li>
-        </ul>
-        <a class="moreLink" href="/#">see more</a>
-    </div>
-    <h3 class="last"><a href="#">Time Periods</a></h3>
-    <div class="list">
-        <ul>
-            <li>
-                <a href="#">Item 1</a> <span>(13)</span>
-            </li>
-            <li>
-                <a href="#">Item 2</a> <span>(8)</span>
-            </li>
-            <li>
-                <a href="#">Item 3 </a>  <span>(18)</span>
-            </li>
-        </ul>
-        <ul class="more">
-            <li>
-                <a href="#">Item 4</a> <span>(18)</span>
-            </li>
-            <li>
-                <a href="#">Item 5</a> <span>(18)</span>
-            </li>
-        </ul>
-        <a class="moreLink" href="/#">see more</a>
-    </div>
+
+    <%= render "person_list" %>
+
+    <%= render "place_list" %>
+
+    <%= render "subject_list" %>
+
+    <%= render "period_list" %>
+
 </div><!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
     <div id="archive_search_wrapper">

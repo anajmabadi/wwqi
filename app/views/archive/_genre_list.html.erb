@@ -1,21 +1,17 @@
 <h3 class="active"><%= link_to t(:genres), archive_genres_path %></h3>
 <div class="list" style="display:block">
     <ul class="default">
-        <% @genres.each_with_index do |genre, index| -%>
-        <% if genre.major  && index < 8 -%>
+        <% @genres.where('subjects.major=?',true).limit(8).each do |genre| -%>
         <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
+            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
     </ul>
     <ul class="more">
-        <% @genres.each do |genre| -%>
-        <% unless genre.major %>
+        <% @genres.where('subjects.major=?',false).each do |genre| -%>
         <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= genre.items.count %>)</span>
+            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
      </ul>
     <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>

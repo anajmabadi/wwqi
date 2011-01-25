@@ -1,0 +1,10 @@
+<h3 class="last"><%= link_to t(:periods).capitalize, nil %></h3>
+<div class="list">
+    <ul class="default">
+        <% @periods.each do |period| -%>
+        <li>
+            <%= link_to truncate(period.title, :length => 26), archive_browser_path(:period_filter=>period.id) %>  <span>(<%= localized_number(period.items.count) %>)</span>
+        </li>
+        <% end -%>
+    </ul>
+</div>

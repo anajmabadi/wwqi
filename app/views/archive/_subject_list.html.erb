@@ -1,0 +1,18 @@
+<h3><%= link_to t(:subjects).capitalize, archive_subjects_path %></h3>
+<div class="list">
+    <ul class="default">
+        <% @subjects.where("major=?",true).limit(3).each do |subject| -%>
+        <li>
+            <%= link_to truncate(subject.name, :length => 26), archive_browser_path(:subject_filter=>subject.id) %>  <span>(<%= localized_number(subject.items.count) %>)</span>
+        </li>
+        <% end -%>
+    </ul>
+    <ul class="more">
+        <% @subjects.where("major=?",false).limit(10).each do |subject| -%>
+        <li>
+            <%= link_to truncate(subject.name, :length => 26), archive_browser_path(:subject_filter=>subject.id) %>  <span>(<%= localized_number(subject.items.count) %>)</span>
+        </li>
+        <% end -%>
+    </ul>
+    <%= link_to t(:see_more), archive_subjects_path, :class => "moreLink" %>
+</div>
