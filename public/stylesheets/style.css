@@ -146,6 +146,12 @@ dd          { margin-left: 1.5em;}
 	position:relative;
 }
 
+.wide .container{
+	width:980px;
+	margin:0 auto;
+	position:relative;
+}
+
 #content{
     padding-bottom:50px;
 }
@@ -343,14 +349,14 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #browser #head .types,
 #browser #head .itemTools{float:left}
-#browser #head .sort{float:left; width:300px;}
+#browser #head .sort{float:left; width:300px}
+
+
+
+
+#browser #head .itemTools .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
 #browser #head .itemTools .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
 
-#browser #head .itemToolsRight{float:right; margin-right: 10px;}
-#browser #head .itemToolsRight .share{padding-left:15px; background:url(/images/share_icon.gif) 0 5px no-repeat}
-#browser #head .itemToolsRight .link{padding-left:15px; background:url(/images/link_icon.gif) 0 5px no-repeat}
-
-#browser #head .add_this_tools{float:right; overflow:auto; width:230px;}
 
 #browser #browserContent{
 	background:#fff;
@@ -1125,6 +1131,54 @@ div.slideshow ul li a.title{
     left:0;
 }
 
+/* rails errors */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+div.field {
+    color:grey;
+    font-weight: bold;
+}
+.notice {
+    color: green;
+}
+
+.fieldWithErrors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#errorExplanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#errorExplanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#errorExplanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
 
 
 .beta{
@@ -1886,75 +1940,293 @@ div.slideshow ul li a.title{
 	background:url(../images/bullet.gif) 0 5px no-repeat;
 }
 
-/* rails errors */
 
-div.field, div.actions {
-  margin-bottom: 10px;
-}
-div.field {
-    color:grey;
-    font-weight: bold;
-}
-.notice {
-    color: green;
-}
 
-.field_with_errors {
-    padding: 2px;
-    background-color: red;
-    display: table;
-}
 
-#error_explanation {
-    width: 400px;
-    border: 2px solid red;
-    padding: 7px;
-    padding-bottom: 12px;
-    margin-bottom: 20px;
-    background-color: #f0f0f0;
-}
 
-#error_explanation h2 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px;
-    background-color: #c00;
-    color: #fff;
+
+
+
+
+
+
+
+
+
+
+/*  browser side-bar
+-------------------------------------------------------------- */
+
+
+#browseBar{
+	background:#efefef;
+	float:left;
+	margin-right:10px;
+	padding:10px;
+	width:210px;
+	-webkit-box-shadow: #000 0px 0px 3px;
+	-moz-box-shadow: #000 0px 0px 3px;
+	box-shadow: #000 0px 0px 3px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#333;
 }
 
-#error_explanation p {
-    color: #333;
-    margin-bottom: 0;
-    padding: 5px;
+#browseBar h2{
+	border-bottom: 1px dotted #CECECE;
+	color: #444;
+	font-weight: bold;
+	margin:0;
+	padding-bottom: 10px;
+	text-shadow: white 1px 1px 0px;
+	font-size:18px;
+	
 }
 
-#error_explanation ul li {
-    font-size: 12px;
-    list-style: square;
+#browseBar h3{
+	padding:8px 5px 8px 15px;
+	margin:0;
+	border-bottom:1px solid #ccc;
+	border-top:1px solid #fff;
+	background: url("../images/arrow_collapsed.png") 0 12px no-repeat;
+	font-weight:bold;
+}
+#browseBar h3.last{
+	border-bottom:none;
 }
 
-/********  Notifications   ********/
-
-#notification_block {
-  padding: 5px;
+#browseBar h3.active{
+	background:  url("../images/arrow_expanded.png") 0 12px no-repeat;
+	border-bottom:none;
 }
 
-#notification_block .error {
-  color: red;
-  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  text-align: center;
-  background-color: #EEEEEE;
-  padding: 10px;
-  margin: 5px 80px 5px 80px;
+#browseBar h3 a{
+	font-size:14px;
+	color:#CA3723
 }
 
-#notification_block .notice {
-  color: green;
-  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
-  text-align: center;
-  background-color: #EEEEEE;
-  padding: 10px;
-  margin: 5px 80px 5px 80px;
+#browseBar .list{
+	background:#fff;
+	margin:0;
+	padding:0;
+	-moz-border-radius:5px 5px 0 0;
+	-webkit-border-radius:5px 5px 0 0;
+	border-radius:5px 5px 0 0;
+	display:none;
+}
+
+#browseBar .list a{
+	color:#333;
+}
+
+#browseBar .list a:hover{
+	color:#CA3723
+}
+
+#browseBar .list li{
+	padding:0 0 0 10px;
+	font-size:12px;
+	margin:0;
+	background:url(../images/bullet.gif) 0 10px no-repeat;
+	margin: 0 0 0 10px;
+}
+
+#browseBar .list li span{
+	font-size:10px;
+	color:#999;
+}
+
+#browseBar a.moreLink{
+	color:#CA3723;
+	padding-left:18px;
+	background:url(../images/arrow_red_bottom.png) 10px 8px no-repeat;
+	margin:0;
+	display:block;
+
+}
+
+#browseBar a.moreLink.less{
+	color:#CA3723;
+	padding-left:18px;
+	background:#ccc url(../images/arrow_red_top.png) 10px 8px no-repeat;
+	margin:0;
+	display:block;
+	
+}
+
+#browseBar ul.more{
+	display:none;
+}
+
+
+
+/* archive landing keyword search style
+-------------------------------------------------------------- */
+
+
+
+#archive_search_wrapper{
+	
+	width:520px;
+    overflow:hidden;
+	height:85px;
+	margin-left:0px;
+	background:#222;
+	padding:10px;
+	margin-bottom:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+ #archive_search_wrapper #simple_search{
+	width:100%;
+	float:none
+}
+
+#archive_search_wrapper span.examples{
+	margin-top:5px;
+	display:block;
+	clear:left;
+	color:#888;
+}
+
+#archive_search_wrapper #simple_search input{
+	width:90%;
+}
+
+.archiveBigWrapper{
+	float:left;
+	width:735px;
+}
+
+#archive_search_wrapper h2{
+	border-bottom:1px dotted #CECECE;
+	color:#fff;
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #000;
+	margin-bottom:6px;
+}
+
+#archive_welcome{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+	color:#666;
+	background:#fff;
+	clear:left;
+	padding:10px;
+	
+}
+
+#archive_welcome h2{
+	border-bottom:1px dotted #aaa;
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #eee;
+	margin-bottom:6px;
+}
+	
+	
+	#archive_welcome p{
+		font-size:14px;
+		text-shadow:1px 1px 0 #eee;
+	}
+	
+	.right{
+		float:right;
+	}
+	
+	.right-10{
+		margin-right:10px;
+	}
+	
+	.right-0{
+		margin-right:0!important;
+	}
+	
+.archiveBigWrapper #highlightedLinks{
+	margin-top:10px;
+	overflow:hidden;
+}
+.archiveBigWrapper .thumb{
+	width:170px;
+	height:140px;
+	margin-right:10px;
+	margin-bottom:10px;
+	
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	float:left;
+}
+
+.archiveBigWrapper .thumb a{
+	position:relative;
+	display:block;
+	width:170px;
+	height:140px;
+}
+
+.archiveBigWrapper .thumb a span{
+	position:absolute;
+	bottom:0;
+	left:0;
+	display:block;
+	width:170px;
+	background:url(../images/85black.png) top left repeat;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+	color:#fff;
+	-moz-border-radius:0 0 5px 5px;
+	-webkit-border-radius:0 0 5px 5px;
+	-border-radius:0 0 5px 5px;
+	font-size:12px;
+	font-weight:bold;
+}
+
+#archive_index_wrapper{
+	width:165px;
+	float:left;
+	margin-left:10px;
+	background:#ccc;
+	padding:10px;
+	margin-bottom:10px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	height:85px;
+}
+
+#archive_index_wrapper h2{
+	border-bottom:1px dotted #aaa;
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #eee;
+	margin-bottom:6px;
+}
+
+#archive_index_wrapper ul li{
+	dislay:inline-block;
+	width:40%;
+	float:left;
+}
+
+#archive_index_wrapper ul li a{
+	color:#CA3723;
+	background:url("../images/bullet.gif") no-repeat scroll 0 5px transparent;
+	padding-left:6px;
+	
 }
