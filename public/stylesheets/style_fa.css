@@ -1993,7 +1993,7 @@ div.field {
 	margin:0;
 	border-bottom:1px solid #ccc;
 	border-top:1px solid #fff;
-	background: url("../images/arrow_collapsed.png") 0 12px no-repeat;
+	background: url("../images/arrow_collapsed.png") 100% 12px no-repeat;
 	font-weight:bold;
 }
 #browseBar h3.last{
@@ -2001,7 +2001,7 @@ div.field {
 }
 
 #browseBar h3.active{
-	background:  url("../images/arrow_expanded.png") 0 12px no-repeat;
+	background:  url("../images/arrow_expanded.png") 100% 12px no-repeat;
 	border-bottom:none;
 }
 
@@ -2032,7 +2032,7 @@ div.field {
 	padding:0 10px 0 0px;
 	font-size:12px;
 	margin:0;
-	background:url(../images/bullet.gif) 0 10px no-repeat;
+	background:url(../images/bullet_fa.gif) 100% 10px no-repeat;
 	margin: 0 10px 0 0px;
 }
 
@@ -2044,7 +2044,7 @@ div.field {
 #browseBar a.moreLink{
 	color:#CA3723;
 	padding-right:18px;
-	background:url(../images/arrow_red_bottom.png) 10px 8px no-repeat;
+	background:url(../images/arrow_red_bottom.png) 95% 8px no-repeat;
 	margin:0;
 	display:block;
 
@@ -2053,7 +2053,7 @@ div.field {
 #browseBar a.moreLink.less{
 	color:#CA3723;
 	padding-right:18px;
-	background:#ccc url(../images/arrow_red_top.png) 10px 8px no-repeat;
+	background:#ccc url(../images/arrow_red_top.png) 95% 8px no-repeat;
 	margin:0;
 	display:block;
 	
@@ -2200,7 +2200,7 @@ div.field {
 #archive_index_wrapper{
 	width:165px;
 	float:left;
-	margin-left:10px;
+	margin-right:10px;
 	background:#ccc;
 	padding:10px;
 	margin-bottom:10px;
@@ -2231,7 +2231,7 @@ div.field {
 
 #archive_index_wrapper ul li a{
 	color:#CA3723;
-	background:url("../images/bullet.gif") no-repeat scroll 100% 5px transparent;
+	background:url("../images/bullet_fa.gif") no-repeat scroll 100% 5px transparent;
 	padding-right:6px;
 	
 }
