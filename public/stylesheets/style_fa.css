@@ -2324,3 +2324,7 @@ div.field {
 #indexList .subjects_list{
 	margin-top:10px;
 }
+
+#indexList ul li ul{
+	margin-right:20px;
+}

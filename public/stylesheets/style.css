@@ -2318,3 +2318,14 @@ div.field {
 #indexList .subjects_list{
 	margin-top:10px;
 }
+
+#indexList ul li ul{
+	margin-left:20px;
+	line-height:13px;
+	color:#CA3723;
+	font-size:12px;
+}
+
+#indexList ul li ul li a{
+	font-size:12px;
+}
