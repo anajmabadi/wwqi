@@ -2326,5 +2326,12 @@ div.field {
 }
 
 #indexList ul li ul{
-	margin-right:20px;
+	margin-left:20px;
+	line-height:13px;
+	color:#CA3723;
+	font-size:12px;
+}
+
+#indexList ul li ul li a{
+	font-size:12px;
 }
