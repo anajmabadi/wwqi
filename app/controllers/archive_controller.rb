@@ -54,7 +54,9 @@ class ArchiveController < ApplicationController
     @subject_filter = params[:subject_filter]
     @subject_type_filter = params[:subject_type_filter]
     @place_filter = params[:place_filter]
-    @keyword_filter = params[:keyword_filter]
+    @keyword_filter = { :values => [ params[:keyword_filter] ],
+      :fields => [ 'everything' ],
+      :operators => [ ]  }
     @most_popular_filter = params[:most_popular_filter]
     @recent_additions_filter = params[:recent_additions_filter]
     @staff_favorites_filter = params[:staff_favorites_filter]
@@ -91,7 +93,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter[0] == 'all'
     @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
     @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter[0] == 'all'
-    @query_hash = build_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter.blank? || @keyword_filter == I18n.translate(:search_prompt)
+    @query_hash = build_boolean_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter[:values][0].blank? || @keyword_filter[:values][0] == I18n.translate(:search_prompt)
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
@@ -458,20 +460,22 @@ class ArchiveController < ApplicationController
 
   def build_recent_additions_query(filter_value, query_hash)
     additional_query = ''
-    begin
-      @ids = Item.recently_added_ids(50)
-      unless @ids.empty?
-        additional_query += "items.id IN (#{@ids.join(",")})"
-      else
-      # if the most popular returns no items, we should kill search
-        flash[:error] = "No items found. Showing all."
+    if filter_value == 'true'
+      begin
+        @ids = Item.recently_added_ids(50)
+        unless @ids.empty?
+          additional_query += "items.id IN (#{@ids.join(",")})"
+        else
+        # if the most popular returns no items, we should kill search
+          flash[:error] = "No items found. Showing all."
+        end
+      rescue StandardError => error
+        flash[:error] = "A problem was encountered searching for recent additions."
+      ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
       end
-    rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for recent additions."
-    ensure
-    query_hash[:conditions] << additional_query unless additional_query.blank?
-    return query_hash
     end
+    return query_hash
   end
 
   def build_subject_type_query(filter_value, query_hash)
@@ -550,20 +554,16 @@ class ArchiveController < ApplicationController
       field = filter_value[:fields][outer_index]
       outer_operator = filter_value[:operators][outer_index]
 
-      Rails.logger.info "********* field: " + field + " values = #{values.to_s}"
-
       # initialize the subqueries
       subqueries = []
 
       # cycle through the inner keywords with an assumed AND
       values.each_with_index do |value, inner_index|
 
-        Rails.logger.info "********* Loop records: outer_index = #{outer_index.to_s}, inner_index = #{inner_index.to_s}, value = #{value}"
-
         unless value.blank?
 
           # test for AND requirement
-          inner_operator = inner_index > 0 ? ' AND ' : ''
+          inner_operator = inner_index > 0 ? ' OR ' : ''
 
           subqueries << case field
             when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(item_translations.credit), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
@@ -579,14 +579,11 @@ class ArchiveController < ApplicationController
           #store the parameter in a unique key
           query_hash[:parameters]["keyword_#{outer_index}_#{inner_index}".to_sym] = value
 
-          Rails.logger.info "********* :keyword_#{outer_index}_#{inner_index}: " + query_hash[:parameters][:keyword_0_0]
-
         end
 
       end
 
       additional_query += " #{outer_operator} #{subqueries.join(' ')}" unless subqueries.empty?
-      Rails.logger.info "********* :additional_query: " + additional_query
 
     end
 

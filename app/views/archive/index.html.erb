@@ -31,8 +31,7 @@
                 <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
                 onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
                 onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-                <button type="submit" id="search">
-                </button>
+                <button type="submit" id="search" />
             </form>
         </div>
         <span class="examples"><%= t(:search_examples) %></span>
@@ -74,7 +73,7 @@
                 <img src="../images/thumb_photos.png" /><span> <%= @genres.find(229).name.titleize %> </span></a>
             </div>
             <div class="thumb">
-              
+
                 <a href="<%= archive_browser_path(:subject_filter => 207) %>">
                 <img src="../images/thumb_letters.png" /><span><%= @genres.find(207).name.titleize %></span></a>
             </div>
@@ -83,12 +82,12 @@
                 <img src="../images/thumb_oral_history.png" /><span><%= @genres.find(232).name.titleize %></span></a>
             </div>
             <div class="thumb">
-                <a href="<%= archive_browser_path(:subject_filter => 545) %>">
-                <img src="../images/thumb_translations.png" /><span><%= @genres.find(545).name.titleize %></span></a>
+                <a href="<%= archive_browser_path(:translation_filter => true) %>">
+                <img src="../images/thumb_translations.png" /><span><%= t(:translations).capitalize %></span></a>
             </div>
             <div class="thumb right-0">
-                <a href="<%= archive_browser_path(:translation_filter => true) %>">
-                <img src="../images/thumb_recent.png" /><span><%=t(:translations).capitalize %></span></a>
+                <a href="<%= archive_browser_path(:recent_additions_filter => true) %>">
+                <img src="../images/thumb_recent.png" /><span><%= t(:recent_additions) %></span></a>
             </div>
         </div>
     </div>
