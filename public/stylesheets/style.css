@@ -2230,3 +2230,44 @@ div.field {
 	padding-left:6px;
 	
 }
+
+
+/* index lists
+-------------------------------------------------------------- */
+
+#indexList{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+	color:#666;
+	background:#fff;
+	clear:left;
+	padding:10px;
+	
+}
+
+#indexList h2{
+	border-bottom:1px dotted #aaa;
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #eee;
+	margin-bottom:6px;
+}
+
+#indexList ul li a{
+	color:#333;
+	font-size:12px;
+}
+
+#indexList ul li a:hover{
+	color:#CA3723;
+}
+
+#indexList ul li a span{
+	color:#999;
+	font-size:11px;
+}
