@@ -9,7 +9,7 @@ class ArchiveController < ApplicationController
     @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', true, 7, I18n.locale.to_s]).order('subject_translations.name')
     @people = Person.where(['publish=? AND person_translations.locale=?', true, I18n.locale.to_s]).order('person_translations.name')
     @places = Place.where(['publish=? AND place_translations.locale=?', true, I18n.locale.to_s]).order('place_translations.name')
-    
+
     @recently_viewed_items = Item.recently_viewed(8)
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
@@ -36,7 +36,7 @@ class ArchiveController < ApplicationController
   def genres
     @genres = Subject.where(['publish=? AND subject_translations.locale=? AND subject_type_id = ?', true, I18n.locale.to_s, 8]).order('subject_translations.name')
   end
-  
+
   def browser
     logger.info 'browser'
     @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
@@ -48,6 +48,7 @@ class ArchiveController < ApplicationController
 
     #grab filter categories
     @collection_filter = params[:collection_filter]
+    @translation_filter = params[:translation_filter]
     @period_filter = params[:period_filter]
     @person_filter = params[:person_filter]
     @subject_filter = params[:subject_filter]
@@ -94,6 +95,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
+    @query_hash = build_translation_query(@translation_filter, @query_hash) unless @translation_filter.blank?
     @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
     @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year] == 0 && @year_range_filter[:end_year] == 0)
     @query_hash = build_boolean_keyword_query(@boolean_keyword_filter, @query_hash) unless @boolean_keyword_filter[:values][0].blank? && @boolean_keyword_filter[:values][1].blank? && @boolean_keyword_filter[:values][2].blank?
@@ -625,6 +627,15 @@ class ArchiveController < ApplicationController
   def build_my_archive_query(filter_value, query_hash)
     query_hash[:conditions] << "items.id IN (:my_archive_ids)"
     query_hash[:parameters][:my_archive_ids] = filter_value.sort
+    return query_hash
+  end
+
+  def build_translation_query(filter_value, query_hash)
+    if filter_value == "true"
+      query_hash[:conditions] << "Length(item_translations.transcript) > 0"
+    else
+      query_hash[:conditions] << "Length(item_translations.transcript) = 0"
+    end
     return query_hash
   end
 

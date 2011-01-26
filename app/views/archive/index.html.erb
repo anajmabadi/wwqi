@@ -79,16 +79,16 @@
                 <img src="../images/thumb_letters.png" /><span><%= @genres.find(207).name.titleize %></span></a>
             </div>
             <div class="thumb">
-                <a href="#">
+                <a href="<%= archive_browser_path(:subject_filter => 232) %>">
                 <img src="../images/thumb_oral_history.png" /><span><%= @genres.find(232).name.titleize %></span></a>
             </div>
             <div class="thumb">
-                <a href="#">
-                <img src="../images/thumb_translations.png" /><span><%= @genres.find(231).name.titleize %></span></a>
+                <a href="<%= archive_browser_path(:subject_filter => 545) %>">
+                <img src="../images/thumb_translations.png" /><span><%= @genres.find(545).name.titleize %></span></a>
             </div>
             <div class="thumb right-0">
-                <a href="#">
-                <img src="../images/thumb_recent.png" /><span> Recent Additions </span></a>
+                <a href="<%= archive_browser_path(:translation_filter => true) %>">
+                <img src="../images/thumb_recent.png" /><span><%=t(:translations).capitalize %></span></a>
             </div>
         </div>
     </div>
