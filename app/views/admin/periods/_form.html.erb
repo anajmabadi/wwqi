@@ -1,87 +1,105 @@
 <%= form_for([:admin, @period]) do |f| %>
-  <%= f.error_messages %>
-  <%= f.hidden_field :lock_version %>
-  <table class="global" width="80%" cellpadding="0" cellspacing="0">
+<%= f.error_messages %>
+<%= f.hidden_field :lock_version %>
+<table class="global" width="80%" cellpadding="0" cellspacing="0">
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :title_en %><br />
-          <%= f.text_field :title_en %>
+            <%= f.label :title_en %>
+            <br />
+            <%= f.text_field :title_en %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :title_fa %><br />
-          <%= f.text_field :title_fa %>
+            <%= f.label :title_fa %>
+            <br />
+            <%= f.text_field :title_fa %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :caption_en %><br />
-          <%= f.text_field :caption_en %>
+            <%= f.label :caption_en %>
+            <br />
+            <%= f.text_field :caption_en %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :caption_fa %><br />
-          <%= f.text_field :caption_fa %>
+            <%= f.label :caption_fa %>
+            <br />
+            <%= f.text_field :caption_fa %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :description_en %><br />
-          <%= f.text_area :description_en, :rows => 5 %>
+            <%= f.label :description_en %>
+            <br />
+            <%= f.text_area :description_en, :rows => 5 %>
         </div></td>
-      <td>
+        <td>
         <div class="field persianOnly">
-          <%= f.label :description_fa %><br />
-          <%= f.text_area :description_fa, :rows => 5 %>
+            <%= f.label :description_fa %>
+            <br />
+            <%= f.text_area :description_fa, :rows => 5 %>
         </div></td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :start_at %><br />
-          <%= f.text_field :start_at %>
+            <%= f.label :start_at %>
+            <br />
+            <%= f.text_field :start_at %>
         </div>
-      </td>
-      <td>
+        </td>
+        <td>
         <div class="field">
-          <%= f.label :end_at %><br />
-          <%= f.text_field :end_at %>
+            <%= f.label :end_at %>
+            <br />
+            <%= f.text_field :end_at %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :position %><br />
-          <%= f.text_field :position %>
+            <%= f.label :position %>
+            <br />
+            <%= f.text_field :position %>
         </div></td>
-      <td>
+        <td>
         <div class="field">
-          <%= f.label :publish %><br />
-          <%= f.check_box :publish %>
+            <%= f.label :publish %>
+            <br />
+            <%= f.check_box :publish %>
         </div>
-      </td>
+        </td>
     </tr>
     <tr>
-      <td colspan="2">
+        <td>
         <div class="field">
-          <%= f.label :notes %><br />
-          <%= f.text_area :notes, :rows => 3 %>
+            <%= f.label :major %>
+            <br />
+            <%= f.check_box :major %>
+        </div>
+        </td>
+        <td>
+        <div class="field">
+            <%= f.label :notes %>
+            <br />
+            <%= f.text_area :notes, :rows => 3 %>
         </div></td>
     </tr>
     <tr>
-      <td colspan="2">
+        <td colspan="2">
         <div class="actions">
-          <%= f.submit %>
+            <%= f.submit %>
         </div>
-      </td>
+        </td>
     </tr>
-  </table>
+</table>
 <% end %>

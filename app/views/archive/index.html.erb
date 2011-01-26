@@ -24,66 +24,67 @@
 </div><!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
     <div id="archive_search_wrapper">
-        <span class="right"><a href="#">Advanced Search</a></span>
-        <h2> Search</h2>
+        <span class="right"><%= link_to t(:advanced_search).titleize, archive_advanced_search_path %></span>
+        <h2><%= t(:search).titleize %></h2>
         <div class="clearfix" id="simple_search">
             <form method="get" class="searchform" action="/archive/browser">
-                <input type="text" value="Enter a keyword" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-                onfocus="if(this.value=='Enter a keyword'){this.value='';this.style.color = '#000';}"
-                onblur="if(this.value==''){this.value='Enter a keyword';this.style.color = '#aaa';}" />
+                <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+                onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
+                onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
                 <button type="submit" id="search">
                 </button>
             </form>
         </div>
-        <span class="examples"> Examples: "dowry", or "legal AND marriage" </span>
+        <span class="examples"><%= t(:search_examples) %></span>
     </div>
     <div id="archive_index_wrapper">
-        <h2> Indices</h2>
+        <h2><%= t(:indexes).titleize %></h2>
         <ul>
             <li>
-                <a href="#">Genre</a>
+                <%= link_to t(:genre).titleize, archive_genres_path %>
             </li>
             <li>
-                <a href="#">People</a>
+                <%= link_to t(:people).titleize, archive_people_path %>
             </li>
             <li>
-                <a href="#">Place</a>
+                <%= link_to t(:place).titleize, archive_places_path %>
             </li>
             <li>
-                <a href="#">Subject</a>
+                <%= link_to t(:subject).titleize, archive_subjects_path %>
             </li>
         </ul>
     </div>
     <div id="archive_welcome">
-        <h2>Popular Searches</h2>
+        <h2><%= t(:popular_searches) %></h2>
         <div id="highlightedLinks">
             <div class="thumb">
-                <a href="#">
-                <img src="../images/thumb_manuscript.png" /><span> Manuscripts and Lithos </span></a>
+                <a href="<%= archive_browser_path(:subject_filter => 208) %>">
+                <img src="../images/thumb_manuscript.png" /><span><%= @genres.find(208).name.titleize %></span></a>
             </div>
             <div class="thumb">
-                <a href="#">
-                <img src="../images/thumb_objects.png" /><span> Objects </span></a>
+                <a href="<%= archive_browser_path(:subject_filter => 231) %>">
+                <img src="../images/thumb_objects.png" /><span><%= @genres.find(231).name.titleize %></span></a>
             </div>
             <div class="thumb">
-                <a href="#">
-                <img src="../images/thumb_legal.png" /><span>  Legal and Financial </span></a>
+                <a href="<%= archive_browser_path(:subject_filter => 581) %>">
+                <img src="../images/thumb_legal.png" /><span><%= @genres.find(581).name.titleize %></span></a>
             </div>
             <div class="thumb right-0">
-                <a href="#">
-                <img src="../images/thumb_photos.png" /><span> Images </span></a>
+                <a href="<%= archive_browser_path(:subject_filter => 229) %>">
+                <img src="../images/thumb_photos.png" /><span> <%= @genres.find(229).name.titleize %> </span></a>
+            </div>
+            <div class="thumb">
+              
+                <a href="<%= archive_browser_path(:subject_filter => 207) %>">
+                <img src="../images/thumb_letters.png" /><span><%= @genres.find(207).name.titleize %></span></a>
             </div>
             <div class="thumb">
                 <a href="#">
-                <img src="../images/thumb_letters.png" /><span> Letters </span></a>
+                <img src="../images/thumb_oral_history.png" /><span><%= @genres.find(232).name.titleize %></span></a>
             </div>
             <div class="thumb">
                 <a href="#">
-                <img src="../images/thumb_oral_history.png" /><span> Sound Recordings </span></a>
-            </div>
-            <div class="thumb">
-                <a href="#">
-                <img src="../images/thumb_translations.png" /><span> Translations </span></a>
+                <img src="../images/thumb_translations.png" /><span><%= @genres.find(231).name.titleize %></span></a>
             </div>
             <div class="thumb right-0">
                 <a href="#">

@@ -73,7 +73,13 @@
         </td>
       </tr>
       <tr>
-        <td colspan="2">
+        <td>
+          <div class="field">
+            <%= label @period, :major %><br />
+            <%= @period.major %>
+          </div>
+        </td>
+        <td>
           <div class="field">
             <%= label @period, :notes %><br />
             <%= @period.notes %>
