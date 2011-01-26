@@ -544,7 +544,8 @@ class ArchiveController < ApplicationController
 
     # turn keyword fields into word arrays and git rid of little words
     filter_value[:values].each_with_index do |value, index|
-      keywords[index] = value.split(" ").reject { |k| k == "" || k.nil? || k.length<2 }.map { |k| clean_keyword(k) } unless value.blank?
+      # first find any quoted phrases
+      keywords[index] = value.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? || k.length<3 }.map { |k| clean_keyword(k) } unless value.blank?
     end
 
     # assemble the query by field for each keyword set
