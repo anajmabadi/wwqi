@@ -1809,6 +1809,9 @@ div.field {
 
 #archive_search_wrapper #simple_search{
 	width:245px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
 
 #archive_search_wrapper #simple_search input{
@@ -2093,7 +2096,7 @@ div.field {
 }
 
 #archive_search_wrapper #simple_search input{
-	width:90%;
+	width:460px;
 }
 
 .archiveBigWrapper{
@@ -2244,6 +2247,7 @@ div.field {
 	background:#fff;
 	clear:left;
 	padding:10px;
+	overflow:hidden;
 	
 }
 
@@ -2258,9 +2262,21 @@ div.field {
 	margin-bottom:6px;
 }
 
+#indexList ul.col1{
+	clear:left;
+	float:left;
+	width:45%;
+}
+#indexList ul.col2{
+	
+	float:left;
+	width:45%;
+}
+
+
 #indexList ul li a{
 	color:#333;
-	font-size:12px;
+	font-size:13px;
 }
 
 #indexList ul li a:hover{
@@ -2270,4 +2286,35 @@ div.field {
 #indexList ul li a span{
 	color:#999;
 	font-size:11px;
+}
+
+#indexList ul.alphabet{
+    padding:5px 0 30px 0px; list-style:none;
+	margin:0px auto!important;float:none;
+	clear:both;
+	border-bottom:1px dotted #ccc;
+}
+
+#indexList ul.alphabet li {
+	border-right:1px solid #ccc;
+	float:left;
+	font-size:11px;
+	height:auto;
+	padding:0 5px;
+	text-transform:uppercase;
+	color:#333;
+	
+}
+
+#indexList ul.alphabet li a{
+	font-size:12px;
+}
+
+#indexList ul.alphabet li a.selected{
+	font-weight:bold;
+	color:#CA3723;
+}
+
+#indexList .subjects_list{
+	margin-top:10px;
 }
