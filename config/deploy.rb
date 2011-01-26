@@ -21,6 +21,7 @@ set :user, "cforcey"
 #############################################################
 
 set :scm, :git # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
+set :scm_passphrase, "H1st0ry!"
 set :repository,  "git://github.com/cforcey/qajar_women.git"
 set :branch, "master"
 set :deploy_via, :remote_cache
