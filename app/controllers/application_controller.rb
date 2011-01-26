@@ -5,7 +5,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_locale
   
   #log activity
-  after_filter :record_activity
+  # after_filter :record_activity
 
   # csv generation code
   def make_custom_csv(collection)
