@@ -615,7 +615,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 #items{
-    margin-left:8px
+    margin-left:8px;
+	overflow:hidden;
 }
 
 
@@ -2407,7 +2408,7 @@ div.field {
 
 /* item styles
 -------------------------------------------------------------- */
-#search_results .item{
+#search_results .listItem .item{
     width:175px;
     height:175px;
     position:relative;
@@ -2415,6 +2416,17 @@ div.field {
     margin:0px 5px 5px 30px;
     overflow:hidden
 }
+
+
+#search_results .item{
+    width:175px;
+    height:175px;
+    position:relative;
+    float:left;
+    margin:0px 3px 5px 0px;
+    overflow:hidden
+}
+
 #search_results .listItem.highlight{
 	background:#f4dda6;
 	border:1px solid #ccc;
@@ -2435,10 +2447,22 @@ div.field {
     height:15px;
     position:absolute;
     top:5px;
-    left:5px;
+    right:5px;
     text-indent:-99999px;
     z-index:20;
 }
+
+#search_results .listItem .select-item{
+	position:absolute;
+	width:22px;
+	height:22px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	top:5px;
+	left:5px;
+}
+
 
 #search_results .select-item{
 	position:absolute;
@@ -2447,9 +2471,9 @@ div.field {
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
-	
 	top:5px;
 	left:5px;
+	z-index:100;
 }
 
 
@@ -2457,17 +2481,20 @@ div.field {
 
 #search_results .item a.title{
     display:block;
-    width:100%;
+    width:auto;
     position:absolute;
     left:0;
     background:url(/images/85black.png);
-    padding:3px 0;
-    text-align:center;
+    width:155px;
+	height:140px;
+	padding:25px 10px 10px;
+    text-align:left;
     font-size:1.0em;
     color:#fff;
     font-weight:bold;
-    bottom:-19px;
+    top:0;
     z-index:10;
+	display:none;
 }
 
 #search_results .item span{
@@ -2559,4 +2586,8 @@ div.field {
 
 a.my-items{
 	color:#CA3723;
+}
+
+.item.highlight .select-item{
+	background:#CA3723
 }
