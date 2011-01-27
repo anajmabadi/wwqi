@@ -2306,6 +2306,17 @@ div.field {
 	
 }
 
+#fullIndex #indexList ul.alphabet li {
+	border-right:1px solid #ccc;
+	float:left;
+	font-size:12px;
+	height:auto;
+	padding:0 8px;
+	text-transform:uppercase;
+	color:#333;
+	
+}
+
 #indexList ul.alphabet li a{
 	font-size:12px;
 }
@@ -2328,4 +2339,13 @@ div.field {
 
 #indexList ul li ul li a{
 	font-size:12px;
+}
+
+.otherIndexes{
+	float:right;
+}
+
+.otherIndexes a{
+	margin-left:10px;
+	color:#CA3723;
 }
