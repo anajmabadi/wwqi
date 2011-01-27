@@ -1,0 +1,510 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="tb2Sf5IDP0asbptoimTf9o9zIe+A7pWZ113kaD9wPuM="/>
+
+        <title>Women's Worlds in Qajar Iran | Archive</title>
+        <meta name="description" content="The archive contains manuscripts, pictures, sound files relating to the history of women in Qajar Iran." />
+
+        <!-- facebook metatags -->
+
+        <meta property="og:title" content="Women's Worlds in Qajar Iran | Archive" />
+        <meta property="og:site_name" content="Women's Worlds in Qajar Iran"/>
+        <meta property="og:image" content="http://qajarwomen.org/images/qajar_thumbnail.jpg" />
+        <link rel="image_src" href="http://qajarwomen.org/images/qajar_thumbnail.jpg" />
+
+        <!-- load the common styles to all pages -->
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <!-- load the common scripts -->
+        <script src="/javascripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/jquery-ui.min.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/rails.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/application.js" type="text/javascript">
+        </script>
+        <!-- load styles conditionally based on the controller name -->
+
+        <script src="javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
+        </script>
+        <script type="text/javascript" src="javascripts/facebox.js">
+        </script>
+        <script language="javascript" type="application/javascript">
+            $(document).ready( function() {
+
+                $("#browseBar h3 a").click( function() {
+
+                    $(this).parent().toggleClass("active").next(".list").animate({
+                        opacity: 'toggle',
+                        height: 'toggle'
+                    }, 300);
+
+                });
+                $("#browseBar a.moreLink").click( function() {
+                    if ($(this).html()=="see more") {
+                        $(this).html("see less");
+                        $(this).addClass("less");
+                    } else {
+                        $(this).html("see more");
+                        $(this).removeClass("less");
+                    }
+                    $(this).parents(".list").find("ul.more").animate({
+                        opacity: 'toggle',
+                        height: 'toggle'
+                    }, 300);
+                    return false;
+                });
+				
+				$(".select-item input").click(function(){
+						if($(this).is(":checked")){
+							$(this).parents(".item").addClass("highlight");
+							setActionsButtonState();
+						}
+						else{
+							$(this).parents(".item").removeClass("highlight");
+							$(".actions-dropdown").hide();
+							setActionsButtonState();
+						}
+				});
+				
+				$(".actions-dropdown-button").click(function(){
+					if($(this).hasClass("disabled")){
+						return;
+					}
+					else{
+						$(".actions-dropdown").toggle();
+					}
+				});
+				
+				$(".actions-dropdown").hover(function(){
+				}, function(){
+					$(this).hide();
+				});
+				
+				$(".item").hover(function(){
+					
+					$("a.title",this).show('fade');
+				}, function(){
+					$("a.title",this).hide('fade');
+				});
+				
+				
+				setActionsButtonState = function(){
+					if ($(".item.highlight").length>0){
+						$(".actions-dropdown-button").removeClass("disabled");
+					}
+					else
+						$(".actions-dropdown-button").addClass("disabled");
+				}
+				
+				setActionsButtonState();
+            });
+        </script>
+    </head>
+    <body class="wide">
+        <div id="header">
+            <div class="container">
+                <h1><a href="/" title="back to home"><span>Women's Worlds in Qajar Iran</span></a></h1>
+                <span class="beta">beta</span>
+                <div id="tools">
+                    <ul>
+
+                        <li>
+                            <a href="/contact">contact</a>
+                        </li>
+                        <li>
+                            <a href="/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav">
+                    <a class="lang" href="http://fa.qajarwomen.org/archive">فارسی</a>
+                    <ul class="sortnav">
+
+                        <li>
+                            <a href="/home" class="module-link">home</a>
+                        </li>
+                        <li class="active">
+                            <a href="/archive" class="module-link">archive</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- end container -->
+        </div> <!-- end header -->
+        <div id="content" class="clearfix">
+            <div class="container clearfix">
+                <!-- rails errors and notices content -->
+                <div id="notification_block">
+
+                </div>
+                <!-- end rails errors and notices content -->
+
+                <!-- rails template content -->
+
+                <div id="browseBar" style="height:auto">
+                    <div id="head">
+                    <a href="#" class="blackButton right">Reset</a>
+                      <h2>Refine Results</h2>
+                    </div>
+                    <h3 class="active"><a href="#">Genres</a></h3>
+                    <div class="list" style="display:block">
+                        <ul class="default">
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=550">Manuscripts and lithographs</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=578">Letters</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=230">Legal and financial</a> <span>(22)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=567">Images</a>  <span>(1)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=268">Objects</a>  <span>(4)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=268">Sound recordings</a>  <span>(4)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=268">Periodicals</a>  <span>(4)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=268">Writings</a>  <span>(4)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=550">advice books</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=578">biographical dictionaries</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=230">calligraphy</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=567">certificates</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=268">cookbooks</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=575">diaries</a>  <span>(43)</span>
+                            </li>
+                            <li>
+
+                                <a href="/archive/browser?subject_filter[]=577">drawings</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=223">embroidery</a>  <span>(43)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/browser?subject_filter[]=216">endowments</a>  <span>(43)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                    <h3><a href="#">Collections</a></h3>
+                    <div class="list" style="display:block">
+                        <ul>
+                            <li>
+                                <a href="#">Taj al-Muluk Tajbakhsh Zama...</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="#">Kamran Dowlatshahi Collection</a> <span>(8)</span>
+                            </li>
+                            <li>
+                                <a href="#">Dawlatabadi Collection </a>  <span>(18)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="/archive/genres">Another Collection</a> <span>(18)</span>
+                            </li>
+                            <li>
+                                <a href="/archive/people">One more Collection</a> <span>(18)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                    <h3><a href="#">People</a></h3>
+                    <div class="list" style="display:block">
+                        <ul>
+                            <li>
+                                <a href="#">Item 1</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 2</a> <span>(8)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 3 </a>  <span>(18)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="#">Item 4</a> <span>(18)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 5</a> <span>(18)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                    <h3><a href="#">Places</a></h3>
+                    <div class="list" style="display:block">
+                        <ul>
+                            <li>
+                                <a href="#">Item 1</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 2</a> <span>(8)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 3 </a>  <span>(18)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="#">Item 4</a> <span>(18)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 5</a> <span>(18)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                    <h3><a href="#">Subjects</a></h3>
+                    <div class="list" style="display:block">
+                        <ul>
+                            <li>
+                                <a href="#">Item 1</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 2</a> <span>(8)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 3 </a>  <span>(18)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="#">Item 4</a> <span>(18)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 5</a> <span>(18)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                    <h3 class="last"><a href="#">Time Periods</a></h3>
+                   	<div class="list" style="display:block">
+                        <ul>
+                            <li>
+                                <a href="#">Item 1</a> <span>(13)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 2</a> <span>(8)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 3 </a>  <span>(18)</span>
+                            </li>
+                        </ul>
+                        <ul class="more">
+                            <li>
+                                <a href="#">Item 4</a> <span>(18)</span>
+                            </li>
+                            <li>
+                                <a href="#">Item 5</a> <span>(18)</span>
+                            </li>
+                        </ul>
+                        <a class="moreLink" href="/#">see more</a>
+                    </div>
+                </div><!-- end browseBar -->
+                <div class="clearfix archiveBigWrapper" >
+
+                    <div id="archive_search_wrapper">
+                        <span class="right"><a href="#">Advanced Search</a></span>
+                        <h2> Search</h2>
+                        <div class="clearfix" id="simple_search">
+                            <form method="get" class="searchform" action="/archive/browser">
+                                <input type="text" value="Enter a keyword" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+                                onfocus="if(this.value=='Enter a keyword'){this.value='';this.style.color = '#000';}"
+                                onblur="if(this.value==''){this.value='Enter a keyword';this.style.color = '#aaa';}" />
+                                <button type="submit" id="search">
+                                </button>
+                            </form>
+                        </div>
+                        <span class="examples"> Examples: "dowry", or "legal AND marriage" </span>
+                    </div>
+                    <div id="archive_index_wrapper">
+                        <h2> Indices</h2>
+                        <ul>
+                            <li>
+                                <a href="#">Genre</a>
+                            </li>
+                            <li>
+                                <a href="#">People</a>
+                            </li>
+                            <li>
+                                <a href="#">Place</a>
+                            </li>
+                            <li>
+                                <a href="#">Subject</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    
+                    <!-- begin pagination bar -->
+                    <div class="paginationBar clearfix">
+                      <div class="sortnav paginate">
+                        <div class="pagination"><span class="previous_page disabled">previous</span> <em>1</em> <a href="/archive/browser?page=2" rel="next">2</a> <a href="/archive/browser?page=3">3</a> <a href="/archive/browser?page=4">4</a> <a href="/archive/browser?page=5">5</a> <a href="/archive/browser?page=6">6</a> <a href="/archive/browser?page=2" rel="next" class="next_page">next</a></div>
+                      </div>
+                      <ul id="sort" class="sortnav">
+                        <li class="label">Sort By :</li>
+                        <li class="active"><a class="module-link AZsort" href="/archive/browser?sort_mode=alpha_dsc">A-Z</a><span class="down"></span></li>
+                        <li class=""><a class="module-link Datesort" href="/archive/browser?sort_mode=date_asc">Date</a><span class="up"></span></li>
+                      </ul>
+                      <ul id="viewMode" class="sortnav">
+                        <li class="label">View Mode </li>
+                        <li class=""><a class="module-link" href="/archive/browser?view_mode=list">List</a></li>
+                        <li class="active"><a class="module-link" href="/archive/browser?view_mode=grid">Grid</a></li>
+                      </ul>
+                    </div>
+                    <!-- end pagination bar -->
+                    
+                    
+                    
+                    
+                    <div id="search_results">
+                    	<div id="search-result-tools">
+                        	<a class="redButton right actions-dropdown-button">Actions</a>
+                            <a class="right my-items">See My Items (2)</a>
+                            <div class="actions-dropdown">
+                            	<a href="#" id="add-to-my-selections">Add to My Selections</a>
+                                <a href="#" id="email-items">Email Citations</a>
+                                <a href="#" id="download-items">Download Citations</a>
+                            </div>
+                        </div>
+                        <h2>35 Search Results</h2>
+                        <div id="items">
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1524"><img alt="Anthology [with The Book of Finding a Spouse and a satirical poem about women], 1887-1891" src="http://library.qajarwomen.org/thumbs/it_1524.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1524" class="type">Oral Histories</a>
+                              <a title="Anthology [with The Book of Finding a Spouse and a satirical poem about women], 1887-1891" href="/archive/detail/1524" class="title">Anthology [with The Book of Finding a Spouse and a satirical poem about women], 1887-1891<span>Majlis Library, Museum and Document Center</span></a>
+                            </div>
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1520"><img alt="Biographical dictionary of selected women poets, undated" src="http://library.qajarwomen.org/thumbs/it_1520.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1520" class="type">Oral Histories</a>
+                              <a title="Biographical dictionary of selected women poets, undated" href="/archive/detail/1520" class="title">Biographical dictionary of selected women poets, undated<span>Majlis Library, Museum and Document Center</span></a>
+                            </div>
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1529"><img alt="Biographies of Sufi Women, 1817 or 1818" src="http://library.qajarwomen.org/thumbs/it_1529.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1529" class="type">Oral Histories</a>
+                              <a title="Biographies of Sufi Women, 1817 or 1818" href="/archive/detail/1529" class="title">Biographies of Sufi Women, 1817 or 1818<span>Majlis Library, Museum and Document Center</span></a>
+                            </div>
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1493"><img alt="Ma'ayib al-rijal [Vices of Men], 1894" src="http://library.qajarwomen.org/thumbs/it_1493.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1493" class="type">Oral Histories</a>
+                              <a title="Ma'ayib al-rijal [Vices of Men], 1894" href="/archive/detail/1493" class="title">Ma'ayib al-rijal [Vices of Men], 1894<span>Majlis Library, Museum and Document Center</span></a>
+                            </div>
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1182"><img alt="Note in scrapbook of Nasir Dawlatabadi, 22 January 1940" src="http://library.qajarwomen.org/thumbs/it_1182.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1182" class="type">Oral Histories</a>
+                              <a title="Note in scrapbook of Nasir Dawlatabadi, 22 January 1940" href="/archive/detail/1182" class="title">Note in scrapbook of Nasir Dawlatabadi, 22 January 1940<span>Sadiqah Dawlatabadi Collection</span></a>
+                            </div>
+                            <div class="item oralhistory"><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/188"><img alt="Notebook of Liqa Shaykh al-Islami, [ca. 1910]" src="http://library.qajarwomen.org/thumbs/it_188.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/188" class="type">Oral Histories</a>
+                              <a title="Notebook of Liqa Shaykh al-Islami, [ca. 1910]" href="/archive/detail/188" class="title">Notebook of Liqa Shaykh al-Islami, [ca. 1910]<span>Bahram Sheikholeslami Collection</span></a>
+                            </div>
+                            <div class="item "><span class="select-item"><input type="checkbox" name="select-item" /></span>
+                              <a href="/archive/detail/1512"><img alt="Tʼadib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]" src="http://library.qajarwomen.org/thumbs/it_1512.jpg"></a>
+                              <a title="Oral Histories" href="/archive/detail/1512" class="type">Oral Histories</a>
+                              <a title="Tʼadib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]" href="/archive/detail/1512" class="title">Tʼadib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]<span>Majlis Library, Museum and Document Center</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end rails template content -->
+
+        </div> <!-- end container -->
+        </div><!-- end content -->
+        <div id="pageFooterWrapper">
+            <div id="pageFooter">
+                <div class="columnWrapperFooter group">
+                    <div class="leftWrapperFooter">
+                        <ul class="footerNav">
+
+                            <li>
+                                <a href="/about">about</a>
+                            </li>
+                            <li>
+                                <a href="/credits">credits</a>
+                            </li>
+                            <li>
+                                <a href="/permissions">permissions</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Copyright &copy; 2010  WWQI. All rights reserved.
+                        </p>
+                    </div><!-- closes leftWrapperFooter -->
+                    <div class="rightWrapperFooter">
+                        <a class="noimage" href="http://www.harvard.edu" target="_blank">
+                        <img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
+                        <ul class="footerNav">
+                            <li>
+                                <a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog  </a>
+                            </li>
+                            <li>
+                                <a href="http://www.fas.harvard.edu/~iohp/" target="_blank">Iranian Oral History Project</a>
+                            </li>
+                            <li>
+                                <a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA Visual Resources</a>
+                            </li>
+                            <li>
+                                <a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a>
+                            </li>
+                            <li>
+                                <a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS Archival Finding Aid</a>
+                            </li>
+                            <li>
+                                <a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">Ali Khan Album</a>
+                            </li>
+                        </ul>
+                    </div><!-- closes rightWrapperFooter -->
+                </div><!-- closes columnWrapperFooter group -->
+            </div>
+        </div>
+        <!-- Google Analytics BEGIN -->
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1325142-25']);
+            _gaq.push(['_setDomainName', '.qajarwomen.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <!-- Google Analytics END -->
+
+    </body>
+</html>
