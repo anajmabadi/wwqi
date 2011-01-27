@@ -37,6 +37,22 @@
     <tr>
         <td>
         <div class="field">
+            <%= f.label :restrictions_en %>
+            <br />
+            <%= f.text_area :restrictions_en %>
+        </div>
+        </td>
+        <td>
+        <div class="field persianOnly">
+            <%= f.label :restrictions_fa %>
+            <br />
+            <%= f.text_area :restrictions_fa %>
+        </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <div class="field">
             <%= f.label :address %>
             <br />
             <%= f.text_field :address %>

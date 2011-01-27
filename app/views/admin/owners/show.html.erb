@@ -40,6 +40,22 @@
             <tr>
                 <td>
                 <div class="field">
+                    <%= label @owner, :restrictions_en %>
+                    <br />
+                    <%= @owner.restrictions_en %>
+                </div>
+                </td>
+                <td>
+                <div class="field persianOnly">
+                    <%= label @owner, :restrictions_fa %>
+                    <br />
+                    <%= @owner.restrictions_fa %>
+                </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <div class="field">
                     <%= label @owner, :address %>
                     <br />
                     <%= @owner.address %>

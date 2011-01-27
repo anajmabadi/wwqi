@@ -5,7 +5,7 @@ class Owner < ActiveRecord::Base
   has_many :repositories, :dependent => :restrict
   has_many :passports, :through => :repositories
   
-  translates :name, :credit
+  translates :name, :credit, :restrictions
   default_scope :include => :translations
   globalize_accessors :fa, :en
   
