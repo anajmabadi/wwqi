@@ -22,6 +22,7 @@ class ArchiveController < ApplicationController
   end
 
   def subjects
+    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter]
     @filter_letter = @filter_letter[0] if !@filter_letter.nil? && @filter_letter.length > 1
     if @filter_letter.blank?
