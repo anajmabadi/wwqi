@@ -455,7 +455,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	top:5px;
 	right:10px;
 	padding-left:19px;
-	background:url(../images/btn_close.png) 0 2px no-repeat;
+	background:url(/images/btn_close.png) 0 2px no-repeat;
 	color:#333;
 }
 	
@@ -565,7 +565,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
     overflow:hidden
 }
 #browser .listItem.highlight{
-	background:url(../images/bg_cell_highlight_2.jpg) bottom left repeat-x;
+	background:url(/images/bg_cell_highlight_2.jpg) bottom left repeat-x;
 	border:1px solid #ccc;
 	cursor:pointer;
 }
@@ -1158,7 +1158,7 @@ div.slideshow ul li a.title{
 	width:254px;
 	height:72px;
 	margin:15px 0 15px 5px;
-	background:url(../images/btn_big_red.png) top left no-repeat;
+	background:url(/images/btn_big_red.png) top left no-repeat;
 	text-align:center;
 	line-height:72px;
 	color:#fff;
@@ -1221,7 +1221,7 @@ div.slideshow ul li a.title{
 	font-size:14px;
 	font-weight:bold;
 	border-bottom:1px solid #ccc;
-	background:#B4112C url("../images/bg_gradient.png") bottom left repeat-x;
+	background:#B4112C url("/images/bg_gradient.png") bottom left repeat-x;
 	padding:4px 8px;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
@@ -1257,13 +1257,13 @@ div.slideshow ul li a.title{
 .boxed .collectionsBox .next{
 	right:5px !important;
 	left:auto;
-	background:url(../images/btn_prev_next.gif) 0 0 no-repeat;
+	background:url(/images/btn_prev_next.gif) 0 0 no-repeat;
 }
 
 .boxed .collectionsBox .prev{
 	right:20px;
 	left:auto;
-	background:url(../images/btn_prev_next.gif) -11px 0 no-repeat;
+	background:url(/images/btn_prev_next.gif) -11px 0 no-repeat;
 }
 
 .boxed .collectionsBox .collectionContainerWrapper{
@@ -1358,7 +1358,7 @@ div.slideshow ul li a.title{
 	width:685px;
 	height:100px;
 	margin:10px 0 0 0px;
-	background:#fff url(../images/bg_timeline.gif) bottom left no-repeat;
+	background:#fff url(/images/bg_timeline.gif) bottom left no-repeat;
 }
 
 #timeLine a{
@@ -1366,7 +1366,7 @@ div.slideshow ul li a.title{
 	float:left;
 	height:38px;
 	text-align:center;
-	background-image:url(../images/bg_gradient.png);
+	background-image:url(/images/bg_gradient.png);
 	background-position:bottom left;
 	background-repeat:repeat-x;
 	color:#fff;
@@ -1403,7 +1403,7 @@ div.slideshow ul li a.title{
 #universalSearch{
 	width:940px;
 	height:48px;
-	background:url(../images/bg_big_search.png) top left no-repeat;
+	background:url(/images/bg_big_search.png) top left no-repeat;
 	margin-bottom:10px;
 }
 
@@ -1454,7 +1454,7 @@ div.slideshow ul li a.title{
 }
 
 #catalogInfo ul li{
-	background:url(../images/bullet-circle.gif) 0 2px no-repeat;
+	background:url(/images/bullet-circle.gif) 0 2px no-repeat;
 	padding-left:20px;
 }
 
@@ -1467,7 +1467,7 @@ div.slideshow ul li a.title{
 	display:block;
 	width:65px;
 	height:15px;
-	background:url(../images/btn_download.gif) top left no-repeat;
+	background:url(/images/btn_download.gif) top left no-repeat;
 	margin:0px;
 	padding:0px;
 	bottom:3px;
@@ -1494,12 +1494,12 @@ div.slideshow ul li a.title{
 	padding-left:10px;
 	color:#fff;
 	width:150px;
-	background:url(../images/arrow_down.png) 100% 5px no-repeat;
+	background:url(/images/arrow_down.png) 100% 5px no-repeat;
 	margin-right:30px;
 }
 
 #filterOptions #filterStatus.open{
-	background:url(../images/arrow_up.png) 100% 5px no-repeat;
+	background:url(/images/arrow_up.png) 100% 5px no-repeat;
 }
 
 #filterOptions a#byPeriod{
@@ -1534,7 +1534,7 @@ div.slideshow ul li a.title{
 }
 
 #browser #head.filters{
-	background:url(../images/bg_browse_head_filters.png) 0 0 no-repeat;
+	background:url(/images/bg_browse_head_filters.png) 0 0 no-repeat;
 	position:relative;
 }
 
@@ -1548,7 +1548,7 @@ div.slideshow ul li a.title{
 	position:absolute;
 	top:100%;
 	left:0;
-	background:#efefef url(../images/bg_filtersPanel.gif) top left repeat-y;
+	background:#efefef url(/images/bg_filtersPanel.gif) top left repeat-y;
 	z-index:9999;
 	color:#333;
 	display:none;
@@ -1611,7 +1611,7 @@ div.slideshow ul li a.title{
 }
 
 .redButton{
-	background:url(../images/red_gradient.gif) top left repeat-x;
+	background:url(/images/red_gradient.gif) top left repeat-x;
 	height:25px;
 	line-height:25px;
 	color:#fff;
@@ -1625,7 +1625,7 @@ div.slideshow ul li a.title{
 }
 
 .blackButton{
-	background:url(../images/black_gradient.gif) top left repeat-x;
+	background:url(/images/black_gradient.gif) top left repeat-x;
 	height:25px;
 	line-height:25px;
 	color:#fff;
@@ -1685,7 +1685,7 @@ div.slideshow ul li a.title{
 	color:#DECC9D;
 	display:block;
 	padding-left:12px;
-	background:url(../images/bullet.gif) 5px 5px no-repeat;
+	background:url(/images/bullet.gif) 5px 5px no-repeat;
 }
 
 #browseByGenre ul li ul{
@@ -1712,7 +1712,7 @@ div.slideshow ul li a.title{
 	color:#DECC9D;
 	display:block;
 	padding-left:12px;
-	background:url(../images/bullet.gif) 5px 5px no-repeat;
+	background:url(/images/bullet.gif) 5px 5px no-repeat;
 	font-weight:bold;
 }
 
@@ -1898,7 +1898,7 @@ div.slideshow ul li a.title{
 .noItems ul li{
 	list-style:none;
 	padding-left:15px;
-	background:url(../images/bullet.gif) 0 5px no-repeat;
+	background:url(/images/bullet.gif) 0 5px no-repeat;
 }
 
 
@@ -1950,7 +1950,7 @@ div.slideshow ul li a.title{
 	margin:0;
 	border-bottom:1px solid #ccc;
 	border-top:1px solid #fff;
-	background: url("../images/arrow_collapsed.png") 0 12px no-repeat;
+	background: url("/images/arrow_collapsed.png") 0 12px no-repeat;
 	font-weight:bold;
 }
 #browseBar h3.last{
@@ -1958,7 +1958,7 @@ div.slideshow ul li a.title{
 }
 
 #browseBar h3.active{
-	background:  url("../images/arrow_expanded.png") 0 12px no-repeat;
+	background:  url("/images/arrow_expanded.png") 0 12px no-repeat;
 	border-bottom:none;
 }
 
@@ -1989,7 +1989,7 @@ div.slideshow ul li a.title{
 	padding:0 0 0 10px;
 	font-size:12px;
 	margin:0;
-	background:url(../images/bullet.gif) 0 10px no-repeat;
+	background:url(/images/bullet.gif) 0 10px no-repeat;
 	margin: 0 0 0 10px;
 }
 
@@ -2001,7 +2001,7 @@ div.slideshow ul li a.title{
 #browseBar a.moreLink{
 	color:#CA3723;
 	padding-left:18px;
-	background:url(../images/arrow_red_bottom.png) 10px 8px no-repeat;
+	background:url(/images/arrow_red_bottom.png) 10px 8px no-repeat;
 	margin:0;
 	display:block;
 
@@ -2010,7 +2010,7 @@ div.slideshow ul li a.title{
 #browseBar a.moreLink.less{
 	color:#CA3723;
 	padding-left:18px;
-	background:#ccc url(../images/arrow_red_top.png) 10px 8px no-repeat;
+	background:#ccc url(/images/arrow_red_top.png) 10px 8px no-repeat;
 	margin:0;
 	display:block;
 	
@@ -2143,7 +2143,7 @@ div.slideshow ul li a.title{
 	left:0;
 	display:block;
 	width:170px;
-	background:url(../images/85black.png) top left repeat;
+	background:url(/images/85black.png) top left repeat;
 	height:25px;
 	line-height:25px;
 	text-align:center;
@@ -2187,7 +2187,7 @@ div.slideshow ul li a.title{
 
 #archive_index_wrapper ul li a{
 	color:#CA3723;
-	background:url("../images/bullet.gif") no-repeat scroll 0 5px transparent;
+	background:url("/images/bullet.gif") no-repeat scroll 0 5px transparent;
 	padding-left:6px;
 	
 }
@@ -2350,7 +2350,7 @@ div.slideshow ul li a.title{
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
-	background:url(../images/bg_cell_highlight_2.jpg) bottom left repeat-x;
+	background:url(/images/bg_cell_highlight_2.jpg) bottom left repeat-x;
 	border:1px solid #ccc;
 	margin:5px
 }
@@ -2478,14 +2478,14 @@ div.slideshow ul li a.title{
 }
 
 #search_results .actions-dropdown-button{
-	background:#333 url("../images/down_arrow.gif") 93% 50% no-repeat;
+	background:#333 url("/images/down_arrow.gif") 93% 50% no-repeat;
 	padding:0 15px 0 10px;
 	cursor:pointer;
 	margin-left:10px;
 }
 
 #search_results .actions-dropdown-button.disabled{
-	background:#999 url("../images/down_arrow.gif") 93% 50% no-repeat;
+	background:#999 url("/images/down_arrow.gif") 93% 50% no-repeat;
 	cursor:default;
 }
 
