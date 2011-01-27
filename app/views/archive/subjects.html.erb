@@ -1,10 +1,34 @@
 <% @page_description = t(:subjects_description) -%>
 <% @page_title = t(:archive).capitalize + " | " + t(:subject_index).capitalize -%>
 
-<div id="staticContent" class="clearfix">
-    <h1><%= link_to t(:archive).capitalize, archive_path %> | <%= t(:subject_index).titleize %></h1>
-    <ul class="subjects_list">
-        <%= render :partial => 'subject', :collection => @subjects %>
-    </ul>
+<div class="clearfix" id="fullIndex">
+    <div id="indexList">
+        <div class="otherIndexes">
+            <a href="<%= archive_genres_path %>">&raquo; <%= t(:genres_index) %></a>
+            <a href="<%= archive_people_path %>">&raquo; <%= t(:people_index) %></a>
+            <a href="<%= archive_places_path %>">&raquo; <%= t(:place_index) %></a>
+            <a class="redButton" href="#" style="color:#fff"><%= t(:back_to_archive) %></a>
+        </div>
+        <h2><%= t(:subject_index).titleize %></h2>
+        <ul class="alphabet">
+            <% @alphabet.each do |letter| -%>
+            <li>
+                <%= link_to_unless letter.blank?, letter, archive_subjects_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
+            </li>
+            <% end -%>
+        </ul>
+        <%= @rows = (@subjects.length / 3).ceil -%>
+        <% @counter = 0 -%>
+
+        <ul class="subjects_list col3">
+            <% @subjects.each do | subject | -%>
+            <% if @counter > @rows || @counter > @rows * 2 -%>
+              </ul>
+              <ul class="subjects_list col3">
+            <% end -%>
+                <%= render :partial => 'subject', :locals => {:subject => subject} %>
+            <% end -%>
+        </ul>
+    </div>
 </div>
 

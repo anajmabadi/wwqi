@@ -1,6 +1,6 @@
-<% if subject.items_count > 0 -%> 
+<% if subject.items.size > 0 -%>
 <li class="subject_item">
-    <%= subject.name %>
-    <%= link_to( "#{t(:items)}: #{localized_number(subject.items_count)}", archive_browser_path(:subject_filter => subject.id)) %>
+    &raquo; <%= link_to( raw("#{subject.name} <span>#{localized_number(subject.items_count)}</span>"), archive_browser_path(:subject_filter => subject.id)) %>
 </li>
+<% @counter += 1 %>
 <% end -%>
