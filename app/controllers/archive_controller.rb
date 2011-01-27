@@ -22,7 +22,16 @@ class ArchiveController < ApplicationController
   end
 
   def subjects
-    @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', true, 7, I18n.locale.to_s]).order('subject_translations.name')
+    @filter_letter = params[:filter_letter]
+    @filter_letter = @filter_letter[0] if !@filter_letter.nil? && @filter_letter.length > 1
+    if @filter_letter.blank?
+      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 7, I18n.locale.to_s]).order('subject_translations.name')
+    else
+      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND SUBSTRING(subject_translations.name,1,1) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
+    end
+    @valid_initials = @subjects.map { |s| s.name[0].upcase }.uniq
+    @alphabet = I18n.locale == :en ? ALPHABET_EN : ALPHABET_FA 
+    @filter_letter = params[:filter_letter]
   end
 
   def places
