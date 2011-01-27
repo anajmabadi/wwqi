@@ -295,7 +295,7 @@ ul.sortnav li.active a.module-link { background:url(/images/sortnav_grey_right.p
 
 ul.sortnav li a.module-link { color:#fff; padding:6px 9px 6px 0; outline:none; font-weight:bold }
 ul.sortnav li a.module-link:hover,
-ul.sortnav li a.module-link:focus { color:#ccc; text-decoration:none; }
+ul.sortnav li a.module-link:focus { color:#CA3723; text-decoration:none; }
 
 #header ul.sortnav{font-size:1.0em}
 #header ul.sortnav li.active { background:none; }
@@ -522,7 +522,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 .paginationBar .sortnav a.module-link{color:#666 ;}
 .paginationBar li.active .sortnav a.module-link{color:#fff !important;}
-.paginationBar .sortnav .disabled{color:#FFF;}
+.paginationBar .sortnav .disabled{color:#aaa;}
 .paginationBar .sortnav em {color:#CA4F40;}
 .paginationBar .sortnav a:hover{color:#000;}
 .paginationBar .paginate{float:right}
@@ -2354,4 +2354,204 @@ div.field {
 	width:30%;
 	margin-right:3%;
 	float:left;
+}
+
+
+
+/* search results
+-------------------------------------------------------------- */
+#search_results{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin-bottom:5px;
+	color:#666;
+	background:#fff;
+	clear:left;
+	padding:10px;
+	position:relative;
+}
+
+#search_results #items{
+	margin-left:0
+}
+
+#search_results h2{
+	border-bottom:1px dotted #aaa;
+	color:#333;
+	font-size:18px;
+	font-weight:bold;
+	margin:0;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #eee;
+	margin-bottom:6px;
+}
+
+#search_results .listItem{
+	width:auto;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background:url(../images/bg_cell_highlight_2.jpg) bottom left repeat-x;
+	border:1px solid #ccc;
+	margin:5px
+}
+
+#search_results .listItem .description{
+	float:none;
+	width:auto;
+	margin-left:140px;
+}
+
+
+
+/* item styles
+-------------------------------------------------------------- */
+#search_results .item{
+    width:175px;
+    height:175px;
+    position:relative;
+    float:left;
+    margin:0px 5px 5px 30px;
+    overflow:hidden
+}
+#search_results .listItem.highlight{
+	background:#f4dda6;
+	border:1px solid #ccc;
+	cursor:pointer;
+}
+
+
+#search_results .listItem .item{ width:102px; height:auto;	}
+#search_results .listItem.exhibit .item{ width:185px; height:auto;	}
+
+#search_results .item img{
+    border:1px solid #ccc;
+    background-color:#fff;
+}
+
+#search_results .item a.type{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    left:5px;
+    text-indent:-99999px;
+    z-index:20;
+}
+
+#search_results .select-item{
+	position:absolute;
+	width:22px;
+	height:22px;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	
+	top:5px;
+	left:5px;
+}
+
+
+#search_results .item.first{margin-left:12px;}
+
+#search_results .item a.title{
+    display:block;
+    width:100%;
+    position:absolute;
+    left:0;
+    background:url(/images/85black.png);
+    padding:3px 0;
+    text-align:center;
+    font-size:1.0em;
+    color:#fff;
+    font-weight:bold;
+    bottom:-19px;
+    z-index:10;
+}
+
+#search_results .item span{
+    display:block;
+    font-size:0.9em;
+    color:#ccc;
+    font-weight:normal;
+}
+
+#items{
+    margin-left:8px
+}
+
+.paginationBar {
+	width:auto;
+	margin: 0 0 10px 0;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+}
+
+.paginationBar a:hover{
+	color:#CA3723
+}
+
+#search_results .actions-dropdown-button{
+	background:#333 url("../images/down_arrow.gif") 93% 50% no-repeat;
+	padding:0 15px 0 10px;
+	cursor:pointer;
+}
+
+#search_results .actions-dropdown-button.disabled{
+	background:#999 url("../images/down_arrow.gif") 93% 50% no-repeat;
+	cursor:default;
+}
+
+#search_results .actions-dropdown{
+	width:150px;
+	padding:0;
+	background:#333;
+	-moz-border-radius:5px 0 5px 5px;
+	-webkit-border-radius:5px 0 5px 5px;
+	border-radius:5px 0 5px 5px;
+	position:absolute;
+	top:30px;
+	right:10px;
+	z-index:100;
+	display:none;
+}
+
+#search_results .actions-dropdown a{
+	display:block;
+	margin:0;
+	padding:4px 10px;
+}
+
+#search_results .actions-dropdown a:hover{
+	background:#000;
+}
+
+#search_results .item-tools{
+	position:absolute;
+	bottom:5px;
+	right:5px;
+	width:auto;
+	display:none;
+}
+
+#search_results .item-tools a{
+	display:block;
+	float:right;
+	padding:0px 5px!important;
+	height:15px;
+	line-height:15px;
+	background:#888;
+	color:#fff;
+	font-size:10px;
+	font-weight:bold;
+	margin:0 0 0 5px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+#search_results .item-tools a:hover{
+	background:#CA3723;
 }
