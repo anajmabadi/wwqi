@@ -1,0 +1,23 @@
+<script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
+</script>
+<script language="javascript" type="application/javascript">
+    $(document).ready( function() {
+
+        $('a[title]').qtip({
+            style: {
+                name: 'dark',
+                tip: true,
+                border: {
+                    radius: 8
+                }
+            },
+            position: {
+                corner: {
+                    target: 'topMiddle',
+                    tooltip: 'bottomMiddle'
+                }
+            }
+        });
+
+    });
+</script>

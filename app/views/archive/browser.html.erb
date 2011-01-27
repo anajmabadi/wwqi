@@ -1,6 +1,9 @@
 <% @page_description = t(:archive_description) -%>
 <% @page_title = t(:archive).capitalize -%>
-<% @extra_head_content = browser_header_content -%>
+
+<% content_for :head do %>
+<%= render 'head_browser_content' %>
+<% end %>
 
 <div id="browser" class="clearfix">
   <div id="head" class="filters clearfix">
