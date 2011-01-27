@@ -9,7 +9,7 @@
         var jpTotalTime = $("#jplayer_total_time");
         $("#jquery_jplayer").jPlayer( {
             ready: function () {
-                this.element.jPlayer("setFile", "<%= mp3_name %>", "<%= wav_name %>").jPlayer("play"); // Defines the mp3 & wav
+                this.element.jPlayer("setFile", "<%= mp3_name %>", "<%= wav_name %>").jPlayer("stop"); // Defines the mp3 & wav
             },
             swfPath: "/javascripts",
             volume: 50,
@@ -20,7 +20,7 @@
             jpTotalTime.text($.jPlayer.convertTime(totalTime));
         })
         .jPlayer("onSoundComplete", function() {
-            this.element.jPlayer("play");
+            this.element.jPlayer("stop");
         });
     });
 </script>
