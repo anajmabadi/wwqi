@@ -2339,7 +2339,7 @@ div.field {
 }
 
 #indexList ul li ul{
-	margin-left:20px;
+	margin-right:20px;
 	line-height:13px;
 	color:#CA3723;
 	font-size:12px;
@@ -2347,4 +2347,19 @@ div.field {
 
 #indexList ul li ul li a{
 	font-size:12px;
+}
+
+.otherIndexes{
+	float:left;
+}
+
+.otherIndexes a{
+	margin-left:10px;
+	color:#CA3723;
+}
+
+.col3{
+	width:30%;
+	margin-left:3%;
+	float:right;
 }

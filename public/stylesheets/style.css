@@ -2349,3 +2349,9 @@ div.field {
 	margin-left:10px;
 	color:#CA3723;
 }
+
+.col3{
+	width:30%;
+	margin-right:3%;
+	float:left;
+}
