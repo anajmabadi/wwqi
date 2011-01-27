@@ -359,6 +359,8 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #browser #head .itemTools .link{padding-right:15px; background:url(/images/link_icon.gif) 100% 6px no-repeat}
 
 
+#browser #head .add_this_tools{float:left; overflow:auto; width:230px; margin-top: -18px; margin-left: 10px;}
+
 #browser #browserContent{
 	background:#fff;
 	-moz-border-radius-bottomleft:5px;
