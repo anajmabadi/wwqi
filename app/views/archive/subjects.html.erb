@@ -13,7 +13,7 @@
         <ul class="alphabet">
             <% @alphabet.each do |letter| -%>
             <li>
-                <%= link_to_unless @valid_initials.include?(letter), letter, archive_subjects_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
+                <%= link_to_if @valid_initials.include?(letter), letter, archive_subjects_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
             </li>
             <% end -%>
         </ul>
