@@ -2497,6 +2497,7 @@ div.field {
 	background:#333 url("../images/down_arrow.gif") 93% 50% no-repeat;
 	padding:0 15px 0 10px;
 	cursor:pointer;
+	margin-left:10px;
 }
 
 #search_results .actions-dropdown-button.disabled{
@@ -2554,4 +2555,8 @@ div.field {
 
 #search_results .item-tools a:hover{
 	background:#CA3723;
+}
+
+a.my-items{
+	color:#CA3723;
 }
