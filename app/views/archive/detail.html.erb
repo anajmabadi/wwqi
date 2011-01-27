@@ -1,6 +1,13 @@
 <% @page_description = t(:detail_description) -%>
 <% @page_title = t(:detail).capitalize -%>
-<% @extra_head_content = detail_header_content -%>
+
+<% content_for :head do %>
+    <% if @item.clips.empty? -%>
+      <%= render 'head_detail_content' %>
+    <% else -%>
+      <%= render :partial => 'head_detail_audio_content', :locals => { :mp3_name => @item.clips[0].clip_url('mp3'), :wav_name => @item.clips[0].clip_url('wav') } %>
+    <% end %>
+<% end %>
 
 <div id="browser" class="clearfix singleItemBrowser">
     <div id="head">
@@ -95,11 +102,11 @@
                     <td>
                     <ul>
                         <% @item.alternate_titles.each do |alternate_title| -%>
-                          <% unless alternate_title.title.blank? -%>
-                            <li>
-                                <%= alternate_title.title %>
-                            </li>
-                          <% end -%>
+                        <% unless alternate_title.title.blank? -%>
+                        <li>
+                            <%= alternate_title.title %>
+                        </li>
+                        <% end -%>
                         <% end -%>
                     </ul>
                     </td>
@@ -151,9 +158,7 @@
                 <% end %>
             </table>
             <% unless @item.clips.empty? %>
-            <% clip = @item.clips[0] -%>
-            <% @extra_head_content = archive_audio_head(clip.clip_url('mp3'), clip.clip_url('wav')) -%>
-            <%= raw css_audio_player(clip.title) %>
+            <%= raw css_audio_player(@item.clips[0].title) %>
             <% end %>
         </div>
     </div>

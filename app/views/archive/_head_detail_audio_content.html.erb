@@ -1,5 +1,5 @@
 <!-- classroom head -->
-<link href="/stylesheets/skin/jplayer.blue.monday#{language_suffix}.css" rel="stylesheet" type="text/css" />
+<link href="/stylesheets/skin/jplayer.blue.monday<%= language_suffix %>.css" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="/javascripts/jquery.jplayer.min.js">
 </script>
 <script type="text/javascript">
@@ -9,7 +9,7 @@
         var jpTotalTime = $("#jplayer_total_time");
         $("#jquery_jplayer").jPlayer( {
             ready: function () {
-                this.element.jPlayer("setFile", "#{mp3_name}", "#{wav_name}").jPlayer("play"); // Defines the mp3 & wav
+                this.element.jPlayer("setFile", "<%= mp3_name %>", "<%= wav_name %>").jPlayer("play"); // Defines the mp3 & wav
             },
             swfPath: "/javascripts",
             volume: 50,
