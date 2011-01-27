@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110125165739) do
+ActiveRecord::Schema.define(:version => 20110127034146) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -531,12 +531,13 @@ ActiveRecord::Schema.define(:version => 20110125165739) do
   add_index "months", ["publish"], :name => "index_months_on_publish"
 
   create_table "owner_translations", :force => true do |t|
-    t.integer  "owner_id",   :default => 0,    :null => false
-    t.string   "locale",     :default => "en", :null => false
-    t.string   "name",       :default => "",   :null => false
+    t.integer  "owner_id",     :default => 0,    :null => false
+    t.string   "locale",       :default => "en", :null => false
+    t.string   "name",         :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "credit"
+    t.text     "restrictions"
   end
 
   add_index "owner_translations", ["locale"], :name => "in_owner_translations_locale"
