@@ -1116,59 +1116,6 @@ div.slideshow ul li a.title{
 	right:0;
 }
 
-/* rails errors */
-
-/* rails errors */
-
-div.field, div.actions {
-  margin-bottom: 10px;
-}
-
-div.field {
-    color:black
-}
-
-.notice {
-  color: green;
-}
-
-.fieldWithErrors {
-  padding: 2px;
-  background-color: red;
-  display: table;
-}
-
-#errorExplanation {
-  width: 400px;
-  border: 2px solid red;
-  padding: 7px;
-  padding-bottom: 12px;
-  margin-bottom: 20px;
-  background-color: #f0f0f0;
-}
-
-#errorExplanation h2 {
-  text-align: left;
-  font-weight: bold;
-  padding: 5px 5px 5px 15px;
-  font-size: 12px;
-  margin: -7px;
-  background-color: #c00;
-  color: #fff;
-}
-
-#errorExplanation p {
-  color: #333;
-  margin-bottom: 0;
-  padding: 5px;
-}
-
-#errorExplanation ul li {
-  font-size: 12px;
-  list-style: square;
-}
-
-
 .beta{
 	width:57px;
 	height:24px;
@@ -2599,3 +2546,76 @@ a.my-items{
 }
 
 #jqjp_force_0 {text-indent:-9999px!important}
+
+/* rails errors */
+
+div.field, div.actions {
+  margin-bottom: 10px;
+}
+div.field {
+    color:grey;
+    font-weight: bold;
+}
+.notice {
+    color: green;
+}
+
+.field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+}
+
+#error_explanation {
+    width: 400px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 12px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+#error_explanation h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    background-color: #c00;
+    color: #fff;
+}
+
+#error_explanation p {
+    color: #333;
+    margin-bottom: 0;
+    padding: 5px;
+}
+
+#error_explanation ul li {
+    font-size: 12px;
+    list-style: square;
+}
+
+/********  Notifications   ********/
+
+#notification_block {
+  padding: 5px;
+}
+
+#notification_block .error {
+  color: red;
+  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 5px 80px 5px 80px;
+}
+
+#notification_block .notice {
+  color: green;
+  font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+  text-align: center;
+  background-color: #EEEEEE;
+  padding: 10px;
+  margin: 5px 80px 5px 80px;
+}
