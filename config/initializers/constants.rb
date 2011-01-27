@@ -19,7 +19,7 @@
   CLIPS_DIR = "clips/"
   FILE_PREFIX = "it_"
   
-  ALPHABET_EN = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z #]
+  ALPHABET_EN = %w[A B C D E F G H I J K L M N O P Q R S T U V W X Y Z]
   ALPHABET_FA = %w[ء
 ا
 آ
@@ -56,5 +56,5 @@
 ه
 ي
 ی
-#]
+]
 

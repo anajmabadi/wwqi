@@ -13,20 +13,20 @@
         <ul class="alphabet">
             <% @alphabet.each do |letter| -%>
             <li>
-                <%= link_to_unless letter.blank?, letter, archive_subjects_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
+                <%= link_to_unless @valid_initials.include?(letter), letter, archive_subjects_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
             </li>
             <% end -%>
         </ul>
-        <%= @rows = (@subjects.length / 3).ceil -%>
+        <% @rows = (@subjects.length / 3).ceil -%>
         <% @counter = 0 -%>
-
         <ul class="subjects_list col3">
             <% @subjects.each do | subject | -%>
-            <% if @counter > @rows || @counter > @rows * 2 -%>
-              </ul>
-              <ul class="subjects_list col3">
+            <% if @counter > @rows  -%>
+        </ul>
+        <ul class="subjects_list col3">
+            <% @counter = 0 -%>
             <% end -%>
-                <%= render :partial => 'subject', :locals => {:subject => subject} %>
+            <%= render :partial => 'subject', :locals => {:subject => subject} %>
             <% end -%>
         </ul>
     </div>
