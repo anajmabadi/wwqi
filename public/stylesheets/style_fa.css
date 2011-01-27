@@ -2033,7 +2033,7 @@ div.field {
 
 #browseBar .list li{
 	padding:0 10px 0 0px;
-	font-size:12px;
+	font-size:13px;
 	margin:0;
 	background:url(../images/bullet_fa.gif) 100% 10px no-repeat;
 	margin: 0 10px 0 0px;
@@ -2197,6 +2197,7 @@ div.field {
 	-moz-border-radius:0 0 5px 5px;
 	-webkit-border-radius:0 0 5px 5px;
 	-border-radius:0 0 5px 5px;
+	font-size:14px;
 }
 
 
@@ -2204,7 +2205,7 @@ div.field {
 	width:165px;
 	float:left;
 	margin-right:10px;
-	background:#ccc;
+	background:#fff;
 	padding:10px;
 	margin-bottom:10px;
 	-moz-border-radius:5px;
@@ -2230,6 +2231,7 @@ div.field {
 	dislay:inline-block;
 	width:40%;
 	float:right;
+	font-size:14px;
 }
 
 #archive_index_wrapper ul li a{
