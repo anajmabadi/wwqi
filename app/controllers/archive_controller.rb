@@ -38,7 +38,6 @@ class ArchiveController < ApplicationController
   end
 
   def places
-    @places = Place.where(['publish=? AND place_translations.locale=?', true, I18n.locale.to_s]).order('place_translations.name')
     
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
@@ -57,7 +56,21 @@ class ArchiveController < ApplicationController
   end
 
   def people
-    @people = Person.where(['publish=? AND person_translations.locale=?', true, I18n.locale.to_s]).order('person_translations.name')
+    
+    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
+    
+    @all_people = Person.includes("appearances").select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND appearances.id IS NOT NULL', true, I18n.locale.to_s]).order('person_translations.name')
+
+    if @filter_letter.blank?
+      @people = @all_people
+    else
+      @people = @all_people.where(['UPPER(SUBSTRING(person_translations.name,1,1)) = ?', @filter_letter])  
+    end
+    
+    @valid_initials = @all_people.map { |s| s.name[0].upcase }.uniq
+    @alphabet = I18n.translate(:a_z_menu).split(" ")  
+    
   end
 
   def genres
