@@ -23,18 +23,18 @@ class ArchiveController < ApplicationController
 
   def subjects
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-    @filter_letter = params[:filter_letter]
-    @filter_letter = @filter_letter[0] if !@filter_letter.nil? && @filter_letter.length > 1
+    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
+    
     @all_subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 7, I18n.locale.to_s]).order('subject_translations.name')
 
     if @filter_letter.blank?
       @subjects = @all_subjects
     else
-      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND SUBSTRING(subject_translations.name,1,1) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
+      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
     end
     @valid_initials = @all_subjects.map { |s| s.name[0].upcase }.uniq
     @alphabet = I18n.locale == :en ? ALPHABET_EN : ALPHABET_FA 
-    @filter_letter = params[:filter_letter]
+    
   end
 
   def places
@@ -46,7 +46,26 @@ class ArchiveController < ApplicationController
   end
 
   def genres
-    @genres = Subject.where(['publish=? AND subject_translations.locale=? AND subject_type_id = ?', true, I18n.locale.to_s, 8]).order('subject_translations.name')
+    
+    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
+    
+    @all_genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 8, I18n.locale.to_s]).order('subject_translations.name')
+
+    if @filter_letter.blank?
+      @genres = @all_genres
+    else
+      
+      Rails.logger.info '--------@filter_letter: ' + @filter_letter
+      @genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 8, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
+      
+      Rails.logger.info '--------@genres.size: ' + @genres.size.to_s
+    
+    end
+    
+    @valid_initials = @all_genres.map { |s| s.name[0].upcase }.uniq
+    @alphabet = I18n.locale == :en ? ALPHABET_EN : ALPHABET_FA 
+    
   end
 
   def browser
