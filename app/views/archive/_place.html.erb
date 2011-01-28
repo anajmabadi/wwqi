@@ -1,6 +1,6 @@
-<% if place.items_count > 0 -%>
+<% if place.items.size > 0 -%>
 <li class="place_item">
-    <%= place.name %>
-    <%= link_to( "#{t(:items)}: #{localized_number(place.items_count)}", archive_browser_path(:place_filter => place.id)) unless place.items.empty? %>
+    &raquo; <%= link_to( raw("#{place.name} <span>#{localized_number(place.items_count)}</span>"), archive_browser_path(:place_filter => place.id)) %>
 </li>
+<% @counter += 1 %>
 <% end -%>

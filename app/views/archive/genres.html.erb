@@ -23,11 +23,11 @@
         </ul>
         <% @rows = (@genres.length / 3).ceil -%>
         <% @counter = 0 -%>
-        <ul class="genres_list col3">
+        <ul class="subjects_list col3">
             <% @genres.each do | genre | -%>
             <% if @counter > @rows  -%>
         </ul>
-        <ul class="genres_list col3">
+        <ul class="subjects_list col3">
             <% @counter = 0 -%>
             <% end -%>
             <%= render :partial => 'genre', :locals => {:genre => genre} %>
