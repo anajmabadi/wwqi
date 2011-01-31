@@ -51,6 +51,10 @@ class Person < ActiveRecord::Base
     my_label += " #{self.id.to_s}" 
     return my_label
   end
+  
+  def collection_name_en
+    return self.collection.nil? ? '' : self.collection.name_en
+  end
 
   def collections_label_en
     return self.included_collections.nil? ? I18n.translate(:n_a) : self.included_collections.map { |c| c.name_en }.join(", ")
