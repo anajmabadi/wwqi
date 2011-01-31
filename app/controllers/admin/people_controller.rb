@@ -6,7 +6,7 @@ class Admin::PeopleController < Admin::AdminController
   
   def index
 
-    @order = sort_order('people.id') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
+    @order = sort_order('people.id') unless ["name_en", "name_fa", "collection_name_en"].include?params[:c]
 
     # look for filters
     @keyword_filter = params[:keyword_filter] unless params[:keyword_filter] == I18n.translate(:search_prompt)
@@ -28,7 +28,7 @@ class Admin::PeopleController < Admin::AdminController
 
     @people = Person.includes('collection').where(@query).order(@order)
 
-    @people = sort_bilingual(@people, params[:c], params[:d]) if ["name_en", "name_fa"].include?params[:c]
+    @people = sort_bilingual(@people, params[:c], params[:d]) if ["name_en", "name_fa", "collection_name_en"].include?params[:c]
 
     #cache the current search set in a session variable
     session[:admin_people_index_url] = request.fullpath
@@ -176,6 +176,7 @@ class Admin::PeopleController < Admin::AdminController
       people = case bilingual_field
         when 'name_en' then people.sort_by(&:name_en)
         when 'name_fa' then people.sort_by(&:name_fa)
+        when 'collection_name_en' then people.sort_by(&:collection_name_en)
       else people
       end
       people.reverse! if direction == 'down'
