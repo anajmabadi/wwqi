@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110127034146) do
+ActiveRecord::Schema.define(:version => 20110131082424) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -637,17 +637,19 @@ ActiveRecord::Schema.define(:version => 20110127034146) do
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
-    t.boolean  "major",        :default => false, :null => false
+    t.boolean  "major",         :default => false, :null => false
     t.integer  "dob"
     t.integer  "dod"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
-    t.boolean  "publish",      :default => true,  :null => false
-    t.integer  "lock_version", :default => 0,     :null => false
+    t.boolean  "publish",       :default => true,  :null => false
+    t.integer  "lock_version",  :default => 0,     :null => false
+    t.integer  "collection_id"
   end
 
+  add_index "people", ["collection_id"], :name => "index_people_on_collection_id"
   add_index "people", ["major"], :name => "in_people_on_major"
   add_index "people", ["publish"], :name => "index_people_on_publish"
 

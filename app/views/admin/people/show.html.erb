@@ -75,11 +75,18 @@
                 </div></td>
             </tr>
             <tr>
-                <td colspan="2">
+                <td>
                 <div class="field">
                     <%= label @person, :loc_name %>
                     <br />
                     <%= @person.loc_name %>
+                </div></td>
+                
+                <td>
+                <div class="field">
+                    <%= label @person, :collection_id %>
+                    <br />
+                    <%= @person.collection.name unless @person.collection.nil? %>
                 </div></td>
             </tr>
             <tr>

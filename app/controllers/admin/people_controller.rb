@@ -1,9 +1,11 @@
 class Admin::PeopleController < Admin::AdminController
   # GET /people
   # GET /people.xml
+  
+  before_filter :load_collections, :only => [ :index, :edit, :create, :update, :new ]
+  
   def index
 
-    @collections = Collection.select_list
     @order = sort_order('people.id') unless params[:c] == 'name_en' || params[:c] == 'name_fa'
 
     # look for filters
@@ -24,7 +26,7 @@ class Admin::PeopleController < Admin::AdminController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    @people = Person.where(@query).order(@order)
+    @people = Person.includes('collection').where(@query).order(@order)
 
     @people = sort_bilingual(@people, params[:c], params[:d]) if ["name_en", "name_fa"].include?params[:c]
 
@@ -196,5 +198,9 @@ class Admin::PeopleController < Admin::AdminController
 
     people = sort_bilingual(people, session[:people_sort_field], session[:people_direction]) if ["name_en", "name_fa"].include?session[:people_sort_field]
     return people
+  end
+  
+  def load_collections
+    @collections = Collection.select_list
   end
 end
