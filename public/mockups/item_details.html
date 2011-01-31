@@ -40,72 +40,7 @@
         <script language="javascript" type="application/javascript">
             $(document).ready( function() {
 
-                $("#browseBar h3 a").click( function() {
-
-                    $(this).parent().toggleClass("active").next(".list").animate({
-                        opacity: 'toggle',
-                        height: 'toggle'
-                    }, 300);
-
-                });
-                $("#browseBar a.moreLink").click( function() {
-                    if ($(this).html()=="see more") {
-                        $(this).html("see less");
-                        $(this).addClass("less");
-                    } else {
-                        $(this).html("see more");
-                        $(this).removeClass("less");
-                    }
-                    $(this).parents(".list").find("ul.more").animate({
-                        opacity: 'toggle',
-                        height: 'toggle'
-                    }, 300);
-                    return false;
-                });
-				
-				$(".select-item input").click(function(){
-						if($(this).is(":checked")){
-							$(this).parents(".item").addClass("highlight");
-							setActionsButtonState();
-						}
-						else{
-							$(this).parents(".item").removeClass("highlight");
-							$(".actions-dropdown").hide();
-							setActionsButtonState();
-						}
-				});
-				
-				$(".actions-dropdown-button").click(function(){
-					if($(this).hasClass("disabled")){
-						return;
-					}
-					else{
-						$(".actions-dropdown").toggle();
-					}
-				});
-				
-				$(".actions-dropdown").hover(function(){
-				}, function(){
-					$(this).hide();
-				});
-				
-				$(".item").hover(function(){
-					
-					$("a.title",this).show('fade');
-				}, function(){
-					$("a.title",this).hide('fade');
-				});
-				
-				
-				setActionsButtonState = function(){
-					if ($(".item.highlight").length>0){
-						$(".actions-dropdown-button").removeClass("disabled");
-					}
-					else
-						$(".actions-dropdown-button").addClass("disabled");
-				}
-				
-				setActionsButtonState();
+               
 				Shadowbox.init();
 
             });
@@ -160,7 +95,7 @@
                    
                    <a href="/images/sample_item.png" rel="shadowbox[gallery]" class="redButton">View in Lightbox</a>
                    <a href="#" class="redButton">View in Zoomify</a>
-                   <a rel="shadowbox[print];width=300px;height=240px;" href="#print-popup" class="redButton">Print</a>
+                   <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton">Print</a>
                    <a href="#" class="blackButton">Download [175KB]</a>
                    <a href="#" class="blackButton">Translation</a>
                    <a href="#" class="blackButton">Transcript</a>
@@ -344,6 +279,7 @@
 		<div id="print-popup" style="display:none;">
             <div id="print-popup-content" style="padding:20px;color:#fff;">
                 <h2> Print </h2>
+                <p>This item has 18 images. I want to print:</p>
                 <form>
                 	<div class="form_row">
                 		<input type="radio" name="print_type" /> Cover Page
