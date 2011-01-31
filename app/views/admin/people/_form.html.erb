@@ -88,11 +88,18 @@
         </div></td>
     </tr>
     <tr>
-        <td colspan="2">
+        <td >
         <div class="field">
             <%= f.label :loc_name %>
             <br />
             <%= f.text_field :loc_name, :size => 75 %>
+        </div></td>
+        
+        <td >
+        <div class="field">
+            <%= f.label :collection_id %>
+            <br />
+            <%= f.select :collection_id, @collections, :include_blank => true %>
         </div></td>
     </tr>
     <tr>

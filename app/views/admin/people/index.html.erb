@@ -10,6 +10,7 @@
                     <th><%= sort_link "Id", "people.id" %></th>
                     <th><%= sort_link "Name_en", "name_en" %></th>
                     <th><%= sort_link "Name_fa", "name_fa" %></th>
+                    <th><%= sort_link "Collection", "collections.name" %></th>
                     <th><%= sort_link "DOB", "people.dob" %></th>
                     <th><%= sort_link "DOD", "people.dod" %></th>
                     <th><%= sort_link "Publish", "people.publish" %></th>
@@ -21,6 +22,7 @@
                     <td><%= person.id %> </td>
                     <td><%= link_to person.name, admin_person_path(person) %></td>
                     <td class="persianOnly"><%= person.name_fa unless person.name_fa.nil? %></td>
+                    <td><%= link_to_unless person.collection.nil?, person.collection.name, admin_collection_path(person.collection) unless person.collection.nil? %></td>
                     <td><%= person.dob %></td>
                     <td><%= person.dod %></td>
                     <td><%= show_check person.publish %></td>

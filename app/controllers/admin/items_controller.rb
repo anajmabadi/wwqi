@@ -249,7 +249,7 @@ class Admin::ItemsController < Admin::AdminController
     @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
     @item = Item.find(params[:id])
     @people = @persian_focus ? Person.select_list_fa : Person.select_list
-    @people_fa = Person.select_list_fa
+    #@people_fa = Person.select_list_fa
     @max_position = Appearance.maximum(:position, :conditions => ['item_id = ?', params[:id]] ) || 0
     @appearance = Appearance.new(
     :item_id => params[:id],
