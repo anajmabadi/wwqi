@@ -1,0 +1,364 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+        <meta name="csrf-param" content="authenticity_token"/>
+        <meta name="csrf-token" content="tb2Sf5IDP0asbptoimTf9o9zIe+A7pWZ113kaD9wPuM="/>
+
+        <title>Women's Worlds in Qajar Iran | Archive</title>
+        <meta name="description" content="The archive contains manuscripts, pictures, sound files relating to the history of women in Qajar Iran." />
+
+        <!-- facebook metatags -->
+
+        <meta property="og:title" content="Women's Worlds in Qajar Iran | Archive" />
+        <meta property="og:site_name" content="Women's Worlds in Qajar Iran"/>
+        <meta property="og:image" content="http://qajarwomen.org/images/qajar_thumbnail.jpg" />
+        <link rel="image_src" href="http://qajarwomen.org/images/qajar_thumbnail.jpg" />
+
+        <!-- load the common styles to all pages -->
+        <link rel="shortcut icon" href="/images/favicon.ico" />
+        <link href="/stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
+        <link href="/stylesheets/shadowbox.css" media="screen" rel="stylesheet" type="text/css" />
+
+        <!-- load the common scripts -->
+        <script src="/javascripts/jquery.min.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/jquery-ui.min.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/rails.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/application.js" type="text/javascript">
+        </script>
+        <script src="/javascripts/shadowbox.js" type="text/javascript">
+        </script>
+        <!-- load styles conditionally based on the controller name -->
+
+        <script src="javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
+        </script>
+        <script type="text/javascript" src="javascripts/facebox.js">
+        </script>
+        <script language="javascript" type="application/javascript">
+            $(document).ready( function() {
+
+                $("#browseBar h3 a").click( function() {
+
+                    $(this).parent().toggleClass("active").next(".list").animate({
+                        opacity: 'toggle',
+                        height: 'toggle'
+                    }, 300);
+
+                });
+                $("#browseBar a.moreLink").click( function() {
+                    if ($(this).html()=="see more") {
+                        $(this).html("see less");
+                        $(this).addClass("less");
+                    } else {
+                        $(this).html("see more");
+                        $(this).removeClass("less");
+                    }
+                    $(this).parents(".list").find("ul.more").animate({
+                        opacity: 'toggle',
+                        height: 'toggle'
+                    }, 300);
+                    return false;
+                });
+				
+				$(".select-item input").click(function(){
+						if($(this).is(":checked")){
+							$(this).parents(".item").addClass("highlight");
+							setActionsButtonState();
+						}
+						else{
+							$(this).parents(".item").removeClass("highlight");
+							$(".actions-dropdown").hide();
+							setActionsButtonState();
+						}
+				});
+				
+				$(".actions-dropdown-button").click(function(){
+					if($(this).hasClass("disabled")){
+						return;
+					}
+					else{
+						$(".actions-dropdown").toggle();
+					}
+				});
+				
+				$(".actions-dropdown").hover(function(){
+				}, function(){
+					$(this).hide();
+				});
+				
+				$(".item").hover(function(){
+					
+					$("a.title",this).show('fade');
+				}, function(){
+					$("a.title",this).hide('fade');
+				});
+				
+				
+				setActionsButtonState = function(){
+					if ($(".item.highlight").length>0){
+						$(".actions-dropdown-button").removeClass("disabled");
+					}
+					else
+						$(".actions-dropdown-button").addClass("disabled");
+				}
+				
+				setActionsButtonState();
+				Shadowbox.init();
+
+            });
+        </script>
+    </head>
+    <body class="wide">
+        <div id="header">
+            <div class="container">
+                <h1><a href="/" title="back to home"><span>Women's Worlds in Qajar Iran</span></a></h1>
+                <span class="beta">beta</span>
+                <div id="tools">
+                    <ul>
+
+                        <li>
+                            <a href="/contact">contact</a>
+                        </li>
+                        <li>
+                            <a href="/faq">FAQ</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="nav">
+                    <a class="lang" href="http://fa.qajarwomen.org/archive">فارسی</a>
+                    <ul class="sortnav">
+
+                        <li>
+                            <a href="/home" class="module-link">home</a>
+                        </li>
+                        <li class="active">
+                            <a href="/archive" class="module-link">archive</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!-- end container -->
+        </div> <!-- end header -->
+        <div id="content" class="clearfix">
+            <div class="container clearfix" id="item_details">
+                <!-- rails errors and notices content -->
+                <div id="notification_block">
+
+                </div>
+                <!-- end rails errors and notices content -->
+
+                <!-- rails template content -->
+
+                <div id="itemPreview" style="height:auto">
+                 <span class="image-count"> 14 images</span>
+                   <a href="/images/sample_item.png" rel="shadowbox[gallery]"><img src="/images/sample_item.png" alt="Ma'ayib al-rijal [Vices of Men], 1894"></a>
+                   <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+                   <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+                   <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+                   
+                   <a href="/images/sample_item.png" rel="shadowbox[gallery]" class="redButton">View in Lightbox</a>
+                   <a href="#" class="redButton">View in Zoomify</a>
+                   <a rel="shadowbox[print];width=300px;height=240px;" href="#print-popup" class="redButton">Print</a>
+                   <a href="#" class="blackButton">Download [175KB]</a>
+                   <a href="#" class="blackButton">Translation</a>
+                   <a href="#" class="blackButton">Transcript</a>
+                   <a href="#" class="blackButton">Add to My Selection</a>
+
+                </div><!-- end itemPreview -->
+                
+                
+                <div class="clearfix archiveBigWrapper" >
+
+                    
+  
+                    <!-- begin pagination bar -->
+                    <div class="paginationBar clearfix">
+                    	 <div class="add_this_tools">
+                          <!-- AddThis Button BEGIN -->
+                            <div class="addthis_toolbox addthis_default_style ">
+                            <a class="addthis_button_favorites"></a>
+                
+                            <a class="addthis_button_twitter"></a>
+                            <a class="addthis_button_facebook"></a>
+                            <a class="addthis_button_preferred_1"></a>
+                            <a class="addthis_button_compact"></a>
+                            </div>
+                            <script type="text/javascript">
+                                var addthis_config = 
+                                {
+                                    data_track_clickback:true,
+                                    ui_language:"en"
+                                };
+                                </script>
+                            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar"></script>
+                            <!-- AddThis Button END -->
+                        </div>
+                
+
+                      <div class="sortnav paginate">
+                        <div class="pagination">
+                        	<a class="back_to_archives" href="/archive/browser?page=5">Back to Archives</a> 
+                            <a href="/archive/browser?page=2" rel="prev" class="previous_page">previous item</a> 
+                            <a href="/archive/browser?page=2" rel="next" class="next_page">next item</a>
+                        </div>
+                      </div>
+                      
+                      
+                    </div>
+                    <!-- end pagination bar -->
+                    
+                    
+                    
+                    
+                    <div id="search_results" class="clearfix">
+                    	
+                        <h2>Ma'ayib al-rijal [Vices of Men], 1894 </h2>
+                        <div id="item_details_wrapper">
+                            <ul class="item_meta">
+                                <li class="description">
+                                <span>Description </span>
+                                Ma'ayib al-rijal [Vices of Men], written by Bibi Khanum Astarabadi (1858 or 59-1921) in 1894, first published in 1992. Vices of Men was Bibi Khanum's response to Ta'dib al-niswan [Disciplining Women], also known as Ta'dib al-nisa', a male-centered, often misogynous text written in the mid-1880s in the tradition of satirical books of advice to men about how to treat their wives and train their daughters. This text begins autobiographically with Bibi Khanum explaining her social and educational background. The text is composed of two sections; the first is a direct wittily angry response to Disciplining Women. The second part is addressed to other women ("my sisters," as she calls them) and is her advice and warnings about men, in particular as husbands. Additional copies of the text are located in: Hafez Farmanfarmayan's Library, Microfilm No. 2203, Tehran University Central Library; Malek National Library and Museum Institution, Manuscript No. 6297; and Golestan Library. </li>
+                                <li>
+                                    <span>Collection </span>
+                                    <a class="tag" href="/archive/browser?collection_filter=19">Majlis Library, Museum and Document Center</a>
+                                </li>
+                                <li>
+                                    <span>Date  </span>
+                                    1894 (1312 AH)
+                                </li>
+                                <li>
+                                    <span>Dimensions </span>
+                                    20.5 x 26.5 cm
+                                </li>
+                                <li>
+                                    <span>Repository </span>
+                                    Majlis Library, Museum and Document Center (MS. 8984). Majlis Library, Museum and Document Center, Tehran, Iran
+                                </li>
+                                <li>
+                                    <span class="block">Genres </span>
+                                    <a class="tag" href="#">manuscripts &amp; lithographs</a>
+                                    <a class="tag" href="#"> advice books </a>
+                                </li>
+                                <li class="clear">
+                                    <span>Related Items </span>
+                                    <ul>
+                                        <li>
+                                            <a href="/archive/detail/1512">Taʼdib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <ul class="item_related">
+                                <li>
+                                    <span>People</span>
+                                    <a class="tag" href="/archive/browser?person_filter=415">Astarabadi, Bibi Khanum</a>
+                                </li>
+                                <li>
+                                    <span>Subject</span>
+                                    <a class="tag" href="/archive/browser?subject_filter=267">Conduct of life</a>
+                                    <a class="tag" href="/archive/browser?subject_filter=548">Husbands</a>
+                                    <a class="tag" href="/archive/browser?subject_filter=1">Advice</a>
+                                </li>
+                                <li>
+                                    <span>Places</span>
+                                     <a class="tag" href="/archive/browser?subject_filter=1">Shiraz</a>
+                                </li>
+                            </ul>
+                         </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end rails template content -->
+
+        </div> <!-- end container -->
+        </div><!-- end content -->
+        <div id="pageFooterWrapper">
+            <div id="pageFooter">
+                <div class="columnWrapperFooter group">
+                    <div class="leftWrapperFooter">
+                        <ul class="footerNav">
+
+                            <li>
+                                <a href="/about">about</a>
+                            </li>
+                            <li>
+                                <a href="/credits">credits</a>
+                            </li>
+                            <li>
+                                <a href="/permissions">permissions</a>
+                            </li>
+                        </ul>
+                        <p>
+                            Copyright &copy; 2010  WWQI. All rights reserved.
+                        </p>
+                    </div><!-- closes leftWrapperFooter -->
+                    <div class="rightWrapperFooter">
+                        <a class="noimage" href="http://www.harvard.edu" target="_blank">
+                        <img alt="Harvard Logo"  src="/images/harvard.gif"/></a>
+                        <ul class="footerNav">
+                            <li>
+                                <a href="http://discovery.lib.harvard.edu/" target="_blank">HOLLIS Catalog  </a>
+                            </li>
+                            <li>
+                                <a href="http://www.fas.harvard.edu/~iohp/" target="_blank">Iranian Oral History Project</a>
+                            </li>
+                            <li>
+                                <a href="http://via.lib.harvard.edu/via/deliver/advancedsearch?_collection=via" target="_blank">VIA Visual Resources</a>
+                            </li>
+                            <li>
+                                <a href="http://ocp.hul.harvard.edu/ihp/" target="_blank">Islamic Heritage Project</a>
+                            </li>
+                            <li>
+                                <a href="http://oasis.lib.harvard.edu/oasis/deliver/advancedsearch?_collection=oasis" target="_blank">OASIS Archival Finding Aid</a>
+                            </li>
+                            <li>
+                                <a href="http://pds.lib.harvard.edu/pds/view/6665026?n=1&imagesize=1200&jp2Res=.125" target="_blank">Ali Khan Album</a>
+                            </li>
+                        </ul>
+                    </div><!-- closes rightWrapperFooter -->
+                </div><!-- closes columnWrapperFooter group -->
+            </div>
+        </div>
+        <!-- Google Analytics BEGIN -->
+
+        <script type="text/javascript">
+
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-1325142-25']);
+            _gaq.push(['_setDomainName', '.qajarwomen.org']);
+            _gaq.push(['_trackPageview']);
+
+            (function() {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+
+        </script>
+        <!-- Google Analytics END -->
+		<div id="print-popup" style="display:none;">
+            <div id="print-popup-content" style="padding:20px;color:#fff;">
+                <h2> Print </h2>
+                <form>
+                	<div class="form_row">
+                		<input type="radio" name="print_type" /> Cover Page
+                    </div>
+                    <div class="form_row">
+                    	<input type="radio" name="print_type" /> All Pages
+                    </div>
+                    <div class="form_row">
+                    	<input type="radio" name="print_type" /> From <input type="text" name="print_from" id="print_from" /> to   <input type="text" name="print_from" id="print_to" />
+                    </div>
+                    <div class="form_row">
+                    	<input type="submit" class="redButton" value="Print" />
+                    </div>
+                </form>
+            </div>
+    	</div>
+    </body>
+</html>
