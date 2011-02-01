@@ -2,21 +2,26 @@
 <div class="list">
     <ul class="default">
         <% @places.where("major=?",true).each do |place| -%>
-          <% unless place.items.empty? %>
-          <li>
-              <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id) %>  <span>(<%= localized_number(place.items.count) %>)</span>
-          </li>
-          <% end -%>
+        <% unless place.items.empty? %>
+        <li>
+            <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id) %>
+            <span>(<%= localized_number(place.items.count) %>)</span>
+        </li>
+        <% end -%>
         <% end -%>
     </ul>
     <ul class="more">
         <% @places.where("major=?",false).each do |place| -%>
-          <% if place.items.count >= ARCHIVE_BROWSER_PLACES_ITEMS_LIMIT -%>
-          <li>
-              <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id) %>  <span>(<%= localized_number(place.items.count) %>)</span>
-          </li>
-          <% end -%>
+        <% if place.items.count >= ARCHIVE_BROWSER_PLACES_ITEMS_LIMIT -%>
+        <li>
+            <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id) %>
+            <span>(<%= localized_number(place.items.count) %>)</span>
+        </li>
         <% end -%>
+        <% end -%>
+        <li>
+            <%= link_to t(:see_entire_index), archive_places_path, :class => "seeAllLink" %>
+        </li>
     </ul>
     <%= link_to t(:see_more), archive_places_path, :class => "moreLink" %>
 </div>

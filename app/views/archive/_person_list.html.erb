@@ -1,4 +1,4 @@
-<h3><%= link_to t(:people).capitalize, archive_people_path %></h3>
+<h3><%= link_to(t(:people).capitalize, archive_people_path) %></h3>
 <div class="list">
     <ul class="default">
         <% @people.where("major=?",true).each do |person| -%>
@@ -21,6 +21,7 @@
         <% end -%>
         <li>
             <%= link_to t(:see_entire_index), archive_people_path, :class => "seeAllLink" %>
+        </li>
     </ul>
     <%= link_to t(:see_more), archive_people_path, :class => "moreLink" %>
 </div>
