@@ -1,14 +1,14 @@
 <h3><%= link_to t(:collections).capitalize, archive_collections_path %></h3>
 <div class="list">
     <ul class="default">
-        <% @collections.where("major=?",true).limit(3).each do |collection| -%>
+        <% @collections.where("major=?",true).each do |collection| -%>
         <li>
             <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= localized_number(collection.items.count) %>)</span>
         </li>
         <% end -%>
     </ul>
     <ul class="more">
-        <% @collections.where("major=?",false).limit(10).each do |collection| -%>
+        <% @collections.where("major=?",false).each do |collection| -%>
         <li>
             <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= localized_number(collection.items.count) %>)</span>
         </li>
