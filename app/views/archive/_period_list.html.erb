@@ -3,7 +3,7 @@
     <ul class="default">
         <% @periods.each do |period| -%>
         <li>
-            <%= link_to truncate(period.title, :length => 26), archive_browser_path(:period_filter=>period.id) %>  <span>(<%= localized_number(period.items.count) %>)</span>
+            <%= link_to truncate(period.title, :length => 50), archive_browser_path(:period_filter=>period.id) %>  <span>(<%= localized_number(period.items.count) %>)</span>
         </li>
         <% end -%>
     </ul>

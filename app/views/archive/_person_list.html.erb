@@ -3,14 +3,14 @@
     <ul class="default">
         <% @people.where("major=?",true).limit(3).each do |person| -%>
         <li>
-            <%= link_to truncate(person.name, :length => 26), archive_browser_path(:person_filter=>person.id) %>  <span>(<%= localized_number(person.items.count) %>)</span>
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id) %>  <span>(<%= localized_number(person.items.count) %>)</span>
         </li>
         <% end -%>
     </ul>
     <ul class="more">
         <% @people.where("major=?",false).limit(10).each do |person| -%>
         <li>
-            <%= link_to truncate(person.name, :length => 26), archive_browser_path(:person_filter=>person.id) %>  <span>(<%= localized_number(person.items.count) %>)</span>
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id) %>  <span>(<%= localized_number(person.items.count) %>)</span>
         </li>
         <% end -%>
     </ul>

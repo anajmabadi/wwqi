@@ -3,14 +3,14 @@
     <ul class="default">
         <% @genres.where('subjects.major=?',true).limit(8).each do |genre| -%>
         <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
+            <%= link_to truncate(genre.name, :length => 50), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
         <% end -%>
     </ul>
     <ul class="more">
         <% @genres.where('subjects.major=?',false).each do |genre| -%>
         <li>
-            <%= link_to truncate(genre.name, :length => 26), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
+            <%= link_to truncate(genre.name, :length => 50), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
         <% end -%>
      </ul>
