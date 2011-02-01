@@ -10,9 +10,14 @@
     <ul class="more">
         <% @collections.where("major=?",false).each do |collection| -%>
         <li>
-            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  <span>(<%= localized_number(collection.items.count) %>)</span>
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  
+            <span>(<%= localized_number(collection.items.count) %>)</span> 
+            <%= link_to t(:collection_info), archive_collections_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>
+        <li>
+          <%= link_to t(:browse_collections), archive_collections_path, :class => "seeAllLink" %>
+        </li>
     </ul>
     <%= link_to t(:see_more), archive_collections_path, :class => "moreLink" %>
 </div>
