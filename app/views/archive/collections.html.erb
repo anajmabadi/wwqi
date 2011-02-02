@@ -1,12 +1,39 @@
 <% @page_description = t(:collections_description) -%>
 <% @page_title = t(:archive).capitalize + " | " + t(:collections).capitalize -%>
 
-
-<div id="staticContent" class="clearfix">
-  <h1><%= link_to t(:archive).capitalize, archive_path %> | <%= t(:collections).capitalize %></h1>
-  <ul>
-    <%= render :partial => 'collection', :collection => @collections %>
-  </ul>
-</div> <!-- end browser --><!-- end featured -->
-
+<div class="clearfix" id="fullIndex">
+    <div id="indexList">
+        <div class="otherIndexes">
+            <a href="<%= archive_genres_path %>">&raquo; <%= t(:genres_index) %></a>
+            <a href="<%= archive_people_path %>">&raquo; <%= t(:people_index) %></a>
+            <a href="<%= archive_places_path %>">&raquo; <%= t(:place_index) %></a>
+            <a href="<%= archive_subjects_path %>">&raquo; <%= t(:subject_index) %></a>
+            <a class="redButton" href="<%= @return_url %>" style="color:#fff"><%= t(:back_to_archive) %></a>
+        </div>
+        <h2><%= t(:collections).titleize %></h2>
+        <ul class="alphabet">
+            <% @alphabet.each do |letter| -%>
+            <li>
+                <% if letter.length > 1 -%>
+                <%= link_to letter, archive_collections_path, :class => @filter_letter == letter ? 'selected' : " " %>
+                <% else -%>
+                <%= link_to_if @valid_initials.include?(letter) || letter.length > 1, letter, archive_collections_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
+                <% end -%>
+            </li>
+            <% end -%>
+        </ul>
+        <% @rows = (@collections.length / 3).ceil -%>
+        <% @counter = 0 -%>
+        <ul class="subjects_list col3">
+            <% @collections.each do | collection | -%>
+            <% if @counter > @rows  -%>
+        </ul>
+        <ul class="subjects_list col3">
+            <% @counter = 0 -%>
+            <% end -%>
+            <%= render :partial => 'collection', :locals => {:collection => collection} %>
+            <% end -%>
+        </ul>
+    </div>
+</div>
 

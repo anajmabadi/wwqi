@@ -80,6 +80,7 @@ Qajar::Application.routes.draw do
   match 'archive/detail/:id/remember' => 'archive#remember', :as => :archive_detail_remember
   match 'archive' => 'archive#index', :as => :archive
   match 'archive/browser' => 'archive#browser', :as => :archive_browser
+  match 'archive/collections/:id' => 'archive#collection_detail', :as => :archive_collection_detail
   match 'archive/collections' => 'archive#collections', :as => :archive_collections
   match 'archive/subjects' => 'archive#subjects', :as => :archive_subjects
   match 'archive/genres' => 'archive#genres', :as => :archive_genres

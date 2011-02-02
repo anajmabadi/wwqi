@@ -18,77 +18,112 @@ class ArchiveController < ApplicationController
   end
 
   def collections
-    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
+    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
+
+    @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
+
+    if @filter_letter.blank?
+      @collections = @all_collections
+    else
+      @collections = Collection.includes("items").select('DISTINCT collection.id').where(['collections.publish=? AND private=? AND collection_translations.locale=? AND items.id IS NOT NULL AND UPPER(SUBSTRING(collection_translations.name,1,1)) = ?', true, false, I18n.locale.to_s,@filter_letter]).order('collection_translations.name')
+    end
+    @valid_initials = @all_collections.map { |s| s.name[0].upcase }.uniq
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+
+  end
+
+  def collection_detail
+
+    @return_url = session[:archive_url].nil? ? archive_path : session[:archive_url]
+
+    @error = false
+    begin
+      @collection = Collection.find(params[:id])
+      @items_count =  @collection.items_count
+    rescue => e
+      flash[:error] = e.message
+      @error = true
+    end
+
+    respond_to do |format|
+      unless @error
+        format.html
+        format.xml  { render :xml => @collection }
+      else
+        format.html { redirect_to(archive_collections_path) }
+      end
+    end
+
   end
 
   def subjects
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-    
+
     @all_subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 7, I18n.locale.to_s]).order('subject_translations.name')
 
     if @filter_letter.blank?
-      @subjects = @all_subjects
+    @subjects = @all_subjects
     else
-      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
+      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')
     end
     @valid_initials = @all_subjects.map { |s| s.name[0].upcase }.uniq
-    @alphabet = I18n.translate(:a_z_menu).split(" ") 
-    
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+
   end
 
   def places
-    
+
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-    
+
     @all_places = Place.includes("plots").select('DISTINCT places.id').where(['places.publish=? AND place_translations.locale=? AND plots.id IS NOT NULL', true, I18n.locale.to_s]).order('place_translations.name')
 
     if @filter_letter.blank?
-      @places = @all_places
+    @places = @all_places
     else
-      @places = @all_places.where(['UPPER(SUBSTRING(place_translations.name,1,1)) = ?', @filter_letter])  
+      @places = @all_places.where(['UPPER(SUBSTRING(place_translations.name,1,1)) = ?', @filter_letter])
     end
-    
+
     @valid_initials = @all_places.map { |s| s.name[0].upcase }.uniq
-    @alphabet = I18n.translate(:a_z_menu).split(" ")  
-    
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+
   end
 
   def people
-    
+
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-    
+
     @all_people = Person.includes("appearances").select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND appearances.id IS NOT NULL', true, I18n.locale.to_s]).order('person_translations.name')
 
     if @filter_letter.blank?
-      @people = @all_people
+    @people = @all_people
     else
-      @people = @all_people.where(['UPPER(SUBSTRING(person_translations.name,1,1)) = ?', @filter_letter])  
+      @people = @all_people.where(['UPPER(SUBSTRING(person_translations.name,1,1)) = ?', @filter_letter])
     end
-    
+
     @valid_initials = @all_people.map { |s| s.name[0].upcase }.uniq
-    @alphabet = I18n.translate(:a_z_menu).split(" ")  
-    
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+
   end
 
   def genres
-    
+
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-    
+
     @all_genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 8, I18n.locale.to_s]).order('subject_translations.name')
 
     if @filter_letter.blank?
-      @genres = @all_genres
+    @genres = @all_genres
     else
-      @genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 8, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')   
+      @genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 8, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')
     end
-    
+
     @valid_initials = @all_genres.map { |s| s.name[0].upcase }.uniq
-    @alphabet = I18n.translate(:a_z_menu).split(" ")  
-    
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+
   end
 
   def browser
@@ -598,7 +633,7 @@ class ArchiveController < ApplicationController
 
     # turn keyword fields into word arrays and git rid of little words
     filter_value[:values].each_with_index do |value, index|
-      # first find any quoted phrases
+    # first find any quoted phrases
       keywords[index] = value.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? || k.length<3 }.map { |k| clean_keyword(k) } unless value.blank?
     end
 
