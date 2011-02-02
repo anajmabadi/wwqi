@@ -5,29 +5,48 @@
 <%= render 'head_browser_content' %>
 <% end %>
 
-<div id="browser" class="clearfix">
-  <div id="head" class="filters">
-    <%= render :partial => "browser_filters", :locals => { :genres => @genres, :periods => @periods, :collections => @collections }  %>
-  </div>
-  <%= render :partial => "browser_indexes"  %>
-  <%= render :partial => "browser_results_message", :locals => { :items => @items }  %>
+<div id="browseBar" style="height:auto">
+    <div id="head">
+        <a href="#" class="blackButton right"><%= t(:reset).titleize %></a>
+        <h2><%= t(:refine_results) %></h2>
+    </div>
+    <%= render "my_archive_list" unless @my_archive_ids.empty? %>
 
-  <div id="browserContent" class="clearfix">
-    <% unless @items.empty?  %>
+    <%= render "genre_list" %>
 
-      <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } %>
+    <%= render "collection_list" %>
 
-      <% if @view_mode == 'list' -%>
+    <%= render "person_list" %>
+
+    <%= render "place_list" %>
+
+    <%= render "subject_list" %>
+
+    <%= render "period_list" %>
+</div>
+<!-- end browseBar -->
+<div class="clearfix archiveBigWrapper" >
+
+    <%= render "simple_search" %>
+
+    <%= render "index_list" %>
+
+    <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } unless @items.empty?  %>
+
+    <div id="search_results">
+        <%= render :partial => 'browser_results_message', :locals => {:items => @items} %>
+
+        <% unless @items.empty?  -%>
+        <% if @view_mode == 'list' -%>
         <%= render :partial => 'items_list_view', :locals => { :items => @items } %>
-      <% elsif @view_mode == 'grid' -%>
+        <% elsif @view_mode == 'grid' -%>
         <%= render :partial => 'items_grid_view', :locals => { :items => @items } %>
-      <% end -%>
-
-      <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  %>
-    <% else %>
-      <%= render :partial => 'no_items_found_view' %>
-    <% end %>
-  </div>
-
+        <% end -%>
+        <% else -%>
+        <%= render :partial => 'no_items_found_view' %>
+        <% end -%>
+    </div>
+    
+    <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  unless @items.empty? %>
 </div>
 

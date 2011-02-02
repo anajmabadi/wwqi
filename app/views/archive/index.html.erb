@@ -9,6 +9,9 @@
     <div id="head">
         <%= link_to t(:see_all_items), archive_browser_path, :class => "blackButton right" %><h2><%= t(:browse).capitalize %></h2>
     </div>
+    
+    <%= render "my_archive_list" unless @my_archive_ids.empty? %> 
+    
     <%= render "genre_list" %>
 
     <%= render "collection_list" %>
@@ -23,36 +26,11 @@
 
 </div><!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
-    <div id="archive_search_wrapper">
-        <span class="right"><%= link_to t(:advanced_search).titleize, archive_advanced_search_path %></span>
-        <h2><%= t(:search).titleize %></h2>
-        <div class="clearfix" id="simple_search">
-            <form method="get" class="searchform" action="/archive/browser">
-                <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
-                onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
-                onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-                <button type="submit" id="search" ></button>
-            </form>
-        </div>
-        <span class="examples"><%= t(:search_examples) %></span>
-    </div>
-    <div id="archive_index_wrapper">
-        <h2><%= t(:indexes).titleize %></h2>
-        <ul>
-            <li>
-                <%= link_to t(:genre).titleize, archive_genres_path %>
-            </li>
-            <li>
-                <%= link_to t(:people).titleize, archive_people_path %>
-            </li>
-            <li>
-                <%= link_to t(:place).titleize, archive_places_path %>
-            </li>
-            <li>
-                <%= link_to t(:subject).titleize, archive_subjects_path %>
-            </li>
-        </ul>
-    </div>
+
+    <%= render "simple_search" %>
+    
+    <%= render "index_list" %>
+    
     <div id="archive_welcome">
         <h2><%= t(:popular_searches) %></h2>
         <div id="highlightedLinks">

@@ -74,6 +74,7 @@ Qajar::Application.routes.draw do
   
   match 'admin' => 'admin/admin#index'
 
+  match 'archive/clear_my_items' => 'archive#clear_my_items', :as => :archive_clear_my_items
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
   match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
   match 'archive/detail/:id/forget' => 'archive#forget', :as => :archive_detail_forget

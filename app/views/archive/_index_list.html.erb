@@ -1,0 +1,17 @@
+<div id="archive_index_wrapper">
+    <h2><%= t(:indexes).titleize %></h2>
+    <ul>
+        <li>
+            <%= link_to t(:genre).titleize, archive_genres_path %>
+        </li>
+        <li>
+            <%= link_to t(:people).titleize, archive_people_path %>
+        </li>
+        <li>
+            <%= link_to t(:place).titleize, archive_places_path %>
+        </li>
+        <li>
+            <%= link_to t(:subject).titleize, archive_subjects_path %>
+        </li>
+    </ul>
+</div>

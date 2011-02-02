@@ -2,6 +2,19 @@ class ArchiveController < ApplicationController
 
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
+  def clear_my_items
+    
+    @return_url = session[:archive_url].nil? ? archive_path : session[:archive_url]
+    
+    forget_all
+    
+    respond_to do |format|
+      format.html { redirect_to @return_url }
+    end
+    
+    
+  end
+
   def index
     @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
     @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
@@ -23,7 +36,7 @@ class ArchiveController < ApplicationController
     @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
 
     if @filter_letter.blank?
-      @collections = @all_collections
+    @collections = @all_collections
     else
       @collections = Collection.includes("items").select('DISTINCT collection.id').where(['collections.publish=? AND private=? AND collection_translations.locale=? AND items.id IS NOT NULL AND UPPER(SUBSTRING(collection_translations.name,1,1)) = ?', true, false, I18n.locale.to_s,@filter_letter]).order('collection_translations.name')
     end
@@ -42,7 +55,7 @@ class ArchiveController < ApplicationController
       @items_count =  @collection.items_count
     rescue => e
       flash[:error] = e.message
-      @error = true
+    @error = true
     end
 
     respond_to do |format|
@@ -267,6 +280,14 @@ class ArchiveController < ApplicationController
     rescue => error
       flash[:error] = error.message
     @error = true
+    end
+  end
+
+  def forget_all
+    if my_archive_to_cookie([])
+      flash[:notice] = I18n.translate(:my_items_were_cleared)
+    else
+      flash[:notice] = I18n.translate(:my_items_were_not_cleared)
     end
   end
 

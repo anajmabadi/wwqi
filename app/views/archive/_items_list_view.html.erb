@@ -1,19 +1,41 @@
-<div id="items" class="list clearfix">
-  <% items.each do |item| %>
+<div class="list clearfix" id="items">
+    <% items.each do |item| %>
     <div class="listItem clearfix">
-      <div class="item <%= item.oral_history_class -%>">
-        <a href="/archive/detail/<%= item.id %>"><img width="100" src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-        <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
-      </div>
-      <div class="description">
-        <!--<a class="view" href="/archive/detail/<%= item.id %>"><%=  t(:view_details) %></a>-->
-        <h3><a href="/archive/detail/<%= item.id %>"><%= item.title %></a></h3>
-        <h4><%= item.collection.name unless item.collection.blank? %></h4>
-        <% unless item.show_date.blank? -%>
-          <p class="meta"><%= item.show_date  %></p>
-        <% end -%>
-        <p> <a href="/archive/detail/<%= item.id %>"><%= item.description unless item.description.blank? -%> </a></p>
-      </div>
+        <span class="select-item">
+            <input type="checkbox" name="select-item" />
+        </span>
+        <div class="item-tools">
+            <% if @my_archive_ids.include?(item.id) -%>
+              <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "item-add" %>
+            <% else -%>
+              <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "item-add" %>
+            <% end -%>
+            <%= link_to t(:email).titleize, "#", :class => "item-share" %>
+            <%= link_to t(:download), archive_detail_download_path(item), :class => "item-download" %>
+        </div>
+        <div class="item">
+            <a href="<% archive_detail_path(item.id) %>">
+            <img width="100" alt="<%= item.title %>" src="<%= item.thumbnail_url %>">
+            </a>
+            <a title="<%= item.subjects.genres.join(", ") %>" href="<%= archive_detail_path(item.id) %>" class="type"><%= item.subjects.genres.join(", ") %></a>
+        </div>
+        <div class="description">
+            <!--<a class="view" href="/archive/detail/1190">view details</a>-->
+            <h3>
+            <a href="<% archive_detail_path(item.id) %>">A tragic story, [ca. 1918 or 1919]</a>
+            </h3>
+            <h4><%= item.collection.name unless item.collection.blank? %></h4>
+            <% unless item.show_date.blank? -%>
+            <p class="meta">
+                <%= item.show_date  %>
+            </p>
+            <% end -%>
+            <% unless item.description.blank? -%>
+              <p>
+                 <%= item.description  -%>
+              </p>
+            <% end -%>
+        </div>
     </div>
-  <% end %>
+    <% end %>
 </div>

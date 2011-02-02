@@ -1,0 +1,14 @@
+<div id="archive_search_wrapper">
+    <span class="right"><%= link_to t(:advanced_search).titleize, archive_advanced_search_path %></span>
+    <h2><%= t(:search).titleize %></h2>
+    <div class="clearfix" id="simple_search">
+        <form method="get" class="searchform" action="/archive/browser">
+            <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color:#aaa;"
+            onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}"
+            onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+            <button type="submit" id="search" >
+            </button>
+        </form>
+    </div>
+    <span class="examples"><%= t(:search_examples) %></span>
+</div>
