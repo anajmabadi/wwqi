@@ -3,7 +3,7 @@
 
 <div class="clearfix" id="fullIndex">
     <div id="indexList">
-        <h3><%= link_to t(:collections).titleize, archive_collections_path %> | <%= @collection.name %></h3>
+        <h2><%= link_to t(:collections).titleize, archive_collections_path %> | <%= @collection.name %></h2>
         <div class="collection_items_link">
             <%= link_to(pluralize(@items_count, t(:item)), archive_browser_path(:collection_filter => @collection.id)) unless @items_count == 0 %>
         </div>
