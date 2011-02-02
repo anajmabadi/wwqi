@@ -306,7 +306,7 @@ class ArchiveController < ApplicationController
     end
 
     respond_to do |format|
-      format.html { redirect_to archive_detail_path(:id => id_to_forget) }
+      format.html { redirect_to :back }
     end
 
   end
@@ -326,7 +326,7 @@ class ArchiveController < ApplicationController
     end
 
     respond_to do |format|
-      format.html { redirect_to archive_detail_path(:id => id_to_remember) }
+      format.html { redirect_to :back }
     end
 
   end
