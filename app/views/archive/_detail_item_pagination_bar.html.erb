@@ -1,0 +1,31 @@
+<!-- begin pagination bar -->
+<div class="paginationBar clearfix">
+    <div class="add_this_tools">
+        <!-- AddThis Button BEGIN -->
+        <div class="addthis_toolbox addthis_default_style ">
+            <a class="addthis_button_favorites"></a>
+            <a class="addthis_button_twitter"></a>
+            <a class="addthis_button_facebook"></a>
+            <a class="addthis_button_preferred_1"></a>
+            <a class="addthis_button_compact"></a>
+        </div>
+        <script type="text/javascript">
+            var addthis_config =
+            {
+                data_track_clickback:true,
+                ui_language:"en"
+            };
+        </script>
+        <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar">
+        </script>
+        <!-- AddThis Button END -->
+    </div>
+    <div class="sortnav paginate">
+        <div class="pagination">
+            <%= link_to t(:back_to_collections).titleize, return_url %>
+            <%= link_to_unless @items.index(item) == 0, t(:previous_item).titleize, archive_detail_path(:id => items[items.index(item)-1]) unless items.nil? %>
+            <%= link_to_unless items.index(item) == items.size - 1, t(:next_item).titleize, archive_detail_path(:id => items[items.index(item)+1]) unless items.nil?  %>
+        </div>
+    </div>
+</div>
+<!-- end pagination bar -->

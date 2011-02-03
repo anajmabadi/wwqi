@@ -773,7 +773,7 @@ class ArchiveController < ApplicationController
   end
   
   def find_related_collections(item_ids=[])
-    my_ids = Item.where(['items.id in (?)', item_ids]).select('collection_id').map { |c| c.collection_id }.uniq.sort
+    my_ids = Item.where(['items.id in (?) AND items.collection_id IS NOT NULL', item_ids]).select('collection_id').map { |c| c.collection_id }.uniq.sort
     return Collection.where(["collections.publish=? AND private = ? AND collection_translations.locale=? AND collections.id IN (?)", true, false, I18n.locale.to_s, my_ids]).order('collection_translations.name')
   end
 

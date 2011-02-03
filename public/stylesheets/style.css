@@ -1724,7 +1724,7 @@ div.slideshow ul li a.title{
 
 #browseByCollection .collection:hover{
 	background-color:#c41230;
-	cursor:poiner;
+	cursor:pointer;
 }
 #browseByCollection .collection img{
 	width:50px;
@@ -2180,7 +2180,7 @@ div.slideshow ul li a.title{
 }
 
 #archive_index_wrapper ul li{
-	dislay:inline-block;
+	display:inline-block;
 	width:40%;
 	float:left;
 }
@@ -2554,7 +2554,7 @@ div.field, div.actions {
   margin-bottom: 10px;
 }
 div.field {
-    color:grey;
+    color:gray;
     font-weight: bold;
 }
 .notice {
@@ -2672,7 +2672,7 @@ div.field {
 	left:8px;
 	padding:0 10px 0 5px;
 	line-height:20px;
-	background:url(../images/bg_white_ribbon.png) top right no-repeat;
+	background:url(/images/bg_white_ribbon.png) top right no-repeat;
 	color:#777;
 	font-size:10px;
 }
@@ -2740,7 +2740,7 @@ ul.item_meta li ul li{
 	padding:4px 0 4px 10px;
 	margin:0;
 	border:none;
-	background:url(../images/bullet.gif) 0 50% no-repeat;
+	background:url(/images/bullet.gif) 0 50% no-repeat;
 }
 
 
@@ -2749,7 +2749,7 @@ ul.item_meta li ul li{
 }
 
 #item_details_wrapper{
-	background:url(../images/bg_item_details.gif) -9px 0 repeat-y;
+	background:url(/images/bg_item_details.gif) -9px 0 repeat-y;
 	overflow:hidden;
 }
 
@@ -2779,7 +2779,7 @@ ul.item_meta li ul li{
 }
 
 .tag{
-	background:url(../images/bullet.gif) 0 50% no-repeat;
+	background:url(/images/bullet.gif) 0 50% no-repeat;
 	color:#CA3723!important;
 	display:inline-block;
 	font-size:12px;
