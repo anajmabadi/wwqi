@@ -1,9 +1,14 @@
 <div id="items">
-  <% items.each do |item| -%>
-    <div class="item <%= item.oral_history_class %>">
-      <a href="/archive/detail/<%= item.id %>"><img src="<%= item.thumbnail_url %>" alt="<%= item.title %>" /></a>
-      <a class="type" href="/archive/detail/<%= item.id %>" title="<%= t(:oral_histories) %>"><%= t(:oral_histories) %></a>
-      <a class="title" href="/archive/detail/<%= item.id %>" title="<%= item.title %>"><%= item.title %><span><%= item.collection.name unless item.collection.blank? %></span></a>
+    <% items.each do |item| -%>
+    <div class="item">
+        <span class="select-item">
+            <input type="checkbox" name="select-item" />
+        </span>
+        <a href="/archive/detail/<%= item.id %>">
+        <img alt="<%= item.title %>" src="<%= item.thumbnail_url %>">
+        </a>
+        <%= link_to t(:oral_histories), archive_detail_path(item), :class=>"type" unless item.clips.empty? %>
+        <%= link_to raw(item.title + "<span>" + item.collection.name + "</span>"), archive_detail_path(item), :class=>'title' %>
     </div>
-  <% end -%>
+    <% end -%>
 </div>
