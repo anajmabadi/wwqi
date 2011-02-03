@@ -1,0 +1,20 @@
+<div id="itemPreview" style="height:auto">
+    <span class="image-count"><% localize_number(item.pages) + (item.pages == 1 ? t(:image) : t(:images)) %></span>
+    <a href="<%= item.preview_url %>" rel="shadowbox[gallery]">
+    <img src="<%= item.thumbnail_url %>" alt="<%= item.title %>">
+    </a>
+    <% (2..item.pages).each do |page| %>
+      <a href="<%= item.preview_url(page) %>" rel="shadowbox[gallery]"></a>
+    <% end unless item.pages < 2%>
+    <a href="<%= item.preview_url %>" rel="shadowbox[gallery]" class="redButton">View in Lightbox</a>
+    <a href="#" class="redButton">View in Zoomify</a>
+    <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton"><%= t(:print).titleize %></a>
+    <%= link_to t(:download).titleize, "archive_detail_download(item)", :class => "blackButton" unless item.transcript_en.blank? %>
+    <%= link_to t(:translation).titleize, "#", :class => "blackButton" unless item.transcript_en.blank? %>
+    <%= link_to t(:transcript).titleize, "#", :class => "blackButton" unless item.transcript_fa.blank? %>
+    <%= if @my_archive_ids.include?(item.id) -%>
+      <%= link_to t(:add_to_my_archive), archive_detail_forget(item), :class => "blackButton" %>
+    <% else -%>
+      <%= link_to t(:add_to_my_archive), archive_detail_remember(item), :class => "blackButton" %>
+    <% end -%>
+</div>
