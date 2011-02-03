@@ -1,9 +1,9 @@
 <div id="search-result-tools">
-    <a class="redButton right actions-dropdown-button"><%= t(:actions).titleize %></a>
+    <a class="redButton right actions-dropdown-button"><%= t(:selection_action_button).titleize %></a>
     <div class="actions-dropdown">
-        <a href="#" id="add-to-my-selections">Add to My Selections</a>
-        <a href="#" id="email-items">Email Citations</a>
-        <a href="#" id="download-items">Download Citations</a>
+        <a href="#" id="add-to-my-selections"><%= t(:add_to_my_archive) %></a>
+        <a href="#" id="email-items"><%= t(:email_citation) %></a>
+        <a href="#" id="download-items"><%= t(:download_citation) %></a>
     </div>
 </div>
 <h2><% if items.empty? -%>

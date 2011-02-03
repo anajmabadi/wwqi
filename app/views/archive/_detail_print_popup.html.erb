@@ -1,0 +1,28 @@
+<div id="print-popup" style="display:none;">
+    <div id="print-popup-content" style="padding:20px;color:#fff;">
+        <h2><%= t(:print).titleize %></h2>
+        <p>
+            <%= t(:print_popup_prompt).gsub("#", localized_number(item.pages))%>
+        </p>
+        <form>
+            <div class="form_row">
+                <input type="radio" name="print_type" />
+                <%= t(:cover_page) %>
+            </div>
+            <div class="form_row">
+                <input type="radio" name="print_type" />
+                <%= t(:all_pages) %>
+            </div>
+            <div class="form_row">
+                <input type="radio" name="print_type" />
+                <%= t(:page_range_start_prompt) %>
+                <input type="text" name="print_from" id="print_from" />
+                <%= t(:page_range_end_prompt) %>
+                <input type="text" name="print_from" id="print_to" />
+            </div>
+            <div class="form_row">
+                <input type="submit" class="redButton" value="<%= t(:print) %>" />
+            </div>
+        </form>
+    </div>
+</div>

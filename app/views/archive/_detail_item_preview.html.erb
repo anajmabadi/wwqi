@@ -6,9 +6,10 @@
     <% (2..item.pages).each do |page| %>
     <a href="<%= item.preview_url(page) %>" rel="shadowbox[gallery]"></a>
     <% end unless item.pages < 2 %>
-    <a href="<%= item.preview_url %>" rel="shadowbox[gallery]" class="redButton">View in Lightbox</a>
-    <a href="#" class="redButton">View in Zoomify</a>
+    <a href="<%= item.preview_url %>" rel="shadowbox[gallery]" class="redButton"><%= t(:view_in_lightbox) %></a>
+    <a href="#" class="redButton"><%= t(:view_in_zoomify) %></a>
     <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton"><%= t(:print).titleize %></a>
+    <%= link_to t(:email_citation).titleize, "#email-popup", :class => "blackButton", :rel=>"shadowbox[email];width=310px;height=400px;" %>
     <%= link_to t(:download).titleize, archive_detail_download_path(item), :class => "blackButton" %>
     <%= link_to t(:translation).titleize, "#", :class => "blackButton" unless item.transcript_en.blank? %>
     <%= link_to t(:transcript).titleize, "#", :class => "blackButton" unless item.transcript_fa.blank? %>
@@ -17,32 +18,4 @@
     <% else -%>
     <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "blackButton" %>
     <% end -%>
-</div>
-<div id="print-popup" style="display:none;">
-    <div id="print-popup-content" style="padding:20px;color:#fff;">
-        <h2><%= t(:print).titleize %></h2>
-        <p>
-            This item has 18 images. I want to print:
-        </p>
-        <form>
-            <div class="form_row">
-                <input type="radio" name="print_type" />
-                Cover Page
-            </div>
-            <div class="form_row">
-                <input type="radio" name="print_type" />
-                All Pages
-            </div>
-            <div class="form_row">
-                <input type="radio" name="print_type" />
-                From
-                <input type="text" name="print_from" id="print_from" />
-                to
-                <input type="text" name="print_from" id="print_to" />
-            </div>
-            <div class="form_row">
-                <input type="submit" class="redButton" value="Print" />
-            </div>
-        </form>
-    </div>
 </div>
