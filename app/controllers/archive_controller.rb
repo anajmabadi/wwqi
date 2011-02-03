@@ -15,13 +15,7 @@ class ArchiveController < ApplicationController
   end
 
   def index
-    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
-    @periods = Period.find(:all, :conditions => ['period_translations.locale=?', I18n.locale.to_s], :order => 'start_at')
-    @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
-    @subjects = Subject.where(['publish=? AND subject_type_id = ? AND subject_translations.locale=?', true, 7, I18n.locale.to_s]).order('subject_translations.name')
-    @people = Person.where(['publish=? AND person_translations.locale=?', true, I18n.locale.to_s]).order('person_translations.name')
-    @places = Place.where(['publish=? AND place_translations.locale=?', true, I18n.locale.to_s]).order('place_translations.name')
-
+	load_filter_models(true)
     @recently_viewed_items = Item.recently_viewed(8)
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
@@ -208,28 +202,10 @@ class ArchiveController < ApplicationController
     @items = @items_full_set.paginate :per_page => @per_page, :page => @page, :order => @order
     
     # check for a reset condition, in which case get all
-    @reset = params[:reset]
+    @reset = params[:reset] ||= @query_hash[:conditions].length == 2
     @item_ids = items_set(@items_full_set)
-    if @reset == 'true' || @query_hash[:conditions].length == 2
-      @subfilter_mode = false
-      # find complete lists for searching
-      @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
-      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
-      @collections = Collection.where(['collections.publish=? AND collections.private = ?', true, false]).order('collection_translations.sort_name, collection_translations.name')
-      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
-      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
-      @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
-    else
-      @subfilter_mode = true
-      # find complete lists for searching
-      @genres = find_related_genres(@item_ids)
-      @top_genres = find_top_selection(@genres)
-      @people =  find_related_people(@item_ids)
-      @collections = find_related_collections(@item_ids)
-      @periods = find_related_periods(@item_ids)
-      @places = find_related_places(@item_ids)
-      @subjects = find_related_subjects(@item_ids)
-    end
+    load_filter_models(@reset)
+
 
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
@@ -807,7 +783,34 @@ class ArchiveController < ApplicationController
     unless my_objects.empty? || !my_objects[0].respond_to?("items_count")
       my_objects.sort_by!(&:items_count).reverse!
     end
-    my_top_objects = my_objects.shift(ARCHIVE_REFINE_RESULTS_SHOW_LIMIT)
+    my_top_objects = my_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
     return my_top_objects
+  end
+  
+  def load_filter_models( reset=true )
+  	if reset  
+  	  @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
+      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
+      @collections = Collection.where(['collections.publish=? AND collections.private = ?', true, false]).order('collection_translations.name')
+      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
+      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s]).order("place_translations.name")
+      @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
+      @subfilter_mode = false
+    else
+      @subfilter_mode = true
+      # find complete lists for searching
+      @genres = find_related_genres(@item_ids)
+      @top_genres = find_top_selection(@genres)
+      @people =  find_related_people(@item_ids)
+      @top_people = find_top_selection(@people)
+      @collections = find_related_collections(@item_ids)
+      @top_collections = find_top_selection(@collections)
+      @places = find_related_places(@item_ids)
+      @top_places = find_top_selection(@places)
+      @subjects = find_related_subjects(@item_ids)
+      @top_subjects = find_top_selection(@subjects)
+      # periods always stays in order without top selections
+      @periods = find_related_periods(@item_ids)
+    end
   end
 end

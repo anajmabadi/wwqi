@@ -1976,7 +1976,11 @@ div.slideshow ul li a.title{
 	border-radius:5px 5px 0 0;
 	display:none;
 }
-
+#browseBar .more{
+	margin-top: 5px;
+	border-top:1px dotted #ccc;
+	padding-top: 5px;
+}
 #browseBar .list a{
 	color:#333;
 }

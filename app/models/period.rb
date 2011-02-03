@@ -6,16 +6,20 @@ class Period < ActiveRecord::Base
 
   def tag_line
     value = title
-    value += ' (' + start_year.to_s + '-' + end_year.to_s + ' [' + j_start_year.to_s + '-' + j_end_year.to_s + ']' + ')' unless start_year.blank? || end_year.blank?
+    value += ' (' + start_at.year.to_s + '-' + end_at.year.to_s + ' [' + j_start_year.to_s + '-' + j_end_year.to_s + ']' + ')' unless start_at.blank? || end_at.blank?
     return value
   end
 
   def j_start_year
-    return JalaliDate.new(Date.new(start_year)).year
+    return jalali_from_gregorian(start_at)[2]
   end
 
   def j_end_year
-    return JalaliDate.new(Date.new(end_year)).year
+    return jalali_from_gregorian(end_at)[2]
+  end
+  
+  def jalali_from_gregorian(my_date = Date.now)
+  	return Calendar.jalaali_from_absolute(Calendar.absolute_from_gregorian(my_date.month, my_date.day, my_date.year))
   end
 
   def self.select_list

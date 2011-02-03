@@ -1,24 +1,28 @@
-<h3 class="active"><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
-<div class="list" style="display:block">
+<h3><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
+<div class="list">
     <ul class="default">
         <% @collections.where("major=?",true).each do |collection| -%>
+        <% unless collection.items.empty? %>
         <li>
-            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>
             <span>(<%= localized_number(collection.items.count) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>
+        <% end -%>
     </ul>
     <ul class="more">
-        <% @collections.where("major=?",false).each do |collection| -%>
+        <% @collections.where("major=?",false).limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |collection| -%>
+        <% unless collection.items.empty? %>
         <li>
-            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>  
-            <span>(<%= localized_number(collection.items.count) %>)</span> 
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id) %>
+            <span>(<%= localized_number(collection.items.count) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>
+        <% end -%>
         <li>
-          <%= link_to t(:browse_collections), archive_collections_path, :class => "seeAllLink" %>
+            <%= link_to t(:browse_collections), archive_collections_path, :class => "seeAllLink" %>
         </li>
     </ul>
     <%= link_to t(:see_more), archive_collections_path, :class => "moreLink" %>

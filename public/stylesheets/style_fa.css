@@ -1976,7 +1976,11 @@ div.slideshow ul li a.title{
 #browseBar .list a{
 	color:#333;
 }
-
+#browseBar .more{
+	margin-top: 5px;
+	border-top:1px dotted #ccc;
+	padding-top: 5px;
+}
 #browseBar .list a:hover{
 	color:#CA3723
 }

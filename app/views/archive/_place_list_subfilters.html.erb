@@ -1,7 +1,7 @@
 <h3 class="active"><%= link_to t(:related_places).titleize, archive_places_path %></h3>
 <div class="list"  style="display:block">
     <ul class="default">
-        <% @places.limit(10).each do |place| -%>
+        <% @top_places.each do |place| -%>
         <% unless place.items.empty? %>
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
@@ -11,9 +11,9 @@
         <% end -%>
         <% end -%>
     </ul>
-    <% if @places.size > 10 -%>
+    <% if @places.size > ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT -%>
     <ul class="more">
-        <% @places.offset(10).limit(25).each do |place| -%>
+        <% @places.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |place| -%>
         <% unless place.items.empty? -%>
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
