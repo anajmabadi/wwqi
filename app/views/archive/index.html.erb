@@ -10,8 +10,6 @@
         <%= link_to t(:see_all_items), archive_browser_path, :class => "blackButton right" %><h2><%= t(:browse).capitalize %></h2>
     </div>
     
-    <%= render "my_archive_list" unless @my_archive_ids.empty? %> 
-    
     <%= render "genre_list" %>
 
     <%= render "collection_list" %>
@@ -30,6 +28,8 @@
     <%= render "simple_search" %>
     
     <%= render "index_list" %>
+    
+    <%= render "my_archive_list" %>
     
     <div id="archive_welcome">
         <h2><%= t(:popular_searches) %></h2>

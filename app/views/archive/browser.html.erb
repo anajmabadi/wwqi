@@ -10,8 +10,6 @@
         <%= link_to t(:reset).titleize, archive_browser_path(:reset => true), :class => "blackButton right" %>
         <h2><%= t(:refine_results) %></h2>
     </div>
-    <%= render "my_archive_list" unless @my_archive_ids.empty? %>
-
     <%= render @subfilter_mode ? "genre_list_subfilters" : "genre_list" %>
 
     <%= render @subfilter_mode ? "collection_list_subfilters" : "collection_list" %>
@@ -31,6 +29,8 @@
 
     <%= render "index_list" %>
 
+    <%= render "my_archive_list" %>
+
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } unless @items.empty?  %>
 
     <div id="search_results">
@@ -46,7 +46,6 @@
         <%= render :partial => 'no_items_found_view' %>
         <% end -%>
     </div>
-    
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  unless @items.empty? %>
 </div>
 
