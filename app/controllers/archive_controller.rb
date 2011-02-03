@@ -223,10 +223,10 @@ class ArchiveController < ApplicationController
       @subfilter_mode = true
       # find complete lists for searching
       @genres = find_related_genres(@item_ids)
-      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
+      @people =  find_related_people(@item_ids)
       @collections = find_related_collections(@item_ids)
-      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
-      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
+      @periods = find_related_periods(@item_ids)
+      @places = find_related_places(@item_ids)
       @subjects = find_related_subjects(@item_ids)
     end
 
@@ -777,4 +777,24 @@ class ArchiveController < ApplicationController
     return Collection.where(["collections.publish=? AND private = ? AND collection_translations.locale=? AND collections.id IN (?)", true, false, I18n.locale.to_s, my_ids]).order('collection_translations.name')
   end
 
+  def find_related_people(item_ids=[])
+    my_ids = Appearance.where(['item_id in (?)', item_ids]).select('person_id').map { |a| a.person_id }.uniq.sort
+    return Person.where(["people.publish=? AND person_translations.locale=? AND people.id IN (?)", true, I18n.locale.to_s, my_ids]).order('person_translations.name')
+  end
+  
+  def find_related_places(item_ids=[])
+    my_ids = Plot.where(['item_id in (?)', item_ids]).select('place_id').map { |a| a.place_id }.uniq.sort
+    return Place.where(["places.publish=? AND place_translations.locale=? AND places.id IN (?)", true, I18n.locale.to_s, my_ids]).order('place_translations.name')
+  end
+  
+  def find_related_periods(item_ids=[])
+    my_sort_years = Item.where(['items.id in (?)', item_ids]).select('sort_year').map { |c| c.sort_year }.uniq.sort
+    periods = []
+    my_sort_years.each do |year|
+      Period.all.each do |period|
+       periods << period if year >- period.start_at.year && year <= period.end_at.year
+      end
+    end
+    return periods.uniq.sort_by(&:start_at)
+  end
 end
