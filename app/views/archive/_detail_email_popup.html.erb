@@ -1,0 +1,31 @@
+<div id="email-popup" style="display:none;">
+    <div id="print-popup-content" style="padding:20px;color:#fff;">
+        <h2><%= t(:email).titleize %></h2>
+        <p>
+            <%= t(:email_popup_prompt) %>
+        </p>
+        <form href="<%= archive_detail_email_path %>" method="POST" >
+            <div class="form_row">
+                <%= t(:from_email) %>
+                <input type="input" name="from" />
+            </div>
+            <div class="form_row">
+                <%= t(:to_email) %>
+                <input type="input" name="to" />
+            </div>
+            <div class="form_row">
+                <input type="text_area" name="body" />
+                <%= t(:note) %>
+            </div>
+            <div class="form_row">
+                <%= t(:citation_preview) %>
+                <% items.each do |item| -%>
+                <p><%= item.citation %></p>
+                <% end %>  
+            </div>
+            <div class="form_row">
+                <input type="submit" class="redButton" value="<%= t(:email) %>" />
+            </div>
+        </form>
+    </div>
+</div>
