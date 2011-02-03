@@ -297,6 +297,10 @@ class ArchiveController < ApplicationController
     @error = true
     end
   end
+  
+  def email
+    return true
+  end
 
   def forget_all
     if my_archive_to_cookie([])
