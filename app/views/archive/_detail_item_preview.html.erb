@@ -9,7 +9,7 @@
     <a href="<%= item.preview_url %>" rel="shadowbox[gallery]" class="redButton"><%= t(:view_in_lightbox) %></a>
     <a href="#" class="redButton"><%= t(:view_in_zoomify) %></a>
     <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton"><%= t(:print).titleize %></a>
-    <%= link_to t(:email_citation).titleize, "#email-popup", :class => "blackButton", :rel=>"shadowbox[email];width=310px;height=400px;" %>
+    <%= link_to t(:email_citation).titleize, "#email-popup", :class => "blackButton", :rel=>"shadowbox[email];width=310px;height=450px;" %>
     <%= link_to t(:download).titleize, archive_detail_download_path(item), :class => "blackButton" %>
     <%= link_to t(:translation).titleize, "#", :class => "blackButton" unless item.transcript_en.blank? %>
     <%= link_to t(:transcript).titleize, "#", :class => "blackButton" unless item.transcript_fa.blank? %>

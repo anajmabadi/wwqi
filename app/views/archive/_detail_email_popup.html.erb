@@ -7,24 +7,26 @@
         <form href="<%= archive_detail_email_path %>" method="POST" >
             <div class="form_row">
                 <%= t(:from_email) %>
-                <input type="input" name="from" />
+                <br />
+                <input type="input" name="from" size=30 />
             </div>
             <div class="form_row">
                 <%= t(:to_email) %>
-                <input type="input" name="to" />
+                <br />
+                <input type="input" name="to" size=30 />
             </div>
             <div class="form_row">
-                <input type="text_area" name="body" />
                 <%= t(:note) %>
+                <br />
+                <textarea rows=3 cols=30 name="body" /></textarea>
             </div>
             <div class="form_row">
                 <%= t(:citation_preview) %>
-                <% items.each do |item| -%>
-                <p><%= item.citation %></p>
-                <% end %>  
+                <br />
+                <textarea rows=5 cols=30 name="citations" disabled="true" /><%= items.map { |i| h(i.citation) }.join("\n\n") %></textarea>
             </div>
             <div class="form_row">
-                <input type="submit" class="redButton" value="<%= t(:email) %>" />
+                <input type="submit" class="redButton" value="<%= t(:email) %>" >
             </div>
         </form>
     </div>
