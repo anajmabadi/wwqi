@@ -8,16 +8,16 @@
     <% unless @my_archive_ids.empty? %>
     <ul>
         <li>
-            <%= link_to @my_archive_ids.empty?, t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
+            <%= link_to t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
         </li>
         <li>
-            <%= link_to @my_archive_ids.empty?, t(:download).titleize, "#" %>
+            <%= link_to t(:download).titleize, "#" %>
         </li>
         <li>
-            <%= link_to @my_archive_ids.empty?, t(:email).titleize, "#" %>
+            <%= link_to t(:email).titleize, "#" %>
         </li>
         <li>
-            <%= link_to @my_archive_ids.empty?, t(:clear_my_items).titleize, archive_clear_my_items_path %>
+            <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path %>
         </li>
     </ul>
     <% else -%>
