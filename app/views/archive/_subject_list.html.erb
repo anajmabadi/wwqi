@@ -11,8 +11,8 @@
         <% end -%>
     </ul>
     <ul class="more">
-        <% @subjects.where("major=?",false).each do |subject| -%>
-        <% if subject.items.size >= ARCHIVE_BROWSER_SUBJECTS_ITEMS_LIMIT -%>
+        <% @subjects.where("major=?",false).limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |subject| -%>
+        <% unless subject.items.empty? -%>
         <li>
             <%= link_to truncate(subject.name, :length => 50), archive_browser_path(:subject_filter=>subject.id) %>
             <span>(<%= localized_number(subject.items.count) %>)</span>

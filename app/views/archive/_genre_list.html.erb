@@ -2,16 +2,20 @@
 <div class="list" style="display:block">
     <ul class="default">
         <% @genres.where('subjects.major=?',true).each do |genre| -%>
+        <% unless genre.items.empty? -%>
         <li>
             <%= link_to truncate(genre.name, :length => 50), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
         <% end -%>
+        <% end -%>
     </ul>
     <ul class="more">
-        <% @genres.where('subjects.major=?',false).each do |genre| -%>
+        <% @genres.where('subjects.major=?',false).limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |genre| -%>
+        <% unless genre.items.empty? -%>
         <li>
             <%= link_to truncate(genre.name, :length => 50), archive_browser_path(:subject_filter=>genre.id) %>  <span>(<%= localized_number(genre.items.count) %>)</span>
         </li>
+        <% end -%>
         <% end -%>
      </ul>
     <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>

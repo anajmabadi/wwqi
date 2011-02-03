@@ -11,8 +11,8 @@
         <% end -%>
     </ul>
     <ul class="more">
-        <% @people.where("major=?",false).each do |person| -%>
-        <% if person.items.count >= ARCHIVE_BROWSER_PEOPLE_ITEMS_LIMIT -%>
+        <% @people.where("major=?",false).limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |person| -%>
+        <% unless person.items.empty? -%>
         <li>
             <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id) %>
             <span>(<%= localized_number(person.items.count) %>)</span>
