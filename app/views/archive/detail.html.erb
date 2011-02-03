@@ -2,18 +2,224 @@
 <% @page_title = t(:detail).capitalize -%>
 
 <% content_for :head do %>
-    <% if @item.clips.empty? -%>
-      <%= render 'head_detail_content' %>
-    <% else -%>
-      <%= render :partial => 'head_detail_audio_content', :locals => { :mp3_name => @item.clips[0].clip_url('mp3'), :wav_name => @item.clips[0].clip_url('wav') } %>
-    <% end %>
+<%= render 'head_detail_content' %>
+<% if @item.clips.empty? -%>
+<%= render :partial => 'head_detail_audio_content', :locals => { :mp3_name => @item.clips[0].clip_url('mp3'), :wav_name => @item.clips[0].clip_url('wav') } %>
 <% end %>
+<% end %>
+
+<%= render "_detail_item_preview", @item %>
+
+<!-- end itemPreview -->
+<div class="clearfix archiveBigWrapper" >
+
+    <!-- begin pagination bar -->
+    <div class="paginationBar clearfix">
+        <div class="add_this_tools">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_compact"></a>
+            </div>
+            <script type="text/javascript">
+                var addthis_config =
+                {
+                    data_track_clickback:true,
+                    ui_language:"en"
+                };
+            </script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar">
+            </script>
+            <!-- AddThis Button END -->
+        </div>
+        <div class="sortnav paginate">
+            <div class="pagination">
+                <a class="back_to_archives" href="/archive/browser?page=5">Back to Archives</a>
+                <a href="/archive/browser?page=2" rel="prev" class="previous_page">previous item</a>
+                <a href="/archive/browser?page=2" rel="next" class="next_page">next item</a>
+            </div>
+        </div>
+    </div>
+    <!-- end pagination bar -->
+
+    <div id="search_results" class="clearfix">
+
+        <h2>Ma'ayib al-rijal [Vices of Men], 1894</h2>
+        <div id="item_details_wrapper">
+            <ul class="item_meta">
+                <li class="description">
+                    <span>Description</span>
+                    Ma'ayib al-rijal [Vices of Men], written by Bibi Khanum Astarabadi (1858 or 59-1921) in 1894, first published in 1992. Vices of Men was Bibi Khanum's response to Ta'dib al-niswan [Disciplining Women], also known as Ta'dib al-nisa', a male-centered, often misogynous text written in the mid-1880s in the tradition of satirical books of advice to men about how to treat their wives and train their daughters. This text begins autobiographically with Bibi Khanum explaining her social and educational background. The text is composed of two sections; the first is a direct wittily angry response to Disciplining Women. The second part is addressed to other women ("my sisters," as she calls them) and is her advice and warnings about men, in particular as husbands. Additional copies of the text are located in: Hafez Farmanfarmayan's Library, Microfilm No. 2203, Tehran University Central Library; Malek National Library and Museum Institution, Manuscript No. 6297; and Golestan Library.
+                </li>
+                <li>
+                    <span>Collection</span>
+                    <a class="tag" href="/archive/browser?collection_filter=19">Majlis Library, Museum and Document Center</a>
+                </li>
+                <li>
+                    <span>Date</span>
+                    1894 (1312 AH)
+                </li>
+                <li>
+                    <span>Dimensions</span>
+                    20.5 x 26.5 cm
+                </li>
+                <li>
+                    <span>Repository</span>
+                    Majlis Library, Museum and Document Center (MS. 8984). Majlis Library, Museum and Document Center, Tehran, Iran
+                </li>
+                <li>
+                    <span class="block">Genres</span>
+                    <a class="tag" href="#">manuscripts &amp; lithographs</a>
+                    <a class="tag" href="#">advice books</a>
+                </li>
+                <li class="clear">
+                    <span>Related Items</span>
+                    <ul>
+                        <li>
+                            <a href="/archive/detail/1512">Taʼdib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="item_related">
+                <li>
+                    <span>People</span>
+                    <a class="tag" href="/archive/browser?person_filter=415">Astarabadi, Bibi Khanum</a>
+                </li>
+                <li>
+                    <span>Subject</span>
+                    <a class="tag" href="/archive/browser?subject_filter=267">Conduct of life</a>
+                    <a class="tag" href="/archive/browser?subject_filter=548">Husbands</a>
+                    <a class="tag" href="/archive/browser?subject_filter=1">Advice</a>
+                </li>
+                <li>
+                    <span>Places</span>
+                    <a class="tag" href="/archive/browser?subject_filter=1">Shiraz</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
+
+<div id="itemPreview" style="height:auto">
+    <span class="image-count">14 images</span>
+    <a href="/images/sample_item.png" rel="shadowbox[gallery]">
+    <img src="/images/sample_item.png" alt="Ma'ayib al-rijal [Vices of Men], 1894">
+    </a>
+    <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+    <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+    <a href="/images/sample_item.png" rel="shadowbox[gallery]"></a>
+    <a href="/images/sample_item.png" rel="shadowbox[gallery]" class="redButton">View in Lightbox</a>
+    <a href="#" class="redButton">View in Zoomify</a>
+    <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton">Print</a>
+    <a href="#" class="blackButton">Download [175KB]</a>
+    <a href="#" class="blackButton">Translation</a>
+    <a href="#" class="blackButton">Transcript</a>
+    <a href="#" class="blackButton">Add to My Selection</a>
+</div><!-- end itemPreview -->
+<div class="clearfix archiveBigWrapper" >
+
+    <!-- begin pagination bar -->
+    <div class="paginationBar clearfix">
+        <div class="add_this_tools">
+            <!-- AddThis Button BEGIN -->
+            <div class="addthis_toolbox addthis_default_style ">
+                <a class="addthis_button_favorites"></a>
+                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_facebook"></a>
+                <a class="addthis_button_preferred_1"></a>
+                <a class="addthis_button_compact"></a>
+            </div>
+            <script type="text/javascript">
+                var addthis_config =
+                {
+                    data_track_clickback:true,
+                    ui_language:"en"
+                };
+            </script>
+            <script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar">
+            </script>
+            <!-- AddThis Button END -->
+        </div>
+        <div class="sortnav paginate">
+            <div class="pagination">
+                <a class="back_to_archives" href="/archive/browser?page=5">Back to Archives</a>
+                <a href="/archive/browser?page=2" rel="prev" class="previous_page">previous item</a>
+                <a href="/archive/browser?page=2" rel="next" class="next_page">next item</a>
+            </div>
+        </div>
+    </div>
+    <!-- end pagination bar -->
+
+    <div id="search_results" class="clearfix">
+
+        <h2>Ma'ayib al-rijal [Vices of Men], 1894</h2>
+        <div id="item_details_wrapper">
+            <ul class="item_meta">
+                <li class="description">
+                    <span>Description</span>
+                    Ma'ayib al-rijal [Vices of Men], written by Bibi Khanum Astarabadi (1858 or 59-1921) in 1894, first published in 1992. Vices of Men was Bibi Khanum's response to Ta'dib al-niswan [Disciplining Women], also known as Ta'dib al-nisa', a male-centered, often misogynous text written in the mid-1880s in the tradition of satirical books of advice to men about how to treat their wives and train their daughters. This text begins autobiographically with Bibi Khanum explaining her social and educational background. The text is composed of two sections; the first is a direct wittily angry response to Disciplining Women. The second part is addressed to other women ("my sisters," as she calls them) and is her advice and warnings about men, in particular as husbands. Additional copies of the text are located in: Hafez Farmanfarmayan's Library, Microfilm No. 2203, Tehran University Central Library; Malek National Library and Museum Institution, Manuscript No. 6297; and Golestan Library.
+                </li>
+                <li>
+                    <span>Collection</span>
+                    <a class="tag" href="/archive/browser?collection_filter=19">Majlis Library, Museum and Document Center</a>
+                </li>
+                <li>
+                    <span>Date</span>
+                    1894 (1312 AH)
+                </li>
+                <li>
+                    <span>Dimensions</span>
+                    20.5 x 26.5 cm
+                </li>
+                <li>
+                    <span>Repository</span>
+                    Majlis Library, Museum and Document Center (MS. 8984). Majlis Library, Museum and Document Center, Tehran, Iran
+                </li>
+                <li>
+                    <span class="block">Genres</span>
+                    <a class="tag" href="#">manuscripts &amp; lithographs</a>
+                    <a class="tag" href="#">advice books</a>
+                </li>
+                <li class="clear">
+                    <span>Related Items</span>
+                    <ul>
+                        <li>
+                            <a href="/archive/detail/1512">Taʼdib al-Nisaʼ [Disciplining Women], [ca. 1882-1886]</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="item_related">
+                <li>
+                    <span>People</span>
+                    <a class="tag" href="/archive/browser?person_filter=415">Astarabadi, Bibi Khanum</a>
+                </li>
+                <li>
+                    <span>Subject</span>
+                    <a class="tag" href="/archive/browser?subject_filter=267">Conduct of life</a>
+                    <a class="tag" href="/archive/browser?subject_filter=548">Husbands</a>
+                    <a class="tag" href="/archive/browser?subject_filter=1">Advice</a>
+                </li>
+                <li>
+                    <span>Places</span>
+                    <a class="tag" href="/archive/browser?subject_filter=1">Shiraz</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</div>
 
 <div id="browser" class="clearfix singleItemBrowser">
     <div id="head">
         <ul class="itemTools sortnav">
             <li>
-                <a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %> </a>
+                <a href="<%= @return_url %>" class="module-link"><%= t(:back_to_collections).upcase %></a>
             </li>
             <li>
                 <%= link_to( t(:previous_item).upcase, :action => :detail, :id => @items[@items.index(@item)-1]) unless @items.nil? || @items.index(@item) == 0 %>
@@ -46,7 +252,7 @@
             <div id="catalogInfo">
                 <div id="subjects">
                     <% unless @item.subjects.concepts.empty? %>
-                    <h3> Subjects </h3>
+                    <h3>Subjects</h3>
                     <ul>
                         <% @item.subjects.concepts.each do |subject| %>
                         <li>
@@ -59,7 +265,7 @@
                 <div id="people">
 
                     <% unless @item.people.empty? %>
-                    <h3> People </h3>
+                    <h3>People</h3>
                     <ul>
                         <% @item.people.each do |person| %>
                         <li>
@@ -72,7 +278,7 @@
                 <div id="places">
 
                     <% unless @item.places.empty? %>
-                    <h3> Places </h3>
+                    <h3>Places</h3>
                     <ul>
                         <% @item.places.each do |place|  %>
                         <li>
@@ -89,7 +295,7 @@
             <table  class="styled">
                 <tr>
                     <!--<th><%= t(:full_title).capitalize %> </th>-->
-                    <td colspan="2" class="title"><%= @item.title %> </td>
+                    <td colspan="2" class="title"><%= @item.title %></td>
                 </tr>
                 <% unless @item.description.blank?  || @item.description.nil? %>
                 <tr class="odd">
@@ -114,13 +320,13 @@
                 <% end %>
                 <% unless @item.collection_id.blank?  || @item.collection.nil? %>
                 <tr>
-                    <th><%= t(:collection).capitalize %> </th>
-                    <td><%= link_to( @item.collection.name, archive_browser_path(:collection_filter => @item.collection.id)) %> </td>
+                    <th><%= t(:collection).capitalize %></th>
+                    <td><%= link_to( @item.collection.name, archive_browser_path(:collection_filter => @item.collection.id)) %></td>
                 </tr>
                 <% end %>
                 <% unless @item.show_date.blank? %>
                 <tr class="odd">
-                    <th><%= t(:date).capitalize %> </th>
+                    <th><%= t(:date).capitalize %></th>
                     <td><%= @item.show_date %></td>
                 </tr>
                 <% end %>
