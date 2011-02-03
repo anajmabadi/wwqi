@@ -1,5 +1,5 @@
-<h3><%= link_to(t(:related_people).titleize, archive_people_path) %></h3>
-<div class="list">
+<h3 class="active"><%= link_to(t(:related_people).titleize, archive_people_path) %></h3>
+<div class="list"  style="display:block">
     <ul class="default">
         <% @people.limit(10).each do |person| -%>
         <% unless person.items.empty? -%>

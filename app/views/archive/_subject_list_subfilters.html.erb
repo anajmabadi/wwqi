@@ -1,5 +1,5 @@
-<h3><%= link_to t(:related_subjects).titleize, archive_subjects_path %></h3>
-<div class="list">
+<h3 class="active"><%= link_to t(:related_subjects).titleize, archive_subjects_path %></h3>
+<div class="list"  style="display:block">
     <ul class="default">
         <% @subjects.limit(10).each do |subject| -%>
         <% unless subject.items.empty? -%>
