@@ -2028,9 +2028,8 @@ div.slideshow ul li a.title{
 
 
 #archive_search_wrapper{
-	
-	width:520px;
-    overflow:hidden;
+	width:325px;
+  overflow:hidden;
 	height:85px;
 	margin-left:0px;
 	background:#222;
@@ -2054,7 +2053,7 @@ div.slideshow ul li a.title{
 }
 
 #archive_search_wrapper #simple_search input{
-	width:460px;
+	width:270px;
 }
 
 .archiveBigWrapper{
@@ -2313,8 +2312,6 @@ div.slideshow ul li a.title{
 	margin-right:3%;
 	float:left;
 }
-
-
 
 /* search results
 -------------------------------------------------------------- */

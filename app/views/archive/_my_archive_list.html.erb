@@ -1,13 +1,20 @@
-<h3 class="<%= 'active' unless @my_archive_filter.nil? %>">
-  <%= link_to t(:my_archive) + " (#{localized_number(@my_archive_ids.size.to_s)})", archive_browser_path(:my_archive => @my_archive_filter.nil?) -%>
-</h3>
-<div class="list">
-    <ul class="default">
+<div id="archive_index_wrapper">
+    <h2>
+    <%= t(:my_archive).titleize  %>
+    <span id="selectionCount" style="color:#CA3723;float: right; margin-right: 5px;"><%= "#{localized_number(@my_archive_ids.size.to_s)}" %></span>
+    </h2>
+    <ul>
         <li>
-            <%= link_to t(:show_my_items) + " (#{localized_number(@my_archive_ids.size.to_s)})", archive_browser_path(:my_archive => true) %>
+            <%= link_to t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
         </li>
         <li>
-            <%= link_to t(:clear_my_items), archive_clear_my_items_path %>
+            <%= link_to t(:download).titleize, "#" %>
+        </li>
+        <li>
+            <%= link_to t(:email).titleize, "#" %>
+        </li>
+        <li>
+            <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path %>
         </li>
     </ul>
 </div>
