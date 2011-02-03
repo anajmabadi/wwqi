@@ -1,7 +1,7 @@
 <h3 class="active"><%= link_to t(:related_genres).titleize, archive_genres_path %></h3>
 <div class="list" style="display:block">
     <ul class="default">
-        <% @genres.sort_by(&:items_count).limit(ARCHIVE_REFINE_RESULTS_SHOW_LIMIT).each do |genre| -%>
+        <% @top_genres.each do |genre| -%>
         <li>
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path(:subject_filter=>genre.id),

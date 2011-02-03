@@ -223,6 +223,7 @@ class ArchiveController < ApplicationController
       @subfilter_mode = true
       # find complete lists for searching
       @genres = find_related_genres(@item_ids)
+      @top_genres = find_top_selection(@genres)
       @people =  find_related_people(@item_ids)
       @collections = find_related_collections(@item_ids)
       @periods = find_related_periods(@item_ids)
@@ -800,5 +801,13 @@ class ArchiveController < ApplicationController
       end
     end
     return periods.uniq.sort_by(&:start_at)
+  end
+  
+  def find_top_selection( my_objects = [])
+    unless my_objects.empty? || !my_objects[0].respond_to?("items_count")
+      my_objects.sort_by!(&:items_count).reverse!
+    end
+    my_top_objects = my_objects.shift(ARCHIVE_REFINE_RESULTS_SHOW_LIMIT)
+    return my_top_objects
   end
 end
