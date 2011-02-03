@@ -7,22 +7,22 @@
 
 <div id="browseBar" style="height:auto">
     <div id="head">
-        <a href="#" class="blackButton right"><%= t(:reset).titleize %></a>
+        <%= link_to t(:reset).titleize, archive_browser_path(:reset => true), :class => "blackButton right" %>
         <h2><%= t(:refine_results) %></h2>
     </div>
     <%= render "my_archive_list" unless @my_archive_ids.empty? %>
 
-    <%= render "genre_list" %>
+    <%= render @subfilter_mode ? "genre_list_subfilters" : "genre_list" %>
 
-    <%= render "collection_list" %>
+    <%= render @subfilter_mode ? "collection_list_subfilters" : "collection_list" %>
 
-    <%= render "person_list" %>
+    <%= render @subfilter_mode ? "person_list_subfilters" : "person_list" %>
 
-    <%= render "place_list" %>
+    <%= render @subfilter_mode ? "place_list_subfilters" : "place_list" %>
 
-    <%= render "subject_list" %>
+    <%= render @subfilter_mode ? "subject_list_subfilters" : "subject_list" %>
 
-    <%= render "period_list" %>
+    <%= render @subfilter_mode ? "period_list_subfilters" : "period_list""period_list" %>
 </div>
 <!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >

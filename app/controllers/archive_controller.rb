@@ -3,16 +3,15 @@ class ArchiveController < ApplicationController
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def clear_my_items
-    
+
     @return_url = session[:archive_url].nil? ? archive_path : session[:archive_url]
-    
+
     forget_all
-    
+
     respond_to do |format|
       format.html { redirect_to @return_url }
     end
-    
-    
+
   end
 
   def index
@@ -140,14 +139,7 @@ class ArchiveController < ApplicationController
   end
 
   def browser
-    logger.info 'browser'
-    @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
-    @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
-    @collections = Collection.where(['collections.publish=?', true]).order('collection_translations.sort_name, collection_translations.name')
-    @periods = Period.where(['periods.publish=?',true]).order('periods.position')
-    @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
-    @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
-
+    
     #grab filter categories
     @collection_filter = params[:collection_filter]
     @translation_filter = params[:translation_filter]
@@ -212,12 +204,35 @@ class ArchiveController < ApplicationController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    @items = Item.paginate :conditions => @query, :per_page => @per_page, :page => @page, :order => @order
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
+    @items = @items_full_set.paginate :per_page => @per_page, :page => @page, :order => @order
+    
+    # check for a reset condition, in which case get all
+    @reset = params[:reset]
+    @item_ids = items_set(@items_full_set)
+    if @reset == 'true' || @query_hash[:conditions].length == 2
+      @subfilter_mode = false
+      # find complete lists for searching
+      @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
+      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
+      @collections = Collection.where(['collections.publish=? AND collections.private = ?', true, false]).order('collection_translations.sort_name, collection_translations.name')
+      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
+      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
+      @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
+    else
+      @subfilter_mode = true
+      # find complete lists for searching
+      @genres = find_related_genres(@item_ids)
+      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
+      @collections = find_related_collections(@item_ids)
+      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
+      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s])
+      @subjects = find_related_subjects(@item_ids)
+    end
 
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
-    session[:current_items] = items_set(@items_full_set)
+    session[:current_items] = @item_ids
     session[:view_mode] = @view_mode
     session[:sort_mode] = @sort_mode
   end
@@ -745,6 +760,21 @@ class ArchiveController < ApplicationController
       query_hash[:conditions] << "Length(item_translations.transcript) = 0"
     end
     return query_hash
+  end
+
+  def find_related_genres(item_ids=[])
+    my_ids = Classification.where(['item_id in (?)', item_ids]).select('subject_id').map { |c| c.subject_id }.uniq.sort
+    return Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.id IN (?)", true, 8, I18n.locale.to_s, my_ids]).order('subject_translations.name')
+ end
+  
+  def find_related_subjects(item_ids=[])
+    my_ids = Classification.where(['item_id in (?)', item_ids]).select('subject_id').map { |c| c.subject_id }.uniq.sort
+    return Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.id IN (?)", true, 7, I18n.locale.to_s, my_ids]).order('subject_translations.name')
+  end
+  
+  def find_related_collections(item_ids=[])
+    my_ids = Item.where(['items.id in (?)', item_ids]).select('collection_id').map { |c| c.collection_id }.uniq.sort
+    return Collection.where(["collections.publish=? AND private = ? AND collection_translations.locale=? AND collections.id IN (?)", true, false, I18n.locale.to_s, my_ids]).order('collection_translations.name')
   end
 
 end

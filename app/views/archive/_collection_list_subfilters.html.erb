@@ -1,0 +1,29 @@
+<h3><%= link_to t(:related_collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
+<div class="list">
+    <ul class="default">
+        <% @collections.limit(10).each do |collection| -%>
+        <li>
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
+            :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(collection.items.count) %>)</span>
+            <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
+        </li>
+        <% end -%>
+    </ul>
+    <% if @collections.size > 10 -%>
+    <ul class="more">
+        <% @collections.offset(10).each do |collection| -%>
+        <li>
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
+            :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(collection.items.count) %>)</span>
+            <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
+        </li>
+        <% end -%>
+        <li>
+            <%= link_to t(:browse_collections), archive_collections_path, :class => "seeAllLink" %>
+        </li>
+    </ul>
+    <%= link_to t(:see_more), archive_collections_path, :class => "moreLink" %>
+    <% end -%>
+</div>

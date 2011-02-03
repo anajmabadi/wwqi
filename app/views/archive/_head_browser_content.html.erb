@@ -1,6 +1,6 @@
-<script src="javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
+<script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
 </script>
-<script type="text/javascript" src="javascripts/facebox.js">
+<script type="text/javascript" src="/javascripts/facebox.js">
 </script>
 <script language="javascript" type="application/javascript">
     $(document).ready( function() {
@@ -11,6 +11,7 @@
                 opacity: 'toggle',
                 height: 'toggle'
             }, 300);
+            return false;
 
         });
         $("#browseBar a.moreLink").click( function() {
@@ -61,5 +62,6 @@
                 $(".actions-dropdown-button").addClass("disabled");
         }
         setActionsButtonState();
+
     });
 </script>

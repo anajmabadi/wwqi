@@ -1,0 +1,26 @@
+<h3 class="active"><%= link_to t(:related_genres).titleize, archive_genres_path %></h3>
+<div class="list" style="display:block">
+    <ul class="default">
+        <% @genres.limit(10).each do |genre| -%>
+        <li>
+            <%= link_to truncate(genre.name, :length => 50),
+            archive_browser_path(:subject_filter=>genre.id),
+            :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(genre.items.count) %>)</span>
+        </li>
+        <% end -%>
+    </ul>
+    <% unless @genres.size < 11 -%>
+    <ul class="more">
+        <% @genres.offset(10).each do |genre| -%>
+        <li>
+            <%= link_to truncate(genre.name, :length => 50),
+            archive_browser_path(:subject_filter=>genre.id),
+            :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(genre.items.count) %>)</span>
+        </li>
+        <% end -%>
+    </ul>
+    <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>
+    <% end -%>
+</div>

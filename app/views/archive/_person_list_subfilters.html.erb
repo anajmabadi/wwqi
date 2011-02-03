@@ -1,0 +1,31 @@
+<h3><%= link_to(t(:related_people).titleize, archive_people_path) %></h3>
+<div class="list">
+    <ul class="default">
+        <% @people.limit(10).each do |person| -%>
+        <% unless person.items.empty? -%>
+        <li>
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id),
+            :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(person.items.count) %>)</span>
+        </li>
+        <% end -%>
+        <% end -%>
+    </ul>
+    <% if @people.size > 10 %>
+    <ul class="more">
+        <% @people.offset(10).limit(25).each do |person| -%>
+        <% if person.items.count >= ARCHIVE_BROWSER_PEOPLE_ITEMS_LIMIT -%>
+        <li>
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id),
+            :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(person.items.count) %>)</span>
+        </li>
+        <% end -%>
+        <% end -%>
+        <li>
+            <%= link_to t(:see_entire_index), archive_people_path, :class => "seeAllLink" %>
+        </li>
+    </ul>
+    <%= link_to t(:see_more), archive_people_path, :class => "moreLink" %>
+    <% end %>
+</div>
