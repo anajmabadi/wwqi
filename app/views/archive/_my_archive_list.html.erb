@@ -7,7 +7,7 @@
     </h2>
     <ul>
         <li>
-            <%= link_to t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
+            <%= link_to_unless @myarchive_ids.empty?, t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
         </li>
         <li>
             <%= link_to t(:download).titleize, "#" %>
