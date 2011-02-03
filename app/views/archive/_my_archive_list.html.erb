@@ -5,18 +5,24 @@
     <span id="selectionCount" style="color:#CA3723;float: right; margin-right: 5px;"><%= "#{localized_number(@my_archive_ids.size.to_s)}" %></span>
     <% end -%>
     </h2>
+    <% unless @my_archive_ids.empty? %>
     <ul>
         <li>
-            <%= link_to_unless @my_archive_ids.empty?, t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
+            <%= link_to @my_archive_ids.empty?, t(:show_my_items).titleize, archive_browser_path(:my_archive => true) %>
         </li>
         <li>
-            <%= link_to t(:download).titleize, "#" %>
+            <%= link_to @my_archive_ids.empty?, t(:download).titleize, "#" %>
         </li>
         <li>
-            <%= link_to t(:email).titleize, "#" %>
+            <%= link_to @my_archive_ids.empty?, t(:email).titleize, "#" %>
         </li>
         <li>
-            <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path %>
+            <%= link_to @my_archive_ids.empty?, t(:clear_my_items).titleize, archive_clear_my_items_path %>
         </li>
     </ul>
+    <% else -%>
+    <p style="color:gray">
+        <%= t(:my_archive_prompt) %>
+    </p>
+    <% end -%>
 </div>
