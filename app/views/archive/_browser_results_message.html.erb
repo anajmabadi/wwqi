@@ -1,7 +1,13 @@
-<div id="browserMessage">
-  <% if items.empty? -%>
-    <%= t(:showing_no_records) -%>
-  <% else -%>
-    <%= "#{t(:results_prefix)}: #{localized_number(items.offset + 1)} - #{localized_number([items.offset + items.per_page,items.total_entries].min)} | #{localized_number(items.total_entries)}" %>
-  <% end -%>
+<div id="search-result-tools">
+    <a class="redButton right actions-dropdown-button"><%= t(:actions).titleize %></a>
+    <div class="actions-dropdown">
+        <a href="#" id="add-to-my-selections">Add to My Selections</a>
+        <a href="#" id="email-items">Email Citations</a>
+        <a href="#" id="download-items">Download Citations</a>
+    </div>
 </div>
+<h2><% if items.empty? -%>
+<%= t(:showing_no_records) -%>
+<% else -%>
+<%= "#{t(:results_prefix)}: #{localized_number(items.offset + 1)} - #{localized_number([items.offset + items.per_page,items.total_entries].min)} | #{localized_number(items.total_entries)}" %>
+<% end -%></h2>

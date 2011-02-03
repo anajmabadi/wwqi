@@ -1,0 +1,14 @@
+<h3 class="last"><%= link_to t(:related_periods).titleize, nil %></h3>
+<div class="list">
+    <ul class="default">
+        <% @periods.each do |period| -%>
+        <% unless period.items.empty? -%>
+        <li>
+            <%= link_to truncate(period.title, :length => 50), archive_browser_path(:period_filter=>period.id),
+            :class => (period.id.to_s == @period_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(period.items.count) %>)</span>
+        </li>
+        <% end -%>
+        <% end -%>
+    </ul>
+</div>

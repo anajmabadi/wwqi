@@ -1,4 +1,5 @@
-<h3><%= link_to t(:collections).capitalize, archive_collections_path %></h3>
+
+<h3><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
 <div class="list">
     <ul class="default">
         <% @collections.where("major=?",true).each do |collection| -%>

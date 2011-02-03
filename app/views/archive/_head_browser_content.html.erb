@@ -1,3 +1,67 @@
-<link href="/stylesheets/dd<%=language_suffix%>.css" media="screen" rel="stylesheet" type="text/css" />
-<script src="/javascripts/archive_browser_init.js" type="text/javascript">
+<script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript">
+</script>
+<script type="text/javascript" src="/javascripts/facebox.js">
+</script>
+<script language="javascript" type="application/javascript">
+    $(document).ready( function() {
+
+        $("#browseBar h3 a").click( function() {
+
+            $(this).parent().toggleClass("active").next(".list").animate({
+                opacity: 'toggle',
+                height: 'toggle'
+            }, 300);
+            return false;
+
+        });
+        $("#browseBar a.moreLink").click( function() {
+            if ($(this).html()=="see more") {
+                $(this).html("see less");
+                $(this).addClass("less");
+            } else {
+                $(this).html("see more");
+                $(this).removeClass("less");
+            }
+            $(this).parents(".list").find("ul.more").animate({
+                opacity: 'toggle',
+                height: 'toggle'
+            }, 300);
+            return false;
+        });
+        $(".select-item input").click( function() {
+            if($(this).is(":checked")) {
+                $(this).parents(".listItem").addClass("highlight");
+                setActionsButtonState();
+            } else {
+                $(this).parents(".listItem").removeClass("highlight");
+                $(".actions-dropdown").hide();
+                setActionsButtonState();
+            }
+        });
+        $(".actions-dropdown-button").click( function() {
+            if($(this).hasClass("disabled")) {
+                return;
+            } else {
+                $(".actions-dropdown").toggle();
+            }
+        });
+        $(".actions-dropdown").hover( function() {
+        }, function() {
+            $(this).hide();
+        });
+        $(".listItem").hover( function() {
+
+            $(".item-tools",this).show();
+        }, function() {
+            $(".item-tools",this).hide();
+        });
+        setActionsButtonState = function() {
+            if ($(".listItem.highlight").length>0) {
+                $(".actions-dropdown-button").removeClass("disabled");
+            } else
+                $(".actions-dropdown-button").addClass("disabled");
+        }
+        setActionsButtonState();
+
+    });
 </script>

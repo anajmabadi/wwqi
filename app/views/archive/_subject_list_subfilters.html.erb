@@ -1,0 +1,29 @@
+<h3><%= link_to t(:related_subjects).titleize, archive_subjects_path %></h3>
+<div class="list">
+    <ul class="default">
+        <% @subjects.limit(10).each do |subject| -%>
+        <% unless subject.items.empty? -%>
+        <li>
+            <%= link_to truncate(subject.name, :length => 50), archive_browser_path(:subject_filter=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(subject.items.count) %>)</span>
+        </li>
+        <% end -%>
+        <% end -%>
+    </ul>
+    <% unless @subjects.size < 11 %>
+    <ul class="more">
+        <% @subjects.offset(10).limit(25).each do |subject| -%>
+        <% unless subject.items.empty? -%>
+        <li>
+            <%= link_to truncate(subject.name, :length => 50), archive_browser_path(:subject_filter=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(subject.items.count) %>)</span>
+        </li>
+        <% end -%>
+        <% end -%>
+        <li>
+            <%= link_to t(:see_entire_index), archive_subjects_path, :class => "seeAllLink" %>
+        </li>
+    </ul>
+    <%= link_to t(:see_more), archive_subjects_path, :class => "moreLink" %>
+    <% end %>
+</div>
