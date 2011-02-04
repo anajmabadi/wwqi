@@ -16,7 +16,7 @@ class ArchiveController < ApplicationController
 
   def index
     load_filter_models(true)
-    @recently_viewed_items = Item.recently_viewed(8)
+    @reset = true
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath

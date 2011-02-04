@@ -1,5 +1,10 @@
-<h3 class="active last"><%= link_to t(:related_periods).titleize, nil %></h3>
+	<% unless @reset -%>
+<h3 class="active last"><%= link_to t(:periods).titleize, nil %></h3>
 <div class="list"  style="display:block">
+	<% else -%>
+<h3 class="last"><%= link_to t(:periods).titleize, nil %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @periods.each do |period| -%>
         <% unless period.items.empty? -%>

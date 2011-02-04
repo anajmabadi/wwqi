@@ -1,5 +1,10 @@
+	<% unless @reset -%>
 <h3 class="active"><%= link_to t(:related_subjects).titleize, archive_subjects_path %></h3>
 <div class="list"  style="display:block">
+	<% else -%>
+<h3><%= link_to t(:subjects).titleize, archive_subjects_path %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @top_subjects.each do |subject| -%>
         <% unless subject.items.empty? -%>

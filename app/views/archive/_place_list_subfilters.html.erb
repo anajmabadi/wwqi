@@ -1,5 +1,10 @@
+	<% unless @reset -%>
 <h3 class="active"><%= link_to t(:related_places).titleize, archive_places_path %></h3>
 <div class="list"  style="display:block">
+	<% else -%>
+<h3><%= link_to t(:places).titleize, archive_places_path %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @top_places.each do |place| -%>
         <% unless place.items.empty? %>
