@@ -15,7 +15,7 @@ class ArchiveController < ApplicationController
   end
 
   def index
-	load_filter_models(true)
+    load_filter_models(true)
     @recently_viewed_items = Item.recently_viewed(8)
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
@@ -133,7 +133,7 @@ class ArchiveController < ApplicationController
   end
 
   def browser
-    
+
     #grab filter categories
     @collection_filter = params[:collection_filter]
     @translation_filter = params[:translation_filter]
@@ -167,7 +167,7 @@ class ArchiveController < ApplicationController
     @page = params[:page] || 1
     @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
 
-    @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s } }
+    @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s }, :labels => []}
 
     @collection_filter_label = I18n.translate(:all)
     @period_filter_label = I18n.translate(:all)
@@ -200,12 +200,22 @@ class ArchiveController < ApplicationController
 
     @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
     @items = @items_full_set.paginate :per_page => @per_page, :page => @page, :order => @order
-    
+
     # check for a reset condition, in which case get all
-    @reset = params[:reset] ||= @query_hash[:conditions].length == 2
+    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2
     @item_ids = items_set(@items_full_set)
     load_filter_models(@reset)
 
+    #build query stack
+
+    @query_label = ""
+    unless @reset
+      @query_hash[:labels].each do |label|
+        @query_label += (@query_label.blank? ? '': " #{t(:operator_and)} ") + label unless label.blank?
+      end
+    else
+      @query_label += t(:all_items)
+    end
 
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
@@ -274,7 +284,7 @@ class ArchiveController < ApplicationController
     @error = true
     end
   end
-  
+
   def email
     return true
   end
@@ -462,16 +472,20 @@ class ArchiveController < ApplicationController
 
   def build_staff_favorites_query(query_hash)
     query_hash[:conditions] << "items.favorite = 1"
+    query_hash[:labels] << I18n.translate(:staff_favorites)
     return query_hash
   end
 
   def build_person_query(filter_value,query_hash)
     additional_query = ''
+    
+    people_ids = filter_value.kind_of?(Array) ? filter_value.map {|id| id.to_i }.uniq.sort : [filter_value.to_i]
+    
     begin
-      @person = Person.find_by_id(filter_value.to_i)
-      @ids = @person.items.map { |p| p.id }
-      unless @ids.empty?
-        additional_query += "items.id IN (#{@ids.join(",")})"
+      appearances = Appearance.where("person_id IN (?)", people_ids)
+      item_ids =  appearances.map { |a| item_id }
+      unless item_ids.empty?
+        additional_query += "items.id IN (#{item_ids.join(",")})"
       else
         flash[:error] = "No items found. Showing all."
       end
@@ -480,7 +494,8 @@ class ArchiveController < ApplicationController
     else
       flash[:error] = nil
     ensure
-    query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:labels] << (appearances.size > 1 ? t(:multiple_people).titleize : appearances.map { |p| p.person.name }.join(", "))
     return query_hash
     end
   end
@@ -494,12 +509,6 @@ class ArchiveController < ApplicationController
     end
 
     ids_to_find = ids.map { |id| id.to_i }.sort
-
-    if ids_to_find.length == 1
-    @period_filter_label = Period.find(ids_to_find[0].to_i).title
-    else
-    @period_filter_label = I18n.translate(:multiple)
-    end
 
     begin
       periods = Period.find(ids_to_find)
@@ -515,6 +524,7 @@ class ArchiveController < ApplicationController
         end
       end
       query_hash[:conditions] << date_ranges
+      query_hash[:labels] << (periods.size > 1 ? t(:multiple_periods).titleize : periods.map { |p| p.title }.join(", "))
 
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for period ids #{filter_value}: #{error}."
@@ -579,6 +589,7 @@ class ArchiveController < ApplicationController
         flash[:error] = "A problem was encountered searching for recent additions."
       ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:labels] << I18n.translate(:recent_additions).titleize
       end
     end
     return query_hash
@@ -612,11 +623,9 @@ class ArchiveController < ApplicationController
       logger.info "classifictions.size " + classifications.size.to_s
 
       item_ids = classifications.map { |i| i.item_id }.uniq.sort
-      logger.info "item_ids: " + item_ids.to_s
 
       unless item_ids.empty?
         additional_query += "items.id IN (#{item_ids.join(",")})"
-        logger.info "additional_query: " + additional_query
       else
       # if the subject type has no items, we should kill search
         additional_query += "items.id IS NULL"
@@ -631,7 +640,8 @@ class ArchiveController < ApplicationController
     else
       flash[:error] = nil
     ensure
-    query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:labels] << subject_types.map { |s| s.name }.join(", ")
     return query_hash
     end
   end
@@ -695,6 +705,7 @@ class ArchiveController < ApplicationController
     end
 
     query_hash[:conditions] << additional_query
+    query_hash[:labels] << filter_value[:values].reject { |k| k.blank? }.join(", ")
     return query_hash
   end
 
@@ -740,19 +751,21 @@ class ArchiveController < ApplicationController
     else
       query_hash[:conditions] << "Length(item_translations.transcript) = 0"
     end
+
+    query_hash[:labels] << I18n.translate(:translations).titleize
     return query_hash
   end
 
   def find_related_genres(item_ids=[])
     my_ids = Classification.where(['item_id in (?)', item_ids]).select('subject_id').map { |c| c.subject_id }.uniq.sort
     return Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.id IN (?)", true, 8, I18n.locale.to_s, my_ids]).order('subject_translations.name')
- end
-  
+  end
+
   def find_related_subjects(item_ids=[])
     my_ids = Classification.where(['item_id in (?)', item_ids]).select('subject_id').map { |c| c.subject_id }.uniq.sort
     return Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.id IN (?)", true, 7, I18n.locale.to_s, my_ids]).order('subject_translations.name')
   end
-  
+
   def find_related_collections(item_ids=[])
     my_ids = Item.where(['items.id in (?) AND items.collection_id IS NOT NULL', item_ids]).select('collection_id').map { |c| c.collection_id }.uniq.sort
     return Collection.where(["collections.publish=? AND private = ? AND collection_translations.locale=? AND collections.id IN (?)", true, false, I18n.locale.to_s, my_ids]).order('collection_translations.name')
@@ -762,40 +775,40 @@ class ArchiveController < ApplicationController
     my_ids = Appearance.where(['item_id in (?)', item_ids]).select('person_id').map { |a| a.person_id }.uniq.sort
     return Person.where(["people.publish=? AND person_translations.locale=? AND people.id IN (?)", true, I18n.locale.to_s, my_ids]).order('person_translations.name')
   end
-  
+
   def find_related_places(item_ids=[])
     my_ids = Plot.where(['item_id in (?)', item_ids]).select('place_id').map { |a| a.place_id }.uniq.sort
     return Place.where(["places.publish=? AND place_translations.locale=? AND places.id IN (?)", true, I18n.locale.to_s, my_ids]).order('place_translations.name')
   end
-  
+
   def find_related_periods(item_ids=[])
     my_sort_years = Item.where(['items.id in (?)', item_ids]).select('sort_year').map { |c| c.sort_year }.uniq.sort
     periods = []
     my_sort_years.each do |year|
       Period.all.each do |period|
-       periods << period if year >- period.start_at.year && year <= period.end_at.year
+        periods << period if year >- period.start_at.year && year <= period.end_at.year
       end
     end
     return periods.uniq.sort_by(&:start_at)
   end
-  
+
   def find_top_selection( my_objects = [])
     unless my_objects.empty? || !my_objects[0].respond_to?("items_count")
-      my_objects.sort_by!(&:items_count).reverse!
+    my_objects.sort_by!(&:items_count).reverse!
     end
     my_top_objects = my_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
     return my_top_objects
   end
-  
+
   def load_filter_models( reset=true )
-  	if reset  
-  	  @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
+    if reset
+      @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
       @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
       @collections = Collection.where(['collections.publish=? AND collections.private = ?', true, false]).order('collection_translations.name')
       @periods = Period.where(['periods.publish=?',true]).order('periods.position')
       @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s]).order("place_translations.name")
       @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
-      @subfilter_mode = false
+    @subfilter_mode = false
     else
       @subfilter_mode = true
       # find complete lists for searching

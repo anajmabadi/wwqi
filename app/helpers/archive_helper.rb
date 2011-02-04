@@ -1,5 +1,14 @@
 module ArchiveHelper
-  
+  def format_results_message(items, query_label)
+    my_message = ""
+    unless items.empty?
+      my_message += "#{t(:results_prefix)} : #{localized_number(items.offset + 1)}-#{localized_number([items.offset + items.per_page,items.total_entries].min)}"
+      my_message += "/#{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
+      my_message += " : #{query_label}" unless query_label.blank?
+    end
+    return truncate(my_message, :length => 50)
+  end
+
   def archive_column_style
     if I18n.locale == :fa
       style = "width:100px; right:0"
@@ -8,7 +17,7 @@ module ArchiveHelper
     end
     return style
   end
-  
+
   def browser_header_content
     return %{
     <link href="/stylesheets/dd#{language_suffix}.css" media="screen" rel="stylesheet" type="text/css" />
@@ -92,7 +101,7 @@ module ArchiveHelper
           });
           $("#indexLinks a").click(function(){
 
-      			// if use is clicking on an already active index, then most likely they 
+      			// if use is clicking on an already active index, then most likely they
       			// want to close the index panel
       			if ($(this).hasClass('active')){
       				$("#browserFiltersDropdown").slideUp();
@@ -110,7 +119,7 @@ module ArchiveHelper
 					$("."+showMe).show();
 
 				if ($("#browserFiltersDropdown").css('display')=='none'){
-      					$("#browserFiltersDropdown").slideDown();	
+      					$("#browserFiltersDropdown").slideDown();
       				}
 
       			}
@@ -123,7 +132,7 @@ module ArchiveHelper
       			return false;
       		});
           });
-      		
+
         </script>
     }
   end
@@ -155,12 +164,9 @@ module ArchiveHelper
           $("#subjectFilter").msDropDown();
           $("#periodFilter").msDropDown();
 
-
-         
-
       		$("#indexLinks a").click(function(){
 
-      			// if use is clicking on an already active index, then most likely they 
+      			// if use is clicking on an already active index, then most likely they
       			// want to close the index panel
       			if ($(this).hasClass('active')){
       				$("#browserFiltersDropdown").slideUp();
@@ -190,25 +196,20 @@ module ArchiveHelper
       			$("#indexLinks a").removeClass('active').parent().removeClass('active');
       			return false;
       		});
-			
+
 			$(".listItem").hover(function(){
 				$(this).addClass("highlight");
 			},
 			function(){
 				$(this).removeClass("highlight");
 			});
-			
+
 			$(".listItem").click(function(){
 				window.location=$(this).find("a:first-child").attr("href");
 			})
-		
+
           });
-		  
-		  
-          
-     
-        		
-          
+
         </script>
     }
   end
@@ -282,8 +283,6 @@ module ArchiveHelper
           }
           });
 
-
-
           $(".slideshow_container .next").click(function(){
           $(".slideshow").animate({left: '-=' + 190 + 'px'});
           return false;
@@ -294,7 +293,7 @@ module ArchiveHelper
           });
           $("#indexLinks a").click(function(){
 
-      			// if use is clicking on an already active index, then most likely they 
+      			// if use is clicking on an already active index, then most likely they
       			// want to close the index panel
       			if ($(this).hasClass('active')){
       				$("#browserFiltersDropdown").slideUp();
@@ -312,7 +311,7 @@ module ArchiveHelper
 					$("."+showMe).show();
       				if ($("#browserFiltersDropdown").css('display')=='none'){
       					$("#browserFiltersDropdown").slideDown();
-					
+
       				}
 
       			}
@@ -326,15 +325,11 @@ module ArchiveHelper
       		});
 
           });
-		  
-		  
-          
 
-      		
         </script>
     }
   end
-  
+
   def archive_audio_head(mp3_name, wav_name)
     s = %{
       <!-- classroom head -->
@@ -364,31 +359,30 @@ module ArchiveHelper
       </script>
     }
   end
-  
-  
+
   def detail_header_content
     return %{
-      <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script> 
+      <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
 
     	<script language="javascript" type="application/javascript">
     	$(document).ready(function(){
 
-    		$('a[title]').qtip({ 
-    						   	   style: { 
-    							   name: 'dark', 
+    		$('a[title]').qtip({
+    						   	   style: {
+    							   name: 'dark',
     							   tip: true,
     							    border: {
     										 radius: 8
     									  }
-    								}, 
+    								},
     							   position: {
     								  corner: {
     									 target: 'topMiddle',
     									 tooltip: 'bottomMiddle'
     								  }
-    						   		} 
-    		}); 
-    		
+    						   		}
+    		});
+
     	});
     	</script>
     }
