@@ -478,9 +478,9 @@ class ArchiveController < ApplicationController
 
   def build_person_query(filter_value,query_hash)
     additional_query = ''
-    
+
     people_ids = filter_value.kind_of?(Array) ? filter_value.map {|id| id.to_i }.uniq.sort : [filter_value.to_i]
-    
+
     begin
       appearances = Appearance.where("person_id IN (?)", people_ids)
       item_ids =  appearances.map { |a| item_id }
@@ -813,17 +813,17 @@ class ArchiveController < ApplicationController
       @subfilter_mode = true
       # find complete lists for searching
       @genres = find_related_genres(@item_ids)
-      @top_genres = find_top_selection(@genres)
       @people =  find_related_people(@item_ids)
-      @top_people = find_top_selection(@people)
       @collections = find_related_collections(@item_ids)
-      @top_collections = find_top_selection(@collections)
       @places = find_related_places(@item_ids)
-      @top_places = find_top_selection(@places)
       @subjects = find_related_subjects(@item_ids)
-      @top_subjects = find_top_selection(@subjects)
       # periods always stays in order without top selections
       @periods = find_related_periods(@item_ids)
     end
+    @top_genres = find_top_selection(@genres)
+    @top_places = find_top_selection(@places)
+    @top_subjects = find_top_selection(@subjects)
+    @top_people = find_top_selection(@people)
+    @top_collections = find_top_selection(@collections)
   end
 end
