@@ -2809,7 +2809,7 @@ ul.item_meta li ul li{
 
 
 
-/* archive details
+/* collection details
 -------------------------------------------------------------- */
 #collection_details .archiveBigWrapper{
 	width:100%;
@@ -2864,4 +2864,46 @@ ul.item_meta li ul li{
 	line-height:18px;
 	background:url(../images/85black.png);
 	display:none;
+}
+
+
+
+/* collection index
+-------------------------------------------------------------- */
+#collection_index .archiveBigWrapper{
+	width:100%;
+	
+}
+
+#collection_index p.header{
+	font-size:18px;
+	
+}
+
+#collection_index .listItem .item {
+	margin-right:10px;
+	background:url(../images/bg_collection_thumb.png) bottom right no-repeat;
+	width:111px;
+	height:110px;
+}
+
+#collection_index .listItem h3 a{
+	color:#CA3723;
+}
+
+#collection_index .listItem .item a{
+	position:relative;
+	display:inline-block;
+}
+#collection_index .listItem .item a span{
+	display:block;
+	position:absolute;
+	bottom:1px;
+	left:1px;
+	height:20px;
+	width:100px;
+	text-align:center;
+	color:#fff;
+	line-height:20px;
+	background:url(../images/85black.png);
 }
