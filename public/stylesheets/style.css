@@ -2799,3 +2799,63 @@ ul.item_meta li ul li{
 .clear{
 	clear:left!important;
 }
+
+
+
+
+/* archive details
+-------------------------------------------------------------- */
+#collection_details .archiveBigWrapper{
+	width:100%;
+	
+}
+
+#collection_details .item_meta span{
+	display:block;
+}
+
+#collection_details .item_related{
+	width:218px;
+}
+
+#collection_details #search_results h2{
+	margin-bottom:0;
+}
+
+#collection_details .collection_highlights{
+	float:left;
+	width:194px;
+	margin:0 0 0 7px;
+	padding:0;
+}
+
+#collection_details .collection_highlights ul{
+	text-align:center;
+}
+
+#collection_details .collection_highlights h4{
+	color:#333333;
+	font-weight:bold;
+	margin:5px 0 5px 5px;
+	padding:0;
+	font-size:12px;
+}
+
+#collection_details .collection_highlights ul li a{
+	display:inline-block;
+	position:relative;
+}
+
+#collection_details .collection_highlights ul li a span{
+	position:absolute;
+	top:0;
+	left:0;
+	width:153px;
+	height:153px;
+	color:#fff;
+	padding:10px;
+	font-size:14px;
+	line-height:18px;
+	background:url(../images/85black.png);
+	display:none;
+}
