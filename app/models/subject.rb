@@ -46,6 +46,6 @@ class Subject < ActiveRecord::Base
   end
   
   def items_count
-    return self.items(true).where('items.publish=?', true).count
+    return self.items(true).is_published.count
   end
 end

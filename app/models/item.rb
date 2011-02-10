@@ -37,7 +37,7 @@ class Item < ActiveRecord::Base
   default_scope :include => [:translations]
   
   scope :is_published, lambda {
-    where(["publish=?", true])
+    where(["items.publish=?", true])
   }
   
   # pagination code
