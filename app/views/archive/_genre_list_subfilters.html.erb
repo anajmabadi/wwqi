@@ -25,6 +25,9 @@
             <span>(<%= localized_number(genre.items_count) %>)</span>
         </li>
         <% end -%>
+        <li>
+            <%= link_to t(:see_entire_index), archive_genres_path, :class => "seeAllLink" %>
+        </li>
     </ul>
     <%= link_to t(:see_more), archive_genres_path, :class => "moreLink" %>
     <% end -%>
