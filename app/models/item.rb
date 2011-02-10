@@ -53,20 +53,64 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[id accession_num bound calendar_type_id circa collection_id collection_name_en collection_name_fa created_at day depth editorial_date editorial_dating era_id favorite format_id height id lock_version month notes owner_id owner_name_en owner_name_fa owner_tag pages publish sort_day sort_month sort_year source_date updated_at urn width year display_date_en description_en title_en credit_en creator_label_en publisher_en transcript_en remarks_en display_date_fa description_fa title_fa credit_fa creator_label_fa publisher_fa transcript_fa remarks_fa concept_list genre_list person_list place_list comp_list has_clip?]
+    return %w[	id accession_num title_fa title_en creator_label_fa creator_label_en description_fa description_en
+    			show_date_en show_date_fa display_date_fa display_date_en place_created_fa place_created_en pages height width depth
+    			remarks_fa remarks_en genre_list person_list concept_list place_list comp_list
+    			notes owner_name_fa owner_name_en owner_tag_fa owner_tag_en collection_name_fa collection_name_en
+    			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish created_at updated_at thumbnail_url ]
   end 
+  
+  def place_created_en
+  	place_name = ""
+  	unless self.plots.empty?
+  		plot = self.plots.includes('place').where(["places.publish = ? AND plot_translations.caption LIKE ? ", true, "place created"]).first
+  		unless plot.nil?
+  			place = plot.place 
+  			place_name = place.nil? ? "" : place.name_en
+  		end
+  	end
+  	return place_name ||= ""
+  end
+  
+  def place_created_fa
+  	place_name = ""
+  	unless self.plots.empty?
+  		plot = self.plots.includes('place').where(["places.publish = ? AND plot_translations.caption LIKE ? ", true, "place created"]).first
+  		unless plot.nil?
+  			place = plot.place 
+  			place_name = place.nil? ? "" : place.name_fa
+  		end
+  	end
+  	return place_name ||= ""
+  end
   
   def citation
     return self.title
   end
   
-  def owner_name
-    return self.owner.name unless self.owner.nil?
+  def owner_name_en
+    return self.owner.name_en unless self.owner.nil?
   end
   
-  def collection_name
-    return self.collection.name unless self.collection.nil?
+  def owner_name_fa
+    return self.owner.name_fa unless self.owner.nil?
+  end
+  
+  def owner_restrictions_en
+    return self.owner.restrictions_en unless self.owner.nil?
+  end
+  
+  def owner_restrictions_fa
+    return self.owner.restrictions_fa unless self.owner.nil?
+  end
+  
+  def collection_name_en
+    return self.collection.name_en unless self.collection.nil?
   end  
+  
+  def collection_name_fa
+    return self.collection.name_fa unless self.collection.nil?
+  end 
   
   def concept_list
     return self.subjects.where("subject_type_id=7").map { |subject| subject.to_label }.join(", ") unless self.subjects.empty?
@@ -206,24 +250,20 @@ class Item < ActiveRecord::Base
     # get a date range for this input value
     my_date_range = self.date_range(input_calendar_type_id)
     
-    Rails.logger.info "--------my_date_range[:possible_months]: " + my_date_range[:possible_months].join(", ")
-    Rails.logger.info "--------my_date_range[:possible_years]: " + my_date_range[:possible_years].join(", ")
-    
     my_dates = []
     
     unless my_date_range[:possible_months].empty?
       my_date_range[:possible_months].each_with_index do |m, index|
-        my_month = Month.where('calendar_type_id=? AND publish=? AND position = ?', input_calendar_type_id, true, m).first.name unless m.nil?
+        my_month = Month.where(['calendar_type_id=? AND publish=? AND position = ?', input_calendar_type_id, true, m]).first.name unless m.nil?
         my_year = localized_number(my_date_range[:possible_years][index]) unless my_date_range[:possible_years][index].nil?
         my_sub_label = my_month
-        my_sub_label +=  " "  + my_year unless my_year.nil? || my_date_range[:possible_years][index] == my_date_range[:possible_years][index+1]
+        my_sub_label +=  " "  + my_year unless (my_year.nil? || my_date_range[:possible_years][index] == my_date_range[:possible_years][index+1])
         my_dates << my_sub_label
       end
     else 
-        my_dates =  my_date_range[:possible_years].map { |year| localized_number(year) } unless my_date_range[:possible_years].nil? || my_date_range[:possible_years].empty?
+        my_dates =  my_date_range[:possible_years].map { |year| localized_number(year) } unless (my_date_range[:possible_years].nil? || my_date_range[:possible_years].empty?)
     end
     
-
     my_label += my_dates.join(" #{I18n.translate(:year_range_separator)} ")
     
     return my_label
@@ -311,6 +351,14 @@ class Item < ActiveRecord::Base
     I18n.locale = old_locale unless old_locale.nil?
     
     return date_to_show
+  end
+  
+  def show_date_en
+  	show_date(:en)
+  end
+  
+  def show_date_fa
+  	show_date(:fa)
   end
   
   def self.added_since_date(months=1, limit=25)
