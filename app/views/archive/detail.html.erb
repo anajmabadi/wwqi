@@ -19,6 +19,9 @@
         <h2><%= @item.title %></h2>
         <div id="item_details_wrapper">
             <ul class="item_meta">
+                <% unless @item.clips.empty? -%>
+                <%= raw css_audio_player(@item.clips[0].title) %>
+                <% end -%>
                 <% unless @item.description.blank? -%>
                 <li class="description">
                     <span><%= t(:description).titleize %></span>
@@ -82,8 +85,10 @@
                     </ul>
                 </li>
                 <% end -%>
-                
-                <li class="clear">&nbsp;</li>
+
+                <li class="clear">
+                    &nbsp;
+                </li>
             </ul>
             <ul class="item_related">
                 <% unless @item.appearances.empty? -%>
@@ -94,7 +99,7 @@
                     <% end -%>
                 </li>
                 <% end -%>
-                
+
                 <% unless @item.subjects.concepts.empty? -%>
                 <li>
                     <span><%= t(:subjects).titleize %></span>
@@ -103,7 +108,7 @@
                     <% end -%>
                 </li>
                 <% end -%>
-                
+
                 <% unless @item.plots.empty? -%>
                 <li>
                     <span><%= t(:places).titleize %></span>
