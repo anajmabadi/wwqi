@@ -107,6 +107,7 @@ Qajar::Application.routes.draw do
   match 'credits' => 'static_pages#page', :as => :credits, :id => 5, :page_name => 'credits'
   match 'faq' => 'static_pages#page', :as => :faq, :id => 7, :page_name => 'faq'
   match 'links' => 'static_pages#page', :as => :links, :id => 9, :page_name => "links"
+  match 'donate' => 'static_pages#page', :as => :donate, :id => 2, :page_name => "donate"
   
   match 'admin/utilities' => 'admin/utilities#index', :as => :admin_utilities
   match 'admin/utilities/rename_by_file_name' => 'admin/utilities#rename_by_file_name', :as => :rename_by_file_name
