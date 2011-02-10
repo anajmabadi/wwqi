@@ -11,7 +11,7 @@
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path(:subject_filter=>genre.id),
             :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items.count) %>)</span>
+            <span>(<%= localized_number(genre.items_count) %>)</span>
         </li>
         <% end -%>
     </ul>
@@ -22,7 +22,7 @@
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path(:subject_filter=>genre.id),
             :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items.count) %>)</span>
+            <span>(<%= localized_number(genre.items_count) %>)</span>
         </li>
         <% end -%>
     </ul>
