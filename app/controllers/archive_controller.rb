@@ -207,7 +207,7 @@ class ArchiveController < ApplicationController
     load_filter_models(@reset)
 
     #build query label stack
-    @query_labels = (@reset || @query_hash[:labels].empty?) ? {:field => I18n.translate(:all_items)} : @query_hash[:labels]
+    @query_labels = (@reset || @query_hash[:labels].empty?) ? [{:field => I18n.translate(:all_items)}] : @query_hash[:labels]
 
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath

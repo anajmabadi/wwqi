@@ -7,7 +7,7 @@ module ArchiveHelper
 	      query_label = query_label.kind_of?(String) ? {:field => query_label} : query_label
 	      my_message += "#{t(:results_prefix)} : #{localized_number(items.offset + 1)}-#{localized_number([items.offset + items.per_page,items.total_entries].min)}"
 	      my_message += "/#{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
-	      my_message += " : #{query_label[:field]}" unless query_label[:field].blank?
+	      my_message += " | #{query_label[:field].titleize}" unless query_label[:field].blank?
 	      my_message += " #{t(:equal_symbol)} #{query_label[:values]}" unless query_label[:values].blank?
       end
     end
