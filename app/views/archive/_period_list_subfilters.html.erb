@@ -1,12 +1,17 @@
-<h3 class="active last"><%= link_to t(:related_periods).titleize, nil %></h3>
+	<% unless @reset -%>
+<h3 class="active last"><%= link_to t(:periods).titleize, nil %></h3>
 <div class="list"  style="display:block">
+	<% else -%>
+<h3 class="last"><%= link_to t(:periods).titleize, nil %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @periods.each do |period| -%>
         <% unless period.items.empty? -%>
         <li>
             <%= link_to truncate(period.title, :length => 50), archive_browser_path(:period_filter=>period.id),
             :class => (period.id.to_s == @period_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(period.items.count) %>)</span>
+            <span>(<%= localized_number(period.items_count) %>)</span>
         </li>
         <% end -%>
         <% end -%>

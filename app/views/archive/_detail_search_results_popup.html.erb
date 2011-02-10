@@ -1,0 +1,13 @@
+<div id="filter-popup" style="display:none;">
+    <div id="filter-popup-content" style="padding:20px;color:#fff;">
+    	<h3><%= t(:filter_popups_prompt) %></h3>
+        <ul>
+            <% query_labels.each do |label| -%>
+            <li>
+                <%= label[:field] %>
+                <%= label[:values].blank? ? "" : " #{t(:equal_symbol)} #{label[:values]}" %>
+            </li>
+            <% end -%>
+        </ul>
+    </div>
+</div>

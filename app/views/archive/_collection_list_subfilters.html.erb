@@ -1,12 +1,17 @@
+	<% unless @reset -%>
 <h3 class="active"><%= link_to t(:related_collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
 <div class="list" style="display:block">
+	<% else -%>
+<h3><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @top_collections.each do |collection| -%>
         <% unless collection.items.empty? %>
         <li>
             <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
             :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(collection.items.count) %>)</span>
+            <span>(<%= localized_number(collection.items_count) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>
@@ -19,7 +24,7 @@
         <li>
             <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
             :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(collection.items.count) %>)</span>
+            <span>(<%= localized_number(collection.items_count) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>

@@ -1,12 +1,17 @@
+	<% unless @reset -%>
 <h3 class="active"><%= link_to t(:related_genres).titleize, archive_genres_path %></h3>
 <div class="list" style="display:block">
+	<% else -%>
+<h3 class="active"><%= link_to t(:genres).titleize, archive_genres_path %></h3>
+<div class="list" style="display:block">
+	<% end -%>
     <ul class="default">
         <% @top_genres.each do |genre| -%>
         <li>
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path(:subject_filter=>genre.id),
             :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items.count) %>)</span>
+            <span>(<%= localized_number(genre.items_count) %>)</span>
         </li>
         <% end -%>
     </ul>
@@ -17,7 +22,7 @@
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path(:subject_filter=>genre.id),
             :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items.count) %>)</span>
+            <span>(<%= localized_number(genre.items_count) %>)</span>
         </li>
         <% end -%>
     </ul>

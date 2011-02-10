@@ -36,6 +36,10 @@ class Item < ActiveRecord::Base
   globalize_accessors :fa, :en
   default_scope :include => [:translations]
   
+  scope :is_published, lambda {
+    where(["items.publish=?", true])
+  }
+  
   # pagination code
   cattr_reader :per_page
   @@per_page = 100

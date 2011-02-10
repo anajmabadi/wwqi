@@ -10,17 +10,17 @@
         <%= link_to t(:reset).titleize, archive_browser_path(:reset => true), :class => "blackButton right" %>
         <h2><%= t(:refine_results) %></h2>
     </div>
-    <%= render @subfilter_mode ? "genre_list_subfilters" : "genre_list" %>
+    <%= render "genre_list_subfilters" %>
 
-    <%= render @subfilter_mode ? "collection_list_subfilters" : "collection_list" %>
+    <%= render "collection_list_subfilters" %>
 
-    <%= render @subfilter_mode ? "person_list_subfilters" : "person_list" %>
+    <%= render "person_list_subfilters" %>
 
-    <%= render @subfilter_mode ? "place_list_subfilters" : "place_list" %>
+    <%= render "place_list_subfilters" %>
 
-    <%= render @subfilter_mode ? "subject_list_subfilters" : "subject_list" %>
+    <%= render "subject_list_subfilters" %>
 
-    <%= render @subfilter_mode ? "period_list_subfilters" : "period_list" %>
+    <%= render "period_list_subfilters" %>
 </div>
 <!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
@@ -34,7 +34,7 @@
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode } unless @items.empty?  %>
 
     <div id="search_results">
-        <%= render :partial => 'browser_results_message', :locals => {:items => @items} %>
+        <%= render :partial => 'browser_results_message', :locals => {:items => @items, :query_labels => @query_labels} %>
 
         <% unless @items.empty?  -%>
         <% if @view_mode == 'list' -%>
@@ -48,4 +48,6 @@
     </div>
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  unless @items.empty? %>
 </div>
+
+<%= render :partial => "detail_search_results_popup", :locals => { :items => @items, :query_labels => @query_labels } %>
 

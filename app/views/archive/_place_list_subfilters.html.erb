@@ -1,12 +1,17 @@
+	<% unless @reset -%>
 <h3 class="active"><%= link_to t(:related_places).titleize, archive_places_path %></h3>
 <div class="list"  style="display:block">
+	<% else -%>
+<h3><%= link_to t(:places).titleize, archive_places_path %></h3>
+<div class="list">
+	<% end -%>
     <ul class="default">
         <% @top_places.each do |place| -%>
         <% unless place.items.empty? %>
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(place.items.count) %>)</span>
+            <span>(<%= localized_number(place.items_count) %>)</span>
         </li>
         <% end -%>
         <% end -%>
@@ -18,7 +23,7 @@
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(place.items.count) %>)</span>
+            <span>(<%= localized_number(place.items_count) %>)</span>
         </li>
         <% end -%>
         <% end -%>

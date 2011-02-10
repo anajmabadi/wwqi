@@ -30,12 +30,16 @@ class Period < ActiveRecord::Base
     return self.title
   end
   
+  def item_query
+  	Item.where(["publish = ? AND sort_year BETWEEN ? AND ?", true, self.start_at.strftime("%Y"), self.end_at.strftime("%Y")] )
+  end
+  
   def items
-    return Item.where("sort_year BETWEEN '#{self.start_at.strftime("%Y")}' AND '#{self.end_at.strftime("%Y")}'").all
+    return self.item_query.all
   end
   
   def items_count
-    return self.items.size
+    return self.item_query.count
   end
   
 end
