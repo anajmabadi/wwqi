@@ -3,6 +3,8 @@ class Period < ActiveRecord::Base
   translates :title, :caption, :description
   default_scope :include => :translations
   globalize_accessors :en, :fa
+  
+  validates :start_at, :end_at, :presence => true, :numericality => true
 
   def tag_line
     value = title
