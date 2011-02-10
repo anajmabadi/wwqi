@@ -1,20 +1,27 @@
-<p id="notice"><%= notice %></p>
+<% @page_description = t(:show_description) -%>
+<% @page_title = controller.controller_name.capitalize + " | " + t(:show).capitalize -%>
 
-<p>
-  <b>Title:</b>
-  <%= @era.title %>
-</p>
-
-<p>
-  <b>Year:</b>
-  <%= @era.year %>
-</p>
-
-<p>
-  <b>Publish:</b>
-  <%= @era.publish %>
-</p>
-
-
-<%= link_to 'Edit', edit_admin_era_path(@era) %> |
-<%= link_to 'Back', admin_eras_path %>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <%= render 'nav_show_header_bar', :era => @era %>
+        <table class="styled" >
+            <tr>
+                <td>
+                <p>
+                    <b>Title:</b>
+                    <%= @era.title %>
+                </p>
+                <p>
+                    <b>Year:</b>
+                    <%= @era.year %>
+                </p>
+                <p>
+                    <b>Publish:</b>
+                    <%= @era.publish %>
+                </p>
+                </td>
+            </tr>
+        </table>
+        <%= render 'nav_show_header_bar', :era => @era %>
+    </div>
+</div>

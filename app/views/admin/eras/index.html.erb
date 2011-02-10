@@ -1,27 +1,29 @@
-<h1>Listing eras</h1>
+<% @page_description = t(:index_description) -%>
+<% @page_title = controller.controller_name.capitalize -%>
 
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Year</th>
-    <th>Publish</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @eras.each do |era| %>
-  <tr>
-    <td><%= era.title %></td>
-    <td><%= era.year %></td>
-    <td><%= era.publish %></td>
-    <td><%= link_to 'Show', admin_era_path(era) %></td>
-    <td><%= link_to 'Edit', edit_admin_era_path(era) %></td>
-    <td><%= link_to 'Destroy', admin_era_path(era), :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Era', new_admin_era_path %>
+<div id="staticContent" class="clearfix">
+    <div class="onecolumn">
+        <div class="content nomargin">
+            <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_era_path, :show_all_path => admin_eras_path } %>
+            <table  class="global" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th>Title en</th>
+                    <th>Title fa</th>
+                    <th>Year</th>
+                    <th>Publish</th>
+                    <th>Actions</th>
+                </tr>
+                <% @eras.each do |era| %>
+                <tr>
+                    <td><%= era.title_en %></td>
+                    <td class="persianOnly"><%= era.title_fa %></td>
+                    <td><%= era.year %></td>
+                    <td><%= show_check era.publish %></td>
+                    <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_era_path(era) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_era_path(era) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_era_path(era), :confirm => 'Are you sure?', :method => :delete %></td>
+                </tr>
+                <% end %>
+            </table>
+            <br class="clear" />
+        </div>
+    </div>
+</div>

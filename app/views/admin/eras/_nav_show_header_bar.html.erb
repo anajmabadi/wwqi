@@ -1,0 +1,11 @@
+<div class="header">
+  <div class="description">
+    <h1><%= link_to controller.controller_name.capitalize, admin_eras_path  %> | Show </h1>
+  </div>
+  <div class="tools">
+    <%= link_to 'Back', admin_eras_path %> |
+    <%= link_to 'Edit', edit_admin_era_path(era) %> |
+    <%= link_to 'Delete', admin_era_path(era), :method => :delete, :confirm => "Are you sure you want to delete this era?" %> |
+    <%= link_to "New", new_admin_era_path %>
+  </div>
+</div>
