@@ -38,7 +38,7 @@ class Collection < ActiveRecord::Base
   end  
 
   def items_count
-    return self.items(true).is_published.count
+    return self.items.is_published.count
   end
   
   def item_count_string
