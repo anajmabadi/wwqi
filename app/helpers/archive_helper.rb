@@ -1,5 +1,5 @@
 module ArchiveHelper
-  def format_results_message(items, query_labels)
+  def format_results_message(items = [], query_labels = [])
     my_message = ""
     unless items.empty? || query_labels.empty?
       query_labels.each do |query_label|	

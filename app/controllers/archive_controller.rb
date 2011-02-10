@@ -383,8 +383,8 @@ class ArchiveController < ApplicationController
 
     collection_ids = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.sort : [filter_value.to_i]
 
-	collections = Collection.find(collection_ids)
-	
+    collections = Collection.find(collection_ids)
+
     query_hash[:conditions] << 'collection_id IN (:collection_ids)'
     query_hash[:parameters][:collection_ids] = collection_ids unless collection_ids.empty?
     query_hash[:labels] << {:field => I18n.translate(:collection), :values => collections.map { |c| c.name }.uniq.sort.join(', ') }
@@ -422,17 +422,16 @@ class ArchiveController < ApplicationController
   end
 
   def build_place_query(filter_value, query_hash)
-    additional_query = ''
-    if filter_value.kind_of?(Array)
-      ids_to_find = filter_value.map { |id| id.to_i }.uniq.sort
-    else
-      ids_to_find = [filter_value.to_i]
-    end
+
+    ids_to_find = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.uniq.sort : [filter_value.to_i]
+
     begin
       plots = Plot.where(['place_id IN (?)', ids_to_find]).all
       item_ids = plots.map { |p| p.item_id }.uniq.sort
-      unless @item_ids.empty?
-        additional_query += "items.id IN (:plot_item_ids)"
+      unless item_ids.empty?
+        query_hash[:conditions] << "items.id IN (:plot_item_ids)"
+        query_hash[:parameters][:plot_item_ids] = item_ids
+        query_hash[:labels] << {:field => I18n.translate(:place), :values => plots.map { |p| p.place.name }.uniq.sort.join(', ') }
       else
         flash[:error] = "No items found. Showing all."
       end
@@ -440,12 +439,10 @@ class ArchiveController < ApplicationController
       flash[:error] = "A problem was encountered searching for place id #{filter_value}: #{error}."
     else
       flash[:error] = nil
-    ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:plot_item_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:place), :values => plots.map { |p| p.place.name }.uniq.sort.join(', ') }
-    return query_hash
     end
+
+    return query_hash
+
   end
 
   def build_staff_favorites_query(query_hash)
