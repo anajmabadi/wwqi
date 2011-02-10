@@ -9,5 +9,5 @@
 <h2><% if items.empty? -%>
 <%= t(:showing_no_records) -%>
 <% else -%>
-<%= format_results_message(@items, @query_label) %>
+<%= raw format_results_message(items, query_labels) %>
 <% end -%></h2>
