@@ -63,8 +63,11 @@ class Item < ActiveRecord::Base
   def image_caption(page=1)
   	my_caption = ""
   	my_image = self.images.where(["images.position = ?", page]).first
-  	my_caption += my_image.title.blank? ? truncate(self.title) : truncate(my_image.title) unless my_image.nil?
-  	my_caption += " (#{I18n.translate(:page).titleize} #{page.to_s})" unless page.nil? || self.pages < 2
+  	unless my_image.nil? || my_image.title.blank?
+  		my_caption += my_image.title
+  	else
+  		my_caption += self.title
+  	end 
   	return my_caption
   end
   
