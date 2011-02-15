@@ -1,6 +1,6 @@
 <div id="items">
     <% items.each do |item| -%>
-    <div class="item">
+    <div class="item <%= item.has_clip? ? 'oralhistory' : '' %>">
         <span class="select-item">
             <input type="checkbox" name="select-item" />
         </span>
