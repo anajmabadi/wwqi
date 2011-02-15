@@ -60,6 +60,17 @@ class Item < ActiveRecord::Base
     			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish created_at updated_at thumbnail_url ]
   end 
   
+  def image_caption(page=1)
+  	my_caption = ""
+  	my_image = self.images.where(["images.position = ?", page]).first
+  	unless my_image.nil? || my_image.title.blank?
+  		my_caption += my_image.title
+  	else
+  		my_caption += self.title
+  	end 
+  	return my_caption
+  end
+  
   def place_created_en
   	place_name = ""
   	unless self.plots.empty?
