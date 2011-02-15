@@ -15,6 +15,10 @@ module ArchiveHelper
     		truncate(my_message, :length => 55) + " " + link_to(t(:more), "#filter-popup", :rel => "shadowbox[filter-popup];width=310px;height=260px;" )  : 
     		my_message
   end
+  
+  def format_item_image_caption(item, page)
+  	return "#{ truncate(item.image_caption(page), :length => 60) }"
+  end
 
   def archive_column_style
     if I18n.locale == :fa
