@@ -13,11 +13,11 @@
             <%= link_to t(:email).titleize, "#", :class => "item-share" %>
             <%= link_to t(:download), archive_detail_download_path(item), :class => "item-download" %>
         </div>
-        <div class="item">
+        <div class="item <%= item.has_clip? ? 'oralhistory' : '' %>" >
             <a href="<%= archive_detail_path(item.id) %>">
             <img width="100" alt="<%= item.title %>" src="<%= item.thumbnail_url %>">
             </a>
-            <%= link_to t(:oral_history), archive_detail_path(item.id), :title => archive_detail_path(item.id), :class => 'type' if item.has_clip? %>
+            <%= link_to t(:audio), archive_detail_path(item.id), :title => archive_detail_path(item.id), :class => 'type' if item.has_clip? %>
         </div>
         <div class="description">
             <!--<a class="view" href="/archive/detail/1190">view details</a>-->
