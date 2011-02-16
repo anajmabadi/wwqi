@@ -186,7 +186,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
     @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
     @query_hash = build_translation_query(@translation_filter, @query_hash) unless @translation_filter.blank?
-    @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil? || @my_archive_filter.empty?
+    @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil?
     @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year] == 0 && @year_range_filter[:end_year] == 0)
     @query_hash = build_boolean_keyword_query(@boolean_keyword_filter, @query_hash) unless @boolean_keyword_filter[:values][0].blank? && @boolean_keyword_filter[:values][1].blank? && @boolean_keyword_filter[:values][2].blank?
 
