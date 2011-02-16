@@ -60,6 +60,13 @@
         }, function() {
             $(".item-tools",this).hide();
         });
+		$(".item").hover(function(){
+					
+					$("a.title",this).show('fade');
+				}, function(){
+					$("a.title",this).hide('fade');
+				});
+				
         setActionsButtonState = function() {
             if ($(".listItem.highlight").length>0) {
                 $(".actions-dropdown-button").removeClass("disabled");
