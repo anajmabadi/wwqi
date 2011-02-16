@@ -1146,7 +1146,7 @@ div.slideshow ul li a.title{
 	position:absolute;
 	top:90px;
 	left:-4px;
-	z-index:1000;
+	z-index:100;
 	text-indent:-999px;
 	background:url(/images/beta_en.png) top left no-repeat;
 }
@@ -1988,13 +1988,16 @@ div.slideshow ul li a.title{
 #browseBar .list a:hover{
 	color:#CA3723
 }
+#browseBar .list ul{
+	padding:5px 0;
+}
 
 #browseBar .list li{
-	padding:0 0 0 10px;
+	padding:0 4px 0 10px;
 	font-size:12px;
-	margin:0;
-	background:url(/images/bullet.gif) 0 10px no-repeat;
-	margin: 0 0 0 10px;
+	line-height:14px;
+	background:url(/images/bullet.gif) 0 5px no-repeat;
+	margin: 4px 0 4px 10px;
 }
 
 #browseBar .list li span{
@@ -2005,18 +2008,20 @@ div.slideshow ul li a.title{
 #browseBar a.moreLink{
 	color:#CA3723;
 	padding-left:18px;
-	background:url(/images/arrow_red_bottom.png) 10px 8px no-repeat;
-	margin:0;
+	background: url(/images/arrow_red_bottom.png) 10px 8px no-repeat;
+	margin:0px 5px 0;
 	display:block;
+	border-top:1px solid #efefef;
 
 }
 
 #browseBar a.moreLink.less{
 	color:#CA3723;
 	padding-left:18px;
-	background:#ccc url(/images/arrow_red_top.png) 10px 8px no-repeat;
-	margin:0;
+	background: url(/images/arrow_red_top.png) 10px 8px no-repeat;
+	margin:0px 5px 0;
 	display:block;
+	border-top:1px solid #efefef;
 	
 }
 
@@ -2289,6 +2294,14 @@ div.slideshow ul li a.title{
 
 #indexList .subjects_list{
 	margin-top:10px;
+}
+
+#indexList .dob{
+	font-style:italic;
+	color:#999;
+	display:block;
+	margin:0;
+	padding:0 0 0 10px;
 }
 
 #indexList ul li ul{
@@ -2665,7 +2678,7 @@ div.field {
 	color:#fff!important;
 }
 
-#item_details .image-count{
+#itemPreview .image-count{
 	display:block;
 	position:absolute;
 	top:15px;
@@ -2707,6 +2720,10 @@ ul.item_related li{
 	clear:left;
 }
 
+.jp-controls li{
+	overflow:visible!important;
+}
+
 ul.item_meta li:last-child,
 ul.item_related li:last-child{
 	border:none;
@@ -2745,7 +2762,7 @@ ul.item_meta li ul li{
 }
 
 
-#item_details .archiveBigWrapper{
+#item_details.archiveBigWrapper{
 	width:775px;
 }
 
@@ -2780,14 +2797,13 @@ ul.item_meta li ul li{
 }
 
 .tag{
-	background:url(/images/bullet.gif) 0 50% no-repeat;
+	background:url(/images/bullet.gif) 0 5px no-repeat;
 	color:#CA3723!important;
 	display:inline-block;
 	font-size:12px;
-	height:15px;
+	line-height:14px;
 	padding:0px 8px 0;
 	text-decoration:none;
-	height:17px;
 	margin:0 4px 6px 4px;
 
 }
@@ -2898,4 +2914,13 @@ ul.item_meta li ul li{
 	color:#fff;
 	line-height:20px;
 	background:url(../images/85black.png);
+}
+
+.collectionInfoLink{
+	width:14px;
+	height:14px;
+	display:block;
+	background:url(../images/info_icon.png) top left no-repeat;
+	text-indent:-9999px;
+	display:inline-block;
 }
