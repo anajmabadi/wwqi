@@ -32,7 +32,7 @@ div.jp-interface {
 	background-color:#000;
 	height:65px;
 	position:relative;
-	width:290px;
+	
 	
 }
 
@@ -129,7 +129,7 @@ div.jp-progress {
 	overflow:hidden;
 	top:22px;
 	background-color: #ddd;
-	width:90px;
+	width:280px;
 	height:10px;
 }
 div.jp-single-player div.jp-progress {
@@ -156,10 +156,10 @@ a.jp-volume-min {
 	height:15px;
 }
 div.jp-single-player a.jp-volume-min {
-	left:224px;
+	left:424px;
 }
 div.jp-playlist-player a.jp-volume-min {
-	left:296px;
+	left:496px;
 }
 a.jp-volume-min:hover {
 	background: url("jplayer.png") -19px -170px no-repeat;
@@ -171,10 +171,10 @@ a.jp-volume-max {
 	height:15px;
 }
 div.jp-single-player a.jp-volume-max {
-	left:296px;
+	left:510px;
 }
 div.jp-playlist-player a.jp-volume-max {
-	left:368px;
+	left:568px;
 }
 a.jp-volume-max:hover {
 	background: url("jplayer.png") -19px -186px no-repeat;
@@ -190,7 +190,7 @@ div.jp-volume-bar {
 	cursor: pointer;
 }
 div.jp-single-player div.jp-volume-bar {
-	left:210px;
+	right:50px;
 }
 div.jp-playlist-player div.jp-volume-bar {
 	left:314px;
@@ -220,7 +220,7 @@ div.jp-playlist-player div.jp-total-time {
 	left:164px;
 }
 div.jp-playlist {
-	width:418px;
+
 }
 div.jp-playlist ul{
 	list-style-type:none;
@@ -229,7 +229,7 @@ div.jp-playlist ul{
 	background-color:#CA3723;
 
 	border-top:none;
-	width:250px;
+	
 	font-size:.72em;
 }
 div.jp-single-player div.jp-playlist li {

@@ -10,7 +10,7 @@
 
 <%= render :partial => "detail_item_preview", :locals => { :item => @item } %>
 
-<div class="clearfix archiveBigWrapper" >
+<div class="clearfix archiveBigWrapper" id="item_details">
 
     <%= render :partial => "detail_item_pagination_bar", :locals => { :item => @item, :items => @items, :return_url => @return_url }%>
 
@@ -95,7 +95,7 @@
                 <li>
                     <span><%= t(:people).titleize %></span>
                     <% @item.appearances.each do |appearance| -%>
-                    <%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id) %>
+                    <%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id), :class=>"tag" %>
                     <% end -%>
                 </li>
                 <% end -%>
@@ -104,7 +104,7 @@
                 <li>
                     <span><%= t(:subjects).titleize %></span>
                     <% @item.subjects.concepts.each do |subject| -%>
-                    <%= link_to subject.name, archive_browser_path(:subject_filter => subject.id) %>
+                    <%= link_to subject.name, archive_browser_path(:subject_filter => subject.id), :class=>"tag" %>
                     <% end -%>
                 </li>
                 <% end -%>
@@ -113,7 +113,7 @@
                 <li>
                     <span><%= t(:places).titleize %></span>
                     <% @item.plots.each do |plot| -%>
-                    <%= link_to plot.place.name, archive_browser_path(:place_filter => plot.place.id) %>
+                    <%= link_to plot.place.name,  archive_browser_path(:place_filter => plot.place.id), :class=>"tag" %>
                     <% end -%>
                 </li>
                 <% end -%>

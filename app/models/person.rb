@@ -1,5 +1,7 @@
 class Person < ActiveRecord::Base
 
+  include ApplicationHelper 
+  	
   extend ActiveModel::Translation
 
   has_many :appearances, :dependent => :destroy
@@ -27,6 +29,31 @@ class Person < ActiveRecord::Base
   def tag_line
     value = name unless name.blank?
     value += ' (' + vitals + ')' unless vitals.blank?
+    return value
+  end
+  
+  def index_label
+  	value = ""
+    value += self.name unless self.name.blank?
+    
+    value += " <span>(#{localized_number(self.items_count)})</span>" unless self.items_count == 0
+    
+    unless self.vitals.blank?
+    	value += '<span class="dob">(' + self.vitals + ')</span>'
+    else	
+    	normalized_dob = self.dob ||= 0
+    	normalized_dod = self.dod ||= 0
+    	
+    	unless (normalized_dob + normalized_dod == 0)
+    		if normalized_dod == 0 
+    			value += '<span class="dob">(' + localized_number(normalized_dob) + "-" + I18n.translate(:date_unknown) + ')</span>'
+    		elsif normalized_dob == 0  
+    			value += '<span class="dob">(' + I18n.translate(:date_unknown) + '-' + localized_number(normalized_dod) + ')</span>'
+    		else
+    			value += '<span class="dob">(' + localized_number(normalized_dob) + "-" + localized_number(normalized_dod) + ')</span>'
+    		end
+    	end
+    end 
     return value
   end
 

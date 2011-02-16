@@ -9,6 +9,8 @@
                 opacity: 'toggle',
                 height: 'toggle'
             }, 300);
+			$(this).parent().next(".list").find("ul.more").hide();
+			$(this).parent().next(".list").find("a.moreLink").removeClass("less").html("see more");
             return false;
 
         });
