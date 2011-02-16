@@ -68,11 +68,14 @@
             }
         });
 
-        $('.item').hover( function() {
-            $(this).find('a.title').animate({"bottom":"0px"},200);
-        }, function() {
-            $(this).find('a.title').animate({"bottom":"-20px"},200);
-        });
+        $(".item").hover(function(){
+					
+					$("a.title",this).show('fade');
+				}, function(){
+					$("a.title",this).hide('fade');
+				});
+				
+		
         $("#indexLinks a").click( function() {
 
             // if use is clicking on an already active index, then most likely they
