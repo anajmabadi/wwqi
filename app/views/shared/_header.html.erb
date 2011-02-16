@@ -6,15 +6,15 @@
       <ul>
         <li><%= link_to(t(:contact),contact_path) %></li>
         <li><%= link_to(t(:faq),faq_path) %></li>
+        <li><a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a></li>
       </ul>
     </div>
     <div id="nav">
-      <a class="lang" href="<%=language_url-%>"><%= t(:language_option) -%></a>
       <ul class="sortnav">
-        <li<% if controller.controller_name == 'home' -%> class="active"<% end -%>> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
-        <li<% if controller.controller_name == 'archive' && controller.action_name == 'index' -%> class="active"<% end -%>> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
-        <li<% if controller.action_name == 'collections' -%> class="active"<% end -%>> <%= link_to(t(:named_holdings), archive_collections_path, { :class=>"module-link" }) %></li>
-        <li<% unless @my_archive_filter.nil? -%> class="active"<% end -%>> 
+        <li> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
+        <li> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
+        <li> <%= link_to(t(:named_holdings), archive_collections_path, { :class=>"module-link" }) %></li>
+        <li> 
         	<% link_label = t(:my_archive) -%>
         	<% link_label += ' (' + localized_number(@my_archive_ids.size.to_s) + ')' unless @my_archive_ids.nil? || @my_archive_ids.empty? -%>
         	<%= link_to( link_label, archive_browser_path(:my_archive => true), :class=>"module-link" ) %>
