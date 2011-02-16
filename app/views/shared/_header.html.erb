@@ -14,7 +14,7 @@
         <li<% if controller.controller_name == 'home' -%> class="active"<% end -%>> <%= link_to(t(:home), home_path, { :class=>"module-link" }) %></li>
         <li<% if controller.controller_name == 'archive' && controller.action_name == 'index' -%> class="active"<% end -%>> <%= link_to(t(:archive), archive_path, { :class=>"module-link" }) %></li>
         <li<% if controller.action_name == 'collections' -%> class="active"<% end -%>> <%= link_to(t(:named_holdings), archive_collections_path, { :class=>"module-link" }) %></li>
-        <li<% if @my_archive_filter -%> class="active"<% end -%>> 
+        <li<% unless @my_archive_filter.nil? -%> class="active"<% end -%>> 
         	<% link_label = t(:my_archive) -%>
         	<% link_label += ' (' + localized_number(@my_archive_ids.size.to_s) + ')' unless @my_archive_ids.nil? || @my_archive_ids.empty? -%>
         	<%= link_to( link_label, archive_browser_path(:my_archive => true), :class=>"module-link" ) %>
