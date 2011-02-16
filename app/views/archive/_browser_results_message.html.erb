@@ -6,8 +6,4 @@
         <a href="#" id="download-items"><%= t(:download_citation) %></a>
     </div>
 </div>
-<h2><% if items.empty? -%>
-<%= t(:showing_no_records) -%>
-<% else -%>
-<%= raw format_results_message(items, query_labels) %>
-<% end -%></h2>
+<h2><%= raw format_results_message(items, query_labels) %></h2>
