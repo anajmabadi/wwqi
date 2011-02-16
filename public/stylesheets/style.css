@@ -2037,7 +2037,7 @@ div.slideshow ul li a.title{
 
 
 #archive_search_wrapper{
-	width:325px;
+	width:520px;
   overflow:hidden;
 	height:85px;
 	margin-left:0px;
@@ -2062,7 +2062,7 @@ div.slideshow ul li a.title{
 }
 
 #archive_search_wrapper #simple_search input{
-	width:270px;
+	width:460px;
 }
 
 .archiveBigWrapper{
