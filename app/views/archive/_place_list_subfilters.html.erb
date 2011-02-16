@@ -9,7 +9,7 @@
         <% @top_places.each do |place| -%>
         <% unless place.items.empty? %>
         <li>
-            <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
+            <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
             <span>(<%= localized_number(place.items_count) %>)</span>
         </li>
@@ -21,7 +21,7 @@
         <% @places.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |place| -%>
         <% unless place.items.empty? -%>
         <li>
-            <%= link_to truncate(place.name, :length => 50), archive_browser_path(:place_filter=>place.id),
+            <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
             <span>(<%= localized_number(place.items_count) %>)</span>
         </li>

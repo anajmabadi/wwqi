@@ -9,7 +9,7 @@
         <% @top_subjects.each do |subject| -%>
         <% unless subject.items.empty? -%>
         <li>
-            <%= link_to truncate(subject.name, :length => 50), archive_browser_path(:subject_filter=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
+            <%= link_to truncate(subject.name, :length => 50), archive_browser_path('subject_filter[]'=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
             <span>(<%= localized_number(subject.items_count) %>)</span>
         </li>
         <% end -%>
@@ -20,7 +20,7 @@
         <% @subjects.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |subject| -%>
         <% unless subject.items.empty? -%>
         <li>
-            <%= link_to truncate(subject.name, :length => 50), archive_browser_path(:subject_filter=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
+            <%= link_to truncate(subject.name, :length => 50), archive_browser_path('subject_filter[]'=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
             <span>(<%= localized_number(subject.items_count) %>)</span>
         </li>
         <% end -%>

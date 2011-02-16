@@ -9,7 +9,7 @@
         <% @periods.each do |period| -%>
         <% unless period.items.empty? -%>
         <li>
-            <%= link_to truncate(period.title, :length => 50), archive_browser_path(:period_filter=>period.id),
+            <%= link_to truncate(period.title, :length => 50), archive_browser_path('period_filter[]'=>period.id),
             :class => (period.id.to_s == @period_filter) ? 'active' : '' %>
             <span>(<%= localized_number(period.items_count) %>)</span>
         </li>

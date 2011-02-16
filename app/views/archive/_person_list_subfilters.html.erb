@@ -9,7 +9,7 @@
         <% @top_people.each do |person| -%>
         <% unless person.items.empty? -%>
         <li>
-            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id),
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
             <span>(<%= localized_number(person.items_count) %>)</span>
         </li>
@@ -21,7 +21,7 @@
         <% @people.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |person| -%>
         <% unless person.items.empty? -%>
         <li>
-            <%= link_to truncate(person.name, :length => 50), archive_browser_path(:person_filter=>person.id),
+            <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
             <span>(<%= localized_number(person.items_count) %>)</span>
         </li>
