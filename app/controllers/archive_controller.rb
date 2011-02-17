@@ -141,21 +141,9 @@ class ArchiveController < ApplicationController
   		if value.to_i != 0
   			# the search term is a simple numerical id and can be matched to a filter directly
   			filter_stack[filter_name] = filter_stack[filter_name].reject { |i| i == value.to_i }
-  		elsif filter_name == :keyword_filter && !value.nil?
-  			Rails.logger.info "############ made it into keyword block"
-  			Rails.logger.info "############ value: " + value
-  			Rails.logger.info "############ session[:filter_stack][:keyword_filter][:values][0]: " + session[:filter_stack][:keyword_filter][:values][0].to_s
-  			Rails.logger.info "############ filter_stack[:keyword_filter][:values][0]: " + filter_stack[:keyword_filter][:values][0].to_s
-  			
+  		elsif filter_name == :keyword_filter && !value.nil?	
 			new_array = filter_stack[:keyword_filter][:values][0].reject { |i| i == value }
-			
-			Rails.logger.info "############ new_array: " + new_array.to_s
-  			
-			
 			filter_stack[:keyword_filter][:values][0] = new_array
-			
-			Rails.logger.info "############ session[:filter_stack][:keyword_filter][:values][0] " + session[:filter_stack][:keyword_filter][:values][0].to_s
-  			
   		else 
   			filter_stack[filter_name] = nil 
   		end
@@ -163,9 +151,6 @@ class ArchiveController < ApplicationController
   	
   	# resave this as a session
   	session[:filter_stack] = filter_stack
-  	
-  	Rails.logger.info "############ session[:filter_stack][:keyword_filter][:values][0] " + session[:filter_stack][:keyword_filter][:values][0].to_s
-  			
   	
   	respond_to do |format|
     	format.html { redirect_to(archive_browser_path, :notice => I18n.translate(:filter_removed_notice)) }
@@ -212,9 +197,7 @@ class ArchiveController < ApplicationController
     @my_archive_ids = my_archive_from_cookie
     @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
     
-    Rails.logger.info "############ session[:filter_stack][:keyword_filter][:values][0] " + session[:filter_stack][:keyword_filter][:values][0].to_s unless session[:filter_stack].nil?
-  		
-  	# prepend any existing searches
+   	# prepend any existing searches
   	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
   	
 	# contruct sql for simple filters
