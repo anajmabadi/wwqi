@@ -8,7 +8,7 @@
     <ul class="default">
         <% @top_genres.each do |genre| -%>
         <li>
-        	<% if @genre_filter.nil? || !@genre_filter.include?(genre.id) -%>
+        	<% unless genre.items_count(@item_ids) == 0 || (!@filters[:genre_filter].nil? && @filters[:genre_filter].include?(genre.id)) -%>
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path('genre_filter[]'=>genre.id),
             :class => (genre.id.to_s == @genre_filter) ? 'active' : '' %>
@@ -21,7 +21,7 @@
     <ul class="more">
         <% @genres.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |genre| -%>
         <li>        	
-        	<% if @genre_filter.nil? || !@genre_filter.include?(genre.id) -%>
+        	<% unless genre.items_count(@item_ids) == 0 || (!@filters[:genre_filter].nil? && @filters[:genre_filter].include?(genre.id)) -%>
             <%= link_to truncate(genre.name, :length => 50),
             archive_browser_path('genre_filter[]'=>genre.id),
             :class => (genre.id.to_s == @genre_filter) ? 'active' : '' %>

@@ -17,6 +17,9 @@ class ArchiveController < ApplicationController
   def index
     load_filter_models(true)
     @reset = true
+    @item_ids = nil
+    @filters = {}
+    session[:filter_stack] = nil
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
