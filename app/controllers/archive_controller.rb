@@ -1,5 +1,7 @@
 class ArchiveController < ApplicationController
 
+  before_filter :reset_filters, :only => [:index, :collections, :genres, :subjects, :places]
+  
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def clear_my_items
@@ -16,10 +18,6 @@ class ArchiveController < ApplicationController
 
   def index
     load_filter_models(true)
-    @reset = true
-    @item_ids = nil
-    @filters = {}
-    session[:filter_stack] = nil
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
@@ -815,6 +813,13 @@ def build_genre_query(filter_value, query_hash)
     #@my_archive_ids = my_archive_from_cookie
     #@filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
   	return filters
+  end
+  
+  def reset_filters
+  	@reset = true
+    @item_ids = nil
+    @filters = {}
+    session[:filter_stack] = nil
   end
   
 end
