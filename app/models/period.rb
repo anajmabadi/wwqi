@@ -40,8 +40,13 @@ class Period < ActiveRecord::Base
     return self.item_query.all
   end
   
-  def items_count
-    return self.item_query.count
+  def items_count(item_ids=nil)
+  	begin
+    	count = item_ids.nil? ? self.item_query.count : count = self.item_query.is_published.where("items.id IN (?)", item_ids).count
+   	rescue => error
+   		count = 0
+   	end
+   	return count
   end
   
 end

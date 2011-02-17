@@ -2,26 +2,28 @@ module ArchiveHelper
   def format_results_message(items = [], query_labels = [])
     my_message = ""
     unless query_labels.empty?
-      query_labels.each do |query_label|	
-	      # check for simple string labels passed through by accident or convenience	
-	      query_label = query_label.kind_of?(String) ? {:field => query_label} : query_label
-	      unless items.empty?
-	      my_message += "#{t(:results_prefix)} : #{localized_number(items.offset + 1)}-#{localized_number([items.offset + items.per_page,items.total_entries].min)}"
-	      my_message += "/#{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
-	      else
-	      	my_message += "#{t(:results_prefix)} : #{localized_number(items.total_entries)} #{t(:items)}"
-	      end
-	      my_message += " | #{query_label[:field].titleize}" unless query_label[:field].blank?
-	      my_message += " #{t(:equal_symbol)} #{query_label[:values]}" unless query_label[:values].blank?
-      end	
+      my_message += "#{t(:results_prefix)} : "
+      unless items.empty?
+        my_message += "#{localized_number(items.offset + 1)}-#{localized_number([items.offset + items.per_page,items.total_entries].min)}"
+        my_message += "/#{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
+      else
+        my_message += "#{localized_number(items.total_entries)} #{t(:items)}"
+      end
+      my_message += " |"
+      query_labels.each do |query_label|
+      # check for simple string labels passed through by accident or convenience
+        query_label = query_label.kind_of?(String) ? {:field => query_label} : query_label
+
+        my_message += " #{query_label[:values]}; " unless query_label[:values].blank?
+      end
     end
-    return my_message.length > 55 ? 
-    		truncate(my_message, :length => 55) + " " + link_to(t(:more), "#filter-popup", :rel => "shadowbox[filter-popup];width=310px;height=260px;" )  : 
-    		my_message
+    return my_message.length > 55 ?
+      truncate(my_message, :length => 55) + " " + link_to(t(:more), "#filter-popup", :rel => "shadowbox[filter-popup];width=310px;height=260px;" )  :
+    my_message
   end
-  
+
   def format_item_image_caption(item, page)
-  	return "#{ truncate(item.image_caption(page), :length => 60) }"
+    return "#{ truncate(item.image_caption(page), :length => 60) }"
   end
 
   def archive_column_style

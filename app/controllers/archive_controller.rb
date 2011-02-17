@@ -1,5 +1,7 @@
 class ArchiveController < ApplicationController
 
+  before_filter :reset_filters, :only => [:index, :collections, :genres, :subjects, :places]
+  
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def clear_my_items
@@ -16,7 +18,6 @@ class ArchiveController < ApplicationController
 
   def index
     load_filter_models(true)
-    @reset = true
     @my_archive_ids = my_archive_from_cookie
     #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
@@ -131,31 +132,35 @@ class ArchiveController < ApplicationController
     @alphabet = I18n.translate(:a_z_menu).split(" ")
 
   end
+  
+  def drop_filter
+  	filter_name = params[:filter_name].to_sym
+  	value = params[:value]
+    filter_stack = session[:filter_stack]
+  	
+  	unless filter_name.nil? || filter_stack.nil?
+  		if value.to_i != 0
+  			# the search term is a simple numerical id and can be matched to a filter directly
+  			filter_stack[filter_name] = filter_stack[filter_name].reject { |i| i == value.to_i }
+  		elsif filter_name == :keyword_filter && !value.nil?	
+			new_array = filter_stack[:keyword_filter][:values][0].reject { |i| i == value }
+			filter_stack[:keyword_filter][:values][0] = new_array
+  		else 
+  			filter_stack[filter_name] = nil 
+  		end
+  	end 
+  	
+  	# resave this as a session
+  	session[:filter_stack] = filter_stack
+  	
+  	respond_to do |format|
+    	format.html { redirect_to(archive_browser_path, :notice => I18n.translate(:filter_removed_notice)) }
+    end
+    
+  end
 
   def browser
-
-    #grab filter categories
-    @collection_filter = params[:collection_filter]
-    @translation_filter = params[:translation_filter]
-    @period_filter = params[:period_filter]
-    @person_filter = params[:person_filter]
-    @subject_filter = params[:subject_filter]
-    @subject_type_filter = params[:subject_type_filter]
-    @place_filter = params[:place_filter]
-    @keyword_filter = { :values => [ params[:keyword_filter] ],
-      :fields => [ 'everything' ],
-      :operators => [ ]  }
-    @most_popular_filter = params[:most_popular_filter]
-    @recent_additions_filter = params[:recent_additions_filter]
-    @staff_favorites_filter = params[:staff_favorites_filter]
-    @my_archive_ids = my_archive_from_cookie
-    @my_archive_filter = params[:my_archive] == 'true' ? @my_archive_ids : nil
-    @repository_filter = params[:repository_filter]
-    @year_range_filter = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i }
-    @boolean_keyword_filter = { :values => [ params[:value_1], params[:value_2], params[:value_3] ],
-      :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
-      :operators => [ '', params[:operator_1], params[:operator_2] ]  }
-
+    
     #grab view mode, using session or default of list if not present or junky
     @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
 
@@ -164,31 +169,54 @@ class ArchiveController < ApplicationController
     @order = build_order_query(@sort_mode)
 
     # paginate the items
-    @page = params[:page] || 1
-    @per_page = @view_mode == 'slideshow' ? 12 : params[:per_page] || Item.per_page || 10
+    @page = params[:page] ||= 1
+    @per_page = params[:per_page] ||= Item.per_page ||= 100
+    
+    #grab filter categories
+    @filters = {}
+    @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter.to_i] ] unless params[:collection_filter].nil?
+    @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter].map { |i| i.to_i }.uniq.sort : [params[:period_filter.to_i]] unless params[:period_filter].nil?
+    @filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter].map { |i| i.to_i }.uniq.sort : [params[:person_filter.to_i]] unless params[:person_filter].nil?
+    @filters[:genre_filter] = params[:genre_filter].kind_of?(Array) ? params[:genre_filter].map { |i| i.to_i }.uniq.sort : [params[:genre_filter.to_i]] unless params[:genre_filter].nil?
+    @filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter].map { |i| i.to_i }.uniq.sort : [params[:subject_filter.to_i]] unless params[:subject_filter].nil?
+    @filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter].map { |i| i.to_i }.uniq.sort : [params[:place_filter.to_i]] unless params[:place_filter].nil?
 
+	# grab boolean flag filters
+	@filters[:translation_filter] = params[:translation_filter] == 'true' unless params[:recent_additions_filter].nil?
+    @filters[:recent_additions_filter] = params[:recent_additions_filter] == 'true' unless params[:recent_additions_filter].nil?
+    
+    # grab keyword and advanced search parameters
+    @filters[:keyword_filter] = { :values => [ string_to_searchable_array(params[:keyword_filter] )], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
+    @filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } unless params[:year_range_filter].nil?
+    @filters[:boolean_keyword_filter] = { :values => [ string_to_searchable_array(params[:value_1]), 
+    												   string_to_searchable_array(params[:value_2]), 
+    												   string_to_searchable_array(params[:value_3]) ],
+      :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
+      :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
+
+	# detect my selections filter
+    @my_archive_ids = my_archive_from_cookie
+    @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
+    
+   	# prepend any existing searches
+  	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
+  	
+	# contruct sql for simple filters
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s }, :labels => []}
+    @query_hash = build_collection_query(@filters[:collection_filter], @query_hash) unless @filters[:collection_filter].nil? || @filters[:collection_filter].empty?
+    @query_hash = build_period_query(@filters[:period_filter], @query_hash) unless @filters[:period_filter].nil? || @filters[:period_filter].empty?
+    @query_hash = build_person_query(@filters[:person_filter], @query_hash) unless @filters[:person_filter].nil? || @filters[:person_filter].empty?
+    @query_hash = build_genre_query(@filters[:genre_filter], @query_hash) unless @filters[:genre_filter].nil? || @filters[:genre_filter].empty?
+    @query_hash = build_subject_query(@filters[:subject_filter], @query_hash) unless @filters[:subject_filter].nil? || @filters[:subject_filter].empty?
+    @query_hash = build_place_query(@filters[:place_filter], @query_hash) unless @filters[:place_filter].nil? || @filters[:place_filter].empty?
 
-    @collection_filter_label = I18n.translate(:all)
-    @period_filter_label = I18n.translate(:all)
-    @subject_filter_label = I18n.translate(:all)
+    @query_hash = build_boolean_keyword_query(@filters[:keyword_filter], @query_hash) unless @filters[:keyword_filter].nil? || @filters[:keyword_filter][:values].empty? || @filters[:keyword_filter][:values][0] == I18n.translate(:search_prompt)
+    @query_hash = build_year_range_query(@filters[:year_range_filter], @query_hash) unless @filters[:year_range_filter].nil? || (@filters[:year_range_filter][:start_year] == 0 && @filters[:year_range_filter][:end_year] == 0)
+    @query_hash = build_boolean_keyword_query(@filters[:boolean_keyword_filter], @query_hash) unless @filters[:boolean_keyword_filter].nil? || @filters[:boolean_keyword_filter][:values][0].blank? && @filters[:boolean_keyword_filter][:values][1].blank? && @filters[:boolean_keyword_filter][:values][2].blank?
 
-    @query_hash = build_medium_query(@medium_filter, @query_hash) unless @medium_filter.nil? || @medium_filter == 'all'
-    @query_hash = build_collection_query(@collection_filter, @query_hash) unless @collection_filter.nil? || @collection_filter[0] == 'all'
-    @query_hash = build_repository_query(@repository_filter, @query_hash) unless @repository_filter.nil? || @repository_filter[0] == 'all'
-    @query_hash = build_period_query(@period_filter, @query_hash) unless @period_filter.nil? || @period_filter[0] == 'all'
-    @query_hash = build_person_query(@person_filter, @query_hash) unless @person_filter.nil? || @person_filter == 'all'
-    @query_hash = build_subject_query(@subject_filter, @query_hash) unless @subject_filter.nil? || @subject_filter[0] == 'all'
-    @query_hash = build_place_query(@place_filter, @query_hash) unless @place_filter.nil? || @place_filter == 'all'
-    @query_hash = build_subject_type_query(@subject_type_filter, @query_hash) unless @subject_type_filter.nil? || @subject_type_filter[0] == 'all'
-    @query_hash = build_boolean_keyword_query(@keyword_filter, @query_hash) unless @keyword_filter[:values][0].blank? || @keyword_filter[:values][0] == I18n.translate(:search_prompt)
-    @query_hash = build_most_popular_query(@most_popular_filter, @query_hash) unless @most_popular_filter.blank?
-    @query_hash = build_recent_additions_query(@recent_additions_filter, @query_hash) unless @recent_additions_filter.blank?
-    @query_hash = build_staff_favorites_query(@query_hash) unless @staff_favorites_filter.blank?
-    @query_hash = build_translation_query(@translation_filter, @query_hash) unless @translation_filter.blank?
-    @query_hash = build_my_archive_query(@my_archive_filter, @query_hash) unless @my_archive_filter.nil?
-    @query_hash = build_year_range_query(@year_range_filter, @query_hash) unless @year_range_filter.nil? || (@year_range_filter[:start_year] == 0 && @year_range_filter[:end_year] == 0)
-    @query_hash = build_boolean_keyword_query(@boolean_keyword_filter, @query_hash) unless @boolean_keyword_filter[:values][0].blank? && @boolean_keyword_filter[:values][1].blank? && @boolean_keyword_filter[:values][2].blank?
+    @query_hash = build_recent_additions_query(@filters[:recent_additions_filter], @query_hash) unless @filters[:recent_additions_filter].blank?
+    @query_hash = build_translation_query(@filters[:translation_filter], @query_hash) unless @filters[:translation_filter].blank?
+    @query_hash = build_my_archive_query(@filters[:my_archive_filter], @query_hash) unless @filters[:my_archive_filter].nil?
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
@@ -214,6 +242,7 @@ class ArchiveController < ApplicationController
     session[:current_items] = @item_ids
     session[:view_mode] = @view_mode
     session[:sort_mode] = @sort_mode
+    session[:filter_stack] = @reset ? nil : @filters
   end
 
   def detail
@@ -362,26 +391,9 @@ class ArchiveController < ApplicationController
   # QUERY BUILDERS
   ################
 
-  def build_repository_query(filter_value, query_hash)
-    if filter_value.kind_of?(Array)
-    ids = filter_value
-    else
-      ids = [filter_value]
-    end
-    ids_to_find = ids.map { |id| id.to_i }.sort
-
-    passports = Passport.where(['repository_id IN (?)', ids_to_find])
-    item_ids = passports.map { |p| p.item_id }.uniq.sort
-
-    query_hash[:conditions] << 'items.id IN (:repository_item_ids)'
-    query_hash[:parameters][:repository_item_ids] = item_ids unless item_ids.blank?
-    query_hash[:labels] << {:field => I18n.translate(:repository), :values => passports.map { |p| p.repository.name }.uniq.sort.join(', ') }
-    return query_hash
-  end
-
   def build_collection_query(filter_value, query_hash)
 
-    collection_ids = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.sort : [filter_value.to_i]
+    collection_ids = filter_value.reject { |id| id == 0 || id.nil? }
 
     collections = Collection.find(collection_ids)
 
@@ -395,15 +407,17 @@ class ArchiveController < ApplicationController
   def build_subject_query(filter_value, query_hash)
     additional_query = ''
 
-    if filter_value.kind_of?(Array)
-      ids_to_find = filter_value.map { |id| id.to_i }.uniq.sort
-    else
-      ids_to_find = [filter_value.to_i]
-    end
-
+    ids_to_find = filter_value.reject { |id| id == 0 || id.nil? }
+  
     begin
-      selected_classifications = Classification.where(["subject_id IN (?)", ids_to_find]).all
-      item_ids = selected_classifications.map { |c| c.item_id }.uniq.sort
+      item_ids = []
+      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
+      ids_to_find.each do |subject_id|		
+      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
 
       unless item_ids.empty?
         additional_query += "items.id IN (:subject_item_ids)"
@@ -416,18 +430,56 @@ class ArchiveController < ApplicationController
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       query_hash[:parameters][:subject_item_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:subject), :values => selected_classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+      query_hash[:labels] << {:field => I18n.translate(:subject), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
     return query_hash
     end
   end
 
-  def build_place_query(filter_value, query_hash)
+def build_genre_query(filter_value, query_hash)
+    additional_query = ''
 
-    ids_to_find = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.uniq.sort : [filter_value.to_i]
+    ids_to_find = filter_value.reject { |id| id == 0 || id.nil? }
 
     begin
-      plots = Plot.where(['place_id IN (?)', ids_to_find]).all
-      item_ids = plots.map { |p| p.item_id }.uniq.sort
+      item_ids = []
+      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
+      ids_to_find.each do |subject_id|		
+      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
+
+      unless item_ids.empty?
+        additional_query += "items.id IN (:subject_item_ids)"
+      else
+      # if the person has no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for genre id #{filter_value}: #{error}."
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:parameters][:subject_item_ids] = item_ids
+      query_hash[:labels] << {:field => I18n.translate(:genre), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+    return query_hash
+    end
+  end
+  
+  def build_place_query(filter_value, query_hash)
+
+    ids_to_find = filter_value.reject { |id| id == 0 || id.nil? }
+
+    begin
+   	  item_ids = []
+      plots = Plot.where(['place_id IN (?)', ids_to_find])
+      ids_to_find.each do |place_id|		
+      	new_item_ids = plots.where("place_id = ?", place_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
+      
       unless item_ids.empty?
         query_hash[:conditions] << "items.id IN (:plot_item_ids)"
         query_hash[:parameters][:plot_item_ids] = item_ids
@@ -445,21 +497,21 @@ class ArchiveController < ApplicationController
 
   end
 
-  def build_staff_favorites_query(query_hash)
-    query_hash[:conditions] << "items.favorite = :favorite"
-    query_hash[:parameters][:favorite] = true
-    query_hash[:labels] << {:field => I18n.translate(:staff_favorites)}
-    return query_hash
-  end
-
   def build_person_query(filter_value,query_hash)
     additional_query = ''
 
-    people_ids = filter_value.kind_of?(Array) ? filter_value.map {|id| id.to_i }.uniq.sort : [filter_value.to_i]
+    people_ids = filter_value.reject { |id| id == 0 || id.nil? }
 
     begin
-      appearances = Appearance.where("person_id IN (?)", people_ids).all
-      item_ids = appearances.map { |a| a.item_id }.uniq.sort
+      item_ids = []
+      appearances = Appearance.where("person_id IN (?)", people_ids)
+      people_ids.each do |person_id|		
+      	new_item_ids = appearances.where("person_id = ?", person_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
+      
       unless item_ids.empty?
         additional_query += "items.id IN (:person_item_ids)"
       else
@@ -485,7 +537,7 @@ class ArchiveController < ApplicationController
       ids = [filter_value]
     end
 
-    ids_to_find = ids.map { |id| id.to_i }.sort
+    ids_to_find = filter_value.reject { |id| id == 0 || id.nil? }
 
     begin
       periods = Period.find(ids_to_find)
@@ -530,29 +582,9 @@ class ArchiveController < ApplicationController
     return query_hash
   end
 
-  def build_most_popular_query(filter_value, query_hash)
-    additional_query = ''
-    begin
-      item_ids = Item.most_popular_ids(50)
-      unless item_ids.empty?
-        additional_query += "items.id IN (:most_popular_ids)"
-      else
-      # if the most popular returns no items, we should kill search
-        flash[:error] = "No items found. Showing all."
-      end
-    rescue StandardError => error
-      flash[:error] = "A problem was encountered searching for most popular items: #{error}."
-    ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:most_popular_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:most_popular).titleize }
-    return query_hash
-    end
-  end
-
   def build_recent_additions_query(filter_value, query_hash)
     additional_query = ''
-    if filter_value == 'true'
+    if filter_value
       begin
         item_ids = Item.recently_added_ids(50)
         unless item_ids.empty?
@@ -579,16 +611,26 @@ class ArchiveController < ApplicationController
     filter_value = "%#{filter_value}%"
     return filter_value
   end
+  
+  def keyword_to_searchable_array(keyword_values=[])
+  	keywords = []
+  	keyword_values.each_with_index do |value, index|
+    # first find any quoted phrases
+      keywords[index] = string_to_searchable_array(value)
+    end
+    return keywords
+  end
+  
+  def string_to_searchable_array(search_phrase="")
+  	return search_phrase.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? || k.length<3 }.uniq unless search_phrase.blank?
+  end
 
   def build_boolean_keyword_query(filter_value, query_hash)
     additional_query = ''
-    keywords = []
-
+    
     # turn keyword fields into word arrays and git rid of little words
-    filter_value[:values].each_with_index do |value, index|
-    # first find any quoted phrases
-      keywords[index] = value.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? || k.length<3 }.map { |k| clean_keyword(k) } unless value.blank?
-    end
+	keywords = @filters[:keyword_filter][:values]
+	
     # assemble the query by field for each keyword set
     keywords.each_with_index do |values, outer_index|
     # take each keyword and build a field specific query for it
@@ -600,7 +642,8 @@ class ArchiveController < ApplicationController
       values.each_with_index do |value, inner_index|
         unless value.blank?
           # test for AND requirement
-          inner_operator = inner_index > 0 ? ' OR ' : ''
+          value = clean_keyword(value)
+          inner_operator = inner_index > 0 ? ' AND ' : ''
           subqueries << case field
             when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(item_translations.credit), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword_#{outer_index}_#{inner_index}"
@@ -631,7 +674,7 @@ class ArchiveController < ApplicationController
   end
 
   def build_translation_query(filter_value, query_hash)
-    if filter_value == "true"
+    if filter_value
       query_hash[:conditions] << "Length(item_translations.transcript) > 0"
     else
       query_hash[:conditions] << "Length(item_translations.transcript) = 0"
@@ -727,4 +770,56 @@ class ArchiveController < ApplicationController
     @top_people = find_top_selection(@people)
     @top_collections = find_top_selection(@collections)
   end
+  
+  def prepend_existing_filters( filters, filter_stack = {} )
+  	
+  	filters[:collection_filter] = (filter_stack[:collection_filter].nil? ? [] : (filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])).uniq
+  	filters[:genre_filter] = (filter_stack[:genre_filter].nil? ? [] : (filter_stack[:genre_filter]) + (filters[:genre_filter].nil? ? [] : filters[:genre_filter])).uniq
+  	filters[:subject_filter] = (filter_stack[:subject_filter].nil? ? [] : (filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])).uniq
+  	filters[:place_filter] = (filter_stack[:place_filter].nil? ? [] : (filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])).uniq
+  	filters[:period_filter] = (filter_stack[:period_filter].nil? ? [] : (filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])).uniq
+  	filters[:person_filter] = (filter_stack[:person_filter].nil? ? [] : (filter_stack[:person_filter]) + (filters[:person_filter].nil? ? [] : filters[:person_filter])).uniq
+  	
+  	filters[:translation_filter] = filters[:translation_filter] ? filters[:translation_filter] : filter_stack[:translation_filter]  
+  	filters[:recent_additions_filter] = filters[:recent_additions_filter] ? filters[:recent_additions_filter] : filter_stack[:recent_additions_filter]
+  	
+  	# keyword filters are stored as an array of searchable strings that we should be able to add together
+  	unless filter_stack[:keyword_filter].nil? && filters[:keyword_filter].nil?
+  			  		new_keywords = filters[:keyword_filter].nil? || filters[:keyword_filter][:values].nil? || filters[:keyword_filter][:values].empty? ? [] : filters[:keyword_filter][:values][0] ||= []
+	  		old_keywords = filter_stack[:keyword_filter].nil? || filter_stack[:keyword_filter][:values].nil? || filter_stack[:keyword_filter][:values].empty? ? [] : filter_stack[:keyword_filter][:values][0] ||= []
+
+	  	if filters[:keyword_filter].nil?
+	  		filters[:keyword_filter] = { :values => [ old_keywords ], :fields => [ 'everything' ], :operators => [ ]  }
+	  	else
+	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
+	  	end 
+  	end	
+  
+    #@filters[:translation_filter] = params[:translation_filter].kind_of?(Array) ? params[:translation_filter] : [params[:translation_filter]] unless params[:translation_filter].nil?
+    #@filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter] : [params[:period_filter]] unless params[:period_filter].nil?
+    #@filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter] : [params[:person_filter]] unless params[:person_filter].nil?
+    #@filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter] : [params[:subject_filter]] unless params[:subject_filter].nil?
+    #@filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter] : [params[:place_filter]] unless params[:place_filter].nil?
+    
+    # grab advanced search parameters
+    #@filters[:keyword_filter] = { :values => [ params[:keyword_filter] ], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
+    #@filters[:recent_additions_filter] = params[:recent_additions_filter]  unless params[:recent_additions_filter].nil?
+    #@filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } unless params[:year_range_filter].nil?
+    #@filters[:boolean_keyword_filter] = { :values => [ params[:value_1], params[:value_2], params[:value_3] ],
+    #  :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
+    #  :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
+
+	# detect my selections filter
+    #@my_archive_ids = my_archive_from_cookie
+    #@filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
+  	return filters
+  end
+  
+  def reset_filters
+  	@reset = true
+    @item_ids = nil
+    @filters = {}
+    session[:filter_stack] = nil
+  end
+  
 end

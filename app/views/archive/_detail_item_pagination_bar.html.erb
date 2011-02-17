@@ -23,8 +23,10 @@
     <div class="sortnav paginate">
         <div class="pagination">
             <%= link_to t(:back_to_collections).titleize, return_url %>
-            <%= link_to_unless @items.index(item) == 0, t(:previous_item).titleize, archive_detail_path(:id => items[items.index(item)-1]) unless items.nil? %>
+            <% unless items.size < 2 || items.nil? %>
+            <%= link_to_unless items.index(item) == 0, t(:previous_item).titleize, archive_detail_path(:id => items[items.index(item)-1]) unless items.nil? %>
             <%= link_to_unless items.index(item) == items.size - 1, t(:next_item).titleize, archive_detail_path(:id => items[items.index(item)+1]) unless items.nil?  %>
+        	<% end -%>
         </div>
     </div>
 </div>

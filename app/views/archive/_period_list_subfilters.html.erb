@@ -7,11 +7,11 @@
 	<% end -%>
     <ul class="default">
         <% @periods.each do |period| -%>
-        <% unless period.items.empty? -%>
+        <% unless period.items_count(@item_ids) == 0 || (!@filters[:period_filter].nil? && @filters[:period_filter].include?(period.id)) -%>
         <li>
-            <%= link_to truncate(period.title, :length => 50), archive_browser_path(:period_filter=>period.id),
+            <%= link_to truncate(period.title, :length => 50), archive_browser_path('period_filter[]'=>period.id),
             :class => (period.id.to_s == @period_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(period.items_count) %>)</span>
+            <span>(<%= localized_number(period.items_count(@item_ids)) %>)</span>
         </li>
         <% end -%>
         <% end -%>

@@ -7,11 +7,11 @@
 	<% end -%>
     <ul class="default">
         <% @top_collections.each do |collection| -%>
-        <% unless collection.items.empty? %>
+        <% unless collection.items_count(@item_ids) == 0 || (!@filters[:collection_filter].nil? && @filters[:collection_filter].include?(collection.id))  %>
         <li>
-            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path('collection_filter[]'=>collection.id),
             :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(collection.items_count) %>)</span>
+            <span>(<%= localized_number(collection.items_count(@item_ids)) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>
@@ -20,9 +20,9 @@
     <% if @collections.size > ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT -%>
     <ul class="more">
         <% @collections.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |collection| -%>
-        <% unless collection.items.empty? %>
+        <% unless collection.items_count(@item_ids) == 0 || (!@filters[:collection_filter].nil? && @filters[:collection_filter].include?(collection.id))  %>
         <li>
-            <%= link_to truncate(collection.name, :length => 50), archive_browser_path(:collection_filter=>collection.id),
+            <%= link_to truncate(collection.name, :length => 50), archive_browser_path('collection_filter[]'=>collection.id),
             :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
             <span>(<%= localized_number(collection.items_count) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>

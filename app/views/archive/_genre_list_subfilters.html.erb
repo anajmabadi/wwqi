@@ -8,21 +8,25 @@
     <ul class="default">
         <% @top_genres.each do |genre| -%>
         <li>
+        	<% unless genre.items_count(@item_ids) == 0 || (!@filters[:genre_filter].nil? && @filters[:genre_filter].include?(genre.id)) -%>
             <%= link_to truncate(genre.name, :length => 50),
-            archive_browser_path(:subject_filter=>genre.id),
-            :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items_count) %>)</span>
+            archive_browser_path('genre_filter[]'=>genre.id),
+            :class => (genre.id.to_s == @genre_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(genre.items_count(@item_ids)) %>)</span>
+            <% end -%>
         </li>
         <% end -%>
     </ul>
     <% unless @genres.sort_by(&:name).size <= ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT -%>
     <ul class="more">
         <% @genres.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |genre| -%>
-        <li>
+        <li>        	
+        	<% unless genre.items_count(@item_ids) == 0 || (!@filters[:genre_filter].nil? && @filters[:genre_filter].include?(genre.id)) -%>
             <%= link_to truncate(genre.name, :length => 50),
-            archive_browser_path(:subject_filter=>genre.id),
-            :class => (genre.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(genre.items_count) %>)</span>
+            archive_browser_path('genre_filter[]'=>genre.id),
+            :class => (genre.id.to_s == @genre_filter) ? 'active' : '' %>
+            <span>(<%= localized_number(genre.items_count(@item_ids)) %>)</span>
+            <% end -%>
         </li>
         <% end -%>
         <li>
