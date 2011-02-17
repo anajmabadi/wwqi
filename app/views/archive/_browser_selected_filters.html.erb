@@ -1,0 +1,47 @@
+<h3 class="active"><%= link_to t(:current_filters).titleize, archive_collections_path %></h3>
+<div class="list" style="display:block">
+    <ul class="default">
+        <% @filters[:genre_filter].each do |genre_id| -%>
+        <li>
+            <strong><%= Subject.find(genre_id).name %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:genre_filter].nil? -%>
+
+        <% @filters[:collection_filter].each do |collection_id| -%>
+        <li>
+            <strong><%= Collection.find(collection_id).name %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:collection_filter].nil? -%>
+
+        <% @filters[:person_filter].each do |person_id| -%>
+        <li>
+            <strong><%= Person.find(person_id).name %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:person_filter].nil? -%>
+        
+        <% @filters[:place_filter].each do |place_id| -%>
+        <li>
+            <strong><%= Place.find(place_id).name %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:place_filter].nil? -%>
+        
+        <% @filters[:subject_filter].each do |subject_id| -%>
+        <li>
+            <strong><%= Subject.find(subject_id).name %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:subject_filter].nil? -%>
+        
+        <% @filters[:period_filter].each do |period_id| -%>
+        <li>
+            <strong><%= Period.find(period_id).title %></strong>
+            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+        </li>
+        <% end unless @filters[:period_filter].nil? -%>
+        
+    </ul>
+</div>

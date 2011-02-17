@@ -150,6 +150,7 @@ class ArchiveController < ApplicationController
     @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter] : [ params[:collection_filter] ] unless params[:collection_filter].nil?
     @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter] : [params[:period_filter]] unless params[:period_filter].nil?
     @filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter] : [params[:person_filter]] unless params[:person_filter].nil?
+    @filters[:genre_filter] = params[:genre_filter].kind_of?(Array) ? params[:genre_filter] : [params[:genre_filter]] unless params[:genre_filter].nil?
     @filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter] : [params[:subject_filter]] unless params[:subject_filter].nil?
     @filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter] : [params[:place_filter]] unless params[:place_filter].nil?
 
@@ -176,6 +177,7 @@ class ArchiveController < ApplicationController
     @query_hash = build_collection_query(@filters[:collection_filter], @query_hash) unless @filters[:collection_filter].nil? || @filters[:collection_filter].empty?
     @query_hash = build_period_query(@filters[:period_filter], @query_hash) unless @filters[:period_filter].nil? || @filters[:period_filter].empty?
     @query_hash = build_person_query(@filters[:person_filter], @query_hash) unless @filters[:person_filter].nil? || @filters[:person_filter].empty?
+    @query_hash = build_genre_query(@filters[:genre_filter], @query_hash) unless @filters[:genre_filter].nil? || @filters[:genre_filter].empty?
     @query_hash = build_subject_query(@filters[:subject_filter], @query_hash) unless @filters[:subject_filter].nil? || @filters[:subject_filter].empty?
     @query_hash = build_place_query(@filters[:place_filter], @query_hash) unless @filters[:place_filter].nil? || @filters[:place_filter].empty?
 
@@ -360,23 +362,6 @@ class ArchiveController < ApplicationController
   # QUERY BUILDERS
   ################
 
-  def build_repository_query(filter_value, query_hash)
-    if filter_value.kind_of?(Array)
-    ids = filter_value
-    else
-      ids = [filter_value]
-    end
-    ids_to_find = ids.map { |id| id.to_i }.sort
-
-    passports = Passport.where(['repository_id IN (?)', ids_to_find])
-    item_ids = passports.map { |p| p.item_id }.uniq.sort
-
-    query_hash[:conditions] << 'items.id IN (:repository_item_ids)'
-    query_hash[:parameters][:repository_item_ids] = item_ids unless item_ids.blank?
-    query_hash[:labels] << {:field => I18n.translate(:repository), :values => passports.map { |p| p.repository.name }.uniq.sort.join(', ') }
-    return query_hash
-  end
-
   def build_collection_query(filter_value, query_hash)
 
     collection_ids = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.sort : [filter_value.to_i]
@@ -400,8 +385,14 @@ class ArchiveController < ApplicationController
     end
 
     begin
-      selected_classifications = Classification.where(["subject_id IN (?)", ids_to_find]).all
-      item_ids = selected_classifications.map { |c| c.item_id }.uniq.sort
+      item_ids = []
+      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
+      ids_to_find.each do |subject_id|		
+      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
 
       unless item_ids.empty?
         additional_query += "items.id IN (:subject_item_ids)"
@@ -414,18 +405,60 @@ class ArchiveController < ApplicationController
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
       query_hash[:parameters][:subject_item_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:subject), :values => selected_classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+      query_hash[:labels] << {:field => I18n.translate(:subject), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
     return query_hash
     end
   end
 
+def build_genre_query(filter_value, query_hash)
+    additional_query = ''
+
+    if filter_value.kind_of?(Array)
+      ids_to_find = filter_value.map { |id| id.to_i }.uniq.sort
+    else
+      ids_to_find = [filter_value.to_i]
+    end
+
+    begin
+      item_ids = []
+      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
+      ids_to_find.each do |subject_id|		
+      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
+
+      unless item_ids.empty?
+        additional_query += "items.id IN (:subject_item_ids)"
+      else
+      # if the person has no items, we should kill search
+        flash[:error] = "No items found. Showing all."
+      end
+    rescue StandardError => error
+      flash[:error] = "A problem was encountered searching for genre id #{filter_value}: #{error}."
+    ensure
+      query_hash[:conditions] << additional_query unless additional_query.blank?
+      query_hash[:parameters][:subject_item_ids] = item_ids
+      query_hash[:labels] << {:field => I18n.translate(:genre), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+    return query_hash
+    end
+  end
+  
   def build_place_query(filter_value, query_hash)
 
     ids_to_find = filter_value.kind_of?(Array) ? filter_value.map { |id| id.to_i }.uniq.sort : [filter_value.to_i]
 
     begin
-      plots = Plot.where(['place_id IN (?)', ids_to_find]).all
-      item_ids = plots.map { |p| p.item_id }.uniq.sort
+   	  item_ids = []
+      plots = Plot.where(['place_id IN (?)', ids_to_find])
+      ids_to_find.each do |place_id|		
+      	new_item_ids = plots.where("place_id = ?", place_id).all.map { |a| a.item_id }.uniq.sort 
+      	unless new_item_ids.nil?
+      		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
+      	end
+      end
+      
       unless item_ids.empty?
         query_hash[:conditions] << "items.id IN (:plot_item_ids)"
         query_hash[:parameters][:plot_item_ids] = item_ids
@@ -735,11 +768,12 @@ class ArchiveController < ApplicationController
   
   def prepend_existing_filters( filters, filter_stack = {} )
   	
-  	filters[:collection_filter] = (filter_stack[:collection_filter].nil? ? [] : filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])
-  	filters[:subject_filter] = (filter_stack[:subject_filter].nil? ? [] : filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])
-  	filters[:place_filter] = (filter_stack[:place_filter].nil? ? [] : filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])
-  	filters[:period_filter] = (filter_stack[:period_filter].nil? ? [] : filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])
-  	filters[:person_filter] = (filter_stack[:person_filter].nil? ? [] : filter_stack[:person_filter]) + (filters[:person_filter].nil? ? [] : filters[:person_filter])
+  	filters[:collection_filter] = (filter_stack[:collection_filter].nil? ? [] : (filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])).uniq
+  	filters[:genre_filter] = (filter_stack[:genre_filter].nil? ? [] : (filter_stack[:genre_filter]) + (filters[:genre_filter].nil? ? [] : filters[:genre_filter])).uniq
+  	filters[:subject_filter] = (filter_stack[:subject_filter].nil? ? [] : (filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])).uniq
+  	filters[:place_filter] = (filter_stack[:place_filter].nil? ? [] : (filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])).uniq
+  	filters[:period_filter] = (filter_stack[:period_filter].nil? ? [] : (filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])).uniq
+  	filters[:person_filter] = (filter_stack[:person_filter].nil? ? [] : (filter_stack[:person_filter]) + (filters[:person_filter].nil? ? [] : filters[:person_filter])).uniq
   	
   	filters[:translation_filter] = filters[:translation_filter] ? filters[:translation_filter] : filter_stack[:translation_filter]  
   	filters[:recent_additions_filter] = filters[:recent_additions_filter] ? filters[:recent_additions_filter] : filter_stack[:recent_additions_filter]
