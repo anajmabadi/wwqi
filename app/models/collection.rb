@@ -37,8 +37,13 @@ class Collection < ActiveRecord::Base
     return collection_set
   end  
 
-  def items_count
-    return self.items.is_published.count
+  def items_count(item_ids=nil)
+  	begin
+    	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
+   	rescue => error
+   		count = 0
+   	end
+   	return count
   end
   
   def item_count_string

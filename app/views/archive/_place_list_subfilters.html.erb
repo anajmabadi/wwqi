@@ -11,7 +11,7 @@
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(place.items_count) %>)</span>
+            <span>(<%= localized_number(place.items_count(@item_ids)) %>)</span>
         </li>
         <% end -%>
         <% end -%>
@@ -23,7 +23,7 @@
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(place.items_count) %>)</span>
+            <span>(<%= localized_number(place.items_count(@item_ids)) %>)</span>
         </li>
         <% end -%>
         <% end -%>

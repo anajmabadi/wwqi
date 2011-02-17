@@ -11,7 +11,12 @@ class Place < ActiveRecord::Base
     return self.all(:conditions => ['place_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, place_translations.name', :order => 'place_translations.name').map {|place| [place.name, place.id]}
   end
   
-  def items_count
-    return self.items.is_published.count
+  def items_count(item_ids=nil)
+  	begin
+    	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
+   	rescue => error
+   		count = 0
+   	end
+   	return count
   end
 end

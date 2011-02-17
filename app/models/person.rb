@@ -91,8 +91,13 @@ class Person < ActiveRecord::Base
     return self.included_collections.nil? ? I18n.translate(:n_a, :locale => :fa) : self.included_collections.map { |c| c.name_fa }.join(", ")
   end
 
-  def items_count
-    return self.items.is_published.count
+  def items_count(item_ids=nil)
+  	begin
+    	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
+   	rescue => error
+   		count = 0
+   	end
+   	return count
   end
 
 end

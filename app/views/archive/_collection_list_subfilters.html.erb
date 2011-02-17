@@ -11,7 +11,7 @@
         <li>
             <%= link_to truncate(collection.name, :length => 50), archive_browser_path('collection_filter[]'=>collection.id),
             :class => (collection.id.to_s == @collection_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(collection.items_count) %>)</span>
+            <span>(<%= localized_number(collection.items_count(@item_ids)) %>)</span>
             <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
         </li>
         <% end -%>

@@ -11,7 +11,7 @@
         <li>
             <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(person.items_count) %>)</span>
+            <span>(<%= localized_number(person.items_count(@item_ids)) %>)</span>
         </li>
         <% end -%>
         <% end -%>
@@ -23,7 +23,7 @@
         <li>
             <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(person.items_count) %>)</span>
+            <span>(<%= localized_number(person.items_count(@item_ids)) %>)</span>
         </li>
         <% end -%>
         <% end -%>
