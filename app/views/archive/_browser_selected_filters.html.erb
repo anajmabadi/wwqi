@@ -4,44 +4,53 @@
         <% @filters[:genre_filter].each do |genre_id| -%>
         <li>
             <strong><%= Subject.find(genre_id).name %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :genre_filter, :value => genre_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:genre_filter].nil? -%>
 
         <% @filters[:collection_filter].each do |collection_id| -%>
         <li>
             <strong><%= Collection.find(collection_id).name %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :collection_filter, :value => collection_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:collection_filter].nil? -%>
 
         <% @filters[:person_filter].each do |person_id| -%>
         <li>
             <strong><%= Person.find(person_id).name %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :person_filter, :value => person_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:person_filter].nil? -%>
         
         <% @filters[:place_filter].each do |place_id| -%>
         <li>
             <strong><%= Place.find(place_id).name %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :place_filter, :value => place_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:place_filter].nil? -%>
         
         <% @filters[:subject_filter].each do |subject_id| -%>
         <li>
             <strong><%= Subject.find(subject_id).name %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :subject_filter, :value => subject_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:subject_filter].nil? -%>
         
         <% @filters[:period_filter].each do |period_id| -%>
         <li>
             <strong><%= Period.find(period_id).title %></strong>
-            <span><%= link_to " X ", "#", :title => t(:remove_filter_prompt )  %></span>
+            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :period_filter, :value => period_id), :title => t(:remove_filter_prompt )  %></span>
         </li>
         <% end unless @filters[:period_filter].nil? -%>
+        
+        <%  @filters[:keyword_filter][:values].each do |keyword_values|-%>
+        	<% keyword_values.each do |keyword| -%>
+		        <li>
+		            <strong><%= truncate(keyword) %></strong>
+		            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :keyword_filter, :value => keyword), :title => t(:remove_filter_prompt )  %></span>
+		        </li>
+		    <% end -%>
+        <% end unless @filters[:keyword_filter].nil? || @filters[:keyword_filter].values.empty?-%>
         
     </ul>
 </div>
