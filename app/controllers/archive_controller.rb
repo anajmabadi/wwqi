@@ -174,12 +174,12 @@ class ArchiveController < ApplicationController
     
     #grab filter categories
     @filters = {}
-    @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter.to_i] ] unless params[:collection_filter].nil?
-    @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter].map { |i| i.to_i }.uniq.sort : [params[:period_filter.to_i]] unless params[:period_filter].nil?
-    @filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter].map { |i| i.to_i }.uniq.sort : [params[:person_filter.to_i]] unless params[:person_filter].nil?
-    @filters[:genre_filter] = params[:genre_filter].kind_of?(Array) ? params[:genre_filter].map { |i| i.to_i }.uniq.sort : [params[:genre_filter.to_i]] unless params[:genre_filter].nil?
-    @filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter].map { |i| i.to_i }.uniq.sort : [params[:subject_filter.to_i]] unless params[:subject_filter].nil?
-    @filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter].map { |i| i.to_i }.uniq.sort : [params[:place_filter.to_i]] unless params[:place_filter].nil?
+    @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter].to_i ] unless params[:collection_filter].nil?
+    @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter].map { |i| i.to_i }.uniq.sort : [params[:period_filter].to_i] unless params[:period_filter].nil?
+    @filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter].map { |i| i.to_i }.uniq.sort : [params[:person_filter].to_i] unless params[:person_filter].nil?
+    @filters[:genre_filter] = params[:genre_filter].kind_of?(Array) ? params[:genre_filter].map { |i| i.to_i }.uniq.sort : [params[:genre_filter].to_i] unless params[:genre_filter].nil?
+    @filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter].map { |i| i.to_i }.uniq.sort : [params[:subject_filter].to_i] unless params[:subject_filter].nil?
+    @filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter].map { |i| i.to_i }.uniq.sort : [params[:place_filter].to_i] unless params[:place_filter].nil?
 
 	# grab boolean flag filters
 	@filters[:translation_filter] = params[:translation_filter] == 'true' unless params[:recent_additions_filter].nil?
