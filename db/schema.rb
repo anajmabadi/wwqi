@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110131082424) do
+ActiveRecord::Schema.define(:version => 20110227151520) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -125,8 +125,17 @@ ActiveRecord::Schema.define(:version => 20110131082424) do
   add_index "appellations", ["position"], :name => "index_appellations_on_position"
   add_index "appellations", ["publish"], :name => "publish"
 
+  create_table "calendar_type_translations", :force => true do |t|
+    t.integer  "calendar_type_id"
+    t.string   "locale"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "calendar_type_translations", ["calendar_type_id"], :name => "index_d8c71f7edb3c34c684f498cfac7ea3cbd275670f"
+
   create_table "calendar_types", :force => true do |t|
-    t.string   "name",         :default => "",   :null => false
     t.boolean  "publish",      :default => true, :null => false
     t.text     "notes"
     t.datetime "created_at"
@@ -134,7 +143,6 @@ ActiveRecord::Schema.define(:version => 20110131082424) do
     t.integer  "lock_version", :default => 0,    :null => false
   end
 
-  add_index "calendar_types", ["name"], :name => "in_calendar_types_name", :unique => true
   add_index "calendar_types", ["publish"], :name => "in_calendar_types_publish"
 
   create_table "categories", :force => true do |t|
@@ -894,9 +902,9 @@ ActiveRecord::Schema.define(:version => 20110131082424) do
   add_index "subjects", ["subject_type_id"], :name => "subject_type_id_2"
 
   create_table "translations", :force => true do |t|
-    t.string   "locale"
-    t.string   "key"
-    t.text     "value"
+    t.string   "locale",         :default => "en",  :null => false
+    t.string   "key",            :default => "",    :null => false
+    t.text     "value",                             :null => false
     t.text     "interpolations"
     t.boolean  "is_proc",        :default => false
     t.datetime "created_at"

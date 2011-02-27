@@ -187,7 +187,7 @@ class ArchiveController < ApplicationController
     
     # grab keyword and advanced search parameters
     @filters[:keyword_filter] = { :values => [ string_to_searchable_array(params[:keyword_filter] )], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
-    @filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } unless params[:year_range_filter].nil?
+    @filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i, :calendar_type_id => params[:calendar_type_filter].to_i } unless params[:start_year_filter].nil? && params[:end_year_filter].nil?
     @filters[:boolean_keyword_filter] = { :values => [ string_to_searchable_array(params[:value_1]), 
     												   string_to_searchable_array(params[:value_2]), 
     												   string_to_searchable_array(params[:value_3]) ],
@@ -287,6 +287,7 @@ class ArchiveController < ApplicationController
     @collections = Collection.where(['publish=?',true]).map { |c| [c.name, c.id]}.sort
     @genres = Subject.genres.where(['publish=?',true]).map { |s| [s.name, s.id]}.sort
     @repositories = Repository.where(['publish=?',true]).map { |r| [r.name, r.id]}.sort
+    @calendar_types = CalendarType.all.map { |c| [c.name, c.id]}.sort
   end
 
   def download
@@ -567,18 +568,23 @@ def build_genre_query(filter_value, query_hash)
     start_year = (!filter_value[:start_year].nil?  && filter_value[:start_year] > 0 && filter_value[:start_year] < 3000) ? filter_value[:start_year] : 0
     end_year = (!filter_value[:end_year].nil?  && filter_value[:end_year] > 0  && filter_value[:end_year] < 3000) ? filter_value[:end_year] : 0
     end_year = 0 unless filter_value[:end_year] >= start_year
+    calendar_type_id = filter_value[:calendar_type_id] ||= 1
+    
+    #translate the year as needed to gregorian
+    gregorian_start_year = year_by_calendar_type(start_year, calendar_type_id)   
+    gregorian_end_year = year_by_calendar_type(end_year, calendar_type_id)
 
-    if start_year > 0 && end_year > 0
-      date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{end_year}')"
-    elsif start_year > 0
-      date_ranges = "(sort_year > '#{start_year}')"
-    elsif end_year > 0
-      date_ranges = "(sort_year < '#{end_year}')"
+    if gregorian_start_year > 0 && gregorian_end_year > 0
+      date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{gregorian_end_year}')"
+    elsif gregorian_start_year > 0
+      date_ranges = "(sort_year > '#{gregorian_start_year}')"
+    elsif gregorian_end_year > 0
+      date_ranges = "(sort_year < '#{gregorian_end_year}')"
     else
       date_ranges = ''
     end
     query_hash[:conditions] << date_ranges unless date_ranges.blank?
-    query_hash[:labels] << {:field => I18n.translate(:years), :values => "#{start_year.to_s} - #{end_year.to_s}"}
+    query_hash[:labels] << {:field => I18n.translate(:years), :values => "#{start_year.to_s} - #{end_year.to_s} #{CalendarType.find(calendar_type_id).name}"}
     return query_hash
   end
 
