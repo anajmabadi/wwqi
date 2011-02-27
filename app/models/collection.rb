@@ -37,6 +37,15 @@ class Collection < ActiveRecord::Base
     return collection_set
   end  
 
+  # Library media file accessors
+  def thumbnail_file_name
+    return COLLECTION_PREFIX + id.to_s + ".jpg"
+  end
+  
+  def thumbnail_url
+    return LIBRARY_URL + COLLECTION_THUMBNAILS_DIR + thumbnail_file_name
+  end
+  	
   def items_count(item_ids=nil)
   	begin
     	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
