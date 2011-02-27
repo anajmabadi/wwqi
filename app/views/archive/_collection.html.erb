@@ -1,7 +1,26 @@
-<% if collection.items.size > 0 -%>
-<li class="collection_item">
-    &raquo; <%= link_to( raw("#{collection.name} <span>#{localized_number(collection.items_count)}</span>"), archive_browser_path('collection_filter[]' => collection.id)) %>
-    <%= link_to t(:collection_info), archive_collection_detail_path(:id => collection.id), :class => "collectionInfoLink" %>
-</li>
-<% @counter += 1 %>
+<% if collection.items_count > 0 %>
+<div class="listItem clearfix">
+    <div class="item ">
+        <a href="<%= archive_browser_path('collection_filter[]' => collection.id) %>">
+        <img width="100" alt="<%= collection.name %>" src="<%= collection.thumbnail_url %>">
+        <span class="items-in-collection"><%= localized_number(collection.items_count) %> <%= collection.items_count == 1 ? t(:item) : t(:items) %></span>
+        </a>
+    </div>
+    <div class="description">
+        <h3>
+        <a href="<%= archive_collection_detail_path(:id => collection.id) %>"><%= collection.name %></a>
+        </h3>
+        <% unless collection.dates.blank? -%>
+        <p class="meta">
+            <%= collection.dates %>
+        </p>
+        <% end -%>
+        
+        <% unless collection.description.blank? -%>
+        <p>
+            <%= collection.description %>
+        </p>
+        <% end -%>
+    </div>
+</div>
 <% end -%>

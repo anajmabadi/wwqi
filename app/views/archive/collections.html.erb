@@ -1,35 +1,17 @@
 <% @page_description = t(:collections_description) -%>
 <% @page_title = t(:archive).capitalize + " | " + t(:collections).capitalize -%>
 
-<div class="clearfix" id="fullIndex">
-    <div id="indexList">
-        <div class="otherIndexes">
-            <a class="redButton" href="<%= @return_url %>" style="color:#fff"><%= t(:back_to_archive) %></a>
-        </div>
-        <h2><%= t(:collections).titleize %></h2>
-        <ul class="alphabet">
-            <% @alphabet.each do |letter| -%>
-            <li>
-                <% if letter.length > 1 -%>
-                <%= link_to letter, archive_collections_path, :class => @filter_letter == letter ? 'selected' : " " %>
-                <% else -%>
-                <%= link_to_if @valid_initials.include?(letter) || letter.length > 1, letter, archive_collections_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
-                <% end -%>
-            </li>
-            <% end -%>
-        </ul>
-        <% @rows = (@collections.length / 3).ceil -%>
-        <% @counter = 0 -%>
-        <ul class="subjects_list col3">
+<div class="clearfix archiveBigWrapper" >
+
+    <div id="search_results">        
+        <h2><%= t(:named_holdings) %></h2>
+        <p class="header">
+            <%= t(:named_holdings_intro) %>
+        </p>
+        <div class="list clearfix" id="items">
             <% @collections.each do | collection | -%>
-            <% if @counter > @rows  -%>
-        </ul>
-        <ul class="subjects_list col3">
-            <% @counter = 0 -%>
+            	<%= render :partial => 'collection', :locals => {:collection => collection} %>
             <% end -%>
-            <%= render :partial => 'collection', :locals => {:collection => collection} %>
-            <% end -%>
-        </ul>
+        </div>
     </div>
 </div>
-
