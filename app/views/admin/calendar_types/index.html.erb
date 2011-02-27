@@ -7,14 +7,16 @@
         <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_calendar_type_path, :show_all_path => admin_calendar_types_path } %>
         <table  class="global" width="100%" cellpadding="0" cellspacing="0">
             <tr>
-                <th>Name</th>
+                <th>Name_en</th>
+                <th>Name_fa</th>
                 <th>Publish</th>
                 <th>Notes</th>
                 <th>Actions</th>
             </tr>
             <% @calendar_types.each do |calendar_type| %>
             <tr>
-                <td><%= calendar_type.name %></td>
+                <td><%= calendar_type.name_en %></td>
+                <td class="persianOnly"><%= calendar_type.name_fa %></td>
                 <td><%= show_check calendar_type.publish %></td>
                 <td><%= calendar_type.notes %></td>
                 <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_calendar_type_path(calendar_type) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_calendar_type_path(calendar_type) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_calendar_type_path(calendar_type), :confirm => 'Are you sure?', :method => :delete %></td>

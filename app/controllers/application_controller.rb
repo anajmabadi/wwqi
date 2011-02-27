@@ -72,6 +72,22 @@ class ApplicationController < ActionController::Base
     return my_ids == my_archive_from_cookie
   end
 
+  # translate years to correct date by celendar type
+  def year_by_calendar_type(input_year = 1900, input_calendar_type_id=1)
+  	begin
+	    output_year = case input_calendar_type_id
+	    when 1 then input_year
+	    when 2 then Calendar.gregorian_from_absolute(Calendar.absolute_from_islamic(1,1,input_year))[2]
+	    when 3 then Calendar.gregorian_from_absolute(Calendar.absolute_from_jalaali(1,1,input_year))[2]
+	    else input_year
+	    end
+	rescue => error
+		flash[:error] = "An error occurred translating the date from calendar type " + input_calendar_type_id.to_s	+ ": " + error.message
+  		output_year = input_year 
+  	end	
+  	return output_year
+  end
+  
   protected
 
   #basis security

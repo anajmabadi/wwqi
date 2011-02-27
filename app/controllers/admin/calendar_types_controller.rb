@@ -56,10 +56,16 @@ class Admin::CalendarTypesController < Admin::AdminController
   # PUT /calendar_types/1
   # PUT /calendar_types/1.xml
   def update
-    @calendar_type = CalendarType.find(params[:id])
 
+    @failed = false
+    begin
+      @calendar_type = CalendarType.find(params[:id])
+    rescue => error
+      @failed = true
+      flash[:error] = error.message
+    end
     respond_to do |format|
-      if @calendar_type.update_attributes(params[:calendar_type])
+      unless @calendar_type.nil? || @failed || !@calendar_type.update_attributes(params[:calendar_type])
         format.html { redirect_to(admin_calendar_type_path(@calendar_type), :notice => 'Calendar type was successfully updated.') }
         format.xml  { head :ok }
       else

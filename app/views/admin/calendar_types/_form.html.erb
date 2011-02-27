@@ -5,9 +5,14 @@
         <%= f.error_messages %>
 
         <div class="field">
-            <%= f.label :name %>
+            <%= f.label :name_en %>
             <br />
-            <%= f.text_field :name %>
+            <%= f.text_field :name_en %>
+        </div>
+        <div class="field persianOnly">
+            <%= f.label :name_fa %>
+            <br />
+            <%= f.text_field :name_fa %>
         </div>
         <div class="field">
             <%= f.label :publish %>
