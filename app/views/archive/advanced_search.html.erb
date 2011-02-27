@@ -58,7 +58,8 @@
                     <td>
                     <%= t(:advanced_search_date_range_prompt) %>
                     </td>
-                    <td colspan="2"><%= text_field_tag :start_year_filter, nil, :size => 5 %> - <%= text_field_tag :end_year_filter, nil, :size => 5 %></td>
+                    <td><%= text_field_tag :start_year_filter, nil, :size => 5 %> - <%= text_field_tag :end_year_filter, nil, :size => 5 %></td>
+                    <td colspan="2"><%= select_tag :calendar_type_filter, options_for_select(@calendar_types) %></td>
                 </tr>
                 <tr>
                     <td colspan="3">
