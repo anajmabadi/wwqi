@@ -52,7 +52,7 @@ class ArchiveController < ApplicationController
 	  @collection_highlight_items = @collection.items.is_published.where('favorite = ?', true).limit(3)
 	  
 	  if @collection_highlight_items.empty?
-	      @random_offset = rand(@items_count + 3)
+	      @random_offset = @items_count > 3 ? rand(@items_count-3) : 0
 		  @collection_highlight_items = @collection.items.is_published.offset(@random_offset).limit(3)
 	  end
     rescue => e
