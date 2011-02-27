@@ -39,7 +39,7 @@ class Collection < ActiveRecord::Base
 
   # Library media file accessors
   def thumbnail_file_name
-    return "collection_" + id.to_s + ".jpg"
+    return COLLECTION_PREFIX + id.to_s + ".jpg"
   end
   
   def thumbnail_url
