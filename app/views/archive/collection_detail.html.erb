@@ -8,7 +8,8 @@
 <div class="clearfix archiveBigWrapper" id="collection_details" >
     <div id="search_results" class="clearfix">
         <a class="redButton right" href="<%= archive_browser_path('collection_filter[]' => @collection.id) %>" style="padding:0 25px"><%= t(:collection_view_items_prompt) %></a>
-		<span class="collection-nav right"><a href="#">Previous</a> &nbsp; <a href="#">Next</a> &nbsp; <a href="#">Back to Collections </a></span>
+		<span class="collection-nav right">
+			<a href="#">Previous</a> &nbsp; <a href="#">Next</a> &nbsp; <a href="#">Back to Collections </a></span>
         <h2><%= @collection.name %></h2>
         <div id="item_details_wrapper">
             <ul class="item_meta">
