@@ -1,7 +1,7 @@
 <% @page_description = t(:collections_description) -%>
 <% @page_title = t(:collection).capitalize + " | " + @collection.name -%>
 
-<div class="clearfix archiveBigWrapper" >
+<div class="clearfix archiveBigWrapper" id="collection_details" >
     <div id="search_results" class="clearfix">
         <a class="redButton right" href="<%= archive_browser_path('collection_filter[]' => @collection.id) %>" style="padding:0 25px"><%= t(:collection_view_items_prompt) %></a>
         <h2><%= @collection.name %></h2>
