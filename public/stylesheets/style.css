@@ -2821,7 +2821,7 @@ ul.item_meta li ul li{
 
 /* collection details
 -------------------------------------------------------------- */
-#collection_details .archiveBigWrapper{
+#collection_details.archiveBigWrapper{
 	width:100%;
 	
 }
@@ -2878,7 +2878,7 @@ ul.item_meta li ul li{
 
 /* collection index
 -------------------------------------------------------------- */
-#collection_index .archiveBigWrapper{
+#collection_index.archiveBigWrapper{
 	width:100%;
 	
 }
