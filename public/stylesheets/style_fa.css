@@ -2916,6 +2916,7 @@ ul.item_meta li ul li{
 #collection_index .listItem .item a{
 	position:relative;
 	display:inline-block;
+	float:left;
 }
 #collection_index .listItem .item a span{
 	display:block;
