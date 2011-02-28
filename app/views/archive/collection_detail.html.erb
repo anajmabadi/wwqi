@@ -7,7 +7,13 @@
 
 <div class="clearfix archiveBigWrapper" id="collection_details" >
     <div id="search_results" class="clearfix">
-        <a class="redButton right" href="<%= archive_browser_path('collection_filter[]' => @collection.id) %>" style="padding:0 25px"><%= t(:collection_view_items_prompt) %></a>
+		<a class="redButton right"  href="<%= archive_collections_path %>"><%= t(:back_to_collections).titleize %></a>
+		<span class="collection-nav right">
+			<% unless @collections.size < 2 || @collections.nil? %>
+            <%= link_to_unless @collections.index(@collection) == 0, t(:previous).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)-1])  %>
+            <%= link_to_unless @collections.index(@collection) == @collections.size - 1, t(:next).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)+1])  %>
+        	<% end -%>
+        </span>
         <h2><%= @collection.name %></h2>
         <div id="item_details_wrapper">
             <ul class="item_meta">
