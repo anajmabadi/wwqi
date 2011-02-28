@@ -2912,6 +2912,18 @@ ul.item_meta li ul li{
 	color:#CA3723;
 }
 
+#collection_index .listItem h3 a:hover{
+	text-decoration:underline;
+}
+
+#collection_index .items_link{
+	color:#CA3723;
+}
+#collection_index .items_link:hover{
+	text-decoration:underline
+}
+
+
 #collection_index .listItem .item a{
 	position:relative;
 	display:inline-block;
