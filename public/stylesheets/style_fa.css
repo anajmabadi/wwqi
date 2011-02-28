@@ -2707,7 +2707,7 @@ ul.item_meta{
 
 ul.item_related{
 	width:28%;
-	float:left;
+	float:right;
 	margin-right:5px;
 }
 
@@ -2768,7 +2768,7 @@ ul.item_meta li ul li{
 }
 
 #item_details_wrapper{
-	background:url(/images/bg_item_details_fa.gif) -11px 0 repeat-y;
+	background:url(/images/bg_item_details_fa.gif) 193px 0 repeat-y;
 	overflow:hidden;
 }
 
@@ -2877,7 +2877,18 @@ ul.item_meta li ul li{
 	display:none;
 }
 
+#collection_details a{
+	color:#CA3723
+}
 
+#collection_details .redButton{
+	color:#fff;
+}
+
+#collection_details .collection-nav{
+	font-size:12px;
+	margin-left:10px;
+}
 
 /* collection index
 -------------------------------------------------------------- */
