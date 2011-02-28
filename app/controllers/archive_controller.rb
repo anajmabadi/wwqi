@@ -818,7 +818,7 @@ def build_genre_query(filter_value, query_hash)
   	@reset = true
     @item_ids = nil
     @filters = {}
-    session[:filter_stack] = {}
+    session[:filter_stack] = nil
   end
   
 end
