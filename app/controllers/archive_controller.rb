@@ -808,24 +808,7 @@ def build_genre_query(filter_value, query_hash)
 	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
 	  	end 
   	end	
-  
-    #@filters[:translation_filter] = params[:translation_filter].kind_of?(Array) ? params[:translation_filter] : [params[:translation_filter]] unless params[:translation_filter].nil?
-    #@filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter] : [params[:period_filter]] unless params[:period_filter].nil?
-    #@filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter] : [params[:person_filter]] unless params[:person_filter].nil?
-    #@filters[:subject_filter] = params[:subject_filter].kind_of?(Array) ? params[:subject_filter] : [params[:subject_filter]] unless params[:subject_filter].nil?
-    #@filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter] : [params[:place_filter]] unless params[:place_filter].nil?
-    
-    # grab advanced search parameters
-    #@filters[:keyword_filter] = { :values => [ params[:keyword_filter] ], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
-    #@filters[:recent_additions_filter] = params[:recent_additions_filter]  unless params[:recent_additions_filter].nil?
-    #@filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i } unless params[:year_range_filter].nil?
-    #@filters[:boolean_keyword_filter] = { :values => [ params[:value_1], params[:value_2], params[:value_3] ],
-    #  :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
-    #  :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
 
-	# detect my selections filter
-    #@my_archive_ids = my_archive_from_cookie
-    #@filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
   	return filters
   end
   
@@ -833,7 +816,7 @@ def build_genre_query(filter_value, query_hash)
   	@reset = true
     @item_ids = nil
     @filters = {}
-    session[:filter_stack] = nil
+    session[:filter_stack] = {}
   end
   
 end

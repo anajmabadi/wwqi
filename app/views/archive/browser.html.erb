@@ -13,17 +13,17 @@
     
     <%= render "browser_selected_filters" unless @reset %>
     
-    <%= render "genre_list_subfilters" %>
+    <%= render "genre_list_subfilters" unless @top_genres.empty?  %>
 
-    <%= render "collection_list_subfilters" %>
+    <%= render "collection_list_subfilters" unless @top_collections.empty? %>
 
-    <%= render "person_list_subfilters" %>
+    <%= render "person_list_subfilters" unless @top_people.empty?  %>
 
-    <%= render "place_list_subfilters" %>
+    <%= render "place_list_subfilters" unless @top_places.empty?  %>
 
-    <%= render "subject_list_subfilters" %>
+    <%= render "subject_list_subfilters" unless @top_subjects.empty?  %>
 
-    <%= render "period_list_subfilters" %>
+    <%= render "period_list_subfilters" unless @periods.empty?  %>
 </div>
 <!-- end browseBar -->
 <div class="clearfix archiveBigWrapper" >
