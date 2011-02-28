@@ -11,6 +11,6 @@ class CalendarType < ActiveRecord::Base
   default_scope :include => [:translations]
   
   def self.select_list
-    return self.all(:select => 'DISTINCT id, name', :order => 'name').map {|calendar_type| [calendar_type.name, calendar_type.id]}
+    return self.all(:select => 'DISTINCT calendar_types.id, calendar_type_translations.name', :order => 'name').map {|calendar_type| [calendar_type.name, calendar_type.id]}
   end
 end
