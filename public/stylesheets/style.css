@@ -2876,6 +2876,19 @@ ul.item_meta li ul li{
 	display:none;
 }
 
+#collection_details a{
+	color:#CA3723
+}
+
+#collection_details .redButton{
+	color:#fff;
+}
+
+#collection_details .collection-nav{
+	font-size:11px;
+	margin-right:10px;
+}
+
 /* collection index
 -------------------------------------------------------------- */
 #collection_index.archiveBigWrapper{
