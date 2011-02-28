@@ -1,6 +1,10 @@
 <% @page_description = t(:collections_description) -%>
 <% @page_title = t(:archive).capitalize + " | " + t(:collections).capitalize -%>
 
+<% content_for :head do %>
+<%= render 'head_collections_content' %>
+<% end %>
+
 <div class="clearfix archiveBigWrapper" id="collection_index">
 
     <div id="search_results">        
