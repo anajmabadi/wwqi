@@ -2890,6 +2890,10 @@ ul.item_meta li ul li{
 	margin-left:10px;
 }
 
+#collection_details .collection-nav a{
+	margin:0 8px 0 0;
+}
+
 /* collection index
 -------------------------------------------------------------- */
 #collection_index.archiveBigWrapper{
