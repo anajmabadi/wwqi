@@ -3,9 +3,14 @@ class ApplicationController < ActionController::Base
   
   #localization functions
   before_filter :set_locale
+  before_filter :get_my_archive_items
   
   #log activity
   # after_filter :record_activity
+  
+  def get_my_archive_items
+  	@my_archive_ids = my_archive_from_cookie
+  end
 
   # csv generation code
   def make_custom_csv(collection)
