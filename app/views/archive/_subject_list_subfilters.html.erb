@@ -7,23 +7,19 @@
 	<% end -%>
     <ul class="default">
         <% @top_subjects.each do |subject| -%>
-        <% unless subject.items_count(@item_ids) == 0 || (!@filters[:subject_filter].nil? && @filters[:subject_filter].include?(subject.id)) -%>
         <li>
             <%= link_to truncate(subject.name, :length => 50), archive_browser_path('subject_filter[]'=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(subject.items_count(@item_ids)) %>)</span>
+            <span>(<%= localized_number(subject.items_count(@reset ? nil : @item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
     </ul>
     <% unless @subjects.size <= ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT %>
     <ul class="more">
         <% @subjects.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |subject| -%>
-        <% unless subject.items_count(@item_ids) == 0 || (!@filters[:subject_filter].nil? && @filters[:subject_filter].include?(subject.id))-%>
         <li>
             <%= link_to truncate(subject.name, :length => 50), archive_browser_path('subject_filter[]'=>subject.id), :class => (subject.id.to_s == @subject_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(subject.items_count(@item_ids)) %>)</span>
+            <span>(<%= localized_number(subject.items_count(@reset ? nil : @item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
         <li>
             <%= link_to t(:see_entire_index), archive_subjects_path, :class => "seeAllLink" %>

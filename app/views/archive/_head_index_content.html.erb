@@ -10,16 +10,16 @@
                 height: 'toggle'
             }, 300);
 			$(this).parent().next(".list").find("ul.more").hide();
-			$(this).parent().next(".list").find("a.moreLink").removeClass("less").html("see more");
+			$(this).parent().next(".list").find("a.moreLink").removeClass("less").html("<%= t(:see_more) %>");
             return false;
 
         });
         $("#browseBar a.moreLink").click( function() {
-            if ($(this).html()=="see more") {
-                $(this).html("see less");
+            if ($(this).html()=="<%= t(:see_more) %>") {
+                $(this).html("<%= t(:see_less) %>");
                 $(this).addClass("less");
             } else {
-                $(this).html("see more");
+                $(this).html("<%= t(:see_more) %>");
                 $(this).removeClass("less");
             }
             $(this).parents(".list").find("ul.more").animate({
