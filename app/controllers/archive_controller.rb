@@ -750,17 +750,6 @@ def build_genre_query(filter_value, query_hash)
     return periods.uniq.sort_by(&:start_at)
   end
 
-  def find_top_selection( my_objects = [], item_ids = nil)
-  	
-    unless my_objects.empty? || !my_objects[0].respond_to?("items_count_cache")
-    	my_sorted_objects = my_objects.all.sort { |a,b| a.items_count(item_ids) <=> b.items_count(item_ids) }.reverse
-    else
-    	my_sorted_objects = []	
-    end
-    my_top_objects = my_sorted_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
-    return my_top_objects
-  end
-
   def load_filter_models( reset = true, item_ids = [] )
 	logger.info "### reset = " + reset.to_s
 	@genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 8, I18n.locale.to_s, 0]).order('subject_translations.name')
@@ -783,12 +772,23 @@ def build_genre_query(filter_value, query_hash)
       @periods = find_related_objects(@periods, item_ids, 'periods')
     end
     
-    @top_genres = find_top_selection(@genres, item_ids) unless @genres.nil?
-    @top_places = find_top_selection(@places, item_ids) unless @places.nil?
-    @top_subjects = find_top_selection(@subjects, item_ids) unless @subjects.nil?
-    @top_people = find_top_selection(@people, item_ids) unless @people.nil?
-    @top_collections = find_top_selection(@collections, item_ids) unless @collections.nil?
-    logger.info "### @top_genres: " + @top_genres.to_s
+    @top_genres = find_top_selection(@genres, @reset ? nil : item_ids) unless @genres.nil?
+    @top_places = find_top_selection(@places, @reset ? nil : item_ids) unless @places.nil?
+    @top_subjects = find_top_selection(@subjects, @reset ? nil : item_ids) unless @subjects.nil?
+    @top_people = find_top_selection(@people, @reset ? nil : item_ids) unless @people.nil?
+    @top_collections = find_top_selection(@collections, @reset ? nil : item_ids) unless @collections.nil?
+  end
+  
+  
+  def find_top_selection( my_objects = [], item_ids = nil)
+  	
+    unless my_objects.empty?
+    	my_sorted_objects = my_objects.all.sort { |a,b| b.items_count(item_ids) <=> a.items_count(item_ids) }
+    else
+    	my_sorted_objects = []	
+    end
+    my_top_objects = my_sorted_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
+    return my_top_objects
   end
   
   def find_related_objects( my_objects, my_item_ids, my_type )	
