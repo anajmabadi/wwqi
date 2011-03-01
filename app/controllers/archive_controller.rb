@@ -763,13 +763,13 @@ def build_genre_query(filter_value, query_hash)
 	unless @reset
       @subfilter_mode = true
       # find complete lists for searching
-      @genres = find_related_objects(@genres, item_ids, 'subjects')  #find_related_genres(item_ids)
-      @people =  find_related_objects(@people, item_ids, 'people') #find_related_people(item_ids)
-      @collections = find_related_objects(@collections, item_ids, 'collections') #(item_ids)
-      @places = find_related_objects(@places, item_ids, 'places') #find_related_places(item_ids)
-      @subjects = find_related_objects(@subjects, item_ids, 'subjects') #find_related_subjects(item_ids)
+      @genres = find_related_objects(@genres, item_ids, 'subjects', @filters[:genre_filter])  #find_related_genres(item_ids)
+      @people =  find_related_objects(@people, item_ids, 'people', @filters[:people_filter]) #find_related_people(item_ids)
+      @collections = find_related_objects(@collections, item_ids, 'collections', @filters[:collection_filter]) #(item_ids)
+      @places = find_related_objects(@places, item_ids, 'places', @filters[:place_filter]) #find_related_places(item_ids)
+      @subjects = find_related_objects(@subjects, item_ids, 'subjects', @filters[:subject_filter]) #find_related_subjects(item_ids)
       # periods always stays in order without top selections
-      @periods = find_related_objects(@periods, item_ids, 'periods')
+      @periods = find_related_objects(@periods, item_ids, 'periods', @filters[:period_filter])
     end
     
     @top_genres = find_top_selection(@genres, @reset ? nil : item_ids) unless @genres.nil?
@@ -791,11 +791,12 @@ def build_genre_query(filter_value, query_hash)
     return my_top_objects
   end
   
-  def find_related_objects( my_objects, my_item_ids, my_type )	
+  def find_related_objects( my_objects, my_item_ids, my_type, my_filter_ids )	
   	my_original_query = my_objects
   	my_new_ids = []
   	my_objects.each do |my_object|
-  		my_new_ids << my_object.id unless (my_object.related_item_ids_cache & my_item_ids).empty?
+  		# reject an item if it has a zero count for the current set or it is on the current filter list
+  		my_new_ids << my_object.id unless my_object.items_count(my_item_ids) == 0 || (!my_filter_ids.nil? && my_filter_ids.include?(my_object.id))
   	end
   	return my_original_query.where("#{my_type}.id IN (?)", my_new_ids.sort.uniq)
   end
