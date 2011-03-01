@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110227151520) do
+ActiveRecord::Schema.define(:version => 20110301023413) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -293,8 +293,11 @@ ActiveRecord::Schema.define(:version => 20110227151520) do
     t.text     "acquisition_notes"
     t.date     "last_edited"
     t.boolean  "major",             :default => false
+    t.integer  "items_count_cache", :default => 0,     :null => false
+    t.string   "item_ids_cache",    :default => "",    :null => false
   end
 
+  add_index "collections", ["items_count_cache"], :name => "index_collections_on_items_count_cache"
   add_index "collections", ["last_edited"], :name => "index_collections_on_last_edited"
   add_index "collections", ["major"], :name => "index_collections_on_major"
   add_index "collections", ["publish"], :name => "index_collections_on_publish"
@@ -645,19 +648,22 @@ ActiveRecord::Schema.define(:version => 20110227151520) do
 
   create_table "people", :force => true do |t|
     t.string   "loc_name"
-    t.boolean  "major",         :default => false, :null => false
+    t.boolean  "major",             :default => false, :null => false
     t.integer  "dob"
     t.integer  "dod"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "country"
-    t.boolean  "publish",       :default => true,  :null => false
-    t.integer  "lock_version",  :default => 0,     :null => false
+    t.boolean  "publish",           :default => true,  :null => false
+    t.integer  "lock_version",      :default => 0,     :null => false
     t.integer  "collection_id"
+    t.integer  "items_count_cache", :default => 0,     :null => false
+    t.string   "item_ids_cache",    :default => "",    :null => false
   end
 
   add_index "people", ["collection_id"], :name => "index_people_on_collection_id"
+  add_index "people", ["items_count_cache"], :name => "index_people_on_items_count_cache"
   add_index "people", ["major"], :name => "in_people_on_major"
   add_index "people", ["publish"], :name => "index_people_on_publish"
 
@@ -681,11 +687,14 @@ ActiveRecord::Schema.define(:version => 20110227151520) do
     t.datetime "updated_at"
     t.datetime "start_at"
     t.datetime "end_at"
-    t.integer  "lock_version", :default => 0,     :null => false
-    t.boolean  "major",        :default => false
+    t.integer  "lock_version",      :default => 0,     :null => false
+    t.boolean  "major",             :default => false
+    t.integer  "items_count_cache", :default => 0,     :null => false
+    t.string   "item_ids_cache",    :default => "",    :null => false
   end
 
   add_index "periods", ["end_at"], :name => "index_periods_end_at"
+  add_index "periods", ["items_count_cache"], :name => "index_periods_on_items_count_cache"
   add_index "periods", ["major"], :name => "index_periods_on_major"
   add_index "periods", ["position"], :name => "index_periods_on_position"
   add_index "periods", ["publish"], :name => "index_periods_on_publish"
@@ -729,10 +738,13 @@ ActiveRecord::Schema.define(:version => 20110227151520) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "lock_version", :default => 0,     :null => false
-    t.boolean  "major",        :default => false
+    t.integer  "lock_version",      :default => 0,     :null => false
+    t.boolean  "major",             :default => false
+    t.integer  "items_count_cache", :default => 0,     :null => false
+    t.string   "item_ids_cache",    :default => "",    :null => false
   end
 
+  add_index "places", ["items_count_cache"], :name => "index_places_on_items_count_cache"
   add_index "places", ["major"], :name => "index_places_on_major"
   add_index "places", ["publish"], :name => "index_places_on_publish"
 
@@ -888,15 +900,18 @@ ActiveRecord::Schema.define(:version => 20110227151520) do
   add_index "subject_types", ["publish"], :name => "index_subject_types_on_publish"
 
   create_table "subjects", :force => true do |t|
-    t.boolean  "major",           :default => false, :null => false
-    t.boolean  "publish",         :default => true,  :null => false
+    t.boolean  "major",             :default => false, :null => false
+    t.boolean  "publish",           :default => true,  :null => false
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "subject_type_id", :default => 7,     :null => false
-    t.integer  "lock_version",    :default => 0,     :null => false
+    t.integer  "subject_type_id",   :default => 7,     :null => false
+    t.integer  "lock_version",      :default => 0,     :null => false
+    t.integer  "items_count_cache", :default => 0,     :null => false
+    t.string   "item_ids_cache",    :default => "",    :null => false
   end
 
+  add_index "subjects", ["items_count_cache"], :name => "index_subjects_on_items_count_cache"
   add_index "subjects", ["major"], :name => "index_subjects_on_major"
   add_index "subjects", ["publish"], :name => "index_subjects_on_publish"
   add_index "subjects", ["subject_type_id"], :name => "subject_type_id_2"

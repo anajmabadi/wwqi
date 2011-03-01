@@ -1,18 +1,53 @@
-<% @page_description = t(:utilities_description) -%>
 <% @page_title = t(:utilities).capitalize -%>
-
 <div id="staticContent" class="clearfix">
-  <h1><%= @page_title %></h1>
-  <ul>
-    <li><%= link_to "Rename files by original file name", :action => 'rename_by_file_name' %></li>
-    <li>
-      <%= form_tag({:action => 'index'}, :method => 'get', :name => 'rename_thumbs_by_collection') do -%>
-        <select id="collectionFilter" name="collection_filter"  onChange="document.forms['rename_thumbs_by_collection'].submit()">
-          <% @collections.each do |collection| -%>
-            <option value="<%= collection.id %>"><%= collection.name %></option>
-          <% end -%>
-        </select>
-      <% end %>
-    </li>
-  </ul>
-</div> <!-- end browser --><!-- end featured -->
+    <div class="onecolumn">
+        <div class="content nomargin">
+            <div class="header">
+  <div class="description">
+    <h1><%= controller.controller_name.humanize.capitalize %></h1>
+  </div>
+  <div class="tools">
+  </div>
+</div>
+            <table class="global" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td><%= button_to 'Rebuild Item Counts', admin_utilities_rebuild_item_counts_path %></td>
+                    <td>
+                    <p>
+                        This routine resets the item count caches on all filters (places, subjects, people, genres, periods).  Use this function whenever you notice a discrepancy
+                        with the item counts or need to make an update ahead of the regularly scheduled running of this script.
+                    </p>
+                    </td>
+                </tr>
+                <% if Rails.env == 'development' %>
+                <tr>
+                    <td><%= button_to "Rename files by original file name", :action => 'rename_by_file_name' %></td>
+                    <td>
+                    <p>
+                        This routine renames all files by the filename given arbitrary development directories -- use only on development machine.
+                    </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                    Rename files by collection:
+                    <%= form_tag({:action => 'index'}, :method => 'get', :name => 'rename_thumbs_by_collection') do -%>
+                    <select id="collectionFilter" name="collection_filter"  onChange="document.forms['rename_thumbs_by_collection'].submit()">
+                        <% @collections.each do |collection| -%>
+                        <option value="<%= collection.id %>"><%= collection.name %></option>
+                        <% end -%>
+                    </select>
+                    <% end %>
+                    </td>
+                                        <td>
+                    <p>
+                        This routine renames all files by the filename for a collection -- use only on a development machine.
+                    </p>
+                    </td>
+                </tr>
+                <% end -%>
+            </table>
+            <br class="clear" />
+        </div>
+    </div>
+</div>

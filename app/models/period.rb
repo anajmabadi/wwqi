@@ -4,7 +4,7 @@ class Period < ActiveRecord::Base
   default_scope :include => :translations
   globalize_accessors :en, :fa
   
-  validates :start_at, :end_at, :presence => true, :numericality => true
+  validates :start_at, :end_at, :presence => true
 
   def tag_line
     value = title
@@ -40,13 +40,23 @@ class Period < ActiveRecord::Base
     return self.item_query.all
   end
   
+  def related_item_ids_cache
+  	return self.item_ids_cache.split(",").map { |i| i.to_i }.sort unless self.item_ids_cache.nil?
+  end
+  
   def items_count(item_ids=nil)
-  	begin
-    	count = item_ids.nil? ? self.item_query.count : count = self.item_query.is_published.where("items.id IN (?)", item_ids).count
-   	rescue => error
-   		count = 0
-   	end
-   	return count
+   	begin
+    	# cache the values
+      if self.items_count_cache.nil? || self.item_ids_cache.nil?
+        self.item_ids_cache = self.item_query.select('items.id').order('items.id').all.map { |i| i.id }.join(",")
+      	self.items_count_cache = self.related_item_ids_cache.size
+      end
+      count = item_ids.nil? ? self.items_count_cache : (self.related_item_ids_cache & item_ids).size
+    rescue => error
+	  count = 0
+    end
+    return count
+    
   end
   
 end

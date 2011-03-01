@@ -10,11 +10,11 @@ class Subject < ActiveRecord::Base
   validates :publish, :inclusion => { :in => [true,false] }
   validates :major, :inclusion => { :in => [true,false] }
 
-  
   translates :name
   default_scope :include => :translations
   globalize_accessors :fa, :en
-  
+
+
   scope :genres, lambda {
     where(["subject_type_id=?", 8])
   }
@@ -22,7 +22,7 @@ class Subject < ActiveRecord::Base
   scope :concepts, lambda {
     where(["subject_type_id=?", 7])
   }
-  
+
   # pagination code
   cattr_reader :per_page
   @@per_page = 1000
@@ -33,7 +33,7 @@ class Subject < ActiveRecord::Base
   def self.concept_list
     return self.where(['subject_type_id=?',7]).map {|subject| [subject.to_label, subject.id]}.sort
   end
-  
+
   def self.genre_list
     return self.where(['subject_type_id=?',8]).map {|subject| [subject.to_label, subject.id]}.sort
   end
@@ -44,13 +44,22 @@ class Subject < ActiveRecord::Base
     my_label += " | #{self.name_fa}" unless self.name_fa.blank?
     return my_label
   end
-  
+
+  def related_item_ids_cache
+  	return self.item_ids_cache.split(",").map { |id| id.to_i }.sort unless self.item_ids_cache.nil?
+  end
+
   def items_count(item_ids=nil)
-  	begin
-    	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
-   	rescue => error
-   		count = 0
-   	end
-   	return count
+    begin
+    # cache the values
+	      if self.items_count_cache.nil? || self.item_ids_cache.nil?
+	        self.item_ids_cache = self.items.is_published.select('items.id').order('items.id').all.map { |i| i.id }.join(",")
+	      self.items_count_cache = self.related_item_ids_cache.size
+	      end
+	      count = item_ids.nil? ? self.items_count_cache : self.related_item_ids_cache.select { |i| item_ids.include?(i) }.size
+    rescue => error
+	    count = 99999
+    end
+    return count
   end
 end

@@ -46,13 +46,22 @@ class Collection < ActiveRecord::Base
     return LIBRARY_URL + COLLECTION_THUMBNAILS_DIR + thumbnail_file_name
   end
   	
+  def related_item_ids_cache
+  	return self.item_ids_cache.split(",").map { |i| i.to_i }.sort unless self.item_ids_cache.nil?
+  end
+  
   def items_count(item_ids=nil)
-  	begin
-    	count = item_ids.nil? ? self.items.is_published.count : count = self.items.is_published.where("items.id IN (?)", item_ids).count
-   	rescue => error
-   		count = 0
-   	end
-   	return count
+    begin
+    # cache the values
+	      if self.items_count_cache.nil? || self.item_ids_cache.nil?
+	        self.item_ids_cache = self.items.is_published.select('items.id').order('items.id').all.map { |i| i.id }.join(",")
+	      self.items_count_cache = self.related_item_ids_cache.size
+	      end
+	      count = item_ids.nil? ? self.items_count_cache : (self.related_item_ids_cache & item_ids).size
+    rescue => error
+	    count = 0
+    end
+    return count
   end
   
   def item_count_string
