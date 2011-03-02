@@ -7,25 +7,21 @@
 	<% end -%>
     <ul class="default">
         <% @top_places.each do |place| -%>
-        <% unless place.items_count(@item_ids) == 0 || (!@filters[:place_filter].nil? && @filters[:place_filter].include?(place.id)) %>
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
             <span>(<%= localized_number(place.items_count(@item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
     </ul>
     <% if @places.size > ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT -%>
     <ul class="more">
         <% @places.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |place| -%>
-        <% unless place.items_count(@item_ids) == 0 || (!@filters[:place_filter].nil? && @filters[:place_filter].include?(place.id)) -%>
         <li>
             <%= link_to truncate(place.name, :length => 50), archive_browser_path('place_filter[]'=>place.id),
             :class => (place.id.to_s == @place_filter) ? 'active' : '' %>
             <span>(<%= localized_number(place.items_count(@item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
         <li>
             <%= link_to t(:see_entire_index), archive_places_path, :class => "seeAllLink" %>

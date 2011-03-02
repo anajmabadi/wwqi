@@ -7,25 +7,21 @@
 	<% end -%>
     <ul class="default">
         <% @top_people.each do |person| -%>
-        <% unless person.items_count(@item_ids) == 0 || (!@filters[:person_filter].nil? && @filters[:person_filter].include?(person.id))  -%>
         <li>
             <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(person.items_count(@item_ids)) %>)</span>
+            <span>(<%= localized_number(person.items_count(@reset ? nil : @item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
     </ul>
     <% if @people.size > ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT %>
     <ul class="more">
         <% @people.limit(ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT).each do |person| -%>
-        <% unless person.items_count(@item_ids) == 0 || (!@filters[:person_filter].nil? && @filters[:person_filter].include?(person.id))  -%>
         <li>
             <%= link_to truncate(person.name, :length => 50), archive_browser_path('person_filter[]'=>person.id),
             :class => (person.id.to_s == @person_filter) ? 'active' : '' %>
-            <span>(<%= localized_number(person.items_count(@item_ids)) %>)</span>
+            <span>(<%= localized_number(person.items_count(@reset ? nil : @item_ids)) %>)</span>
         </li>
-        <% end -%>
         <% end -%>
         <li>
             <%= link_to t(:see_entire_index), archive_people_path, :class => "seeAllLink" %>

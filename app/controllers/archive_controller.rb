@@ -18,8 +18,8 @@ class ArchiveController < ApplicationController
 
   def index
     load_filter_models(true)
-    @my_archive_ids = my_archive_from_cookie
-    #cache the current search set in a session variable
+    
+   #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
     session[:current_items] = nil
   end
@@ -236,13 +236,14 @@ class ArchiveController < ApplicationController
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
-    @items_full_set = Item.find(:all, :select => 'id', :conditions => @query, :order => @order)
-    @items = @items_full_set.paginate :per_page => @per_page, :page => @page, :order => @order
+    @items_full_set = Item.where(@query).order(@order)
+    @items = @items_full_set.paginate :per_page => @per_page, :page => @page
 
     # check for a reset condition, in which case get all
     @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2
-    @item_ids = items_set(@items_full_set)
-    load_filter_models(@reset)
+    @item_ids = @items_full_set.select("DISTINCT items.id").map { |i| i.id }.sort
+    
+    load_filter_models(@reset, @item_ids)
 
     #build query label stack
     @query_labels = (@reset || @query_hash[:labels].empty?) ? [{:field => I18n.translate(:all_items)}] : @query_hash[:labels]
@@ -394,10 +395,6 @@ class ArchiveController < ApplicationController
 
   private
 
-  def items_set(items)
-    return items.map { |i| i.id }
-  end
-
   ################
   # QUERY BUILDERS
   ################
@@ -422,14 +419,14 @@ class ArchiveController < ApplicationController
   
     begin
       item_ids = []
-      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
-      ids_to_find.each do |subject_id|		
-      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      subjects = Subject.find(ids_to_find)
+      subjects.each do |subject|		
+      	new_item_ids = subject.related_item_ids_cache unless subject.related_item_ids_cache.nil?
       	unless new_item_ids.nil?
       		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
       	end
       end
-
+      
       unless item_ids.empty?
         additional_query += "items.id IN (:subject_item_ids)"
       else
@@ -440,8 +437,8 @@ class ArchiveController < ApplicationController
       flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:subject_item_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:subject), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+      query_hash[:parameters][:subject_item_ids] = item_ids.uniq.sort
+      query_hash[:labels] << {:field => I18n.translate(:subject), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
     return query_hash
     end
   end
@@ -453,9 +450,9 @@ def build_genre_query(filter_value, query_hash)
 
     begin
       item_ids = []
-      classifications = Classification.where(["subject_id IN (?)", ids_to_find])
-      ids_to_find.each do |subject_id|		
-      	new_item_ids = classifications.where("subject_id = ?", subject_id).all.map { |a| a.item_id }.uniq.sort 
+      subjects = Subject.find(ids_to_find)
+      subjects.each do |subject|		
+      	new_item_ids = subject.related_item_ids_cache unless subject.related_item_ids_cache.nil?
       	unless new_item_ids.nil?
       		item_ids = item_ids.empty? ? new_item_ids : item_ids & new_item_ids 
       	end
@@ -471,8 +468,8 @@ def build_genre_query(filter_value, query_hash)
       flash[:error] = "A problem was encountered searching for genre id #{filter_value}: #{error}."
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:subject_item_ids] = item_ids
-      query_hash[:labels] << {:field => I18n.translate(:genre), :values => classifications.map { |c| c.subject.name }.uniq.sort.join(', ') }
+      query_hash[:parameters][:subject_item_ids] = item_ids.uniq.sort
+      query_hash[:labels] << {:field => I18n.translate(:genre), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
     return query_hash
     end
   end
@@ -717,8 +714,9 @@ def build_genre_query(filter_value, query_hash)
   ###################
 
   def find_related_genres(item_ids=[])
-    my_ids = Classification.where(['item_id in (?)', item_ids]).select('subject_id').map { |c| c.subject_id }.uniq.sort
-    return Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.id IN (?)", true, 8, I18n.locale.to_s, my_ids]).order('subject_translations.name')
+    my_ids = Classification.includes(['item', 'subject']).where(['classifications.item_id in (?) AND items.publish = ? AND subjects.publish = ? AND subjects.subject_type_id = ?', item_ids, true, true, 8]).select('DISTINCT classifications.subject_id').order('classifications.subject_id').map { |c| c.subject_id }
+    subjects = Subject.where(["subject_translations.locale=? AND subjects.id IN (?)", I18n.locale.to_s, my_ids]).order('subject_translations.name')
+  	return subjects
   end
 
   def find_related_subjects(item_ids=[])
@@ -752,39 +750,55 @@ def build_genre_query(filter_value, query_hash)
     return periods.uniq.sort_by(&:start_at)
   end
 
-  def find_top_selection( my_objects = [])
-    unless my_objects.empty? || !my_objects[0].respond_to?("items_count")
-    my_objects.sort_by!(&:items_count).reverse!
-    end
-    my_top_objects = my_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
-    return my_top_objects
-  end
+  def load_filter_models( reset = true, item_ids = [] )
+	logger.info "### reset = " + reset.to_s
+	@genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 8, I18n.locale.to_s, 0]).order('subject_translations.name')
+    @periods = Period.where(['periods.publish=? AND period_translations.locale = ? AND periods.items_count_cache > ? ',true, I18n.locale.to_s, 0]).order('periods.position')
 
-  def load_filter_models( reset=true )
-    if reset
-      @genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 8, I18n.locale.to_s]).order('subject_translations.name')
-      @people = Person.where(["people.publish = ? AND person_translations.locale = ?", true, I18n.locale.to_s]).order('person_translations.sort_name')
-      @collections = Collection.where(['collections.publish=? AND collections.private = ?', true, false]).order('collection_translations.name')
-      @periods = Period.where(['periods.publish=?',true]).order('periods.position')
-      @places = Place.where(["places.publish=? AND place_translations.locale = ?", true, I18n.locale.to_s]).order("place_translations.name")
-      @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=?", true, 7, I18n.locale.to_s]).order('subject_translations.name')
-    @subfilter_mode = false
-    else
+  @people = Person.where(["people.publish = ? AND person_translations.locale = ? AND people.items_count_cache > ?", true, I18n.locale.to_s, 0]).order('person_translations.sort_name')
+  @collections = Collection.where(['collections.publish=? AND collection_translations.locale = ? AND collections.private = ? AND collections.items_count_cache > ?', true, I18n.locale.to_s, false, 0]).order('collection_translations.name')
+  @places = Place.where(["places.publish=? AND place_translations.locale = ? AND places.items_count_cache > ?", true, I18n.locale.to_s, 0]).order("place_translations.name")
+  @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 7, I18n.locale.to_s, 0]).order('subject_translations.name')
+  @subfilter_mode = false
+	unless @reset
       @subfilter_mode = true
       # find complete lists for searching
-      @genres = find_related_genres(@item_ids)
-      @people =  find_related_people(@item_ids)
-      @collections = find_related_collections(@item_ids)
-      @places = find_related_places(@item_ids)
-      @subjects = find_related_subjects(@item_ids)
+      @genres = find_related_objects(@genres, item_ids, 'subjects', @filters[:genre_filter])  #find_related_genres(item_ids)
+      @people =  find_related_objects(@people, item_ids, 'people', @filters[:people_filter]) #find_related_people(item_ids)
+      @collections = find_related_objects(@collections, item_ids, 'collections', @filters[:collection_filter]) #(item_ids)
+      @places = find_related_objects(@places, item_ids, 'places', @filters[:place_filter]) #find_related_places(item_ids)
+      @subjects = find_related_objects(@subjects, item_ids, 'subjects', @filters[:subject_filter]) #find_related_subjects(item_ids)
       # periods always stays in order without top selections
-      @periods = find_related_periods(@item_ids)
+      @periods = find_related_objects(@periods, item_ids, 'periods', @filters[:period_filter])
     end
-    @top_genres = find_top_selection(@genres)
-    @top_places = find_top_selection(@places)
-    @top_subjects = find_top_selection(@subjects)
-    @top_people = find_top_selection(@people)
-    @top_collections = find_top_selection(@collections)
+    
+    @top_genres = find_top_selection(@genres, @reset ? nil : item_ids) unless @genres.nil?
+    @top_places = find_top_selection(@places, @reset ? nil : item_ids) unless @places.nil?
+    @top_subjects = find_top_selection(@subjects, @reset ? nil : item_ids) unless @subjects.nil?
+    @top_people = find_top_selection(@people, @reset ? nil : item_ids) unless @people.nil?
+    @top_collections = find_top_selection(@collections, @reset ? nil : item_ids) unless @collections.nil?
+  end
+  
+  
+  def find_top_selection( my_objects = [], item_ids = nil)
+  	
+    unless my_objects.empty?
+    	my_sorted_objects = my_objects.all.sort { |a,b| b.items_count(item_ids) <=> a.items_count(item_ids) }
+    else
+    	my_sorted_objects = []	
+    end
+    my_top_objects = my_sorted_objects.shift(ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT)
+    return my_top_objects
+  end
+  
+  def find_related_objects( my_objects, my_item_ids, my_type, my_filter_ids )	
+  	my_original_query = my_objects
+  	my_new_ids = []
+  	my_objects.each do |my_object|
+  		# reject an item if it has a zero count for the current set or it is on the current filter list
+  		my_new_ids << my_object.id unless my_object.items_count(my_item_ids) == 0 || (!my_filter_ids.nil? && my_filter_ids.include?(my_object.id))
+  	end
+  	return my_original_query.where("#{my_type}.id IN (?)", my_new_ids.sort.uniq)
   end
   
   def prepend_existing_filters( filters, filter_stack = {} )

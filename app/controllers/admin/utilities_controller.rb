@@ -4,6 +4,46 @@ class Admin::UtilitiesController < Admin::AdminController
     @collections = Collection.find(:all, :order => 'collection_translations.name')
   end
   
+  def rebuild_item_counts
+  	
+  	begin
+	  	# rebuild subject items counts
+	  	subjects = Subject.all
+	  	collections = Collection.all
+	  	people = Person.all
+	  	places = Place.all
+	  	
+	  	my_filters = [subjects, collections, people, places]
+	  	
+	  	my_filters.each do |my_filter|
+		  	my_filter.each do |subject|
+		  		item_ids = subject.items.is_published.select('items.id').map { |i| i.id }
+		  		subject.item_ids_cache = item_ids.join(",")
+		  		subject.items_count_cache = item_ids.size
+		  		subject.save
+		  	end
+	  	end
+	  		  	
+	  	periods = Period.all
+  		periods.each do |period|
+	  		item_ids = Item.where(["publish = ? AND sort_year BETWEEN ? AND ?", true, period.start_at.strftime("%Y"), period.end_at.strftime("%Y")] ).select('items.id').map { |i| i.id }
+	  		period.item_ids_cache = item_ids.join(",")
+	  		period.items_count_cache = item_ids.size
+	  		period.save
+	  	end
+	  	
+  	rescue => error
+  		flash[:error] = error.message
+  	else
+	  	flash[:notice] = "Caching operation succeeded."	
+  	end
+  	
+    respond_to do |format|
+      format.html { redirect_to(admin_utilities_path) }
+      format.xml  { head :ok }
+    end
+  end
+  
   def rename_by_file_name
     
     # set up the directories
