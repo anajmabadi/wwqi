@@ -5,7 +5,7 @@ class Admin::ImagesController < Admin::AdminController
     @item = Item.find(params[:item_id])
     @images = @item.images
 
-    session[:_qajar_session][:admin_item_images_index_url] = request.fullpath
+    session[:admin_item_images_index_url] = request.fullpath
 
     respond_to do |format|
       format.html # index.html.erb

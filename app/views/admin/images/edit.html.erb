@@ -1,7 +1,7 @@
 <% @page_description = t(:edit_description) -%>
 <% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<% @back_path = session[:_qajar_session][:admin_item_images_index_url] ||= admin_item_images_path %>
+<% @back_path = session[:admin_item_images_index_url] ||= admin_item_images_path %>
 <% @show_path = admin_item_image_path(@item, @image) %>
 
 <div id="staticContent" class="clearfix">

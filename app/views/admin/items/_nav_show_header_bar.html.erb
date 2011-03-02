@@ -3,7 +3,7 @@
         <h1><%= link_to controller.controller_name.capitalize, admin_items_path  %> | Show </h1>
     </div>
     <div class="tools">
-        <%= link_to 'Back', session[:_qajar_session][:admin_items_index_url] ||= admin_items_path %> |
+        <%= link_to 'Back', session[:admin_items_index_url] ||= admin_items_path %> |
         <%= link_to_unless items.nil? || items.index(item) == 0, 'Previous', :controller => 'admin/items', :action => :show, :id => items[items.index(item)-1]  %> |
         <%= link_to_unless items.nil? || items.index(item) == items.size - 1, 'Next', :controller => 'admin/items', :action => :show, :id => items[items.index(item)+1]  %> |
         <%= link_to 'Edit', edit_admin_item_path(item) %> |

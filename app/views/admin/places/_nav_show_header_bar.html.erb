@@ -3,7 +3,7 @@
     <h1><%= link_to controller.controller_name.humanize.capitalize, admin_places_path  %> | Show </h1>
   </div>
   <div class="tools">
-    <%= link_to 'Back', session[:_qajar_session][:admin_places_index_url] ||= admin_places_path %> |
+    <%= link_to 'Back', session[:admin_places_index_url] ||= admin_places_path %> |
     <%= link_to 'Edit', edit_admin_place_path(place) %> |
     <%= link_to 'Delete', admin_place_path(place), :method => :delete, :confirm => "Are you sure you want to delete this place?" %> |
     <%= link_to "New", new_admin_place_path %>

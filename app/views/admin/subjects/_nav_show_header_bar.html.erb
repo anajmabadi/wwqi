@@ -3,7 +3,7 @@
         <h1><%= link_to controller.controller_name.capitalize, admin_subjects_path  %> | Show </h1>
     </div>
     <div class="tools">
-        <%= link_to 'Back', session[:_qajar_session][:admin_subjects_index_url] ||= admin_subjects_path %> |
+        <%= link_to 'Back', session[:admin_subjects_index_url] ||= admin_subjects_path %> |
         <% unless @subjects.nil? || subject.nil? -%>
         <%= link_to_unless @subjects.index(subject) == 0, 'Previous', :action => :show, :id => @subjects[@subjects.index(subject)-1]  %> |
         <%= link_to_unless @subjects.index(subject) == @subjects.size - 1, 'Next', :action => :show, :id => @subjects[@subjects.index(subject)+1]  %> |

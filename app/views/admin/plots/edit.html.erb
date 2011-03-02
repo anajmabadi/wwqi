@@ -1,7 +1,7 @@
 <% @page_description = t(:edit_description) -%>
 <% @page_title = controller.controller_name.capitalize + '| ' + 'Edit' -%>
 
-<% @back_path = session[:_qajar_session][:admin_plots_index_url] ||= admin_plots_path %>
+<% @back_path = session[:admin_plots_index_url] ||= admin_plots_path %>
 <% @show_path = admin_plot_path(@plot) %>
 
 <div id="staticContent" class="clearfix">

@@ -31,13 +31,13 @@ class Admin::PeopleController < Admin::AdminController
     @people = sort_bilingual(@people, params[:c], params[:d]) if ["name_en", "name_fa", "collection_name_en"].include?params[:c]
 
     #cache the current search set in a session variable
-    session[:_qajar_session][:admin_people_index_url] = request.fullpath
+    session[:admin_people_index_url] = request.fullpath
 
     #cache the current search set in a session variable
-    session[:_qajar_session][:current_people] = @people.map { |i| i.id }
-    session[:_qajar_session][:people_sort_field] = params[:c]
-    session[:_qajar_session][:people_direction] = params[:d]
-    session[:_qajar_session][:people_order] = @order
+    session[:current_people] = @people.map { |i| i.id }
+    session[:people_sort_field] = params[:c]
+    session[:people_direction] = params[:d]
+    session[:people_order] = @order
 
     respond_to do |format|
       format.html # index.html.erb
@@ -188,16 +188,16 @@ class Admin::PeopleController < Admin::AdminController
 
   def load_people(person)
 
-    order = session[:_qajar_session][:people_order] ||= 'people.id'
+    order = session[:people_order] ||= 'people.id'
 
     #check if there is a current results set (i.e. something from the browser)
-    unless session[:_qajar_session][:current_people].nil? || session[:_qajar_session][:current_people].empty? || !session[:_qajar_session][:current_people].include?(person.id)
-      people = Person.where(['people.id IN (?)', session[:_qajar_session][:current_people]]).order(order)
+    unless session[:current_people].nil? || session[:current_people].empty? || !session[:current_people].include?(person.id)
+      people = Person.where(['people.id IN (?)', session[:current_people]]).order(order)
     else
     people = Person.order(order).all
     end
 
-    people = sort_bilingual(people, session[:_qajar_session][:people_sort_field], session[:_qajar_session][:people_direction]) if ["name_en", "name_fa"].include?session[:_qajar_session][:people_sort_field]
+    people = sort_bilingual(people, session[:people_sort_field], session[:people_direction]) if ["name_en", "name_fa"].include?session[:people_sort_field]
     return people
   end
   

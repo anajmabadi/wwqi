@@ -6,12 +6,12 @@ class ExhibitsController < ApplicationController
 
   def show
     @exhibition = Exhibition.find(params[:id])
-    session[:_qajar_session][:return_url] = request.fullpath
-    session[:_qajar_session][:current_items] = items_set(@exhibition.items)
+    session[:return_url] = request.fullpath
+    session[:current_items] = items_set(@exhibition.items)
   end
 
   def detail
-    @return_url = (session[:_qajar_session][:return_url].nil?) ? '/exhibits' : session[:_qajar_session][:return_url]
+    @return_url = (session[:return_url].nil?) ? '/exhibits' : session[:return_url]
 
     begin
       @item = Item.find_by_id(params[:id])
@@ -19,8 +19,8 @@ class ExhibitsController < ApplicationController
       # we need to keep the current search items here
 
       #get the latest result set
-      unless session[:_qajar_session][:current_items].nil? || session[:_qajar_session][:current_items].length < 1 || !session[:_qajar_session][:current_items].include?(@item.id)
-        @items = Item.find(session[:_qajar_session][:current_items], :order => 'item_translations.title')
+      unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
+        @items = Item.find(session[:current_items], :order => 'item_translations.title')
       else
         @items = Item.find(:all, :conditions => "publish=1", :order => "item_translations.title" )
         # check if the item is part of the set

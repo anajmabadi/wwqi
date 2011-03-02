@@ -3,7 +3,7 @@
     <h1><%= link_to controller.controller_name.capitalize, admin_periods_path  %> | Show </h1>
   </div>
   <div class="tools">
-    <%= link_to 'Back', session[:_qajar_session][:admin_periods_index_url] ||= admin_periods_path %> |
+    <%= link_to 'Back', session[:admin_periods_index_url] ||= admin_periods_path %> |
     <%= link_to 'Edit', edit_admin_period_path(period) %> |
     <%= link_to 'Delete', admin_period_path(period), :method => :delete, :confirm => "Are you sure you want to delete this period?" %> |
     <%= link_to "New", new_admin_period_path %>

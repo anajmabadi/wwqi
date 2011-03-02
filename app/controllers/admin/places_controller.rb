@@ -26,7 +26,7 @@ class Admin::PlacesController < Admin::AdminController
     @places = sort_bilingual(@places, params[:c], params[:d]) if ["name_en", "name_fa"].include?(params[:c])
 
     #cache the current search set in a session variable
-    session[:_qajar_session][:admin_places_index_url] = request.fullpath
+    session[:admin_places_index_url] = request.fullpath
 
     respond_to do |format|
       format.html # index.html.erb
