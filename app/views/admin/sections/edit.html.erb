@@ -1,7 +1,7 @@
 <% @page_description = t(:edit_description) -%>
 <% @page_title = 'Sections | Edit' -%>
 
-<% @back_path = session[:admin_sections_index_url] ||= admin_sections_path %>
+<% @back_path = session[:_qajar_session][:admin_sections_index_url] ||= admin_sections_path %>
 <% @show_path = admin_section_path(@section) %>
 
 <div id="staticContent" class="clearfix">

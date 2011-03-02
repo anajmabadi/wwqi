@@ -3,7 +3,7 @@
     <h1><%= link_to controller.controller_name.capitalize, admin_comps_path  %> | Show </h1>
   </div>
   <div class="tools">
-    <%= link_to 'Back', session[:admin_comps_index_url] ||= admin_comps_path %> |
+    <%= link_to 'Back', session[:_qajar_session][:admin_comps_index_url] ||= admin_comps_path %> |
     <%= link_to 'Edit', edit_admin_comp_path(comp) %> |
     <%= link_to 'Delete', admin_comp_path(comp), :method => :delete, :confirm => "Are you sure you want to delete this comp?" %> |
     <%= link_to "New", new_admin_comp_path %>

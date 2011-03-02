@@ -3,7 +3,7 @@
     <h1><%= link_to controller.controller_name.capitalize, admin_repositories_path  %> | Show </h1>
   </div>
   <div class="tools">
-    <%= link_to 'Back', session[:admin_repositories_index_url] ||= admin_repositories_path %> |
+    <%= link_to 'Back', session[:_qajar_session][:admin_repositories_index_url] ||= admin_repositories_path %> |
     <%= link_to 'Edit', edit_admin_repository_path(repository) %> |
     <%= link_to 'Delete', admin_repository_path(repository), :method => :delete, :confirm => "Are you sure you want to delete this repository?" %> |
     <%= link_to "New", new_admin_repository_path %>

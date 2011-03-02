@@ -6,7 +6,7 @@ class ArchiveController < ApplicationController
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def clear_my_items
 
-    @return_url = session[:archive_url].nil? ? archive_path : session[:archive_url]
+    @return_url = session[:_qajar_session][:archive_url].nil? ? archive_path : session[:_qajar_session][:_qajar_session[:_qajar_session]][:archive_url]
 
     forget_all
 
@@ -19,9 +19,9 @@ class ArchiveController < ApplicationController
   def index
     load_filter_models(true)
     
-   #cache the current search set in a session variable
-    session[:archive_url] = request.fullpath
-    session[:current_items] = nil
+   #cache the current search set in a session[:_qajar_session] variable
+    session[:_qajar_session][:archive_url] = request.fullpath
+    session[:_qajar_session][:current_items] = nil
   end
 
   def collections
@@ -41,7 +41,7 @@ class ArchiveController < ApplicationController
 
   def collection_detail
 
-    @return_url = session[:archive_url].nil? ? archive_path : session[:archive_url]
+    @return_url = session[:_qajar_session][:archive_url].nil? ? archive_path : session[:_qajar_session][:archive_url]
 
     @error = false
     begin
@@ -74,7 +74,7 @@ class ArchiveController < ApplicationController
   end
 
   def subjects
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:_qajar_session][:archive_url].nil?) ? '/archive' : session[:_qajar_session][:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
     @all_subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 7, I18n.locale.to_s]).order('subject_translations.name')
@@ -91,7 +91,7 @@ class ArchiveController < ApplicationController
 
   def places
 
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:_qajar_session][:archive_url].nil?) ? '/archive' : session[:_qajar_session][:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
     @all_places = Place.includes("plots").select('DISTINCT places.id').where(['places.publish=? AND place_translations.locale=? AND plots.id IS NOT NULL', true, I18n.locale.to_s]).order('place_translations.name')
@@ -109,7 +109,7 @@ class ArchiveController < ApplicationController
 
   def people
 
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:_qajar_session][:archive_url].nil?) ? '/archive' : session[:_qajar_session][:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
     @all_people = Person.includes("appearances").select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND appearances.id IS NOT NULL', true, I18n.locale.to_s]).order('person_translations.name')
@@ -127,7 +127,7 @@ class ArchiveController < ApplicationController
 
   def genres
 
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:_qajar_session][:archive_url].nil?) ? '/archive' : session[:_qajar_session][:archive_url]
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
     @all_genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 8, I18n.locale.to_s]).order('subject_translations.name')
@@ -146,7 +146,7 @@ class ArchiveController < ApplicationController
   def drop_filter
   	filter_name = params[:filter_name].to_sym
   	value = params[:value]
-    filter_stack = session[:filter_stack]
+    filter_stack = session[:_qajar_session][:filter_stack]
   	
   	unless filter_name.nil? || filter_stack.nil?
   		if value.to_i != 0
@@ -160,8 +160,8 @@ class ArchiveController < ApplicationController
   		end
   	end 
   	
-  	# resave this as a session
-  	session[:filter_stack] = filter_stack
+  	# resave this as a session[:_qajar_session]
+  	session[:_qajar_session][:filter_stack] = filter_stack
   	
   	respond_to do |format|
     	format.html { redirect_to(archive_browser_path, :notice => I18n.translate(:filter_removed_notice)) }
@@ -171,11 +171,11 @@ class ArchiveController < ApplicationController
 
   def browser
     
-    #grab view mode, using session or default of list if not present or junky
-    @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:view_mode] || 'list'
+    #grab view mode, using session[:_qajar_session] or default of list if not present or junky
+    @view_mode = ['list','grid'].include?(params[:view_mode]) ? params[:view_mode] : session[:_qajar_session][:view_mode] || 'list'
 
     #grab the sort mode
-    @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : (session[:sort_mode].blank? ? 'alpha_asc' : session[:sort_mode])
+    @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : (session[:_qajar_session][:sort_mode].blank? ? 'alpha_asc' : session[:_qajar_session][:sort_mode])
     @order = build_order_query(@sort_mode)
 
     # paginate the items
@@ -209,7 +209,7 @@ class ArchiveController < ApplicationController
     @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
     
    	# prepend any existing searches
-  	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
+  	@filters = prepend_existing_filters(@filters, session[:_qajar_session][:filter_stack]) unless session[:_qajar_session][:filter_stack].nil? || params[:reset] == 'true'
   	
 	# contruct sql for simple filters
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s }, :labels => []}
@@ -248,26 +248,26 @@ class ArchiveController < ApplicationController
     #build query label stack
     @query_labels = (@reset || @query_hash[:labels].empty?) ? [{:field => I18n.translate(:all_items)}] : @query_hash[:labels]
 
-    #cache the current search set in a session variable
-    session[:archive_url] = request.fullpath
-    session[:current_items] = @item_ids
-    session[:view_mode] = @view_mode
-    session[:sort_mode] = @sort_mode
-    session[:filter_stack] = @reset ? nil : @filters
+    #cache the current search set in a session[:_qajar_session] variable
+    session[:_qajar_session][:archive_url] = request.fullpath
+    session[:_qajar_session][:current_items] = @item_ids
+    session[:_qajar_session][:view_mode] = @view_mode
+    session[:_qajar_session][:sort_mode] = @sort_mode
+    session[:_qajar_session][:filter_stack] = @reset ? nil : @filters
   end
 
   def detail
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:_qajar_session][:archive_url].nil?) ? '/archive' : session[:_qajar_session][:archive_url]
     @my_archive_ids = my_archive_from_cookie
 
     begin
       @item = Item.find_by_id(params[:id])
 
       #check if there is a current results set (i.e. something from the browser)
-      unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
-        @items = Item.find(session[:current_items], :order => 'item_translations.title')
+      unless session[:_qajar_session][:current_items].nil? || session[:_qajar_session][:current_items].length < 1 || !session[:_qajar_session][:current_items].include?(@item.id)
+        @items = Item.find(session[:_qajar_session][:current_items], :order => 'item_translations.title')
       else
-        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
+        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:_qajar_session][:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
         @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
       end
@@ -832,7 +832,7 @@ def build_genre_query(filter_value, query_hash)
   	@reset = true
     @item_ids = nil
     @filters = {}
-    session[:filter_stack] = nil
+    session[:_qajar_session][:filter_stack] = nil
   end
   
 end

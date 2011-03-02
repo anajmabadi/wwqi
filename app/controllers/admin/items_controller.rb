@@ -70,16 +70,16 @@ class Admin::ItemsController < Admin::AdminController
     @items = sort_bilingual(@items, params[:c], params[:d]) if ["title_en", "title_fa"].include?params[:c]
 
     #cache the current search set in a session variable
-    session[:current_items] = @items.map { |i| i.id }
-    session[:items_sort_field] = params[:c]
-    session[:items_direction] = params[:d]
-    session[:items_order] = @order
+    session[:_qajar_session][:current_items] = @items.map { |i| i.id }
+    session[:_qajar_session][:items_sort_field] = params[:c]
+    session[:_qajar_session][:items_direction] = params[:d]
+    session[:_qajar_session][:items_order] = @order
 
     @items_full_set = @items
     @items = @items.paginate :per_page => @per_page, :page => @page, :order => @order
 
     #cache the current search set in a session variable
-    session[:admin_items_index_url] = request.fullpath
+    session[:_qajar_session][:admin_items_index_url] = request.fullpath
 
     respond_to do |format|
       format.html # index.html.erb
@@ -96,7 +96,7 @@ class Admin::ItemsController < Admin::AdminController
 
   def export
     begin
-      @items = Item.find(session[:current_items])
+      @items = Item.find(session[:_qajar_session][:current_items])
       @items = Item.all if @items.empty?
     rescue => error
       flash[:error] = "There was a problem finding the current item set: " + error.message
@@ -121,7 +121,7 @@ class Admin::ItemsController < Admin::AdminController
   # GET /items/1.xml
   def show
     @persian_focus = !params[:persian_focus].blank? && params[:persian_focus] == 'true' ? true : false
-    @return_url = session[:admin_items_index_url]
+    @return_url = session[:_qajar_session][:admin_items_index_url]
     begin
       @items = load_items(@item)
     rescue StandardError => error
@@ -604,13 +604,13 @@ class Admin::ItemsController < Admin::AdminController
 
   def load_items(item)
     #check if there is a current results set (i.e. something from the browser)
-    order = session[:items_order] ||= 'items.id'
-    unless session[:current_items].nil? || session[:current_items].empty? || !session[:current_items].include?(item.id)
-      items = Item.where(['items.id IN (?)', session[:current_items]]).order(order)
+    order = session[:_qajar_session][:items_order] ||= 'items.id'
+    unless session[:_qajar_session][:current_items].nil? || session[:_qajar_session][:current_items].empty? || !session[:_qajar_session][:current_items].include?(item.id)
+      items = Item.where(['items.id IN (?)', session[:_qajar_session][:current_items]]).order(order)
     else
     items = Item.order(order).all
     end
-    items = sort_bilingual(items, session[:items_sort_field], session[:items_direction]) if ["title_en", "title_fa"].include?session[:items_sort_field]
+    items = sort_bilingual(items, session[:_qajar_session][:items_sort_field], session[:_qajar_session][:items_direction]) if ["title_en", "title_fa"].include?session[:_qajar_session][:items_sort_field]
     return items
   end
 

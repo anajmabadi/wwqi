@@ -3,7 +3,7 @@
     <h1><%= link_to controller.controller_name.capitalize, admin_item_images_path  %> | Show </h1>
   </div>
   <div class="tools">
-    <%= link_to 'Back', session[:admin_item_images_index_url] ||= admin_item_images_path %> |
+    <%= link_to 'Back', session[:_qajar_session][:admin_item_images_index_url] ||= admin_item_images_path %> |
     <%= link_to 'Edit', edit_admin_item_image_path(@item, image) %> |
     <%= link_to 'Delete', admin_item_image_path(@item, image), :method => :delete, :confirm => "Are you sure you want to delete this image?" %> |
     <%= link_to "New", new_admin_item_image_path %>

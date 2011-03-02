@@ -31,12 +31,12 @@ class Admin::SubjectsController < Admin::AdminController
     @subject_types = SubjectType.select_list
 
     #cache the current search set in a session variable
-    session[:admin_subjects_index_url] = request.fullpath
+    session[:_qajar_session][:admin_subjects_index_url] = request.fullpath
     #cache the current search set in a session variable
-    session[:current_subects] = @subjects.map { |i| i.id }
-    session[:subject_sort_field] = params[:c]
-    session[:subject_direction] = params[:d]
-    session[:subject_order] = @order
+    session[:_qajar_session][:current_subects] = @subjects.map { |i| i.id }
+    session[:_qajar_session][:subject_sort_field] = params[:c]
+    session[:_qajar_session][:subject_direction] = params[:d]
+    session[:_qajar_session][:subject_order] = @order
 
     respond_to do |format|
       format.html # index.html.erb
@@ -132,7 +132,7 @@ class Admin::SubjectsController < Admin::AdminController
         else
           flash[:error] = @failure_message
         end
-        format.html { redirect_to(session[:admin_subjects_index_url] ||= admin_subjects_path) }
+        format.html { redirect_to(session[:_qajar_session][:admin_subjects_index_url] ||= admin_subjects_path) }
         format.xml  { head :ok }
       end
     end
@@ -173,16 +173,16 @@ class Admin::SubjectsController < Admin::AdminController
 
   def load_subjects(subject)
 
-    order = session[:subject_order] ||= 'subjects.id'
+    order = session[:_qajar_session][:subject_order] ||= 'subjects.id'
 
     #check if there is a current results set (i.e. something from the browser)
-    unless session[:current_subjects].nil? || session[:current_subjects].empty? || !session[:current_subjects].include?(subject.id)
-      subjects = Subject.where(['subjects.id IN (?)', session[:current_subjects]]).order(order)
+    unless session[:_qajar_session][:current_subjects].nil? || session[:_qajar_session][:current_subjects].empty? || !session[:_qajar_session][:current_subjects].include?(subject.id)
+      subjects = Subject.where(['subjects.id IN (?)', session[:_qajar_session][:current_subjects]]).order(order)
     else
       subjects = Subject.order(order).all
     end
 
-    subjects = sort_bilingual(subjects, session[:subject_sort_field], session[:subject_direction]) if ["name_en", "name_fa"].include?session[:subject_sort_field]
+    subjects = sort_bilingual(subjects, session[:_qajar_session][:subject_sort_field], session[:_qajar_session][:subject_direction]) if ["name_en", "name_fa"].include?session[:_qajar_session][:subject_sort_field]
     return subjects
   end
 end
