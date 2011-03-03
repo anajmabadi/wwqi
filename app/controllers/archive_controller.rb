@@ -180,7 +180,7 @@ class ArchiveController < ApplicationController
 
     # paginate the items
     @page = params[:page] ||= 1
-    @per_page = params[:per_page] ||= Item.per_page ||= 100
+    @per_page = params[:per_page] ||= Item.per_page ||= 25
     
     #grab filter categories
     @filters = {}

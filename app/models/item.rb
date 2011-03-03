@@ -42,7 +42,7 @@ class Item < ActiveRecord::Base
   
   # pagination code
   cattr_reader :per_page
-  @@per_page = 100
+  @@per_page = 25
 
   
   # validations
