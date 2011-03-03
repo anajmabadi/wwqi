@@ -1464,7 +1464,7 @@ div.slideshow ul li a.title{
 
 #zoomify_pane{position:relative}
 #downloadImage{
-	display:block;
+	display:none;
 	width:65px;
 	height:15px;
 	background:url(/images/btn_download.gif) top left no-repeat;
