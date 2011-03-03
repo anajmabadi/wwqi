@@ -1,9 +1,10 @@
 <div id="search-result-tools">
-    <a class="redButton right actions-dropdown-button"><%= t(:selection_action_button).titleize %></a>
-    <div class="actions-dropdown">
-        <a href="#" id="add-to-my-selections"><%= t(:add_to_my_archive) %></a>
-        <a href="#" id="email-items"><%= t(:email_citation) %></a>
-        <a href="#" id="download-items"><%= t(:download_citation) %></a>
-    </div>
+	<% unless @item_ids.empty? -%>
+		<% if @filters[:my_archive_filter].nil? || @filters[:my_archive_filter].empty? -%>
+	    <%= link_to t(:add_all_to_my_archive).titleize, archive_browser_remember_path(:ids => @item_ids ), :method => "POST", :confirm => t(:add_all_to_my_archive), :class =>"redButton right" %>
+	    <% else -%>
+	        <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path(:ids => @item_ids ), :method => "POST", :confirm => t(:clear_my_items), :class =>"redButton right" %>
+		<% end -%>
+	<% end -%>
 </div>
 <h2><%= raw format_results_message(items, query_labels) %></h2>
