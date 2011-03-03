@@ -2,7 +2,7 @@ class Admin::ClipsController < Admin::AdminController
   # GET /clips
   # GET /clips.xml
   def index
-    @order =  sort_order('clip_translations.title')
+    @order =  sort_order('item_id')
     @clips = Clip.includes(:item, :clip_type).order(@order)
     respond_to do |format|
       format.html # index.html.erb
@@ -93,7 +93,7 @@ class Admin::ClipsController < Admin::AdminController
   private
 
   def items_list
-    return Item.select(['items.title', 'items.id']).order('item_translations.title').map { |i| [i.to_label, i.id] }
+    return Item.select(['item_translations.title', 'items.id']).order('items.id').map { |i| [ "#{i.id.to_s}: #{ i.title}", i.id] }
   end
   def clip_types_list
     return ClipType.select(['name', 'id']).order('name').map { |c| [c.name, c.id] }
