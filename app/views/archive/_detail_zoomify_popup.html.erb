@@ -8,12 +8,14 @@
                 <li>
                     Page <%= current_page %> of <%= item.pages %>
                 </li>
+                <% if item.pages > 1 -%>
                 <li>
                     <%= link_to t(:previous).titleize, "#" %>
                 </li>
                 <li>
                     <%= link_to t(:next).titleize, "#" %>
                 </li>
+                <% end -%>
             </ul>
             <ul class="right">
                 <li class="last">
