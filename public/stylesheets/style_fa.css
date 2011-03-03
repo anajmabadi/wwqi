@@ -2705,6 +2705,7 @@ div.field {
 .add_this_tools{
 	float:right;
 	margin:2px 0 0 0;
+	width: 105px;
 }
 
 #item_details .paginationBar{
