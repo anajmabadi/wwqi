@@ -1,5 +1,5 @@
 	<% unless @reset -%>
-<h3 class="active"><%= link_to t(:related_collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
+<h3 class="active"><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
 <div class="list" style="display:block">
 	<% else -%>
 <h3><%= link_to t(:collections).titleize, archive_collections_path, :title => 'A group of items.' %></h3>
