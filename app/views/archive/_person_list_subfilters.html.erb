@@ -1,8 +1,7 @@
 	<% unless @reset -%>
-		<h3 class="active"><%= link_to(t(:related_people).titleize, archive_people_path) %></h3>
+		<h3 class="active"><%= link_to(t(:people).titleize, archive_people_path) %></h3>
 		<div class="list"  style="display:block">
 	<% else -%>
-		<h3><%= link_to(t(:people).titleize, archive_people_path) %></h3>
 		<div class="list">	
 	<% end -%>
     <ul class="default">
