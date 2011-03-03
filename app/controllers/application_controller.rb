@@ -73,7 +73,7 @@ class ApplicationController < ActionController::Base
   end
   
   def my_archive_to_cookie(my_ids=[])
-    cookies.permanent[:my_archive] = my_ids.join(",")
+    cookies.permanent[:my_archive] = { :value => my_ids.join(","), :key => "_session_id", :domain => :all }
     return my_ids == my_archive_from_cookie
   end
 
