@@ -839,7 +839,7 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 .leftWrapperFooter { float: left; width: 550px; }
 .rightWrapperFooter { float: right; width:320px; }
 
-#pageFooter ul { list-type: none; padding: 0; margin: 0; }
+#pageFooter ul { list-style: none; padding: 0; margin: 0; }
 
 .rightWrapperFooter ul{
     margin-top:15px !important;
@@ -1463,8 +1463,11 @@ div.slideshow ul li a.title{
 }
 
 #zoomify_pane{position:relative}
+
+/* cf hacks for zoomify pane */
+
 #downloadImage{
-	display:block;
+	display:none;
 	width:65px;
 	height:15px;
 	background:url(/images/btn_download.gif) top left no-repeat;
@@ -1477,6 +1480,42 @@ div.slideshow ul li a.title{
 	position:absolute;
 }
 
+div.zoomify_pagination{
+	margin-top: 20px;
+}
+
+div.zoomify_pagination ul {
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+}
+
+div.zoomify_pagination ul.left {
+	float: left;
+}
+
+div.zoomify_pagination ul.right {
+	float: right;
+}
+
+div.zoomify_pagination li {
+    display: inline;
+	padding-right: 20px;
+    line-height: 1.8em;
+    font-size:11px;
+}
+
+div.zoomify_pagination li.last {
+	padding-right: 0px;
+}
+
+div.jump_menu {
+	display: inline;
+}
+
+div.jump_menu form {
+	display: inline;
+}
 
 
 /* new browser filters

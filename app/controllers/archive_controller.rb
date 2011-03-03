@@ -268,10 +268,15 @@ class ArchiveController < ApplicationController
   def detail
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
+    
+    # grab and zoomify parameters
+    @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
+    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
+    @zoomify_show = params[:zoomify_show] == 'true'
 
     begin
       @item = Item.find_by_id(params[:id])
-
+	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.position').map { |s| [s.name, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')

@@ -2,13 +2,13 @@
 <% @page_title = t(:detail).capitalize -%>
 
 <% content_for :head do %>
-<%= render 'head_detail_content' %>
+<%= render :partial => 'head_detail_content', :locals => { :item => @item, :zoomify_page => @zoomify_page } %>
 <% if @item.has_clip? -%>
 <%= render :partial => 'head_detail_audio_content', :locals => { :mp3_name => @item.clips[0].clip_url('mp3'), :wav_name => @item.clips[0].clip_url('wav') } %>
 <% end %>
 <% end %>
 
-<%= render :partial => "detail_item_preview", :locals => { :item => @item } %>
+<%= render :partial => "detail_item_preview", :locals => { :item => @item, :zoomify_page => @zoomify_page } %>
 
 <div class="clearfix archiveBigWrapper" id="item_details">
 
@@ -123,3 +123,5 @@
 </div>
 <%= render :partial => "detail_print_popup", :locals => { :item => @item } %>
 <%= render :partial => "detail_email_popup", :locals => { :items => [@item] } %>
+<%= render :partial => "detail_zoomify_popup", :locals => { :item => @item, :current_page => @zoomify_page } %>
+
