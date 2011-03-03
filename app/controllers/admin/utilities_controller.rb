@@ -17,7 +17,7 @@ class Admin::UtilitiesController < Admin::AdminController
 	  	
 	  	my_filters.each do |my_filter|
 		  	my_filter.each do |subject|
-		  		item_ids = subject.items.is_published.select('items.id').map { |i| i.id }
+		  		item_ids = subject.items.is_published.select('items.id').map { |i| i.id.to_s }
 		  		subject.item_ids_cache = item_ids.join(",")
 		  		subject.items_count_cache = item_ids.size
 		  		subject.save
