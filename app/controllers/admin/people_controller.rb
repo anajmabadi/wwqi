@@ -142,9 +142,11 @@ class Admin::PeopleController < Admin::AdminController
     else
       additional_query += "CONCAT_WS('|',person_translations.name, person_translations.sort_name, people.loc_name, people.id) LIKE :keyword" unless filter_value.blank?
     end
+    
+    people_ids = Person.where(additional_query, :keyword => filter_value).map { |p| p.id }.uniq.sort
 
-    query_hash[:conditions] << additional_query
-    query_hash[:parameters][:keyword] = filter_value
+    query_hash[:conditions] << "people.id IN (:keyword_item_ids)"
+    query_hash[:parameters][:keyword_item_ids] = people_ids
     return query_hash
   end
 
