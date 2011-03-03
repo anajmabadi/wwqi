@@ -27,7 +27,7 @@ module ArchiveHelper
   end
 
   def format_item_image_caption(item, page)
-    return "#{ truncate(item.image_caption(page), :length => 60) }"
+    return "#{ truncate(item.title, :length => 60) } #{t(:editorial_date_prefix)}#{localized_number(page)}#{t(:editorial_date_suffix)}"
   end
 
   def archive_column_style

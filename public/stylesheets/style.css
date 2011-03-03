@@ -1506,6 +1506,14 @@ div.zoomify_pagination li.last {
 	padding-right: 0px;
 }
 
+div.jump_menu {
+	display: inline;
+}
+
+div.jump_menu form {
+	display: inline;
+}
+
 
 /* new browser filters
 -------------------------------------------------------------- */
