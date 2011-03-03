@@ -17,9 +17,10 @@ class ArchiveController < ApplicationController
   end
 
   def index
+  	@reset = true
     load_filter_models(true)
     
-   #cache the current search set in a session variable
+    #cache the current search set in a session variable
     session[:archive_url] = request.fullpath
     session[:current_items] = nil
   end
@@ -760,7 +761,7 @@ def build_genre_query(filter_value, query_hash)
   @places = Place.where(["places.publish=? AND place_translations.locale = ? AND places.items_count_cache > ?", true, I18n.locale.to_s, 0]).order("place_translations.name")
   @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 7, I18n.locale.to_s, 0]).order('subject_translations.name')
   @subfilter_mode = false
-	unless @reset
+	unless reset
       @subfilter_mode = true
       # find complete lists for searching
       @genres = find_related_objects(@genres, item_ids, 'subjects', @filters[:genre_filter])  #find_related_genres(item_ids)
@@ -832,7 +833,7 @@ def build_genre_query(filter_value, query_hash)
   	@reset = true
     @item_ids = nil
     @filters = {}
-    session[:filter_stack] = nil unless session[:_qajar_session].nil? || session[:filter_stack].nil?
+    session[:filter_stack] = nil unless session[:filter_stack].nil?
   end
   
 end
