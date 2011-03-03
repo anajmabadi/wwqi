@@ -2,37 +2,38 @@
 <% @page_title = controller.controller_name.capitalize -%>
 
 <div id="staticContent" class="clearfix">
-  <div class="onecolumn">
-       <div class="content nomargin">
-           <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_clip_path, :show_all_path => admin_clips_path } %>
-      <table  class="global" width="100%" cellpadding="0" cellspacing="0">
-        <tr>
-          <th><%= sort_link "Title", 'clip_translations.title' %></th>
-          <th>Caption</th>
-          <th><%= sort_link "Item", 'item_id' %></th>
-          <th><%= sort_link "Clip Type", 'clip_types.name' %></th>
-          <th><%= sort_link "Recorded on", 'clips.recorded_on' %></th>
-          <th><%= sort_link "Position", 'clips.position' %></th>
-          <th><%= sort_link "Publish", 'clips.publish' %></th>
-          <th>Notes</th>
-          <th>Actions</th>
-        </tr>
-
-        <% @clips.each do |clip| %>
-          <tr>
-            <td><%= truncate(clip.title) %></td>
-            <td><%= truncate(clip.caption) unless clip.caption.nil? %></td>
-            <td><%= link_to(clip.item.to_label, admin_item_path(clip.item)) unless clip.item.nil? %></td>
-            <td><%= clip.clip_type.name %></td>
-            <td><%= clip.recorded_on %></td>
-            <td><%= clip.position %></td>
-            <td><%= show_check(clip.publish) %></td>
-            <td><%= truncate(clip.notes) unless clip.notes.nil? %></td>
-            <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_clip_path(clip) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_clip_path(clip) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_clip_path(clip), :confirm => 'Are you sure?', :method => :delete %></td>
-          </tr>
-        <% end %>
-      </table>
-      <br class="clear" />
+    <div class="onecolumn">
+        <div class="content nomargin">
+            <%= render :partial => 'admin/admin/nav_header_bar', :locals => {:new_passed_path => new_admin_clip_path, :show_all_path => admin_clips_path } %>
+            <table  class="global" width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                    <th><%= sort_link "Item id", 'item_id' %></th>
+                    <th>Item Title</th>
+                    <th><%= sort_link "Id", 'clips.id' %></th>
+                    <th><%= sort_link "Title en", 'title_en' %></th>
+                    <th><%= sort_link "Title fa", 'title_fa' %></th>
+                    <th><%= sort_link "Clip Type", 'clip_types.name' %></th>
+                    <th><%= sort_link "Updated on", 'clips.updated_at' %></th>
+                    <th><%= sort_link "Position", 'clips.position' %></th>
+                    <th><%= sort_link "Publish", 'clips.publish' %></th>
+                    <th>Actions</th>
+                </tr>
+                <% @clips.each do |clip| %>
+                <tr>
+					<td><%= clip.item_id %>
+                    <td><%= link_to( truncate(clip.item.title), admin_item_path(clip.item), :title => clip.item.title) unless clip.item.nil? %></td>
+                    <td><%= clip.id %></td>
+                    <td><%= truncate(clip.title_en) %></td>
+                    <td class="persianOnly"><%= truncate(clip.title_fa) %></td>
+                    <td><%= clip.clip_type.name %></td>
+                    <td><%= clip.updated_at %></td>
+                    <td><%= clip.position %></td>
+                    <td><%= show_check(clip.publish) %></td>
+                    <td><%= link_to image_tag("page_white_text.png", :alt => 'show'), admin_clip_path(clip) %> <%= link_to image_tag("page_white_edit.png", :alt => 'edit'), edit_admin_clip_path(clip) %> <%= link_to image_tag("delete.png", :alt => 'delete'), admin_clip_path(clip), :confirm => 'Are you sure?', :method => :delete %></td>
+                </tr>
+                <% end %>
+            </table>
+            <br class="clear" />
+        </div>
     </div>
-  </div>
 </div>
