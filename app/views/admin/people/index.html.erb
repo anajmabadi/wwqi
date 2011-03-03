@@ -19,8 +19,8 @@
                 </tr>
                 <% @people.each do |person| %>
                 <tr>
-                    <td><%= person.id %> </td>
-                    <td><%= link_to person.name, admin_person_path(person) %></td>
+                    <td><%= person.id %></td>
+                    <td><%= link_to person.name_en, admin_person_path(person) %></td>
                     <td class="persianOnly"><%= person.name_fa unless person.name_fa.nil? %></td>
                     <td><%= link_to_unless person.collection.nil?, person.collection.name, admin_collection_path(person.collection) unless person.collection.nil? %></td>
                     <td><%= person.dob %></td>
