@@ -1452,7 +1452,7 @@ div.slideshow ul li a.title{
 
 #zoomify_pane{position:relative}
 #downloadImage{
-	display:block;
+	display:none;
 	width:65px;
 	height:15px;
 	background:url(/images/btn_download_fa.gif) top left no-repeat;
@@ -1463,6 +1463,43 @@ div.slideshow ul li a.title{
 	position:absolute;
 	bottom:3px;
 	right:72px;
+}
+/* cf hacks for zoomify pane */
+div.zoomify_pagination{
+	margin-top: 20px;
+}
+
+div.zoomify_pagination ul {
+	list-style: none; 
+	padding: 0; 
+	margin: 0;
+}
+
+div.zoomify_pagination ul.left {
+	float: right;
+}
+
+div.zoomify_pagination ul.right {
+	float: left;
+}
+
+div.zoomify_pagination li {
+    display: inline;
+	padding-right: 20px;
+    line-height: 1.8em;
+    font-size:11px;
+}
+
+div.zoomify_pagination li.last {
+	padding-right: 0px;
+}
+
+div.jump_menu {
+	display: inline;
+}
+
+div.jump_menu form {
+	display: inline;
 }
 
 

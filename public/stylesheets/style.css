@@ -1463,6 +1463,9 @@ div.slideshow ul li a.title{
 }
 
 #zoomify_pane{position:relative}
+
+/* cf hacks for zoomify pane */
+
 #downloadImage{
 	display:none;
 	width:65px;
