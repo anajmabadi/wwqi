@@ -173,7 +173,7 @@ class ArchiveController < ApplicationController
   def browser
   	
   	#if this request was not from browser, reset all filters
-  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer)
+  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true'
   		@item_ids = nil
     	@filters = {}
     	session[:filter_stack] = nil unless session[:filter_stack].nil?
@@ -248,8 +248,9 @@ class ArchiveController < ApplicationController
     @items = @items_full_set.paginate :per_page => @per_page, :page => @page
 
     # check for a reset condition, in which case get all
-    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2
+    
     @item_ids = @items_full_set.select("DISTINCT items.id").map { |i| i.id }.sort
+    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2 || params[:my_archive] == 'true' || @item_ids.size == 0
     
     load_filter_models(@reset, @item_ids)
 
@@ -331,11 +332,7 @@ class ArchiveController < ApplicationController
   end
 
   def forget_all
-    if my_archive_to_cookie([])
-      flash[:notice] = I18n.translate(:my_items_were_cleared)
-    else
-      flash[:notice] = I18n.translate(:my_items_were_not_cleared)
-    end
+    my_archive_to_cookie([])
   end
 
   def forget
@@ -345,13 +342,8 @@ class ArchiveController < ApplicationController
     unless id_to_forget.nil?
       my_ids = my_archive_from_cookie
       my_ids.delete(id_to_forget)
-      unless my_archive_to_cookie(my_ids)
-        flash[:notice] = "Item could not be removed from My Archive."
-      end
-    else
-      flash[:error] = "No item id to forget from My Archive."
-    end
-
+      my_archive_to_cookie(my_ids)
+	end
     respond_to do |format|
       format.html { redirect_to :back }
     end
@@ -359,19 +351,21 @@ class ArchiveController < ApplicationController
   end
 
   def remember
+	
+	unless params[:ids].nil?
+		ids_to_remember = params[:ids].map {|i| i.to_i }.reject {|i| i == 0 }.uniq.sort
+	else
+		unless params[:id].nil?
+			ids_to_remember = ([params[:id].to_i]).reject {|i| i == 0 }
+		end	
+	end
+     
 
-    id_to_remember = params[:id].to_i
-
-    unless id_to_remember.nil?
-      my_ids = my_archive_from_cookie
-      my_ids << id_to_remember
-      unless my_archive_to_cookie(my_ids)
-        flash[:notice] = "Item could not be saved to My Archive. Is you browser set to accept cookies?"
-      end
-    else
-      flash[:error] = "No item id to remember in My Archive."
+    unless ids_to_remember.nil? || ids_to_remember.empty?
+      my_ids = my_archive_from_cookie.nil? ? ids_to_remember : (my_archive_from_cookie | ids_to_remember)
+      my_archive_to_cookie(my_ids)
     end
-
+     
     respond_to do |format|
       format.html { redirect_to :back }
     end
