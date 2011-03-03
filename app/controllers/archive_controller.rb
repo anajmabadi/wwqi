@@ -1,7 +1,9 @@
 class ArchiveController < ApplicationController
 
   before_filter :reset_filters, :only => [:index, :collections, :genres, :subjects, :places]
-  
+  layout :smart_layout
+    	
+  # layout 'full_screen', :only => [:zoomify]
   # application constants
   LIBRARY_URL = "http://library.qajarwomen.org/"
   def clear_my_items
@@ -300,6 +302,42 @@ class ArchiveController < ApplicationController
     end
   end
 
+  def zoomify
+
+    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @my_archive_ids = my_archive_from_cookie
+    
+    # grab and zoomify parameters
+    @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
+    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
+    @zoomify_show = false
+
+    begin
+      @item = Item.find_by_id(params[:id])
+	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.position').map { |s| [s.name, s.id]} unless @item.sections.nil? || @item.sections.empty?
+      #check if there is a current results set (i.e. something from the browser)
+      unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
+        @items = Item.find(session[:current_items], :order => 'item_translations.title')
+      else
+        @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
+        @order = build_order_query(@sort_mode)
+        @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
+      end
+    rescue StandardError => error
+      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
+    @error = true
+    end
+
+    respond_to do |format|
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
+      else
+        redirect_to @return_url
+      end
+    end
+  end
+  
   def advanced_search
     @fields = [ [I18n.translate(:everything), 'everything'],
       [I18n.translate(:title), 'title'],
@@ -842,4 +880,11 @@ def build_genre_query(filter_value, query_hash)
     session[:filter_stack] = nil unless session[:filter_stack].nil?
   end
   
+  private 
+
+	def smart_layout 
+		full_screen_actions = ['zoomify'] 
+		full_screen_actions.include?(action_name) ? 'full_screen' : 'application' 
+	end
+
 end

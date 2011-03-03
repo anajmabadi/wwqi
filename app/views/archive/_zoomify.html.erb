@@ -1,7 +1,7 @@
 <%
-  @swf_width = '710px'
-  @swf_height = '420px'
-  @bg_color = "#FFFFFF"
+  @swf_width = full_screen ? '100%' : '710px'
+  @swf_height = full_screen ? '85%' : '420px'
+  @bg_color = full_screen ? "#333333" : "#FFFFFF"
   @allow_full_screen = "true"
 
   #variable properties

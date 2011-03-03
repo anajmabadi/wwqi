@@ -1,7 +1,10 @@
-<div id="zoomify-popup" style="display:none;">
+<div id="zoomify-popup" style="<%= hide ? 'display:none;' : '' %>">
     <div id="zoomify-popup-content" style="padding:20px;color:#fff;">
+    	<% if full_screen -%>
+    	<h3><%= format_item_image_caption(item, current_page) %></h3>
+    		<% end -%>
         <div class="zoomify_container">
-            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => 1 } %>
+            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => 1, :full_screen => full_screen } %>
         </div>
         <div class="zoomify_pagination">
             <ul class="left">
@@ -10,19 +13,19 @@
                 </li>
                 <% if item.pages > 1 -%>
 	                <li>
-	                    <%= link_to_unless current_page == 1, t(:previous).titleize, archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true) %>
+	                    <%= link_to_unless current_page == 1, t(:previous).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true) %>
 	                </li>
 	                <li>
-	                    <%= link_to_unless current_page == item.pages, t(:next).titleize, archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true) %>
+	                    <%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true) %>
 	                </li>
 	                               
 	                <li>
 	                    <div class="jump_menu page">
 	                        <span>
 	                        	<%= t(:jump_to_page_prompt) %>
-	                        	<%= form_tag(archive_detail_path(:id => item.id), {:method => 'get'}) do %>
-	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? current_page - 1 : current_page + 1, :size => 5 %>
-	                            <%= hidden_field_tag :zoomify_show, 'true' %>
+	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), {:method => 'get'}) do %>
+	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page + 1, :size => 5 %>
+	                            <%= hidden_field_tag :zoomify_show, 'false' %>
 	                            <%= submit_tag t(:go), :name => nil %>
 	                            <% end  -%>
 	                        </span>
@@ -34,8 +37,10 @@
 	                    <div class="jump_menu section">
 	                        <span>
 	                        	<%= t(:jump_to_section_prompt) %>
-	                        	<%= form_tag(archive_detail_path(:zoomify_show => 'true', :id => item.id, :zoomify_page => current_page), {:method => 'get'}) do %>
-	                            <%= select_tag :zoomify_section_id, options_for_select(@sections_list) -%>
+	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), {:method => 'get'}) do %>
+	                            <%= select_tag :zoomify_section_id, options_for_select(sections_list) -%>
+	                            <%= hidden_field_tag :zoomify_show, 'false' %>
+	                            <%= hidden_field_tag :zoomify_page, current_page %>
 	                            <%= submit_tag t(:go), :name => nil %>
 	                            <% end  -%>
 	                        </span>
@@ -47,7 +52,7 @@
             </ul>
             <ul class="right">
                 <li class="last">
-                    <%= link_to t(:view_full_screen), "#" %>
+                    <%= link_to t(:view_full_screen), archive_detail_zoomify_url(:id => item, :zoomify_page => current_page ), 'data-popup' => true unless full_screen %>
                 </li>
             </ul>
         </div>

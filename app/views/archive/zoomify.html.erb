@@ -1,0 +1,11 @@
+<% @page_description = t(:detail_description) -%>
+<% @page_title = t(:detail).capitalize -%>
+
+<% content_for :head do %>
+<%= render :partial => 'head_detail_content', :locals => { :item => @item, :zoomify_page => @zoomify_page } %>
+<% end %>
+
+<div class="clearfix" id="item_details_zoomify">
+<%= render :partial => "detail_zoomify_popup", :locals => { :item => @item, :current_page => @zoomify_page, :hide => false, :full_screen => true } %>
+</div>
+

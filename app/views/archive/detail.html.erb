@@ -123,5 +123,5 @@
 </div>
 <%= render :partial => "detail_print_popup", :locals => { :item => @item } %>
 <%= render :partial => "detail_email_popup", :locals => { :items => [@item] } %>
-<%= render :partial => "detail_zoomify_popup", :locals => { :item => @item, :current_page => @zoomify_page } %>
+<%= render :partial => "detail_zoomify_popup", :locals => { :item => @item, :current_page => @zoomify_page, :hide => true, :full_screen => false } %>
 
