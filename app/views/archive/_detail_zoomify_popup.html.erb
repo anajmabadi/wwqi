@@ -1,8 +1,25 @@
 <div id="zoomify-popup" style="display:none;">
-    <div id="print-popup-content" style="padding:20px;color:#fff;">
-		<div class="zoomify_container">
-        <%= render :partial => "zoomify", :locals => { :item => item } %>
+    <div id="zoomify-popup-content" style="padding:20px;color:#fff;">
+        <div class="zoomify_container">
+            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => 1 } %>
         </div>
-        <div>Pagination Controls TK</div>
+        <div class="zoomify_pagination">
+            <ul class="left">
+                <li>
+                    Page <%= current_page %> of <%= item.pages %>
+                </li>
+                <li>
+                    <%= link_to t(:previous).titleize, "#" %>
+                </li>
+                <li>
+                    <%= link_to t(:next).titleize, "#" %>
+                </li>
+            </ul>
+            <ul class="right">
+                <li class="last">
+                    <%= link_to t(:view_full_screen), "#" %>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>

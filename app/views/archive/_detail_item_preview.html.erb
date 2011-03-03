@@ -5,7 +5,7 @@
     <% (2..item.pages).each do |page| %>
     <a href="<%= item.slide_url(page) %>" title="<%= format_item_image_caption(item, page) %>" rel="shadowbox[gallery]"></a>
     <% end %>
-    <%= link_to t(:view_in_zoomify).titleize, "#zoomify-popup", :class => "redButton", :rel=>"shadowbox[zoomify];width=750px;height=450px;" %>
+    <%= link_to t(:view_in_zoomify).titleize, "#zoomify-popup", :class => "redButton", :rel=>"shadowbox[zoomify];width=750px;height=500px;" %>
     <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton"><%= t(:print).titleize %></a>
     <%= link_to t(:email_citation).titleize, "#email-popup", :class => "blackButton", :rel=>"shadowbox[email];width=310px;height=450px;" %>
     <%= link_to t(:download).titleize, archive_detail_download_path(item), :class => "blackButton" %>

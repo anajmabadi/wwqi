@@ -1,13 +1,13 @@
 <%
   @swf_width = '710px'
-  @swf_height = '410px'
+  @swf_height = '420px'
   @bg_color = "#FFFFFF"
   @allow_full_screen = "true"
 
   #variable properties
   if true || item.pages == 1 || item.pages.nil? #added nil so the application does not throw an error if someone deletes a page outside of rails validations
     @viewer_url = "/images/zoomify_rotate.swf"
-    @flash_vars = "zoomifyImagePath=#{item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=2&zoomifyNavigatorVisible=0"
+    @flash_vars = "zoomifyImagePath=#{item.zoomify_url(current_page)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=2&zoomifyNavigatorVisible=0"
   elsif @item.pages > 1
     @viewer_url = "/images/zoomify_gallery.swf"
     @flash_vars = "zoomifyImagePath=#{item.zoomify_url(1)}&zoomifyToolbarLogo=0&zoomifySplashScreen=0&zoomifyToolbarVisible=1&zoomifyNavigatorVisible=0&zoomifySlidesXMLPath=#{item.slides_xml_url}"
