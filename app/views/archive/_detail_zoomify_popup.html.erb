@@ -10,10 +10,10 @@
                 </li>
                 <% if item.pages > 1 -%>
                 <li>
-                    <%= link_to t(:previous).titleize, "#" %>
+                    <%= link_to_unless current_page == 1, t(:previous).titleize, "#" %>
                 </li>
                 <li>
-                    <%= link_to t(:next).titleize, "#" %>
+                    <%= link_to_unless current_page == item.pages, t(:next).titleize, "#" %>
                 </li>
                 <% end -%>
             </ul>
