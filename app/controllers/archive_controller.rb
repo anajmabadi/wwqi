@@ -173,7 +173,7 @@ class ArchiveController < ApplicationController
   def browser
   	
   	#if this request was not from browser, reset all filters
-  	if request.referrer == archive_url
+  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer)
   		@item_ids = nil
     	@filters = {}
     	session[:filter_stack] = nil unless session[:filter_stack].nil?
