@@ -4,7 +4,7 @@
     	<h3><%= format_item_image_caption(item, current_page) %></h3>
     		<% end -%>
         <div class="zoomify_container">
-            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => 1, :full_screen => full_screen } %>
+            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
         </div>
         <div class="zoomify_pagination">
             <ul class="left">
