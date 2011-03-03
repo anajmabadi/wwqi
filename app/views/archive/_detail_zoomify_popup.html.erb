@@ -25,7 +25,7 @@
 	                        	<%= t(:jump_to_page_prompt) %>
 	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), {:method => 'get'}) do %>
 	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page + 1, :size => 5 %>
-	                            <%= hidden_field_tag :zoomify_show, 'false' %>
+	                            <%= hidden_field_tag :zoomify_show, !full_screen %>
 	                            <%= submit_tag t(:go), :name => nil %>
 	                            <% end  -%>
 	                        </span>
@@ -39,7 +39,7 @@
 	                        	<%= t(:jump_to_section_prompt) %>
 	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), {:method => 'get'}) do %>
 	                            <%= select_tag :zoomify_section_id, options_for_select(sections_list) -%>
-	                            <%= hidden_field_tag :zoomify_show, 'false' %>
+	                            <%= hidden_field_tag :zoomify_show, !full_screen  %>
 	                            <%= hidden_field_tag :zoomify_page, current_page %>
 	                            <%= submit_tag t(:go), :name => nil %>
 	                            <% end  -%>
