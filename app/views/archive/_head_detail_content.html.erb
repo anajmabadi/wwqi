@@ -10,7 +10,6 @@
             player: player,
             width: width,
             height: height,
-            title: title,
             options: { animate: false }
         });
     }
@@ -23,7 +22,7 @@ Shadowbox.init();
 
 	<% if @zoomify_show -%>
 	$(window).load(function () {
-		openShadowbox( '#zoomify-popup', 'inline', 750, 500, '<%= format_item_image_caption(@item, @zoomify_page) %>' );
+		openShadowbox( '#zoomify-popup', 'inline', 750, 500 );
 	});
 
 <% end -%>

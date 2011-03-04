@@ -1480,6 +1480,11 @@ div.slideshow ul li a.title{
 	position:absolute;
 }
 
+div#zoomify_panel_title {
+	margin-bottom: 10px;
+	font-size:11px;
+	font-weight: bold;
+}
 div.zoomify_pagination{
 	margin-top: 20px;
 }
