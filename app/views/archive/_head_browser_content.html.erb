@@ -54,12 +54,7 @@
         }, function() {
             $(this).hide();
         });
-        $(".listItem").hover( function() {
-
-            $(".item-tools",this).show();
-        }, function() {
-            $(".item-tools",this).hide();
-        });
+        
 		$(".item").hover(function(){
 					
 					$("a.title",this).show('fade');
@@ -74,6 +69,10 @@
                 $(".actions-dropdown-button").addClass("disabled");
         }
         setActionsButtonState();
+		
+		$(".listItem").click( function() {
+            window.location=$(this).find("h3 a").attr("href");
+        })
 
     });
 </script>

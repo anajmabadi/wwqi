@@ -2425,7 +2425,8 @@ div.fullscreen {
 #search_results .listItem .description{
 	float:none;
 	width:auto;
-	margin-left:140px;
+	margin-left:130px;
+	margin-right:5px;
 }
 
 
@@ -2433,14 +2434,18 @@ div.fullscreen {
 /* item styles
 -------------------------------------------------------------- */
 #search_results .listItem .item{
-    width:175px;
-    height:175px;
+    width:100px; 
+	height:auto;
     position:relative;
     float:left;
-    margin:0px 5px 5px 30px;
-    overflow:hidden
+    margin:0px 5px 5px 5px;
+    overflow:hidden;
+	padding:0 10px 10px 0;
 }
 
+#search_results .listItem .item.multiple{
+	background:url("../images/bg_collection_thumb.png") no-repeat scroll right bottom transparent;
+}
 
 #search_results .item{
     width:175px;
@@ -2451,14 +2456,34 @@ div.fullscreen {
     overflow:hidden
 }
 
+#search_results .listItem p{
+	line-height:15px;
+}
+
+#search_results .listItem .item a {
+	display:inline-block;
+	position:relative;
+}
+
+#search_results .listItem .item a span {
+	background:url("../images/85black.png") repeat scroll 0 0 transparent;
+	bottom:1px;
+	color:#FFFFFF;
+	display:block;
+	height:20px;
+	left:1px;
+	line-height:20px;
+	position:absolute;
+	text-align:center;
+	width:100px;
+}
+
 #search_results .listItem.highlight{
 	background:#f4dda6;
 	border:1px solid #ccc;
 	cursor:pointer;
 }
 
-
-#search_results .listItem .item{ width:102px; height:auto;	}
 #search_results .listItem.exhibit .item{ width:185px; height:auto;	}
 
 #search_results .item img{
@@ -2471,7 +2496,7 @@ div.fullscreen {
     height:15px;
     position:absolute;
     top:5px;
-    right:5px;
+    right:12px;
     text-indent:-99999px;
     z-index:20;
 }
@@ -2486,6 +2511,29 @@ div.fullscreen {
 	top:5px;
 	left:5px;
 }
+
+#search_results .listItem .item-add{
+	width:38px;
+	height:38px;
+	display:block;
+	position:absolute;
+	top:-1px;
+	right:-1px;
+	background:url(../images/add-to-select.gif) top left no-repeat;
+	text-indent:-9999px
+}
+
+#search_results .listItem .item-remove{
+	width:38px;
+	height:38px;
+	display:block;
+	position:absolute;
+	top:-1px;
+	right:-1px;
+	background:url(../images/remove-from-select.gif) top left no-repeat;
+	text-indent:-9999px
+}
+
 
 
 #search_results .select-item{
