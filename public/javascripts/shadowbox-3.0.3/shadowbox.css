@@ -28,3 +28,74 @@
 #sb-counter a.sb-counter-current{text-decoration:underline;}
 div.sb-message{font-size:12px;padding:10px;text-align:center;}
 div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+
+
+/* over-riding shadowbox defaults for WWQI customizations */
+#sb-nav-next {
+	background:url("btn_next.png") top left no-repeat;
+	position: absolute;
+	top: 50%;
+	width: 32px!important;
+	z-index: 2;
+	cursor: pointer;
+	height: 32px!important;
+	right: 5px;
+	margin-top: -16px;
+	opacity: .7;
+}
+
+#sb-nav-next:hover{
+	opacity:1
+}
+
+#sb-nav-previous {
+	background:url("btn_prev.png") top left no-repeat;
+	position: absolute;
+	top: 50%;
+	width: 32px!important;
+	z-index: 2;
+	cursor: pointer;
+	height: 32px!important;
+	left: 5px;
+	margin-top: -16px;
+	opacity: .7;
+}
+
+#sb-nav-previous:hover{
+	opacity:1
+}
+
+#sb-info{
+	position:static
+}
+
+#sb-nav-close{
+	background-image:url(close_button.png);
+	width:30px!important;
+	height:30px!important;
+	position:absolute;
+	bottom:-10px;
+	right:-10px;
+}
+#sb-container{
+	text-align:inherit;
+}
+
+#sb-counter{
+	text-align:left;
+}
+
+#sb-title{
+	background:#000;
+	border-left:1px solid #303030;
+	border-right:1px solid #303030;
+	border-top:1px solid #303030;
+	padding:0 5px;
+}
+#sb-info{
+	border-left:1px solid #303030;
+	border-right:1px solid #303030;
+	border-bottom:1px solid #303030;
+	background:#000;
+	padding:0 5px;
+}

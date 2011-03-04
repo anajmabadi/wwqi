@@ -28,3 +28,22 @@
 #sb-counter a.sb-counter-current{text-decoration:underline;}
 div.sb-message{font-size:12px;padding:10px;text-align:center;}
 div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+
+
+/* over-riding shadowbox defaults for WWQI customizations */
+#sb-nav-next {
+	background:url("../images/btn_next.png") top left no-repeat;
+	position: absolute;
+	top: 50%;
+	width: 32px;
+	z-index: 2;
+	cursor: pointer;
+	height: 32px;
+	right: 5px;
+	margin-top: -16px;
+	opacity: .7;
+}
+
+#sb-nav-next:hover{
+	opacity:1
+}

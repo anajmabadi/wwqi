@@ -1,13 +1,13 @@
 <div id="itemPreview" style="height:auto">
     <span class="image-count"><%= localized_number(item.pages) + " " + (item.pages == 1 ? t(:image) : t(:images)) %></span>
     <img src="<%= item.thumbnail_url %>" alt="<%= item.title %>">
-    <a href="<%= item.slide_url(1) %>" title="<%= format_item_image_caption(item, 1) %>" rel="shadowbox[gallery]" title="<%= item.image_caption %>" class="redButton"><%= t(:view_in_lightbox) %></a>
+    <a href="<%= item.slide_url(1) %>" rel="shadowbox[gallery]" title="<%= item.image_caption %>" class="redButton"><%= t(:view_in_lightbox) %></a>
     <% (2..item.pages).each do |page| %>
     <a href="<%= item.slide_url(page) %>" title="<%= format_item_image_caption(item, page) %>" rel="shadowbox[gallery]"></a>
     <% end %>
-    <%= link_to t(:view_in_zoomify).titleize, "#zoomify-popup", :class => "redButton", :rel=>"shadowbox[zoomify];width=750px;height=500px;" %>
+    <%= link_to t(:view_in_zoomify).titleize, "#zoomify-popup", :class => "redButton", :rel=>"shadowbox[zoomify];width=750px;height=510px;" %>
     <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:print).titleize %></a>
-	<a rel="shadowbox[email];width=310px;height=450px;" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
+	<a rel="shadowbox[email];width=310px;height=450px;" id="email-popup" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download).titleize %></a>
 	
     <!-- TODO: need to turn the following two links into this format:
