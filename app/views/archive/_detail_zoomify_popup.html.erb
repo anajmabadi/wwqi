@@ -13,17 +13,17 @@
                 </li>
                 <% if item.pages > 1 -%>
 	                <li>
-	                    <%= link_to_unless current_page == 1, t(:previous).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true) %>
+	                    <%= link_to_unless current_page == 1, t(:previous).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true), :remote => true %>
 	                </li>
 	                <li>
-	                    <%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true) %>
+	                    <%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true), :remote => true %>
 	                </li>
 	                               
 	                <li>
 	                    <div class="jump_menu page">
 	                        <span>
 	                        	<%= t(:jump_to_page_prompt) %>
-	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), {:method => 'get'}) do %>
+	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), :remote => true) do %>
 	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page + 1, :size => 5 %>
 	                            <%= hidden_field_tag :zoomify_show, !full_screen %>
 	                            <%= submit_tag t(:go), :name => nil %>
