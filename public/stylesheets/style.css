@@ -947,6 +947,11 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
     font-weight:bold;
     margin:0;
 }
+
+#search_results .listItem h3{
+	padding-right:30px;
+}
+
 .listItem a{color:#333}
 .listItem h4{
     color:#900; margin-bottom:5px;}
@@ -2503,8 +2508,8 @@ div.fullscreen {
 
 #search_results .listItem .select-item{
 	position:absolute;
-	width:22px;
-	height:22px;
+	width:25px;
+	height:25px;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 	border-radius:3px;
@@ -2513,8 +2518,8 @@ div.fullscreen {
 }
 
 #search_results .listItem .item-add{
-	width:38px;
-	height:38px;
+	width:25px;
+	height:25px;
 	display:block;
 	position:absolute;
 	top:-1px;
