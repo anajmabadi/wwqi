@@ -1471,7 +1471,9 @@ div.slideshow ul li a.title{
 	color:#CA3723;
 }
 
-#zoomify_pane{position:relative}
+#zoomify_pane{
+	position:relative;
+}
 
 /* cf hacks for zoomify pane */
 
