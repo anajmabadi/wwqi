@@ -2,10 +2,10 @@
     <% items.each do |item| %>
     <div class="listItem clearfix">
        
-            <% unless @my_archive_ids.include?(item.id) -%>
-            <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "item-add", :title => t(:remove_from_my_archive) %>
+            <% if @my_archive_ids.include?(item.id) -%>
+            <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "item-remove", :title => t(:remove_from_my_archive) %>
             <% else -%>
-            <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "item-remove", :title => t(:add_from_my_archive) %>
+            <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "item-add", :title => t(:add_to_my_archive) %>
             <% end -%>
      
         <div class="item <%= item.has_clip? ? 'oralhistory' : '' %> <%= item.pages==1 ? '' : 'multiple' %>" >
