@@ -25,6 +25,7 @@
             <%= link_to t(:back_to_results).titleize, return_url %>
             <% unless items.size < 2 || items.nil? %>
               <%= link_to_unless items.index(item) == 0, t(:previous_item).titleize + ' « ' , archive_detail_path(:id => items[items.index(item)-1]) unless items.nil? %>
+              <%= localized_number(items.index(item)) + ' ' + t(:of) + ' ' + localized_number(items.size) + ' ' + ( items.size == 1 ? t(:item) : t(:items)) %>
               <%= link_to_unless items.index(item) == items.size - 1, ' » '  +  t(:next_item).titleize, archive_detail_path(:id => items[items.index(item)+1]) unless items.nil?  %>
         	<% end -%>
         </div>
