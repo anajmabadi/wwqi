@@ -2,3 +2,10 @@
 </script>
 <script type="text/javascript" src="/javascripts/facebox.js">
 </script>
+<script>
+	$(document).ready(function(){
+		$(".listItem").click(function(){
+			window.location = $(this).find("a").attr("href");
+		});
+	});
+</script>

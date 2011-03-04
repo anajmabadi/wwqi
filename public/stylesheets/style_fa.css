@@ -2403,7 +2403,12 @@ div.jump_menu form {
 	border-radius:5px;
 	background:url(/images/bg_cell_highlight_2.jpg) bottom left repeat-x;
 	border:1px solid #ccc;
-	margin:5px
+	margin:5px;
+	cursor:pointer;
+}
+
+#search_results .listItem:hover{
+	background:#e2e2e2;
 }
 
 #search_results .listItem .description{
@@ -2759,6 +2764,13 @@ ul.item_related li{
 	clear:right;
 }
 
+ul.item_related li.title{
+	color:#888;
+	font-size:12px;
+	border-bottom:1px solid #ddd;
+	font-weight:bold;
+}
+
 .jp-controls li{
 	overflow:visible!important;
 }
@@ -2805,6 +2817,28 @@ ul.item_meta li ul li{
 	width:775px;
 }
 
+ .textButton{
+	color:#fff;
+	display:block;
+	margin:0;
+	padding:2px 0;
+	border-bottom:1px solid #333;
+	overflow:hidden;
+}
+
+img.icon{
+	width:16px!important;
+	height:16px!important;
+	float:right;
+	margin:0 0px 0 3px;
+}
+
+#item_details #search_results a:hover{
+	text-decoration:underline;
+}
+#item_details  #item_details_wrapper{
+	background:url(/images/bg_item_details_fa.gif) -12px 0 repeat-y;
+}
 #item_details_wrapper{
 	background:url(/images/bg_item_details_fa.gif) 193px 0 repeat-y;
 	overflow:hidden;
@@ -2919,6 +2953,10 @@ ul.item_meta li ul li{
 	color:#CA3723
 }
 
+#collection_details a:hover{
+	text-decoration:underline;
+}
+
 #collection_details .redButton{
 	color:#fff;
 }
@@ -2931,6 +2969,16 @@ ul.item_meta li ul li{
 #collection_details .collection-nav a{
 	margin:0 8px 0 0;
 }
+
+#collection_details .paginationBar{
+	background:#111;
+	color:#fff;
+}
+
+#collection_details .paginationBar a{
+	color:#fff!important;
+}
+
 
 /* collection index
 -------------------------------------------------------------- */
@@ -2951,9 +2999,7 @@ ul.item_meta li ul li{
 	height:110px;
 }
 
-#collection_index .listItem h3 a{
-	color:#CA3723;
-}
+
 
 #collection_index .listItem h3 a:hover{
 	text-decoration:underline;
