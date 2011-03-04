@@ -33,7 +33,7 @@
                 <a class=""  href="<%= archive_collections_path %>"><%= t(:back_to_collections).titleize %></a>
                 <% unless @collections.size < 2 || @collections.nil? %>
                 <%= link_to_unless @collections.index(@collection) == 0, t(:previous).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)-1])  %>
-                <%= localized_number(@collections.index(@collection)) + ' ' + t(:of) + ' ' + localized_number(@collections.size) + ' ' + ( @collections.size == 1 ? t(:collection) : t(:collections)) %>
+                <span class="counts"><%= localized_number(@collections.index(@collection) + 1) + ' ' + t(:of) + ' ' + localized_number(@collections.size) + ' ' + ( @collections.size == 1 ? t(:collection) : t(:collections)) %></span>
                 <%= link_to_unless @collections.index(@collection) == @collections.size - 1, t(:next).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)+1])  %>
                 <% end -%>
             </div>

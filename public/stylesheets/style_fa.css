@@ -529,7 +529,11 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
 .pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
 .pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
-
+.pagination span.counts {
+	padding-right: 10px;
+	padding-left: 10px;
+	text-transform:none!important;
+}
 /* admin toolbar styles */
 .adminBar{
     width:850px;
@@ -2434,7 +2438,6 @@ div.jump_menu form {
     float:right;
     margin:0px 5px 5px 5px;
     overflow:hidden;
-	padding:0 10px 10px;
 }
 
 #search_results .listItem .item.multiple{
