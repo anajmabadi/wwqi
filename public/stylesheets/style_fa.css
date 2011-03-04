@@ -2836,9 +2836,11 @@ img.icon{
 #item_details #search_results a:hover{
 	text-decoration:underline;
 }
-
-#item_details_wrapper{
+#item_details  #item_details_wrapper{
 	background:url(/images/bg_item_details_fa.gif) -12px 0 repeat-y;
+}
+#item_details_wrapper{
+	background:url(/images/bg_item_details_fa.gif) 193px 0 repeat-y;
 	overflow:hidden;
 }
 
