@@ -24,7 +24,7 @@
                 <% end -%>
                 <% unless @item.description.blank? -%>
                 <li class="description">
-                    <span><%= t(:description).titleize %></span>
+                    <span><%= t(:description).titleize %>:</span>
                     <%= @item.description %>
                 </li>
                 <% end -%>
@@ -45,21 +45,21 @@
 
                 <% unless @item.show_date.blank? -%>
                 <li>
-                    <span><%= t(:date).titleize %></span>
+                    <span><%= t(:date).titleize %>:</span>
                     <%= @item.show_date %>
                 </li>
                 <% end %>
 
                 <% unless @item.dimension_label.blank? -%>
                 <li>
-                    <span><%= t(:dimensions).titleize %></span>
+                    <span><%= t(:dimensions).titleize %>:</span>
                     <%= @item.dimension_label %>
                 </li>
                 <% end -%>
 
                 <% unless @item.owner.nil? -%>
                 <li>
-                    <span><%= t(:repository).titleize %></span>
+                    <span><%= t(:repository).titleize %>:</span>
                     <%= @item.owner.name %>
                 </li>
                 <% end -%>
@@ -91,6 +91,7 @@
                 </li>
             </ul>
             <ul class="item_related">
+				<li class="title"> Related Tags </li>
                 <% unless @item.appearances.empty? -%>
                 <li>
                     <span><%= t(:people).titleize %></span>

@@ -6,14 +6,21 @@
     <a href="<%= item.slide_url(page) %>" title="<%= format_item_image_caption(item, page) %>" rel="shadowbox[gallery]"></a>
     <% end %>
     <%= link_to t(:view_in_zoomify).titleize, "#zoomify-popup", :class => "redButton", :rel=>"shadowbox[zoomify];width=750px;height=500px;" %>
-    <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="redButton"><%= t(:print).titleize %></a>
-    <%= link_to t(:email_citation).titleize, "#email-popup", :class => "blackButton", :rel=>"shadowbox[email];width=310px;height=450px;" %>
-    <%= link_to t(:download).titleize, archive_detail_download_path(item), :class => "blackButton" %>
-    <%= link_to t(:translation).titleize, "#", :class => "blackButton" unless item.transcript_en.blank? %>
-    <%= link_to t(:transcript).titleize, "#", :class => "blackButton" unless item.transcript_fa.blank? %>
+    <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:print).titleize %></a>
+	<a rel="shadowbox[email];width=310px;height=450px;" id="email-popup" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
+	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download).titleize %></a>
+	
+    <!-- TODO: need to turn the following two links into this format:
+		<a href="[some link]" class="textButton"> <img src="/images/ico_transcript.gif"> Transctipt </a>
+		<a href="[some link]" class="textButton"> <img src="/images/ico_translation.gif"> Translation </a>
+	-->
+	
+    <%= link_to t(:translation).titleize, "#", :class => "textButton" unless item.transcript_en.blank? %>
+    <%= link_to t(:transcript).titleize, "#", :class => "textButton" unless item.transcript_fa.blank? %>
+	
     <% if @my_archive_ids.include?(item.id) -%>
-    <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "blackButton" %>
+	<a href="<%= archive_detail_forget_path(item) %>" class="textButton"><img class="icon" src="/images/ico_remove.gif" >  <%= t(:remove_from_my_archive) %></a>
     <% else -%>
-    <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "blackButton" %>
+	<a href="<%= archive_detail_remember_path(item) %>" class="textButton"><img class="icon" src="/images/ico_add.gif" >  <%= t(:add_to_my_archive) %></a>
     <% end -%>
 </div>

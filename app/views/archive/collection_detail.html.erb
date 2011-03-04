@@ -6,14 +6,43 @@
 <% end %>
 
 <div class="clearfix archiveBigWrapper" id="collection_details" >
+	<!-- begin pagination bar -->
+	<div class="paginationBar clearfix">
+		<div class="add_this_tools">
+			<!-- AddThis Button BEGIN -->
+			<div class="addthis_toolbox addthis_default_style ">
+				<a class="addthis_button_favorites"></a>
+				<a class="addthis_button_twitter"></a>
+				<a class="addthis_button_facebook"></a>
+				<a class="addthis_button_preferred_1"></a>
+				<a class="addthis_button_compact"></a>
+			</div>
+			<script type="text/javascript">
+				var addthis_config =
+				{
+					data_track_clickback:true,
+					ui_language:"en"
+				};
+			</script>
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#username=qajar">
+			</script>
+			<!-- AddThis Button END -->
+		</div>
+		<div class="sortnav paginate">
+			<div class="pagination">
+			    <a class=""  href="<%= archive_collections_path %>"><%= t(:back_to_collections).titleize %></a>
+				<% unless @collections.size < 2 || @collections.nil? %>
+				<%= link_to_unless @collections.index(@collection) == 0, t(:previous).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)-1])  %>
+				<%= link_to_unless @collections.index(@collection) == @collections.size - 1, t(:next).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)+1])  %>
+				<% end -%>
+			</div>
+		</div>
+	</div>
+	<!-- end pagination bar -->
+
     <div id="search_results" class="clearfix">
-		<a class="redButton right"  href="<%= archive_collections_path %>"><%= t(:back_to_collections).titleize %></a>
-		<span class="collection-nav right">
-			<% unless @collections.size < 2 || @collections.nil? %>
-            <%= link_to_unless @collections.index(@collection) == 0, t(:previous).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)-1])  %>
-            <%= link_to_unless @collections.index(@collection) == @collections.size - 1, t(:next).titleize, archive_collection_detail_path(:id => @collections[@collections.index(@collection)+1])  %>
-        	<% end -%>
-        </span>
+		<a class="redButton right" href="<%= archive_browser_path('collection_filter[]'=> @collection.id ) %>"><%= t(:collection_view_items_prompt) %> (<%= localized_number(@collection.items_count) %> <%= @collection.items_count == 1 ? t(:item) : t(:items) %>)</a>
+		
         <h2><%= @collection.name %></h2>
         <div id="item_details_wrapper">
             <ul class="item_meta">
@@ -44,10 +73,10 @@
                 <% end -%>
             </ul>
             <ul class="item_related">
-                <li>
+               <!-- <li>
                     <span><%= t(:collection_view_items_prompt) %></span>
                     <a class="tag" href="<%= archive_browser_path('collection_filter[]'=> @collection.id ) %>"><%= localized_number(@collection.items_count) %> <%= @collection.items_count == 1 ? t(:item) : t(:items) %></a>
-                </li>
+                </li> -->
                 <li>
                     <span><%= t(:materials).titleize %></span>
                     <a class="tag" href="#">letters</a>
