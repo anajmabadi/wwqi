@@ -175,7 +175,7 @@ class ArchiveController < ApplicationController
   def browser
   	
   	#if this request was not from browser, reset all filters
-  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true'
+  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true' || !params[:keyword_filter].nil?
   		@item_ids = nil
     	@filters = {}
     	session[:filter_stack] = nil unless session[:filter_stack].nil?
@@ -296,6 +296,7 @@ class ArchiveController < ApplicationController
       unless @error
         format.html
         format.xml  { render :xml => @item }
+        format.js { render :layout => 'reload_zoomify_pane.js.erb' }
       else
         redirect_to @return_url
       end
@@ -332,6 +333,7 @@ class ArchiveController < ApplicationController
       unless @error
         format.html
         format.xml  { render :xml => @item }
+        format.js { render :layout => 'reload_zoomify_pane.js.erb' }
       else
         redirect_to @return_url
       end
