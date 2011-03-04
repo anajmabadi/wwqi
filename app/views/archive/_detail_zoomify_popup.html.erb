@@ -1,8 +1,8 @@
 <div id="zoomify-popup" style="<%= hide ? 'display:none;' : '' %>">
+	<div id="zoomify-replacement-wrapper">
+		<span>
     <div id="zoomify-popup-content" style="padding:20px;color:#fff;">
-    	<% if full_screen -%>
-    	<h3><%= format_item_image_caption(item, current_page) %></h3>
-    		<% end -%>
+    	<div id="zoomify_panel_title"><%= format_item_image_caption(item, current_page) %></div>
         <div class="zoomify_container">
             <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
         </div>
@@ -57,4 +57,6 @@
             </ul>
         </div>
     </div>
+    <span>
+    	</div>
 </div>

@@ -275,6 +275,7 @@ class ArchiveController < ApplicationController
     @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
     @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
     @zoomify_show = params[:zoomify_show] == 'true'
+    @full_screen = false
 
     begin
       @item = Item.find_by_id(params[:id])
@@ -296,7 +297,7 @@ class ArchiveController < ApplicationController
       unless @error
         format.html
         format.xml  { render :xml => @item }
-        format.js { render :layout => 'reload_zoomify_pane.js.erb' }
+        format.js { render :template => 'archive/reload_zoomify_pane.js.erb' }
       else
         redirect_to @return_url
       end
@@ -312,6 +313,7 @@ class ArchiveController < ApplicationController
     @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
     @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
     @zoomify_show = false
+    @full_screen = true
 
     begin
       @item = Item.find_by_id(params[:id])
@@ -333,7 +335,7 @@ class ArchiveController < ApplicationController
       unless @error
         format.html
         format.xml  { render :xml => @item }
-        format.js { render :layout => 'reload_zoomify_pane.js.erb' }
+        format.js { render :template => 'archive/reload_zoomify_pane.js.erb' }
       else
         redirect_to @return_url
       end
