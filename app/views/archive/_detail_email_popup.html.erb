@@ -6,12 +6,12 @@
         </p>
         <form href="<%= archive_detail_email_path %>" method="POST" >
             <div class="form_row">
-                <%= t(:from_email) %>
+                <%= t(:from_email) %> <span class="mandatory">*</span>
                 <br />
                 <input type="input" name="from" size=30 />
             </div>
             <div class="form_row">
-                <%= t(:to_email) %>
+                <%= t(:to_email) %>  <span class="mandatory">*</span>
                 <br />
                 <input type="input" name="to" size=30 />
             </div>
