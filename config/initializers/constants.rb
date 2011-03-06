@@ -4,6 +4,7 @@
 # and open the template in the editor.
 
 # application constants
+STABLE_URL = "http://www.qajarwomen.org/"
 LIBRARY_URL = "http://library.qajarwomen.org/"
 DEVELOPMENT_LIBRARY_PATH = "/volumes/passport/project_libraries/qajar_library/pub/"
 PRODUCTION_LIBRARY_PATH = "/var/www/vhosts/qajarwomen.org/subdomains/library/httpdocs/"
@@ -19,6 +20,7 @@ COLLECTION_PREFIX = "collection_"
 ZOOMIFY_DIR = "zoomify/"
 CLIPS_DIR = "clips/"
 FILE_PREFIX = "it_"
+
 
 ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT = 1000
 ARCHIVE_REFINE_RESULTS_TOP_SHOW_LIMIT = 8
