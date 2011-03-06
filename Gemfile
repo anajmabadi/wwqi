@@ -28,6 +28,8 @@ gem 'jquery-rails'
 #gem 'jalalidate'
 gem 'calendar'
 
+gem 'pdfkit'
+
 # gem "bj"
 # gem "hpricot", "0.6"
 # gem "sqlite3-ruby", :require => "sqlite3"

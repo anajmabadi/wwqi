@@ -1,6 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
+require 'pdfkit'
 
 # If you have a Gemfile, require the gems listed there, including any gems
 # you've limited to :test, :development, or :production.
@@ -45,5 +46,8 @@ module Qajar
     I18n.backend.extend(I18n::Backend::Fallbacks)
     I18n::Backend::ActiveRecord.send(:include, I18n::Backend::Cache)
     I18n.cache_store = ActiveSupport::Cache.lookup_store(:memory_store)
+    
+    # turn on the PDF middleware
+	# config.middleware.use PDFKit::Middleware
   end
 end
