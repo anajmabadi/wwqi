@@ -20,6 +20,21 @@ module ApplicationHelper
       
   end
   
+  def localized_date(my_date)
+  	day = month = year = ""
+  	unless my_date.nil? || !my_date.kind_of?(Date)
+	  	begin
+		  	year = localized_number(my_date.year)
+		  	month = Month.where('months.position = ? AND months.calendar_type_id = ?', my_date.month, 1).first.name
+		  	day = localized_number(my_date.day)
+	  	rescue e => error
+	  		flash[:error] = "Invalid accession date in item record."
+	  		
+	  	end
+  	end
+  	return "#{day.to_s} #{month} #{year.to_s}"
+  end
+  
   def language_suffix
     '_fa' if I18n.locale == :fa
   end

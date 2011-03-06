@@ -71,6 +71,52 @@ class Item < ActiveRecord::Base
   	return my_caption
   end
   
+  def full_citation
+  	my_citation = ''
+  	my_citation += self.creators  + ". " unless self.creators.blank?
+  	my_citation += self.title  + ". " unless self.title.blank?
+  	my_citation += self.published  + ". " unless self.published.blank?
+  	my_citation += '(' unless self.owner_tag.blank? && (self.owner.nil? || self.owner.credit.blank?)
+  	my_citation += self.owner_tag  + ". " unless self.owner_tag
+  	my_citation += self.repository_credit + ". " unless self.repository_credit.blank? 	
+  	my_citation += ') ' unless self.owner_tag.blank? && (self.owner.nil? || self.owner.credit.blank?)	
+  	my_citation += I18n.translate(:record_number).titleize + ": " + self.accession_num + ". " unless self.accession_num.blank? 
+  	my_citation += I18n.translate(:accessed_on).titleize + ": " + localized_date(self.collection.acquired_on) + ". " unless self.collection.nil? || self.collection.acquired_on.nil?
+  	my_citation += I18n.translate(:stable_url).titleize + ": " + self.stable_url
+  	return my_citation
+  end
+  
+  def stable_url
+  	return STABLE_URL + 'get/item/' + self.id.to_s
+  end
+  
+  def repository_credit
+  	my_credit = ''
+  	my_credit += self.owner.credit unless self.owner.nil? || self.owner.credit.blank?
+  	if my_credit == ''
+  		my_credit += self.collection.repository unless self.collection.nil? || self.collection.repository.blank? 
+  	end 
+  	return my_credit
+  end
+  
+  def creators
+  	my_label = ''
+  	my_label += self.creator_label unless self.creator_label.blank?	 
+  	if my_label == ''
+	  	begin 		
+		  	creator_ids = self.appearances.select('DISTINCT appearancesperson_id').where("appearance_translations.caption LIKE ?", '%creator%').order('appearances.person_id').map { |p| p.person_id }
+		  	people = Person.where('people.id IN (?) AND publish = ?', creator_ids, true).order('person_translations.sort_name')
+			people.each do |person|
+			  my_label += ", " unless my_label == ''
+			  my_label += person.name unless person.name.blank?
+			end
+		rescue => e
+			logger.error e.message
+		end	
+	end
+  	return my_label
+  end
+  
   def place_created_en
   	place_name = ""
   	unless self.plots.empty?

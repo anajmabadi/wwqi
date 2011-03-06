@@ -290,7 +290,7 @@ class ArchiveController < ApplicationController
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
-    @error = true
+      @error = true
     end
 
     respond_to do |format|
@@ -299,7 +299,7 @@ class ArchiveController < ApplicationController
         format.xml  { render :xml => @item }
         format.js { render :template => 'archive/reload_zoomify_pane.js.erb' }
       else
-        redirect_to @return_url
+        format.html { redirect_to @return_url }
       end
     end
   end
@@ -337,7 +337,7 @@ class ArchiveController < ApplicationController
         format.xml  { render :xml => @item }
         format.js { render :template => 'archive/reload_zoomify_pane.js.erb' }
       else
-        redirect_to @return_url
+        format.html { redirect_to @return_url }
       end
     end
   end
