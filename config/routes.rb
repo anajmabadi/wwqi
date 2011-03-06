@@ -1,5 +1,9 @@
 Qajar::Application.routes.draw do
 
+  get "find/item"
+
+  get "find/collection"
+
   get "contact/new"
 
   get "contact/confirm"
