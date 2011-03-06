@@ -1,5 +1,6 @@
 Qajar::Application.routes.draw do
 
+
   get "contact/new"
 
   get "contact/confirm"
@@ -73,6 +74,10 @@ Qajar::Application.routes.draw do
   # first created -> highest priority.
   
   match 'admin' => 'admin/admin#index'
+  
+  
+  match "find/item/:id" => 'find#item', :as => :find_item
+  match "find/collection/:id" => 'find#collection', :as => :find_collection
 
   match 'archive/clear_my_items' => 'archive#clear_my_items', :as => :archive_clear_my_items
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
