@@ -32,6 +32,9 @@
             $("#featuredContent").animate({scrollLeft: '0px'}, 300);
             return false;
         });
+		$(".featuredItem").click(function(){
+			window.location = $(this).find("a").attr("href");
+		});
     });
 </script>
 
@@ -68,6 +71,10 @@
             $("#featuredContent").animate({scrollLeft: '0px'}, 300);
             return false;
         });
+		
+		$(".featuredItem").click(function(){
+			window.location = $(this).find("a").attr("href");
+		});
     });
 </script>
 <% end -%>
