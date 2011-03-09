@@ -8,30 +8,33 @@
             fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
         });
 
-        $("#firstFeature").click( function() {
+        $("#fourthFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '1950px'}, 300);
-            return false;
-        });
-        $("#secondFeature").click( function() {
-            $(".dots a").removeClass("active");
-            $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '1300px'}, 300);
+            $("#featuredContent").animate({scrollLeft: '-2918px'}, 300);
             return false;
         });
         $("#thirdFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '650px'}, 300);
+            $("#featuredContent").animate({scrollLeft: '-1945px'}, 300);
             return false;
         });
-        $("#fourthFeature").click( function() {
+        $("#secondFeature").click( function() {
+            $(".dots a").removeClass("active");
+            $(this).addClass("active");
+            $("#featuredContent").animate({scrollLeft: '-973px'}, 300);
+            return false;
+        });
+        $("#firstFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
             $("#featuredContent").animate({scrollLeft: '0px'}, 300);
             return false;
         });
+		$(".featuredItem").click(function(){
+			window.location = $(this).find("a").attr("href");
+		});
     });
 </script>
 
@@ -44,30 +47,34 @@
             fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
         });
 
+        $("#fourthFeature").click( function() {
+            $(".dots a").removeClass("active");
+            $(this).addClass("active");
+            $("#featuredContent").animate({scrollLeft: '2918px'}, 300);
+            return false;
+        });
+        $("#thirdFeature").click( function() {
+            $(".dots a").removeClass("active");
+            $(this).addClass("active");
+            $("#featuredContent").animate({scrollLeft: '1945px'}, 300);
+            return false;
+        });
+        $("#secondFeature").click( function() {
+            $(".dots a").removeClass("active");
+            $(this).addClass("active");
+            $("#featuredContent").animate({scrollLeft: '973px'}, 300);
+            return false;
+        });
         $("#firstFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
             $("#featuredContent").animate({scrollLeft: '0px'}, 300);
             return false;
         });
-        $("#secondFeature").click( function() {
-            $(".dots a").removeClass("active");
-            $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '650px'}, 300);
-            return false;
-        });
-        $("#thirdFeature").click( function() {
-            $(".dots a").removeClass("active");
-            $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '1300px'}, 300);
-            return false;
-        });
-        $("#fourthFeature").click( function() {
-            $(".dots a").removeClass("active");
-            $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '1950px'}, 300);
-            return false;
-        });
+		
+		$(".featuredItem").click(function(){
+			window.location = $(this).find("a").attr("href");
+		});
     });
 </script>
 <% end -%>

@@ -3,9 +3,9 @@
     <div class="listItem clearfix">
        
             <% if @my_archive_ids.include?(item.id) -%>
-            <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "item-remove", :title => t(:remove_from_my_archive) %>
+            <%= link_to t(:remove_from_my_archive), archive_detail_forget_path(item), :class => "item-remove tipsy", :title => t(:remove_from_my_archive) %>
             <% else -%>
-            <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "item-add", :title => t(:add_to_my_archive) %>
+            <%= link_to t(:add_to_my_archive), archive_detail_remember_path(item), :class => "item-add tipsy", :title => t(:add_to_my_archive) %>
             <% end -%>
      
         <div class="item <%= item.has_clip? ? 'oralhistory' : '' %> <%= item.pages==1 ? '' : 'multiple' %>" >
@@ -15,7 +15,9 @@
 				<span class="image-count"><%= localized_number(item.pages) + " " + (item.pages == 1 ? t(:image) : t(:images)) %></span>
 		     <% end -%> 
             </a>
-            <%= link_to t(:audio), archive_detail_path(item.id), :title => archive_detail_path(item.id), :class => 'type' if item.has_clip? %>
+            <%= link_to t(:audio), archive_detail_path(item.id), :title => t(:audio_interview_available), :class => 'type tipsy' if item.has_clip? %>
+            <%= link_to t(:transcript), archive_detail_path(item.id), :title => t(:transcript_available), :class => 'transcript tipsy' if item.has_transcript? %>
+            <%= link_to t(:translation), archive_detail_path(item.id), :title => t(:includes_english_translation), :class => 'translation tipsy' if item.has_translation? %>
         </div>
         <div class="description">
             <!--<a class="view" href="/archive/detail/1190">view details</a>-->

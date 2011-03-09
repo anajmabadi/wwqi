@@ -13,29 +13,159 @@
     </form>
 </div>-->
 
-<div class="slide-wrap">
-  <%= link_to(image_tag("/images/slideshow1#{language_suffix}.jpg", :id => "slide-img-1", :class => "slide", :alt => raw(t(:welcome_message))), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow2#{language_suffix}.jpg", :id => "slide-img-2", :class => "slide", :alt => t(:writings)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow3#{language_suffix}.jpg", :id => "slide-img-3", :class => "slide", :alt => t(:legal_documents)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow4#{language_suffix}.jpg", :id => "slide-img-5", :class => "slide", :alt => t(:photographs)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow5#{language_suffix}.jpg", :id => "slide-img-5", :class => "slide", :alt => t(:artworks)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow6#{language_suffix}.jpg", :id => "slide-img-6", :class => "slide", :alt => t(:everyday_objects)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow7#{language_suffix}.jpg", :id => "slide-img-7", :class => "slide", :alt => t(:oral_histories)), archive_path) %>
-  <%= link_to(image_tag("/images/slideshow8#{language_suffix}.jpg", :id => "slide-img-8", :class => "slide", :alt => t(:explore_the_archive)), archive_path) %>
+<div id="home-main">
+	<div class="slide-wrap">
+	  <%= link_to(image_tag("/images/slideshow1#{language_suffix}.jpg", :id => "slide-img-1", :class => "slide", :alt => raw(t(:welcome_message))), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow2#{language_suffix}.jpg", :id => "slide-img-2", :class => "slide", :alt => t(:writings)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow3#{language_suffix}.jpg", :id => "slide-img-3", :class => "slide", :alt => t(:legal_documents)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow4#{language_suffix}.jpg", :id => "slide-img-5", :class => "slide", :alt => t(:photographs)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow5#{language_suffix}.jpg", :id => "slide-img-5", :class => "slide", :alt => t(:artworks)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow6#{language_suffix}.jpg", :id => "slide-img-6", :class => "slide", :alt => t(:everyday_objects)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow7#{language_suffix}.jpg", :id => "slide-img-7", :class => "slide", :alt => t(:oral_histories)), archive_path) %>
+	  <%= link_to(image_tag("/images/slideshow8#{language_suffix}.jpg", :id => "slide-img-8", :class => "slide", :alt => t(:explore_the_archive)), archive_path) %>
+	</div>
+	<div class="home-right">
+		<div id="about">
+		  <%= link_to(raw("<div id='head'><h2>#{t(:about_us)}</h2></div>"), about_url) %>
+		  <div id="aboutContent" class="clearfix">
+			<p><%= raw @about_page.caption %> <%= link_to t(:learn_more), about_url %></p>
+		  </div>
+		</div>
+		<div id="home_search_wrapper">
+			<h4> Search over 1,023 items in the archives </h4>
+		 		<div class="clearfix" id="simple_search">
+					<form method="get" class="searchform" action="/archive/browser">
+					  <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
+					  <button id="search" type="submit"></button>
+					</form>
+		 	</div>
+		</div>	
+	</div>
 </div>
 
-<div id="home_search_wrapper">
- <div class="clearfix" id="simple_search">
-        <form method="get" class="searchform" action="/archive/browser">
-          <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
-          <button id="search" type="submit"></button>
-        </form>
- </div>
-</div>
-	  
-<div id="about">
-  <%= link_to(raw("<div id='head'><h2>#{t(:about_us)}</h2></div>"), about_url) %>
-  <div id="aboutContent" class="clearfix">
-    <p><%= raw @about_page.caption %> <%= link_to t(:learn_more), about_url %></p>
-  </div>
-</div>
+<div id="featured">
+            	<div id="head"> 
+               
+                    <h2>Featured</h2>
+                    <ul class="dots">
+                        <li><a href="#" class="active" id="firstFeature">first</a></li>
+                        <li><a href="#" id="secondFeature">second</a></li>	
+                        <li><a href="#" id="thirdFeature">third</a></li>	
+                        <li><a href="#" id="fourthFeature" >fourth</a></li>	
+                    </ul>
+                </div>
+            	<div id="featuredContent" class="clearfix">
+                	<div id="featureContainer">
+                        <div class="featuredItem">
+							<div class="thumb">
+								<img src="/images/thumb1.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>   
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb2.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb3.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb4.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+						<div class="featuredItem">
+							<div class="thumb">
+								<img src="/images/thumb1.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>   
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb2.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb3.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb4.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+						<div class="featuredItem">
+							<div class="thumb">
+								<img src="/images/thumb1.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>   
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb2.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb3.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                        <div class="featuredItem">
+                            <div class="thumb">
+								<img src="/images/thumb4.jpg">
+							</div>
+							<div class="text">
+								<a href="#">Amazing new item added to collection</a>
+								<p> This item also has a short description to lure you into clicking on it. </p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
