@@ -4,6 +4,10 @@ class Passport < ActiveRecord::Base
 
   validates :tag, :presence => true, :length => { :maximum => 255 }
   validates :custom_url, :length => { :maximum => 255 }
+  
+  scope :is_published, lambda {
+    where(["passports.publish=?", true])
+  }
 
   def full_url
     #TODO: find right link formula for VIA
