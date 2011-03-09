@@ -1,10 +1,10 @@
 <div class="print_friendly_content">
     <p class="citation">
-        <em><%= item.full_citation %></em>
+        <em><%= @item.full_citation %></em>
     </p>
     <hr />
     <div class="essay persianOnly">
-        <%= raw item.transcript_fa unless item.transcript_fa.blank? %>
+        <%= raw @item.transcript_fa unless @item.transcript_fa.blank? %>
     </div>
     <hr />
     <p><%= t(:legal_disclaimer) %></p>
