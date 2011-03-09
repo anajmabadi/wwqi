@@ -60,6 +60,14 @@ class Item < ActiveRecord::Base
     			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish created_at updated_at thumbnail_url ]
   end 
   
+  def has_transcript?
+  	return !self.transcript_fa.blank?
+  end
+  
+  def has_translation?
+  	return !self.transcript_en.blank?
+  end
+  
   def image_caption(page=1)
   	my_caption = ""
   	my_image = self.images.where(["images.position = ?", page]).first
