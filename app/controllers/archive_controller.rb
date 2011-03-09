@@ -33,7 +33,7 @@ class ArchiveController < ApplicationController
     @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
 
     if @filter_letter.blank?
-    @collections = @all_collections
+    	@collections = @all_collections
     else
       @collections = Collection.includes("items").select('DISTINCT collection.id').where(['collections.publish=? AND private=? AND collection_translations.locale=? AND items.id IS NOT NULL AND UPPER(SUBSTRING(collection_translations.name,1,1)) = ?', true, false, I18n.locale.to_s,@filter_letter]).order('collection_translations.name')
     end
@@ -268,7 +268,7 @@ class ArchiveController < ApplicationController
   end
 
   def detail
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
     # grab and zoomify parameters
@@ -279,7 +279,7 @@ class ArchiveController < ApplicationController
 
     begin
       @item = Item.find_by_id(params[:id])
-	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.title, s.id]} unless @item.sections.nil? || @item.sections.empty?
+	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')
@@ -303,10 +303,18 @@ class ArchiveController < ApplicationController
       end
     end
   end
+  
+  def print_friendly_transcript
+  	@item = Item.find_by_id(params[:id])
+  end
+  
+  def print_friendly_translation
+  	@item = Item.find_by_id(params[:id])
+  end
 
   def zoomify
 
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
     # grab and zoomify parameters
@@ -317,7 +325,8 @@ class ArchiveController < ApplicationController
 
     begin
       @item = Item.find_by_id(params[:id])
-	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.position').map { |s| [s.name, s.id]} unless @item.sections.nil? || @item.sections.empty?
+	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
+
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')
@@ -889,7 +898,14 @@ def build_genre_query(filter_value, query_hash)
 
 	def smart_layout 
 		full_screen_actions = ['zoomify'] 
-		full_screen_actions.include?(action_name) ? 'full_screen' : 'application' 
+		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation'] 
+		if full_screen_actions.include?(action_name)
+			my_layout = 'full_screen' 
+		elsif print_friendly_actions.include?(action_name)	
+			my_layout = 'print_friendly'
+		else
+			my_layout = 'application' 
+		end
 	end
 
 end

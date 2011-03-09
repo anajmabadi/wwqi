@@ -32,7 +32,7 @@
 		  </div>
 		</div>
 		<div id="home_search_wrapper">
-			<h4> Search over 1,023 items in the archives </h4>
+			<h4><%= t(:home_search_prompt) %></h4>
 		 		<div class="clearfix" id="simple_search">
 					<form method="get" class="searchform" action="/archive/browser">
 					  <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
@@ -46,124 +46,27 @@
 <div id="featured">
             	<div id="head"> 
                
-                    <h2>Featured</h2>
+                    <h2><%= t(:featured)%></h2>
                     <ul class="dots">
-                        <li><a href="#" class="active" id="firstFeature">first</a></li>
-                        <li><a href="#" id="secondFeature">second</a></li>	
-                        <li><a href="#" id="thirdFeature">third</a></li>	
-                        <li><a href="#" id="fourthFeature" >fourth</a></li>	
+                        <li><a href="#" class="active" id="firstFeature"><%= t(:first) %></a></li>
+                        <li><a href="#" id="secondFeature"><%= t(:second) %></a></li>	
+                        <li><a href="#" id="thirdFeature"><%= t(:third) %></a></li>	
+                        <li><a href="#" id="fourthFeature" ><%= t(:fourth) %></a></li>	
                     </ul>
                 </div>
             	<div id="featuredContent" class="clearfix">
                 	<div id="featureContainer">
+                		<% @items.each do |item| -%>
                         <div class="featuredItem">
 							<div class="thumb">
-								<img src="/images/thumb1.jpg">
+								<img src="<%= item.thumbnail_url %>">
 							</div>
 							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
+								<a href="<%= archive_detail_path(item) %>" title="<%= item.title %>" class="tipsy" ><%= truncate(item.title, :length => item.description.blank? ? 80 : 30) %></a>
+								<p><%= truncate(item.description, :length => 100 ) unless item.description.blank? %></p>
 							</div>   
                         </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb2.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb3.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb4.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-						<div class="featuredItem">
-							<div class="thumb">
-								<img src="/images/thumb1.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>   
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb2.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb3.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb4.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-						<div class="featuredItem">
-							<div class="thumb">
-								<img src="/images/thumb1.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>   
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb2.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb3.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
-                        <div class="featuredItem">
-                            <div class="thumb">
-								<img src="/images/thumb4.jpg">
-							</div>
-							<div class="text">
-								<a href="#">Amazing new item added to collection</a>
-								<p> This item also has a short description to lure you into clicking on it. </p>
-							</div>
-                        </div>
+                        <% end -%>
                     </div>
                 </div>
             

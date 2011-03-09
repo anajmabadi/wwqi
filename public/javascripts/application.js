@@ -10,7 +10,7 @@ $(document).ready( function() {
 	        w = window.screen.availWidth * percent / 100;
 	        h = window.screen.availHeight * percent / 100;
 	    }
-        window.open($(this)[0].href, 'qajar_popup' + d.getTime(), 'height=' + h + ',height=' + w + ', toolbar=no, menubar=no, scrollbars=no, resizable=yes, location=no, directories=no, status=yes');
+        window.open($(this)[0].href, 'qajar_popup' + d.getTime(), 'height=' + h + ',height=' + w + ', toolbar=no, menubar=no, scrollbars=yes, resizable=yes, location=no, directories=no, status=yes');
         e.preventDefault();
     });
 });

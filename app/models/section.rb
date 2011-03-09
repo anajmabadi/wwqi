@@ -1,4 +1,7 @@
-class Section < ActiveRecord::Base
+class Section < ActiveRecord::Base		
+
+  include ActionView::Helpers::TextHelper
+		
   belongs_to :item
   
   # globalize2 accessors 
@@ -12,7 +15,7 @@ class Section < ActiveRecord::Base
   validates :publish, :presence => true
   
   def to_label
-    return "#{self.subsection_label} #{self.title.blank? ?  ' ' : self.title + ' '}[#{self.page_range_display}]"
+    return "#{self.subsection_label} #{self.title.blank? ?  ' ' : truncate(self.title) + ' '}[#{self.page_range_display}]"
   end
   
   def subsection_label
