@@ -2530,6 +2530,7 @@ div.fullscreen {
     float:left;
     margin:0px 5px 5px 5px;
     overflow:hidden;
+	padding:0 12px 10px 0;
 }
 
 #search_results .listItem .item.multiple{
@@ -2585,9 +2586,31 @@ div.fullscreen {
     height:15px;
     position:absolute;
     top:5px;
-    right:12px;
+    right:15px;
     text-indent:-99999px;
     z-index:20;
+}
+
+#search_results .item a.transcript{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    right:33px;
+    text-indent:-99999px;
+    z-index:20;
+	background: url("/images/icon_manuscript.png") no-repeat scroll left top transparent !important
+}
+
+#search_results .item a.translation{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    right:51px;
+    text-indent:-99999px;
+    z-index:20;
+	background: url("/images/icon_translation.png") no-repeat scroll left top transparent !important
 }
 
 #search_results .listItem .select-item{
@@ -3080,6 +3103,10 @@ img.icon{
 	position:relative;
 }
 
+#collection_details .collection_highlights ul li a:hover{
+	text-decoration:none;
+}
+
 #collection_details .collection_highlights ul li a span{
 	position:absolute;
 	top:0;
@@ -3092,6 +3119,7 @@ img.icon{
 	line-height:18px;
 	background:url(../images/85black.png);
 	display:none;
+	text-decoration:none!important
 }
 
 #collection_details a{
@@ -3122,6 +3150,10 @@ img.icon{
 
 #collection_details .paginationBar a{
 	color:#fff!important;
+}
+
+#collection_details .pagination{
+	color:#999;
 }
 
 

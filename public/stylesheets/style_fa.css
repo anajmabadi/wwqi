@@ -2479,7 +2479,7 @@ div.jump_menu form {
 #search_results h2{
 	border-bottom:1px dotted #aaa;
 	color:#333;
-	font-size:18px;
+	font-size:22px;
 	font-weight:bold;
 	margin:0;
 	padding-bottom:10px;
@@ -2520,6 +2520,7 @@ div.jump_menu form {
     float:right;
     margin:0px 5px 5px 5px;
     overflow:hidden;
+	padding:0 10px 10px 0;
 }
 
 #search_results .listItem .item.multiple{
@@ -2537,6 +2538,8 @@ div.jump_menu form {
 
 #search_results .listItem p{
 	line-height:15px;
+	font-family:Tahoma, Geneva, sans-serif;
+	margin-top:5px;
 }
 
 #search_results .listItem .item a {
@@ -2575,9 +2578,32 @@ div.jump_menu form {
     height:15px;
     position:absolute;
     top:5px;
-    left:12px;
+    left:5px;
     text-indent:-99999px;
     z-index:20;
+}
+
+
+#search_results .item a.transcript{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    left:23px;
+    text-indent:-99999px;
+    z-index:20;
+	background: url("/images/icon_manuscript.png") no-repeat scroll left top transparent !important
+}
+
+#search_results .item a.translation{
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:5px;
+    left:41px;
+    text-indent:-99999px;
+    z-index:20;
+	background: url("/images/icon_translation.png") no-repeat scroll left top transparent !important
 }
 
 #search_results .listItem .select-item{
@@ -2897,6 +2923,7 @@ ul.item_related li{
 	border-bottom:1px dotted #ddd;
 	overflow:hidden;
 	clear:right;
+	font-family:Tahoma, Geneva, sans-serif
 }
 
 ul.item_related li.title{
@@ -2913,6 +2940,7 @@ ul.item_related li.title{
 ul.item_meta li:last-child,
 ul.item_related li:last-child{
 	border:none;
+	font-family:Tahoma, Geneva, sans-serif
 }
 
 ul.item_related li{
@@ -2920,6 +2948,7 @@ ul.item_related li{
 }
 ul.item_meta li.description{
 	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif
 }
 ul.item_meta li span,
 ul.item_related li span{
@@ -3063,11 +3092,16 @@ img.icon{
 	margin:5px 5px 5px 0px;
 	padding:0;
 	font-size:12px;
+	font-family:Tahoma, Geneva, sans-serif
 }
 
 #collection_details .collection_highlights ul li a{
 	display:inline-block;
 	position:relative;
+}
+
+#collection_details .collection_highlights ul li a:hover{
+	text-decoration:none;
 }
 
 #collection_details .collection_highlights ul li a span{
@@ -3082,6 +3116,7 @@ img.icon{
 	line-height:18px;
 	background:url(../images/85black.png);
 	display:none;
+	text-decoration:none!important
 }
 
 #collection_details a{
@@ -3112,6 +3147,13 @@ img.icon{
 
 #collection_details .paginationBar a{
 	color:#fff!important;
+}
+#collection_details .pagination{
+	color:#999;
+}
+
+#collection_details .pagination a{
+	padding:1px 15px;
 }
 
 
