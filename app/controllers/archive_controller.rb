@@ -279,7 +279,7 @@ class ArchiveController < ApplicationController
 
     begin
       @item = Item.find_by_id(params[:id])
-	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.position').map { |s| [s.name, s.id]} unless @item.sections.nil? || @item.sections.empty?
+	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.title, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')

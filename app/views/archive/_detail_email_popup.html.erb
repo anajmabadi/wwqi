@@ -4,16 +4,16 @@
         <p>
             <%= t(:email_popup_prompt) %>
         </p>
-        <form href="<%= archive_detail_email_path %>" method="POST" >
+        <form id="email-form" href="<%= archive_detail_email_path %>" method="POST" >
             <div class="form_row">
                 <%= t(:from_email) %> <span class="mandatory">*</span>
                 <br />
-                <input type="input" name="from" size=70 />
+                <input type="input" name="from" id="from" size=70 onchange="validateEmail(this);"/>
             </div>
             <div class="form_row">
                 <%= t(:to_email) %>  <span class="mandatory">*</span>
                 <br />
-                <input type="input" name="to" size=70 />
+                <input type="input" name="to"  id="to" size=70 onchange="validateEmail(this);"/>
             </div>
             <div class="form_row">
                 <%= t(:note) %>
@@ -26,8 +26,9 @@
                 <textarea rows=5 cols=76 name="citations" disabled="true" ><%= items.map { |i| h(i.full_citation) }.join("\n\n") %></textarea>
             </div>
             <div class="form_row">
-                <input type="submit" class="redButton" value="<%= t(:email) %>" >
+                <input type="submit" class="redButton" value="<%= t(:email) %>" disabled=true>
             </div>
         </form>
     </div>
 </div>
+
