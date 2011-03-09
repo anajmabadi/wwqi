@@ -33,7 +33,7 @@ class ArchiveController < ApplicationController
     @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
 
     if @filter_letter.blank?
-    @collections = @all_collections
+    	@collections = @all_collections
     else
       @collections = Collection.includes("items").select('DISTINCT collection.id').where(['collections.publish=? AND private=? AND collection_translations.locale=? AND items.id IS NOT NULL AND UPPER(SUBSTRING(collection_translations.name,1,1)) = ?', true, false, I18n.locale.to_s,@filter_letter]).order('collection_translations.name')
     end
@@ -268,7 +268,7 @@ class ArchiveController < ApplicationController
   end
 
   def detail
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
     # grab and zoomify parameters
@@ -314,7 +314,7 @@ class ArchiveController < ApplicationController
 
   def zoomify
 
-    @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
     # grab and zoomify parameters
