@@ -23,19 +23,21 @@
         <%= yield :head %>
     </head>
     <body class="wide">
-        <%= render 'shared/header' %>
-        <div id="content" class="clearfix">
-            <div class="container clearfix">
-                <!-- rails errors and notices content -->
-                <%= render 'shared/notification_block' -%>
-                <!-- end rails errors and notices content -->
-
-                <!-- rails template content -->
-                <%= yield :layout %>
-                <!-- end rails template content -->
-
-            </div> <!-- end container -->
-        </div><!-- end content -->
+        <div id="nonFooter">
+		<%= render 'shared/header' %>
+			<div id="content" class="clearfix">
+				<div class="container clearfix">
+					<!-- rails errors and notices content -->
+					<%= render 'shared/notification_block' -%>
+					<!-- end rails errors and notices content -->
+	
+					<!-- rails template content -->
+					<%= yield :layout %>
+					<!-- end rails template content -->
+	
+				</div> <!-- end container -->
+			</div><!-- end content -->
+		</div> <!-- end nonFooter -->
         <%= render 'shared/footer'%>
 
         <%= raw google_analytics_block -%>

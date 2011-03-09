@@ -52,6 +52,19 @@ a.noimage{background:none !important}
    and vertical margins are automatically calculated from this. 
    The percentage is of 16px (0.75 * 16px = 12px). */
 
+html{height: 100%;}
+
+body{height: 100%;}
+
+#nonFooter{position: relative;min-height: 100%;}
+
+* html #nonFooter{height: 100%;}
+
+#content{padding-bottom: 300px}
+
+#pageFooterWrapper{position: relative;margin-top: -300px}
+
+
 
 body{
     font-size: 75.0%;
@@ -152,11 +165,9 @@ dd          { margin-left: 1.5em;}
 	position:relative;
 }
 
-#content{
-    padding-bottom:50px;
-}
+#content{padding-bottom: 300px}
 
-#itemPage #content{padding-bottom:0}
+
 
 /* header styles
 -------------------------------------------------------------- */
@@ -221,11 +232,14 @@ dd          { margin-left: 1.5em;}
 	float:left;
 	height:26px;
 	margin:0;
-	width:255px;
+	width:280px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
 
 #simple_search input{
-	width:200px;
+	width:225px;
 }
 
 /* old browser search styles
@@ -301,6 +315,15 @@ ul.sortnav li a.module-link:focus { color:#CA3723; text-decoration:none; }
 #header ul.sortnav li.active { background:none; }
 #header ul.sortnav li.active a.module-link { background:none; border-bottom:4px solid #ca3723 }
 #header ul.sortnav li a.module-link { padding:5px 0px 3px 0px; }
+#header ul.sortnav li.my-selections{
+	float:right;
+	font-size:11px;
+	background:#000;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	margin-top:-4px
+}
 #header ul.sortnav li{padding:5px 12px 6px 12px;}
 
 #browser #head ul.sortnav li.active { background:url(/images/sortnav_crimson_left.png) no-repeat 0 50%; }
@@ -634,49 +657,53 @@ ul.sortnav .label{font-size:10px; color:#C00}
 -------------------------------------------------------------- */
 
 #featured{
-    float:left;
-    width:650px;
-    height:250px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    margin-top:25px;
+    height:210px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
+    margin-top:15px;
+	margin-bottom:15px;
+	background:#ddd;
 }
 
 #featured #head{
-    background:url(/images/bg_featured_head.png) top left no-repeat;
     padding-top:12px;
-    height:30px;
+    height:20px;
+	 -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
 }
 
-#featured h2{
-    width:235px;
+#featured h2{ 
     padding-left:10px;
     text-transform:uppercase;
     font-size:1.2em;
-    color:#fff;
+    color:#555;
     font-weight:bold;
     float:left;
+	margin-bottom:0;
+	
 }
 
 #featured #featuredContent{
-    background:#fff;
     -moz-border-radius-bottomleft:5px;
     -moz-border-radius-bottomright:5px;
     -webkit-border-bottom-left-radius:5px;
     -webkit-border-bottom-right-radius:5px;
-    padding:0;
+    padding:3px 0 0 10px;
     overflow:hidden;
-    width:650px;
+    width:970px;
+	height:170px;
 }
 
-#featured #featureContainer{width:2600px}
+#featured #featureContainer{width:3900px}
 
-ul.dots {float:right;list-style:none;margin:0; padding:0}
+ul.dots {float:right;list-style:none;margin:0 5px 0 0; padding:0}
 ul.dots li{display:inline; margin:0; padding:0;}
 ul.dots li a{
     float : left;
-    width : 24px;
-    height : 24px;
+    width : 12px;
+    height : 12px;
     display : inline;
     font-size : 11px;
     margin : -2px 5px 0 0;
@@ -687,75 +714,110 @@ ul.dots li a{
     background-image : url(/images/silde-nav.png);
     background-position : 0 0;
     background-repeat : no-repeat;
+	text-indent:-999999px;
+	opacity:0.2
 }
-ul.dots li a.active{background-position:0 -24px; background-image : url(/images/silde-nav.png);}
+ul.dots li a.active{background-position:0 -12px; background-image : url(/images/silde-nav.png);}
 
 
 
 #featured .featuredItem{
     float:left;
-    width:650px;
-    height:208px;
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;
+    width:304px;
+    height:150px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
     position:relative;
-    margin:0;
+    margin:0 10px 0 0;
     padding:0;
+	background:#efefef;
+	background:-moz-linear-gradient(center top , #FAFAFA, #EEEEEE) repeat scroll 0 0 transparent;
+	border:5px solid #fff;
+	-moz-box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	cursor:pointer;
 }
 
-#featured .featuredItem a{
-    display:block;
-    width:100%;
-    position:absolute;
-    left:0;
-    bottom:0;
-    background:url(/images/85black.png);
-    padding:3px 0;
-    text-align:center;
-    font-size:1.2em;
-    color:#fff;
-    font-weight:bold;
-    -moz-border-radius-bottomleft:5px;
-    -moz-border-radius-bottomright:5px;
-    -webkit-border-bottom-left-radius:5px;
-    -webkit-border-bottom-right-radius:5px;
+#featured .featuredItem:hover{
+	background:-moz-linear-gradient(center top , #FDFDFD, #FAFAFA) repeat scroll 0 0 transparent;
 }
 
+#featured .featuredItem .thumb{
+	width:135px;
+	height:135px;
+	margin:10px 5px 5px;
+	float:left;
+}
+	
+#featured .featuredItem .thumb img{
+	width:128px;
+	height:123px;
+	padding:4px;
+	background:#fff;
+	-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#featured .featuredItem .text{
+	float:left;
+	width:140px;
+	margin:10px 5px 5px;
+}
+
+#featured .featuredItem .text a{
+	font-size:14px;
+	font-weight:bold;
+	color:#c5112c;
+	display:block;
+	margin:0 0 5px 0;
+}
+
+#featured .featuredItem .text a:hover{
+	text-decoration:underline;
+}
+
+#featured .featuredItem .text p{
+	color:#777;
+	line-height:15px;
+}
 
 /* about box styles
 -------------------------------------------------------------- */
 
 #about{
     float:left;
-    width:275px;
-    height:190px;
-    margin-left:10px;
+    width:300px;
+   
+    margin-right:10px;
 }
 
 #about #head{
-    background:#000;
+    background:#222;
     padding-top:12px;
-    height:30px;
+    height:20px;
 }
 
 #about h2{
-    width:210px;
+
     padding-left:10px;
     text-transform:uppercase;
     font-size:1.2em;
     color:#fff;
     font-weight:bold;
     float:left;
+	margin:0;
 }
 
 #about #aboutContent{
     background:#222;
     padding:0;
     overflow:hidden;
-    width:275px;
-    height:158px;
+    width:300px;
+    height:150px;
 }
 
 #about #aboutContent p{
@@ -767,12 +829,20 @@ ul.dots li a.active{background-position:0 -24px; background-image : url(/images/
 
 #home_search_wrapper{
 	float:left;
-    width:255px;
-    height:26px;
-	margin-left:10px;
-	background:#222;
+    width:280px;
+    height:41px;
+	margin-right:10px;
+	margin-top:8px;
+	background:#333;
 	padding:10px;
-	margin-bottom:5px;
+	
+}
+
+#home_search_wrapper h4{
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:3px;
 }
 
 
@@ -1130,12 +1200,21 @@ div.slideshow ul li a.title{
 
 /* homepage slider
 -------------------------------------------------------------- */
+#home-main{
+	overflow:hidden;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:10px;
+	background:#111;
+}
+
 .slide-wrap{
     width : 650px;
     height :250px;
     position:relative;
 	overflow:hidden;
-	float:left;
+	float:right;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 }

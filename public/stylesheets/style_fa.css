@@ -54,6 +54,18 @@ input,select,textarea{font-family:Tahoma, Geneva, sans-serif;direction: rtl;unic
    and vertical margins are automatically calculated from this. 
    The percentage is of 16px (0.75 * 16px = 12px). */
    
+html{height: 100%;}
+
+body{height: 100%;}
+
+#nonFooter{position: relative;min-height: 100%;}
+
+* html #nonFooter{height: 100%;}
+
+#content{padding-bottom: 300px}
+
+#pageFooterWrapper{position: relative;margin-top: -300px}
+
 
 body{
 	font-size: 75.0%; 
@@ -163,11 +175,7 @@ dd          { margin-left: 1.5em;}
 }
 
 
-#content{
-	padding-bottom:50px;
-}
-
-#itemPage #content{padding-bottom:0}
+#content{padding-bottom: 300px}
 
 /* header styles
 -------------------------------------------------------------- */
@@ -233,11 +241,14 @@ margin-top:5px;
 	float:right;
 	height:26px;
 	margin:0 ;
-	width:255px;
+	width:280px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
 }
 
 #simple_search input{
-	width:200px;
+	width:225px;
 }
 /*
 	#browser .search{background:transparent url(/images/collection_search_input.gif) no-repeat scroll  100% 0;float:right!important;width:350px; margin:-5px 10px 0 0px;}
@@ -264,7 +275,7 @@ margin-top:5px;
 	float: left;
 	border: 0;
 	cursor: pointer;
-	margin: 3px 10px 0 0px;
+	margin: 3px 5px 0 5px;
 	}
 	
 #simple_search .searchform button {margin-top:0}
@@ -307,7 +318,15 @@ margin-top:5px;
  #header ul.sortnav li.active a.module-link { background:none; border-bottom:4px solid #ca3723 }
  #header ul.sortnav li a.module-link { padding:5px 0px 3px 0px; }
  #header ul.sortnav li{padding:5px 12px 6px 12px;}
- 
+ #header ul.sortnav li.my-selections{
+	float:left;
+	font-size:11px;
+	background:#000;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	margin-top:-4px
+}
  #browser #head ul.sortnav li.active { background:url(/images/sortnav_crimson_left.png) no-repeat 0 0; }
  #browser #head ul.sortnav li.active a.module-link { background:url(/images/sortnav_crimson_right.png) no-repeat 100% 50%;  }
  
@@ -627,91 +646,134 @@ ul.sortnav .label{font-size:10px; color:#C00}
 -------------------------------------------------------------- */
 
 #featured{
-	float:right;
-	width:650px;
-	height:250px;
-	-moz-border-radius:5px;
-	-webkit-border-radius:5px;
-	margin-top:25px;
+    height:210px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
+    margin-top:15px;
+	margin-bottom:15px;
+	background:#ddd;
 }
 
 #featured #head{
-	background:url(/images/bg_featured_head.png) top left no-repeat;
-	padding-top:5px;
-	height:35px;
+    padding-top:12px;
+    height:20px;
+	 -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
 }
 
-#featured h2{
-	width:235px;
-	padding-right:10px;
-	font-size:1.5em;
-	color:#fff;
-	font-weight:bold;
-	float:right;
-	height:35px;
-	line-height:35px;
-	margin:0;
-	padding-top:0;
-	padding-bottom:0;
+#featured h2{ 
+    padding-right:10px;
+    text-transform:uppercase;
+    font-size:1.2em;
+    color:#555;
+    font-weight:bold;
+    float:right;
+	margin-bottom:0;
+	
 }
 
 #featured #featuredContent{
-	background:#fff;
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-webkit-border-bottom-left-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
-	padding:0;
-	overflow:hidden;
-	width:650px;
+    -moz-border-radius-bottomleft:5px;
+    -moz-border-radius-bottomright:5px;
+    -webkit-border-bottom-left-radius:5px;
+    -webkit-border-bottom-right-radius:5px;
+    padding:3px 10px 0 0px;
+    overflow:hidden;
+    width:970px;
+	height:170px;
 }
 
-#featured #featureContainer{width:2600px}
+#featured #featureContainer{width:3900px}
 
-#featured ul.dots {float:left;list-style:none;margin:5px 0 0 10px; padding:0}
-#featured ul.dots li{display:inline; margin:0; padding:0;}
-#featured ul.dots li a{
-	text-indent:-9999px; 
-	display:block; 
-	width:15px; 
-	height:15px; 
-	background:url(/images/dots.gif) 0 0 no-repeat;
-	float:right;
-	padding:0 5px;
-	margin:0;
-	}
-#featured ul.dots li a.active{background-position:0 -15px}
+ul.dots {float:left;list-style:none;margin:0 0px 0 5px; padding:0}
+ul.dots li{display:inline; margin:0; padding:0;}
+ul.dots li a{
+    float : right;
+    width : 12px;
+    height : 12px;
+    display : inline;
+    font-size : 11px;
+    margin : -2px 0px 0 5px;
+    line-height : 24px;
+    font-weight : bold;
+    text-align : center;
+    text-decoration : none;
+    background-image : url(/images/silde-nav.png);
+    background-position : 0 0;
+    background-repeat : no-repeat;
+	text-indent:-999999px;
+	opacity:0.2
+}
+ul.dots li a.active{background-position:0 -12px; background-image : url(/images/silde-nav.png);}
+
+
 
 #featured .featuredItem{
-	float:right;
-	width:650px;
-	height:208px;
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-webkit-border-bottom-left-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
-	position:relative;
-	margin:0;
-	padding:0;
+    float:right;
+    width:304px;
+    height:150px;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+	border-radius:10px;
+    position:relative;
+    margin:0 0px 0 10px;
+    padding:0;
+	background:#efefef;
+	background:-moz-linear-gradient(center top , #FAFAFA, #EEEEEE) repeat scroll 0 0 transparent;
+	border:5px solid #fff;
+	-moz-box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	box-shadow:0 0px 3px rgba(0, 0, 0, 0.4);
+	overflow:hidden;
+	cursor:pointer;
 }
 
-#featured .featuredItem a{
-	display:block;
-	width:100%;
-	position:absolute;
-	right:0;
-	bottom:0;
-	background:url(/images/85black.png);
-	padding:3px 0;
-	text-align:center;
-	font-size:1.4em;
-	color:#fff;
-	font-weight:bold;
-	-moz-border-radius-bottomleft:5px;
-	-moz-border-radius-bottomright:5px;
-	-webkit-border-bottom-left-radius:5px;
-	-webkit-border-bottom-right-radius:5px;
+#featured .featuredItem:hover{
+	background:-moz-linear-gradient(center top , #FDFDFD, #FAFAFA) repeat scroll 0 0 transparent;
 }
+
+#featured .featuredItem .thumb{
+	width:135px;
+	height:135px;
+	margin:10px 5px 5px;
+	float:right;
+}
+	
+#featured .featuredItem .thumb img{
+	width:128px;
+	height:123px;
+	padding:4px;
+	background:#fff;
+	-moz-box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+	-webkit-box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+	box-shadow:0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+#featured .featuredItem .text{
+	float:right;
+	width:140px;
+	margin:10px 5px 5px;
+}
+
+#featured .featuredItem .text a{
+	font-size:14px;
+	font-weight:bold;
+	color:#c5112c;
+	display:block;
+	margin:0 0 5px 0;
+}
+
+#featured .featuredItem .text a:hover{
+	text-decoration:underline;
+}
+
+#featured .featuredItem .text p{
+	color:#777;
+	line-height:15px;
+}
+
 
 
 /* about box styles
@@ -719,33 +781,34 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 #about{
     float:right;
-    width:275px;
-    height:190px;
+    width:300px;
+
     margin-left:10px;
 }
 
 #about #head{
-    background:#000;
+    background:#222;
     padding-top:12px;
-    height:30px;
+    height:20px;
 }
 
 #about h2{
-    width:210px;
+  
     padding-right:10px;
     text-transform:uppercase;
     font-size:1.2em;
     color:#fff;
     font-weight:bold;
     float:right;
+	margin:0
 }
 
 #about #aboutContent{
     background:#222;
     padding:0;
     overflow:hidden;
-    width:275px;
-    height:158px;
+    width:300px;
+    height:150px;
 }
 
 #about #aboutContent p{
@@ -753,16 +816,26 @@ ul.sortnav .label{font-size:10px; color:#C00}
 	font-size:1em;
 	line-height:1.4em;
 	margin:10px;
+	font-family:Tahoma, Geneva, sans-serif;
 }
 
 #home_search_wrapper{
 	float:right;
-    width:255px;
-    height:26px;
+    width:280px;
+    height:41px;
 	margin-left:10px;
 	background:#222;
 	padding:10px;
-	margin-bottom:5px;
+	margin-top:8px;
+	background:#333;
+	
+}
+
+#home_search_wrapper h4{
+	font-size:12px;
+	font-weight:bold;
+	color:#fff;
+	margin-bottom:3px;
 }
 
 
@@ -1113,6 +1186,15 @@ div.slideshow ul li a.title{
 
 /* homepage slider
 -------------------------------------------------------------- */
+#home-main{
+	overflow:hidden;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	padding:10px;
+	background:#111;
+}
+
 .slide-wrap{
 	width : 650px;
 	height :250px;
