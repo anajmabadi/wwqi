@@ -3028,8 +3028,13 @@ img.icon{
 	margin-top:10px;
 }
 
+#print-popup-content input[disabled]{
+	opacity:0.3;
+}
+
+
 #print-popup-content{
-	width:200px;
+	
 	height:200px;
 }
 
@@ -3211,7 +3216,7 @@ img.icon{
 
 
 #sb-body-inner{
-	direction:ltr
+	direction:rtl
 }
 
 .collectionInfoLink{
@@ -3226,4 +3231,33 @@ img.icon{
 .mandatory{
 	color:#ff2929;
 	font-weight:bold;
+}
+
+
+
+/* detail page email popup form */
+#email-form{
+	direction:rtl!important;
+	text-align:inherit
+}
+
+#email-form input{
+	width:400px;
+}
+
+#email-form textarea{
+	width:400px;
+	height:80px;
+}
+
+#print-popup-content p{
+	margin-bottom:5px;
+}
+
+#print-popup-content{
+	padding-top:0;
+}
+
+#print-popup-content h2{
+	margin-top:0;
 }
