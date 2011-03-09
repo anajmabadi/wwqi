@@ -1,0 +1,14 @@
+<div id="transcript-popup" style="display:none;">
+    <div id="transcript-popup-content" style="padding:20px;color:#fff;">
+        <div class="print_friendly_link">
+            <%= link_to t(:print_friendly_view), "#" %>
+        </div>
+        <p class="citation">
+            <em><%= item.full_citation %></em>
+        </p>
+        <hr />
+        <div class="persianOnly">
+        <%= raw item.transcript_fa unless item.transcript_fa.blank? %>
+        </div>
+    </div>
+</div>

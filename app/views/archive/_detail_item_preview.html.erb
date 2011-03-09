@@ -11,11 +11,11 @@
 
 	<a rel="shadowbox[email];width=600px;height=450px;" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download_images).titleize %></a>
-    <% unless item.transcript_en.blank? -%>
-    <a href="#" class="textButton"> <img src="/images/ico_transcript.gif"> <%= t(:transcript).titleize %> </a>
-    <% end %>
     <% unless item.transcript_fa.blank? -%>
-    <a href="#" class="textButton"> <img src="/images/ico_translation.gif"> <%= t(:translation).titleize %> </a>
+    <a rel="shadowbox[transcript];width=600px;height=450px;" href="#transcript-popup" title="<%= t(:transcript).titleize %>" class="textButton"> <img class="icon" src="/images/ico_transcript.gif" /> <%= t(:transcript).titleize %> </a>
+    <% end %>
+    <% unless item.transcript_en.blank? -%>
+    <a rel="shadowbox[translation];width=600px;height=450px;" href="#translation-popup" title="<%= t(:translation).titleize %>" class="textButton"> <img class="icon" src="/images/ico_translation.gif" /> <%= t(:translation).titleize %> </a>
     <% end -%>
 	
     <% if @my_archive_ids.include?(item.id) -%>
