@@ -2,7 +2,18 @@
 	<div id="zoomify-replacement-wrapper">
 		<span>
     <div id="zoomify-popup-content" style="padding:20px;color:#fff;">
-    	<div id="zoomify_panel_title"><%= format_item_image_caption(item, current_page) %></div>
+		<div class="zoomify_header" style="padding-bottom:20px;">
+			<ul class="left">
+				<li>
+					<%= format_item_image_caption(item, current_page) %>
+				</li>
+			</ul>
+			<ul class="right">
+				<li class="last">
+					<%= link_to t(:view_full_screen), archive_detail_zoomify_url(:id => item, :zoomify_page => current_page ), 'data-popup' => true unless full_screen %>
+				</li>
+			</ul>
+		</div>
         <div class="zoomify_container">
             <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
         </div>
@@ -24,7 +35,7 @@
 	                        <span>
 	                        	<%= t(:jump_to_page_prompt) %>
 	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), :remote => true) do %>
-	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page + 1, :size => 5 %>
+	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page + 1, :size => 3 %>
 	                            <%= hidden_field_tag :zoomify_show, !full_screen %>
 	                            <%= submit_tag t(:go), :name => nil %>
 	                            <% end  -%>
@@ -49,11 +60,6 @@
 	                <% end -%>
                 
                 <% end -%>
-            </ul>
-            <ul class="right">
-                <li class="last">
-                    <%= link_to t(:view_full_screen), archive_detail_zoomify_url(:id => item, :zoomify_page => current_page ), 'data-popup' => true unless full_screen %>
-                </li>
             </ul>
         </div>
     </div>

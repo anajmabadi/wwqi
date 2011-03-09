@@ -1,1 +1,1 @@
-$('#zoomify-replacement-wrapper>span').replaceWith('<%= escape_javascript(render :partial => 'archive/detail_zoomify_popup', :locals => {:item => @item, :current_page => @zoomify_page, :hide => false, :zoomify_show => @zoomify_show, :full_screen => @full_screen } ) %>');
+$('#zoomify-replacement-wrapper>span').replaceWith('<%= escape_javascript(render :partial => 'archive/detail_zoomify_popup', :locals => {:item => @item, :current_page => @zoomify_page, :hide => false, :zoomify_show => @zoomify_show, :full_screen => @full_screen, :sections_list => @sections_list } ) %>');
