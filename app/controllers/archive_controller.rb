@@ -303,6 +303,14 @@ class ArchiveController < ApplicationController
       end
     end
   end
+  
+  def print_friendly_transcript
+  	@item = Item.find_by_id(params[:id])
+  end
+  
+  def print_friendly_translation
+  	@item = Item.find_by_id(params[:id])
+  end
 
   def zoomify
 
@@ -889,7 +897,14 @@ def build_genre_query(filter_value, query_hash)
 
 	def smart_layout 
 		full_screen_actions = ['zoomify'] 
-		full_screen_actions.include?(action_name) ? 'full_screen' : 'application' 
+		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation'] 
+		if full_screen_actions.include?(action_name)
+			my_layout = 'full_screen' 
+		elsif print_friendly_actions.include?(action_name)	
+			my_layout = 'print_friendly'
+		else
+			my_layout = 'application' 
+		end
 	end
 
 end

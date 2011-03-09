@@ -81,6 +81,9 @@ Qajar::Application.routes.draw do
 
   match 'archive/clear_my_items' => 'archive#clear_my_items', :as => :archive_clear_my_items
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
+  
+  match 'archive/detail/:id/print_friendly_transcript' => 'archive#print_friendly_transcript', :as => :archive_detail_print_friendly_transcript
+  match 'archive/detail/:id/print_friendly_translation' => 'archive#print_friendly_translation', :as => :archive_detail_print_friendly_translation
   match 'archive/detail/:id/zoomify' => 'archive#zoomify', :as => :archive_detail_zoomify
   match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
   match 'archive/detail/:id/email' => 'archive#download', :as => :archive_detail_email

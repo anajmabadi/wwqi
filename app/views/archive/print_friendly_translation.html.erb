@@ -1,0 +1,13 @@
+<div class="print_friendly_content">
+    <p class="citation">
+        <em><%= item.full_citation %></em>
+    </p>
+    <hr />
+    <div class="essay">
+    <%= raw item.transcript_en unless item.transcript_en.blank? %>
+    </div>
+    <hr />
+    <p>
+        <%= t(:legal_disclaimer) %>
+    </p>
+</div>
