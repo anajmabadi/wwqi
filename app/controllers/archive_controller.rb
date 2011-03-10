@@ -49,6 +49,7 @@ class ArchiveController < ApplicationController
     @error = false
     begin
       @collection = Collection.find(params[:id])
+      @genres = @collection.genres
       @items_count =  @collection.items_count
       
       @collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')

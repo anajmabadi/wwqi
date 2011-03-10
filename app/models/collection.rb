@@ -36,6 +36,16 @@ class Collection < ActiveRecord::Base
     end
     return collection_set
   end  
+  
+  def genres
+  	my_genres = []
+  	my_items = self.items.is_published
+  	my_items.each do |item|
+  		subjects = item.subjects.genres
+  		my_genres = my_genres | subjects.is_published unless subjects.nil? || subjects.empty?
+  	end 
+  	return my_genres
+  end
 
   # Library media file accessors
   def thumbnail_file_name

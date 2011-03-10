@@ -52,16 +52,39 @@
                     <%= @collection.description %>
                 </li>
                 <% end -%>
+
+                <% unless @collection.materials.blank? -%>
+                <li class="description">
+                    <span><%= t(:quantity).titleize %></span>
+                    <%= @collection.materials %>
+                </li>
+                <% end -%>
+
+                <% unless @collection.history.blank? -%>
+                <li>
+                    <span><%= t(:scope_and_content) %></span>
+                    <%= @collection.history %>
+                </li>
+                <% end -%>
+
+                <% unless @collection.tips.blank? -%>
+                <li>
+                    <span><%= t(:tips).titleize %></span>
+                    <%= @collection.tips %>
+                </li>
+                <% end -%>
+
+                <% unless @collection.acquisition_notes.blank? -%>
+                <li>
+                    <span><%= t(:acquisition_notes).titleize %></span>
+                    <%= @collection.acquisition_notes %>
+                </li>
+                <% end -%>
+
                 <% unless @collection.repository.blank? -%>
                 <li>
                     <span><%= t(:repository).titleize %></span>
                     <%= @collection.repository %>
-                </li>
-                <% end -%>
-                <% unless @collection.history.blank? -%>
-                <li>
-                    <span><%= t(:history).titleize %></span>
-                    <%= @collection.history %>
                 </li>
                 <% end -%>
 
@@ -73,16 +96,14 @@
                 <% end -%>
             </ul>
             <ul class="item_related">
-                <!-- <li>
-                <span><%= t(:collection_view_items_prompt) %></span>
-                <a class="tag" href="<%= archive_browser_path('collection_filter[]'=> @collection.id ) %>"><%= localized_number(@collection.items_count) %> <%= @collection.items_count == 1 ? t(:item) : t(:items) %></a>
-                </li> -->
+
+                <% unless @collection.creator.blank? -%>
                 <li>
-                    <span><%= t(:materials).titleize %></span>
-                    <a class="tag" href="#">letters</a>
-                    <a class="tag" href="#">legal and financial</a>
-                    <a class="tag" href="#">registers</a>
+                    <span><%= t(:creator).titleize %></span>
+                    <%= @collection.creator %>
                 </li>
+                <% end -%>
+
                 <% unless @collection.dates.blank? -%>
                 <li>
                     <span><%= t(:dates).titleize %></span>
@@ -90,19 +111,35 @@
                 </li>
                 <% end -%>
 
-                <% unless @collection.dates.blank? -%>
                 <li>
-                    <span><%= t(:creator).titleize %></span>
-                    <%= @collection.creator %>
+                    <span><%= t(:genres).titleize %></span>
+                    <% @genres.each do |genre|  %>
+                    <%= link_to genre.name,
+                    archive_browser_path('collection_filter[]' => @collection.id, 'genre_filter[]' => genre.id ),
+                    :class => "tag" %>
+                    <% end unless @genres.empty? %>
+                </li>
+                <% unless @collection.acquired_on.blank? -%>
+                <li>
+                    <span><%= t(:accessed_on).titleize %></span>
+                    <%= localized_date( @collection.acquired_on ) %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.last_edited.blank? -%>
                 <li>
                     <span><%= t(:last_edited).titleize %></span>
-                    <%= @collection.last_edited %>
+                    <%= localized_date( @collection.last_edited ) %>
                 </li>
                 <% end -%>
+                
+                <% if @collection.finding_aid -%>
+                <li>
+                    <span><%= t(:archival_finding_aids).titleize %></span>
+                    <span id="finding_aid_pdf"><%= link_to @collection.finding_aid_file_name, @collection.finding_aid_url, 'data-popup' => true %></span>
+                </li>
+                <% end -%>
+                
             </ul>
             <div class="collection_highlights">
                 <h4><%= t(:collection_highlights)%></h4>
