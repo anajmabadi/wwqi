@@ -3,7 +3,8 @@
         <h2>
             <%= t(:email_popup_prompt) %>
         </h2>
-        <form id="email-form" href="<%= archive_detail_email_path %>" method="POST" >
+        <form id="email-form" action="<%= archive_detail_email_path %>" method="POST" >
+        	<%= hidden_field_tag :id, items[0].id %>
             <div class="form_row">
                 <%= t(:from_email) %> <span class="mandatory">*</span>
                 <br />
