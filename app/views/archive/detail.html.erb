@@ -43,6 +43,14 @@
                     <%= @item.description %>
                 </li>
                 <% end -%>
+                
+                <% unless @item.remarks.blank? -%>
+                <li>
+                    <span><%= t(:notes).titleize %>: </span>
+                    <%= @item.remarks %>
+                </li>
+                <% end -%>
+                
 
                 <% unless @item.alternate_titles.blank? -%>
                 <li>
@@ -60,15 +68,8 @@
 
                 <% unless @item.collection.nil? || @item.collection.tips.blank? -%>
                 <li>
-                    <span><%= t(:notes).titleize %>: </span>
+                    <span><%= t(:tips).titleize %>: </span>
                     <%= @item.collection.tips %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.collection.nil? || @item.collection.notes.blank? -%>
-                <li>
-                    <span><%= t(:remarks).titleize %>: </span>
-                    <%= @item.collection.notes %>
                 </li>
                 <% end -%>
                 
