@@ -176,7 +176,8 @@ class ArchiveController < ApplicationController
   def browser
   	
   	#if this request was not from browser, reset all filters
-  	if [archive_url, archive_collections_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true' || !params[:keyword_filter].nil?
+  	collection_detail_url = params[:collection_filter][0].nil? ? "N/A" : archive_collection_detail_url(params[:collection_filter][0].to_i) 
+  	if [archive_url, archive_collections_url, collection_detail_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true' || !params[:keyword_filter].nil?
   		@item_ids = nil
     	@filters = {}
     	session[:filter_stack] = nil unless session[:filter_stack].nil?

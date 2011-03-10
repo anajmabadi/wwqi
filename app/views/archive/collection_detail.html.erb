@@ -49,49 +49,49 @@
                 <% unless @collection.description.blank? -%>
                 <li class="description">
                     <span><%= t(:description).titleize %></span>
-                    <%= @collection.description %>
+                    <%= raw @collection.description %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.materials.blank? -%>
                 <li class="description">
                     <span><%= t(:quantity).titleize %></span>
-                    <%= @collection.materials %>
+                    <%= raw @collection.materials %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.history.blank? -%>
                 <li>
                     <span><%= t(:scope_and_content) %></span>
-                    <%= @collection.history %>
+                    <%= raw @collection.history %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.tips.blank? -%>
                 <li>
                     <span><%= t(:tips).titleize %></span>
-                    <%= @collection.tips %>
+                    <%= raw @collection.tips %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.acquisition_notes.blank? -%>
                 <li>
                     <span><%= t(:acquisition_notes).titleize %></span>
-                    <%= @collection.acquisition_notes %>
+                    <%= raw @collection.acquisition_notes %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.repository.blank? -%>
                 <li>
                     <span><%= t(:repository).titleize %></span>
-                    <%= @collection.repository %>
+                    <%= raw @collection.repository %>
                 </li>
                 <% end -%>
 
                 <% unless @collection.restrictions.blank? -%>
                 <li>
                     <span><%= t(:restrictions).titleize %></span>
-                    <%= @collection.restrictions %>
+                    <%= raw @collection.restrictions %>
                 </li>
                 <% end -%>
             </ul>
