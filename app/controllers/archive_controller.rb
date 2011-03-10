@@ -315,9 +315,14 @@ class ArchiveController < ApplicationController
       @error = true
     end
 
+	    #kit = PDFKit.new( render_to_string, :page_size => 'Letter')
+	    # pdf = kit.to_pdf
+		#file = kit.to_file('/it_' + @item.id.to_s + "cover_page.pdf")
+		#send_file file, :type => "application/pdf"
+		
     respond_to do |format|
       unless @error
-        format.html
+        format.html 
         format.xml  { render :xml => @item }
       else
         format.html { redirect_to @return_url }
