@@ -1,25 +1,24 @@
-<% if person.items.size > 0 -%>
+<% if person.items_count > 0 -%>
 <li class="person_item">
     &raquo; <%= link_to( raw( person.index_label), archive_browser_path('person_filter[]' => person.id)) %>
     <div class="person_details" style="display:none">
         <% unless person.appellations.empty? %>
-        <h4>
-
-        <%= t(:alternate_names).titleize %>
-        </h4>
-        <% person.appellations.each do |appellation| %>
-        <li>
-            <%= appellation.name %>
-        </li>
-        <% end %>
+	        <h4>
+	        <%= t(:alternate_names).titleize %>
+	        </h4>
+	        <% person.appellations.each do |appellation| %>
+		        <li>
+		            <%= appellation.name %>
+		        </li>
+	        <% end %>
         <% end %>
         <% unless person.relationships.empty? %>
-        <h4><%= t(:related_people).titleize %></h4>
-        <% person.relationships.each do |relationship|%>
-        <li>
-            <%= link_to "#{relationship.relative.name} (#{relationship.name})", archive_people_path(:anchor => "person_#{relationship.relative_id.to_s}") %>
-        </li>
-        <% end %>
+	        <h4><%= t(:related_people).titleize %></h4>
+	        <% person.relationships.each do |relationship|%>
+		        <li>
+		            <%= link_to "#{relationship.relative.name} (#{relationship.name})", archive_people_path(:anchor => "person_#{relationship.relative_id.to_s}") %>
+		        </li>
+	        <% end %>
         <% end %>
     </div>
 </li>

@@ -1,4 +1,4 @@
-<% if place.items.size > 0 -%>
+<% if place.items_count > 0 -%>
 <li class="place_item">
     &raquo; <%= link_to( raw("#{place.name} <span>#{localized_number(place.items_count)}</span>"), archive_browser_path('place_filter[]' => place.id)) %>
 </li>

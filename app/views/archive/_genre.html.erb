@@ -1,4 +1,4 @@
-<% if genre.items.size > 0 -%>
+<% if genre.items_count > 0 -%>
 <li class="genre_item">
     &raquo; <%= link_to( raw("#{genre.name} <span>#{localized_number(genre.items_count)}</span>"), archive_browser_path('genre_filter[]' => genre.id)) %>
 </li>
