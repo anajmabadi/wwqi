@@ -65,6 +65,13 @@
                 </li>
                 <% end -%>
                 
+                <% unless @item.collection.nil? || @item.collection.notes.blank? -%>
+                <li>
+                    <span><%= t(:remarks).titleize %>: </span>
+                    <%= @item.collection.notes %>
+                </li>
+                <% end -%>
+                
                 <% unless @item.collection.nil? -%>
                 <li>
                     <span><%= t(:collection).titleize %>: </span>
