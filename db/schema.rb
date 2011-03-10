@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110301023413) do
+ActiveRecord::Schema.define(:version => 20110310142625) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -248,13 +248,13 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
   add_index "clips", ["publish"], :name => "index_clips_on_publish"
 
   create_table "collection_translations", :force => true do |t|
-    t.integer  "collection_id", :default => 0,    :null => false
-    t.string   "locale",        :default => "en", :null => false
+    t.integer  "collection_id",     :default => 0,    :null => false
+    t.string   "locale",            :default => "en", :null => false
     t.string   "caption"
-    t.string   "name",          :default => "",   :null => false
+    t.string   "name",              :default => "",   :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "sort_name",     :default => "",   :null => false
+    t.string   "sort_name",         :default => "",   :null => false
     t.text     "description"
     t.string   "dates"
     t.text     "materials"
@@ -263,6 +263,7 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.string   "creator"
     t.text     "restrictions"
     t.text     "history"
+    t.text     "acquisition_notes"
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
@@ -282,19 +283,19 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.boolean  "publish",           :default => true,  :null => false
-    t.boolean  "private",           :default => false, :null => false
-    t.boolean  "finding_aid",       :default => false, :null => false
-    t.integer  "lock_version",      :default => 0,     :null => false
+    t.boolean  "publish",               :default => true,  :null => false
+    t.boolean  "private",               :default => false, :null => false
+    t.boolean  "finding_aid",           :default => false, :null => false
+    t.integer  "lock_version",          :default => 0,     :null => false
     t.date     "acquired_on"
     t.integer  "interview_id"
     t.string   "acquired_by"
     t.string   "processed_by"
-    t.text     "acquisition_notes"
+    t.text     "acquisition_notes_old"
     t.date     "last_edited"
-    t.boolean  "major",             :default => false
-    t.integer  "items_count_cache", :default => 0,     :null => false
-    t.string   "item_ids_cache",    :default => "",    :null => false
+    t.boolean  "major",                 :default => false
+    t.integer  "items_count_cache",     :default => 0,     :null => false
+    t.text     "item_ids_cache",                           :null => false
   end
 
   add_index "collections", ["items_count_cache"], :name => "index_collections_on_items_count_cache"
@@ -433,17 +434,17 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
   add_index "images", ["publish"], :name => "index_images_on_publish"
 
   create_table "item_translations", :force => true do |t|
-    t.integer  "item_id",                       :null => false
-    t.string   "locale",        :default => "", :null => false
+    t.integer  "item_id",                                             :null => false
+    t.string   "locale",                              :default => "", :null => false
     t.string   "display_date"
     t.text     "description"
-    t.string   "title",         :default => "", :null => false
+    t.string   "title",                               :default => "", :null => false
     t.string   "credit"
     t.string   "creator_label"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "published"
-    t.text     "transcript"
+    t.text     "transcript",    :limit => 2147483647
     t.text     "remarks"
     t.string   "owner_tag"
   end
@@ -659,7 +660,7 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.integer  "lock_version",      :default => 0,     :null => false
     t.integer  "collection_id"
     t.integer  "items_count_cache", :default => 0,     :null => false
-    t.string   "item_ids_cache",    :default => "",    :null => false
+    t.text     "item_ids_cache",                       :null => false
   end
 
   add_index "people", ["collection_id"], :name => "index_people_on_collection_id"
@@ -690,7 +691,7 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.integer  "lock_version",      :default => 0,     :null => false
     t.boolean  "major",             :default => false
     t.integer  "items_count_cache", :default => 0,     :null => false
-    t.string   "item_ids_cache",    :default => "",    :null => false
+    t.text     "item_ids_cache",                       :null => false
   end
 
   add_index "periods", ["end_at"], :name => "index_periods_end_at"
@@ -741,7 +742,7 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.integer  "lock_version",      :default => 0,     :null => false
     t.boolean  "major",             :default => false
     t.integer  "items_count_cache", :default => 0,     :null => false
-    t.string   "item_ids_cache",    :default => "",    :null => false
+    t.text     "item_ids_cache",                       :null => false
   end
 
   add_index "places", ["items_count_cache"], :name => "index_places_on_items_count_cache"
@@ -908,7 +909,7 @@ ActiveRecord::Schema.define(:version => 20110301023413) do
     t.integer  "subject_type_id",   :default => 7,     :null => false
     t.integer  "lock_version",      :default => 0,     :null => false
     t.integer  "items_count_cache", :default => 0,     :null => false
-    t.string   "item_ids_cache",    :default => "",    :null => false
+    t.text     "item_ids_cache",                       :null => false
   end
 
   add_index "subjects", ["items_count_cache"], :name => "index_subjects_on_items_count_cache"

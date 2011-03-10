@@ -6,7 +6,7 @@ class Collection < ActiveRecord::Base
   has_many :people, :dependent => :restrict
 
   # globalize2 accessors including extensions
-  translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips, :creator, :history, :restrictions
+  translates :name, :caption, :sort_name, :description, :dates, :materials, :repository, :tips, :creator, :history, :restrictions, :acquisition_notes
   globalize_accessors :fa, :en
   default_scope :include => :translations
   

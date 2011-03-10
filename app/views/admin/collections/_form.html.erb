@@ -128,6 +128,18 @@
         <%= f.text_area :repository_fa, :rows => @default_rows %>
         </td>
     </tr>
+            <tr>
+            <td class="field englishOnly">
+            <%= f.label :acquisition_notes_en %>
+            <br />
+            <%= f.text_area :acquisition_notes_en, :rows => @default_rows %>
+            </td>
+            <td class="field persianOnly">
+            <%= f.label :acquisition_notes_fa %>
+            <br />
+            <%= f.text_area :acquisition_notes_fa, :rows => @default_rows %>
+            </td>
+        </tr>
     <tr>
         <th colspan="2"><h3>Untranslated Fields</h3></th>
     </tr>
@@ -145,15 +157,10 @@
             </td>
         </tr>
         <tr>
-            <td>
+            <td colspan="2">
             <%= f.label :acquired_on %>
             <br />
             <%= f.date_select :acquired_on, :start_year => 2010, :include_blank => true %>
-            </td>
-            <td>
-            <%= f.label :acquisition_notes %>
-            <br />
-            <%= f.text_area :acquisition_notes, :rows => @default_rows %>
             </td>
         </tr>
         <tr>
