@@ -84,6 +84,7 @@ Qajar::Application.routes.draw do
   match 'archive/detail/:id/print_friendly_translation' => 'archive#print_friendly_translation', :as => :archive_detail_print_friendly_translation
   match 'archive/detail/:id/zoomify' => 'archive#zoomify', :as => :archive_detail_zoomify
   match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
+  match 'archive/detail/:id/cover_page' => 'archive#cover_page', :as => :archive_detail_cover_page
   match 'archive/detail/:id/email' => 'archive#email', :as => :archive_detail_email
   match 'archive/detail/:id/forget' => 'archive#forget', :as => :archive_detail_forget
   match 'archive/detail/:id/remember' => 'archive#remember', :as => :archive_detail_remember

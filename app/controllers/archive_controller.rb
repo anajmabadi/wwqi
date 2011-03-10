@@ -176,7 +176,7 @@ class ArchiveController < ApplicationController
   def browser
   	
   	#if this request was not from browser, reset all filters
-  	collection_detail_url = params[:collection_filter][0].nil? ? "N/A" : archive_collection_detail_url(params[:collection_filter][0].to_i) 
+  	collection_detail_url = params[:collection_filter].nil? ? "N/A" : archive_collection_detail_url(params[:collection_filter][0].to_i) 
   	if [archive_url, archive_collections_url, collection_detail_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true' || !params[:keyword_filter].nil?
   		@item_ids = nil
     	@filters = {}
@@ -300,6 +300,25 @@ class ArchiveController < ApplicationController
         format.html
         format.xml  { render :xml => @item }
         format.js { render :template => 'archive/reload_zoomify_pane.js.erb' }
+      else
+        format.html { redirect_to @return_url }
+      end
+    end
+  end
+  
+  def cover_page
+
+    begin
+      @item = Item.find_by_id(params[:id])
+    rescue StandardError => error
+      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
+      @error = true
+    end
+
+    respond_to do |format|
+      unless @error
+        format.html
+        format.xml  { render :xml => @item }
       else
         format.html { redirect_to @return_url }
       end
@@ -919,7 +938,7 @@ def build_genre_query(filter_value, query_hash)
 
 	def smart_layout 
 		full_screen_actions = ['zoomify'] 
-		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation'] 
+		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation','cover_page'] 
 		if full_screen_actions.include?(action_name)
 			my_layout = 'full_screen' 
 		elsif print_friendly_actions.include?(action_name)	
