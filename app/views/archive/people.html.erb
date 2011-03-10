@@ -21,13 +21,13 @@
             </li>
             <% end -%>
         </ul>
-        <% @rows = (@people.length / 3).ceil -%>
+        <% @rows = (@people.length / 2).ceil -%>
         <% @counter = 0 -%>
-        <ul class="subjects_list col3">
+        <ul class="subjects_list col2">
             <% @people.each do | person | -%>
             <% if @counter > @rows  -%>
         </ul>
-        <ul class="subjects_list col3">
+        <ul class="subjects_list col2">
             <% @counter = 0 -%>
             <% end -%>
             <%= render :partial => 'person', :locals => {:person => person} %>
