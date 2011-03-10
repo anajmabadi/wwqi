@@ -23,6 +23,10 @@ class Subject < ActiveRecord::Base
     where(["subject_type_id=?", 7])
   }
 
+  scope :is_published, lambda {
+    where(["subjects.publish=?", true])
+  }
+  
   # pagination code
   cattr_reader :per_page
   @@per_page = 1000
