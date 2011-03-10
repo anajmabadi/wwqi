@@ -14,7 +14,7 @@
             <% @alphabet.each do |letter| -%>
             <li>
                 <% if letter.length > 1 -%>
-                <%= link_to letter, archive_genres_path, :class => @filter_letter == letter ? 'selected' : " " %>
+                <%= link_to letter, archive_people_path, :class => @filter_letter == letter ? 'selected' : " " %>
                 <% else -%>
                 <%= link_to_if @valid_initials.include?(letter) || letter.length > 1, letter, archive_people_path(:filter_letter => letter), :class => @filter_letter == letter ? 'selected' : " " %>
                 <% end -%>

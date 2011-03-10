@@ -52,7 +52,7 @@ Shadowbox.init();
 		  var tfld = trim(valfield.value);  // value of field with whitespace trimmed off
 		  var email = /^[^@]+@[^@.]+\.[^@]*\w\w$/  ;
 		  if (!email.test(tfld)) {
-			$(valfield).parent().find(".mandatory").html("* Not Valid");
+			$(valfield).parent().find(".mandatory").html("<%= t(:not_valid) %>");
 			$(valfield).data("isValid",false);
 			setfocus(valfield);
 			return false;
@@ -60,7 +60,7 @@ Shadowbox.init();
 		
 		  var email2 = /^[A-Za-z][\w.-]+@\w[\w.-]+\.[\w.-]*[A-Za-z][A-Za-z]$/  ;
 		  if (!email2.test(tfld)) {
-			$(valfield).parent().find(".mandatory").html("* Not Valid");
+			$(valfield).parent().find(".mandatory").html("<%= t(:not_valid) %>");
 			$(valfield).data("isValid",false);
 			}
 		  else{

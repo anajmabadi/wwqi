@@ -104,6 +104,7 @@ class Item < ActiveRecord::Base
   	if my_credit == ''
   		my_credit += self.collection.repository unless self.collection.nil? || self.collection.repository.blank? 
   	end 
+  	my_credit += " (#{self.owner_tag})" unless self.owner_tag.blank?
   	return my_credit
   end
   

@@ -384,7 +384,26 @@ class ArchiveController < ApplicationController
   end
 
   def email
-    return true
+  	@error = false
+  	@return_url = archive_detail_path(params[:id])
+  	begin
+    # assemble the mail file
+    from_email = params[:from_email]
+    to_email = params[:to_email]
+    notes = params[:notes]
+    citation = params[:citation]
+   rescue => e
+   	@error = true
+   	flash[:error] = e.message
+   end
+   
+   respond_to do |format|
+      unless @error
+        format.html { redirect_to @return_url, :notice => I18n.translate(:email_sent)}
+      else
+        format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email_sent) + ": " + e.message} }
+      end
+    end
   end
 
   def forget_all

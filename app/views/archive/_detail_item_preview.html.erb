@@ -10,8 +10,8 @@
     <% item.passports.is_published.each do |passport| %>
     <%= link_to(truncate(passport.repository.name), passport.full_url, :class => "redButton", 'data-popup' => true) if passport.repository.publish %>
     <% end unless item.passports.nil? -%>
-    <a rel="shadowbox[print];width=310px;height=260px;" href="#print-popup" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:download_pdf).titleize %></a>
-	<a rel="shadowbox[email];width=450px;height=455px;" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
+    <a rel="shadowbox[print];width=310px;height=260px;" title= "<%= t(:download_pdf).titleize %>" href="#print-popup" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:download_pdf).titleize %></a>
+	<a rel="shadowbox[email];width=450px;height=480px;" title= "<%= t(:email_citation).titleize %>" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download_images).titleize %></a>
     <% unless item.transcript_fa.blank? -%>
     <a rel="shadowbox[transcript];width=600px;height=450px;" href="#transcript-popup" title="<%= t(:transcript).titleize %>" class="textButton"> <img class="icon" src="/images/ico_transcript.gif" /> <%= t(:transcript).titleize %> </a>

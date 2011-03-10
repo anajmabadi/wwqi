@@ -1,10 +1,10 @@
 <div id="email-popup" style="display:none;">
-    <div id="print-popup-content" style="padding:20px;color:#fff;">
-        <h2><%= t(:email).titleize %></h2>
-        <p>
+    <div id="email-popup-content" style="padding:20px;color:#fff;">
+        <h2>
             <%= t(:email_popup_prompt) %>
-        </p>
-        <form id="email-form" href="<%= archive_detail_email_path %>" method="POST" >
+        </h2>
+        <form id="email-form" action="<%= archive_detail_email_path %>" method="POST" >
+        	<%= hidden_field_tag :id, items[0].id %>
             <div class="form_row">
                 <%= t(:from_email) %> <span class="mandatory">*</span>
                 <br />
