@@ -37,6 +37,13 @@
                 </li>
                 <% end -%>
                 
+                <% unless @item.show_date.blank? -%>
+                <li class="description">
+                    <span><%= t(:date).titleize %>:</span>
+                    <%= @item.show_date %>
+                </li>
+                <% end -%>
+                
                 <% unless @item.description.blank? -%>
                 <li class="description">
                     <span><%= t(:description).titleize %>:</span>
