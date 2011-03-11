@@ -44,16 +44,16 @@ class Person < ActiveRecord::Base
     	
     	unless (normalized_dob + normalized_dod == 0)
     		if normalized_dod == 0 
-    			value += ', <span class="dob">' + localized_number(normalized_dob) + "-" + I18n.translate(:date_unknown) + '</span> '
+    			value += ', <span class="dob">' + localized_number(normalized_dob) + "-" + I18n.translate(:date_unknown) + '</span>'
     		elsif normalized_dob == 0  
-    			value += ', <span class="dob">' + I18n.translate(:date_unknown) + '-' + localized_number(normalized_dod) + '</span> '
+    			value += ', <span class="dob">' + I18n.translate(:date_unknown) + '-' + localized_number(normalized_dod) + '</span>'
     		else
-    			value += ', <span class="dob">' + localized_number(normalized_dob) + "-" + localized_number(normalized_dod) + '</span> '
+    			value += ', <span class="dob">' + localized_number(normalized_dob) + "-" + localized_number(normalized_dod) + '</span>'
     		end
     	end
     end 
     
-    value += "<span>(#{localized_number(self.items_count)})</span>" unless self.items_count == 0
+    value += " <span>(#{localized_number(self.items_count)})</span>" unless self.items_count == 0
     
     return value
   end
