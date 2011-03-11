@@ -26,9 +26,8 @@
 	</div>
 	<div class="home-right">
 		<div id="about">
-		  <%= link_to(raw("<div id='head'><h2>#{t(:about_us)}</h2></div>"), about_url) %>
 		  <div id="aboutContent" class="clearfix">
-			<p><%= raw @about_page.caption %> <%= link_to t(:learn_more), about_url %></p>
+			<p><%= raw t(:home_welcome_message) %> <%= link_to t(:learn_more), about_url %></p>
 		  </div>
 		</div>
 		<div id="home_search_wrapper">
