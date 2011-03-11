@@ -74,9 +74,9 @@ class ApplicationController < ActionController::Base
   
   def my_archive_to_cookie(my_ids=[])
   	unless my_ids.nil? || my_ids.empty?
-    	cookies.permanent[:my_archive] = { :value => my_ids.join(","), :key => "_session_id", :domain => '.qajarwomen.org' }
+    	cookies.permanent[:my_archive] = { :value => my_ids.join(","), :key => "_session_id", :domain => COOKIE_DOMAIN }
     else
-    	cookies.permanent[:my_archive] = { :value => "", :key => "_session_id", :domain => '.qajarwomen.org' }
+    	cookies.permanent[:my_archive] = { :value => "", :key => "_session_id", :domain => COOKIE_DOMAIN }
     end
     return my_ids == my_archive_from_cookie
   end

@@ -454,7 +454,7 @@ class ArchiveController < ApplicationController
   def remember
 	
 	unless params[:ids].nil?
-		ids = params[:ids].type_of?(Array) ? params[:ids].map {|i| i.to_i } : [params[:ids].to_i]
+		ids = params[:ids].kind_of?(Array) ? params[:ids].map {|i| i.to_i } : [params[:ids].to_i]
 		ids_to_remember = ids.reject {|i| i == 0 }.uniq.sort
 	else
 		unless params[:id].nil?

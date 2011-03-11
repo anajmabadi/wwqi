@@ -20,6 +20,7 @@ COLLECTION_PREFIX = "collection_"
 ZOOMIFY_DIR = "zoomify/"
 CLIPS_DIR = "clips/"
 FILE_PREFIX = "it_"
+COOKIE_DOMAIN = Rails.env == 'development' ? '.qajar_women.local' : '.qajarwomen.org'
 
 
 ARCHIVE_REFINE_RESULTS_MORE_SHOW_LIMIT = 1000

@@ -20,11 +20,11 @@
 
         });
         $("#browseBar a.moreLink").click( function() {
-            if ($(this).html()=="see more") {
-                $(this).html("see less");
+            if ($(this).html()=="<%= t(:see_more) %>") {
+                $(this).html("<%= t(:see_less) %>");
                 $(this).addClass("less");
             } else {
-                $(this).html("see more");
+                $(this).html("<%= t(:see_more) %>");
                 $(this).removeClass("less");
             }
             $(this).parents(".list").find("ul.more").animate({
