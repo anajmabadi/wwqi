@@ -44,7 +44,7 @@
         <%= render :partial => 'items_grid_view', :locals => { :items => @items } %>
         <% end -%>
 	    <% else -%>
-	        <% if @my_archive_filter %>
+	        <% if @filters[:my_archive_filter] %>
 	        	<%= render :partial => 'no_items_in_my_archive' %>
 	        <% else -%>
 	        	<%= render :partial => 'no_items_found_view' %>
