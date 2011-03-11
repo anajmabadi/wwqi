@@ -254,7 +254,7 @@ class ArchiveController < ApplicationController
     # check for a reset condition, in which case get all
     
     @item_ids = @items_full_set.select("DISTINCT items.id").map { |i| i.id }.sort
-    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2 || params[:my_archive] == 'true' || @item_ids.size == 0
+    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2 || params[:my_archive] == 'true'
     
     load_filter_models(@reset, @item_ids)
 
