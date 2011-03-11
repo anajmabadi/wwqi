@@ -4,6 +4,15 @@ class Admin::UtilitiesController < Admin::AdminController
     @collections = Collection.find(:all, :order => 'collection_translations.name')
   end
   
+  def reload_translations
+  	  # restart passenger
+  	  FileUtils.touch(File.join(RAILS_ROOT,'tmp','restart.txt'))
+	  
+	 respond_to do |format|
+        format.html { redirect_to(admin_utilities_path, :notice => 'Server was successfully restarted.') } 
+    end
+  end
+  
   def rebuild_item_counts
   	
   	begin

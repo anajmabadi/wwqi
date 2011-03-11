@@ -19,6 +19,14 @@
                     </p>
                     </td>
                 </tr>
+                <tr>
+                    <td><%= button_to 'Reload Translations', admin_utilities_reload_translations_path, :confirm => "Reload translations by restarting the rails app?" %></td>
+                    <td>
+                    <p>
+                        This routine reloads the translations which, under normal circumstances, are loaded once and cached until the server is restarted.
+                    </p>
+                    </td>
+                </tr>
                 <% if Rails.env == 'development' %>
                 <tr>
                     <td><%= button_to "Rename files by original file name", :action => 'rename_by_file_name' %></td>
