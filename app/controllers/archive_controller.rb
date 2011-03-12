@@ -180,7 +180,7 @@ class ArchiveController < ApplicationController
   	if [archive_url, archive_collections_url, collection_detail_url, archive_people_url, archive_places_url, archive_subjects_url, archive_genres_url].include?(request.referrer) || params[:my_archive] == 'true' || !params[:keyword_filter].nil?
   		@item_ids = nil
     	@filters = {}
-    	session[:filter_stack] = nil unless session[:filter_stack].nil?
+    	session[:filter_stack] = nil
   	end
     
     #grab view mode, using session or default of list if not present or junky
@@ -221,6 +221,9 @@ class ArchiveController < ApplicationController
     @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
     
    	# prepend any existing searches
+   	logger.info "--------- session[:filter_stack]: " + session[:filter_stack].to_s
+    logger.info "--------- @filters: " + @filters.to_s
+    
   	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
   	
 	# contruct sql for simple filters
@@ -909,6 +912,8 @@ def build_genre_query(filter_value, query_hash)
   	
   	filters[:collection_filter] = (filter_stack[:collection_filter].nil? ? [] : (filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])).uniq
   	filters[:genre_filter] = (filter_stack[:genre_filter].nil? ? [] : (filter_stack[:genre_filter]) + (filters[:genre_filter].nil? ? [] : filters[:genre_filter])).uniq
+  	logger.info "--------- filters: " + @filters.to_s
+  	logger.info "--------- filter_stack[:genre_filter]: " + filter_stack[:genre_filter].to_s
   	filters[:subject_filter] = (filter_stack[:subject_filter].nil? ? [] : (filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])).uniq
   	filters[:place_filter] = (filter_stack[:place_filter].nil? ? [] : (filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])).uniq
   	filters[:period_filter] = (filter_stack[:period_filter].nil? ? [] : (filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])).uniq
