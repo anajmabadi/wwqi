@@ -221,9 +221,6 @@ class ArchiveController < ApplicationController
     @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
     
    	# prepend any existing searches
-   	logger.info "--------- session[:filter_stack]: " + session[:filter_stack].to_s
-    logger.info "--------- @filters: " + @filters.to_s
-    
   	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
   	
 	# contruct sql for simple filters
@@ -931,8 +928,6 @@ def build_genre_query(filter_value, query_hash)
 	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
 	  	end 
   	end	
-  	logger.info "--------- filters: " + filters.to_s
-  	logger.info "--------- filter_stack[:genre_filter]: " + filter_stack[:genre_filter].to_s
   	return filters
   end
   
