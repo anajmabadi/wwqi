@@ -1,9 +1,12 @@
-/* put pdf styles here
+/* put pdf styles here */
 
 body {
-	
 }
-
 p {
-	margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 0px;
 }
+.page-breaker {
+    display: block;
+    clear: both;
+    page-break-after: always;
+}  

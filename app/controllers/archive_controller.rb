@@ -328,8 +328,7 @@ class ArchiveController < ApplicationController
         format.html 
         format.pdf do
         	render 	:pdf => 'it_' + @item.id.to_s + 'cover_page.pdf',
-        			:encoding => 'UTF-8',
-        			:layout => 'pdf.html.erb'
+  			:show_as_html => params[:debug].present?
       	end
       else
         format.html { redirect_to @return_url }

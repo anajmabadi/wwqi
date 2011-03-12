@@ -20,6 +20,10 @@ module ApplicationHelper
       
   end
   
+  def wicked_image_tag_helper(src)
+    params[:debug].present? ? image_tag("/"+src) : wicked_pdf_image_tag(src)
+  end
+  
   def localized_date(my_date)
   	day = month = year = ""
   	unless my_date.nil? || !my_date.kind_of?(Date)
