@@ -221,6 +221,9 @@ class ArchiveController < ApplicationController
     @filters[:my_archive_filter] = params[:my_archive] == 'true' ? @my_archive_ids : nil unless params[:my_archive].nil?
     
    	# prepend any existing searches
+   	logger.info "--------- session[:filter_stack]: " + session[:filter_stack].to_s
+    logger.info "--------- @filters: " + @filters.to_s
+    
   	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
   	
 	# contruct sql for simple filters
@@ -563,7 +566,7 @@ def build_genre_query(filter_value, query_hash)
       end
 
       unless item_ids.empty?
-        additional_query += "items.id IN (:subject_item_ids)"
+        additional_query += "items.id IN (:genre_item_ids)"
       else
       # if the person has no items, we should kill search
         flash[:error] = "No items found. Showing all."
@@ -572,7 +575,7 @@ def build_genre_query(filter_value, query_hash)
       flash[:error] = "A problem was encountered searching for genre id #{filter_value}: #{error}."
     ensure
       query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:subject_item_ids] = item_ids.uniq.sort
+      query_hash[:parameters][:genre_item_ids] = item_ids.uniq.sort
       query_hash[:labels] << {:field => I18n.translate(:genre), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
     return query_hash
     end
@@ -928,6 +931,9 @@ def build_genre_query(filter_value, query_hash)
 	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
 	  	end 
   	end	
+  	
+   	logger.info "--------- filter_stack: " + filter_stack.to_s
+    logger.info "--------- filters: " + filters.to_s
   	return filters
   end
   
