@@ -1,0 +1,15 @@
+/* put pdf styles here */
+
+body {
+}
+p {
+    margin: 10px 0px 10px 0px;
+}
+h1 {
+	font-size: 1.25em;
+}
+.page-breaker {
+    display: block;
+    clear: both;
+    page-break-before: always;
+}  
