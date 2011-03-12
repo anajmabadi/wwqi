@@ -29,7 +29,7 @@ gem 'jquery-rails'
 gem 'calendar'
 
 #gem 'pdfkit'
-gem 'wkhtmltopdf'
+#gem 'wkhtmltopdf'
 
 # gem "bj"
 # gem "hpricot", "0.6"

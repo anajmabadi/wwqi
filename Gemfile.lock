@@ -115,7 +115,6 @@ GEM
       rack (>= 1.0)
       rack-test (>= 0.5.3)
     will_paginate (3.0.pre2)
-    wkhtmltopdf (0.1.2)
 
 PLATFORMS
   ruby
@@ -139,4 +138,3 @@ DEPENDENCIES
   spork
   webrat (>= 0.7.2)
   will_paginate (~> 3.0.pre2)
-  wkhtmltopdf

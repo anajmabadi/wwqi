@@ -326,7 +326,11 @@ class ArchiveController < ApplicationController
     respond_to do |format|
       unless @error
         format.html 
-        format.xml  { render :xml => @item }
+        format.pdf do
+        	render 	:pdf => 'it_' + @item.id.to_s + 'cover_page.pdf',
+        			:encoding => 'UTF-8',
+        			:layout => 'pdf.html.erb'
+      	end
       else
         format.html { redirect_to @return_url }
       end
