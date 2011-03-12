@@ -910,14 +910,12 @@ def build_genre_query(filter_value, query_hash)
   
   def prepend_existing_filters( filters, filter_stack = {} )
   	
-  	filters[:collection_filter] = (filter_stack[:collection_filter].nil? ? [] : (filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])).uniq
-  	filters[:genre_filter] = (filter_stack[:genre_filter].nil? ? [] : (filter_stack[:genre_filter]) + (filters[:genre_filter].nil? ? [] : filters[:genre_filter])).uniq
-  	logger.info "--------- filters: " + @filters.to_s
-  	logger.info "--------- filter_stack[:genre_filter]: " + filter_stack[:genre_filter].to_s
-  	filters[:subject_filter] = (filter_stack[:subject_filter].nil? ? [] : (filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])).uniq
-  	filters[:place_filter] = (filter_stack[:place_filter].nil? ? [] : (filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])).uniq
-  	filters[:period_filter] = (filter_stack[:period_filter].nil? ? [] : (filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])).uniq
-  	filters[:person_filter] = (filter_stack[:person_filter].nil? ? [] : (filter_stack[:person_filter]) + (filters[:person_filter].nil? ? [] : filters[:person_filter])).uniq
+  	filters[:collection_filter] = ((filter_stack[:collection_filter].nil? ? [] : filter_stack[:collection_filter]) + (filters[:collection_filter].nil? ? [] : filters[:collection_filter])).uniq
+  	filters[:genre_filter] = ((filter_stack[:genre_filter].nil? ? [] : filter_stack[:genre_filter]) + (filters[:genre_filter].nil? ? [] : filters[:genre_filter])).uniq
+  	filters[:subject_filter] = ((filter_stack[:subject_filter].nil? ? [] : filter_stack[:subject_filter]) + (filters[:subject_filter].nil? ? [] : filters[:subject_filter])).uniq
+  	filters[:place_filter] = ((filter_stack[:place_filter].nil? ? [] : filter_stack[:place_filter]) + (filters[:place_filter].nil? ? [] : filters[:place_filter])).uniq
+  	filters[:period_filter] = ((filter_stack[:period_filter].nil? ? [] : filter_stack[:period_filter]) + (filters[:period_filter].nil? ? [] : filters[:period_filter])).uniq
+  	filters[:person_filter] = ((filter_stack[:person_filter].nil? ? [] : filter_stack[:person_filter]) + (filters[:person_filter].nil? ? [] : filters[:person_filter])).uniq
   	
   	filters[:translation_filter] = filters[:translation_filter] ? filters[:translation_filter] : filter_stack[:translation_filter]  
   	filters[:recent_additions_filter] = filters[:recent_additions_filter] ? filters[:recent_additions_filter] : filter_stack[:recent_additions_filter]
@@ -933,7 +931,8 @@ def build_genre_query(filter_value, query_hash)
 	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
 	  	end 
   	end	
-
+  	logger.info "--------- filters: " + filters.to_s
+  	logger.info "--------- filter_stack[:genre_filter]: " + filter_stack[:genre_filter].to_s
   	return filters
   end
   
