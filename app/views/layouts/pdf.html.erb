@@ -4,13 +4,13 @@
     <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <%= csrf_meta_tag %>
         <title><%= t(:site_title) %></title>
-        <%=  params[:debug].present? ? stylesheet_link_tag('pdf') : wicked_pdf_stylesheet_link_tag("pdf") -%>
+        <%=  params[:debug].present? ? stylesheet_link_tag('pdf') : wicked_pdf_stylesheet_link_tag("pdf.css") -%>
         <%=  params[:debug].present? ? javascript_include_tag('number_pages') : wicked_pdf_javascript_include_tag("number_pages") %>
         <%= yield :head %>
     </head>
     <body onload='number_pages'>
         <div id="header">
-            <%= params[:debug].present? ? image_tag('/images/logo.png') : wicked_pdf_image_tag('images/logo.png') %>
+            <%= params[:debug].present? ? image_tag('/images/logo.png') : wicked_pdf_image_tag('logo.png') %>
         </div>
         <div id="content">
             <%= yield %>

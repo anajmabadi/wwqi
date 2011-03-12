@@ -317,18 +317,20 @@ class ArchiveController < ApplicationController
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
       @error = true
     end
-
-	    #kit = PDFKit.new( render_to_string, :page_size => 'Letter')
-	    # pdf = kit.to_pdf
-		#file = kit.to_file('/it_' + @item.id.to_s + "cover_page.pdf")
-		#send_file file, :type => "application/pdf"
 		
     respond_to do |format|
       unless @error
         format.html 
         format.pdf do
         	render 	:pdf => 'it_' + @item.id.to_s + 'cover_page.pdf',
-  			:show_as_html => params[:debug].present?
+  			:show_as_html => params[:debug].present?,
+  			:footer => {   :center             => @item.stable_url,
+                           :font_name          => 'Verdana',
+                           :font_size          => 8,
+                           :left               => @item.accession_num,
+                           :right              => 'WWQI',
+                           :spacing            => 1,
+                           :line               => false}
       	end
       else
         format.html { redirect_to @return_url }

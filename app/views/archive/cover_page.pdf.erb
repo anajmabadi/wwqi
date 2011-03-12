@@ -3,7 +3,6 @@
         <h1><%= t(:site_title) %></h1>
     </div>
     <div id="cover_item_details">
-
         <h2><%= @item.title %></h2>
         <ul id="cover_item_detail_list">
 
@@ -124,7 +123,13 @@
     <div id="legal_disclaimer">
         <%= t(:legal_disclaimer) %>
     </div>
-    <div id="footer">
-        <%= @item.full_citation %>
-    </div>
+    <% unless @cover_page_only -%>
+    <div class="page-breaker"></div>
+    <% (1..@item.pages).each do |page_number| %>
+    <%= image_tag(@item.slide_url(page_number)) %>
+    <h1><%= format_item_image_caption(@item, page_number) %></h1>
+    <p><%= @item.full_citation %>
+    <div class="page-breaker"></div>
+    <% end -%>
+    <% end -%>
 </div>
