@@ -10,6 +10,18 @@ module ApplicationHelper
     link_to_unless condition, title, request.parameters.merge( {:c => column, :d => sort_dir} )
   end
   
+  def pdf_stylesheet_link_tag( filename )
+  	return stylesheet_link_tag "#{Rails.root}/public/stylesheets/#{filename}"
+  end
+  
+  def pdf_javascript_include_tag( filename )
+  	return javascript_include_tag "#{Rails.root}/public/javascripts/#{filename}"
+  end
+  
+  def pdf_image_tag( filename )
+  	return image_tag "#{Rails.root}/public/images/#{filename}"
+  end
+  
   def localized_number(number=0)
     if I18n.locale == :fa
       number_label = number.to_farsi
