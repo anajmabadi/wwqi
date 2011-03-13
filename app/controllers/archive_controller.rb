@@ -325,7 +325,7 @@ class ArchiveController < ApplicationController
         format.html 
         format.pdf do
         	html = render_to_string(:layout => 'pdf.html.erb')
-		    kit = PDFKit.new(html)
+		    kit = PDFKit.new(html, :encoding => 'UTF-8')
 		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
 		    send_data(kit.to_pdf, :filename => 'it_' + @item.id.to_s + ".pdf", :type => Mime::PDF)
 		    return # to avoid double render call
