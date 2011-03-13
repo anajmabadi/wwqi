@@ -455,13 +455,7 @@ class ArchiveController < ApplicationController
       my_archive_to_cookie(my_ids)
 	end
     respond_to do |format|
-		format.html { 
-			begin
-				redirect_to :back 
-			rescue RedirectBackError => e
-				redirect_to @return_url 
-			end
-			}
+		format.html { redirect_to_back(@return_url) }
 	end
 
   end
@@ -486,13 +480,7 @@ class ArchiveController < ApplicationController
     end
      
     respond_to do |format|
-		format.html { 
-			begin
-				redirect_to :back 
-			rescue RedirectBackError => e
-				redirect_to @return_url 
-			end
-			}
+		format.html { redirect_to_back(@return_url) }
 	end
   end
 
