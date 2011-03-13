@@ -455,12 +455,20 @@ class ArchiveController < ApplicationController
       my_archive_to_cookie(my_ids)
 	end
     respond_to do |format|
-      format.html { redirect_to :back }
-    end
+		format.html { 
+			begin
+				redirect_to :back 
+			rescue RedirectBackError => e
+				redirect_to @return_url 
+			end
+			}
+	end
 
   end
 
   def remember
+  	
+  	@return_url = session[:archive_url] ||= archive_browser_path
 	
 	unless params[:ids].nil?
 		ids = params[:ids].kind_of?(Array) ? params[:ids].map {|i| i.to_i } : [params[:ids].to_i]
@@ -478,9 +486,14 @@ class ArchiveController < ApplicationController
     end
      
     respond_to do |format|
-      format.html { redirect_to :back }
-    end
-
+		format.html { 
+			begin
+				redirect_to :back 
+			rescue RedirectBackError => e
+				redirect_to @return_url 
+			end
+			}
+	end
   end
 
   # zoomify requires a custom XML file for its gallery viewer
