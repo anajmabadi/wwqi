@@ -61,8 +61,7 @@
 								<img src="<%= item.thumbnail_url %>">
 							</div>
 							<div class="text">
-								<a href="<%= archive_detail_path(item) %>" title="<%= item.title %>" class="tipsy" ><%= truncate(item.title, :length => item.description.blank? ? 80 : 30) %></a>
-								<p><%= truncate(item.description, :length => 100 ) unless item.description.blank? %></p>
+								<a href="<%= archive_detail_path(item) %>" title="<%= item.title %>" class="tipsy" ><%= truncate(item.title, :length => 80) %></a>
 							</div>   
                         </div>
                         <% end -%>
