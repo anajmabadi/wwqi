@@ -548,12 +548,12 @@ class ArchiveController < ApplicationController
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for subject id #{filter_value}: #{error}."
-    ensure
+    end
       query_hash[:conditions] << additional_query unless additional_query.blank?
       query_hash[:parameters][:subject_item_ids] = item_ids.uniq.sort
       query_hash[:labels] << {:field => I18n.translate(:subject), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
     return query_hash
-    end
+
   end
 
 def build_genre_query(filter_value, query_hash)
@@ -579,12 +579,11 @@ def build_genre_query(filter_value, query_hash)
       end
     rescue StandardError => error
       flash[:error] = "A problem was encountered searching for genre id #{filter_value}: #{error}."
-    ensure
-      query_hash[:conditions] << additional_query unless additional_query.blank?
-      query_hash[:parameters][:genre_item_ids] = item_ids.uniq.sort
-      query_hash[:labels] << {:field => I18n.translate(:genre), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
-    return query_hash
     end
+	  query_hash[:conditions] << additional_query unless additional_query.blank?
+	  query_hash[:parameters][:genre_item_ids] = item_ids.uniq.sort
+	  query_hash[:labels] << {:field => I18n.translate(:genre), :values => subjects.map { |c| c.name }.uniq.sort.join(', ') }
+	  return query_hash
   end
   
   def build_place_query(filter_value, query_hash)
