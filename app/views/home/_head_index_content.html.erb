@@ -11,25 +11,25 @@
         $("#fourthFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '-2918px'}, 300);
+            $("#featureContainer").animate({right: '-2908px'}, 300);
             return false;
         });
         $("#thirdFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '-1945px'}, 300);
+            $("#featureContainer").animate({right: '-1935px'}, 300);
             return false;
         });
         $("#secondFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '-973px'}, 300);
+            $("#featureContainer").animate({right: '-963px'}, 300);
             return false;
         });
         $("#firstFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '0px'}, 300);
+            $("#featureContainer").animate({right: '10px'}, 300);
             return false;
         });
 		$(".featuredItem").click(function(){
@@ -50,28 +50,27 @@
         $("#fourthFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '2918px'}, 300);
+            $("#featureContainer").animate({left: '-2908px'}, 300);
             return false;
         });
         $("#thirdFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '1945px'}, 300);
+            $("#featureContainer").animate({left: '-1935px'}, 300);
             return false;
         });
         $("#secondFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '973px'}, 300);
+            $("#featureContainer").animate({left: '-963px'}, 300);
             return false;
         });
         $("#firstFeature").click( function() {
             $(".dots a").removeClass("active");
             $(this).addClass("active");
-            $("#featuredContent").animate({scrollLeft: '0px'}, 300);
+            $("#featureContainer").animate({left: '10px'}, 300);
             return false;
         });
-		
 		$(".featuredItem").click(function(){
 			window.location = $(this).find("a").attr("href");
 		});

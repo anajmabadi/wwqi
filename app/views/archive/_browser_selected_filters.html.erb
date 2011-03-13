@@ -1,5 +1,6 @@
-<h3 class="active"><%= link_to t(:current_filters).titleize, archive_collections_path %></h3>
-<div class="list" style="display:block">
+
+<div class="current-filter-list" style="display:block">
+	<h3><%= t(:current_filters).titleize %></h3>
     <ul class="default">
         <% @filters[:genre_filter].each do |genre_id| -%>
         <li>
