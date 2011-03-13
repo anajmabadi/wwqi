@@ -1,6 +1,8 @@
+@charset "UTF-8";
 /* put pdf styles here */
 
 body {
+	font-family: "Times New Roman", "Arial";
 }
 p {
     margin: 10px 0px 10px 0px;
