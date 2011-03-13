@@ -11,6 +11,14 @@ class ApplicationController < ActionController::Base
   def get_my_archive_items
   	@my_archive_ids = my_archive_from_cookie
   end
+  
+  def redirect_to_back(default = root_url)
+    if !request.env["HTTP_REFERER"].blank? and request.env["HTTP_REFERER"] != request.env["REQUEST_URI"]
+      redirect_to :back
+    else
+      redirect_to default
+    end
+  end
 
   # csv generation code
   def make_custom_csv(collection)
