@@ -28,7 +28,7 @@ gem 'jquery-rails'
 #gem 'jalalidate'
 gem 'calendar'
 
-#gem 'pdfkit'
+gem 'pdfkit'
 #gem 'wkhtmltopdf'
 
 # gem "bj"
