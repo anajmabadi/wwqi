@@ -95,7 +95,7 @@ class Item < ActiveRecord::Base
   end
   
   def stable_url
-  	return STABLE_URL + 'get/item/' + self.id.to_s
+  	return STABLE_URL + 'find/item/' + self.id.to_s
   end
   
   def repository_credit

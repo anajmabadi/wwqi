@@ -309,28 +309,25 @@ class ArchiveController < ApplicationController
     end
   end
   
-  def cover_page
+  def download_pdf
+  	
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
 
     begin
       @item = Item.find_by_id(params[:id])
     rescue StandardError => error
-      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
+      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found.'
       @error = true
     end
-    
-    kit = PDFKit.new( render_to_string, :page_size => 'Letter')
-	pdf = kit.to_pdf
-	#file = kit.to_file('/it_' + @item.id.to_s + "cover_page.pdf")
-	#send_file file, :type => "application/pdf"
 		
     respond_to do |format|
       unless @error
         format.html 
         format.pdf do
-        	html = render_to_string(:layout => false)
+        	html = render_to_string(:layout => 'pdf.html.erb')
 		    kit = PDFKit.new(html)
 		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
-		    send_data(kit.to_pdf, :filename => '/it_' + @item.id.to_s + ".pdf", :type => 'application/pdf')
+		    send_data(kit.to_pdf, :filename => 'it_' + @item.id.to_s + ".pdf", :type => Mime::PDF)
 		    return # to avoid double render call
       	end
       else
@@ -937,9 +934,6 @@ def build_genre_query(filter_value, query_hash)
 	  		filters[:keyword_filter][:values] = [ new_keywords | old_keywords ]
 	  	end 
   	end	
-  	
-   	logger.info "--------- filter_stack: " + filter_stack.to_s
-    logger.info "--------- filters: " + filters.to_s
   	return filters
   end
   
@@ -954,14 +948,18 @@ def build_genre_query(filter_value, query_hash)
 
 	def smart_layout 
 		full_screen_actions = ['zoomify'] 
-		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation','cover_page'] 
-		if full_screen_actions.include?(action_name)
+		print_friendly_actions = ['print_friendly_transcript','print_friendly_translation']
+		pdf_actions = ['download_pdf'] 
+		if pdf_actions.include?(action_name)
+			my_layout = 'pdf' 
+		elsif full_screen_actions.include?(action_name)
 			my_layout = 'full_screen' 
 		elsif print_friendly_actions.include?(action_name)	
 			my_layout = 'print_friendly'
 		else
 			my_layout = 'application' 
 		end
+		return my_layout
 	end
 
 end

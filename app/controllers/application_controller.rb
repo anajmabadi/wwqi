@@ -19,6 +19,12 @@ class ApplicationController < ActionController::Base
       redirect_to default
     end
   end
+  
+  def translate_paths(body, env)
+   # Host with protocol
+   root = "#{env['rack.url_scheme']}://#{env['HTTP_HOST']}/"
+   body.gsub(/(href|src)=(['"])\/([^\"']*|[^"']*)['"]/, '\1=\2' + root + '\3\2')
+  end
 
   # csv generation code
   def make_custom_csv(collection)
