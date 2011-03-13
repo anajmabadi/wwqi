@@ -45,7 +45,9 @@
         <a class="redButton right" href="<%= archive_browser_path('collection_filter[]'=> @collection.id ) %>"><%= t(:collection_view_items_prompt) %> (<%= localized_number(@collection.items_count) %> <%= @collection.items_count == 1 ? t(:item) : t(:items) %>)</a>
         <h2><%= @collection.name %></h2>
         <div id="item_details_wrapper">
-            <ul class="item_meta">
+            <div class="item_meta">
+			&nbsp;
+			<ul>
                 <% unless @collection.description.blank? -%>
                 <li class="description">
                     <span><%= t(:description).titleize %></span>
@@ -95,8 +97,9 @@
                 </li>
                 <% end -%>
             </ul>
-            <ul class="item_related">
-
+			</div>
+            <div class="item_related">
+			<ul>
                 <% unless @collection.creator.blank? -%>
                 <li>
                     <span><%= t(:creator).titleize %></span>
@@ -141,6 +144,7 @@
                 <% end -%>
                 
             </ul>
+			</div>
             <div class="collection_highlights">
                 <h4><%= t(:collection_highlights)%></h4>
                 <ul>

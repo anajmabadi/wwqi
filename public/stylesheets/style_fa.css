@@ -108,14 +108,24 @@ h4 { font-size: 1.167em; line-height: 1.25;color:#990000; }
 h5 { font-size: 1.267em; margin-bottom:10px; font-weight:bold; text-transform:uppercase; color:#A3A798 }
 h6 { font-size: 1em; }
 
-#staticContent h2{ font-size:2.6em; color:#ca3723; margin-top:1em;}
+#staticContent h1{
+	border-bottom:1px dotted #AAAAAA;
+	color:#333;
+	font-size:22px;
+	font-weight:bold;
+	margin:0 0 6px;
+	padding-bottom:10px;
+	text-shadow:1px 1px 0 #EEEEEE;
+}
+
+#staticContent h2{ font-size:18px; color:#ca3723; margin-top:1em; font-weight:bold;}
 #staticContent em{ 
 	font-family:"Times New Roman", Times, serif;
 	font-style:normal;
-	font-size:2.1em; 
-	color:#666; 
+	font-size:18px;
+	color:#666!important; 
 	line-height:1.2em;	
-	font-weight:bold;}
+	}
 #staticContent li{ font-size:1.1em; padding-right:20px; background:url(/images/list_bullet_fa.gif) 100% 5px no-repeat; font-family:Tahoma, Geneva, sans-serif}
 #staticContent a{ color:#ca3723;}
 
@@ -394,6 +404,10 @@ ul.sortnav .label{font-size:10px; color:#C00}
 #staticContent em,
 #staticContent li{
 	color:#333
+}
+
+#staticContent p{
+	font-family:Tahoma, Geneva, sans-serif;
 }
 
 #staticContent{padding:30px; background:#fff; -moz-border-radius:10px; -webkit-border-radius:10px;}
@@ -683,9 +697,10 @@ ul.sortnav .label{font-size:10px; color:#C00}
     overflow:hidden;
     width:970px;
 	height:170px;
+	position:relative;
 }
 
-#featured #featureContainer{width:3900px}
+#featured #featureContainer{width:3900px;position:absolute}
 
 ul.dots {float:left;list-style:none;margin:0 0px 0 5px; padding:0}
 ul.dots li{display:inline; margin:0; padding:0;}
@@ -808,7 +823,7 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
     padding:0;
     overflow:hidden;
     width:300px;
-    height:150px;
+    height:180px;
 }
 
 #about #aboutContent p{
@@ -2129,6 +2144,7 @@ div.jump_menu form {
 	-webkit-border-radius:5px 5px 0 0;
 	border-radius:5px 5px 0 0;
 	display:none;
+	font-family:Tahoma, Geneva, sans-serif;
 }
 
 #browseBar .list a{
@@ -2148,7 +2164,7 @@ div.jump_menu form {
 }
 
 #browseBar .list li{
-	padding:0 10px 0 4pxpx;
+	padding:0 10px 0 4px;
 	font-size:13px;
 	line-height:14px;
 	margin:0;
@@ -2186,6 +2202,64 @@ div.jump_menu form {
 }
 
 
+
+#browseBar .current-filter-list{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background:#ddd;
+	color:#333;
+	padding:5px;
+	margin-top:5px;
+}
+
+#browseBar .current-filter-list h3{
+	border:none;
+	color:#333!important;
+	background:none;
+	padding:0;
+	margin:0px 0 10px 0;
+	font-size:14px;
+}
+
+#browseBar .current-filter-list li{
+	margin:0px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	background:#fff;
+	color:#333;
+	padding:5px 5px;
+	position:relative;
+}
+
+#browseBar .current-filter-list li strong{
+	margin-left:20px;
+	display:block;
+	font-family:Tahoma, Geneva, sans-serif;
+	color:#555;
+	font-weight:normal;
+	line-height:13px;
+}
+
+#browseBar .current-filter-list li span{
+	position:absolute;
+	width:16px;
+	height:16px;
+	top:50%;
+	left:5px;
+	margin-top:-8px;
+}
+
+#browseBar .current-filter-list li span a{
+	display:block;
+	width:16px;
+	height:16px;
+	background:url(../images/icon_remove.png) top left no-repeat;
+	text-indent:-9999999px;
+	margin-top:1px;
+}
+	
 
 /* archive landing keyword search style
 -------------------------------------------------------------- */
@@ -2548,8 +2622,11 @@ div.jump_menu form {
     position:relative;
     float:right;
     margin:0px 5px 5px 5px;
-    overflow:hidden;
-	padding:0 10px 10px 0;
+    overflow:visible;
+	padding:0;
+	-moz-box-shadow:0px 1px 2px #777;
+	-webkit-box-shadow:0px 1px 2px #777;
+	box-shadow:0px 1px 2px #777;
 }
 
 #search_results .listItem .item.multiple{
@@ -2577,16 +2654,17 @@ div.jump_menu form {
 }
 
 #search_results .listItem .item a span {
-	background:url("../images/85black.png") repeat scroll 0 0 transparent;
-	bottom:1px;
-	color:#FFFFFF;
+	background:#fff;
+	
+	color:#666;
 	display:block;
 	height:20px;
-	left:1px;
+	
 	line-height:20px;
-	position:absolute;
+	
 	text-align:center;
 	width:100px;
+	
 }
 
 #search_results .listItem.highlight{
@@ -2598,41 +2676,40 @@ div.jump_menu form {
 #search_results .listItem.exhibit .item{ width:185px; height:auto;	}
 
 #search_results .item img{
-    border:1px solid #ccc;
+  
     background-color:#fff;
+}
+
+#search_results .item  .item-mini-icons{
+	position:absolute;
+    top:5px;
+    left:5px;
+    z-index:20;
 }
 
 #search_results .item a.type{
     width:15px;
     height:15px;
-    position:absolute;
-    top:5px;
-    left:5px;
-    text-indent:-99999px;
-    z-index:20;
+    text-indent:-99999px;   
+	padding:0;
 }
 
 
-#search_results .item a.transcript{
+#search_results .item a.transcript
+{
     width:15px;
     height:15px;
-    position:absolute;
-    top:5px;
-    left:23px;
     text-indent:-99999px;
-    z-index:20;
-	background: url("/images/icon_manuscript.png") no-repeat scroll left top transparent !important
+	background: url("/images/icon_manuscript.png") no-repeat scroll left top transparent !important;
+	padding:0;
 }
 
 #search_results .item a.translation{
     width:15px;
     height:15px;
-    position:absolute;
-    top:5px;
-    left:41px;
     text-indent:-99999px;
-    z-index:20;
-	background: url("/images/icon_translation.png") no-repeat scroll left top transparent !important
+	background: url("/images/icon_translation.png") no-repeat scroll left top transparent !important;
+	padding:0;
 }
 
 #search_results .listItem .select-item{
@@ -2647,7 +2724,7 @@ div.jump_menu form {
 }
 
 #search_results .listItem .item-add{
-	width:25px;
+	width:15px;
 	height:25px;
 	display:block;
 	position:absolute;
@@ -2658,7 +2735,7 @@ div.jump_menu form {
 }
 
 #search_results .listItem .item-remove{
-	width:25px;
+	width:15px;
 	height:25px;
 	display:block;
 	position:absolute;
@@ -2929,23 +3006,30 @@ div.field {
 	color:#DECC9D!important;
 }
 
-ul.item_meta{
-	list-style:none;
+.item_meta{
 	margin:0;
 	padding:0 5px 0 15px;
 	width:515px;
 	border-left:1px dotted #ddd;
 	float:right;
 }
+.item_meta ul{
+	list-style:none;
+	
+}
 
-ul.item_related{
+.item_related{
 	width:28%;
 	float:right;
 	margin-right:5px;
 }
 
-ul.item_meta li,
-ul.item_related li{
+.item_related ul{
+	
+}
+
+.item_meta ul li,
+.item_related ul li{
 	list-style:none;
 	margin:0;
 	padding:4px 0;
@@ -2955,7 +3039,7 @@ ul.item_related li{
 	font-family:Tahoma, Geneva, sans-serif
 }
 
-ul.item_related li.title{
+.item_related ul li.title{
 	color:#888;
 	font-size:12px;
 	border-bottom:1px solid #ddd;
@@ -2966,39 +3050,39 @@ ul.item_related li.title{
 	overflow:visible!important;
 }
 
-ul.item_meta li:last-child,
-ul.item_related li:last-child{
+.item_meta ul li:last-child,
+.item_related ul li:last-child{
 	border:none;
 	font-family:Tahoma, Geneva, sans-serif
 }
 
-ul.item_related li{
+.item_related ul li{
 	border-bottom:1px dotted #ccc;
 }
-ul.item_meta li.description{
+.item_meta ul li.description{
 	font-size:12px;
 	font-family:Tahoma, Geneva, sans-serif
 }
-ul.item_meta li span,
-ul.item_related li span{
+.item_meta ul li span,
+.item_related ul li span{
 	font-weight:bold;
 	color:#333;
 	margin:0;
 	padding:0;
 }
-ul.item_related li span{
+.item_related ul li span{
 	display:block;
 }
 
-ul.item_meta li a{
+.item_meta ul li a{
 	color:#CA3723;
 }
 
-ul.item_meta li ul{
+.item_meta ul li ul{
 	margin:0px;
 }
 
-ul.item_meta li ul li{
+.item_meta ul li ul li{
 	padding:4px 10px 4px 0px;
 	margin:0;
 	border:none;
@@ -3234,11 +3318,16 @@ img.icon{
 #collection_index .listItem .item {
 	margin-right:10px;
 	background:url(../images/bg_collection_thumb.png) bottom right no-repeat;
-	width:111px;
+	width:110px;
 	height:110px;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none
 }
 
-
+#collection_index .listItem:hover{
+	background-color:#f8eac3;
+}
 
 #collection_index .listItem h3 a:hover{
 	text-decoration:underline;
@@ -3261,14 +3350,14 @@ img.icon{
 #collection_index .listItem .item a span{
 	display:block;
 	position:absolute;
-	bottom:1px;
-	left:1px;
+	bottom:0px;
+	left:0px;
 	height:20px;
 	width:100px;
 	text-align:center;
-	color:#fff;
+	color:#666;
 	line-height:20px;
-	background:url(../images/85black.png);
+	background:#fff;
 }
 
 
