@@ -3,13 +3,13 @@
     <head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
         <%= csrf_meta_tag %>
         <title><%= t(:site_title) %></title>
-        <%=  params[:debug].present? ? stylesheet_link_tag('pdf') : pdf_stylesheet_link_tag("pdf.css") -%>
-        <%=  params[:debug].present? ? javascript_include_tag('number_pages') : pdf_javascript_include_tag("number_pages.js") %>
         <%= yield :head %>
     </head>
     <body onload='number_pages'>
         <div id="header">
-            <%= params[:debug].present? ? image_tag('/images/logo.png') : pdf_image_tag('logo.png') %>
+            <div id="cover_project_title">
+                <h1><%= t(:site_title) %></h1>
+            </div>
         </div>
         <div id="content">
             <%= yield %>

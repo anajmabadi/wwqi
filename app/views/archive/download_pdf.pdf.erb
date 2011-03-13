@@ -1,7 +1,4 @@
 <div class="print_friendly_content">
-    <div id="cover_project_title">
-        <h1><%= t(:site_title) %></h1>
-    </div>
     <div id="cover_item_details">
         <h2><%= @item.title %></h2>
         <ul id="cover_item_detail_list">
@@ -120,9 +117,13 @@
             <% end -%>
         </ul>
     </div>
-    <div id="legal_disclaimer">
+    <p id="legal_disclaimer">
         <%= t(:legal_disclaimer) %>
-    </div>
+    </p>
+    <p id="full_citation">
+    	<span><%= t(:suggested_citation).titleize %>:</span>
+        <%= @item.full_citation %>
+    </p>
     <% unless @cover_page_only -%>
     <div class="page-breaker"></div>
     <% (1..@item.pages).each do |page_number| %>

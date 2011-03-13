@@ -310,11 +310,13 @@ class ArchiveController < ApplicationController
   end
   
   def download_pdf
+  	
+    @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
 
     begin
       @item = Item.find_by_id(params[:id])
     rescue StandardError => error
-      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
+      flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found.'
       @error = true
     end
 		
@@ -322,10 +324,10 @@ class ArchiveController < ApplicationController
       unless @error
         format.html 
         format.pdf do
-        	html = render_to_string(:layout => false)
+        	html = render_to_string(:layout => 'pdf.html.erb')
 		    kit = PDFKit.new(html)
 		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
-		    send_data(kit.to_pdf, :filename => 'it_' + @item.id.to_s + ".pdf", :type => 'application/pdf')
+		    send_data(kit.to_pdf, :filename => 'it_' + @item.id.to_s + ".pdf", :type => Mime::PDF)
 		    return # to avoid double render call
       	end
       else
@@ -957,6 +959,7 @@ def build_genre_query(filter_value, query_hash)
 		else
 			my_layout = 'application' 
 		end
+		return my_layout
 	end
 
 end
