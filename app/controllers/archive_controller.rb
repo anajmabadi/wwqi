@@ -30,7 +30,14 @@ class ArchiveController < ApplicationController
   def collections
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
+    @alphabet = I18n.translate(:a_z_menu).split(" ")
+    
     @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
+
+	# make the filter letter the first of there are more than 50
+	if @all_collections.count > 50 && params[:filter_letter].nil?
+		@filter_letter = @alphabet[0]
+	end
 
     if @filter_letter.blank?
     	@collections = @all_collections
@@ -79,27 +86,28 @@ class ArchiveController < ApplicationController
 
   def subjects
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
-    @all_subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 7, I18n.locale.to_s]).order('subject_translations.name')
-
+    @all_subjects = Subject.where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?', true, 7, I18n.locale.to_s, 0]).order('subject_translations.name')
+	
+	@filter_letter = set_filter_letter( params[:filter_letter], @all_subjects.count) 
+	
     if @filter_letter.blank?
-    @subjects = @all_subjects
+    	@subjects = @all_subjects
     else
-      @subjects = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 7, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')
+      @subjects = @all_subjects.where(['UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', @filter_letter])
     end
     @valid_initials = @all_subjects.map { |s| s.name[0].upcase }.uniq
-    @alphabet = I18n.translate(:a_z_menu).split(" ")
 
   end
 
   def places
 
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
 
-    @all_places = Place.includes("plots").select('DISTINCT places.id').where(['places.publish=? AND place_translations.locale=? AND plots.id IS NOT NULL', true, I18n.locale.to_s]).order('place_translations.name')
-
+    @all_places = Place.where(['places.publish=? AND place_translations.locale=? AND places.items_count_cache > ?', true, I18n.locale.to_s, 0]).order('place_translations.name')
+	
+	@filter_letter = set_filter_letter( params[:filter_letter], @all_places.count) 
+	
     if @filter_letter.blank?
     @places = @all_places
     else
@@ -114,10 +122,10 @@ class ArchiveController < ApplicationController
   def people
 
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-
-    @all_people = Person.includes("appearances").select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND appearances.id IS NOT NULL', true, I18n.locale.to_s]).order('person_translations.name')
-
+   
+    @all_people = Person.select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND people.items_count_cache > ?', true, I18n.locale.to_s,0]).order('person_translations.name')
+	@filter_letter = set_filter_letter( params[:filter_letter], @all_people.count) 
+	
     if @filter_letter.blank?
     @people = @all_people
     else
@@ -132,14 +140,14 @@ class ArchiveController < ApplicationController
   def genres
 
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
-    @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-
-    @all_genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL', true, 8, I18n.locale.to_s]).order('subject_translations.name')
+    
+    @all_genres = Subject.where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?', true, 8, I18n.locale.to_s, 0]).order('subject_translations.name')
+	@filter_letter = set_filter_letter( params[:filter_letter], @all_genres.count) 
 
     if @filter_letter.blank?
     @genres = @all_genres
     else
-      @genres = Subject.includes("classifications").select('DISTINCT subjects.id').where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND classifications.id IS NOT NULL AND UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', true, 8, I18n.locale.to_s,@filter_letter]).order('subject_translations.name')
+      @genres = @all_genres.where(['UPPER(SUBSTRING(subject_translations.name,1,1)) = ?', @filter_letter])
     end
 
     @valid_initials = @all_genres.map { |s| s.name[0].upcase }.uniq
@@ -962,5 +970,18 @@ def build_genre_query(filter_value, query_hash)
 		end
 		return my_layout
 	end
+	
+  def set_filter_letter(passed_filter_letter, record_count = 0)
+  	@alphabet = I18n.translate(:a_z_menu).split(" ")
+	# make the filter letter the first of there are more than 50
+	if record_count > 50 && passed_filter_letter.nil?
+		new_filter_letter = @alphabet[0]
+	elsif passed_filter_letter.nil? || passed_filter_letter.length > 1
+		new_filter_letter = nil
+	else
+		new_filter_letter = passed_filter_letter
+	end
+	return new_filter_letter
+  end
 
 end
