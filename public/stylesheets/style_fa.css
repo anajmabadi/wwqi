@@ -101,8 +101,8 @@ h4, h5, h6 { color:#decc9d }
 h1, h2 { font-weight:200; }
 h3, h4, h5, h6 { font-weight:400; }
 
-h1 { font-size: 4em; line-height: 1em; margin-bottom: 0.5em;color:#decc9d }
-h2 { font-size: 3.833em; margin-bottom:0.761em; line-height:1.167em; color:#decc9d; }
+h1 { font-size: 22px; line-height: 1em; margin-bottom: 0.5em;color:#decc9d }
+h2 { font-size: 18px; margin-bottom:0.761em; line-height:1.167em; color:#decc9d; }
 h3 { font-size: 1.50em; line-height: 1.25em; margin-bottom:.5em; color:#decc9d; margin-top:.5em }
 h4 { font-size: 1.167em; line-height: 1.25;color:#990000; }
 h5 { font-size: 1.267em; margin-bottom:10px; font-weight:bold; text-transform:uppercase; color:#A3A798 }
@@ -341,8 +341,8 @@ margin-top:5px;
  #browser #head ul.sortnav li.active a.module-link { background:url(/images/sortnav_crimson_right.png) no-repeat 100% 50%;  }
  
 
-ul.sortnav .active span.up { width:5px; height:5px; background:url(/images/up_arrow.gif) top left no-repeat; display:inline-block; margin-right:2px}
-ul.sortnav .active span{width:5px; height:5px;  background:url(/images/down_arrow.gif) top left no-repeat; display:inline-block; margin-right:2px}
+ul.sortnav .active span.up { width:5px; height:5px; background:url(/images/up_arrow.gif) top left no-repeat; display:inline-block; margin-right:1px}
+ul.sortnav .active span{width:5px; height:5px;  background:url(/images/down_arrow.gif) top left no-repeat; display:inline-block; margin-right:1px}
 ul.sortnav  span{width:5px; height:5px;  background:none; display:inline-block;}
 ul.sortnav .label{font-size:10px; color:#C00}
 
@@ -552,6 +552,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 }
 
 .paginationBar .sortnav a.module-link{color:#666 ;}
+.paginationBar .sortnav a.module-link:hover{text-decoration:underline}
 .paginationBar li.active .sortnav a.module-link{color:#fff !important;}
 .paginationBar .sortnav .disabled{color:#aaa;}
 .paginationBar .sortnav em {color:#CA4F40;}
@@ -561,6 +562,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .pagination{font-weight:normal;}
 .pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
 .pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
+.pagination a:hover{color:#CA3723!important; text-decoration:underline }
 .pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
 .pagination span.counts {
 	padding-right: 10px;
@@ -957,9 +959,9 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
 	padding: 0 10px 0 0px; }
 	
 #pageFooter a:hover { 
-	color: #999; 
+	color: #C5112C; 
 	text-decoration: none;
-	background: url(/images/icon-fillarrow-gray-fa.gif) no-repeat 100% 50%;
+
 	padding: 0 10px 0 0px; }
 
 #pageFooter a:active { 
@@ -2434,6 +2436,10 @@ div.jump_menu form {
 	
 }
 	
+#archive_index_wrapper ul li a:hover{
+	text-decoration:underline;
+}
+
 	
 	
 /* index lists
@@ -2474,14 +2480,15 @@ div.jump_menu form {
 	width:45%;
 }
 
-
 #indexList ul li a{
 	color:#333;
 	font-size:13px;
+	font-family:Tahoma, Geneva, sans-serif;
 }
 
 #indexList ul li a:hover{
 	color:#CA3723;
+	text-decoration:underline;
 }
 
 #indexList ul li a span{
@@ -2509,7 +2516,7 @@ div.jump_menu form {
 
 #fullIndex #indexList ul.alphabet li {
 	border-right:1px solid #ccc;
-	float:left;
+	float:right;
 	font-size:12px;
 	height:auto;
 	padding:0 8px;
@@ -2531,6 +2538,13 @@ div.jump_menu form {
 	margin-top:10px;
 }
 
+#indexList .dob{
+	font-style:italic;
+	color:#333;
+	margin:0;
+	
+}
+
 #indexList ul li ul{
 	margin-right:20px;
 	line-height:13px;
@@ -2549,6 +2563,10 @@ div.jump_menu form {
 .otherIndexes a{
 	margin-left:10px;
 	color:#CA3723;
+}
+
+.otherIndexes a:hover{
+	text-decoration:underline;
 }
 
 .col3{
@@ -2621,7 +2639,7 @@ div.jump_menu form {
 	height:auto;	
     position:relative;
     float:right;
-    margin:0px 5px 5px 5px;
+    margin:0px 5px 0px 5px;
     overflow:visible;
 	padding:0;
 	-moz-box-shadow:0px 1px 2px #777;
@@ -2646,6 +2664,7 @@ div.jump_menu form {
 	line-height:15px;
 	font-family:Tahoma, Geneva, sans-serif;
 	margin-top:5px;
+	margin-bottom:5px;
 }
 
 #search_results .listItem .item a {
@@ -3369,7 +3388,7 @@ img.icon{
 	width:14px;
 	height:14px;
 	display:block;
-	background:url(../images/info_icon.png) top left no-repeat;
+	background:url(../images/arrow-icon-fa.gif) 0 2px no-repeat;
 	text-indent:-9999px;
 	display:inline-block;
 }

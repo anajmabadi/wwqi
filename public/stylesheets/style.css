@@ -99,8 +99,8 @@ h4, h5, h6 { color:#decc9d }
 h1, h2 { font-weight:200; }
 h3, h4, h5, h6 { font-weight:400; }
 
-h1 { font-size: 4em; line-height: 1em; margin-bottom: 0.5em;color:#decc9d }
-h2 { font-size: 3.833em; margin-bottom:0.761em; line-height:1.167em; color:#decc9d; }
+h1 { font-size: 22px; line-height: 1em; margin-bottom: 0.5em;color:#decc9d }
+h2 { font-size: 18px; margin-bottom:0.761em; line-height:1.167em; color:#decc9d; }
 h3 { font-size: 1.50em; line-height: 1.25em; margin-bottom:.5em; color:#decc9d; margin-top:.5em }
 h4 { font-size: 1.167em; line-height: 1.25;color:#990000; }
 h5 { font-size: 1.167em; margin-bottom:10px; font-weight:bold; text-transform:uppercase; color:#A3A798 }
@@ -224,7 +224,7 @@ dd          { margin-left: 1.5em;}
 #header #nav{margin-top:12px; font-size:1.2em}
 #header li{display:inline;text-transform:uppercase; font-weight:bold;}
 
-#header .lang{float:right; font-weight:bold;}
+#header .lang{float:right; font-weight:bold; font-size:14px; padding-top:0!important;}
 
 
 /* search styles
@@ -570,6 +570,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 
 .paginationBar .sortnav a.module-link{color:#666 ;}
 .paginationBar li.active .sortnav a.module-link{color:#fff !important;}
+.paginationBar .sortnav a.module-link:hover{text-decoration:underline}
 .paginationBar .sortnav .disabled{color:#aaa;}
 .paginationBar .sortnav em {color:#CA4F40;}
 .paginationBar .sortnav a:hover{color:#000;}
@@ -578,6 +579,7 @@ ul.sortnav .label{font-size:10px; color:#C00}
 .pagination{font-weight:bold!important; font-size:0.8em}
 .pagination span, .pagination span a, .next_page, .previous_page{text-transform:uppercase!important}
 .pagination a{padding:1px 6px; margin:0 2px; color:#555!important }
+.pagination a:hover{color:#CA3723!important; text-decoration:underline }
 .pagination em{padding:1px 6px; -moz-border-radius:8px; -webkit-border-radius:8px; color:#fff!important; background-color:#999; margin:0 2px; font-style:normal}
 .pagination span.counts {
 	padding-right: 10px;
@@ -976,9 +978,8 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
     padding: 0 0 0 10px; }
 
 #pageFooter a:hover { 
-    color: #999;
+    color: #C5112C;
     text-decoration: none;
-    background: url(/images/icon-fillarrow-gray.gif) no-repeat 0 50%;
     padding: 0 0 0 10px; }
 
 #pageFooter a:active { 
@@ -2451,6 +2452,10 @@ div.fullscreen {
 	
 }
 
+#archive_index_wrapper ul li a:hover{
+	text-decoration:underline;
+}
+
 
 /* index lists
 -------------------------------------------------------------- */
@@ -2498,6 +2503,7 @@ div.fullscreen {
 
 #indexList ul li a:hover{
 	color:#CA3723;
+	text-decoration:underline;
 }
 
 #indexList ul li a span{
@@ -2549,10 +2555,9 @@ div.fullscreen {
 
 #indexList .dob{
 	font-style:italic;
-	color:#999;
-	display:block;
+	color:#333;
 	margin:0;
-	padding:0 0 0 10px;
+	
 }
 
 #indexList ul li ul{
@@ -2573,6 +2578,10 @@ div.fullscreen {
 .otherIndexes a{
 	margin-left:10px;
 	color:#CA3723;
+}
+
+.otherIndexes a:hover{
+	text-decoration:underline;
 }
 
 .col3{
@@ -2641,7 +2650,7 @@ div.fullscreen {
 	height:auto;
     position:relative;
     float:left;
-    margin:0px 5px 5px 8px;
+    margin:0px 5px 0px 8px;
     overflow:visible;
 	padding:0;
 	-moz-box-shadow:0px 1px 2px #777;
@@ -2664,6 +2673,7 @@ div.fullscreen {
 
 #search_results .listItem p{
 	line-height:15px;
+	margin-bottom:5px;
 }
 
 #search_results .listItem .item a {
@@ -3362,7 +3372,7 @@ img.icon{
 	width:14px;
 	height:14px;
 	display:block;
-	background:url(../images/info_icon.png) top left no-repeat;
+	background:url(../images/arrow-icon.gif) 0 2px no-repeat;
 	text-indent:-9999px;
 	display:inline-block;
 }
