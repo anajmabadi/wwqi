@@ -1,3 +1,4 @@
-bodym *{
+body, *{
 	direction: rtl!important;
+	
 }
