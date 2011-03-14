@@ -37,7 +37,7 @@ class Person < ActiveRecord::Base
     value += self.name unless self.name.blank?
     
     unless self.vitals.blank?
-    	value += ', <span class="dob">' + self.vitals + '</span> '
+    	value += I18n.translate(:comma) + ' <span class="dob">' + self.vitals + '</span> '
     else	
     	normalized_dob = self.dob ||= 0
     	normalized_dod = self.dod ||= 0
