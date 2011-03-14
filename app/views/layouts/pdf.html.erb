@@ -4,6 +4,8 @@
         <%= csrf_meta_tag %>
         <title><%= t(:site_title) %></title>
         <%= stylesheet_link_tag('pdf') -%>
+        <%= stylesheet_link_tag('pdf_fa') if I18n.locale => :fa -%>
+        
         <%= yield :head %>
     </head>
     <body>
