@@ -4,7 +4,7 @@
     <p><%= t(:here_are_some_search_tips) %> </p>
     <ul>
       <li><%= t(:tip_select_fewer_filters) %></li>
-      <li><%= t(:tip_use_indexes) %>: <%= link_to t(:genre), archive_genres_path %>, <%= link_to t(:people), archive_people_path %>, <%= link_to t(:place), archive_places_path %>, <%= link_to t(:subject), archive_subjects_path %></li>
+      <li><%= t(:tip_use_indexes) %>: <%= link_to t(:genre), archive_genres_path %><%= I18n.translate(:comma) %> <%= link_to t(:people), archive_people_path %><%= I18n.translate(:comma) %> <%= link_to t(:place), archive_places_path %><%= I18n.translate(:comma) %> <%= link_to t(:subject), archive_subjects_path %></li>
       <li><%= t(:tip_try_variations) %></li>
     </ul>
     <h4><%= t(:see_our_faq) %> <%= link_to t(:faq), faq_path %></h4>
