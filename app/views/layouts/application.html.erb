@@ -15,7 +15,9 @@
         <!-- load the common styles to all pages -->
         <link rel="shortcut icon" href="/images/favicon.ico" />
         <%= stylesheet_link_tag "style#{language_suffix}", :media => 'screen' %>
-        
+        <%= stylesheet_link_tag "print", :media => 'print' %>
+        <%= stylesheet_link_tag "print#{language_suffix}", :media => 'print' if I18n.locale == :fa %>
+                
         <!-- load the common scripts -->
         <%= javascript_include_tag :defaults %>
         
