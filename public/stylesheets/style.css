@@ -2119,6 +2119,7 @@ div.fullscreen {
 .noItems p{
 	font-size:16px;
 	color:#333;
+	margin-bottom:5px;
 }
 
 .noItems ul li{
@@ -2128,7 +2129,14 @@ div.fullscreen {
 }
 
 
+#search_results .noItems h2{
+	border:none;
+	font-size:18px!important;
+}
 
+#search_results .noItems a{
+	color:#CA3723
+}
 
 
 
@@ -2278,7 +2286,7 @@ div.fullscreen {
 }
 
 #browseBar .current-filter-list li{
-	margin:0px;
+	margin:0px 0 5px 0;
 	-moz-border-radius:5px;
 	-webkit-border-radius:5px;
 	border-radius:5px;
@@ -2286,6 +2294,9 @@ div.fullscreen {
 	color:#333;
 	padding:5px 5px;
 	position:relative;
+}
+#browseBar .current-filter-list li:last-child{
+	margin:0;
 }
 
 #browseBar .current-filter-list li strong{
@@ -2591,7 +2602,7 @@ div.fullscreen {
 }
 
 #indexList .dob{
-	font-style:italic;
+	
 	color:#333;
 	margin:0;
 	
