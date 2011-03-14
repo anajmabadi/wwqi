@@ -172,7 +172,7 @@ class ArchiveController < ApplicationController
   	session[:filter_stack] = filter_stack
   	
   	respond_to do |format|
-    	format.html { redirect_to(archive_browser_path, :notice => I18n.translate(:filter_removed_notice)) }
+    	format.html { redirect_to(archive_browser_path) }
     end
     
   end
