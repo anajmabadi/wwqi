@@ -27,7 +27,7 @@ body, #content, #container {
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
 body {
-	font: 1em Georgia, "Times New Roman", Times, serif;
+	font: 1em "Times New Roman", Times, serif;
 	color: #000; 
 }
 
@@ -35,7 +35,7 @@ body {
    Diffrentiate your headings from your body text.
    Perhaps use a large sans-serif for distinction. */
 h1,h2,h3,h4,h5,h6 {
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: "Times New Roman", Helvetica, Arial, sans-serif;
 	color: #000;
 }
 h1 { font-size: 250%; }

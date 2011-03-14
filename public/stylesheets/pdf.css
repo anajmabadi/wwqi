@@ -53,7 +53,7 @@ table {
 
 
 body {
-	font-family:Georgia, "Times New Roman", Times, serif;
+	font-family: "Times New Roman", Times, serif;
 	line-height:13px;
 }
 p {
@@ -67,14 +67,14 @@ h1 {
 	font-weight:bold;
 	margin:20px 0 56px;
 	padding-bottom:10px;
-	font-family:'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
 }
 
 h2{
 	font-size:22px;
 	font-weight:bold;
 	margin:80px 0 15px 0;
-	font-family:'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
 }
 
 h2.page_item{
@@ -104,7 +104,7 @@ ul li{
 p.description{
 	font-size:16px;
 	color:#666666;
-	font-family:'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
 }
 
 
