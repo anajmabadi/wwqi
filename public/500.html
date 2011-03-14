@@ -1,9 +1,10 @@
-<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <html>
 <head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
   <title>We're sorry, but something went wrong (500)</title>
   <style type="text/css">
-     body { background-color: #fff; color: #666; text-align: left; font-family: arial, sans-serif; background-image:url("/images/bg.jpg");}
+     body { background-color: #fff; color: #666;  font-family: arial, sans-serif; background-image:url("/images/bg.jpg");}
     div.dialog {
       width: 25em;
       padding: 0 4em;
@@ -13,6 +14,7 @@
 	  -webkit-border-radius:10px;
 	  border-radius:10px;
 	  padding:20px;
+	  overflow:hidden
     }
     h1 { font-size: 160%; color: #555; line-height: 1em; }
 	img{border:none;}
@@ -23,11 +25,20 @@
   <!-- This file lives in public/500.html -->
   <div class="dialog">
   	<a href="/"><img src="/images/cover_page_logo.png"></a>
-    <h1>We're sorry, but something went wrong.</h1>
-    <p>We've been notified about this issue and we'll take a look at it shortly.</p>
+    <br style="clear:both"/ >
+    <div style="float:left; width:45%;">
+    	<h1>We're sorry, but something went wrong.</h1>
+    	<p>We've been notified about this issue and we'll take a look at it shortly.</p>
+    </div>
+    <div style="float:right; width:45%; direction:rtl">
+    	<h1>متأسفیم، ولی اشتباهی رخ داده است. </h1>
+    <p>به زودی پیگیری خواهیم کرد تا رفع مشکل شود .</p>
+    </div>
     
-    <h1>گیری خواهیم کرد تا رفع مشکل شود.</h1>
-    <p>متأسفیم، ولی اشتباهی رخ داده است. به زودی پی</p>
+    
+    
+    
+    
   </div>
 </body>
 </html>

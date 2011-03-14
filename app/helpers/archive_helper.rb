@@ -10,17 +10,6 @@ module ArchiveHelper
       else
         my_message += "#{localized_number(items.total_entries)} #{t(:items)}"
       end
-      
-      #query_labels.each_with_index do |query_label, index|
-      # check for simple string labels passed through by accident or convenience
-      #  query_label = query_label.kind_of?(String) ? {:field => query_label} : query_label
-		#if index == 0
-		#	my_message += " - " 
-		#else
-		#	my_message += "; " 
-		#end
-        #my_message += "#{query_label[:values]}" unless query_label[:values].blank?
-      #end
     end
     return my_message.length > 70 ?
       truncate(my_message, :length => 70) + " " + link_to(t(:more), "#filter-popup", :rel => "shadowbox[filter-popup];width=310px;height=260px;" )  :
