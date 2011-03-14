@@ -1056,6 +1056,7 @@ table.styled {
 	font: 0.9em/1.6em "Trebuchet",Verdana,sans-serif;
 	border-collapse: collapse;
 	width:100%;
+	font-family:Tahoma, Geneva, sans-serif
 }
 
 table.styled ,table.styled  caption {
@@ -1064,7 +1065,7 @@ table.styled ,table.styled  caption {
 
 table.styled  caption,table.styled th,table.styled td {
 	border-left: 0;
-	padding: 10px;
+	padding: 10px 0;
 	border-bottom: 1px solid #ddd !important;
 }
 
@@ -1102,8 +1103,8 @@ table.styled tbody a:active,table.styled tbody a:hover,table.styled tbody a:focu
 }
 
 table.styled tbody tr:hover {
-	background-color: #EEE;
-	color: #333
+	
+	
 }
 
 table.styled tbody tr:hover a {
@@ -1120,7 +1121,38 @@ table.styled tbody td+td+td+td a:active,table.styled tbody td+td+td+td a:hover,t
 	color: #E63C1E
 }
 
+table.styled tr.year-row td{
+	border-bottom:none!important;
+	padding-bottom:0!important;
+}
 
+table.styled tr.narrow td{
+	padding:0 0 10px 0!important;
+}
+
+table.styled .from-label,
+table.styled .to-label{
+	display:inline-block;
+	width:55px;
+}
+table td input#big-input{
+	width:300px;
+	
+}
+
+table td.col-33{
+	width:33%;
+}
+
+
+table td.operator{
+	text-align:left;
+	padding-left:10px;
+}
+
+table td.fields select{
+	margin-right:10px;
+}
 
 
 .slideshow_container{
@@ -3425,4 +3457,13 @@ img.icon{
 
 #print-popup-content h2{
 	margin-top:0;
+}
+
+
+
+select#collection_filter,
+select#subject_filter,
+select#repository_filter{
+	width:285px;
+	height:150px;
 }

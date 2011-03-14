@@ -8,59 +8,70 @@
             <%= form_tag(archive_browser_path, :method=> :post, :class => "advanced_search_form") do %>
             <table class="styled">
                 <tr>
-                    <td>
+                    <td class="operator">
                     <%= t(:search_prompt) %>
                     </td>
                     <td>
-                    <%= text_field_tag :value_1, nil, :size => 50 %></td>
-                    <td>
+                    <%= text_field_tag :value_1, nil, :id => "big-input" %></td>
+                    <td  class="fields">
                     <%= select_tag :field_1, options_for_select(@fields) %>
                     </td>
                 </tr>
                 <tr>
-                    <td><%= select_tag :operator_1, options_for_select(@operators) %></td>
+                    <td class="operator"><%= select_tag :operator_1, options_for_select(@operators) %></td>
                     <td>
-                    <%= text_field_tag :value_2, nil, :size => 50 %>
+                    <%= text_field_tag :value_2, nil, :id => "big-input" %>
                     </td>
-                    <td>
+                    <td class="fields">
                     <%= select_tag :field_2, options_for_select(@fields) %>
                     </td>
                 </tr>
                 <tr>
-                    <td><%= select_tag :operator_2, options_for_select(@operators) %>
+                    <td class="operator"><%= select_tag :operator_2, options_for_select(@operators) %>
 
                     </td>
                     <td>
-                    <%= text_field_tag :value_3, nil, :size => 50 %>
+                    <%= text_field_tag :value_3, nil, :id => "big-input" %>
                     </td>
-                    <td>
+                    <td class="fields">
                     <%= select_tag :field_3, options_for_select(@fields) %>
                     </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="col-33">
                     <%= label_tag :collection_filter, t(:filter_results_by_collection) %>
                     <br />
                     <%= select_tag :collection_filter, options_for_select(@collections), {:multiple => true} %>
                     </td>
-                    <td>
+                    <td class="col-33">
                     <%= label_tag :subject_filter, t(:filter_results_by_genre) %>
                     <br />
                     <%= select_tag :subject_filter, options_for_select(@genres), {:multiple => true} %>
                     </td>
-                    <td>
+                    <td class="col-33">
                     <%= label_tag :repository_filter, t(:filter_results_by_repository) %>
                     <br />
                     <%= select_tag :repository_filter, options_for_select(@repositories), {:multiple => true} %>
                     </td>
                 </tr>
-                <tr>
+                <tr class="year-row">
                     <td>
                     <%= t(:advanced_search_date_range_prompt) %>
                     </td>
                     <td><%= text_field_tag :start_year_filter, nil, :size => 5 %> - <%= text_field_tag :end_year_filter, nil, :size => 5 %></td>
                     <td colspan="2"><%= select_tag :calendar_type_filter, options_for_select(@calendar_types) %></td>
                 </tr>
+				
+				<tr class="narrow">
+                    <td>
+                    
+                    </td>
+                    <td>
+						<span class="from-label">From</span>
+						<span class="to-label">To</span></td>
+                    <td colspan="2"></td>
+                </tr>
+				
                 <tr>
                     <td colspan="3">
                     <%= submit_tag t(:reset).capitalize, { :name => 'reset', :id => 'reset_button', :type => "reset" } %>
