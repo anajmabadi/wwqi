@@ -5,7 +5,6 @@
             <p class="description">
                 <%= @item.description %>
 			</p>
-            
         <% end -%>
         <ul id="cover_item_detail_list">
 
@@ -120,10 +119,10 @@
         <%= t(:legal_disclaimer) %>
     </p>
     <p id="full_citation">
-    	<span><%= t(:suggested_citation).titleize %>:</span>
+        <span><%= t(:suggested_citation).titleize %>:</span>
         <%= @item.full_citation %>
     </p>
-    <% unless @cover_page_only -%>
+     <% unless @cover_page_only -%>
     <div class="page-breaker"></div>
     <% (1..@item.pages).each do |page_number| %>
     <%= image_tag(@item.slide_url(page_number)) %>
