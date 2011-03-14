@@ -3,16 +3,14 @@
     <head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <%= csrf_meta_tag %>
         <title><%= t(:site_title) %></title>
-        <%= stylesheet_link_tag('pdf') -%>
-        <%= stylesheet_link_tag('pdf_fa') if I18n.locale == :fa -%>
-      
+        <%= stylesheet_link_tag('/stylesheets/pdf.css') -%>
+        <%= stylesheet_link_tag('/stylesheets/pdf_fa.css') if I18n.locale == :fa -%>
         <%= yield :head %>
     </head>
     <body>
         <div id="header">
             <div id="cover_project_title">
-			  	<img src="http://www.qajarwomen.org/images/cover_page_logo.png">
-                <h1><%= t(:site_title) %></h1>
+			  	<img src="http://www.qajarwomen.org/images/cover_page_logo.png" width="200">
             </div>
         </div>
         <div id="content">
