@@ -1,7 +1,7 @@
 <div id="translation-popup" style="display:none;">
     <div id="translation-popup-content" style="padding:20px;color:#fff;">
         <div class="print_friendly_link">
-            <%= link_to t(:print_friendly_view), archive_detail_print_friendly_translation_path(:id => item.id), 'data-popup' => true %>
+            <%= link_to t(:print_friendly_view), archive_detail_print_friendly_translation_path(:id => item.id), 'data-popup' => true, 'class'=>'redButton' %>
         </div>
         <p class="citation">
             <em><%= item.full_citation %></em>

@@ -18,7 +18,8 @@
 
         <h2><%= @item.title %></h2>
         <div id="item_details_wrapper">
-            <ul class="item_meta">
+            <div class="item_meta">
+			<ul>
                 <% unless @item.clips.empty? -%>
                 <%= raw css_audio_player(@item.clips[0].title) %>
                 <% end -%>
@@ -126,7 +127,9 @@
                     &nbsp;
                 </li>
             </ul>
-            <ul class="item_related">
+			</div>
+            <div class="item_related">
+				<ul>
 				<li class="title"><%= t(:related_tags) %></li>
 				<% unless @item.subjects.genres.empty? -%>
                 <li>
@@ -143,7 +146,7 @@
                     <ul>
                         <% @item.comps.each do |comp| -%>
                         <li>
-                            <%= link_to comp.comp.title, archive_detail_path(:id => comp.comp_id) %>
+                            <%= link_to comp.comp.title, archive_detail_path(:id => comp.comp_id), :class => "tag"  %>
                         </li>
                         <% end -%>
                     </ul>
@@ -176,6 +179,7 @@
                 </li>
                 <% end -%>
             </ul>
+			</div>
         </div>
     </div>
 </div>
