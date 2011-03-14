@@ -5,13 +5,12 @@
         <title><%= t(:site_title) %></title>
         <%= stylesheet_link_tag('/stylesheets/pdf.css') -%>
         <%= stylesheet_link_tag('/stylesheets/pdf_fa.css') if I18n.locale == :fa -%>
-      
         <%= yield :head %>
     </head>
     <body>
         <div id="header">
             <div id="cover_project_title">
-			  	<img src="http://www.qajarwomen.org/images/cover_page_logo.png">
+			  	<img src="http://www.qajarwomen.org/images/cover_page_logo.png" width="200">
             </div>
         </div>
         <div id="content">
