@@ -10,7 +10,7 @@
     <% item.passports.is_published.each do |passport| %>
     <%= link_to(truncate(passport.repository.name), passport.full_url, :class => "redButton", 'data-popup' => true) if passport.repository.publish %>
     <% end unless item.passports.nil? -%>
-    <a rel="shadowbox[print];width=310px;height=260px;" title= "<%= t(:download_pdf).titleize %>" href="#print-popup" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:download_pdf).titleize %></a>
+    <a title= "<%= t(:download_pdf).titleize %>" href="<%= archive_detail_download_pdf_path(:id => item.id, :format => :pdf) %>" class="textButton"><img class="icon" src="/images/ico_print.gif" ><%= t(:download_pdf).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download_images).titleize %></a>
 	<a rel="shadowbox[email];width=450px;height=480px;" title= "<%= t(:email_citation).titleize %>" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
     <% unless item.transcript_fa.blank? -%>
