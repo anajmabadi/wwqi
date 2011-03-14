@@ -2203,7 +2203,7 @@ div.jump_menu form {
 	line-height:14px;
 	margin:0;
 	background:url(/images/bullet_fa.gif) 100% 5px no-repeat;
-	margin: 4px 10px 4px 0px;
+	margin: 5px 10px 5px 0px;
 }
 
 #browseBar .list li span{
@@ -2298,8 +2298,6 @@ div.jump_menu form {
 /* archive landing keyword search style
 -------------------------------------------------------------- */
 
-
-
 #archive_search_wrapper{
 	
 	width:520px;
@@ -2317,6 +2315,14 @@ div.jump_menu form {
  #archive_search_wrapper #simple_search{
 	width:100%;
 	float:none
+}
+
+#archive_search_wrapper a{
+	font-family:Tahoma, Geneva, sans-serif
+}
+
+#archive_search_wrapper a:hover{
+	text-decoration:underline;
 }
 
 #archive_search_wrapper span.examples{
@@ -2465,6 +2471,7 @@ div.jump_menu form {
 	color:#CA3723;
 	background:url("/images/bullet_fa.gif") no-repeat scroll 100% 5px transparent;
 	padding-right:6px;
+	font-family:Tahoma, Geneva, sans-serif;
 	
 }
 	
@@ -3423,6 +3430,10 @@ img.icon{
 	background:url(../images/arrow-icon-fa.gif) 0 2px no-repeat;
 	text-indent:-9999px;
 	display:inline-block;
+}
+
+.collectionInfoLink:hover{
+	background:url(../images/arrow-icon-fa-hover.gif) 0 2px no-repeat;
 }
 
 .mandatory{
