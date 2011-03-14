@@ -165,8 +165,7 @@ class ArchiveController < ApplicationController
   			# the search term is a simple numerical id and can be matched to a filter directly
   			filter_stack[filter_name] = filter_stack[filter_name].reject { |i| i == value.to_i }
   		elsif filter_name == :keyword_filter && !value.nil?	
-			new_array = filter_stack[:keyword_filter][:values][0].reject { |i| i == value }
-			filter_stack[:keyword_filter][:values][0] = new_array
+			filter_stack[:keyword_filter] = nil
   		else 
   			filter_stack[filter_name] = nil 
   		end
