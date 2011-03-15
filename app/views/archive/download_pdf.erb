@@ -125,7 +125,7 @@
      <% unless @cover_page_only -%>
     <div class="page-breaker"></div>
     <% (1..@item.pages).each do |page_number| %>
-    <%= image_tag(@item.slide_url(page_number)) %>
+    <%= image_tag(@item.slide_url(page_number), :class => 'item_image') %>
     <h2 class="page_item"><%= format_item_image_caption(@item, page_number) %></h2>
     <p><%= @item.full_citation %>
     <div class="page-breaker"></div>

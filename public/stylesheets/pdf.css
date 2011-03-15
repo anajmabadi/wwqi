@@ -122,3 +122,7 @@ p#full_citation span{
     clear: both;
     page-break-before: always;
 }  
+
+img.item_image {
+	width: 700px;
+}
