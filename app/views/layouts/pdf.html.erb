@@ -5,6 +5,8 @@
         <title><%= t(:site_title) %></title>
         <%= stylesheet_link_tag('/stylesheets/pdf.css', :media => 'screen, print') -%>
         <%= stylesheet_link_tag('/stylesheets/pdf_fa.css', :media => 'screen, print') if I18n.locale == :fa -%>
+        
+        <%= stylesheet_link_tag('/stylesheets/pdf_screen.css', :media => 'screen') -%>
         <%= yield :head %>
     </head>
     <body>
