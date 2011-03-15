@@ -330,7 +330,7 @@ class ArchiveController < ApplicationController
         format.html 
         format.pdf do
         	html = render_to_string(:layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
-		    kit = PDFKit.new(html, :encoding => 'UTF-8', "disable-pdf-compression" => true )
+		    kit = PDFKit.new(html, :encoding => 'UTF-8', "no-pdf-compression" => true )
 		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
 		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
 		    #kit.to_file("#{Rails.root}/public/pdfs/it_" + @item.id.to_s + ".pdf")
