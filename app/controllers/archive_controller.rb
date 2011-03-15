@@ -407,6 +407,7 @@ class ArchiveController < ApplicationController
   end
 
   def download
+  	@return_url = archive_detail_path(params[:id])
     @error = false
     begin
       @item = Item.find_by_id(params[:id])
@@ -428,9 +429,17 @@ class ArchiveController < ApplicationController
 		zip_them_all.zip
       end
       send_file @file_to_send, :type => "application/zip"
+      return
     rescue => error
       flash[:error] = error.message
-    @error = true
+    	@error = true
+    end
+    respond_to do |format|
+      unless @error
+        format.html { redirect_to @return_url}
+      else
+        format.html { redirect_to @return_url, :flash => { :error => error.message} }
+      end
     end
   end
 
@@ -450,7 +459,7 @@ class ArchiveController < ApplicationController
    
    respond_to do |format|
       unless @error
-        format.html { redirect_to @return_url, :notice => I18n.translate(:email_sent)}
+        format.html { redirect_to @return_url}
       else
         format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email_sent) + ": " + e.message} }
       end
