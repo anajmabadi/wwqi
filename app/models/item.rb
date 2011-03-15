@@ -563,6 +563,18 @@ class Item < ActiveRecord::Base
     return file_urls
   end
   
+  def pdf_file_name()
+    return FILE_PREFIX + "#{self.id.to_s}.pdf"
+  end
+  
+  def pdf_url()
+    return LIBRARY_URL + PDFS_DIR + pdf_file_name()
+  end
+  
+  def pdf_path()
+    return LIBRARY_PATH + PDFS_DIR + pdf_file_name()
+  end
+  
   def zip_file_name()
     return FILE_PREFIX + "#{self.id.to_s}.zip"
   end

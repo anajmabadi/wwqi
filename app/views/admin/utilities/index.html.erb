@@ -27,6 +27,14 @@
                     </p>
                     </td>
                 </tr>
+                <tr>
+                    <td><%= button_to 'Generate Item PDFs', admin_utilities_generate_pdfs_path %></td>
+                    <td>
+                    <p>
+                        This routine generates new PDFs for all items marked for publication.
+                    </p>
+                    </td>
+                </tr>
                 <% if Rails.env == 'development' %>
                 <tr>
                     <td><%= button_to "Rename files by original file name", :action => 'rename_by_file_name' %></td>

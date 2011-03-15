@@ -126,6 +126,7 @@ Qajar::Application.routes.draw do
   match 'admin/utilities/rename_thumbs_by_index/:collection_id' => 'admin/utilities#rename_thumbs_by_index', :as => :rename_thumbs_by_index
   match 'admin/utilities/rebuild_item_counts' => 'admin/utilities#rebuild_item_counts', :as => 'admin_utilities_rebuild_item_counts'
   match 'admin/utilities/reload_translations' => 'admin/utilities#reload_translations', :as => 'admin_utilities_reload_translations'
+  match 'admin/utilities/generate_pdfs' => 'admin/utilities#generate_pdfs', :as => 'admin_utilities_generate_pdfs'
   
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

@@ -29,12 +29,15 @@ gem 'jquery-rails'
 gem 'calendar'
 
 gem 'pdfkit'
+gem 'beanstalk-client'
+gem 'stalker'
 #gem 'wkhtmltopdf'
 
 # gem "bj"
 # gem "hpricot", "0.6"
 # gem "sqlite3-ruby", :require => "sqlite3"
 # gem "aws-s3", :require => "aws/s3"
+
 group :test do
   gem 'database_cleaner'
   gem 'cucumber-rails', ">= 0.3.2"
