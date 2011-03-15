@@ -317,7 +317,8 @@ class ArchiveController < ApplicationController
   def download_pdf
   	
     @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
-
+    @cover_page_only = params[:cover_page_only] == 'true'
+    
     begin
       @item = Item.find_by_id(params[:id])
     rescue StandardError => error
