@@ -27,6 +27,7 @@
                     </p>
                     </td>
                 </tr>
+                <% if Rails.env == 'development' %>
                 <tr>
                     <td><%= button_to 'Generate Item PDFs', admin_utilities_generate_pdfs_path %></td>
                     <td>
@@ -35,7 +36,6 @@
                     </p>
                     </td>
                 </tr>
-                <% if Rails.env == 'development' %>
                 <tr>
                     <td><%= button_to "Rename files by original file name", :action => 'rename_by_file_name' %></td>
                     <td>

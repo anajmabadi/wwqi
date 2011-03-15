@@ -29,8 +29,11 @@ gem 'jquery-rails'
 gem 'calendar'
 
 gem 'pdfkit'
-gem 'beanstalk-client'
-gem 'stalker'
+
+group :develop do
+  gem 'beanstalk-client'
+  gem 'stalker'
+end
 #gem 'wkhtmltopdf'
 
 # gem "bj"
@@ -48,6 +51,4 @@ group :test do
   gem 'launchy'    # So you can do Then show me the page
   gem "webrat", ">= 0.7.2"
 end
-
-
 

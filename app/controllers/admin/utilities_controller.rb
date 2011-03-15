@@ -14,15 +14,18 @@ class Admin::UtilitiesController < Admin::AdminController
   end
   
   def generate_pdfs
-  	end_index = params[:end_index].to_i ||= 0
-  	start_index = params[:start_index].to_i ||= 0
-  	items = Item.is_published.where('pages < ? AND pages > ?', 100, 49).order('items.id')
-  	items.limit(end_index) unless end_index == 0
-  	items.offset(start_index) unless start_index == 0
-  	items.all.each do |item|
-  		@item = item
-		html = render_to_string(:controller => :archive, :action => :download_pdf, :layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb', :id => item.id)
-	   	Stalker.enqueue("make_pdfs", :start_index => start_index, :end_index => end_index, :html => html, :pdf_path => item.pdf_path)
+  	
+  	if Rails.env == 'development'
+	  	end_index = params[:end_index].to_i ||= 0
+	  	start_index = params[:start_index].to_i ||= 0
+	  	items = Item.is_published.where('pages < ? AND pages > ?', 100, 49).order('items.id')
+	  	items.limit(end_index) unless end_index == 0
+	  	items.offset(start_index) unless start_index == 0
+	  	items.all.each do |item|
+	  		@item = item
+			html = render_to_string(:controller => :archive, :action => :download_pdf, :layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb', :id => item.id)
+		   	Stalker.enqueue("make_pdfs", :start_index => start_index, :end_index => end_index, :html => html, :pdf_path => item.pdf_path)
+	  	end
   	end
   	
   	respond_to do |format|
