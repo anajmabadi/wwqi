@@ -575,6 +575,14 @@ class Item < ActiveRecord::Base
     return LIBRARY_PATH + PDFS_DIR + pdf_file_name()
   end
   
+  def pdf_cover_sheet_path()
+    return LIBRARY_PATH + PDFS_DIR + pdf_cover_sheet_file_name()
+  end
+  
+  def pdf_cover_sheet_file_name()
+    return FILE_PREFIX + "#{self.id.to_s}_cover_sheet.pdf"
+  end
+  
   def zip_file_name()
     return FILE_PREFIX + "#{self.id.to_s}.zip"
   end
