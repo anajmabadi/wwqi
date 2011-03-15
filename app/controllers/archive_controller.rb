@@ -422,8 +422,9 @@ class ArchiveController < ApplicationController
 	    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
 	    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
 	    #kit.to_file("#{Rails.root}/public/pdfs/it_" + @item.id.to_s + ".pdf")
-	    kit.to_file(@item.pdf_cover_sheet_path)
-	    files_to_zip << @item.pdf_cover_sheet_path
+	    file_path = "#{Rails.root}/tmp/it_#{@item.id}_cover_sheet.pdf"
+	    kit.to_file(file_path)
+	    files_to_zip << file_path
 		#create a zip file if it is the first time
 		zip_them_all = ZipThemAll.new(@file_to_send, files_to_zip)
 		zip_them_all.zip
