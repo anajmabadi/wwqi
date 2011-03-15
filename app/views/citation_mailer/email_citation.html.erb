@@ -4,8 +4,17 @@
     <meta content="text/html; charset=UTF-8" http-equiv="Content-Type" />
   </head>
   <body>
+  	<% unless @note.blank? -%>
+  	<p>
+  		<%= @note %>
+  	</p>
+  	<% end -%>
     <p>
-      <%= @body %>
+    	<%= t(:suggested_citation) %>: <em><%= @citation %></em>
+    </p>
+    <hr />
+    <p>
+    	<%= t(:legal_disclaimer) %>
     </p>
   </body>
 </html>

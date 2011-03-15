@@ -29,7 +29,6 @@ class ArchiveController < ApplicationController
 
   def collections
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-
     @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
 
     if @filter_letter.blank?
@@ -450,10 +449,10 @@ class ArchiveController < ApplicationController
   	@return_url = archive_detail_path(params[:id])
   	begin
     # assemble the mail file
-    from_email = params[:from_email]
-    to_email = params[:to_email]
-    notes = params[:notes]
-    citation = params[:citation]
+    @from = params[:from]
+    @to = params[:to]
+    @note = params[:note]
+    @citation = params[:citation]
    rescue => e
    	@error = true
    	flash[:error] = e.message
@@ -461,6 +460,10 @@ class ArchiveController < ApplicationController
    
    respond_to do |format|
       unless @error
+      	
+      	#send the citation
+      	CitationMailer.email_citation(@to, @from, @note, @citation).deliver
+      	
         format.html { redirect_to @return_url}
       else
         format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email_sent) + ": " + e.message} }
