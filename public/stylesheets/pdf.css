@@ -32,9 +32,6 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
-	line-height: 1;
-}
 ol, ul {
 	list-style: none;
 }
@@ -58,6 +55,7 @@ body {
 }
 p {
     margin: 10px 0px 10px 0px;
+    line-height:13px;
 }
 
 h1 {
@@ -67,14 +65,16 @@ h1 {
 	font-weight:bold;
 	margin:20px 0 56px;
 	padding-bottom:10px;
-	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif;
+	line-height:22px;
 }
 
 h2{
 	font-size:22px;
 	font-weight:bold;
 	margin:80px 0 15px 0;
-	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif;
+	line-height:22px;
 }
 
 h2.page_item{
@@ -82,6 +82,7 @@ h2.page_item{
 	border-bottom:1px solid #efefef;
 	padding-bottom:10px;
 	font-size:18px;
+	line-height:18px;
 }
 
 p, ul, li{
@@ -104,7 +105,8 @@ ul li{
 p.description{
 	font-size:16px;
 	color:#666666;
-	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif
+	font-family:"Times New Roman", 'Helvetica Neue',Arial, Helvetica, sans-serif;
+	line-height: 16px;
 }
 
 
