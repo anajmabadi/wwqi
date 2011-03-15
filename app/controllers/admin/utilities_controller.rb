@@ -1,4 +1,6 @@
 class Admin::UtilitiesController < Admin::AdminController
+	require 'stalker'
+	include Stalker
   
   def index
     @collections = Collection.find(:all, :order => 'collection_translations.name')
@@ -18,13 +20,32 @@ class Admin::UtilitiesController < Admin::AdminController
   	if Rails.env == 'development'
 	  	end_index = params[:end_index].to_i ||= 0
 	  	start_index = params[:start_index].to_i ||= 0
-	  	items = Item.is_published.where('pages < ? AND pages > ?', 100, 49).order('items.id')
+	  	items = Item.is_published.where('pages < ?', 50).order('items.id').limit(10)
 	  	items.limit(end_index) unless end_index == 0
 	  	items.offset(start_index) unless start_index == 0
-	  	items.all.each do |item|
+	  	items.each do |item|
+			url = "http://www.qajarwomen.org/archive/detail/#{item.id.to_s}/download_pdf"
+		   	Stalker.enqueue("make_live_pdfs", :url => url, :pdf_path => item.pdf_path)
+	  	end
+  	end
+  	
+  	respond_to do |format|
+        format.html { redirect_to(admin_utilities_path, :notice => 'Item PDFs were successfully queued for processing.') } 
+    end
+  end	
+  
+  def generate_pdfs_local
+  	
+  	if Rails.env == 'development'
+	  	end_index = params[:end_index].to_i ||= 0
+	  	start_index = params[:start_index].to_i ||= 0
+	  	items = Item.is_published.where('pages < ?', 50).order('items.id')
+	  	items.limit(end_index) unless end_index == 0
+	  	items.offset(start_index) unless start_index == 0
+	  	items.each do |item|
 	  		@item = item
 			html = render_to_string(:controller => :archive, :action => :download_pdf, :layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb', :id => item.id)
-		   	Stalker.enqueue("make_pdfs", :start_index => start_index, :end_index => end_index, :html => html, :pdf_path => item.pdf_path)
+		   	Stalker.enqueue("make_pdfs", :html => html, :pdf_path => item.pdf_path)
 	  	end
   	end
   	
