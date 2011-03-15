@@ -16,7 +16,7 @@ class Admin::UtilitiesController < Admin::AdminController
   def generate_pdfs
   	end_index = params[:end_index].to_i ||= 0
   	start_index = params[:start_index].to_i ||= 0
-  	items = Item.is_published.where('pages < ?', 50).order('items.id')
+  	items = Item.is_published.where('pages < ? AND pages > ?', 100, 49).order('items.id')
   	items.limit(end_index) unless end_index == 0
   	items.offset(start_index) unless start_index == 0
   	items.all.each do |item|
