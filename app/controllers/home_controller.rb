@@ -5,6 +5,7 @@ class HomeController < ApplicationController
     
     @limit = 12
     @item_count = Item.is_published.count
+    @image_count = Image.where("publish=?", true).count
     @items = Item.where("publish = ?", true).order('sort_year').offset(rand(@item_count - 12).abs).limit(@limit)
     @items = @items | @additional_items unless @additional_items.nil? || @additional_items.empty?
   end

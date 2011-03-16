@@ -17,7 +17,7 @@
 		  </div>
 		</div>
 		<div id="home_search_wrapper">
-			<h4><%= "#{t(:home_search_prompt_prefix)} #{localized_number(@item_count)} #{t(:home_search_prompt_suffix)}" %></h4>
+			<h4><%= "#{t(:home_search_prompt_prefix)} #{localized_number(@image_count)} #{t(:home_search_prompt_suffix)}" %></h4>
 		 		<div class="clearfix" id="simple_search">
 					<form method="get" class="searchform" action="/archive/browser">
 					  <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
