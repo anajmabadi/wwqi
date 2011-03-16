@@ -12,176 +12,168 @@
 
 <div class="clearfix archiveBigWrapper" id="item_details">
 
-    <%= render :partial => "detail_item_pagination_bar", :locals => { :item => @item, :items => @items, :return_url => @return_url }%>
+	<%= render :partial => "detail_item_pagination_bar", :locals => { :item => @item, :items => @items, :return_url => @return_url }%>
 
-    <div id="search_results" class="clearfix">
+	<div id="search_results" class="clearfix">
 
-        <h2><%= @item.title %></h2>
-        <div id="item_details_wrapper">
-            <div class="item_meta">
-			<ul>
-                <% unless @item.clips.empty? -%>
-                <%= raw css_audio_player(@item.clips[0].title) %>
-                <% end -%>
-                
-                <% unless @item.creators.blank? -%>
-                <li class="description">
-                    <span><%= t(:creator).titleize %>:</span>
-                    <%= @item.creators %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.published.blank? -%>
-                <li class="description">
-                    <span><%= t(:published).titleize %>:</span>
-                    <%= @item.published %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.show_date.blank? -%>
-                <li class="description">
-                    <span><%= t(:date).titleize %>:</span>
-                    <%= @item.show_date %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.description.blank? -%>
-                <li class="description">
-                    <span><%= t(:description).titleize %>:</span>
-                    <%= @item.description %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.remarks.blank? -%>
-                <li>
-                    <span><%= t(:notes).titleize %>: </span>
-                    <%= @item.remarks %>
-                </li>
-                <% end -%>
-                
-
-                <% unless @item.alternate_titles.blank? -%>
-                <li>
-                    <span><%= t(:alternate_titles).capitalize %></span>
-                    <%= @item.alternate_titles.map {|at| at.title }.reject { |at| at.blank? }.join(", ") %>
-                </li>
-                <% end -%>
-
-                <% unless @item.dimension_label.blank? -%>
-                <li>
-                    <span><%= t(:dimensions).titleize %>:</span>
-                    <%= @item.dimension_label %>
-                </li>
-                <% end -%>
-
-                <% unless @item.collection.nil? || @item.collection.tips.blank? -%>
-                <li>
-                    <span><%= t(:tips).titleize %>: </span>
-                    <%= @item.collection.tips %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.collection.nil? -%>
-                <li>
-                    <span><%= t(:collection).titleize %>: </span>
-                    <%= link_to @item.collection.name, archive_browser_path(:collection_filter => @item.collection_id), :class=> "tag", :title => t(:see_more) %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.accession_num.blank? -%>
-                <li>
-                    <span><%= t(:record_number).titleize %>: </span>
-                    <%= @item.accession_num %>
-                </li>
-                <% end -%>
-            
-                
-                <% unless @item.repository_credit.blank? -%>
-                <li>
-                    <span><%= t(:repository).titleize %>:</span>
-                    <%= @item.repository_credit %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.collection.nil? || @item.collection.restrictions.blank? -%>
-                <li>
-                    <span><%= t(:restrictions).titleize %>:</span>
-                    <%= @item.collection.restrictions %>
-                </li>
-                <% end -%>
-                
-                <% unless @item.collection.nil? || @item.collection.acquired_on.nil? -%>
-                <li>
-                    <span><%= t(:accessed_on).titleize %>:</span>
-                    <%= localized_date(@item.collection.acquired_on) %>
-                </li>
-                <% end -%>
-                <% unless @item.collection.nil? || @item.collection.last_edited.nil? -%>
-                <li>
-                    <span><%= t(:last_edited).titleize %>:</span>
-                    <%= localized_date(@item.collection.last_edited) %>
-                </li>
-                <% end -%>
-
-                <li class="clear">
-                    &nbsp;
-                </li>
-            </ul>
-			</div>
-            <div class="item_related">
+		<h2><%= @item.title %></h2>
+		<div id="item_details_wrapper">
+			<div class="item_meta">
 				<ul>
-				<li class="title"><%= t(:related_tags) %></li>
-				<% unless @item.subjects.genres.empty? -%>
-                <li>
-                    <span class="block"><%= t(:genres).titleize %></span>
-                    <% @item.subjects.genres.each do |genre| -%>
-                    <%= link_to genre.name, archive_browser_path(:genre_filter => genre.id), :class => "tag" %>
-                    <% end -%>
-                </li>
-                <% end -%>
+					<% unless @item.clips.empty? -%>
+					<%= raw css_audio_player(@item.clips[0].title) %>
+					<% end -%>
 
-                <% unless @item.comps.empty? -%>
-                <li>
-                    <span><%= t(:related_items).titleize %></span>
-                    <ul>
-                        <% @item.comps.each do |comp| -%>
-                        <li>
-                            <%= link_to comp.comp.title, archive_detail_path(:id => comp.comp_id), :class => "tag"  %>
-                        </li>
-                        <% end -%>
-                    </ul>
-                </li>
-                <% end -%>
-                <% unless @item.appearances.empty? -%>
-                <li>
-                    <span><%= t(:people).titleize %></span>
-                    <% @item.appearances.each do |appearance| -%>
-                    <%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id), :class=>"tag" %>
-                    <% end -%>
-                </li>
-                <% end -%>
+					<% unless @item.creators.blank? -%>
+					<li class="description">
+						<span><%= t(:creator).titleize %>:</span>
+						<%= @item.creators %>
+					</li>
+					<% end -%>
 
-                <% unless @item.subjects.concepts.empty? -%>
-                <li>
-                    <span><%= t(:subjects).titleize %></span>
-                    <% @item.subjects.concepts.each do |subject| -%>
-                    <%= link_to subject.name, archive_browser_path(:subject_filter => subject.id), :class=>"tag" %>
-                    <% end -%>
-                </li>
-                <% end -%>
+					<% unless @item.published.blank? -%>
+					<li class="description">
+						<span><%= t(:published).titleize %>:</span>
+						<%= @item.published %>
+					</li>
+					<% end -%>
 
-                <% unless @item.plots.empty? -%>
-                <li>
-                    <span><%= t(:places).titleize %></span>
-                    <% @item.plots.each do |plot| -%>
-                    <%= link_to plot.place.name,  archive_browser_path(:place_filter => plot.place.id), :class=>"tag" %>
-                    <% end -%>
-                </li>
-                <% end -%>
-            </ul>
+					<% unless @item.show_date.blank? -%>
+					<li class="description">
+						<span><%= t(:date).titleize %>:</span>
+						<%= @item.show_date %>
+					</li>
+					<% end -%>
+
+					<% unless @item.description.blank? -%>
+					<li class="description">
+						<span><%= t(:description).titleize %>:</span>
+						<%= @item.description %>
+					</li>
+					<% end -%>
+
+					<% unless @item.remarks.blank? -%>
+					<li>
+						<span><%= t(:notes).titleize %>:</span>
+						<%= @item.remarks %>
+					</li>
+					<% end -%>
+
+					<% unless @item.alternate_titles.blank? -%>
+					<li>
+						<span><%= t(:alternate_titles).capitalize %></span>
+						<%= @item.alternate_titles.map {|at| at.title }.reject { |at| at.blank? }.join(", ") %>
+					</li>
+					<% end -%>
+
+					<% unless @item.dimension_label.blank? -%>
+					<li>
+						<span><%= t(:dimensions).titleize %>:</span>
+						<%= @item.dimension_label %>
+					</li>
+					<% end -%>
+
+					<% unless @item.collection.nil? -%>
+					<li>
+						<span><%= t(:collection).titleize %>:</span>
+						<%= link_to @item.collection.name, archive_browser_path(:collection_filter => @item.collection_id), :class=> "tag", :title => t(:see_more) %>
+					</li>
+					<% end -%>
+
+					<% unless @item.repository_credit.blank? -%>
+					<li>
+						<span><%= t(:repository).titleize %>:</span>
+						<%= @item.repository_credit %>
+					</li>
+					<% end -%>
+
+					<% unless @item.collection.nil? || @item.collection.restrictions.blank? -%>
+					<li>
+						<span><%= t(:restrictions).titleize %>:</span>
+						<%= @item.collection.restrictions %>
+					</li>
+					<% end -%>
+
+					<% unless @item.collection.nil? || @item.collection.acquired_on.nil? -%>
+					<li>
+						<span><%= t(:accessed_on).titleize %>:</span>
+						<%= localized_date(@item.collection.acquired_on) %>
+					</li>
+					<% end -%>
+					<% unless @item.collection.nil? || @item.collection.last_edited.nil? -%>
+					<li>
+						<span><%= t(:last_edited).titleize %>:</span>
+						<%= localized_date(@item.collection.last_edited) %>
+					</li>
+					<% end -%>
+
+					<li class="clear">
+						&nbsp;
+					</li>
+				</ul>
+				<p id="digital_ids">
+					<% unless @item.accession_num.blank? -%>
+					<%= t(:record_number).capitalize %>: <%= @item.accession_num %>
+					<% end -%>
+					/ <%= t(:digital_id).capitalize %>: <%= @item.id %>
+				</p>
 			</div>
-        </div>
-    </div>
+			<div class="item_related">
+				<ul>
+					<li class="title">
+						<%= t(:related_tags) %>
+					</li>
+					<% unless @item.subjects.genres.empty? -%>
+					<li>
+						<span class="block"><%= t(:genres).titleize %></span>
+						<% @item.subjects.genres.each do |genre| -%>
+						<%= link_to genre.name, archive_browser_path(:genre_filter => genre.id), :class => "tag" %>
+						<% end -%>
+					</li>
+					<% end -%>
+
+					<% unless @item.comps.empty? -%>
+					<li>
+						<span><%= t(:related_items).titleize %></span>
+						<ul>
+							<% @item.comps.each do |comp| -%>
+							<li>
+								<%= link_to comp.comp.title, archive_detail_path(:id => comp.comp_id), :class => "tag"  %>
+							</li>
+							<% end -%>
+						</ul>
+					</li>
+					<% end -%>
+					<% unless @item.appearances.empty? -%>
+					<li>
+						<span><%= t(:people).titleize %></span>
+						<% @item.appearances.each do |appearance| -%>
+						<%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id), :class=>"tag" %>
+						<% end -%>
+					</li>
+					<% end -%>
+
+					<% unless @item.subjects.concepts.empty? -%>
+					<li>
+						<span><%= t(:subjects).titleize %></span>
+						<% @item.subjects.concepts.each do |subject| -%>
+						<%= link_to subject.name, archive_browser_path(:subject_filter => subject.id), :class=>"tag" %>
+						<% end -%>
+					</li>
+					<% end -%>
+
+					<% unless @item.plots.empty? -%>
+					<li>
+						<span><%= t(:places).titleize %></span>
+						<% @item.plots.each do |plot| -%>
+						<%= link_to plot.place.name,  archive_browser_path(:place_filter => plot.place.id), :class=>"tag" %>
+						<% end -%>
+					</li>
+					<% end -%>
+				</ul>
+			</div>
+		</div>
+	</div>
 </div>
 <%= render :partial => "detail_print_popup", :locals => { :item => @item } %>
 <%= render :partial => "detail_email_confirmation_popup", :locals => { :error => @error } %>
