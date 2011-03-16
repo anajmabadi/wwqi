@@ -7,9 +7,4 @@
     <li class="<%= 'active' if sort_mode[0,5] =='alpha' -%>"><%= link_to( t(:az_sort), url_for(params.merge(:sort_mode => (sort_mode == 'alpha_asc' ? 'alpha_dsc':'alpha_asc'))), {:class => 'module-link AZsort'}) %><span class="<%= sort_mode == 'alpha_asc' ? 'down':'up' -%>"></span></li>
     <li class="<%= 'active' if sort_mode[0,4] == 'date' -%>"><%= link_to( t(:date), url_for(params.merge(:sort_mode => (sort_mode=='date_asc' ? 'date_dsc':'date_asc'))), {:class => 'module-link Datesort'}) %><span class="<%= sort_mode == 'date_asc' ? 'down':'up' -%>"></span></li>
   </ul>
-  <ul class="sortnav" id="viewMode">
-    <li class="label"><%= t(:view_mode) %> </li>
-    <li class="<%= 'active' if view_mode == 'list' -%>"><%= link_to( t(:list_view), url_for(params.merge(:view_mode => 'list')), {:class => 'module-link'}) -%></li>
-    <li class="<%= 'active' if view_mode == 'grid' -%>"><%= link_to( t(:grid_view), url_for(params.merge(:view_mode => 'grid')), {:class => 'module-link'}) -%></li>
-  </ul>
 </div> 
