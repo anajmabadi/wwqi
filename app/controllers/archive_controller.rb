@@ -281,13 +281,21 @@ class ArchiveController < ApplicationController
     @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
-    # grab and zoomify parameters
-    @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
-    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
     @zoomify_show = params[:zoomify_show] == 'true'
     @full_screen = false
 
     begin
+    	
+		    	# grab and zoomify parameters
+	    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
+	    
+	    unless @zoomify_section_id.nil?
+	    	@section = Section.find(@zoomify_section_id)
+	    	@zoomify_page = @section.nil? ? 1 : @section.start_page
+	    else
+	    	@zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
+	    end
+	    
       @item = Item.find_by_id(params[:id])
 	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
@@ -357,13 +365,21 @@ class ArchiveController < ApplicationController
     @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
     
-    # grab and zoomify parameters
-    @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
-    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
     @zoomify_show = false
     @full_screen = true
 
     begin
+    	
+    	# grab and zoomify parameters
+	    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
+	    
+	    unless @zoomify_section_id.nil?
+	    	@section = Section.find(@zoomify_section_id)
+	    	@zoomify_page = @section.nil? ? 1 : @section.start_page
+	    else
+	    	@zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
+	    end
+    
       @item = Item.find_by_id(params[:id])
 	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
 
