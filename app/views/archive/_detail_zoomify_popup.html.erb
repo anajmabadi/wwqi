@@ -14,24 +14,26 @@
 				</li>
 			</ul>
 		</div>
-        <div class="zoomify_container">
-            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
+		<div class="zoomify_tool_wrapper">
+	        <div id="zoomify_container">
+	            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
+	        </div>
+	        <% unless item.pages.nil? || item.pages < 2 -%>
+	        <div id="<%= full_screen ? "zoomify_thumb_gallery_full" : "zoomify_thumb_gallery_fixed" %>">
+	        	<ul>
+	        	<% (1..item.pages).each do |page| -%>
+	        		<li>
+	        			<%= link_to( 	image_tag(item.page_url(page), :class=>"zoomify_thumb"),
+	        		 					full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => page, :zoomify_show => false)
+	        		 					: archive_detail_path(:id => item.id, :zoomify_page => page, :zoomify_show => true),
+	        		 					:title => format_item_image_caption(item, page), :class => "tipsy item_thumb_link", :remote => true ) %>
+	        		 					</li>				 
+	        	<% end -%>
+	        	<ul>
+	        </div>
+	        <% end -%>
         </div>
-        <% unless item.pages.nil? || item.pages < 2 -%>
-        <div id="<%= full_screen ? "zoomify_thumb_gallery_full" : "zoomify_thumb_gallery_fixed" %>">
-        	<ul>
-        	<% (1..item.pages).each do |page| -%>
-        		<li>
-        			<%= link_to( 	image_tag(item.icon_url(page), :alt => format_item_image_caption(item, page), :class=>"zoomify_thumb"),
-        		 					full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => page, :zoomify_show => false)
-        		 					: archive_detail_path(:id => item.id, :zoomify_page => page, :zoomify_show => true),
-        		 					:title => format_item_image_caption(item, page), :class => "tipsy item_thumb_link", :remote => true ) %>
-        		 					</li>				 
-        	<% end -%>
-        	<ul>
-        </div>
-        <% end -%>
-        <div class="zoomify_pagination">
+        <div id="zoomify_pagination">
             <ul class="left">
                 <li>
                     Page <%= current_page %> of <%= item.pages %>
@@ -56,9 +58,10 @@
 	                        </span>
 	                    </div>
 	                </li>
-	                
+	                </ul>
+	                <ul class="right">
 	                <% unless @sections_list.nil? -%>
-	                <li>
+	                <li class="last">
 	                    <div class="jump_menu section">
 	                        <span>
 	                        	<%= t(:jump_to_section_prompt) %>

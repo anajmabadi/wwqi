@@ -1619,19 +1619,19 @@ div#zoomify_thumb_gallery_fixed {
 	float: right;
 	overflow: auto;
 	height: 385px;
-	width: 100px;
+	width: 120px;
 }
 
 div#zoomify_thumb_gallery_full {
 	float: right;
 	overflow: auto;
 	height: 100%;
-	width: 100px;
+	width: 120px;
 }
 
 img.zoomify_thumb {
-	width: 50px;
-	padding: 5px;
+	width: 90px;
+	padding: 0px;
 }
 /* cf hacks for zoomify pane */
 
@@ -1654,7 +1654,16 @@ div#zoomify_panel_title {
 	font-size:11px;
 	font-weight: bold;
 }
+div#zoomify_container {
+	float: left;
+	width: 80%;
+}
 
+div#zoomify_tool_wrapper {
+	padding-bottom: 20px;
+	display: block;
+	float: left;
+}
 div.zoomify_header{
 	margin-bottom: 20px;
 }
@@ -1684,32 +1693,35 @@ div.zoomify_header li.last {
 	padding-right: 0px;
 }
 
-div.zoomify_pagination{
+div#zoomify_pagination{
 	margin-top: 20px;
+	display: block;
+	float:left;
+	width: 80%;
 }
 
-div.zoomify_pagination ul {
+div#zoomify_pagination ul {
 	list-style: none; 
 	padding: 0; 
 	margin: 0;
 }
 
-div.zoomify_pagination ul.left {
+div#zoomify_pagination ul.left {
 	float: left;
 }
 
-div.zoomify_pagination ul.right {
+div#zoomify_pagination ul.right {
 	float: right;
 }
 
-div.zoomify_pagination li {
+div#zoomify_pagination li {
     display: inline;
 	padding-right: 20px;
     line-height: 1.8em;
     font-size:11px;
 }
 
-div.zoomify_pagination li.last {
+div#zoomify_pagination li.last {
 	padding-right: 0px;
 }
 

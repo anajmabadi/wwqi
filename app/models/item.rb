@@ -517,30 +517,30 @@ class Item < ActiveRecord::Base
     return file_urls
   end
   
-  def icon_file_name(index=1)
+  def page_file_name(index=1)
     return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
   end
 
-  def icon_url(index=1)
-    return LIBRARY_URL + ICONS_DIR + icon_file_name(index) unless index.nil?
+  def page_url(index=1)
+    return LIBRARY_URL + PAGES_DIR + page_file_name(index) unless index.nil?
   end
   
-  def icon_urls
+  def page_urls
     file_urls = Array.new
     (1..self.pages).each do |page|
-      file_urls << icon_url(page)
+      file_urls << page_url(page)
     end unless self.pages.nil?
     return file_urls
   end
 
-  def icon_path(index=1)
-    return LIBRARY_PATH + ICONS_DIR + icon_file_name(index) unless index.nil?
+  def page_path(index=1)
+    return LIBRARY_PATH + PAGES_DIR + page_file_name(index) unless index.nil?
   end
   
-  def icon_paths
+  def page_paths
     file_urls = Array.new
     (1..self.pages).each do |page|
-      file_urls << icon_path(page)
+      file_urls << page_path(page)
     end unless self.pages.nil?
     return file_urls
   end
