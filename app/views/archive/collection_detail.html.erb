@@ -55,13 +55,6 @@
                 </li>
                 <% end -%>
 
-                <% unless @collection.materials.blank? -%>
-                <li class="description">
-                    <span><%= t(:quantity).titleize %></span>
-                    <%= raw @collection.materials %>
-                </li>
-                <% end -%>
-
                 <% unless @collection.history.blank? -%>
                 <li>
                     <span><%= t(:scope_and_content) %></span>
