@@ -84,10 +84,8 @@ class Item < ActiveRecord::Base
   	my_citation += self.creators  + ". " unless self.creators.blank?
   	my_citation += self.title  + ". " unless self.title.blank?
   	my_citation += self.published  + ". " unless self.published.blank?
-  	my_citation += '(' unless self.owner_tag.blank? && (self.owner.nil? || self.owner.credit.blank?)
   	my_citation += self.owner_tag  + ". " unless self.owner_tag
   	my_citation += self.repository_credit + ". " unless self.repository_credit.blank? 	
-  	my_citation += ') ' unless self.owner_tag.blank? && (self.owner.nil? || self.owner.credit.blank?)	
   	my_citation += I18n.translate(:record_number).titleize + ": " + self.accession_num + ". " unless self.accession_num.blank? 
   	my_citation += I18n.translate(:accessed_on).titleize + ": " + localized_date(self.collection.acquired_on) + ". " unless self.collection.nil? || self.collection.acquired_on.nil?
   	my_citation += I18n.translate(:stable_url).titleize + ": " + self.stable_url
