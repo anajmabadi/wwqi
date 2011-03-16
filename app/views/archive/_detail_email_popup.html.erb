@@ -4,16 +4,14 @@
 		<%= form_tag archive_email_path, :id => "email-form", :method => "POST", 'data-remote' => true do %>
 		<%= hidden_field_tag :ids, ids %>
 		<div class="form_row">
-			<%= t(:from_email) %>
-			<span class="mandatory">*</span>
+			<label for="from"><%= t(:from_email) %></label> <span class="mandatory">*</span>
 			<br />
-			<input type="input" name="from" id="from" size=70 onchange="validateEmail(this);"/>
+			<input id="from" name="from" type="email" placeholder="example@domain.com" required autofocus >
 		</div>
 		<div class="form_row">
-			<%= t(:to_email) %>
-			<span class="mandatory">*</span>
+			<label for="to"><%= t(:to_email) %></label> <span class="mandatory">*</span>
 			<br />
-			<input type="input" name="to"  id="to" size=70 onchange="validateEmail(this);"/>
+			<input id="to" name='to' type="email" placeholder="example@domain.com" required >
 		</div>
 		<div class="form_row">
 			<%= t(:note) %>
@@ -21,7 +19,7 @@
 			<%= text_area_tag(:note, nil, :size => "76x5") %>
 		</div>
 		<div class="form_row">
-			<input type="submit" class="redButton" value="<%= t(:email) %>" disabled=true>
+			<%= submit_tag t(:send_email).titleize, :class => "redButton", :disable_with => t(:sending_email) %>
 		</div>
 		<% end -%>
 		<div id="email_confirmation_wrapper">
@@ -33,4 +31,3 @@
 		</div>
 	</div>
 </div>
-

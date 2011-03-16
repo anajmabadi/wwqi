@@ -1,6 +1,6 @@
 <span>
 	<div id="email_confirmation">
-	<p><%= error ? t(:email_error_message) : t(:email_confirmation_message) %><br /><%= localized_date( Date.current ) %></p>
+	<p><%= @error ? t(:email_error_message) : t(:email_confirmation_message) %><br /><%= localized_date( Date.current ) %></p>
 	</div>
 </span>
 

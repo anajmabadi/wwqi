@@ -54,6 +54,6 @@
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  unless @items.empty? %>
 </div>
 <% if @filters[:my_archive_filter] -%>
-<%= render :partial => "detail_email_popup", :locals => { :ids => @items.map {|i| i.id }.sort } %>
+<%= render :partial => "detail_email_popup", :locals => { :ids => @items.map {|i| i.id }.sort, :to => @to, :from => @from } %>
 <% end -%>
 

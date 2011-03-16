@@ -1,6 +1,7 @@
 class ArchiveController < ApplicationController
 
   before_filter :reset_filters, :only => [:index, :collections, :genres, :subjects, :places]
+  before_filter :load_recently_used_emails, :only => [:browser, :detail]
   layout :smart_layout
     	
   # layout 'full_screen', :only => [:zoomify]
@@ -450,7 +451,7 @@ class ArchiveController < ApplicationController
 	  	@ids = params[:ids].split(" ").map { |i| i.to_i }
 	  	if @ids.size == 1
 	  		@return_url = archive_detail_path(@ids[0])	
-	  	elsif @ids > 1
+	  	elsif @ids.size > 1
 	  		@return_url = session[:archive_url].nil? ? archive_browser_path : session[:archive_url]
 	  	else
 	   		@error = true
@@ -459,11 +460,21 @@ class ArchiveController < ApplicationController
 		# assemble the mail file
 		@from = params[:from]
 		@to = params[:to]
+		
+		if @from.blank? || @to.blank? 
+			@error = true
+			raise "Email addresses invalid" 
+		end
+		
+		# save these emails in a session
+		session[:recent_from_email] = @from
+		session[:recent_to_email] = @to
+		
 		@note = params[:note]
 		@items = Item.find(@ids)
 		unless @items.empty?
 			citations = @items.map { |i| i.full_citation }
-		    @html_citations = citations.join("<br/>") 
+		    @html_citations = citations.join("<br/><br/>") 
 		    @text_citations = citations.join("\n\n")
 		else
 			@error = true
@@ -1024,4 +1035,9 @@ def build_genre_query(filter_value, query_hash)
 	return new_filter_letter
   end
 
+  def load_recently_used_emails
+  	@to = session[:recent_to_email]
+  	@from = session[:recent_from_email]
+  end
+  
 end

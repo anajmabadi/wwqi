@@ -3205,6 +3205,11 @@ img.icon{
 	padding-top: 10px;
 }
 
+div#email_confirmation_wrapper {
+	height: 30px;
+	width: 400px;
+}
+
 #email-popup-content input[disabled]{
 	opacity:0.3;
 }
