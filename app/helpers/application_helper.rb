@@ -1,6 +1,6 @@
 module ApplicationHelper
 	
-  extend ActionView::Helpers::NumberHelper
+  #extend ActionView::Helpers::NumberHelper
 	
   def floatstrip(x)
     return x == x.to_i ? x.to_i.to_s : x.to_s
@@ -28,7 +28,7 @@ module ApplicationHelper
     if I18n.locale == :fa
       number_label = number.to_farsi
     else
-      number_label = self.number_with_delimiter(number)
+      number_label = number.to_s
     end  
     return number_label  
       
