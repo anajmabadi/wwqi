@@ -26,7 +26,7 @@ module ApplicationHelper
     if I18n.locale == :fa
       number_label = number.to_farsi
     else
-      number_label = number_with_delimiter(number)
+      number_label = number.to_s
     end  
     return number_label  
       
