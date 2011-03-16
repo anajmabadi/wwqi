@@ -13,7 +13,7 @@
 	<a title= "<%= t(:print_friendly_view).titleize %>" href="<%= archive_detail_print_friendly_path(:id => item.id, :format => :html) %>" class="textButton" data-popup="true" ><img class="icon" src="/images/ico_print.gif" ><%= t(:print_friendly_view).titleize %></a>
     <a title= "<%= t(:download_pdf).titleize %>" href="<%= archive_detail_download_pdf_path(:id => item.id, :format => :pdf) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" ><%= t(:download_pdf).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download_images).titleize %></a>
-	<a rel="shadowbox[email];width=450px;height=350px;" title= "<%= t(:email_citation).titleize %>" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
+	<a rel="shadowbox[email];width=450px;height=400px;" title= "<%= t(:email_citation).titleize %>" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
     <% unless item.transcript_fa.blank? -%>
     <a rel="shadowbox[transcript];width=900px;height=550px;" href="#transcript-popup" title="<%= t(:transcript).titleize %>" class="textButton"> <img class="icon" src="/images/ico_transcript.gif" /> <%= t(:transcript).titleize %> </a>
     <% end %>

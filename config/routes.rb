@@ -86,7 +86,7 @@ Qajar::Application.routes.draw do
   match 'archive/detail/:id/download' => 'archive#download', :as => :archive_detail_download
   match 'archive/detail/:id/download_pdf(.:format)' => 'archive#download_pdf', :as => :archive_detail_download_pdf
   match 'archive/detail/:id/print_friendly.:format' => 'archive#download_pdf', :as => :archive_detail_print_friendly
-  match 'archive/detail/:id/email' => 'archive#email', :as => :archive_detail_email
+  match 'archive/email' => 'archive#email', :as => :archive_email
   match 'archive/detail/:id/forget' => 'archive#forget', :as => :archive_detail_forget
   match 'archive/detail/:id/remember' => 'archive#remember', :as => :archive_detail_remember
   match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail

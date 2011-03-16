@@ -3200,6 +3200,11 @@ img.icon{
 	margin-top:10px;
 }
 
+#email_confirmation p {
+	text-align: center;
+	padding-top: 10px;
+}
+
 #email-popup-content input[disabled]{
 	opacity:0.3;
 }

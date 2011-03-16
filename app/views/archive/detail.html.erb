@@ -184,7 +184,7 @@
     </div>
 </div>
 <%= render :partial => "detail_print_popup", :locals => { :item => @item } %>
-<%= render :partial => "detail_email_popup", :locals => { :items => [@item] } %>
+<%= render :partial => "detail_email_popup", :locals => { :ids => [@item.id] } %>
 <%= render :partial => "detail_zoomify_popup", :locals => { :item => @item, :current_page => @zoomify_page, :hide => true, :full_screen => false, :sections_list => @sections_list } %>
 <%= render :partial => "detail_transcript_popup", :locals => { :item => @item } if @item.has_transcript? %>
 <%= render :partial => "detail_translation_popup", :locals => { :item => @item } if @item.has_translation? %>

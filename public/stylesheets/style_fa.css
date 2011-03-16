@@ -3204,6 +3204,11 @@ img.icon{
 	margin:0 0 5px 0;
 }
 
+#email_confirmation p {
+	text-align: center;
+	padding-top: 10px;
+}
+
 #email-popup-content input[type=submit]{
 	border:none;
 	margin-top:10px;

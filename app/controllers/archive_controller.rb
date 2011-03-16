@@ -445,33 +445,44 @@ class ArchiveController < ApplicationController
   end
 
   def email
-  	@error = false
-  	if @items.size == 1
-  		@return_url = archive_detail_path(params[:ids][0])
-  	else
-  		@return_url = session[:archive_url].nil? ? archive_browser_path : session[:archive_url]
-  	end
-  	
-  begin
-    # assemble the mail file
-    @from = params[:from]
-    @to = params[:to]
-    @note = params[:note]
-    @citation = params[:citation]
+  	@error = false	
+	begin
+	  	@ids = params[:ids].split(" ").map { |i| i.to_i }
+	  	if @ids.size == 1
+	  		@return_url = archive_detail_path(@ids[0])	
+	  	elsif @ids > 1
+	  		@return_url = session[:archive_url].nil? ? archive_browser_path : session[:archive_url]
+	  	else
+	   		@error = true
+	  		raise "No items were passed for emailing."	
+		end
+		# assemble the mail file
+		@from = params[:from]
+		@to = params[:to]
+		@note = params[:note]
+		@items = Item.find(@ids)
+		unless @items.empty?
+			citations = @items.map { |i| i.full_citation }
+		    @html_citations = citations.join("<br/>") 
+		    @text_citations = citations.join("\n\n")
+		else
+			@error = true
+			raise "No items found in passed email set."    	
+		end
    rescue => e
    	@error = true
    	flash[:error] = e.message
    end
    
    respond_to do |format|
-      unless @error
-      	
+      unless @error    	
       	#send the citation
-      	CitationMailer.email_citation(@to, @from, @note, @citation).deliver
-      	
+      	CitationMailer.email_citation(@to, @from, @note, @html_citations, @text_citations).deliver     	
         format.html { redirect_to @return_url}
+        format.js 
       else
-        format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email_sent) + ": " + e.message} }
+        format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email) + ": " + e.message} }
+        format.js
       end
     end
   end
