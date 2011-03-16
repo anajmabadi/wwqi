@@ -1050,6 +1050,9 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
 	padding-right:30px;
 }
 
+#search-result-tools a {
+	margin-left: 10px;
+}
 .listItem a{color:#333}
 .listItem h4{
     color:#900; margin-bottom:5px;}
@@ -3203,11 +3206,6 @@ img.icon{
 #email_confirmation p {
 	text-align: center;
 	padding-top: 10px;
-}
-
-div#email_confirmation_wrapper {
-	height: 30px;
-	width: 400px;
 }
 
 #email-popup-content input[disabled]{
