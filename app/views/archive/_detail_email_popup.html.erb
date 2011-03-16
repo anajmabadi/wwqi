@@ -4,7 +4,7 @@
             <%= t(:email_popup_prompt) %>
         </h2>
         <form id="email-form" action="<%= archive_detail_email_path %>" method="POST" >
-        	<%= hidden_field_tag :id, items[0].id %>
+        	<%= hidden_field_tag :ids, items.map {|i| i.id }.sort %>
         	<%= hidden_field_tag :citation, items.map { |i| h(i.full_citation) }.join("\n\n") %>
             <div class="form_row">
                 <%= t(:from_email) %> <span class="mandatory">*</span>

@@ -446,8 +446,13 @@ class ArchiveController < ApplicationController
 
   def email
   	@error = false
-  	@return_url = archive_detail_path(params[:id])
-  	begin
+  	if @items.size == 1
+  		@return_url = archive_detail_path(params[:ids][0])
+  	else
+  		@return_url = session[:archive_url].nil? ? archive_browser_path : session[:archive_url]
+  	end
+  	
+  begin
     # assemble the mail file
     @from = params[:from]
     @to = params[:to]

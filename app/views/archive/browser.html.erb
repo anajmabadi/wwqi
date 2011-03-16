@@ -54,4 +54,5 @@
     <%= render :partial => 'pagination_bar', :locals => { :items => @items, :view_mode => @view_mode, :sort_mode => @sort_mode }  unless @items.empty? %>
 </div>
 <%= render :partial => "detail_search_results_popup", :locals => { :items => @items, :query_labels => @query_labels } %>
+<%= render :partial => "detail_email_popup", :locals => { :items => @item } %>
 
