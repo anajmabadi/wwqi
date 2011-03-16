@@ -5,13 +5,6 @@
 <% content_for :head do %>
   <%= render 'head_index_content' %>
 <% end %>
-  
-<!--<div id="universalSearch">
-	<form action="/archive/browser" class="searchform" method="get">
-          <input type="text" value="Enter a keyword to search the archives" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='Enter a keyword to search the archives'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='Enter a keyword to search the archives';this.style.color = '#aaa';}">
-          <button type="submit" id="search"></button>
-    </form>
-</div>-->
 
 <div id="home-main">
 	<div class="slide-wrap">
@@ -24,7 +17,7 @@
 		  </div>
 		</div>
 		<div id="home_search_wrapper">
-			<h4><%= t(:home_search_prompt) %></h4>
+			<h4><%= "#{t(:home_search_prompt_prefix)} #{localized_number(@item_count)} #{:home_search_prompt_suffix}" %></h4>
 		 		<div class="clearfix" id="simple_search">
 					<form method="get" class="searchform" action="/archive/browser">
 					  <input type="text" value="<%= t(:search_prompt) %>" name="keyword_filter" class="swap_value" id="s" style="color: rgb(170, 170, 170); " onfocus="if(this.value=='<%= t(:search_prompt) %>'){this.value='';this.style.color = '#000';}" onblur="if(this.value==''){this.value='<%= t(:search_prompt) %>';this.style.color = '#aaa';}" />
