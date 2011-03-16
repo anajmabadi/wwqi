@@ -1615,6 +1615,24 @@ div.slideshow ul li a.title{
 	position:relative;
 }
 
+div#zoomify_thumb_gallery_fixed {
+	float: right;
+	overflow: auto;
+	height: 385px;
+	width: 100px;
+}
+
+div#zoomify_thumb_gallery_full {
+	float: right;
+	overflow: auto;
+	height: 100%;
+	width: 100px;
+}
+
+img.zoomify_thumb {
+	width: 50px;
+	padding: 5px;
+}
 /* cf hacks for zoomify pane */
 
 #downloadImage{

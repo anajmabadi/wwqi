@@ -17,6 +17,20 @@
         <div class="zoomify_container">
             <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
         </div>
+        <% unless item.pages.nil? || item.pages < 2 -%>
+        <div id="<%= full_screen ? "zoomify_thumb_gallery_full" : "zoomify_thumb_gallery_fixed" %>">
+        	<ul>
+        	<% (1..item.pages).each do |page| -%>
+        		<li>
+        			<%= link_to( 	image_tag(item.icon_url(page), :alt => format_item_image_caption(item, page), :class=>"zoomify_thumb"),
+        		 					full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => page, :zoomify_show => false)
+        		 					: archive_detail_path(:id => item.id, :zoomify_page => page, :zoomify_show => true),
+        		 					:title => format_item_image_caption(item, page), :class => "tipsy item_thumb_link", :remote => true ) %>
+        		 					</li>				 
+        	<% end -%>
+        	<ul>
+        </div>
+        <% end -%>
         <div class="zoomify_pagination">
             <ul class="left">
                 <li>

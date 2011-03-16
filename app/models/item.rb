@@ -517,6 +517,34 @@ class Item < ActiveRecord::Base
     return file_urls
   end
   
+  def icon_file_name(index=1)
+    return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
+  end
+
+  def icon_url(index=1)
+    return LIBRARY_URL + ICONS_DIR + icon_file_name(index) unless index.nil?
+  end
+  
+  def icon_urls
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << icon_url(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+
+  def icon_path(index=1)
+    return LIBRARY_PATH + ICONS_DIR + icon_file_name(index) unless index.nil?
+  end
+  
+  def icon_paths
+    file_urls = Array.new
+    (1..self.pages).each do |page|
+      file_urls << icon_path(page)
+    end unless self.pages.nil?
+    return file_urls
+  end
+  
   def slide_file_name(index=1)
     return FILE_PREFIX + "#{self.id.to_s}_#{index.to_s}.jpg" unless index.nil?
   end
