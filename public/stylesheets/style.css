@@ -1656,6 +1656,11 @@ div#zoomify_panel_title {
 }
 div#zoomify_container {
 	float: left;
+	width: 100%;
+}
+
+div#zoomify_container_with_gallery {
+	float:left;
 	width: 80%;
 }
 

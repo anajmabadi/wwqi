@@ -15,7 +15,7 @@
 			</ul>
 		</div>
 		<div class="zoomify_tool_wrapper">
-	        <div id="zoomify_container">
+	        <div id="<%= item.pages > 1 ? 'zoomify_container_with_gallery' : 'zoomify_container' %>">
 	            <%= render :partial => "zoomify", :locals => { :item => item, :current_page => current_page, :full_screen => full_screen } %>
 	        </div>
 	        <% unless item.pages.nil? || item.pages < 2 -%>
