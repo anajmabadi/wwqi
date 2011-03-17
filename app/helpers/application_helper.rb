@@ -24,11 +24,15 @@ module ApplicationHelper
   	return image_tag "#{Rails.root}/public/images/#{filename}"
   end
   
-  def localized_number(number=0)
+  def localized_number(number=0, delimit = false )
     if I18n.locale == :fa
       number_label = number.to_farsi
     else
-      number_label = number_with_delimiter(number)
+      if delimit
+      	number_label = number_with_delimiter(number)
+      else 
+      	number_label = number.to_s
+      end	
     end
     return number_label  
       
