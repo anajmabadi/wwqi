@@ -3480,7 +3480,9 @@ img.icon{
 #sb-body-inner{
 	direction:rtl;
 }
-
+#sb-body-inner img {
+	position:relative!important;
+}
 .collectionInfoLink{
 	width:14px;
 	height:14px;
