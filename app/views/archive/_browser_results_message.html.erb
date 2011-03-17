@@ -5,7 +5,7 @@
 	    	<%= link_to t(:add_all_to_my_archive).titleize, archive_browser_remember_path(:ids => @item_ids ), :method => "POST", :confirm => t(:add_all_to_my_archive), :class =>"redButton right" %>
 	    <% else -%>
 	        <%= link_to t(:email_all_citations).titleize, "#email-popup", :class =>"redButton right", :rel=>"shadowbox[email];width=450px;height=420px;" %>
-	        <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path(:ids => @item_ids ), :method => "POST", :confirm => t(:clear_my_items), :class =>"redButton right" %>
+	        <%= link_to t(:clear_my_items).titleize, archive_clear_my_items_path(:ids => @item_ids ), :method => "POST", :confirm => t(:clear_my_items), :class =>"blackButton right" %>
 		<% end -%>
 
 	<% end -%>

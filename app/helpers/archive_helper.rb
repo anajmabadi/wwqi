@@ -6,7 +6,7 @@ module ArchiveHelper
       my_message += "#{t(:results_prefix)} : "
       unless items.empty?
         my_message += "#{localized_number(items.offset + 1)}-#{localized_number([items.offset + items.per_page,items.total_entries].min)}"
-        my_message += "/#{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
+        my_message += " / #{localized_number(items.total_entries)}" unless items.total_entries < items.per_page
       else
         my_message += "#{localized_number(items.total_entries)} #{t(:items)}"
       end

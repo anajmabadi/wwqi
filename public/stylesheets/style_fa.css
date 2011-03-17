@@ -119,6 +119,7 @@ h6 { font-size: 1em; }
 }
 
 #staticContent h2{ font-size:18px; color:#ca3723; margin-top:1em; font-weight:bold;}
+#staticContent h3{color:#333; font-weight:bold; margin-top:35px}
 #staticContent em{ 
 	font-family:"Times New Roman", Times, serif;
 	font-style:normal;
@@ -127,6 +128,7 @@ h6 { font-size: 1em; }
 	line-height:1.2em;	
 	}
 #staticContent li{ font-size:1.1em; padding-right:20px; background:url(/images/list_bullet_fa.gif) 100% 5px no-repeat; font-family:Tahoma, Geneva, sans-serif}
+#staticContent ul.simple li{ font-size:1.1em; padding-right:0px; list-style:square; background:none; margin-right:20px }
 #staticContent a{ color:#ca3723;}
 
 /* Text elements
@@ -721,7 +723,6 @@ ul.dots li a{
     background-position : 0 0;
     background-repeat : no-repeat;
 	text-indent:-999999px;
-	opacity:0.2
 }
 ul.dots li a.active{background-position:0 -12px; background-image : url(/images/silde-nav.png);}
 
@@ -949,12 +950,10 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
 
 #pageFooter a:link { 
 	color: #aaa; 
-	background: url(/images/icon-fillarrow-gray-fa.gif) no-repeat 100% 50%;
 	padding: 0 10px 0 0px; }
 	
 #pageFooter  a:visited { 
 	color: #aaa; 
-	background: url(/images/icon-fillarrow-visited.gif) no-repeat 100% 50%;
 	text-decoration: none; 
 	padding: 0 10px 0 0px; }
 	
@@ -967,12 +966,11 @@ ul.dots li a.active{background-position:0 -12px; background-image : url(/images/
 #pageFooter a:active { 
 	color: #555; 
 	text-decoration: none; 
-	background: url(/images/icon-fillarrow-gray-fa.gif) no-repeat 100% 50%;
 	padding: 0 10px 0 0px; }
 
 #pageFooter  p{
 	color:#444;
-	margin:7px 10px 0 0px;
+	margin:3px 30px 0 0px;
 	font-size:11px;
 }
 
@@ -1571,44 +1569,81 @@ div.slideshow ul li a.title{
 	padding:5px;
 	border-bottom:1px solid #ccc;
 	color:#777;
-	font-size:16px;
-	font-weight:bold;
+	font-size:14px;
 }
 
 #catalogInfo div{
 	width:200px;
-	float:right;
-	margin:0 8px 0 0;
+	float:left;
+	margin:0 0 0 8px;
 }
 
 #catalogInfo ul li{
-	background:url(/images/bullet-circle-fa.gif) 100% 2px no-repeat;
-	padding-right:20px;
+	background:url(/images/bullet-circle.gif) 0 2px no-repeat;
+	padding-left:20px;
 }
 
 #catalogInfo ul li a{
 	color:#CA3723;
 }
 
-#zoomify_pane{position:relative}
+#zoomify_pane{
+	position:relative;
+}
+
+div#zoomify_thumb_gallery_fixed {
+	float: right;
+	overflow: auto;
+	height: 385px;
+	width: 120px;
+}
+
+div#zoomify_thumb_gallery_full {
+	float: right;
+	overflow: auto;
+	height: 100%;
+	width: 120px;
+}
+
+img.zoomify_thumb {
+	width: 90px;
+	padding: 0px;
+}
+/* cf hacks for zoomify pane */
+
 #downloadImage{
 	display:none;
 	width:65px;
 	height:15px;
-	background:url(/images/btn_download_fa.gif) top left no-repeat;
-	text-indent:-9999px;
+	background:url(/images/btn_download.gif) top left no-repeat;
 	margin:0px;
 	padding:0px;
+	bottom:3px;
+	left:52px;
+	text-indent:-9999px;
 	font-size:1px;
 	position:absolute;
-	bottom:3px;
-	right:72px;
-}
-/* cf hacks for zoomify pane */
-div.zoomify_pagination{
-	margin-top: 20px;
 }
 
+div#zoomify_panel_title {
+	margin-bottom: 10px;
+	font-size:11px;
+	font-weight: bold;
+}
+div#zoomify_container {
+	float: left;
+	width: 100%;
+}
+
+div#zoomify_container_with_gallery {
+	float:left;
+}
+
+div#zoomify_tool_wrapper {
+	padding-bottom: 20px;
+	display: block;
+	float: left;
+}
 div.zoomify_header{
 	margin-bottom: 20px;
 }
@@ -1638,28 +1673,36 @@ div.zoomify_header li.last {
 	padding-right: 0px;
 }
 
-div.zoomify_pagination ul {
+div#zoomify_pagination{
+	margin-top: 10px;
+	display: block;
+	float:left;
+	width: 100%;
+	padding-top:10px;
+}
+
+div#zoomify_pagination ul {
 	list-style: none; 
 	padding: 0; 
 	margin: 0;
 }
 
-div.zoomify_pagination ul.left {
+div#zoomify_pagination ul.left {
 	float: right;
 }
 
-div.zoomify_pagination ul.right {
+div#zoomify_pagination ul.right {
 	float: left;
 }
 
-div.zoomify_pagination li {
+div#zoomify_pagination li {
     display: inline;
 	padding-right: 20px;
     line-height: 1.8em;
     font-size:11px;
 }
 
-div.zoomify_pagination li.last {
+div#zoomify_pagination li.last {
 	padding-right: 0px;
 }
 
@@ -1671,6 +1714,10 @@ div.jump_menu form {
 	display: inline;
 }
 
+div.fullscreen {
+	background-color: #000000;
+	padding-bottom:0px!important;
+}
 
 
 
@@ -3402,10 +3449,6 @@ img.icon{
 	background-color:#f8eac3;
 }
 
-#collection_index .listItem h3 a:hover{
-	text-decoration:underline;
-}
-
 #collection_index .listItem .item a{
 	position:relative;
 	display:inline-block;
@@ -3435,7 +3478,7 @@ img.icon{
 
 
 #sb-body-inner{
-	direction:ltr;
+	direction:rtl;
 }
 
 .collectionInfoLink{

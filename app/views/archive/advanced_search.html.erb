@@ -38,7 +38,14 @@
                     </td>
                 </tr>
                 <tr>
-                    <td class="col-33">
+                    <td class="col-33" >
+						<div style="display:none">
+                    		<%= label_tag :repository_filter, t(:filter_results_by_repository) %>
+                    		<br />
+                    		<%= select_tag :repository_filter, options_for_select(@repositories), {:multiple => true} %>
+						</div>
+                    </td>
+					<td class="col-33">
                     <%= label_tag :collection_filter, t(:filter_results_by_collection) %>
                     <br />
                     <%= select_tag :collection_filter, options_for_select(@collections), {:multiple => true} %>
@@ -48,11 +55,7 @@
                     <br />
                     <%= select_tag :subject_filter, options_for_select(@genres), {:multiple => true} %>
                     </td>
-                    <td class="col-33">
-                    <%= label_tag :repository_filter, t(:filter_results_by_repository) %>
-                    <br />
-                    <%= select_tag :repository_filter, options_for_select(@repositories), {:multiple => true} %>
-                    </td>
+                    
                 </tr>
                 <tr class="year-row">
                     <td>

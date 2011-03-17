@@ -106,17 +106,20 @@
 						<%= localized_date(@item.collection.last_edited) %>
 					</li>
 					<% end -%>
+					<% unless @item.accession_num.blank? -%>
+					<li>	
+						<span>	<%= t(:record_number).capitalize %>:</span> <%= @item.accession_num %>		
+					</li>
+					<% end -%>
+					<li>
+							<span><%= t(:digital_id).capitalize %>: </span> <%= @item.id %>
+					</li>
 
 					<li class="clear">
 						&nbsp;
 					</li>
 				</ul>
-				<p id="digital_ids">
-					<% unless @item.accession_num.blank? -%>
-					<%= t(:record_number).capitalize %>: <%= @item.accession_num %>
-					<% end -%>
-					/ <%= t(:digital_id).capitalize %>: <%= @item.id %>
-				</p>
+				
 			</div>
 			<div class="item_related">
 				<ul>
