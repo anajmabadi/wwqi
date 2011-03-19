@@ -34,7 +34,7 @@ class Person < ActiveRecord::Base
   
   def index_label
   	value = ""
-    value += self.name unless self.name.blank?
+    value += self.sort_name unless self.sort_name.blank?
     
     unless self.vitals.blank?
     	value += I18n.translate(:comma) + ' <span class="dob">' + self.vitals + '</span> '

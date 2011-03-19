@@ -116,16 +116,16 @@ class ArchiveController < ApplicationController
 
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
    
-    @all_people = Person.select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND people.items_count_cache > ?', true, I18n.locale.to_s,0]).order('person_translations.name')
+    @all_people = Person.select('DISTINCT people.id').where(['people.publish=? AND person_translations.locale=? AND people.items_count_cache > ?', true, I18n.locale.to_s,0]).order('person_translations.sort_name')
 	@filter_letter = set_filter_letter( params[:filter_letter], @all_people.count) 
 	
     if @filter_letter.blank?
     @people = @all_people
     else
-      @people = @all_people.where(['UPPER(SUBSTRING(person_translations.name,1,1)) = ?', @filter_letter])
+      @people = @all_people.where(['UPPER(SUBSTRING(person_translations.sort_name,1,1)) = ?', @filter_letter])
     end
 
-    @valid_initials = @all_people.map { |s| s.name[0].upcase }.uniq
+    @valid_initials = @all_people.map { |s| s.sort_name[0].upcase }.uniq
     @alphabet = I18n.translate(:a_z_menu).split(" ")
 
   end
