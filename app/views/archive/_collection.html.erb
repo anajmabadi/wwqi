@@ -1,14 +1,14 @@
 <% if collection.items_count > 0 %>
 <div class="listItem clearfix">
     <div class="item ">
-        <a href="<%= archive_collection_detail_path(:id => collection.id) %>">
+        <a href="<%= archive_collection_detail_path(:id => collection.id, :exclusive => true) %>">
         <img width="100" alt="<%= collection.name %>" src="<%= collection.thumbnail_url %>">
         <span class="items-in-collection"><%= localized_number(collection.items_count) %> <%= collection.items_count == 1 ? t(:item) : t(:items) %></span>
         </a>
     </div>
     <div class="description">
         <h3>
-        <a href="<%= archive_collection_detail_path(:id => collection.id) %>"><%= collection.name %></a>
+        <a href="<%= archive_collection_detail_path(:id => collection.id, :exclusive => true) %>"><%= collection.name %></a>
         </h3>
         
         

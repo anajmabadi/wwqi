@@ -1,4 +1,4 @@
 <li class="person_item">
-    &raquo; <%= link_to( raw( person.index_label), archive_browser_path('person_filter[]' => person.id)) %>
+    &raquo; <%= link_to( raw( person.index_label), archive_browser_path('person_filter[]' => person.id, :exclusive => true )) %>
 </li>
 <% @counter += 1 %>
