@@ -53,11 +53,11 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[	id accession_num title_fa title_en creator_label_fa creator_label_en description_fa description_en
+    return %w[	id accession_num title_fa title_en alternate_titles_en alternate_titles_fa creator_label_fa creator_label_en description_fa description_en
     			show_date_en show_date_fa display_date_fa display_date_en place_created_fa place_created_en pages height width depth
     			remarks_fa remarks_en genre_list person_list concept_list place_list comp_list
     			notes owner_name_fa owner_name_en owner_tag_fa owner_tag_en collection_name_fa collection_name_en
-    			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish created_at updated_at thumbnail_url ]
+    			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish favorite original_file_prefix created_at updated_at thumbnail_url ]
   end 
   
   def has_transcript?
@@ -66,6 +66,10 @@ class Item < ActiveRecord::Base
   
   def has_translation?
   	return !self.transcript_en.blank?
+  end
+  
+  def original_file_prefix
+  	return urn
   end
   
   def image_caption(page=1)
@@ -104,6 +108,14 @@ class Item < ActiveRecord::Base
   	end 
   	my_credit += " (#{self.owner_tag})" unless self.owner_tag.blank?
   	return my_credit
+  end
+  
+  def alternate_titles_en
+  	return self.alternate_titles.map { |t| t.title_en }.join(", ") unless self.alternate_titles.empty?
+  end
+  
+  def alternate_titles_fa
+  	return self.alternate_titles.map { |t| t.title_fa }.join(", ") unless self.alternate_titles.empty?
   end
   
   def creators
