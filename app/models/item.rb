@@ -53,7 +53,7 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[	id accession_num title_fa title_en alternate_titles_en alternate_titles_fa creator_label_fa creator_label_en description_fa description_en
+    return %w[	id accession_num title_fa title_en alternate_titles_fa alternate_titles_en creator_label_fa creator_label_en description_fa description_en
     			show_date_en show_date_fa display_date_fa display_date_en place_created_fa place_created_en pages height width depth
     			remarks_fa remarks_en genre_list person_list concept_list place_list comp_list
     			notes owner_name_fa owner_name_en owner_tag_fa owner_tag_en collection_name_fa collection_name_en
