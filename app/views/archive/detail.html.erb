@@ -130,7 +130,7 @@
 					<li>
 						<span class="block"><%= t(:genres).titleize %></span>
 						<% @item.subjects.genres.each do |genre| -%>
-						<%= link_to genre.name, archive_browser_path(:genre_filter => genre.id), :class => "tag" %>
+						<%= link_to genre.name, archive_browser_path(:genre_filter => genre.id, :exclusive => true), :class => "tag" %>
 						<% end -%>
 					</li>
 					<% end -%>
@@ -151,7 +151,7 @@
 					<li>
 						<span><%= t(:people).titleize %></span>
 						<% @item.appearances.each do |appearance| -%>
-						<%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id), :class=>"tag" %>
+						<%= link_to appearance.person.name, archive_browser_path(:person_filter => appearance.person_id, :exclusive => true), :class=>"tag" %>
 						<% end -%>
 					</li>
 					<% end -%>
@@ -160,7 +160,7 @@
 					<li>
 						<span><%= t(:subjects).titleize %></span>
 						<% @item.subjects.concepts.each do |subject| -%>
-						<%= link_to subject.name, archive_browser_path(:subject_filter => subject.id), :class=>"tag" %>
+						<%= link_to subject.name, archive_browser_path(:subject_filter => subject.id, :exclusive => true), :class=>"tag" %>
 						<% end -%>
 					</li>
 					<% end -%>
@@ -169,7 +169,7 @@
 					<li>
 						<span><%= t(:places).titleize %></span>
 						<% @item.plots.each do |plot| -%>
-						<%= link_to plot.place.name,  archive_browser_path(:place_filter => plot.place.id), :class=>"tag" %>
+						<%= link_to plot.place.name,  archive_browser_path(:place_filter => plot.place.id, :exclusive => true), :class=>"tag" %>
 						<% end -%>
 					</li>
 					<% end -%>
