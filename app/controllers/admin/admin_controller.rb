@@ -1,5 +1,7 @@
 class Admin::AdminController < ApplicationController
   
+  require 'csv'
+  
   # adds basic security to all admin controllers that inherit from this one
   before_filter :admin_required
 

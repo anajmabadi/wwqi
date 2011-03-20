@@ -17,6 +17,14 @@ class Collection < ActiveRecord::Base
   validates :publish, :inclusion => { :in => [true,false] }
   validates :private, :inclusion => { :in => [true,false] }
   validates :finding_aid, :inclusion => { :in => [true,false] }
+  
+  def csv_fields
+    return %w[	id name_fa name_en sort_name_fa sort_name_en caption_fa caption_en
+    			creator_fa creator_en restrictions_fa restrictions_en history_fa history_en
+    			tips_fa tips_en materials_fa materials_en dates_fa dates_en repository_fa repository_en
+    			acquisition_notes_fa acquisition_notes_en acquired_by processed_by acquired_on major
+    			publish finding_aid private last_edited notes]  
+  end
 
   def self.select_list
     return self.all(:conditions => ['collection_translations.locale = ?', I18n.locale.to_s], :select => 'DISTINCT id, collection_translations.name', :order => 'collection_translations.name').map {|collection| [collection.name, collection.id]}
