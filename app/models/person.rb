@@ -18,6 +18,12 @@ class Person < ActiveRecord::Base
   validates :name_en, :name_fa, :sort_name_en, :sort_name_fa, :loc_name, :presence => true, :length => {:maximum => 255}
   validates :publish, :major, :inclusion => { :in => [true,false] }
 
+  def csv_fields
+    return %w[	id name_fa name_en sort_name_fa sort_name_en description_fa description_en
+    			vitals_fa vitals_en birth_place_fa birth_place_en loc_name dob dod 
+    			publish major notes]  
+  end
+
   def self.select_list
     return self.select('DISTINCT id, person_translations.name, collection_translations.name').includes('collection').order('person_translations.sort_name').map {|person| [person.to_label, person.id]}.sort
   end

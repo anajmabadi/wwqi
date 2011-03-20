@@ -45,6 +45,31 @@ class Admin::PeopleController < Admin::AdminController
     end
   end
 
+
+  def export
+	begin
+		unless session[:current_people].nil?
+			@people = Person.find(session[:current_people]) 
+		else
+			@people = Person.all
+		end
+	rescue => error
+		flash[:error] = "There was a problem finding people: " + error.message
+		@error = true
+	end
+	respond_to do |format|
+		format.html { redirect_to admin_people_path, :error => flash[:error] }
+		format.csv do
+			csv_string = make_custom_csv(@people)
+			# send it to the browsah
+			send_data csv_string,
+	        :type => 'text/csv; charset=utf-8; header=present',
+	        :disposition => "attachment; filename=people.csv"
+		end
+		format.xml  { render :xml => @people }
+	end
+  end
+	
   # GET /people/1
   # GET /people/1.xml
   def show
