@@ -43,7 +43,31 @@ class Admin::SubjectsController < Admin::AdminController
       format.xml  { render :xml => @subjects }
     end
   end
+  
 
+  def export
+	begin
+		unless session[:current_subects].nil?
+			@subjects = Subject.find(session[:current_subects]) 
+		else
+			@subjects = Subject.all
+		end
+	rescue => error
+		flash[:error] = "There was a problem finding subjects: " + error.message
+		@error = true
+	end
+	respond_to do |format|
+		format.html { redirect_to admin_subjects_path, :error => flash[:error] }
+		format.csv do
+			csv_string = make_custom_csv(@subjects)
+			# send it to the browsah
+			send_data csv_string,
+	        :type => 'text/csv; charset=utf-8; header=present',
+	        :disposition => "attachment; filename=subjects.csv"
+		end
+		format.xml  { render :xml => @subjects }
+	end
+  end
   # GET /subjects/1
   # GET /subjects/1.xml
   def show

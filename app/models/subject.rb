@@ -34,6 +34,14 @@ class Subject < ActiveRecord::Base
     return self.all.map {|subject| [subject.to_label, subject.id]}.sort
   end
 
+  def csv_fields
+    return %w[	id name_fa name_en subject_type_name publish major notes]  
+  end
+  
+  def subject_type_name
+  	return self.subject_type.name unless self.subject_type.nil?
+  end
+  
   def self.concept_list
     return self.where(['subject_type_id=?',7]).map {|subject| [subject.to_label, subject.id]}.sort
   end

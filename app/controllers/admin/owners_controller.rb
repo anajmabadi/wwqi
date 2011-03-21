@@ -10,6 +10,26 @@ class Admin::OwnersController < Admin::AdminController
       format.xml  { render :xml => @owners }
     end
   end
+  
+  def export
+	begin
+		@owners = Owner.all
+	rescue => error
+		flash[:error] = "There was a problem finding owners: " + error.message
+		@error = true
+	end
+	respond_to do |format|
+		format.html { redirect_to admin_owners_path, :error => flash[:error] }
+		format.csv do
+			csv_string = make_custom_csv(@owners)
+			# send it to the browsah
+			send_data csv_string,
+	        :type => 'text/csv; charset=utf-8; header=present',
+	        :disposition => "attachment; filename=owners.csv"
+		end
+		format.xml  { render :xml => @owners }
+	end
+  end
 
   # GET /owners/1
   # GET /owners/1.xml

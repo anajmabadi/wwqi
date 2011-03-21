@@ -27,11 +27,37 @@ class Admin::PlacesController < Admin::AdminController
 
     #cache the current search set in a session variable
     session[:admin_places_index_url] = request.fullpath
-
+	session[:current_places] = @places.map { |p| p.id }
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @places }
     end
+  end
+  
+  
+
+  def export
+	begin
+		unless session[:current_places].nil?
+			@places = Place.find(session[:current_places]) 
+		else
+			@places = Place.all
+		end
+	rescue => error
+		flash[:error] = "There was a problem finding places: " + error.message
+		@error = true
+	end
+	respond_to do |format|
+		format.html { redirect_to admin_places_path, :error => flash[:error] }
+		format.csv do
+			csv_string = make_custom_csv(@places)
+			# send it to the browsah
+			send_data csv_string,
+	        :type => 'text/csv; charset=utf-8; header=present',
+	        :disposition => "attachment; filename=places.csv"
+		end
+		format.xml  { render :xml => @places }
+	end
   end
 
   # GET /places/1
