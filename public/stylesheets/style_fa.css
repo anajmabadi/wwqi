@@ -1558,6 +1558,7 @@ div.slideshow ul li a.title{
 
 
 
+
 /* catalog information on item details page
 -------------------------------------------------------------- */
 #catalogInfo{
@@ -1574,8 +1575,8 @@ div.slideshow ul li a.title{
 
 #catalogInfo div{
 	width:200px;
-	float:left;
-	margin:0 0 0 8px;
+	float:right;
+	margin:0 8px 0 0px;
 }
 
 #catalogInfo ul li{
@@ -1595,7 +1596,7 @@ div#zoomify_thumb_gallery_fixed {
 	float: right;
 	overflow: auto;
 	height: 385px;
-	width: 120px;
+	width: 130px;
 }
 
 div#zoomify_thumb_gallery_full {
@@ -1607,7 +1608,13 @@ div#zoomify_thumb_gallery_full {
 
 img.zoomify_thumb {
 	width: 90px;
-	padding: 0px;
+	padding: 3px;
+	border:1px solid #aaa;
+	background:#fff;
+}
+
+img.zoomify_thumb.selected{
+	border-color:#CA3723;
 }
 /* cf hacks for zoomify pane */
 
@@ -1637,10 +1644,12 @@ div#zoomify_container {
 
 div#zoomify_container_with_gallery {
 	float:left;
+	width: 80%;
 }
 
-div#zoomify_tool_wrapper {
-	padding-bottom: 20px;
+div.zoomify_tool_wrapper {
+	overflow:hidden;
+	width:100%;
 	display: block;
 	float: left;
 }
@@ -1655,11 +1664,11 @@ div.zoomify_header ul {
 }
 
 div.zoomify_header ul.left {
-	float: right;
+	float: left;
 }
 
 div.zoomify_header ul.right {
-	float: left;
+	float: right;
 }
 
 div.zoomify_header li {
@@ -1674,11 +1683,13 @@ div.zoomify_header li.last {
 }
 
 div#zoomify_pagination{
-	margin-top: 10px;
+	margin-top: 15px;
 	display: block;
-	float:left;
+	float:right;
 	width: 100%;
-	padding-top:10px;
+	padding:10px 5px 5px;
+	border-top:1px solid #555;
+	direction:rtl!important;
 }
 
 div#zoomify_pagination ul {
@@ -1688,18 +1699,56 @@ div#zoomify_pagination ul {
 }
 
 div#zoomify_pagination ul.left {
-	float: right;
+	float: left;
+}
+
+div#zoomify_pagination ul.left li{
+	float:left;
+	overflow:hidden;
 }
 
 div#zoomify_pagination ul.right {
-	float: left;
+	float: right;
+}
+
+div#zoomify_pagination ul.right input{
+
 }
 
 div#zoomify_pagination li {
     display: inline;
-	padding-right: 20px;
     line-height: 1.8em;
     font-size:11px;
+	margin:0 5px 0 0px;
+}
+
+div#zoomify_pagination li span{
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	height:25px;
+	line-height:25px;
+	float:left;
+	margin:0px;
+	color:#999;
+	display:block;
+	-moz-text-shadow:0px 1px #fff;
+	-webkit-text-shadow:0px 1px #fff;
+	text-shadow:0px 1px #fff;
+	font-weight:bold
+}
+
+div#zoomify_pagination li span a{
+	color:#222;
+}
+div#zoomify_pagination li span.next {
+	background:url(../images/btn_prev_next.png) 100% 50% no-repeat;
+	padding:0 20px 0 10px;
+}
+
+div#zoomify_pagination li span.prev{
+	background:url(../images/btn_prev_next.png) 0% 50% no-repeat;
+	padding:0 10px 0 20px;
 }
 
 div#zoomify_pagination li.last {
@@ -1708,6 +1757,25 @@ div#zoomify_pagination li.last {
 
 div.jump_menu {
 	display: inline;
+	overflow:hidden;
+	padding-left:10px;
+}
+div.jump_menu span{
+	float:right!important;
+	-moz-text-shadow:none!important;
+	-webkit-text-shadow:none!important;
+	text-shadow:none!important;
+}
+div.jump_menu input[type=text]{
+	border:none;
+	backgorund:#fff;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	height:23px;
+	line-height:23px;
+	float:right;
+	margin:0 3px;
 }
 
 div.jump_menu form {
@@ -1717,8 +1785,9 @@ div.jump_menu form {
 div.fullscreen {
 	background-color: #000000;
 	padding-bottom:0px!important;
+	width:100%;
+	height:100%;
 }
-
 
 
 /* new browser filters
@@ -3037,25 +3106,31 @@ div.field {
 /********  Notifications   ********/
 
 #notification_block {
-  padding: 5px;
+   
+	
 }
 
 #notification_block .error {
-  color: red;
   font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-align: center;
-  background-color: #EEEEEE;
+  color: #D8000C;
+  background-color: #FFBABA;
   padding: 10px;
-  margin: 5px 80px 5px 80px;
+  margin:5px 0;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
 }
 
 #notification_block .notice {
-  color: green;
   font: bold 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
   text-align: center;
-  background-color: #EEEEEE;
-  padding: 10px;
-  margin: 5px 80px 5px 80px;
+  color: #00529B;
+  background-color: #BDE5F8;
+  margin:5px 0;
+  -moz-border-radius:5px;
+  -webkit-border-radius:5px;
+  border-radius:5px;
 }
 
 
@@ -3478,10 +3553,11 @@ img.icon{
 
 
 #sb-body-inner{
-	direction:rtl;
+	direction:ltr;
 }
+
 #sb-body-inner img {
-	position:relative!important;
+
 }
 .collectionInfoLink{
 	width:14px;
@@ -3537,4 +3613,11 @@ select#subject_filter,
 select#repository_filter{
 	width:285px;
 	height:150px;
+}
+
+#translation-popup-content .citation,
+#translation-popup-content .print_friendly_link,
+#transcript-popup-content .citation,
+#transcript-popup-content .print_friendly_link{
+	direction:rtl!important;
 }

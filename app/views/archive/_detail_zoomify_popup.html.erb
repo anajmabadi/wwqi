@@ -35,27 +35,29 @@
         </div>
         <div id="zoomify_pagination">
             <ul class="left">
-                <li>
-                    Page <%= current_page %> of <%= item.pages %>
-                </li>
                 <% if item.pages > 1 -%>
 	                <li>
-	                    <%= link_to_unless current_page == 1, t(:previous).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true), :remote => true %>
+	                    <span class="prev"><%= link_to_unless current_page == 1,  t(:previous).titleize  , full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page - 1, :zoomify_show => true), :remote => true %>
+						</span>
 	                </li>
 	                <li>
-	                    <%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true), :remote => true %>
+	                    <span class="next"><%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true), :remote => true %>
+						</span>
 	                </li>
-	                               
+					<!--><li style="padding:4px 10px 0">
+	                    Page <%= current_page %> of <%= item.pages %>
+	                </li> -->            
 	                <li>
 	                    <div class="jump_menu page">
-	                        <span>
+	                       <span>
 	                        	<%= t(:jump_to_page_prompt) %>
+						   </span>
 	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), :remote => true) do %>
-	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page, :size => 3 %>
+	                            <%= text_field_tag :zoomify_page, current_page == item.pages ? 1 : current_page, :size => 3 %> of <%= item.pages %>
 	                            <%= hidden_field_tag :zoomify_show, !full_screen %>
-	                            <%= submit_tag t(:go), :name => nil %>
+	                            <%= submit_tag t(:go), :name => nil, :class => "redButton", :style => "border:none" %>
 	                            <% end  -%>
-	                        </span>
+	                        
 	                    </div>
 	                </li>
 	                </ul>
@@ -65,12 +67,13 @@
 	                    <div class="jump_menu section">
 	                        <span>
 	                        	<%= t(:jump_to_section_prompt) %>
+	  						</span>
 	                        	<%= form_tag(full_screen ? archive_detail_zoomify_path(:id => item.id) : archive_detail_path(:id => item.id), :remote => true) do %>
-	                            <%= select_tag :zoomify_section_id, options_for_select(sections_list, @zoomify_section_id) -%>
+	                            <%= select_tag :zoomify_section_id, options_for_select(sections_list, @zoomify_section_id) -%> 
 	                            <%= hidden_field_tag :zoomify_show, !full_screen  %>
-	                            <%= submit_tag t(:go), :name => nil %>
+	                            <%= submit_tag t(:go), :name => nil, :class => "redButton", :style => "border:none" %>
 	                            <% end  -%>
-	                        </span>
+	                        
 	                    </div>
 	                </li>
 	                <% end -%>
