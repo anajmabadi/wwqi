@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110310142625) do
+ActiveRecord::Schema.define(:version => 20110321152242) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -434,17 +434,16 @@ ActiveRecord::Schema.define(:version => 20110310142625) do
   add_index "images", ["publish"], :name => "index_images_on_publish"
 
   create_table "item_translations", :force => true do |t|
-    t.integer  "item_id",                                             :null => false
-    t.string   "locale",                              :default => "", :null => false
+    t.integer  "item_id",                                            :null => false
+    t.string   "locale",                             :default => "", :null => false
     t.string   "display_date"
     t.text     "description"
-    t.string   "title",                               :default => "", :null => false
+    t.string   "title",                              :default => "", :null => false
     t.string   "credit"
-    t.string   "creator_label"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "published"
-    t.text     "transcript",    :limit => 2147483647
+    t.text     "transcript",   :limit => 2147483647
     t.text     "remarks"
     t.string   "owner_tag"
   end

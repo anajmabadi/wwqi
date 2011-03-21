@@ -32,7 +32,7 @@ class Item < ActiveRecord::Base
   has_many :sections, :order => 'sections.start_page', :dependent => :destroy
   
   # globalize2 accessors 
-  translates :title, :credit, :description, :display_date, :creator_label, :published, :transcript, :remarks, :owner_tag
+  translates :title, :credit, :description, :display_date, :published, :transcript, :remarks, :owner_tag
   globalize_accessors :fa, :en
   default_scope :include => [:translations]
   
@@ -131,19 +131,16 @@ class Item < ActiveRecord::Base
   	original_locale = I18n.locale
   	I18n.locale = locale unless I18n.locale == locale
   	my_label = ''
-  	my_label += self.creator_label unless self.creator_label.blank?	 
-  	if my_label == ''
-	  	begin 		
-		  	creator_ids = self.appearances.select('DISTINCT appearancesperson_id').where("appearance_translations.caption LIKE ?", '%creator%').order('appearances.person_id').map { |p| p.person_id }
-		  	people = Person.where('people.id IN (?) AND publish = ?', creator_ids, true).order('person_translations.sort_name')
-			people.each do |person|
-			  my_label += I18n.translate(:comma) + " " unless my_label == ''
-			  my_label += person.name unless person.name.blank?
-			end
-		rescue => e
-			logger.error e.message
-		end	
-	end
+  	begin 		
+	  	creator_ids = self.appearances.select('DISTINCT appearances.person_id').where("appearance_translations.caption LIKE ?", '%creator%').order('appearances.person_id').map { |p| p.person_id }
+	  	people = Person.where('people.id IN (?) AND publish = ?', creator_ids, true).order('person_translations.sort_name')
+		people.each do |person|
+		  my_label += I18n.translate(:comma) + " " unless my_label == ''
+		  my_label += person.name unless person.name.blank?
+		end
+	rescue => e
+		logger.error e.message
+	end	
 	I18n.locale = original_locale
   	return my_label
   end
