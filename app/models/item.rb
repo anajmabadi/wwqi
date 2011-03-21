@@ -53,11 +53,12 @@ class Item < ActiveRecord::Base
    
    
   def csv_fields
-    return %w[	id accession_num title_fa title_en alternate_titles_fa alternate_titles_en creator_label_fa creator_label_en description_fa description_en
+    return %w[	id accession_num title_fa title_en alternate_titles_fa alternate_titles_en creator_label_fa creator_label_en creators_fa creators_en description_fa description_en
     			show_date_en show_date_fa display_date_fa display_date_en place_created_fa place_created_en pages height width depth
     			remarks_fa remarks_en genre_list person_list concept_list place_list comp_list
     			notes owner_name_fa owner_name_en owner_tag_fa owner_tag_en collection_name_fa collection_name_en
-    			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? publish favorite original_file_prefix created_at updated_at thumbnail_url ]
+    			credit_fa credit_en owner_restrictions_en owner_restrictions_fa publisher_fa publisher_en transcript_fa transcript_en has_clip? 
+    			publish favorite original_file_prefix created_at updated_at thumbnail_url ]
   end 
   
   def has_transcript?
@@ -118,7 +119,17 @@ class Item < ActiveRecord::Base
   	return self.alternate_titles.map { |t| t.title_fa }.join(", ") unless self.alternate_titles.empty?
   end
   
-  def creators
+  def creators_en
+  	return creators(:en)
+  end
+  
+  def creators_fa
+  	return creators(:fa)
+  end
+  
+  def creators(locale = I18n.locale)
+  	original_locale = I18n.locale
+  	I18n.locale = locale unless I18n.locale == locale
   	my_label = ''
   	my_label += self.creator_label unless self.creator_label.blank?	 
   	if my_label == ''
@@ -133,6 +144,7 @@ class Item < ActiveRecord::Base
 			logger.error e.message
 		end	
 	end
+	I18n.locale = original_locale
   	return my_label
   end
   
