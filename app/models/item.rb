@@ -137,7 +137,7 @@ class Item < ActiveRecord::Base
 		  	creator_ids = self.appearances.select('DISTINCT appearancesperson_id').where("appearance_translations.caption LIKE ?", '%creator%').order('appearances.person_id').map { |p| p.person_id }
 		  	people = Person.where('people.id IN (?) AND publish = ?', creator_ids, true).order('person_translations.sort_name')
 			people.each do |person|
-			  my_label += ", " unless my_label == ''
+			  my_label += I18n.translate(:comma) + " " unless my_label == ''
 			  my_label += person.name unless person.name.blank?
 			end
 		rescue => e
