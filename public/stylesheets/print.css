@@ -17,11 +17,18 @@ body, #content, #container {
 	background: #fff url(none);
 }
 
+img, a img{border:none}
+
 /* SECTION 2: Remove any elements not needed in print. 
    This would include navigation, ads, sidebars, etc. */
-#topnav, #navbar, #nav, #sidebar, .ad, .noprint {
-	display: none; 
+#topnav, #navbar, #nav, #sidebar, .ad, .noprint, #header, #pageFooterWrapper,
+#home_search_wrapper, ul.dots, .paginationBar, #collection_details .redButton,
+#itemPreview a , #zoomify-popup, #sb-container, #browseBar h3, #browseBar h2,
+#browseBar .list, #archive_search_wrapper, #archive_index_wrapper,#search-result-tools,
+#browseBar .blackButton, item-add{
+	display: none!important; 
 }
+
 
 /* SECTION 3: Set body font face, size, and color.
    Consider using a serif font for readability. */
@@ -40,7 +47,7 @@ h1,h2,h3,h4,h5,h6 {
 h1 { font-size: 250%; }
 h2 { font-size: 175%; }
 h3 { font-size: 135%; }
-h4 { font-size: 100%; font-variant: small-caps; }
+h4 { font-size: 100%;  }
 h5 { font-size: 100%; }
 h6 { font-size: 90%; font-style: italic; }
 
@@ -51,6 +58,150 @@ a:link, a:visited {
 	color: #00c;
 	font-weight: bold;
 	text-decoration: underline; }
+	
 #content a:link:after, #content a:visited:after {
 	content: " (" attr(href) ") ";
+	text-decoration:none;
+}
+
+
+#featured {
+	background:none repeat scroll 0 0 #DDDDDD;
+	height:210px;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+
+#featured .featuredItem {
+	background:-moz-linear-gradient(center top , #FAFAFA, #EEEEEE) repeat scroll 0 0 transparent;
+	border:5px solid #FFFFFF;
+	cursor:pointer;
+	float:left;
+	height:150px;
+	margin:0 10px 0 1px;
+	overflow:hidden;
+	padding:0;
+	position:relative;
+	width:304px;
+}
+
+#featured .featuredItem .thumb {
+	float:left;
+	height:135px;
+	margin:10px 5px 5px;
+	width:135px;
+}
+
+#featured .featuredItem .text {
+	float:left;
+	margin:10px 5px 5px;
+	width:140px;
+}
+
+#featured .featuredItem .thumb img {
+	background:none repeat scroll 0 0 #FFFFFF;
+	height:123px;
+	padding:4px;
+	width:128px;
+}
+
+#search_results .listItem {
+	cursor:pointer;
+	border:1px solid #ccc;
+	margin:5px;
+	width:auto;
+	clear:left;
+	overflow:hidden;
+	padding:10px;
+}
+
+#collection_index .listItem .item {
+  	background:url("../images/bg_collection_thumb.png") no-repeat scroll right bottom transparent;
+	height:110px;
+	margin-left:10px;
+	width:110px;
+}
+
+#search_results .listItem .item {
+	float:left;
+	height:auto;
+	margin:0 5px 0 8px;
+	overflow:visible;
+	padding:0;
+	position:relative;
+	width:100px;
+}
+
+.item a:link:after, .item a:visited:after {
+	content:none!important;
+	text-decoration:none;
+}
+
+#search_results .listItem .description {
+	float:none;
+	margin-left:130px;
+	margin-right:5px;
+	width:auto;
+}
+
+.listItem .description {
+	float:left;
+	margin-left:10px;
+	width:760px;
+}
+
+.listItem h3, .listItem h3 a {
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+}
+
+
+#collection_details .item_meta span {
+	display:block;
+}
+
+.item_meta ul li span, .item_related ul li span {
+	color:#333333;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+}
+
+.item_meta ul li, .item_related ul li {
+	border-bottom:1px dotted #DDDDDD;
+	clear:left;
+	list-style:none;
+	margin:0;
+	overflow:hidden;
+	padding:4px 0;
+}
+
+.collection_highlights li{
+	list-style:none;
+	float:left;
+	margin:0 5px 0 0px;
+}
+
+.collection_highlights li span{
+	display:block;
+	margin:5px 0 5px 0
+}
+
+#itemPreview .image-count {
+background:url("/images/bg_white_ribbon.png") no-repeat scroll right top transparent;
+color:#777777;
+display:block;
+font-size:10px;
+height:20px;
+left:8px;
+line-height:20px;
+padding:0 10px 0 5px;
+position:absolute;
+top:15px;
+}
+
+#browseBar .current-filter-list h3{
+	display:block!important;
 }

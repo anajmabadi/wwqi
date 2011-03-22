@@ -39,11 +39,11 @@ module ArchiveHelper
   def archive_grid_header
     return s = %{
         <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
-        <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
+        <script type="text/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
         <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
         <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
 
-        <script language="javascript" type="application/javascript">
+        <script language="javascript" type="text/javascript">
           $(document).ready(function(){
           $(".AZsort").click(function(){
           $(".AZsort").parent().siblings().removeClass("active");
@@ -152,7 +152,7 @@ module ArchiveHelper
     return s = %{
         <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
         <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
-        <script language="javascript" type="application/javascript">
+        <script language="javascript" type="text/javascript">
           $(document).ready(function(){
 
           // fancy dropdowns for filters, and handling special cases
@@ -228,10 +228,10 @@ module ArchiveHelper
   def archive_slideshow_header
     return s = %{
         <link href="/stylesheets/dd.css" media="screen" rel="stylesheet" type="text/css" />
-        <script type="application/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
+        <script type="text/javascript" language="javascript" src="/javascripts/jquery-1.4.min.js"></script>
         <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
         <script src="/javascripts/uncompressed.jquery.dd.js" type="text/javascript"></script>
-        <script language="javascript" type="application/javascript">
+        <script language="javascript" type="text/javascript">
           $(document).ready(function(){
 
           $(".AZsort").click(function(){
@@ -375,7 +375,7 @@ module ArchiveHelper
     return %{
       <script src="/javascripts/jquery.qtip-1.0.0-rc3.js" type="text/javascript"></script>
 
-    	<script language="javascript" type="application/javascript">
+    	<script language="javascript" type="text/javascript">
     	$(document).ready(function(){
 
     		$('a[title]').qtip({

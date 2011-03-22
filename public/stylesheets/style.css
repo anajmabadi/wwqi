@@ -1673,10 +1673,22 @@ div.zoomify_tool_wrapper {
 	display: block;
 	float: left;
 }
+
+.fullscreen div.zoomify_tool_wrapper{
+	height:85%;
+}
+
 div.zoomify_header{
 	margin-bottom: 20px;
 }
 
+#zoomify-popup-content{
+	padding:20px;
+}
+
+.fullscreen #zoomify-popup-content{
+	padding:0 20px;
+}
 div.zoomify_header ul {
 	list-style: none; 
 	padding: 0; 

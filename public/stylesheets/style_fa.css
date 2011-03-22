@@ -1647,12 +1647,25 @@ div#zoomify_container_with_gallery {
 	width: 80%;
 }
 
+#zoomify-popup-content{
+	padding:20px;
+}
+
+.fullscreen #zoomify-popup-content{
+	padding:0 20px;
+}
+
 div.zoomify_tool_wrapper {
 	overflow:hidden;
 	width:100%;
 	display: block;
 	float: left;
 }
+
+.fullscreen div.zoomify_tool_wrapper{
+	height:85%;
+}
+
 div.zoomify_header{
 	margin-bottom: 20px;
 }
@@ -3310,11 +3323,18 @@ img.icon{
 	background:url(/images/bg_item_details_fa.gif) 193px 0 repeat-y;
 	overflow:hidden;
 }
-
+#email-popup-content{
+	direction:rtl!important;
+}
+}
 #email-popup-content h2{
 	margin:10px 0;
 	padding:0;
 	font-size:22px;
+}
+
+#email-hook{
+	margin-right:5px;
 }
 
 #email-popup-content input[type=text]{
@@ -3620,4 +3640,8 @@ select#repository_filter{
 #transcript-popup-content .citation,
 #transcript-popup-content .print_friendly_link{
 	direction:rtl!important;
+}
+
+#translation-popup-content table td{
+	text-align:left;
 }

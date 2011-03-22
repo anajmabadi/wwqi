@@ -1,7 +1,7 @@
 <div id="zoomify-popup" style="<%= hide ? 'display:none;' : '' %>">
 	<div id="zoomify-replacement-wrapper">
 		<span>
-    <div id="zoomify-popup-content" style="padding:20px;color:#fff;">
+    <div id="zoomify-popup-content" style="color:#fff;">
 		<div class="zoomify_header" style="padding-bottom:20px;">
 			<ul class="left">
 				<li>
@@ -44,7 +44,7 @@
 	                    <span class="next"><%= link_to_unless current_page == item.pages, t(:next).titleize, full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => false) : archive_detail_path(:id => item.id, :zoomify_page => current_page + 1, :zoomify_show => true), :remote => true %>
 						</span>
 	                </li>
-					<!--><li style="padding:4px 10px 0">
+					<!-- <li style="padding:4px 10px 0">
 	                    Page <%= current_page %> of <%= item.pages %>
 	                </li> -->            
 	                <li>
