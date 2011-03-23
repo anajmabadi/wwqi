@@ -164,6 +164,11 @@ class ArchiveController < ApplicationController
 			else
 				filter_stack[:keyword_filter][:values][0] = new_array
 			end
+		elsif filter_name == :boolean_keyword_filter
+			filter_stack[filter_name] = nil
+			filter_stack[:year_range_filter] = nil	
+			filter_stack[:collection_filter] = nil
+			filter_stack[:subject_filter] = nil
   		else 
   			filter_stack[filter_name] = nil 
   		end
@@ -213,7 +218,11 @@ class ArchiveController < ApplicationController
       :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
       
     # now check if there are any matching filters for keywords
-    extra_ids = check_for_matching_filters(@filters) unless @filters[:keyword_filter].nil? && @filters[:boolean_keyword_filter].nil?
+    if !@filters[:keyword_filter].nil?
+    	extra_ids = check_for_matching_filters(@filters[:keyword_filter][:values])
+    elsif !@filters[:boolean_keyword_filter].nil?
+    	extra_ids = check_for_matching_filters(@filters[:boolean_keyword_filter][:values])
+    end
       
     @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter].to_i ] unless params[:collection_filter].nil?
     @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter].map { |i| i.to_i }.uniq.sort : [params[:period_filter].to_i] unless params[:period_filter].nil?
@@ -235,7 +244,7 @@ class ArchiveController < ApplicationController
    	logger.info "--------- session[:filter_stack]: " + session[:filter_stack].to_s
     logger.info "--------- @filters: " + @filters.to_s
     
-  	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true'
+  	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true' || @exclusive
   	
 	# contruct sql for simple filters
     @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s }, :labels => []}
@@ -248,7 +257,7 @@ class ArchiveController < ApplicationController
 
     @query_hash = build_boolean_keyword_query(@filters[:keyword_filter], @query_hash) unless @filters[:keyword_filter].nil? || @filters[:keyword_filter][:values].empty? || @filters[:keyword_filter][:values][0] == I18n.translate(:search_prompt)
     @query_hash = build_year_range_query(@filters[:year_range_filter], @query_hash) unless @filters[:year_range_filter].nil? || (@filters[:year_range_filter][:start_year] == 0 && @filters[:year_range_filter][:end_year] == 0)
-    @query_hash = build_boolean_keyword_query(@filters[:boolean_keyword_filter], @query_hash) unless @filters[:boolean_keyword_filter].nil? || @filters[:boolean_keyword_filter][:values][0].blank? && @filters[:boolean_keyword_filter][:values][1].blank? && @filters[:boolean_keyword_filter][:values][2].blank?
+    @query_hash = build_boolean_keyword_query(@filters[:boolean_keyword_filter], @query_hash) unless @filters[:boolean_keyword_filter].nil? || (@filters[:boolean_keyword_filter][:values][0].blank? && @filters[:boolean_keyword_filter][:values][1].blank? && @filters[:boolean_keyword_filter][:values][2].blank?)
 
     @query_hash = build_recent_additions_query(@filters[:recent_additions_filter], @query_hash) unless @filters[:recent_additions_filter].blank?
     @query_hash = build_translation_query(@filters[:translation_filter], @query_hash) unless @filters[:translation_filter].blank?
@@ -844,8 +853,10 @@ def build_genre_query(filter_value, query_hash)
   def build_boolean_keyword_query(filter_value, query_hash)
     additional_query = ''
     
+    logger.info "--------filter_value: " + filter_value.to_s
+    
     # turn keyword fields into word arrays and git rid of little words
-	keywords = @filters[:keyword_filter][:values]
+	keywords = filter_value[:values].reject { |v| v.nil? || v.empty? }
 	
     # assemble the query by field for each keyword set
     keywords.each_with_index do |values, outer_index|
@@ -861,7 +872,7 @@ def build_genre_query(filter_value, query_hash)
           value = clean_keyword(value)
           inner_operator = inner_index > 0 ? ' AND ' : ''
           subqueries << case field
-            when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(item_translations.credit), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
+            when 'everything' then "#{inner_operator}CONCAT_WS('|', UPPER(item_translations.title), UPPER(item_translations.description), UPPER(item_translations.credit), UPPER(item_translations.transcript), UPPER(accession_num), CONCAT('ID',items.id)) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'title' then "#{inner_operator}UPPER(item_translations.title) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'description' then "#{inner_operator}UPPER(item_translations.description) LIKE :keyword_#{outer_index}_#{inner_index}"
             when 'transcript' then "#{inner_operator}UPPER(item_translations.transcript) LIKE :keyword_#{outer_index}_#{inner_index}"
@@ -1073,10 +1084,10 @@ def build_genre_query(filter_value, query_hash)
   	@from = session[:recent_from_email]
   end
   
-  	def check_for_matching_filters(filters)
+  	def check_for_matching_filters(filter_keyword_values)
 		keywords = []
-		keywords << @filters[:keyword_filter][:values].flatten.map {|k| k.lstrip.upcase }.uniq unless @filters[:keyword_filter].nil?
-        keywords << @filters[:boolean_keyword_filter][:values].flatten.map {|k| k.lstrip.upcase }.uniq unless @filters[:boolean_keyword_filter].nil?
+		
+		keywords << filter_keyword_values.flatten.reject { |k| k.blank? }.map {|k| k.lstrip.upcase }.uniq unless filter_keyword_values.nil?
         
         extra_ids = []
         #find subjects that match
