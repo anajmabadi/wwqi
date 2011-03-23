@@ -47,7 +47,7 @@
         <%  @filters[:keyword_filter][:values].each do |keyword_values|-%>
         	<% keyword_values.each do |keyword| -%>
 		        <li>
-		            <strong><%= truncate(keyword) %></strong>
+		            <strong><%= t(:quote) %><%= truncate(keyword) %><%= t(:quote) %></strong>
 		            <span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :keyword_filter, :value => keyword), :title => t(:remove_filter_prompt )  %></span>
 		        </li>
 		    <% end -%>

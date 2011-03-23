@@ -202,6 +202,19 @@ class ArchiveController < ApplicationController
     
     #grab filter categories
     @filters = {}
+    
+    # grab keyword and advanced search parameters
+    @filters[:keyword_filter] = { :values => [ string_to_searchable_array(params[:keyword_filter] )], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
+    @filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i, :calendar_type_id => params[:calendar_type_filter].to_i } unless params[:start_year_filter].nil? && params[:end_year_filter].nil?
+    @filters[:boolean_keyword_filter] = { :values => [ string_to_searchable_array(params[:value_1]), 
+    												   string_to_searchable_array(params[:value_2]), 
+    												   string_to_searchable_array(params[:value_3]) ],
+      :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
+      :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
+      
+    # now check if there are any matching filters for keywords
+    extra_ids = check_for_matching_filters(@filters) unless @filters[:keyword_filter].nil? && @filters[:boolean_keyword_filter].nil?
+      
     @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter].to_i ] unless params[:collection_filter].nil?
     @filters[:period_filter] = params[:period_filter].kind_of?(Array) ? params[:period_filter].map { |i| i.to_i }.uniq.sort : [params[:period_filter].to_i] unless params[:period_filter].nil?
     @filters[:person_filter] = params[:person_filter].kind_of?(Array) ? params[:person_filter].map { |i| i.to_i }.uniq.sort : [params[:person_filter].to_i] unless params[:person_filter].nil?
@@ -213,14 +226,6 @@ class ArchiveController < ApplicationController
 	@filters[:translation_filter] = params[:translation_filter] == 'true' unless params[:recent_additions_filter].nil?
     @filters[:recent_additions_filter] = params[:recent_additions_filter] == 'true' unless params[:recent_additions_filter].nil?
     
-    # grab keyword and advanced search parameters
-    @filters[:keyword_filter] = { :values => [ string_to_searchable_array(params[:keyword_filter] )], :fields => [ 'everything' ], :operators => [ ]  } unless params[:keyword_filter].nil?
-    @filters[:year_range_filter] = {:start_year => params[:start_year_filter].to_i, :end_year => params[:end_year_filter].to_i, :calendar_type_id => params[:calendar_type_filter].to_i } unless params[:start_year_filter].nil? && params[:end_year_filter].nil?
-    @filters[:boolean_keyword_filter] = { :values => [ string_to_searchable_array(params[:value_1]), 
-    												   string_to_searchable_array(params[:value_2]), 
-    												   string_to_searchable_array(params[:value_3]) ],
-      :fields => [ params[:field_1], params[:field_2], params[:field_3] ],
-      :operators => [ '', params[:operator_1], params[:operator_2] ]  } unless params[:value_1].nil? && params[:value_2].nil? && params[:value_3].nil?  
 
 	# detect my selections filter
     @my_archive_ids = my_archive_from_cookie
@@ -251,13 +256,24 @@ class ArchiveController < ApplicationController
 
     # assemble the query from the two sql injection safe parts
     @query_conditions = ''
+    operator = ' AND '
     @query_hash[:conditions].each do |condition|
-      @query_conditions += (@query_conditions.blank? ? '': ' AND ') + condition
+      @query_conditions += (@query_conditions.blank? ? '(': operator) + condition
+    end
+    
+    # check for extra filter conditions
+    unless extra_ids.nil? || extra_ids.empty?
+    	@query_conditions += ") OR items.id IN (:extra_ids)"
+    	@query_hash[:parameters][:extra_ids] = extra_ids
+    else
+    	@query_conditions += ")"
     end
 
     @query = [@query_conditions, @query_hash[:parameters]]
 
+
     @items_full_set = Item.where(@query).order(@order)
+    
     @items = @items_full_set.paginate :per_page => @per_page, :page => @page
 
     # check for a reset condition, in which case get all
@@ -277,7 +293,7 @@ class ArchiveController < ApplicationController
     session[:sort_mode] = @sort_mode
     session[:filter_stack] = @reset ? nil : @filters
   end
-
+	
   def detail
     @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
@@ -942,11 +958,11 @@ def build_genre_query(filter_value, query_hash)
 	@genres = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 8, I18n.locale.to_s, 0]).order('subject_translations.name')
     @periods = Period.where(['periods.publish=? AND period_translations.locale = ? AND periods.items_count_cache > ? ',true, I18n.locale.to_s, 0]).order('periods.position')
 
-  @people = Person.where(["people.publish = ? AND person_translations.locale = ? AND people.items_count_cache > ?", true, I18n.locale.to_s, 0]).order('person_translations.sort_name')
-  @collections = Collection.where(['collections.publish=? AND collection_translations.locale = ? AND collections.private = ? AND collections.items_count_cache > ?', true, I18n.locale.to_s, false, 0]).order('collection_translations.name')
-  @places = Place.where(["places.publish=? AND place_translations.locale = ? AND places.items_count_cache > ?", true, I18n.locale.to_s, 0]).order("place_translations.name")
-  @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 7, I18n.locale.to_s, 0]).order('subject_translations.name')
-  @subfilter_mode = false
+	  @people = Person.where(["people.publish = ? AND person_translations.locale = ? AND people.items_count_cache > ?", true, I18n.locale.to_s, 0]).order('person_translations.sort_name')
+	  @collections = Collection.where(['collections.publish=? AND collection_translations.locale = ? AND collections.private = ? AND collections.items_count_cache > ?', true, I18n.locale.to_s, false, 0]).order('collection_translations.name')
+	  @places = Place.where(["places.publish=? AND place_translations.locale = ? AND places.items_count_cache > ?", true, I18n.locale.to_s, 0]).order("place_translations.name")
+	  @subjects = Subject.where(["subjects.publish=? AND subjects.subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?", true, 7, I18n.locale.to_s, 0]).order('subject_translations.name')
+	  @subfilter_mode = false
 	unless reset
       @subfilter_mode = true
       # find complete lists for searching
@@ -1056,5 +1072,44 @@ def build_genre_query(filter_value, query_hash)
   	@to = session[:recent_to_email]
   	@from = session[:recent_from_email]
   end
+  
+  	def check_for_matching_filters(filters)
+		keywords = []
+		keywords << @filters[:keyword_filter][:values].flatten.map {|k| k.lstrip.upcase }.uniq unless @filters[:keyword_filter].nil?
+        keywords << @filters[:boolean_keyword_filter][:values].flatten.map {|k| k.lstrip.upcase }.uniq unless @filters[:boolean_keyword_filter].nil?
+        
+        extra_ids = []
+        #find subjects that match
+       	subjects = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 7, keywords.join(","), 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
+		# we can assume subject filter is nil because keyword searches reset the filters
+        extra_ids << subjects.map { |s| s.item_ids_cache }.join(",").split(",") 
+
+        #find genres that match
+       	genres = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 8, keywords.join(","), 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
+		# we can assume genre filter is nil because keyword searches reset the filters
+         extra_ids << genres.map { |s| s.item_ids_cache }.join(",").split(",")
+
+        #find places that match
+       	places = Place.where("publish = ? and UPPER(place_translations.name) IN (?) AND items_count_cache > ?", true, keywords.join(","), 0).select("DISTINCT places.id, places.item_ids_cache")
+		# we can assume place filter is nil because keyword searches reset the filters
+        extra_ids << places.map { |s| s.item_ids_cache }.join(",").split(",")
+        
+        # find people that match
+        conditions = "publish = :publish_status AND ("
+        parameters = { :publish_status => true }
+        keywords.each_with_index do |keyword, index|
+        	conditions += index == 0 ? "" : ' OR '
+        	conditions += "person_translations.name LIKE '%:keyword#{index.to_s}%' OR people.loc_name LIKE '%:keyword#{index.to_s}%'"
+        	parameters["keyword#{index.to_s}".to_sym] = keyword
+        	logger.info "---------- parameters " + parameters.to_s
+        end
+        conditions += ")"
+        people = Person.where([conditions, parameters]).select("DISTINCT people.id, people.item_ids_cache")
+        extra_ids << places.map { |s| s.item_ids_cache }.join(",").split(",")
+        
+        extra_ids = extra_ids.flatten.map { |id| id.to_i }.uniq.sort
+        logger.info "--------- extra_ids: " + extra_ids.to_s
+        return extra_ids
+    end	
   
 end
