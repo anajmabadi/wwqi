@@ -74,9 +74,9 @@ body{
     padding: 0px;
     border: 0px;
     color:#ffffff;
-    background-image:url(/images/bg.jpg);
+    background-image:url(/images/bg_small.jpg);
     background-position:top center;
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     background-color:#72808a;
 
 }
@@ -3583,4 +3583,27 @@ select#subject_filter,
 select#repository_filter{
 	width:285px;
 	height:150px;
+}
+
+#translation-popup-content{
+	background:#fff;
+	color:#000!important;
+}
+
+#translation-popup-content h1,
+#translation-popup-content h2,
+#translation-popup-content h3,
+#translation-popup-content h4{
+	color:#444!important;
+}
+#translation-popup-content a{
+	color:#CA3723!important;
+}
+
+#translation-popup-content a:hover{
+	text-decoration:underline;
+}
+
+#translation-popup-content .redButton {
+	color:#fff!important;
 }

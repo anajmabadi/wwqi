@@ -75,9 +75,9 @@ body{
 	padding: 0px;
 	border: 0px;
 	color:#ffffff;
-	background-image:url(/images/bg_fa.jpg);
+	background-image:url(/images/bg_small.jpg);
 	background-position:top center;
-	background-repeat:no-repeat;
+	background-repeat:repeat;
 	background-color:#72808a;
 	direction:rtl
 	
@@ -3644,4 +3644,28 @@ select#repository_filter{
 
 #translation-popup-content table td{
 	text-align:left;
+}
+
+#translation-popup-content{
+	background:#fff;
+	color:#000!important;
+}
+
+
+#translation-popup-content h1,
+#translation-popup-content h2,
+#translation-popup-content h3,
+#translation-popup-content h4{
+	color:#444!important;
+}
+
+#translation-popup-content a{
+	color:#CA3723!important;
+}
+#translation-popup-content a:hover{
+	text-decoration:underline;
+}
+
+#translation-popup-content .redButton {
+	color:#fff!important;
 }
