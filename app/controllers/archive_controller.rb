@@ -232,7 +232,7 @@ class ArchiveController < ApplicationController
     @filters[:place_filter] = params[:place_filter].kind_of?(Array) ? params[:place_filter].map { |i| i.to_i }.uniq.sort : [params[:place_filter].to_i] unless params[:place_filter].nil?
 
 	# grab boolean flag filters
-	@filters[:translation_filter] = params[:translation_filter] == 'true' unless params[:recent_additions_filter].nil?
+	@filters[:translation_filter] = params[:translation_filter] == 'true' unless params[:translation_filter].nil?
     @filters[:recent_additions_filter] = params[:recent_additions_filter] == 'true' unless params[:recent_additions_filter].nil?
     
 
