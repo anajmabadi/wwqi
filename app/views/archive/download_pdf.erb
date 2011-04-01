@@ -94,16 +94,16 @@
 			</li>
 			<% end -%>
 
-			<% unless @item.collection.nil? || @item.collection.acquired_on.nil? -%>
+			<% unless @item.created_at.blank? -%>
 			<li>
 				<span><%= t(:accessed_on).titleize %>:</span>
-				<%= localized_date(@item.collection.acquired_on) %>
+				<%= localized_date(@item.created_at.to_date) %>
 			</li>
 			<% end -%>
-			<% unless @item.collection.nil? || @item.collection.last_edited.nil? -%>
+			<% unless @item.collection.updated_at.blank? -%>
 			<li>
 				<span><%= t(:last_edited).titleize %>:</span>
-				<%= localized_date(@item.collection.last_edited) %>
+				<%= localized_date(@item.updated_at.to_date) %>
 			</li>
 			<% end -%>
 		</ul>
