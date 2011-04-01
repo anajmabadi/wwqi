@@ -23,7 +23,7 @@
 	        	<ul>
 	        	<% (1..item.pages).each do |page| -%>
 	        		<li>
-	        			<%= link_to( 	image_tag(item.page_url(page), :class=>"zoomify_thumb"),
+	        			<%= link_to( 	image_tag(item.page_url(page), :class => page == current_page ? "zoomify_thumb selected" : "zoomify_thumb" ),
 	        		 					full_screen ? archive_detail_zoomify_path(:id => item.id, :zoomify_page => page, :zoomify_show => false)
 	        		 					: archive_detail_path(:id => item.id, :zoomify_page => page, :zoomify_show => true),
 	        		 					:title => format_item_image_caption(item, page), :class => "tipsy item_thumb_link", :remote => true ) %>
