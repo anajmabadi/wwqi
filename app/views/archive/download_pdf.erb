@@ -50,13 +50,6 @@
             </li>
             <% end -%>
 
-            <% unless @item.collection.nil? || @item.collection.tips.blank? -%>
-            <li>
-                <span><%= t(:tips).titleize %>:</span>
-                <%= @item.collection.tips %>
-            </li>
-            <% end -%>
-
             <% unless @item.collection.nil? -%>
             <li>
                 <span><%= t(:collection).titleize %>:</span>
