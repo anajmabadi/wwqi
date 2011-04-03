@@ -11,99 +11,99 @@
 			<% unless @item.creators.blank? -%>
 			<li class="description">
 				<span><%= t(:creator).titleize %>:</span>
-				<%= @item.creators %>
+				<div><%= @item.creators %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.published.blank? -%>
 			<li class="description">
 				<span><%= t(:published).titleize %>:</span>
-				<%= @item.published %>
+				<div><%= @item.published %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.show_date.blank? -%>
 			<li class="description">
 				<span><%= t(:date).titleize %>:</span>
-				<%= @item.show_date %>
+				<div><%= @item.show_date %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.dimension_label.blank? -%>
 			<li>
 				<span><%= t(:dimensions).titleize %>:</span>
-				<%= @item.dimension_label %>
+				<div><%= @item.dimension_label %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.pages.nil? -%>
 			<li>
 				<span><%= @item.pages == 1 ? t(:image).titleize : t(:images).titleize %>:</span>
-				<%= localized_number(@item.pages) %>
+				<div><%= localized_number(@item.pages) %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.remarks.blank? -%>
 			<li>
 				<span><%= t(:notes).titleize %>:</span>
-				<%= @item.remarks %>
+				<div><%= @item.remarks %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.collection.nil? -%>
 			<li>
 				<span><%= t(:collection).titleize %>:</span>
-				<%= @item.collection.name %>
+				<div><%= @item.collection.name %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.subjects.genres.empty? -%>
 			<li>
 				<span class="block"><%= t(:genres).titleize %></span>
-				<% @item.subjects.genres.each do |genre| -%>
+				<div><% @item.subjects.genres.each do |genre| -%>
 				<%= genre.name %>
-				<% end -%>
+				<% end -%></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.accession_num.blank? -%>
 			<li>
 				<span><%= t(:record_number).titleize %>:</span>
-				<%= @item.accession_num %>
+				<div><%= @item.accession_num %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.repository_credit.blank? -%>
 			<li>
 				<span><%= t(:repository).titleize %>:</span>
-				<%= @item.repository_credit %>
+				<div><%= @item.repository_credit %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.collection.nil? || @item.collection.restrictions.blank? -%>
 			<li>
 				<span><%= t(:restrictions).titleize %>:</span>
-				<%= @item.collection.restrictions %>
+				<div><%= @item.collection.restrictions %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.stable_url.blank? -%>
 			<li>
 				<span><%= t(:stable_url).titleize %>:</span>
-				<%= link_to @item.stable_url, @item.stable_url %>
+				<div><%= link_to @item.stable_url, @item.stable_url %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.created_at.blank? -%>
 			<li>
 				<span><%= t(:accessed_on).titleize %>:</span>
-				<%= localized_date(@item.created_at.to_date) %>
+				<div><%= localized_date(@item.created_at.to_date) %></div>
 			</li>
 			<% end -%>
 			<% unless @item.collection.updated_at.blank? -%>
 			<li>
 				<span><%= t(:last_edited).titleize %>:</span>
-				<%= localized_date(@item.updated_at.to_date) %>
+				<div><%= localized_date(@item.updated_at.to_date) %></div>
 			</li>
 			<% end -%>
 		</ul>
@@ -121,7 +121,7 @@
 	<% (1..@item.pages).each do |page_number| %>
 	<%= image_tag(@item.slide_url(page_number), :class => 'item_image') %>
 	<h2 class="page_item"><%= format_item_image_caption(@item, page_number) %></h2>
-	<p>
+	<p class="small-citation">
 		<%= @item.full_citation %>
 		<div class="page-breaker">
 		</div>

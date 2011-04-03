@@ -1634,7 +1634,7 @@ img.zoomify_thumb {
 }
 
 img.zoomify_thumb.selected{
-	border-color:#CA3723;
+	background:#CA3723;
 }
 /* cf hacks for zoomify pane */
 
@@ -3585,8 +3585,9 @@ select#repository_filter{
 	height:150px;
 }
 
+
 #translation-popup-content{
-	background:#fff;
+	background:#fff!important;
 	color:#000!important;
 }
 
@@ -3604,6 +3605,30 @@ select#repository_filter{
 	text-decoration:underline;
 }
 
-#translation-popup-content .redButton {
+#translation-popup-content .redButton{
+	color:#fff!important;
+}
+
+
+#transcript-popup-content{
+	background:#fff!important;
+	color:#000!important;
+}
+
+#transcript-popup-content h1,
+#transcript-popup-content h2,
+#transcript-popup-content h3,
+#transcript-popup-content h4{
+	color:#444!important;
+}
+#transcript-popup-content a{
+	color:#CA3723!important;
+}
+
+#transcript-popup-content a:hover{
+	text-decoration:underline;
+}
+
+#transcript-popup-content .redButton{
 	color:#fff!important;
 }
