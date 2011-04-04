@@ -220,7 +220,7 @@ class ArchiveController < ApplicationController
     # now check if there are any matching filters for keywords
     if !@filters[:keyword_filter].nil?
     	extra_ids = check_for_matching_filters(@filters[:keyword_filter][:values])
-    elsif !@filters[:boolean_keyword_filter].nil?
+    elsif !@filters[:boolean_keyword_filter].nil? && !@filters[:boolean_keyword_filter][:values].nil? && !@filters[:boolean_keyword_filter][:values].flatten.empty?
     	extra_ids = check_for_matching_filters(@filters[:boolean_keyword_filter][:values])
     end
       

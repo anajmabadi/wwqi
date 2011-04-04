@@ -3,7 +3,7 @@
 		<h2><%= @item.title %></h2>
 		<% unless @item.description.blank? -%>
 		<p class="description">
-			<%= @item.description %>
+			<%= raw @item.description %>
 		</p>
 		<% end -%>
 		<ul id="cover_item_detail_list">
@@ -46,7 +46,7 @@
 			<% unless @item.remarks.blank? -%>
 			<li>
 				<span><%= t(:notes).titleize %>:</span>
-				<div><%= @item.remarks %></div>
+				<div><%= raw @item.remarks %></div>
 			</li>
 			<% end -%>
 
@@ -76,14 +76,14 @@
 			<% unless @item.repository_credit.blank? -%>
 			<li>
 				<span><%= t(:repository).titleize %>:</span>
-				<div><%= @item.repository_credit %></div>
+				<div><%= raw @item.repository_credit %></div>
 			</li>
 			<% end -%>
 
 			<% unless @item.collection.nil? || @item.collection.restrictions.blank? -%>
 			<li>
 				<span><%= t(:restrictions).titleize %>:</span>
-				<div><%= @item.collection.restrictions %></div>
+				<div><%= raw @item.collection.restrictions %></div>
 			</li>
 			<% end -%>
 

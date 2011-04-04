@@ -48,14 +48,14 @@
 					<% unless @item.description.blank? -%>
 					<li class="description">
 						<span><%= t(:description).titleize %>:</span>
-						<%= @item.description %>
+						<%= raw @item.description %>
 					</li>
 					<% end -%>
 
 					<% unless @item.remarks.blank? -%>
 					<li>
 						<span><%= t(:notes).titleize %>:</span>
-						<%= @item.remarks %>
+						<%= raw @item.remarks %>
 					</li>
 					<% end -%>
 
@@ -83,14 +83,14 @@
 					<% unless @item.repository_credit.blank? -%>
 					<li>
 						<span><%= t(:repository).titleize %>:</span>
-						<%= @item.repository_credit %>
+						<%= raw @item.repository_credit %>
 					</li>
 					<% end -%>
 
 					<% unless @item.collection.nil? || @item.collection.restrictions.blank? -%>
 					<li>
 						<span><%= t(:restrictions).titleize %>:</span>
-						<%= @item.collection.restrictions %>
+						<%= raw @item.collection.restrictions %>
 					</li>
 					<% end -%>
 
