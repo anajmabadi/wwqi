@@ -22,22 +22,22 @@
         <div class="field">
             <%= f.label :title_en %>
             <br />
-            <%= f.text_field :title_en %>
+            <%= f.text_area :title_en, :rows => 5 %>
         </div>
         <div class="field persianOnly">
             <%= f.label :title_fa %>
             <br />
-            <%= f.text_field :title_fa %>
+            <%= f.text_area :title_fa, :rows => 5 %>
         </div>
         <div class="field">
             <%= f.label :description %>
             <br />
-            <%= f.text_field :description %>
+            <%= f.text_area :description_en, :rows => 5 %>
         </div>
         <div class="field persianOnly">
             <%= f.label :description_fa %>
             <br />
-            <%= f.text_field :description_fa %>
+            <%= f.text_area :description_fa, :rows => 5 %>
         </div>
         <div class="field">
             <%= f.label :height %>
