@@ -2,7 +2,7 @@
 PDFKit.configure do |config|
   config.wkhtmltopdf = '/usr/local/bin/wkhtmltopdf'
   config.default_options = {
-    :page_size => 'Legal',
+    :page_size => 'Letter',
     :print_media_type => true,
     :encoding => 'UTF-8',
     :header_font_size => 6,
