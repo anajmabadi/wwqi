@@ -220,8 +220,6 @@ class ArchiveController < ApplicationController
     # now check if there are any matching filters for keywords
     if !@filters[:keyword_filter].nil?
     	extra_ids = check_for_matching_filters(@filters[:keyword_filter][:values])
-    elsif !@filters[:boolean_keyword_filter].nil? && !@filters[:boolean_keyword_filter][:values].nil? && !@filters[:boolean_keyword_filter][:values].flatten.empty?
-    	extra_ids = check_for_matching_filters(@filters[:boolean_keyword_filter][:values])
     end
       
     @filters[:collection_filter] = params[:collection_filter].kind_of?(Array) ? params[:collection_filter].map { |i| i.to_i }.uniq.sort : [ params[:collection_filter].to_i ] unless params[:collection_filter].nil?
@@ -1095,21 +1093,23 @@ def build_genre_query(filter_value, query_hash)
   	def check_for_matching_filters(filter_keyword_values)
 		keywords = []
 		
-		keywords << filter_keyword_values.flatten.reject { |k| k.blank? }.map {|k| k.lstrip.upcase }.uniq unless filter_keyword_values.nil?
+		keywords << filter_keyword_values.flatten.reject { |k| k.blank? }.map {|k| k.lstrip.upcase }.uniq.flatten.flatten unless filter_keyword_values.nil?
+		
+		logger.info "------keywords: " + keywords.to_s
         
         extra_ids = []
         #find subjects that match
-       	subjects = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 7, keywords.join(","), 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
+       	subjects = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 7, keywords[0], 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
 		# we can assume subject filter is nil because keyword searches reset the filters
         extra_ids << subjects.map { |s| s.item_ids_cache }.join(",").split(",") 
 
         #find genres that match
-       	genres = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 8, keywords.join(","), 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
+       	genres = Subject.where("publish = ? and subjects.subject_type_id = ? and UPPER(subject_translations.name) IN (?) AND items_count_cache > ?", true, 8, keywords[0], 0).select("DISTINCT subjects.id, subjects.item_ids_cache")
 		# we can assume genre filter is nil because keyword searches reset the filters
          extra_ids << genres.map { |s| s.item_ids_cache }.join(",").split(",")
 
         #find places that match
-       	places = Place.where("publish = ? and UPPER(place_translations.name) IN (?) AND items_count_cache > ?", true, keywords.join(","), 0).select("DISTINCT places.id, places.item_ids_cache")
+       	places = Place.where("publish = ? and UPPER(place_translations.name) IN (?) AND items_count_cache > ?", true, keywords[0], 0).select("DISTINCT places.id, places.item_ids_cache")
 		# we can assume place filter is nil because keyword searches reset the filters
         extra_ids << places.map { |s| s.item_ids_cache }.join(",").split(",")
         
