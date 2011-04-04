@@ -847,7 +847,7 @@ def build_genre_query(filter_value, query_hash)
   end
   
   def string_to_searchable_array(search_phrase="")
-  	return search_phrase.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? || k.length<3 }.uniq unless search_phrase.blank?
+  	return search_phrase.scan(/'(.+?)'|"(.+?)"|([^ ]+)/).flatten.compact.reject { |k| k == "" || k.nil? }.uniq unless search_phrase.blank?
   end
 
   def build_boolean_keyword_query(filter_value, query_hash)
