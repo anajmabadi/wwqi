@@ -69,6 +69,8 @@ class Item < ActiveRecord::Base
   	return !self.transcript_en.blank?
   end
   
+  #TODO: add validation for unpaired transcripts which will cause the English or Farsi record to be invalid -- needs an empty string or space
+  
   def original_file_prefix
   	return urn
   end
