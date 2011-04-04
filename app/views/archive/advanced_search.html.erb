@@ -48,12 +48,12 @@
 					<td class="col-33">
                     <%= label_tag :collection_filter, t(:filter_results_by_collection) %>
                     <br />
-                    <%= select_tag :collection_filter, options_for_select(@collections), {:multiple => true} %>
+                    <%= select_tag 'collection_filter[]', options_for_select(@collections), {:multiple => true} %>
                     </td>
                     <td class="col-33">
                     <%= label_tag :subject_filter, t(:filter_results_by_genre) %>
                     <br />
-                    <%= select_tag :subject_filter, options_for_select(@genres), {:multiple => true} %>
+                    <%= select_tag 'subject_filter[]', options_for_select(@genres), {:multiple => true} %>
                     </td>
                     
                 </tr>
