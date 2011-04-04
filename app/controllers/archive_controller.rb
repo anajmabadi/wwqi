@@ -514,10 +514,16 @@ class ArchiveController < ApplicationController
 		
 		@note = params[:note]
 		@items = Item.find(@ids)
-		unless @items.empty?
+		if @items.length == 1
+			citations = @items[0].full_citation
+		elsif !@items.empty?
+			@html_citations = "" 
+		    @text_citations = ""
 			citations = @items.map { |i| i.full_citation }
-		    @html_citations = citations.join("<br/><br/>") 
-		    @text_citations = citations.join("\n\n")
+			citations.each_with_index do |citation, index|
+		      @html_citations += "#{(index + 1).to_s}. " + citation + "<br/><br/>" 
+		      @text_citations += "#{(index + 1).to_s}. " + citation + "\n\n"
+		    end
 		else
 			@error = true
 			raise "No items found in passed email set."    	
@@ -531,7 +537,7 @@ class ArchiveController < ApplicationController
       unless @error    	
       	#send the citation
       	CitationMailer.email_citation(@to, @from, @note, @html_citations, @text_citations).deliver     	
-        format.html { redirect_to @return_url}
+        format.html { redirect_to @return_url, :flash => { :notice => I18n.translate(:email_sent) } }
         format.js 
       else
         format.html { redirect_to @return_url, :flash => { :error => I18n.translate(:email) + ": " + e.message} }
