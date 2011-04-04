@@ -59,7 +59,7 @@
 
 			<% unless @item.subjects.genres.empty? -%>
 			<li>
-				<span class="block"><%= t(:genres).titleize %></span>
+				<span class="block"><%= t(:genres).titleize %>:</span>
 				<div><% @item.subjects.genres.each do |genre| -%>
 				<%= genre.name %>
 				<% end -%></div>
