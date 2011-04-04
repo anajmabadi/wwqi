@@ -514,11 +514,13 @@ class ArchiveController < ApplicationController
 		
 		@note = params[:note]
 		@items = Item.find(@ids)
+		@html_citations = "" 
+		@text_citations = ""    
 		if @items.length == 1
-			citations = @items[0].full_citation
+			citation = @items[0].full_citation
+	        @html_citations += citation
+		    @text_citations += citation
 		elsif !@items.empty?
-			@html_citations = "" 
-		    @text_citations = ""
 			citations = @items.map { |i| i.full_citation }
 			citations.each_with_index do |citation, index|
 		      @html_citations += "#{(index + 1).to_s}. " + citation + "<br/><br/>" 

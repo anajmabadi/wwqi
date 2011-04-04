@@ -1,7 +1,7 @@
 <div id="email-popup" style="display:none;">
 	<div id="email-popup-content" style="padding:20px;color:#fff;">
 		<h2><%= t(:email_popup_prompt) %></h2>
-		<%= form_tag archive_email_path, :id => "email-form", :method => "POST", 'data-remote' => true do %>
+		<%= form_tag archive_email_path, :id => "email-form", :method => "POST" do %>
 		<%= hidden_field_tag :ids, ids %>
 		<div class="form_row">
 			<label for="from"><%= t(:from_email) %></label> <span class="mandatory">*</span>
