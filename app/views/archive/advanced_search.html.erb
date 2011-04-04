@@ -6,6 +6,7 @@
     <div id="archive_advanced_search_wrapper">
         <div class="clearfix" id="advanced_search">
             <%= form_tag(archive_browser_path, :method=> :post, :class => "advanced_search_form") do %>
+            <%= hidden_field_tag :exclusive, true %>
             <table class="styled">
                 <tr>
                     <td class="operator">

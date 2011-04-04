@@ -1,6 +1,7 @@
 <div class="current-filter-list" style="display:block">
 	<h3><%= t(:current_filters).titleize %></h3>
 	<ul class="default">
+		<% if @filters[:boolean_keyword_filter].nil? || @filters[:boolean_keyword_filter].values.empty? %>
 		<% @filters[:genre_filter].each do |genre_id| -%>
 		<li>
 			<strong><%= Subject.find(genre_id).name %></strong>
@@ -51,7 +52,7 @@
 		</li>
 		<% end -%>
 		<% end unless @filters[:keyword_filter].nil? || @filters[:keyword_filter].values.empty?-%>
-		<%  unless @filters[:boolean_keyword_filter].nil? || @filters[:boolean_keyword_filter].values.empty? -%>	
+		<%  else -%>	
 			<li>
 				<strong><%= t(:advanced_search).titleize %></strong>
 				<span><%= link_to " X ", archive_browser_drop_filter_path(:filter_name => :boolean_keyword_filter, :value => "reset"), :title => t(:remove_filter_prompt )  %></span>
