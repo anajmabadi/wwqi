@@ -22,7 +22,6 @@
 			</div>
         </div>
         <div class="description">
-            <!--<a class="view" href="/archive/detail/1190">view details</a>-->
             <h3><%= link_to item.title, archive_detail_path(item.id) %></h3>
             <h4><%= item.collection.name unless item.collection.blank? %></h4>
             <% unless item.show_date.blank? -%>

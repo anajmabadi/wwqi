@@ -247,7 +247,7 @@ class ArchiveController < ApplicationController
   	@filters = prepend_existing_filters(@filters, session[:filter_stack]) unless session[:filter_stack].nil? || params[:reset] == 'true' || @exclusive
   	
 	# contruct sql for simple filters
-    @query_hash = { :conditions => ['items.publish=:publish','item_translations.locale=:locale'], :parameters => {:publish => 1, :locale => I18n.locale.to_s }, :labels => []}
+    @query_hash = { :conditions => ['items.publish=:publish'], :parameters => {:publish => 1 }, :labels => []}
     @query_hash = build_collection_query(@filters[:collection_filter], @query_hash) unless @filters[:collection_filter].nil? || @filters[:collection_filter].empty?
     @query_hash = build_period_query(@filters[:period_filter], @query_hash) unless @filters[:period_filter].nil? || @filters[:period_filter].empty?
     @query_hash = build_person_query(@filters[:person_filter], @query_hash) unless @filters[:person_filter].nil? || @filters[:person_filter].empty?
@@ -288,7 +288,7 @@ class ArchiveController < ApplicationController
     # check for a reset condition, in which case get all
     
     @item_ids = @items_full_set.select("DISTINCT items.id").map { |i| i.id }.sort
-    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 2 || params[:my_archive] == 'true'
+    @reset = params[:reset] == 'true' || @query_hash[:conditions].length == 1 || params[:my_archive] == 'true'
     
     load_filter_models(@reset, @item_ids)
 
