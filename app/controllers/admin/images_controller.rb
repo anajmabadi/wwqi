@@ -30,6 +30,7 @@ class Admin::ImagesController < Admin::AdminController
   def new
     @item = Item.find(params[:item_id])
     @maximum_position = @item.images.maximum(:position)
+    @maximum_position ||= 0
     @image = Image.new({:item_id => @item.id,
       :publish => true,
       :verso => false,
