@@ -1,1 +1,10 @@
 /* styles for the print friendly view in English */
+
+body,
+p{
+	direction:ltr!important;
+}
+
+.persianOnly{
+	direction:rtl!important;
+}

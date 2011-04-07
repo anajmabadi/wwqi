@@ -1,1 +1,21 @@
 /* styles for the print friendly view in English */
+
+p{
+	direction:rtl;
+}
+
+.essay *{
+	direction:ltr;
+}
+
+.essay{
+	direction:ltr;
+}
+.essay p{
+	direction:ltr;
+}
+
+.persianOnly *,
+.persianOnly ,.persianOnly p{
+	direction:rtl!important;
+}
