@@ -14,11 +14,7 @@
 			$(window).load(function() {
 				$(".item_image").each(function(){
 					if($(this).css("width")>$(this).css("height")){
-						$(this).attr("width","500");
-						$(this).width("500");
-						$(this).attr("height","500");
-						$(this).rotateLeft([angle=90]);
-						
+						$(this).rotateLeft([angle=90]);			
 					}
 				})
 			});
