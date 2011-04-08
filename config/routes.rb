@@ -114,6 +114,7 @@ Qajar::Application.routes.draw do
 	match 'archive/detail/:id' => 'archive#detail', :as => :archive_detail
 	match 'archive' => 'archive#index', :as => :archive
 	match 'archive/browser' => 'archive#browser', :as => :archive_browser
+	match 'archive/my_selections' => 'archive#browser', :my_archive => 'true', :as => :archive_my_selections
 	match 'archive/browser/remember' => 'archive#remember', :as => :archive_browser_remember
 
 	match 'archive/browser/drop_filter/:filter_name/(:value)' => 'archive#drop_filter', :as => :archive_browser_drop_filter

@@ -16,7 +16,7 @@
         <li class="my-selections"> 
         	<% link_label = t(:my_archive) -%>
         	<% link_label += ' (' + localized_number(@my_archive_ids.size.to_s) + ')' unless @my_archive_ids.nil? || @my_archive_ids.empty? -%>
-        	<%= link_to( link_label, archive_browser_path(:my_archive => true), :class=>"module-link" ) %>
+        	<%= link_to( link_label, archive_my_selections_path, :class=>"module-link" ) %>
         </li>
       </ul>
     </div>

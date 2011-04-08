@@ -1033,6 +1033,7 @@ def build_genre_query(filter_value, query_hash)
   	
   	filters[:translation_filter] = filters[:translation_filter] ? filters[:translation_filter] : filter_stack[:translation_filter]  
   	filters[:recent_additions_filter] = filters[:recent_additions_filter] ? filters[:recent_additions_filter] : filter_stack[:recent_additions_filter]
+  	filters[:my_archive_filter] = !filters[:my_archive_filter].nil? ? filters[:my_archive_filter] : filter_stack[:my_archive_filter]
   	
   	# keyword filters are stored as an array of searchable strings that we should be able to add together
   	unless filter_stack[:keyword_filter].nil? && filters[:keyword_filter].nil?
