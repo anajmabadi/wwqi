@@ -799,13 +799,9 @@ def build_genre_query(filter_value, query_hash)
     #translate the year as needed to gregorian
     gregorian_start_year = year_by_calendar_type(start_year, calendar_type_id)   
     gregorian_end_year = year_by_calendar_type(end_year, calendar_type_id)
-    
-    logger.info "---- gregrian_start_year: " + gregrian_start_year.to_s
-    logger.info "---- gregorian_end_year: " + gregorian_end_year.to_s
-    
 
     if gregorian_start_year > 0 && gregorian_end_year > 0
-      date_ranges = "(sort_year BETWEEN '#{start_year}' AND '#{gregorian_end_year}')"
+      date_ranges = "(sort_year BETWEEN '#{gregorian_start_year}' AND '#{gregorian_end_year}')"
     elsif gregorian_start_year > 0
       date_ranges = "(sort_year > '#{gregorian_start_year}')"
     elsif gregorian_end_year > 0
