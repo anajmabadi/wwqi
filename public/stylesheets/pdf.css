@@ -141,3 +141,8 @@ p.small-citation{
 	font-size:10px
 }
 
+canvas{
+	max-width:700px;
+	max-height:800px;
+}
+
