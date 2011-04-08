@@ -10,7 +10,6 @@
     <% item.passports.is_published.each do |passport| %>
     <%= link_to(truncate(passport.repository.name), passport.full_url, :class => "redButton", 'data-popup' => true) if passport.repository.publish %>
     <% end unless item.passports.nil? -%>
-	<a title= "<%= t(:print_friendly_view).titleize %>" href="<%= archive_detail_print_friendly_path(:id => item.id, :format => :html) %>" class="textButton" data-popup="true" ><img class="icon" src="/images/ico_print.gif" ><%= t(:print_friendly_view).titleize %></a>
     <a title= "<%= t(:download_pdf).titleize %>" href="<%= archive_detail_download_pdf_path(:id => item.id, :format => :pdf) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" ><%= t(:download_pdf).titleize %></a>
 	<a href="<%= archive_detail_download_path(item) %>" class="textButton"><img class="icon" src="/images/ico_download.gif" >  <%= t(:download_images).titleize %></a>
 	<a rel="shadowbox[email];width=450px;height=420px;" title= "<%= t(:email_citation).titleize %>" href="#email-popup" class="textButton"><img class="icon" src="/images/ico_email.gif" >  <%= t(:email_citation).titleize %></a>
@@ -20,7 +19,7 @@
     <% unless item.transcript_en.blank? -%>
     <a rel="shadowbox[translation];width=900px;height=550px;" href="#translation-popup" title="<%= t(:translation).titleize %>" class="textButton"> <img class="icon" src="/images/ico_translation.gif" /> <%= t(:translation).titleize %> </a>
     <% end -%>
-
+	<a title= "<%= t(:print_friendly_view).titleize %>" href="<%= archive_detail_print_friendly_path(:id => item.id, :format => :html) %>" class="textButton" data-popup="true" ><img class="icon" src="/images/ico_print.gif" ><%= t(:print_friendly_view).titleize %></a>
     <% if @my_archive_ids.include?(item.id) -%>
 	<a href="<%= archive_detail_forget_path(item) %>" class="textButton"><img class="icon" src="/images/ico_remove.gif" >  <%= t(:remove_from_my_archive) %></a>
     <% else -%>
