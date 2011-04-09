@@ -12,6 +12,7 @@
         <p class="header">
             <%= t(:named_holdings_intro) %>
         </p>
+        <%= render :partial => "collections_pagination_bar", :locals => {:collections => @collections, :direction => @direction } %>
         <div class="list clearfix" id="items">
             <% @collections.each do | collection | -%>
             	<%= render :partial => 'collection', :locals => {:collection => collection} %>

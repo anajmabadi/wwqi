@@ -30,15 +30,23 @@ class ArchiveController < ApplicationController
 
   def collections
     @filter_letter = params[:filter_letter] unless params[:filter_letter].nil? || params[:filter_letter].length > 1
-    @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order('collection_translations.sort_name')
+    @direction = params[:collections_direction] || session[:collections_direction] || 'ASC'
+    @page = params[:page] || 1
+    @all_collections = Collection.where(['publish=? AND private=? AND collection_translations.locale=?', true, false, I18n.locale.to_s]).order("collection_translations.sort_name #{@direction}")
 
     if @filter_letter.blank?
     	@collections = @all_collections
     else
       @collections = Collection.includes("items").select('DISTINCT collection.id').where(['collections.publish=? AND private=? AND collection_translations.locale=? AND items.id IS NOT NULL AND UPPER(SUBSTRING(collection_translations.name,1,1)) = ?', true, false, I18n.locale.to_s,@filter_letter]).order('collection_translations.name')
     end
+    
+    @collections_full_set = @collections
+    @collections = @collections.paginate :per_page => 10, :page => @page
+    
     @valid_initials = @all_collections.map { |s| s.name[0].upcase }.uniq
     @alphabet = I18n.translate(:a_z_menu).split(" ")
+    
+    session[:collections_direction] = @direction
 
   end
 
