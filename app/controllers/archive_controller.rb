@@ -134,7 +134,7 @@ class ArchiveController < ApplicationController
 
     @return_url = (session[:archive_url].nil?) ? '/archive' : session[:archive_url]
     
-    @all_genres = Subject.where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?', true, 8, I18n.locale.to_s, 0]).order('subject_translations.name')
+    @all_genres = Subject.where(['subjects.publish=? AND subject_type_id = ? AND subject_translations.locale=? AND subjects.items_count_cache > ?', true, 8, I18n.locale.to_s, 0])
 	@filter_letter = set_filter_letter( params[:filter_letter], @all_genres.count) 
 
     if @filter_letter.blank?
