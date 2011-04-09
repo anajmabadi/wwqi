@@ -1,0 +1,9 @@
+  <div class="paginationBar clearfix">
+  <div class="sortnav paginate">
+    <%= will_paginate collections, :inner_window => 2, :outer_window => 1 %>
+  </div>
+  <ul class="sortnav" id="sort">
+    <li class="label"><%= t(:sort_by) %> :</li>
+    <li class="active"><%= link_to( t(:az_sort), url_for(params.merge(:collections_direction => (direction == 'ASC' ? 'DESC':'ASC'))), {:class => 'module-link AZsort'}) %><span class="<%= direction == 'ASC' ? 'down':'up' -%>"></span></li>
+  </ul>
+</div> 
