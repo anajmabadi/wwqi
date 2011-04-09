@@ -41,14 +41,15 @@
                 </div>
             	<div id="featuredContent" class="clearfix">
                 	<div id="featureContainer" class="clearfix">
-                		<% @items.each do |item| -%>
+                		<% @collections.each do |collection| -%>
                         <div class="featuredItem">
 							<div class="thumb">
-								<img src="<%= item.thumbnail_url %>">
+								<img src="<%= collection.thumbnail_url %>" alt="<% collection.name %>" >
 							</div>
 							<div class="text">
-								<a href="<%= archive_detail_path(item) %>" title="<%= item.title %>" class="tipsy" ><%= truncate(item.title, :length => 80) %></a>
-							</div>   
+								<a href="<%= archive_collection_detail_path(collection) %>" title="<%= collection.name %>" class="tipsy" ><%= truncate(collection.name, :length => 80) %></a><br />
+								<% unless collection.caption.blank? -%><p><%= collection.caption %></p><% end -%>
+                        	</div>
                         </div>
                         <% end -%>
                     </div>
