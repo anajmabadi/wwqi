@@ -47,7 +47,7 @@
 								<img src="<%= collection.thumbnail_url %>" alt="<% collection.name %>" >
 							</div>
 							<div class="text">
-								<a href="<%= archive_collection_detail_path(collection) %>" title="<%= collection.name %>" class="tipsy" ><%= truncate(collection.name, :length => 80) %></a><br />
+								<a href="<%= archive_collection_detail_path(collection) %>"><%= truncate(collection.name, :length => 80) %></a>
 								<% unless collection.caption.blank? -%><p><%= collection.caption %></p><% end -%>
                         	</div>
                         </div>
