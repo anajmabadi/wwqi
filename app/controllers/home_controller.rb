@@ -7,6 +7,6 @@ class HomeController < ApplicationController
     @item_count = Item.is_published.count
     @image_count = Image.where("publish=?", true).count
     
-    @collections = Collection.where("publish = ? AND major = ?", true, true).order('last_edited').limit(@limit)
+    @collections = Collection.where("publish = ? AND major = ?", true, true).order('last_edited DESC').limit(@limit)
   end
 end
