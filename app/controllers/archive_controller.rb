@@ -530,8 +530,8 @@ class ArchiveController < ApplicationController
 		elsif !@items.empty?
 			citations = @items.map { |i| i.full_citation }
 			citations.each_with_index do |citation, index|
-		      @html_citations += "#{(index + 1).to_s}<br/><br/>" + citation + "<br/><br/>" 
-		      @text_citations += "#{(index + 1).to_s}\n\n " + citation + "\n\n"
+		      @html_citations += "#{(index + 1).to_s}<br/>" + citation + "<br/><br/>" 
+		      @text_citations += "#{(index + 1).to_s}\n " + citation + "\n\n"
 		    end
 		else
 			@error = true
