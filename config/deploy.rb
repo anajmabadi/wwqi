@@ -1,4 +1,6 @@
 require 'erb'
+require 'config/initializers/secret_token.rb'
+require 'config/initializers/security_credentials.rb'
 
 #############################################################
 #	Application
@@ -98,6 +100,18 @@ namespace :security do
 
     run "mkdir -p #{shared_path}/security"  
     put security_config.result, "#{shared_path}/security/security_credentials.rb"
+    
+    secret_token = ERB.new <<-EOF
+      # Be sure to restart your server when you modify this file.
+      
+      # Your secret key for verifying the integrity of signed cookies.
+      # If you change this key, all old signed cookies will become invalid!
+      # Make sure the secret is at least 30 characters and all random,
+      # no regular words or you'll be exposed to dictionary attacks.
+      Qajar::Application.config.secret_token = '#{Qajar::Application.config.secret_token}'
+    EOF
+
+    put secret_token.result, "#{shared_path}/security/secret_token.rb"
   end
 
   desc "Make symlink for security rb"
