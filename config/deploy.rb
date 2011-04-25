@@ -1,6 +1,5 @@
 require 'erb'
-require 'config/initializers/secret_token.rb'
-require 'config/initializers/security_credentials.rb'
+require "/Users/historicus/Code/qajar_women/config/initializers/security_credentials.rb"
 
 #############################################################
 #	Application
@@ -94,8 +93,8 @@ namespace :security do
       # additional security tokens not to be checked into the open source repository, used by application_controller.rb and deploy.rb (Capistrano)
       ADMIN_USERNAME = '#{ADMIN_USERNAME}'
       ADMIN_PASSWORD = '#{ADMIN_PASSWORD}'
-      PRODUCTION_DATABASE_USERNAME = '#{ADMIN_PRODUCTION_USERNAME}'
-      PRODUCTION_DATABASE_PASSWORD = '#{ADMIN_PRODUCTION_PASSWORD}'
+      PRODUCTION_DATABASE_USERNAME = '#{PRODUCTION_DATABASE_USERNAME}'
+      PRODUCTION_DATABASE_PASSWORD = '#{PRODUCTION_DATABASE_PASSWORD}'
     EOF
 
     run "mkdir -p #{shared_path}/security"  
@@ -108,7 +107,7 @@ namespace :security do
       # If you change this key, all old signed cookies will become invalid!
       # Make sure the secret is at least 30 characters and all random,
       # no regular words or you'll be exposed to dictionary attacks.
-      Qajar::Application.config.secret_token = '#{Qajar::Application.config.secret_token}'
+      Qajar::Application.config.secret_token = '#{SECRET_TOKEN}'
     EOF
 
     put secret_token.result, "#{shared_path}/security/secret_token.rb"
