@@ -1,4 +1,6 @@
 require 'erb'
+
+# change this directory to the location of your security files
 require "/Users/historicus/Code/qajar_women/config/initializers/security_credentials.rb"
 
 #############################################################
