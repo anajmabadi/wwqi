@@ -10,3 +10,5 @@ config/database.yml
 tmp/*
 webrat.log
 .DS_Store
+config/initializers/secret_token.rb
+config/initializers/security_credentials.rb

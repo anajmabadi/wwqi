@@ -46,8 +46,8 @@ namespace :deploy do
 
 end
 
-before "deploy:setup", :db
-after "deploy:update_code", "db:symlink"
+before "deploy:setup", :db, :security
+after "deploy:update_code", "db:symlink", "security:symlink"
 
 namespace :db do
   desc "Create database yaml in shared path"
@@ -58,8 +58,8 @@ namespace :db do
       encoding: utf8
       reconnect: false
       pool: 5
-      username: qajar
-      password: Q@jar!
+      username: PRODUCTION_DATABASE_USERNAME
+      password: PRODUCTION_DATABASE_PASSWORD
       host: localhost
 
     development:
@@ -82,5 +82,26 @@ namespace :db do
   desc "Make symlink for database yaml"
   task :symlink do
     run "ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  end
+end
+
+namespace :security do
+  desc "Create secure configurlation file in shared path"
+  task :default do
+    security_config = ERB.new <<-EOF
+      # additional security tokens not to be checked into the open source repository, used by application_controller.rb and deploy.rb (Capistrano)
+      ADMIN_USERNAME = '#{ADMIN_USERNAME}'
+      ADMIN_PASSWORD = '#{ADMIN_PASSWORD}'
+      PRODUCTION_DATABASE_USERNAME = '#{ADMIN_PRODUCTION_USERNAME}'
+      PRODUCTION_DATABASE_PASSWORD = '#{ADMIN_PRODUCTION_PASSWORD}'
+    EOF
+
+    run "mkdir -p #{shared_path}/security"  
+    put security_config.result, "#{shared_path}/security/security_credentials.rb"
+  end
+
+  desc "Make symlink for security rb"
+  task :symlink do
+    run "ln -nfs #{shared_path}/security/security_credentials.yml #{release_path}/security/security_credentials.yml"
   end
 end
