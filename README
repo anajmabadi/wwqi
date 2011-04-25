@@ -5,6 +5,14 @@ Persian front end to a new archive of primary sources on Iranian history
 and in particular the history of women in the Qajar Period, roughly 1800 
 to 1930. Comments and advice are welcome.
 
+As this project moved to open source, we removed the database, secret_tokens,
+and username and password credentials from the repository.  Those settings are
+controlled by secret_token.rb and security_credentials.rb in the 
+config/initializers directory.  You will need to create your own versions
+of those files using the templates provided.  The deploy.rb script also 
+loads the security_credentials.rb in order to create those files on the fly 
+on the server during setup and deployment.  
+
 Version: 1.5.2
 
 

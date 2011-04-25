@@ -61,8 +61,8 @@ namespace :db do
       encoding: utf8
       reconnect: false
       pool: 5
-      username: PRODUCTION_DATABASE_USERNAME
-      password: PRODUCTION_DATABASE_PASSWORD
+      username: #{PRODUCTION_DATABASE_USERNAME}
+      password: #{PRODUCTION_DATABASE_PASSWORD
       host: localhost
 
     development:
