@@ -117,6 +117,7 @@ namespace :security do
 
   desc "Make symlink for security rb"
   task :symlink do
-    run "ln -nfs #{shared_path}/security/security_credentials.yml #{release_path}/security/security_credentials.yml"
+    run "ln -nfs #{shared_path}/security/security_credentials.rb #{release_path}/config/initializers/security_credentials.rb"
+    run "ln -nfs #{shared_path}/security/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
   end
 end
