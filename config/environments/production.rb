@@ -1,9 +1,6 @@
 Qajar::Application.configure do
   # Settings specified here will take precedence over those in config/environment.rb
 
-  # patching mysql over coding issues
-  require 'mysql_utf8'
-
   # providing a persian page number rendered
   require 'persian_link_renderer'
   
