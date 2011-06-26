@@ -1,81 +1,92 @@
+$:.unshift(File.expand_path('./lib', ENV['rvm_path'])) # Add RVM's lib directory to the load path.
+
+require 'bundler/capistrano'
+require 'rvm/capistrano'
 require 'erb'
 
-# change this directory to the location of your security files
-require "/Users/historicus/Code/qajar_women/config/initializers/security_credentials.rb"
+require File.join(File.dirname(__FILE__), 'initializers', 'security_credentials')
 
-#############################################################
-#	Application
-#############################################################
+set :rvm_ruby_string, '1.9.2@wwqi'
+set :rvm_type, :user
 
-set :application, "qajar"
-set :domain,      "qajarwomen.org"
-set :deploy_to, "/var/www/vhosts/qajarwomen.org/httpdocs"
 
-#############################################################
-#	Settings
-#############################################################
+set :use_sudo, false
+set :user, 'ubuntu'
+ssh_options[:forward_agent] = true
 
-default_run_options[:pty] = true
-set :use_sudo, true
-set :user, "cforcey"
-
-#############################################################
-#	Subversion
-#############################################################
-
-set :scm, :git # Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
-set :repository,  "git://github.com/cforcey/qajar_women.git"
-set :branch, "master"
+set :application, 'wwqi'
+set :deploy_to,   "/srv/app/#{application}"
+set :repository, 'git@github.com:anajmabadi/wwqi.git'
+set :scm, :git
 set :deploy_via, :remote_cache
+set :keep_releases, 3
 
-role :web, domain                          # Your HTTP server, Apache/etc
-role :app, domain                          # This may be the same as your `Web` server
-role :db,  domain, :primary => true        # This is where Rails migrations will run
+
+# Multistage support without any dependencies
+# See: https://github.com/capistrano/capistrano/wiki/2.x-Multiple-Stages-Without-Multistage-Extension
+#task :production do
+  server PRODUCTION_SERVER, :app, :web, :db, :primary => true
+  set :tickle_command, "curl -Is localhost"
+#end
 
 
 namespace :deploy do
+  
+  task :set_branch do
+    set :branch, Capistrano::CLI.ui.ask("Git treeish to deploy (e.g. master, rel-1.2.2): "){|q| q.default = 'master' }
+  end
 
- task :start, :roles => :app do
-   run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
- end
+  task :enable_maintenance_page do
+    run "(ln -sf #{deploy_to}/current/public/maintenance.html #{deploy_to}/current/public/system/maintenance.html) || true"
+  end
+  
+  task :disable_maintenance_page do
+    run "rm -f #{deploy_to}/public/system/maintenance.html"
+  end
+  
+  # TODO: Replace start/stop with monit.
+  task :start, :roles => :app do
+    run "cd #{deploy_to}/current; bundle exec unicorn_rails -D -E production -c config/unicorn.rb"
+    disable_maintenance_page
+  end
 
-  task :stop do
-  # Do nothing.
- end
+  task :stop, :roles => :app do
+    enable_maintenance_page
+    run %^if [ -f "#{deploy_to}/shared/pids/unicorn.pid" ]; then (kill `cat #{deploy_to}/shared/pids/unicorn.pid`) || true ; fi^
+  end
 
- task :restart, :roles => :app, :except => { :no_release => true } do
-   run "#{try_sudo} touch #{File.join(current_path,'tmp','restart.txt')}"
- end
+  task :shadow_puppet do
+    run "sudo /var/lib/gems/1.8/bin/shadow_puppet #{current_release}/manifests/wwqi_manifest.rb"
+  end
+
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    stop; start
+  end
+ 
+  task :tickle, :roles => :app do
+    run tickle_command
+  end
+
+  task :bootstrap_app_dir do
+    run 'sudo mkdir -p /srv/app; sudo chown ubuntu:ubuntu -R /srv/app;'
+  end
 
 end
-
-before "deploy:setup", :db, :security
-after "deploy:update_code", "db:symlink", "security:symlink"
 
 namespace :db do
   desc "Create database yaml in shared path"
   task :default do
     db_config = ERB.new <<-EOF
-    base: &base
-      adapter: mysql
+    production
+      adapter: mysql2
       encoding: utf8
       reconnect: false
       pool: 5
       username: #{PRODUCTION_DATABASE_USERNAME}
-      password: #{PRODUCTION_DATABASE_PASSWORD
-      host: localhost
-
-    development:
-      database: #{application}_development
-      <<: *base
-
-    test:
-      database: #{application}_test
-      <<: *base
-
-    production:
+      password: #{PRODUCTION_DATABASE_PASSWORD}
+      host: #{PRODUCTION_DATABASE_HOSTNAME}
       database: #{application}_production
-      <<: *base
     EOF
 
     run "mkdir -p #{shared_path}/config"
@@ -121,3 +132,15 @@ namespace :security do
     run "ln -nfs #{shared_path}/security/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
   end
 end
+
+
+
+# deploy:setup callbacks
+before 'deploy:setup', 'deploy:bootstrap_app_dir'
+before "deploy:setup", :db, :security
+
+# deploy callbacks
+before 'deploy', 'deploy:set_branch'
+before 'bundle:install', 'deploy:shadow_puppet'
+after "deploy:update_code", "db:symlink", "security:symlink"
+after 'deploy', 'deploy:tickle'

@@ -3,6 +3,7 @@ source :gemcutter
 
 gem "rails", "3.0.7"
 gem "mysql2", "0.2.10"
+gem "unicorn", "3.7.0"
 gem "will_paginate", "~> 3.0.pre2"
 gem 'farsifu'
 gem 'rubyzip'
@@ -19,9 +20,12 @@ gem 'calendar'
 
 gem 'pdfkit'
 
-group :develop do
-  gem 'beanstalk-client'
-  gem 'stalker'
+# TODO: Are these used?
+gem 'beanstalk-client'
+gem 'stalker'
+
+group :development do
+  gem 'capistrano', '2.6.0'
 end
 
 group :test do
