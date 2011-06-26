@@ -1,21 +1,10 @@
 # Edit this Gemfile to bundle your application's dependencies.
 source :gemcutter
 
-gem "rails", ">=3.0.0"
-
-gem "rack"
-
-## Bundle edge rails:
-# gem "rails", :git => "git://github.com/rails/rails.git"
-
+gem "rails", "3.0.7"
 gem "mysql2", "0.2.10"
-
 gem "will_paginate", "~> 3.0.pre2"
-
-gem "railties", ">=3.0.0.beta4"
-
 gem 'farsifu'
-
 gem 'rubyzip'
 
 gem 'i18n-active_record',
@@ -34,12 +23,6 @@ group :develop do
   gem 'beanstalk-client'
   gem 'stalker'
 end
-#gem 'wkhtmltopdf'
-
-# gem "bj"
-# gem "hpricot", "0.6"
-# gem "sqlite3-ruby", :require => "sqlite3"
-# gem "aws-s3", :require => "aws/s3"
 
 group :test do
   gem 'database_cleaner'
