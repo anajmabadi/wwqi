@@ -1,6 +1,6 @@
 # config/initializers/pdfkit.rb
 PDFKit.configure do |config|
-  config.wkhtmltopdf = `which pdfkit`.strip
+  #config.wkhtmltopdf = `which wkhtmltopdf`.strip
   config.default_options = {
     :page_size => 'Letter',
     :print_media_type => true,

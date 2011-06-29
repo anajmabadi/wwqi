@@ -19,6 +19,7 @@ gem 'jquery-rails'
 gem 'calendar'
 
 gem 'pdfkit'
+gem 'wkhtmltopdf-binary', '0.9.5.3'
 
 # TODO: Are these used?
 gem 'beanstalk-client'

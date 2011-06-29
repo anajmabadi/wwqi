@@ -6,16 +6,11 @@ class WwqiManifest < ShadowPuppet::Manifest
 
 
   def system
-    wkhtmltopdf
     mysql_client
     nginx 
   end
 
   ### TODO: Factor into modules..
-
-  def wkhtmltopdf
-    package 'wkhtmltopdf', :ensure => :installed
-  end
 
   def mysql_client
     package 'mysql-client', :ensure => :installed
