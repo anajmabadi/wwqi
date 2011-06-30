@@ -370,15 +370,22 @@ class ArchiveController < ApplicationController
       unless @error
         format.html 
         format.pdf do
-        	html = render_to_string(:layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
-        	html = translate_paths(html, env)
-		    kit = PDFKit.new(html, :encoding => 'UTF-8', 'no-pdf-compression' => true )
-		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
-		    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
-		    #kit.to_file("#{Rails.root}/public/pdfs/it_" + @item.id.to_s + ".pdf")
-		    send_data(kit.to_pdf, :filename => @item.pdf_file_name, :type => Mime::PDF)
-		    return # to avoid double render call
-      	end
+          html = render_to_string(:layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
+          html = translate_paths(html, env)
+          
+          cache_filename = File.join(Rails.root, 'public', 'pdfs', "#{Digest::MD5.hexdigest(@item.attributes.values.map(&:to_s).join(""))}.pdf")
+
+          if File.exist? cache_filename
+            send_data(cache_filename, :filename => @item.pdf_file_name, :type => Mime::PDF)
+          else
+            kit = PDFKit.new(html, :encoding => 'UTF-8')
+            kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
+            kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
+            kit.to_file(cache_filename)
+            send_data(kit.to_pdf, :filename => @item.pdf_file_name, :type => Mime::PDF)
+          end
+          return # to avoid double render call
+        end
       else
         format.html { redirect_to @return_url }
       end
