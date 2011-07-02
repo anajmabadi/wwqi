@@ -7,7 +7,7 @@ PDFKit.configure do |config|
     :encoding => 'UTF-8',
     :header_font_size => 6,
     :footer_font_size => 6,
-    :footer_right => I18n.translate(:site_title).gsub("'", "&#39;"),
+    :footer_right => I18n.translate(:site_title).gsub("'", ""),
     :footer_center => "[page] of [toPage]",
     :footer_left => I18n.translate(:all_rights_reserved)
   }
