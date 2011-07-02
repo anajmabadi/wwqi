@@ -21,14 +21,22 @@ Instructions for EC2 deployment.
 
 Start with a Ubuntu 11.04 LTS image, then:
 
-    $ sudo apt-get install curl bison build-essential zlib1g-dev libssl-dev libreadline5-dev libxml2-dev git-core
+    $ sudo apt-get update
+    $ sudo apt-get upgrade
+    $ sudo apt-get -y install curl bison build-essential zlib1g-dev libssl-dev libreadline5-dev libxml2-dev git-core
+
+Install system ruby so we can run shadow_puppet
+
+    $ sudo apt-get install ruby rubygems
+    $ sudo gem install shadow_puppet --no-ri --no-rdoc
+    $ sudo gem install i18n --no-ri --no-rdoc
+
+Now install RVM (could be in a manifest)
 
     $ bash < <(curl -sk https://rvm.beginrescueend.com/install/rvm)
     $ rvm install 1.9.2
     $ rvm use 1.9.2@global
     $ gem install bundler --no-ri --no-rdoc
-    $ gem install shadow_puppet --no-ri --no-rdoc
-    $ gem install i18n --no-ri --no-rdoc
     $ rvm use 1.9.2@wwqi --create
 
 Then make sure you have rvm installed locally:
