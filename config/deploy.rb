@@ -69,7 +69,7 @@ namespace :deploy do
   end
 
   task :bootstrap_app_dir do
-    run 'if [ -e /mnt ] ; then sudo mkdir -p /mnt/app; sudo chown ubuntu:ubuntu -R /mnt/app; ln -nsf /mnt/app /srv/app; else sudo mkdir -p /srv/app; sudo chown ubunut:ubunut -R /srv/app; fi'
+    run 'if [ -e /mnt ] ; then sudo mkdir -p /mnt/app; sudo chown ubuntu:ubuntu -R /mnt/app; sudo rm /srv/app -rf; sudo ln -nsf /mnt/app /srv/app; else sudo mkdir -p /srv/app; sudo chown ubunut:ubunut -R /srv/app; fi'
   end
 
 end
