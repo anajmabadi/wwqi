@@ -5,10 +5,12 @@
 
 # application constants
 STABLE_URL = "http://www.qajarwomen.org/"
-LIBRARY_URL = "http://library.qajarwomen.org/"
-DEVELOPMENT_LIBRARY_PATH = "/volumes/passport/project_libraries/qajar_library/pub/"
-PRODUCTION_LIBRARY_PATH = "/var/www/vhosts/qajarwomen.org/subdomains/library/httpdocs/"
-LIBRARY_PATH = Rails.env == "production" ?  PRODUCTION_LIBRARY_PATH : DEVELOPMENT_LIBRARY_PATH
+#LIBRARY_URL = "http://library.qajarwomen.org/"
+LIBRARY_URL = "http://wwqi-assets.s3.amazon.com/"
+# DEVELOPMENT_LIBRARY_PATH = "/volumes/passport/project_libraries/qajar_library/pub/"
+# PRODUCTION_LIBRARY_PATH = "/var/www/vhosts/qajarwomen.org/subdomains/library/httpdocs/"
+# LIBRARY_PATH = Rails.env == "production" ?  PRODUCTION_LIBRARY_PATH : DEVELOPMENT_LIBRARY_PATH
+LIBRARY_TMP_PATH = File.join(Rails.root, "tmp", "library")
 PREVIEWS_DIR = "previews/"
 SLIDES_DIR = "slides/"
 TIFS_DIR = "tifs/"
