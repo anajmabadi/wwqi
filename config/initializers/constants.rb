@@ -6,7 +6,7 @@
 # application constants
 STABLE_URL = "http://www.qajarwomen.org/"
 #LIBRARY_URL = "http://library.qajarwomen.org/"
-LIBRARY_URL = "http://wwqi-assets.s3.amazon.com/"
+LIBRARY_URL = "http://d19ob2c2hogwg9.cloudfront.net/"
 # DEVELOPMENT_LIBRARY_PATH = "/volumes/passport/project_libraries/qajar_library/pub/"
 # PRODUCTION_LIBRARY_PATH = "/var/www/vhosts/qajarwomen.org/subdomains/library/httpdocs/"
 # LIBRARY_PATH = Rails.env == "production" ?  PRODUCTION_LIBRARY_PATH : DEVELOPMENT_LIBRARY_PATH
