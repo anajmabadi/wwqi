@@ -463,32 +463,33 @@ class ArchiveController < ApplicationController
   end
 
   def download
-  	@return_url = archive_detail_path(params[:id])
+    @return_url = archive_detail_path(params[:id])
     @error = false
     begin
       @item = Item.find_by_id(params[:id])
       @file_to_send = @item.zip_path
       unless File.exists?(@file_to_send)
-      	# find the preview files
-      	files_to_zip = @item.preview_paths
-      	# create a fresh cover page
-      	@cover_page_only = true
-  	    html = render_to_string(:action => :download_pdf, :layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
-	    kit = PDFKit.new(html, :encoding => 'UTF-8', 'no-pdf-compression' => true )
-	    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
-	    kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
-	    #kit.to_file("#{Rails.root}/public/pdfs/it_" + @item.id.to_s + ".pdf")
-	    file_path = "#{Rails.root}/tmp/it_#{@item.id}_cover_sheet.pdf"
-	    logger.info "file_path: " + file_path
-	    kit.to_file(file_path)
-	    files_to_zip << file_path
-		#create a zip file if it is the first time
-		zip_them_all = ZipThemAll.new(@file_to_send, files_to_zip)
-		zip_them_all.zip
+        # find the preview files
+        files_to_zip = @item.preview_paths
+        # create a fresh cover page
+        @cover_page_only = true
+        html = render_to_string(:action => :download_pdf, :layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
+        kit = PDFKit.new(html, :encoding => 'UTF-8')
+        kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
+        kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf_fa.css" if I18n.locale == :fa
+        #kit.to_file("#{Rails.root}/public/pdfs/it_" + @item.id.to_s + ".pdf")
+        file_path = "#{Rails.root}/tmp/it_#{@item.id}_cover_sheet.pdf"
+        logger.info "file_path: " + file_path
+        kit.to_file(file_path)
+        files_to_zip << file_path
+        #create a zip file if it is the first time
+        zip_them_all = ZipThemAll.new(@file_to_send, files_to_zip)
+        zip_them_all.zip
       end
       send_file @file_to_send, :type => "application/zip"
       return
     rescue => error
+      logger.error error.message
       flash[:error] = error.message
     	@error = true
     end
