@@ -535,6 +535,18 @@ class Item < ActiveRecord::Base
   def preview_paths
     file_urls = Array.new
     (1..self.pages).each do |page|
+
+      # Write the file from the CDN to local.
+      # TODO: This should be replaced at some point.
+      require 'open-uri'
+      unless File.exists?(preview_path(page))
+        open(preview_url(pagte)) do |src|
+          File.open(preview_path(page), 'wb') do |dest|
+            dest.write(src.read)
+          end
+        end
+      end
+
       file_urls << preview_path(page)
     end unless self.pages.nil?
     return file_urls
