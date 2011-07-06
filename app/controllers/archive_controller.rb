@@ -310,26 +310,32 @@ class ArchiveController < ApplicationController
   end
 	
   def detail
+    logger.info "--- START #detail"
+    logger.flush
+
     @return_url = (session[:archive_url].nil?) ? archive_browser_path : session[:archive_url]
     @my_archive_ids = my_archive_from_cookie
-    
+
     @zoomify_show = params[:zoomify_show] == 'true'
     @full_screen = false
 
     begin
-    	
-		    	# grab and zoomify parameters
-	    @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
-	    
-	    unless @zoomify_section_id.nil?
-	    	@section = Section.find(@zoomify_section_id)
-	    	@zoomify_page = @section.nil? ? 1 : @section.start_page
-	    else
-	    	@zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
-	    end
-	    
+
+      # grab and zoomify parameters
+      @zoomify_section_id = params[:zoomify_section_id].to_i == 0 ? nil : params[:zoomify_section_id].to_i
+
+      unless @zoomify_section_id.nil?
+        @section = Section.find(@zoomify_section_id)
+        @zoomify_page = @section.nil? ? 1 : @section.start_page
+      else
+        @zoomify_page = params[:zoomify_page].to_i == 0 ? 1 : params[:zoomify_page].to_i
+      end
+
+      logger.info "--- NEXT #after zommify"
+      logger.flush
+
       @item = Item.find_by_id(params[:id])
-	  @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
+      @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
         @items = Item.find(session[:current_items], :order => 'item_translations.title')
@@ -338,10 +344,14 @@ class ArchiveController < ApplicationController
         @order = build_order_query(@sort_mode)
         @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
       end
+      logger.info "--- NEXT #after items"
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
       @error = true
     end
+
+    logger.info "--- Before responser"
+    logger.flush
 
     respond_to do |format|
       unless @error
