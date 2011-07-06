@@ -124,13 +124,24 @@ Qajar::Application.config.secret_token = '#{SECRET_TOKEN}'
 EOF
 
     put secret_token.result, "#{shared_path}/security/secret_token.rb"
+
+    amazon_ses = ERB.new <<-EOF
+ActionMailer::Base.add_delivery_method :ses, AWS::SES::Base,
+  :secret_access_key  => '#{AWS_SECRET_ACCESS_KEY}',
+  :access_key_id  => '#{AWS_ACCESS_KEY_ID}'
+EOF
+
+    put amazon_ses, "#{shared_path}/security/amazon_ses.rb"
+
   end
 
   desc "Make symlink for security rb"
   task :symlink do
     run "ln -nfs #{shared_path}/security/security_credentials.rb #{release_path}/config/initializers/security_credentials.rb"
     run "ln -nfs #{shared_path}/security/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
+    run "ln -nfs #{shared_path}/security/amazon_ses.rb #{release_path}/config/amazon_ses.rb"
   end
+
 end
 
 
