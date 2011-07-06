@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110321152242) do
+ActiveRecord::Schema.define(:version => 20110706215310) do
 
   create_table "activities", :force => true do |t|
     t.string   "browser",                            :null => false
@@ -134,6 +134,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "calendar_type_translations", ["calendar_type_id"], :name => "index_d8c71f7edb3c34c684f498cfac7ea3cbd275670f"
+  add_index "calendar_type_translations", ["locale"], :name => "index_calendar_type_translations_on_locale"
 
   create_table "calendar_types", :force => true do |t|
     t.boolean  "publish",      :default => true, :null => false
@@ -180,6 +181,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "category_translations", ["category_id"], :name => "index_category_translations_on_category_id"
+  add_index "category_translations", ["locale"], :name => "index_category_translations_on_locale"
 
   create_table "classifications", :force => true do |t|
     t.integer  "subject_id",   :default => 0,    :null => false
@@ -267,6 +269,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "collection_translations", ["collection_id"], :name => "index_collection_translations_on_collection_id"
+  add_index "collection_translations", ["locale"], :name => "index_collection_translations_on_locale"
   add_index "collection_translations", ["name"], :name => "index_collection_translations_name"
   add_index "collection_translations", ["sort_name"], :name => "index_collection_translations_on_sort_name"
 
@@ -355,6 +358,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "era_translations", ["era_id"], :name => "index_era_translations_on_era_id"
+  add_index "era_translations", ["locale"], :name => "index_era_translations_on_locale"
   add_index "era_translations", ["title"], :name => "index_era_translations_on_title"
 
   create_table "eras", :force => true do |t|
@@ -378,6 +382,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "exhibition_translations", ["exhibition_id"], :name => "index_exhibition_translations_on_exhibition_id"
+  add_index "exhibition_translations", ["locale"], :name => "index_exhibition_translations_on_locale"
   add_index "exhibition_translations", ["title"], :name => "title"
 
   create_table "exhibitions", :force => true do |t|
@@ -413,6 +418,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
   end
 
   add_index "image_translations", ["image_id"], :name => "index_image_translations_on_image_id"
+  add_index "image_translations", ["locale"], :name => "index_image_translations_on_locale"
 
   create_table "images", :force => true do |t|
     t.integer  "item_id",                                     :default => 0,     :null => false
@@ -450,6 +456,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
 
   add_index "item_translations", ["item_id", "locale"], :name => "in_item_translations_unique", :unique => true
   add_index "item_translations", ["item_id"], :name => "index_item_translations_on_item_id"
+  add_index "item_translations", ["locale", "published"], :name => "index_item_translations_on_locale_and_published"
   add_index "item_translations", ["locale"], :name => "in_item_translations_locale"
   add_index "item_translations", ["owner_tag"], :name => "in_item_translations_owner_tag"
   add_index "item_translations", ["title"], :name => "title"
@@ -515,6 +522,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "medium_translations", ["locale"], :name => "index_medium_translations_on_locale"
   add_index "medium_translations", ["medium_id"], :name => "index_medium_translations_on_medium_id"
 
   create_table "month_translations", :force => true do |t|
@@ -525,6 +533,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "month_translations", ["locale"], :name => "index_month_translations_on_locale"
   add_index "month_translations", ["month_id"], :name => "index_month_translations_on_month_id"
   add_index "month_translations", ["name"], :name => "index_month_translations_on_name"
 
@@ -586,6 +595,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "page_translations", ["locale"], :name => "index_page_translations_on_locale"
   add_index "page_translations", ["page_id"], :name => "index_page_translations_on_page_id"
   add_index "page_translations", ["title"], :name => "index_page_translations_on_title"
 
@@ -607,6 +617,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "panel_translations", ["locale"], :name => "index_panel_translations_on_locale"
   add_index "panel_translations", ["panel_id"], :name => "index_panel_translations_on_panel_id"
 
   create_table "panels", :force => true do |t|
@@ -677,6 +688,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "period_translations", ["locale"], :name => "index_period_translations_on_locale"
   add_index "period_translations", ["period_id"], :name => "index_period_translations_on_period_id"
 
   create_table "periods", :force => true do |t|
@@ -726,6 +738,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "place_translations", ["locale"], :name => "index_place_translations_on_locale"
   add_index "place_translations", ["name"], :name => "index_place_translations_on_name"
   add_index "place_translations", ["place_id"], :name => "index_place_translations_on_place_id"
 
@@ -786,6 +799,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "relationship_translations", ["locale"], :name => "index_relationship_translations_on_locale"
   add_index "relationship_translations", ["relationship_id"], :name => "index_fa4a91c2469692f691e7cf7811ef182d444c29b7"
 
   create_table "relationships", :force => true do |t|
@@ -820,6 +834,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "repository_translations", ["locale"], :name => "index_repository_translations_on_locale"
   add_index "repository_translations", ["name"], :name => "index_repository_translations_on_name"
   add_index "repository_translations", ["repository_id"], :name => "index_repository_translations_on_repository_id"
 
@@ -834,6 +849,7 @@ ActiveRecord::Schema.define(:version => 20110321152242) do
     t.datetime "updated_at"
   end
 
+  add_index "section_translations", ["locale"], :name => "index_section_translations_on_locale"
   add_index "section_translations", ["section_id"], :name => "index_section_translations_on_section_id"
   add_index "section_translations", ["title"], :name => "index_section_translations_on_title"
 
