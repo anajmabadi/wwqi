@@ -21,6 +21,9 @@ gem 'calendar'
 gem 'pdfkit'
 gem 'wkhtmltopdf-binary', '0.9.5.3'
 
+# Amazon email service
+gem 'aws-ses', '0.4.3', :require => 'aws/ses'
+
 # TODO: Are these used?
 gem 'beanstalk-client'
 gem 'stalker'
