@@ -332,11 +332,11 @@ class ArchiveController < ApplicationController
       @sections_list = @item.sections.where('sections.publish = ?', true).order('sections.start_page').map { |s| [s.to_label, s.id]} unless @item.sections.nil? || @item.sections.empty?
       #check if there is a current results set (i.e. something from the browser)
       unless session[:current_items].nil? || session[:current_items].length < 1 || !session[:current_items].include?(@item.id)
-        @items = Item.find(session[:current_items], :include => :item_translations, :order => 'item_translations.title')
+        @items = Item.find(session[:current_items], :include => :translations, :order => 'item_translations.title')
       else
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
-        @items = Item.find(:all, :include => :item_translations, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
+        @items = Item.find(:all, :include => :translations, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
@@ -429,7 +429,7 @@ class ArchiveController < ApplicationController
       else
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
-        @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
+        @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order)
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
