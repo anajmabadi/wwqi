@@ -540,7 +540,7 @@ class Item < ActiveRecord::Base
       # TODO: This should be replaced at some point.
       require 'open-uri'
       unless File.exists?(preview_path(page))
-        open(preview_url(pagte)) do |src|
+        open(preview_url(page)) do |src|
           File.open(preview_path(page), 'wb') do |dest|
             dest.write(src.read)
           end
