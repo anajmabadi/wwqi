@@ -429,7 +429,9 @@ class ArchiveController < ApplicationController
       else
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
-        @items = Item.find(:all, :select => :id, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order)
+        @items = []
+        # TODO: Temp disable, this is a very bad query to build each pageload.
+        # @items = Item.find(:all, :select => :id, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order)
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
