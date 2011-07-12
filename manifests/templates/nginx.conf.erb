@@ -21,6 +21,16 @@ server {
   # nginx so increasing this is generally safe...
   keepalive_timeout 0;
 
+  # Use the .org domain, it's the canonical one
+  if ($host ~* "(.*)\.net") { 
+    set $host_without_net $1;
+    rewrite ^(.*)$ $scheme://$host_without_net.org$1 ; #
+  }
+  if ($host ~* "(.*)\.com") { 
+    set $host_without_com $1;
+    rewrite ^(.*)$ $scheme://$host_without_com.org$1 ; #
+  } 
+  
   # path for static files
   root /srv/app/wwqi/current/public;
 
