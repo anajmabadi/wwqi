@@ -336,7 +336,7 @@ class ArchiveController < ApplicationController
       else
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
-        @items = Item.find(:all, :include => :translations, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
+        @items = [] # For now... Item.find(:all, :include => :translations, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order )
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
@@ -429,9 +429,7 @@ class ArchiveController < ApplicationController
       else
         @sort_mode = ['alpha_asc','alpha_dsc','date_asc','date_dsc'].include?(params[:sort_mode]) ? params[:sort_mode] : session[:sort_mode] || 'alpha_asc'
         @order = build_order_query(@sort_mode)
-        @items = []
-        # TODO: Temp disable, this is a very bad query to build each pageload.
-        # @items = Item.find(:all, :select => :id, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order)
+        @items = Item.find(:all, :conditions => "items.publish=1 AND item_translations.locale = '#{I18n.locale.to_s}'", :order => @order)
       end
     rescue StandardError => error
       flash[:error] = 'Item with id number ' + params[:id].to_s + ' was not found or your item set was invalid. Reload the collections page.'
@@ -585,27 +583,26 @@ class ArchiveController < ApplicationController
   end
 
   def remember
-  	
-  	@return_url = session[:archive_url] ||= archive_browser_path
-	
-	unless params[:ids].nil?
-		ids = params[:ids].kind_of?(Array) ? params[:ids].map {|i| i.to_i } : [params[:ids].to_i]
-		ids_to_remember = ids.reject {|i| i == 0 }.uniq.sort
-	else
-		unless params[:id].nil?
-			ids_to_remember = ([params[:id].to_i]).reject {|i| i == 0 }
-		end	
-	end
-     
+
+    @return_url = session[:archive_url] ||= archive_browser_path
+
+    unless params[:ids].nil?
+      ids = params[:ids].kind_of?(Array) ? params[:ids].map {|i| i.to_i } : [params[:ids].to_i]
+      ids_to_remember = ids.reject {|i| i == 0 }.uniq.sort
+    else
+      unless params[:id].nil?
+        ids_to_remember = ([params[:id].to_i]).reject {|i| i == 0 }
+      end	
+    end
 
     unless ids_to_remember.nil? || ids_to_remember.empty?
       my_ids = my_archive_from_cookie.nil? ? ids_to_remember : (my_archive_from_cookie | ids_to_remember)
       my_archive_to_cookie(my_ids)
     end
-     
+
     respond_to do |format|
-		format.html { redirect_to_back(@return_url) }
-	end
+      format.html { redirect_to_back(@return_url) }
+    end
   end
 
   # zoomify requires a custom XML file for its gallery viewer
