@@ -376,7 +376,7 @@ class ArchiveController < ApplicationController
           cache_filename = File.join(Rails.root, 'public', 'pdfs', "#{Digest::MD5.hexdigest(@item.attributes.values.map(&:to_s).join(""))}.pdf")
 
           if File.exist? cache_filename
-            send_data(cache_filename, :filename => @item.pdf_file_name, :type => Mime::PDF)
+            send_data(File.read(cache_filename), :filename => @item.pdf_file_name, :type => Mime::PDF)
           else
             kit = PDFKit.new(html, :encoding => 'UTF-8')
             kit.stylesheets << "#{Rails.root}/public/stylesheets/pdf.css"
