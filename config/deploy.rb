@@ -24,11 +24,10 @@ set :keep_releases, 3
 
 # Multistage support without any dependencies
 # See: https://github.com/capistrano/capistrano/wiki/2.x-Multiple-Stages-Without-Multistage-Extension
-#task :production do
+task :production do
   server PRODUCTION_SERVER, :app, :web, :db, :primary => true
   set :tickle_command, "curl -Is localhost"
-#end
-
+end
 
 namespace :deploy do
   
@@ -131,7 +130,7 @@ ActionMailer::Base.add_delivery_method :ses, AWS::SES::Base,
   :access_key_id  => '#{AWS_ACCESS_KEY_ID}'
 EOF
 
-    put amazon_ses, "#{shared_path}/security/amazon_ses.rb"
+    put amazon_ses.result, "#{shared_path}/security/amazon_ses.rb"
 
   end
 
@@ -139,19 +138,38 @@ EOF
   task :symlink do
     run "ln -nfs #{shared_path}/security/security_credentials.rb #{release_path}/config/initializers/security_credentials.rb"
     run "ln -nfs #{shared_path}/security/secret_token.rb #{release_path}/config/initializers/secret_token.rb"
-    run "ln -nfs #{shared_path}/security/amazon_ses.rb #{release_path}/config/amazon_ses.rb"
+    run "ln -nfs #{shared_path}/security/amazon_ses.rb #{release_path}/config/initializers/amazon_ses.rb"
   end
 
 end
 
+namespace :library do
+  task :build_dirs do
+    run "mkdir -p #{shared_path}/local-library/previews"
+    run "mkdir -p #{shared_path}/local-library/slides"
+    run "mkdir -p #{shared_path}/local-library/tifs"
+    run "mkdir -p #{shared_path}/local-library/thumbs"
+    run "mkdir -p #{shared_path}/local-library/collection_thumbs"
+    run "mkdir -p #{shared_path}/local-library/zips"
+    run "mkdir -p #{shared_path}/local-library/pdfs"
+    run "mkdir -p #{shared_path}/local-library/pages"
+    run "mkdir -p #{shared_path}/local-library/clips"
+    run "mkdir -p #{shared_path}/local-library/zoomify"
+  end
 
+  task :symlink do
+    run "ln -nfs #{shared_path}/local-library #{release_path}/tmp/local-library"
+  end
+
+end
 
 # deploy:setup callbacks
 before 'deploy:setup', 'deploy:bootstrap_app_dir'
 before "deploy:setup", :db, :security
+after "deploy:setup", "library:build_dirs"
 
 # deploy callbacks
 before 'deploy', 'deploy:set_branch'
 before 'bundle:install', 'deploy:shadow_puppet'
-after "deploy:update_code", "db:symlink", "security:symlink"
+after "deploy:update_code", "db:symlink", "security:symlink", "library:symlink"
 after 'deploy', 'deploy:tickle'
