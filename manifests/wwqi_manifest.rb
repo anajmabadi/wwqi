@@ -2,15 +2,15 @@ require 'erb'
 require 'pathname'
 
 class WwqiManifest < ShadowPuppet::Manifest
-  recipe :system
-
-
-  def system
-    mysql_client
-    nginx 
-  end
+  recipe :mysql_client
+  recipe :nginx
+  recipe :fonts
 
   ### TODO: Factor into modules..
+  def fonts
+    package 'ttf-freefarsi', :ensure => :installed
+    package 'ttf-farsiweb', :ensure => :installed
+  end
 
   def mysql_client
     package 'mysql-client', :ensure => :installed
