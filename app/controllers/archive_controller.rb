@@ -373,7 +373,7 @@ class ArchiveController < ApplicationController
           html = render_to_string(:layout => 'pdf.html.erb', :template => 'archive/download_pdf.erb')
           html = translate_paths(html, env)
           
-          cache_filename = File.join(Rails.root, 'public', 'pdfs', "#{Digest::MD5.hexdigest(@item.attributes.values.map(&:to_s).join(""))}.pdf")
+          cache_filename = File.join(Rails.root, 'public', 'pdfs', "#{Digest::MD5.hexdigest(@item.attributes.values.map(&:to_s).join(""))}.#{I18n.locale.to_s}.pdf")
 
           if File.exist? cache_filename
             send_data(File.read(cache_filename), :filename => @item.pdf_file_name, :type => Mime::PDF)
